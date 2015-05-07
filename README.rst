@@ -1,21 +1,32 @@
-Split chapters into sub chapters
-================================
+How to Think Like a Computer Scientist: Interactive Edition
+===========================================================
+
+This project began with the original How to Think Like a Computer Scientist text by Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris  Meyers, and Dario Mitchell.  Since 2011 Brad Miller, David Ranum, Barbara Ericson, Mark Guzdial, and many others have built on the text making it interactive.
+
+Programming is not a "spectator sport".  It is something you do,
+something you participate in. It would make sense, then,
+that the book you use to learn programming should allow you to be active.
+That is our goal.
+
+This book is meant to provide you with an interactive experience as you learn
+to program in Python.  You can read the text, watch videos,
+and write and execute Python code.  In addition to simply executing code,
+there is a unique feature called 'codelens' that allows you to control the
+flow of execution in order to gain a better understanding of how the program
+works..
 
 
-The script ``split.py`` splits the rst files for each chapter into multiple rst files for each sub section of that chapter. 
-The script first creates a copy of the source folder as source_original, as a backup, if something goes wrong with the script. 
-A file ``allChapterFiles.txt`` get created in the same folder as ``split.py``. This lists all the new rst files grouped together by chapters. This can be used to create a new ``toc.rst`` file based on the new structure.
+Getting Started
+===============
 
-Things to note for Thinkcspy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1. You do not need to run the script ``split.py`` again for this course. It has already been executed and the new rst files are available in the ``source`` folder. A backup of the old structure is availble as ``source_original``. 
-2. The folder Classes has been split to two seperate chapters - ``ClassesBasics`` and ``ClassesDiggingDeeper`` to maintain a consistent hierarchy or chapters. 
-3. A new toc.rst file has been created. 
-4. The source folder contains many folders which are not chapters in the book. Hence, the rst files inside those folders should not be splitted. We need to inform the code, the list of chapters, so splitting is performed only for the desired folders. The following code instructs the code, which directories to include:
+We have tried to make it as easy as possible for you to build and use this book.  
 
-.. sourcecode:: python
-include_directories = ['GeneralIntro', 'SimplePythonData', 'Debugging', 'PythonTurtle', 'PythonModules', 'Functions', 'Selection', 'MoreAboutIteration', 'Strings', 'Lists', 'Files', 'Dictionaries',  'Recursion', 'ClassesBasics', 'ClassesDiggingDeeper'] 
+1. You can see and read this book online at `interactivepython.org <http://interactivepython.org/runestone/static/thincspy/index.html`>_
 
-Execute split.py for other courses
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Provide a new list of directories to be included. The script will look for these directories in the source folder and perform split. 
+2.  You can build it and host it yourself in just a few simple steps:
+
+    1.  ``pip install -r requirements.txt``  -- Should install everything you need
+    2.  ``runestone build`` -- will build the html and put it in ``./build/thinkcspy``
+    3.  ``runestone serve``   -- will start a webserver and serve the pages locally from ``./build/thinkcspy``
+
+
