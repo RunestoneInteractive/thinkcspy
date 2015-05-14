@@ -170,7 +170,7 @@ html_short_title ='How to Think Like a Computer Scientist'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path = ['_static']  + runestone_static_dirs()
+html_static_path = ['source/_static']  + runestone_static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
