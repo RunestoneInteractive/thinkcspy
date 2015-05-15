@@ -11,8 +11,8 @@ sys.path.append('../modules')
 
 updateProgressTables = True
 try:
-    from chapternames import populateChapterInfo
-except:
+    from chapternames import populateChapterInfob
+except ImportError:
     updateProgressTables = False
 
 
@@ -56,7 +56,6 @@ if project_name == "<project_name>":
     ('masterapp=', 'p', 'override the default master app')
 ])
 def build(options):
-    sh('cp %s/index.rst %s' % (options.build.confdir,options.build.sourcedir))
 
     if 'all' in options.build:
       options['force_all'] = True
