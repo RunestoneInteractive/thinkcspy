@@ -31,6 +31,7 @@ options(
         sourcedir="./source/",
         outdir="./build/"+project_name,
         confdir=".",
+        project_name = project_name,
         template_args = {
             'course_id':project_name,
             'login_required':'false',
@@ -48,38 +49,5 @@ if project_name == "<project_name>":
   print("Please edit pavement.py and give your project a name")
   exit()
 
-@task
-@cmdopts([
-    ('all','a','rebuild everything'),
-    ('outputdir=', 'o', 'output static files here'),
-    ('masterurl=', 'u', 'override the default master url'),
-    ('masterapp=', 'p', 'override the default master app')
-])
-def build(options):
-
-    if 'all' in options.build:
-      options['force_all'] = True
-      options['freshenv'] = True
-
-    try:
-        bi = sh('git describe --long',capture=True)[:-1]
-        bi = bi.split('-')[0]
-        options.build.template_args["build_info"] = bi
-    except:
-        options.build.template_args["build_info"] = 'unknown'
-    
-    if 'outputdir' in options.build:
-        options.build.outdir = options.build.outputdir
-
-    if 'masterurl' in options.build:
-        options.build.template_args['course_url'] = options.build.masterurl
-
-    if 'masterapp' in options.build:
-        options.build.template_args['appname'] = options.build.masterapp
-
-    print('Building into ', options.build.outdir)
-    paverutils.run_sphinx(options,'build')
-
-    if updateProgressTables:
-        print('Creating Chapter Information')
-        populateChapterInfo(project_name, "%s/toc.rst" % options.build.sourcedir)
+from runestone import build
+# build is called implicitly by the paver driver.
