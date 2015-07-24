@@ -31,7 +31,7 @@ from runestone import runestone_static_dirs, runestone_extensions
 extensions = ['sphinx.ext.mathjax'] + runestone_extensions()
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['./source/_templates']
+templates_path = ['./_sources/_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -148,7 +148,7 @@ html_theme_options = {
 #html_style = "style.css"
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["./source/_templates/plugin_layouts"]
+html_theme_path = ["./_sources/_templates/plugin_layouts"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -170,7 +170,7 @@ html_short_title ='How to Think Like a Computer Scientist'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path = ['source/_static']  + runestone_static_dirs()
+html_static_path = ['_sources/_static']  + runestone_static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
