@@ -71,7 +71,7 @@ Line 4 changes the value of ``a`` but does not change the value of
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_9_1
+.. mchoice:: test_question2_9_1
    :answer_a: x is 15 and y is 15
    :answer_b: x is 22 and y is 22
    :answer_c: x is 15 and y is 22

@@ -212,7 +212,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_1_1
+.. mchoice:: test_question5_1_1
    :answer_a: A named sequence of statements.
    :answer_b: Any sequence of statements.
    :answer_c: A mathematical expression that calculates a value.
@@ -225,7 +225,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
    What is a function in Python?
 
-.. mchoicemf:: test_question5_1_2
+.. mchoice:: test_question5_1_2
    :answer_a: To improve the speed of execution
    :answer_b: To help the programmer organize programs into chunks that match how they think about the solution to the problem.
    :answer_c: All Python programs must be written using functions
@@ -238,7 +238,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
    What is one main purpose of a function?
 
-.. mchoicemf:: test_question5_1_3
+.. mchoice:: test_question5_1_3
    :answer_a: def drawCircle(t):
    :answer_b: def drawCircle:
    :answer_c: drawCircle(t, sz):
@@ -251,7 +251,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
    Which of the following is a valid function header (first line of a function definition)?
 
-.. mchoicemf:: test_question5_1_4
+.. mchoice:: test_question5_1_4
    :answer_a: def drawSquare(t, sz)
    :answer_b: drawSquare
    :answer_c: drawSquare(t, sz)
@@ -274,7 +274,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
 
 
-.. mchoicemf:: test_question5_1_5
+.. mchoice:: test_question5_1_5
    :answer_a: i
    :answer_b: t
    :answer_c: t, sz
@@ -297,7 +297,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
 
 
-.. mchoicemf:: test_question5_1_6
+.. mchoice:: test_question5_1_6
    :answer_a: def drawSquare(t, sz)
    :answer_b: drawSquare
    :answer_c: drawSquare(10)
@@ -322,7 +322,7 @@ been defined, we can call it as many times as we like with whatever actual param
 
 
 
-.. mchoicemf:: test_question5_1_7
+.. mchoice:: test_question5_1_7
    :answer_a: True
    :answer_b: False
    :correct: a

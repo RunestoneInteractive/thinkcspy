@@ -81,7 +81,7 @@ Here is the same example in codelens.  Step through the code paying particular a
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_12_1
+.. mchoice:: test_question9_12_1
    :answer_a: [4, 2, 8, 999, 5, 4, 2, 8, 6, 5]
    :answer_b: [4, 2, 8, 999, 5]
    :answer_c: [4, 2, 8, 6, 5]
@@ -100,7 +100,7 @@ Here is the same example in codelens.  Step through the code paying particular a
      print(alist)
 
 
-.. mchoicemf:: test_question9_12_2
+.. mchoice:: test_question9_12_2
    :answer_a: [4, 2, 8, 999, 5, 4, 2, 8, 999, 5]
    :answer_b: [[4, 2, 8, 999, 5], [4, 2, 8, 999, 5]]
    :answer_c: [4, 2, 8, 6, 5]

@@ -28,7 +28,7 @@ item when counting the length of the list.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_2_1 
+.. mchoice:: test_question9_2_1
    :answer_a: 4
    :answer_b: 5
    :correct: b
@@ -43,7 +43,7 @@ item when counting the length of the list.
      print(len(alist))
    
    
-.. mchoicemf:: test_question9_2_2
+.. mchoice:: test_question9_2_2
    :answer_a: 7
    :answer_b: 8
    :correct: a

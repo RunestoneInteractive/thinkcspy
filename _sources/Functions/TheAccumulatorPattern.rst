@@ -110,7 +110,7 @@ Here is the same program in codelens.  Step through the function and watch the "
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_4_1
+.. mchoice:: test_question5_4_1
    :answer_a: The square function will return x instead of x * x
    :answer_b: The square function will cause an error
    :answer_c: The square function will work as expected and return x * x

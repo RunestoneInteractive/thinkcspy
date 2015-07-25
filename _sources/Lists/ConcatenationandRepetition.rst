@@ -57,7 +57,7 @@ In Python, every object has a unique identification tag.  Likewise, there is a b
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_5_1
+.. mchoice:: test_question9_5_1
    :answer_a: 6
    :answer_b: [1, 2, 3, 4, 5, 6]
    :answer_c: [1, 3, 5, 2, 4, 6]
@@ -78,7 +78,7 @@ In Python, every object has a unique identification tag.  Likewise, there is a b
 
    
    
-.. mchoicemf:: test_question9_5_2
+.. mchoice:: test_question9_5_2
    :answer_a: 9
    :answer_b: [1, 1, 1, 3, 3, 3, 5, 5, 5]
    :answer_c: [1, 3, 5, 1, 3, 5, 1, 3, 5]

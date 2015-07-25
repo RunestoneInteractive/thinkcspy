@@ -51,7 +51,7 @@ Here is the same example in codelens so that you can trace the values of the var
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_10_1
+.. mchoice:: test_question8_10_1
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2

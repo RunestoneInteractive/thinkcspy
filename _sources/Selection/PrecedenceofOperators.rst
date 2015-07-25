@@ -41,7 +41,7 @@ Level     Category        Operators
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_3_1
+.. mchoice:: test_question6_3_1
    :answer_a: ((5*3) &gt; 10) and ((4+6) == 11)
    :answer_b: (5*(3 &gt; 10)) and (4 + (6 == 11))
    :answer_c: ((((5*3) &gt; 10) and 4)+6) == 11

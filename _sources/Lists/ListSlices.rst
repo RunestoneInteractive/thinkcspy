@@ -29,7 +29,7 @@ end of the sequence.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_6_1
+.. mchoice:: test_question9_6_1
    :answer_a: [ [ ], 3.14, False]
    :answer_b: [ [ ], 3.14]
    :answer_c: [ [56, 57, "dog"], [ ], 3.14, False]

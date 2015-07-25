@@ -118,7 +118,7 @@ compute the correct values.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_6_1
+.. mchoice:: test_question2_6_1
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
@@ -137,7 +137,7 @@ compute the correct values.
 
 
 
-.. mchoicemf:: test_question2_6_2
+.. mchoice:: test_question2_6_2
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4
@@ -155,7 +155,7 @@ compute the correct values.
       print(18 // 4)
 
 
-.. mchoicemf:: test_question2_6_3
+.. mchoice:: test_question2_6_3
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4

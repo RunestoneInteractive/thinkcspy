@@ -82,7 +82,7 @@ There is no limit on the number of statements that can appear under the two clau
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_4_1
+.. mchoice:: test_question6_4_1
    :answer_a: Just one.
    :answer_b: Zero or more.
    :answer_c: One or more.
@@ -95,7 +95,7 @@ There is no limit on the number of statements that can appear under the two clau
 
    How many statements can appear in each block (the if and the else) in a conditional statement?
 
-.. mchoicemf:: test_question6_4_2
+.. mchoice:: test_question6_4_2
    :answer_a: TRUE
    :answer_b: FALSE
    :answer_c: TRUE on one line and FALSE on the next
@@ -116,7 +116,7 @@ There is no limit on the number of statements that can appear under the two clau
          print("FALSE")
 
 
-.. mchoicemf:: test_question6_4_3
+.. mchoice:: test_question6_4_3
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c

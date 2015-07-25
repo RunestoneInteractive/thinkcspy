@@ -56,7 +56,7 @@ of key-value pairs:
 
 **Check your understanding**
 
-.. mchoicemf:: test_question11_2_1
+.. mchoice:: test_question11_2_1
    :answer_a: 12
    :answer_b: 0
    :answer_c: 18

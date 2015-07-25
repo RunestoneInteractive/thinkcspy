@@ -46,7 +46,7 @@ practices.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_9_1
+.. mchoice:: question1_9_1
    :answer_a: programming is the process of writing and gradually debugging a program until it does what you want.
    :answer_b: programming is creative and debugging is routine.
    :answer_c: programming is fun and debugging is work.

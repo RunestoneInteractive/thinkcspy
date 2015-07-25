@@ -66,7 +66,7 @@ done first, you will need to use parenthesis.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_1_1 
+.. mchoice:: test_question8_1_1
    :answer_a: python rocks
    :answer_b: python
    :answer_c: pythonrocks
@@ -88,7 +88,7 @@ done first, you will need to use parenthesis.
 
 
 
-.. mchoicemf:: test_question8_1_2
+.. mchoice:: test_question8_1_2
    :answer_a: python!!!
    :answer_b: python!python!python!
    :answer_c: pythonpythonpython!

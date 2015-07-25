@@ -169,7 +169,7 @@ change might mean something quite different from what you intended.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_1_1
+.. mchoice:: test_question2_1_1
    :answer_a: Print out the value and determine the data type based on the value printed.
    :answer_b: Use the type function.
    :answer_c: Use it in a known equation and print the result.
@@ -182,7 +182,7 @@ change might mean something quite different from what you intended.
 
    How can you determine the type of a variable?
 
-.. mchoicemf:: test_question2_1_2
+.. mchoice:: test_question2_1_2
    :answer_a: Character
    :answer_b: Integer
    :answer_c: Float

@@ -59,7 +59,7 @@ economize.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_10_1
+.. mchoice:: test_question9_10_1
    :answer_a: [4, 2, 8, 6, 5]
    :answer_b: [4, 2, 8, 999, 5]
    :correct: b

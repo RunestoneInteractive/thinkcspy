@@ -72,7 +72,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_7_1
+.. mchoice:: test_question2_7_1
    :answer_a: &lt;class 'str'&gt;
    :answer_b: &lt;class 'int'&gt;
    :answer_c: &lt;class 18&gt;

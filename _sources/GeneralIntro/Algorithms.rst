@@ -24,7 +24,7 @@ a notation (a program) that can be followed by a computer.  These programs are w
 
 **Check your understanding**
 
-.. mchoicemf:: question1_1_1
+.. mchoice:: question1_1_1
    :answer_a: To think like a computer.
    :answer_b: To be able to write code really well.
    :answer_c: To be able to solve problems.
@@ -37,7 +37,7 @@ a notation (a program) that can be followed by a computer.  These programs are w
 
    What is the most important skill for a computer scientist?
 
-.. mchoicemf:: question1_1_2
+.. mchoice:: question1_1_2
    :answer_a: A solution to a problem that can be solved by a computer.
    :answer_b: A step by step list of instructions that if followed exactly will solve the problem under consideration.
    :answer_c: A series of instructions implemented in a programming language.

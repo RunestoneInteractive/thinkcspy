@@ -80,7 +80,7 @@ list, so that we can assign a new value to it.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_16_1
+.. mchoice:: test_question9_16_1
    :answer_a: [4, 2, 8, 6, 5]
    :answer_b: [4, 2, 8, 6, 5, 5]
    :answer_c: [9, 7, 13, 11, 10]

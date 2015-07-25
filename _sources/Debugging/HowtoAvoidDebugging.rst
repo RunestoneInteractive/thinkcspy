@@ -52,7 +52,7 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
 
 Hmm, when you run that example you see that something funny has happened.
 
-.. mchoicemf:: db_q_ex3_1
+.. mchoice:: db_q_ex3_1
    :answer_a: Python is stupid and does not know how to add properly.
    :answer_b: There is nothing wrong here.
    :answer_c: Python is doing string concatenation, not integer addition.

@@ -105,7 +105,7 @@ be other cycles that we just haven't found.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question7_4_1
+.. mchoice:: test_question7_4_1
    :answer_a: Yes.
    :answer_b: No.
    :answer_c: No one knows.

@@ -46,7 +46,7 @@ What do you think ``fruit[:]`` means?
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_5_1
+.. mchoice:: test_question8_5_1
    :answer_a: python
    :answer_b: rocks
    :answer_c: hon r
@@ -67,7 +67,7 @@ What do you think ``fruit[:]`` means?
 
 
 
-.. mchoicemf:: test_question8_5_2
+.. mchoice:: test_question8_5_2
    :answer_a: rockrockrock
    :answer_b: rock rock rock
    :answer_c: rocksrocksrocks

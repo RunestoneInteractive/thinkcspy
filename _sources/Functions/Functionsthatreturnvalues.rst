@@ -197,7 +197,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_2_1
+.. mchoice:: test_question5_2_1
    :answer_a: You should never use a print statement in a function definition.
    :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
@@ -217,7 +217,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
          print('the answer is', x + y + z)
 
 
-.. mchoicemf:: test_question5_2_2
+.. mchoice:: test_question5_2_2
    :answer_a: Nothing (no value)
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'

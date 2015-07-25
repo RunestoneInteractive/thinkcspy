@@ -47,7 +47,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_5_1
+.. mchoice:: test_question6_5_1
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
@@ -80,7 +80,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
      The negative number -10 is not valid here
 
 
-.. mchoicemf:: test_question6_5_2
+.. mchoice:: test_question6_5_2
    :answer_a: No
    :answer_b: Yes
    :correct: b

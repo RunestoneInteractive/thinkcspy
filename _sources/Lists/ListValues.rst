@@ -53,7 +53,7 @@ As you would expect, we can also assign list values to variables and pass lists 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_1_1 
+.. mchoice:: test_question9_1_1
    :answer_a: False
    :answer_b: True
    :correct: a

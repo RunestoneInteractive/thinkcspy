@@ -60,7 +60,7 @@ until you reach a point where that function is called.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_6_1
+.. mchoice:: test_question5_6_1
    :answer_a: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
    :answer_b: 1, 2, 3, 5, 6, 7, 9, 10, 11
    :answer_c: 9, 10, 11, 1, 2, 3, 5, 6, 7
@@ -92,7 +92,7 @@ until you reach a point where that function is called.
 
    Which of the following best reflects the order in which these lines of code are processed in Python?
 
-.. mchoicemf:: test_question5_6_2
+.. mchoice:: test_question5_6_2
    :answer_a: 25
    :answer_b: 5
    :answer_c: 125

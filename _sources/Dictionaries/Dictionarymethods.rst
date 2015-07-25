@@ -123,7 +123,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 **Check your understanding**
 
-.. mchoicemf:: test_question11_3_1
+.. mchoice:: test_question11_3_1
    :answer_a: cat
    :answer_b: dog
    :answer_c: elephant
@@ -146,7 +146,7 @@ in the case where the key is not present.  This can be seen in the final example
    
    
    
-.. mchoicemf:: test_question11_3_2
+.. mchoice:: test_question11_3_2
    :answer_a: 2
    :answer_b: 0.5
    :answer_c: bear
@@ -168,7 +168,7 @@ in the case where the key is not present.  This can be seen in the final example
 
    
    
-.. mchoicemf:: test_question11_3_3
+.. mchoice:: test_question11_3_3
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -184,7 +184,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoicemf:: test_question11_3_4
+.. mchoice:: test_question11_3_4
    :answer_a: True
    :answer_b: False
    :correct: b
@@ -200,7 +200,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoicemf:: test_question11_3_5
+.. mchoice:: test_question11_3_5
    :answer_a: 18
    :answer_b: 43
    :answer_c: 0

@@ -149,7 +149,7 @@ or change the variable so that it will always reflect the correct value.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_3_2
+.. mchoice:: test_question2_3_2
    :answer_a: Nothing is printed. A runtime error occurs.
    :answer_b: Thursday
    :answer_c: 32.5

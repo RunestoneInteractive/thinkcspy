@@ -82,7 +82,7 @@ rules for its mathematical operators that mathematics does.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_8_1
+.. mchoice:: test_question2_8_1
    :answer_a: 14
    :answer_b: 24
    :answer_c: 3
@@ -101,7 +101,7 @@ rules for its mathematical operators that mathematics does.
 
 
 
-.. mchoicemf:: test_question2_8_2
+.. mchoice:: test_question2_8_2
    :answer_a: 768
    :answer_b: 128
    :answer_c: 12

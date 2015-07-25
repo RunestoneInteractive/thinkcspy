@@ -134,7 +134,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_3_1
+.. mchoice:: test_question5_3_1
    :answer_a: Its value
    :answer_b: The range of statements in the code where a variable can be accessed.
    :answer_c: Its name
@@ -145,7 +145,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
    What is a variable's scope?
 
-.. mchoicemf:: test_question5_3_2
+.. mchoice:: test_question5_3_2
    :answer_a: A temporary variable that is only used inside a function
    :answer_b: The same as a parameter
    :answer_c: Another name for any variable
@@ -156,7 +156,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
    What is a local variable?
 
-.. mchoicemf:: test_question5_3_3
+.. mchoice:: test_question5_3_3
    :answer_a: Yes, and there is no reason not to.
    :answer_b: Yes, but it is considered bad form.
    :answer_c: No, it will cause an error.

@@ -60,7 +60,7 @@ you can use empty glue or multi-character strings as glue.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_22_1
+.. mchoice:: test_question9_22_1
    :answer_a: Poe
    :answer_b: EdgarAllanPoe
    :answer_c: EAP

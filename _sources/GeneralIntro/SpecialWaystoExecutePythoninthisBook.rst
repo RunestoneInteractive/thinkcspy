@@ -64,7 +64,8 @@ will be able to tell which is which by looking for either the Python prompt in t
 
 **Check your understanding**
 
-.. mchoicema:: question1_3_1
+.. mchoice:: question1_3_1
+   :multiple_answers:
    :answer_a: save programs and reload saved programs.
    :answer_b: type in Python source code.
    :answer_c: execute Python code right in the text itself within the web browser.
@@ -77,7 +78,8 @@ will be able to tell which is which by looking for either the Python prompt in t
 
    The activecode interpreter allows you to (select all that apply):
 
-.. mchoicema:: question1_3_2
+.. mchoice:: question1_3_2
+   :multiple_answers:
    :answer_a: measure the speed of a program’s execution.
    :answer_b: control the step by step execution of a program.
    :answer_c: write and execute your own Python code.

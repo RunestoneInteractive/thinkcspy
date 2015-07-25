@@ -89,7 +89,8 @@ is legal and ``7 = a`` is not. (Can you explain why?)
 
 **Check your understanding**
 
-.. mchoicema:: test_question6_1_1
+.. mchoice:: test_question6_1_1
+   :multiple_answers:
    :answer_a: True
    :answer_b: 3 == 4
    :answer_c: 3 + 4

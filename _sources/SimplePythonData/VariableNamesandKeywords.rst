@@ -83,7 +83,7 @@ remember, what the variable is used for.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_4_1
+.. mchoice:: test_question2_4_1
    :answer_a: True
    :answer_b: False
    :correct: b

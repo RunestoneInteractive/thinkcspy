@@ -44,7 +44,7 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_2_1
+.. mchoice:: test_question6_2_1
    :answer_a: x &gt; 0 and &lt; 5
    :answer_b: 0 &lt; x &lt; 5
    :answer_c: x &gt; 0 or x &lt; 5

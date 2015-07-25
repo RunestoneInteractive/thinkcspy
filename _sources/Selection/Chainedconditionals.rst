@@ -67,7 +67,7 @@ Here is the same program using ``elif``.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_7_1
+.. mchoice:: test_question6_7_1
    :answer_a: I only
    :answer_b: II only
    :answer_c: III only
@@ -130,7 +130,7 @@ Here is the same program using ``elif``.
          print(x, " is 0")
 
 
-.. mchoicemf:: test_question6_7_2
+.. mchoice:: test_question6_7_2
    :answer_a: a
    :answer_b: b
    :answer_c: c

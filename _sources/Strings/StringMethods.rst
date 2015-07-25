@@ -103,7 +103,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_3_1
+.. mchoice:: test_question8_3_1
    :answer_a: 0
    :answer_b: 2
    :answer_c: 3
@@ -123,7 +123,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 
 
-.. mchoicemf:: test_question8_3_2
+.. mchoice:: test_question8_3_2
    :answer_a: yyyyy
    :answer_b: 55555
    :answer_c: n

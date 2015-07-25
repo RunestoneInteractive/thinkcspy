@@ -71,7 +71,7 @@ a variable, which means the same as incrementing it by 1.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_10_1
+.. mchoice:: test_question2_10_1
    :answer_a: 12
    :answer_b: -1
    :answer_c: 11
@@ -91,7 +91,7 @@ a variable, which means the same as incrementing it by 1.
      x = x - 1
      print(x)
 
-.. mchoicemf:: test_question2_10_2
+.. mchoice:: test_question2_10_2
    :answer_a: 12
    :answer_b: 9
    :answer_c: 15

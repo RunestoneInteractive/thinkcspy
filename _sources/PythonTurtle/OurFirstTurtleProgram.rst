@@ -69,7 +69,7 @@ instructions that all turtles know how to respond to.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question3_1_0
+.. mchoice:: test_question3_1_0
    :answer_a: North
    :answer_b: South
    :answer_c: East 
@@ -185,7 +185,7 @@ screen until we click on it.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question3_1_1
+.. mchoice:: test_question3_1_1
    :answer_a: It creates a new turtle object that can be used for drawing.
    :answer_b: It defines the module turtle which will allow you to create a Turtle object and draw with it.
    :answer_c: It makes the turtle draw half of a rectangle on the screen.
@@ -209,7 +209,7 @@ screen until we click on it.
 
    What does the line "import turtle" do?
 
-.. mchoicemf:: test_question3_1_2
+.. mchoice:: test_question3_1_2
    :answer_a: This is simply for clarity.  It would also work to just type "Turtle()" instead of "turtle.Turtle()".
    :answer_b: The period (.) is what tells Python that we want to invoke a new object.
    :answer_c: The first "turtle" (before the period) tells Python that we are referring to the turtle module, which is where the object "Turtle" is found.
@@ -220,7 +220,7 @@ screen until we click on it.
 
    Why do we type ``turtle.Turtle()`` to get a new Turtle object?
 
-.. mchoicemf:: test_question3_1_3
+.. mchoice:: test_question3_1_3
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -229,7 +229,7 @@ screen until we click on it.
 
    True or False: A Turtle object can have any name that follows the naming rules from Chapter 2.
 
-.. mchoicemf:: test_question3_1_4
+.. mchoice:: test_question3_1_4
    :answer_a: <img src="../_static/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :answer_b: <img src="../_static/test1Alt2.png" alt="left turn of 180 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :answer_c: <img src="../_static/test1Alt3.png" alt="left turn of 270 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">

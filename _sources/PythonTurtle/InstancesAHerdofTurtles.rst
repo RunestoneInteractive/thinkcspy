@@ -85,7 +85,7 @@ Here are some *How to think like a computer scientist* observations:
 
 **Check your understanding**
 
-.. mchoicemf:: test_question3_2_1
+.. mchoice:: test_question3_2_1
    :answer_a: True
    :answer_b: False
    :correct: b

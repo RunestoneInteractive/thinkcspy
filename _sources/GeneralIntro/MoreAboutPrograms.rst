@@ -52,7 +52,7 @@ instructions.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_4_1
+.. mchoice:: question1_4_1
    :answer_a: a sequence of instructions that specifies how to perform a computation.
    :answer_b: something you follow along at a play or concert.
    :answer_c: a computation, even a symbolic computation.

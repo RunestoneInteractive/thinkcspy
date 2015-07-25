@@ -54,7 +54,7 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_20_1
+.. mchoice:: test_question9_20_1
    :answer_a: [4,2,8,6,5]
    :answer_b: [8,4,16,12,10]
    :answer_c: 10

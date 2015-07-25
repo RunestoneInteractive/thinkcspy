@@ -36,7 +36,7 @@ left to right.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_21_1
+.. mchoice:: test_question9_21_1
    :answer_a: 6
    :answer_b: 8
    :answer_c: 888

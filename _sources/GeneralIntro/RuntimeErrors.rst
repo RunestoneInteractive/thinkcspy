@@ -24,7 +24,7 @@ chapters, so it might be a while before you encounter one.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_7_1
+.. mchoice:: question1_7_1
    :answer_a: Attempting to divide by 0.
    :answer_b: Forgetting a colon at the end of a statement where one is required.
    :answer_c: Forgetting to divide by 100 when printing a percentage amount.

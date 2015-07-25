@@ -133,7 +133,7 @@ we need the extra power that we get from the ``while`` loop.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question7_2_1
+.. mchoice:: test_question7_2_1
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -142,7 +142,7 @@ we need the extra power that we get from the ``while`` loop.
 
    True or False: You can rewrite any for-loop as a while-loop.
 
-.. mchoicemf:: test_question7_2_2
+.. mchoice:: test_question7_2_2
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.

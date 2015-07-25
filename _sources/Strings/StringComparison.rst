@@ -88,7 +88,7 @@ One thing to note in the last two examples is the fact that the space character 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_6_1
+.. mchoice:: test_question8_6_1
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -103,7 +103,7 @@ One thing to note in the last two examples is the fact that the space character 
 
    
    
-.. mchoicemf:: test_question8_6_2
+.. mchoice:: test_question8_6_2
    :answer_a: True
    :answer_b: False
    :answer_c: They are the same word
@@ -120,7 +120,7 @@ One thing to note in the last two examples is the fact that the space character 
 
    
   
-.. mchoicemf:: test_question8_6_3
+.. mchoice:: test_question8_6_3
    :answer_a: True
    :answer_b: False
    :correct: b

@@ -63,7 +63,7 @@ quotes are removed.  However, if we print the type, we can see that it is defini
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_2_1
+.. mchoice:: test_question2_2_1
    :answer_a: Nothing is printed. It generates a runtime error.
    :answer_b: 53
    :answer_c: 54

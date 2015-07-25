@@ -60,7 +60,7 @@ two lines of code from above.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_4_1
+.. mchoice:: test_question8_4_1
    :answer_a: 11
    :answer_b: 12
    :correct: b
@@ -77,7 +77,7 @@ two lines of code from above.
 
 
 
-.. mchoicemf:: test_question8_4_2
+.. mchoice:: test_question8_4_2
    :answer_a: o
    :answer_b: r
    :answer_c: s

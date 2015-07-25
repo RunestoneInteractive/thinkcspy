@@ -74,7 +74,7 @@ understand why an answer may or may not be correct.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_1
+.. mchoice:: question1_1
    :answer_a: Python
    :answer_b: Java
    :answer_c: C
@@ -92,7 +92,8 @@ This next type of question allows more than one correct answer to be required.  
 correct number as well as the feedback for each.
 
 
-.. mchoicema:: question1_2
+.. mchoice:: question1_2
+   :multiple_answers:
    :answer_a: red
    :answer_b: yellow
    :answer_c: black
