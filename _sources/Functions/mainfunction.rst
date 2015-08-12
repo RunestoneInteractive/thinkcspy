@@ -93,13 +93,13 @@ The activecode below defines two simple functions and a main.
     def squareit(n):
         return n * n
         
-    def tripleit(n):
+    def cubeit(n):
         return n*n*n
         
     def main():
         anum = int(input("Please enter a number"))
         print(squareit(anum))
-        print(tripleit(anum))
+        print(cubeit(anum))
         
     if __name__ == "__main__":
         main()

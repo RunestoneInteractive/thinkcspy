@@ -101,14 +101,15 @@ we have stored the data values in a list and used a few list functions.  We will
   numbars = len(xs)
   border = 10
 
+  wn = turtle.Screen()             # Set up the window and its attributes
+  wn.setworldcoordinates(0-border, 0-border, 40*numbars+border, maxheight+border)
+  wn.bgcolor("lightgreen")
+
   tess = turtle.Turtle()           # create tess and set some attributes
   tess.color("blue")
   tess.fillcolor("red")
   tess.pensize(3)
 
-  wn = turtle.Screen()             # Set up the window and its attributes
-  wn.bgcolor("lightgreen")
-  wn.setworldcoordinates(0-border, 0-border, 40*numbars+border, maxheight+border)
 
 
   for a in xs:
