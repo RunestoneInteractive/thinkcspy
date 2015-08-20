@@ -22,6 +22,8 @@ project_name = "thinkcspy"
 
 master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
+serving_dir = "./build/thinkcspy"
+dest = "../../static"
 
 options(
     sphinx = Bunch(docroot=".",),
