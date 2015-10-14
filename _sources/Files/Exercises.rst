@@ -23,15 +23,13 @@ Exercises
             student's name is the first thing on each line, followed by some exam scores.  
             The number of scores might be different for each student.
 
-            .. raw:: html
+            .. datafile:: studentdata.txt
 
-                <pre id="studentdata.txt">
                 joe 10 15 20 30 40
                 bill 23 16 19 22
                 sue 8 22 17 14 32 17 24 21 2 9 11 17
                 grace 12 28 21 45 26 10
                 john 14 32 25 16 89
-                </pre>
 
             Using the text file ``studentdata.txt`` write a program that prints out the names of
             students that have more than six quiz scores.
@@ -40,6 +38,7 @@ Exercises
 
             .. actex:: ex_6_1
                :nocodelens:
+               :available_files: studentdata.txt
 
 
         .. tab:: Answer
@@ -69,6 +68,7 @@ Exercises
 
    .. actex:: ex_10_2
       :nocodelens:
+      :available_files: studentdata.txt
 
 
 
@@ -86,6 +86,7 @@ Exercises
 
             .. actex:: ex_6_3
                :nocodelens:
+               :available_files: studentdata.txt
 
 
         .. tab:: Answer
@@ -120,9 +121,8 @@ Exercises
 #.  Here is a file called ``labdata.txt`` that contains some sample data from a lab experiment.
 
 
-    .. raw:: html
+    .. datafile:: labdata.txt
 
-        <pre id='labdata.txt'>
         44 71
         79 37
         78 24
@@ -143,7 +143,7 @@ Exercises
         88 18
         96 48
         77 67
-        </pre>
+
 
     Interpret the data file ``labdata.txt`` such that each line contains a an x,y coordinate pair.
     Write a function called ``plotRegression`` that reads the data from this file
@@ -166,6 +166,7 @@ Exercises
 
     .. actex:: ex_10_4
        :nocodelens:
+       :available_files: labdata.txt
 
 
 #.  
@@ -183,6 +184,7 @@ Exercises
 
             .. actex:: ex_10_5
                :nocodelens:
+               :available_files: mystery.txt
 
 
 
@@ -230,9 +232,8 @@ Exercises
 Here is the ``mystery.txt`` file:
 
 
-.. raw:: html
+.. datafile:: mystery.txt
 
-   <pre id="mystery.txt">
    UP
    -218 185
    DOWN

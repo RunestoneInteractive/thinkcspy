@@ -17,9 +17,8 @@ Iterating over lines in a file
 
 Recall the contents of the qbdata.txt file.
 
-.. raw:: html
+.. datafile:: qbdata.txt
 
-    <pre id="qbdata.txt">
     Colt McCoy QB CLE  135 222 1576    6   9   60.8%   74.5
     Josh Freeman QB TB 291 474 3451    25  6   61.4%   95.9
     Michael Vick QB PHI    233 372 3018    21  6   62.6%   100.2
@@ -54,7 +53,7 @@ Recall the contents of the qbdata.txt file.
     Aaron Rodgers QB GB    312 475 3922    28  11  65.7%   101.2
     Sam Bradford QB STL    354 590 3512    18  15  60.0%   76.5
     Shaun Hill QB DET  257 416 2686    16  12  61.8%   81.3
-    </pre>
+
 
 We will now use this file as input in a program that will do some data
 processing. In the program, we will **read** each line of the file and
@@ -93,6 +92,7 @@ construct a simple sentence.
 
 .. activecode:: files_for
     :nocodelens:
+    :available_files: qbdata.txt
 
     qbfile = open("qbdata.txt", "r")
 
