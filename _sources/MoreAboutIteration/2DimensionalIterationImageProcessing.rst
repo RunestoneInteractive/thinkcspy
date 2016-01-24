@@ -134,7 +134,7 @@ different depending on whether you are using an image file or creating an empty 
     EmptyImage()        img = image.EmptyImage(100,200) Create an Image object that has all "White" pixels
     getWidth()          w = img.getWidth()              Return the width of the image in pixels.
     getHeight()         h = img.getHeight()             Return the height of the image in pixels.
-    getPixel(col,row)   p = img.getPixel(35,86)         Return the pixel at column 35, row 86d.
+    getPixel(col,row)   p = img.getPixel(35,86)         Return the pixel at column 35, row 86.
     setPixel(col,row,p) img.setPixel(100,50,mp)         Set the pixel at column 100, row 50 to be mp.
     =================== =============================== ==================================================
 
