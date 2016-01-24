@@ -295,10 +295,10 @@ Change the name of the file in the ``image.Image()`` call to see how these image
 
 Let's take a closer look at the code.  After importing the image module, we create two image objects.  The first, ``img``, represents a typical digital photo.  The second, ``newimg``, is an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original.
 
-Lines 7 and 8 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
-Line 9 gets an individual pixel.
+Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
+Line 10 gets an individual pixel.
 
-Lines 11-13 create the negative intensity values by extracting the original intensity from the pixel and subtracting it
+Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it
 from 255.  Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 15).
 
 Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
