@@ -10,103 +10,104 @@
 Exercises
 ---------
 
+.. container:: full_width
 
+    #.
 
-#. 
 
+        .. tabbed:: q1
 
-    .. tabbed:: q1
+            .. tab:: Question
 
-        .. tab:: Question
+                The following sample file called ``studentdata.txt`` contains one line for each student in an imaginary class.  The
+                student's name is the first thing on each line, followed by some exam scores.
+                The number of scores might be different for each student.
 
-            The following sample file called ``studentdata.txt`` contains one line for each student in an imaginary class.  The 
-            student's name is the first thing on each line, followed by some exam scores.  
-            The number of scores might be different for each student.
+                .. datafile:: studentdata.txt
 
-            .. datafile:: studentdata.txt
+                    joe 10 15 20 30 40
+                    bill 23 16 19 22
+                    sue 8 22 17 14 32 17 24 21 2 9 11 17
+                    grace 12 28 21 45 26 10
+                    john 14 32 25 16 89
 
-                joe 10 15 20 30 40
-                bill 23 16 19 22
-                sue 8 22 17 14 32 17 24 21 2 9 11 17
-                grace 12 28 21 45 26 10
-                john 14 32 25 16 89
+                Using the text file ``studentdata.txt`` write a program that prints out the names of
+                students that have more than six quiz scores.
 
-            Using the text file ``studentdata.txt`` write a program that prints out the names of
-            students that have more than six quiz scores.
 
 
+                .. actex:: ex_6_1
+                   :nocodelens:
+                   :available_files: studentdata.txt
 
-            .. actex:: ex_6_1
-               :nocodelens:
-               :available_files: studentdata.txt
 
+            .. tab:: Answer
 
-        .. tab:: Answer
+                .. activecode:: ch_files_q1answer
+                    :nocodelens:
 
-            .. activecode:: ch_files_q1answer
-                :nocodelens:
+                    f = open("studentdata.txt", "r")
 
-                f = open("studentdata.txt", "r")
+                    for aline in f:
+                        items = aline.split()
+                        if len(items[1:]) > 6:
+                            print(items[0])
 
-                for aline in f:
-                    items = aline.split()
-                    if len(items[1:]) > 6:
-                        print(items[0])
+                    f.close()
 
-                f.close()
+            .. tab:: Discussion
 
-        .. tab:: Discussion 
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
 
 
+    #. Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the average grade
+       for each student, and print out the student's name along with their average grade.
 
-#. Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the average grade
-   for each student, and print out the student's name along with their average grade.
+       .. actex:: ex_10_2
+          :nocodelens:
+          :available_files: studentdata.txt
 
-   .. actex:: ex_10_2
-      :nocodelens:
-      :available_files: studentdata.txt
 
 
+    #.
 
-#.
+        .. tabbed:: q3
 
-    .. tabbed:: q3
+            .. tab:: Question
 
-        .. tab:: Question
 
+                Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the minimum and
+                maximum score for each student.  Print out their name as well.
 
-            Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the minimum and
-            maximum score for each student.  Print out their name as well.
 
 
+                .. actex:: ex_6_3
+                   :nocodelens:
+                   :available_files: studentdata.txt
 
-            .. actex:: ex_6_3
-               :nocodelens:
-               :available_files: studentdata.txt
 
+            .. tab:: Answer
 
-        .. tab:: Answer
+                .. activecode:: ch_files_q3answer
+                    :nocodelens:
 
-            .. activecode:: ch_files_q3answer
-                :nocodelens:
+                    f = open("studentdata.txt", "r")
 
-                f = open("studentdata.txt", "r")
+                    for aline in f:
+                        items = aline.split()
+                        print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
 
-                for aline in f:
-                    items = aline.split()
-                    print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
+                    f.close()
 
-                f.close()
+            .. tab:: Discussion
 
-        .. tab:: Discussion 
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q3
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q3
 
 
 
@@ -117,111 +118,110 @@ Exercises
 
 
 
+    #.  Here is a file called ``labdata.txt`` that contains some sample data from a lab experiment.
 
-#.  Here is a file called ``labdata.txt`` that contains some sample data from a lab experiment.
 
+        .. datafile:: labdata.txt
 
-    .. datafile:: labdata.txt
+            44 71
+            79 37
+            78 24
+            41 76
+            19 12
+            19 32
+            28 36
+            22 58
+            89 92
+            91 6
+            53 7
+            27 80
+            14 34
+            8 81
+            80 19
+            46 72
+            83 96
+            88 18
+            96 48
+            77 67
 
-        44 71
-        79 37
-        78 24
-        41 76
-        19 12
-        19 32
-        28 36
-        22 58
-        89 92
-        91 6
-        53 7
-        27 80
-        14 34
-        8 81
-        80 19
-        46 72
-        83 96
-        88 18
-        96 48
-        77 67
 
+        Interpret the data file ``labdata.txt`` such that each line contains a an x,y coordinate pair.
+        Write a function called ``plotRegression`` that reads the data from this file
+        and uses a turtle to plot those points and a best fit line according to the following
+        formulas:
 
-    Interpret the data file ``labdata.txt`` such that each line contains a an x,y coordinate pair.
-    Write a function called ``plotRegression`` that reads the data from this file
-    and uses a turtle to plot those points and a best fit line according to the following
-    formulas:
+        :math:`y = \bar{y} + m(x - \bar{x})`
 
-    :math:`y = \bar{y} + m(x - \bar{x})`
+        :math:`m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}`
 
-    :math:`m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}`
+        where :math:`\bar{x}` is the mean of the x-values, :math:`\bar{y}` is the mean of the y-
+        values and :math:`n` is the number of points.  If you are not familiar with the
+        mathematical :math:`\sum` it is the sum operation.  For example :math:`\sum{x_i}`
+        means to add up all the x values.
 
-    where :math:`\bar{x}` is the mean of the x-values, :math:`\bar{y}` is the mean of the y-
-    values and :math:`n` is the number of points.  If you are not familiar with the
-    mathematical :math:`\sum` it is the sum operation.  For example :math:`\sum{x_i}`
-    means to add up all the x values.
+        Your program should analyze the points and correctly scale the window using
+        ``setworldcoordinates`` so that that each point can be plotted.  Then you should
+        draw the best fit line, in a different color, through the points.
 
-    Your program should analyze the points and correctly scale the window using
-    ``setworldcoordinates`` so that that each point can be plotted.  Then you should
-    draw the best fit line, in a different color, through the points.
 
+        .. actex:: ex_10_4
+           :nocodelens:
+           :available_files: labdata.txt
 
-    .. actex:: ex_10_4
-       :nocodelens:
-       :available_files: labdata.txt
 
+    #.
 
-#.  
 
+        .. tabbed:: q5
 
-    .. tabbed:: q5
+            .. tab:: Question
 
-        .. tab:: Question
+                At the bottom of this page is a very long file called ``mystery.txt`` The lines of this
+                file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
+                for a turtle to lift up or put down its tail.  The pairs of numbers are some x,y coordinates.
+                Write a program that reads the file ``mystery.txt`` and uses the turtle to draw the picture
+                described by the commands and the set of points.
 
-            At the bottom of this page is a very long file called ``mystery.txt`` The lines of this
-            file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
-            for a turtle to lift up or put down its tail.  The pairs of numbers are some x,y coordinates.
-            Write a program that reads the file ``mystery.txt`` and uses the turtle to draw the picture
-            described by the commands and the set of points.
+                .. actex:: ex_10_5
+                   :nocodelens:
+                   :available_files: mystery.txt
 
-            .. actex:: ex_10_5
-               :nocodelens:
-               :available_files: mystery.txt
 
 
+            .. tab:: Answer
 
-        .. tab:: Answer
+                .. activecode:: ch_files_q5answer
+                    :nocodelens:
 
-            .. activecode:: ch_files_q5answer
-                :nocodelens:
+                    import turtle
 
-                import turtle
+                    t = turtle.Turtle()
+                    wn = turtle.Screen()
+                    wn.setworldcoordinates(-300, -300, 300, 300)
 
-                t = turtle.Turtle()
-                wn = turtle.Screen()
-                wn.setworldcoordinates(-300, -300, 300, 300)
+                    f = open("mystery.txt", "r")
 
-                f = open("mystery.txt", "r")
-
-                for aline in f:
-                    items = aline.split()
-                    if items[0] == "UP":
-                        t.up()
-                    else:
-                        if items[0] == "DOWN":
-                            t.down()
+                    for aline in f:
+                        items = aline.split()
+                        if items[0] == "UP":
+                            t.up()
                         else:
-                            # must be coords
-                            t.goto(int(items[0]), int(items[1]))
+                            if items[0] == "DOWN":
+                                t.down()
+                            else:
+                                # must be coords
+                                t.goto(int(items[0]), int(items[1]))
 
-                f.close()
-                wn.exitonclick()
+                    f.close()
+                    wn.exitonclick()
 
 
 
-        .. tab:: Discussion 
+            .. tab:: Discussion
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q5
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q5
 
 
 

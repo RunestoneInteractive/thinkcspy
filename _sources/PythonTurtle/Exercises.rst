@@ -10,355 +10,357 @@
 Exercises
 ---------
 
-#.
+.. container:: full_width
 
-    .. tabbed:: q1
+    #.
 
-        .. tab:: Question
+        .. tabbed:: q1
 
-           Write a program that prints ``We like Python's turtles!`` 1000 times.
-        
-           .. actex:: ex_3_1
+            .. tab:: Question
 
-        .. tab:: Answer
-            
-            .. activecode::  q1_answer
-                :nocanvas:
+               Write a program that prints ``We like Python's turtles!`` 1000 times.
 
-                for i in range(1000):
-                    print("We like Python's turtles!")
+               .. actex:: ex_3_1
 
-        .. tab:: Discussion 
+            .. tab:: Answer
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f858d02024e54ae1b6b50ed8c65a01e6
+                .. activecode::  q1_answer
+                    :nocanvas:
 
+                    for i in range(1000):
+                        print("We like Python's turtles!")
 
-#. Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?
+            .. tab:: Discussion
 
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: f858d02024e54ae1b6b50ed8c65a01e6
 
-#.
 
-    .. tabbed:: q3
+    #. Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?
 
-        .. tab:: Question
 
-           Write a program that uses a for loop to print
-             |  ``One of the months of the year is January``
-             |  ``One of the months of the year is February``
-             |  ``One of the months of the year is March``
-             |  etc ...
-        
-           .. actex:: ex_3_3
+    #.
 
-        .. tab:: Answer
-            
-            .. activecode:: q3_answer
-                
-                
-                for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
-                    print("One of the months of the year is", amonth)
+        .. tabbed:: q3
 
-        .. tab:: Discussion 
+            .. tab:: Question
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: b271442ee0864973a023c19f27aeb401
+               Write a program that uses a for loop to print
+                 |  ``One of the months of the year is January``
+                 |  ``One of the months of the year is February``
+                 |  ``One of the months of the year is March``
+                 |  etc ...
 
+               .. actex:: ex_3_3
 
-#. Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
+            .. tab:: Answer
 
-   a. Write a loop that prints each of the numbers on a new line.
-   b. Write a loop that prints each number and its square on a new line.
+                .. activecode:: q3_answer
 
-   .. actex:: ex_3_4
 
-#.
+                    for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
+                        print("One of the months of the year is", amonth)
 
-    .. tabbed:: q5
+            .. tab:: Discussion
 
-        .. tab:: Question
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: b271442ee0864973a023c19f27aeb401
 
-           Use ``for`` loops to make a turtle draw these regular polygons
-           (regular means all sides the same lengths, all angles the same):
-        
-           * An equilateral triangle
-           * A square
-           * A hexagon (six sides)
-           * An octagon (eight sides)
-        
-           .. actex:: ex_3_5
-              :nocodelens:
 
-        .. tab:: Answer
-            
-            .. sourcecode:: python
-                
-                # draw an equilateral triangle
-                import turtle
+    #. Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
 
-                wn = turtle.Screen()
-                norvig = turtle.Turtle()
+       a. Write a loop that prints each of the numbers on a new line.
+       b. Write a loop that prints each number and its square on a new line.
 
-                for i in range(3):
-                    norvig.forward(100)
+       .. actex:: ex_3_4
 
-                    # the angle of each vertice of a regular polygon 
-                    # is 360 divided by the number of sides
-                    norvig.left(360/3)
+    #.
 
-                wn.exitonclick()
+        .. tabbed:: q5
 
-            .. sourcecode:: python
+            .. tab:: Question
 
-                # draw a square    
-                import turtle
+               Use ``for`` loops to make a turtle draw these regular polygons
+               (regular means all sides the same lengths, all angles the same):
 
-                wn = turtle.Screen()
-                kurzweil = turtle.Turtle()
+               * An equilateral triangle
+               * A square
+               * A hexagon (six sides)
+               * An octagon (eight sides)
 
-                for i in range(4):
-                    kurzweil.forward(100)
-                    kurzweil.left(360/4)
+               .. actex:: ex_3_5
+                  :nocodelens:
 
-                wn.exitonclick()
+            .. tab:: Answer
 
-            .. sourcecode:: python
+                .. sourcecode:: python
 
-                # draw a hexagon    
-                import turtle
+                    # draw an equilateral triangle
+                    import turtle
 
-                wn = turtle.Screen()
-                dijkstra = turtle.Turtle()
+                    wn = turtle.Screen()
+                    norvig = turtle.Turtle()
 
-                for i in range(6):
-                    dijkstra.forward(100)
-                    dijkstra.left(360/6)
+                    for i in range(3):
+                        norvig.forward(100)
 
-                wn.exitonclick()
+                        # the angle of each vertice of a regular polygon
+                        # is 360 divided by the number of sides
+                        norvig.left(360/3)
 
-            .. sourcecode:: python
+                    wn.exitonclick()
 
-                # draw an octogon    
-                import turtle
+                .. sourcecode:: python
 
-                wn = turtle.Screen()
-                knuth = turtle.Turtle()
+                    # draw a square
+                    import turtle
 
-                for i in range(8):
-                    knuth.forward(75)
-                    knuth.left(360/8)
+                    wn = turtle.Screen()
+                    kurzweil = turtle.Turtle()
 
-                wn.exitonclick()
-                
-        .. tab:: Discussion 
+                    for i in range(4):
+                        kurzweil.forward(100)
+                        kurzweil.left(360/4)
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f36e8bc742b89424e82f111ba2d1dd33f
+                    wn.exitonclick()
 
+                .. sourcecode:: python
 
-#.  Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
-    regular polygon.  The program should draw the polygon and then fill it in.
+                    # draw a hexagon
+                    import turtle
 
-   
+                    wn = turtle.Screen()
+                    dijkstra = turtle.Turtle()
 
-    .. actex:: ex_3_6
-       :nocodelens:
+                    for i in range(6):
+                        dijkstra.forward(100)
+                        dijkstra.left(360/6)
 
+                    wn.exitonclick()
 
-#. 
-    .. tabbed:: q7
+                .. sourcecode:: python
 
-       .. tab:: Question
+                    # draw an octogon
+                    import turtle
 
-            A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
+                    wn = turtle.Screen()
+                    knuth = turtle.Turtle()
 
-            .. actex:: ex_3_7
-               :nocodelens:
+                    for i in range(8):
+                        knuth.forward(75)
+                        knuth.left(360/8)
 
-       .. tab:: Answer
+                    wn.exitonclick()
 
-           .. activecode:: q7_answer
-               :nocodelens:
+            .. tab:: Discussion
 
-               import turtle
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: f36e8bc742b89424e82f111ba2d1dd33f
 
-               wn = turtle.Screen()
-               lovelace = turtle.Turtle()
 
-               # move the turtle forward a little so that the whole path fits on the screen
-               lovelace.penup()
-               lovelace.forward(60)
+    #.  Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
+        regular polygon.  The program should draw the polygon and then fill it in.
 
-               # now draw the drunk pirate's path
-               lovelace.pendown()
-               for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
-                   
-                   # we use .left() so that positive angles are counter-clockwise
-                   # and negative angles are clockwise
-                   lovelace.left(angle)
-                   lovelace.forward(100)
 
-               # the .heading() method gives us the turtle's current heading in degrees
-               print("The pirate's final heading was", lovelace.heading())
 
-               wn.exitonclick()
+        .. actex:: ex_3_6
+           :nocodelens:
 
-       .. tab:: Discussion
 
-	       .. disqus::
-	            :shortname: interactivepython
-	            :identifier: a7e34946f59f348f2bfeb3f918eb57b7a
+    #.
+        .. tabbed:: q7
 
+           .. tab:: Question
 
-#. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
-   and check your answer.
+                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
 
-   .. actex:: ex_3_8
-       :nocodelens:
+                .. actex:: ex_3_7
+                   :nocodelens:
 
-       import turtle
-       wn = turtle.Screen()
-       tess = turtle.Turtle()
-       tess.right(90)
-       tess.left(3600)
-       tess.right(-90)
-       tess.left(3600)
-       tess.left(3645)
-       tess.forward(-100)
+           .. tab:: Answer
 
+               .. activecode:: q7_answer
+                   :nocodelens:
 
-#.
+                   import turtle
 
-    .. tabbed:: q9
+                   wn = turtle.Screen()
+                   lovelace = turtle.Turtle()
 
-        .. tab:: Question
+                   # move the turtle forward a little so that the whole path fits on the screen
+                   lovelace.penup()
+                   lovelace.forward(60)
 
-           Write a program to draw a shape like this:
-        
-           .. image:: Figures/star.png
-        
-           .. actex:: ex_3_9
-              :nocodelens:
+                   # now draw the drunk pirate's path
+                   lovelace.pendown()
+                   for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
 
-        .. tab:: Answer
+                       # we use .left() so that positive angles are counter-clockwise
+                       # and negative angles are clockwise
+                       lovelace.left(angle)
+                       lovelace.forward(100)
 
-            .. activecode:: q9_answer
-                :nocodelens:
-                
-                import turtle
+                   # the .heading() method gives us the turtle's current heading in degrees
+                   print("The pirate's final heading was", lovelace.heading())
 
-                turing = turtle.Turtle()
+                   wn.exitonclick()
 
-                for i in range(5):
-                    turing.forward(110)
-                    turing.left(216)
+           .. tab:: Discussion
 
-        .. tab:: Discussion 
+               .. disqus::
+                    :shortname: interactivepython
+                    :identifier: a7e34946f59f348f2bfeb3f918eb57b7a
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: c611217310057488aab6a34d4b591e753
 
+    #. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
+       and check your answer.
 
-#. Write a program to draw a face of a clock that looks something like this:
+       .. actex:: ex_3_8
+           :nocodelens:
 
-   .. image:: Figures/tess_clock1.png
+           import turtle
+           wn = turtle.Screen()
+           tess = turtle.Turtle()
+           tess.right(90)
+           tess.left(3600)
+           tess.right(-90)
+           tess.left(3600)
+           tess.left(3645)
+           tess.forward(-100)
 
-   .. actex:: ex_3_10
-      :nocodelens:
 
-#.
+    #.
 
-    .. tabbed:: q11
+        .. tabbed:: q9
 
-        .. tab:: Question
+            .. tab:: Question
 
-           Write a program to draw some kind of picture.  Be creative and experiment
-           with the turtle methods provided in :ref:`turtle_methods`.
-        
-           .. actex:: ex_3_11
-              :nocodelens:
+               Write a program to draw a shape like this:
 
-        .. tab:: Answer
-            
-            .. activecode:: q11_answer
-                :nocodelens:
+               .. image:: Figures/star.png
 
-                import turtle
+               .. actex:: ex_3_9
+                  :nocodelens:
 
-                tanenbaum = turtle.Turtle()
+            .. tab:: Answer
 
-                tanenbaum.hideturtle()
-                tanenbaum.speed(20)
+                .. activecode:: q9_answer
+                    :nocodelens:
 
-                for i in range(350):
-                    tanenbaum.forward(i)
-                    tanenbaum.right(98)
+                    import turtle
 
-        .. tab:: Discussion 
+                    turing = turtle.Turtle()
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: e928a562a4f5c41f9892c9bfc4a1d5883
+                    for i in range(5):
+                        turing.forward(110)
+                        turing.left(216)
 
+            .. tab:: Discussion
 
-#. Create a turtle and assign it to a variable.  When you print its type, what do you get?
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: c611217310057488aab6a34d4b591e753
 
-   .. actex:: ex_3_12
-      :nocodelens:
 
-#.
+    #. Write a program to draw a face of a clock that looks something like this:
 
-    .. tabbed:: q13
+       .. image:: Figures/tess_clock1.png
 
-        .. tab:: Question
-            
-            A sprite is a simple spider shaped thing with n legs coming out from a center 
-            point. The angle between each leg is 360 / n degrees.
+       .. actex:: ex_3_10
+          :nocodelens:
 
-            Write a program to draw a sprite where the number of legs is provided by the user.
-                   
-            .. actex:: ex_3_13
-               :nocodelens:
+    #.
 
-        .. tab:: Answer
-            
-            .. activecode:: q13_answer
-                :nocodelens:
-                
-                import turtle
+        .. tabbed:: q11
 
-                wn = turtle.Screen()
+            .. tab:: Question
 
-                babbage = turtle.Turtle()
-                babbage.shape("triangle")
+               Write a program to draw some kind of picture.  Be creative and experiment
+               with the turtle methods provided in :ref:`turtle_methods`.
 
-                n = int(input("How many legs should this sprite have? "))
-                angle = 360 / n
+               .. actex:: ex_3_11
+                  :nocodelens:
 
-                for i in range(n):
-                    # draw the leg
-                    babbage.right(angle)
-                    babbage.forward(65)
-                    babbage.stamp()
-                    
-                    # go back to the middle and turn back around
-                    babbage.right(180)
-                    babbage.forward(65)
-                    babbage.right(180)
+            .. tab:: Answer
 
-                babbage.shape("circle")
+                .. activecode:: q11_answer
+                    :nocodelens:
 
-                wn.exitonclick()
-    
-        
+                    import turtle
 
-        .. tab:: Discussion 
+                    tanenbaum = turtle.Turtle()
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: b65d7e616d2b548f592205dba699cc132
+                    tanenbaum.hideturtle()
+                    tanenbaum.speed(20)
+
+                    for i in range(350):
+                        tanenbaum.forward(i)
+                        tanenbaum.right(98)
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: e928a562a4f5c41f9892c9bfc4a1d5883
+
+
+    #. Create a turtle and assign it to a variable.  When you print its type, what do you get?
+
+       .. actex:: ex_3_12
+          :nocodelens:
+
+    #.
+
+        .. tabbed:: q13
+
+            .. tab:: Question
+
+                A sprite is a simple spider shaped thing with n legs coming out from a center
+                point. The angle between each leg is 360 / n degrees.
+
+                Write a program to draw a sprite where the number of legs is provided by the user.
+
+                .. actex:: ex_3_13
+                   :nocodelens:
+
+            .. tab:: Answer
+
+                .. activecode:: q13_answer
+                    :nocodelens:
+
+                    import turtle
+
+                    wn = turtle.Screen()
+
+                    babbage = turtle.Turtle()
+                    babbage.shape("triangle")
+
+                    n = int(input("How many legs should this sprite have? "))
+                    angle = 360 / n
+
+                    for i in range(n):
+                        # draw the leg
+                        babbage.right(angle)
+                        babbage.forward(65)
+                        babbage.stamp()
+
+                        # go back to the middle and turn back around
+                        babbage.right(180)
+                        babbage.forward(65)
+                        babbage.right(180)
+
+                    babbage.shape("circle")
+
+                    wn.exitonclick()
+
+
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: b65d7e616d2b548f592205dba699cc132
 
