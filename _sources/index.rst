@@ -55,6 +55,7 @@
        w.write("How to Think Like a ",True,"center","40pt Bold")
        w.goto(0,-35)
        w.write("Computer Scientist",True,"center","40pt Bold")
+       w.update()
 
    def moveTurtles(turtleList,dist,angle):
        for turtle in turtleList:   # Make every turtle on the list do the same actions.
