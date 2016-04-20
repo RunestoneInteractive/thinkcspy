@@ -9,280 +9,281 @@
 
 Exercises
 ---------
+.. container:: full_width
 
-1.
+    1.
 
-    .. tabbed:: q1
+        .. tabbed:: q1
 
-        .. tab:: Question
-            
-            Evaluate the following numerical expressions in your head, then use
-            the active code window to check your results:
+            .. tab:: Question
 
-            #. ``5 ** 2``
-            #. ``9 * 5``
-            #. ``15 / 12``
-            #. ``12 / 15``
-            #. ``15 // 12``
-            #. ``12 // 15``
-            #. ``5 % 2``
-            #. ``9 % 5``
-            #. ``15 % 12``
-            #. ``12 % 15``
-            #. ``6 % 6``
-            #. ``0 % 7``
+                Evaluate the following numerical expressions in your head, then use
+                the active code window to check your results:
 
-            .. activecode:: ch02_ex1
+                #. ``5 ** 2``
+                #. ``9 * 5``
+                #. ``15 / 12``
+                #. ``12 / 15``
+                #. ``15 // 12``
+                #. ``12 // 15``
+                #. ``5 % 2``
+                #. ``9 % 5``
+                #. ``15 % 12``
+                #. ``12 % 15``
+                #. ``6 % 6``
+                #. ``0 % 7``
 
-               print(5 ** 2)
+                .. activecode:: ch02_ex1
 
-        .. tab:: Answer
+                   print(5 ** 2)
 
-            #. ``5 ** 2  = 25``
-            #. ``9 * 5 = 45``
-            #. ``15 / 12 = 1.25``
-            #. ``12 / 15 = 0.8``
-            #. ``15 // 12 = 1``
-            #. ``12 // 15 = 0``
-            #. ``5 % 2 = 1``
-            #. ``9 % 5 = 4``
-            #. ``15 % 12 = 3``
-            #. ``12 % 15 = 12``
-            #. ``6 % 6 = 0``
-            #. ``0 % 7 = 0``
+            .. tab:: Answer
 
-        .. tab:: Discussion
+                #. ``5 ** 2  = 25``
+                #. ``9 * 5 = 45``
+                #. ``15 / 12 = 1.25``
+                #. ``12 / 15 = 0.8``
+                #. ``15 // 12 = 1``
+                #. ``12 // 15 = 0``
+                #. ``5 % 2 = 1``
+                #. ``9 % 5 = 4``
+                #. ``15 % 12 = 3``
+                #. ``12 % 15 = 12``
+                #. ``6 % 6 = 0``
+                #. ``0 % 7 = 0``
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: c0a62044cac248859ce3695b46697ecc
+            .. tab:: Discussion
 
-#. What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: c0a62044cac248859ce3695b46697ecc
 
-      2 + (3 - 1) * 10 / 5 * (2 + 3)
+    #. What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
 
-   .. actex:: ex_2_2
+          2 + (3 - 1) * 10 / 5 * (2 + 3)
 
+       .. actex:: ex_2_2
 
 
-#. 
 
-    .. tabbed:: q3
+    #.
 
-        .. tab:: Question
+        .. tabbed:: q3
 
-            Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).  
-            If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
-            Write a Python program to solve the general version of the above problem.
-            Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
-            Your program should output what the time will be on the clock when the alarm goes off.
+            .. tab:: Question
 
-            .. actex:: ex_2_3
-        
-        .. tab:: Answer
-            
-            .. activecode:: q3_answer
-                :nocanvas:
-                
-                ## question 3 solution ##
+                Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
+                If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
+                Write a Python program to solve the general version of the above problem.
+                Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
+                Your program should output what the time will be on the clock when the alarm goes off.
 
-                current_time_string = input("What is the current time (in hours)? ")
-                waiting_time_string = input("How many hours do you have to wait? ")
+                .. actex:: ex_2_3
 
-                current_time_int = int(current_time_string)
-                waiting_time_int = int(waiting_time_string)
+            .. tab:: Answer
 
-                hours = current_time_int + waiting_time_int
+                .. activecode:: q3_answer
+                    :nocanvas:
 
-                timeofday = hours % 24
+                    ## question 3 solution ##
 
-                print(timeofday)
+                    current_time_string = input("What is the current time (in hours)? ")
+                    waiting_time_string = input("How many hours do you have to wait? ")
 
-        .. tab:: Discussion
+                    current_time_int = int(current_time_string)
+                    waiting_time_int = int(waiting_time_string)
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: a77ed6163c254612b0d649034b261659
+                    hours = current_time_int + waiting_time_int
 
+                    timeofday = hours % 24
 
-#. It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
-   leaving on day number 3 (a Wednesday) and you return home after 10 nights.
-   Write a general version of the program which asks for the starting day number, and
-   the length of your stay, and it will tell you the number of day of the week you will return on.
+                    print(timeofday)
 
-   .. actex:: ex_2_4
+            .. tab:: Discussion
 
-       # Problem 4
-       # My Name:
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: a77ed6163c254612b0d649034b261659
 
 
-#. 
+    #. It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
+       leaving on day number 3 (a Wednesday) and you return home after 10 nights.
+       Write a general version of the program which asks for the starting day number, and
+       the length of your stay, and it will tell you the number of day of the week you will return on.
 
-    .. tabbed:: q5
+       .. actex:: ex_2_4
 
-        .. tab:: Question
+           # Problem 4
+           # My Name:
 
-            Take the sentence: *All work and no play makes Jack a dull boy.*
-            Store each word in a separate variable, then print out the sentence on
-            one line using ``print``.
 
-            .. actex:: ex_2_5
+    #.
 
-        .. tab:: Answer
+        .. tabbed:: q5
 
-            .. activecode:: q5_answer    
-                :nocanvas:
+            .. tab:: Question
 
-                ## question 5 solution ##
+                Take the sentence: *All work and no play makes Jack a dull boy.*
+                Store each word in a separate variable, then print out the sentence on
+                one line using ``print``.
 
-                word1 = "All"
-                word2 = "work"
-                word3 = "and"
-                word4 = "no"
-                word5 = "play"
-                word6 = "makes"
-                word7 = "Jack"
-                word8 = "a"
-                word9 = "dull"
-                word10 = "boy."
+                .. actex:: ex_2_5
 
-                print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
-        
+            .. tab:: Answer
 
-        .. tab:: Discussion
+                .. activecode:: q5_answer
+                    :nocanvas:
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: d1a30631e500449481955e02d3761dd3
+                    ## question 5 solution ##
 
+                    word1 = "All"
+                    word2 = "work"
+                    word3 = "and"
+                    word4 = "no"
+                    word5 = "play"
+                    word6 = "makes"
+                    word7 = "Jack"
+                    word8 = "a"
+                    word9 = "dull"
+                    word10 = "boy."
 
-#. Add parenthesis to the expression ``6 * 1 - 2`` to change its value
-   from 4 to -6.
+                    print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
 
-   .. actex:: ex_2_6
 
-  
-#.
+            .. tab:: Discussion
 
-    .. tabbed:: q7
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: d1a30631e500449481955e02d3761dd3
 
-        .. tab:: Question
 
-            The formula for computing the final amount if one is earning
-            compound interest is given on Wikipedia as
+    #. Add parenthesis to the expression ``6 * 1 - 2`` to change its value
+       from 4 to -6.
 
-            .. image:: Figures/compoundInterest.png
-                :alt: formula for compound interest
+       .. actex:: ex_2_6
 
-            Write a Python program that assigns the principal amount of 10000 to
-            variable `P`, assign to `n` the value 12, and assign to `r` the interest
-            rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-            `t`, that the money will be compounded for.  Calculate and print the final
-            amount after `t` years.
 
-            .. actex:: ex_2_7
+    #.
 
-        .. tab:: Answer
+        .. tabbed:: q7
 
-            .. activecode:: q7_answer
-                :nocanvas:
+            .. tab:: Question
 
-                ## question 7 solution ##
+                The formula for computing the final amount if one is earning
+                compound interest is given on Wikipedia as
 
-                P = 10000
-                n = 12
-                r = 0.08
+                .. image:: Figures/compoundInterest.png
+                    :alt: formula for compound interest
 
-                t = int(input("Compound for how many years? "))
+                Write a Python program that assigns the principal amount of 10000 to
+                variable `P`, assign to `n` the value 12, and assign to `r` the interest
+                rate of 8% (0.08).  Then have the program prompt the user for the number of years,
+                `t`, that the money will be compounded for.  Calculate and print the final
+                amount after `t` years.
 
-                final = P * ( ((1 + (r/n)) ** (n * t)) )
+                .. actex:: ex_2_7
 
-                print ("The final amount after", t, "years is", final)
+            .. tab:: Answer
 
-    
-        .. tab:: Discussion
+                .. activecode:: q7_answer
+                    :nocanvas:
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f14145f85af93420ba0c05fca5d1b4d9a
+                    ## question 7 solution ##
 
-  
-#. Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
-   back to the user with the answer.
+                    P = 10000
+                    n = 12
+                    r = 0.08
 
-   .. actex:: ex_2_8
+                    t = int(input("Compound for how many years? "))
 
-  
-#.
+                    final = P * ( ((1 + (r/n)) ** (n * t)) )
 
-    .. tabbed:: q9
+                    print ("The final amount after", t, "years is", final)
 
-        .. tab:: Question
 
-            Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
-            Print a nice message with the answer.
+            .. tab:: Discussion
 
-            .. actex:: ex_2_9
-        
-        .. tab:: Answer
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: f14145f85af93420ba0c05fca5d1b4d9a
 
-            .. activecode:: q9_answer
-                :nocanvas:        
 
-                ## question 9 solution
+    #. Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
+       back to the user with the answer.
 
-                width = int(input("Width? "))
-                height = int(input("Height? "))
+       .. actex:: ex_2_8
 
-                area = width * height
 
-                print("The area of the rectangle is", area)
+    #.
 
+        .. tabbed:: q9
 
-        .. tab:: Discussion
+            .. tab:: Question
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: f69d286cc58943b6aef1d886e279a12b
+                Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
+                Print a nice message with the answer.
 
-  
-#. Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
-   gallons used.  Print a nice message with the answer.
+                .. actex:: ex_2_9
 
-   .. actex:: ex_2_10
+            .. tab:: Answer
 
-  
-#. 
+                .. activecode:: q9_answer
+                    :nocanvas:
 
-    .. tabbed:: q11
+                    ## question 9 solution
 
-        .. tab:: Question
+                    width = int(input("Width? "))
+                    height = int(input("Height? "))
 
-            Write a program that will convert degrees celsius to degrees fahrenheit.
+                    area = width * height
 
-            .. actex:: ex_2_11
-        
-        .. tab:: Answer
+                    print("The area of the rectangle is", area)
 
-            .. activecode:: q11_answer
-                :nocanvas:
 
-                ## question 11 solution ##
+            .. tab:: Discussion
 
-                deg_c = int(input("What is the temperature in Celsius? "))
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: f69d286cc58943b6aef1d886e279a12b
 
-                # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
-                deg_f = deg_c * (9 / 5) + 32
 
-                print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
+    #. Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
+       gallons used.  Print a nice message with the answer.
 
-        .. tab:: Discussion
+       .. actex:: ex_2_10
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: c4a929d598ab4c46b484f6abbcec2655
 
-  
-#. Write a program that will convert degrees fahrenheit to degrees celsius.
+    #.
 
-   .. actex:: ex_2_12
+        .. tabbed:: q11
+
+            .. tab:: Question
+
+                Write a program that will convert degrees celsius to degrees fahrenheit.
+
+                .. actex:: ex_2_11
+
+            .. tab:: Answer
+
+                .. activecode:: q11_answer
+                    :nocanvas:
+
+                    ## question 11 solution ##
+
+                    deg_c = int(input("What is the temperature in Celsius? "))
+
+                    # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
+                    deg_f = deg_c * (9 / 5) + 32
+
+                    print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: c4a929d598ab4c46b484f6abbcec2655
+
+
+    #. Write a program that will convert degrees fahrenheit to degrees celsius.
+
+       .. actex:: ex_2_12

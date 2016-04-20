@@ -10,62 +10,64 @@
 Exercises
 ---------
 
-#.  .. tabbed:: q1
+.. container:: full_width
 
-        .. tab:: Question
+    #.  .. tabbed:: q1
 
-           Use a ``for`` statement to print 10 random numbers.
-        
-           .. actex:: ex_mod_1
+            .. tab:: Question
 
-        .. tab:: Answer
-            
-            .. activecode:: mod_q1_answer
-            
-               import random
-            
-               howmany = 10
-               for counter in range(howmany):
-                   arandom = random.random()
-                   print(arandom)
+               Use a ``for`` statement to print 10 random numbers.
 
-        .. tab:: Discussion
+               .. actex:: ex_mod_1
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: mods_111
+            .. tab:: Answer
+
+                .. activecode:: mod_q1_answer
+
+                   import random
+
+                   howmany = 10
+                   for counter in range(howmany):
+                       arandom = random.random()
+                       print(arandom)
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: mods_111
 
 
-#.  Repeat the above exercise but this time print 10 random numbers between 25 and 35.
+    #.  Repeat the above exercise but this time print 10 random numbers between 25 and 35.
 
-    .. actex:: ex_mod_2
+        .. actex:: ex_mod_2
 
-#.  .. tabbed:: q3
+    #.  .. tabbed:: q3
 
-        .. tab:: Question
+            .. tab:: Question
 
-           The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
-        
-		           .. actex:: ex_mod_3
+               The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
 
-        .. tab:: Answer
-            
-            .. activecode:: mod_q3_answer
-            
-               import math
-            
-               side1 = 3
-               side2 = 4
-               hypotenuse = math.hypot(side1,side2)
-               print(hypotenuse)
+                       .. actex:: ex_mod_3
 
-        .. tab:: Discussion
+            .. tab:: Answer
 
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: mods_333
+                .. activecode:: mod_q3_answer
 
-#.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
+                   import math
 
-    .. actex:: ex_mod_4
-    
+                   side1 = 3
+                   side2 = 4
+                   hypotenuse = math.hypot(side1,side2)
+                   print(hypotenuse)
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: mods_333
+
+    #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
+
+        .. actex:: ex_mod_4
+

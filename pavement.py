@@ -42,6 +42,8 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
+            'dburl': 'postgresql://bmiller@localhost/runestone',
+            'basecourse': 'thinkcspy',
         }
 
     )

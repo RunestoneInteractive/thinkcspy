@@ -24,7 +24,7 @@ For most readers, a few syntax errors are not a significant problem, which is
 why we can read the poetry of e. e. cummings without problems.
 Python is not so forgiving. If there is a single syntax error anywhere in your
 program, Python will display an error message and quit.  You will not be able
-to complete the execution your program. During the first few weeks of your programming career, you
+to complete the execution of your program. During the first few weeks of your programming career, you
 will probably spend a lot of time tracking down syntax errors. However, as you gain
 experience, you will make fewer errors and you will also be able to find your errors faster.
 
