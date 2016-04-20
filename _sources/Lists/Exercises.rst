@@ -17,15 +17,15 @@ Exercises
 
            Draw a reference diagram for ``a`` and ``b`` before and after the third line of
            the following python code is executed:
-        
+
            .. sourcecode:: python
-            
+
                a = [1, 2, 3]
                b = a[:]
                b[0] = 5
 
         .. tab:: Answer
-            
+
             Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
             ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
 
@@ -47,7 +47,7 @@ Exercises
 
         .. tab:: Question
 
-           Starting with the list in Exercise 1, write Python statements to do the following:
+           Starting with the list in Exercise 2, write Python statements to do the following:
 
            a. Append "apple" and 76 to the list.
            #. Insert the value "cat" at position 3.
@@ -162,7 +162,7 @@ Exercises
 
                 print(countOdd(lst))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -180,11 +180,11 @@ Exercises
         .. tab:: Question
 
            Sum up all the negative numbers in a list.
-        
+
            .. actex:: ex_9_8
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
 
                 import random
@@ -202,7 +202,7 @@ Exercises
 
                 print(sumNegative(lst))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -220,11 +220,11 @@ Exercises
         .. tab:: Question
 
            Sum all the elements in a list up to but not including the first even number.
-        
+
            .. actex:: ex_9_10
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
 
                 import random
@@ -243,7 +243,7 @@ Exercises
 
                 print(sum(lst))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -262,18 +262,18 @@ Exercises
         .. tab:: Question
 
            Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
-        
+
            a. count
            #. in
            #. reverse
            #. index
            #. insert
-        
-           
+
+
            .. actex:: ex_9_12
 
         .. tab:: Answer
-            
+
             .. activecode:: q13_answer
 
                 def count(obj, lst):
@@ -316,7 +316,7 @@ Exercises
                 print(index(2, lst))
                 print(insert('cat', 4, lst))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -327,11 +327,11 @@ Exercises
    ``old`` with ``new`` in a string ``s``::
 
       test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
-      
+
       s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
       test(replace(s, 'om', 'am'),
              'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
-    
+
       test(replace(s, 'o', 'a'),
              'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
 
@@ -346,22 +346,22 @@ Exercises
 
         .. tab:: Question
 
-           Here are the rules for an L-system that creates something that resembles 
+           Here are the rules for an L-system that creates something that resembles
            a common garden herb.  Implement the following rules and try it.  Use an
            angle of 25.7 degrees.
-           
+
            ::
-        
+
                H
                H --> HFX[+H][-H]
                X --> X[-FFF][+FFF]FX
-        
-        
+
+
            .. actex:: ex_9_14
               :nocodelens:
 
         .. tab:: Answer
-            
+
             .. activecode:: q15_answer
                 :nocodelens:
 
@@ -412,7 +412,7 @@ Exercises
                             newInfo = savedInfoList.pop()
                             aTurtle.setheading(newInfo[0])
                             aTurtle.setposition(newInfo[1], newInfo[2])
-                
+
 
                 def main():
                     inst = createLSystem(4, "H")   # create the string
@@ -430,7 +430,7 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -438,9 +438,9 @@ Exercises
 
 
 #. Here is another L-System.  Use an Angle of 25.
-    
+
    ::
-    
+
        F
        F --> F[-F]F[+F]F
 
