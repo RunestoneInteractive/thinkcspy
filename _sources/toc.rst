@@ -220,7 +220,14 @@ Lists
    Lists/Glossary.rst
    Lists/Exercises.rst
 
+Web Applications
+:::::::::::::::::::
 
+.. toctree::
+   :maxdepth: 2
+
+   WebApps/WebApps.rst
+    
 Files
 :::::
 
@@ -298,7 +305,15 @@ Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
-   
+
+Inheritance
+:::::::::::::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Inheritance/Inheritance.rst
+
 Labs
 ::::
 
