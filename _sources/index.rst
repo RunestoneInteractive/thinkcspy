@@ -12,58 +12,16 @@
 
 .. raw:: html
 
-   <h1 style="text-align: center">How to Think Like a Computer Scientist</h1>
-   <h2 style="text-align: center">Learning with Python: Interactive Edition 2.0 </h2>
+   <h1 style="text-align: center">Learning with Python: Interactive Edition 2.0</h1>
 
+Next Steps
+----------
 
-.. raw:: html
-
-    <p>Welcome! Take a tour, experiment with Python, join <span id="totalusers"></span> other readers in learning
-    how to think like a computer scientist with Python.</p>
-
-.. activecode:: welcome
-   :above:
-   :autorun:
-   :hidecode:
-   :nocodelens:
-
-   import turtle
-   import random
-
-   def main():
-       tList = []
-       head = 0
-       numTurtles = 10
-       wn = turtle.Screen()
-       wn.setup(500,500)
-       for i in range(numTurtles):
-           nt = turtle.Turtle()   # Make a new turtle, initialize values
-           nt.setheading(head)
-           nt.pensize(2)
-           nt.color(random.randrange(256),random.randrange(256),random.randrange(256))
-           nt.speed(10)
-           wn.tracer(30,0)
-           tList.append(nt)       # Add the new turtle to the list
-           head = head + 360/numTurtles
-
-       for i in range(100):
-           moveTurtles(tList,15,i)
-
-       w = tList[0]
-       w.up()
-       w.goto(0,40)
-       w.write("How to Think Like a ",True,"center","40pt Bold")
-       w.goto(0,-35)
-       w.write("Computer Scientist",True,"center","40pt Bold")
-       w.update()
-
-   def moveTurtles(turtleList,dist,angle):
-       for turtle in turtleList:   # Make every turtle on the list do the same actions.
-           turtle.forward(dist)
-           turtle.right(angle)
-
-   main()
-
+* Get an overview of the features in this book  `Click Here </runestone/static/overview/overview.html>`_
+* To get help moving around the book:  :ref:`quick_help`
+* Check out a sample chapter `Hello, Little Turtles! </runestone/static/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html>`_
+* Check out the :ref:`t_o_c`
+* Take me to Chapter 1  `The Way of the Program </runestone/static/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html>`_
 
 Benefits of this Interactive Textbook
 -------------------------------------
@@ -82,39 +40,9 @@ Benefits of this Interactive Textbook
 * Short **videos** cover difficult or important topics.
 * You can highlight text, and take notes in scratch editors
 
-Next Steps
-----------
-
-* Get an overview of the features in this book  `Click Here </runestone/static/overview/overview.html>`_
-* To get help moving around the book:  :ref:`quick_help`
-* Check out a sample chapter `Hello, Little Turtles! </runestone/static/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html>`_
-* Check out the :ref:`t_o_c`
-* Take me to Chapter 1  `The Way of the Program </runestone/static/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html>`_
-
-About this Project
-------------------
-
-This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
-
-* This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
-* Activecode based on `Skulpt <http://skulpt.org>`_
-* Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
-* Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
-* ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
-
-The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
-
-Contact
--------
-
-* If you have questions about this book please send me email `bmiller@luther.edu <mailto:bmiller@luther.edu>`_
-* Check out the project on `GitHub <https://github.com/bnmnetp/runestone>`_
-* Visit our `Facebook page <https://www.facebook.com/RunestoneInteractive>`_
-
 
 .. toctree::
    :hidden:
 
    index
    navhelp
-
