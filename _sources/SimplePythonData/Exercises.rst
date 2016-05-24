@@ -52,17 +52,11 @@ Exercises
                 #. ``6 % 6 = 0``
                 #. ``0 % 7 = 0``
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: c0a62044cac248859ce3695b46697ecc
-
     #. What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
 
           2 + (3 - 1) * 10 / 5 * (2 + 3)
 
-       .. actex:: ex_2_2
+       .. activecode:: ex_2_2
 
 
 
@@ -98,12 +92,6 @@ Exercises
                     timeofday = hours % 24
 
                     print(timeofday)
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: a77ed6163c254612b0d649034b261659
 
 
     #. It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday

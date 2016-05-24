@@ -42,7 +42,7 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
-            'dburl': 'postgresql://bmiller@localhost/runestone',
+            'dburl': 'postgres://launchclass:toinfinityandbeyond@localhost/runestone',
             'basecourse': 'thinkcspy',
         }
 
