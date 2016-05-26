@@ -3,12 +3,10 @@
 Schedule
 ||||||||||||||||||
 
+----
 
-Class 0.0 Prep
-~~~~~~~~~~~~~~
-
-General Introduction
-::::::::::::::::::::
+Chapter 0.0
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -22,8 +20,9 @@ General Introduction
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-Simple Python Data
-::::::::::::::::::
+
+Chapter 0.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -42,13 +41,9 @@ Simple Python Data
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
 
-----
 
-Class 1.0 Prep
-~~~~~~~~~~~~~~
-
-Debugging Interlude 1
-:::::::::::::::::::::
+Chapter 1.0
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -64,10 +59,12 @@ Debugging Interlude 1
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
-   
+   PythonOutsideThisBook/Commandline.rst
+   PythonOutsideThisBook/Commandline2.rst
 
-Python Turtle Graphics
-::::::::::::::::::::::
+
+Chapter 1.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -86,11 +83,9 @@ Python Turtle Graphics
 
 ----
 
-Class 2.0 Prep
-~~~~~~~~~~~~~~
 
-Python Modules
-::::::::::::::
+Chapter 2.0 
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -103,8 +98,8 @@ Python Modules
    PythonModules/Exercises.rst
 
 
-Selection
-:::::::::
+Chapter 2.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -122,10 +117,7 @@ Selection
 
 ----
 
-Class 3.0 Prep
-~~~~~~~~~~~~~~
-
-Functions
+Chapter 3.0
 :::::::::
 
 .. toctree::
@@ -146,11 +138,8 @@ Functions
 
 ----
 
-Class 4.0 Prep
-~~~~~~~~~~~~~~
-
-More About Iteration
-::::::::::::::::::::
+Chapter 4.0 
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -169,8 +158,9 @@ More About Iteration
    MoreAboutIteration/Exercises.rst
 
 
-Strings
-:::::::
+
+Chapter 4.1
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -200,11 +190,8 @@ Strings
 
 ----
 
-Class 5.0 Prep
-~~~~~~~~~~~~~~
-
-Lists
-:::::
+Chapter 5.0
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -225,6 +212,13 @@ Lists
    Lists/ListMethods.rst
    Lists/TheReturnofLSystems.rst
    Lists/AppendversusConcatenate.rst
+
+Chapter 5.1
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    Lists/Listsandforloops.rst
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
@@ -242,11 +236,8 @@ Lists
 
 ----
 
-Class 6.0 Prep
-~~~~~~~~~~~~~~
-
-Classes and Objects - the Basics
-::::::::::::::::::::::::::::::::
+Chapter 6.0
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -263,6 +254,11 @@ Classes and Objects - the Basics
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
 
+Chapter 6.1
+:::::::::::
+   
+
+----
 
 Optional Chapters
 ~~~~~~~~~~~~~~~~~~~
