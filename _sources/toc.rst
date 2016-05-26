@@ -1,14 +1,11 @@
 .. _t_o_c:
 
-Table of Contents
-:::::::::::::::::
+Schedule
+||||||||||||||||||
 
-Assignments
-:::::::::::
 
-.. toctree::
-
-   assignments.rst
+Class 0.0 Prep
+~~~~~~~~~~~~~~
 
 General Introduction
 ::::::::::::::::::::
@@ -45,6 +42,10 @@ Simple Python Data
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
 
+----
+
+Class 1.0 Prep
+~~~~~~~~~~~~~~
 
 Debugging Interlude 1
 :::::::::::::::::::::
@@ -52,6 +53,7 @@ Debugging Interlude 1
 .. toctree::
    :maxdepth: 2
 
+   GeneralIntro/WhatisDebugging.rst
    GeneralIntro/WhatisDebugging.rst
    GeneralIntro/Syntaxerrors.rst
    GeneralIntro/RuntimeErrors.rst
@@ -82,6 +84,10 @@ Python Turtle Graphics
    PythonTurtle/Glossary.rst
    PythonTurtle/Exercises.rst
 
+----
+
+Class 2.0 Prep
+~~~~~~~~~~~~~~
 
 Python Modules
 ::::::::::::::
@@ -114,6 +120,11 @@ Selection
    Selection/Glossary.rst
    Selection/Exercises.rst
 
+----
+
+Class 3.0 Prep
+~~~~~~~~~~~~~~
+
 Functions
 :::::::::
 
@@ -133,6 +144,10 @@ Functions
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
 
+----
+
+Class 4.0 Prep
+~~~~~~~~~~~~~~
 
 More About Iteration
 ::::::::::::::::::::
@@ -183,6 +198,11 @@ Strings
    Strings/Glossary.rst
    Strings/Exercises.rst
 
+----
+
+Class 5.0 Prep
+~~~~~~~~~~~~~~
+
 Lists
 :::::
 
@@ -220,7 +240,10 @@ Lists
    Lists/Glossary.rst
    Lists/Exercises.rst
 
+----
 
+Class 6.0 Prep
+~~~~~~~~~~~~~~
 
 Classes and Objects - the Basics
 ::::::::::::::::::::::::::::::::
@@ -240,6 +263,10 @@ Classes and Objects - the Basics
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
 
+
+Optional Chapters
+~~~~~~~~~~~~~~~~~~~
+
 Hacker Chapter: Files
 :::::::::::::::::::::
 
@@ -254,7 +281,6 @@ Hacker Chapter: Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
-
 
 Hacker Chapter: Dictionaries
 ::::::::::::::::::::::::::::
@@ -298,6 +324,8 @@ Hacker Chapter: Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
+
+----
 
 Appendices
 ::::::::::
