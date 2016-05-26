@@ -20,7 +20,7 @@ Exercises
 
                Write a program that prints ``We like Python's turtles!`` 1000 times.
 
-               .. actex:: ex_3_1
+               .. activecode:: ex_3_1
 
             .. tab:: Answer
 
@@ -52,7 +52,7 @@ Exercises
                  |  ``One of the months of the year is March``
                  |  etc ...
 
-               .. actex:: ex_3_3
+               .. activecode:: ex_3_3
 
             .. tab:: Answer
 
@@ -74,7 +74,7 @@ Exercises
        a. Write a loop that prints each of the numbers on a new line.
        b. Write a loop that prints each number and its square on a new line.
 
-       .. actex:: ex_3_4
+       .. activecode:: ex_3_4
 
     #.
 
@@ -90,7 +90,7 @@ Exercises
                * A hexagon (six sides)
                * An octagon (eight sides)
 
-               .. actex:: ex_3_5
+               .. activecode:: ex_3_5
                   :nocodelens:
 
             .. tab:: Answer
@@ -166,7 +166,7 @@ Exercises
 
 
 
-        .. actex:: ex_3_6
+        .. activecode:: ex_3_6
            :nocodelens:
 
 
@@ -177,7 +177,7 @@ Exercises
 
                 A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
 
-                .. actex:: ex_3_7
+                .. activecode:: ex_3_7
                    :nocodelens:
 
            .. tab:: Answer
@@ -218,7 +218,7 @@ Exercises
     #. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
        and check your answer.
 
-       .. actex:: ex_3_8
+       .. activecode:: ex_3_8
            :nocodelens:
 
            import turtle
@@ -242,7 +242,7 @@ Exercises
 
                .. image:: Figures/star.png
 
-               .. actex:: ex_3_9
+               .. activecode:: ex_3_9
                   :nocodelens:
 
             .. tab:: Answer
@@ -269,7 +269,7 @@ Exercises
 
        .. image:: Figures/tess_clock1.png
 
-       .. actex:: ex_3_10
+       .. activecode:: ex_3_10
           :nocodelens:
 
     #.
@@ -281,7 +281,7 @@ Exercises
                Write a program to draw some kind of picture.  Be creative and experiment
                with the turtle methods provided in :ref:`turtle_methods`.
 
-               .. actex:: ex_3_11
+               .. activecode:: ex_3_11
                   :nocodelens:
 
             .. tab:: Answer
@@ -309,7 +309,7 @@ Exercises
 
     #. Create a turtle and assign it to a variable.  When you print its type, what do you get?
 
-       .. actex:: ex_3_12
+       .. activecode:: ex_3_12
           :nocodelens:
 
     #.
@@ -323,7 +323,7 @@ Exercises
 
                 Write a program to draw a sprite where the number of legs is provided by the user.
 
-                .. actex:: ex_3_13
+                .. activecode:: ex_3_13
                    :nocodelens:
 
             .. tab:: Answer

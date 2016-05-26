@@ -23,7 +23,7 @@ Exercises
                prints out ``better`` each time it is calculated. Call your modified
                function with 25 as an argument and record the results.
 
-               .. actex:: ex_7_7
+               .. activecode:: ex_7_7
 
 
             .. tab:: Answer
@@ -61,7 +61,7 @@ Exercises
 
        (*hint: use a web search to find out what a triangular number is.*)
 
-       .. actex:: ex_7_8
+       .. activecode:: ex_7_8
 
 
     #.
@@ -74,7 +74,7 @@ Exercises
                and returns ``True`` when the argument is a *prime number* and ``False``
                otherwise.
 
-               .. actex:: ex_7_9
+               .. activecode:: ex_7_9
 
 
 
@@ -105,7 +105,7 @@ Exercises
     #. Modify the walking turtle program so that rather than a 90 degree left or right turn the
        angle of the turn is determined randomly at each step.
 
-        .. actex:: ex_7_14
+        .. activecode:: ex_7_14
            :nocodelens:
 
 
@@ -120,7 +120,7 @@ Exercises
                Modify the turtle walk program so that you have two turtles each with a
                random starting location.  Keep the turtles moving until one of them leaves the screen.
 
-               .. actex:: ex_7_13
+               .. activecode:: ex_7_13
                   :nocodelens:
 
             .. tab:: Answer
@@ -204,7 +204,7 @@ Exercises
     #. Modify the previous turtle walk program so that the turtle turns around
        when it hits the wall or when one turtle collides with another turtle.
 
-       .. actex:: ex_7_12
+       .. activecode:: ex_7_12
           :nocodelens:
 
 
@@ -224,7 +224,7 @@ Exercises
                    <h4 style="text-align: left;">For this and the following exercises, use the
                    luther.jpg photo.</h4>
 
-               .. actex:: ex_7_15
+               .. activecode:: ex_7_15
                   :nocodelens:
 
             .. tab:: Answer
@@ -262,7 +262,7 @@ Exercises
 
     #. Write a function to convert the image to grayscale.
 
-        .. actex:: ex_7_16
+        .. activecode:: ex_7_16
            :nocodelens:
 
     #.
@@ -273,7 +273,7 @@ Exercises
 
                Write a function to convert an image to black and white.
 
-               .. actex:: ex_7_17
+               .. activecode:: ex_7_17
                   :nocodelens:
 
             .. tab:: Answer
@@ -341,7 +341,7 @@ Exercises
        Write a function to convert an image to sepia tone. *Hint:*
        Remember that rgb values must be integers between 0 and 255.
 
-        .. actex:: ex_7_18
+        .. activecode:: ex_7_18
            :nocodelens:
 
     #.
@@ -353,7 +353,7 @@ Exercises
                Write a function to uniformly enlarge an image by a factor of 2 (double the size).
 
 
-               .. actex:: ex_7_19
+               .. activecode:: ex_7_19
                   :nocodelens:
 
             .. tab:: Answer
@@ -402,7 +402,7 @@ Exercises
          parameter and smooths the image.  Your function should return a new image
          that is the same as the old but smoothed.
 
-           .. actex:: ex_7_20
+           .. activecode:: ex_7_20
               :nocodelens:
 
     #.
@@ -415,7 +415,7 @@ Exercises
                parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
                a new pixel.
 
-               .. actex:: ex_7_21
+               .. activecode:: ex_7_21
                   :nocodelens:
 
             .. tab:: Answer
@@ -465,7 +465,7 @@ Exercises
        or the images may even be damaged.  One way of eliminating this noise is
        to replace each pixel by the median value of the pixels surrounding it.
 
-        .. actex:: ex_7_22
+        .. activecode:: ex_7_22
            :nocodelens:
 
     #.
@@ -476,7 +476,7 @@ Exercises
 
                Research the Sobel edge detection algorithm and implement it.
 
-               .. actex:: ex_7_23
+               .. activecode:: ex_7_23
                   :nocodelens:
 
 

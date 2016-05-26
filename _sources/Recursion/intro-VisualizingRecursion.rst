@@ -174,7 +174,7 @@ interesting options to make your tree look more realistic.
       subtracting the same amount you subtract a random amount in some
       range.
 
-   .. actex:: recursion_sc_3
+   .. activecode:: recursion_sc_3
       :nocodelens:
 
 

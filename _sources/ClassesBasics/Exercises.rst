@@ -22,7 +22,7 @@ Exercises
                takes a ``Point`` as a parameter and
                computes the distance between that point and self.
 
-               .. actex:: classes_q1
+               .. activecode:: classes_q1
 
             .. tab:: Answer
 
@@ -68,7 +68,7 @@ Exercises
        reflection of the point about the x-axis.  For example,
        ``Point(3, 5).reflect_x()`` is (3, -5)
 
-       .. actex:: ch_cl_02
+       .. activecode:: ch_cl_02
 
     #.
 
@@ -84,7 +84,7 @@ Exercises
 
                What cases will cause your method to fail? Return None when it happens.
 
-               .. actex:: classes_q3
+               .. activecode:: classes_q3
 
             .. tab:: Answer
 
@@ -137,7 +137,7 @@ Exercises
        This tells us that the equation of the line joining the two points is "y = 2x + 3".
        When will your method fail?
 
-       .. actex:: ch_cl_04
+       .. activecode:: ch_cl_04
 
     #.
 
@@ -149,7 +149,7 @@ Exercises
                cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
                state of the point)
 
-               .. actex:: classes_q5
+               .. activecode:: classes_q5
 
             .. tab:: Answer
 
@@ -195,4 +195,4 @@ Exercises
 
     #.  Given three points that fall on the circumference of a circle, find the center and radius of the circle.
 
-        .. actex:: classes_q6
+        .. activecode:: classes_q6

@@ -42,7 +42,7 @@ Exercises
                    w  2
                    $
 
-               .. actex:: ex_11_01
+               .. activecode:: ex_11_01
 
             .. tab:: Answer
 
@@ -163,7 +163,7 @@ Exercises
                How many times does the word, ``alice``, occur in the book?  If you are writing this
                in the activecode window simply print out the results rather than write them to a file.
 
-               .. actex:: ex_11_02
+               .. activecode:: ex_11_02
 
             .. tab:: Answer
 
@@ -213,7 +213,7 @@ Exercises
 
     #. What is the longest word in Alice in Wonderland? How many characters does it have?
 
-       .. actex:: ex_11_03
+       .. activecode:: ex_11_03
 
     #.
 
@@ -249,7 +249,7 @@ Exercises
                 Write a program that asks the user for a sentence in English and then translates that
                 sentence to Pirate.
 
-                .. actex:: ex_11_04
+                .. activecode:: ex_11_04
 
 
             .. tab:: Answer

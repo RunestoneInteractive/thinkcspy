@@ -119,7 +119,7 @@ we get the result in the proper order.
 
    Write a function that takes a string as a parameter and returns a new string that is the reverse of the old string.
 
-   .. actex:: recursion_sc_1
+   .. activecode:: recursion_sc_1
 
       from test import testEqual
       def reverse(s):
@@ -141,7 +141,7 @@ we get the result in the proper order.
    * Kanakanak --  a town in Alaska
    * Wassamassaw -- a town in South Dakota
 
-   .. actex:: recursion_sc_2
+   .. activecode:: recursion_sc_2
 
       from test import testEqual
       def removeWhite(s):

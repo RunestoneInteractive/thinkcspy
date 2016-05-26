@@ -27,5 +27,5 @@ times each letter occurs.  Make sure it is in alphabetical order from left to ri
 #. Make a histogram bar for each.
 
 
-.. actex:: histlab
+.. activecode:: histlab
    :nocodelens:

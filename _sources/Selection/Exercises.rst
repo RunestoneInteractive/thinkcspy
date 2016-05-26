@@ -22,7 +22,7 @@ Exercises
             #.  ``3 >= 4``
             #.  ``not (3 < 4)``
         
-                .. actex:: ex_6_1
+                .. activecode:: ex_6_1
         
 
         .. tab:: Answer
@@ -46,7 +46,7 @@ Exercises
     #.  ``a >= 18  and  day == 3``
     #.  ``a >= 18  or  day != 3``
 
-        .. actex:: ex_6_2
+        .. activecode:: ex_6_2
 
 #.
 
@@ -74,7 +74,7 @@ Exercises
         
             Test your function by printing the mark and the grade for a number of different marks.
         
-            .. actex:: ex_6_3
+            .. activecode:: ex_6_3
 
         .. tab:: Answer
             
@@ -109,7 +109,7 @@ Exercises
     of 200 or more is filled with red, values between [100 and 200) are filled yellow,
     and bars representing values less than 100 are filled green.
 
-    .. actex:: ex_6_4
+    .. activecode:: ex_6_4
        :nocodelens:
 
 #.
@@ -123,7 +123,7 @@ Exercises
             program so that when it prints the text value for the negative bars, it puts
             the text above the base of the bar (on the 0 axis).
         
-            .. actex:: ex_6_5
+            .. activecode:: ex_6_5
                :nocodelens:
 
         .. tab:: Answer
@@ -189,7 +189,7 @@ Exercises
 #.  Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
     the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
 
-    .. actex:: ex_6_6
+    .. activecode:: ex_6_6
         :nocodelens:
 
         from test import testEqual
@@ -212,7 +212,7 @@ Exercises
            and returns ``True`` if the argument is an **even number** and ``False`` if
            it is **odd**.
         
-           .. actex:: ex_6_7
+           .. activecode:: ex_6_7
                :nocodelens:
         
                from test import testEqual
@@ -253,7 +253,7 @@ Exercises
 #. Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
    and ``False`` otherwise.
 
-   .. actex:: ex_6_8
+   .. activecode:: ex_6_8
        :nocodelens:
 
        from test import testEqual
@@ -275,7 +275,7 @@ Exercises
            Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
            argument is an odd integer.
         
-           .. actex:: ex_6_9
+           .. activecode:: ex_6_9
                :nocodelens:
         
                from test import testEqual
@@ -336,7 +336,7 @@ Exercises
           ...
 
 
-    .. actex:: ex_6_10
+    .. activecode:: ex_6_10
         :nocodelens:
 
         from test import testEqual
@@ -359,7 +359,7 @@ Exercises
 
             Extend the above program so that the sides can be given to the function in any order.
         
-            .. actex:: ex_6_11
+            .. activecode:: ex_6_11
                 :nocodelens:
         
                 from test import testEqual
@@ -409,7 +409,7 @@ Exercises
 #.  A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
     Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
 
-    .. actex:: ex_6_12
+    .. activecode:: ex_6_12
         :nocodelens:
 
         from test import testEqual
@@ -453,7 +453,7 @@ Exercises
             
             Your program should print an error message if the user provides a date that is out of range.
         
-            .. actex:: ex_6_13
+            .. activecode:: ex_6_13
         
 
         .. tab:: Answer

@@ -41,7 +41,7 @@ Exercises
 
     #.  Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
 
-        .. actex:: ex_9_2
+        .. activecode:: ex_9_2
 
 
     #.
@@ -61,7 +61,7 @@ Exercises
                #. Remove True from the list using ``pop`` and ``index``.
 
 
-               .. actex:: ex_9_3
+               .. activecode:: ex_9_3
 
             .. tab:: Answer
 
@@ -90,7 +90,7 @@ Exercises
 
     #.  Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
 
-        .. actex:: ex_9_4
+        .. activecode:: ex_9_4
 
     #.
 
@@ -100,7 +100,7 @@ Exercises
 
                Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
 
-               .. actex:: ex_9_5
+               .. activecode:: ex_9_5
 
 
             .. tab:: Answer
@@ -133,7 +133,7 @@ Exercises
        of the squares of the numbers in the list ``xs``.  For example,
        ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
 
-       .. actex:: ex_7_11
+       .. activecode:: ex_7_11
 
     #.
 
@@ -143,7 +143,7 @@ Exercises
 
                Write a function to count how many odd numbers are in a list.
 
-               .. actex:: ex_9_6
+               .. activecode:: ex_9_6
 
             .. tab:: Answer
 
@@ -174,7 +174,7 @@ Exercises
 
     #. Sum up all the even numbers in a list.
 
-       .. actex:: ex_9_7
+       .. activecode:: ex_9_7
 
     #.
 
@@ -184,7 +184,7 @@ Exercises
 
                Sum up all the negative numbers in a list.
 
-               .. actex:: ex_9_8
+               .. activecode:: ex_9_8
 
             .. tab:: Answer
 
@@ -214,7 +214,7 @@ Exercises
 
     #. Count how many words in a list have length 5.
 
-       .. actex:: ex_9_9
+       .. activecode:: ex_9_9
 
     #.
 
@@ -224,7 +224,7 @@ Exercises
 
                Sum all the elements in a list up to but not including the first even number.
 
-               .. actex:: ex_9_10
+               .. activecode:: ex_9_10
 
             .. tab:: Answer
 
@@ -255,7 +255,7 @@ Exercises
 
     #. Count how many words occur in a list up to and including the first occurrence of the word "sam".
 
-       .. actex:: ex_9_11
+       .. activecode:: ex_9_11
 
 
     #.
@@ -273,7 +273,7 @@ Exercises
                #. insert
 
 
-               .. actex:: ex_9_12
+               .. activecode:: ex_9_12
 
             .. tab:: Answer
 
@@ -340,7 +340,7 @@ Exercises
 
        *Hint*: use the ``split`` and ``join`` methods.
 
-       .. actex:: ex_9_13
+       .. activecode:: ex_9_13
 
 
     #.
@@ -360,7 +360,7 @@ Exercises
                    X --> X[-FFF][+FFF]FX
 
 
-               .. actex:: ex_9_14
+               .. activecode:: ex_9_14
                   :nocodelens:
 
             .. tab:: Answer
@@ -447,5 +447,5 @@ Exercises
            F
            F --> F[-F]F[+F]F
 
-       .. actex:: ex_9_16
+       .. activecode:: ex_9_16
           :nocodelens:

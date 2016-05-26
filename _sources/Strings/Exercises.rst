@@ -63,7 +63,7 @@ Exercises
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
    
-    .. actex:: ex_8_2
+    .. activecode:: ex_8_2
    
 #.
 
@@ -79,7 +79,7 @@ Exercises
         
                Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
         
-           .. actex:: ex_8_3
+           .. activecode:: ex_8_3
 
         .. tab:: Answer
             
@@ -119,7 +119,7 @@ Exercises
 
 #. Print out a neatly formatted multiplication table, up to 12 x 12.
 
-   .. actex:: ex_8_4
+   .. activecode:: ex_8_4
 
 
 #.
@@ -130,7 +130,7 @@ Exercises
 
            Write a function that will return the number of digits in an integer.
         
-           .. actex:: ex_7_10
+           .. activecode:: ex_7_10
         
 
         .. tab:: Answer
@@ -155,7 +155,7 @@ Exercises
 
 #. Write a function that reverses its string argument.
 
-   .. actex:: ex_8_5
+   .. activecode:: ex_8_5
       :nocodelens:
 
       from test import testEqual
@@ -175,7 +175,7 @@ Exercises
 
            Write a function that mirrors its argument.
         
-           .. actex:: ex_8_6
+           .. activecode:: ex_8_6
               :nocodelens:
         
               from test import testEqual
@@ -220,7 +220,7 @@ Exercises
 
 #. Write a function that removes all occurrences of a given letter from a string.
 
-   .. actex:: ex_8_7
+   .. activecode:: ex_8_7
       :nocodelens:
 
       from test import testEqual
@@ -242,7 +242,7 @@ Exercises
 
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
         
-           .. actex:: ex_8_8
+           .. activecode:: ex_8_8
               :nocodelens:
         
               from test import testEqual
@@ -291,7 +291,7 @@ Exercises
 
 #. Write a function that counts how many times a substring occurs in a string.
 
-   .. actex:: ex_8_9
+   .. activecode:: ex_8_9
       :nocodelens:
 
       from test import testEqual
@@ -315,7 +315,7 @@ Exercises
 
            Write a function that removes the first occurrence of a string from another string.
         
-           .. actex:: ex_8_10
+           .. activecode:: ex_8_10
               :nocodelens:
         
               from test import testEqual
@@ -358,7 +358,7 @@ Exercises
 
 #. Write a function that removes all occurrences of a string from another string.
  
-   .. actex:: ex_8_11
+   .. activecode:: ex_8_11
 
       from test import testEqual
 
@@ -383,7 +383,7 @@ Exercises
                L -> +RF-LFL-FR+
                R -> -LF+RFR+FL-
         
-           .. actex:: ex_8_12
+           .. activecode:: ex_8_12
               :nocodelens:
 
         .. tab:: Answer
@@ -461,7 +461,7 @@ Exercises
        X -> X+YF+
        Y -> -FX-Y
 
-   .. actex:: ex_8_13
+   .. activecode:: ex_8_13
       :nocodelens:
 
 #.
@@ -476,7 +476,7 @@ Exercises
                X -> YF+XF+Y
                Y -> XF-YF-X
         
-           .. actex:: ex_8_14
+           .. activecode:: ex_8_14
               :nocodelens:
 
         .. tab:: Answer
@@ -551,7 +551,7 @@ Exercises
        X -> X+YF++YF-FX--FXFX-YF+
        Y -> -FX+YFYF++YF+FX--FX-Y
 
-   .. actex:: ex_8_15
+   .. activecode:: ex_8_15
       :nocodelens:
 
 #.
@@ -566,7 +566,7 @@ Exercises
                F -> FF
                X -> --FXF++FXF++FXF--
         
-           .. actex:: ex_8_16
+           .. activecode:: ex_8_16
               :nocodelens:
 
         .. tab:: Answer
@@ -648,7 +648,7 @@ Exercises
    the mapping of the 26 letters in the alphabet.  Your function should
    return a string that is the encrypted version of the message.
 
-   .. actex:: ex_8_17
+   .. activecode:: ex_8_17
 
 #.
 
@@ -661,7 +661,7 @@ Exercises
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
         
-           .. actex:: ex_8_18
+           .. activecode:: ex_8_18
 
         .. tab:: Answer
 
@@ -708,7 +708,7 @@ Exercises
 #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
    there will never be a duplicate letter added to the new string.
 
-   .. actex:: ex_8_19
+   .. activecode:: ex_8_19
 
       def removeDups(astring):
           # your code here
@@ -731,7 +731,7 @@ Exercises
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
         
-           .. actex:: ex_8_20
+           .. activecode:: ex_8_20
         
               def rot13(mess):
                   # Your code here
