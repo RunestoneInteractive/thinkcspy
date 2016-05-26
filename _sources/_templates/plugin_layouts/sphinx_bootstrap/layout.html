@@ -188,13 +188,13 @@
 
       <ul class="nav navbar-nav">
         <li class="divider-vertical"></li>
-        <!--{% block sidebartoc %}
+        {% block sidebartoc %}
           {% include "localtoc.html" %}
           <li class="divider-vertical"></li>
         {% endblock %}
         {% block sidebarrel %}
           {% include "relations.html" %}
-        {% endblock %}-->
+        {% endblock %}
         {% if theme_source_link_position == "nav" %}
           <li>{% include "sourcelink.html" %}</li>
         {% endif %}
@@ -289,7 +289,7 @@
 
 
 {% if appname == "runestone" %}
-<script type="text/javascript">
+<!--script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-32029811-1']);
   _gaq.push(['_trackPageview']);
@@ -299,7 +299,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
+</script-->
 {% endif %}
 
 {% endblock %}

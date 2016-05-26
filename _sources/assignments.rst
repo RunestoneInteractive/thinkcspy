@@ -9,7 +9,7 @@ you can do this:
 
 Write a program that counts from 1 to 10
 
-.. actex:: unique_id_1
+.. activecode:: unique_id_1
 
    # your code here
 

@@ -21,12 +21,6 @@ General Introduction
    GeneralIntro/ThePythonProgrammingLanguage.rst
    GeneralIntro/SpecialWaystoExecutePythoninthisBook.rst
    GeneralIntro/MoreAboutPrograms.rst
-   GeneralIntro/WhatisDebugging.rst
-   GeneralIntro/Syntaxerrors.rst
-   GeneralIntro/RuntimeErrors.rst
-   GeneralIntro/SemanticErrors.rst
-   GeneralIntro/ExperimentalDebugging.rst
-   GeneralIntro/FormalandNaturalLanguages.rst
    GeneralIntro/ATypicalFirstProgram.rst
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
@@ -58,6 +52,11 @@ Debugging Interlude 1
 .. toctree::
    :maxdepth: 2
 
+   GeneralIntro/WhatisDebugging.rst
+   GeneralIntro/Syntaxerrors.rst
+   GeneralIntro/RuntimeErrors.rst
+   GeneralIntro/SemanticErrors.rst
+   GeneralIntro/ExperimentalDebugging.rst
    Debugging/intro-HowtobeaSuccessfulProgrammer.rst
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
@@ -97,6 +96,24 @@ Python Modules
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
 
+
+Selection
+:::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Selection/BooleanValuesandBooleanExpressions.rst
+   Selection/Logicaloperators.rst
+   Selection/PrecedenceofOperators.rst
+   Selection/ConditionalExecutionBinarySelection.rst
+   Selection/OmittingtheelseClauseUnarySelection.rst
+   Selection/Nestedconditionals.rst
+   Selection/Chainedconditionals.rst
+   Selection/BooleanFunctions.rst
+   Selection/Glossary.rst
+   Selection/Exercises.rst
+
 Functions
 :::::::::
 
@@ -115,23 +132,6 @@ Functions
    Functions/ATurtleBarChart.rst
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
-
-Selection
-:::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Selection/BooleanValuesandBooleanExpressions.rst
-   Selection/Logicaloperators.rst
-   Selection/PrecedenceofOperators.rst
-   Selection/ConditionalExecutionBinarySelection.rst
-   Selection/OmittingtheelseClauseUnarySelection.rst
-   Selection/Nestedconditionals.rst
-   Selection/Chainedconditionals.rst
-   Selection/BooleanFunctions.rst
-   Selection/Glossary.rst
-   Selection/Exercises.rst
 
 
 More About Iteration
@@ -221,51 +221,6 @@ Lists
    Lists/Exercises.rst
 
 
-Files
-:::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Files/intro-WorkingwithDataFiles.rst
-   Files/FindingaFileonyourDisk.rst
-   Files/ReadingaFile.rst
-   Files/Iteratingoverlinesinafile.rst
-   Files/AlternativeFileReadingMethods.rst
-   Files/WritingTextFiles.rst
-   Files/Glossary.rst
-   Files/Exercises.rst
-
-
-Dictionaries
-::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Dictionaries/intro-Dictionaries.rst
-   Dictionaries/Dictionaryoperations.rst
-   Dictionaries/Dictionarymethods.rst
-   Dictionaries/Aliasingandcopying.rst
-   Dictionaries/Sparsematrices.rst
-   Dictionaries/Glossary.rst
-   Dictionaries/Exercises.rst
-
-Recursion
-:::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Recursion/WhatIsRecursion.rst
-   Recursion/CalculatingtheSumofaListofNumbers.rst
-   Recursion/TheThreeLawsofRecursion.rst
-   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
-   Recursion/intro-VisualizingRecursion.rst
-   Recursion/SierpinskiTriangle.rst
-   Recursion/Glossary.rst
-   Recursion/ProgrammingExercises.rst
-
 
 Classes and Objects - the Basics
 ::::::::::::::::::::::::::::::::
@@ -285,9 +240,54 @@ Classes and Objects - the Basics
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
 
+Hacker Chapter: Files
+:::::::::::::::::::::
 
-Classes and Objects - Digging a Little Deeper
-:::::::::::::::::::::::::::::::::::::::::::::
+.. toctree::
+   :maxdepth: 2
+
+   Files/intro-WorkingwithDataFiles.rst
+   Files/FindingaFileonyourDisk.rst
+   Files/ReadingaFile.rst
+   Files/Iteratingoverlinesinafile.rst
+   Files/AlternativeFileReadingMethods.rst
+   Files/WritingTextFiles.rst
+   Files/Glossary.rst
+   Files/Exercises.rst
+
+
+Hacker Chapter: Dictionaries
+::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Dictionaries/intro-Dictionaries.rst
+   Dictionaries/Dictionaryoperations.rst
+   Dictionaries/Dictionarymethods.rst
+   Dictionaries/Aliasingandcopying.rst
+   Dictionaries/Sparsematrices.rst
+   Dictionaries/Glossary.rst
+   Dictionaries/Exercises.rst
+
+Hacker Chapter: Recursion
+:::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Recursion/WhatIsRecursion.rst
+   Recursion/CalculatingtheSumofaListofNumbers.rst
+   Recursion/TheThreeLawsofRecursion.rst
+   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
+   Recursion/intro-VisualizingRecursion.rst
+   Recursion/SierpinskiTriangle.rst
+   Recursion/Glossary.rst
+   Recursion/ProgrammingExercises.rst
+
+
+Hacker Chapter: Classes and Objects - Digging a Little Deeper
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -298,23 +298,6 @@ Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
-   
-Labs
-::::
-
-.. toctree::
-   :maxdepth: 1
-
-   Labs/astronomylab.rst
-   Labs/lab03_01.rst
-   Labs/lab04_01.rst
-   Labs/lab04_01a.rst
-   Labs/lab12_01.rst
-   Labs/lab12_02.rst
-   Labs/montepi.rst
-   Labs/pythonshell.rst
-   Labs/sequencelab.rst
-   Labs/sinlab.rst
 
 Appendices
 ::::::::::

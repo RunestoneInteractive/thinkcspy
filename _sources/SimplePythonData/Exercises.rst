@@ -72,7 +72,7 @@ Exercises
                 Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
                 Your program should output what the time will be on the clock when the alarm goes off.
 
-                .. actex:: ex_2_3
+                .. activecode:: ex_2_3
 
             .. tab:: Answer
 
@@ -99,7 +99,7 @@ Exercises
        Write a general version of the program which asks for the starting day number, and
        the length of your stay, and it will tell you the number of day of the week you will return on.
 
-       .. actex:: ex_2_4
+       .. activecode:: ex_2_4
 
            # Problem 4
            # My Name:
@@ -115,7 +115,7 @@ Exercises
                 Store each word in a separate variable, then print out the sentence on
                 one line using ``print``.
 
-                .. actex:: ex_2_5
+                .. activecode:: ex_2_5
 
             .. tab:: Answer
 
@@ -148,7 +148,7 @@ Exercises
     #. Add parenthesis to the expression ``6 * 1 - 2`` to change its value
        from 4 to -6.
 
-       .. actex:: ex_2_6
+       .. activecode:: ex_2_6
 
 
     #.
@@ -169,7 +169,7 @@ Exercises
                 `t`, that the money will be compounded for.  Calculate and print the final
                 amount after `t` years.
 
-                .. actex:: ex_2_7
+                .. activecode:: ex_2_7
 
             .. tab:: Answer
 
@@ -199,7 +199,7 @@ Exercises
     #. Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
        back to the user with the answer.
 
-       .. actex:: ex_2_8
+       .. activecode:: ex_2_8
 
 
     #.
@@ -211,7 +211,7 @@ Exercises
                 Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
                 Print a nice message with the answer.
 
-                .. actex:: ex_2_9
+                .. activecode:: ex_2_9
 
             .. tab:: Answer
 
@@ -238,7 +238,7 @@ Exercises
     #. Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
        gallons used.  Print a nice message with the answer.
 
-       .. actex:: ex_2_10
+       .. activecode:: ex_2_10
 
 
     #.
@@ -249,7 +249,7 @@ Exercises
 
                 Write a program that will convert degrees celsius to degrees fahrenheit.
 
-                .. actex:: ex_2_11
+                .. activecode:: ex_2_11
 
             .. tab:: Answer
 
@@ -274,4 +274,4 @@ Exercises
 
     #. Write a program that will convert degrees fahrenheit to degrees celsius.
 
-       .. actex:: ex_2_12
+       .. activecode:: ex_2_12
