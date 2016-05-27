@@ -1,7 +1,7 @@
 .. _t_o_c:
 
-Schedule
-||||||||||||||||||
+Table of Contents
+|||||||||||||||||
 
 ----
 
@@ -49,7 +49,6 @@ Chapter 1.0
    :maxdepth: 2
 
    GeneralIntro/WhatisDebugging.rst
-   GeneralIntro/WhatisDebugging.rst
    GeneralIntro/Syntaxerrors.rst
    GeneralIntro/RuntimeErrors.rst
    GeneralIntro/SemanticErrors.rst
@@ -59,6 +58,7 @@ Chapter 1.0
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
+   SimplePythonData/at_1_1.rst
    PythonOutsideThisBook/Commandline.rst
    PythonOutsideThisBook/Commandline2.rst
 
