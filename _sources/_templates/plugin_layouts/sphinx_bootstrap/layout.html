@@ -36,7 +36,7 @@
 <!DOCTYPE html>
 {%- endblock %}
 
-{# Sidebar: Rework into our Boostrap nav section. #}
+{# Sidebar: Rework into our Bootstrap nav section. #}
 {% macro navBar() %}
 
 <!-- Begin navbar -->
@@ -189,7 +189,7 @@
       <ul class="nav navbar-nav">
         <li class="divider-vertical"></li>
         {% block sidebartoc %}
-          {% include "localtoc.html" %}
+          {% include "globaltoc.html" %}
           <li class="divider-vertical"></li>
         {% endblock %}
         {% block sidebarrel %}
