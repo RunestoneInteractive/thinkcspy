@@ -11,8 +11,8 @@
    :prefix: dict-5-
    :start: 1
 
-Sparse Matrices
----------------
+LPTHW: Using the Command Line
+-----------------------------
 
 A matrix is a two dimensional collection, typically thought of as having rows and columns of data.  One of the easiest ways to create a matrix is to use a list of lists.  For example, consider the matrix shown below.  
 
