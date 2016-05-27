@@ -5,7 +5,7 @@ Table of Contents
 
 ----
 
-Chapter 0.0
+Chapter 1.0
 ::::::::::::
 
 .. toctree::
@@ -21,7 +21,7 @@ Chapter 0.0
    GeneralIntro/Glossary.rst
 
 
-Chapter 0.1
+Chapter 1.1
 ::::::::::::
 
 .. toctree::
@@ -42,7 +42,7 @@ Chapter 0.1
    SimplePythonData/Exercises.rst
 
 
-Chapter 1.0
+Chapter 2.0
 ::::::::::::
 
 .. toctree::
@@ -58,12 +58,12 @@ Chapter 1.0
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
-   SimplePythonData/at_1_1.rst
+   PythonOutsideThisBook/PythonBeyondtheBrowser.rst 
    PythonOutsideThisBook/Commandline.rst
    PythonOutsideThisBook/Commandline2.rst
 
 
-Chapter 1.1
+Chapter 2.1
 ::::::::::::
 
 .. toctree::
@@ -81,10 +81,9 @@ Chapter 1.1
    PythonTurtle/Glossary.rst
    PythonTurtle/Exercises.rst
 
-----
 
 
-Chapter 2.0 
+Chapter 3.0 
 ::::::::::::
 
 .. toctree::
@@ -98,7 +97,7 @@ Chapter 2.0
    PythonModules/Exercises.rst
 
 
-Chapter 2.1
+Chapter 3.1
 ::::::::::::
 
 .. toctree::
@@ -111,13 +110,11 @@ Chapter 2.1
    Selection/OmittingtheelseClauseUnarySelection.rst
    Selection/Nestedconditionals.rst
    Selection/Chainedconditionals.rst
-   Selection/BooleanFunctions.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
 
-----
 
-Chapter 3.0
+Chapter 4.0
 :::::::::
 
 .. toctree::
@@ -129,6 +126,15 @@ Chapter 3.0
    Functions/TheAccumulatorPattern.rst
    Functions/Functionscancallotherfunctions.rst
    Functions/FlowofExecutionSummary.rst
+   Selection/BooleanFunctions.rst
+   
+
+Chapter 4.1
+:::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    Functions/mainfunction.rst
    Functions/ProgramDevelopment.rst
    Functions/Composition.rst
@@ -136,9 +142,8 @@ Chapter 3.0
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
 
-----
 
-Chapter 4.0 
+Chapter 5.0 
 ::::::::::::
 
 .. toctree::
@@ -159,7 +164,7 @@ Chapter 4.0
 
 
 
-Chapter 4.1
+Chapter 5.1
 :::::::::::
 
 .. toctree::
@@ -188,9 +193,8 @@ Chapter 4.1
    Strings/Glossary.rst
    Strings/Exercises.rst
 
-----
 
-Chapter 5.0
+Chapter 6.0
 :::::::::::
 
 .. toctree::
@@ -213,7 +217,7 @@ Chapter 5.0
    Lists/TheReturnofLSystems.rst
    Lists/AppendversusConcatenate.rst
 
-Chapter 5.1
+Chapter 6.1
 :::::::::::
 
 .. toctree::
@@ -234,9 +238,8 @@ Chapter 5.1
    Lists/Glossary.rst
    Lists/Exercises.rst
 
-----
 
-Chapter 6.0
+Chapter 7.0
 :::::::::::
 
 .. toctree::
@@ -247,15 +250,19 @@ Chapter 6.0
    ClassesBasics/ObjectsRevisited.rst
    ClassesBasics/UserDefinedClasses.rst
    ClassesBasics/ImprovingourConstructor.rst
+
+Chapter 7.1
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    ClassesBasics/AddingOtherMethodstoourClass.rst
    ClassesBasics/ObjectsasArgumentsandParameters.rst
    ClassesBasics/ConvertinganObjecttoaString.rst
    ClassesBasics/InstancesasReturnValues.rst
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
-
-Chapter 6.1
-:::::::::::
    
 
 ----
