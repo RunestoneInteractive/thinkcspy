@@ -11,6 +11,7 @@ Exercises
 ---------
 .. container:: full_width
 
+
     1.
 
         .. tabbed:: q1
@@ -52,11 +53,13 @@ Exercises
                 #. ``6 % 6 = 0``
                 #. ``0 % 7 = 0``
 
-    #. What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
+    #. 
 
-          2 + (3 - 1) * 10 / 5 * (2 + 3)
+        What is the order of the arithmetic operations in the following expression.Evaluate the expression by hand and then check your work.
 
-       .. activecode:: ex_2_2
+            2 + (3 - 1) * 10 / 5 * (2 + 3)
+
+        .. activecode:: ex_2_2
 
 
 
@@ -94,15 +97,16 @@ Exercises
                     print(timeofday)
 
 
-    #. It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
-       leaving on day number 3 (a Wednesday) and you return home after 10 nights.
-       Write a general version of the program which asks for the starting day number, and
-       the length of your stay, and it will tell you the number of day of the week you will return on.
+    #. 
 
-       .. activecode:: ex_2_4
+        (GRADED) It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights. 
 
-           # Problem 4
-           # My Name:
+        Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+
+        .. activecode:: ex_2_4
+
+            # Problem 4
+            # My Name:
 
 
     #.
@@ -145,10 +149,12 @@ Exercises
                     :identifier: d1a30631e500449481955e02d3761dd3
 
 
-    #. Add parenthesis to the expression ``6 * 1 - 2`` to change its value
-       from 4 to -6.
+    #. 
 
-       .. activecode:: ex_2_6
+        Add parenthesis to the expression ``6 * 1 - 2`` to change its value
+        from 4 to -6.
+
+        .. activecode:: ex_2_6
 
 
     #.
@@ -196,10 +202,17 @@ Exercises
                     :identifier: f14145f85af93420ba0c05fca5d1b4d9a
 
 
-    #. Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
-       back to the user with the answer.
+    #. 
+        
+        (GRADED) Write a program that will compute the area of a circle.  Prompt the user to enter the radius, and then print the answer, like this:
 
-       .. activecode:: ex_2_8
+        .. sourcecode:: python
+
+            What is the radius?
+            >>> 7.8
+            191.0376 
+
+        .. activecode:: ex_2_8
 
 
     #.
@@ -235,10 +248,19 @@ Exercises
                     :identifier: f69d286cc58943b6aef1d886e279a12b
 
 
-    #. Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
-       gallons used.  Print a nice message with the answer.
+    #. 
 
-       .. activecode:: ex_2_10
+        (GRADED) Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer, like this:
+
+        .. sourcecode:: python
+
+            How many miles have you driven?
+            >>> 150
+            How many gallons have you used?
+            >>> 5
+            Your car gets 30 miles per gallon.
+
+        .. activecode:: ex_2_10
 
 
     #.
@@ -272,6 +294,14 @@ Exercises
                     :identifier: c4a929d598ab4c46b484f6abbcec2655
 
 
-    #. Write a program that will convert degrees fahrenheit to degrees celsius.
+    #. 
 
-       .. activecode:: ex_2_12
+        (GRADED) Write a program that will convert degrees fahrenheit to degrees celsius, like this:
+
+        .. sourcecode:: python
+
+            What is the temperature in Farenheit?
+            >>> 32
+            32.0 degrees Farenheit is 0.0 degrees Celsius.
+
+        .. activecode:: ex_2_12
