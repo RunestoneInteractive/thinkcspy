@@ -398,6 +398,22 @@ Exercises
 
         .. actex:: ex_5_14
 
+            def mySqrt(n):
+                # your code here
+
+            ====
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertAlmostEqual(mySqrt(4.0),2.0,0,"mySqrt failed on input 4.0")
+                    self.assertAlmostEqual(mySqrt(9.0),3.0,4,"mySqrt is not accurate enough on input 3.0")
+                    self.assertAlmostEqual(mySqrt(36.0),6.0,5,"mySqrt is not accurate enough on input 6.0")
+                    self.assertAlmostEqual(mySqrt(100.0),10.0,4,"mySqrt is not accurate enough on input 10.0. Try iterating more times.")
+
+            myTests().main()
+
 
     #.
 
@@ -486,6 +502,3 @@ Exercises
                 .. disqus::
                     :shortname: interactivepython
                     :identifier: db5d8808bf5749579718bdd2088b539f
-
-
-
