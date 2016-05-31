@@ -220,7 +220,7 @@ Exercises
               class myTests(TestCaseGui):
 
                   def testOne(self):
-                      self.assertEqual(mirror("good"),"gooddoog","Your function failed on input of 'happy'")
+                      self.assertEqual(mirror("good"),"gooddoog","Your function failed on input of 'good'")
                       self.assertEqual(mirror("Python"),"nohtyPPython","Your function failed on input of 'Python'")
                       self.assertEqual(mirror(""),"","Your function failed on input of ''")
                       self.assertEqual(mirror("a"),"aa","Your function failed on input of 'a'")
