@@ -131,6 +131,25 @@ Exercises
            Write a function that will return the number of digits in an integer.
         
            .. actex:: ex_7_10
+
+              def numDigits(n):
+                  # your code here
+
+              ====
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertEqual(numDigits(2),1,"Your function failed on input of 2")
+                    self.assertEqual(numDigits(55),2,"Your function failed on input of 55")
+                    self.assertEqual(numDigits(1352),4,"Your function failed on input of 1352")
+                    self.assertEqual(numDigits(444),3,"Your function failed on input of 444")
+
+
+
+              myTests().main()
         
 
         .. tab:: Answer
@@ -153,19 +172,32 @@ Exercises
                 :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
 
 
+
+
+
 #. Write a function that reverses its string argument.
 
    .. actex:: ex_8_5
       :nocodelens:
 
-      from test import testEqual
-
       def reverse(astring):
           # your code here
 
-      testEqual(reverse("happy"), "yppah")
-      testEqual(reverse("Python"), "nohtyP")
-      testEqual(reverse(""), "")
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(reverse("happy"),"yppah","Your function failed on input of 'happy'")
+            self.assertEqual(reverse("Python"),"nohtyP","Your function failed on input of 'Python'")
+            self.assertEqual(reverse(""),"","Your function failed on input of ''")
+
+
+
+
+      myTests().main()
 
 #.
 
@@ -177,16 +209,24 @@ Exercises
         
            .. actex:: ex_8_6
               :nocodelens:
-        
-              from test import testEqual
-        
+
               def mirror(mystr):
                   # your code here
-        
-              testEqual(mirror('good'), 'gooddoog')
-              testEqual(mirror('Python'), 'PythonnohtyP')
-              testEqual(mirror(''), '')
-              testEqual(mirror('a'), 'aa')
+
+              ====
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                  def testOne(self):
+                      self.assertEqual(mirror("good"),"gooddoog","Your function failed on input of 'happy'")
+                      self.assertEqual(mirror("Python"),"nohtyPPython","Your function failed on input of 'Python'")
+                      self.assertEqual(mirror(""),"","Your function failed on input of ''")
+                      self.assertEqual(mirror("a"),"aa","Your function failed on input of 'a'")
+
+
+              myTests().main()
         
         
 
@@ -223,14 +263,26 @@ Exercises
    .. actex:: ex_8_7
       :nocodelens:
 
-      from test import testEqual
-
       def remove_letter(theLetter, theString):
           # your code here
 
-      testEqual(remove_letter('a', 'apple'), 'pple')
-      testEqual(remove_letter('a', 'banana'), 'bnn')
-      testEqual(remove_letter('z', 'banana'), 'banana')
+      ====
+
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(remove_letter("a","apple"),"pple","Your function failed on inputs of 'a' and 'apple'")
+            self.assertEqual(remove_letter("a","banana"),"bnn","Your function failed on inputs of 'a' and 'banana'")
+            self.assertEqual(remove_letter("z","banana"),"banana","Your function failed on inputs of 'z' and 'banana'")
+
+
+
+      myTests().main()
+
+
 
 
 
@@ -245,16 +297,29 @@ Exercises
            .. actex:: ex_8_8
               :nocodelens:
         
-              from test import testEqual
-        
               def is_palindrome(myStr):
                   # your code here
-        
-              testEqual(is_palindrome('abba'), True)
-              testEqual(is_palindrome('abab'), False)
-              testEqual(is_palindrome('straw warts'), True)
-              testEqual(is_palindrome('a'), True)
-              testEqual(is_palindrome(''), True)
+
+              ====
+
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                  def testOne(self):
+                      self.assertEqual(is_palindrome("abba"),True,"Your function failed on input of 'abba'")
+                      self.assertEqual(is_palindrome("abab"),False,"Your function failed on input of 'abab'")
+                      self.assertEqual(is_palindrome("straw warts"),True,"Your function failed on input of 'straw warts'")
+                      self.assertEqual(is_palindrome("a"),True,"Your function failed on input of 'a'")
+                      self.assertEqual(is_palindrome(""),True,"Your function failed on input of ''")
+
+
+
+
+              myTests().main()
+
+
         
 
         .. tab:: Answer
@@ -294,17 +359,30 @@ Exercises
    .. actex:: ex_8_9
       :nocodelens:
 
-      from test import testEqual
-
       def count(substr,theStr):
           # your code here
 
-      testEqual(count('is', 'Mississippi'), 2)
-      testEqual(count('an', 'banana'), 2)
-      testEqual(count('ana', 'banana'), 2)
-      testEqual(count('nana', 'banana'), 1)
-      testEqual(count('nanan', 'banana'), 0)
-      testEqual(count('aaa', 'aaaaaa'), 4)
+
+      ====
+
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+            def testOne(self):
+                self.assertEqual(count("is","Mississippi"),2,"Your function failed on inputs of 'is' and 'Mississippi'")
+                self.assertEqual(count("an","banana"),2,"Your function failed on inputs of 'an' and 'banana'")
+                self.assertEqual(count("ana","banana"),2,"Your function failed on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("nana","banana"),1,"Your function failed on inputs of 'nana' and 'banana'")
+                self.assertEqual(count("nanan","banana"),0,"Your function failed on inputs of 'nanan' and 'banana'")
+                self.assertEqual(count("aaa","aaaaaa"),4,"Your function failed on input of 'aaa' and 'aaaaaa'")
+
+
+
+
+      myTests().main()
+
 
 
 #.
@@ -317,16 +395,29 @@ Exercises
         
            .. actex:: ex_8_10
               :nocodelens:
-        
-              from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
+
+              ====
+
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(remove("an","banana"),"bana","Your function failed on inputs of 'an' and 'banana'")
+                          self.assertEqual(remove("cyc","bicycle"),"bile","Your function failed on inputs of 'cyc' and 'bicycle'")
+                          self.assertEqual(remove("iss","Mississippi"),"Missippi","Your function failed on inputs of 'iss' and 'Mississippi'")
+                          self.assertEqual(remove("egg","bicycle"),"bicycle","Your function failed on inputs of 'egg' and 'bicycle'")
+
+
+
+              myTests().main()
         
-              testEqual(remove('an', 'banana'), 'bana')
-              testEqual(remove('cyc', 'bicycle'), 'bile')
-              testEqual(remove('iss', 'Mississippi'), 'Missippi')
-              testEqual(remove('egg', 'bicycle'), 'bicycle')
+
+
         
         
 
@@ -360,10 +451,26 @@ Exercises
  
    .. actex:: ex_8_11
 
-      from test import testEqual
-
       def remove_all(substr,theStr):
           # your code here
+
+
+
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(remove_all("an","banana"),"ba","Your function failed on inputs of 'an' and 'banana'")
+            self.assertEqual(remove_all("cyc","bicycle"),"bile","Your function failed on inputs of 'cyc' and 'bicycle'")
+            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Your function failed on inputs of 'iss' and 'Mississippi'")
+            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Your function failed on inputs of 'eggs' and 'bicycle'")
+
+
+
+      myTests().main()
 
       testEqual(remove_all('an', 'banana'), 'ba')
       testEqual(remove_all('cyc', 'bicycle'), 'bile')
