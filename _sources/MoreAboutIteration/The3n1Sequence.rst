@@ -58,11 +58,6 @@ You might like to have some fun and see if you can find a small starting
 number that needs more than a hundred steps before it terminates.
 
 
-.. admonition:: Lab
-
-    * `Experimenting with the 3n+1 Sequence <../Labs/sequencelab.html>`_ In this guided lab exercise we will try to learn more about this sequence.
-
-
 Particular values aside, the interesting question is whether we can prove that
 this sequence terminates for *all* values of ``n``. So far, no one has been able
 to prove it *or* disprove it!
