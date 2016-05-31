@@ -1,17 +1,12 @@
 .. _t_o_c:
 
 Table of Contents
-:::::::::::::::::
+|||||||||||||||||
 
-Assignments
-:::::::::::
+----
 
-.. toctree::
-
-   assignments.rst
-
-General Introduction
-::::::::::::::::::::
+Chapter 1.0
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -25,8 +20,9 @@ General Introduction
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-Simple Python Data
-::::::::::::::::::
+
+Chapter 1.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -46,8 +42,8 @@ Simple Python Data
    SimplePythonData/Exercises.rst
 
 
-Debugging Interlude 1
-:::::::::::::::::::::
+Chapter 2.0
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -62,10 +58,13 @@ Debugging Interlude 1
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
-   
+   PythonOutsideThisBook/PythonBeyondtheBrowser.rst 
+   PythonOutsideThisBook/Commandline.rst
+   PythonOutsideThisBook/Commandline2.rst
 
-Python Turtle Graphics
-::::::::::::::::::::::
+
+Chapter 2.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -83,8 +82,9 @@ Python Turtle Graphics
    PythonTurtle/Exercises.rst
 
 
-Python Modules
-::::::::::::::
+
+Chapter 3.0 
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -97,8 +97,8 @@ Python Modules
    PythonModules/Exercises.rst
 
 
-Selection
-:::::::::
+Chapter 3.1
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -110,11 +110,11 @@ Selection
    Selection/OmittingtheelseClauseUnarySelection.rst
    Selection/Nestedconditionals.rst
    Selection/Chainedconditionals.rst
-   Selection/BooleanFunctions.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
 
-Functions
+
+Chapter 4.0
 :::::::::
 
 .. toctree::
@@ -126,6 +126,15 @@ Functions
    Functions/TheAccumulatorPattern.rst
    Functions/Functionscancallotherfunctions.rst
    Functions/FlowofExecutionSummary.rst
+   Selection/BooleanFunctions.rst
+   
+
+Chapter 4.1
+:::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    Functions/mainfunction.rst
    Functions/ProgramDevelopment.rst
    Functions/Composition.rst
@@ -134,8 +143,8 @@ Functions
    Functions/thinkcspyExercises.rst
 
 
-More About Iteration
-::::::::::::::::::::
+Chapter 5.0 
+::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -154,8 +163,9 @@ More About Iteration
    MoreAboutIteration/Exercises.rst
 
 
-Strings
-:::::::
+
+Chapter 5.1
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -183,8 +193,9 @@ Strings
    Strings/Glossary.rst
    Strings/Exercises.rst
 
-Lists
-:::::
+
+Chapter 6.0
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -205,6 +216,13 @@ Lists
    Lists/ListMethods.rst
    Lists/TheReturnofLSystems.rst
    Lists/AppendversusConcatenate.rst
+
+Chapter 6.1
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    Lists/Listsandforloops.rst
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
@@ -221,9 +239,8 @@ Lists
    Lists/Exercises.rst
 
 
-
-Classes and Objects - the Basics
-::::::::::::::::::::::::::::::::
+Chapter 7.0
+:::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -233,12 +250,25 @@ Classes and Objects - the Basics
    ClassesBasics/ObjectsRevisited.rst
    ClassesBasics/UserDefinedClasses.rst
    ClassesBasics/ImprovingourConstructor.rst
+
+Chapter 7.1
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
    ClassesBasics/AddingOtherMethodstoourClass.rst
    ClassesBasics/ObjectsasArgumentsandParameters.rst
    ClassesBasics/ConvertinganObjecttoaString.rst
    ClassesBasics/InstancesasReturnValues.rst
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
+   
+
+----
+
+Optional Chapters
+~~~~~~~~~~~~~~~~~~~
 
 Hacker Chapter: Files
 :::::::::::::::::::::
@@ -254,7 +284,6 @@ Hacker Chapter: Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
-
 
 Hacker Chapter: Dictionaries
 ::::::::::::::::::::::::::::
@@ -298,6 +327,8 @@ Hacker Chapter: Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
+
+----
 
 Appendices
 ::::::::::
