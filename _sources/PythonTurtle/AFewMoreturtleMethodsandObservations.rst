@@ -145,12 +145,6 @@ color, or to put her pen down and draw a line, or to change her shape, etc.)
    =====                 
    wn.exitonclick()
 
-.. admonition:: Lab
-
-    * `Turtle Race <../Labs/lab03_01.html>`_ In this guided lab exercise we will work
-      through a simple problem solving exercise related to having some turtles
-      race.
-
 
 .. _summary_of_turtle_methods:
 
