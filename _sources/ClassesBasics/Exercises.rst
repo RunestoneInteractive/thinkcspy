@@ -70,60 +70,39 @@ Exercises
 
        .. activecode:: ch_cl_02
 
-    #.
+    #. (GRADED) Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point. For example, ::
 
-        .. tabbed:: q3
+        >>> Point(4, 10).slope_from_origin()
+        2.5
 
-            .. tab:: Question
+    What cases will cause your method to fail? Return None when it happens.
 
-               Add a method ``slope_from_origin`` which returns the slope of the line joining the origin
-               to the point.   For example, ::
+    .. activecode:: classes_q3
 
-                  >>> Point(4, 10).slope_from_origin()
-                  2.5
+        from test import testEqual
 
-               What cases will cause your method to fail? Return None when it happens.
+        class Point:
+            """ Point class for representing and manipulating x,y coordinates. """
 
-               .. activecode:: classes_q3
+            def __init__(self, initX, initY):
+                """ Create a new point at the given coordinates. """
+                self.x = initX
+                self.y = initY
 
-            .. tab:: Answer
+            def getX(self):
+                return self.x
 
-                .. activecode:: ch_cl_ex_3_answer
+            def getY(self):
+                return self.y
 
-                    class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
+            def distanceFromOrigin(self):
+                return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-                        def __init__(self, initX, initY):
-                            """ Create a new point at the given coordinates. """
-                            self.x = initX
-                            self.y = initY
-
-                        def getX(self):
-                            return self.x
-
-                        def getY(self):
-                            return self.y
-
-                        def distanceFromOrigin(self):
-                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-                        def slope_from_origin(self):
-                            if self.x == 0:
-                               return None
-                            else:
-                               return self.y / self.x
+            # TODO define a method called slopeFromOrigin here
 
 
-                    p = Point(4, 10)
-                    print(p.slope_from_origin())
-
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_d70d350ae8284138a5726f8140c45533
-
+        p = Point(4, 10)
+        testEqual(p.slopeFromOrigin(), 2.5)
 
     #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c").
        The coefficients a and b completely describe the line.  Write a method in the

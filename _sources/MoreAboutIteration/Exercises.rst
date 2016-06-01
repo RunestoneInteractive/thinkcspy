@@ -64,41 +64,9 @@ Exercises
        .. activecode:: ex_7_8
 
 
-    #.
+    #. (GRADED) Write a function, ``is_prime``, that takes a single integer argument and returns ``True`` when the argument is a *prime number* and ``False`` otherwise.
 
-        .. tabbed:: q3
-
-            .. tab:: Question
-
-               Write a function, ``is_prime``, that takes a single integer argument
-               and returns ``True`` when the argument is a *prime number* and ``False``
-               otherwise.
-
-               .. activecode:: ex_7_9
-
-
-
-            .. tab:: Answer
-
-                .. activecode:: q3_answer
-
-                    def is_prime(n):
-                        for i in range(2, n):
-                            if n % i == 0:
-                                return False
-                        return True
-
-                    print(is_prime(25))
-                    print(is_prime(7))
-                    print(is_prime(251))
-                    print(is_prime(20))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_418de05233374e76b3b66aeb96b55656
-
+       .. activecode:: ex_7_9
 
 
 

@@ -5,8 +5,8 @@ Table of Contents
 
 ----
 
-Chapter 1.0
-::::::::::::
+Chapter 1.0: General Intro
+::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -21,8 +21,8 @@ Chapter 1.0
    GeneralIntro/Glossary.rst
 
 
-Chapter 1.1
-::::::::::::
+Chapter 1.1: Simple Python Data
+:::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -42,8 +42,8 @@ Chapter 1.1
    SimplePythonData/Exercises.rst
 
 
-Chapter 2.0
-::::::::::::
+Chapter 2.0: Debugging, and Using Python Outside this Book
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -63,8 +63,8 @@ Chapter 2.0
    PythonOutsideThisBook/Commandline2.rst
 
 
-Chapter 2.1
-::::::::::::
+Chapter 2.1: Modules (and Turtles!)
+:::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -87,8 +87,8 @@ Chapter 2.1
    AdditionalExercises/TurtlesAndModules.rst
 
 
-Chapter 3.0 
-::::::::::::
+Chapter 3.0: Functions
+:::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -107,8 +107,8 @@ Chapter 3.0
    Functions/thinkcspyExercises.rst
 
 
-Chapter 3.1
-::::::::::::
+Chapter 3.1: Selection
+:::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -125,8 +125,8 @@ Chapter 3.1
    Selection/Exercises.rst
    
 
-Chapter 4.0
-:::::::::
+Chapter 4.0: More About Iteration
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -145,8 +145,8 @@ Chapter 4.0
    MoreAboutIteration/Exercises.rst
 
 
-Chapter 4.1
-::::::::::::
+Chapter 4.1: Strings
+::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -163,8 +163,8 @@ Chapter 4.1
    AdditionalExercises/Strings.rst
 
 
-Chapter 5.0 
-::::::::::::
+Chapter 5.0: Strings, Continued
+::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -183,8 +183,8 @@ Chapter 5.0
    Strings/Exercises.rst   
 
 
-Chapter 5.1
-:::::::::::
+Chapter 5.1: Lists
+::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -208,9 +208,8 @@ Chapter 5.1
    AdditionalExercises/Lists.rst
    
 
-
-Chapter 6.0
-:::::::::::
+Chapter 6.0: Lists, Continued
+::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -230,8 +229,8 @@ Chapter 6.0
    Lists/Exercises.rst
 
 
-Chapter 6.1
-:::::::::::
+Chapter 6.1: Dictionaries
+:::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -245,8 +244,8 @@ Chapter 6.1
    Dictionaries/Exercises.rst   
 
 
-Chapter 7.0
-:::::::::::
+Chapter 7.0: Classes and Objects -- Basics
+:::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -256,21 +255,26 @@ Chapter 7.0
    ClassesBasics/ObjectsRevisited.rst
    ClassesBasics/UserDefinedClasses.rst
    ClassesBasics/ImprovingourConstructor.rst
-   AdditionalExercises/ClassesBasics.rst
-
-
-Chapter 7.1
-:::::::::::
-
-.. toctree::
-   :maxdepth: 1
-
    ClassesBasics/AddingOtherMethodstoourClass.rst
    ClassesBasics/ObjectsasArgumentsandParameters.rst
    ClassesBasics/ConvertinganObjecttoaString.rst
    ClassesBasics/InstancesasReturnValues.rst
    ClassesBasics/Glossary.rst
    ClassesBasics/Exercises.rst
+
+
+Chapter 7.1: Classes and Objects -- Digging a Little Deeper
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   ClassesDiggingDeeper/Fractions.rst
+   ClassesDiggingDeeper/ObjectsareMutable.rst
+   ClassesDiggingDeeper/Sameness.rst
+   ClassesDiggingDeeper/ArithmeticMethods.rst
+   ClassesDiggingDeeper/Glossary.rst
+   ClassesDiggingDeeper/Exercises.rst
    
 
 ----
@@ -309,19 +313,6 @@ Hacker Chapter: Recursion
    Recursion/Glossary.rst
    Recursion/ProgrammingExercises.rst
 
-
-Hacker Chapter: Classes and Objects -- Digging a Little Deeper
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-   :maxdepth: 1
-
-   ClassesDiggingDeeper/Fractions.rst
-   ClassesDiggingDeeper/ObjectsareMutable.rst
-   ClassesDiggingDeeper/Sameness.rst
-   ClassesDiggingDeeper/ArithmeticMethods.rst
-   ClassesDiggingDeeper/Glossary.rst
-   ClassesDiggingDeeper/Exercises.rst
 
 Hacker Chapter: Special Topic -- L-Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

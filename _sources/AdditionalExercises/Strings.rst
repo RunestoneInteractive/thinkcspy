@@ -46,56 +46,13 @@ Exercises
                 :shortname: interactivepython
                 :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
 
-#.
-
-    .. tabbed:: q3
-
-        .. tab:: Question
-
-           Assign to a variable in your program a triple-quoted string that contains 
-           your favorite paragraph of text - perhaps a poem, a speech, instructions
-           to bake a cake, some inspirational verses, etc.
+#. (GRADED) Assign to a variable in your program a triple-quoted string that contains your favorite paragraph of text - perhaps a poem, a speech, instructions to bake a cake, some inspirational verses, etc.
         
-           Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
-        
-               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
-        
-           .. activecode:: ex_8_3
+Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
 
-        .. tab:: Answer
-            
-            .. activecode:: q3_answer
+   Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
 
-                def count(p):
-                    lows = "abcdefghijklmnopqrstuvwxyz"
-                    ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                    
-                    numberOfe = 0
-                    totalChars = 0
-                    for achar in p:
-                        if achar in lows or achar in ups:
-                            totalChars = totalChars + 1
-                            if achar == 'e':
-                                numberOfe = numberOfe + 1
-
-                    percent_with_e = (numberOfe / totalChars) * 100
-                    print("Your text contains", totalChars, "alphabetic characters of which", numberOfe, "(", percent_with_e, "%)", "are 'e'.")
-
-
-                p = '''
-                "If the automobile had followed the same development cycle as the computer, a
-                Rolls-Royce would today cost $100, get a million miles per gallon, and explode
-                once a year, killing everyone inside."
-                -Robert Cringely
-                '''
-
-                count(p)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_bf88b1c4616d43f289c798b56a43b01c
+.. activecode:: ex_8_3
 
 #.
 
