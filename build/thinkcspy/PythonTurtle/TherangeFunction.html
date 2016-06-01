@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The range Function &mdash; How to Think like a Computer Scientist: Interactive Edition</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../_static/lib/lis.js"></script>
+    <script type="text/javascript" src="../_static/parsons_setup.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="How to Think like a Computer Scientist: Interactive Edition" href="../toc.html" />
+    <link rel="next" title="A Few More turtle Methods and Observations" href="AFewMoreturtleMethodsandObservations.html" />
+    <link rel="prev" title="Iteration Simplifies our Turtle Program" href="IterationSimplifiesourTurtleProgram.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'thinkcspy';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "3.5.1";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = true;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'thinkcspy';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../toc.html">How To Think Like a Computer Scientist</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div class="gittip">
+                  <iframe style="border:0;"
+                    src="https://www.gittip.com/bnmnetp/widget.html"
+                    width="48pt" height="22pt" class="gittip-button">
+                  </iframe>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../toc.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/thinkcspy/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/initiateGroup' id="joinGroupLink">Join a Study Group</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/schedule' id="groupScheduleLink">Group Schedule</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/newschedule' id="newChapterLink">Schedule New Chapter</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/manageGroup' id="manageGroupLink">Manage Group</a></li>
+			<li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/admin/index'>Instructor's Page</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/assignments/index'>Progress Page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/register" id="registerlink">Register</a></li>
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+          </ul>
+        </li>
+        <!-- end user account dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/thinkcspy/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/static/help/bugreports.html'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">The range Function</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Iteration Simplifies our Turtle Program" data-toggle="tooltip">
+    <a href="IterationSimplifiesourTurtleProgram.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - A Few More turtle Methods and Observations' data-toggle="tooltip" >
+    <a href="AFewMoreturtleMethodsandObservations.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="the-range-function">
+<h1>The range Function<a class="headerlink" href="#the-range-function" title="Permalink to this headline">¶</a></h1>
+<div id="advrange" class="video_popup" >
+<video controls preload="none"  poster="../_static/advrange.png">
+    <source src="http://media.interactivepython.org/thinkcsVideos/AdvancedRange.mov" type="video/mp4"></source>
+    <source src="http://media.interactivepython.org/thinkcsVideos/AdvancedRange.webm" type="video/webm"></source>
+    No supported video types
+</video>
+</div>
+<script>
+   jQuery(function($) {
+      var rb = new RunestoneBase();
+      $('#advrange_thumb').click(function(e) {
+         $('#advrange').show();
+         $('#advrange_thumb').hide();
+         rb.logBookEvent({'event':'video','act':'play','div_id': 'advrange'});
+         // Log the run event
+      });
+      $('#advrange video').one("click", function(){
+        this.play();
+      });
+      $('#advrange video').one("play", function(){
+        rb.logBookEvent({'event':'video','act':'play','div_id': 'advrange'});
+      });
+   });
+</script>
+<p>In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
+to happen four times.  We said that we could have used any four values.  In fact, we even used four colors.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">turtle</span>            <span class="c"># set up alex</span>
+<span class="n">wn</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+<span class="n">alex</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>   <span class="c"># repeat four times</span>
+    <span class="n">alex</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">alex</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">wn</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
+want to write simple <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
+In fact, these lists are so popular that Python gives us special built-in
+<code class="docutils literal"><span class="pre">range</span></code> objects
+that can deliver a sequence of values to
+the <code class="docutils literal"><span class="pre">for</span></code> loop.  The sequence provided by <code class="docutils literal"><span class="pre">range</span></code> always starts with 0.  If you ask for <code class="docutils literal"><span class="pre">range(4)</span></code>, then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise, <code class="docutils literal"><span class="pre">range(10)</span></code> provides 10 values, 0 through 9.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="c"># Executes the body with i = 0, then 1, then 2, then 3</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="c"># sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Computer scientists like to count from 0!</p>
+</div>
+<p>So to repeat something four times, a good Python programmer would do this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">alex</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">alex</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="http://docs.python.org/py3k/library/functions.html?highlight=range#range">range</a> function is actually a very powerful function
+when it comes to
+creating sequences of integers.  It can take one, two, or three parameters.  We have seen
+the simplest case of one parameter such as <code class="docutils literal"><span class="pre">range(4)</span></code> which creates <code class="docutils literal"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code>.
+But what if we really want to have the sequence <code class="docutils literal"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4]</span></code>?
+We can do this by using a two parameter version of <code class="docutils literal"><span class="pre">range</span></code> where the first parameter is the starting point and the second parameter is the ending point.  The evaluation of <code class="docutils literal"><span class="pre">range(1,5)</span></code> produces the desired sequence.  What happened to the 5?
+In this case we interpret the parameters of the range function to mean
+range(start,stop+1).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Why in the world would range not just work like range(start,
+stop)?  Think about it like this.  Because computer scientists like to
+start counting at 0 instead of 1, <code class="docutils literal"><span class="pre">range(N)</span></code> produces a sequence of
+things that is N long, but the consequence of this is that the final
+number of the sequence is N-1.  In the case of start,
+stop it helps to simply think that the sequence begins with start and
+continues as long as the number is less than stop.</p>
+</div>
+<p>Here are a two examples for you to run.  Try them and then add another line below to create a sequence starting
+at 10 and going up to 20 (including 20).</p>
+
+<textarea data-component="activecode" id=ch03_5 data-lang="python"    data-timelimit=25000  data-codelens="true" data-audio=''     >
+print(range(4))
+print(range(1, 5))
+</textarea>
+<p>Codelens will help us to further understand the way range works.  In this case, the variable <code class="docutils literal"><span class="pre">i</span></code> will take on values
+produced by the <code class="docutils literal"><span class="pre">range</span></code> function.</p>
+
+<div class="alert alert-warning cd_section">
+<div id="rangeme"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (rangeme)</span> </p>
+</div>
+<script type="text/javascript">
+var rangeme_trace = {"code": "for i in range(10):\n   print(i)", "trace": [{"heap": {}, "ordered_globals": [], "stdout": "", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 0}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 0}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 1}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 1}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 2}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 2}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 3}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 3}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 4}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 4}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 5}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 5}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 6}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 6}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 7}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 7}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 8}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n8\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 8}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n8\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 9}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 9}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 9}, "event": "return"}]};
+var rangeme_vis;
+
+$(document).ready(function() {
+    try {
+        rangeme_vis = new ExecutionVisualizer('rangeme',rangeme_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(rangeme_vis,'rangeme');
+        styleButtons('rangeme');
+        allVisualizers.push(rangeme_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component rangeme_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#rangeme_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'rangeme'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (rangeme_vis) {
+        rangeme_vis.redrawConnectors();
+    }
+});
+</script>
+<p>Finally, suppose we want to have a sequence of even numbers.
+How would we do that?  Easy, we add another parameter, a step,
+that tells range what to count by.  For even numbers we want to start at 0
+and count by 2&#8217;s.  So if we wanted the first 10 even numbers we would use
+<code class="docutils literal"><span class="pre">range(0,19,2)</span></code>.  The most general form of the range is
+<code class="docutils literal"><span class="pre">range(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></code>.  You can also create a sequence of numbers that
+starts big and gets smaller by using a negative value for the step parameter.</p>
+
+<textarea data-component="activecode" id=ch03_6 data-lang="python"    data-timelimit=25000  data-codelens="true" data-audio=''     >
+print(range(0, 19, 2))
+print(range(0, 20, 2))
+print(range(10, 0, -1))
+</textarea>
+<p>Try it in codelens.</p>
+
+<div class="alert alert-warning cd_section">
+<div id="rangeme2"></div>
+<p class="cl_caption"><span class="cl_caption_text"> (rangeme2)</span> </p>
+</div>
+<script type="text/javascript">
+var rangeme2_trace = {"code": "for i in range(0, 20, 2):\n   print(i)", "trace": [{"heap": {}, "ordered_globals": [], "stdout": "", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 0}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 0}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 2}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 2}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 4}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 4}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 6}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 6}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 8}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 8}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 10}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 10}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 12}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 12}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 14}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 14}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 16}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n16\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 16}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n16\n", "stack_to_render": [], "func_name": "<module>", "line": 2, "globals": {"i": 18}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n16\n18\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 18}, "event": "step_line"}, {"heap": {}, "ordered_globals": ["i"], "stdout": "0\n2\n4\n6\n8\n10\n12\n14\n16\n18\n", "stack_to_render": [], "func_name": "<module>", "line": 1, "globals": {"i": 18}, "event": "return"}]};
+var rangeme2_vis;
+
+$(document).ready(function() {
+    try {
+        rangeme2_vis = new ExecutionVisualizer('rangeme2',rangeme2_trace,
+                                    {embeddedMode: true,
+                                    verticalStack: false,
+                                    heightChangeCallback: redrawAllVisualizerArrows,
+                                    codeDivWidth: 500,
+                                    lang : 'py3'
+                                    });
+        attachLoggers(rangeme2_vis,'rangeme2');
+        styleButtons('rangeme2');
+        allVisualizers.push(rangeme2_vis);
+    } catch (e) {
+        console.log("Failed to Initialize CodeLens component rangeme2_vis" );
+        console.log(e.toString());
+    }
+
+});
+
+$(document).ready(function() {
+    $("#rangeme2_tracecheck").click(function() {
+        logBookEvent({'event':'codelens', 'act': 'check', 'div_id':'rangeme2'});
+    });
+});
+
+if (allVisualizers === undefined) {
+   var allVisualizers = [];
+}
+
+
+$(window).resize(function() {
+    if (rangeme2_vis) {
+        rangeme2_vis.redrawConnectors();
+    }
+});
+</script>
+<p><strong>Check your understanding</strong></p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_5_1">
+            turtle-8-1: In the command range(3, 10, 2), what does the second argument (10) specify?
+            <li data-component="answer" data-correct id="test_question3_5_1_opt_a">Range should generate a list that stops at 9 (including 9).</li><li data-component="feedback" id="test_question3_5_1_opt_a">Range will generate the list [3, 5, 7, 9].</li>
+            
+            <li data-component="answer"  id="test_question3_5_1_opt_b">Range should generate a list that starts at 10 (including 10).</li><li data-component="feedback" id="test_question3_5_1_opt_b">The first argument (3) tells range what number to start at.</li>
+            
+            <li data-component="answer"  id="test_question3_5_1_opt_c">Range should generate a list starting at 3 that stops at 10 (including 10).</li><li data-component="feedback" id="test_question3_5_1_opt_c">Range will always stop at the number before (not including) the specified ending point for the list.</li>
+            
+            <li data-component="answer"  id="test_question3_5_1_opt_d">Range should generate a list using every 10th number between the start and the stopping number.</li><li data-component="feedback" id="test_question3_5_1_opt_d">The third argument (2) tells range how many numbers to skip between each element in the list.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_5_2">
+            turtle-8-2: What command correctly generates the list [2, 5, 8]?
+            <li data-component="answer"  id="test_question3_5_2_opt_a">range(2, 5, 8)</li><li data-component="feedback" id="test_question3_5_2_opt_a">This command generates the list [2] because the first number (2) tells range where to start, the second number tells range where to end (5, not inclusive) and the third number tells range how many numbers to skip between elements (8).  Since 10>= 8, there is only one number in this list.</li>
+            
+            <li data-component="answer"  id="test_question3_5_2_opt_b">range(2, 8, 3)</li><li data-component="feedback" id="test_question3_5_2_opt_b">This command generates the list [2, 5] because 8 is not less than 8 (the specified ending number).</li>
+            
+            <li data-component="answer" data-correct id="test_question3_5_2_opt_c">range(2, 10, 3)</li><li data-component="feedback" id="test_question3_5_2_opt_c">The first number is the starting point, the second is the maximum allowed, and the third is the amount to increment by.</li>
+            
+            <li data-component="answer"  id="test_question3_5_2_opt_d">range(8, 1, -3)</li><li data-component="feedback" id="test_question3_5_2_opt_d">This command generates the list [8, 5, 3] because it starts at 8, ends at (or above 1), and skips every third number going down.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_5_3">
+            turtle-8-3: What happens if you give range only one argument?  For example: range(4)
+            <li data-component="answer" data-correct id="test_question3_5_3_opt_a">It will generate a list starting at 0, with every number included up to but not including the argument it was passed.</li><li data-component="feedback" id="test_question3_5_3_opt_a">Yes, if you only give one number to range it starts with 0 and ends before the number specified incrementing by 1.</li>
+            
+            <li data-component="answer"  id="test_question3_5_3_opt_b">It will generate a list starting at 1, with every number up to but not including the argument it was passed.</li><li data-component="feedback" id="test_question3_5_3_opt_b">Range starts at 0 unless otherwise specified.</li>
+            
+            <li data-component="answer"  id="test_question3_5_3_opt_c">It will generate a list starting at 1, with every number including the argument it was passed.</li><li data-component="feedback" id="test_question3_5_3_opt_c">Range starts at 0 unless otherwise specified, and never includes its ending element (which is the argument it was passed).</li>
+            
+            <li data-component="answer"  id="test_question3_5_3_opt_d">It will cause an error: range always takes exactly 3 arguments.</li><li data-component="feedback" id="test_question3_5_3_opt_d">If range is passed only one argument, it interprets that argument as the end of the list (not inclusive).</li>
+            
+
+            </ul>
+            </div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Iteration Simplifies our Turtle Program' data-toggle="tooltip">
+    <a href="IterationSimplifiesourTurtleProgram.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="IterationSimplifiesourTurtleProgram.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - A Few More turtle Methods and Observations' data-toggle="tooltip" >
+    <a href="AFewMoreturtleMethodsandObservations.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="AFewMoreturtleMethodsandObservations.html" >Next Section - A Few More turtle Methods and Observations</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014 Brad Miller, David Ranum, Created using Runestone Interactive.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

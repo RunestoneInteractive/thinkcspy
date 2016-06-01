@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Exercises &mdash; How to Think like a Computer Scientist: Interactive Edition</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../_static/lib/lis.js"></script>
+    <script type="text/javascript" src="../_static/parsons_setup.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="How to Think like a Computer Scientist: Interactive Edition" href="../toc.html" />
+    <link rel="next" title="Dictionaries" href="../Dictionaries/intro-Dictionaries.html" />
+    <link rel="prev" title="Glossary" href="Glossary.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'thinkcspy';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "3.5.1";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = true;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'thinkcspy';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../toc.html">How To Think Like a Computer Scientist</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div class="gittip">
+                  <iframe style="border:0;"
+                    src="https://www.gittip.com/bnmnetp/widget.html"
+                    width="48pt" height="22pt" class="gittip-button">
+                  </iframe>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../toc.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/thinkcspy/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/initiateGroup' id="joinGroupLink">Join a Study Group</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/schedule' id="groupScheduleLink">Group Schedule</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/newschedule' id="newChapterLink">Schedule New Chapter</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/mygroup/manageGroup' id="manageGroupLink">Manage Group</a></li>
+			<li class="divider"></li>
+            <li><a href='http://127.0.0.1:8000/runestone/admin/index'>Instructor's Page</a></li>
+            <li><a href='http://127.0.0.1:8000/runestone/assignments/index'>Progress Page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="http://127.0.0.1:8000/runestone/default/user/register" id="registerlink">Register</a></li>
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+          </ul>
+        </li>
+        <!-- end user account dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/thinkcspy/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/static/help/bugreports.html'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Exercises</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - Glossary" data-toggle="tooltip">
+    <a href="Glossary.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Dictionaries' data-toggle="tooltip" >
+    <a href="../Dictionaries/intro-Dictionaries.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="exercises">
+<h1>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h1>
+<div class="full-width container">
+<ol class="arabic">
+<li><div id='q1' data-component="tabbedStuff" ><div data-component="tab" data-tabname="Question" >
+<p>The following sample file called <code class="docutils literal"><span class="pre">studentdata.txt</span></code> contains one line for each student in an imaginary class.  The
+student&#8217;s name is the first thing on each line, followed by some exam scores.
+The number of scores might be different for each student.</p>
+
+<pre data-component="datafile" id=studentdata.txt  data-edit="false" data-rows="20" data-cols="36">
+joe 10 15 20 30 40
+bill 23 16 19 22
+sue 8 22 17 14 32 17 24 21 2 9 11 17
+grace 12 28 21 45 26 10
+john 14 32 25 16 89
+</pre>
+<p>Using the text file <code class="docutils literal"><span class="pre">studentdata.txt</span></code> write a program that prints out the names of
+students that have more than six quiz scores.</p>
+
+<textarea data-component="activecode" id=ex_6_1 data-lang="python"  data-hidecode="true"  data-timelimit=25000 data-coach="true"  data-audio='studentdata.txt*atype*'    data-gradebutton=true >
+
+
+</textarea>
+</div><div data-component="tab" data-tabname="Answer" >
+
+<textarea data-component="activecode" id=ch_files_q1answer data-lang="python"    data-timelimit=25000   data-audio=''     >
+f = open("studentdata.txt", "r")
+
+for aline in f:
+    items = aline.split()
+    if len(items[1:]) > 6:
+        print(items[0])
+
+f.close()
+</textarea>
+</div><div data-component="tab" data-tabname="Discussion" >
+<script type="text/javascript">
+    function disqus_eb4a097382404ffe81300aac5744e3fe_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_' + eBookConfig.course;
+                    this.page.url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'interactivepython';    
+            disqus_identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_' + eBookConfig.course;
+            disqus_url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="disqus_eb4a097382404ffe81300aac5744e3fe" onclick="disqus_eb4a097382404ffe81300aac5744e3fe_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='disqus_eb4a097382404ffe81300aac5744e3fe']").attr('data-disqus-identifier', 'disqus_eb4a097382404ffe81300aac5744e3fe_' + eBookConfig.course);
+</script>
+</div>
+    </div>
+
+</li>
+<li><p class="first">Using the text file <code class="docutils literal"><span class="pre">studentdata.txt</span></code> (shown in exercise 1) write a program that calculates the average grade
+for each student, and print out the student&#8217;s name along with their average grade.</p>
+
+<textarea data-component="activecode" id=ex_10_2 data-lang="python"  data-hidecode="true"  data-timelimit=25000 data-coach="true"  data-audio='studentdata.txt*atype*'    data-gradebutton=true >
+
+
+</textarea>
+</li>
+<li><div id='q3' data-component="tabbedStuff" ><div data-component="tab" data-tabname="Question" >
+<p>Using the text file <code class="docutils literal"><span class="pre">studentdata.txt</span></code> (shown in exercise 1) write a program that calculates the minimum and
+maximum score for each student.  Print out their name as well.</p>
+
+<textarea data-component="activecode" id=ex_6_3 data-lang="python"  data-hidecode="true"  data-timelimit=25000 data-coach="true"  data-audio='studentdata.txt*atype*'    data-gradebutton=true >
+
+
+</textarea>
+</div><div data-component="tab" data-tabname="Answer" >
+
+<textarea data-component="activecode" id=ch_files_q3answer data-lang="python"    data-timelimit=25000   data-audio=''     >
+f = open("studentdata.txt", "r")
+
+for aline in f:
+    items = aline.split()
+    print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
+
+f.close()
+</textarea>
+</div><div data-component="tab" data-tabname="Discussion" >
+<script type="text/javascript">
+    function disqus_eb4a097382404ffe81300aac5744e3fe_q3_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_q3_' + eBookConfig.course;
+                    this.page.url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_q3_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'interactivepython';    
+            disqus_identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_q3_' + eBookConfig.course;
+            disqus_url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_q3_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="disqus_eb4a097382404ffe81300aac5744e3fe_q3" onclick="disqus_eb4a097382404ffe81300aac5744e3fe_q3_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='disqus_eb4a097382404ffe81300aac5744e3fe_q3']").attr('data-disqus-identifier', 'disqus_eb4a097382404ffe81300aac5744e3fe_q3_' + eBookConfig.course);
+</script>
+</div>
+    </div>
+
+</li>
+<li><p class="first">Here is a file called <code class="docutils literal"><span class="pre">labdata.txt</span></code> that contains some sample data from a lab experiment.</p>
+
+<pre data-component="datafile" id=labdata.txt  data-edit="false" data-rows="20" data-cols="5">
+44 71
+79 37
+78 24
+41 76
+19 12
+19 32
+28 36
+22 58
+89 92
+91 6
+53 7
+27 80
+14 34
+8 81
+80 19
+46 72
+83 96
+88 18
+96 48
+77 67
+</pre>
+<p>Interpret the data file <code class="docutils literal"><span class="pre">labdata.txt</span></code> such that each line contains a an x,y coordinate pair.
+Write a function called <code class="docutils literal"><span class="pre">plotRegression</span></code> that reads the data from this file
+and uses a turtle to plot those points and a best fit line according to the following
+formulas:</p>
+<p><span class="math">\(y = \bar{y} + m(x - \bar{x})\)</span></p>
+<p><span class="math">\(m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}\)</span></p>
+<p>where <span class="math">\(\bar{x}\)</span> is the mean of the x-values, <span class="math">\(\bar{y}\)</span> is the mean of the y-
+values and <span class="math">\(n\)</span> is the number of points.  If you are not familiar with the
+mathematical <span class="math">\(\sum\)</span> it is the sum operation.  For example <span class="math">\(\sum{x_i}\)</span>
+means to add up all the x values.</p>
+<p>Your program should analyze the points and correctly scale the window using
+<code class="docutils literal"><span class="pre">setworldcoordinates</span></code> so that that each point can be plotted.  Then you should
+draw the best fit line, in a different color, through the points.</p>
+
+<textarea data-component="activecode" id=ex_10_4 data-lang="python"  data-hidecode="true"  data-timelimit=25000 data-coach="true"  data-audio='labdata.txt*atype*'    data-gradebutton=true >
+
+
+</textarea>
+</li>
+<li><div id='q5' data-component="tabbedStuff" ><div data-component="tab" data-tabname="Question" >
+<p>At the bottom of this page is a very long file called <code class="docutils literal"><span class="pre">mystery.txt</span></code> The lines of this
+file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
+for a turtle to lift up or put down its tail.  The pairs of numbers are some x,y coordinates.
+Write a program that reads the file <code class="docutils literal"><span class="pre">mystery.txt</span></code> and uses the turtle to draw the picture
+described by the commands and the set of points.</p>
+
+<textarea data-component="activecode" id=ex_10_5 data-lang="python"  data-hidecode="true"  data-timelimit=25000 data-coach="true"  data-audio='mystery.txt*atype*'    data-gradebutton=true >
+
+
+</textarea>
+</div><div data-component="tab" data-tabname="Answer" >
+
+<textarea data-component="activecode" id=ch_files_q5answer data-lang="python"    data-timelimit=25000   data-audio=''     >
+import turtle
+
+t = turtle.Turtle()
+wn = turtle.Screen()
+wn.setworldcoordinates(-300, -300, 300, 300)
+
+f = open("mystery.txt", "r")
+
+for aline in f:
+    items = aline.split()
+    if items[0] == "UP":
+        t.up()
+    else:
+        if items[0] == "DOWN":
+            t.down()
+        else:
+            # must be coords
+            t.goto(int(items[0]), int(items[1]))
+
+f.close()
+wn.exitonclick()
+</textarea>
+</div><div data-component="tab" data-tabname="Discussion" >
+<script type="text/javascript">
+    function disqus_eb4a097382404ffe81300aac5744e3fe_q5_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_q5_' + eBookConfig.course;
+                    this.page.url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_q5_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'interactivepython';    
+            disqus_identifier = 'disqus_eb4a097382404ffe81300aac5744e3fe_q5_' + eBookConfig.course;
+            disqus_url = 'http://disqus_eb4a097382404ffe81300aac5744e3fe_q5_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="disqus_eb4a097382404ffe81300aac5744e3fe_q5" onclick="disqus_eb4a097382404ffe81300aac5744e3fe_q5_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='disqus_eb4a097382404ffe81300aac5744e3fe_q5']").attr('data-disqus-identifier', 'disqus_eb4a097382404ffe81300aac5744e3fe_q5_' + eBookConfig.course);
+</script>
+</div>
+    </div>
+
+</li>
+</ol>
+</div>
+<p>Here is the <code class="docutils literal"><span class="pre">mystery.txt</span></code> file:</p>
+
+<pre data-component="datafile" id=mystery.txt  data-edit="false" data-rows="20" data-cols="9">
+UP
+-218 185
+DOWN
+-240 189
+-246 188
+-248 183
+-246 178
+-244 175
+-240 170
+-235 166
+-229 163
+-220 158
+-208 156
+-203 153
+-194 148
+-187 141
+-179 133
+-171 119
+-166 106
+-163 87
+-161 66
+-162 52
+-164 44
+-167 28
+-171 6
+-172 -15
+-171 -30
+-165 -46
+-156 -60
+-152 -67
+-152 -68
+UP
+-134 -61
+DOWN
+-145 -66
+-152 -78
+-152 -94
+-157 -109
+-157 -118
+-151 -128
+-146 -135
+-146 -136
+UP
+-97 -134
+DOWN
+-98 -138
+-97 -143
+-96 -157
+-96 -169
+-98 -183
+-104 -194
+-110 -203
+-114 -211
+-117 -220
+-120 -233
+-122 -243
+-123 -247
+-157 -248
+-157 -240
+-154 -234
+-154 -230
+-153 -229
+-149 -226
+-146 -223
+-145 -219
+-143 -214
+-142 -210
+-141 -203
+-139 -199
+-136 -192
+-132 -184
+-130 -179
+-132 -171
+-133 -162
+-134 -153
+-138 -145
+-143 -137
+-143 -132
+-142 -124
+-138 -112
+-134 -104
+-132 -102
+UP
+-97 -155
+DOWN
+-92 -151
+-91 -147
+-89 -142
+-89 -135
+-90 -129
+-90 -128
+UP
+-94 -170
+DOWN
+-83 -171
+-68 -174
+-47 -177
+-30 -172
+-15 -171
+-11 -170
+UP
+12 -96
+DOWN
+9 -109
+9 -127
+7 -140
+5 -157
+9 -164
+22 -176
+37 -204
+40 -209
+49 -220
+55 -229
+57 -235
+57 -238
+50 -239
+49 -241
+51 -248
+53 -249
+63 -245
+70 -243
+57 -249
+62 -250
+71 -250
+75 -250
+81 -250
+86 -248
+86 -242
+84 -232
+85 -226
+81 -221
+77 -211
+73 -205
+67 -196
+62 -187
+58 -180
+51 -171
+47 -164
+46 -153
+50 -141
+53 -130
+54 -124
+57 -112
+56 -102
+55 -98
+UP
+48 -164
+DOWN
+54 -158
+60 -146
+64 -136
+64 -131
+UP
+5 -152
+DOWN
+1 -150
+-4 -145
+-8 -138
+-14 -128
+-19 -119
+-17 -124
+UP
+21 -177
+DOWN
+14 -176
+7 -174
+-6 -174
+-14 -170
+-19 -166
+-20 -164
+UP
+-8 -173
+DOWN
+-8 -180
+-5 -189
+-4 -201
+-2 -211
+-1 -220
+-2 -231
+-5 -238
+-8 -241
+-9 -244
+-7 -249
+6 -247
+9 -248
+16 -247
+21 -246
+24 -241
+27 -234
+27 -226
+27 -219
+27 -209
+27 -202
+28 -193
+28 -188
+28 -184
+UP
+-60 -177
+DOWN
+-59 -186
+-57 -199
+-56 -211
+-59 -225
+-61 -233
+-65 -243
+-66 -245
+-73 -246
+-81 -246
+-84 -246
+-91 -245
+-91 -244
+-88 -231
+-87 -225
+-85 -218
+-85 -211
+-85 -203
+-85 -193
+-88 -185
+-89 -180
+-91 -175
+-92 -172
+-93 -170
+UP
+-154 -93
+DOWN
+-157 -87
+-162 -74
+-168 -66
+-172 -57
+-175 -49
+-178 -38
+-178 -26
+-178 -12
+-177 4
+-175 17
+-172 27
+-168 36
+-161 48
+-161 50
+UP
+-217 178
+DOWN
+-217 178
+-217 177
+-215 176
+-214 175
+-220 177
+-223 178
+-223 178
+-222 178
+UP
+-248 185
+DOWN
+-245 184
+-240 182
+-237 181
+-234 179
+-231 177
+-229 176
+-228 175
+-226 174
+-224 173
+-223 173
+-220 172
+-217 172
+-216 171
+-214 170
+-214 169
+UP
+-218 186
+DOWN
+-195 173
+-183 165
+-175 159
+-164 151
+-158 145
+-152 139
+-145 128
+-143 122
+-139 112
+-138 105
+-134 95
+-131 88
+-129 78
+-126 67
+-125 62
+-125 54
+-124 44
+-125 38
+-126 30
+-125 27
+-125 8
+-126 5
+-125 -9
+-122 -15
+-115 -25
+-109 -32
+-103 -39
+-95 -42
+-84 -45
+-72 -47
+-56 -48
+-41 -47
+-31 -46
+-18 -45
+-1 -44
+9 -43
+34 -45
+50 -52
+67 -61
+83 -68
+95 -80
+112 -97
+142 -115
+180 -132
+200 -146
+227 -159
+259 -175
+289 -185
+317 -189
+349 -190
+375 -191
+385 -192
+382 -196
+366 -199
+352 -204
+343 -204
+330 -205
+315 -209
+296 -212
+276 -214
+252 -208
+237 -202
+218 -197
+202 -193
+184 -187
+164 -179
+147 -173
+128 -168
+116 -164
+102 -160
+88 -158
+78 -159
+69 -162
+57 -164
+56 -165
+51 -165
+UP
+68 -144
+DOWN
+83 -143
+96 -141
+109 -139
+119 -146
+141 -150
+161 -155
+181 -163
+195 -169
+208 -179
+223 -187
+241 -191
+247 -193
+249 -194
+UP
+-6 -141
+DOWN
+-15 -146
+-29 -150
+-42 -154
+-51 -153
+-60 -152
+-60 -152
+UP
+-90 -134
+DOWN
+-85 -131
+-79 -128
+-78 -123
+-80 -115
+-82 -106
+-80 -101
+-76 -101
+UP
+-81 -132
+DOWN
+-76 -130
+-71 -126
+-72 -124
+UP
+43 -118
+DOWN
+44 -125
+47 -135
+41 -156
+37 -160
+40 -166
+47 -171
+47 -171
+UP
+-106 -153
+DOWN
+-107 -167
+-106 -178
+-109 -192
+-114 -198
+-116 -201
+</pre>
+</pre>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - Glossary' data-toggle="tooltip">
+    <a href="Glossary.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="Glossary.html" ></a>
+  
+  <li id="relations-next" class="navLink" title='Next Section - Dictionaries' data-toggle="tooltip" >
+    <a href="../Dictionaries/intro-Dictionaries.html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="../Dictionaries/intro-Dictionaries.html" >Next Section - Dictionaries</a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014 Brad Miller, David Ranum, Created using Runestone Interactive.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
