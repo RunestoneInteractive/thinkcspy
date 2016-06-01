@@ -87,12 +87,12 @@ Exercises
 
                 class myTests(TestCaseGui):
 
-                    def testOne(self):
-                        self.assertEqual(getGrade(95),'A','Your function failed with input of 95')
-                        self.assertEqual(getGrade(85),'B','Your function failed with input of 85')
-                        self.assertEqual(getGrade(65),'D','Your function failed with input of 65')
-                        self.assertEqual(getGrade(79.99999),'C','Your function failed with input of 79.9999')
-                        self.assertEqual(getGrade(80),'B','Your function failed with input of 80')
+                   def testOne(self):
+                       self.assertEqual(getGrade(95),'A','Your function failed with input of 95')
+                       self.assertEqual(getGrade(85),'B','Your function failed with input of 85')
+                       self.assertEqual(getGrade(65),'D','Your function failed with input of 65')
+                       self.assertEqual(getGrade(79.99999),'C','Your function failed with input of 79.9999')
+                       self.assertEqual(getGrade(80),'B','Your function failed with input of 80')
 
 
                 myTests().main()
@@ -528,6 +528,7 @@ Exercises
             Your program should print an error message if the user provides a date that is out of range.
         
             .. actex:: ex_6_13
+
 
         
 
