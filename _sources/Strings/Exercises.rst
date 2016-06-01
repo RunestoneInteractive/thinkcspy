@@ -17,7 +17,7 @@ Exercises
         .. tab:: Question
 
             What is the result of each of the following:
-        
+
             a. 'Python'[1]
             #. "Strings are sequences of characters."[5]
             #. len("wonderful")
@@ -40,7 +40,7 @@ Exercises
             #. 'apple' > 'pineapple' = False
             #. 'pineapple' < 'Peach' = False
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -62,33 +62,36 @@ Exercises
 
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
-   
+
     .. actex:: ex_8_2
-   
+
 #.
 
     .. tabbed:: q3
 
         .. tab:: Question
 
-           Assign to a variable in your program a triple-quoted string that contains 
+           Assign to a variable in your program a triple-quoted string that contains
            your favorite paragraph of text - perhaps a poem, a speech, instructions
            to bake a cake, some inspirational verses, etc.
-        
+
            Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
-        
-               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
-        
+
+               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+
            .. actex:: ex_8_3
 
+              def count(p):
+                  # your code here
+
         .. tab:: Answer
-            
+
             .. activecode:: q3_answer
 
                 def count(p):
                     lows = "abcdefghijklmnopqrstuvwxyz"
                     ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                    
+
                     numberOfe = 0
                     totalChars = 0
                     for achar in p:
@@ -129,12 +132,12 @@ Exercises
         .. tab:: Question
 
            Write a function that will return the number of digits in an integer.
-        
+
            .. actex:: ex_7_10
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q5_answer
 
                 def findNumDigits(n):
@@ -146,7 +149,7 @@ Exercises
                 print(findNumDigits(20000))
                 print(findNumDigits(1))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -174,24 +177,24 @@ Exercises
         .. tab:: Question
 
            Write a function that mirrors its argument.
-        
+
            .. actex:: ex_8_6
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def mirror(mystr):
                   # your code here
-        
+
               testEqual(mirror('good'), 'gooddoog')
               testEqual(mirror('Python'), 'PythonnohtyP')
               testEqual(mirror(''), '')
               testEqual(mirror('a'), 'aa')
-        
-        
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q7_answer
                 :nocodelens:
 
@@ -241,24 +244,24 @@ Exercises
         .. tab:: Question
 
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
-        
+
            .. actex:: ex_8_8
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def is_palindrome(myStr):
                   # your code here
-        
+
               testEqual(is_palindrome('abba'), True)
               testEqual(is_palindrome('abab'), False)
               testEqual(is_palindrome('straw warts'), True)
               testEqual(is_palindrome('a'), True)
               testEqual(is_palindrome(''), True)
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
                 :nocodelens:
 
@@ -282,7 +285,7 @@ Exercises
                 testEqual(is_palindrome('a'), True)
                 testEqual(is_palindrome(''), True)
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -314,24 +317,24 @@ Exercises
         .. tab:: Question
 
            Write a function that removes the first occurrence of a string from another string.
-        
+
            .. actex:: ex_8_10
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
-        
+
               testEqual(remove('an', 'banana'), 'bana')
               testEqual(remove('cyc', 'bicycle'), 'bile')
               testEqual(remove('iss', 'Mississippi'), 'Missippi')
               testEqual(remove('egg', 'bicycle'), 'bicycle')
-        
-        
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -349,7 +352,7 @@ Exercises
                 testEqual(remove('iss', 'Mississippi'), 'Missippi')
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -357,7 +360,7 @@ Exercises
 
 
 #. Write a function that removes all occurrences of a string from another string.
- 
+
    .. actex:: ex_8_11
 
       from test import testEqual
@@ -378,11 +381,11 @@ Exercises
         .. tab:: Question
 
            Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
-        
+
                L
                L -> +RF-LFL-FR+
                R -> -LF+RFR+FL-
-        
+
            .. actex:: ex_8_12
               :nocodelens:
 
@@ -471,16 +474,16 @@ Exercises
         .. tab:: Question
 
            Here is something called an arrowhead curve.  Use 60 degrees.::
-        
+
                YF
                X -> YF+XF+Y
                Y -> XF-YF-X
-        
+
            .. actex:: ex_8_14
               :nocodelens:
 
         .. tab:: Answer
-            
+
             .. activecode:: q15_answer
                 :nocodelens:
 
@@ -538,7 +541,7 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -561,11 +564,11 @@ Exercises
         .. tab:: Question
 
             The Sierpinski Triangle.  Use 60 degrees.::
-        
+
                FXF--FF--FF
                F -> FF
                X -> --FXF++FXF++FXF--
-        
+
            .. actex:: ex_8_16
               :nocodelens:
 
@@ -634,7 +637,7 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -660,7 +663,7 @@ Exercises
            should also take two parameters.  The encrypted message,
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
-        
+
            .. actex:: ex_8_18
 
         .. tab:: Answer
@@ -713,8 +716,20 @@ Exercises
       def removeDups(astring):
           # your code here
 
-      
+
       print(removeDups("mississippi"))   #should print misp
+
+      ====
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(removeDups("mississippi"),"misp","removeDups failed on string 'mississippi'")
+            self.assertEqual(removeDups("potato"),"pota","removeDups failed on string 'potato'")
+            self.assertEqual(removeDups("bookkeeper"),"bokepr","removeDups failed on string 'bookkeeper'")
+
+      myTests().main()
 
 
 #.
@@ -730,18 +745,18 @@ Exercises
            then the counting wraps around to the letter a again, so n becomes a, o becomes b
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
-        
+
            .. actex:: ex_8_20
-        
+
               def rot13(mess):
                   # Your code here
-        
+
               print(rot13('abcde'))
               print(rot13('nopqr'))
               print(rot13(rot13('Since rot13 is symmetric you should see this message')))
 
         .. tab:: Answer
-            
+
             .. activecode:: q21_answer
 
                 def rot13(mess):
@@ -762,9 +777,8 @@ Exercises
                 print(rot13('nopqr'))
                 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
                 :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
-

@@ -135,6 +135,21 @@ Exercises
 
        .. actex:: ex_7_11
 
+          def sum_of_squares(xs):
+              # your code here
+
+          ====
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+
+              def testOne(self):
+                  self.assertEqual(sum_of_squares([2,3,4]),29,"sum_of_squares fails on input [2,3,4]")
+                  self.assertEqual(sum_of_squares([0,1,-1]),2,"sum_of_squares fails on input [0,1,-1]")
+                  self.assertEqual(sum_of_squares([5,12,14]),344,"sum_of_squares fails on input [5,12,14]")
+
+          myTests().main()
+
     #.
 
         .. tabbed:: q7
@@ -144,6 +159,24 @@ Exercises
                Write a function to count how many odd numbers are in a list.
 
                .. actex:: ex_9_6
+
+                  def countOdd(lst):
+                      # your code here
+
+                  ====
+                  from unittest.gui import TestCaseGui
+
+                  class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(countOdd([1,3,5,7,9]),5,"countOdd failed on input [1,3,5,7,9]")
+                          self.assertEqual(countOdd([1,2,3,4,5]),3,"countOdd failed on input [-1,-2,-3,-4,-5]")
+                          self.assertEqual(countOdd([2,4,6,8,10]),0,"countOdd failed on input [2,4,6,8,10]")
+                          self.assertEqual(countOdd([0,-1,12,-33]),2,"countOdd failed on input [0,-1,12,-33]")
+
+                  myTests().main()
+
+
 
             .. tab:: Answer
 
@@ -176,6 +209,22 @@ Exercises
 
        .. actex:: ex_9_7
 
+          def sumEven(lst):
+              # your code here
+
+          ====
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+
+              def testOne(self):
+                  self.assertEqual(sumEven([1,3,5,7,9]),0,"sumEven failed on input [1,3,5,7,9]")
+                  self.assertEqual(sumEven([-1,-2,-3,-4,-5]),-6,"sumEven failed on input [-1,-2,-3,-4,-5]")
+                  self.assertEqual(sumEven([2,4,6,7,9]),12,"sumEven failed on input [2,4,6,7,9]")
+                  self.assertEqual(sumEven([0,1,12,33]),12,"sumEven failed on input [0,1,12,33]")
+
+          myTests().main()
+
     #.
 
         .. tabbed:: q9
@@ -185,6 +234,24 @@ Exercises
                Sum up all the negative numbers in a list.
 
                .. actex:: ex_9_8
+
+                  def sumNegatives(lst):
+                      # your code here
+
+                  ====
+                  from unittest.gui import TestCaseGui
+
+                  class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(sumNegatives([-1,-2,-3,-4,-5]),-15,"sumNegatives failed on input [-1,-2,-3,-4,-5]")
+                          self.assertEqual(sumNegatives([1,-3,5,-7,9]),-10,"sumNegatives failed on input [1,-3,5,-7,9]")
+                          self.assertEqual(sumNegatives([-2,-4,6,-7,9]),-13,"sumNegatives failed on input [-2,-4,6,-7,9]")
+                          self.assertEqual(sumNegatives([0,1,2,3,4]),0,"sumNegatives failed on input [0,1,2,3,4]")
+
+                  myTests().main()
+
+
 
             .. tab:: Answer
 
@@ -216,6 +283,9 @@ Exercises
 
        .. actex:: ex_9_9
 
+          def countWords(lst):
+              # your code here
+
     #.
 
         .. tabbed:: q11
@@ -226,6 +296,22 @@ Exercises
 
                .. actex:: ex_9_10
 
+                  def sumUntilEven(lst):
+                      # your code here
+
+                  ====
+                  from unittest.gui import TestCaseGui
+
+                  class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(sumUntilEven([1,2,3,4,5]),1,"sumUntilEven failed on input [1,2,3,4.5]")
+                          self.assertEqual(sumUntilEven([1,3,5,7,9]),25,"sumUntilEven failed on input [1,3,5,7,9]")
+                          self.assertEqual(sumUntilEven([2,4,6,7,9]),0,"sumUntilEven failed on input [2,4,6,7,9]")
+
+                  myTests().main()
+
+
             .. tab:: Answer
 
                 .. activecode:: q11_answer
@@ -235,7 +321,7 @@ Exercises
                     def sum(lst):
                         sum = 0
                         index = 0
-                        while lst[index] % 2 != 0 and index < len(lst):
+                        while index < len(lst) and lst[index] % 2 != 0:
                             sum = sum + lst[index]
                             index = index + 1
                         return sum
@@ -256,6 +342,10 @@ Exercises
     #. Count how many words occur in a list up to and including the first occurrence of the word "sam".
 
        .. actex:: ex_9_11
+
+          def count(lst):
+              # your code here
+
 
 
     #.
@@ -341,6 +431,22 @@ Exercises
        *Hint*: use the ``split`` and ``join`` methods.
 
        .. actex:: ex_9_13
+
+          def replace(s, old, new):
+              # your code here
+
+          ====
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+
+              def testOne(self):
+                  self.assertEqual(replace('Mississippi','i','I'),'MIssIssIppI',"replace failed on input 'Mississippi','i','I'")
+                  self.assertEqual(replace('Bookkeeper','e','A'),'BookkAApAr',"replace failed on input 'Bookkeeper','e','A'")
+                  self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"replace failed on input 'Deeded','e','q'")
+
+          myTests().main()
+
 
 
     #.

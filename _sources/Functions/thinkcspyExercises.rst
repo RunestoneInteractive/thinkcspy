@@ -219,10 +219,21 @@ Exercises
 
                 .. actex:: ex_5_7
 
-                    from test import testEqual
-
                     def sumTo(n):
                         # your code here
+
+                    ====
+                    from unittest.gui import TestCaseGui
+
+                    class myTests(TestCaseGui):
+
+                        def testOne(self):
+                            self.assertAlmostEqual(sumTo(15),120.0,0,"sumTo failed on input 15")
+                            self.assertAlmostEqual(sumTo(0),0.0,0,"sumTo failed on input 0")
+                            self.assertAlmostEqual(sumTo(25),325.0,0,"sumTo failed on input 25")
+                            self.assertAlmostEqual(sumTo(7),28.0,0,"sumTo failed on input 7")
+
+                    myTests().main()
 
 
             .. tab:: Answer
@@ -365,6 +376,19 @@ Exercises
                     def sumTo(n):
                         # your code here
 
+                    ====
+                    from unittest.gui import TestCaseGui
+
+                    class myTests(TestCaseGui):
+
+                        def testOne(self):
+                            self.assertEqual(sumTo(15),120,"sumTo failed on input 15")
+                            self.assertEqual(sumTo(0),0,"sumTo failed on input 0")
+                            self.assertEqual(sumTo(25),325,"sumTo failed on input 25")
+                            self.assertEqual(sumTo(7),28,"sumTo failed on input 7")
+
+                    myTests().main()
+
 
             .. tab:: Answer
 
@@ -425,6 +449,12 @@ Exercises
 
                 .. actex:: ex_5_15
 
+                    def myPi(iters):
+                        # Calculate an approximation of PI using the Leibniz
+                        # approximation with iters number of iterations
+
+                        # your code here
+
 
             .. tab:: Answer
 
@@ -457,6 +487,12 @@ Exercises
     #.  Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
 
         .. actex:: ex_5_16
+
+            def myPi(iters):
+                # Calculate an approximation of PI using the Madhava
+                # approximation with iters number of iterations
+
+                #your code here
 
     #.
 
