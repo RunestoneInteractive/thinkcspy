@@ -14,9 +14,44 @@ Programming Exercises
 
    .. actex:: ex_rec_1
 
+      def computeFactorial(number):
+            #your code here
+
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              self.assertEqual(computeFactorial(0),1,"Your function failed with input 0")
+              self.assertEqual(computeFactorial(1),1,"Your function failed with input 1")
+              self.assertEqual(computeFactorial(2),2,"Your function failed with input 2")
+              self.assertEqual(computeFactorial(3),6,"Your function failed with input 3")
+              self.assertEqual(computeFactorial(4),24,"Your function failed with input 4")
+              self.assertEqual(computeFactorial(8),40320,"Your function failed with input 8")
+
+      myTests().main()
+
 #. Write a recursive function to reverse a list.
 
    .. actex:: ex_rec_2
+
+      def reverseList(lst):
+          #your code here
+
+
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+          def testOne(self):
+              self.assertEqual(reverseList([1,2,3,4,5]), [5,4,3,2,1], "Your function failed with input [1,2,3,4,5]")
+              self.assertEqual(reverseList(['Hello','World','!']), ['!','World','Hello'], "Your function failed with input ['Hello,'World','!']")
+              self.assertEqual(reverseList(['Python',100,'35','Computer Science']), ['Computer Science', '35', 100, 'Python'], "Your function failed with input ['Python,100,'35','Computer Science']")
+
+      myTests().main()
 
 #. Modify the recursive tree program using one or all of the following
    ideas:
