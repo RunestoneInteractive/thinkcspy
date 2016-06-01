@@ -30,6 +30,7 @@ Programming Exercises
               self.assertEqual(computeFactorial(3),6,"Your function failed with input 3")
               self.assertEqual(computeFactorial(4),24,"Your function failed with input 4")
               self.assertEqual(computeFactorial(8),40320,"Your function failed with input 8")
+              self.assertEqual(computeFactorial(-5),None,"Your function failed with input of a negative number - make sure to handle this case")
 
       myTests().main()
 
