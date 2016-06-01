@@ -250,14 +250,14 @@ Exercises
                     :identifier: d6ba37a51d09845f39c96d4d4ef1d6f45
 
 
-    #.  Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+    #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
 
         .. activecode:: ex_5_8
 
             from test import testEqual
 
-            def areaOfCircle(r):
-                # your code here
+            # TODO: use def to define a function called areaOfCircle which takes an argument called r
+                # TODO implment your function to return the area of a circle whose radius is r
 
             t = areaOfCircle(0)
             testEqual(t,0)

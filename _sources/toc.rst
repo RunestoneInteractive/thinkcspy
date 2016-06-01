@@ -1,7 +1,7 @@
 .. _t_o_c:
 
 Table of Contents
-|||||||||||||||||
+------------------
 
 ----
 
@@ -9,7 +9,7 @@ Chapter 1.0
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
@@ -25,7 +25,7 @@ Chapter 1.1
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
@@ -46,7 +46,7 @@ Chapter 2.0
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    GeneralIntro/WhatisDebugging.rst
    GeneralIntro/Syntaxerrors.rst
@@ -67,7 +67,7 @@ Chapter 2.1
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    PythonTurtle/intro-HelloLittleTurtles.rst
    PythonTurtle/OurFirstTurtleProgram.rst
@@ -79,46 +79,19 @@ Chapter 2.1
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
    PythonTurtle/Glossary.rst
-   PythonTurtle/Exercises.rst
-
+   PythonModules/modules.rst
+   PythonModules/MoreAboutUsingModules.rst
+   PythonModules/Themathmodule.rst
+   PythonModules/Therandommodule.rst
+   PythonModules/Glossary.rst
+   AdditionalExercises/TurtlesAndModules.rst
 
 
 Chapter 3.0 
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
-
-   PythonModules/modules.rst
-   PythonModules/MoreAboutUsingModules.rst
-   PythonModules/Themathmodule.rst
-   PythonModules/Therandommodule.rst
-   PythonModules/Glossary.rst
-   PythonModules/Exercises.rst
-
-
-Chapter 3.1
-::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Selection/BooleanValuesandBooleanExpressions.rst
-   Selection/Logicaloperators.rst
-   Selection/PrecedenceofOperators.rst
-   Selection/ConditionalExecutionBinarySelection.rst
-   Selection/OmittingtheelseClauseUnarySelection.rst
-   Selection/Nestedconditionals.rst
-   Selection/Chainedconditionals.rst
-   Selection/Glossary.rst
-   Selection/Exercises.rst
-
-
-Chapter 4.0
-:::::::::
-
-.. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
@@ -126,15 +99,6 @@ Chapter 4.0
    Functions/TheAccumulatorPattern.rst
    Functions/Functionscancallotherfunctions.rst
    Functions/FlowofExecutionSummary.rst
-   Selection/BooleanFunctions.rst
-   
-
-Chapter 4.1
-:::::::::
-
-.. toctree::
-   :maxdepth: 2
-
    Functions/mainfunction.rst
    Functions/ProgramDevelopment.rst
    Functions/Composition.rst
@@ -143,11 +107,29 @@ Chapter 4.1
    Functions/thinkcspyExercises.rst
 
 
-Chapter 5.0 
+Chapter 3.1
 ::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+
+   Selection/BooleanValuesandBooleanExpressions.rst
+   Selection/Logicaloperators.rst
+   Selection/PrecedenceofOperators.rst
+   Selection/ConditionalExecutionBinarySelection.rst
+   Selection/OmittingtheelseClauseUnarySelection.rst
+   Selection/Nestedconditionals.rst
+   Selection/Chainedconditionals.rst
+   Selection/BooleanFunctions.rst
+   Selection/Glossary.rst
+   Selection/Exercises.rst
+   
+
+Chapter 4.0
+:::::::::
+
+.. toctree::
+   :maxdepth: 1
 
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
@@ -163,12 +145,11 @@ Chapter 5.0
    MoreAboutIteration/Exercises.rst
 
 
-
-Chapter 5.1
-:::::::::::
+Chapter 4.1
+::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Strings/StringsRevisited.rst
    Strings/ACollectionDataType.rst
@@ -179,26 +160,34 @@ Chapter 5.1
    Strings/TheSliceOperator.rst
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
+   AdditionalExercises/Strings.rst
+
+
+Chapter 5.0 
+::::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
    Strings/TraversalandtheforLoopByItem.rst
    Strings/TraversalandtheforLoopByIndex.rst
    Strings/TraversalandthewhileLoop.rst
    Strings/Theinandnotinoperators.rst
    Strings/TheAccumulatorPatternwithStrings.rst
-   Strings/TurtlesandStringsandLSystems.rst
    Strings/Loopingandcounting.rst
    Strings/Afindfunction.rst
    Strings/Optionalparameters.rst
    Strings/Characterclassification.rst
    Strings/Summary.rst
    Strings/Glossary.rst
-   Strings/Exercises.rst
+   Strings/Exercises.rst   
 
 
-Chapter 6.0
+Chapter 5.1
 :::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Lists/intro-Lists.rst
    Lists/ListValues.rst
@@ -214,16 +203,18 @@ Chapter 6.0
    Lists/CloningLists.rst
    Lists/RepetitionandReferences.rst
    Lists/ListMethods.rst
-   Lists/TheReturnofLSystems.rst
    Lists/AppendversusConcatenate.rst
+   Lists/Listsandforloops.rst
+   AdditionalExercises/Lists.rst
+   
 
-Chapter 6.1
+
+Chapter 6.0
 :::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   Lists/Listsandforloops.rst
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
    Lists/WhichisBetter.rst
@@ -239,23 +230,40 @@ Chapter 6.1
    Lists/Exercises.rst
 
 
+Chapter 6.1
+:::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   Dictionaries/intro-Dictionaries.rst
+   Dictionaries/Dictionaryoperations.rst
+   Dictionaries/Dictionarymethods.rst
+   Dictionaries/Aliasingandcopying.rst
+   Dictionaries/Sparsematrices.rst
+   Dictionaries/Glossary.rst
+   Dictionaries/Exercises.rst   
+
+
 Chapter 7.0
 :::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ClassesBasics/Objectorientedprogramming.rst
    ClassesBasics/Achangeofperspective.rst
    ClassesBasics/ObjectsRevisited.rst
    ClassesBasics/UserDefinedClasses.rst
    ClassesBasics/ImprovingourConstructor.rst
+   AdditionalExercises/ClassesBasics.rst
+
 
 Chapter 7.1
 :::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ClassesBasics/AddingOtherMethodstoourClass.rst
    ClassesBasics/ObjectsasArgumentsandParameters.rst
@@ -268,13 +276,13 @@ Chapter 7.1
 ----
 
 Optional Chapters
-~~~~~~~~~~~~~~~~~~~
+::::::::::::::::::
 
 Hacker Chapter: Files
-:::::::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Files/intro-WorkingwithDataFiles.rst
    Files/FindingaFileonyourDisk.rst
@@ -284,26 +292,13 @@ Hacker Chapter: Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
-
-Hacker Chapter: Dictionaries
-::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Dictionaries/intro-Dictionaries.rst
-   Dictionaries/Dictionaryoperations.rst
-   Dictionaries/Dictionarymethods.rst
-   Dictionaries/Aliasingandcopying.rst
-   Dictionaries/Sparsematrices.rst
-   Dictionaries/Glossary.rst
-   Dictionaries/Exercises.rst
+   
 
 Hacker Chapter: Recursion
-:::::::::::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Recursion/WhatIsRecursion.rst
    Recursion/CalculatingtheSumofaListofNumbers.rst
@@ -315,11 +310,11 @@ Hacker Chapter: Recursion
    Recursion/ProgrammingExercises.rst
 
 
-Hacker Chapter: Classes and Objects - Digging a Little Deeper
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Hacker Chapter: Classes and Objects -- Digging a Little Deeper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ClassesDiggingDeeper/Fractions.rst
    ClassesDiggingDeeper/ObjectsareMutable.rst
@@ -328,10 +323,20 @@ Hacker Chapter: Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
 
+Hacker Chapter: Special Topic -- L-Systems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   LSystems/TurtlesandStringsandLSystems.rst
+   LSystems/TheReturnofLSystems.rst
+   LSystems/Exercises.rst
+
 ----
 
 Appendices
-::::::::::
+~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
@@ -340,7 +345,7 @@ Appendices
    SimplePythonData/at_1_1.rst
 
 Acknowledgements
-::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -354,7 +359,7 @@ Acknowledgements
     FrontBackMatter/fdl-1.3.rst
 
 Indices and tables
-::::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~
 
 * :ref:`genindex`
 * :ref:`modindex`
