@@ -10,7 +10,7 @@
 Programming Exercises
 ---------------------
 
-#. Write a recursive function to compute the factorial of a number.
+#. Write a recursive function to compute the factorial of a number (*Note: Be sure to consider what would happen in the case of a negative number being inputted).
 
    .. actex:: ex_rec_1
 
