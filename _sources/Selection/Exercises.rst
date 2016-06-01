@@ -75,6 +75,28 @@ Exercises
             Test your function by printing the mark and the grade for a number of different marks.
         
             .. actex:: ex_6_3
+                :nocodelens:
+
+                def getGrade(grade):
+                    #your code here
+
+
+                ====
+
+                from unittest.gui import TestCaseGui
+
+                class myTests(TestCaseGui):
+
+                    def testOne(self):
+                        self.assertEqual(getGrade(95),'A','Your function failed with input of 95')
+                        self.assertEqual(getGrade(85),'B','Your function failed with input of 85')
+                        self.assertEqual(getGrade(65),'D','Your function failed with input of 65')
+                        self.assertEqual(getGrade(79.99999),'C','Your function failed with input of 79.9999')
+                        self.assertEqual(getGrade(80),'B','Your function failed with input of 80')
+
+
+                myTests().main()
+
 
         .. tab:: Answer
             
@@ -192,16 +214,21 @@ Exercises
     .. actex:: ex_6_6
         :nocodelens:
 
-        from test import testEqual
-
         def findHypot(a,b):
             # your code here
 
-        testEqual(findHypot(12.0, 5.0), 13.0)
-        testEqual(findHypot(14.0, 48.0), 50.0)
-        testEqual(findHypot(21.0, 72.0), 75.0)
-        testEqual(findHypot(1, 1.73205), 1.999999)
+        ====
 
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(findHypot(12.0,5.0),13.0,"Your function failed with inputs of 12.0 and 5.0")
+                self.assertEqual(findHypot(14.0,48.0),50.0,"Your function failed with inputs of 14.0 and 48.0")
+                self.assertEqual(findHypot(21.0,72.0),75.0,"Your function failed with inputs of 21.0 and 72.0")
+                self.assertEqual(findHypot(1,1.73205),1.999999,"Your function failed with inputs of 1 and 1.73205")
+
+        myTests().main()
 #.
 
     .. tabbed:: q7
@@ -214,12 +241,24 @@ Exercises
         
            .. actex:: ex_6_7
                :nocodelens:
-        
-               from test import testEqual
-        
+
                def is_even(n):
                    # your code here
-        
+
+               ====
+
+               from unittest.gui import TestCaseGui
+
+               class myTests(TestCaseGui):
+                    def testOne(self):
+                        self.assertEqual(is_even(10),True,"Your function failed with input of 10")
+                        self.assertEqual(is_even(5),False,"Your function failed with input of 5")
+                        self.assertEqual(is_even(1),False,"Your function failed with input of 1")
+                        self.assertEqual(is_even(0),True,"Your function failed with input of 0")
+
+               myTests().main()
+
+
                testEqual(is_even(10), True)
                testEqual(is_even(5), False)
                testEqual(is_even(1), False)
@@ -256,15 +295,23 @@ Exercises
    .. actex:: ex_6_8
        :nocodelens:
 
-       from test import testEqual
-
        def is_odd(n):
            # your code here
 
-       testEqual(is_odd(10), False)
-       testEqual(is_odd(5), True)
-       testEqual(is_odd(1), True)
-       testEqual(is_odd(0), False)
+
+       ====
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(is_odd(10),False,"Your function failed with input of 10")
+                self.assertEqual(is_odd(5),True,"Your function failed with input of 5")
+                self.assertEqual(is_odd(1),True,"Your function failed with input of 1")
+                self.assertEqual(is_odd(0),False,"Your function failed with input of 0")
+
+       myTests().main()
+
+
 
 #.
 
@@ -278,15 +325,22 @@ Exercises
            .. actex:: ex_6_9
                :nocodelens:
         
-               from test import testEqual
-        
                def is_odd(n):
                    # your code here
-        
-               testEqual(is_odd(10), False)
-               testEqual(is_odd(5), True)
-               testEqual(is_odd(1), True)
-               testEqual(is_odd(0), False)
+
+               ====
+               from unittest.gui import TestCaseGui
+
+               class myTests(TestCaseGui):
+                    def testOne(self):
+                        self.assertEqual(is_odd(10),False,"Your function failed with input of 10")
+                        self.assertEqual(is_odd(5),True,"Your function failed with input of 5")
+                        self.assertEqual(is_odd(1),True,"Your function failed with input of 1")
+                        self.assertEqual(is_odd(0),False,"Your function failed with input of 0")
+
+               myTests().main()
+
+
         
 
         .. tab:: Answer
@@ -339,17 +393,24 @@ Exercises
     .. actex:: ex_6_10
         :nocodelens:
 
-        from test import testEqual
-
         def is_rightangled(a, b, c):
             # your code here
 
-        testEqual(is_rightangled(1.5, 2.0, 2.5), True)
-        testEqual(is_rightangled(4.0, 8.0, 16.0), False)
-        testEqual(is_rightangled(4.1, 8.2, 9.1678787077), True)
-        testEqual(is_rightangled(4.1, 8.2, 9.16787), True)
-        testEqual(is_rightangled(4.1, 8.2, 9.168), False)
-        testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
+        ====
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(is_rightangled(1.5,2.0,2.5),True,"Your function failed with inputs of 1.5, 2.0 and 2.5")
+                self.assertEqual(is_rightangled(4.0,8.0,16.0),False,"Your function failed with inputs of 4.0, 8.0 and 16.0")
+                self.assertEqual(is_rightangled(4.1,8.2,9.1678787077),True,"Your function failed with inputs of 4.1, 8.2 and 9.1678787077")
+                self.assertEqual(is_rightangled(4.1,8.2,9.16787),True,"Your function failed with inputs of 4.1, 8.2, and 9.16787")
+                self.assertEqual(is_rightangled(4.1,8.2,9.168),False,"Your function failed with inputs of 4.1, 8.2 and 9.168")
+                self.assertEqual(is_rightangled(0.5,0.4,0.64031),True,"Your function failed with inputs of 0.5, 0.4 and 0.64031")
+
+        myTests().main()
+
+
 
 #.
 
@@ -362,17 +423,25 @@ Exercises
             .. actex:: ex_6_11
                 :nocodelens:
         
-                from test import testEqual
-        
                 def is_rightangled(a, b, c):
                     # your code here
+
+
+                ====
+                from unittest.gui import TestCaseGui
+
+                class myTests(TestCaseGui):
+                    def testOne(self):
+                        self.assertEqual(is_rightangled(1.5,2.5,2.0),True,"Your function failed with inputs of 1.5, 2.5 and 2.0")
+                        self.assertEqual(is_rightangled(16.0,4.0,8.0),False,"Your function failed with inputs of 16.0, 4.0 and 8.0")
+                        self.assertEqual(is_rightangled(4.1,8.2,9.1678787077),True,"Your function failed with inputs of 4.1, 8.2 and 9.1678787077")
+                        self.assertEqual(is_rightangled(4.1,9.16787,8.2),True,"Your function failed with inputs of 4.1, 9.16787 and 8.2")
+                        self.assertEqual(is_rightangled(4.1,8.2,9.168),False,"Your function failed with inputs of 4.1, 8.2 and 9.168")
+                        self.assertEqual(is_rightangled(0.5,0.64031,0.4),True,"Your function failed with inputs of 0.5, 0.64031 and 0.4")
+
+                myTests().main()
         
-                testEqual(is_rightangled(1.5, 2.0, 2.5), True)
-                testEqual(is_rightangled(16.0, 4.0, 8.0), False)
-                testEqual(is_rightangled(4.1, 9.1678787077, 8.2), True)
-                testEqual(is_rightangled(9.16787, 4.1, 8.2), True)
-                testEqual(is_rightangled(4.1, 8.2, 9.168), False)
-                testEqual(is_rightangled(0.5, 0.64031, 0.4), True)
+
 
         .. tab:: Answer
             
@@ -412,18 +481,23 @@ Exercises
     .. actex:: ex_6_12
         :nocodelens:
 
-        from test import testEqual
-
         def isLeap(year):
             # your code here
 
-        testEqual(isLeap(1944), True)
-        testEqual(isLeap(2011), False)
-        testEqual(isLeap(1986), False)
-        testEqual(isLeap(1800), False)
-        testEqual(isLeap(1900), False)
-        testEqual(isLeap(2000), True)
-        testEqual(isLeap(2056), True)
+        ====
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(isLeap(1944),True,"Your function failed with an input of 1944")
+                self.assertEqual(isLeap(2011),False,"Your function failed with an input of 2011")
+                self.assertEqual(isLeap(1986),False,"Your function failed with an input of 1986")
+                self.assertEqual(isLeap(1800),False,"Your function failed with an input of 1800")
+                self.assertEqual(isLeap(1900),False,"Your function failed with an input of 1900")
+                self.assertEqual(isLeap(2000),True,"Your function failed with an input of 2000")
+                self.assertEqual(isLeap(2056),True,"Your function failed with an input of 2056")
+
+        myTests().main()
 
 #.
 
@@ -454,6 +528,7 @@ Exercises
             Your program should print an error message if the user provides a date that is out of range.
         
             .. actex:: ex_6_13
+
         
 
         .. tab:: Answer
