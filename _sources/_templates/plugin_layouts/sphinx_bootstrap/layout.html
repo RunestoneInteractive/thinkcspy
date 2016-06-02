@@ -53,8 +53,8 @@
       </button>
 
       <div>
-        <a class="brand-logo" style='background: transparent url("{{pathto('_static/img/lc_logo_small.png', 1)}}") no-repeat 0px 0px;' href="/{{appname}}/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="{{ pathto(master_doc) }}">{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}</a>
+        <a class="brand-logo" style='background: transparent url("{{pathto('_static/img/lc_logo_small.png', 1)}}") no-repeat 0px 0px;' href="/runestone/static/thinkcspy/index.html">&nbsp; </a>
+        <a class="navbar-brand" href="/runestone/static/thinkcspy/index.html">{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}</a>
       </div>
     </div>
 
@@ -107,13 +107,11 @@
           <ul class="dropdown-menu user-menu">
             <li><span class='loggedinuser'></span></li>
             <li class="divider"></li>
-            <!--li><a href='{{course_url}}/{{appname}}/mygroup/initiateGroup' id="joinGroupLink">Join a Study Group</a></li>
-            <li><a href='{{course_url}}/{{appname}}/mygroup/schedule' id="groupScheduleLink">Group Schedule</a></li>
-            <li><a href='{{course_url}}/{{appname}}/mygroup/newschedule' id="newChapterLink">Schedule New Chapter</a></li>
-            <li><a href='{{course_url}}/{{appname}}/mygroup/manageGroup' id="manageGroupLink">Manage Group</a></li>
-			<li class="divider"></li>
-            <li><a href='{{course_url}}/{{appname}}/admin/index'>Instructor's Page</a></li>
-            <li><a href='{{ course_url }}/{{ appname }}/assignments/index'>Progress Page</a></li-->
+            <li><a href="/runestone/static/thinkcspy/index.html">Course Home Page</a></li>
+            <li><a href="/runestone/static/thinkcspy/toc.html">Table of Contents</a></li>
+            <li><a href="https://piazza.com/" target="_blank">Piazza</a></li>
+            <li><a href="https://labs.vocareum.com/home/login.php" target="_blank">Vocareum</a></li>
+            <li class="divider"></li>
             <li><a href="{{course_url}}/{{appname}}/default/user/profile" id="profilelink">Edit Profile</a></li>
             <li><a href="{{course_url}}/{{appname}}/default/user/change_password" id="passwordlink">Change Password</a></li>
             <li><a href="{{course_url}}/{{appname}}/default/user/register" id="registerlink">Register</a></li>

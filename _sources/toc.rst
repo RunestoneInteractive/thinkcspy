@@ -58,7 +58,7 @@ Table of Contents
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
-   PythonOutsideThisBook/PythonBeyondtheBrowser.rst 
+   PythonOutsideThisBook/PythonBeyondtheBrowser.rst
    PythonOutsideThisBook/Commandline.rst
    PythonOutsideThisBook/Commandline2.rst
 
@@ -123,7 +123,7 @@ Table of Contents
    Selection/BooleanFunctions.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
-   
+
 
 4.0: More About Iteration
 ::::::::::::::::::::::::::::::::::
@@ -180,7 +180,7 @@ Table of Contents
    Strings/Characterclassification.rst
    Strings/Summary.rst
    Strings/Glossary.rst
-   Strings/Exercises.rst   
+   Strings/Exercises.rst
 
 
 5.1: Lists
@@ -206,7 +206,7 @@ Table of Contents
    Lists/AppendversusConcatenate.rst
    Lists/Listsandforloops.rst
    AdditionalExercises/Lists.rst
-   
+
 
 6.0: Lists, Continued
 ::::::::::::::::::::::::::::::
@@ -227,6 +227,7 @@ Table of Contents
    Lists/TuplesasReturnValues.rst
    Lists/Glossary.rst
    Lists/Exercises.rst
+   ProblemSets/Crypto.rst
 
 
 6.1: Dictionaries
@@ -241,7 +242,7 @@ Table of Contents
    Dictionaries/Aliasingandcopying.rst
    Dictionaries/Sparsematrices.rst
    Dictionaries/Glossary.rst
-   Dictionaries/Exercises.rst   
+   Dictionaries/Exercises.rst
 
 
 7.0: Classes and Objects -- Basics
@@ -275,7 +276,7 @@ Table of Contents
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
-   
+
 
 ----
 
@@ -296,7 +297,7 @@ Hacker Chapter: Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
-   
+
 
 Hacker Chapter: Recursion
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -348,10 +349,3 @@ Acknowledgements
     FrontBackMatter/preface2e.rst
     FrontBackMatter/contrib.rst
     FrontBackMatter/fdl-1.3.rst
-
-Indices and tables
-~~~~~~~~~~~~~~~~~~~~~
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

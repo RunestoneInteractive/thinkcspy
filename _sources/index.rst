@@ -12,33 +12,13 @@
 
 .. raw:: html
 
-   <h1 style="text-align: center">Learning with Python: Interactive Edition 2.0</h1>
+Think Python - LaunchCode Edition
+=============================================
 
-Next Steps
-----------
 
-* Get an overview of the features in this book  `Click Here </runestone/static/overview/overview.html>`_
-* To get help moving around the book:  :ref:`quick_help`
-* Check out a sample chapter `Hello, Little Turtles! </runestone/static/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html>`_
-* Check out the :ref:`t_o_c`
-* Take me to Chapter 1  `The Way of the Program </runestone/static/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html>`_
-
-Benefits of this Interactive Textbook
--------------------------------------
-
-* You can experiment with **activecode** examples right in the book
-
-  * Click Show/Hide Code button
-  * On line 7: change ``numTurtles = 10`` to ``numTurtles = 6``
-  * Click the Run button
-
-* You can do your **homework** right in the textbook.
-* You can interact with other learners to discuss homework
-* **Interactive questions** make sure that you are on track and help you focus.
-* **Codelens** helps you develop a mental model of how Python works.
-* **Audio Tours** help you understand the code.
-* Short **videos** cover difficult or important topics.
-* You can highlight text, and take notes in scratch editors
+* :ref:`t_o_c`
+* `Summer of Code Chapter Schedule </runestone/static/thinkcspy/soc2016-schedule.html>`_
+* `Student Guide </runestone/static/thinkcspy/student-guide.html>`_
 
 
 .. toctree::
