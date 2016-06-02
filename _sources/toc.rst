@@ -5,7 +5,7 @@ Table of Contents
 
 ----
 
-1.0: General Intro
+1. General Intro
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -21,7 +21,7 @@ Table of Contents
    GeneralIntro/Glossary.rst
 
 
-1.1: Simple Python Data
+2. Simple Python Data
 :::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -43,7 +43,7 @@ Table of Contents
    Studios/lab03_01.rst
 
 
-2.0: Debugging, and Using Python Outside this Book
+3. Debugging, and Using Python Outside this Book
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -64,7 +64,7 @@ Table of Contents
    PythonOutsideThisBook/Commandline2.rst
 
 
-2.1: Modules (and Turtles!)
+4. Modules (and Turtles!)
 :::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -88,7 +88,7 @@ Table of Contents
    AdditionalExercises/TurtlesAndModules.rst
 
 
-3.0: Functions
+5. Functions
 :::::::::::::::::::::::
 
 .. toctree::
@@ -108,7 +108,7 @@ Table of Contents
    Functions/thinkcspyExercises.rst
 
 
-3.1: Selection
+6. Selection
 :::::::::::::::::::::::
 
 .. toctree::
@@ -126,7 +126,7 @@ Table of Contents
    Selection/Exercises.rst
 
 
-4.0: More About Iteration
+7. More About Iteration
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -146,7 +146,7 @@ Table of Contents
    MoreAboutIteration/Exercises.rst
 
 
-4.1: Strings
+8. Strings
 ::::::::::::::::::::::::
 
 .. toctree::
@@ -164,7 +164,7 @@ Table of Contents
    AdditionalExercises/Strings.rst
 
 
-5.0: Strings, Continued
+9. Strings, Continued
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -184,7 +184,7 @@ Table of Contents
    Strings/Exercises.rst
 
 
-5.1: Lists
+10. Lists
 ::::::::::::::::::::
 
 .. toctree::
@@ -209,7 +209,7 @@ Table of Contents
    AdditionalExercises/Lists.rst
 
 
-6.0: Lists, Continued
+11. Lists, Continued
 ::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -231,7 +231,7 @@ Table of Contents
    ProblemSets/Crypto.rst
 
 
-6.1: Dictionaries
+12. Dictionaries
 :::::::::::::::::::::::::::
 
 .. toctree::
@@ -246,7 +246,7 @@ Table of Contents
    Dictionaries/Exercises.rst
 
 
-7.0: Classes and Objects -- Basics
+13. Classes and Objects -- Basics
 :::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -265,7 +265,7 @@ Table of Contents
    ClassesBasics/Exercises.rst
 
 
-7.1: Classes and Objects -- Digging a Little Deeper
+14. Classes and Objects -- Digging a Little Deeper
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -327,15 +327,6 @@ Hacker Chapter: Special Topic -- L-Systems
    LSystems/Exercises.rst
 
 ----
-
-Appendices
-~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-   :maxdepth: 1
-
-   Appendices/errorsAndDebug.rst
-   SimplePythonData/at_1_1.rst
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~~~~~~
