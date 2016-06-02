@@ -40,6 +40,7 @@ Table of Contents
    SimplePythonData/UpdatingVariables.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
+   Studios/lab03_01.rst
 
 
 2.0: Debugging, and Using Python Outside this Book
