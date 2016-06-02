@@ -5,7 +5,7 @@ Table of Contents
 
 ----
 
-Chapter 1.0: General Intro
+1.0: General Intro
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -21,7 +21,7 @@ Chapter 1.0: General Intro
    GeneralIntro/Glossary.rst
 
 
-Chapter 1.1: Simple Python Data
+1.1: Simple Python Data
 :::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -42,7 +42,7 @@ Chapter 1.1: Simple Python Data
    SimplePythonData/Exercises.rst
 
 
-Chapter 2.0: Debugging, and Using Python Outside this Book
+2.0: Debugging, and Using Python Outside this Book
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -63,7 +63,7 @@ Chapter 2.0: Debugging, and Using Python Outside this Book
    PythonOutsideThisBook/Commandline2.rst
 
 
-Chapter 2.1: Modules (and Turtles!)
+2.1: Modules (and Turtles!)
 :::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -87,7 +87,7 @@ Chapter 2.1: Modules (and Turtles!)
    AdditionalExercises/TurtlesAndModules.rst
 
 
-Chapter 3.0: Functions
+3.0: Functions
 :::::::::::::::::::::::
 
 .. toctree::
@@ -107,7 +107,7 @@ Chapter 3.0: Functions
    Functions/thinkcspyExercises.rst
 
 
-Chapter 3.1: Selection
+3.1: Selection
 :::::::::::::::::::::::
 
 .. toctree::
@@ -125,7 +125,7 @@ Chapter 3.1: Selection
    Selection/Exercises.rst
    
 
-Chapter 4.0: More About Iteration
+4.0: More About Iteration
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -145,7 +145,7 @@ Chapter 4.0: More About Iteration
    MoreAboutIteration/Exercises.rst
 
 
-Chapter 4.1: Strings
+4.1: Strings
 ::::::::::::::::::::::::
 
 .. toctree::
@@ -163,7 +163,7 @@ Chapter 4.1: Strings
    AdditionalExercises/Strings.rst
 
 
-Chapter 5.0: Strings, Continued
+5.0: Strings, Continued
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -183,7 +183,7 @@ Chapter 5.0: Strings, Continued
    Strings/Exercises.rst   
 
 
-Chapter 5.1: Lists
+5.1: Lists
 ::::::::::::::::::::
 
 .. toctree::
@@ -208,7 +208,7 @@ Chapter 5.1: Lists
    AdditionalExercises/Lists.rst
    
 
-Chapter 6.0: Lists, Continued
+6.0: Lists, Continued
 ::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -229,7 +229,7 @@ Chapter 6.0: Lists, Continued
    Lists/Exercises.rst
 
 
-Chapter 6.1: Dictionaries
+6.1: Dictionaries
 :::::::::::::::::::::::::::
 
 .. toctree::
@@ -244,7 +244,7 @@ Chapter 6.1: Dictionaries
    Dictionaries/Exercises.rst   
 
 
-Chapter 7.0: Classes and Objects -- Basics
+7.0: Classes and Objects -- Basics
 :::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -263,7 +263,7 @@ Chapter 7.0: Classes and Objects -- Basics
    ClassesBasics/Exercises.rst
 
 
-Chapter 7.1: Classes and Objects -- Digging a Little Deeper
+7.1: Classes and Objects -- Digging a Little Deeper
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::

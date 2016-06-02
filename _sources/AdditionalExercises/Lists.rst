@@ -86,3 +86,43 @@ Exercises
                 .. disqus::
                     :shortname: interactivepython
                     :identifier: disqus_b9034b274ebe4c55a58c44315ee681a4
+
+    #.
+
+        .. tabbed:: q7
+
+            .. tab:: Question
+
+                Write a function to count how many odd numbers are in a list.
+
+                .. activecode:: ex_9_6
+
+            .. tab:: Answer
+
+                .. activecode:: q7_answer
+
+                    import random
+
+                    def countOdd(lst):
+                        odd = 0
+                        for e in lst:
+                            if e % 2 != 0:
+                                odd = odd + 1
+                        return odd
+
+                    # make a random list to test the function
+                    lst = []
+                    for i in range(100):
+                        lst.append(random.randint(0, 1000))
+
+                    print(countOdd(lst))
+
+            .. tab:: Discussion
+
+                .. disqus::
+                    :shortname: interactivepython
+                    :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
+
+    #. (GRADED) Write a function to find the sum of all the even numbers in a list.
+
+       .. activecode:: ex_9_7

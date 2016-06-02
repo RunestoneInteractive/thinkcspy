@@ -54,52 +54,11 @@ Exercises
                     :identifier: disqus_714fd5537ebf41189ce5fb6fb16d1d26
 
 
-    #. (GRADED) Write a function ``sum_of_squares(xs)`` that computes the sum
+    #. Write a function ``sum_of_squares(xs)`` that computes the sum
        of the squares of the numbers in the list ``xs``.  For example,
        ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
 
        .. activecode:: ex_7_11
-
-    #.
-
-        .. tabbed:: q7
-
-            .. tab:: Question
-
-               Write a function to count how many odd numbers are in a list.
-
-               .. activecode:: ex_9_6
-
-            .. tab:: Answer
-
-                .. activecode:: q7_answer
-
-                    import random
-
-                    def countOdd(lst):
-                        odd = 0
-                        for e in lst:
-                            if e % 2 != 0:
-                                odd = odd + 1
-                        return odd
-
-                    # make a random list to test the function
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randint(0, 1000))
-
-                    print(countOdd(lst))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
-
-
-    #. Sum up all the even numbers in a list.
-
-       .. activecode:: ex_9_7
 
     #.
 
@@ -141,41 +100,10 @@ Exercises
 
        .. activecode:: ex_9_9
 
-    #.
 
-        .. tabbed:: q11
+    #. (GRADED) Write a function that will sum up all the elements in a list up to but not including the first even number.
 
-            .. tab:: Question
-
-               Sum all the elements in a list up to but not including the first even number.
-
-               .. activecode:: ex_9_10
-
-            .. tab:: Answer
-
-                .. activecode:: q11_answer
-
-                    import random
-
-                    def sum(lst):
-                        sum = 0
-                        index = 0
-                        while lst[index] % 2 != 0 and index < len(lst):
-                            sum = sum + lst[index]
-                            index = index + 1
-                        return sum
-
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randint(0,1000))
-
-                    print(sum(lst))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_90f95bbe4a49428caa9ed0c5e02747b1
+        .. activecode:: ex_9_10
 
 
     #. Count how many words occur in a list up to and including the first occurrence of the word "sam".
