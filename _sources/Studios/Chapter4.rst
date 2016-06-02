@@ -17,7 +17,7 @@ Studio: Turtle Racing
 Random Numbers
 --------------
 
-Before we begin writing code for this lab, we need to introduce one more
+Before we begin writing code for this studio, we need to introduce one more
 Python module.  The ``random`` module allows us to generate random numbers.
 It's easy to use:
 
@@ -40,7 +40,7 @@ of many functions available in the random module.
 Turtle Races
 ------------
 
-In this lab we are going to work step by step through the problem of racing
+In this studio we are going to work step by step through the problem of racing
 turtles.  The idea is that we want to create two or more turtles and have
 them race across the screen from left to right. The turtle that goes the
 farthest is the winner.

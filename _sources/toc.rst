@@ -40,7 +40,7 @@ Table of Contents
    SimplePythonData/UpdatingVariables.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
-   Studios/lab03_01.rst
+   Studios/Chapter2.rst
 
 
 3. Debugging, and Using Python Outside this Book
@@ -86,6 +86,7 @@ Table of Contents
    PythonModules/Therandommodule.rst
    PythonModules/Glossary.rst
    AdditionalExercises/TurtlesAndModules.rst
+   Studios/Chapter4.rst
 
 
 5. Functions
