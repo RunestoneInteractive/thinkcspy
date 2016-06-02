@@ -31,12 +31,6 @@ Exercises
                        arandom = random.random()
                        print(arandom)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: mods_111
-
 
     #.  Repeat the above exercise but this time print 10 random numbers between 25 and 35.
 
@@ -61,13 +55,6 @@ Exercises
                    hypotenuse = math.hypot(side1,side2)
                    print(hypotenuse)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: mods_333
-
     #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
 
         .. activecode:: ex_mod_4
-

@@ -30,12 +30,6 @@ Exercises
                     for i in range(1000):
                         print("We like Python's turtles!")
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: f858d02024e54ae1b6b50ed8c65a01e6
-
 
     #. Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?
 
@@ -62,11 +56,6 @@ Exercises
                     for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
                         print("One of the months of the year is", amonth)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: b271442ee0864973a023c19f27aeb401
 
 
     #. (GRADED) Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
@@ -154,11 +143,6 @@ Exercises
 
                     wn.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: f36e8bc742b89424e82f111ba2d1dd33f
 
 
     #.  Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
@@ -208,11 +192,6 @@ Exercises
 
                    wn.exitonclick()
 
-           .. tab:: Discussion
-
-               .. disqus::
-                    :shortname: interactivepython
-                    :identifier: a7e34946f59f348f2bfeb3f918eb57b7a
 
 
     #. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
@@ -258,12 +237,6 @@ Exercises
                         turing.forward(110)
                         turing.left(216)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: c611217310057488aab6a34d4b591e753
-
 
     #. Write a program to draw a face of a clock that looks something like this:
 
@@ -299,12 +272,6 @@ Exercises
                     for i in range(350):
                         tanenbaum.forward(i)
                         tanenbaum.right(98)
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: e928a562a4f5c41f9892c9bfc4a1d5883
 
 
     #. Create a turtle and assign it to a variable.  When you print its type, what do you get?
@@ -355,12 +322,3 @@ Exercises
                     babbage.shape("circle")
 
                     wn.exitonclick()
-
-
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: b65d7e616d2b548f592205dba699cc132
-

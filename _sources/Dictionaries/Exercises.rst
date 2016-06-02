@@ -67,12 +67,6 @@ Exercises
 					for char in keys:
 						print(char, letter_count[char])
 
-			.. tab:: Discussion
-
-				.. disqus::
-					:shortname: interactivepython
-					:identifier: disqus_de4f21e35d3a41a4a3ac4ac888f78d1a
-
 
 	#. Give the Python interpreter's response to each of the following from a
 	   continuous interpreter session:
@@ -134,7 +128,7 @@ Exercises
 		   # add_fruit(new_inventory, 'strawberries', 25)
 		   # test(new_inventory['strawberries'] , 35)
 
-	#. (GRADED) 
+	#. (GRADED)
 
 		Here's a table of English to Pirate translations:
 
@@ -162,7 +156,7 @@ Exercises
 		==========  ==============
 
 		Write a program that asks the user for a sentence in English and then translates that sentence to Pirate.
-		
+
 		.. activecode:: ex_11_04
 
 			from test import testEqual

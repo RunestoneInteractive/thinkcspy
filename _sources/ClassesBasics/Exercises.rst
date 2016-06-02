@@ -57,13 +57,6 @@ Exercises
                     print(p.distanceFromPoint(q))
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_090fe2d30b8d4fe58b829d06c58661f0
-
-
     #. Add a method ``reflect_x`` to Point which returns a new Point, one which is the
        reflection of the point about the x-axis.  For example,
        ``Point(3, 5).reflect_x()`` is (3, -5)
@@ -164,12 +157,6 @@ Exercises
                     p.move(5, 10)
                     print(p)
 
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_fc589edaa0e14bd28175850c95b79d15
 
 
     #.  Given three points that fall on the circumference of a circle, find the center and radius of the circle.

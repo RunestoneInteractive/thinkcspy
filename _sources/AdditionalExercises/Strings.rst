@@ -17,7 +17,7 @@ Exercises
         .. tab:: Question
 
             What is the result of each of the following:
-        
+
             a. 'Python'[1]
             #. "Strings are sequences of characters."[5]
             #. len("wonderful")
@@ -40,17 +40,12 @@ Exercises
             #. 'apple' > 'pineapple' = False
             #. 'pineapple' < 'Peach' = False
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
 
 #. (GRADED) Assign to a variable in your program a triple-quoted string that contains your favorite paragraph of text - perhaps a poem, a speech, instructions to bake a cake, some inspirational verses, etc.
-        
+
 Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
 
-   Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
+   Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
 .. activecode:: ex_8_3
 
@@ -61,12 +56,12 @@ Write a function that counts the number of alphabetic characters (a through z, o
         .. tab:: Question
 
            Write a function that will return the number of digits in an integer.
-        
+
            .. activecode:: ex_7_10
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q5_answer
 
                 def findNumDigits(n):
@@ -78,11 +73,6 @@ Write a function that counts the number of alphabetic characters (a through z, o
                 print(findNumDigits(20000))
                 print(findNumDigits(1))
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
 
 
 #. Write a function that removes all occurrences of a given letter from a string.
@@ -108,24 +98,24 @@ Write a function that counts the number of alphabetic characters (a through z, o
         .. tab:: Question
 
            Write a function that removes the first occurrence of a string from another string.
-        
+
            .. activecode:: ex_8_10
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
-        
+
               testEqual(remove('an', 'banana'), 'bana')
               testEqual(remove('cyc', 'bicycle'), 'bile')
               testEqual(remove('iss', 'Mississippi'), 'Missippi')
               testEqual(remove('egg', 'bicycle'), 'bicycle')
-        
-        
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -143,15 +133,10 @@ Write a function that counts the number of alphabetic characters (a through z, o
                 testEqual(remove('iss', 'Mississippi'), 'Missippi')
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_2f2772134b604a6498748138542d312d
 
 
 #. Write a function that removes all occurrences of a string from another string.
- 
+
    .. activecode:: ex_8_11
 
       from test import testEqual

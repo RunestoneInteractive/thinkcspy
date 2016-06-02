@@ -76,12 +76,6 @@ Exercises
 
                     wn.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: a2ac86a8d0524fc6830aefb785199048
-
 
     #.  Write a program to draw this. Assume the innermost square is 20 units per side,
         and each successive square is 20 units bigger, per side, than the one inside it.
@@ -127,11 +121,6 @@ Exercises
 
                     drawPoly(tess, 8, 50)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: ba2f11265c524c7581bf7cf25d23bf3a
 
 
     #. Draw this pretty pattern.
@@ -194,12 +183,6 @@ Exercises
                     drawSpiral(guido, 89)
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: c587119991344db988f8fb37c8c9a31e
-
 
     #.  Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
         previous question to have its turtle draw a equilateral triangle.
@@ -243,11 +226,6 @@ Exercises
                     t = sumTo(5)
                     print("The sum from 1 to 5 is",t)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: d6ba37a51d09845f39c96d4d4ef1d6f45
 
 
     #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
@@ -293,11 +271,6 @@ Exercises
                     wolfram = turtle.Turtle()
                     drawFivePointStar(wolfram)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: e757873187bb4581bffecdad449b5f61
 
 
     #.  Extend your program above.  Draw five stars, but between each, pick up the pen,
@@ -337,11 +310,6 @@ Exercises
                     stroustrup = turtle.Turtle()
                     drawStar(stroustrup, 7)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: f2f8ff1b301e4d99bd4ac52e68c8c1ed
 
 
     #.  Write a function called drawSprite that will draw a sprite.  The function will need parameters for
@@ -384,11 +352,6 @@ Exercises
                     t = sumTo(5)
                     print("The sum from 1 to 5 is",t)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: eda665389fda49a584b128cc30515595
 
 
     #.  Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
@@ -431,11 +394,6 @@ Exercises
                     pi_approx = myPi(10000)
                     print(pi_approx)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: b699e4b7bad44db6bd788c795c124b23
 
 
     #.  Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
@@ -480,12 +438,3 @@ Exercises
                     drawFancySquare(alex, 100, 10, 15)
 
                     wn.exitonclick()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: db5d8808bf5749579718bdd2088b539f
-
-
-

@@ -55,12 +55,6 @@ Exercises
 
                     f.close()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
-
 
 
     #. Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the average grade
@@ -101,20 +95,6 @@ Exercises
                         print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
 
                     f.close()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q3
-
-
-
-
-
-
-
-
 
 
 
@@ -214,17 +194,6 @@ Exercises
 
                     f.close()
                     wn.exitonclick()
-
-
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q5
-
-
-
 
 
 

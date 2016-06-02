@@ -18,11 +18,11 @@ Exercises
         .. tab:: Question
 
            Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
-        
+
                L
                L -> +RF-LFL-FR+
                R -> -LF+RFR+FL-
-        
+
            .. actex:: ex_8_12
               :nocodelens:
 
@@ -88,13 +88,6 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_ab823200fac64461a9e88f53b75f5795
-
-
 #. Here is a dragon curve.  Use 90 degrees.::
 
        FX
@@ -111,16 +104,16 @@ Exercises
         .. tab:: Question
 
            Here is something called an arrowhead curve.  Use 60 degrees.::
-        
+
                YF
                X -> YF+XF+Y
                Y -> XF-YF-X
-        
+
            .. actex:: ex_8_14
               :nocodelens:
 
         .. tab:: Answer
-            
+
             .. activecode:: q15_answer
                 :nocodelens:
 
@@ -178,13 +171,6 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_9b2dfba083a64d5c894f873af2e93a1b
-
-
 #. Try the Peano-Gosper curve.  Use 60 degrees.::
 
        FX
@@ -201,11 +187,11 @@ Exercises
         .. tab:: Question
 
             The Sierpinski Triangle.  Use 60 degrees.::
-        
+
                FXF--FF--FF
                F -> FF
                X -> --FXF++FXF++FXF--
-        
+
            .. actex:: ex_8_16
               :nocodelens:
 
@@ -272,13 +258,6 @@ Exercises
                     wn.exitonclick()
 
                 main()
-
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_912a5f19d3964dc2af7a067dcd832c7e
 
 #.
 
@@ -368,13 +347,6 @@ Exercises
                     wn.exitonclick()
 
                 main()
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_10a1fdd1fadb401b8e733afd9d105052
 
 
 #. Here is another L-System.  Use an Angle of 25.

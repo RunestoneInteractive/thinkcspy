@@ -23,6 +23,8 @@ from runestone import runestone_static_dirs, runestone_extensions
 
 # -- General configuration -----------------------------------------------------
 
+dburl = 'postgres://launchclass:toinfinityandbeyond@localhost/runestone'
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 

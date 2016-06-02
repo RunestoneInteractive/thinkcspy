@@ -25,9 +25,9 @@ Exercises
 
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
-   
+
     .. activecode:: ex_8_2
-   
+
 
 #. Print out a neatly formatted multiplication table, up to 12 x 12.
 
@@ -49,7 +49,7 @@ Exercises
       testEqual(reverse(""), "")
 
 #. (GRADED) Write a function that mirrors its argument.
-   
+
 (Hint: Make use of the `reverse` function that you wrote in the previous exercise)
 
    .. activecode:: ex_8_6
@@ -70,24 +70,24 @@ Exercises
         .. tab:: Question
 
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
-        
+
            .. activecode:: ex_8_8
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def is_palindrome(myStr):
                   # your code here
-        
+
               testEqual(is_palindrome('abba'), True)
               testEqual(is_palindrome('abab'), False)
               testEqual(is_palindrome('straw warts'), True)
               testEqual(is_palindrome('a'), True)
               testEqual(is_palindrome(''), True)
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
                 :nocodelens:
 
@@ -111,11 +111,6 @@ Exercises
                 testEqual(is_palindrome('a'), True)
                 testEqual(is_palindrome(''), True)
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_605923545bb849f7b8d41bbf823518e9
 #.
 
     .. tabbed:: q11
@@ -123,24 +118,24 @@ Exercises
         .. tab:: Question
 
            Write a function that removes the first occurrence of a string from another string.
-        
+
            .. activecode:: ex_8_10
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
-        
+
               testEqual(remove('an', 'banana'), 'bana')
               testEqual(remove('cyc', 'bicycle'), 'bile')
               testEqual(remove('iss', 'Mississippi'), 'Missippi')
               testEqual(remove('egg', 'bicycle'), 'bicycle')
-        
-        
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -158,15 +153,9 @@ Exercises
                 testEqual(remove('iss', 'Mississippi'), 'Missippi')
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_2f2772134b604a6498748138542d312d
-
 
 #. Write a function that removes all occurrences of a string from another string.
- 
+
    .. activecode:: ex_8_11
 
       from test import testEqual
@@ -198,7 +187,7 @@ Exercises
            should also take two parameters.  The encrypted message,
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
-        
+
            .. activecode:: ex_8_18
 
         .. tab:: Answer
@@ -236,11 +225,6 @@ Exercises
                 decrypted = decrypt(encrypted, cipher)
                 print(decrypted)
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
 #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
@@ -251,7 +235,7 @@ Exercises
       def removeDups(astring):
           # your code here
 
-      
+
       print(removeDups("mississippi"))   #should print misp
 
 
@@ -268,18 +252,18 @@ Exercises
            then the counting wraps around to the letter a again, so n becomes a, o becomes b
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
-        
+
            .. activecode:: ex_8_20
-        
+
               def rot13(mess):
                   # Your code here
-        
+
               print(rot13('abcde'))
               print(rot13('nopqr'))
               print(rot13(rot13('Since rot13 is symmetric you should see this message')))
 
         .. tab:: Answer
-            
+
             .. activecode:: q21_answer
 
                 def rot13(mess):
@@ -299,11 +283,3 @@ Exercises
                 print(rot13('abcde'))
                 print(rot13('nopqr'))
                 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
-
-

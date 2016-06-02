@@ -42,12 +42,6 @@ Exercises
 
                     print("Final approx:", newtonSqrt(25))
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_5784e08291ba43199d43fdab277849f5
-
 
     #. Write a function ``print_triangular_numbers(n)`` that prints out the first
        n triangular numbers. A call to ``print_triangular_numbers(5)`` would
@@ -161,12 +155,6 @@ Exercises
 
                     wn.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_0cd01637a1814f86b11f576c37a46437
-
 
 
     #. Modify the previous turtle walk program so that the turtle turns around
@@ -220,12 +208,6 @@ Exercises
 
                     newimg.draw(win)
                     win.exitonclick()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_777006b154ca4af7ab8bd11cc25c208a
 
 
     #. Write a function to convert the image to grayscale.
@@ -290,12 +272,6 @@ Exercises
 
                     win.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_0f0fb41d607743998a86962a11eed53d
-
 
     #. Sepia Tone images are those brownish colored images that may remind you of
        times past.  The formula for creating a sepia tone is as follows:
@@ -356,13 +332,6 @@ Exercises
                    win.exitonclick()
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_9ca319187b4a4c2399402de0d99c0b1d
-
-
     #.   After you have scaled an image too much it looks blocky.  One way of
          reducing the blockiness of the image is to replace each pixel with the
          average values of the pixels around it.  This has the effect of smoothing
@@ -419,13 +388,6 @@ Exercises
                     newim.draw(win)
 
                     win.exitonclick()
-
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb9f71a62de24efaa61f64b5a7e5d9c9
 
 
     #. When you scan in images using a scanner they may have lots of noise due to
@@ -557,10 +519,3 @@ Exercises
 
                     newimg.draw(win)
                     win.exitonclick()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974
-

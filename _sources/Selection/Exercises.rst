@@ -16,27 +16,21 @@ Exercises
         .. tab:: Question
 
             What do these expressions evaluate to?
-        
+
             #.  ``3 == 3``
             #.  ``3 != 3``
             #.  ``3 >= 4``
             #.  ``not (3 < 4)``
-        
+
                 .. activecode:: ex_6_1
-        
+
 
         .. tab:: Answer
-            
+
             #. True
             #. False
             #. False
             #. False
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
 
 
 #.  Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
@@ -56,9 +50,9 @@ Exercises
 
             Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
             scheme:
-        
+
             .. table::
-        
+
                =======   =====
                Mark      Grade
                =======   =====
@@ -68,16 +62,16 @@ Exercises
                [60-70)   D
                < 60      F
                =======   =====
-        
+
             The square and round brackets denote closed and open intervals.
             A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
-        
+
             Test your function by printing the mark and the grade for a number of different marks.
-        
+
             .. activecode:: ex_6_3
 
         .. tab:: Answer
-            
+
             .. activecode:: q3_question
 
                 def grade(mark):
@@ -98,12 +92,6 @@ Exercises
                 mark = 83
                 print( "Mark:", str(mark), "Grade:", grade(mark))
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_b9e6fd14629949e59da1a4ae827c0032
-
 
 #.  Modify the turtle bar chart program from the previous chapter so that the bar for any value
     of 200 or more is filled with red, values between [100 and 200) are filled yellow,
@@ -122,12 +110,12 @@ Exercises
             of the data values in the list is negative?   Go back and try it out.  Change the
             program so that when it prints the text value for the negative bars, it puts
             the text above the base of the bar (on the 0 axis).
-        
+
             .. activecode:: ex_6_5
                :nocodelens:
 
         .. tab:: Answer
-            
+
             .. activecode:: answer_ex_6_5
                     :nocodelens:
 
@@ -168,7 +156,7 @@ Exercises
                         lly = 0
                     else:
                         lly = minheight - border
-    
+
                     wn.setworldcoordinates(0-border, lly, 40*numbars+border, maxheight+border)
 
 
@@ -176,14 +164,6 @@ Exercises
                         drawBar(tess, a)
 
                     wn.exitonclick()
-
-
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_0118bd02de23462bafdb51beb4c85e44
 
 
 #.  Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
@@ -211,22 +191,22 @@ Exercises
            Write a function called ``is_even(n)`` that takes an integer as an argument
            and returns ``True`` if the argument is an **even number** and ``False`` if
            it is **odd**.
-        
+
            .. activecode:: ex_6_7
                :nocodelens:
-        
+
                from test import testEqual
-        
+
                def is_even(n):
                    # your code here
-        
+
                testEqual(is_even(10), True)
                testEqual(is_even(5), False)
                testEqual(is_even(1), False)
                testEqual(is_even(0), True)
 
         .. tab:: Answer
-            
+
             .. activecode:: q7_answer
                 :nocodelens:
 
@@ -242,12 +222,6 @@ Exercises
                 testEqual(is_even(5), False)
                 testEqual(is_even(1), False)
                 testEqual(is_even(0), True)
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_7ae92646976d4953ac8a163f338b4358
 
 
 #. Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
@@ -274,23 +248,23 @@ Exercises
 
            Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
            argument is an odd integer.
-        
+
            .. activecode:: ex_6_9
                :nocodelens:
-        
+
                from test import testEqual
-        
+
                def is_odd(n):
                    # your code here
-        
+
                testEqual(is_odd(10), False)
                testEqual(is_odd(5), True)
                testEqual(is_odd(1), True)
                testEqual(is_odd(0), False)
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
                 :nocodelens:
 
@@ -312,12 +286,6 @@ Exercises
                 testEqual(is_odd(5), True)
                 testEqual(is_odd(1), True)
                 testEqual(is_odd(0), False)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_9125792d0c264b65b4d9d72d25485ceb
 
 
 #.  Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
@@ -358,15 +326,15 @@ Exercises
         .. tab:: Question
 
             Extend the above program so that the sides can be given to the function in any order.
-        
+
             .. activecode:: ex_6_11
                 :nocodelens:
-        
+
                 from test import testEqual
-        
+
                 def is_rightangled(a, b, c):
                     # your code here
-        
+
                 testEqual(is_rightangled(1.5, 2.0, 2.5), True)
                 testEqual(is_rightangled(16.0, 4.0, 8.0), False)
                 testEqual(is_rightangled(4.1, 9.1678787077, 8.2), True)
@@ -375,7 +343,7 @@ Exercises
                 testEqual(is_rightangled(0.5, 0.64031, 0.4), True)
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -398,12 +366,6 @@ Exercises
                 testEqual(is_rightangled(4.1, 8.2, 9.16787), True)
                 testEqual(is_rightangled(4.1, 8.2, 9.168), False)
                 testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_b25992fa70fc4e7581d84315df38d796
 
 
 #.  (GRADED) A year is a **leap year** if it is divisible by 4 unless it is a century that is not divisible by 400.
@@ -432,34 +394,34 @@ Exercises
         .. tab:: Question
 
             Implement the calculator for the date of Easter.
-            
+
             The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.
-            
+
             Ask the user to enter a year.
             Compute the following:
-            
-            
-            
+
+
+
                 1. a = year % 19
                 #. b = year % 4
                 #. c = year % 7
                 #. d = (19 * a + 24) % 30
                 #. e = (2 * b + 4 * c + 6 * d + 5) % 7
                 #. dateofeaster = 22 + d + e
-            
-            
-            Special note: The algorithm can give a date in April.  Also, if the year is one of four special 
+
+
+            Special note: The algorithm can give a date in April.  Also, if the year is one of four special
             years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
-            
+
             Your program should print an error message if the user provides a date that is out of range.
-        
+
             .. activecode:: ex_6_13
-        
+
 
         .. tab:: Answer
 
             .. activecode:: answer_ex_6_13
-            
+
                 year = int(input("Please enter a year"))
                 if year >= 1900 and year <= 2099:
                     a = year % 19
@@ -471,17 +433,10 @@ Exercises
 
                     if year == 1954 or year == 2981 or year == 2049 or year == 2076:
                         dateofeaster = dateofeaster - 7
-                
+
                     if dateofeaster > 31:
                         print("April", dateofeaster - 31)
                     else:
                         print("March", dateofeaster)
                 else:
                     print("ERROR...year out of range")
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_2dfd6acf1ca849c2853dad606d1ba255
-

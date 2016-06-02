@@ -47,12 +47,6 @@ Exercises
 
                     print(max(lst))
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_714fd5537ebf41189ce5fb6fb16d1d26
-
 
     #. Write a function ``sum_of_squares(xs)`` that computes the sum
        of the squares of the numbers in the list ``xs``.  For example,
@@ -88,12 +82,6 @@ Exercises
                         lst.append(random.randrange(-1000, 1000))
 
                     print(sumNegative(lst))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_bfe671ac1e0942f2be4de7179921f83f
 
 
     #. Count how many words in a list have length 5.
@@ -171,12 +159,6 @@ Exercises
                     print(reverse(lst))
                     print(index(2, lst))
                     print(insert('cat', 4, lst))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_39ee0274e51d4c888cc20b6fefa4069c
 
 
     #. Write a function ``replace(s, old, new)`` that replaces all occurences of

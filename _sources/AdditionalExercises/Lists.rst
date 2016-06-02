@@ -32,11 +32,6 @@ Exercises
                 Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
                 ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_12314cf40dbe407cb145f029870c0347
 
 
     #.  Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
@@ -81,11 +76,6 @@ Exercises
 
                     print (myList)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_b9034b274ebe4c55a58c44315ee681a4
 
     #.
 
@@ -117,11 +107,6 @@ Exercises
 
                     print(countOdd(lst))
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
 
     #. (GRADED) Write a function to find the sum of all the even numbers in a list.
 
