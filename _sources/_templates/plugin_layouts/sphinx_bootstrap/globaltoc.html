@@ -3,5 +3,5 @@
      class="dropdown-toggle"
      data-toggle="dropdown">{{ theme_navbar_site_name }} <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
-    >{{ toctree(maxdepth=theme_globaltoc_depth|toint, collapse=False, includehidden=theme_globaltoc_includehidden|tobool) }}</ul>
+    >{{ toctree(maxdepth=1, collapse=False, includehidden=False) }}</ul>
 </li>
