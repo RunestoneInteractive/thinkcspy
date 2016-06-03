@@ -1,3 +1,5 @@
+.. _schedule_soc:
+
 Summer of Code 2016 Schedule
 ============================
 
