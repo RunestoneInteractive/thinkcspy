@@ -99,18 +99,6 @@ Exercises
 
     #.
 
-        (GRADED) It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights.
-
-        Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
-
-        .. activecode:: ex_2_4
-
-            # Problem 4
-            # My Name:
-
-
-    #.
-
         .. tabbed:: q5
 
             .. tab:: Question
@@ -229,7 +217,7 @@ Exercises
 
     #.
 
-        (GRADED) Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer, like this:
+        Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer, like this:
 
         .. sourcecode:: python
 
@@ -270,7 +258,7 @@ Exercises
 
     #.
 
-        (GRADED) Write a program that will convert degrees fahrenheit to degrees celsius, like this:
+        Write a program that will convert degrees fahrenheit to degrees celsius, like this:
 
         .. sourcecode:: python
 

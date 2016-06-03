@@ -55,6 +55,8 @@ Exercises
    .. activecode:: ex_8_6
       :nocodelens:
 
+      from test import testEqual
+
       def mirror(mystr):
           # your code here
 
