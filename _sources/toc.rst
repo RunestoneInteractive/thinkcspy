@@ -60,8 +60,7 @@ Table of Contents
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
    PythonOutsideThisBook/PythonBeyondtheBrowser.rst
-   PythonOutsideThisBook/Commandline.rst
-   PythonOutsideThisBook/Commandline2.rst
+   PythonOutsideThisBook/Exercises.rst
 
 
 4. Modules (and Turtles!)
