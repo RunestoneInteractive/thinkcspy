@@ -3,12 +3,14 @@
 Schedule
 --------
 
-Each day of class covers one chapter from the book. 
+Each day of class covers one chapter from the book. Each chapter contains a handful of pages to read, followed by a handful of exercises to try.
 
-You should read the associated chapter **before** coming to class. 
+Instead of post-class "homework", we have pre-class prep work. For each class period, you should read the associated chapter, and attempt most of its exerciess, **before** coming to class. 
 
 Assignments should be submitted by midnight of the week it is assigned. See the `Student Guide </runestone/static/thinkcspy/student-guide.html>`_ for details on assignment submission.
 
+Summer of Code 2016 Unit 1: *Think Python*
+==========================================
 
 +--------+----------+--------+---------------------------------------------------------+
 | Week # | Class #  | Date   | Pre-class Prep Work                                     |
