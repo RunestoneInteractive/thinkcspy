@@ -15,11 +15,22 @@
 Think Python - LaunchCode Edition
 =============================================
 
-This is an interactive version of the open-source textbook *How to Think Like A Computer Scientist: Learning with Python*. It is adapted from the original interactive version hosted at `interativepython.org <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, which in turn was based off of the `original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_.
+Welcome to LaunchCode's *Think Python* course!
 
-* :ref:`t_o_c`
+This course is built around an interactive e-textbook hosted here on this website. You will do most of your learning and working directly inside the book.
+
 * :ref:`schedule_soc`
-* `Student Guide </runestone/static/thinkcspy/student-guide.html>`_
+* :ref:`t_o_c`
+* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_
+
+----
+
+More about the Textbook
+    * Features / How to use
+    * Authors, History
+        called *How to Think Like A Computer Scientist: Learning with Python*. It is adapted from the original interactive version hosted at `interativepython.org <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, which in turn was based off of the `original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_.
+
+
 
 
 .. toctree::
