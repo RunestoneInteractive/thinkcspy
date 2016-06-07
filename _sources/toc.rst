@@ -341,3 +341,16 @@ Acknowledgements
     FrontBackMatter/preface2e.rst
     FrontBackMatter/contrib.rst
     FrontBackMatter/fdl-1.3.rst
+
+----
+
+More about this Textbook
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+This book is one of many adapted versions of the open-source textbook called `How to Think Like A Computer Scientist: Learning with Python <http://www.openbookproject.net/thinkcs/python/english2e/>`_, which is used in many universities around the world. 
+
+Runestone is a platform for hosting *interactive* electronic textbooks. The folks at Runestone created `ThinkCsPy <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, an interactive version of the original book. 
+
+LaunchCode has made some small tweaks and adjustments to Runestone's *ThinkCsPy*, resulting in the book you are reading!
+

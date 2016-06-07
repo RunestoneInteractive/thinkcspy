@@ -19,18 +19,13 @@ Welcome to LaunchCode's *Think Python* course!
 
 This course is built around an interactive e-textbook hosted here on this website. You will do most of your learning and working directly inside the book.
 
+The first thing you should probably do is read the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ to learn how the course will work.
+
+After that, head over to the `Schedule </runestone/static/thinkcspy/soc2016-schedule.html>`_ and get started!
+
 * :ref:`schedule_soc`
 * :ref:`t_o_c`
-* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_
-
-----
-
-More about the Textbook
-    * Features / How to use
-    * Authors, History
-        called *How to Think Like A Computer Scientist: Learning with Python*. It is adapted from the original interactive version hosted at `interativepython.org <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, which in turn was based off of the `original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_.
-
-
+* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ 
 
 
 .. toctree::
