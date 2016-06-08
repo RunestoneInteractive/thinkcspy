@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+**CHAPTER 1**
+
 The Way of the Program
 ======================
 
