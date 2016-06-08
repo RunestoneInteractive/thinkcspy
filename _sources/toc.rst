@@ -11,6 +11,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading1.rst
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
    GeneralIntro/ThePythonProgrammingLanguage.rst
