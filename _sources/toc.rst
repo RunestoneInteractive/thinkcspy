@@ -28,6 +28,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading2.rst
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
@@ -50,6 +51,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading3.rst
    GeneralIntro/WhatisDebugging.rst
    GeneralIntro/Syntaxerrors.rst
    GeneralIntro/RuntimeErrors.rst
@@ -70,6 +72,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading4.rst
    PythonTurtle/intro-HelloLittleTurtles.rst
    PythonTurtle/OurFirstTurtleProgram.rst
    PythonTurtle/InstancesAHerdofTurtles.rst
@@ -95,6 +98,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading5.rst
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
    Functions/Variablesandparametersarelocal.rst
@@ -115,6 +119,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading6.rst
    Selection/BooleanValuesandBooleanExpressions.rst
    Selection/Logicaloperators.rst
    Selection/PrecedenceofOperators.rst
@@ -133,6 +138,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading7.rst
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
    MoreAboutIteration/ThewhileStatement.rst
@@ -153,6 +159,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading8.rst
    Strings/StringsRevisited.rst
    Strings/ACollectionDataType.rst
    Strings/OperationsonStrings.rst
@@ -171,6 +178,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading9.rst
    Strings/TraversalandtheforLoopByItem.rst
    Strings/TraversalandtheforLoopByIndex.rst
    Strings/TraversalandthewhileLoop.rst
@@ -191,6 +199,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading10.rst
    Lists/intro-Lists.rst
    Lists/ListValues.rst
    Lists/ListLength.rst
@@ -216,6 +225,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading11.rst
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
    Lists/WhichisBetter.rst
@@ -238,6 +248,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading12.rst
    Dictionaries/intro-Dictionaries.rst
    Dictionaries/Dictionaryoperations.rst
    Dictionaries/Dictionarymethods.rst
@@ -253,6 +264,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading13.rst
    ClassesBasics/Objectorientedprogramming.rst
    ClassesBasics/Achangeofperspective.rst
    ClassesBasics/ObjectsRevisited.rst
@@ -272,6 +284,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
+   ChapterHeadings/Heading14.rst
    ClassesDiggingDeeper/Fractions.rst
    ClassesDiggingDeeper/ObjectsareMutable.rst
    ClassesDiggingDeeper/Sameness.rst
