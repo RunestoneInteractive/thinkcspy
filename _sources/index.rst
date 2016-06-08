@@ -25,7 +25,7 @@ After that, head over to the `Schedule </runestone/static/thinkcspy/soc2016-sche
 
 * :ref:`schedule_soc`
 * :ref:`t_o_c`
-* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ 
+* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_
 
 
 .. toctree::
