@@ -64,20 +64,24 @@
 
         <li class="divider-vertical"></li>
 
+
+        <!-- scratch code dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-edit" style='opacity:0.9;'></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+          </ul>
+        </li>
+
         <!-- search dropdown -->
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            {% if 'overview' in course_id %}
-                <li><a href='/{{appname}}/static/{{course_id}}/overview.html'>Table of Contents</a></li>
-            {% else: %}
-                <li><a href='{{ pathto(master_doc) }}'>Table of Contents</a></li>
-            {% endif %}
             <li><a href='/{{appname}}/static/{{course_id}}/genindex.html'>Book Index</a></li>
-            <li class="divider"></li>
-            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
             <li class="divider"></li>
             <li style="width: 240px;">
               <form class="navbar-search" style="margin:10px;" action="{{ pathto('search') }}" method="get">
@@ -107,7 +111,6 @@
           <ul class="dropdown-menu user-menu">
             <li><span class='loggedinuser'></span></li>
             <li class="divider"></li>
-            <li><a href="/runestone/static/thinkcspy/index.html">Course Home Page</a></li>
             <li><a href="/runestone/static/thinkcspy/course-overview.html">Course Overview</a></li>
             <li><a href="/runestone/static/thinkcspy/soc2016-schedule.html#schedule-soc">Course Schedule</a></li>
             <li><a href="/runestone/static/thinkcspy/toc.html">Table of Contents</a></li>
