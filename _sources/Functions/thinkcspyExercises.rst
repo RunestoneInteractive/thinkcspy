@@ -121,14 +121,7 @@ Exercises
 
                     drawPoly(tess, 8, 50)
 
-
-
-    #. Draw this pretty pattern.
-
-        .. image:: Figures/tess08.png
-
-        .. activecode:: ex_5_4
-
+                    
     #.
 
         .. tabbed:: q5

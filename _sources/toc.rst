@@ -111,6 +111,7 @@ Table of Contents
    Functions/ATurtleBarChart.rst
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
+   Studios/Chapter5.rst
 
 
 6. Selection
