@@ -54,11 +54,11 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 10`_                                    |
 +--------+--------+-------------------------------------------------------------------+
-| 6      | 7/21   | Reading: `11. Lists, Continued`_                                  |
+| 6      | 7/21   | Reading: `11. Classes and Objects – Basics`_                      |
 |        |        +-------------------------------------------------------------------+
-|        |        | Assignment(s): `Exercises 11`_, start work on the `Problem Set`_  |
-|        +----------------------------------------------------------------------------+
-|        | 7/25   | Reading: `12. Dictionaries`_                                      |
+|        |        | Assignment(s): `Exercises 11`_start work on the `Problem Set`_    |
+|        +--------+-------------------------------------------------------------------+
+|        | 7/25   | Reading: `12. Classes and Objects – Digging a Little Deeper`_     |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 12`_                                    |
 +--------+--------+-------------------------------------------------------------------+
