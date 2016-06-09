@@ -19,13 +19,9 @@ Welcome to LaunchCode's *Think Python* course!
 
 This course is built around an interactive e-textbook hosted here on this website. You will do most of your learning and working directly inside the book.
 
-The first thing you should probably do is read the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ to learn how the course will work.
-
-After that, head over to the `Schedule </runestone/static/thinkcspy/soc2016-schedule.html>`_ and get started!
-
+* `Course Overview </runestone/static/thinkcspy/course-overview.html>`_
 * :ref:`schedule_soc`
 * :ref:`t_o_c`
-* `Syllabus </runestone/static/thinkcspy/syllabus.html>`_
 
 
 .. toctree::

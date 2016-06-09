@@ -1,5 +1,5 @@
-Syllabus
-========
+Course Overview
+================
 
 Read this page for details on how this course works, what you must do to pass the course, how to submit your work, and how to get help.
 
