@@ -29,7 +29,6 @@ This course is built around an interactive e-textbook hosted here on this websit
     :autorun:
     :hidecode:
     :nocodelens:
-    :nooutput:
 
     __author__ = "Jack Burns"
     __version__ = "1.0"
