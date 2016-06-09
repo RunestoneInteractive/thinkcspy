@@ -42,7 +42,7 @@ Think Python - LaunchCode Edition
 
         #create the screen
         wn = turtle.Screen()
-        wn.colormode(255)
+        #wn.colormode(255)
 
         #set the window size
         wn.setup(575, 800)
