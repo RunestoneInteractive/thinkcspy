@@ -81,8 +81,6 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
           </a>
           <ul class='dropdown-menu'>
-            <li><a href='/{{appname}}/static/{{course_id}}/genindex.html'>Book Index</a></li>
-            <li class="divider"></li>
             <li style="width: 240px;">
               <form class="navbar-search" style="margin:10px;" action="{{ pathto('search') }}" method="get">
                 <div class="input-group">
@@ -97,6 +95,8 @@
                 <input type="hidden" name="area" value="default" />
               </form>
             </li>
+            <li class="divider"></li>
+            <li><a href='/{{appname}}/static/{{course_id}}/genindex.html'>Directory of Concepts</a></li>
           </ul>
         </li>
         <!-- end search dropdown -->
