@@ -16,7 +16,8 @@ Before Class
     * **Attempt Exercises:** At the end of each chapter is a page containing a handful of exercises for you to practice. Some are easy, others are hard. You will probably spend the majority of your time working on these exercises. You do not have to complete them all, but you must attempt at least 5 for each chapter. You are encouraged to to more, and to try to get them correct, but the minimum is that you attempt at least 5.
 
 During Class
-    In class, we will review the material from the chapter you read, with live examples and question-and-answer sessions. You will sometimes be asked to work together in small groups on another practice exercise called a "Studio".
+    * **Review:** In class, we will review the material from the chapter you read, with live examples and question-and-answer sessions. 
+    * **Studios:** You will sometimes be asked to work together in small groups on another practice exercise called a "Studio".
 
 
 See the `Course Schedule`_ for a week-by-week breakdown.
