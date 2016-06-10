@@ -178,7 +178,7 @@ Exercises
 
     #.
 
-        (GRADED) Write a program that will compute the area of a circle.  Prompt the user to enter the radius, and then print the answer, like this:
+        Write a program that will compute the area of a circle.  Prompt the user to enter the radius, and then print the answer, like this:
 
         .. sourcecode:: python
 
