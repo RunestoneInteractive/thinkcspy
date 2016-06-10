@@ -74,30 +74,30 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 
 .. _1. General Intro: toc.html#general-intro
 .. _2. Simple Python Data: toc.html#simple-python-data
-.. _Exercises 2: SimplePythonData/exercises.html
+.. _Exercises 2: SimplePythonData/Exercises.html
 .. _3. Debugging, and Using Python Outside this Book: toc.html#debugging-and-using-python-outside-this-book
-.. _Exercises 3: PythonOutsideThisBook/exercises.html
+.. _Exercises 3: PythonOutsideThisBook/Exercises.html
 .. _4. Modules (and Turtles!): toc.html#modules-and-turtles
 .. _Exercises 4: AdditionalExercises/TurtlesAndModules.html
 .. _5. Functions: toc.html#functions
 .. _Exercises 5: Functions/thinkcspyExercises.html
 .. _6. Selection: toc.html#selection
-.. _Exercises 6: Selection/exercises.html
+.. _Exercises 6: Selection/Exercises.html
 .. _7. More About Iteration: toc.html#more-about-iteration
-.. _Exercises 7: MoreAboutIteration/exercises.html
+.. _Exercises 7: MoreAboutIteration/Exercises.html
 .. _8. Strings: toc.html#strings
 .. _Exercises 8: AdditionalExercises/strings.html
 .. _9. Strings, Continued: toc.html#strings-continued
-.. _Exercises 9: Strings/exercises.html
+.. _Exercises 9: Strings/Exercises.html
 .. _10. Lists: toc.html#lists
 .. _Exercises 10: AdditionalExercises/lists.html
 .. _11. Lists, Continued: toc.html#lists-continued
-.. _Exercises 11: Lists/exercises.html
+.. _Exercises 11: Lists/Exercises.html
 .. _12. Dictionaries: toc.html#dictionaries
-.. _Exercises 12: Dictionaries/exercises.html
+.. _Exercises 12: Dictionaries/Exercises.html
 .. _13. Classes and Objects – Basics: toc.html#class-and-objects-basics
-.. _Exercises 13: ClassesBasics/exercises.html
+.. _Exercises 13: ClassesBasics/Exercises.html
 .. _14. Classes and Objects – Digging a Little Deeper: toc.html#classes-and-objects-digging-a-little-deeper
-.. _Exercises 14: ClassesDiggingDeeper/exercises.html
+.. _Exercises 14: ClassesDiggingDeeper/Exercises.html
 
 .. _Problem Set: ProblemSets/Crypto.html
