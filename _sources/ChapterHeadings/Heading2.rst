@@ -1,4 +1,5 @@
 CHAPTER 2
 +++++++++
 
-![spaceship](/.../.../.../_sources/ChapterHeadings/spaceship.png "launchcode spaceship")
+.. image:: spaceship.png
+   :alt: Chapter 2
