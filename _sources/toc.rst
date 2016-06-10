@@ -145,7 +145,7 @@ Table of Contents
    MoreAboutIteration/ThewhileStatement.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
    MoreAboutIteration/The3n1Sequence.rst
-   MoreAboutIteration/Newton'sMethod.rst
+   MoreAboutIteration/NewtonsMethod.rst
    MoreAboutIteration/AlgorithmsRevisited.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
