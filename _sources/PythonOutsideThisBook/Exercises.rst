@@ -30,7 +30,10 @@ There are two sections you should read / do:
 	- `Exercise 2`_
 	- `Exercise 3`_
 	- `Exercise 4`_
-	- `Exercise 5`_
+	- (GRADED*) `Exercise 5`_
+
+  *Notice that Exercise 5 is marked as GRADED. This means that you should go to Vocareum and look for an assignment called *Weekly Graded Exercise: Chapter 3*, and submit your Exercise 5 code over there.
+
 
 .. _Command Line Crash Course: http://learnpythonthehardway.org/book/appendixa.html
 .. _Exercise 0: http://learnpythonthehardway.org/book/ex0.html
