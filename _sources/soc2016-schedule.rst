@@ -97,7 +97,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 .. _Exercises 11: Lists/Exercises.html
 .. _12. Dictionaries: toc.html#dictionaries
 .. _Exercises 12: Dictionaries/Exercises.html
-.. _13. Classes and Objects – Basics: toc.html#class-and-objects-basics
+.. _13. Classes and Objects – Basics: toc.html#classes-and-objects-basics
 .. _Exercises 13: ClassesBasics/Exercises.html
 .. _14. Classes and Objects – Digging a Little Deeper: toc.html#classes-and-objects-digging-a-little-deeper
 .. _Exercises 14: ClassesDiggingDeeper/Exercises.html
