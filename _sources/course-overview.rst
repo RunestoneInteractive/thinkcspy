@@ -72,5 +72,15 @@ During class, mentors will circulate and provide help while you are working.
 Outside of class, we use a discussion board forum called Piazza, which you can use to ask questions.
 
 
+Navigating This Website
+-----------------------
+
+In the top-right corner of the page is a dropdown menu that links to a bunch of useful things, including:
+    * the Course Schedule
+    * the Table of Contents
+    * Vocareum
+    * Piazza
+    * Your account information for this book/course.
+
 
 .. _Course Schedule: soc2016-schedule.html
