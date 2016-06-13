@@ -52,7 +52,7 @@ Final Problem Set
 Deadlines
 * **Weekly Assignments** must be submitted by end-of-day on Sunday of the week they are assigned.
 
-* **The Problem Set** must be submitted before the final day of class.
+* **The Problem Set** must be submitted at the end of Unit 1 (see `Course Schedule`_ for exact date).
 
 * Lateness Policy
     In order to pass the class you must complete all the work, but you may submit up to two late Weekly Assignments, and you may miss a few class sessions. If you need to submit more than two late assignments, you may be allowed to continue in the course, but you must speak to the course instructor.

@@ -70,6 +70,8 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 14`_                                    |
 +--------+--------+-------------------------------------------------------------------+
+|        | 8/3    | Problem Set due by midnight                                       |
++--------+--------+-------------------------------------------------------------------+
 
 
 .. _1. General Intro: toc.html#general-intro
