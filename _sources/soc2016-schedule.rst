@@ -3,9 +3,9 @@
 Course Schedule
 ---------------
 
-Remember that you must do the reading and exercies **before** coming to class.
+Remember that you must do the reading and exercises **before** coming to class.
 
-See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
+See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ for details.
 
 -----
 
@@ -70,7 +70,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        |        +---------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 14`_                                      |
 +--------+--------+---------------------------------------------------------------------+
-|        | 8/3    | Problem Set due by midnight                                         |
+|        | 8/1    | Problem Set due by midnight                                         |
 +--------+--------+---------------------------------------------------------------------+
 
 
@@ -88,11 +88,11 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 .. _7. More About Iteration: toc.html#more-about-iteration
 .. _Exercises 7: MoreAboutIteration/Exercises.html
 .. _8. Strings: toc.html#strings
-.. _Exercises 8: AdditionalExercises/strings.html
+.. _Exercises 8: AdditionalExercises/Strings.html
 .. _9. Strings, Continued: toc.html#strings-continued
 .. _Exercises 9: Strings/Exercises.html
 .. _10. Lists: toc.html#lists
-.. _Exercises 10: AdditionalExercises/lists.html
+.. _Exercises 10: AdditionalExercises/Lists.html
 .. _11. Lists, Continued: toc.html#lists-continued
 .. _Exercises 11: Lists/Exercises.html
 .. _12. Dictionaries: toc.html#dictionaries
