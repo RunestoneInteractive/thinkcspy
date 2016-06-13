@@ -56,7 +56,7 @@ See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ fo
 |        +--------+---------------------------------------------------------------------+
 |        | 7/21   | Reading: `11. Lists, Continued`_                                    |
 |        |        +---------------------------------------------------------------------+
-|        |        | Assignment(s): `Exercises 11`, _start work on the `Problem Set`_    |
+|        |        | Assignment(s): `Exercises 11`_, start work on the `Problem Set`_    |
 +--------+--------+---------------------------------------------------------------------+
 | 7      | 7/25   | Reading: `12. Dictionaries`_                                        |
 |        |        +---------------------------------------------------------------------+
