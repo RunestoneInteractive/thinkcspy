@@ -31,7 +31,7 @@ This course is Pass/Fail. There are two levels of certification:
 * **Pass with Honors:** For students who complete all of the work on time.
 * **Pass:** For students who complete all of the work, mostly on time (more details below).
 
-Summer of Code consists of 3 units, of which _Think Python_ is the first. You will receive a status of Pass with Honors, Pass, or Fail for each unit. In order to Pass the entire course, you must Pass each individual unit. In order to Pass with Honors, you must Pass with Honors each individual unit.
+Summer of Code consists of 3 units, of which *Think Python* is the first. You will receive a status of Pass with Honors, Pass, or Fail for each unit. In order to Pass the entire course, you must Pass each individual unit. In order to Pass with Honors, you must Pass with Honors each individual unit.
 
 Evaluation
     In order to pass the course, you will be evaluated on three different criteria:
