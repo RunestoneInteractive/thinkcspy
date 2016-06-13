@@ -3,7 +3,7 @@
 Course Schedule
 ---------------
 
-Remember that you must do the reading and exercies **before** coming to class. 
+Remember that you must do the reading and exercies **before** coming to class.
 
 See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 
@@ -41,7 +41,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        | 7/7    | Reading: `7. More About Iteration`_                               |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 7`_                                     |
-|--------+--------+-------------------------------------------------------------------+
++--------+--------+-------------------------------------------------------------------+
 | 5      | 7/11   | Reading: `8. Strings`_                                            |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 8`_                                     |
@@ -49,7 +49,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        | 7/14   | Reading: `9. Strings, Continued`_                                 |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 9`_                                     |
-|--------+--------+-------------------------------------------------------------------+
++--------+--------+-------------------------------------------------------------------+
 | 6      | 7/18   | Reading: `10. Lists`_                                             |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 10`_                                    |
@@ -57,7 +57,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        | 7/21   | Reading: `11. Lists, Continued`_                                  |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 11`_start work on the `Problem Set`_    |
-|--------+--------+-------------------------------------------------------------------+
++--------+--------+-------------------------------------------------------------------+
 | 7      | 7/25   | Reading: `12. Dictionaries`_                                      |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 12`_                                    |
@@ -65,7 +65,7 @@ See the `Syllabus </runestone/static/thinkcspy/syllabus.html>`_ for details.
 |        | 7/28   | Reading: `13. Classes and Objects – Basics`_                      |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 13`_                                    |
-|--------+--------+-------------------------------------------------------------------+
++--------+--------+-------------------------------------------------------------------+
 | 8      | 8/1    | Reading: `14. Classes and Objects – Digging a Little Deeper`_     |
 |        |        +-------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 14`_                                    |
