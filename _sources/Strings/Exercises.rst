@@ -145,10 +145,10 @@ Exercises
               class myTests(TestCaseGui):
 
                 def testOne(self):
-                    self.assertEqual(numDigits(2),1,"Your function failed on input of 2")
-                    self.assertEqual(numDigits(55),2,"Your function failed on input of 55")
-                    self.assertEqual(numDigits(1352),4,"Your function failed on input of 1352")
-                    self.assertEqual(numDigits(444),3,"Your function failed on input of 444")
+                    self.assertEqual(numDigits(2),1,"Tested numDigits on input of 2")
+                    self.assertEqual(numDigits(55),2,"Tested numDigits on input of 55")
+                    self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
+                    self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
 
 
 
@@ -190,9 +190,9 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(reverse("happy"),"yppah","Your function failed on input of 'happy'")
-            self.assertEqual(reverse("Python"),"nohtyP","Your function failed on input of 'Python'")
-            self.assertEqual(reverse(""),"","Your function failed on input of ''")
+            self.assertEqual(reverse("happy"),"yppah","Tested reverse on input of 'happy'")
+            self.assertEqual(reverse("Python"),"nohtyP","Tested reverse on input of 'Python'")
+            self.assertEqual(reverse(""),"","Tested reverse on input of ''")
 
 
 
@@ -220,10 +220,10 @@ Exercises
               class myTests(TestCaseGui):
 
                   def testOne(self):
-                      self.assertEqual(mirror("good"),"gooddoog","Your function failed on input of 'good'")
-                      self.assertEqual(mirror("Python"),"PythonnohtyP","Your function failed on input of 'Python'")
-                      self.assertEqual(mirror(""),"","Your function failed on input of ''")
-                      self.assertEqual(mirror("a"),"aa","Your function failed on input of 'a'")
+                      self.assertEqual(mirror("good"),"gooddoog","Tested mirror on input of 'good'")
+                      self.assertEqual(mirror("Python"),"PythonnohtyP","Tested mirror on input of 'Python'")
+                      self.assertEqual(mirror(""),"","Tested mirror on input of ''")
+                      self.assertEqual(mirror("a"),"aa","Tested mirror on input of 'a'")
 
 
               myTests().main()
@@ -274,9 +274,9 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(remove_letter("a","apple"),"pple","Your function failed on inputs of 'a' and 'apple'")
-            self.assertEqual(remove_letter("a","banana"),"bnn","Your function failed on inputs of 'a' and 'banana'")
-            self.assertEqual(remove_letter("z","banana"),"banana","Your function failed on inputs of 'z' and 'banana'")
+            self.assertEqual(remove_letter("a","apple"),"pple","Tested remove_letter on inputs of 'a' and 'apple'")
+            self.assertEqual(remove_letter("a","banana"),"bnn","Tested remove_letter on inputs of 'a' and 'banana'")
+            self.assertEqual(remove_letter("z","banana"),"banana","Tested remove_letter on inputs of 'z' and 'banana'")
 
 
 
@@ -306,11 +306,11 @@ Exercises
               class myTests(TestCaseGui):
 
                   def testOne(self):
-                      self.assertEqual(is_palindrome("abba"),True,"Your function failed on input of 'abba'")
-                      self.assertEqual(is_palindrome("abab"),False,"Your function failed on input of 'abab'")
-                      self.assertEqual(is_palindrome("straw warts"),True,"Your function failed on input of 'straw warts'")
-                      self.assertEqual(is_palindrome("a"),True,"Your function failed on input of 'a'")
-                      self.assertEqual(is_palindrome(""),True,"Your function failed on input of ''")
+                      self.assertEqual(is_palindrome("abba"),True,"Tested is_palindrome on input of 'abba'")
+                      self.assertEqual(is_palindrome("abab"),False,"Tested is_palindrome on input of 'abab'")
+                      self.assertEqual(is_palindrome("straw warts"),True,"Tested is_palindrome on input of 'straw warts'")
+                      self.assertEqual(is_palindrome("a"),True,"Tested is_palindrome on input of 'a'")
+                      self.assertEqual(is_palindrome(""),True,"Tested is_palindrome on input of ''")
 
 
 
@@ -367,12 +367,12 @@ Exercises
       class myTests(TestCaseGui):
 
             def testOne(self):
-                self.assertEqual(count("is","Mississippi"),2,"Your function failed on inputs of 'is' and 'Mississippi'")
-                self.assertEqual(count("an","banana"),2,"Your function failed on inputs of 'an' and 'banana'")
-                self.assertEqual(count("ana","banana"),2,"Your function failed on inputs of 'ana' and 'banana'")
-                self.assertEqual(count("nana","banana"),1,"Your function failed on inputs of 'nana' and 'banana'")
-                self.assertEqual(count("nanan","banana"),0,"Your function failed on inputs of 'nanan' and 'banana'")
-                self.assertEqual(count("aaa","aaaaaa"),4,"Your function failed on input of 'aaa' and 'aaaaaa'")
+                self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
+                self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
+                self.assertEqual(count("ana","banana"),2,"Tested count on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
+                self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
+                self.assertEqual(count("aaa","aaaaaa"),4,"Tested count on input of 'aaa' and 'aaaaaa'")
 
 
 
@@ -402,10 +402,10 @@ Exercises
               class myTests(TestCaseGui):
 
                       def testOne(self):
-                          self.assertEqual(remove("an","banana"),"bana","Your function failed on inputs of 'an' and 'banana'")
-                          self.assertEqual(remove("cyc","bicycle"),"bile","Your function failed on inputs of 'cyc' and 'bicycle'")
-                          self.assertEqual(remove("iss","Mississippi"),"Missippi","Your function failed on inputs of 'iss' and 'Mississippi'")
-                          self.assertEqual(remove("egg","bicycle"),"bicycle","Your function failed on inputs of 'egg' and 'bicycle'")
+                          self.assertEqual(remove("an","banana"),"bana","Tested remove on inputs of 'an' and 'banana'")
+                          self.assertEqual(remove("cyc","bicycle"),"bile","Tested remove on inputs of 'cyc' and 'bicycle'")
+                          self.assertEqual(remove("iss","Mississippi"),"Missippi","Tested remove on inputs of 'iss' and 'Mississippi'")
+                          self.assertEqual(remove("egg","bicycle"),"bicycle","Tested remove on inputs of 'egg' and 'bicycle'")
 
 
 
@@ -455,10 +455,10 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(remove_all("an","banana"),"ba","Your function failed on inputs of 'an' and 'banana'")
-            self.assertEqual(remove_all("cyc","bicycle"),"bile","Your function failed on inputs of 'cyc' and 'bicycle'")
-            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Your function failed on inputs of 'iss' and 'Mississippi'")
-            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Your function failed on inputs of 'eggs' and 'bicycle'")
+            self.assertEqual(remove_all("an","banana"),"ba","Tested remove_all on inputs of 'an' and 'banana'")
+            self.assertEqual(remove_all("cyc","bicycle"),"bile","Tested remove_all on inputs of 'cyc' and 'bicycle'")
+            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
+            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
 
 
 
@@ -804,7 +804,7 @@ Exercises
 
    .. actex:: ex_8_19
 
-      def removeDups(astring):
+      def remove_dups(astring):
           # your code here
 
 
@@ -816,9 +816,9 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(removeDups("mississippi"),"misp","removeDups failed on string 'mississippi'")
-            self.assertEqual(removeDups("potato"),"pota","removeDups failed on string 'potato'")
-            self.assertEqual(removeDups("bookkeeper"),"bokepr","removeDups failed on string 'bookkeeper'")
+            self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
+            self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
+            self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
 
       myTests().main()
 

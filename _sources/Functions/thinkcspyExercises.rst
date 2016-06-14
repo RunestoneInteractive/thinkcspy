@@ -228,10 +228,10 @@ Exercises
                     class myTests(TestCaseGui):
 
                         def testOne(self):
-                            self.assertAlmostEqual(sumTo(15),120.0,0,"sumTo failed on input 15")
-                            self.assertAlmostEqual(sumTo(0),0.0,0,"sumTo failed on input 0")
-                            self.assertAlmostEqual(sumTo(25),325.0,0,"sumTo failed on input 25")
-                            self.assertAlmostEqual(sumTo(7),28.0,0,"sumTo failed on input 7")
+                            self.assertAlmostEqual(sumTo(15),120.0,0,"Tested sumTo on input 15")
+                            self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
+                            self.assertAlmostEqual(sumTo(25),325.0,0,"Tested sumTo on input 25")
+                            self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
 
                     myTests().main()
 
@@ -382,10 +382,10 @@ Exercises
                     class myTests(TestCaseGui):
 
                         def testOne(self):
-                            self.assertEqual(sumTo(15),120,"sumTo failed on input 15")
-                            self.assertEqual(sumTo(0),0,"sumTo failed on input 0")
-                            self.assertEqual(sumTo(25),325,"sumTo failed on input 25")
-                            self.assertEqual(sumTo(7),28,"sumTo failed on input 7")
+                            self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
+                            self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
+                            self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
+                            self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
 
                     myTests().main()
 
@@ -431,10 +431,10 @@ Exercises
             class myTests(TestCaseGui):
 
                 def testOne(self):
-                    self.assertAlmostEqual(mySqrt(4.0),2.0,0,"mySqrt failed on input 4.0")
-                    self.assertAlmostEqual(mySqrt(9.0),3.0,4,"mySqrt is not accurate enough on input 3.0")
-                    self.assertAlmostEqual(mySqrt(36.0),6.0,5,"mySqrt is not accurate enough on input 6.0")
-                    self.assertAlmostEqual(mySqrt(100.0),10.0,4,"mySqrt is not accurate enough on input 10.0. Try iterating more times.")
+                    self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
+                    self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
+                    self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
+                    self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
 
             myTests().main()
 
