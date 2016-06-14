@@ -1,5 +1,41 @@
 .. _t_o_c:
 
+.. raw:: html
+
+   <div style="text-align:center" class="center-block">
+   <h1>How to Think Like a Computer Scientist: Interactive Edition</h1>
+   <style>
+   button.reveal_button {
+       margin-left: auto;
+       margin-right: auto;
+   }
+   </style>
+   </div>
+
+.. reveal:: about
+   :showtitle: About this Project
+   :modal:
+   :modalTitle: About this Project
+
+   About this Project
+   ------------------
+
+   This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
+
+   * This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
+   * Activecode based on `Skulpt <http://skulpt.org>`_
+   * Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
+   * Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
+   * ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
+   * NSF
+
+   The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
+
+.. raw:: html
+
+
+
+
 Table of Contents
 :::::::::::::::::
 
