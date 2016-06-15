@@ -259,12 +259,24 @@ Exercises
             def areaOfCircle(r):
                 # your code here
 
-            t = areaOfCircle(0)
-            testEqual(t,0)
-            t = areaOfCircle(1)
-            testEqual(t,math.pi)
-            t = areaOfCircle(100)
-            testEqual(t,31415.926535897932)
+            ====
+
+
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Hint: Be sure to use the math module")
+                    self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Hint: Be sure to use the math module")
+                    self.assertEqual(areaOfCircle(0),0.0,"Hint: Be sure to use the math module")
+                    self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Hint: Be sure to use the math module")
+
+
+            myTests().main()
+
+
+
 
 
     #.
