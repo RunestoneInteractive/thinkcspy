@@ -14,9 +14,45 @@ Programming Exercises
 
    .. actex:: ex_rec_1
 
+       def computeFactorial(number):
+           #your code here
+
+       ====
+
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def testOne(self):
+               self.assertEqual(computeFactorial(0),1,"Tested computeFactorial on input 0")
+               self.assertEqual(computeFactorial(1),1,"Tested computeFactorail on input 1")
+               self.assertEqual(computeFactorial(2),2,"Tested computeFactorial on input 2")
+               self.assertEqual(computeFactorial(3),6,"Tested computeFactorial on input 3")
+               self.assertEqual(computeFactorial(4),24,"Tested computeFactorial on input 4")
+               self.assertEqual(computeFactorial(8),40320,"Tested computeFactorial on input 8")
+               self.assertEqual(computeFactorial(-5),None,"Tested computeFactorial on a negative number - make sure to handle this case")
+
+       myTests().main()
+
 #. Write a recursive function to reverse a list.
 
    .. actex:: ex_rec_2
+
+      def reverseList(lst):
+          #your code here
+
+
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+          def testOne(self):
+              self.assertEqual(reverseList([1,2,3,4,5]), [5,4,3,2,1], "Your function failed with input [1,2,3,4,5]")
+              self.assertEqual(reverseList(['Hello','World','!']), ['!','World','Hello'], "Your function failed with input ['Hello,'World','!']")
+              self.assertEqual(reverseList(['Python',100,'35','Computer Science']), ['Computer Science', '35', 100, 'Python'], "Your function failed with input ['Python,100,'35','Computer Science']")
+
+      myTests().main()
 
 #. Modify the recursive tree program using one or all of the following
    ideas:
@@ -38,36 +74,36 @@ Programming Exercises
 
    If you implement all of the above ideas you will have a very
    realistic looking tree.
-   
+
    .. actex:: ex_rec_3
       :nocodelens:
 
 #. Find or invent an algorithm for drawing a fractal mountain. Hint: One
    approach to this uses triangles again.
-   
+
    .. actex:: ex_rec_4
       :nocodelens:
 
 #. Write a recursive function to compute the Fibonacci sequence. How
    does the performance of the recursive function compare to that of an
    iterative version?
-   
+
    .. actex:: ex_rec_5
 
 #. Implement a solution to the Tower of Hanoi using three stacks to keep
    track of the disks.
-   
+
    .. actex:: ex_rec_6
 
 #. Using the turtle graphics module, write a recursive program to
    display a Hilbert curve.
-   
+
    .. actex:: ex_rec_7
       :nocodelens:
 
 #. Using the turtle graphics module, write a recursive program to
    display a Koch snowflake.
-   
+
    .. actex:: ex_rec_8
       :nocodelens:
 
@@ -81,7 +117,7 @@ Programming Exercises
 #. Generalize the problem above so that the parameters to your solution
    include the sizes of each jug and the final amount of water to be
    left in the larger jug.
-   
+
    .. actex:: ex_rec_10
 
 #. Write a program that solves the following problem: Three missionaries
@@ -91,7 +127,7 @@ Programming Exercises
    either bank, the missionaries will be eaten. Find a series of
    crossings that will get everyone safely to the other side of the
    river.
-   
+
    .. actex:: ex_rec_11
 
 #. Modify the Tower of Hanoi program using turtle graphics to animate
@@ -102,11 +138,11 @@ Programming Exercises
       :nocodelens:
 
 #. Pascal’s triangle is a number triangle with numbers arranged in
-   staggered rows such that 
+   staggered rows such that
 
    .. math::
       a_{nr} = {n! \over{r! (n-r)!}}
-   
+
    This equation is the equation for a binomial coefficient. You can
    build Pascal’s triangle by adding the two numbers that are diagonally
    above a number in the triangle. An example of Pascal’s triangle is
@@ -123,6 +159,5 @@ Programming Exercises
    Write a program that prints out Pascal’s triangle. Your program
    should accept a parameter that tells how many rows of the triangle to
    print.
-   
-   .. actex:: ex_rec_13
 
+   .. actex:: ex_rec_13
