@@ -16,7 +16,7 @@ The 3n + 1 Sequence
 
 As another example of indefinite iteration, let's look at a sequence that has fascinated mathematicians for many years.
 The rule  for creating the sequence is to start from
-some given number, call it ``n``, and to generate
+some positive integer, call it ``n``, and to generate
 the next term of the sequence from ``n``, either by halving ``n``,
 whenever ``n`` is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
 terminates when ``n`` reaches 1.
@@ -64,7 +64,7 @@ number that needs more than a hundred steps before it terminates.
 
 
 Particular values aside, the interesting question is whether we can prove that
-this sequence terminates for *all* values of ``n``. So far, no one has been able
+this sequence terminates for *all* positive values of ``n``. So far, no one has been able
 to prove it *or* disprove it!
 
 Think carefully about what would be needed for a proof or disproof of the hypothesis
@@ -114,6 +114,6 @@ be other cycles that we just haven't found.
    :feedback_b: It has not been disproven that the 3n+1 sequence will terminate for all values of n.  In other words, there might be some value for n such that this sequence does not terminate. We just have not found it yet.
    :feedback_c: That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
 
-   Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any value of n?
+   Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?
 
 
