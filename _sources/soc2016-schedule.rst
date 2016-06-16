@@ -77,7 +77,7 @@ See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ fo
 .. _1. General Intro: toc.html#general-intro
 .. _2. Simple Python Data: toc.html#simple-python-data
 .. _Exercises 2: SimplePythonData/Exercises.html
-.. _3. Debugging, and Using Python Outside this Book: toc.html#debugging-and-using-python-outside-this-book
+.. _3. Debugging: toc.html#debugging
 .. _Exercises 3: AdditionalExercises/Dubugging.html
 .. _4. Modules (and Turtles!): toc.html#modules-and-turtles
 .. _Exercises 4: AdditionalExercises/TurtlesAndModules.html
