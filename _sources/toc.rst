@@ -45,7 +45,7 @@ Table of Contents
    Studios/Chapter2.rst
 
 
-3. Debugging, and Using Python Outside this Book
+3. Debugging
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -61,6 +61,7 @@ Table of Contents
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
+   AdditionalExercises/Debugging.rst
 
 
 4. Modules (and Turtles!)
