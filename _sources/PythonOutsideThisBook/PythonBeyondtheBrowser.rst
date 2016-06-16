@@ -110,12 +110,8 @@ is a video that explains how to do it.
 
 .. raw:: html
 
-    <iframe width="425" height="349" src="http://www.youtube.com/embed/9EfGpN1Pnsg"
-            frameborder="0" allowfullscreen></iframe>
-
-We are assuming that you use Python 3.x, as of this writing the latest
-version is Python 3.2.1.  This link will tell you how to update or install
-Python on Linux, Mac, or Windows. `Install Python <http://interactivepython.org/courselib/static/diveintopython3/installing-python.html>`_
+    <div style="text-align:center;"><iframe width="425" height="349" src="https://www.youtube.com/embed/9EfGpN1Pnsg"
+            frameborder="0" allowfullscreen></iframe></div>
 
 Glossary
 --------
@@ -133,4 +129,3 @@ Glossary
         are using the terminal you are also using the command line.  It's
         where you type in commands, and then the computer interprets those
         commands and responds to you with results.
-
