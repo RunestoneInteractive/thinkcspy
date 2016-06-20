@@ -62,6 +62,7 @@ Table of Contents
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    AdditionalExercises/Debugging.rst
+   Studios/Chapter3.rst
 
 
 4. Modules (and Turtles!)
