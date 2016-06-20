@@ -20,7 +20,7 @@ See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ fo
 |        |        +---------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 2`_                                       |
 +--------+--------+---------------------------------------------------------------------+
-| 2      | 6/20   | Reading: `3. Debugging`_        |
+| 2      | 6/20   | Reading: `3. Debugging`_                                            |
 |        |        +---------------------------------------------------------------------+
 |        |        | Assignment(s): `Exercises 3`_                                       |
 |        +--------+---------------------------------------------------------------------+
@@ -77,8 +77,8 @@ See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ fo
 .. _1. General Intro: toc.html#general-intro
 .. _2. Simple Python Data: toc.html#simple-python-data
 .. _Exercises 2: SimplePythonData/Exercises.html
-.. _3. Debugging, and Using Python Outside this Book: toc.html#debugging-and-using-python-outside-this-book
-.. _Exercises 3: AdditionalExercises/Dubugging.html
+.. _3. Debugging: toc.html#debugging
+.. _Exercises 3: AdditionalExercises/Debugging.html
 .. _4. Modules (and Turtles!): toc.html#modules-and-turtles
 .. _Exercises 4: AdditionalExercises/TurtlesAndModules.html
 .. _5. Functions: toc.html#functions
