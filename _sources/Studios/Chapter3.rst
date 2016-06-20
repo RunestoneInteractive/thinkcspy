@@ -17,7 +17,8 @@ Taking their order involves asking two questions:
 
 1. How many donuts do they want to buy?
 2. How much do you want to pay per donut?
-3. Inform the user of the total cost of their order. Don't forget to include sales-tax, which is, let's say, 5%.
+3. Inform the user of the total cost of their order.
+4. Don't forget to include sales-tax, which is, let's say, 5%.
 
 Here's an example of how the finished program should behave:
 
@@ -34,7 +35,7 @@ Here's an example of how the finished program should behave:
     After tax, your total is: $8.74999125
     Thank you for snacking! Loop back around here soon!
 
-Notice that the total price `$8.74999125` went way beyond 2 decimal places. Obviously it would be a little nicer to round that to $8.75. We haven't learned this yet, but you'll be able to do this later. Don't worry about it now.
+Notice that the total price ``$8.74999125`` went way beyond 2 decimal places. Obviously it would be a little nicer to round that to $8.75. We haven't learned this yet, but you'll be able to do this later. Don't worry about it now.
 
 (Also, don't be concerned if your program gives an answer with a slightly different number of decimal places than the example program above. This is just a precision issue.)
 
