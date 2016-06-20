@@ -12,104 +12,306 @@
 
 .. raw:: html
 
-   <h1 style="text-align: center">How to Think Like a Computer Scientist</h1>
-   <h2 style="text-align: center">Learning with Python: Interactive Edition 2.0 </h2>
+Think Python - LaunchCode Edition
+=============================================
 
+Welcome to LaunchCode's *Think Python* course!
 
-.. raw:: html
+This course is built around an interactive e-textbook hosted here on this website. You will do most of your learning and working directly inside the book.
 
-    <p>Welcome! Take a tour, experiment with Python, join <span id="totalusers"></span> other readers in learning
-    how to think like a computer scientist with Python.</p>
+* `Course Overview </runestone/static/thinkcspy/course-overview.html>`_
+* :ref:`schedule_soc`
+* :ref:`t_o_c`
+
 
 .. activecode:: welcome
-   :above:
-   :autorun:
-   :hidecode:
-   :nocodelens:
+    :above:
+    :autorun:
+    :hidecode:
+    :nocodelens:
 
-   import turtle
-   import random
+    __author__ = "Jack Burns"
+    __version__ = "1.0"
 
-   def main():
-       tList = []
-       head = 0
-       numTurtles = 10
-       wn = turtle.Screen()
-       wn.setup(500,500)
-       for i in range(numTurtles):
-           nt = turtle.Turtle()   # Make a new turtle, initialize values
-           nt.setheading(head)
-           nt.pensize(2)
-           nt.color(random.randrange(256),random.randrange(256),random.randrange(256))
-           nt.speed(10)
-           wn.tracer(30,0)
-           tList.append(nt)       # Add the new turtle to the list
-           head = head + 360/numTurtles
+    # import lines
+    import turtle
+    import random
 
-       for i in range(100):
-           moveTurtles(tList,15,i)
+    #final variables
+    PXCORD = 58.4743409445
+    NXCORD = -58.4743409445
+    YCORD = -33.7390488074
+    PANGLE = 17
+    NANGLE = -17
+    PCURVE = 0.8
+    NCURVE = -0.8
+    RANGE = 62
+    DIST = 2.3
+    COLOR = 'white'
+    BGCOLOR = (72, 61, 139)
+    INIT_LENGTH = 200
+    CIRCLE_CORDS = (10.66, -30)
+    RADIUS = 19
 
-       w = tList[0]
-       w.up()
-       w.goto(0,40)
-       w.write("How to Think Like a ",True,"center","40pt Bold")
-       w.goto(0,-35)
-       w.write("Computer Scientist",True,"center","40pt Bold")
-       w.update()
+    # main def
+    def main():
 
-   def moveTurtles(turtleList,dist,angle):
-       for turtle in turtleList:   # Make every turtle on the list do the same actions.
-           turtle.forward(dist)
-           turtle.right(angle)
+        #print the message
+        print_message()
 
-   main()
+        # make the turtle screen
+        wn = turtle.Screen()
+        wn.setup(575, 800)
+
+        #change the background color
+        wn.bgcolor(BGCOLOR)
+
+        # create a new turtle object
+        boxy = turtle.Turtle()
+        boxy.speed(8)
+
+        # new turtle for draw init
+        nt1 = turtle.Turtle()
+        nt1.speed(10)
+
+        # new turtle for the flame
+        flame = turtle.Turtle()
+        flame.speed(10)
+
+        # call the draw_init method
+        draw_init(nt1)
+
+        # call the draw_flame method
+        draw_flame(flame)
+
+        # call the second main method
+        main2(wn, boxy)
+
+        # this is for testing purposes, will be taken out in live version
+        wn.exitonclick()
+
+    #draws the porthole window
+    def draw_circle(turtle):
+
+        #make the fill and change the starting position of the turtle
+        turtle.penup()
+        turtle.setposition(CIRCLE_CORDS)
+        turtle.pendown()
+
+        turtle.begin_fill()
+        turtle.fillcolor('yellow')
+
+        #draw the circle
+        turtle.circle(RADIUS)
+        turtle.end_fill()
 
 
-Benefits of this Interactive Textbook
--------------------------------------
+    # draw the curve on the top of the rocket
+    def draw_curve(turtle, angle, dist):
 
-* You can experiment with **activecode** examples right in the book
+        #create a loop for the curve
+        for i in range(RANGE):
 
-  * Click Show/Hide Code button
-  * On line 7: change ``numTurtles = 10`` to ``numTurtles = 6``
-  * Click the Run button
+            turtle.forward(dist)
+            turtle.right(angle)
 
-* You can do your **homework** right in the textbook.
-* You can interact with other learners to discuss homework
-* **Interactive questions** make sure that you are on track and help you focus.
-* **Codelens** helps you develop a mental model of how Python works.
-* **Audio Tours** help you understand the code.
-* Short **videos** cover difficult or important topics.
-* You can highlight text, and take notes in scratch editors
+    # draw_init draw the initial outline
+    def draw_init(nt1):
 
-Next Steps
-----------
+        nt1.pencolor(COLOR)
+        nt1.width(12)
+        nt1.penup()
+        nt1.setposition(0, -225)
+        nt1.setheading(90)
+        nt1.pendown()
 
-* Get an overview of the features in this book  `Click Here </runestone/static/overview/overview.html>`_
-* To get help moving around the book:  :ref:`quick_help`
-* Check out a sample chapter `Hello, Little Turtles! </runestone/static/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html>`_
-* Check out the :ref:`t_o_c`
-* Take me to Chapter 1  `The Way of the Program </runestone/static/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html>`_
+        # begin drawing
+        nt1.right(PANGLE)
+        nt1.forward(INIT_LENGTH)
 
-About this Project
-------------------
+        # print the cords for testing
+        # print((str)(nt1.xcor()) + ", " + (str)(nt1.ycor()))
 
-This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
+        #draw the right fin
+        nt1.setheading(0)
+        nt1.right(55)
+        nt1.forward(45)
+        nt1.right(55)
+        nt1.forward(80)
+        nt1.right(130)
+        nt1.forward(40)
 
-* This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
-* Activecode based on `Skulpt <http://skulpt.org>`_
-* Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
-* Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
-* ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
+        nt1.penup()
+        nt1.setposition(PXCORD, YCORD)
+        nt1.setheading(90)
+        nt1.pendown()
+        draw_curve(nt1, NCURVE, DIST)
 
-The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
+        # draw the other half of the flame
+        nt1.penup()
+        nt1.setposition(0, -225)
+        nt1.setheading(90)
+        nt1.pendown()
 
-Contact
--------
+        # begin drawing
+        nt1.right(NANGLE)
+        nt1.forward(INIT_LENGTH)
 
-* If you have questions about this book please send me email `bmiller@luther.edu <mailto:bmiller@luther.edu>`_
-* Check out the project on `GitHub <https://github.com/bnmnetp/runestone>`_
-* Visit our `Facebook page <https://www.facebook.com/RunestoneInteractive>`_
+        # print the cords for testing
+        # print((str)(nt1.xcor()) + ", " + (str)(nt1.ycor()))
+
+        #draw the left fin
+        nt1.setheading(180)
+        nt1.left(55)
+        nt1.forward(45)
+        nt1.left(55)
+        nt1.forward(80)
+        nt1.left(130)
+        nt1.forward(40)
+
+        # draw the left curve
+        nt1.penup()
+        nt1.setposition(NXCORD, YCORD)
+        nt1.setheading(90)
+        nt1.pendown()
+
+        #draw the curves
+        draw_curve(nt1, PCURVE, DIST)
+
+        #draw the circle
+        draw_circle(nt1)
+
+        nt1.hideturtle()
+
+
+
+    # draw_flame
+    def draw_flame(flame):
+
+        # specify color and width
+        flame.pencolor(COLOR)
+        flame.width(12)
+
+        # set the position
+        flame.penup()
+        flame.setposition(-35, -115)
+        flame.pendown()
+
+        # begin the fill and set the fill color
+        flame.begin_fill()
+        flame.fillcolor(COLOR)
+
+        flame.forward(65)
+
+        flame.width(1)
+        flame.setheading(270)
+        flame.penup()
+        flame.setposition(15, -115)
+        flame.pendown()
+
+        # start drawing half of the flame
+        flame.right(17.5)
+        flame.forward(50)
+
+        flame.penup()
+        flame.setposition(-15, -115)
+        flame.setheading(270)
+        flame.pendown()
+        flame.end_fill()
+
+        # start drawing half of the flame
+        flame.right(-17.5)
+        flame.forward(50)
+        flame.penup()
+
+        flame.hideturtle()
+
+    def main2(tscreen, boxy):
+
+        #pick the starting position for boxy
+        boxy.penup()
+        boxy.setposition(-150, 275)
+        boxy.pendown()
+
+        # set the pen colors
+        boxy.color('yellow', (238, 232, 170))
+        boxy.begin_fill()
+
+        #loop the same drawing all the way around
+        for i in range(180 + 1):
+
+            #shape of the line
+            boxy.forward(50)
+            boxy.right(30)
+            boxy.forward(20)
+            boxy.left(60)
+            boxy.forward(50)
+            boxy.right(30)
+
+            #back to the center
+            boxy.penup()
+            boxy.setposition(-150, 275)
+            boxy.pendown()
+
+            #shift angle to the right and throw a tracer to slow the process down
+            boxy.right(2)
+            tscreen.tracer(25,0)
+
+        #fills boxy
+        boxy.end_fill()
+
+        #create a new turtle
+        nt = turtle.Turtle()
+        nt.hideturtle()
+        nt.speed(5)
+
+        #draw some stars
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 100, 200)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 175, 300)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), -125, 100)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), -200, -100)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), -180, -175)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), -210, -300)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 150, -200)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 0, -325)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 225, -325)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 235, 50)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), -200, 50)
+        draw_star(nt, random.randrange(8, 20), (random.randrange(256), random.randrange(256), random.randrange(256)), 250, -150)
+
+        # change the color for text
+        boxy.pencolor(255, 215, 0)
+        boxy.hideturtle()
+
+    #draw_star method
+    def draw_star(turtle, size, color, xcoord, ycoord):
+
+        #pick up the pen and place it
+        turtle.penup()
+        turtle.setposition(xcoord, ycoord)
+        turtle.pendown()
+
+        #start the drawing
+        angle = 120
+        turtle.fillcolor(color)
+        turtle.begin_fill()
+
+        for side in range(5):
+            turtle.forward(size)
+            turtle.right(angle)
+            turtle.forward(size)
+            turtle.right(72 - angle)
+
+        turtle.end_fill()
+
+    def print_message():
+
+        #print some lines to the console
+        print("Welcome to:\nLaunchCode's Think Python")
+
+    # execute main method
+    main()
+
 
 
 .. toctree::
@@ -117,4 +319,3 @@ Contact
 
    index
    navhelp
-

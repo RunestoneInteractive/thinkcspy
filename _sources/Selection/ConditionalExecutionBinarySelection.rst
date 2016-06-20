@@ -73,13 +73,6 @@ There is no limit on the number of statements that can appear under the two clau
 ``if`` statement, but there has to be at least one statement in each block.
 
 
-.. admonition:: Lab
-
-    * `Approximating Pi with Simulation <../Labs/montepi.html>`_ In this guided lab exercise we will work
-      through a problem solving exercise related to approximating the value of pi using random numbers.
-
-
-
 **Check your understanding**
 
 .. mchoice:: test_question6_4_1

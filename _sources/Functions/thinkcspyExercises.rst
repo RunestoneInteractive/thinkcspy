@@ -27,7 +27,7 @@ Exercises
 
                 .. image:: Figures/five_squares.png
 
-                .. actex:: ex_5_1
+                .. activecode:: ex_5_1
 
                     import turtle
 
@@ -76,12 +76,6 @@ Exercises
 
                     wn.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: a2ac86a8d0524fc6830aefb785199048
-
 
     #.  Write a program to draw this. Assume the innermost square is 20 units per side,
         and each successive square is 20 units bigger, per side, than the one inside it.
@@ -89,7 +83,7 @@ Exercises
         .. image:: Figures/nested_squares.png
 
 
-        .. actex:: ex_5_2
+        .. activecode:: ex_5_2
 
 
     #.
@@ -104,7 +98,7 @@ Exercises
 
                 .. image:: Figures/regularpolygon.png
 
-                .. actex:: ex_5_3
+                .. activecode:: ex_5_3
 
 
             .. tab:: Answer
@@ -127,19 +121,7 @@ Exercises
 
                     drawPoly(tess, 8, 50)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: ba2f11265c524c7581bf7cf25d23bf3a
-
-
-    #. Draw this pretty pattern.
-
-        .. image:: Figures/tess08.png
-
-        .. actex:: ex_5_4
-
+                    
     #.
 
         .. tabbed:: q5
@@ -151,7 +133,7 @@ Exercises
                 .. image:: Figures/tess_spirals.png
                    :height: 240
 
-                .. actex:: ex_5_5
+                .. activecode:: ex_5_5
 
             .. tab:: Answer
 
@@ -194,17 +176,11 @@ Exercises
                     drawSpiral(guido, 89)
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: c587119991344db988f8fb37c8c9a31e
-
 
     #.  Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
         previous question to have its turtle draw a equilateral triangle.
 
-        .. actex:: ex_5_6
+        .. activecode:: ex_5_6
 
 
     #.
@@ -217,7 +193,7 @@ Exercises
                 including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
                 equation  (n * (n + 1)) / 2.
 
-                .. actex:: ex_5_7
+                .. activecode:: ex_5_7
 
                     from test import testEqual
 
@@ -243,21 +219,16 @@ Exercises
                     t = sumTo(5)
                     print("The sum from 1 to 5 is",t)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: d6ba37a51d09845f39c96d4d4ef1d6f45
 
 
-    #.  Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+    #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
 
-        .. actex:: ex_5_8
+        .. activecode:: ex_5_8
 
             from test import testEqual
 
-            def areaOfCircle(r):
-                # your code here
+            # TODO: use def to define a function called areaOfCircle which takes an argument called r
+                # TODO implment your function to return the area of a circle whose radius is r
 
             t = areaOfCircle(0)
             testEqual(t,0)
@@ -277,7 +248,7 @@ Exercises
 
                 .. image:: Figures/star.png
 
-                .. actex:: ex_5_9
+                .. activecode:: ex_5_9
 
             .. tab:: Answer
 
@@ -293,11 +264,6 @@ Exercises
                     wolfram = turtle.Turtle()
                     drawFivePointStar(wolfram)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: e757873187bb4581bffecdad449b5f61
 
 
     #.  Extend your program above.  Draw five stars, but between each, pick up the pen,
@@ -308,7 +274,7 @@ Exercises
 
         What would it look like if you didn't pick up the pen?
 
-        .. actex:: ex_5_10
+        .. activecode:: ex_5_10
 
 
     #.
@@ -320,7 +286,7 @@ Exercises
                 Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
                 equal to 3).
 
-                .. actex:: ex_5_11
+                .. activecode:: ex_5_11
 
 
             .. tab:: Answer
@@ -337,18 +303,13 @@ Exercises
                     stroustrup = turtle.Turtle()
                     drawStar(stroustrup, 7)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: f2f8ff1b301e4d99bd4ac52e68c8c1ed
 
 
     #.  Write a function called drawSprite that will draw a sprite.  The function will need parameters for
         the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
         with 15 legs of length 120.
 
-        .. actex:: ex_5_12
+        .. activecode:: ex_5_12
 
 
     #.
@@ -360,7 +321,7 @@ Exercises
                 Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
                 including `n`.   This time use the accumulator pattern.
 
-                .. actex:: ex_5_13
+                .. activecode:: ex_5_13
 
                     def sumTo(n):
                         # your code here
@@ -384,11 +345,6 @@ Exercises
                     t = sumTo(5)
                     print("The sum from 1 to 5 is",t)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: eda665389fda49a584b128cc30515595
 
 
     #.  Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
@@ -396,7 +352,7 @@ Exercises
         Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
         is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
 
-        .. actex:: ex_5_14
+        .. activecode:: ex_5_14
 
 
     #.
@@ -407,7 +363,7 @@ Exercises
 
                 Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
 
-                .. actex:: ex_5_15
+                .. activecode:: ex_5_15
 
 
             .. tab:: Answer
@@ -431,16 +387,11 @@ Exercises
                     pi_approx = myPi(10000)
                     print(pi_approx)
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: b699e4b7bad44db6bd788c795c124b23
 
 
     #.  Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
 
-        .. actex:: ex_5_16
+        .. activecode:: ex_5_16
 
     #.
 
@@ -452,7 +403,7 @@ Exercises
                 implement and use the `drawSprite` function from above.  For an even more interesting look, how about adding small
                 triangles to the ends of the sprite legs.
 
-                .. actex:: ex_5_17
+                .. activecode:: ex_5_17
 
             .. tab:: Answer
 
@@ -480,12 +431,3 @@ Exercises
                     drawFancySquare(alex, 100, 10, 15)
 
                     wn.exitonclick()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: db5d8808bf5749579718bdd2088b539f
-
-
-

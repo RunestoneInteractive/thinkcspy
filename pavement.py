@@ -36,13 +36,13 @@ options(
         project_name = project_name,
         template_args = {
             'course_id':project_name,
-            'login_required':'false',
+            'login_required':'true',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
-            'dburl': 'postgresql://bmiller@localhost/runestone',
+            'dburl': 'postgres://launchclass:toinfinityandbeyond@localhost/runestone',
             'basecourse': 'thinkcspy',
         }
 

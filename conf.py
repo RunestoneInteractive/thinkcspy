@@ -23,6 +23,8 @@ from runestone import runestone_static_dirs, runestone_extensions
 
 # -- General configuration -----------------------------------------------------
 
+dburl = 'postgres://launchclass:toinfinityandbeyond@localhost/runestone'
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
 
@@ -44,7 +46,7 @@ master_doc = 'toc'
 
 # General information about the project.
 project = u'How to Think Like a Computer Scientist'
-copyright = u'2014 Brad Miller, David Ranum, Created using Runestone Interactive'
+copyright = u'2014 Brad Miller, David Ranum, Created using Runestone Interactive. Customized by LaunchCode'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -106,14 +108,14 @@ html_theme = 'sphinx_bootstrap'
 #html_theme_options = {'nosidebar': 'true'}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "How To Think Like a Computer Scientist",
+    'navbar_title': "Think Python",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Chapters",
-     
+
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
-    'globaltoc_depth': 1,
+    'globaltoc_depth': -1,
 
     # Include hidden TOCs in Site navbar?
     #
@@ -135,7 +137,7 @@ html_theme_options = {
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
     'source_link_position': "nav",
-    
+
     # Bootswatch (http://bootswatch.com/) theme.
     #
     # Options are nothing with "" (default) or the name of a valid theme

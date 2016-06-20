@@ -80,10 +80,6 @@ is likely to be different meaning that even though the random numbers are being 
 get random behavior each time you execute.
 
 
-.. admonition:: Lab
-
-    * `Sine Wave <../Labs/sinlab.html>`_ In this guided lab exercise we will have the turtle plot a sine wave.
-
 **Check your understanding**
 
 .. mchoice:: question4_4_1

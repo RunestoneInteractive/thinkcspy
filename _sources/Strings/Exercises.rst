@@ -10,43 +10,6 @@
 Exercises
 ---------
 
-#.
-
-    .. tabbed:: q1
-
-        .. tab:: Question
-
-            What is the result of each of the following:
-        
-            a. 'Python'[1]
-            #. "Strings are sequences of characters."[5]
-            #. len("wonderful")
-            #. 'Mystery'[:4]
-            #. 'p' in 'Pineapple'
-            #. 'apple' in 'Pineapple'
-            #. 'pear' not in 'Pineapple'
-            #. 'apple' > 'pineapple'
-            #. 'pineapple' < 'Peach'
-
-        .. tab:: Answer
-
-            a. 'Python'[1] = 'y'
-            #. 'Strings are sequences of characters.'[5] = 'g'
-            #. len('wonderful') = 9
-            #. 'Mystery'[:4] = 'Myst'
-            #. 'p' in 'Pineapple' = True
-            #. 'apple' in 'Pineapple' = True
-            #. 'pear' not in 'Pineapple' = True
-            #. 'apple' > 'pineapple' = False
-            #. 'pineapple' < 'Peach' = False
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
-
-
 #. In Robert McCloskey's
    book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
    Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
@@ -62,100 +25,18 @@ Exercises
 
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
-   
-    .. actex:: ex_8_2
-   
-#.
 
-    .. tabbed:: q3
-
-        .. tab:: Question
-
-           Assign to a variable in your program a triple-quoted string that contains 
-           your favorite paragraph of text - perhaps a poem, a speech, instructions
-           to bake a cake, some inspirational verses, etc.
-        
-           Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
-        
-               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
-        
-           .. actex:: ex_8_3
-
-        .. tab:: Answer
-            
-            .. activecode:: q3_answer
-
-                def count(p):
-                    lows = "abcdefghijklmnopqrstuvwxyz"
-                    ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                    
-                    numberOfe = 0
-                    totalChars = 0
-                    for achar in p:
-                        if achar in lows or achar in ups:
-                            totalChars = totalChars + 1
-                            if achar == 'e':
-                                numberOfe = numberOfe + 1
-
-                    percent_with_e = (numberOfe / totalChars) * 100
-                    print("Your text contains", totalChars, "alphabetic characters of which", numberOfe, "(", percent_with_e, "%)", "are 'e'.")
-
-
-                p = '''
-                "If the automobile had followed the same development cycle as the computer, a
-                Rolls-Royce would today cost $100, get a million miles per gallon, and explode
-                once a year, killing everyone inside."
-                -Robert Cringely
-                '''
-
-                count(p)
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_bf88b1c4616d43f289c798b56a43b01c
+    .. activecode:: ex_8_2
 
 
 #. Print out a neatly formatted multiplication table, up to 12 x 12.
 
-   .. actex:: ex_8_4
-
-
-#.
-
-    .. tabbed:: q5
-
-        .. tab:: Question
-
-           Write a function that will return the number of digits in an integer.
-        
-           .. actex:: ex_7_10
-        
-
-        .. tab:: Answer
-            
-            .. activecode:: q5_answer
-
-                def findNumDigits(n):
-                    n_str = str(n)
-                    return len(n_str)
-
-
-                print(findNumDigits(50))
-                print(findNumDigits(20000))
-                print(findNumDigits(1))
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
+   .. activecode:: ex_8_4
 
 
 #. Write a function that reverses its string argument.
 
-   .. actex:: ex_8_5
+   .. activecode:: ex_8_5
       :nocodelens:
 
       from test import testEqual
@@ -167,72 +48,22 @@ Exercises
       testEqual(reverse("Python"), "nohtyP")
       testEqual(reverse(""), "")
 
-#.
+#. (GRADED) Write a function that mirrors its argument.
 
-    .. tabbed:: q7
+(Hint: Make use of the `reverse` function that you wrote in the previous exercise)
 
-        .. tab:: Question
-
-           Write a function that mirrors its argument.
-        
-           .. actex:: ex_8_6
-              :nocodelens:
-        
-              from test import testEqual
-        
-              def mirror(mystr):
-                  # your code here
-        
-              testEqual(mirror('good'), 'gooddoog')
-              testEqual(mirror('Python'), 'PythonnohtyP')
-              testEqual(mirror(''), '')
-              testEqual(mirror('a'), 'aa')
-        
-        
-
-        .. tab:: Answer
-            
-            .. activecode:: q7_answer
-                :nocodelens:
-
-                from test import testEqual
-
-                def reverse(mystr):
-                    reversed = ''
-                    for char in mystr:
-                        reversed = char + reversed
-                    return reversed
-
-                def mirror(mystr):
-                    return mystr + reverse(mystr)
-
-                testEqual(mirror('good'), 'gooddoog')
-                testEqual(mirror('Python'), 'PythonnohtyP')
-                testEqual(mirror(''), '')
-                testEqual(mirror('a'), 'aa')
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_70b7ac515456497c952a2de5caa27ab9
-
-
-#. Write a function that removes all occurrences of a given letter from a string.
-
-   .. actex:: ex_8_7
+   .. activecode:: ex_8_6
       :nocodelens:
 
       from test import testEqual
 
-      def remove_letter(theLetter, theString):
+      def mirror(mystr):
           # your code here
 
-      testEqual(remove_letter('a', 'apple'), 'pple')
-      testEqual(remove_letter('a', 'banana'), 'bnn')
-      testEqual(remove_letter('z', 'banana'), 'banana')
-
-
+      testEqual(mirror('good'), 'gooddoog')
+      testEqual(mirror('Python'), 'PythonnohtyP')
+      testEqual(mirror(''), '')
+      testEqual(mirror('a'), 'aa')
 
 #.
 
@@ -241,24 +72,24 @@ Exercises
         .. tab:: Question
 
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
-        
-           .. actex:: ex_8_8
+
+           .. activecode:: ex_8_8
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def is_palindrome(myStr):
                   # your code here
-        
+
               testEqual(is_palindrome('abba'), True)
               testEqual(is_palindrome('abab'), False)
               testEqual(is_palindrome('straw warts'), True)
               testEqual(is_palindrome('a'), True)
               testEqual(is_palindrome(''), True)
-        
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
                 :nocodelens:
 
@@ -282,31 +113,6 @@ Exercises
                 testEqual(is_palindrome('a'), True)
                 testEqual(is_palindrome(''), True)
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_605923545bb849f7b8d41bbf823518e9
-
-
-#. Write a function that counts how many times a substring occurs in a string.
-
-   .. actex:: ex_8_9
-      :nocodelens:
-
-      from test import testEqual
-
-      def count(substr,theStr):
-          # your code here
-
-      testEqual(count('is', 'Mississippi'), 2)
-      testEqual(count('an', 'banana'), 2)
-      testEqual(count('ana', 'banana'), 2)
-      testEqual(count('nana', 'banana'), 1)
-      testEqual(count('nanan', 'banana'), 0)
-      testEqual(count('aaa', 'aaaaaa'), 4)
-
-
 #.
 
     .. tabbed:: q11
@@ -314,24 +120,24 @@ Exercises
         .. tab:: Question
 
            Write a function that removes the first occurrence of a string from another string.
-        
-           .. actex:: ex_8_10
+
+           .. activecode:: ex_8_10
               :nocodelens:
-        
+
               from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
-        
+
               testEqual(remove('an', 'banana'), 'bana')
               testEqual(remove('cyc', 'bicycle'), 'bile')
               testEqual(remove('iss', 'Mississippi'), 'Missippi')
               testEqual(remove('egg', 'bicycle'), 'bicycle')
-        
-        
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -349,16 +155,10 @@ Exercises
                 testEqual(remove('iss', 'Mississippi'), 'Missippi')
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_2f2772134b604a6498748138542d312d
-
 
 #. Write a function that removes all occurrences of a string from another string.
- 
-   .. actex:: ex_8_11
+
+   .. activecode:: ex_8_11
 
       from test import testEqual
 
@@ -370,277 +170,6 @@ Exercises
       testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
       testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
 
-
-#.
-
-    .. tabbed:: q13
-
-        .. tab:: Question
-
-           Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
-        
-               L
-               L -> +RF-LFL-FR+
-               R -> -LF+RFR+FL-
-        
-           .. actex:: ex_8_12
-              :nocodelens:
-
-        .. tab:: Answer
-
-            .. activecode:: q13_answer
-                :nocodelens:
-
-                import turtle
-
-                def createLSystem(numIters, axiom):
-                    startString = axiom
-                    endString = ""
-                    for i in range(numIters):
-                        endString = processString(startString)
-                        startString = endString
-
-                    return endString
-
-                def processString(oldStr):
-                    newstr = ""
-                    for ch in oldStr:
-                        newstr = newstr + applyRules(ch)
-
-                    return newstr
-
-                def applyRules(ch):
-                    newstr = ""
-                    if ch == 'L':
-                        newstr = '+RF-LFL-FR+'   # Rule 1
-                    elif ch == 'R':
-                        newstr = '-LF+RFR+FL-'
-                    else:
-                        newstr = ch     # no rules apply so keep the character
-
-                    return newstr
-
-                def drawLsystem(aTurtle, instructions, angle, distance):
-                    for cmd in instructions:
-                        if cmd == 'F':
-                            aTurtle.forward(distance)
-                        elif cmd == 'B':
-                            aTurtle.backward(distance)
-                        elif cmd == '+':
-                            aTurtle.right(angle)
-                        elif cmd == '-':
-                            aTurtle.left(angle)
-
-                def main():
-                    inst = createLSystem(4, "L")  # create the string
-                    print(inst)
-                    t = turtle.Turtle()           # create the turtle
-                    wn = turtle.Screen()
-
-                    t.up()
-                    t.back(200)
-                    t.down()
-                    t.speed(9)
-                    drawLsystem(t, inst, 90, 5)   # draw the picture
-                                                  # angle 90, segment length 5
-                    wn.exitonclick()
-
-                main()
-
-
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_ab823200fac64461a9e88f53b75f5795
-
-
-#. Here is a dragon curve.  Use 90 degrees.::
-
-       FX
-       X -> X+YF+
-       Y -> -FX-Y
-
-   .. actex:: ex_8_13
-      :nocodelens:
-
-#.
-
-    .. tabbed:: q15
-
-        .. tab:: Question
-
-           Here is something called an arrowhead curve.  Use 60 degrees.::
-        
-               YF
-               X -> YF+XF+Y
-               Y -> XF-YF-X
-        
-           .. actex:: ex_8_14
-              :nocodelens:
-
-        .. tab:: Answer
-            
-            .. activecode:: q15_answer
-                :nocodelens:
-
-                import turtle
-
-                def createLSystem(numIters, axiom):
-                    startString = axiom
-                    endString = ""
-                    for i in range(numIters):
-                        endString = processString(startString)
-                        startString = endString
-
-                    return endString
-
-                def processString(oldStr):
-                    newstr = ""
-                    for ch in oldStr:
-                        newstr = newstr + applyRules(ch)
-
-                    return newstr
-
-                def applyRules(ch):
-                    newstr = ""
-                    if ch == 'X':
-                        newstr = 'YF+XF+Y'   # Rule 1
-                    elif ch == 'Y':
-                        newstr = 'XF-YF-X'
-                    else:
-                        newstr = ch     # no rules apply so keep the character
-
-                    return newstr
-
-                def drawLsystem(aTurtle, instructions, angle, distance):
-                    for cmd in instructions:
-                        if cmd == 'F':
-                            aTurtle.forward(distance)
-                        elif cmd == 'B':
-                            aTurtle.backward(distance)
-                        elif cmd == '+':
-                            aTurtle.right(angle)
-                        elif cmd == '-':
-                            aTurtle.left(angle)
-
-                def main():
-                    inst = createLSystem(5, "YF")  # create the string
-                    print(inst)
-                    t = turtle.Turtle()            # create the turtle
-                    wn = turtle.Screen()
-
-                    t.speed(9)
-                    drawLsystem(t, inst, 60, 5)    # draw the picture
-                                                   # angle 90, segment length 5
-                    wn.exitonclick()
-
-                main()
-
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_9b2dfba083a64d5c894f873af2e93a1b
-
-
-#. Try the Peano-Gosper curve.  Use 60 degrees.::
-
-       FX
-       X -> X+YF++YF-FX--FXFX-YF+
-       Y -> -FX+YFYF++YF+FX--FX-Y
-
-   .. actex:: ex_8_15
-      :nocodelens:
-
-#.
-
-    .. tabbed:: q17
-
-        .. tab:: Question
-
-            The Sierpinski Triangle.  Use 60 degrees.::
-        
-               FXF--FF--FF
-               F -> FF
-               X -> --FXF++FXF++FXF--
-        
-           .. actex:: ex_8_16
-              :nocodelens:
-
-        .. tab:: Answer
-
-            .. activecode:: q17_answer
-                :nocodelens:
-
-                import turtle
-
-                def createLSystem(numIters, axiom):
-                    startString = axiom
-                    endString = ""
-                    for i in range(numIters):
-                        endString = processString(startString)
-                        startString = endString
-
-                    return endString
-
-                def processString(oldStr):
-                    newstr = ""
-                    for ch in oldStr:
-                        newstr = newstr + applyRules(ch)
-
-                    return newstr
-
-                def applyRules(ch):
-                    newstr = ""
-                    if ch == 'F':
-                        newstr = 'FF'   # Rule 1
-                    elif ch == 'X':
-                        newstr = '--FXF++FXF++FXF--'
-                    else:
-                        newstr = ch     # no rules apply so keep the character
-
-                    return newstr
-
-                def drawLsystem(aTurtle, instructions, angle, distance):
-                    for cmd in instructions:
-                        if cmd == 'F':
-                            aTurtle.forward(distance)
-                        elif cmd == 'B':
-                            aTurtle.backward(distance)
-                        elif cmd == '+':
-                            aTurtle.right(angle)
-                        elif cmd == '-':
-                            aTurtle.left(angle)
-
-                def main():
-                    inst = createLSystem(5, "FXF--FF--FF")   # create the string
-                    print(inst)
-                    t = turtle.Turtle()           # create the turtle
-                    wn = turtle.Screen()
-                    t.up()
-                    t.back(200)
-                    t.right(90)
-                    t.forward(100)
-                    t.left(90)
-                    t.down()
-                    t.speed(9)
-
-                    drawLsystem(t, inst, 60, 5)   # draw the picture
-                                                  # angle 90, segment length 5
-                    wn.exitonclick()
-
-                main()
-
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_912a5f19d3964dc2af7a067dcd832c7e
-
-
 #. Write a function that implements a substitution cipher.  In a substitution
    cipher one letter is substituted for another to garble the message.  For
    example A -> Q, B -> T, C -> G etc.  your function should take two
@@ -648,7 +177,7 @@ Exercises
    the mapping of the 26 letters in the alphabet.  Your function should
    return a string that is the encrypted version of the message.
 
-   .. actex:: ex_8_17
+   .. activecode:: ex_8_17
 
 #.
 
@@ -660,8 +189,8 @@ Exercises
            should also take two parameters.  The encrypted message,
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
-        
-           .. actex:: ex_8_18
+
+           .. activecode:: ex_8_18
 
         .. tab:: Answer
 
@@ -698,22 +227,17 @@ Exercises
                 decrypted = decrypt(encrypted, cipher)
                 print(decrypted)
 
-        .. tab:: Discussion
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
 #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
    there will never be a duplicate letter added to the new string.
 
-   .. actex:: ex_8_19
+   .. activecode:: ex_8_19
 
       def removeDups(astring):
           # your code here
 
-      
+
       print(removeDups("mississippi"))   #should print misp
 
 
@@ -730,18 +254,18 @@ Exercises
            then the counting wraps around to the letter a again, so n becomes a, o becomes b
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
-        
-           .. actex:: ex_8_20
-        
+
+           .. activecode:: ex_8_20
+
               def rot13(mess):
                   # Your code here
-        
+
               print(rot13('abcde'))
               print(rot13('nopqr'))
               print(rot13(rot13('Since rot13 is symmetric you should see this message')))
 
         .. tab:: Answer
-            
+
             .. activecode:: q21_answer
 
                 def rot13(mess):
@@ -761,10 +285,3 @@ Exercises
                 print(rot13('abcde'))
                 print(rot13('nopqr'))
                 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
-
-        .. tab:: Discussion 
-
-            .. disqus::
-                :shortname: interactivepython
-                :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
-

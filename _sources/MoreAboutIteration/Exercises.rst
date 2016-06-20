@@ -23,7 +23,7 @@ Exercises
                prints out ``better`` each time it is calculated. Call your modified
                function with 25 as an argument and record the results.
 
-               .. actex:: ex_7_7
+               .. activecode:: ex_7_7
 
 
             .. tab:: Answer
@@ -42,12 +42,6 @@ Exercises
 
                     print("Final approx:", newtonSqrt(25))
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_5784e08291ba43199d43fdab277849f5
-
 
     #. Write a function ``print_triangular_numbers(n)`` that prints out the first
        n triangular numbers. A call to ``print_triangular_numbers(5)`` would
@@ -61,51 +55,19 @@ Exercises
 
        (*hint: use a web search to find out what a triangular number is.*)
 
-       .. actex:: ex_7_8
+       .. activecode:: ex_7_8
 
 
-    #.
+    #. (GRADED) Write a function, ``is_prime``, that takes a single integer argument and returns ``True`` when the argument is a *prime number* and ``False`` otherwise.
 
-        .. tabbed:: q3
-
-            .. tab:: Question
-
-               Write a function, ``is_prime``, that takes a single integer argument
-               and returns ``True`` when the argument is a *prime number* and ``False``
-               otherwise.
-
-               .. actex:: ex_7_9
-
-
-
-            .. tab:: Answer
-
-                .. activecode:: q3_answer
-
-                    def is_prime(n):
-                        for i in range(2, n):
-                            if n % i == 0:
-                                return False
-                        return True
-
-                    print(is_prime(25))
-                    print(is_prime(7))
-                    print(is_prime(251))
-                    print(is_prime(20))
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_418de05233374e76b3b66aeb96b55656
-
+       .. activecode:: ex_7_9
 
 
 
     #. Modify the walking turtle program so that rather than a 90 degree left or right turn the
        angle of the turn is determined randomly at each step.
 
-        .. actex:: ex_7_14
+        .. activecode:: ex_7_14
            :nocodelens:
 
 
@@ -120,7 +82,7 @@ Exercises
                Modify the turtle walk program so that you have two turtles each with a
                random starting location.  Keep the turtles moving until one of them leaves the screen.
 
-               .. actex:: ex_7_13
+               .. activecode:: ex_7_13
                   :nocodelens:
 
             .. tab:: Answer
@@ -193,18 +155,12 @@ Exercises
 
                     wn.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_0cd01637a1814f86b11f576c37a46437
-
 
 
     #. Modify the previous turtle walk program so that the turtle turns around
        when it hits the wall or when one turtle collides with another turtle.
 
-       .. actex:: ex_7_12
+       .. activecode:: ex_7_12
           :nocodelens:
 
 
@@ -224,7 +180,7 @@ Exercises
                    <h4 style="text-align: left;">For this and the following exercises, use the
                    luther.jpg photo.</h4>
 
-               .. actex:: ex_7_15
+               .. activecode:: ex_7_15
                   :nocodelens:
 
             .. tab:: Answer
@@ -253,16 +209,10 @@ Exercises
                     newimg.draw(win)
                     win.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_777006b154ca4af7ab8bd11cc25c208a
-
 
     #. Write a function to convert the image to grayscale.
 
-        .. actex:: ex_7_16
+        .. activecode:: ex_7_16
            :nocodelens:
 
     #.
@@ -273,7 +223,7 @@ Exercises
 
                Write a function to convert an image to black and white.
 
-               .. actex:: ex_7_17
+               .. activecode:: ex_7_17
                   :nocodelens:
 
             .. tab:: Answer
@@ -322,12 +272,6 @@ Exercises
 
                     win.exitonclick()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_0f0fb41d607743998a86962a11eed53d
-
 
     #. Sepia Tone images are those brownish colored images that may remind you of
        times past.  The formula for creating a sepia tone is as follows:
@@ -341,7 +285,7 @@ Exercises
        Write a function to convert an image to sepia tone. *Hint:*
        Remember that rgb values must be integers between 0 and 255.
 
-        .. actex:: ex_7_18
+        .. activecode:: ex_7_18
            :nocodelens:
 
     #.
@@ -353,7 +297,7 @@ Exercises
                Write a function to uniformly enlarge an image by a factor of 2 (double the size).
 
 
-               .. actex:: ex_7_19
+               .. activecode:: ex_7_19
                   :nocodelens:
 
             .. tab:: Answer
@@ -388,13 +332,6 @@ Exercises
                    win.exitonclick()
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_9ca319187b4a4c2399402de0d99c0b1d
-
-
     #.   After you have scaled an image too much it looks blocky.  One way of
          reducing the blockiness of the image is to replace each pixel with the
          average values of the pixels around it.  This has the effect of smoothing
@@ -402,7 +339,7 @@ Exercises
          parameter and smooths the image.  Your function should return a new image
          that is the same as the old but smoothed.
 
-           .. actex:: ex_7_20
+           .. activecode:: ex_7_20
               :nocodelens:
 
     #.
@@ -415,7 +352,7 @@ Exercises
                parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
                a new pixel.
 
-               .. actex:: ex_7_21
+               .. activecode:: ex_7_21
                   :nocodelens:
 
             .. tab:: Answer
@@ -453,19 +390,12 @@ Exercises
                     win.exitonclick()
 
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb9f71a62de24efaa61f64b5a7e5d9c9
-
-
     #. When you scan in images using a scanner they may have lots of noise due to
        dust particles on the image itself or the scanner itself,
        or the images may even be damaged.  One way of eliminating this noise is
        to replace each pixel by the median value of the pixels surrounding it.
 
-        .. actex:: ex_7_22
+        .. activecode:: ex_7_22
            :nocodelens:
 
     #.
@@ -476,7 +406,7 @@ Exercises
 
                Research the Sobel edge detection algorithm and implement it.
 
-               .. actex:: ex_7_23
+               .. activecode:: ex_7_23
                   :nocodelens:
 
 
@@ -589,10 +519,3 @@ Exercises
 
                     newimg.draw(win)
                     win.exitonclick()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974
-

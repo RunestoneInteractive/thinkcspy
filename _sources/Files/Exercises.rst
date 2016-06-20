@@ -36,7 +36,7 @@ Exercises
 
 
 
-                .. actex:: ex_6_1
+                .. activecode:: ex_6_1
                    :nocodelens:
                    :available_files: studentdata.txt
 
@@ -55,18 +55,12 @@ Exercises
 
                     f.close()
 
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe
-
 
 
     #. Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the average grade
        for each student, and print out the student's name along with their average grade.
 
-       .. actex:: ex_10_2
+       .. activecode:: ex_10_2
           :nocodelens:
           :available_files: studentdata.txt
 
@@ -84,7 +78,7 @@ Exercises
 
 
 
-                .. actex:: ex_6_3
+                .. activecode:: ex_6_3
                    :nocodelens:
                    :available_files: studentdata.txt
 
@@ -101,20 +95,6 @@ Exercises
                         print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
 
                     f.close()
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q3
-
-
-
-
-
-
-
-
 
 
 
@@ -164,7 +144,7 @@ Exercises
         draw the best fit line, in a different color, through the points.
 
 
-        .. actex:: ex_10_4
+        .. activecode:: ex_10_4
            :nocodelens:
            :available_files: labdata.txt
 
@@ -182,7 +162,7 @@ Exercises
                 Write a program that reads the file ``mystery.txt`` and uses the turtle to draw the picture
                 described by the commands and the set of points.
 
-                .. actex:: ex_10_5
+                .. activecode:: ex_10_5
                    :nocodelens:
                    :available_files: mystery.txt
 
@@ -214,17 +194,6 @@ Exercises
 
                     f.close()
                     wn.exitonclick()
-
-
-
-            .. tab:: Discussion
-
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_eb4a097382404ffe81300aac5744e3fe_q5
-
-
-
 
 
 

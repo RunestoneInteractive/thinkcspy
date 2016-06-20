@@ -1,42 +1,34 @@
 .. _t_o_c:
 
 Table of Contents
-:::::::::::::::::
+------------------
 
-Assignments
-:::::::::::
+----
 
-.. toctree::
-
-   assignments.rst
-
-General Introduction
-::::::::::::::::::::
+1. General Intro
+::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading1.rst
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
    GeneralIntro/ThePythonProgrammingLanguage.rst
    GeneralIntro/SpecialWaystoExecutePythoninthisBook.rst
    GeneralIntro/MoreAboutPrograms.rst
-   GeneralIntro/WhatisDebugging.rst
-   GeneralIntro/Syntaxerrors.rst
-   GeneralIntro/RuntimeErrors.rst
-   GeneralIntro/SemanticErrors.rst
-   GeneralIntro/ExperimentalDebugging.rst
-   GeneralIntro/FormalandNaturalLanguages.rst
    GeneralIntro/ATypicalFirstProgram.rst
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-Simple Python Data
-::::::::::::::::::
+
+2. Simple Python Data
+:::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading2.rst
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
@@ -50,27 +42,35 @@ Simple Python Data
    SimplePythonData/UpdatingVariables.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
+   Studios/Chapter2.rst
 
 
-Debugging Interlude 1
-:::::::::::::::::::::
+3. Debugging
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading3.rst
+   GeneralIntro/WhatisDebugging.rst
+   GeneralIntro/Syntaxerrors.rst
+   GeneralIntro/RuntimeErrors.rst
+   GeneralIntro/SemanticErrors.rst
+   GeneralIntro/ExperimentalDebugging.rst
    Debugging/intro-HowtobeaSuccessfulProgrammer.rst
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
-   Debugging/Summary.rst
-   
+   AdditionalExercises/Debugging.rst
 
-Python Turtle Graphics
-::::::::::::::::::::::
+
+4. Modules (and Turtles!)
+:::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading4.rst
    PythonTurtle/intro-HelloLittleTurtles.rst
    PythonTurtle/OurFirstTurtleProgram.rst
    PythonTurtle/InstancesAHerdofTurtles.rst
@@ -81,28 +81,22 @@ Python Turtle Graphics
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
    PythonTurtle/Glossary.rst
-   PythonTurtle/Exercises.rst
-
-
-Python Modules
-::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
    PythonModules/modules.rst
    PythonModules/MoreAboutUsingModules.rst
    PythonModules/Themathmodule.rst
    PythonModules/Therandommodule.rst
    PythonModules/Glossary.rst
-   PythonModules/Exercises.rst
+   AdditionalExercises/TurtlesAndModules.rst
+   Studios/Chapter4.rst
 
-Functions
-:::::::::
+
+5. Functions
+:::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading5.rst
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
    Functions/Variablesandparametersarelocal.rst
@@ -115,13 +109,16 @@ Functions
    Functions/ATurtleBarChart.rst
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
+   Studios/Chapter5.rst
 
-Selection
-:::::::::
+
+6. Selection
+:::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading6.rst
    Selection/BooleanValuesandBooleanExpressions.rst
    Selection/Logicaloperators.rst
    Selection/PrecedenceofOperators.rst
@@ -134,18 +131,19 @@ Selection
    Selection/Exercises.rst
 
 
-More About Iteration
-::::::::::::::::::::
+7. More About Iteration
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading7.rst
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
    MoreAboutIteration/ThewhileStatement.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
    MoreAboutIteration/The3n1Sequence.rst
-   MoreAboutIteration/Newton'sMethod.rst
+   MoreAboutIteration/NewtonsMethod.rst
    MoreAboutIteration/AlgorithmsRevisited.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
@@ -154,12 +152,13 @@ More About Iteration
    MoreAboutIteration/Exercises.rst
 
 
-Strings
-:::::::
+8. Strings
+::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading8.rst
    Strings/StringsRevisited.rst
    Strings/ACollectionDataType.rst
    Strings/OperationsonStrings.rst
@@ -169,12 +168,21 @@ Strings
    Strings/TheSliceOperator.rst
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
+   AdditionalExercises/Strings.rst
+
+
+9. Strings, Continued
+::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   ChapterHeadings/Heading9.rst
    Strings/TraversalandtheforLoopByItem.rst
    Strings/TraversalandtheforLoopByIndex.rst
    Strings/TraversalandthewhileLoop.rst
    Strings/Theinandnotinoperators.rst
    Strings/TheAccumulatorPatternwithStrings.rst
-   Strings/TurtlesandStringsandLSystems.rst
    Strings/Loopingandcounting.rst
    Strings/Afindfunction.rst
    Strings/Optionalparameters.rst
@@ -183,12 +191,14 @@ Strings
    Strings/Glossary.rst
    Strings/Exercises.rst
 
-Lists
-:::::
+
+10. Lists
+::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading10.rst
    Lists/intro-Lists.rst
    Lists/ListValues.rst
    Lists/ListLength.rst
@@ -203,9 +213,18 @@ Lists
    Lists/CloningLists.rst
    Lists/RepetitionandReferences.rst
    Lists/ListMethods.rst
-   Lists/TheReturnofLSystems.rst
    Lists/AppendversusConcatenate.rst
    Lists/Listsandforloops.rst
+   AdditionalExercises/Lists.rst
+
+
+11. Lists, Continued
+::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   ChapterHeadings/Heading11.rst
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
    Lists/WhichisBetter.rst
@@ -219,30 +238,16 @@ Lists
    Lists/TuplesasReturnValues.rst
    Lists/Glossary.rst
    Lists/Exercises.rst
+   ProblemSets/Crypto.rst
 
 
-Files
-:::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Files/intro-WorkingwithDataFiles.rst
-   Files/FindingaFileonyourDisk.rst
-   Files/ReadingaFile.rst
-   Files/Iteratingoverlinesinafile.rst
-   Files/AlternativeFileReadingMethods.rst
-   Files/WritingTextFiles.rst
-   Files/Glossary.rst
-   Files/Exercises.rst
-
-
-Dictionaries
-::::::::::::
+12. Dictionaries
+:::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading12.rst
    Dictionaries/intro-Dictionaries.rst
    Dictionaries/Dictionaryoperations.rst
    Dictionaries/Dictionarymethods.rst
@@ -251,28 +256,14 @@ Dictionaries
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
 
-Recursion
-:::::::::
+
+13. Classes and Objects -- Basics
+:::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   Recursion/WhatIsRecursion.rst
-   Recursion/CalculatingtheSumofaListofNumbers.rst
-   Recursion/TheThreeLawsofRecursion.rst
-   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
-   Recursion/intro-VisualizingRecursion.rst
-   Recursion/SierpinskiTriangle.rst
-   Recursion/Glossary.rst
-   Recursion/ProgrammingExercises.rst
-
-
-Classes and Objects - the Basics
-::::::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
+   ChapterHeadings/Heading13.rst
    ClassesBasics/Objectorientedprogramming.rst
    ClassesBasics/Achangeofperspective.rst
    ClassesBasics/ObjectsRevisited.rst
@@ -286,47 +277,72 @@ Classes and Objects - the Basics
    ClassesBasics/Exercises.rst
 
 
-Classes and Objects - Digging a Little Deeper
-:::::::::::::::::::::::::::::::::::::::::::::
+14. Classes and Objects -- Digging a Little Deeper
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   ChapterHeadings/Heading14.rst
    ClassesDiggingDeeper/Fractions.rst
    ClassesDiggingDeeper/ObjectsareMutable.rst
    ClassesDiggingDeeper/Sameness.rst
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
-   
-Labs
-::::
+
+
+----
+
+Optional Chapters
+::::::::::::::::::
+
+Hacker Chapter: Files
+~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
 
-   Labs/astronomylab.rst
-   Labs/lab03_01.rst
-   Labs/lab04_01.rst
-   Labs/lab04_01a.rst
-   Labs/lab12_01.rst
-   Labs/lab12_02.rst
-   Labs/montepi.rst
-   Labs/pythonshell.rst
-   Labs/sequencelab.rst
-   Labs/sinlab.rst
+   Files/intro-WorkingwithDataFiles.rst
+   Files/FindingaFileonyourDisk.rst
+   Files/ReadingaFile.rst
+   Files/Iteratingoverlinesinafile.rst
+   Files/AlternativeFileReadingMethods.rst
+   Files/WritingTextFiles.rst
+   Files/Glossary.rst
+   Files/Exercises.rst
 
-Appendices
-::::::::::
+
+Hacker Chapter: Recursion
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
 
-   Appendices/errorsAndDebug.rst
-   SimplePythonData/at_1_1.rst
+   Recursion/WhatIsRecursion.rst
+   Recursion/CalculatingtheSumofaListofNumbers.rst
+   Recursion/TheThreeLawsofRecursion.rst
+   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
+   Recursion/intro-VisualizingRecursion.rst
+   Recursion/SierpinskiTriangle.rst
+   Recursion/Glossary.rst
+   Recursion/ProgrammingExercises.rst
+
+
+Hacker Chapter: Special Topic -- L-Systems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   LSystems/TurtlesandStringsandLSystems.rst
+   LSystems/TheReturnofLSystems.rst
+   LSystems/Exercises.rst
+
+----
 
 Acknowledgements
-::::::::::::::::
+~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
@@ -339,9 +355,14 @@ Acknowledgements
     FrontBackMatter/contrib.rst
     FrontBackMatter/fdl-1.3.rst
 
-Indices and tables
-::::::::::::::::::
+----
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+More about this Textbook
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+This book is one of many adapted versions of the open-source textbook called `How to Think Like A Computer Scientist: Learning with Python <http://www.openbookproject.net/thinkcs/python/english2e/>`_, which is used in many universities around the world.
+
+Runestone is a platform for hosting *interactive* electronic textbooks. The folks at Runestone created `ThinkCsPy <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, an interactive version of the original book.
+
+LaunchCode has made some small tweaks and adjustments to Runestone's *ThinkCsPy*, resulting in the book you are reading!
