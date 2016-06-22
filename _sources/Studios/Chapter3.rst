@@ -1,6 +1,45 @@
 Studio: Donuts
 ==============
 
+Pre-studio
+----------
+
+For the pre-studio, we wrote a program that allowed us to calculate how many pints of beer would be able to afford in London if we sold a certain quantity of flags. (The problem statement is a bit more complicated than that, so be sure to watch the video.)
+
+.. raw:: html
+
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=7oCNNO-3CxQ" frameborder="0" allowfullscreen></iframe></div>
+
+.. activecode:: prestudio_3
+
+    # prompt for dollar to pound exchange
+    pounds_per_dollar = input("Current dollar-to-pound exchange rate: ")
+    pounds_per_dollar = float(pounds_per_dollar)
+
+    # prompt for number of flags to sell
+    num_flags = input("How many flags did you sell? ")
+    num_flags = int(num_flags)
+
+    # create variables for fixed values (cost flag, cost of pint)
+    pounds_per_pint = 3.79
+    dollars_per_flag = 3
+
+    # calculate how much a flag costs in pounds
+    pounds_per_flag = dollars_per_flag * pounds_per_dollar
+
+    # calculate how many pounds I'll have after selling them all
+    revenue = num_flags * pounds_per_flag
+
+    # calculate number beers I can buy with that amount of money
+    num_pints = revenue / pounds_per_pint
+    num_pints = int(num_pints)
+
+    # print out number of pints
+    print("You can afford", num_pints, "pints of beer!")
+
+Studio
+------
+
 Here's the scenario:
 
 You run a hip new artisanal donut shop, the Loop Hole, which, in its short lifetime, has already rocked the boutique-desserts market with numerous "disruptions", including:
