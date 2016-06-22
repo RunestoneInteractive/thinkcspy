@@ -8,7 +8,7 @@ For the pre-studio, we wrote a program that allowed us to calculate how many pin
 
 .. raw:: html
 
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=7oCNNO-3CxQ" frameborder="0" allowfullscreen></iframe></div>
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=DOdDWxgaBKY" frameborder="0" allowfullscreen></iframe></div>
 
 .. activecode:: prestudio_3
 
