@@ -44,6 +44,7 @@ options(
             'python3': 'true',
             'dburl': 'postgres://launchclass:toinfinityandbeyond@localhost/runestone',
             'basecourse': 'thinkcspy',
+            'lang': 'python'
         }
 
     )
