@@ -121,7 +121,7 @@ Exercises
 
                     drawPoly(tess, 8, 50)
 
-                    
+
     #.
 
         .. tabbed:: q5
@@ -221,14 +221,21 @@ Exercises
 
 
 
-    #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+    #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`
+
+        As a refresher, the area of any circle is equal to the radius squared, multiplied by pi (where pi is 3.14159....).
+
+        Don't forget to include the math module, where pi is defined.
 
         .. activecode:: ex_5_8
 
-            from test import testEqual
-
             # TODO: use def to define a function called areaOfCircle which takes an argument called r
+
                 # TODO implment your function to return the area of a circle whose radius is r
+
+
+            # below are some tests so you can see if your code is correct
+            from test import testEqual
 
             t = areaOfCircle(0)
             testEqual(t,0)
