@@ -238,12 +238,17 @@ Exercises
             from test import testEqual
 
             t = areaOfCircle(0)
-            testEqual(t,0)
+            testEqual(t, 0)
             t = areaOfCircle(1)
             testEqual(t,math.pi)
             t = areaOfCircle(100)
-            testEqual(t,31415.926535897932)
-
+            testEqual(t, 31415.926535897932)
+            t = areaOfCircle(-1)
+            testEqual(t, math.pi)
+            t = areaOfCircle(-5)
+            testEqual(t, 25 * math.pi)
+            t = areaOfCircle(2.3)
+            testEqual(t, 16.61902513749)
 
     #.
 
