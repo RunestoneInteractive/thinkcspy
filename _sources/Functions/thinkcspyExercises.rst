@@ -221,11 +221,11 @@ Exercises
 
 
 
-    #.  (GRADED) Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`
+    #.  (GRADED) Write a function ``areaOfCircle(r)`` which returns the area of a circle of radius ``r``
 
         As a refresher, the area of any circle is equal to the radius squared, multiplied by pi (where pi is 3.14159....).
 
-        Don't forget to include the math module, where pi is defined.
+        Don't forget to include the ``math`` module, where pi is defined.
 
         .. activecode:: ex_5_8
 
@@ -234,7 +234,7 @@ Exercises
                 # TODO implment your function to return the area of a circle whose radius is r
 
 
-            # below are some tests so you can see if your code is correct
+            # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
             from test import testEqual
 
             t = areaOfCircle(0)
