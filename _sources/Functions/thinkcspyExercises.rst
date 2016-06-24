@@ -32,7 +32,7 @@ Exercises
                     import turtle
 
                     def drawSquare(t, sz):
-                        """Get turtle t to draw a square of sz side"""
+                        """Get turtle t to draw a square with sz side"""
 
                         for i in range(4):
                             t.forward(sz)
@@ -56,7 +56,7 @@ Exercises
                     import turtle
 
                     def drawSquare(t, sz):
-                        """Make turtle t draw a square of with side sz."""
+                        """Make turtle t draw a square with side sz."""
                         for i in range(4):
                             t.forward(sz)
                             t.left(90)

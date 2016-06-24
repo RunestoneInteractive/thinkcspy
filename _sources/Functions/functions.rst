@@ -15,7 +15,7 @@
     single: function
     single: function definition
     single: definition; function
-	
+
 
 Functions
 ---------
@@ -149,7 +149,7 @@ back down before drawing the next square.  Make sure you can identify both invoc
     import turtle
 
     def drawSquare(t, sz):
-        """Make turtle t draw a square of with side sz."""
+        """Make turtle t draw a square with side sz."""
 
         for i in range(4):
             t.forward(sz)
@@ -330,4 +330,3 @@ been defined, we can call it as many times as we like with whatever actual param
    :feedback_b: One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
 
    True or false: A function can be called several times by placing a function call in the body of a loop.
-
