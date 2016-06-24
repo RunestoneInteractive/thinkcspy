@@ -231,7 +231,7 @@ Exercises
 
             # TODO: use def to define a function called areaOfCircle which takes an argument called r
 
-                # TODO implment your function to return the area of a circle whose radius is r
+                # TODO implement your function to return the area of a circle whose radius is r
 
 
             # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
