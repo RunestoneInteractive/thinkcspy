@@ -130,6 +130,17 @@ Exercises
 
                 The two spirals in this picture differ only by the turn angle.  Draw both.
 
+                *Note:* If you receive a ``TimeLimitError`` then you can do one or both of the following:
+
+                1. Make the turtle go faster!
+
+                2. Add the following lines to the top of your file. These will increase the time your program is allowed to run to 35,000 milliseconds, or 35 seconds. You can change this number, if you need to.
+
+                .. sourcecode:: python
+
+                    import sys
+                    sys.setExecutionLimit(35000)
+
                 .. image:: Figures/tess_spirals.png
                    :height: 240
 
@@ -140,6 +151,9 @@ Exercises
                 .. activecode:: q5_answer
 
                     import turtle
+                    import sys
+
+                    sys.setExecutionLimit(35000)
 
                     def drawSpiral(t, angle):
                         ''' takes a turtle, t, and an angle in degrees '''
@@ -155,6 +169,7 @@ Exercises
 
                     guido = turtle.Turtle()    # create guido
                     guido.color('blue')
+                    guido.speed(10)
 
                     ## draw the first spiral ##
                     # position guido
@@ -168,8 +183,8 @@ Exercises
 
                     ## draw the second spiral ##
                     # position guido
-                    guido.home()
                     guido.penup()
+                    guido.home()
                     guido.forward(90)
                     guido.pendown()
 
@@ -178,7 +193,7 @@ Exercises
 
 
     #.  Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
-        previous question to have its turtle draw a equilateral triangle.
+        question above to have its turtle draw an equilateral triangle.
 
         .. activecode:: ex_5_6
 
