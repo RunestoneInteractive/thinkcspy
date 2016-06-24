@@ -26,8 +26,6 @@ drawing canvas towards the right.  After line 6, you will have a canvas with a
 turtle and a half drawn rectangle.  Press the run button to try it and see.
 
 .. activecode:: ch03_1
-    :tour_1: "Overall Tour"; 1-6: Example01_Tour01_Line01; 3: Example01_Tour01_Line02; 4: Example01_Tour01_Line03; 5: Example01_Tour01_Line04; 6: Example01_Tour01_Line05;
-    :tour_2: "Line by Line Tour"; 1: Example01_Tour02_Line01; 2: Example01_Tour02_Line02; 3: Example01_Tour02_Line03; 4: Example01_Tour02_Line04; 5: Example01_Tour02_Line05; 6: Example01_Tour02_Line06;
     :nocodelens:
 
     import turtle            	# allows us to use the turtles library
@@ -72,7 +70,7 @@ instructions that all turtles know how to respond to.
 .. mchoice:: test_question3_1_0
    :answer_a: North
    :answer_b: South
-   :answer_c: East 
+   :answer_c: East
    :answer_d: West
    :correct: c
    :feedback_a: Some turtle systems start with the turtle facing north, but not this one.
@@ -116,7 +114,7 @@ instructions that all turtles know how to respond to.
 
 .. parsonsprob:: 3_3
 
-   The following program uses a turtle to draw a single line to the west as shown to the left, <img src="../_static/TurtleLineToWest.png" width="150" align="left" hspace="10" vspace="5" /> but the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>   
+   The following program uses a turtle to draw a single line to the west as shown to the left, <img src="../_static/TurtleLineToWest.png" width="150" align="left" hspace="10" vspace="5" /> but the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
    import turtle
    window = turtle.Screen()
@@ -139,10 +137,8 @@ window objects.  In the example below, we show just show a couple and have only 
 lines that are different from the previous example.  Note also that we have decided to call our turtle object *tess*.
 
 .. activecode:: ch03_2
-    :tour_1: "Overall Tour"; 1-10: Example02_Tour01_Line01; 4: Example02_Tour01_Line02; 6: Example02_Tour01_Line03; 7: Example02_Tour01_Line04; 8: Example02_Tour01_Line05; 10: Example02_Tour01_Line06; 11: Example02_Tour01_Line07; 12: Example02_Tour01_Line08; 14: Example02_Tour01_Line09;
-    :tour_2: "Line by Line Tour"; 1: Example01_Tour02_Line01; 3: Example01_Tour02_Line02; 4: Example02_Tour02_Line03; 6: Example02_Tour02_Line04; 7: Example02_Tour02_Line05; 8: Example02_Tour02_Line06; 10: Example02_Tour02_Line07; 11: Example02_Tour02_Line08; 12: Example02_Tour02_Line09; 14: Example02_Tour02_Line10;
     :nocodelens:
-    
+
     import turtle
 
     wn = turtle.Screen()
@@ -239,12 +235,12 @@ screen until we click on it.
    :feedback_a: This code would turn the turtle to the south before drawing
    :feedback_b: This code would turn the turtle to the west before drawing
    :feedback_c: This code would turn the turtle to the south before drawing
-   :feedback_d: This code is almost correct, but the short end would be facing east instead of west.  
+   :feedback_d: This code is almost correct, but the short end would be facing east instead of west.
    :feedback_e: Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
 
-   Which of the following code would produce the following image? 
+   Which of the following code would produce the following image?
 
-   .. image:: ../_static/turtleTest1.png 
+   .. image:: ../_static/turtleTest1.png
       :alt: long line to north with shorter line to west on top
 
 **Mixed up programs**
@@ -256,30 +252,30 @@ screen until we click on it.
    import turtle
    wn = turtle.Screen()
    =====
-   wn.bgcolor("blue")     	
+   wn.bgcolor("blue")
    jamal = turtle.Turtle()
    =====
-   jamal.color("white")               	
-   jamal.pensize(10) 
-   =====                
+   jamal.color("white")
+   jamal.pensize(10)
+   =====
    jamal.right(90)
    jamal.forward(150)
-   ===== 
+   =====
    jamal.left(90)
    jamal.forward(75)
    wn.exitonclick()
 
 .. parsonsprob:: 3_5
 
-   The following program uses a turtle to draw a capital T in white on a green background as shown to the left, <img src="../_static/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>  
+   The following program uses a turtle to draw a capital T in white on a green background as shown to the left, <img src="../_static/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
    import turtle
    wn = turtle.Screen()
-   wn.bgcolor("green")     	
+   wn.bgcolor("green")
    jamal = turtle.Turtle()
-   jamal.color("white")               	
-   jamal.pensize(10) 
-   =====                
+   jamal.color("white")
+   jamal.pensize(10)
+   =====
    jamal.left(90)
    jamal.forward(150)
    =====
@@ -293,4 +289,3 @@ screen until we click on it.
 
 
 .. index:: instance
-

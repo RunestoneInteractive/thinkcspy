@@ -13,29 +13,53 @@
 Studio: Turtle Racing
 =====================
 
+Pre-studio
+----------
 
-Random Numbers
---------------
+For the pre-studio, we wrote a program that allowed us to calculate how many pints of beer would be able to afford in London if we sold a certain quantity of flags. (The problem statement is a bit more complicated than that, so be sure to watch the video.)
 
-Before we begin writing code for this studio, we need to introduce one more
-Python module.  The ``random`` module allows us to generate random numbers.
-It's easy to use:
+.. raw:: html
 
-.. activecode:: lab01_1
-   :nocanvas:
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xOmRXIdxwmk" frameborder="0" allowfullscreen></iframe></div>
 
-   import random
-   x = random.randrange(1,10)
-   print(x)
+.. activecode:: prestudio_4
 
-The ``randrange`` function as called in the example above, generates a random
-number from 1 to 9.
-Even though we said 10 the randrange function works just like the *range*
-function when it comes to starting and stopping points.  Now if you run the
-program over and over again you should see that each time you run it a
-different number is generated.  Random numbers are the basis of all kinds of
-interesting programs we can write, and the ``randrange`` function is just one
-of many functions available in the random module.
+    import turtle
+    import random
+
+    win = turtle.Screen()
+    win.bgcolor("lightblue")
+
+    # create 2 turtles
+    zach = turtle.Turtle()
+    jesse = turtle.Turtle()
+
+    # speed them up!
+    zach.speed(10)
+    jesse.speed(10)
+
+    jesse.color("turquoise")
+    zach.color("orange")
+
+    # make them walk randomly, loop variable represnts distance to travel forward
+    for distance in range(0,50,2): # generates [0,2,4,6,8,10,12,...46,48]
+
+        # create a random angle for each turtle
+        zach_angle = random.randrange(0,181)
+        jesse_angle = random.randrange(0,181)
+
+        # turn each turtle in that random direction
+        zach.left(zach_angle)
+        jesse.left(jesse_angle)
+
+        # move each turtle forward by distance
+        zach.forward(distance)
+        jesse.forward(distance)
+
+
+
+Studio
+------
 
 Turtle Races
 ------------
@@ -49,7 +73,7 @@ There are several different, and equally plausible, solutions to this problem.
 Let's look at what needs to be done, and then look at some of the options for
 the solution.  To start, let's think about a solution to the simplest form
 of the problem, a race between two turtles. We'll look at more complex races
-later.  
+later.
 
 When you are faced with a problem like this in computer science it is
 often a good idea to find a solution to a simple problem first and then
@@ -105,7 +129,7 @@ to see the different kinds of behavior.
   range function.  Inside the for loop move one of the turtles forward by
   some number of units.
 
-* Create a single for loop using something like 150 or 200 as the range 
+* Create a single for loop using something like 150 or 200 as the range
   parameter. Then inside the for loop move each turtle forward using a random
   number as the parameter to forward.
 

@@ -32,9 +32,10 @@ Exercises
 
 
 
-    #. Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?
+    #. Write a program that prints out the lyrics to the song "99 Bottles of Beer on the Wall"
 
-
+        .. activecode:: ex_3_2
+        
     #.
 
         .. tabbed:: q3
