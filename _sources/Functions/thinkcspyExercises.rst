@@ -32,7 +32,7 @@ Exercises
                     import turtle
 
                     def drawSquare(t, sz):
-                        """Get turtle t to draw a square of sz side"""
+                        """Get turtle t to draw a square with sz side"""
 
                         for i in range(4):
                             t.forward(sz)
@@ -56,7 +56,7 @@ Exercises
                     import turtle
 
                     def drawSquare(t, sz):
-                        """Make turtle t draw a square of with side sz."""
+                        """Make turtle t draw a square with side sz."""
                         for i in range(4):
                             t.forward(sz)
                             t.left(90)
@@ -130,6 +130,17 @@ Exercises
 
                 The two spirals in this picture differ only by the turn angle.  Draw both.
 
+                *Note:* If you receive a ``TimeLimitError`` then you can do one or both of the following:
+
+                1. Make the turtle go faster!
+
+                2. Add the following lines to the top of your file. These will increase the time your program is allowed to run to 35,000 milliseconds, or 35 seconds. You can change this number, if you need to.
+
+                .. sourcecode:: python
+
+                    import sys
+                    sys.setExecutionLimit(35000)
+
                 .. image:: Figures/tess_spirals.png
                    :height: 240
 
@@ -140,6 +151,9 @@ Exercises
                 .. activecode:: q5_answer
 
                     import turtle
+                    import sys
+
+                    sys.setExecutionLimit(35000)
 
                     def drawSpiral(t, angle):
                         ''' takes a turtle, t, and an angle in degrees '''
@@ -155,6 +169,7 @@ Exercises
 
                     guido = turtle.Turtle()    # create guido
                     guido.color('blue')
+                    guido.speed(10)
 
                     ## draw the first spiral ##
                     # position guido
@@ -168,8 +183,8 @@ Exercises
 
                     ## draw the second spiral ##
                     # position guido
-                    guido.home()
                     guido.penup()
+                    guido.home()
                     guido.forward(90)
                     guido.pendown()
 
@@ -178,7 +193,7 @@ Exercises
 
 
     #.  Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
-        previous question to have its turtle draw a equilateral triangle.
+        question above to have its turtle draw an equilateral triangle.
 
         .. activecode:: ex_5_6
 
@@ -231,7 +246,7 @@ Exercises
 
             # TODO: use def to define a function called areaOfCircle which takes an argument called r
 
-                # TODO implment your function to return the area of a circle whose radius is r
+                # TODO implement your function to return the area of a circle whose radius is r
 
 
             # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
