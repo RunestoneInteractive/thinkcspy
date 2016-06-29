@@ -62,7 +62,7 @@ Exercises
       testEqual(analyze_text(str), expected)
 
       str = "Blueberries are tastee!"
-      expected = "Your text contains 20 alphabetic characters, of which 4 (25.0%) are 'e'."
+      expected = "Your text contains 20 alphabetic characters, of which 5 (25.0%) are 'e'."
       testEqual(analyze_text(str), expected)
 
       str = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
