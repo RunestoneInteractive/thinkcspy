@@ -58,15 +58,15 @@ Exercises
       from test import testEqual
 
       str = "Eeeee"
-      expected = "Your text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+      expected = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
       testEqual(analyze_text(str), expected)
 
       str = "Blueberries are tastee!"
-      expected = "Your text contains 20 alphabetic characters, of which 5 (25.0%) are 'e'."
+      expected = "The text contains 20 alphabetic characters, of which 6 (30.0%) are 'e'."
       testEqual(analyze_text(str), expected)
 
       str = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
-      expected = "Your text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+      expected = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
       testEqual(analyze_text(str), expected)
 
 #.
