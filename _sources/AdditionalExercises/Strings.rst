@@ -47,24 +47,27 @@ Exercises
 
       Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
-   Here are some examples:
-   
-   .. sourcecode:: python
-
-       analyze_text("Blueberries are tastee!")
-       # => prints "Your text contains 20 alphabetic characters, of which 4 (25.0%) are 'e'."
-
-       analyze_text("Eeeee")
-       # => prints "Your text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
-
-       analyze_text("Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)")
-       # => prints "Your text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
-
 
    .. activecode:: ex_8_3
 
-      analyze_text(str):
+      def analyze_text(str):
           # your code here
+
+
+      # Don't copy these tests into Vocareum
+      from test import testEqual
+
+      str = "Eeeee"
+      expected = "Your text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
+
+      str = "Blueberries are tastee!"
+      expected = "Your text contains 20 alphabetic characters, of which 4 (25.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
+
+      str = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
+      expected = "Your text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
 
 #.
 
