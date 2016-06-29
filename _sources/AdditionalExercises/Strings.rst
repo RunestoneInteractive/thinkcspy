@@ -43,9 +43,9 @@ Exercises
 
 #. (GRADED) Write a function ``analyze_text`` that receives a string as input. Your function should count the number of alphabetic characters (a through z, or A through Z) in the text and also keep track of how many are the letter ``'e'`` (upper or lowercase).
 
-   Your function should print an analysis of the text, something like this:
+   Your function should return an analysis of the text, something like this:
 
-      Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+      The text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
 
    .. activecode:: ex_8_3
