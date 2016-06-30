@@ -41,13 +41,33 @@ Exercises
             #. 'pineapple' < 'Peach' = False
 
 
-#. (GRADED) Assign to a variable in your program a triple-quoted string that contains your favorite paragraph of text - perhaps a poem, a speech, instructions to bake a cake, some inspirational verses, etc.
+#. (GRADED) Write a function ``analyze_text`` that receives a string as input. Your function should count the number of alphabetic characters (a through z, or A through Z) in the text and also keep track of how many are the letter ``'e'`` (upper or lowercase).
 
-Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
+   Your function should return an analysis of the text, something like this:
 
-   Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+      The text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
 
-.. activecode:: ex_8_3
+
+   .. activecode:: ex_8_3
+
+      def analyze_text(str):
+          # your code here
+
+
+      # Don't copy these tests into Vocareum
+      from test import testEqual
+
+      str = "Eeeee"
+      expected = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
+
+      str = "Blueberries are tastee!"
+      expected = "The text contains 20 alphabetic characters, of which 6 (30.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
+
+      str = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
+      expected = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+      testEqual(analyze_text(str), expected)
 
 #.
 
