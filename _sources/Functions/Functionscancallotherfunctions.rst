@@ -103,7 +103,6 @@ our square.
 Here is the entire example with the necessary set up code.
 
 .. activecode:: ch04_3
-    :nocodelens:
 
     import turtle
 
@@ -159,6 +158,3 @@ demonstrates two:
 
 
 .. index:: flow of execution
-
-
-
