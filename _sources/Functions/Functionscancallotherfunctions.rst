@@ -25,7 +25,8 @@ first function called ``square`` simply computes the square of a given number.
 The second function called ``sum_of_squares`` makes use of square to compute
 the sum of three numbers that have been squared.
 
-.. active_code:: sumofsquares
+
+.. activecode:: sumofsquares
 
     def square(x):
         y = x * x
