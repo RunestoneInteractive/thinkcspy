@@ -37,81 +37,48 @@ Exercises
 #. Write a function that reverses its string argument.
 
    .. activecode:: ex_8_5
-      :nocodelens:
 
       from test import testEqual
 
-      def reverse(astring):
+      def reverse(str):
           # your code here
 
       testEqual(reverse("happy"), "yppah")
       testEqual(reverse("Python"), "nohtyP")
       testEqual(reverse(""), "")
 
-#. (GRADED) Write a function that mirrors its argument.
-
-(Hint: Make use of the `reverse` function that you wrote in the previous exercise)
+#. (GRADED) Write a function that mirrors its argument. (Hint: Make use of the `reverse` function that you wrote in the previous exercise)
 
    .. activecode:: ex_8_6
-      :nocodelens:
 
-      from test import testEqual
-
-      def mirror(mystr):
+      def reverse(str):
           # your code here
 
+      def mirror(str):
+          # your code here
+
+      # Don't copy these tests into Vocareum
+      from test import testEqual
       testEqual(mirror('good'), 'gooddoog')
       testEqual(mirror('Python'), 'PythonnohtyP')
       testEqual(mirror(''), '')
       testEqual(mirror('a'), 'aa')
 
-#.
 
-    .. tabbed:: q9
+#. Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
 
-        .. tab:: Question
+   .. activecode:: ex_8_8
 
-           Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
+      from test import testEqual
 
-           .. activecode:: ex_8_8
-              :nocodelens:
+      def is_palindrome(myStr):
+          # your code here
 
-              from test import testEqual
-
-              def is_palindrome(myStr):
-                  # your code here
-
-              testEqual(is_palindrome('abba'), True)
-              testEqual(is_palindrome('abab'), False)
-              testEqual(is_palindrome('straw warts'), True)
-              testEqual(is_palindrome('a'), True)
-              testEqual(is_palindrome(''), True)
-
-
-        .. tab:: Answer
-
-            .. activecode:: q9_answer
-                :nocodelens:
-
-                from test import testEqual
-
-                def reverse(mystr):
-                    reversed = ''
-                    for char in mystr:
-                        reversed = char + reversed
-                    return reversed
-
-                def is_palindrome(myStr):
-                    if myStr in reverse(myStr):
-                        return True
-                    else:
-                        return False
-
-                testEqual(is_palindrome('abba'), True)
-                testEqual(is_palindrome('abab'), False)
-                testEqual(is_palindrome('straw warts'), True)
-                testEqual(is_palindrome('a'), True)
-                testEqual(is_palindrome(''), True)
+      testEqual(is_palindrome('abba'), True)
+      testEqual(is_palindrome('abab'), False)
+      testEqual(is_palindrome('straw warts'), True)
+      testEqual(is_palindrome('a'), True)
+      testEqual(is_palindrome(''), True)
 
 #.
 
