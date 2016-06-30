@@ -130,6 +130,7 @@ Table of Contents
    Selection/BooleanFunctions.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
+   Studios/Chapter6.rst
 
 
 7. More About Iteration

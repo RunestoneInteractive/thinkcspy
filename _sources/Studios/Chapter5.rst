@@ -13,9 +13,37 @@
 Studio: Wagon Wheel
 ===================
 
+Pre-studio
+----------
+
+For the pre-studio, we wrote a program that used functions to draw a line star with a chosen number of lines.
+
+.. raw:: html
+
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/5FscOAPDkAQ" frameborder="0" allowfullscreen></iframe></div>
+
+.. activecode:: prestudio_4
+
+    import turtle
+
+    def draw_line(length, angle):
+        mike = turtle.Turtle()
+        mike.left(angle)
+        mike.forward(length / 2)
+        mike.forward(-length)
+        mike.forward(length / 2)
+
+    def star(nlines):
+        for angle in range(0, 180, int(180/nlines)):
+            draw_line(200, angle)
+
+    star(10)
+
+Studio
+------
+
 Draw this pretty pattern.
 
 .. image:: Figures/tess08.png
 
 .. activecode:: ex_5_4
-
