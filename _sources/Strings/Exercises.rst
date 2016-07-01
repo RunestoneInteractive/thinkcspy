@@ -34,28 +34,30 @@ Exercises
    .. activecode:: ex_8_4
 
 
-#. Write a function that reverses its string argument.
+#. Write a function ``reverse`` that receives a string argument, and returns a reversed version of the string.
 
    .. activecode:: ex_8_5
 
       from test import testEqual
 
-      def reverse(str):
+      def reverse(text):
           # your code here
 
       testEqual(reverse("happy"), "yppah")
       testEqual(reverse("Python"), "nohtyP")
       testEqual(reverse(""), "")
 
-#. (GRADED) Write a function that mirrors its argument. (Hint: Make use of the `reverse` function that you wrote in the previous exercise)
+#. (GRADED) Write a function that receives a string argument, and returns a "mirrored" version of the string. (Hint: Make use of the `reverse` function that you wrote in the previous exercise)
 
    .. activecode:: ex_8_6
 
-      def reverse(str):
+      def mirror(text):
           # your code here
 
-      def mirror(str):
+
+      def reverse(text):
           # your code here
+
 
       # Don't copy these tests into Vocareum
       from test import testEqual
@@ -71,7 +73,7 @@ Exercises
 
       from test import testEqual
 
-      def is_palindrome(myStr):
+      def is_palindrome(text):
           # your code here
 
       testEqual(is_palindrome('abba'), True)
