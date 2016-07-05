@@ -75,7 +75,7 @@ Exercises
 		  .. sourcecode:: python
 
 			  >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
-			  >>> d['banana']
+			  >>> d['bananas']
 
 	   b.
 		  .. sourcecode:: python
