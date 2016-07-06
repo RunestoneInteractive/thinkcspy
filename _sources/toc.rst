@@ -14,6 +14,7 @@ General Introduction
 ::::::::::::::::::::
 
 .. toctree::
+   :caption: General Introduction
    :maxdepth: 2
 
    GeneralIntro/intro-TheWayoftheProgram.rst
@@ -35,6 +36,7 @@ Simple Python Data
 ::::::::::::::::::
 
 .. toctree::
+   :caption: Simple Python Data
    :maxdepth: 2
 
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
@@ -56,6 +58,7 @@ Debugging Interlude 1
 :::::::::::::::::::::
 
 .. toctree::
+   :caption: Debugging Interlude 1
    :maxdepth: 2
 
    Debugging/intro-HowtobeaSuccessfulProgrammer.rst
@@ -69,6 +72,7 @@ Python Turtle Graphics
 ::::::::::::::::::::::
 
 .. toctree::
+   :caption: Python Turtle Graphics
    :maxdepth: 2
 
    PythonTurtle/intro-HelloLittleTurtles.rst
@@ -88,6 +92,7 @@ Python Modules
 ::::::::::::::
 
 .. toctree::
+   :caption: Python Modules
    :maxdepth: 2
 
    PythonModules/modules.rst
@@ -101,6 +106,7 @@ Functions
 :::::::::
 
 .. toctree::
+   :caption: Functions
    :maxdepth: 2
 
    Functions/functions.rst
@@ -120,6 +126,7 @@ Selection
 :::::::::
 
 .. toctree::
+   :caption: Selection
    :maxdepth: 2
 
    Selection/BooleanValuesandBooleanExpressions.rst
@@ -138,6 +145,7 @@ More About Iteration
 ::::::::::::::::::::
 
 .. toctree::
+   :caption: More About Iteration
    :maxdepth: 2
 
    MoreAboutIteration/intro-IterationRevisited.rst
@@ -158,6 +166,7 @@ Strings
 :::::::
 
 .. toctree::
+   :caption: Strings
    :maxdepth: 2
 
    Strings/StringsRevisited.rst
@@ -187,6 +196,7 @@ Lists
 :::::
 
 .. toctree::
+   :caption: Lists
    :maxdepth: 2
 
    Lists/intro-Lists.rst
@@ -225,6 +235,7 @@ Files
 :::::
 
 .. toctree::
+   :caption: Files
    :maxdepth: 2
 
    Files/intro-WorkingwithDataFiles.rst
@@ -241,6 +252,7 @@ Dictionaries
 ::::::::::::
 
 .. toctree::
+   :caption: Dictionaries
    :maxdepth: 2
 
    Dictionaries/intro-Dictionaries.rst
@@ -255,6 +267,7 @@ Recursion
 :::::::::
 
 .. toctree::
+   :caption: Recursion
    :maxdepth: 2
 
    Recursion/WhatIsRecursion.rst
@@ -271,6 +284,7 @@ Classes and Objects - the Basics
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
+   :caption: Classes and Objects - the Basics
    :maxdepth: 2
 
    ClassesBasics/Objectorientedprogramming.rst
@@ -290,6 +304,7 @@ Classes and Objects - Digging a Little Deeper
 :::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
+   :caption: Classes and Objects - Digging Deeper
    :maxdepth: 2
 
    ClassesDiggingDeeper/Fractions.rst
@@ -303,6 +318,7 @@ Labs
 ::::
 
 .. toctree::
+   :caption: Labs
    :maxdepth: 1
 
    Labs/astronomylab.rst
@@ -320,6 +336,7 @@ Appendices
 ::::::::::
 
 .. toctree::
+   :caption: Appendices
    :maxdepth: 1
 
    Appendices/errorsAndDebug.rst
@@ -329,6 +346,7 @@ Acknowledgements
 ::::::::::::::::
 
 .. toctree::
+    :caption: Acknowledgements
     :maxdepth: 1
 
     FrontBackMatter/copyright.rst
