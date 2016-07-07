@@ -48,7 +48,7 @@ Exercises
 
         .. tab:: Question
 
-            Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
+            Write a function which is given an exam mark, and it returns the corresponding letter grade as a string according to this
             scheme:
 
             .. table::
@@ -443,7 +443,7 @@ Exercises
                     e = (2*b + 4*c + 6*d + 5) % 7
                     dateofeaster = 22 + d + e
 
-                    if year == 1954 or year == 2981 or year == 2049 or year == 2076:
+                    if year == 1954 or year == 1981 or year == 2049 or year == 2076:
                         dateofeaster = dateofeaster - 7
 
                     if dateofeaster > 31:
