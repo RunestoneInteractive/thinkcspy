@@ -152,6 +152,7 @@ Table of Contents
    MoreAboutIteration/ImageProcessingonYourOwn.rst
    MoreAboutIteration/Glossary.rst
    MoreAboutIteration/Exercises.rst
+   Studios/Chapter7.rst
 
 
 8. Strings
