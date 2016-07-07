@@ -1,5 +1,5 @@
-Python Crypto
-=============
+Problem Set: Crypto
+===================
 
 A problem set in Python inspired by CS50’s Crypto problem set.
 
