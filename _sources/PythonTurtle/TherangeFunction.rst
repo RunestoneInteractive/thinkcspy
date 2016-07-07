@@ -99,7 +99,7 @@ at 10 and going up to 20 (including 20).
 Codelens will help us to further understand the way range works.  In this case, the variable ``i`` will take on values
 produced by the ``range`` function.
 
-.. codelens:: rangeme
+.. activecode:: rangeme
 
     for i in range(10):
        print(i)
@@ -170,7 +170,3 @@ Try it in codelens.
   :feedback_d: If range is passed only one argument, it interprets that argument as the end of the list (not inclusive).
 
   What happens if you give range only one argument?  For example: range(4)
-
-
-
-
