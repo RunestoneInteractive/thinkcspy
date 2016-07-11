@@ -172,6 +172,7 @@ Table of Contents
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
    AdditionalExercises/Strings.rst
+   Studios/Chapter8.rst
 
 
 9. Strings, Continued

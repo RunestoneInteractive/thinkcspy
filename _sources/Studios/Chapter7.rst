@@ -1,6 +1,18 @@
 Studio: Blurring an image
 =========================
 
+Pre-studio
+----------
+
+For the pre-studio, we review loops and image processing, and we write a program to apply a red filter to an image.
+
+.. raw:: html
+
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/tEs3FhsixcY" frameborder="0" allowfullscreen></iframe></div>
+
+Studio
+------
+
 Blurring an image can be useful for de-noising an image for image processing such as object recognition and edge detection. Blurring can be achieved with a simple algorithm which averages each pixel with those around it. To visualize the algorithm, imagine a stencil which you can center over a pixel with the following shape:
 
 +---+---+---+
