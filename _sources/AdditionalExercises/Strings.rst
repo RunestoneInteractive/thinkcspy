@@ -45,7 +45,7 @@ Exercises
 
    Your function should return an analysis of the text, something like this:
 
-      The text contains 240 alphabetic characters, of which 114 (47.5%) are 'e'.
+      The text contains 240 alphabetic characters, of which 105 (43.75%) are 'e'.
 
    You will need to make use of the ``isalpha`` function, which can be used like this:
 
