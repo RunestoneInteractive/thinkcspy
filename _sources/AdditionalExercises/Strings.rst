@@ -45,29 +45,39 @@ Exercises
 
    Your function should return an analysis of the text, something like this:
 
-      The text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+      The text contains 240 alphabetic characters, of which 114 (47.5%) are 'e'.
 
+   You will need to make use of the ``isalpha`` function, which can be used like this:
+
+   .. python::
+      "a".isalpha() # => evaluates to True
+      "3".isalpha() # => evaluates to False
+      "&".isalpha() # => False
+      " ".isalpha() # => False
+
+      mystr = "Q"
+      mystr.isalpha() # => True
 
    .. activecode:: ex_8_3
 
-      def analyze_text(str):
+      def analyze_text(text):
           # your code here
 
 
       # Don't copy these tests into Vocareum
       from test import testEqual
 
-      str = "Eeeee"
-      expected = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
-      testEqual(analyze_text(str), expected)
+      text1 = "Eeeee"
+      answer1 = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+      testEqual(analyze_text(text1), answer1)
 
-      str = "Blueberries are tastee!"
-      expected = "The text contains 20 alphabetic characters, of which 6 (30.0%) are 'e'."
-      testEqual(analyze_text(str), expected)
+      text2 = "Blueberries are tasteee!"
+      answer2 = "The text contains 21 alphabetic characters, of which 7 (33.3333333333%) are 'e'."
+      testEqual(analyze_text(text2), answer2)
 
-      str = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
-      expected = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
-      testEqual(analyze_text(str), expected)
+      text3 = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
+      answer3 = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+      testEqual(analyze_text(text3), answer3)
 
 #.
 
