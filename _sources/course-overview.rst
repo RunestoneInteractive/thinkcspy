@@ -71,6 +71,19 @@ During class, mentors will circulate and provide help while you are working.
 
 Outside of class, we use a discussion board forum called Piazza, which you can use to ask questions.
 
+Academic Honesty
+----------------
+
+Academic honesty is an important focus of this course. Working with others to improve your skills is both acceptable and encouraged, but there is a difference between asking for help from a classmate and submitting the work of a classmate. Below are some examples to differentiate between the two:
+
+- If you encounter a bug in your program, a classmate may look at your code to help you identify the source of your problem, but you may not look at the classmate’s code to find their solution to that problem.
+
+- You are encouraged to search through sites such as Stack Overflow when trying to debug an error in your code, but you may not search online for complete solutions to your specific assignment.
+
+- Do not post complete programs or functions on public Piazza posts or other course platforms. Post only snippets or isolated sections of code. If you need to post a complete program or function in order to get help, do so in a private message to the TFs or instructors.
+
+If you have a question about how to work with another student on graded homework, as the instructor or course staff.
+
 
 Navigating This Website
 -----------------------

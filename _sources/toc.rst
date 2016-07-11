@@ -152,6 +152,7 @@ Table of Contents
    MoreAboutIteration/ImageProcessingonYourOwn.rst
    MoreAboutIteration/Glossary.rst
    MoreAboutIteration/Exercises.rst
+   Studios/Chapter7.rst
 
 
 8. Strings
@@ -171,6 +172,7 @@ Table of Contents
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
    AdditionalExercises/Strings.rst
+   Studios/Chapter8.rst
 
 
 9. Strings, Continued

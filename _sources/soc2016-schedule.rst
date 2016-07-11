@@ -60,15 +60,15 @@ See the `Course Overview </runestone/static/thinkcspy/course-overview.html>`_ fo
 +--------+--------+---------------------------------------------------------------------+
 | 7      | 7/25   | Reading: `12. Dictionaries`_                                        |
 |        |        +---------------------------------------------------------------------+
-|        |        | Assignment(s): `Exercises 12`_                                      |
+|        |        | Assignment(s): `Exercises 12`_, continue work on the `Problem Set`_ |
 |        +--------+---------------------------------------------------------------------+
 |        | 7/28   | Reading: `13. Classes and Objects – Basics`_                        |
 |        |        +---------------------------------------------------------------------+
-|        |        | Assignment(s): `Exercises 13`_                                      |
+|        |        | Assignment(s): `Exercises 13`_, continue work on the `Problem Set`_ |
 +--------+--------+---------------------------------------------------------------------+
 | 8      | 8/1    | Reading: `14. Classes and Objects – Digging a Little Deeper`_       |
 |        |        +---------------------------------------------------------------------+
-|        |        | Assignment(s): `Exercises 14`_                                      |
+|        |        | Assignment(s): `Exercises 14`_, finish the `Problem Set`_           |
 |        +--------+---------------------------------------------------------------------+
 |        | 8/1    | Problem Set due by midnight                                         |
 +--------+--------+---------------------------------------------------------------------+
