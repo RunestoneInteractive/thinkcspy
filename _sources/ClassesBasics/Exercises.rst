@@ -57,18 +57,19 @@ Exercises
                     print(p.distanceFromPoint(q))
 
 
-    #. Add a method ``reflect_x`` to Point which returns a new Point, one which is the
-       reflection of the point about the x-axis.  For example,
+    #. Add a method ``reflect_x`` to the class ``Point`` which returns a new ``Point``, one which is the
+       reflection of the point across the x-axis.  For example,
        ``Point(3, 5).reflect_x()`` is (3, -5)
 
        .. activecode:: ch_cl_02
 
-    #. (GRADED) Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point. For example, ::
+    #. (GRADED) Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point.  For example, ::
 
         >>> Point(4, 10).slope_from_origin()
         2.5
 
-    What cases will cause your method to fail? Return None when it happens.
+    What cases will cause your method to fail? Return None when it happens.  The equations
+    for calculating slope is **m = (Y2 - Y1) / (X2 - X1)**
 
     .. activecode:: classes_q3
 
