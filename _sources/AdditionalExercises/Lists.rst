@@ -129,8 +129,8 @@ Exercises
           # don't copy these tests into Vocareum
           from test import testEqual
 
-          testEqual(6, sum_evens([2,3,4]))
-          testEqual(0, sum_evens([]))
-          testEqual(8, sum_evens([0,7,2,4,2,1]))
-          testEqual(20, sum_evens([0,1,2,3,4,5,6,7,8,9]))
-          testEqual(52350, sum_evens(range(200,500)))
+          testEqual(sum_evens([2,3,4]), 6)
+          testEqual(sum_evens([]), 0)
+          testEqual(sum_evens([0,7,2,4,2,1]), 8)
+          testEqual(sum_evens([0,1,2,3,4,5,6,7,8,9]), 20)
+          testEqual(sum_evens(range(200,500)), 52350)
