@@ -110,4 +110,27 @@ Exercises
 
     #. (GRADED) Write a function to find the sum of all the even numbers in a list.
 
+       Normally we start you off by providing the function definition statement, e.g.:
+
+       .. code-block:: python
+
+          def launch_rockets(destination, num_passengers):
+              # your code here
+
+       But in this case we do not! So you will need to write that `def` line yourself. Make sure you give your function the name `sum_evens`, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
+
        .. activecode:: ex_9_7
+
+          # TODO
+          # define a function called sum_evens, which receives one argument, a list of numbers.
+          # your function should return the sum of all the even numbers in the list
+
+
+          # don't copy these tests into Vocareum
+          from test import testEqual
+
+          testEqual(6, sum_evens([2,3,4]))
+          testEqual(0, sum_evens([]))
+          testEqual(8, sum_evens([0,7,2,4,2,1]))
+          testEqual(20, sum_evens([0,1,2,3,4,5,6,7,8,9]))
+          testEqual(52350, sum_evens(range(200,500)))
