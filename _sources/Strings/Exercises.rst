@@ -62,7 +62,7 @@ Exercises
       testEqual(reverse("Python"), "nohtyP")
       testEqual(reverse(""), "")
 
-#. (GRADED) Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise)
+#. (GRADED) Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
 
    .. activecode:: ex_8_6
 

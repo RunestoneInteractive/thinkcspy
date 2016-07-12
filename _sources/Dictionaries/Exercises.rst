@@ -74,36 +74,36 @@ Exercises
 	   a.
 		  .. sourcecode:: python
 
-			  >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
-			  >>> d['banana']
+			>>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
+			>>> d['bananas']
 
 	   b.
 		  .. sourcecode:: python
 
-			  >>> d['oranges'] = 20
-			  >>> len(d)
+			>>> d['oranges'] = 20
+			>>> len(d)
 
 	   c.
 		  .. sourcecode:: python
 
-			  >>> 'grapes' in d
+			>>> 'grapes' in d
 
 	   d.
 		  .. sourcecode:: python
 
-			  >>> d['pears']
+			>>> d['pears']
 
 	   e.
 		  .. sourcecode:: python
 
-			  >>> d.get('pears', 0)
+			>>> d.get('pears', 0)
 
 	   f.
 		  .. sourcecode:: python
 
-			  >>> fruits = d.keys()
-			  >>> fruits.sort()
-			  >>> print(fruits)
+			>>> fruits = d.keys()
+			>>> sorted(fruits)
+			>>> print(fruits)
 
 	   g.
 		  .. sourcecode:: python
