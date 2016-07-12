@@ -117,7 +117,7 @@ Exercises
           def launch_rockets(destination, num_passengers):
               # your code here
 
-       But in this case we do not! So you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
+       But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
 
        .. activecode:: ex_9_7
 
