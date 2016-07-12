@@ -50,6 +50,7 @@ Exercises
    You will need to make use of the ``isalpha`` function, which can be used like this:
 
    .. highlight:: python
+   
       "a".isalpha() # => evaluates to True
       "3".isalpha() # => evaluates to False
       "&".isalpha() # => False
