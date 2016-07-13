@@ -20,7 +20,7 @@ For the pre-studio, we review logic, booleans, and conditionals.
 
 .. raw:: html
 
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/BzZJs8jHFhQ" frameborder="0" allowfullscreen></iframe></div>
+    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/SC3cMU9AONI" frameborder="0" allowfullscreen></iframe></div>
 
 Studio
 ------

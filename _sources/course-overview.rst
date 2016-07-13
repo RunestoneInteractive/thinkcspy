@@ -78,7 +78,7 @@ Academic honesty is an important focus of this course. Working with others to im
 
 - If you encounter a bug in your program, a classmate may look at your code to help you identify the source of your problem, but you may not look at the classmate’s code to find their solution to that problem.
 
-- You may search through sites such as Stack Overflow when trying to debug an error in your code, but you may not search online for solutions to your specific assignment.
+- You are encouraged to search through sites such as Stack Overflow when trying to debug an error in your code, but you may not search online for complete solutions to your specific assignment.
 
 - Do not post complete programs or functions on public Piazza posts or other course platforms. Post only snippets or isolated sections of code. If you need to post a complete program or function in order to get help, do so in a private message to the TFs or instructors.
 
