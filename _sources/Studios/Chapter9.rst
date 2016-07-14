@@ -11,7 +11,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
       # in a list of numbers, print every ith number
       def print_every(i, nums):
-          counter = 0;
+          counter = 0
           for i in nums:
               if counter % i == 0:
                   print(i)
@@ -39,6 +39,14 @@ Below are a handful of code snippets that are broken. See if you can fix them!
       group = [78, 71, 25, 84]
       testEqual(False, check_group(group))
 
+      # this group should also not be allowed inside the bar
+      group2 = [ 2, 99 ]
+      testEqual(False, check_group(group2))
+
+      # this loner is allowed
+      group3 = [ 99 ]
+      testEqual(True check_group(group3))
+
 
 2. When registering for an online account, users must create a password. For your service, you enforce the following rules on passwords: The password must contain at least one non-alphabetical character, and may not contain any spaces. The function below is supposed to check the validity of passwords. But! It's! Not! Working!
 
@@ -46,8 +54,8 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
       def password_checker(password):
           contains_non_alpha = False
-          
-          for (char in password):
+
+          for char in password:
               if char == " ":
                   return False
               else not char.isalpha():
