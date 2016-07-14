@@ -46,7 +46,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
       def password_checker(password):
           contains_non_alpha = False
-          ​
+          
           for (char in password):
               if char == " ":
                   return False
