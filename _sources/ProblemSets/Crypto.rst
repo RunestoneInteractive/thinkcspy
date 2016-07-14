@@ -18,15 +18,11 @@ What do those mysterious names mean? Read on to find out!
 Setup
 -----
 
-For this problem set, you’ll be writing code locally on your own machine,
-and running your code at the command line.
+For this problem set, you’ll be writing code locally on your own machine, and running your code at the command line.
 
-Open up a terminal window on your computer, and use the ``cd`` command
-to navigate to the folder where you save documents for this class.
-If you have not yet created such a folder, go ahead and create one now.
+Open up a terminal window on your computer, and use the ``cd`` command to navigate to the folder where you save documents for this class. If you have not yet created such a folder, go ahead and create one now.
 
-Once you are inside your directory for the class,
-create a new sub-directory called ``python-crypto/``, and then ``cd`` into it:
+Once you are inside your directory for the class, create a new sub-directory called ``python-crypto/``, and then ``cd`` into it:
 
 ::
 
@@ -34,20 +30,13 @@ create a new sub-directory called ``python-crypto/``, and then ``cd`` into it:
   $ cd python-crypto
 
 
-Remember that in the example above, you should not actually type the dollar sign ``$``.
-We use that symbol just as a convention to indicate that
-the example takes place at the command-line prompt in a terminal window.
+Remember that in the example above, you should not actually type the dollar sign ``$``. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.
 
 
 Initials
 --------
 
-In a file ``initials.py``, write a program that prompts the user to
-enter their full name at the command line, and then prints out their
-capitalized initials. You may assume that the user’s input will contain
-only letters (uppercase and/or lowercase) plus single spaces between
-words. This means you don’t have to worry about Conan O’Brien, T.S.
-Eliot, or Cee-Lo Green.
+In a file ``initials.py``, write a program that prompts the user to enter their full name at the command line, and then prints out their capitalized initials. You may assume that the user’s input will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.
 
 Here are some example input/output pairs:
 
@@ -72,44 +61,35 @@ Your program should work like this:
     Ozzie Smith
     OS
 
-Just to be clear about the example above: the user typed the first line,
-then the program printed the second line asking for their name,
-then the user typed the third line ("Ozzie Smith"), and finally,
-the program printed the initials ("OS").
+Just to be clear about the example above:
+
+- The user typed the first line, causing the program to run.
+- Then, the program printed the second line asking for their name.
+- Then the user typed the third line ("Ozzie Smith").
+- Finally, the program printed the initials ("OS").
 
 Notes, Tips and Hints
 ~~~~~~~~~~~~~~~~~~~~~
 
--  Note that our output is on a single line. This means you'll need to collect the initials
-    as you find them, rather than printing each one out. This will look similar to the accumulator
-    pattern that we discussed in Chapter 5, but with strings instead of integers.
+- Note that our output is on a single line. This means you'll need to collect the initials as you find them, rather than printing each one out. This will look similar to the accumulator pattern that we discussed in Chapter 5, but with strings instead of integers.
 
--  Even if the user types their name with lower case letters, you should always capitalize the initials.
-    For example, if the user types. "ozzie smith", you should still respond with "OS".
+- Even if the user types their name with lower case letters, you should always capitalize the initials. For example, if the user types. "ozzie smith", you should still respond with "OS".
 
--  Remember that we’ve been using Python 3 in this class. So make sure you type ``python3 initials.py``,
-    rather than simply ``python initials.py``, which would run the Python 2 interpreter.
+- Remember that we’ve been using Python 3 in this class. So make sure you type ``python3 initials.py``, rather than simply ``python initials.py``, which would run the Python 2 interpreter.
 
 
 Caesar
 ------
 
-In chapter 9, you completed an exercise that had you write a function
-called ``rot13``, which used Caesar’s cipher to encrypt a message.
-If you need a refresher, this is want the exercise said:
+In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used Caesar’s cipher to encrypt a message. If you need a refresher, this is want the exercise said:
 
     Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
 
-The idea is to encrypt the message character by character,
-rotating each letter 13 places to the right. So for example,
-**a** becomes **n**, **b** becomes **o**, **c** becomes **p** and so on.
-At the end of the alphabet we wrap around, so that **m** shifts to **z** and then **n** shifts to **a**.
+The idea is to encrypt the message character by character, rotating each letter 13 places to the right. So for example, **a** becomes **n**, **b** becomes **o**, **c** becomes **p** and so on. At the end of the alphabet we wrap around, so that **m** shifts to **z** and then **n** shifts to **a**.
 
 The end result is a *super secret coded message* that that looks like gibberish to any outsiders.
 
-We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, rather than just 13. Ultimately, users will be able to type a message in the terminal,
-and specify a rotation amount (13, 4, 600, etc),
-and your program will print the resulting encrypted message.
+We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, rather than just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
 
 Your program will run like this:
 
@@ -393,8 +373,7 @@ Importing
 
 But rather than copy and paste the helper functions into ``vigenere.py`` let's use a better approach. After all, the whole point of reusing code is to avoid repeating yourself.
 
-Rather than paste or retype those functions into your file, you can simply ``import`` them. You've use ``import`` before to use code written by other people, such as the ``math`` and ``random`` modules. It's also possible (and
-quite useful!) to create and import your own code.
+Rather than paste or retype those functions into your file, you can simply ``import`` them. You've use ``import`` before to use code written by other people, such as the ``math`` and ``random`` modules. It's also possible (and quite useful!) to create and import your own code.
 
 To import the helper functions from ``caesar.py``, you simply need to add the following line at the top of ``vigenere.py``:
 
