@@ -15,6 +15,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
           for i in nums:
               if counter % i == 0:
                   print(i)
+              counter += 1
 
       print_every(3, [4, 7, 2, 8, 1, 0, 9, 6])
       # should print 4, then print 8, then print 9
@@ -37,15 +38,15 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
       # this group should not be allowed inside the bar
       group = [78, 71, 25, 84]
-      testEqual(False, check_group(group))
+      testEqual(check_group(group), False)
 
       # this group should also not be allowed inside the bar
       group2 = [ 2, 99 ]
-      testEqual(False, check_group(group2))
+      testEqual(check_group(group2), False)
 
       # this loner is allowed
       group3 = [ 99 ]
-      testEqual(True check_group(group3))
+      testEqual(check_group(group3), True)
 
 
 2. When registering for an online account, users must create a password. For your service, you enforce the following rules on passwords: The password must contain at least one non-alphabetical character, and may not contain any spaces. The function below is supposed to check the validity of passwords. But! It's! Not! Working!
