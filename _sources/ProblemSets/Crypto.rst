@@ -382,38 +382,47 @@ Reusing your Caesar code
 
 You probably noticed that Vigenere is very similar to Caesar. The only difference is that the rotation amount varies throughout the course of the message.
 
-Whenever you find yourself in a situation like this--faced with a coding task that is very similar to one you did previously--your instinct should be to sniff around for ways to reuse the code you have already written.
+Whenever you find yourself in a situation like this--faced with a coding task that is very similar to one you did previously--your instinct should be to sniff around for ways to reuse the code you have already written. Ideally, all the work that is required by both tasks should be factored out into reusable components (like functions).
 
-In this case, the majority of the logic that Vigenere has in common with Caesar is encapsulated in those two helper functions you wrote, ``alphabet_position`` and ``rotate_character``. Indeed, that is why we intentionally guided you down the path of writing and those functions. You are going to find them equally helpful for implementing Vigenere.
+In this case, the majority of the logic that Vigenere has in common with Caesar is encapsulated in those two helper functions you wrote, ``alphabet_position`` and ``rotate_character``. Indeed, that is why we intentionally guided you down the path of writing and those functions. You are going to find both of those functions equally helpful for implementing Vigenere.
+
+Go ahead and copy / paste those functions into ``vigenere.py`` so you can use them. (In reality, copy / pasting is not a very smart thing to do here, and there is a better way, which you will see farther down in this assignemnt. But for now, just do it.)
 
 Importing
 ~~~~~~~~~
 
-But rather than copy and paste them into ``vigenere.py`` let's use a better approach.
+But rather than copy and paste the helper functions into ``vigenere.py`` let's use a better approach. After all, the whole point of reusing code is to avoid repeating yourself.
 
-You've imported modules such as ``math`` and ``random`` before. These modules were provided for you. It's also possible (and
-quite useful!) to create and import your own modules.
+Rather than paste or retype those functions into your file, you can simply ``import`` them. You've use ``import`` before to use code written by other people, such as the ``math`` and ``random`` modules. It's also possible (and
+quite useful!) to create and import your own code.
 
-Let's import the functions we want to reuse from ``caesar.py``. Put the following line at the top of ``vigenere.py``.
+To import the helper functions from ``caesar.py``, you simply need to add the following line at the top of ``vigenere.py``:
 
 .. sourcecode:: python
 
     from caesar import alphabet_position, rotate_character
 
-This ``import`` syntax may be new to you. It says that we want to import code from a module ``caesar``, but that
-we only want to import particular pieces of that module, in this case the functions ``alphabet_position`` and ``rotate_character``.
-Since ``caesar.py`` is in the same directory as ``vigenere.py``, the work required to import its code
-as a module is much simpler than you'll usually encounter when using your own modules. You can read up on creating
-modules in Python in the `Python module documentation`_.
+This says that we want to import code from a module ``caesar``, but that we only want to import particular pieces of that module, in this case the functions ``alphabet_position`` and ``rotate_character``. Since ``caesar.py`` is in the same directory as ``vigenere.py``, the work required to import its code as a module is much simpler than you'll usually encounter when using your own modules. If you're curious you can read up more about creating modules in Python in the `Python module documentation`_.
 
-Even though we only have one line of code (the import statement) in our file, let's run it to make sure Python is able to
-find and import our Caesar code.
+Now we should be able to use those functions! Add a few lines to your ``vigenere.py`` So that it looks like this:
+
+.. sourcecode:: python
+
+    from caesar import alphabet_position, rotate_character
+
+    print(alphabet_position("z"))
+    print(rotate_character("z", 1))
+
+And then run it:
 
 ::
-    $ python3 vigenere.py
 
-*Note:* If you run ``vigenere.py`` at this point and see output, that means you left test code and print statements
-in ``caesar.py``. Go back and clean them up, so only the 4 functions you were to have written remain.
+    $ python vigenere.py
+    25
+    a
+
+*Note:* If you see additional output before the 25, that is because you left some test code and/or print statements
+in ``caesar.py``. Go back and clean them up, so only the 3 functions you were to have written remain.
 
 *Another note:* If you receive an error when executing the file, make sure that you're in the correct directory, and
 that both of your files are in that directory.
