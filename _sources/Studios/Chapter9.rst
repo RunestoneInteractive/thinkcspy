@@ -7,7 +7,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
 #. The function below, ``print_every(i, nums)`` receives a list of numbers ``nums``, along with an integer ``i``. The function is supposed to print every ``ith`` element from the list. But it's not working!
 
-  .. active_code:: studio9_0
+  .. activecode:: studio9_0
 
     # in a list of numbers, print every ith number
     def print_every(i, nums):
@@ -22,7 +22,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
 #. You are the bouncer outside the door of a *seniors only* bar. People must be 70 or older, otherwise they are not allowed in. When a group of friends arrives, your job is to determine whether to accept or reject the group. The function below, ``check_group``, is supposed to return a boolean indicating whether or not the group is allowed inside. But it's not working!
 
-  .. active_code:: studio9_1
+  .. activecode:: studio9_1
 
     # return True if every member of the group is at least 70, otherwise return False
     def check_group(ages):
@@ -42,7 +42,7 @@ Below are a handful of code snippets that are broken. See if you can fix them!
 
 #. When registering for an online account, users must create a password. For your service, you enforce the following rules on passwords: The password must contain at least one non-alphabetical character, and may not contain any spaces. The function below is supposed to check the validity of passwords. But! It's! Not! Working!
 
-  .. active_code:: studio9_2
+  .. activecode:: studio9_2
 
     def password_checker(password):
         contains_non_alpha = False
