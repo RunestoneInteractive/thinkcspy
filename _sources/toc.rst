@@ -194,6 +194,7 @@ Table of Contents
    Strings/Summary.rst
    Strings/Glossary.rst
    Strings/Exercises.rst
+   Studios/Chapter9.rst
 
 
 10. Lists
