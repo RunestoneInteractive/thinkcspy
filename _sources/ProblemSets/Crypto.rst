@@ -1,4 +1,3 @@
-This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
 Problem Set: Crypto
 ===================
@@ -13,7 +12,7 @@ You will actually be creating 3 separate programs:
 
 What do those mysterious names mean? Read on to find out!
 
-
+    *NOTE* This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
 Setup
 -----
