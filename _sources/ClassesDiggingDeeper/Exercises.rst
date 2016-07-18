@@ -77,13 +77,15 @@ Exercises
            Add a method ``area`` to the Rectangle class that returns the area of any instance::
 
               r = Rectangle(Point(0, 0), 10, 5)
-              test(r.area(), 50)
+              testEqual(r.area(), 50)
 
            .. activecode:: classes_q3
 
         .. tab:: Answer
 
             .. activecode:: ch_cl2_q3answer
+
+                from test import testEqual
 
                 class Point:
                     """ Point class for representing and manipulating x,y coordinates. """
@@ -115,12 +117,21 @@ Exercises
                     def area(self):
                         return self.width * self.height
 
+                r = Rectangle(Point(0, 0), 10, 5)
+                testEqual(r.area(), 50)
+
+                r1 = Rectangle(Point(0,0), 4, 5)
+                testEqual(r1.area(), 20)
+
+                r2 = Rectangle(Point(0,0), 12, 3)
+                testEqual(r2.area(), 36)
+
 
 #. Write a ``perimeter`` method in the Rectangle class so that we can find
    the perimeter of any rectangle instance::
 
       r = Rectangle(Point(0, 0), 10, 5)
-      test(r.perimeter(), 30)
+      testEqual(r.perimeter(), 30)
 
 
    .. activecode:: ch_cl2_q4
@@ -131,21 +142,23 @@ Exercises
 
         .. tab:: Question
 
-           Write a ``transpose`` method in the Rectangle class that swaps the width
-           and the height of any rectangle instance::
+          Write a ``transpose`` method in the Rectangle class that swaps the width
+          and the height of any rectangle instance::
 
               r = Rectangle(Point(100, 50), 10, 5)
-              test(r.width, 10)
-              test(r.height, 5)
+              testEqual(r.width, 10)
+              testEqual(r.height, 5)
               r.transpose()
-              test(r.width, 5)
-              test(r.height, 10)
+              testEqual(r.width, 5)
+              testEqual(r.height, 10)
 
-           .. activecode:: classes_q5
+          .. activecode:: classes_q5
 
         .. tab:: Answer
 
             .. activecode:: ch_cl2_q5answer
+
+                from test import testEqual
 
                 class Point:
                     """ Point class for representing and manipulating x,y coordinates. """
@@ -179,20 +192,27 @@ Exercises
                         self.width = self.height
                         self.height = temp
 
+                #test methods
+                r = Rectangle(Point(100, 50), 10, 5)
+                testEqual(r.width, 10)
+                testEqual(r.height, 5)
+                r.transpose()
+                testEqual(r.width, 5)
+                testEqual(r.height, 10)
 
 #. (GRADED) Write a new method in the Rectangle class to test if a Point falls within the rectangle.  For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
 
       r = Rectangle(Point(0, 0), 10, 5)
-      test(r.contains(Point(0, 0)), True)
-      test(r.contains(Point(3, 3)), True)
-      test(r.contains(Point(3, 7)), False)
-      test(r.contains(Point(3, 5)), False)
-      test(r.contains(Point(3, 4.99999)), True)
-      test(r.contains(Point(-3, -3)), False)
+      testEqual(r.contains(Point(0, 0)), True)
+      testEqual(r.contains(Point(3, 3)), True)
+      testEqual(r.contains(Point(3, 7)), False)
+      testEqual(r.contains(Point(3, 5)), False)
+      testEqual(r.contains(Point(3, 4.99999)), True)
+      testEqual(r.contains(Point(-3, -3)), False)
 
    .. activecode:: classes_q6
 
-        from test import test
+        from test import testEqual
 
         class Point:
             """Point class for representing and manipulating x,y coordinates. """
@@ -225,12 +245,12 @@ Exercises
                 # Your code here!
 
         r = Rectangle(Point(0, 0), 10, 5)
-        test(r.contains(Point(0, 0)), True)
-        test(r.contains(Point(3, 3)), True)
-        test(r.contains(Point(3, 7)), False)
-        test(r.contains(Point(3, 5)), False)
-        test(r.contains(Point(3, 4.99999)), True)
-        test(r.contains(Point(-3, -3)), False)
+        testEqual(r.contains(Point(0, 0)), True)
+        testEqual(r.contains(Point(3, 3)), True)
+        testEqual(r.contains(Point(3, 7)), False)
+        testEqual(r.contains(Point(3, 5)), False)
+        testEqual(r.contains(Point(3, 4.99999)), True)
+        testEqual(r.contains(Point(-3, -3)), False)
 
 #.
 
@@ -246,6 +266,8 @@ Exercises
         .. tab:: Answer
 
             .. activecode:: ch_cl2_answer7
+
+                from test import testEqual
 
                 class Point:
                     """ Point class for representing and manipulating x,y coordinates. """
@@ -279,6 +301,14 @@ Exercises
                         d = (self.width**2 + self.height**2) ** 0.5
                         return d
 
+                r = Rectangle(Point(0, 0), 10, 5)
+                testEqual(r.diagonal(), 11.1803398875)
+
+                r1 = Rectangle(Point(0,0), 12, 4)
+                testEqual(r1.diagonal(), 12.6491106407)
+
+                r2 = Rectangle(Point(0,0), 1,2)
+                testEqual(r2.diagonal(), 2.2360679775)
 
 #.  In games, we often put a rectangular "bounding box" around our sprites in
     the game.  We can then do *collision detection* between, say, bombs and
