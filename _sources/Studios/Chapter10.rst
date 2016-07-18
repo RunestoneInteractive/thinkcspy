@@ -27,7 +27,8 @@ Let's sort the list ``[3, 5, 2]``:
 - Done!
 
 
-The pseudo code for the algorithm is as fallows:
+The pseudo code for the algorithm is as follows:
+
 ... codeblock:: pseudocode
     function bubbleSort (list)
         nswaps = 0  ## Number of swaps made
