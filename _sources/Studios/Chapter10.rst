@@ -32,13 +32,14 @@ The pseudo code for the algorithm is as follows:
 ::
 
     function bubbleSort (list)
-        nswaps = 0  ## Number of swaps made
-        while nswaps isn't zero
-            nswaps = 0
+        is_sorted = False
+        while is_sorted is False
+            nswaps = 0 ## Number of swaps made
             for each pair, a b,  of sequential numbers in list
                 if a is greater than b
                     swap a and b
                     nswaps = nswaps + 1
+            if nswaps is still 0, then set is_sorted to True
         return list
 
 
