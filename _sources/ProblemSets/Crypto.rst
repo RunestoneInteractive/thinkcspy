@@ -171,9 +171,7 @@ Technique 1 looks something like this:
     25
     ... etc
 
-That looks complicated but its actually very easy. Try typing `python3` into your terminal and you'll see.
-Technique 1 is definitely recommended, because writing a bunch of print statements
-starts to get annoying very quickly.
+That looks complicated but its actually very easy. Try typing ``python3`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing a bunch of print statements starts to get annoying very quickly.
 
 But if you prefer Technique 2, you should see results something like this:
 
@@ -230,9 +228,9 @@ A few important things to notice:
 
 - For non-alphabetical characters, you should ignore the ``rot`` argument and simply return ``char`` untouched. For example, see ``"!"`` and ``"6"`` in the table above.
 
-You will find the following functions helpful
+You will find the following functions helpful:
 
-- your own ``alphabet_position`` function
+- Your own ``alphabet_position`` function. For guidance, you might want to re-read about how `Functions Can Call Other Functions`_
 
 - The ``ord`` function, which returns the ASCII value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
 
@@ -596,6 +594,7 @@ Then, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rath
 
 Finally, as usual, click Submit!
 
+.. _Functions Can Call Other Functions: https://learn.launchcode.org/runestone/static/thinkcspy/Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
