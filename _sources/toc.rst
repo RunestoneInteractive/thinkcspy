@@ -221,6 +221,7 @@ Table of Contents
    Lists/AppendversusConcatenate.rst
    Lists/Listsandforloops.rst
    AdditionalExercises/Lists.rst
+   Studios/Chapter10.rst
 
 
 11. Lists, Continued
