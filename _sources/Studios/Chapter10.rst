@@ -1,6 +1,47 @@
 Studio: Bubble Sort
 ===================
 
+One rite-of-passage in your programming life is to learn a bunch of canonical "sorting" algorithms: procedures for taking a jumbled list of numbers (or anything "sortable"), and putting all the numbers in order.
+
+The simplest such algorithm is called Bubble Sort.
+
+The Algorithm
+-------------
+
+The main idea of Bubble Sort is to swap any two successive elements in a list if they are not in order.
+
+For example, the list ``[2, 1]`` would be sorted by swapping the ``1`` and ``2`` yielding ``[1, 2]``.
+
+For a larger list, the swapping is done from front to back with each sequential pair.
+
+Let's sort the list ``[3, 5, 2]``:
+
+- We first take the ``3, 5`` pair and compare them. Since ``3 < 5``, we don't do anything.
+- Our list is still ``[3, 5, 2]``.
+- The next pair is ``5, 2``. Since ``5 > 2`` we swap them in the list.
+- Our list is now ``[3, 2, 5]``.
+- Starting from the beginning again, we have the pair ``3, 2``, thus we swap again.
+- Our list is now ``[2, 3, 5]``.
+- At this point, the list is fully sorted, but we don't know that until we actually check.
+- So we start from the beginning yet again, but this time, we iterate over the entire list without ever having to perform any swaps. This is how we know the list is fully sorted.
+- Done!
+
+
+The pseudo code for the algorithm is as fallows:
+... codeblock:: pseudocode
+    function bubbleSort (list)
+        nswaps = 0  ## Number of swaps made
+        while nswaps isn't zero
+            nswaps = 0
+            for each pair, a b,  of sequential numbers in list
+                if a is greater than b
+                    swap a and b
+                    nswaps = nswaps + 1
+        return list
+
+
+Your job is to turn that pseudocode into real code!
+
 .. activecode:: studio9_0
 
     def bubble_sort(lst):
