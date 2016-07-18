@@ -29,7 +29,7 @@ Let's sort the list ``[3, 5, 2]``:
 
 The pseudo code for the algorithm is as follows:
 
-::
+.. sourcecode::
 
     function bubbleSort (list)
         nswaps = 0  ## Number of swaps made
