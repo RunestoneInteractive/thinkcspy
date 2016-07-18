@@ -29,7 +29,8 @@ Let's sort the list ``[3, 5, 2]``:
 
 The pseudo code for the algorithm is as follows:
 
-... codeblock:: pseudocode
+::
+
     function bubbleSort (list)
         nswaps = 0  ## Number of swaps made
         while nswaps isn't zero
@@ -47,7 +48,7 @@ Your job is to turn that pseudocode into real code!
 
     def bubble_sort(lst):
        """Sorts a list using bubble sort.
-          Deos not alter the original list but return a sorted version of it.
+          Does not alter the original list but returns a sorted version of it.
        """
        # TODO your code here
 
