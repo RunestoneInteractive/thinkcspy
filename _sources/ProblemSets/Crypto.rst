@@ -4,13 +4,14 @@ Problem Set: Crypto
 
 In contrast with the small isolated exercises you have been doing so far, the goal of this Problem Set assignment is to give you the opportunity to create something a little larger and more complicated, composed of multiple parts working together, which combine together to create a complete working program that interacts with a user.
 
-You will actually be creating 3 separate programs:
+This assignment consists of 4 parts:
 
-1. Initials
-2. Caesar
-3. Vigenere
+1. **Initials**: a small exercise to get warmed up for the main event
+2. **Caesar**: an encryption algorithm
+3. **Vigenere**: an even cooler encryption algorithm
+4. **Making Some Improvements**: a handful of small adjustments to add some features and improve the quality of your code
 
-What do those mysterious names mean? Read on to find out!
+Ready? Let's do this!
 
     *NOTE* This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
@@ -22,16 +23,16 @@ Before starting work on this, you should have completed the previous section, `L
 Setup
 -----
 
-For this problem set, you’ll be writing code locally on your own machine, and running your code at the command line.
+For this assignment, you’ll be writing code locally on your own machine, and running your code at the command line.
 
 Open up a terminal window on your computer, and use the ``cd`` command to navigate to the folder where you save documents for this class. If you have not yet created such a folder, go ahead and create one now.
 
-Once you are inside your directory for the class, create a new sub-directory called ``python-crypto/``, and then ``cd`` into it:
+Once you are inside your directory for the class, create a new sub-directory called ``crypto/``, and then ``cd`` into it:
 
 ::
 
-  $ mkdir python-crypto
-  $ cd python-crypto
+  $ mkdir crypto
+  $ cd crypto
 
 
 Remember that in the example above, you should not actually type the dollar sign ``$``. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.
@@ -40,23 +41,94 @@ Remember that in the example above, you should not actually type the dollar sign
 Part 1: Initials
 ----------------
 
-In a file ``initials.py``, write a program that prompts the user to enter their full name at the command line, and then prints out their capitalized initials. You may assume that the user’s input will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.
+Create a new file called ``initials.py``. Open up that file in a text editor, and complete the following function:
 
-Here are some example input/output pairs:
+.. sourcecode:: python
 
-+--------------------+----------+
-| Input              | Output   |
-+====================+==========+
-| Ozzie Smith        | OS       |
-+--------------------+----------+
-| bonnie blair       | BB       |
-+--------------------+----------+
-| George             | G        |
-+--------------------+----------+
-| Daniel Day Lewis   | DDL      |
-+--------------------+----------+
+    def get_initials(fullname):
+        """ Given a person's name, return the person's initials (uppercase) """
+        # TODO your code here
 
-Your program should work like this:
+Your function will receive one argument, ``fullname``, a string representing someone's name, and should return a string with that name's capitalized initials. You may assume that the name will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.
+
+Here are some examples of what your function should return for various ``fullname`` arguments:
+
++------------------+-----------------+
+| ``fullname``     | return value    |
++==================+=================+
+| Ozzie Smith      | OS              |
++------------------+-----------------+
+| bonnie blair     | BB              |
++------------------+-----------------+
+| George           | G               |
++------------------+-----------------+
+| Daniel Day Lewis | DDL             |
++------------------+-----------------+
+
+If you were to invoke your function, it would look something like this:
+
+.. sourcecode:: python
+
+    answer = get_initials("Ozzie Smith")
+    print("The initials of 'Ozzie Smith' are", answer)
+    # => prints "The initials of 'Ozzie Smith' are OS"
+
+Notes, Tips and Hints
+~~~~~~~~~~~~~~~~~~~~~
+
+- You'll need to collect the initials as you find them, and return them all together at the end. You may want to re-read about `The Accumulator Pattern`_.
+
+- Even if the name starts with a lowercase letter, you should always capitalize the initials. For example, if ``fullname == "ozzie smith"``, you should still return ``"OS"``.
+
+Testing
+~~~~~~~
+
+When you are finished writing your ``get_initials`` function, you should test it
+to make sure it works. There are a few ways to do this:
+
+1. You can import your script into a REPL (Python shell), and then feed various inputs into your function.
+2. You can just add some print statements (like the example above) to ``initials.py`` script.
+
+Technique 1 looks something like this:
+
+::
+
+    $ python3
+    Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> from initials import get_initials
+    >>> get_initials("Ozzie Smith")
+    OS
+    >>> get_initials("bonnie blair")
+    BB
+    >>> get_initials("Daniel Day Lewis")
+    DDL
+    ... etc
+    quit()
+
+That looks complicated but its actually very easy. Try typing ``python3`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing and changing bunch of print statements starts to get annoying very quickly.
+
+But if you prefer Technique 2, here's how that works: Simply add print statements to your file, and then run your script on the command-line:
+
+::
+
+    $ python3 caesar.py
+    The initials of 'Ozzie Smith' are OS
+    The initials of 'bonnie blair' are BB
+    The initials of 'Daniel Day Lewis' are DDL
+    ... etc
+
+After running your script, just test by hand that the output matches what you expected to see.
+
+    *NOTE* Remember that we’ve been using Python 3 in this class. So when you try to run your program, make sure you type ``python3 initials.py``, rather than simply ``python initials.py``, which would run the Python 2 interpreter.
+
+Either way, whether using the REPL or print statements, make sure to test your function agains a healthy variety of inputs.
+
+Make It Interactive
+~~~~~~~~~~~~~~~~~~~~
+
+Just for fun, let's turn this into an interactive program that a user can run from the terminal. All you have to do is add an ``input`` statement to ask the user for his/her name, and then a ``print`` statement to report the results back to him/her. Your program should work like this:
 
 ::
 
@@ -72,14 +144,6 @@ Just to be clear about the example above:
 - Then the user typed the third line ("Ozzie Smith").
 - Finally, the program printed the initials ("OS").
 
-Notes, Tips and Hints
-~~~~~~~~~~~~~~~~~~~~~
-
-- Note that our final output "OS" is on a single line. This means you'll need to collect the initials as you find them, rather than printing each one out. This will look similar to the accumulator pattern that we discussed in Chapter 5, but with strings instead of integers.
-
-- Even if the user types their name with lower case letters, you should always capitalize the initials. For example, if the user types. "ozzie smith", you should still respond with "OS".
-
-- Remember that we’ve been using Python 3 in this class. So make sure you type ``python3 initials.py``, rather than simply ``python initials.py``, which would run the Python 2 interpreter.
 
 
 Part 2: Caesar
@@ -87,7 +151,7 @@ Part 2: Caesar
 
 Now it's time for some encryption!
 
-In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used Caesar’s cipher to encrypt a message. If you need a refresher, this is want the exercise said:
+In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used the `Caesar Cipher`_ to encrypt a message. If you need a refresher, this is want the exercise said:
 
     Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
 
@@ -97,7 +161,7 @@ The end result is a *super secret coded message* that that looks like gibberish 
 
 We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, rather than just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
 
-Your program will run like this:
+The final interactive program will run like this:
 
 ::
 
@@ -142,54 +206,11 @@ values.
 | Z                  | 25           |
 +--------------------+--------------+
 
-If you were to invoke your function, it would look something like this:
 
-.. code-block:: python
 
-    c_pos = alphabet_position("C")
-    print("The letter C is at position", c_pos)
-    # => "The letter C is at position 2"
+Don't worry about what might happen if somebody tries to use your function with an input parameter that is something other than a single letter, like ``alphabet_position("grandpa")``
 
-Don't worry about what might happen if somebody tries to use your function with an input parameter that is
-something other than a single letter, like ``alphabet_position("grandpa")``
-
-When you are finished writing your ``alphabet_position`` function, you should test it
-to make sure it works. There are a few ways to do this:
-
-1. You can import your script into a REPL (Python shell), and then feed various inputs into your function.
-2. You can just add some print statements (like the example above) to your caesar.py script.
-
-Technique 1 looks something like this:
-
-::
-
-    $ python3
-    Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
-    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> from caesar import alphabet_position
-    >>> alphabet_position("c")
-    2
-    >>> alphabet_position("C")
-    2
-    >>> alphabet_position("z")
-    25
-    ... etc
-
-That looks complicated but its actually very easy. Try typing ``python3`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing a bunch of print statements starts to get annoying very quickly.
-
-But if you prefer Technique 2, you should see results something like this:
-
-::
-
-    $ python3 caesar.py
-    The letter C is at position 2
-    The letter c is at position 2
-    The letter z is at position 25
-    ... etc
-
-Either way, make sure to test your function with a healthy variety of inputs.
-
+When you are finished, you should test your function to make sure it works.
 
 rotate_character
 ~~~~~~~~~~~~~~~~
@@ -233,9 +254,9 @@ A few important things to notice:
 
 - For non-alphabetical characters, you should ignore the ``rot`` argument and simply return ``char`` untouched. For example, see ``"!"`` and ``"6"`` in the table above.
 
-You will find the following functions helpful:
+You should make use of the following functions:
 
-- Your own ``alphabet_position`` function. For guidance, you might want to re-read about how `Functions Can Call Other Functions`_
+- Your own ``alphabet_position`` function. If feeling confused, you may want to re-read about how `Functions Can Call Other Functions`_
 
 - The ``ord`` function, which returns the ASCII value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
 
@@ -258,8 +279,7 @@ At this point your caesar.py file should look like this:
         # more beautiful code
 
 
-Now let's get to the heart of the matter. Write one more function called ``encrypt(text, rot)``, which receives as input a string and an integer. This is just like the ``rot13`` function, but instead of hardcoding the number 13, your function should receive a second argument, `rot` which specifies the rotation amount. Your function should return
-the result of rotating each letter in the ``text`` by ``rot`` places to the right.
+Now let's get to the heart of the matter. Write one more function called ``encrypt(text, rot)``, which receives as input a string and an integer. This is just like the ``rot13`` function, but instead of hardcoding the number 13, your function should receive a second argument, `rot` which specifies the rotation amount. Your function should return the result of rotating each letter in the ``text`` by ``rot`` places to the right.
 
 Here are some example input values, with the corresponding return values.
 
@@ -285,7 +305,7 @@ A few things to note:
 
 When you're finished, you should of course test your function against a bunch of different inputs and make sure it works.
 
-Putting it all Together
+Make It Interactive
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 You're almost done with Caesar! The last step is simply to write some ``print`` and ``input`` statements so the user can run your program from the terminal. Remember, you should ask the user for their message and rotation amount, and then print the encrypted message:
@@ -299,7 +319,6 @@ You're almost done with Caesar! The last step is simply to write some ``print`` 
     5
     Mjqqt, Btwqi!
 
-As usual, you should write the same exact input prompts as shown above, otherwise the grading script will get confused and mark your solution as incorrect.
 
 Part 3: Vigenere
 ----------------
@@ -376,7 +395,7 @@ Now that you have your helper functions, go ahead and write a new version of the
 
 As usual, don't move on until you have tested your function against a lot of different inputs and seen the results you expect.
 
-Putting it all together
+Make It Interactive
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally, add the appropriate ``print`` and ``input`` statements so that your program behaves as specified:
@@ -436,9 +455,7 @@ This says that we want to import code from a module ``helpers``, but that we onl
 
 Now we should be able to use those functions! Try running ``python3 caesar.py`` again, and you should find that it works just like it did before.
 
-  *NOTE* In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``.
-
-  *ANOTHER NOTE* The method we are using here is a little simpler than the way this is normally done. For larger projects, where the structure is a tree of folders within folders, there is a slightly more involved procedure for reusing code, which does not require both modules to live together in the same folder. If you're curious, you can read up more about creating modules in Python in the `Python module documentation`_.
+    *NOTE* In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``. Also note that the technique we are using here is a little simpler than the way this is normally done. For larger projects, where the structure is a tree of folders within folders, there is a slightly more involved procedure for reusing code, which does not require both modules to live together in the same folder. If you're curious, you can read up more about creating modules in Python in the `Python module documentation`_.
 
 Once you have Caesar working, do the same thing for Vigenere: simply delete the two helper functions, and ``import`` them from ``helpers.py``.
 
@@ -488,7 +505,7 @@ Now run your program, and you should see output like this:
 
 ::
 
-    python3 caesar.py 5
+    $ python3 caesar.py 5
     I know that these are the words the user typed on the command line:  ['caesar.py', '5']
     Type a message:
     ... etc
@@ -497,9 +514,9 @@ The important part is the second line.
 
 Notice that:
 
+- The word "python3" is **not** included.
 - The first item, ``argv[0]`` is always the name of your script (in this case, ``'caesar.py'``).
 - The other arguments follow. (In this case, we only have one additional argument, ``'5'``).
-- The word "python3" is not included.
 
 Ok! Now you have all the tools you need to implement this feature. The ``argv`` variable is just a normal list like any other. The rotation number (5 or whatever it is), is sitting there inside that list, waiting for you.
 
@@ -509,88 +526,111 @@ To be clear, for this assignment, we only require that you update ``caesar.py`` 
 New Feature: Validation
 -----------------------
 
-Let's make one more improvement.
-
-You may or may not have noticed that if the user types certain things, your program will freak out.
+Let's make one more improvement. You may or may not have noticed that if the user types certain things, your program will freak out.
 
 There are two main cases to handle:
 
 1. User fails to type a number when specifying rotation amount.
 
-    ::
+   ::
 
-        python3 caesar.py grandpa
+       python3 caesar.py grandpa
 
-    If the user does not gives you something like "grandpa" instead of "5", your program will crash, probably with this error:
+   If the user gives you something like "grandpa" instead of "5", your program will crash, probably with this error:
 
-    ::
+   ::
 
-        ValueError: invalid literal for int() with base 10: 'grandpa' on line X
+       ValueError: invalid literal for int() with base 10: 'grandpa' on line X
 
 2. User fails to provide a command-line argument.
 
-    Now that you are expecting the user to specify the rotation amount via a command-line argument, there is a danger that the user will fail to provide the argument, i.e.:
+   Now that you are expecting the user to specify the rotation amount via a command-line argument, there is a danger that the user will fail to type anything at all, i.e.:
 
-    ::
+   ::
 
-        python3 caesar.py
+       python3 caesar.py
 
-    In this case, you will probably see:
+   In this case, you will probably see:
 
-    ::
+   ::
 
-        IndexError: list index out of range
+       IndexError: list index out of range
 
-    because you are trying to read from ``argv`` at an index that does not exist, because ``argv`` only contains one string, rather than two.
+   because you are trying to read from ``argv`` at an index that does not exist, since ``argv`` only contains one string, rather than two.
 
+Rather than simply crash whenever one of these things happens, your program should handle it more gracefully. Write a function ``user_input_is_valid(cl_args)``, which receives an array with the command-line arguments (you can just pass in ``argv``), and returns a boolean indicating whether or not the user did everything correctly. You should return ``False`` if you see either of the two cases outlined above.
 
-If either of these two situations arise, your Caesar program should respond by actively prompting the user for an integer:
+If your function returns ``False``, your Caesar program should exit immediately, but first print a helpful "usage" message (explaining how to properly use your program). Below is an example of the user messing up, re-running the program, messing up again, etc:
 
 ::
 
+    $ python3 caesar.py
+    usage: python3 caesar.py n
     $ python3 caesar.py grandpa
-    Please provide an integer for the rotation amount:
-    5
+    usage: python3 caesar.py n
+    $ python3 caesar.py 5.0
+    usage: python3 caesar.py n
+    $ python3 caesar.py 5
     Type a message:
     Hello, World!
     Mjqqt, Btwqi!
+
+4th time is the charm!
+
+To check if the argument is an integer, there is a string method called ``isdigit`` which you should use. It works just like ``isalpha``, but checks for integers rather than alphabetic characters:
 
 ::
 
-    $ python3 caesar.py
-    Please provide an integer for the rotation amount:
-    5
-    Type a message:
-    Hello, World!
-    Mjqqt, Btwqi!
+    >>> "grandpa".isdigit()
+    False
+    >>> "5.0".isdigit()
+    False
+    >>> "5".isdigit()
+    True
 
-Also note that even after you prompt for an integer, there is still a danger that the user will type a non-integer:
 
-::
 
-    $ python3 caesar.py
-    Please provide an integer for the rotation amount:
-    grandpa
-    Please provide an integer for the rotation amount:
-    big papi
-    Please provide an integer for the rotation amount:
-    4.9
-    Please provide an integer for the rotation amount:
-    5
-    Type a message:
-    Hello, World!
-    Mjqqt, Btwqi!
+You can exit your program early by calling the ``exit`` function, which is part of the ``sys`` module. Just import the function by adding ``exit`` to your previous ``import`` statement:
 
-As shown in the example above, your program should *continually* prompt again and again, until receiving a valid input from the user. To accomplish this, you will need to use a ``while`` loop, and the ``type`` function.
+.. sourcecode:: python
 
-Like the previous feature, this is only a requirement for Caesar. You do not have to update your Vigenere program.
+    from sys import argv, exit
+
+and then invoke the function like this:
+
+.. sourcecode:: python
+
+    exit()
+
+Ok, go forth and validate! As with the previous feature, this is only a requirement for Caesar. You do not have to update your Vigenere program.
 
 Submitting Your Work
 --------------------
 
-When you have finished, be sure to remove any extraneous code used for testing and debugging (such as extra print statements).
+When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print and input statements**. This includes not only any print statements that you might have added for debugging purposes, but **also the print and input statements you included to make your program interactive.**
 
-Then, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
+For example, your final, submitted ``caesar.py`` file should look something like this:
+
+.. sourcecode:: python
+
+    from sys import argv, exit
+    from helpers import alphabet_position, rotate_character
+
+    def encrypt(text, rot):
+        # (beautiful code)
+
+    def user_input_is_valid(cl_args):
+        # (beautiful code)
+
+    # (some more code...)
+
+    # NOTICE HOW I COMMENTED OUT THE LINES BELOW:
+    # message = input("Type a message:")
+    # print(encrypt(message, rotation))
+
+Your version may look a little different, e.g. with some components in a different order. The important thing is that the last two lines are commented out.
+
+Once you have commented out all print and input statements from all your files, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
 
 - initials.py
 - casear.py
@@ -599,6 +639,9 @@ Then, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rath
 
 Finally, as usual, click Submit!
 
+
+.. _Caesar Cipher: https://en.wikipedia.org/wiki/Caesar_cipher#History_and_usage
+.. _The Accumulator Pattern: ../Strings/TheAccumulatorPatternwithStrings.html
 .. _Functions Can Call Other Functions: ../Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
