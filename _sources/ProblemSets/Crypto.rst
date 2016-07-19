@@ -14,6 +14,11 @@ What do those mysterious names mean? Read on to find out!
 
     *NOTE* This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
+Prerequisites
+-------------
+
+Before starting work on this, you should have completed the previous section, `Local Python`_.
+
 Setup
 -----
 
@@ -594,7 +599,8 @@ Then, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rath
 
 Finally, as usual, click Submit!
 
-.. _Functions Can Call Other Functions: https://learn.launchcode.org/runestone/static/thinkcspy/Functions/Functionscancallotherfunctions.html
+.. _Functions Can Call Other Functions: ../Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
+.. _Local Python: LocalPython.html

@@ -244,6 +244,7 @@ Table of Contents
    Lists/TuplesasReturnValues.rst
    Lists/Glossary.rst
    Lists/Exercises.rst
+   ProblemSets/LocalPython.rst
    ProblemSets/Crypto.rst
 
 
