@@ -18,11 +18,11 @@ Ready? Let's do this!
 Setup
 -----
 
-For this problem set, you’ll be writing code locally on your own machine, and running your code at the command line.
+For this assignment, you’ll be writing code locally on your own machine, and running your code at the command line.
 
 Open up a terminal window on your computer, and use the ``cd`` command to navigate to the folder where you save documents for this class. If you have not yet created such a folder, go ahead and create one now.
 
-Once you are inside your directory for the class, create a new sub-directory called ``python-crypto/``, and then ``cd`` into it:
+Once you are inside your directory for the class, create a new sub-directory called ``crypto/``, and then ``cd`` into it:
 
 ::
 
@@ -48,17 +48,17 @@ Your function will receive one argument, ``fullname``, a string representing som
 
 Here are some examples of what your function should return for various ``fullname`` arguments:
 
-+------------------------+-----------+
-| ``fullname``           | return    |
-+========================+===========+
-| ``"Ozzie Smith"``      | ``"OS"``  |
-+------------------------+-----------+
-| ``"bonnie blair"``     | ``"BB"``  |
-+------------------------+-----------+
-| ``"George"``           | ``"G"``   |
-+------------------------+-----------+
-| ``"Daniel Day Lewis"`` | ``"DDL"`` |
-+------------------------+-----------+
++------------------+-----------------+
+| ``fullname``     | return value    |
++==================+=================+
+| Ozzie Smith      | OS              |
++------------------+-----------------+
+| bonnie blair     | BB              |
++------------------+-----------------+
+| George           | G               |
++------------------+-----------------+
+| Daniel Day Lewis | DDL             |
++------------------+-----------------+
 
 If you were to invoke your function, it would look something like this:
 
@@ -146,7 +146,7 @@ Part 2: Caesar
 
 Now it's time for some encryption!
 
-In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used Caesar’s cipher to encrypt a message. If you need a refresher, this is want the exercise said:
+In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used the `Caesar Cipher`_ to encrypt a message. If you need a refresher, this is want the exercise said:
 
     Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
 
@@ -249,9 +249,9 @@ A few important things to notice:
 
 - For non-alphabetical characters, you should ignore the ``rot`` argument and simply return ``char`` untouched. For example, see ``"!"`` and ``"6"`` in the table above.
 
-You will find the following functions helpful:
+You should make use of the following functions:
 
-- Your own ``alphabet_position`` function. For guidance, you might want to re-read about how `Functions Can Call Other Functions`_
+- Your own ``alphabet_position`` function. If feeling confused, you may want to re-read about how `Functions Can Call Other Functions`_
 
 - The ``ord`` function, which returns the ASCII value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
 
@@ -450,9 +450,7 @@ This says that we want to import code from a module ``helpers``, but that we onl
 
 Now we should be able to use those functions! Try running ``python3 caesar.py`` again, and you should find that it works just like it did before.
 
-  *NOTE* In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``.
-
-  *ANOTHER NOTE* The method we are using here is a little simpler than the way this is normally done. For larger projects, where the structure is a tree of folders within folders, there is a slightly more involved procedure for reusing code, which does not require both modules to live together in the same folder. If you're curious, you can read up more about creating modules in Python in the `Python module documentation`_.
+    *NOTE* In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``. Also note that the technique we are using here is a little simpler than the way this is normally done. For larger projects, where the structure is a tree of folders within folders, there is a slightly more involved procedure for reusing code, which does not require both modules to live together in the same folder. If you're curious, you can read up more about creating modules in Python in the `Python module documentation`_.
 
 Once you have Caesar working, do the same thing for Vigenere: simply delete the two helper functions, and ``import`` them from ``helpers.py``.
 
@@ -529,31 +527,31 @@ There are two main cases to handle:
 
 1. User fails to type a number when specifying rotation amount.
 
-    ::
+   ::
 
-        python3 caesar.py grandpa
+       python3 caesar.py grandpa
 
-    If the user gives you something like "grandpa" instead of "5", your program will crash, probably with this error:
+   If the user gives you something like "grandpa" instead of "5", your program will crash, probably with this error:
 
-    ::
+   ::
 
-        ValueError: invalid literal for int() with base 10: 'grandpa' on line X
+       ValueError: invalid literal for int() with base 10: 'grandpa' on line X
 
 2. User fails to provide a command-line argument.
 
-    Now that you are expecting the user to specify the rotation amount via a command-line argument, there is a danger that the user will fail to type anything at all, i.e.:
+   Now that you are expecting the user to specify the rotation amount via a command-line argument, there is a danger that the user will fail to type anything at all, i.e.:
 
-    ::
+   ::
 
-        python3 caesar.py
+       python3 caesar.py
 
-    In this case, you will probably see:
+   In this case, you will probably see:
 
-    ::
+   ::
 
-        IndexError: list index out of range
+       IndexError: list index out of range
 
-    because you are trying to read from ``argv`` at an index that does not exist, since ``argv`` only contains one string, rather than two.
+   because you are trying to read from ``argv`` at an index that does not exist, since ``argv`` only contains one string, rather than two.
 
 Rather than simply crash whenever one of these things happens, your program should handle it more gracefully. Write a function ``user_input_is_valid(cl_args)``, which receives an array with the command-line arguments (you can just pass in ``argv``), and returns a boolean indicating whether or not the user did everything correctly. You should return ``False`` if you see either of the two cases outlined above.
 
@@ -613,7 +611,7 @@ For example, your final, submitted ``caesar.py`` file should look something like
     from sys import argv, exit
     from helpers import alphabet_position, rotate_character
 
-    def encrypt(message, rot):
+    def encrypt(text, rot):
         # (beautiful code)
 
     def user_input_is_valid(cl_args):
@@ -636,8 +634,9 @@ Once you have commented out all print and input statements from all your files, 
 
 Finally, as usual, click Submit!
 
-.. _The Accumulator Pattern: https://learn.launchcode.org/runestone/static/thinkcspy/Strings/TheAccumulatorPatternwithStrings.html
-.. _Functions Can Call Other Functions: https://learn.launchcode.org/runestone/static/thinkcspy/Functions/Functionscancallotherfunctions.html
+.. _Caesar Cipher: https://en.wikipedia.org/wiki/Caesar_cipher#History_and_usage
+.. _The Accumulator Pattern: ../Strings/TheAccumulatorPatternwithStrings.html
+.. _Functions Can Call Other Functions: ../Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
