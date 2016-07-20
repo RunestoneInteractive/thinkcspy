@@ -609,7 +609,7 @@ Ok, go forth and validate! As with the previous feature, this is only a requirem
 Submitting Your Work
 --------------------
 
-When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print and input statements**. This includes not only any print statements that you might have added for debugging purposes, but **also the print and input statements you included to make your program interactive.**
+When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print statements, and any code that is not an ``import`` statement or a function**. This includes not only any print statements that you might have added for debugging purposes, but also the print and input statements and validation logic that you included to make your program interactive.
 
 For example, your final, submitted ``caesar.py`` file should look something like this:
 
@@ -624,9 +624,10 @@ For example, your final, submitted ``caesar.py`` file should look something like
     def user_input_is_valid(cl_args):
         # (beautiful code)
 
-    # (some more code...)
+    # EVERYTHING ELSE SHOULD BE COMMENTED OUT
+    # if not user_input_is_valid(argv):
+    #    print("usage: python3 caesar.py n")
 
-    # NOTICE HOW I COMMENTED OUT THE LINES BELOW:
     # message = input("Type a message:")
     # print(encrypt(message, rotation))
 
