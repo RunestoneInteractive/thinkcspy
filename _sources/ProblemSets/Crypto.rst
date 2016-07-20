@@ -631,9 +631,9 @@ For example, your final, submitted ``caesar.py`` file should look something like
     # message = input("Type a message:")
     # print(encrypt(message, rotation))
 
-Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) is commented out. Please don't delete this code entirely, because we do want do see it with our human eyes. It's just the sensitive robot-grader who must be shielded.
+Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) should be commented out. Please do not delete this code entirely, because we do want to see it with our human eyes. It's just the sensitive robot-grader who must be shielded.
 
-Once you have commented out all print and input statements from all your files, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
+Once you have commented out all the side-effect-causing code from all your files, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
 
 - initials.py
 - casear.py
