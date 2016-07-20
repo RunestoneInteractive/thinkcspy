@@ -609,7 +609,7 @@ Ok, go forth and validate! As with the previous feature, this is only a requirem
 Submitting Your Work
 --------------------
 
-When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print statements, and any code that is not an import statement or a function**. This includes not only any print statements that you might have added for debugging purposes, but also the prints and inputs and validation logic that you included to make your program interactive.
+When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please comment out any ``print`` statements, ``input`` statements, and ``exit()`` commands.
 
 For example, your final, submitted ``caesar.py`` file should look something like this:
 
@@ -623,13 +623,9 @@ For example, your final, submitted ``caesar.py`` file should look something like
 
     def user_input_is_valid(cl_args):
         # (beautiful code)
+        # (there should not be any print statements in here)
 
     # EVERYTHING ELSE SHOULD BE COMMENTED OUT
-    # if not user_input_is_valid(argv):
-    #    print("usage: python3 caesar.py n")
-
-    # message = input("Type a message:")
-    # print(encrypt(message, rotation))
 
 Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) should be commented out. Please do not delete this code entirely, because we do want to see it with our human eyes. It's just the sensitive robot-grader who must be shielded.
 
