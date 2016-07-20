@@ -260,6 +260,8 @@ You should make use of the following functions:
 
 - The ``ord`` function, which returns the ASCII value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
 
+- The ``chr`` function, which converts in the opposite direction: from an ascii value to a single-character string, e.g. ``chr(65) == "A"`` and ``chr(97) == "a"``
+ 
 Test ``rotate_character`` with various input values before moving on to the next stage.
 Use more tests than the examples we provide.
 
