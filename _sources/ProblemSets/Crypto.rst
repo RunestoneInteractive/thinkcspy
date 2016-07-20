@@ -609,7 +609,7 @@ Ok, go forth and validate! As with the previous feature, this is only a requirem
 Submitting Your Work
 --------------------
 
-When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print statements, and any code that is not an import statement or a function**. This includes not only any print statements that you might have added for debugging purposes, but also the print and input statements and validation logic that you included to make your program interactive.
+When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please **comment out all print statements, and any code that is not an import statement or a function**. This includes not only any print statements that you might have added for debugging purposes, but also the prints and inputs and validation logic that you included to make your program interactive.
 
 For example, your final, submitted ``caesar.py`` file should look something like this:
 
@@ -631,7 +631,7 @@ For example, your final, submitted ``caesar.py`` file should look something like
     # message = input("Type a message:")
     # print(encrypt(message, rotation))
 
-Your version may look a little different, e.g. with some components in a different order. The important thing is that the last two lines are commented out.
+Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) is commented out. Please don't delete this code entirely, because we do want do see it with our human eyes. It's just the sensitive robot-grader who must be shielded.
 
 Once you have commented out all print and input statements from all your files, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
 
