@@ -18,7 +18,7 @@ Ready? Let's do this!
 Prerequisites
 -------------
 
-Before starting work on this, you should have completed the previous section, `Local Python`_.
+Before starting work on this, you should have completed the previous section, `Using Python Locally`_.
 
 Setup
 -----
@@ -258,10 +258,10 @@ You should make use of the following functions:
 
 - Your own ``alphabet_position`` function. If feeling confused, you may want to re-read about how `Functions Can Call Other Functions`_
 
-- The ``ord`` function, which returns the ASCII value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
+- The ``ord`` function, which returns the `ASCII`_ value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
 
-- The ``chr`` function, which converts in the opposite direction: from an ascii value to a single-character string, e.g. ``chr(65) == "A"`` and ``chr(97) == "a"``
- 
+- The ``chr`` function, which converts in the opposite direction: from an ASCII value to a single-character string, e.g. ``chr(65) == "A"`` and ``chr(97) == "a"``
+
 Test ``rotate_character`` with various input values before moving on to the next stage.
 Use more tests than the examples we provide.
 
@@ -648,4 +648,5 @@ Finally, as usual, click Submit!
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
-.. _Local Python: LocalPython.html
+.. _Using Python Locally: LocalPython.html
+.. _ASCII: http://www.asciitable.com
