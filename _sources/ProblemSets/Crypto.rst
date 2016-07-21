@@ -421,17 +421,17 @@ Congrats! You have created two very cool encryption programs.
 Before calling this a done-deal, let's make a few improvements to the project by refactoring and adding a few new features. You will do three things:
 
 
-#. **Refactor: Shared Code**
+A. **Refactor: Shared Code**
     Do some refactoring so that you share the two helper functions between files, rather than copy and paste.
 
-#. **New Feature: Command-line Arguments**
+B. **New Feature: Command-line Arguments**
     Add a feature that improves the user experience by allowing the user to type their rotation amount as a *command-line argument* rather than waiting for a prompt. (Caesar Only)
 
-#. **New Feature: Validation**
+C. **New Feature: Validation**
     Add some validation on user input, so that if the user types something dumb, your program handles it gracefully, rather than crashing. (Caesar Only)
 
-Refactor: Shared Code
-~~~~~~~~~~~~~~~~~~~~~
+A. Refactor: Shared Code
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remember when we said that copy / pasting those helper functions is not a smart thing to do? Now let's do something better.
 
@@ -463,8 +463,8 @@ Once you have Caesar working, do the same thing for Vigenere: simply delete the 
 
 Now your helper functions are defined only once, and your code remains nice and DRY (Don't Repeat Yourself)!
 
-New Feature: Command-line Arguments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+B. New Feature: Command-line Arguments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's now make the following tweak to Caesar: instead of prompting the user for two things -- the text message and the rotation amount -- let's allow the user to include the rotation amount right away at the beginning.
 
@@ -525,8 +525,8 @@ Ok! Now you have all the tools you need to implement this feature. The ``argv`` 
 To be clear, for this assignment, we only require that you update ``caesar.py`` to take a command-line argument. You can leave your Vigenere script as is.
 
 
-New Feature: Validation
------------------------
+C. New Feature: Validation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's make one more improvement. You may or may not have noticed that if the user types certain things, your program will freak out.
 
