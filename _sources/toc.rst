@@ -246,6 +246,7 @@ Table of Contents
    Lists/Exercises.rst
    ProblemSets/LocalPython.rst
    ProblemSets/Crypto.rst
+   Studios/Chapter11.rst
 
 
 12. Dictionaries
