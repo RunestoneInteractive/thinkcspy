@@ -200,7 +200,7 @@ Exercises
                 testEqual(r.width, 5)
                 testEqual(r.height, 10)
 
-#. (GRADED) Write a new method in the Rectangle class to test if a Point falls within the rectangle.  For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
+#. Write a new method in the Rectangle class to test if a Point falls within the rectangle.  For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
 
       r = Rectangle(Point(0, 0), 10, 5)
       testEqual(r.contains(Point(0, 0)), True)
