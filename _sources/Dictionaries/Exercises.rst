@@ -128,7 +128,10 @@ Exercises
 		   # add_fruit(new_inventory, 'strawberries', 25)
 		   # test(new_inventory['strawberries'] , 35)
 
-	#. Here's a table of English to Pirate translations:
+
+	#.
+
+	Here's a table of English to Pirate translations:
 
 		==========  ==============
 		English     Pirate
