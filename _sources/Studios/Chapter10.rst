@@ -54,11 +54,11 @@ The simplest such algorithm is called Bubble Sort.
            Write a function that will return the number of digits in an integer.
            
            .. activecode:: studio9_0
+                    
+                    #Sorts a list using bubble sort.
+                    #Does not alter the original list but returns a sorted version of it.
                     def bubble_sort(lst):
-                    """Sorts a list using bubble sort.
-                    Does not alter the original list but returns a sorted version of it.
-                    """
-                    # TODO your code here
+                        # TODO your code here
                     
                     
                     
