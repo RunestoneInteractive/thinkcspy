@@ -263,6 +263,7 @@ Table of Contents
    Dictionaries/Sparsematrices.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
+   Studios/Chapter12.rst
 
 
 13. Classes and Objects -- Basics
