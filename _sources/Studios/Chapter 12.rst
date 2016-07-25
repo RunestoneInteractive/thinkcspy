@@ -6,7 +6,7 @@ Coriolanus. The get_text function is written for you - it loads the text
 into a string. Your job is to write the main function. You'll probably
 want to keep track of words with a dictionary. Have fun!
 
-.. activecode:: studio12_0
+.. sourcecode:: python
 
             #!/usr/bin/env python
             # -*- coding: utf-8 -*-
