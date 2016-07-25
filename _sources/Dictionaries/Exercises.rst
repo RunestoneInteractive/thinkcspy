@@ -117,6 +117,9 @@ Exercises
 
 	   .. activecode:: q2_dict_answer
 
+		   #Note: The pass is a placeholder to allow
+		   #the code to compile. Remove it when you
+		   #begin coding.
 		   def add_fruit(inventory, fruit, quantity=0):
 				pass
 
@@ -126,7 +129,7 @@ Exercises
 		   # test('strawberries' in new_inventory, True)
 		   # test(new_inventory['strawberries'], 10)
 		   # add_fruit(new_inventory, 'strawberries', 25)
-		   # test(new_inventory['strawberries'] , 35)
+		   # test(new_inventory['strawberries'] , 25)
 
 	#. (GRADED)
 
