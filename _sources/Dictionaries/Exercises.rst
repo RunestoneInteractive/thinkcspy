@@ -117,6 +117,8 @@ Exercises
 
 	   .. activecode:: q2_dict_answer
 
+		   from test import testEqual
+		   
 		   #Note: The pass is a placeholder to allow
 		   #the code to compile. Remove it when you
 		   #begin coding.
@@ -126,10 +128,10 @@ Exercises
 		   # make these tests work...
 		   # new_inventory = {}
 		   # add_fruit(new_inventory, 'strawberries', 10)
-		   # test('strawberries' in new_inventory, True)
-		   # test(new_inventory['strawberries'], 10)
+		   # test.Equal('strawberries' in new_inventory, True)
+		   # test.Equal(new_inventory['strawberries'], 10)
 		   # add_fruit(new_inventory, 'strawberries', 25)
-		   # test(new_inventory['strawberries'] , 25)
+		   # test.Equal(new_inventory['strawberries'] , 25)
 
 	#. (GRADED)
 
