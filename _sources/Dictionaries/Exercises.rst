@@ -121,7 +121,7 @@ Exercises
 		   #the code to compile. Remove it when you
 		   #begin coding.
 		   def add_fruit(inventory, fruit, quantity=0):
-				pass
+			pass
 
 		   # make these tests work...
 		   # new_inventory = {}
