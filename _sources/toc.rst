@@ -246,6 +246,7 @@ Table of Contents
    Lists/Exercises.rst
    ProblemSets/LocalPython.rst
    ProblemSets/Crypto.rst
+   Studios/Chapter11.rst
 
 
 12. Dictionaries
@@ -262,6 +263,7 @@ Table of Contents
    Dictionaries/Sparsematrices.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
+   Studios/Chapter12.rst
 
 
 13. Classes and Objects -- Basics
