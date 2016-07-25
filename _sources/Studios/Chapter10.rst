@@ -54,6 +54,7 @@ The simplest such algorithm is called Bubble Sort.
            Write a function that will return the number of digits in an integer.
            
            .. activecode:: studio9_0
+           
                     def bubble_sort(lst):
                     """Sorts a list using bubble sort.
                     Does not alter the original list but returns a sorted version of it.
@@ -72,6 +73,7 @@ The simplest such algorithm is called Bubble Sort.
 
 
         .. tab:: Answer
+        
             This studio it is a good example of nested loops, indexing lists, and swapping items in lists. If you
             did not reach the solution in class, look through this one and make sure you understand it. Try and
             predict what will will happen when you alter the following things, then test it out to see if you're right!
@@ -80,7 +82,7 @@ The simplest such algorithm is called Bubble Sort.
             2. Change the greater than sign to a less than sign (line 12)
             3. Tricky one: Remove the while loop completely (line 7)
 
-            .. activecode:: q5_answer
+                .. activecode:: q5_answer
 
                     def bubble_sort(lst):
                     """ Sorts a list using bubble sort.
