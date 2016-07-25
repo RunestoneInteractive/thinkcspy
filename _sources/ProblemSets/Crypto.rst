@@ -183,9 +183,7 @@ alphabet_position
 The first thing we are going to do is simply create a helper function which will
 prove useful in a few different places.
 
-Write a function ``alphabet_position(letter)``, which receives
-a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that
-letter within the alphabet. It should be case-insensitive.
+Write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet. It should be case-insensitive.
 
 Here are some example input parameter values, with the corresponding return
 values.
@@ -254,13 +252,7 @@ A few important things to notice:
 
 - For non-alphabetical characters, you should ignore the ``rot`` argument and simply return ``char`` untouched. For example, see ``"!"`` and ``"6"`` in the table above.
 
-You should make use of the following functions:
-
-- Your own ``alphabet_position`` function. If feeling confused, you may want to re-read about how `Functions Can Call Other Functions`_
-
-- The ``ord`` function, which returns the `ASCII`_ value of a character, e.g. ``ord("a") == 97`` and ``ord("A") == 65``
-
-- The ``chr`` function, which converts in the opposite direction: from an ASCII value to a single-character string, e.g. ``chr(65) == "A"`` and ``chr(97) == "a"``
+- You should make use of your own ``alphabet_position`` function. If feeling confused, you may want to re-read about how `Functions Can Call Other Functions`_
 
 Test ``rotate_character`` with various input values before moving on to the next stage.
 Use more tests than the examples we provide.
