@@ -31,8 +31,6 @@
 
    The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
 
-.. raw:: html
-
 
 
 
