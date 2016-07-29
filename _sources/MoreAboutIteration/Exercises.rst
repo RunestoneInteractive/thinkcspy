@@ -25,6 +25,10 @@ Exercises
 
                .. actex:: ex_7_7
 
+                  def newtonSqrt(n):
+                      # your code here
+
+
 
             .. tab:: Answer
 
@@ -63,6 +67,9 @@ Exercises
 
        .. actex:: ex_7_8
 
+          def print_triangular_numbers(n):
+              # your code here
+
 
     #.
 
@@ -76,6 +83,21 @@ Exercises
 
                .. actex:: ex_7_9
 
+                  def is_prime(n):
+                      # your code here
+
+                  ====
+                  from unittest.gui import TestCaseGui
+
+                  class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(is_prime(2),True,"Tested on 2, which is a prime number.")
+                          self.assertEqual(is_prime(4187),False,"Tested on 4187, which is not a prime number. It is divisible by 53 and 79.")
+                          self.assertEqual(is_prime(22),False,"Tested on 22, which is not a prime number. It is divisible by 2 and 11.")
+                          self.assertEqual(is_prime(4813),True,"Tested on 4813, which is a prime number.")
+
+                  myTests().main()
 
 
             .. tab:: Answer
@@ -595,4 +617,3 @@ Exercises
                 .. disqus::
                     :shortname: interactivepython
                     :identifier: disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974
-
