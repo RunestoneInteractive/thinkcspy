@@ -49,7 +49,7 @@ programs much easier for humans to parse.  Use them liberally!
    :answer_d: Nothing in a short program.  They are only needed for really large programs.
    :correct: b
    :feedback_a: Comments are ignored by the computer.
-   :feedback_b: The computer ignores comments.  It’s for the humans that will “consume” your program.
+   :feedback_b: The computer ignores comments.  It's for the humans that will "consume" your program.
    :feedback_c: Comments can provide much needed information for anyone reading the program.
    :feedback_d: Even small programs benefit from comments.
 
