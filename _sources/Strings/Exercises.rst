@@ -799,7 +799,7 @@ Exercises
                 :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
-#. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
+#. Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
    there will never be a duplicate letter added to the new string.
 
    .. actex:: ex_8_19
@@ -808,7 +808,7 @@ Exercises
           # your code here
 
 
-      print(removeDups("mississippi"))   #should print misp
+      print(remove_dups("mississippi"))   #should print misp
 
       ====
       from unittest.gui import TestCaseGui
@@ -816,9 +816,11 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
+            self.assertEqual(remove_dups("pooh"),"ph","Tested remove_dups on string 'pooh'")
             self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
             self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
             self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
+            self.assertEqual(remove_dups("oo"),"","Tested remove_dups on string 'oo'")
 
       myTests().main()
 
