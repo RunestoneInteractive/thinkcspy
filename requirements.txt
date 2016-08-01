@@ -13,6 +13,6 @@ six==1.9.0
 snowballstemmer==1.2.0
 Sphinx>=1.3.1
 sphinx-rtd-theme==0.1.8
-sphinxcontrib-paverutils==1.7
+sphinxcontrib-paverutils>=1.13
 runestone>=2.1.0
 SQLAlchemy>=1.0.8
