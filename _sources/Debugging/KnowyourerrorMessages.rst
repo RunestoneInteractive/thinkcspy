@@ -174,8 +174,8 @@ Here's an example of a type error created by a Polish learner.  See if you can f
 
 .. activecode:: db_ex3_8
 
-    a = input(uu'wpisz godzinę')
-    x = input(uu'wpisz liczbę godzin')
+    a = input(uu'wpisz godzine')
+    x = input(uu'wpisz liczbe godzin')
     int(x)
     int(a)
     h = x // 24
