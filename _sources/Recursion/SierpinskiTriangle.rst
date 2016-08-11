@@ -44,7 +44,6 @@ recursive call, we subtract 1 from the degree until we reach 0. When we
 reach a degree of 0, we stop making recursive calls. The code that
 generated this Sierpinski Triangle is shown below.
 
-.. _lst_st:
 
 .. activecode:: lst_st
     :caption: Drawing a Sierpinski Triangle
