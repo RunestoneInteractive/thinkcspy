@@ -10,8 +10,9 @@
 Exercises
 ---------
 
-#.
-    .. tabbed:: q1
+.. question:: cdd_ex_1
+
+   .. tabbed:: q1
     
         .. tab:: Question
         
@@ -68,16 +69,18 @@ Exercises
    
    
                  
-#. Add the following accessor methods to the Rectangle class: ``getWidth``, ``getHeight``, ``__str__``.
+.. question:: cdd_ex_2
+
+   Add the following accessor methods to the Rectangle class: ``getWidth``, ``getHeight``, ``__str__``.
 
    .. actex:: ch_cl2_q2  
    
    
                     
 
-#.
+.. question:: cdd_ex_3
 
-    .. tabbed:: q3
+   .. tabbed:: q3
 
         .. tab:: Question
 
@@ -131,7 +134,9 @@ Exercises
                 :identifier: disqus_d43c8f8afb2c4c808917bb7e948dbcbe
 
 
-#. Write a ``perimeter`` method in the Rectangle class so that we can find
+.. question:: cdd_ex_4
+
+   Write a ``perimeter`` method in the Rectangle class so that we can find
    the perimeter of any rectangle instance::
    
       r = Rectangle(Point(0, 0), 10, 5)
@@ -140,9 +145,9 @@ Exercises
 
    .. actex:: ch_cl2_q4
 
-#.
+.. question:: cdd_ex_5
 
-    .. tabbed:: q5
+   .. tabbed:: q5
 
         .. tab:: Question
 
@@ -202,7 +207,9 @@ Exercises
                 :identifier: disqus_chcl_q5disc
 
 
-#. Write a new method in the Rectangle class to test if a Point falls within
+.. question:: cdd_ex_6
+
+   Write a new method in the Rectangle class to test if a Point falls within
    the rectangle.  For this exercise, assume that a rectangle at (0,0) with
    width 10 and height 5 has *open* upper bounds on the width and height, 
    i.e. it stretches in the x direction from [0 to 10), where 0 is included
@@ -220,9 +227,9 @@ Exercises
    .. actex:: classes_q6
       :nocodelens:
    
-#.
+.. question:: cdd_ex_7
 
-    .. tabbed:: q7
+   .. tabbed:: q7
 
         .. tab:: Question
 
@@ -274,13 +281,15 @@ Exercises
                 :identifier: disqus_5f1e3f17064f44088a896e9bc0e10b4d
 
 
-#.  In games, we often put a rectangular "bounding box" around our sprites in
-    the game.  We can then do *collision detection* between, say, bombs and 
-    spaceships, by comparing whether their rectangles overlap anywhere. 
+.. question:: cdd_ex_8
 
-    Write a function to determine whether two rectangles collide. *Hint:
-    this might be quite a tough exercise!  Think carefully about all the
-    cases before you code.*
+   In games, we often put a rectangular "bounding box" around our sprites in
+   the game.  We can then do *collision detection* between, say, bombs and
+   spaceships, by comparing whether their rectangles overlap anywhere.
+
+   Write a function to determine whether two rectangles collide. *Hint:
+   this might be quite a tough exercise!  Think carefully about all the
+   cases before you code.*
     
-    .. actex:: ch_cl2_q8
+   .. actex:: ch_cl2_q8
     

@@ -10,548 +10,563 @@
 Exercises
 ---------
 
-.. container:: full_width
+.. question:: strings_ex_1
 
-    #.
 
-        .. tabbed:: q1
+   .. tabbed:: q1
 
-            .. tab:: Question
+        .. tab:: Question
 
-               Draw a reference diagram for ``a`` and ``b`` before and after the third line of
-               the following python code is executed:
+           Draw a reference diagram for ``a`` and ``b`` before and after the third line of
+           the following python code is executed:
 
-               .. sourcecode:: python
+           .. sourcecode:: python
 
-                   a = [1, 2, 3]
-                   b = a[:]
-                   b[0] = 5
+               a = [1, 2, 3]
+               b = a[:]
+               b[0] = 5
 
-            .. tab:: Answer
+        .. tab:: Answer
 
-                Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
-                ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
+            Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
+            ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
 
-            .. tab:: Discussion
+        .. tab:: Discussion
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_12314cf40dbe407cb145f029870c0347
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_12314cf40dbe407cb145f029870c0347
 
 
-    #.  Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
+.. question:: strings_ex_2
 
-        .. actex:: ex_9_2
+   Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
 
+   .. actex:: ex_9_2
 
-    #.
 
-        .. tabbed:: q3
+.. question:: strings_ex_3
 
-            .. tab:: Question
+   .. tabbed:: q3
 
-               Starting with the list in Exercise 2, write Python statements to do the following:
+        .. tab:: Question
 
-               a. Append "apple" and 76 to the list.
-               #. Insert the value "cat" at position 3.
-               #. Insert the value 99 at the start of the list.
-               #. Find the index of "hello".
-               #. Count the number of 76s in the list.
-               #. Remove the first occurrence of 76 from the list.
-               #. Remove True from the list using ``pop`` and ``index``.
+           Starting with the list in Exercise 2, write Python statements to do the following:
 
+           a. Append "apple" and 76 to the list.
+           #. Insert the value "cat" at position 3.
+           #. Insert the value 99 at the start of the list.
+           #. Find the index of "hello".
+           #. Count the number of 76s in the list.
+           #. Remove the first occurrence of 76 from the list.
+           #. Remove True from the list using ``pop`` and ``index``.
 
-               .. actex:: ex_9_3
 
-            .. tab:: Answer
+           .. actex:: ex_9_3
 
-                .. activecode:: q3_answer
+        .. tab:: Answer
 
-                    myList = [76, 92.3, 'hello', True, 4, 76]
+            .. activecode:: q3_answer
 
-                    myList.append("apple")         # a
-                    myList.append(76)              # a
-                    myList.insert(3, "cat")        # b
-                    myList.insert(0, 99)           # c
+                myList = [76, 92.3, 'hello', True, 4, 76]
 
-                    print(myList.index("hello"))   # d
-                    print(myList.count(76))        # e
-                    myList.remove(76)              # f
-                    myList.pop(myList.index(True)) # g
+                myList.append("apple")         # a
+                myList.append(76)              # a
+                myList.insert(3, "cat")        # b
+                myList.insert(0, 99)           # c
 
-                    print (myList)
+                print(myList.index("hello"))   # d
+                print(myList.count(76))        # e
+                myList.remove(76)              # f
+                myList.pop(myList.index(True)) # g
 
-            .. tab:: Discussion
+                print (myList)
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_b9034b274ebe4c55a58c44315ee681a4
+        .. tab:: Discussion
 
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_b9034b274ebe4c55a58c44315ee681a4
 
-    #.  Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
 
-        .. actex:: ex_9_4
+.. question:: strings_ex_4
 
-    #.
+   Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
 
-        .. tabbed:: q5
+   .. actex:: ex_9_4
 
-            .. tab:: Question
+.. question:: strings_ex_5
 
-               Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
+   .. tabbed:: q5
 
-               .. actex:: ex_9_5
+        .. tab:: Question
 
+           Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
 
-            .. tab:: Answer
+           .. actex:: ex_9_5
 
-                .. activecode:: q5_answer
 
-                    import random
+        .. tab:: Answer
 
-                    def max(lst):
-                        max = 0
-                        for e in lst:
-                            if e > max:
-                                max = e
-                        return max
+            .. activecode:: q5_answer
 
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randint(0, 1000))
+                import random
 
-                    print(max(lst))
+                def max(lst):
+                    max = 0
+                    for e in lst:
+                        if e > max:
+                            max = e
+                    return max
 
-            .. tab:: Discussion
+                lst = []
+                for i in range(100):
+                    lst.append(random.randint(0, 1000))
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_714fd5537ebf41189ce5fb6fb16d1d26
+                print(max(lst))
 
+        .. tab:: Discussion
 
-    #. Write a function ``sum_of_squares(xs)`` that computes the sum
-       of the squares of the numbers in the list ``xs``.  For example,
-       ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_714fd5537ebf41189ce5fb6fb16d1d26
 
-       .. actex:: ex_7_11
 
-          def sum_of_squares(xs):
-              # your code here
+.. question:: strings_ex_6
 
-          ====
-          from unittest.gui import TestCaseGui
+   Write a function ``sum_of_squares(xs)`` that computes the sum
+   of the squares of the numbers in the list ``xs``.  For example,
+   ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
 
-          class myTests(TestCaseGui):
+   .. actex:: ex_7_11
 
-              def testOne(self):
-                  self.assertEqual(sum_of_squares([2,3,4]),29,"Tested sum_of_squares on input [2,3,4]")
-                  self.assertEqual(sum_of_squares([0,1,-1]),2,"Tested sum_of_squares on input [0,1,-1]")
-                  self.assertEqual(sum_of_squares([5,12,14]),344,"Tested sum_of_squares on input [5,12,14]")
+      def sum_of_squares(xs):
+          # your code here
 
-          myTests().main()
+      ====
+      from unittest.gui import TestCaseGui
 
-    #.
+      class myTests(TestCaseGui):
 
-        .. tabbed:: q7
+          def testOne(self):
+              self.assertEqual(sum_of_squares([2,3,4]),29,"Tested sum_of_squares on input [2,3,4]")
+              self.assertEqual(sum_of_squares([0,1,-1]),2,"Tested sum_of_squares on input [0,1,-1]")
+              self.assertEqual(sum_of_squares([5,12,14]),344,"Tested sum_of_squares on input [5,12,14]")
 
-            .. tab:: Question
+      myTests().main()
 
-               Write a function to count how many odd numbers are in a list.
+.. question:: strings_ex_7
 
-               .. actex:: ex_9_6
+   .. tabbed:: q7
 
-                  def countOdd(lst):
-                      # your code here
+        .. tab:: Question
 
-                  ====
-                  from unittest.gui import TestCaseGui
+           Write a function to count how many odd numbers are in a list.
 
-                  class myTests(TestCaseGui):
+           .. actex:: ex_9_6
 
-                      def testOne(self):
-                          self.assertEqual(countOdd([1,3,5,7,9]),5,"Tested countOdd on input [1,3,5,7,9]")
-                          self.assertEqual(countOdd([1,2,3,4,5]),3,"Tested countOdd on input [-1,-2,-3,-4,-5]")
-                          self.assertEqual(countOdd([2,4,6,8,10]),0,"Tested countOdd on input [2,4,6,8,10]")
-                          self.assertEqual(countOdd([0,-1,12,-33]),2,"Tested countOdd on input [0,-1,12,-33]")
+              def countOdd(lst):
+                  # your code here
 
-                  myTests().main()
+              ====
+              from unittest.gui import TestCaseGui
 
+              class myTests(TestCaseGui):
 
+                  def testOne(self):
+                      self.assertEqual(countOdd([1,3,5,7,9]),5,"Tested countOdd on input [1,3,5,7,9]")
+                      self.assertEqual(countOdd([1,2,3,4,5]),3,"Tested countOdd on input [-1,-2,-3,-4,-5]")
+                      self.assertEqual(countOdd([2,4,6,8,10]),0,"Tested countOdd on input [2,4,6,8,10]")
+                      self.assertEqual(countOdd([0,-1,12,-33]),2,"Tested countOdd on input [0,-1,12,-33]")
 
-            .. tab:: Answer
+              myTests().main()
 
-                .. activecode:: q7_answer
 
-                    import random
 
-                    def countOdd(lst):
-                        odd = 0
-                        for e in lst:
-                            if e % 2 != 0:
-                                odd = odd + 1
-                        return odd
+        .. tab:: Answer
 
-                    # make a random list to test the function
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randint(0, 1000))
+            .. activecode:: q7_answer
 
-                    print(countOdd(lst))
+                import random
 
-            .. tab:: Discussion
+                def countOdd(lst):
+                    odd = 0
+                    for e in lst:
+                        if e % 2 != 0:
+                            odd = odd + 1
+                    return odd
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
+                # make a random list to test the function
+                lst = []
+                for i in range(100):
+                    lst.append(random.randint(0, 1000))
 
+                print(countOdd(lst))
 
-    #. Sum up all the even numbers in a list.
+        .. tab:: Discussion
 
-       .. actex:: ex_9_7
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_fdd366b1b4c8494082a385e1e1197844
 
-          def sumEven(lst):
-              # your code here
 
-          ====
-          from unittest.gui import TestCaseGui
+.. question:: strings_ex_8
 
-          class myTests(TestCaseGui):
+   Sum up all the even numbers in a list.
 
-              def testOne(self):
-                  self.assertEqual(sumEven([1,3,5,7,9]),0,"Tested sumEven on input [1,3,5,7,9]")
-                  self.assertEqual(sumEven([-1,-2,-3,-4,-5]),-6,"Tested sumEven on input [-1,-2,-3,-4,-5]")
-                  self.assertEqual(sumEven([2,4,6,7,9]),12,"Tested sumEven on input [2,4,6,7,9]")
-                  self.assertEqual(sumEven([0,1,12,33]),12,"Tested sumEven on input [0,1,12,33]")
+   .. actex:: ex_9_7
 
-          myTests().main()
+      def sumEven(lst):
+          # your code here
 
-    #.
+      ====
+      from unittest.gui import TestCaseGui
 
-        .. tabbed:: q9
+      class myTests(TestCaseGui):
 
-            .. tab:: Question
+          def testOne(self):
+              self.assertEqual(sumEven([1,3,5,7,9]),0,"Tested sumEven on input [1,3,5,7,9]")
+              self.assertEqual(sumEven([-1,-2,-3,-4,-5]),-6,"Tested sumEven on input [-1,-2,-3,-4,-5]")
+              self.assertEqual(sumEven([2,4,6,7,9]),12,"Tested sumEven on input [2,4,6,7,9]")
+              self.assertEqual(sumEven([0,1,12,33]),12,"Tested sumEven on input [0,1,12,33]")
 
-               Sum up all the negative numbers in a list.
+      myTests().main()
 
-               .. actex:: ex_9_8
+.. question:: strings_ex_9
 
-                  def sumNegatives(lst):
-                      # your code here
+   .. tabbed:: q9
 
-                  ====
-                  from unittest.gui import TestCaseGui
+        .. tab:: Question
 
-                  class myTests(TestCaseGui):
+           Sum up all the negative numbers in a list.
 
-                      def testOne(self):
-                          self.assertEqual(sumNegatives([-1,-2,-3,-4,-5]),-15,"Tested sumNegatives on input [-1,-2,-3,-4,-5]")
-                          self.assertEqual(sumNegatives([1,-3,5,-7,9]),-10,"Tested sumNegatives on input [1,-3,5,-7,9]")
-                          self.assertEqual(sumNegatives([-2,-4,6,-7,9]),-13,"Tested sumNegatives on input [-2,-4,6,-7,9]")
-                          self.assertEqual(sumNegatives([0,1,2,3,4]),0,"Tested sumNegatives on input [0,1,2,3,4]")
+           .. actex:: ex_9_8
 
-                  myTests().main()
+              def sumNegatives(lst):
+                  # your code here
 
+              ====
+              from unittest.gui import TestCaseGui
 
+              class myTests(TestCaseGui):
 
-            .. tab:: Answer
+                  def testOne(self):
+                      self.assertEqual(sumNegatives([-1,-2,-3,-4,-5]),-15,"Tested sumNegatives on input [-1,-2,-3,-4,-5]")
+                      self.assertEqual(sumNegatives([1,-3,5,-7,9]),-10,"Tested sumNegatives on input [1,-3,5,-7,9]")
+                      self.assertEqual(sumNegatives([-2,-4,6,-7,9]),-13,"Tested sumNegatives on input [-2,-4,6,-7,9]")
+                      self.assertEqual(sumNegatives([0,1,2,3,4]),0,"Tested sumNegatives on input [0,1,2,3,4]")
 
-                .. activecode:: q9_answer
+              myTests().main()
 
-                    import random
 
-                    def sumNegative(lst):
-                        sum = 0
-                        for e in lst:
-                            if e < 0:
-                                sum = sum + e
-                        return sum
 
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randrange(-1000, 1000))
+        .. tab:: Answer
 
-                    print(sumNegative(lst))
+            .. activecode:: q9_answer
 
-            .. tab:: Discussion
+                import random
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_bfe671ac1e0942f2be4de7179921f83f
+                def sumNegative(lst):
+                    sum = 0
+                    for e in lst:
+                        if e < 0:
+                            sum = sum + e
+                    return sum
 
+                lst = []
+                for i in range(100):
+                    lst.append(random.randrange(-1000, 1000))
 
-    #. Count how many words in a list have length 5.
+                print(sumNegative(lst))
 
-       .. actex:: ex_9_9
+        .. tab:: Discussion
 
-          def countWords(lst):
-              # your code here
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_bfe671ac1e0942f2be4de7179921f83f
 
-    #.
 
-        .. tabbed:: q11
+.. question:: strings_ex_10
 
-            .. tab:: Question
+   Count how many words in a list have length 5.
 
-               Sum all the elements in a list up to but not including the first even number.
+   .. actex:: ex_9_9
 
-               .. actex:: ex_9_10
+      def countWords(lst):
+          # your code here
 
-                  def sumUntilEven(lst):
-                      # your code here
+.. question:: strings_ex_11
 
-                  ====
-                  from unittest.gui import TestCaseGui
+   .. tabbed:: q11
 
-                  class myTests(TestCaseGui):
+        .. tab:: Question
 
-                      def testOne(self):
-                          self.assertEqual(sumUntilEven([1,2,3,4,5]),1,"Tested sumUntilEven on input [1,2,3,4.5]")
-                          self.assertEqual(sumUntilEven([1,3,5,7,9]),25,"Tested sumUntilEven on input [1,3,5,7,9]")
-                          self.assertEqual(sumUntilEven([2,4,6,7,9]),0,"Tested sumUntilEven on input [2,4,6,7,9]")
+           Sum all the elements in a list up to but not including the first even number.
 
-                  myTests().main()
+           .. actex:: ex_9_10
 
+              def sumUntilEven(lst):
+                  # your code here
 
-            .. tab:: Answer
+              ====
+              from unittest.gui import TestCaseGui
 
-                .. activecode:: q11_answer
+              class myTests(TestCaseGui):
 
-                    import random
+                  def testOne(self):
+                      self.assertEqual(sumUntilEven([1,2,3,4,5]),1,"Tested sumUntilEven on input [1,2,3,4.5]")
+                      self.assertEqual(sumUntilEven([1,3,5,7,9]),25,"Tested sumUntilEven on input [1,3,5,7,9]")
+                      self.assertEqual(sumUntilEven([2,4,6,7,9]),0,"Tested sumUntilEven on input [2,4,6,7,9]")
 
-                    def sum(lst):
-                        sum = 0
-                        index = 0
-                        while index < len(lst) and lst[index] % 2 != 0:
-                            sum = sum + lst[index]
-                            index = index + 1
-                        return sum
+              myTests().main()
 
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randint(0,1000))
 
-                    print(sum(lst))
+        .. tab:: Answer
 
-            .. tab:: Discussion
+            .. activecode:: q11_answer
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_90f95bbe4a49428caa9ed0c5e02747b1
+                import random
 
+                def sum(lst):
+                    sum = 0
+                    index = 0
+                    while index < len(lst) and lst[index] % 2 != 0:
+                        sum = sum + lst[index]
+                        index = index + 1
+                    return sum
 
-    #. Count how many words occur in a list up to and including the first occurrence of the word "sam".
+                lst = []
+                for i in range(100):
+                    lst.append(random.randint(0,1000))
 
-       .. actex:: ex_9_11
+                print(sum(lst))
 
-          def count(lst):
-              # your code here
+        .. tab:: Discussion
 
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_90f95bbe4a49428caa9ed0c5e02747b1
 
 
-    #.
+.. question:: strings_ex_12
 
-        .. tabbed:: q13
+   Count how many words occur in a list up to and including the first occurrence of the word "sam".
 
-            .. tab:: Question
+   .. actex:: ex_9_11
 
-               Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
+      def count(lst):
+          # your code here
 
-               a. count
-               #. in
-               #. reverse
-               #. index
-               #. insert
 
 
-               .. actex:: ex_9_12
+.. question:: strings_ex_13
 
-            .. tab:: Answer
+   .. tabbed:: q13
 
-                .. activecode:: q13_answer
+        .. tab:: Question
 
-                    def count(obj, lst):
-                        count = 0
-                        for e in lst:
-                            if e == obj:
-                                count = count + 1
-                        return count
+           Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
 
-                    def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
-                        for e in lst:
-                            if e == obj:
-                                return True
-                        return False
+           a. count
+           #. in
+           #. reverse
+           #. index
+           #. insert
 
-                    def reverse(lst):
-                        reversed = []
-                        for i in range(len(lst)-1, -1, -1): # step through the original list backwards
-                            reversed.append(lst[i])
-                        return reversed
 
-                    def index(obj, lst):
-                        for i in range(len(lst)):
-                            if lst[i] == obj:
-                                return i
-                        return -1
+           .. actex:: ex_9_12
 
-                    def insert(obj, index, lst):
-                        newlst = []
-                        for i in range(len(lst)):
-                            if i == index:
-                                newlst.append(obj)
-                            newlst.append(lst[i])
-                        return newlst
+        .. tab:: Answer
 
-                    lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-                    print(count(1, lst))
-                    print(is_in(4, lst))
-                    print(reverse(lst))
-                    print(index(2, lst))
-                    print(insert('cat', 4, lst))
+            .. activecode:: q13_answer
 
-            .. tab:: Discussion
+                def count(obj, lst):
+                    count = 0
+                    for e in lst:
+                        if e == obj:
+                            count = count + 1
+                    return count
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_39ee0274e51d4c888cc20b6fefa4069c
+                def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
+                    for e in lst:
+                        if e == obj:
+                            return True
+                    return False
 
+                def reverse(lst):
+                    reversed = []
+                    for i in range(len(lst)-1, -1, -1): # step through the original list backwards
+                        reversed.append(lst[i])
+                    return reversed
 
-    #. Write a function ``replace(s, old, new)`` that replaces all occurences of
-       ``old`` with ``new`` in a string ``s``::
+                def index(obj, lst):
+                    for i in range(len(lst)):
+                        if lst[i] == obj:
+                            return i
+                    return -1
 
-          test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
+                def insert(obj, index, lst):
+                    newlst = []
+                    for i in range(len(lst)):
+                        if i == index:
+                            newlst.append(obj)
+                        newlst.append(lst[i])
+                    return newlst
 
-          s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
-          test(replace(s, 'om', 'am'),
-                 'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
+                lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+                print(count(1, lst))
+                print(is_in(4, lst))
+                print(reverse(lst))
+                print(index(2, lst))
+                print(insert('cat', 4, lst))
 
-          test(replace(s, 'o', 'a'),
-                 'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
+        .. tab:: Discussion
 
-       *Hint*: use the ``split`` and ``join`` methods.
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_39ee0274e51d4c888cc20b6fefa4069c
 
-       .. actex:: ex_9_13
 
-          def replace(s, old, new):
-              # your code here
+.. question:: strings_ex_14
 
-          ====
-          from unittest.gui import TestCaseGui
+   Write a function ``replace(s, old, new)`` that replaces all occurences of
+   ``old`` with ``new`` in a string ``s``::
 
-          class myTests(TestCaseGui):
+      test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
 
-              def testOne(self):
-                  self.assertEqual(replace('Mississippi','i','I'),'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
-                  self.assertEqual(replace('Bookkeeper','e','A'),'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
-                  self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
+      s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
+      test(replace(s, 'om', 'am'),
+             'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
 
-          myTests().main()
+      test(replace(s, 'o', 'a'),
+             'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
 
+   *Hint*: use the ``split`` and ``join`` methods.
 
+   .. actex:: ex_9_13
 
-    #.
+      def replace(s, old, new):
+          # your code here
 
-        .. tabbed:: q15
+      ====
+      from unittest.gui import TestCaseGui
 
-            .. tab:: Question
+      class myTests(TestCaseGui):
 
-               Here are the rules for an L-system that creates something that resembles
-               a common garden herb.  Implement the following rules and try it.  Use an
-               angle of 25.7 degrees.
+          def testOne(self):
+              self.assertEqual(replace('Mississippi','i','I'),'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
+              self.assertEqual(replace('Bookkeeper','e','A'),'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
+              self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
 
-               ::
+      myTests().main()
 
-                   H
-                   H --> HFX[+H][-H]
-                   X --> X[-FFF][+FFF]FX
 
 
-               .. actex:: ex_9_14
-                  :nocodelens:
+.. question:: strings_ex_15
 
-            .. tab:: Answer
+   .. tabbed:: q15
 
-                .. activecode:: q15_answer
-                    :nocodelens:
+        .. tab:: Question
 
-                    import turtle
+           Here are the rules for an L-system that creates something that resembles
+           a common garden herb.  Implement the following rules and try it.  Use an
+           angle of 25.7 degrees.
 
-                    def createLSystem(numIters, axiom):
-                        startString = axiom
-                        endString = ""
-                        for i in range(numIters):
-                            endString = processString(startString)
-                            startString = endString
+           ::
 
-                        return endString
+               H
+               H --> HFX[+H][-H]
+               X --> X[-FFF][+FFF]FX
 
-                    def processString(oldStr):
-                        newstr = ""
-                        for ch in oldStr:
-                            newstr = newstr + applyRules(ch)
 
-                        return newstr
+           .. actex:: ex_9_14
+              :nocodelens:
 
-                    def applyRules(ch):
-                        newstr = ""
-                        if ch == 'H':
-                            newstr = 'HFX[+H][-H]'   # Rule 1
-                        elif ch == 'X':
-                            newstr = 'X[-FFF][+FFF]FX'
-                        else:
-                            newstr = ch     # no rules apply so keep the character
+        .. tab:: Answer
 
-                        return newstr
+            .. activecode:: q15_answer
+                :nocodelens:
 
-                    def drawLsystem(aTurtle, instructions, angle, distance):
-                        savedInfoList = []
-                        for cmd in instructions:
-                            if cmd == 'F':
-                                aTurtle.forward(distance)
-                            elif cmd == 'B':
-                                aTurtle.backward(distance)
-                            elif cmd == '+':
-                                aTurtle.right(angle)
-                            elif cmd == '-':
-                                aTurtle.left(angle)
-                            elif cmd == '[':
-                                savedInfoList.append([aTurtle.heading(), aTurtle.xcor(), aTurtle.ycor()])
-                                #print(savedInfoList)
-                            elif cmd == ']':
-                                newInfo = savedInfoList.pop()
-                                aTurtle.setheading(newInfo[0])
-                                aTurtle.setposition(newInfo[1], newInfo[2])
+                import turtle
 
+                def createLSystem(numIters, axiom):
+                    startString = axiom
+                    endString = ""
+                    for i in range(numIters):
+                        endString = processString(startString)
+                        startString = endString
 
-                    def main():
-                        inst = createLSystem(4, "H")   # create the string
-                        print(inst)
-                        t = turtle.Turtle()            # create the turtle
-                        wn = turtle.Screen()
-                        t.up()
-                        t.back(200)
-                        t.down()
-                        t.speed(9)
-                        drawLsystem(t, inst, 27.5, 5)  # draw the picture
+                    return endString
 
-                        wn.exitonclick()
+                def processString(oldStr):
+                    newstr = ""
+                    for ch in oldStr:
+                        newstr = newstr + applyRules(ch)
 
-                    main()
+                    return newstr
 
+                def applyRules(ch):
+                    newstr = ""
+                    if ch == 'H':
+                        newstr = 'HFX[+H][-H]'   # Rule 1
+                    elif ch == 'X':
+                        newstr = 'X[-FFF][+FFF]FX'
+                    else:
+                        newstr = ch     # no rules apply so keep the character
 
-            .. tab:: Discussion
+                    return newstr
 
-                .. disqus::
-                    :shortname: interactivepython
-                    :identifier: disqus_10a1fdd1fadb401b8e733afd9d105052
+                def drawLsystem(aTurtle, instructions, angle, distance):
+                    savedInfoList = []
+                    for cmd in instructions:
+                        if cmd == 'F':
+                            aTurtle.forward(distance)
+                        elif cmd == 'B':
+                            aTurtle.backward(distance)
+                        elif cmd == '+':
+                            aTurtle.right(angle)
+                        elif cmd == '-':
+                            aTurtle.left(angle)
+                        elif cmd == '[':
+                            savedInfoList.append([aTurtle.heading(), aTurtle.xcor(), aTurtle.ycor()])
+                            #print(savedInfoList)
+                        elif cmd == ']':
+                            newInfo = savedInfoList.pop()
+                            aTurtle.setheading(newInfo[0])
+                            aTurtle.setposition(newInfo[1], newInfo[2])
 
 
-    #. Here is another L-System.  Use an Angle of 25.
+                def main():
+                    inst = createLSystem(4, "H")   # create the string
+                    print(inst)
+                    t = turtle.Turtle()            # create the turtle
+                    wn = turtle.Screen()
+                    t.up()
+                    t.back(200)
+                    t.down()
+                    t.speed(9)
+                    drawLsystem(t, inst, 27.5, 5)  # draw the picture
 
-       ::
+                    wn.exitonclick()
 
-           F
-           F --> F[-F]F[+F]F
+                main()
 
-       .. actex:: ex_9_16
-          :nocodelens:
+
+        .. tab:: Discussion
+
+            .. disqus::
+                :shortname: interactivepython
+                :identifier: disqus_10a1fdd1fadb401b8e733afd9d105052
+
+
+.. question:: strings_ex_16
+
+   Here is another L-System.  Use an Angle of 25.
+
+   ::
+
+       F
+       F --> F[-F]F[+F]F
+
+   .. actex:: ex_9_16
+      :nocodelens:

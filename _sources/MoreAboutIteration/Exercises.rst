@@ -13,8 +13,9 @@ Exercises
 
 
 .. question:: moreiter_ex_1
+   :number: 1
 
-    .. tabbed:: q1
+   .. tabbed:: q1
 
         .. tab:: Question
 
@@ -74,7 +75,7 @@ Exercises
 
 .. question:: moreiter_ex_3
 
-    .. tabbed:: q3
+   .. tabbed:: q3
 
         .. tab:: Question
 
@@ -136,7 +137,7 @@ Exercises
 
 .. question:: moreiter_ex_5
 
-    .. tabbed:: q5
+   .. tabbed:: q5
 
         .. tab:: Question
 
@@ -236,7 +237,7 @@ Exercises
 
 .. question:: moreiter_ex_7
 
-    .. tabbed:: q7
+   .. tabbed:: q7
 
         .. tab:: Question
 
@@ -287,13 +288,13 @@ Exercises
 
    Write a function to convert the image to grayscale.
 
-    .. actex:: ex_7_16
-       :nocodelens:
+   .. actex:: ex_7_16
+      :nocodelens:
 
 
 .. question:: moreiter_ex_9
 
-    .. tabbed:: q9
+   .. tabbed:: q9
 
         .. tab:: Question
 
@@ -368,12 +369,12 @@ Exercises
    Write a function to convert an image to sepia tone. *Hint:*
    Remember that rgb values must be integers between 0 and 255.
 
-    .. actex:: ex_7_18
-       :nocodelens:
+   .. actex:: ex_7_18
+      :nocodelens:
 
 .. question:: moreiter_ex_11
 
-    .. tabbed:: q11
+   .. tabbed:: q11
 
         .. tab:: Question
 
@@ -494,12 +495,12 @@ Exercises
    or the images may even be damaged.  One way of eliminating this noise is
    to replace each pixel by the median value of the pixels surrounding it.
 
-    .. actex:: ex_7_22
-       :nocodelens:
+   .. actex:: ex_7_22
+      :nocodelens:
 
 .. question:: moreiter_ex_15
 
-    .. tabbed:: q15
+   .. tabbed:: q15
 
         .. tab:: Question
 
