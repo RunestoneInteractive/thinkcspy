@@ -434,7 +434,7 @@ Exercises
        .. actex:: ex_7_20
           :nocodelens:
 
-.. question:: moreiter_ex_3
+.. question:: moreiter_ex_13
 
     .. tabbed:: q13
 
