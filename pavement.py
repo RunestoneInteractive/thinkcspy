@@ -17,7 +17,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcspy"
+project_name = "cps110fall2006"
 ###############################
 
 master_url = None
