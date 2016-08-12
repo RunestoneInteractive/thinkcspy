@@ -80,7 +80,7 @@ will be able to tell which is which by looking for either the Python prompt in t
 
 .. mchoice:: question1_3_2
    :multiple_answers:
-   :answer_a: measure the speed of a program’s execution.
+   :answer_a: measure the speed of a program's execution.
    :answer_b: control the step by step execution of a program.
    :answer_c: write and execute your own Python code.
    :answer_d: execute the Python code that is in codelens.

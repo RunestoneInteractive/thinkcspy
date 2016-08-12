@@ -1,119 +1,416 @@
-..  Copyright (C)  Brad Miller, David Ranum
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3 or
-    any later version published by the Free Software Foundation; with
-    Invariant Sections being Forward, Prefaces, and Contributor List,
-    no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
-    is included in the section entitled "GNU Free Documentation License".
-
-.. meta::
-   :description: An interactive version of How to Think Like a Computer Scientist.  Learn to program in Python using this online textbook.
-   :keywords: python, turtle graphics, computer science
+.. _t_o_c:
 
 .. raw:: html
 
-   <h1 style="text-align: center">How to Think Like a Computer Scientist</h1>
-   <h2 style="text-align: center">Learning with Python: Interactive Edition 2.0 </h2>
+   <div style="text-align:center" class="center-block">
+   <h1>How to Think Like a Computer Scientist: Interactive Edition</h1>
+   <style>
+   button.reveal_button {
+       margin-left: auto;
+       margin-right: auto;
+   }
+   </style>
+   </div>
+
+.. reveal:: about
+   :showtitle: About this Project
+   :modal:
+   :modalTitle: About this Project
+
+   About this Project
+   ------------------
+
+   This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
+
+   * This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
+   * Activecode based on `Skulpt <http://skulpt.org>`_
+   * Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
+   * Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
+   * ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
+   * NSF
+
+   The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
 
 
-.. raw:: html
-
-    <p>Welcome! Take a tour, experiment with Python, join <span id="totalusers"></span> other readers in learning
-    how to think like a computer scientist with Python.</p>
-
-.. activecode:: welcome
-   :above:
-   :autorun:
-   :hidecode:
-   :nocodelens:
-
-   import turtle
-   import random
-
-   def main():
-       tList = []
-       head = 0
-       numTurtles = 10
-       wn = turtle.Screen()
-       wn.setup(500,500)
-       for i in range(numTurtles):
-           nt = turtle.Turtle()   # Make a new turtle, initialize values
-           nt.setheading(head)
-           nt.pensize(2)
-           nt.color(random.randrange(256),random.randrange(256),random.randrange(256))
-           nt.speed(10)
-           wn.tracer(30,0)
-           tList.append(nt)       # Add the new turtle to the list
-           head = head + 360/numTurtles
-
-       for i in range(100):
-           moveTurtles(tList,15,i)
-
-       w = tList[0]
-       w.up()
-       w.goto(0,40)
-       w.write("How to Think Like a ",True,"center","40pt Bold")
-       w.goto(0,-35)
-       w.write("Computer Scientist",True,"center","40pt Bold")
-
-   def moveTurtles(turtleList,dist,angle):
-       for turtle in turtleList:   # Make every turtle on the list do the same actions.
-           turtle.forward(dist)
-           turtle.right(angle)
-
-   main()
 
 
-Benefits of this Interactive Textbook
--------------------------------------
+Table of Contents
+:::::::::::::::::
 
-* You can experiment with **activecode** examples right in the book
-
-  * Click Show/Hide Code button
-  * On line 7: change ``numTurtles = 10`` to ``numTurtles = 6``
-  * Click the Run button
-
-* You can do your **homework** right in the textbook.
-* You can interact with other learners to discuss homework
-* **Interactive questions** make sure that you are on track and help you focus.
-* **Codelens** helps you develop a mental model of how Python works.
-* **Audio Tours** help you understand the code.
-* Short **videos** cover difficult or important topics.
-* You can highlight text, and take notes in scratch editors
-
-Next Steps
-----------
-
-* Get an overview of the features in this book  `Click Here </runestone/static/overview/overview.html>`_
-* To get help moving around the book:  :ref:`quick_help`
-* Check out a sample chapter `Hello, Little Turtles! </runestone/static/thinkcspy/PythonTurtle/intro-HelloLittleTurtles.html>`_
-* Check out the :ref:`t_o_c`
-* Take me to Chapter 1  `The Way of the Program </runestone/static/thinkcspy/GeneralIntro/intro-TheWayoftheProgram.html>`_
-
-About this Project
-------------------
-
-This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
-
-* This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
-* Activecode based on `Skulpt <http://skulpt.org>`_
-* Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
-* Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
-* ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
-
-The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
-
-Contact
--------
-
-* If you have questions about this book please send me email `bmiller@luther.edu <mailto:bmiller@luther.edu>`_
-* Check out the project on `GitHub <https://github.com/bnmnetp/runestone>`_
-* Visit our `Facebook page <https://www.facebook.com/RunestoneInteractive>`_
-
+Assignments
+:::::::::::
 
 .. toctree::
-   :hidden:
 
-   index
-   navhelp
+   assignments.rst
 
+General Introduction
+::::::::::::::::::::
+
+.. toctree::
+   :caption: General Introduction
+   :maxdepth: 2
+
+   GeneralIntro/intro-TheWayoftheProgram.rst
+   GeneralIntro/Algorithms.rst
+   GeneralIntro/ThePythonProgrammingLanguage.rst
+   GeneralIntro/SpecialWaystoExecutePythoninthisBook.rst
+   GeneralIntro/MoreAboutPrograms.rst
+   GeneralIntro/WhatisDebugging.rst
+   GeneralIntro/Syntaxerrors.rst
+   GeneralIntro/RuntimeErrors.rst
+   GeneralIntro/SemanticErrors.rst
+   GeneralIntro/ExperimentalDebugging.rst
+   GeneralIntro/FormalandNaturalLanguages.rst
+   GeneralIntro/ATypicalFirstProgram.rst
+   GeneralIntro/Comments.rst
+   GeneralIntro/Glossary.rst
+
+Simple Python Data
+::::::::::::::::::
+
+.. toctree::
+   :caption: Simple Python Data
+   :maxdepth: 2
+
+   SimplePythonData/intro-VariablesExpressionsandStatements.rst
+   SimplePythonData/ValuesandDataTypes.rst
+   SimplePythonData/Typeconversionfunctions.rst
+   SimplePythonData/Variables.rst
+   SimplePythonData/VariableNamesandKeywords.rst
+   SimplePythonData/StatementsandExpressions.rst
+   SimplePythonData/OperatorsandOperands.rst
+   SimplePythonData/Input.rst
+   SimplePythonData/OrderofOperations.rst
+   SimplePythonData/Reassignment.rst
+   SimplePythonData/UpdatingVariables.rst
+   SimplePythonData/Glossary.rst
+   SimplePythonData/Exercises.rst
+
+
+Debugging Interlude 1
+:::::::::::::::::::::
+
+.. toctree::
+   :caption: Debugging Interlude 1
+   :maxdepth: 2
+
+   Debugging/intro-HowtobeaSuccessfulProgrammer.rst
+   Debugging/HowtoAvoidDebugging.rst
+   Debugging/BeginningtipsforDebugging.rst
+   Debugging/KnowyourerrorMessages.rst
+   Debugging/Summary.rst
+   
+
+Python Turtle Graphics
+::::::::::::::::::::::
+
+.. toctree::
+   :caption: Python Turtle Graphics
+   :maxdepth: 2
+
+   PythonTurtle/intro-HelloLittleTurtles.rst
+   PythonTurtle/OurFirstTurtleProgram.rst
+   PythonTurtle/InstancesAHerdofTurtles.rst
+   PythonTurtle/TheforLoop.rst
+   PythonTurtle/FlowofExecutionoftheforLoop.rst
+   PythonTurtle/IterationSimplifiesourTurtleProgram.rst
+   PythonTurtle/TherangeFunction.rst
+   PythonTurtle/AFewMoreturtleMethodsandObservations.rst
+   PythonTurtle/SummaryofTurtleMethods.rst
+   PythonTurtle/Glossary.rst
+   PythonTurtle/Exercises.rst
+
+
+Python Modules
+::::::::::::::
+
+.. toctree::
+   :caption: Python Modules
+   :maxdepth: 2
+
+   PythonModules/modules.rst
+   PythonModules/MoreAboutUsingModules.rst
+   PythonModules/Themathmodule.rst
+   PythonModules/Therandommodule.rst
+   PythonModules/Glossary.rst
+   PythonModules/Exercises.rst
+
+Functions
+:::::::::
+
+.. toctree::
+   :caption: Functions
+   :maxdepth: 2
+
+   Functions/functions.rst
+   Functions/Functionsthatreturnvalues.rst
+   Functions/Variablesandparametersarelocal.rst
+   Functions/TheAccumulatorPattern.rst
+   Functions/Functionscancallotherfunctions.rst
+   Functions/FlowofExecutionSummary.rst
+   Functions/mainfunction.rst
+   Functions/ProgramDevelopment.rst
+   Functions/Composition.rst
+   Functions/ATurtleBarChart.rst
+   Functions/Glossary.rst
+   Functions/thinkcspyExercises.rst
+
+Selection
+:::::::::
+
+.. toctree::
+   :caption: Selection
+   :maxdepth: 2
+
+   Selection/BooleanValuesandBooleanExpressions.rst
+   Selection/Logicaloperators.rst
+   Selection/PrecedenceofOperators.rst
+   Selection/ConditionalExecutionBinarySelection.rst
+   Selection/OmittingtheelseClauseUnarySelection.rst
+   Selection/Nestedconditionals.rst
+   Selection/Chainedconditionals.rst
+   Selection/BooleanFunctions.rst
+   Selection/Glossary.rst
+   Selection/Exercises.rst
+
+
+More About Iteration
+::::::::::::::::::::
+
+.. toctree::
+   :caption: More About Iteration
+   :maxdepth: 2
+
+   MoreAboutIteration/intro-IterationRevisited.rst
+   MoreAboutIteration/Theforlooprevisited.rst
+   MoreAboutIteration/ThewhileStatement.rst
+   MoreAboutIteration/RandomlyWalkingTurtles.rst
+   MoreAboutIteration/The3n1Sequence.rst
+   MoreAboutIteration/Newton'sMethod.rst
+   MoreAboutIteration/AlgorithmsRevisited.rst
+   MoreAboutIteration/SimpleTables.rst
+   MoreAboutIteration/2DimensionalIterationImageProcessing.rst
+   MoreAboutIteration/ImageProcessingonYourOwn.rst
+   MoreAboutIteration/Glossary.rst
+   MoreAboutIteration/Exercises.rst
+
+
+Strings
+:::::::
+
+.. toctree::
+   :caption: Strings
+   :maxdepth: 2
+
+   Strings/StringsRevisited.rst
+   Strings/ACollectionDataType.rst
+   Strings/OperationsonStrings.rst
+   Strings/IndexOperatorWorkingwiththeCharactersofaString.rst
+   Strings/StringMethods.rst
+   Strings/Length.rst
+   Strings/TheSliceOperator.rst
+   Strings/StringComparison.rst
+   Strings/StringsareImmutable.rst
+   Strings/TraversalandtheforLoopByItem.rst
+   Strings/TraversalandtheforLoopByIndex.rst
+   Strings/TraversalandthewhileLoop.rst
+   Strings/Theinandnotinoperators.rst
+   Strings/TheAccumulatorPatternwithStrings.rst
+   Strings/TurtlesandStringsandLSystems.rst
+   Strings/Loopingandcounting.rst
+   Strings/Afindfunction.rst
+   Strings/Optionalparameters.rst
+   Strings/Characterclassification.rst
+   Strings/Summary.rst
+   Strings/Glossary.rst
+   Strings/Exercises.rst
+
+Lists
+:::::
+
+.. toctree::
+   :caption: Lists
+   :maxdepth: 2
+
+   Lists/intro-Lists.rst
+   Lists/ListValues.rst
+   Lists/ListLength.rst
+   Lists/AccessingElements.rst
+   Lists/ListMembership.rst
+   Lists/ConcatenationandRepetition.rst
+   Lists/ListSlices.rst
+   Lists/ListsareMutable.rst
+   Lists/ListDeletion.rst
+   Lists/ObjectsandReferences.rst
+   Lists/Aliasing.rst
+   Lists/CloningLists.rst
+   Lists/RepetitionandReferences.rst
+   Lists/ListMethods.rst
+   Lists/TheReturnofLSystems.rst
+   Lists/AppendversusConcatenate.rst
+   Lists/Listsandforloops.rst
+   Lists/UsingListsasParameters.rst
+   Lists/PureFunctions.rst
+   Lists/WhichisBetter.rst
+   Lists/FunctionsthatProduceLists.rst
+   Lists/ListComprehensions.rst
+   Lists/NestedLists.rst
+   Lists/StringsandLists.rst
+   Lists/listTypeConversionFunction.rst
+   Lists/TuplesandMutability.rst
+   Lists/TupleAssignment.rst
+   Lists/TuplesasReturnValues.rst
+   Lists/Glossary.rst
+   Lists/Exercises.rst
+   
+Web Applications
+:::::::::::::::::::
+
+.. toctree::
+   :caption: Web Applications
+   :maxdepth: 2
+
+   WebApps/WebApps.rst
+
+Files
+:::::
+
+.. toctree::
+   :caption: Files
+   :maxdepth: 2
+
+   Files/intro-WorkingwithDataFiles.rst
+   Files/FindingaFileonyourDisk.rst
+   Files/ReadingaFile.rst
+   Files/Iteratingoverlinesinafile.rst
+   Files/AlternativeFileReadingMethods.rst
+   Files/WritingTextFiles.rst
+   Files/Glossary.rst
+   Files/Exercises.rst
+
+
+Dictionaries
+::::::::::::
+
+.. toctree::
+   :caption: Dictionaries
+   :maxdepth: 2
+
+   Dictionaries/intro-Dictionaries.rst
+   Dictionaries/Dictionaryoperations.rst
+   Dictionaries/Dictionarymethods.rst
+   Dictionaries/Aliasingandcopying.rst
+   Dictionaries/Sparsematrices.rst
+   Dictionaries/Glossary.rst
+   Dictionaries/Exercises.rst
+
+Recursion
+:::::::::
+
+.. toctree::
+   :caption: Recursion
+   :maxdepth: 2
+
+   Recursion/WhatIsRecursion.rst
+   Recursion/CalculatingtheSumofaListofNumbers.rst
+   Recursion/TheThreeLawsofRecursion.rst
+   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
+   Recursion/intro-VisualizingRecursion.rst
+   Recursion/SierpinskiTriangle.rst
+   Recursion/Glossary.rst
+   Recursion/ProgrammingExercises.rst
+
+
+Classes and Objects - the Basics
+::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :caption: Classes and Objects - the Basics
+   :maxdepth: 2
+
+   ClassesBasics/Objectorientedprogramming.rst
+   ClassesBasics/Achangeofperspective.rst
+   ClassesBasics/ObjectsRevisited.rst
+   ClassesBasics/UserDefinedClasses.rst
+   ClassesBasics/ImprovingourConstructor.rst
+   ClassesBasics/AddingOtherMethodstoourClass.rst
+   ClassesBasics/ObjectsasArgumentsandParameters.rst
+   ClassesBasics/ConvertinganObjecttoaString.rst
+   ClassesBasics/InstancesasReturnValues.rst
+   ClassesBasics/Glossary.rst
+   ClassesBasics/Exercises.rst
+
+
+Classes and Objects - Digging a Little Deeper
+:::::::::::::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :caption: Classes and Objects - Digging Deeper
+   :maxdepth: 2
+
+   ClassesDiggingDeeper/Fractions.rst
+   ClassesDiggingDeeper/ObjectsareMutable.rst
+   ClassesDiggingDeeper/Sameness.rst
+   ClassesDiggingDeeper/ArithmeticMethods.rst
+   ClassesDiggingDeeper/Glossary.rst
+   ClassesDiggingDeeper/Exercises.rst
+   
+Inheritance
+:::::::::::::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :caption: Inheritance
+   :maxdepth: 2
+
+   Inheritance/Inheritance.rst
+   
+Labs
+::::
+
+.. toctree::
+   :caption: Labs
+   :maxdepth: 1
+
+   Labs/astronomylab.rst
+   Labs/lab03_01.rst
+   Labs/lab04_01.rst
+   Labs/lab04_01a.rst
+   Labs/lab12_01.rst
+   Labs/lab12_02.rst
+   Labs/montepi.rst
+   Labs/pythonshell.rst
+   Labs/sequencelab.rst
+   Labs/sinlab.rst
+
+Appendices
+::::::::::
+
+.. toctree::
+   :caption: Appendices
+   :maxdepth: 1
+
+   Appendices/errorsAndDebug.rst
+   SimplePythonData/at_1_1.rst
+
+Acknowledgements
+::::::::::::::::
+
+.. toctree::
+    :caption: Acknowledgements
+    :maxdepth: 1
+
+    FrontBackMatter/copyright.rst
+    FrontBackMatter/prefaceinteractive.rst
+    FrontBackMatter/foreword.rst
+    FrontBackMatter/preface.rst
+    FrontBackMatter/preface2e.rst
+    FrontBackMatter/contrib.rst
+    FrontBackMatter/fdl-1.3.rst
+
+Indices and tables
+::::::::::::::::::
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

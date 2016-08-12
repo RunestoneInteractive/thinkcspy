@@ -128,16 +128,16 @@ get random behavior each time you execute.
 
 .. mchoice:: question4_4_4
    :answer_a: There is no computer on the stage for the drawing.
-   :answer_b: Because computers don’t really generate random numbers, they generate pseudo-random numbers.
+   :answer_b: Because computers don't really generate random numbers, they generate pseudo-random numbers.
    :answer_c: They would just generate the same numbers over and over again.
-   :answer_d: The computer can’t tell what values were already selected, so it might generate all 5’s instead of 5 unique numbers.
+   :answer_d: The computer can't tell what values were already selected, so it might generate all 5's instead of 5 unique numbers.
    :correct: b
    :feedback_a: They could easily put one there.
    :feedback_b: Computers generate random numbers using a deterministic algorithm.  This means that if anyone ever found out the algorithm they could accurately predict the next value to be generated and would always win the lottery.
    :feedback_c: This might happen if the same seed value was used over and over again, but they could make sure this was not the case.
    :feedback_d: While a programmer would need to ensure the computer did not select the same number more than once, it is easy to ensure this.
 
-   One reason that lotteries don’t use computers to generate random numbers is:
+   One reason that lotteries don't use computers to generate random numbers is:
 
 
 .. note::

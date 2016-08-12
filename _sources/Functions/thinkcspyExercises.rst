@@ -219,10 +219,21 @@ Exercises
 
                 .. actex:: ex_5_7
 
-                    from test import testEqual
-
                     def sumTo(n):
                         # your code here
+
+                    ====
+                    from unittest.gui import TestCaseGui
+
+                    class myTests(TestCaseGui):
+
+                        def testOne(self):
+                            self.assertAlmostEqual(sumTo(15),120.0,0,"Tested sumTo on input 15")
+                            self.assertAlmostEqual(sumTo(0),0.0,0,"Tested sumTo on input 0")
+                            self.assertAlmostEqual(sumTo(25),325.0,0,"Tested sumTo on input 25")
+                            self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
+
+                    myTests().main()
 
 
             .. tab:: Answer
@@ -254,17 +265,22 @@ Exercises
 
         .. actex:: ex_5_8
 
-            from test import testEqual
-
             def areaOfCircle(r):
                 # your code here
 
-            t = areaOfCircle(0)
-            testEqual(t,0)
-            t = areaOfCircle(1)
-            testEqual(t,math.pi)
-            t = areaOfCircle(100)
-            testEqual(t,31415.926535897932)
+            ====
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
+                    self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
+                    self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
+                    self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
+
+
+            myTests().main()
 
 
     #.
@@ -365,6 +381,19 @@ Exercises
                     def sumTo(n):
                         # your code here
 
+                    ====
+                    from unittest.gui import TestCaseGui
+
+                    class myTests(TestCaseGui):
+
+                        def testOne(self):
+                            self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
+                            self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
+                            self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
+                            self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
+
+                    myTests().main()
+
 
             .. tab:: Answer
 
@@ -398,6 +427,22 @@ Exercises
 
         .. actex:: ex_5_14
 
+            def mySqrt(n):
+                # your code here
+
+            ====
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
+                    self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
+                    self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
+                    self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
+
+            myTests().main()
+
 
     #.
 
@@ -408,6 +453,12 @@ Exercises
                 Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
 
                 .. actex:: ex_5_15
+
+                    def myPi(iters):
+                        # Calculate an approximation of PI using the Leibniz
+                        # approximation with iters number of iterations
+
+                        # your code here
 
 
             .. tab:: Answer
@@ -441,6 +492,12 @@ Exercises
     #.  Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
 
         .. actex:: ex_5_16
+
+            def myPi(iters):
+                # Calculate an approximation of PI using the Madhava
+                # approximation with iters number of iterations
+
+                #your code here
 
     #.
 
@@ -486,6 +543,3 @@ Exercises
                 .. disqus::
                     :shortname: interactivepython
                     :identifier: db5d8808bf5749579718bdd2088b539f
-
-
-

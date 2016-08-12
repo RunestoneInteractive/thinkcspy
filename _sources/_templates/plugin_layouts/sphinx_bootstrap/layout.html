@@ -149,6 +149,8 @@
           <ul class="dropdown-menu user-menu">
             <li><span class='loggedinuser'></span></li>
             <li class="divider"></li>
+            <li><a href='/{{appname}}/default/courses'>Change Course</a></li>
+            <li class="divider"></li>
             <li><a href='{{course_url}}/{{appname}}/mygroup/initiateGroup' id="joinGroupLink">Join a Study Group</a></li>
             <li><a href='{{course_url}}/{{appname}}/mygroup/schedule' id="groupScheduleLink">Group Schedule</a></li>
             <li><a href='{{course_url}}/{{appname}}/mygroup/newschedule' id="newChapterLink">Schedule New Chapter</a></li>
@@ -177,7 +179,7 @@
             <li><a href='/{{appname}}/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/{{appname}}/static/help/bugreports.html'>Report A Problem</a></li>
+            <li><a href='/{{ appname }}/default/reportabug?course={{ course_id }}&page={{ pathto(pagename,1) }}'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -188,10 +190,11 @@
 
       <ul class="nav navbar-nav">
         <li class="divider-vertical"></li>
-        <!--{% block sidebartoc %}
-          {% include "localtoc.html" %}
+        {% block sidebartoc %}
+          {% include "globaltoc.html" %}
           <li class="divider-vertical"></li>
         {% endblock %}
+        <!--
         {% block sidebarrel %}
           {% include "relations.html" %}
         {% endblock %}-->
@@ -209,6 +212,7 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/{{appname}}/static/favicon.ico" type="image/ico" />
 <script type="text/javascript">
   eBookConfig = {};
   eBookConfig.host = '{{course_url}}' ? '{{course_url}}' : 'http://127.0.0.1:8000';

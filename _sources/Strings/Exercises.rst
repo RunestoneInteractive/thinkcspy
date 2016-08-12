@@ -17,7 +17,7 @@ Exercises
         .. tab:: Question
 
             What is the result of each of the following:
-        
+
             a. 'Python'[1]
             #. "Strings are sequences of characters."[5]
             #. len("wonderful")
@@ -40,7 +40,7 @@ Exercises
             #. 'apple' > 'pineapple' = False
             #. 'pineapple' < 'Peach' = False
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -62,33 +62,36 @@ Exercises
 
    Of course, that's not quite right because Ouack and Quack are misspelled.
    Can you fix it?
-   
+
     .. actex:: ex_8_2
-   
+
 #.
 
     .. tabbed:: q3
 
         .. tab:: Question
 
-           Assign to a variable in your program a triple-quoted string that contains 
+           Assign to a variable in your program a triple-quoted string that contains
            your favorite paragraph of text - perhaps a poem, a speech, instructions
            to bake a cake, some inspirational verses, etc.
-        
+
            Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
-        
-               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.      
-        
+
+               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+
            .. actex:: ex_8_3
 
+              def count(p):
+                  # your code here
+
         .. tab:: Answer
-            
+
             .. activecode:: q3_answer
 
                 def count(p):
                     lows = "abcdefghijklmnopqrstuvwxyz"
                     ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                    
+
                     numberOfe = 0
                     totalChars = 0
                     for achar in p:
@@ -129,15 +132,34 @@ Exercises
         .. tab:: Question
 
            Write a function that will return the number of digits in an integer.
-        
+
            .. actex:: ex_7_10
-        
+
+              def numDigits(n):
+                  # your code here
+
+              ====
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                def testOne(self):
+                    self.assertEqual(numDigits(2),1,"Tested numDigits on input of 2")
+                    self.assertEqual(numDigits(55),2,"Tested numDigits on input of 55")
+                    self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
+                    self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
+
+
+
+              myTests().main()
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q5_answer
 
-                def findNumDigits(n):
+                def numDigits(n):
                     n_str = str(n)
                     return len(n_str)
 
@@ -146,7 +168,7 @@ Exercises
                 print(findNumDigits(20000))
                 print(findNumDigits(1))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -158,14 +180,24 @@ Exercises
    .. actex:: ex_8_5
       :nocodelens:
 
-      from test import testEqual
-
       def reverse(astring):
           # your code here
 
-      testEqual(reverse("happy"), "yppah")
-      testEqual(reverse("Python"), "nohtyP")
-      testEqual(reverse(""), "")
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(reverse("happy"),"yppah","Tested reverse on input of 'happy'")
+            self.assertEqual(reverse("Python"),"nohtyP","Tested reverse on input of 'Python'")
+            self.assertEqual(reverse(""),"","Tested reverse on input of ''")
+
+
+
+
+      myTests().main()
 
 #.
 
@@ -174,24 +206,32 @@ Exercises
         .. tab:: Question
 
            Write a function that mirrors its argument.
-        
+
            .. actex:: ex_8_6
               :nocodelens:
-        
-              from test import testEqual
-        
+
               def mirror(mystr):
                   # your code here
-        
-              testEqual(mirror('good'), 'gooddoog')
-              testEqual(mirror('Python'), 'PythonnohtyP')
-              testEqual(mirror(''), '')
-              testEqual(mirror('a'), 'aa')
-        
-        
+
+              ====
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                  def testOne(self):
+                      self.assertEqual(mirror("good"),"gooddoog","Tested mirror on input of 'good'")
+                      self.assertEqual(mirror("Python"),"PythonnohtyP","Tested mirror on input of 'Python'")
+                      self.assertEqual(mirror(""),"","Tested mirror on input of ''")
+                      self.assertEqual(mirror("a"),"aa","Tested mirror on input of 'a'")
+
+
+              myTests().main()
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q7_answer
                 :nocodelens:
 
@@ -223,14 +263,24 @@ Exercises
    .. actex:: ex_8_7
       :nocodelens:
 
-      from test import testEqual
-
       def remove_letter(theLetter, theString):
           # your code here
 
-      testEqual(remove_letter('a', 'apple'), 'pple')
-      testEqual(remove_letter('a', 'banana'), 'bnn')
-      testEqual(remove_letter('z', 'banana'), 'banana')
+      ====
+
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(remove_letter("a","apple"),"pple","Tested remove_letter on inputs of 'a' and 'apple'")
+            self.assertEqual(remove_letter("a","banana"),"bnn","Tested remove_letter on inputs of 'a' and 'banana'")
+            self.assertEqual(remove_letter("z","banana"),"banana","Tested remove_letter on inputs of 'z' and 'banana'")
+
+
+
+      myTests().main()
 
 
 
@@ -241,24 +291,35 @@ Exercises
         .. tab:: Question
 
            Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
-        
+
            .. actex:: ex_8_8
               :nocodelens:
-        
-              from test import testEqual
-        
+
               def is_palindrome(myStr):
                   # your code here
-        
-              testEqual(is_palindrome('abba'), True)
-              testEqual(is_palindrome('abab'), False)
-              testEqual(is_palindrome('straw warts'), True)
-              testEqual(is_palindrome('a'), True)
-              testEqual(is_palindrome(''), True)
-        
+
+              ====
+
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                  def testOne(self):
+                      self.assertEqual(is_palindrome("abba"),True,"Tested is_palindrome on input of 'abba'")
+                      self.assertEqual(is_palindrome("abab"),False,"Tested is_palindrome on input of 'abab'")
+                      self.assertEqual(is_palindrome("straw warts"),True,"Tested is_palindrome on input of 'straw warts'")
+                      self.assertEqual(is_palindrome("a"),True,"Tested is_palindrome on input of 'a'")
+                      self.assertEqual(is_palindrome(""),True,"Tested is_palindrome on input of ''")
+
+
+
+
+              myTests().main()
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q9_answer
                 :nocodelens:
 
@@ -282,7 +343,7 @@ Exercises
                 testEqual(is_palindrome('a'), True)
                 testEqual(is_palindrome(''), True)
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -294,17 +355,29 @@ Exercises
    .. actex:: ex_8_9
       :nocodelens:
 
-      from test import testEqual
-
       def count(substr,theStr):
           # your code here
 
-      testEqual(count('is', 'Mississippi'), 2)
-      testEqual(count('an', 'banana'), 2)
-      testEqual(count('ana', 'banana'), 2)
-      testEqual(count('nana', 'banana'), 1)
-      testEqual(count('nanan', 'banana'), 0)
-      testEqual(count('aaa', 'aaaaaa'), 4)
+
+      ====
+
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+            def testOne(self):
+                self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
+                self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
+                self.assertEqual(count("ana","banana"),2,"Tested count on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
+                self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
+                self.assertEqual(count("aaa","aaaaaa"),4,"Tested count on input of 'aaa' and 'aaaaaa'")
+
+
+
+
+      myTests().main()
 
 
 #.
@@ -314,24 +387,34 @@ Exercises
         .. tab:: Question
 
            Write a function that removes the first occurrence of a string from another string.
-        
+
            .. actex:: ex_8_10
               :nocodelens:
-        
-              from test import testEqual
-        
+
               def remove(substr,theStr):
                   # your code here
-        
-              testEqual(remove('an', 'banana'), 'bana')
-              testEqual(remove('cyc', 'bicycle'), 'bile')
-              testEqual(remove('iss', 'Mississippi'), 'Missippi')
-              testEqual(remove('egg', 'bicycle'), 'bicycle')
-        
-        
+
+              ====
+
+
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                      def testOne(self):
+                          self.assertEqual(remove("an","banana"),"bana","Tested remove on inputs of 'an' and 'banana'")
+                          self.assertEqual(remove("cyc","bicycle"),"bile","Tested remove on inputs of 'cyc' and 'bicycle'")
+                          self.assertEqual(remove("iss","Mississippi"),"Missippi","Tested remove on inputs of 'iss' and 'Mississippi'")
+                          self.assertEqual(remove("egg","bicycle"),"bicycle","Tested remove on inputs of 'egg' and 'bicycle'")
+
+
+
+              myTests().main()
+
+
 
         .. tab:: Answer
-            
+
             .. activecode:: q11_answer
                 :nocodelens:
 
@@ -349,7 +432,7 @@ Exercises
                 testEqual(remove('iss', 'Mississippi'), 'Missippi')
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -357,18 +440,29 @@ Exercises
 
 
 #. Write a function that removes all occurrences of a string from another string.
- 
-   .. actex:: ex_8_11
 
-      from test import testEqual
+   .. actex:: ex_8_11
 
       def remove_all(substr,theStr):
           # your code here
 
-      testEqual(remove_all('an', 'banana'), 'ba')
-      testEqual(remove_all('cyc', 'bicycle'), 'bile')
-      testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
-      testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
+
+
+      ====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(remove_all("an","banana"),"ba","Tested remove_all on inputs of 'an' and 'banana'")
+            self.assertEqual(remove_all("cyc","bicycle"),"bile","Tested remove_all on inputs of 'cyc' and 'bicycle'")
+            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
+            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
+
+
+
+      myTests().main()
 
 
 #.
@@ -378,11 +472,11 @@ Exercises
         .. tab:: Question
 
            Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
-        
+
                L
                L -> +RF-LFL-FR+
                R -> -LF+RFR+FL-
-        
+
            .. actex:: ex_8_12
               :nocodelens:
 
@@ -471,16 +565,16 @@ Exercises
         .. tab:: Question
 
            Here is something called an arrowhead curve.  Use 60 degrees.::
-        
+
                YF
                X -> YF+XF+Y
                Y -> XF-YF-X
-        
+
            .. actex:: ex_8_14
               :nocodelens:
 
         .. tab:: Answer
-            
+
             .. activecode:: q15_answer
                 :nocodelens:
 
@@ -538,7 +632,7 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -561,11 +655,11 @@ Exercises
         .. tab:: Question
 
             The Sierpinski Triangle.  Use 60 degrees.::
-        
+
                FXF--FF--FF
                F -> FF
                X -> --FXF++FXF++FXF--
-        
+
            .. actex:: ex_8_16
               :nocodelens:
 
@@ -634,7 +728,7 @@ Exercises
                 main()
 
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
@@ -660,7 +754,7 @@ Exercises
            should also take two parameters.  The encrypted message,
            and the mixed up alphabet.  The function should return a string that is
            the same as the original unencrypted message.
-        
+
            .. actex:: ex_8_18
 
         .. tab:: Answer
@@ -705,16 +799,30 @@ Exercises
                 :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
-#. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
+#. Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
    there will never be a duplicate letter added to the new string.
 
    .. actex:: ex_8_19
 
-      def removeDups(astring):
+      def remove_dups(astring):
           # your code here
 
-      
-      print(removeDups("mississippi"))   #should print misp
+
+      print(remove_dups("mississippi"))   #should print misp
+
+      ====
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(remove_dups("pooh"),"ph","Tested remove_dups on string 'pooh'")
+            self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
+            self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
+            self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
+            self.assertEqual(remove_dups("oo"),"","Tested remove_dups on string 'oo'")
+
+      myTests().main()
 
 
 #.
@@ -730,18 +838,18 @@ Exercises
            then the counting wraps around to the letter a again, so n becomes a, o becomes b
            and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
            to think of modulo arithmetic.
-        
+
            .. actex:: ex_8_20
-        
+
               def rot13(mess):
                   # Your code here
-        
+
               print(rot13('abcde'))
               print(rot13('nopqr'))
               print(rot13(rot13('Since rot13 is symmetric you should see this message')))
 
         .. tab:: Answer
-            
+
             .. activecode:: q21_answer
 
                 def rot13(mess):
@@ -762,9 +870,8 @@ Exercises
                 print(rot13('nopqr'))
                 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
 
-        .. tab:: Discussion 
+        .. tab:: Discussion
 
             .. disqus::
                 :shortname: interactivepython
                 :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
-

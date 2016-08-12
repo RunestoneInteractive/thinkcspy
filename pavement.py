@@ -11,7 +11,7 @@ sys.path.append('../modules')
 
 updateProgressTables = True
 try:
-    from chapternames import populateChapterInfob
+    from runestone.server.chapternames import populateChapterInfob
 except ImportError:
     updateProgressTables = False
 
