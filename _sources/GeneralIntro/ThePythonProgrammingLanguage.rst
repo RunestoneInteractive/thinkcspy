@@ -67,7 +67,7 @@ There are two ways to use the Python interpreter: *shell mode* and *program
 mode*. In shell mode, you type Python expressions into the **Python shell**,
 and the interpreter immediately shows the result.  The example below shows the Python shell at work.
 
-.. sourcecode:: python
+::
 
     $ python3
     Python 3.2 (r32:88445, Mar 25 2011, 19:28:28)
@@ -102,7 +102,7 @@ By convention, files that contain Python programs have names that end with
 ``.py`` .  Following this convention will help your operating system and other
 programs identify a file as containing python code.
 
-.. sourcecode:: python
+::
 
     $ python firstprogram.py
     My first program adds two numbers, 2 and 3:

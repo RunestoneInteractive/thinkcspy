@@ -91,7 +91,6 @@ the recursive calls and think about how this tree will unfold. Will it
 be drawn symmetrically with the right and left halves of the tree taking
 shape simultaneously? Will it be drawn right side first then left side?
 
-.. _lst_complete_tree:
 
 .. activecode:: lst_complete_tree
     :caption: Recursively Drawing a Tree

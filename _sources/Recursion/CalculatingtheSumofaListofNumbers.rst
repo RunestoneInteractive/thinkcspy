@@ -18,7 +18,7 @@ is shown below. The function uses an accumulator variable
 (``theSum``) to compute a running total of all the numbers in the list
 by starting with :math:`0` and adding each number in the list.
 
-.. _lst_itsum:
+
 
 .. activecode:: lst_itsum
     :caption: Iterative Summation
@@ -80,7 +80,6 @@ In this equation :math:`first(numList)` returns the first element of
 the list and :math:`rest(numList)` returns a list of everything but
 the first element. This is easily expressed in Python.
 
-.. _lst_recsum:
 
 .. activecode:: lst_recsum
     :caption: Recursive Summation

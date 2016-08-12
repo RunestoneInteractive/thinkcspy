@@ -74,7 +74,6 @@ right side of the diagram.
 The activecode below shows the Python code that implements the algorithm
 outlined above for any base between 2 and 16.
 
-.. _lst_rectostr:
 
 .. activecode:: lst_rectostr
     :caption: Recursively Converting from Integer to String

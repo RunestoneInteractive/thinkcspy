@@ -1,6 +1,14 @@
 ChangeLog
 =========
 
+August 9, 2016
+--------------
+
+* Update all end of chapter exercises with new quesiton directive in preparation
+for the new and improved course builder.
+* Also remove bad unicode characters from example code.
+* Imroved Files chapter with explanation of relative versus absolute paths
+
 July 6, 2016
 ------------
 
