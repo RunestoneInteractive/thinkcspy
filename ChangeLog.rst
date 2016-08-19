@@ -1,6 +1,15 @@
 ChangeLog
 =========
 
+August 19 2016
+--------------
+
+* **Numbered Sections** -- By default when you create a new course
+based on this book you will get numbered sections.  If you are rebuilding
+an existing course and would like to have numbered sections send me an email.  I'll
+need to manually update your index.rst file.
+
+
 August 9, 2016
 --------------
 
