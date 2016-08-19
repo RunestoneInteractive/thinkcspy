@@ -44,12 +44,13 @@ Assignments
 
    assignments.rst
 
-General Introduction
-::::::::::::::::::::
+1. General Introduction
+:::::::::::::::::::::::
 
 .. toctree::
    :caption: General Introduction
    :maxdepth: 2
+   :numbered:
 
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
@@ -66,12 +67,13 @@ General Introduction
    GeneralIntro/Comments.rst
    GeneralIntro/Glossary.rst
 
-Simple Python Data
-::::::::::::::::::
+2. Simple Python Data
+:::::::::::::::::::::
 
 .. toctree::
    :caption: Simple Python Data
    :maxdepth: 2
+   :numbered:
 
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst

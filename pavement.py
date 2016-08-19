@@ -23,7 +23,7 @@ project_name = "cps110fall2016"
 master_url = None
 doctrees = None
 if master_url is None:
-    if gethostname() == 'web407.webfaction.com':
+    if gethostname() in  ['web407.webfaction.com', 'rsbuilder']:
         master_url = 'http://interactivepython.org'
         doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
     else:
