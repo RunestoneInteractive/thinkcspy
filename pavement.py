@@ -3,6 +3,7 @@ from paver.easy import *
 import paver.setuputils
 paver.setuputils.install_distutils_tasks()
 from os import environ, getcwd
+import os.path
 import sys
 from socket import gethostname
 
@@ -25,7 +26,10 @@ doctrees = None
 if master_url is None:
     if gethostname() in  ['web407.webfaction.com', 'rsbuilder']:
         master_url = 'http://interactivepython.org'
-        doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
+        if os.path.exists('../../custom_courses/{}'.format(project_name)):
+            doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
+        else:
+            doctrees = './build/{}/doctrees'.format(project_name)
     else:
         master_url = 'http://127.0.0.1:8000'
         doctrees = './build/{}/doctrees'.format(project_name)

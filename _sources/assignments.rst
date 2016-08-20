@@ -1,3 +1,4 @@
+:orphan:
 Class Assignments
 -----------------
 
