@@ -84,21 +84,21 @@ Exercises
                       #your code here
 
 
-                  ====
+                ====
 
-                  from unittest.gui import TestCaseGui
+                from unittest.gui import TestCaseGui
 
-                  class myTests(TestCaseGui):
+                class myTests(TestCaseGui):
 
-                     def testOne(self):
-                         self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
-                         self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
-                         self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
-                         self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
-                         self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
+                    def testOne(self):
+                        self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
+                        self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
+                        self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
+                        self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
+                        self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
 
 
-                  myTests().main()
+                myTests().main()
 
         .. tab:: Answer
 
