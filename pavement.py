@@ -6,6 +6,7 @@ from os import environ, getcwd
 import os.path
 import sys
 from socket import gethostname
+import pkg_resources
 
 sys.path.append(getcwd())
 sys.path.append('../modules')
@@ -66,6 +67,9 @@ options(
 if project_name == "<project_name>":
   print("Please edit pavement.py and give your project a name")
   exit()
+
+version = pkg_resources.require("runestone")[0].version
+options.build.template_args['runestone_version'] = version
 
 if 'DBHOST' in environ and  'DBPASS' in environ and 'DBUSER' in environ and 'DBNAME' in environ:
     options.build.template_args['dburl'] = 'postgresql://{DBUSER}:{DBPASS}@{DBHOST}/{DBNAME}'.format(**environ)
