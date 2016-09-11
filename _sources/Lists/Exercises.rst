@@ -151,7 +151,7 @@ Exercises
           def testOne(self):
               self.assertEqual(sum_of_squares([2,3,4]),29,"Tested sum_of_squares on input [2,3,4]")
               self.assertEqual(sum_of_squares([0,1,-1]),2,"Tested sum_of_squares on input [0,1,-1]")
-              self.assertEqual(sum_of_squares([5,12,14]),344,"Tested sum_of_squares on input [5,12,14]")
+              self.assertEqual(sum_of_squares([5,12,14]),365,"Tested sum_of_squares on input [5,12,14]")
 
       myTests().main()
 
