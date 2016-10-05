@@ -20,7 +20,6 @@ Welcome to LaunchCode's *Think Python* course!
 This course is built around an interactive e-textbook hosted here on this website. You will do most of your learning and working directly inside the book.
 
 * `Course Overview </runestone/static/thinkcspy/course-overview.html>`_
-* :ref:`schedule_soc`
 * :ref:`t_o_c`
 
 
