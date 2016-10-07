@@ -11,7 +11,7 @@
 .. raw:: html
 
    <div style="text-align:center" class="center-block">
-   <h1>How to Think Like a Computer Scientist: Interactive Edition</h1>
+   <h1>How to Think Like a Computer Scientist: BJU Interactive Edition</h1>
    <style>
    button.reveal_button {
        margin-left: auto;
@@ -38,6 +38,8 @@
    * NSF
 
    The Runestone Interactive tools are open source and we encourage you to contact us, or grab a copy from GitHub if you would like to use them to write your own resources.
+
+   This edition has been extended by Stephen Schaub with additional material for CpS 110 at Bob Jones University.
 
 
 

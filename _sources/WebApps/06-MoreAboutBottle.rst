@@ -113,8 +113,35 @@ example, the user could enter the URL http://localhost:8080/time directly into t
 browser to bypass the greeting page and get directly to the page showing the time.
 
 
-The format() function
-~~~~~~~~~~~~~~~~~~~~~
+The format() method
+~~~~~~~~~~~~~~~~~~~
 
-Here we discuss the format() function.
+The example above used the format() method to build an HTML string. The format()
+method in the ``str`` class is designed to reduce the clutter required to build
+complicated strings that include data from program variables.
 
+To use format(), you create a string containing placeholder markers like {0} and
+{1}:
+
+    msg = "A {0} ate my {1}."
+
+Then, you invoke the format() method on the string, and provide parameters that
+supply the values to be substituted in place of the placeholder markers. Here is
+a basic example:
+
+.. sourcecode:: python
+
+    msg = "A {0} ate my {1}."
+    word1 = "dog"
+    word2 = "homework"
+    print(msg.format(word1, word2))
+
+The value "dog" is substituted for the {0}, and "homework" is substituted for
+{1}. The numbers in the placeholders refer to the positions of the parameters in
+the call to format.
+
+You can use triple-quoted strings with format(), as shown in the example web
+application above. format() can also display floating-point numbers to a given
+precision, format date/time values, and do many other useful formatting tasks.
+For more examples of how to use format(), see the `Python documentation
+<https://docs.python.org/3/library/string.html#formatexamples>`_.
