@@ -20,7 +20,7 @@ A web browser, at its core, is a fairly simple application. Basically, web brows
 
 Let's take a specific example. Start up your browser and type in the following URL:
 
-http://cs.bju.edu/cps/courses/cps110/textbook.html
+http://cs.bju.edu/cps/courses/cps110/index.html
 
 .. note::
 
@@ -33,7 +33,7 @@ When you press Enter, here's what happens:
 
 1. The browser opens a network connection to the web server named cs.bju.edu
 
-2. The browser requests the file /cps/courses/cps110/textbook.html from the web server
+2. The browser requests the file /cps/courses/cps110/index.html from the web server
 
 3. The web server transmits the HTML file back to the browser
 
