@@ -22,9 +22,9 @@ program is to create the widgets need for a program's interface.
 
 Each widget is designed for specific purposes and your program will be more
 user friendly if you use each widget according to its
-intended purpose. The following charts list the ``tkinter`` widgets and their
+intended purpose. The following 3 charts list the ``tkinter`` widgets and their
 intended usage. Some widgets are designed for user input, others are designed
-to organize and control the display of other widgets, and some widgets are
+to organize and control the display of widgets, and some widgets are
 designed strictly for presenting information on the screen. Therefore, the
 charts below are separated into three groups.
 
@@ -76,7 +76,7 @@ Treeview     Displays a hierarchical collection of items.
 ===========  =============================================================================
 
 You do not need to memorize the above lists, but you should probably re-read
-the charts above so that you are familiar with what is possible in a
+the charts again so that you are familiar with what is possible in a
 TKinter GUI interface. (Note that the TKinter module is customizable, which
 means that you can create your own widgets, but that is beyond what we will
 study in these lessons.)
@@ -91,8 +91,9 @@ a parent widget that they fit inside. The first parameter of all functions that
 create a widget is the parent of the widget.
 
 You can group widgets by creating a ``Frame``, ``LabelFrame``, or a ``PanedWindow``
-and then adding widgets to it. This is the standard way to "layout" a GUI interface.
-This will become clearer as you build interfaces in the next several lessons.
+widget and then add widgets to it. This is the standard way to "layout" a GUI
+interface. This will become clearer as you build interfaces in the next
+several lessons.
 
 Creating Widgets
 ================
@@ -107,7 +108,7 @@ import looks like this:
 All functionality of the TKinter module can be accessed as methods of the ``ttk`` object.
 
 The first thing you need to do is create a window for your application. This
-is done by creating a Tk object like this:
+is done by creating a Tk object:
 
 .. code-block:: python
 
@@ -126,10 +127,10 @@ refer to the Python documentation for each specific widget type. As of fall
 2016, the most current version of the TKinter module is version 25 and its
 documentation can be found at https://docs.python.org/3/library/tkinter.ttk.html
 
-Notice that in the above code ``Tk()`` and ``Button()`` are both capitalized. This
-indicates that the window and the button are instances of Python classes. The
-Tkinter module is entirely object-oriented and makes extensive use of
-object-oriented language features.
+Notice that in the above code ``Tk()`` and ``Button()`` are both capitalized.
+By convention, this indicates that the window and the button are instances
+of a Python class. The Tkinter module is entirely object-oriented and makes
+extensive use of object-oriented language features.
 
 .. index:: Tkinter, widget, widget hierarchy
 

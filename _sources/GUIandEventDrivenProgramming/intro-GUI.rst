@@ -102,6 +102,15 @@ customizable, and configurable GUI library. The Python module ``TKinter`` allows
 Python programs to use the TK libraries. An overview of TK can be found at
 https://en.wikipedia.org/wiki/Tk_(software)
 
+To create a GUI program you basically do five things:
+
+* Create the widgets you want in your interface.
+* Define the layout of the widgets (i.e., the location and size of each widget).
+* Create functions that will perform your desired actions on user generated events.
+* Connect the functions to specific user events.
+* Start a GUI event-loop.
+
+Each of these tasks are explain in the following lessons.
 
 .. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter
 
