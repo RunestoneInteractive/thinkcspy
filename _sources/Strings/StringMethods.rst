@@ -11,7 +11,7 @@
    :prefix: strings-5-
    :start: 1
 
-.. _stringMethods
+.. _stringMethods:
 
 String Methods
 --------------
