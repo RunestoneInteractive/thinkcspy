@@ -102,7 +102,20 @@ customizable, and configurable GUI library. The Python module ``TKinter`` allows
 Python programs to use the TK libraries. An overview of TK can be found at
 https://en.wikipedia.org/wiki/Tk_(software)
 
-To create a GUI program you basically do five things:
+Tkinter Standard Interfaces
+===========================
+
+Tkinter provides a set of standard GUI dialog boxes that can be used with
+minimal programming. These are described in the next lesson.
+(A dialog box is a small window on a computer screen
+in which a user is prompted to provide information or select commands.)
+
+TkinterCustom Interfaces
+========================
+
+Tkinter also provdes the functionality to create any imaginable user
+interface by creating custom GUI interfaces.
+To create a custom GUI program you basically do five things:
 
 * Create the widgets you want in your interface.
 * Define the layout of the widgets (i.e., the location and size of each widget).
@@ -110,7 +123,7 @@ To create a GUI program you basically do five things:
 * Connect the functions to specific user events.
 * Start a GUI event-loop.
 
-Each of these tasks are explain in the following lessons.
+Each of these tasks are explain in detail in the following lessons.
 
-.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter
+.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 

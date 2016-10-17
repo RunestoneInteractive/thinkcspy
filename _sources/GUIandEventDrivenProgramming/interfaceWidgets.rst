@@ -34,6 +34,9 @@ Widgets for user input:
 Widget       Purpose
 ===========  =============================================================================
 Button       Execute a specific task; “do this now”.
+Menu         Implement toplevel, pulldown, and popup menus.
+Menubutton   Displays popup or pulldown menu items when activated.
+OptionMenu   Creates a popup menu, and a button to display it.
 Entry        Enter one line of text.
 Spinbox      Ordinary Entry where the user only has a limited number of ordered values to choose from.
 Text         Display and edit formatted text, possibly with multiple lines.
@@ -42,9 +45,6 @@ Radiobutton  Allow one-of-many selections.
 Listbox      Choose one or more alternatives from the list.
 Combobox     Combines a text field with a pop-down list of values.
 Scale        Select a numerical value by moving a “slider” knob along a scale.
-Menu         Implement toplevel, pulldown, and popup menus.
-Menubutton   Displays popup or pulldown menu items when activated.
-OptionMenu   Creates a popup menu, and a button to display it.
 ===========  =============================================================================
 
 Widgets to organize and control the display of other widgets:
@@ -103,24 +103,24 @@ import looks like this:
 
 .. code-block:: python
 
-  import tkinter as ttk
+  import tkinter as tk
 
-All functionality of the TKinter module can be accessed as methods of the ``ttk`` object.
+All functionality of the TKinter module can be accessed as methods of the ``tk`` object.
 
 The first thing you need to do is create a window for your application. This
 is done by creating a Tk object:
 
 .. code-block:: python
 
-  application_window = ttk.Tk()
+  application_window = tk.Tk()
 
 Then you create widgets and add them to the window's widget
-hierarchy. For example, to create a button, you would call the tkk ``Button``
+hierarchy. For example, to create a button, you would call the tk ``Button``
 method and send the ``application_window`` as the first argument:
 
 .. code-block:: python
 
-  cmd_button = ttk.Button(application_window, text="Example")
+  cmd_button = tk.Button(application_window, text="Example")
 
 The parameters needed to correctly create each widget varies, so you will need to
 refer to the Python documentation for each specific widget type. As of fall
