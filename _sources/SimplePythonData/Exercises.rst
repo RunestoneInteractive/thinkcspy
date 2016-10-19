@@ -9,6 +9,7 @@
 
 Exercises
 ---------
+
 .. container:: full_width
 
 

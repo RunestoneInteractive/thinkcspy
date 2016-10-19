@@ -63,46 +63,41 @@ Exercises
 
        .. activecode:: ch_cl_02
 
-    #. Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point.  For example, ::
+    #. Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point. For example, ::
 
         >>> Point(4, 10).slope_from_origin()
         2.5
 
-    What cases will cause your method to fail? Return None when it happens.  The equations
-    for calculating slope is **m = (Y2 - Y1) / (X2 - X1)**
+       What cases will cause your method to fail? Return None when it happens.  The equations for calculating slope is **m = (Y2 - Y1) / (X2 - X1)**
 
-    .. activecode:: classes_q3
+       .. activecode:: classes_q3
 
-        from test import testEqual
+          from test import testEqual
 
-        class Point:
-            """ Point class for representing and manipulating x,y coordinates. """
+          class Point:
+              """ Point class for representing and manipulating x,y coordinates. """
 
-            def __init__(self, initX, initY):
-                """ Create a new point at the given coordinates. """
-                self.x = initX
-                self.y = initY
+              def __init__(self, initX, initY):
+                  """ Create a new point at the given coordinates. """
+                  self.x = initX
+                  self.y = initY
 
-            def getX(self):
-                return self.x
+              def getX(self):
+                  return self.x
 
-            def getY(self):
-                return self.y
+              def getY(self):
+                  return self.y
 
-            def distanceFromOrigin(self):
-                return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+              def distanceFromOrigin(self):
+                  return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-            # TODO define a method called slopeFromOrigin here
+              # TODO define a method called slopeFromOrigin here
 
 
-        p = Point(4, 10)
-        testEqual(p.slopeFromOrigin(), 2.5)
+          p = Point(4, 10)
+          testEqual(p.slopeFromOrigin(), 2.5)
 
-    #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c").
-       The coefficients a and b completely describe the line.  Write a method in the
-       Point class so that if a point instance is given another point, it will compute the equation
-       of the straight line joining the two points.  It must return the two coefficients as a tuple
-       of two values.  For example,   ::
+    #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c"). The coefficients a and b completely describe the line.  Write a method in the Point class so that if a point instance is given another point, it will compute the equation of the straight line joining the two points.  It must return the two coefficients as a tuple of two values.  For example,   ::
 
           >>> print(Point(4, 11).get_line_to(Point(6, 15)))
           >>> (2, 3)

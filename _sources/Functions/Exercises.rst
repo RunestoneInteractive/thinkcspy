@@ -1,13 +1,3 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
-    and/or modify this document under the terms of the GNU Free Documentation
-    License, Version 1.3 or any later version published by the Free Software
-    Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
-    the license is included in the section entitled "GNU Free Documentation
-    License".
-
-
 Exercises
 ---------
 
@@ -235,64 +225,6 @@ Exercises
                     print("The sum from 1 to 5 is",t)
 
 
-
-    #.  (GRADED) Write a function ``areaOfCircle(r)`` which returns the area of a circle of radius ``r``
-
-        As a refresher, the area of any circle is equal to the radius squared, multiplied by pi (where pi is 3.14159....).
-
-        Don't forget to include the ``math`` module, where pi is defined.
-
-        .. activecode:: ex_5_8
-
-            # TODO: use def to define a function called areaOfCircle which takes an argument called r
-
-                # TODO implement your function to return the area of a circle whose radius is r
-
-
-            # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
-            from test import testEqual
-
-            t = areaOfCircle(0)
-            testEqual(t, 0)
-            t = areaOfCircle(1)
-            testEqual(t,math.pi)
-            t = areaOfCircle(100)
-            testEqual(t, 31415.926535897932)
-            t = areaOfCircle(-1)
-            testEqual(t, math.pi)
-            t = areaOfCircle(-5)
-            testEqual(t, 25 * math.pi)
-            t = areaOfCircle(2.3)
-            testEqual(t, 16.61902513749)
-
-    #.
-
-        .. tabbed:: q9
-
-            .. tab:: Question
-
-                Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
-
-                .. image:: Figures/star.png
-
-                .. activecode:: ex_5_9
-
-            .. tab:: Answer
-
-                .. activecode:: q9_answer
-
-                    import turtle
-
-                    def drawFivePointStar(t):
-                        for i in range(5):
-                            t.forward(100)
-                            t.left(216)
-
-                    wolfram = turtle.Turtle()
-                    drawFivePointStar(wolfram)
-
-
-
     #.  Extend your program above.  Draw five stars, but between each, pick up the pen,
         move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
         You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
@@ -458,3 +390,65 @@ Exercises
                     drawFancySquare(alex, 100, 10, 15)
 
                     wn.exitonclick()
+
+
+    #.
+
+        .. tabbed:: q9
+
+            .. tab:: Question
+
+                Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
+
+                .. image:: Figures/star.png
+
+                .. activecode:: ex_5_9
+
+            .. tab:: Answer
+
+                .. activecode:: q9_answer
+
+                    import turtle
+
+                    def drawFivePointStar(t):
+                        for i in range(5):
+                            t.forward(100)
+                            t.left(216)
+
+                    wolfram = turtle.Turtle()
+                    drawFivePointStar(wolfram)
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    Write a function ``areaOfCircle(r)`` which returns the area of a circle of radius ``r``
+
+    As a refresher, the area of any circle is equal to the radius squared, multiplied by pi (where pi is 3.14159....).
+
+    Don't forget to include the ``math`` module, where pi is defined.
+
+    .. activecode:: ex_5_8
+
+        # TODO: use def to define a function called areaOfCircle which takes an argument called r
+
+            # TODO implement your function to return the area of a circle whose radius is r
+
+
+        # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
+        from test import testEqual
+
+        t = areaOfCircle(0)
+        testEqual(t, 0)
+        t = areaOfCircle(1)
+        testEqual(t,math.pi)
+        t = areaOfCircle(100)
+        testEqual(t, 31415.926535897932)
+        t = areaOfCircle(-1)
+        testEqual(t, math.pi)
+        t = areaOfCircle(-5)
+        testEqual(t, 25 * math.pi)
+        t = areaOfCircle(2.3)
+        testEqual(t, 16.61902513749)

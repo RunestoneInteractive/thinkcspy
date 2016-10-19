@@ -10,172 +10,180 @@
 Exercises
 ---------
 
-#.
+.. container:: full_width
 
-    .. tabbed:: q1
+    #.
 
-        .. tab:: Question
+        .. tabbed:: q1
 
-            What is the result of each of the following:
+            .. tab:: Question
 
-            a. 'Python'[1]
-            #. "Strings are sequences of characters."[5]
-            #. len("wonderful")
-            #. 'Mystery'[:4]
-            #. 'p' in 'Pineapple'
-            #. 'apple' in 'Pineapple'
-            #. 'pear' not in 'Pineapple'
-            #. 'apple' > 'pineapple'
-            #. 'pineapple' < 'Peach'
+                What is the result of each of the following:
 
-        .. tab:: Answer
+                a. 'Python'[1]
+                #. "Strings are sequences of characters."[5]
+                #. len("wonderful")
+                #. 'Mystery'[:4]
+                #. 'p' in 'Pineapple'
+                #. 'apple' in 'Pineapple'
+                #. 'pear' not in 'Pineapple'
+                #. 'apple' > 'pineapple'
+                #. 'pineapple' < 'Peach'
 
-            a. 'Python'[1] = 'y'
-            #. 'Strings are sequences of characters.'[5] = 'g'
-            #. len('wonderful') = 9
-            #. 'Mystery'[:4] = 'Myst'
-            #. 'p' in 'Pineapple' = True
-            #. 'apple' in 'Pineapple' = True
-            #. 'pear' not in 'Pineapple' = True
-            #. 'apple' > 'pineapple' = False
-            #. 'pineapple' < 'Peach' = False
+            .. tab:: Answer
 
-
-#. (GRADED) Write a function ``analyze_text`` that receives a string as input. Your function should count the number of alphabetic characters (a through z, or A through Z) in the text and also keep track of how many are the letter ``'e'`` (upper or lowercase).
-
-   Your function should return an analysis of the text, something like this:
-
-      The text contains 240 alphabetic characters, of which 105 (43.75%) are 'e'.
-
-   You will need to make use of the ``isalpha`` function, which can be used like this
-
-   .. code-block:: python
-
-      "a".isalpha() # => evaluates to True
-      "3".isalpha() # => evaluates to False
-      "&".isalpha() # => False
-      " ".isalpha() # => False
-
-      mystr = "Q"
-      mystr.isalpha() # => True
-
-   .. activecode:: ex_8_3
-
-      def analyze_text(text):
-          # your code here
+                a. 'Python'[1] = 'y'
+                #. 'Strings are sequences of characters.'[5] = 'g'
+                #. len('wonderful') = 9
+                #. 'Mystery'[:4] = 'Myst'
+                #. 'p' in 'Pineapple' = True
+                #. 'apple' in 'Pineapple' = True
+                #. 'pear' not in 'Pineapple' = True
+                #. 'apple' > 'pineapple' = False
+                #. 'pineapple' < 'Peach' = False
 
 
-      # Don't copy these tests into Vocareum
-      from test import testEqual
+    #.
 
-      text1 = "Eeeee"
-      answer1 = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
-      testEqual(analyze_text(text1), answer1)
+        .. tabbed:: q5
 
-      text2 = "Blueberries are tasteee!"
-      answer2 = "The text contains 21 alphabetic characters, of which 7 (33.3333333333%) are 'e'."
-      testEqual(analyze_text(text2), answer2)
+            .. tab:: Question
 
-      text3 = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
-      answer3 = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
-      testEqual(analyze_text(text3), answer3)
+               Write a function that will return the number of digits in an integer.
 
-#.
-
-    .. tabbed:: q5
-
-        .. tab:: Question
-
-           Write a function that will return the number of digits in an integer.
-
-           .. activecode:: ex_7_10
+               .. activecode:: ex_7_10
 
 
-        .. tab:: Answer
+            .. tab:: Answer
 
-            .. activecode:: q5_answer
+                .. activecode:: q5_answer
 
-                def findNumDigits(n):
-                    n_str = str(n)
-                    return len(n_str)
+                    def findNumDigits(n):
+                        n_str = str(n)
+                        return len(n_str)
 
 
-                print(findNumDigits(50))
-                print(findNumDigits(20000))
-                print(findNumDigits(1))
+                    print(findNumDigits(50))
+                    print(findNumDigits(20000))
+                    print(findNumDigits(1))
 
 
 
-#. Write a function that removes all occurrences of a given letter from a string.
+    #. Write a function that removes all occurrences of a given letter from a string.
 
-   .. activecode:: ex_8_7
-      :nocodelens:
+       .. activecode:: ex_8_7
+          :nocodelens:
 
-      from test import testEqual
+          from test import testEqual
 
-      def remove_letter(theLetter, theString):
-          # your code here
+          def remove_letter(theLetter, theString):
+              # your code here
 
-      testEqual(remove_letter('a', 'apple'), 'pple')
-      testEqual(remove_letter('a', 'banana'), 'bnn')
-      testEqual(remove_letter('z', 'banana'), 'banana')
-
-
-
-#.
-
-    .. tabbed:: q11
-
-        .. tab:: Question
-
-           Write a function that removes the first occurrence of a string from another string.
-
-           .. activecode:: ex_8_10
-              :nocodelens:
-
-              from test import testEqual
-
-              def remove(substr,theStr):
-                  # your code here
-
-              testEqual(remove('an', 'banana'), 'bana')
-              testEqual(remove('cyc', 'bicycle'), 'bile')
-              testEqual(remove('iss', 'Mississippi'), 'Missippi')
-              testEqual(remove('egg', 'bicycle'), 'bicycle')
+          testEqual(remove_letter('a', 'apple'), 'pple')
+          testEqual(remove_letter('a', 'banana'), 'bnn')
+          testEqual(remove_letter('z', 'banana'), 'banana')
 
 
 
-        .. tab:: Answer
+    #.
 
-            .. activecode:: q11_answer
-                :nocodelens:
+        .. tabbed:: q11
 
-                from test import testEqual
+            .. tab:: Question
 
-                def remove(substr,theStr):
-                    index = theStr.find(substr)
-                    if index < 0: # substr doesn't exist in theStr
-                        return theStr
-                    return_str = theStr[:index] + theStr[index+len(substr):]
-                    return return_str
+               Write a function that removes the first occurrence of a string from another string.
 
-                testEqual(remove('an', 'banana'), 'bana')
-                testEqual(remove('cyc', 'bicycle'), 'bile')
-                testEqual(remove('iss', 'Mississippi'), 'Missippi')
-                testEqual(remove('egg', 'bicycle'), 'bicycle')
+               .. activecode:: ex_8_10
+                  :nocodelens:
+
+                  from test import testEqual
+
+                  def remove(substr,theStr):
+                      # your code here
+
+                  testEqual(remove('an', 'banana'), 'bana')
+                  testEqual(remove('cyc', 'bicycle'), 'bile')
+                  testEqual(remove('iss', 'Mississippi'), 'Missippi')
+                  testEqual(remove('egg', 'bicycle'), 'bicycle')
 
 
 
-#. Write a function that removes all occurrences of a string from another string.
+            .. tab:: Answer
 
-   .. activecode:: ex_8_11
+                .. activecode:: q11_answer
+                    :nocodelens:
 
-      from test import testEqual
+                    from test import testEqual
 
-      def remove_all(substr,theStr):
-          # your code here
+                    def remove(substr,theStr):
+                        index = theStr.find(substr)
+                        if index < 0: # substr doesn't exist in theStr
+                            return theStr
+                        return_str = theStr[:index] + theStr[index+len(substr):]
+                        return return_str
 
-      testEqual(remove_all('an', 'banana'), 'ba')
-      testEqual(remove_all('cyc', 'bicycle'), 'bile')
-      testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
-      testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
+                    testEqual(remove('an', 'banana'), 'bana')
+                    testEqual(remove('cyc', 'bicycle'), 'bile')
+                    testEqual(remove('iss', 'Mississippi'), 'Missippi')
+                    testEqual(remove('egg', 'bicycle'), 'bicycle')
+
+
+
+    #. Write a function that removes all occurrences of a string from another string.
+
+       .. activecode:: ex_8_11
+
+          from test import testEqual
+
+          def remove_all(substr,theStr):
+              # your code here
+
+          testEqual(remove_all('an', 'banana'), 'ba')
+          testEqual(remove_all('cyc', 'bicycle'), 'bile')
+          testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
+          testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    Write a function ``analyze_text`` that receives a string as input. Your function should count the number of alphabetic characters (a through z, or A through Z) in the text and also keep track of how many are the letter ``'e'`` (upper or lowercase).
+
+    Your function should return an analysis of the text, something like this:
+
+    The text contains 240 alphabetic characters, of which 105 (43.75%) are 'e'.
+
+    You will need to make use of the ``isalpha`` function, which can be used like this
+
+    .. code-block:: python
+
+        "a".isalpha() # => evaluates to True
+        "3".isalpha() # => evaluates to False
+        "&".isalpha() # => False
+        " ".isalpha() # => False
+
+        mystr = "Q"
+        mystr.isalpha() # => True
+
+    .. activecode:: ex_8_3
+
+        def analyze_text(text):
+            # your code here
+
+
+        # Don't copy these tests into Vocareum
+        from test import testEqual
+
+        text1 = "Eeeee"
+        answer1 = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+        testEqual(analyze_text(text1), answer1)
+
+        text2 = "Blueberries are tasteee!"
+        answer2 = "The text contains 21 alphabetic characters, of which 7 (33.3333333333%) are 'e'."
+        testEqual(analyze_text(text2), answer2)
+
+        text3 = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
+        answer3 = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+        testEqual(analyze_text(text3), answer3)

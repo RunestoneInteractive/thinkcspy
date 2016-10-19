@@ -107,19 +107,23 @@ Exercises
 
                     print(countOdd(lst))
 
+Weekly Graded Assignment
+========================
 
-    #. (GRADED) Write a function to find the sum of all the even numbers in a list.
+.. container:: full_width
 
-       Normally we start you off by providing the function definition statement, e.g.:
+    Write a function to find the sum of all the even numbers in a list.
 
-       .. code-block:: python
+    Normally we start you off by providing the function definition statement, e.g.:
 
-          def launch_rockets(destination, num_passengers):
+    .. code-block:: python
+
+        def launch_rockets(destination, num_passengers):
               # your code here
 
-       But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
+    But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
 
-       .. activecode:: ex_9_7
+    .. activecode:: ex_9_7
 
           # TODO
           # define a function called sum_evens, which receives one argument, a list of numbers.

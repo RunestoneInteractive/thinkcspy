@@ -36,7 +36,7 @@ Exercises
 
         .. activecode:: ex_3_2
 
-        
+
     #.
 
         .. tabbed:: q3
@@ -59,14 +59,6 @@ Exercises
                     for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
                         print("One of the months of the year is", amonth)
 
-
-
-    #. (GRADED) Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
-
-       a. Write a loop that prints each of the numbers on a new line.
-       b. Write a loop that prints each number and its square on a new line.
-
-       .. activecode:: ex_3_4
 
     #.
 
@@ -379,3 +371,17 @@ Exercises
     #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
 
         .. activecode:: ex_mod_4
+
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
+
+       a. Write a loop that prints each of the numbers on a new line.
+       b. Write a loop that prints each number and its square on a new line.
+
+    .. activecode:: ex_3_4
