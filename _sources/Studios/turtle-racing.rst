@@ -1,28 +1,15 @@
-:orphan:
+Turtle Racing
+=============
 
-..  Copyright (C) 2011  Brad Miller and David Ranum
-    Permission is granted to copy, distribute
-    and/or modify this document under the terms of the GNU Free Documentation
-    License, Version 1.3 or any later version published by the Free Software
-    Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
-    the license is included in the section entitled "GNU Free Documentation
-    License".
+Walkthrough
+-----------
+
+Zach and Jesse have had a long day working at LaunchCode, so after work they go to Dressel’s pub down the street to blow off some steam. Problem is, they blow off a bit too much steam. Upon leaving, they have completely lost their sense of direction and each walks in random directions.
+
+We will write a program with Turtles to simulate their journey after leaving the pub.
 
 
-Studio: Turtle Racing
-=====================
-
-Pre-studio
-----------
-
-For the pre-studio, we wrote a program that allowed us to calculate how many pints of beer would be able to afford in London if we sold a certain quantity of flags. (The problem statement is a bit more complicated than that, so be sure to watch the video.)
-
-.. raw:: html
-
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xOmRXIdxwmk" frameborder="0" allowfullscreen></iframe></div>
-
-.. activecode:: prestudio_4
+.. activecode:: turtle_racing_walkthrough
 
     import turtle
     import random
@@ -93,8 +80,7 @@ Here is a possible sequence of steps that we will need to accomplish:
 
 Here is the Python code for the first 4 steps above
 
-.. activecode:: lab01_2
-   :nocodelens:
+.. activecode:: turtle_racing_studio
 
    import turtle              # 1.  import the modules
    import random

@@ -1,0 +1,33 @@
+Wagon Wheel
+===========
+
+Walkthrough
+-----------
+
+For the walkthrough, we will write a program that uses functions to draw a line star with a chosen number of lines.
+
+.. activecode:: wagon_wheel_walkthrough
+
+    import turtle
+
+    def draw_line(length, angle):
+        mike = turtle.Turtle()
+        mike.left(angle)
+        mike.forward(length / 2)
+        mike.forward(-length)
+        mike.forward(length / 2)
+
+    def star(nlines):
+        for angle in range(0, 180, int(180/nlines)):
+            draw_line(200, angle)
+
+    star(10)
+
+Studio
+------
+
+Draw this pretty pattern.
+
+.. image:: Figures/tess08.png
+
+.. activecode:: wagon_wheel_studio

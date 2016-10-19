@@ -1,7 +1,15 @@
-Studio: A Midsummer Night's Studio
-===================
+A Midsummer Night's Studio
+==========================
 
-The goal of this studio is to find the top 20 words in Shakespeare's play *Coriolanus*. The ``get_text`` function is written for you - it loads the text of the entire play into a big string. Your job is to write the ``main`` function. You'll probably want to keep track of words with a dictionary. 
+Walkthrough
+-----------
+
+TODO
+
+Studio
+------
+
+The goal of this studio is to find the top 20 words in Shakespeare's play *Coriolanus*. The ``get_text`` function is written for you - it loads the text of the entire play into a big string. Your job is to write the ``main`` function. You'll probably want to keep track of words with a dictionary.
 
 This code will not work inside the book, so you will need to run it locally on your computer. Create a new directory called ``studio12/``, and within that, create a new file called ``coriolanus.py`` and open it on Atom (or another text editor):
 
@@ -11,14 +19,14 @@ This code will not work inside the book, so you will need to run it locally on y
     $ cd studio12
     $ atom coriolanus.py
 
-Then, copy and paste the starter-code below into your python file. 
+Then, copy and paste the starter-code below into your python file.
 
 If you run your file...
 
 ::
 
     $ python3 coriolanus.py
-    
+
 ...you should see the entire play printed out on your console.
 
 Have fun!
@@ -27,10 +35,10 @@ Have fun!
 
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
-    
+
     from urllib import request
-    
-    
+
+
     def get_text():
         """This retrieves text from Project Gutenburg
         """
@@ -42,10 +50,10 @@ Have fun!
             body = url_fh.read().decode('UTF-8')
         body = body.split('\n', head)[-1]
         body = body.rsplit('\n', foot)[0]
-        
+
         return body
-    
-    
+
+
     def main():
         """This is what runs when you call `python word_count.py`.
         """
@@ -53,8 +61,8 @@ Have fun!
         # Your work goes here
         # To see the text, you can print it out like this:
         print(text)
-    
-    
-    # leave this code as it is 
+
+
+    # leave this code as it is
     if __name__ == "__main__":
         main()

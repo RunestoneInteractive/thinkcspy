@@ -1,12 +1,24 @@
-Studio: Yahtzee
-===================
+Yahtzee
+=======
+
+Walkthrough
+-----------
+
+.. activecode:: yahtzee_walkthrough
+
+    # TODO
+
+
+
+Studio
+------
 
 In this studio, we simulate the game of Yahtzee. The program asks the user for
 the number of die they roll and the number of times the dice are thrown. The rollDice
 function is given to you. You must create the sumOfRoll function. If you finish that,
 you move on to the bonus function, Yahtzee.
 
-.. activecode:: studio11_0
+.. activecode:: yahtzee_studio
 
       import random
       from test import testEqual

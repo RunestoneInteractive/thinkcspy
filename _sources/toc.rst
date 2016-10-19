@@ -42,7 +42,6 @@ Table of Contents
    SimplePythonData/UpdatingVariables.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
-   Studios/Chapter2.rst
 
 
 3. Debugging
@@ -62,7 +61,6 @@ Table of Contents
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    AdditionalExercises/Debugging.rst
-   Studios/Chapter3.rst
 
 
 4. Modules (and Turtles!)
@@ -88,7 +86,6 @@ Table of Contents
    PythonModules/Therandommodule.rst
    PythonModules/Glossary.rst
    AdditionalExercises/TurtlesAndModules.rst
-   Studios/Chapter4.rst
 
 
 5. Functions
@@ -110,7 +107,6 @@ Table of Contents
    Functions/ATurtleBarChart.rst
    Functions/Glossary.rst
    Functions/thinkcspyExercises.rst
-   Studios/Chapter5.rst
 
 
 6. Selection
@@ -130,7 +126,6 @@ Table of Contents
    Selection/BooleanFunctions.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
-   Studios/Chapter6.rst
 
 
 7. More About Iteration
@@ -152,7 +147,6 @@ Table of Contents
    MoreAboutIteration/ImageProcessingonYourOwn.rst
    MoreAboutIteration/Glossary.rst
    MoreAboutIteration/Exercises.rst
-   Studios/Chapter7.rst
 
 
 8. Strings
@@ -172,7 +166,6 @@ Table of Contents
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
    AdditionalExercises/Strings.rst
-   Studios/Chapter8.rst
 
 
 9. Strings, Continued
@@ -194,7 +187,6 @@ Table of Contents
    Strings/Summary.rst
    Strings/Glossary.rst
    Strings/Exercises.rst
-   Studios/Chapter9.rst
 
 
 10. Lists
@@ -221,7 +213,6 @@ Table of Contents
    Lists/AppendversusConcatenate.rst
    Lists/Listsandforloops.rst
    AdditionalExercises/Lists.rst
-   Studios/Chapter10.rst
 
 
 11. Lists, Continued
@@ -246,8 +237,6 @@ Table of Contents
    Lists/Exercises.rst
    ProblemSets/LocalPython.rst
    ProblemSets/Crypto.rst
-   Studios/Chapter11.rst
-
 
 12. Dictionaries
 :::::::::::::::::::::::::::
@@ -263,7 +252,6 @@ Table of Contents
    Dictionaries/Sparsematrices.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
-   Studios/Chapter12.rst
 
 
 13. Classes and Objects -- Basics
@@ -299,6 +287,26 @@ Table of Contents
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
+
+
+
+Studios
+:::::::
+
+.. toctree::
+    :maxdepth: 1
+
+    Studios/holiday.rst
+    Studios/donuts.rst
+    Studios/turtle-racing.rst
+    Studios/wagon-wheel.rst
+    Studios/searching.rst
+    Studios/blurring.rst
+    Studios/sorted.rst
+    Studios/bugz.rst
+    Studios/bubble-sort.rst
+    Studios/yahtzee.rst
+    Studios/midsummer.rst
 
 
 ----

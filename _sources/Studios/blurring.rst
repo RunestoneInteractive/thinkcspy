@@ -1,14 +1,32 @@
-Studio: Blurring an image
-=========================
+Blurring
+========
 
-Pre-studio
-----------
+Walkthrough
+-----------
 
-For the pre-studio, we review loops and image processing, and we write a program to apply a red filter to an image.
+For the walkthrough, we will write a program to apply a red filter to an image.
 
-.. raw:: html
+.. activecode:: blurring_walkthrough
 
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/tEs3FhsixcY" frameborder="0" allowfullscreen></iframe></div>
+    import image
+    import sys
+
+    # Set the timeout to a larger number if timeout is occuring.
+    sys.getExecutionLimit(30000)
+
+    img = image.Image("luther.jpg")
+    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+    win = image.ImageWin()
+
+    for i in range(0, img.getWidth()):
+        for j in range(0, img.getHeight()):
+            old_p = img.getPixel(i, j)
+            red = old_p.getRed()
+            new_p = image.Pixel(red, 0, 0)
+            newimg.setPixel(i, j, new_p)
+
+    newimg.draw(win)
+    win.exitonclick()
 
 Studio
 ------
@@ -39,7 +57,7 @@ Tips
 - Be careful! What happens when you get to an edge?
 - If you use pixel indexes `i` and `j` you can access the neighbors by adding and subtracting one from those numbers, i.e.  `i+1`, `i-1`, ...
 
-.. activecode:: studio_7
+.. activecode:: blurring_studio
 
     import image
     import sys

@@ -1,16 +1,14 @@
-Studio: Donuts
-==============
+Donuts
+======
 
-Pre-studio
-----------
+Walkthrough
+-----------
 
-For the pre-studio, we wrote a program that allowed us to calculate how many pints of beer would be able to afford in London if we sold a certain quantity of flags. (The problem statement is a bit more complicated than that, so be sure to watch the video.)
+Imagine you're an American tourist in London. You've brought with you a bunch of `union jack <https://en.wikipedia.org/wiki/Union_Jack>`_ souvenir flags to sell, the proceeds of which will fund your excursions to local pubs. Each flag would be sold for $3 in the US. And the average pint in London costs £3.79 (3 pounds 79 pence).
 
-.. raw:: html
+In class, we will write a program that allows us to calculate how many pints of beer we would be able to afford if we sell a certain quantity of souvenir flags. Since the flags are purchased in dollars, we'll need to convert from dollars to pounds to determine the cost in the UK.
 
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/DOdDWxgaBKY" frameborder="0" allowfullscreen></iframe></div>
-
-.. activecode:: prestudio_3
+.. activecode:: donuts_walkthrough
 
     # prompt for dollar to pound exchange
     pounds_per_dollar = input("Current dollar-to-pound exchange rate: ")
@@ -61,7 +59,7 @@ Taking their order involves asking two questions:
 
 Here's an example of how the finished program should behave:
 
-.. sourcecode:: python
+.. sourcecode::
 
     Welcome to the Loop Hole!
     Today's Manager's Special is:
@@ -80,4 +78,4 @@ Notice that the total price ``$8.74999125`` went way beyond 2 decimal places. Ob
 
 For the Manager's Special, you can make something up (you are the Manager, after all), or just use the Crunch Berries example. Whatever you decide, you can simply hard-code it directly into your code. In other words, the flavor doesn't actually have to change depending on what day it is. The important part of this Studio is the math involved in calculating the cost of the user's order.
 
-.. activecode:: studio_3
+.. activecode:: donuts_studio
