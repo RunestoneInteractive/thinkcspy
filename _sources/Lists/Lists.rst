@@ -11,6 +11,16 @@
    :prefix: list-2-
    :start: 1
 
+Lists
+=====
+
+A **list** is a sequential collection of Python data values, where each value is identified by an
+index. The values that make up a list are called its **elements**. Lists are
+similar to strings, which are ordered collections of characters, except that the
+elements of a list can have any type and for any one list, the items can be of different types.
+
+.. index:: nested list, list; nested
+
 List Values
 -----------
 
@@ -18,7 +28,7 @@ There are several ways to create a new list.  The simplest is to enclose the
 elements in square brackets ( ``[`` and ``]``).
 
 .. sourcecode:: python
-    
+
     [10, 20, 30, 40]
     ["spam", "bungee", "swallow"]
 
@@ -28,17 +38,17 @@ list contains a string, a float, an integer, and
 another list.
 
 .. sourcecode:: python
-    
+
     ["hello", 2.0, 5, [10, 20]]
 
 A list within another list is said to be **nested** and the inner list is often called a **sublist**.
 Finally, there is a special list that contains no elements. It is called the
 empty list and is denoted ``[]``.
 
-As you would expect, we can also assign list values to variables and pass lists as parameters to functions.  
+As you would expect, we can also assign list values to variables and pass lists as parameters to functions.
 
 .. activecode:: chp09_01
-    
+
     vocabulary = ["iteration", "selection", "control"]
     numbers = [17, 123]
     empty = []
@@ -63,4 +73,3 @@ As you would expect, we can also assign list values to variables and pass lists 
    A list can contain only integer items.
 
 .. index:: list index, index, list traversal
-

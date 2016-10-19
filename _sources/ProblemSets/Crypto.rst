@@ -1,8 +1,7 @@
-
-Problem Set: Crypto
+Crypto
 ===================
 
-In contrast with the small isolated exercises you have been doing so far, the goal of this Problem Set assignment is to give you the opportunity to create something a little larger and more complicated, composed of multiple parts working together, which combine together to create a complete working program that interacts with a user.
+In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complicated, composed of multiple parts working together, which combine together to create a complete working program that interacts with a user.
 
 This assignment consists of 4 parts:
 

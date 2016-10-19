@@ -9,9 +9,14 @@ Table of Contents
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading1.rst
+
+.. toctree::
+   :maxdepth: 1
+
+
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
    GeneralIntro/ThePythonProgrammingLanguage.rst
@@ -26,9 +31,13 @@ Table of Contents
 :::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading2.rst
+
+.. toctree::
+   :maxdepth: 1
+
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
@@ -48,9 +57,13 @@ Table of Contents
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading3.rst
+
+.. toctree::
+   :maxdepth: 1
+
    GeneralIntro/WhatisDebugging.rst
    GeneralIntro/Syntaxerrors.rst
    GeneralIntro/RuntimeErrors.rst
@@ -67,9 +80,13 @@ Table of Contents
 :::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading4.rst
+
+.. toctree::
+   :maxdepth: 1
+
    PythonTurtle/intro-HelloLittleTurtles.rst
    PythonTurtle/OurFirstTurtleProgram.rst
    PythonTurtle/InstancesAHerdofTurtles.rst
@@ -92,9 +109,13 @@ Table of Contents
 :::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading5.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
    Functions/Variablesandparametersarelocal.rst
@@ -113,9 +134,13 @@ Table of Contents
 :::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading6.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Selection/BooleanValuesandBooleanExpressions.rst
    Selection/Logicaloperators.rst
    Selection/PrecedenceofOperators.rst
@@ -132,9 +157,13 @@ Table of Contents
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading7.rst
+
+.. toctree::
+   :maxdepth: 1
+
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
    MoreAboutIteration/ThewhileStatement.rst
@@ -153,9 +182,13 @@ Table of Contents
 ::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading8.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Strings/StringsRevisited.rst
    Strings/ACollectionDataType.rst
    Strings/OperationsonStrings.rst
@@ -172,9 +205,13 @@ Table of Contents
 ::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading9.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Strings/TraversalandtheforLoopByItem.rst
    Strings/TraversalandtheforLoopByIndex.rst
    Strings/TraversalandthewhileLoop.rst
@@ -193,11 +230,14 @@ Table of Contents
 ::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading10.rst
-   Lists/intro-Lists.rst
-   Lists/ListValues.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   Lists/Lists.rst
    Lists/ListLength.rst
    Lists/AccessingElements.rst
    Lists/ListMembership.rst
@@ -219,9 +259,13 @@ Table of Contents
 ::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading11.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Lists/UsingListsasParameters.rst
    Lists/PureFunctions.rst
    Lists/WhichisBetter.rst
@@ -235,16 +279,18 @@ Table of Contents
    Lists/TuplesasReturnValues.rst
    Lists/Glossary.rst
    Lists/Exercises.rst
-   ProblemSets/LocalPython.rst
-   ProblemSets/Crypto.rst
 
 12. Dictionaries
 :::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading12.rst
+
+.. toctree::
+   :maxdepth: 1
+
    Dictionaries/intro-Dictionaries.rst
    Dictionaries/Dictionaryoperations.rst
    Dictionaries/Dictionarymethods.rst
@@ -258,9 +304,13 @@ Table of Contents
 :::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading13.rst
+
+.. toctree::
+   :maxdepth: 1
+
    ClassesBasics/Objectorientedprogramming.rst
    ClassesBasics/Achangeofperspective.rst
    ClassesBasics/ObjectsRevisited.rst
@@ -278,9 +328,13 @@ Table of Contents
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    ChapterHeadings/Heading14.rst
+
+.. toctree::
+   :maxdepth: 1
+
    ClassesDiggingDeeper/Fractions.rst
    ClassesDiggingDeeper/ObjectsareMutable.rst
    ClassesDiggingDeeper/Sameness.rst
@@ -294,9 +348,13 @@ Studios
 :::::::
 
 .. toctree::
+   :hidden:
+
+   ChapterHeadings/Studios.rst
+
+.. toctree::
     :maxdepth: 1
 
-    ChapterHeadings/Studios.rst
     Studios/holiday.rst
     Studios/donuts.rst
     Studios/turtle-racing.rst
@@ -309,6 +367,15 @@ Studios
     Studios/yahtzee.rst
     Studios/midsummer.rst
 
+
+External Assignments
+::::::::::::::::::::::
+
+.. toctree::
+    :maxdepth: 1
+
+    ProblemSets/LocalPython.rst
+    ProblemSets/Crypto.rst
 
 ----
 
