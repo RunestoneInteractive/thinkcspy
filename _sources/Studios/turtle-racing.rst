@@ -1,9 +1,9 @@
 Turtle Racing
 =============
 
-Studios are in-class activities to give you hands-on practice with new concepts. Each begins with a Walkthrough -- an instructor-led programming problem. For the Studio portion itself, you should work individually or in pairs in class.
+*Studios are in-class activities to give you hands-on practice with new concepts. The first half is the Walkthrough, an instructor-led programming problem. The second half is for you to work on individually or in pairs in class.*
 
-These problems are not graded, and you are not obligated to finish them. Get as far as you can while in class, and use them as an opportunity to play with and solidify new concepts.
+*These problems are not graded, and you are not obligated to finish them. Get as far as you can while in class, and use them as an opportunity to play with and solidify new concepts.*
 
 Walkthrough
 -----------
