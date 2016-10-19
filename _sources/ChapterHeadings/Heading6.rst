@@ -1,5 +1,5 @@
-CHAPTER 6
-++++++++++
+Selection
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch6.jpg
    :alt: Chapter 6

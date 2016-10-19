@@ -1,5 +1,5 @@
-CHAPTER 12
-+++++++++
+Dictionaries
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch12.jpg
    :alt: Chapter 12

@@ -1,6 +1,5 @@
-CHAPTER 1
-+++++++++
+General Intro
++++++++++++++
 
-.. image:: spaceship.png
-   :alt: Chapter 1 
-
+.. image:: images/ch1.jpg
+   :alt: Chapter 1

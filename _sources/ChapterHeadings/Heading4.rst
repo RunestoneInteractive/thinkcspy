@@ -1,5 +1,5 @@
-CHAPTER 4
-+++++++++
+Modules (and Turtles!)
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch4.jpg
    :alt: Chapter 4

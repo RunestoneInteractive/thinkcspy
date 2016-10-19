@@ -1,5 +1,5 @@
-CHAPTER 11
-+++++++++
+Lists, Continued
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch11.jpg
    :alt: Chapter 11

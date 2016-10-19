@@ -1,5 +1,5 @@
-CHAPTER 13
-+++++++++
+Class and Objects - Basics
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch13.jpg
    :alt: Chapter 13

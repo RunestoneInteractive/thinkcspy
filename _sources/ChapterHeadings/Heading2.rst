@@ -1,5 +1,5 @@
-CHAPTER 2
-+++++++++
+Simple Python Data
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch2.jpg
    :alt: Chapter 2

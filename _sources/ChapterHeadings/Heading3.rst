@@ -1,5 +1,5 @@
-CHAPTER 3
-+++++++++
+Debugging
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch3.jpg
    :alt: Chapter 3

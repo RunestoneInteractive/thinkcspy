@@ -296,6 +296,7 @@ Studios
 .. toctree::
     :maxdepth: 1
 
+    ChapterHeadings/Studios.rst
     Studios/holiday.rst
     Studios/donuts.rst
     Studios/turtle-racing.rst

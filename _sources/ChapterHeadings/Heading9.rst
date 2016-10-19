@@ -1,5 +1,5 @@
-CHAPTER 9
-+++++++++
+Strings, Continued
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch9.jpg
    :alt: Chapter 9

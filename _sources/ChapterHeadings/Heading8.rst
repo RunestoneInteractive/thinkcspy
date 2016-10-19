@@ -1,5 +1,5 @@
-CHAPTER 8
-+++++++++
+Strings
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch8.jpg
    :alt: Chapter 8

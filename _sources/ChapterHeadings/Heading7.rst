@@ -1,5 +1,5 @@
-CHAPTER 7
-+++++++++
+More About Iteration
+++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch7.jpg
    :alt: Chapter 7

@@ -1,6 +1,5 @@
-CHAPTER 10
-+++++++++
+Lists
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch10.jpg
    :alt: Chapter 10
-

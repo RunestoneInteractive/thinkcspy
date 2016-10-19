@@ -1,5 +1,5 @@
-CHAPTER 5
-+++++++++
+Functions
++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch5.jpg
    :alt: Chapter 5

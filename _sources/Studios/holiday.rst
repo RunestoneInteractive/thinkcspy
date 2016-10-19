@@ -1,8 +1,12 @@
 Holiday
 =======
 
+Studios are in-class activities to give you hands-on practice with new concepts. Each begins with a Walkthrough -- an instructor-led programming problem. For the Studio portion itself, you should work individually or in pairs in class.
+
+These problems are not graded, and you are not obligated to finish them. Get as far as you can while in class, and use them as an opportunity to play with and solidify new concepts.
+
 Walkthrough
-----------
+-----------
 
 For the walkthrough in class, we will create a tip calculator. This will allow us to work with input and output, and type conversion functions. We'll also use comments to stub out our file before coding.
 

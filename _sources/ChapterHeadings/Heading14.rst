@@ -1,5 +1,5 @@
-CHAPTER 14
-+++++++++
+Class and Objects - Digging a Little Deeper
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. image:: spaceship.png
+.. image:: images/ch14.jpg
    :alt: Chapter 14
