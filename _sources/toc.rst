@@ -96,7 +96,6 @@ Table of Contents
    PythonTurtle/TherangeFunction.rst
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
-   PythonTurtle/Glossary.rst
    PythonModules/modules.rst
    PythonModules/MoreAboutUsingModules.rst
    PythonModules/Themathmodule.rst
