@@ -64,19 +64,19 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
-   GeneralIntro/WhatisDebugging.rst
-   GeneralIntro/Syntaxerrors.rst
-   GeneralIntro/RuntimeErrors.rst
-   GeneralIntro/SemanticErrors.rst
-   GeneralIntro/ExperimentalDebugging.rst
+   Debugging/WhatisDebugging.rst
+   Debugging/Syntaxerrors.rst
+   Debugging/RuntimeErrors.rst
+   Debugging/SemanticErrors.rst
+   Debugging/ExperimentalDebugging.rst
    Debugging/intro-HowtobeaSuccessfulProgrammer.rst
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
-   AdditionalExercises/Debugging.rst
+   Debugging/Exercises.rst
 
 
-4. Modules (and Turtles!)
+4. Turtles
 :::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -96,12 +96,12 @@ Table of Contents
    PythonTurtle/TherangeFunction.rst
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
-   PythonModules/modules.rst
-   PythonModules/MoreAboutUsingModules.rst
-   PythonModules/Themathmodule.rst
-   PythonModules/Therandommodule.rst
-   PythonModules/Glossary.rst
-   AdditionalExercises/TurtlesAndModules.rst
+   PythonTurtle/modules.rst
+   PythonTurtle/MoreAboutUsingModules.rst
+   PythonTurtle/Themathmodule.rst
+   PythonTurtle/Therandommodule.rst
+   PythonTurtle/Glossary.rst
+   PythonTurtle/Exercises.rst
 
 
 5. Functions
@@ -126,7 +126,7 @@ Table of Contents
    Functions/Composition.rst
    Functions/ATurtleBarChart.rst
    Functions/Glossary.rst
-   Functions/thinkcspyExercises.rst
+   Functions/Exercises.rst
 
 
 6. Selection
@@ -197,7 +197,7 @@ Table of Contents
    Strings/TheSliceOperator.rst
    Strings/StringComparison.rst
    Strings/StringsareImmutable.rst
-   AdditionalExercises/Strings.rst
+   Strings/Exercises.rst
 
 
 9. Strings, Continued
@@ -211,18 +211,18 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
-   Strings/TraversalandtheforLoopByItem.rst
-   Strings/TraversalandtheforLoopByIndex.rst
-   Strings/TraversalandthewhileLoop.rst
-   Strings/Theinandnotinoperators.rst
-   Strings/TheAccumulatorPatternwithStrings.rst
-   Strings/Loopingandcounting.rst
-   Strings/Afindfunction.rst
-   Strings/Optionalparameters.rst
-   Strings/Characterclassification.rst
-   Strings/Summary.rst
-   Strings/Glossary.rst
-   Strings/Exercises.rst
+   StringsContinued/TraversalandtheforLoopByItem.rst
+   StringsContinued/TraversalandtheforLoopByIndex.rst
+   StringsContinued/TraversalandthewhileLoop.rst
+   StringsContinued/Theinandnotinoperators.rst
+   StringsContinued/TheAccumulatorPatternwithStrings.rst
+   StringsContinued/Loopingandcounting.rst
+   StringsContinued/Afindfunction.rst
+   StringsContinued/Optionalparameters.rst
+   StringsContinued/Characterclassification.rst
+   StringsContinued/Summary.rst
+   StringsContinued/Glossary.rst
+   StringsContinued/Exercises.rst
 
 
 10. Lists
@@ -251,7 +251,7 @@ Table of Contents
    Lists/ListMethods.rst
    Lists/AppendversusConcatenate.rst
    Lists/Listsandforloops.rst
-   AdditionalExercises/Lists.rst
+   Lists/Exercises.rst
 
 
 11. Lists, Continued
@@ -265,19 +265,19 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
-   Lists/UsingListsasParameters.rst
-   Lists/PureFunctions.rst
-   Lists/WhichisBetter.rst
-   Lists/FunctionsthatProduceLists.rst
-   Lists/ListComprehensions.rst
-   Lists/NestedLists.rst
-   Lists/StringsandLists.rst
-   Lists/listTypeConversionFunction.rst
-   Lists/TuplesandMutability.rst
-   Lists/TupleAssignment.rst
-   Lists/TuplesasReturnValues.rst
-   Lists/Glossary.rst
-   Lists/Exercises.rst
+   ListsContinued/UsingListsasParameters.rst
+   ListsContinued/PureFunctions.rst
+   ListsContinued/WhichisBetter.rst
+   ListsContinued/FunctionsthatProduceLists.rst
+   ListsContinued/ListComprehensions.rst
+   ListsContinued/NestedLists.rst
+   ListsContinued/StringsandLists.rst
+   ListsContinued/listTypeConversionFunction.rst
+   ListsContinued/TuplesandMutability.rst
+   ListsContinued/TupleAssignment.rst
+   ListsContinued/TuplesasReturnValues.rst
+   ListsContinued/Glossary.rst
+   ListsContinued/Exercises.rst
 
 12. Dictionaries
 :::::::::::::::::::::::::::

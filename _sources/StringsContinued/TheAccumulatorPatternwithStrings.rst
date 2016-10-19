@@ -21,15 +21,15 @@ write a function that removes all the vowels from a string.  The idea is to star
 Remember that the accumulator pattern allows us to keep a "running total".  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.
 
 .. activecode:: ch08_acc1
-    
+
     def removeVowels(s):
         vowels = "aeiouAEIOU"
         sWithoutVowels = ""
         for eachChar in s:
             if eachChar not in vowels:
                 sWithoutVowels = sWithoutVowels + eachChar
-        return sWithoutVowels 
-       
+        return sWithoutVowels
+
     print(removeVowels("compsci"))
     print(removeVowels("aAbEefIijOopUus"))
 
@@ -40,17 +40,17 @@ Line 5 uses the ``not in`` operator to check whether the current character is no
     if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
        eachChar != 'o'  and eachChar != 'u'  and eachChar != 'A'  and
        eachChar != 'E'  and eachChar != 'I'  and eachChar != 'O'  and
-       eachChar != 'U':      
-       
+       eachChar != 'U':
+
          sWithoutVowels = sWithoutVowels + eachChar
 
-                  
-      
+
+
 
 Look carefully at line 6 in the above program (``sWithoutVowels = sWithoutVowels + eachChar``).  We will do this for every character that is not a vowel.  This should look
 very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to "accumulate" the final result.
 In words it says that the new value of ``sWithoutVowels`` will be the old value of ``sWithoutVowels`` concatenated with
-the value of ``eachChar``.  We are building the result string character by character. 
+the value of ``eachChar``.  We are building the result string character by character.
 
 Take a close look also at the initialization of ``sWithoutVowels``.  We start with an empty string and then begin adding
 new characters to the end.
@@ -58,15 +58,15 @@ new characters to the end.
 Step through the function using codelens to see the accumulator variable grow.
 
 .. codelens:: ch08_acc2
-    
+
     def removeVowels(s):
         vowels = "aeiouAEIOU"
         sWithoutVowels = ""
         for eachChar in s:
             if eachChar not in vowels:
                 sWithoutVowels = sWithoutVowels + eachChar
-        return sWithoutVowels 
-       
+        return sWithoutVowels
+
     print(removeVowels("compsci"))
 
 **Check your understanding**
@@ -81,7 +81,7 @@ Step through the function using codelens to see the accumulator variable grow.
    :feedback_c: Yes, the order is reversed due to the order of the concatenation.
 
    What is printed by the following statements:
-   
+
    .. code-block:: python
 
       s = "ball"
@@ -89,12 +89,3 @@ Step through the function using codelens to see the accumulator variable grow.
       for item in s:
           r = item.upper() + r
       print(r)
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_08_03
-
-

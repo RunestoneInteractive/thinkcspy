@@ -15,18 +15,18 @@ Tuples as Return Values
 -----------------------
 
 Functions can return tuples as return values. This is very useful --- we often want to
-know some batsman's highest and lowest score, or we want to find the mean and the standard 
+know some batsman's highest and lowest score, or we want to find the mean and the standard
 deviation, or we want to know the year, the month, and the day, or if we're doing
 some ecological modeling we may want to know the number of rabbits and the number
-of wolves on an island at a given time.  In each case, a function (which 
-can only return a single value), can create a single tuple holding multiple elements. 
+of wolves on an island at a given time.  In each case, a function (which
+can only return a single value), can create a single tuple holding multiple elements.
 
 For example, we could write a function that returns both the area and the circumference
 of a circle of radius r.
 
 .. activecode:: chp09_tuple3
 
-    
+
     def circleInfo(r):
         """ Return (circumference, area) of a circle of radius r """
         c = 2 * 3.14159 * r
@@ -34,13 +34,3 @@ of a circle of radius r.
         return (c, a)
 
     print(circleInfo(10))
-
-
-
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_09_07
-

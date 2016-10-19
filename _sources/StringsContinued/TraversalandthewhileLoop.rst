@@ -41,7 +41,7 @@ executed. The last character accessed is the one with the index
 Here is the same example in codelens so that you can trace the values of the variables.
 
 .. codelens:: ch08_7c1
-    
+
     fruit = "apple"
 
     position = 0
@@ -62,7 +62,7 @@ Here is the same example in codelens so that you can trace the values of the var
 
 
    How many times is the letter o printed by the following statements?
-   
+
    .. code-block:: python
 
       s = "python rocks"
@@ -72,15 +72,8 @@ Here is the same example in codelens so that you can trace the values of the var
           idx = idx + 2
       
 
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_08_02
-
 
 
 .. index::
     single: in operator
     single: operator; in
-

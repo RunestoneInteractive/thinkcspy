@@ -37,14 +37,3 @@ shape       shapename     Should be 'arrow', 'classic', 'turtle', or 'circle'
 Once you are comfortable with the basics of turtle graphics you can read about even
 more options on the `Python Docs Website <http://docs.python.org/dev/py3k/library/turtle.html>`_.  Note that we
 will describe Python Docs in more detail in the next chapter.
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_03
-
-
-
-

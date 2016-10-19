@@ -12,179 +12,125 @@ Exercises
 
 .. container:: full_width
 
-
-    #.  Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
-
-        .. activecode:: ex_9_4
-
     #.
 
-        .. tabbed:: q5
+        .. tabbed:: q1
 
             .. tab:: Question
 
-               Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
+               Draw a reference diagram for ``a`` and ``b`` before and after the third line of
+               the following python code is executed:
 
-               .. activecode:: ex_9_5
+               .. sourcecode:: python
 
+                   a = [1, 2, 3]
+                   b = a[:]
+                   b[0] = 5
 
             .. tab:: Answer
 
-                .. activecode:: q5_answer
+                Your diagram should show two variables referring to two different lists.  ``a`` refers to the original list with 1,2, and 3.
+                ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
+
+
+
+    #.  Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
+
+        .. activecode:: ex_9_2
+
+
+    #.
+
+        .. tabbed:: q3
+
+            .. tab:: Question
+
+               Starting with the list in Exercise 2, write Python statements to do the following:
+
+               a. Append "apple" and 76 to the list.
+               #. Insert the value "cat" at position 3.
+               #. Insert the value 99 at the start of the list.
+               #. Find the index of "hello".
+               #. Count the number of 76s in the list.
+               #. Remove the first occurrence of 76 from the list.
+               #. Remove True from the list using ``pop`` and ``index``.
+
+
+               .. activecode:: ex_9_3
+
+            .. tab:: Answer
+
+                .. activecode:: q3_answer
+
+                    myList = [76, 92.3, 'hello', True, 4, 76]
+
+                    myList.append("apple")         # a
+                    myList.append(76)              # a
+                    myList.insert(3, "cat")        # b
+                    myList.insert(0, 99)           # c
+
+                    print(myList.index("hello"))   # d
+                    print(myList.count(76))        # e
+                    myList.remove(76)              # f
+                    myList.pop(myList.index(True)) # g
+
+                    print (myList)
+
+
+    #.
+
+        .. tabbed:: q7
+
+            .. tab:: Question
+
+                Write a function to count how many odd numbers are in a list.
+
+                .. activecode:: ex_9_6
+
+            .. tab:: Answer
+
+                .. activecode:: q7_answer
 
                     import random
 
-                    def max(lst):
-                        max = 0
+                    def countOdd(lst):
+                        odd = 0
                         for e in lst:
-                            if e > max:
-                                max = e
-                        return max
+                            if e % 2 != 0:
+                                odd = odd + 1
+                        return odd
 
+                    # make a random list to test the function
                     lst = []
                     for i in range(100):
                         lst.append(random.randint(0, 1000))
 
-                    print(max(lst))
+                    print(countOdd(lst))
 
 
-    #. Write a function ``sum_of_squares(xs)`` that computes the sum
-       of the squares of the numbers in the list ``xs``.  For example,
-       ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is ``29``:
+    #. (GRADED) Write a function to find the sum of all the even numbers in a list.
 
-       .. activecode:: ex_7_11
+       Normally we start you off by providing the function definition statement, e.g.:
 
-    #.
+       .. code-block:: python
 
-        .. tabbed:: q9
+          def launch_rockets(destination, num_passengers):
+              # your code here
 
-            .. tab:: Question
+       But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
 
-               Sum up all the negative numbers in a list.
+       .. activecode:: ex_9_7
 
-               .. activecode:: ex_9_8
-
-            .. tab:: Answer
-
-                .. activecode:: q9_answer
-
-                    import random
-
-                    def sumNegative(lst):
-                        sum = 0
-                        for e in lst:
-                            if e < 0:
-                                sum = sum + e
-                        return sum
-
-                    lst = []
-                    for i in range(100):
-                        lst.append(random.randrange(-1000, 1000))
-
-                    print(sumNegative(lst))
+          # TODO
+          # define a function called sum_evens, which receives one argument, a list of numbers.
+          # your function should return the sum of all the even numbers in the list
 
 
-    #. Count how many words in a list have length 5.
+          # don't copy these tests into Vocareum
+          from test import testEqual
 
-       .. activecode:: ex_9_9
-
-
-    #. (GRADED) Write a function that will sum up all the elements in a list up to but not including the first even number.
-
-        .. activecode:: ex_9_10
-
-            def sum_of_initial_odds(nums):
-                # your code here
-
-
-            # don't include these tests in Vocareum
-            from test import testEqual
-
-            testEqual(sum_of_initial_odds([1,3,1,4,3,8]), 5)
-            testEqual(sum_of_initial_odds([6,1,3,5,7]), 0)
-            testEqual(sum_of_initial_odds([1, -7, 10, 23]), -6)
-            testEqual(sum_of_initial_odds(range(1,555,2)), 76729)
-
-
-    #. Count how many words occur in a list up to and including the first occurrence of the word "sam".
-
-       .. activecode:: ex_9_11
-
-
-    #.
-
-        .. tabbed:: q13
-
-            .. tab:: Question
-
-               Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
-
-               a. count
-               #. in
-               #. reverse
-               #. index
-               #. insert
-
-
-               .. activecode:: ex_9_12
-
-            .. tab:: Answer
-
-                .. activecode:: q13_answer
-
-                    def count(obj, lst):
-                        count = 0
-                        for e in lst:
-                            if e == obj:
-                                count = count + 1
-                        return count
-
-                    def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
-                        for e in lst:
-                            if e == obj:
-                                return True
-                        return False
-
-                    def reverse(lst):
-                        reversed = []
-                        for i in range(len(lst)-1, -1, -1): # step through the original list backwards
-                            reversed.append(lst[i])
-                        return reversed
-
-                    def index(obj, lst):
-                        for i in range(len(lst)):
-                            if lst[i] == obj:
-                                return i
-                        return -1
-
-                    def insert(obj, index, lst):
-                        newlst = []
-                        for i in range(len(lst)):
-                            if i == index:
-                                newlst.append(obj)
-                            newlst.append(lst[i])
-                        return newlst
-
-                    lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-                    print(count(1, lst))
-                    print(is_in(4, lst))
-                    print(reverse(lst))
-                    print(index(2, lst))
-                    print(insert('cat', 4, lst))
-
-
-    #. Write a function ``replace(s, old, new)`` that replaces all occurences of
-       ``old`` with ``new`` in a string ``s``::
-
-          test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
-
-          s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
-          test(replace(s, 'om', 'am'),
-                 'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
-
-          test(replace(s, 'o', 'a'),
-                 'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
-
-       *Hint*: use the ``split`` and ``join`` methods.
-
-       .. activecode:: ex_9_13
+          testEqual(sum_evens([2,3,4]), 6)
+          testEqual(sum_evens([]), 0)
+          testEqual(sum_evens([0,7,2,4,2,1]), 8)
+          testEqual(sum_evens([0,1,2,3,4,5,6,7,8,9]), 20)
+          testEqual(sum_evens(range(200,500)), 52350)

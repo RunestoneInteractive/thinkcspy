@@ -10,92 +10,117 @@
 Exercises
 ---------
 
-#. In Robert McCloskey's
-   book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-   Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
+#.
 
-   .. sourcecode:: python
+    .. tabbed:: q1
 
-        prefixes = "JKLMNOPQ"
-        suffix = "ack"
+        .. tab:: Question
 
-	for p in prefixes:
-	    print(p + suffix)
+            What is the result of each of the following:
 
+            a. 'Python'[1]
+            #. "Strings are sequences of characters."[5]
+            #. len("wonderful")
+            #. 'Mystery'[:4]
+            #. 'p' in 'Pineapple'
+            #. 'apple' in 'Pineapple'
+            #. 'pear' not in 'Pineapple'
+            #. 'apple' > 'pineapple'
+            #. 'pineapple' < 'Peach'
 
-   Of course, that's not quite right because Ouack and Quack are misspelled.
-   Can you fix it?
+        .. tab:: Answer
 
-    .. activecode:: ex_8_2
-
-
-#. Print out a neatly formatted multiplication table, up to 12 x 12.  Your output should look something like this:
-
-    .. sourcecode:: python
-
-          1   2   3   4   5   6   7   8   9   10  11  12
-          2   4   6   8   10  12  14  16  18  20  22  24
-          3   6   9   12  15  18  21  24  27  30  33  36
-          4   8   12  16  20  24  28  32  36  40  44  48
-          5   10  15  20  25  30  35  40  45  50  55  60
-          6   12  18  24  30  36  42  48  54  60  66  72
-          7   14  21  28  35  42  49  56  63  70  77  84
-          8   16  24  32  40  48  56  64  72  80  88  96
-          9   18  27  36  45  54  63  72  81  90  99  108
-          10  20  30  40  50  60  70  80  90  100 110 120
-          11  22  33  44  55  66  77  88  99  110 121 132
-          12  24  36  48  60  72  84  96  108 120 132 144
-
-   .. activecode:: ex_8_4
+            a. 'Python'[1] = 'y'
+            #. 'Strings are sequences of characters.'[5] = 'g'
+            #. len('wonderful') = 9
+            #. 'Mystery'[:4] = 'Myst'
+            #. 'p' in 'Pineapple' = True
+            #. 'apple' in 'Pineapple' = True
+            #. 'pear' not in 'Pineapple' = True
+            #. 'apple' > 'pineapple' = False
+            #. 'pineapple' < 'Peach' = False
 
 
-#. Write a function ``reverse`` that receives a string argument, and returns a reversed version of the string.
+#. (GRADED) Write a function ``analyze_text`` that receives a string as input. Your function should count the number of alphabetic characters (a through z, or A through Z) in the text and also keep track of how many are the letter ``'e'`` (upper or lowercase).
 
-   .. activecode:: ex_8_5
+   Your function should return an analysis of the text, something like this:
 
-      from test import testEqual
+      The text contains 240 alphabetic characters, of which 105 (43.75%) are 'e'.
 
-      def reverse(text):
-          # your code here
+   You will need to make use of the ``isalpha`` function, which can be used like this
 
-      testEqual(reverse("happy"), "yppah")
-      testEqual(reverse("Python"), "nohtyP")
-      testEqual(reverse(""), "")
+   .. code-block:: python
 
-#. (GRADED) Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
+      "a".isalpha() # => evaluates to True
+      "3".isalpha() # => evaluates to False
+      "&".isalpha() # => False
+      " ".isalpha() # => False
 
-   .. activecode:: ex_8_6
+      mystr = "Q"
+      mystr.isalpha() # => True
 
-      def mirror(text):
-          # your code here
+   .. activecode:: ex_8_3
 
-
-      def reverse(text):
+      def analyze_text(text):
           # your code here
 
 
       # Don't copy these tests into Vocareum
       from test import testEqual
-      testEqual(mirror('good'), 'gooddoog')
-      testEqual(mirror('Python'), 'PythonnohtyP')
-      testEqual(mirror(''), '')
-      testEqual(mirror('a'), 'aa')
+
+      text1 = "Eeeee"
+      answer1 = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+      testEqual(analyze_text(text1), answer1)
+
+      text2 = "Blueberries are tasteee!"
+      answer2 = "The text contains 21 alphabetic characters, of which 7 (33.3333333333%) are 'e'."
+      testEqual(analyze_text(text2), answer2)
+
+      text3 = "Wright's book, Gadsby, contains a total of 0 of that most common symbol ;)"
+      answer3 = "The text contains 55 alphabetic characters, of which 0 (0.0%) are 'e'."
+      testEqual(analyze_text(text3), answer3)
+
+#.
+
+    .. tabbed:: q5
+
+        .. tab:: Question
+
+           Write a function that will return the number of digits in an integer.
+
+           .. activecode:: ex_7_10
 
 
-#. Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
+        .. tab:: Answer
 
-   .. activecode:: ex_8_8
+            .. activecode:: q5_answer
+
+                def findNumDigits(n):
+                    n_str = str(n)
+                    return len(n_str)
+
+
+                print(findNumDigits(50))
+                print(findNumDigits(20000))
+                print(findNumDigits(1))
+
+
+
+#. Write a function that removes all occurrences of a given letter from a string.
+
+   .. activecode:: ex_8_7
+      :nocodelens:
 
       from test import testEqual
 
-      def is_palindrome(text):
+      def remove_letter(theLetter, theString):
           # your code here
 
-      testEqual(is_palindrome('abba'), True)
-      testEqual(is_palindrome('abab'), False)
-      testEqual(is_palindrome('straw warts'), True)
-      testEqual(is_palindrome('a'), True)
-      testEqual(is_palindrome(''), True)
+      testEqual(remove_letter('a', 'apple'), 'pple')
+      testEqual(remove_letter('a', 'banana'), 'bnn')
+      testEqual(remove_letter('z', 'banana'), 'banana')
+
+
 
 #.
 
@@ -140,6 +165,7 @@ Exercises
                 testEqual(remove('egg', 'bicycle'), 'bicycle')
 
 
+
 #. Write a function that removes all occurrences of a string from another string.
 
    .. activecode:: ex_8_11
@@ -153,119 +179,3 @@ Exercises
       testEqual(remove_all('cyc', 'bicycle'), 'bile')
       testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
       testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
-
-#. Write a function that implements a substitution cipher.  In a substitution
-   cipher one letter is substituted for another to garble the message.  For
-   example A -> Q, B -> T, C -> G etc.  your function should take two
-   parameters, the message you want to encrypt, and a string that represents
-   the mapping of the 26 letters in the alphabet.  Your function should
-   return a string that is the encrypted version of the message.
-
-   .. activecode:: ex_8_17
-
-#.
-
-    .. tabbed:: q19
-
-        .. tab:: Question
-
-           Write a function that decrypts the message from the previous exercise.  It
-           should also take two parameters.  The encrypted message,
-           and the mixed up alphabet.  The function should return a string that is
-           the same as the original unencrypted message.
-
-           .. activecode:: ex_8_18
-
-        .. tab:: Answer
-
-            .. activecode:: q19_answer
-
-                def encrypt(message, cipher):
-                    alphabet = "abcdefghijklmnopqrstuvwxyz"
-                    encrypted = ''
-                    for char in message:
-                        if char == ' ':
-                            encrypted = encrypted + ' '
-                        else:
-                            pos = alphabet.index(char)
-                            encrypted = encrypted + cipher[pos]
-                    return encrypted
-
-                def decrypt(encrypted, cipher):
-                    alphabet = "abcdefghijklmnopqrstuvwxyz"
-                    decrypted = ''
-                    for char in encrypted:
-                        if char == ' ':
-                            decrypted = decrypted + ' '
-                        else:
-                            pos = cipher.index(char)
-                            decrypted = decrypted + alphabet[pos]
-                    return decrypted
-
-
-                cipher = "badcfehgjilknmporqtsvuxwzy"
-
-                encrypted = encrypt('hello world', cipher)
-                print encrypted
-
-                decrypted = decrypt(encrypted, cipher)
-                print(decrypted)
-
-
-
-#. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
-   there will never be a duplicate letter added to the new string.
-
-   .. activecode:: ex_8_19
-
-      def removeDups(astring):
-          # your code here
-
-
-      print(removeDups("mississippi"))   #should print misp
-
-
-#.
-
-    .. tabbed:: q21
-
-        .. tab:: Question
-
-           Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
-           The Caesar cipher works like a substitution cipher but each character is replaced
-           by the character 13 characters to 'its right' in the alphabet.  So for example
-           the letter a becomes the letter n.  If a letter is past the middle of the alphabet
-           then the counting wraps around to the letter a again, so n becomes a, o becomes b
-           and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
-           to think of modulo arithmetic.
-
-           .. activecode:: ex_8_20
-
-              def rot13(mess):
-                  # Your code here
-
-              print(rot13('abcde'))
-              print(rot13('nopqr'))
-              print(rot13(rot13('Since rot13 is symmetric you should see this message')))
-
-        .. tab:: Answer
-
-            .. activecode:: q21_answer
-
-                def rot13(mess):
-                    alphabet = 'abcdefghijklmnopqrstuvwxyz'
-                    encrypted = ''
-                    for char in mess:
-                        if char == ' ':
-                            encrypted = encrypted + ' '
-                        else:
-                            rotated_index = alphabet.index(char) + 13
-                            if rotated_index < 26:
-                                encrypted = encrypted + alphabet[rotated_index]
-                            else:
-                                encrypted = encrypted + alphabet[rotated_index % 26]
-                    return encrypted
-
-                print(rot13('abcde'))
-                print(rot13('nopqr'))
-                print(rot13(rot13('since rot thirteen is symmetric you should see this message')))

@@ -44,14 +44,6 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
 
 
 
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_09_06
-    
-    
-
 **Check your understanding**
 
 .. mchoice:: test_question9_20_1
@@ -64,9 +56,9 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
    :feedback_b: Not all the items in alist are to be included in blist.  Look at the if clause.
    :feedback_c: The result needs to be a list.
    :feedback_d: Yes, 5 is the only odd number in alist.  It is doubled before being placed in blist.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4,2,8,6,5]
@@ -75,4 +67,3 @@ To write the ``primes_upto`` function we will use the ``is_prime`` function to f
 
 
 .. index:: nested list, list; nested
-       

@@ -31,9 +31,12 @@ Exercises
                         print("We like Python's turtles!")
 
 
-    #. Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?
 
+    #. Write a program that prints out the lyrics to the song "99 Bottles of Beer on the Wall"
 
+        .. activecode:: ex_3_2
+
+        
     #.
 
         .. tabbed:: q3
@@ -193,7 +196,6 @@ Exercises
                    wn.exitonclick()
 
 
-
     #. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
        and check your answer.
 
@@ -322,3 +324,58 @@ Exercises
                     babbage.shape("circle")
 
                     wn.exitonclick()
+
+
+    #.
+
+        .. tabbed:: q1
+
+            .. tab:: Question
+
+               Use a ``for`` statement to print 10 random numbers.
+
+               .. activecode:: ex_mod_1
+
+            .. tab:: Answer
+
+                .. activecode:: mod_q1_answer
+
+                   import random
+
+                   howmany = 10
+                   for counter in range(howmany):
+                       arandom = random.random()
+                       print(arandom)
+
+
+    #.
+
+        Repeat the above exercise but this time print 10 random numbers between 25 and 35.
+
+        .. activecode:: ex_mod_2
+
+    #.
+
+        .. tabbed:: q3
+
+            .. tab:: Question
+
+               The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
+
+                       .. activecode:: ex_mod_3
+
+            .. tab:: Answer
+
+                .. activecode:: mod_q3_answer
+
+                   import math
+
+                   side1 = 3
+                   side2 = 4
+                   hypotenuse = math.hypot(side1,side2)
+                   print(hypotenuse)
+
+
+    #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
+
+        .. activecode:: ex_mod_4
