@@ -358,22 +358,6 @@ Hacker Chapter: Special Topic -- L-Systems
 
 ----
 
-Acknowledgements
-~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-    :maxdepth: 1
-
-    FrontBackMatter/copyright.rst
-    FrontBackMatter/prefaceinteractive.rst
-    FrontBackMatter/foreword.rst
-    FrontBackMatter/preface.rst
-    FrontBackMatter/preface2e.rst
-    FrontBackMatter/contrib.rst
-    FrontBackMatter/fdl-1.3.rst
-
-----
-
 More about this Textbook
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -382,4 +366,6 @@ This book is one of many adapted versions of the open-source textbook called `Ho
 
 Runestone is a platform for hosting *interactive* electronic textbooks. The folks at Runestone created `ThinkCsPy <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_, an interactive version of the original book.
 
-LaunchCode has made some small tweaks and adjustments to Runestone's *ThinkCsPy*, resulting in the book you are reading!
+LaunchCode has customized Runestone's *ThinkCsPy*, resulting in the book you are reading!
+
+`Copyright Notice <runestone/static/thinkcspy/FrontBackMatter/copyright.html>`_
