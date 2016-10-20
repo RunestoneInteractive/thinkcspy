@@ -46,7 +46,7 @@ generated this Sierpinski Triangle is shown below.
 
 .. _lst_st:
 
-.. activecode:: lst_st
+.. activecode:: lst_st_editor
     :caption: Drawing a Sierpinski Triangle
     :nocodelens:
 
@@ -95,12 +95,12 @@ generated this Sierpinski Triangle is shown below.
 
 
 
-    
-    
+
+
 This program follows the ideas outlined above. The
 first thing ``sierpinski`` does is draw the outer triangle. Next, there
 are three recursive calls, one for each of the new corner triangles we
-get when we connect the midpoints. 
+get when we connect the midpoints.
 
 Look at the code and think about the order in which the triangles will
 be drawn. While the exact order of the corners depends upon how the
@@ -125,8 +125,8 @@ finished with the bottom left it moves to the bottom middle, and so on.
 .. _fig_stcalltree:
 
 .. figure:: Figures/stCallTree.png
-    :align: center   
-   
+    :align: center
+
     Figure 4: Building a Sierpinski Triangle
 
 The ``sierpinski`` function relies heavily on the ``getMid`` function.

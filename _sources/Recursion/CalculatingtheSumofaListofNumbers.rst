@@ -20,7 +20,7 @@ by starting with :math:`0` and adding each number in the list.
 
 .. _lst_itsum:
 
-.. activecode:: lst_itsum
+.. activecode:: lst_itsum_editor
     :caption: Iterative Summation
 
     def listsum(numList):
@@ -28,7 +28,7 @@ by starting with :math:`0` and adding each number in the list.
         for i in numList:
             theSum = theSum + i
         return theSum
-        
+
     print(listsum([1,3,5,7,9]))
 
 Pretend for a minute that you do not have ``while`` loops or ``for``
@@ -37,17 +37,17 @@ mathematician you might start by recalling that addition is a function
 that is defined for two parameters, a pair of numbers. To redefine the
 problem from adding a list to adding pairs of numbers, we could rewrite
 the list as a fully parenthesized expression. Such an expression looks
-like this: 
+like this:
 
 .. math::
     ((((1 + 3) + 5) + 7) + 9)
-    
+
 We can also parenthesize
 the expression the other way around,
 
 .. math::
 
-     (1 + (3 + (5 + (7 + 9)))) 
+     (1 + (3 + (5 + (7 + 9))))
 
 Notice that the innermost set of
 parentheses, :math:`(7 + 9)`, is a problem that we can solve without a
@@ -82,7 +82,7 @@ the first element. This is easily expressed in Python.
 
 .. _lst_recsum:
 
-.. activecode:: lst_recsum
+.. activecode:: lst_recsum_editor
     :caption: Recursive Summation
 
     def listsum(numList):
@@ -90,7 +90,7 @@ the first element. This is easily expressed in Python.
             return numList[0]
        else:
             return numList[0] + listsum(numList[1:])
-            
+
     print(listsum([1,3,5,7,9]))
 
 There are a few key ideas in this listing to look at. First, on line 2 we are checking to see if the list is one element long. This

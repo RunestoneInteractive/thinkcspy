@@ -99,7 +99,7 @@ Exercises
 
 #.
 
-    .. tabbed:: q15
+    .. tabbed:: ex_8_14
 
         .. tab:: Question
 
@@ -114,7 +114,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: ex_8_14_answer
                 :nocodelens:
 
                 import turtle

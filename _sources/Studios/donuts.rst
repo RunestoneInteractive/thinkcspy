@@ -61,9 +61,7 @@ Taking their order involves asking two questions:
 3. Inform the user of the total cost of their order.
 4. Don't forget to include sales-tax, which is, let's say, 5%.
 
-Here's an example of how the finished program should behave:
-
-.. sourcecode::
+Here's an example of how the finished program should behave: ::
 
     Welcome to the Loop Hole!
     Today's Manager's Special is:

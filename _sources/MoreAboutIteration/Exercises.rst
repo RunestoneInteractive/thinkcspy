@@ -270,14 +270,14 @@ Exercises
     #. Sepia Tone images are those brownish colored images that may remind you of
        times past.  The formula for creating a sepia tone is as follows:
 
-       .. sourcecode:: python
+       ::
 
             newR = (R × 0.393 + G × 0.769 + B × 0.189)
             newG = (R × 0.349 + G × 0.686 + B × 0.168)
             newB = (R × 0.272 + G × 0.534 + B × 0.131)
 
        Write a function to convert an image to sepia tone. *Hint:*
-       Remember that rgb values must be integers between 0 and 255.
+       Remember that RGB values must be integers between 0 and 255.
 
         .. activecode:: ex_7_18
            :nocodelens:

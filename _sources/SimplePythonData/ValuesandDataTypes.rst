@@ -49,7 +49,7 @@ In the Python shell, it is not necessary to use the ``print`` function to see th
 we ask the shell to evaluate ``type("Hello, World!")``, it responds with the appropriate answer and then goes on to
 display the prompt for the next use.
 
-.. sourcecode:: python
+::
 
 	Python 3.1.2 (r312:79360M, Mar 24 2010, 01:33:18)
 	[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
@@ -197,4 +197,3 @@ change might mean something quite different from what you intended.
 
 
 .. index:: type converter functions, int, float, str, truncation
-

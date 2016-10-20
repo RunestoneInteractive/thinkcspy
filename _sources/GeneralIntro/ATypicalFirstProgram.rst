@@ -25,7 +25,7 @@ looks like this.
 This is an example of using the **print function**, which doesn't actually
 print anything on paper. It displays a value on the screen. In this case, the result is the phrase:
 
-.. sourcecode:: python
+::
 
     Hello, World!
 
@@ -59,4 +59,3 @@ possible.
 
 
 .. index:: comments
-

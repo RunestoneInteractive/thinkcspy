@@ -181,7 +181,7 @@ Exercises
 
         Write a program that will compute the area of a circle.  Prompt the user to enter the radius, and then print the answer, like this:
 
-        .. sourcecode:: python
+        ::
 
             What is the radius?
             >>> 7.8
@@ -220,7 +220,7 @@ Exercises
 
         Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer, like this:
 
-        .. sourcecode:: python
+        ::
 
             How many miles have you driven?
             >>> 150
@@ -261,7 +261,7 @@ Exercises
 
         Write a program that will convert degrees fahrenheit to degrees celsius, like this:
 
-        .. sourcecode:: python
+        ::
 
             What is the temperature in Farenheit?
             >>> 32

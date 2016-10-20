@@ -29,7 +29,7 @@ Windows
 
 This video walks through the details for Windows 10. If you're using Windows 7 or 8, see the notes below on a few things that will be slightly different for you.
 
-*Note: If you have an even older version of Windows, such as Windows Vista or Windows XP, you may have a very different experience getting these tasks going. We encourage you to do some research of your own or work with a fellow student or TF. And after a bit of that, you may be ready to spring for that Windows upgrade!
+*Note:* If you have an even older version of Windows, such as Windows Vista or Windows XP, you may have a very different experience getting these tasks going. We encourage you to do some research of your own or work with a fellow student or TF. And after a bit of that, you may be ready to spring for that Windows upgrade!
 
 .. raw:: html
 

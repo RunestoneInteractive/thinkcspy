@@ -80,8 +80,8 @@ getting too small.
             tree(branchLen-10,t)
             t.right(20)
             t.backward(branchLen)
-            
-            
+
+
 .. highlight:: python
     :linenothreshold: 500
 
@@ -93,12 +93,12 @@ shape simultaneously? Will it be drawn right side first then left side?
 
 .. _lst_complete_tree:
 
-.. activecode:: lst_complete_tree
+.. activecode:: lst_complete_tree_editor
     :caption: Recursively Drawing a Tree
     :nocodelens:
 
     import turtle
-    
+
     def tree(branchLen,t):
         if branchLen > 5:
             t.forward(branchLen)
@@ -119,7 +119,7 @@ shape simultaneously? Will it be drawn right side first then left side?
         t.color("green")
         tree(75,t)
         myWin.exitonclick()
-        
+
     main()
 
 
@@ -140,7 +140,7 @@ to the smallest twig on the left.
    :align: center
 
    Figure 1: The Beginning of a Fractal Tree
-   
+
 .. _fig_tree2:
 
 .. figure:: Figures/tree2.png
@@ -176,5 +176,3 @@ interesting options to make your tree look more realistic.
 
    .. activecode:: recursion_sc_3
       :nocodelens:
-
-

@@ -3,7 +3,10 @@
 Table of Contents
 ------------------
 
-----
+.. toctree::
+   :hidden:
+
+   index.rst
 
 1. General Intro
 ::::::::::::::::::::::::::::::::
@@ -73,6 +76,7 @@ Table of Contents
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
+   Debugging/Summary.rst
    Debugging/Exercises.rst
 
 
@@ -125,6 +129,7 @@ Table of Contents
    Functions/ProgramDevelopment.rst
    Functions/Composition.rst
    Functions/ATurtleBarChart.rst
+   Functions/ProgrammingWithStyle.rst
    Functions/Glossary.rst
    Functions/Exercises.rst
 
@@ -436,3 +441,8 @@ Runestone is a platform for hosting *interactive* electronic textbooks. The folk
 LaunchCode has customized Runestone's *ThinkCsPy*, resulting in the book you are reading!
 
 `Copyright Notice <runestone/static/thinkcspy/FrontBackMatter/copyright.html>`_
+
+.. toctree::
+   :hidden:
+
+   FrontBackMatter/copyright.rst

@@ -76,7 +76,7 @@ outlined above for any base between 2 and 16.
 
 .. _lst_rectostr:
 
-.. activecode:: lst_rectostr
+.. activecode:: lst_rectostr_editor
     :caption: Recursively Converting from Integer to String
 
     def toStr(n,base):
@@ -124,14 +124,14 @@ we get the result in the proper order.
       from test import testEqual
       def reverse(s):
           return s
-      
+
       testEqual(reverse("hello"),"olleh")
-      testEqual(reverse("l"),"l")      
+      testEqual(reverse("l"),"l")
       testEqual(reverse("follow"),"wollof")
       testEqual(reverse(""),"")
 
    Write a function that takes a string as a parameter and returns True if the string is a palindrome, False otherwise.  Remember that a string is a palindrome if it is spelled the same both forward and backward.  for example:  radar is a palindrome.  for bonus points palindromes can also be phrases, but you need to remove the spaces and punctuation before checking.  for example:  madam i'm adam  is a palindrome.  Other fun palindromes include:
-   
+
    * kayak
    * aibohphobia
    * Live not on evil
@@ -149,11 +149,10 @@ we get the result in the proper order.
 
       def isPal(s):
           return False
-      
-      testEqual(isPal(removeWhite("x")),True)            
+
+      testEqual(isPal(removeWhite("x")),True)
       testEqual(isPal(removeWhite("radar")),True)
       testEqual(isPal(removeWhite("hello")),False)
-      testEqual(isPal(removeWhite("")),True)                  
-      testEqual(isPal(removeWhite("hannah")),True)      
+      testEqual(isPal(removeWhite("")),True)
+      testEqual(isPal(removeWhite("hannah")),True)
       testEqual(isPal(removeWhite("madam i'm adam")),True)
-

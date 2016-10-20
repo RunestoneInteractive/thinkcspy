@@ -316,7 +316,7 @@ Exercises
 
     #.
 
-        .. tabbed:: q15
+        .. tabbed:: ex_5
 
             .. tab:: Question
 
@@ -327,7 +327,7 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q15_answer
+                .. activecode:: ex_5_answer
 
                     def myPi(iters):
                         ''' Calculate an approximation of PI using the Leibniz

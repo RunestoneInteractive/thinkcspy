@@ -95,9 +95,7 @@ Weekly Graded Assignment
 
     Write a program that calculates the temperature based on how much the dial has been turned. You should prompt he user for a number of clicks-to-the-right. Then you should print the current temperature.
 
-    Here is an example of how your program should behave (When you see `>>>`, that line represents what the user is typing in):
-
-    .. sourcecode:: python
+    Here is an example of how your program should behave (When you see `>>>`, that line represents what the user is typing in): ::
 
         By how many clicks has the dial been turned?
         >>> 0

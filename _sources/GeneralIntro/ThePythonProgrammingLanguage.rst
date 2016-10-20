@@ -67,7 +67,7 @@ There are two ways to use the Python interpreter: *shell mode* and *program
 mode*. In shell mode, you type Python expressions into the **Python shell**,
 and the interpreter immediately shows the result.  The example below shows the Python shell at work.
 
-.. sourcecode:: python
+::
 
     $ python3
     Python 3.2 (r32:88445, Mar 25 2011, 19:28:28)
@@ -102,7 +102,7 @@ By convention, files that contain Python programs have names that end with
 ``.py`` .  Following this convention will help your operating system and other
 programs identify a file as containing python code.
 
-.. sourcecode:: python
+::
 
     $ python firstprogram.py
     My first program adds two numbers, 2 and 3:
@@ -163,4 +163,3 @@ most programs are more interesting than this one.
    :feedback_d: Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
 
    Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.
-

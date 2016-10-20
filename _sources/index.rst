@@ -3,8 +3,6 @@ Think Python - LaunchCode Edition
 
 Welcome to LaunchCode's *Think Python* course!
 
-This course is built around an interactive textbook hosted here on this website. You will do most of your learning and working directly inside the book.
-
 * :ref:`t_o_c`
 * `Index <genindex.html>`_
 
