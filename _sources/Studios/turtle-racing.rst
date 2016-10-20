@@ -52,9 +52,6 @@ We will write a program with Turtles to simulate their journey after leaving the
 Studio
 ------
 
-Turtle Races
-------------
-
 In this studio we are going to work step by step through the problem of racing
 turtles.  The idea is that we want to create two or more turtles and have
 them race across the screen from left to right. The turtle that goes the
@@ -82,7 +79,7 @@ Here is a possible sequence of steps that we will need to accomplish:
 
 #. Send them moving across the screen
 
-Here is the Python code for the first 4 steps above
+Here is the Python code for the first 4 steps above. Continue below for a discussion on possible solutions.
 
 .. activecode:: turtle_racing_studio
 
@@ -112,24 +109,21 @@ Now, you have several choices for how to fill in code for step 5. Here are
 some possibilities to try.  Try coding each of the following in the box above
 to see the different kinds of behavior.
 
-* Use a single call to ``forward`` for each turtle, using a random number as
+1. Use a single call to ``forward`` for each turtle, using a random number as
   the distance to move.
 
-* Create a for loop, using a random number for the parameter passed to the
-  range function.  Inside the for loop move one of the turtles forward by
-  some number of units.
+2. Create a for loop, using a random number for the parameter passed to the
+  range function. Inside the for loop move each of the turtles forward by
+  some random number of units.
 
-* Create a single for loop using something like 150 or 200 as the range
-  parameter. Then inside the for loop move each turtle forward using a random
-  number as the parameter to forward.
+3. Be creative! What other ways might you simulate a race between two participants?
 
 
 So, which of these programs is better?  Which of these programs is most
 correct?  These are excellent questions. Program 1 is certainly the simplest,
 but it isn't very satisfying as far as a race is concerned.  Each turtle
 simply moves their distance on their turn.  That is not very satisfying as far
-as a simulated race goes.  Program 2 ends up looking a lot like Program 1
-when you run it.  Program 3 is probably the most 'realistic' assuming realism
+as a simulated race goes.  Program 2 is probably the most 'realistic' assuming realism
 is very important when we're talking about a simulated race of virtual
 turtles.
 
