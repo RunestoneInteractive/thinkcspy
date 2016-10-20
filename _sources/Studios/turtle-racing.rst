@@ -109,12 +109,9 @@ Now, you have several choices for how to fill in code for step 5. Here are
 some possibilities to try.  Try coding each of the following in the box above
 to see the different kinds of behavior.
 
-1. Use a single call to ``forward`` for each turtle, using a random number as
-  the distance to move.
+1. Use a single call to ``forward`` for each turtle, using a random number as the distance to move.
 
-2. Create a for loop, using a random number for the parameter passed to the
-  range function. Inside the for loop move each of the turtles forward by
-  some random number of units.
+2. Create a for loop, using a random number for the parameter passed to the range function. Inside the for loop move each of the turtles forward by some random number of units.
 
 3. Be creative! What other ways might you simulate a race between two participants?
 

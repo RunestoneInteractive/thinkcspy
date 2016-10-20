@@ -34,4 +34,9 @@ Draw this pretty pattern.
 
 .. image:: Figures/tess08.png
 
+
+*Hint:* Think about the repeating element that makes up this image. It probably looks a lot like what you'd draw on the sidewalk if you wanted to play foursquare.
+
+.. image:: Figures/foursquare.png
+
 .. activecode:: wagon_wheel_studio
