@@ -8,7 +8,7 @@ Donuts
 Walkthrough
 -----------
 
-Imagine you're an American tourist in London. You've brought with you a bunch of `union jack <https://en.wikipedia.org/wiki/Union_Jack>`_ souvenir flags to sell, the proceeds of which will fund your excursions to local pubs. Each flag would be sold for $3 in the US. And the average pint in London costs £3.79 (3 pounds 79 pence).
+Imagine you're an American tourist in London. You've brought with you a bunch of `union jack <https://en.wikipedia.org/wiki/Union_Jack>`_ souvenir flags to sell, the proceeds of which will fund your excursions to local pubs. Each flag would be sold for $3 in the US, and the average pint in London costs £3.79 (3 pounds, 79 pence).
 
 In class, we will write a program that allows us to calculate how many pints of beer we would be able to afford if we sell a certain quantity of souvenir flags. Since the flags are purchased in dollars, we'll need to convert from dollars to pounds to determine the cost in the UK.
 
@@ -58,10 +58,15 @@ Taking their order involves asking two questions:
 
 1. How many donuts do they want to buy?
 2. How much do you want to pay per donut?
+
+After getting input, you should:
+
 3. Inform the user of the total cost of their order.
 4. Don't forget to include sales-tax, which is, let's say, 5%.
 
-Here's an example of how the finished program should behave: ::
+Here's an example of how the finished program should behave:
+
+::
 
     Welcome to the Loop Hole!
     Today's Manager's Special is:
