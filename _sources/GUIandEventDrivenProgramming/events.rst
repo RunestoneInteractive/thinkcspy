@@ -138,7 +138,8 @@ Events are always associated with a widget. If you want to know every event
 that happens inside an application's window, then bind events to the widget
 that is your application's window. If you only want to know about button
 click events on a particular button, then bind an event handler to that
-specific button. In general, events should be made as specific as possible.
+specific button. In general, events should be associated with the most
+specific widget as possible.
 
 Some widgets, such as a Notebook that implements a tabbed set of frames, have
 predefined events that are used to manipulate them. These are called "bind_class"
@@ -146,7 +147,7 @@ event bindings and they bind certain events to all instances of a particular
 widget type. In general you should not modify or change these types of
 event bindings because a user expects a certain behaviour from a particular
 type of widget and changing that behaviour can make the entire user interface
-confusing.
+confusing to a user.
 
 
 
