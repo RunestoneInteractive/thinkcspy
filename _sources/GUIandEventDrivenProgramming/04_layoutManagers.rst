@@ -85,7 +85,7 @@ stretch to reach both boundaries. Here are some examples:
 ``tk.W + tk.N``                move the widget left and up so that it is in the upper-left corner
 ``tk.E + tk.W``                stretch the widget so that it fills the cell horizontally
 ``tk.E + tk.W + tk.S``         stretch the widget so that it fills the cell horizontally and move it down
-``tk.E + tk.E + tk.N + tk.S``  stretch the widget so it fills the entire cell.
+``tk.E + tk.W + tk.N + tk.S``  stretch the widget so it fills the entire cell.
 =============================  ====================================================================
 
 In addition, if you do not want the widget to be rendered as small as possible,

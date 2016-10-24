@@ -54,7 +54,9 @@ These functions are:
   answer = messagebox.askyesno("Question","Do you like Python?")
   answer = messagebox.askyesnocancel("Question", "Continue playing?")
 
-The return value value is a Boolean, True or False, answer to the question.
+The return value is a Boolean, True or False, answer to the question. If
+"cancel" is an option and the user selects the "cancel" button, ``None``
+is returned.
 
 Single Value Data Entry
 =======================
@@ -113,23 +115,24 @@ the dialog box, the returned value is an empty string.
   # Build a list of tuples for each file type the file dialog should display
   my_filetypes = [('all files', '.*'), ('text files', '.txt')]
 
-  # Ask the user to select a folder
+  # Ask the user to select a folder.
   answer = filedialog.askdirectory(parent = application_window,
                                    initialdir = ".",
                                    title = "Please select a folder:")
 
-  # Ask the user to select a single file name
+  # Ask the user to select a single file name.
   answer = filedialog.askopenfilename(parent = application_window,
                                       initialdir = ".",
                                       title = "Please select a file:",
                                       filetypes = my_filetypes)
 
-  # Ask the user to select a one or more file names
+  # Ask the user to select a one or more file names.
   answer = filedialog.askopenfilenames(parent = application_window,
                                        initialdir = ".",
                                        title = "Please select one or more files:",
                                        filetypes = my_filetypes)
 
+  # Ask the user to select a single file name for saving.
   answer = filedialog.asksaveasfilename(parent = application_window,
                                         initialdir = ".",
                                         title = "Please select a file name for saving:",
@@ -140,9 +143,10 @@ Color Chooser
 
 Tkinter includes a nice dialog box for choosing colors. You provide it with
 a parent window and an initial color, and it return a color in two different
-specifications: 1) a RGB value as a tuple, such as (255, 0, 0) for red, and
-2) a hexadecimal string used in web pages, such as #FF0000 for red. If the user
-cancels the operation, the return values are ``None`` and ``None``.
+specifications: 1) a RGB value as a tuple, such as ``(255, 0, 0)`` which
+represents red, and 2) a hexadecimal string used in web pages, such
+as ``"#FF0000"`` which also represents red. If the user cancels the
+operation, the return values are ``None`` and ``None``.
 
 .. code-block:: python
 
@@ -150,3 +154,8 @@ cancels the operation, the return values are ``None`` and ``None``.
 
   rgb_color, web_color = colorchooser.askcolor(parent = application_window,
                                                initialcolor = (255, 0, 0))
+
+.. index:: messagebox, showinfo, showerror, showwarning, askokcancel,
+           askretrycancel, askyesno, askyesnocancel, simpledialog, askstring,
+           askinteger, askfloat, filedialog, askdirectory, askopenfilename,
+           askopenfilenames, asksaveasfilename, colorchooser, askcolor

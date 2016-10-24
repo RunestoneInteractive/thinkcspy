@@ -28,12 +28,12 @@ are determined completely by the programmer who wrote the program. When such a
 program is executed it performs a series of tasks in a predetermined order and
 then terminates. A GUI program's structure is very different. A GUI program
 creates the icons and widgets that are displayed to a user and then it
-simply waits for the user to manipulate them. The order that tasks are performed
-by the program is under the user's control -- not the programs!
+simply waits for the user to interact with them. The order that tasks are
+performed by the program is under the user's control -- not the programs!
 This means a GUI program must keep track of the "state" of its processing
 and respond correctly to user commands that are given in any order the user
 chooses. This style of programming is called "event driven programming."
-In fact, GUI programming and event-driven programming are synonymous.
+In fact, *GUI programming* and *event-driven programming* are synonymous.
 
 Event-driven Programming
 ========================
@@ -42,8 +42,8 @@ An event-driven program has the following structure:
 
 * Create the icons and widgets that are displayed to a user and organize
   them inside a window.
-* Define functions that will process application events.
-* Associate each function with a related user event.
+* Define functions that will process user and application events.
+* Associate each function with a user event.
 * Start an infinite event-loop that processes user events. When a user
   event happens, the event-loop calls the function associated with that
   event.
@@ -65,7 +65,7 @@ generic event-loop that all programs use and it looks something like this:
     event = get_next_event()
 
     # Get the function that is assigned to handle this event
-    a_function_to_handle_the_event = event-handlers{event}
+    a_function_to_handle_the_event = event-handlers[event]
 
     # If a function has been assigned to handle this event, call the function
     if a_function_to_handle_the_event:
@@ -77,9 +77,9 @@ generic event-loop that all programs use and it looks something like this:
 
 Again, you do not implement an event-loop in a GUI program. The event
 loop already exists. To make this event-loop work in a generic fashion you
-only need to associate a function (which is called an event-handler) to a
-specific event. We will show you how to do that in a few lessons. First,
-let's learn how to create a GUI interface.
+only need to associate a function (which is called an *event-handler* or
+a *callback function*) to a specific event. We will show you how to do that
+in a few lessons. First, let's learn how to create a GUI interface.
 
 GUI Programming Options
 =======================
@@ -98,32 +98,34 @@ TKinter
 =======
 
 TKinter is an abbreviation for "TK interface". "TK" is a platform independent,
-customizable, and configurable GUI library. The Python module ``TKinter`` allows
-Python programs to use the TK libraries. An overview of TK can be found at
-https://en.wikipedia.org/wiki/Tk_(software)
+customizable, and configurable GUI library. The Python module ``TKinter``
+allows Python programs to use the TK libraries. An overview of TK can be
+found at https://en.wikipedia.org/wiki/Tk_(software)
 
-Tkinter Standard Interfaces
-===========================
+Tkinter Pre-programmed Interfaces
+=================================
 
 Tkinter provides a set of standard GUI dialog boxes that can be used with
 minimal programming. These are described in the next lesson.
 (A dialog box is a small window on a computer screen
 in which a user is prompted to provide information or select commands.)
 
-TkinterCustom Interfaces
-========================
+Tkinter Custom Interfaces
+=========================
 
-Tkinter also provdes the functionality to create any imaginable user
-interface by creating custom GUI interfaces.
-To create a custom GUI program you basically do five things:
+Tkinter also provides the functionality to create any user interface
+imaginable. To create a custom GUI program you basically do five things:
 
-* Create the widgets you want in your interface.
+* Create instances of the widgets you want in your interface.
 * Define the layout of the widgets (i.e., the location and size of each widget).
 * Create functions that will perform your desired actions on user generated events.
-* Connect the functions to specific user events.
+* Connect your functions to specific user events.
 * Start a GUI event-loop.
 
 Each of these tasks are explain in detail in the following lessons.
+
+Note: All coding examples in these lessons assume you are using Python 3.5
+or greater.
 
 .. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 
