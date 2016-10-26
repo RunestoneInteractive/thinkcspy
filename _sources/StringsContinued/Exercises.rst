@@ -64,25 +64,6 @@ Exercises
           testEqual(reverse("Python"), "nohtyP")
           testEqual(reverse(""), "")
 
-    #. (GRADED) Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
-
-       .. activecode:: ex_8_6
-
-          def mirror(text):
-              # your code here
-
-
-          def reverse(text):
-              # your code here
-
-
-          # Don't copy these tests into Vocareum
-          from test import testEqual
-          testEqual(mirror('good'), 'gooddoog')
-          testEqual(mirror('Python'), 'PythonnohtyP')
-          testEqual(mirror(''), '')
-          testEqual(mirror('a'), 'aa')
-
 
     #. Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
 
@@ -214,7 +195,6 @@ Exercises
                     print(decrypted)
 
 
-
     #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
        there will never be a duplicate letter added to the new string.
 
@@ -271,3 +251,28 @@ Exercises
                     print(rot13('abcde'))
                     print(rot13('nopqr'))
                     print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
+
+        .. activecode:: ex_8_6
+
+            def mirror(text):
+                # your code here
+
+
+            def reverse(text):
+                # your code here
+
+
+            # Don't copy these tests into Vocareum
+            from test import testEqual
+            testEqual(mirror('good'), 'gooddoog')
+            testEqual(mirror('Python'), 'PythonnohtyP')
+            testEqual(mirror(''), '')
+            testEqual(mirror('a'), 'aa')
