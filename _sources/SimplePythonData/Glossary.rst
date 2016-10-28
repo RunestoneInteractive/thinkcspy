@@ -104,7 +104,7 @@ Glossary
         multiplication, or string concatenation.
 
     prompt string
-		Used during interactive input to provide the use with hints as to what type of value to enter.
+		Used during interactive input to provide the user with hints as to what type of value to enter.
 
     reference diagram
         A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also **state snapshot**.
@@ -142,6 +142,3 @@ Glossary
         with a letter.  In best programming practice, variable names should be
         chosen so that they describe their use in the program, making the
         program *self documenting*.
-
-
-
