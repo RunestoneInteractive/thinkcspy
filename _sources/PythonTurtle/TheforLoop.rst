@@ -11,7 +11,7 @@
    :prefix: turtle-3-
    :start: 1
 
-The ``for`` Loop
+The For Loop
 ----------------
 
 .. video:: forloopvid
