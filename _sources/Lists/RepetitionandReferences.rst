@@ -14,7 +14,7 @@
 Repetition and References
 -------------------------
 
-We have already seen the repetition operator working on strings as well as lists.  For example, 
+We have already seen the repetition operator working on strings as well as lists.  For example,
 
 .. activecode:: repref1
 
@@ -68,6 +68,7 @@ Here is the same example in codelens.  Step through the code paying particular a
 
 .. codelens:: reprefstep
     :showoutput:
+    :python: py3
 
     origlist = [45, 76, 34, 55]
 
@@ -89,9 +90,9 @@ Here is the same example in codelens.  Step through the code paying particular a
    :feedback_a: print(alist) not print(blist)
    :feedback_b: blist is changed, not alist.
    :feedback_c: Yes, alist was unchanged by the assignment statement. blist was a copy of the references in alist.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -110,9 +111,9 @@ Here is the same example in codelens.  Step through the code paying particular a
    :feedback_b: Yes, blist contains two references, both to alist.
    :feedback_c: print(blist)
    :feedback_d: blist contains two references, both to alist so changes to alist appear both times.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -125,4 +126,3 @@ Here is the same example in codelens.  Step through the code paying particular a
 
 
 .. index:: list; append
-

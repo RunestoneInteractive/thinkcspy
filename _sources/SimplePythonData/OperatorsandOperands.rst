@@ -108,6 +108,7 @@ If we start with a number of seconds, say 7684, the following program uses integ
 compute the correct values.
 
 .. codelens:: ch02_19_codelens
+    :python: py3
 
     total_secs = 7684
     hours = total_secs // 3600
@@ -128,7 +129,7 @@ compute the correct values.
    :feedback_b: The / operator does exact division and returns a floating point result.
    :feedback_c: The / operator does exact division and returns a floating point result.
    :feedback_d: The / operator does exact division and returns a floating point result.
-   
+
    What value is printed when the following statement executes?
 
    .. code-block:: python
@@ -147,7 +148,7 @@ compute the correct values.
    :feedback_b: - The // operator does integer division and returns an integer result, but it truncates the result of the division.  It does not round.
    :feedback_c: - The // operator does integer division and returns the truncated integer result.
    :feedback_d: - The // operator does integer division and returns the result of the division on an integer (not the remainder).
-   
+
    What value is printed when the following statement executes?
 
    .. code-block:: python
@@ -176,4 +177,3 @@ compute the correct values.
 .. index:: input, input dialog
 
 .. _input:
-

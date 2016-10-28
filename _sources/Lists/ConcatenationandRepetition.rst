@@ -14,7 +14,7 @@
 Concatenation and Repetition
 ----------------------------
 
-Again, as with strings, the ``+`` operator concatenates lists.  
+Again, as with strings, the ``+`` operator concatenates lists.
 Similarly, the ``*`` operator repeats the items in a list a given number of times.
 
 .. activecode:: chp09_5
@@ -34,6 +34,7 @@ One way for us to make this more clear is to run a part of this example in codel
 
 
 .. codelens:: chp09_concatid
+    :python: py3
 
     fruit = ["apple", "orange", "banana", "cherry"]
     numlist = [6, 7]
@@ -53,7 +54,7 @@ In Python, every object has a unique identification tag.  Likewise, there is a b
     >>> alist = [4, 5, 6]
     >>> id(alist)
     4300840544
-    >>> 
+    >>>
 
 **Check your understanding**
 
@@ -64,20 +65,20 @@ In Python, every object has a unique identification tag.  Likewise, there is a b
    :answer_d: [3, 7, 11]
    :correct: c
    :feedback_a: Concatenation does not add the lengths of the lists.
-   :feedback_b: Concatenation does not reorder the items. 
+   :feedback_b: Concatenation does not reorder the items.
    :feedback_c: Yes, a new list with all the items of the first list followed by all those from the second.
    :feedback_d: Concatenation does not add the individual items.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [1, 3, 5]
      blist = [2, 4, 6]
      print(alist + blist)
 
-   
-   
+
+
 .. mchoice:: test_question9_5_2
    :answer_a: 9
    :answer_b: [1, 1, 1, 3, 3, 3, 5, 5, 5]
@@ -88,13 +89,10 @@ In Python, every object has a unique identification tag.  Likewise, there is a b
    :feedback_b: Repetition does not repeat each item individually.
    :feedback_c: Yes, the items of the list are repeated 3 times, one after another.
    :feedback_d: Repetition does not multiply the individual items.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [1, 3, 5]
      print(alist * 3)
-
-   
-

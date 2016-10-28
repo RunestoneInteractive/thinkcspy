@@ -18,15 +18,15 @@ Since variables refer to objects, if we assign one variable to another, both
 variables refer to the same object:
 
 .. activecode:: listalias1
-    
+
     a = [81, 82, 83]
     b = a
     print(a is b)
-    
+
 In this case, the reference diagram looks like this:
 
 .. image:: Figures/refdiag4.png
-   :alt: State snapshot for multiple references (aliases) to a list 
+   :alt: State snapshot for multiple references (aliases) to a list
 
 Because the same list has two different names, ``a`` and ``b``, we say that it
 is **aliased**. Changes made with one alias affect the other.  In the codelens example below, you can see that ``a`` and ``b`` refer
@@ -35,7 +35,8 @@ to the same list after executing the assignment statement ``b = a``.
 
 .. codelens:: chp09_is3
     :showoutput:
-    
+    :python: py3
+
     a = [81, 82, 83]
     b = [81, 82, 83]
 
@@ -48,7 +49,7 @@ to the same list after executing the assignment statement ``b = a``.
 
     b[0] = 5
     print(a)
-    
+
 
 
 Although this behavior can be useful, it is sometimes unexpected or
@@ -65,9 +66,9 @@ economize.
    :correct: b
    :feedback_a: blist is not a copy of alist, it is a reference to the list alist refers to.
    :feedback_b: Yes, since alist and blist both reference the same list, changes to one also change the other.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -77,4 +78,3 @@ economize.
 
 
 .. index:: clone
-

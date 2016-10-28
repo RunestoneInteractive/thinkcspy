@@ -14,20 +14,21 @@
 Traversal and the ``for`` Loop: By Index
 ----------------------------------------
 
-It is also possible to use the ``range`` function to systematically generate the indices of the characters.  The ``for`` loop can then be used to iterate over these positions. 
+It is also possible to use the ``range`` function to systematically generate the indices of the characters.  The ``for`` loop can then be used to iterate over these positions.
 These positions can be used together with the indexing operator to access the individual
 characters in the string.
 
 Consider the following codelens example.
 
 .. codelens:: ch08_7
+    :python: py3
 
     fruit = "apple"
     for idx in range(5):
         currentChar = fruit[idx]
         print(currentChar)
 
-The index positions in "apple" are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed.  Then, ``idx`` will be reassigned to 1 and "p" will be displayed.  This will repeat for all the range values up to but not including 5.  Since "e" has index 4, this will be exactly right to show all 
+The index positions in "apple" are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed.  Then, ``idx`` will be reassigned to 1 and "p" will be displayed.  This will repeat for all the range values up to but not including 5.  Since "e" has index 4, this will be exactly right to show all
 of the characters.
 
 In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.	Make sure you understand why the range function behaves
@@ -43,10 +44,11 @@ correctly when using ``len`` of the string as its parameter value.
 
 
 You may also note that iteration by position allows the programmer to control the direction of the
-traversal by changing the sequence of index values.  Recall that we can create ranges that count down as 
+traversal by changing the sequence of index values.  Recall that we can create ranges that count down as
 well as up so the following code will print the characters from right to left.
 
 .. codelens:: ch08_8
+    :python: py3
 
     fruit = "apple"
     for idx in range(len(fruit)-1, -1, -1):
@@ -69,14 +71,10 @@ Trace the values of ``idx`` and satisfy yourself that they are correct.  In part
 
 
    How many times is the letter o printed by the following statements?
-   
+
    .. code-block:: python
 
       s = "python rocks"
       for idx in range(len(s)):
           if idx % 2 == 0:
               print(s[idx])
-      
-
-
-

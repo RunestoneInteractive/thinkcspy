@@ -19,7 +19,7 @@ it directly as part of the assignment statement. Using the indexing operator (sq
 update one of the list items.
 
 .. activecode:: ch09_7
-    
+
     fruit = ["banana", "apple", "cherry"]
     print(fruit)
 
@@ -35,7 +35,8 @@ assignment does not work for strings.  Recall that strings are immutable.
 Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.
 
 .. codelens:: item_assign
-    
+    :python: py3
+
     fruit = ["banana", "apple", "cherry"]
 
     fruit[0] = "pear"
@@ -46,7 +47,7 @@ Here is the same example in codelens so that you can step through the statements
 By combining assignment with the slice operator we can update several elements at once.
 
 .. activecode:: ch09_8
-    
+
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = ['x', 'y']
     print(alist)
@@ -54,7 +55,7 @@ By combining assignment with the slice operator we can update several elements a
 We can also remove elements from a list by assigning the empty list to them.
 
 .. activecode:: ch09_9
-    
+
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = []
     print(alist)
@@ -63,7 +64,7 @@ We can even insert elements into a list by squeezing them into an empty slice at
 desired location.
 
 .. activecode:: ch09_10
-    
+
     alist = ['a', 'd', 'f']
     alist[1:1] = ['b', 'c']
     print(alist)
@@ -80,9 +81,9 @@ desired location.
    :feedback_a: Item assignment does not insert the new item into the list.
    :feedback_b: Yes, the value True is placed in the list at index 2.  It replaces 8.
    :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -91,4 +92,3 @@ desired location.
 
 
 .. index:: del statement, statement; del
-

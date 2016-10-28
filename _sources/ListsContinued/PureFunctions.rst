@@ -23,7 +23,7 @@ you would assign the return value back to ``things``.
 
 
 .. activecode:: ch09_mod2
-    
+
     def doubleStuff(a_list):
         """ Return a new list in which contains doubles of the elements in a_list. """
         new_list = []
@@ -31,7 +31,7 @@ you would assign the return value back to ``things``.
             new_elem = 2 * value
             new_list.append(new_elem)
         return new_list
-    
+
     things = [2, 5, 9]
     print(things)
     things = doubleStuff(things)
@@ -40,6 +40,7 @@ you would assign the return value back to ``things``.
 Once again, codelens helps us to see the actual references and objects as they are passed and returned.
 
 .. codelens:: ch09_mod3
+    :python: py3
 
     def doubleStuff(a_list):
         """ Return a new list in which contains doubles of the elements in a_list. """
@@ -51,6 +52,3 @@ Once again, codelens helps us to see the actual references and objects as they a
 
     things = [2, 5, 9]
     things = doubleStuff(things)
-
-
-

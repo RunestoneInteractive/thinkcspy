@@ -57,6 +57,7 @@ This implementation, shown in codelens,
 uses a ``while`` condition to execute until the approximation is no longer changing.  Each time through the loop we compute a "better" approximation using the formula described earlier.  As long as the "better" is different, we try again.  Step through the program and watch the approximations get closer and closer.
 
 .. codelens:: chp07_newtonswhile
+    :python: py3
 
     def newtonSqrt(n):
         approx = 0.5 * n
@@ -74,5 +75,3 @@ uses a ``while`` condition to execute until the approximation is no longer chang
 	better to compare for a result that is within some small threshold of the value you are looking for.
 
 .. index:: algorithm
-
-

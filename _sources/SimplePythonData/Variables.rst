@@ -80,6 +80,7 @@ To see this in even more detail, we can run the program using codelens.
 
 .. codelens:: ch02_9_codelens
     :showoutput:
+    :python: py3
 
     message = "What's up, Doc?"
     n = 17
@@ -132,6 +133,7 @@ assignment we even give it a value that is of a different type.
 
 .. codelens:: ch02_11
     :showoutput:
+    :python: py3
 
     day = "Thursday"
     print(day)
@@ -171,4 +173,3 @@ or change the variable so that it will always reflect the correct value.
 
 
 .. index:: keyword, underscore character
-

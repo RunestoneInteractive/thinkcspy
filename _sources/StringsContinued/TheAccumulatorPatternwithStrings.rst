@@ -58,6 +58,7 @@ new characters to the end.
 Step through the function using codelens to see the accumulator variable grow.
 
 .. codelens:: ch08_acc2
+    :python: py3
 
     def removeVowels(s):
         vowels = "aeiouAEIOU"

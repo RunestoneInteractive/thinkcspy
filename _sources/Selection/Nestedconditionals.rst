@@ -64,6 +64,7 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 
 .. codelens:: sel1
     :showoutput:
+    :python: py3
 
     x = 10
     y = 10
@@ -103,4 +104,3 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 .. index::
     single: chained conditional
     single: conditional; chained
-

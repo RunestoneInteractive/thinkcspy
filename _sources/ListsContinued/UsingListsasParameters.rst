@@ -17,14 +17,14 @@ Using Lists as Parameters
 Functions which take lists as arguments and change them during execution are
 called **modifiers** and the changes they make are called **side effects**.
 Passing a list as an argument actually passes a reference to the list, not a
-copy of the list. Since lists are mutable, changes made to the 
+copy of the list. Since lists are mutable, changes made to the
 elements referenced by the parameter change
-the same list that the argument is referencing. 
+the same list that the argument is referencing.
 For example, the function below takes a list as an
 argument and multiplies each element in the list by 2:
 
 .. activecode:: chp09_parm1
-    
+
     def doubleStuff(aList):
         """ Overwrite each element in aList with double its value. """
         for position in range(len(aList)):
@@ -34,15 +34,15 @@ argument and multiplies each element in the list by 2:
     print(things)
     doubleStuff(things)
     print(things)
-    
+
 
 
 The parameter ``aList`` and the variable ``things`` are aliases for the
-same object.  
+same object.
 
 .. image:: Figures/references4.png
    :alt: State snapshot for multiple references to a list as a parameter
-   
+
 Since the list object is shared by two references, there is only one copy.
 If a function modifies the elements of a list parameter, the caller sees the change since the change
 is occurring to the original.
@@ -51,7 +51,8 @@ This can be easily seen in codelens.  Note that after the call to ``doubleStuff`
 
 
 .. codelens:: chp09_parm1_trace
-    
+    :python: py3
+
     def doubleStuff(aList):
         """ Overwrite each element in aList with double its value. """
         for position in range(len(aList)):
@@ -66,4 +67,3 @@ This can be easily seen in codelens.  Note that after the call to ``doubleStuff`
 .. index:: side effect, modifier
 
 .. _pure-func-mod:
-

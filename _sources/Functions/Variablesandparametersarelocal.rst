@@ -20,6 +20,7 @@ exists inside the function and you cannot use it outside. For example,
 consider again the ``square`` function:
 
 .. codelens:: bad_local
+    :python: py3
 
     def square(x):
         y = x * x
@@ -78,11 +79,12 @@ or **global scope**.  This is exactly the case illustrated in the code above.
 The appropriate way to write this function would be to pass power as a parameter.
 For practice, you should rewrite the badsquare example to have a second parameter called power.
 
-There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot 
+There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
 change variables defined outside the function.  Consider the following
 codelens example:
 
 .. codelens::  cl_powerof_bad
+    :python: py3
 
     def powerof(x, p):
         power = p   # Another dumb mistake
@@ -119,6 +121,7 @@ used as the actual parameter, especially when the two share the same name.
 But this example demonstrates that that is clearly not how Python operates.
 
 .. codelens:: cl_change_parm
+    :python: py3
 
     def square(x):
         y = x * x
@@ -166,4 +169,3 @@ But this example demonstrates that that is clearly not how Python operates.
    :feedback_c: Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
 
    Can you use the same name for a local variable as a global variable?
-

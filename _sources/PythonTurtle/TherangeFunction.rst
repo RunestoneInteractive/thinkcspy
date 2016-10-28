@@ -126,6 +126,7 @@ starts big and gets smaller by using a negative value for the step parameter.
 Try it in codelens.
 
 .. codelens:: rangeme2
+    :python: py3
 
     for i in range(0, 20, 2):
        print(i)

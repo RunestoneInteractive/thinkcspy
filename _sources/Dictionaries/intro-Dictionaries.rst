@@ -34,7 +34,8 @@ One way to create a dictionary is to start with the empty dictionary and add
 **key-value pairs**. The empty dictionary is denoted ``{}``
 
 .. codelens:: chp12_dict1
-    
+    :python: py3
+
     eng2sp = {}
     eng2sp['one'] = 'uno'
     eng2sp['two'] = 'dos'
@@ -49,7 +50,7 @@ The key-value pairs of the dictionary are separated by commas. Each pair
 contains a key and a value separated by a colon.
 
 The order of the pairs may not be what you expected. Python uses complex
-algorithms, designed for very fast access, to determine where the 
+algorithms, designed for very fast access, to determine where the
 key-value pairs are stored in a dictionary.
 For our purposes we can think of this ordering as unpredictable.
 
@@ -57,8 +58,9 @@ Another way to create a dictionary is to provide a list of key-value pairs
 using the same syntax as the previous output.
 
 .. codelens:: chp12_dict2
-    
-    
+    :python: py3
+
+
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
     print(eng2sp)
 
@@ -69,7 +71,8 @@ ordering.
 Here is how we use a key to look up the corresponding value.
 
 .. codelens:: chp12_dict3
-    
+    :python: py3
+
 
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 
@@ -110,10 +113,10 @@ The key ``'two'`` yields the value ``'dos'``.
    :feedback_b: Yes, 6 is associated with the key dog.
    :feedback_c: 23 is associated with the key elephant.
    :feedback_d: The [ ] operator, when used with a dictionary, will look up a value based on its key.
-   
-   
+
+
    What is printed by the following statements?
-   
+
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23}
@@ -121,4 +124,3 @@ The key ``'two'`` yields the value ``'dos'``.
 
 
 .. index:: del statement, statement; del
-

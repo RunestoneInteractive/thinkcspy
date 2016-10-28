@@ -130,6 +130,7 @@ where the function call was made.
 
 
 .. codelens:: ch04_clsquare
+    :python: py3
 
     def square(x):
         y = x * x
@@ -146,7 +147,7 @@ that was just executed in the last step.
 
 When you first start running this codelens demonstration you will notice that there is only a red arrow and it points to
 line 1.  This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line
-of code.  
+of code.
 
 When you click on the forward button, notice that the red arrow moves to line 5, skipping lines 2 and 3 of the function (and
 the light green arrow has now appeared on line 1).  Why is this?
@@ -173,6 +174,7 @@ function returns.
 
 
 .. codelens:: ch04_clsquare_bad
+    :python: py3
 
     def square(x):
         y = x * x
@@ -183,7 +185,7 @@ function returns.
     print("The result of ", toSquare, " squared is ", squareResult)
 
 The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
-where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the 
+where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the
 function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
 
 .. index::
@@ -232,5 +234,3 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
     def addEm(x, y, z):
         print(x + y + z)
-
-

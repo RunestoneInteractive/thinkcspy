@@ -53,6 +53,7 @@ arrow points to the line that was just executed.
 
 .. codelens:: firstexample
     :showoutput:
+    :python: py3
 
     print("My first program adds two numbers, 2 and 3:")
     print(2 + 3)
@@ -93,4 +94,3 @@ will be able to tell which is which by looking for either the Python prompt in t
    Codelens allows you to (select all that apply):
 
 .. index:: program, algorithm
-

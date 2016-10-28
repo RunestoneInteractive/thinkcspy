@@ -11,6 +11,7 @@
    :prefix: turtle-5-
    :start: 1
 
+
 Flow of Execution of the For Loop
 ---------------------------------
 
@@ -36,7 +37,9 @@ A codelens demonstration is a good way to help you visualize exactly how the flo
 works with the for loop.  Try stepping forward and backward through the program by pressing
 the buttons.  You can see the value of ``name`` change as the loop iterates through the list of friends.
 
+
 .. codelens:: vtest
+    :python: py3
 
     for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
         print("Hi ", name, "  Please come to my party on Saturday!")

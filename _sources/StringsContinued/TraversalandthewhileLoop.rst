@@ -41,6 +41,7 @@ executed. The last character accessed is the one with the index
 Here is the same example in codelens so that you can trace the values of the variables.
 
 .. codelens:: ch08_7c1
+    :python: py3
 
     fruit = "apple"
 
@@ -70,7 +71,7 @@ Here is the same example in codelens so that you can trace the values of the var
       while idx < len(s):
           print(s[idx])
           idx = idx + 2
-      
+
 
 
 

@@ -227,6 +227,7 @@ Another way to see this in more detail is to examine the behavior with codelens.
 flow of control as it occurs with the nested iteration.  Again, for every value of ``i``, all of the values of ``j`` will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.
 
 .. codelens:: nested2
+    :python: py3
 
     for i in range(5):
         for j in range(3):
@@ -251,7 +252,7 @@ In the RGB color model, we can consider the opposite of the red component as the
 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
 ``255-50`` or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.
 
-The program below implements this algorithm using the previous image (luther.jpg).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (cy.png and goldygopher.png).  
+The program below implements this algorithm using the previous image (luther.jpg).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (cy.png and goldygopher.png).
 
 
 .. raw:: html
@@ -408,6 +409,3 @@ What remains is to focus on ways that we can better represent our problems in te
       newred = p.getRed()
       newgreen = 0
       newblue = 0
-
-
-

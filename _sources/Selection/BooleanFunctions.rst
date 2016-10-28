@@ -80,6 +80,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
 .. codelens:: ch06_boolcodelens
     :showoutput:
+    :python: py3
 
     def isDivisible(x, y):
         if x % y == 0:
@@ -129,6 +130,3 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
    .. activecode:: scratch_06_03
-
-
-

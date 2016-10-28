@@ -19,9 +19,10 @@ the following dictionary contains the names of various fruits and the number of
 each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.
 
 .. codelens:: ch12_dict4
-    
+    :python: py3
+
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-    
+
     del inventory['pears']
 
 
@@ -30,9 +31,10 @@ be modified by referencing an association on the left hand side of the assignmen
 example, instead of deleting the entry for ``pears``, we could have set the inventory to ``0``.
 
 .. codelens:: ch12_dict4a
-    
+    :python: py3
+
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-    
+
     inventory['pears'] = 0
 
 
@@ -41,8 +43,9 @@ Similarily,
 a new shipment of 200 bananas arriving could be handled like this.
 
 .. codelens:: ch12_dict5
+    :python: py3
 
-    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}    
+    inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     inventory['bananas'] = inventory['bananas'] + 200
 
 
@@ -66,16 +69,12 @@ of key-value pairs:
    :feedback_b: The key mouse will be associated with the sum of the two values.
    :feedback_c: Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
    :feedback_d: Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
-   
-   
+
+
    What is printed by the following statements?
-   
+
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23}
      mydict["mouse"] = mydict["cat"] + mydict["dog"]
      print(mydict["mouse"])
-
-
-
-

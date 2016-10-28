@@ -25,7 +25,8 @@ consist of the whole list.
 
 .. codelens:: chp09_is4
     :showoutput:
-    
+    :python: py3
+
     a = [81, 82, 83]
 
     b = a[:]       # make a clone using slice
@@ -38,5 +39,3 @@ consist of the whole list.
     print(b)
 
 Now we are free to make changes to ``b`` without worrying about ``a``.  Again, we can clearly see in codelens that ``a`` and ``b`` are entirely different list objects.
-
-

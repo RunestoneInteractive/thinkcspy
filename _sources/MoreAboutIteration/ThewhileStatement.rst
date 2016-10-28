@@ -62,6 +62,7 @@ the body, each time, update ``theSum`` using the accumulator pattern and increme
 The same program in codelens will allow you to observe the flow of execution.
 
 .. codelens:: ch07_while2
+    :python: py3
 
     def sumTo(aBound):
         """ Return the sum of 1+2+3 ... n """
@@ -146,7 +147,7 @@ we need the extra power that we get from the ``while`` loop.
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
-   :answer_d: In the while loop body, we must set n to False, and this code does not do that.  
+   :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :correct: a
    :feedback_a: The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
@@ -163,6 +164,3 @@ we need the extra power that we get from the ``while`` loop.
          answer = answer + n
          n = n + 1
      print(answer)
-
-
-

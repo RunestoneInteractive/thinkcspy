@@ -17,7 +17,7 @@ Objects and References
 If we execute these assignment statements,
 
 .. sourcecode:: python
-    
+
     a = "banana"
     b = "banana"
 
@@ -27,7 +27,7 @@ we know that ``a`` and ``b`` will refer to a string with the letters
 There are two possible ways the Python interpreter could arrange its internal states:
 
 .. image:: Figures/refdiag1.png
-   :alt: List illustration 
+   :alt: List illustration
 
 or
 
@@ -50,25 +50,25 @@ operator.  The *is* operator will return true if the two references are to the s
     print(a is b)
 
 The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it
-is the second of the two reference diagrams that describes the relationship. 
+is the second of the two reference diagrams that describes the relationship.
 Since strings are *immutable*, Python optimizes resources by making two names
 that refer to the same string value refer to the same object.
 
 This is not the case with lists.  Consider the following example.  Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
 
 .. activecode:: chp09_is2
-    
+
     a = [81, 82, 83]
     b = [81, 82, 83]
 
     print(a is b)
 
-    print(a == b)  
+    print(a == b)
 
 The reference diagram for this example looks like this:
 
 .. image:: Figures/refdiag3.png
-   :alt: Reference diagram for equal different lists 
+   :alt: Reference diagram for equal different lists
 
 ``a`` and ``b`` have the same value but do not refer to the same object.
 
@@ -78,7 +78,8 @@ Here is the example in codelens.  Pay particular attention to the `id` values.
 
 .. codelens:: chp09_istrace
     :showoutput:
-    
+    :python: py3
+
     a = [81, 82, 83]
     b = [81, 82, 83]
 
@@ -86,4 +87,3 @@ Here is the example in codelens.  Pay particular attention to the `id` values.
     print(a == b)
 
 .. index:: aliases
-
