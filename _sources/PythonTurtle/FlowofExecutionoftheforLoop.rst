@@ -11,7 +11,7 @@
    :prefix: turtle-5-
    :start: 1
 
-Flow of Execution of the for Loop
+Flow of Execution of the For Loop
 ---------------------------------
 
 As a program executes, the interpreter always keeps track of which statement is
@@ -42,5 +42,3 @@ the buttons.  You can see the value of ``name`` change as the loop iterates thro
         print("Hi ", name, "  Please come to my party on Saturday!")
 
 .. index:: range function, chunking
-
-
