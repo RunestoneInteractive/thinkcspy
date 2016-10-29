@@ -2,4 +2,5 @@
 
 runestone build
 rm -rf ../../static/thinkcspy/
-cp -R build/thinkcspy /var/public/runestone/static/
+sudo cp -R build/thinkcspy /var/public/runestone/static/
+sudo chown -R nginx /var/public/runestone/static/thinkcspy
