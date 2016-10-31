@@ -727,6 +727,7 @@ Once you have move all side-effect-causing code into ``main`` functions, go to V
 
 Finally, as usual, click Submit!
 
+----
 
 .. [1] This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
