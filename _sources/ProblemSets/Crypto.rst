@@ -10,9 +10,7 @@ This assignment consists of 4 parts:
 3. **Vigenere**: an even cooler encryption algorithm
 4. **Making Some Improvements**: a handful of small adjustments to add some features and improve the quality of your code
 
-Ready? Let's do this!
-
-    *NOTE* This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
+Ready? Let's do this! [1]_
 
 Prerequisites
 -------------
@@ -30,8 +28,8 @@ Once you are inside your directory for the class, create a new sub-directory cal
 
 ::
 
-  $ mkdir crypto
-  $ cd crypto
+    $ mkdir crypto
+    $ cd crypto
 
 
 Remember that in the example above, you should not actually type the dollar sign ``$``. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.
@@ -600,27 +598,127 @@ Ok, go forth and validate! As with the previous feature, this is only a requirem
 Submitting Your Work
 --------------------
 
-When you have finished, there is one more step you must do, in order to accommodate the fragile, picky grading-script: please comment out any ``print`` statements, ``input`` statements, and ``exit()`` commands.
+When you have finished, there is one more step you must do. As you know, the grading robot can be very sensitive and picky. In order to accommodate the robot, it is very important that your code does not produce any unexpected output.
 
-For example, your final, submitted ``caesar.py`` file should look something like this:
+Here are the steps you must take:
+
+**Step 1: Delete any print statements inside your functions**
+
+If you put any print statements in your functions (to help you debug), you must delete those now. Again, this only applies to your print statements *inside the body of functions* such as ``rotate_char``, ``encrypt``, etc.
+
+**Step 2: Move any Loose Code to a main() function.**
+
+There are additional ``print`` statements ``input`` that are part of the normal running of your program, so that you can talk to the user. You don't want to delete those, obviously. But they *will* mess up the grading robot when it imports your code. To fix this, you can wrap all that "loose" code into a special `main` function. For example, your ``caesar.py`` file should look like this:
 
 .. sourcecode:: python
 
     from sys import argv, exit
-    from helpers import alphabet_position, rotate_character
+    from helpers import rotate_character
 
     def encrypt(text, rot):
         # (beautiful code)
 
     def user_input_is_valid(cl_args):
         # (beautiful code)
-        # (there should not be any print statements in here)
 
-    # EVERYTHING ELSE SHOULD BE COMMENTED OUT
+    # there should be no "loose" stuff floating around out here
 
-Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) should be commented out. Please do not delete this code entirely, because we do want to see it with our human eyes. It's just the sensitive robot-grader who must be shielded.
+    def main():
+        # everything else should be inside here
 
-Once you have commented out all the side-effect-causing code from all your files, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
+Your version may look a little different, e.g. with some components in a different order. The important thing is that the last section (basically any code that actually executes when you run the script) should be inside the ``main`` function.
+
+Finally, there is one more magic line that you should paste at the end of your file:
+
+.. sourcecode:: python
+
+    if __name__ == '__main__':
+        main()
+
+This tells Python that when the file is being run, you want to execute the ``main`` function.
+
+Just to be totally clear, below is a skeleton of what each of your files should look like:
+
+``caesar.py``:
+
+.. sourcecode:: python
+
+    #### caesar.py ####
+
+    from sys import argv, exit
+    from helpers import rotate_character
+
+    def encrypt(text, rot):
+        # (beautiful code)
+
+    def user_input_is_valid(cl_args):
+        # (beautiful code)
+
+    # there should be no "loose" stuff floating around out here
+
+    def main():
+        # everything else should be inside here
+
+    if __name__ == '__main__': # don't worry about how this works, just copy it
+        main()
+
+``initials.py``:
+
+.. sourcecode:: python
+
+    #### initials.py ####
+
+    def get_initials(fullname):
+        # (beautiful code)
+
+    # there should be no "loose" stuff floating around out here
+
+    def main():
+        # everything else should be inside here
+
+    if __name__ == '__main__':
+        main()
+
+``vigenere.py``:
+
+.. sourcecode:: python
+
+    #### vigenere.py ####
+
+    from helpers import alphabet_position, rotate_character
+
+    def encrypt(text, rot):
+        # (beautiful code)
+
+    # there should be no "loose" stuff floating around out here
+
+    def main():
+        # everything else should be inside here
+
+    if __name__ == '__main__':
+        main()
+
+``helpers.py``:
+
+.. sourcecode:: python
+
+    #### helpers.py ####
+
+    from sys import argv, exit
+    from helpers import rotate_character
+
+    def rotate_character(char, rot):
+        # (beautiful code)
+
+    def alphabet_position(char):
+        # (beautiful code)
+
+    # there should be no "loose" stuff floating around out here
+
+    # And for this file, you do not need a main function
+    # because this is not meant to be run as a stand-alone program.
+
+Once you have move all side-effect-causing code into ``main`` functions, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
 
 - initials.py
 - casear.py
@@ -629,6 +727,8 @@ Once you have commented out all the side-effect-causing code from all your files
 
 Finally, as usual, click Submit!
 
+
+.. [1] This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
 .. _Caesar Cipher: https://en.wikipedia.org/wiki/Caesar_cipher#History_and_usage
 .. _The Accumulator Pattern: ../Strings/TheAccumulatorPatternwithStrings.html
