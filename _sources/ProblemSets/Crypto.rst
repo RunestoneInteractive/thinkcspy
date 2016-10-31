@@ -718,7 +718,9 @@ Just to be totally clear, below is a skeleton of what each of your files should 
     # And for this file, you do not need a main function
     # because this is not meant to be run as a stand-alone program.
 
-Once you have move all side-effect-causing code into ``main`` functions, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
+Once you have moved all side-effect-causing code into ``main`` functions, you should quickly re-run all three programs and make sure they still work. From the user's perspective, everything should behave exactly the same as before.
+
+When you are ready to submit, go to Vocareum and click the assignment titled *Problem Set: Crypto*. Rather than copy and paste your work, you can upload your files directly. In your Vocareum work environment, click the Upload button, and select all 4 files:
 
 - initials.py
 - casear.py
