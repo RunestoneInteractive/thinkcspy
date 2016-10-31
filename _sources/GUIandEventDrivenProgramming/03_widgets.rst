@@ -18,30 +18,33 @@ GUI Widgets
 As we discussed in the introduction, a GUI program allows a user
 to interact with a computer program using a pointing device that manipulates
 small pictures called ``icons`` or ``widgets``. The first task of a GUI
-program is to create the widgets need for a program's interface. Each widget
+program is to create the widgets needed for a program's interface. Each widget
 is designed for specific purposes and your program will be more
 user friendly if you use each widget according to its intended purpose.
 
 Widgets are basically images on a computer screen and they have a
 "look-and-feel" depending on the details of how the image is drawn.
 The "look-and-feel" of a widget is typically controlled by the operating system.
-For example, GUI programs on a Macintosh computer typically look different than GUI
+For example, GUI programs on a Macintosh computer typically look different from
 programs on a Microsoft Windows computer. The ``tkinter`` module implements
 two versions of widgets: one is "generic," which makes widgets look the same
 regardless of what computer your program is running on, and the other
-implements widgets that emulate the your computer's "look-and-feel".
+implements widgets that emulate a computer's "look-and-feel".
 How you import the ``tkinter`` module determines which widgets are defined.
 Using the import statements shown below, the standard convention uses the
 name ``tk`` to access the "generic" widgets and the name ``ttk`` to access
-the stylized, "look-and-feel" widgets. For these lessons we will predominantly
-discuss the ``ttk`` widgets.
+the stylized, "look-and-feel" widgets. You always need to import the
+``tk`` functionality because that allows you to create an application
+window. You can import the ``ttk`` functionality if you want "look-and-feel"
+widgets. You can inter-mix the ``tk`` and ``ttk`` widgets in an interface
+if you so choose.
 
 .. code-block:: python
 
   # To use the "generic" widgets
   import tkinter as tk
 
-  # To use the stylized "look-and-feel" widgets
+  # To use the stylized, "look-and-feel" widgets
   from tkinter import ttk
 
 
@@ -53,7 +56,7 @@ Widgets for user input:
 ===================  =============================================================================
 Widget               Purpose
 ===================  =============================================================================
-``tkk.Button``       Execute a specific task; “do this now”.
+``tkk.Button``       Execute a specific task; a “do this now” command.
 ``tk.Menu``          Implements toplevel, pulldown, and popup menus.
 ``tkk.Menubutton``   Displays popup or pulldown menu items when activated.
 ``tk.OptionMenu``    Creates a popup menu, and a button to display it.
@@ -61,24 +64,18 @@ Widget               Purpose
 ``tk.Text``          Display and edit formatted text, possibly with multiple lines.
 ``tkk.Checkbutton``  Set on-off, True-False selections.
 ``tkk.Radiobutton``  Allow one-of-many selections.
-``ttkListbox``       Choose one or more alternatives from the list.
+``ttk.Listbox``      Choose one or more alternatives from a list.
 ``tkk.Combobox``     Combines a text field with a pop-down list of values.
-``tkk.Scale``        Select a numerical value by moving a “slider” knob along a scale.
+``tkk.Scale``        Select a numerical value by moving a “slider” along a scale.
 ===================  =============================================================================
 
-Widgets to organize and control the display of other widgets:
+The following figure shows examples of these widgets. You can download
+and run this python program, `all_user_input_widgets.py`_, to interact with the widgets.
 
-===================  =============================================================================
-Widget               Purpose
-===================  =============================================================================
-``tkk.Frame``        Group other widgets into complex layouts.
-``tkk.LabelFrame``   Group a number of related widgets using a border and a title
-``tkk.PanedWindow``  Group one or more widgets into “panes”, where the "panes"
-                     can be re-sized by the user by dragging separator lines.
-``tkk.Notebook``     A tabbed set of frames, only one of which is visible at any given time.
-``tkk.Scrollbar``    Implement scrolled listboxes, canvases, and text fields.
-``tk.Sizegrip``      Allows a user to re-size the containing toplevel window by pressing and dragging a grip.
-===========  =============================================================================
+.. figure:: Figures/All_widgets.png
+  :align: center
+
+  Examples of user input widgets
 
 Widgets that display information to a user, but have no user interaction:
 
@@ -98,56 +95,41 @@ TKinter GUI interface. (Note that the TKinter module is customizable, which
 means that you can create your own widgets, but that is beyond what we will
 study in these lessons.)
 
-Widget Organization
-===================
-
-A GUI interface is defined by creating a group of widgets and displaying them
-inside a window. Widgets are always organized as a hierarchy, where the main
-application window is the root of the hierarchy. Therefore, all widgets have
-a parent widget that they fit inside. The first parameter of all functions that
-create a widget is the parent of the widget.
-
-You can group widgets by creating a ``Frame``, ``LabelFrame``, ``PanedWindow``,
-or ``PanedWindow`` widget and then add widgets to it. This is the standard
-way to "layout" a GUI interface. This will become clearer as you build
-interfaces in the next several lessons.
-
 Creating Widgets
 ================
 
-To create Tkinter widgets, you need to import the TKinter module. The standard
-import looks like this:
-
-.. code-block:: python
-
-  import tkinter as tk
-
-All functionality of the TKinter module can be accessed as methods of the ``tk`` object.
-
-The first thing you need to do is create a window for your application. This
-is done by creating a ``Tk`` object:
+After importing the Tkinter modules as shown above, the first thing you
+need to do is create a window for your application. This is done by
+creating a ``Tk`` object:
 
 .. code-block:: python
 
   application_window = tk.Tk()
 
 Then you create widgets and add them to the window's widget
-hierarchy. For example, to create a button, you would call the tk ``Button``
-method and send the ``application_window`` as the first argument:
+hierarchy. For example, to create a button, you would call wither the
+``tk`` or the ``tkk` ``Button`` method and send the ``application_window``
+as the first argument:
 
 .. code-block:: python
 
   cmd_button = tk.Button(application_window, text="Example")
+  # or
+  cmd_button = tkk.Button(application_window, text="Example")
 
 The parameters needed to correctly create each widget varies, so you will need to
 refer to the Python documentation for each specific widget type. As of fall
 2016, the most current version of the TKinter module is version 25 and its
 documentation can be found at https://docs.python.org/3/library/tkinter.ttk.html
 
-Notice that in the above code ``Tk()`` and ``Button()`` are both capitalized.
+Notice that in the above code, ``Tk()`` and ``Button()`` are both capitalized.
 By convention, this indicates that the window and the button are instances
 of a Python class. The Tkinter module is entirely object-oriented and makes
 extensive use of object-oriented language features.
 
-.. index:: Tkinter, widget, widget hierarchy
+.. index:: Tkinter, widget, widget hierarchy, Button, Menu, MenuButton, OptionMenu,
+           Entry, Text, Checkbutton, Radiobutton, Listbox, Combobox, Scale,
+           Label, Message, Separator, Progressbar, Treeview
+
+.. _all_user_input_widgets.py: programs/all_user_input_widgets.py
 

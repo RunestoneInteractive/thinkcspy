@@ -21,12 +21,11 @@ small pictures on a computer screen. The small pictures are called ``icons`` or
 and a human figure on a touch screen.
 
 We refer to programs that use a **graphical user interface** as "GUI programs."
-A GUI program is very different from a **command line interface** program
-that gets user input from typed characters on a keyboard.
-The tasks performed by a **command line interface** program
-are determined completely by the programmer who wrote the program. When such a
-program is executed it performs a series of tasks in a predetermined order and
-then terminates. A GUI program's structure is very different. A GUI program
+A GUI program is very different from a program that uses a **command line interface**
+which gets user input from typed characters on a keyboard.
+Typically programs that use a **command line interface** perform a series of
+tasks in a predetermined order and then terminate.
+A GUI program's structure is very different. A GUI program
 creates the icons and widgets that are displayed to a user and then it
 simply waits for the user to interact with them. The order that tasks are
 performed by the program is under the user's control -- not the programs!
@@ -43,7 +42,7 @@ An event-driven program has the following structure:
 * Create the icons and widgets that are displayed to a user and organize
   them inside a window.
 * Define functions that will process user and application events.
-* Associate each function with a user event.
+* Associate user events with specific functions.
 * Start an infinite event-loop that processes user events. When a user
   event happens, the event-loop calls the function associated with that
   event.
@@ -107,7 +106,7 @@ Tkinter Pre-programmed Interfaces
 
 Tkinter provides a set of standard GUI dialog boxes that can be used with
 minimal programming. These are described in the next lesson.
-(A dialog box is a small window on a computer screen
+(A *dialog box* is a small window on a computer screen
 in which a user is prompted to provide information or select commands.)
 
 Tkinter Custom Interfaces

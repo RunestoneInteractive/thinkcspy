@@ -100,7 +100,7 @@ A common task is to select the names of folders and files on a storage device.
 This can be accomplished using a filedialog object. Note that these commands
 do not save or load a file. They simply allow a user to select a file. Once
 you have the file name, you can open, process, and close the file using
-appropriate Python code. Note that these dialog boxes always return you a
+appropriate Python code. These dialog boxes always return you a
 "fully qualified file name" that includes a full path to the file.
 Also note that if a user is allowed to select multiple files, the return
 value is a tuple that contains all the selected files. If a user cancels
