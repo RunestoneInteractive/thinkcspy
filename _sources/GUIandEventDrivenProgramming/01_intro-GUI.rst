@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: list-1-
+   :prefix: gui-1-
    :start: 1
 
 Graphical User Interfaces
@@ -125,6 +125,29 @@ Each of these tasks are explain in detail in the following lessons.
 
 Note: All coding examples in these lessons assume you are using Python 3.5
 or greater.
+
+Hello World
+===========
+
+Many programming languages are introduced to new users by showing them how
+to display "Hello world!" on the screen. This is considered to be the
+simplest possible program you can write in the language. In that spirit,
+here is a GUI program that displays "Hello World!:
+
+.. code-block:: python
+
+  import tkinter as tk
+  from tkinter import ttk
+
+  # Create the application window
+  window = tk.Tk()
+
+  # Create the user interface
+  my_label = ttk.Label(window, text="Hello World!")
+  my_label.grid(row=1, column=1)
+
+  # Start the GUI event loop
+  window.mainloop()
 
 .. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 

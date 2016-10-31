@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: gui-1-
+   :prefix: gui-5-
    :start: 1
 
 
@@ -17,29 +17,36 @@ Widget Groupings
 
 You will design a more user friendly interface if you group and organize
 your widgets in a coherent design. Tkinter has four basic ways to group
-widgets: ``Frame``, ``LabelFrame``, ``PaneWindow``, and ``Notebook``. These
-are described in the table below.
+widgets which are described in the following table.
 
 Widgets to organize and control the display of other widgets:
 
 ===================  =============================================================================
 Widget               Purpose
 ===================  =============================================================================
-``tkk.Frame``        Group other widgets into complex layouts.
-``tkk.LabelFrame``   Group a number of related widgets using a border and a title
-``tkk.PanedWindow``  Group one or more widgets into “panes”, where the "panes"
+``tkk.Frame``        Create a container for a set of widgets to be displayed as a unit.
+``tkk.LabelFrame``   Group a number of related widgets using a border and a title.
+``tk.PanedWindow``   Group one or more widgets into “panes”, where the "panes"
                      can be re-sized by the user by dragging separator lines.
 ``tkk.Notebook``     A tabbed set of frames, only one of which is visible at any given time.
-``tkk.Scrollbar``    Implement scrolled listboxes, canvases, and text fields.
-``tk.Sizegrip``      Allows a user to re-size the containing toplevel window by pressing and dragging a grip.
-===========  =============================================================================
+===================  =============================================================================
 
 Widgets are always organized as a hierarchy, where the main
 application window is the root of the hierarchy. Typically, the child widgets
-of a window are a combination of "frames". The "frames" hold other widgets.
-A "frame" will not be visible until it is assigned a size and location using
-a layout manager.
+of an application window are a combination of "frames". The "frames" hold
+other widgets. A "frame" will not be visible until it is assigned a size
+and location using a layout manager.
 
+.. figure:: Figures/Grouping_examples.png
+  :align: center
+
+  Examples of grouping widgets
+
+For ``Frame`` and ``LabelFrame`` groups, you make the frame be the parent of
+a set of widgets.
+
+For the ``PanedWindow`` and ``Notebook`` groups, you use an ``.add(widget)``
+function to add your widgets to the group.
 
 
 .. index:: Tkinter, widget, widget hierarchy, Frame, LabelFrame, PanedWindow, Notebook

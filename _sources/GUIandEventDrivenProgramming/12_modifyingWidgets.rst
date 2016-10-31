@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: gui-1-
+   :prefix: gui-12-
    :start: 1
 
 Common Widget Properties
@@ -83,6 +83,29 @@ Tk variable object    Description
 ``tk.DoubleVar``      A Tk object that holds a single double value
 ``tk.StringVar``      A Tk object that holds a single string value
 ====================  ===============================================================
+
+Widget Attributes
+=================
+
+The following web pages provide a good description of the properties that
+can be modified for individual widgets:
+
+===================  =============================================================================
+Widget               Documentation Resource
+===================  =============================================================================
+``tk.Button``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/button.html
+``ttk.Button``       http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Button.html
+``tk.Menu``          Implements toplevel, pulldown, and popup menus.
+``tkk.Menubutton``   Displays popup or pulldown menu items when activated.
+``tk.OptionMenu``    Creates a popup menu, and a button to display it.
+``tkk.Entry``        Enter one line of text.
+``tk.Text``          Display and edit formatted text, possibly with multiple lines.
+``tkk.Checkbutton``  Set on-off, True-False selections.
+``tkk.Radiobutton``  Allow one-of-many selections.
+``ttk.Listbox``      Choose one or more alternatives from a list.
+``tkk.Combobox``     Combines a text field with a pop-down list of values.
+``tkk.Scale``        Select a numerical value by moving a “slider” along a scale.
+===================  =============================================================================
 
 .. index:: widget properties
 
