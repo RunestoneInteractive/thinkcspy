@@ -10,16 +10,11 @@
 User Defined Classes
 --------------------
 
-We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``.  These were defined by Python and
-made available for us to use.  However, in many cases when we are solving problems we need to create data objects
-that are related to the problem we are trying to solve.  We need to create our own classes.
+We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``. These were defined by Python and made available for us to use.
 
-As an example, consider the concept of a mathematical point. In two dimensions, a point is two
-numbers (coordinates) that are treated collectively as a single object.
-Points are often written in parentheses with a comma
-separating the coordinates. For example, ``(0, 0)`` represents the origin, and
-``(x, y)`` represents the point ``x`` units to the right and ``y`` units up
-from the origin.  This ``(x,y)`` is the state of the point.
+However, in many cases, it can helpful to have data objects that are uniquely tailored to represent concepts related to the specific problem we are trying to solve. For these situations, Python gives us the ability to **create our own custom classes**.
+
+A custom class pretty much always comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin.  This ``(x,y)`` is the state of the point.
 
 Thinking about our diagram above, we could draw a ``point`` object as shown here.
 
