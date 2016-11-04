@@ -131,15 +131,15 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    The starter code below contains a ``Point`` class. Add a method ``slope_from_origin``, which returns the slope of the line joining the origin to the point. For example,
+    The starter code below contains a ``Point`` class. Add a method ``slopeFromOrigin``, which returns the slope of the line joining the origin to the point. For example,
 
     ::
 
-        >>> Point(4, 10).slope_from_origin()
+        >>> Point(4, 10).slopeFromOrigin()
         2.5
-        >>> Point(12, -3).slope_from_origin()
+        >>> Point(12, -3).slopeFromOrigin()
         -0.25
-        >>> Point(-6, 0).slope_from_origin()
+        >>> Point(-6, 0).slopeFromOrigin()
         0
 
     The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
@@ -175,4 +175,4 @@ Weekly Graded Assignment
         testEqual( Point(20, 20).slopeFromOrigin(), 1 )
         testEqual( Point(4, -10).slopeFromOrigin(), -2.5 )
         testEqual( Point(-4, -10).slopeFromOrigin(), 2.5 )
-        testEqual( Point(-6, 0).slope_from_origin(), 0 )
+        testEqual( Point(-6, 0).slopeFromOrigin(), 0 )
