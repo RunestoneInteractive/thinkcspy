@@ -28,15 +28,15 @@ the point for its x coordinate, or to ask for its y coordinate. For these operat
 .. image:: Figures/objectpic3.png
    :alt: A point also has methods
 
-There are also more interesting questions we might want to ask about a point. You may wish to calculate the distance of a point from the origin, or the distance of a point from another point, or find the midpoint between two points, or answer the question as to whether a point falls within a given rectangle or circle. We'll shortly see how we can organize these sorts of computations together with the data.
+There are also more interesting questions we might want to ask about a point. You may wish to calculate the distance of a point from the origin, or the distance of a point from another point, or find the midpoint between two points, or answer the question as to whether a point falls within a given rectangle or circle. In a later chapter we will see how we can organize these sorts of computations together with the data.
 
 
-Syntax for Defining a Class
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Syntax for Defining and Using a Class
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that we understand what a "point" object might look like conceptually, let's turn to the actual nuts and bolts of defining a point class in Python.
 
-To start off, we will define the simplest possible point class, just a "data cluster" composed of an `x` and a `y`. We will refrain from defining the ``getX`` and ``getY`` methods (or any other methods) for now. The code for defining our point class looks like this:
+To start off, we will define the simplest possible point class, just a "data cluster" composed of an `x` and a `y`. We will refrain from defining the ``getX`` and ``getY`` methods (or any other fancier methods) for now. The code for defining our point class looks like this:
 
 .. sourcecode:: python
 
@@ -51,7 +51,7 @@ To start off, we will define the simplest possible point class, just a "data clu
 
 The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, ``class``, followed by the name of the class (in this case, ``Point``), and ending with a colon. Notice also that we use a capital "P": the standard convention is that the name of a class should be "CamelCase" and start with a capital letter.
 
-Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method**, often referred to as the **constructor**, is automatically called whenever a new instance of ``Point`` is created.  It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
+Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method** is automatically called whenever a new instance of ``Point`` is created.  It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
 
 All that might sound confusing, but it should become clearer once you see the process in action. We have defined our ``Point`` class, so now let's what happens once we actually *use* it, by instantiating individual point *objects*:
 
