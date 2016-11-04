@@ -63,39 +63,6 @@ Exercises
 
        .. activecode:: ch_cl_02
 
-    #. Add a method ``slope_from_origin`` which returns the slope of the line joining the origin to the point. For example, ::
-
-        >>> Point(4, 10).slope_from_origin()
-        2.5
-
-       What cases will cause your method to fail? Return None when it happens.  The equations for calculating slope is **m = (Y2 - Y1) / (X2 - X1)**
-
-       .. activecode:: classes_q3
-
-          from test import testEqual
-
-          class Point:
-              """ Point class for representing and manipulating x,y coordinates. """
-
-              def __init__(self, initX, initY):
-                  """ Create a new point at the given coordinates. """
-                  self.x = initX
-                  self.y = initY
-
-              def getX(self):
-                  return self.x
-
-              def getY(self):
-                  return self.y
-
-              def distanceFromOrigin(self):
-                  return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-              # TODO define a method called slopeFromOrigin here
-
-
-          p = Point(4, 10)
-          testEqual(p.slopeFromOrigin(), 2.5)
 
     #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c"). The coefficients a and b completely describe the line.  Write a method in the Point class so that if a point instance is given another point, it will compute the equation of the straight line joining the two points.  It must return the two coefficients as a tuple of two values.  For example,   ::
 
@@ -158,3 +125,54 @@ Exercises
     #.  Given three points that fall on the circumference of a circle, find the center and radius of the circle.
 
         .. activecode:: classes_q6
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    The starter code below contains a ``Point`` class. Add a method ``slope_from_origin``, which returns the slope of the line joining the origin to the point. For example,
+
+    ::
+
+        >>> Point(4, 10).slope_from_origin()
+        2.5
+        >>> Point(12, -3).slope_from_origin()
+        -0.25
+        >>> Point(-6, 0).slope_from_origin()
+        0
+
+    The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
+
+    .. activecode:: classes_q3
+
+        class Point:
+            """ Point class for representing and manipulating x,y coordinates. """
+
+            def __init__(self, initX, initY):
+                """ Create a new point at the given coordinates. """
+                self.x = initX
+                self.y = initY
+
+            def getX(self):
+                return self.x
+
+            def getY(self):
+                return self.y
+
+            def distanceFromOrigin(self):
+                return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+            # TODO define a method called slopeFromOrigin here
+
+
+        # some tests to check your code
+        from test import testEqual
+        testEqual( Point(4, 10).slopeFromOrigin(), 2.5 )
+        testEqual( Point(5, 10).slopeFromOrigin(), 2 )
+        testEqual( Point(0, 10).slopeFromOrigin(), None )
+        testEqual( Point(20, 10).slopeFromOrigin(), 0.5 )
+        testEqual( Point(20, 20).slopeFromOrigin(), 1 )
+        testEqual( Point(4, -10).slopeFromOrigin(), -2.5 )
+        testEqual( Point(-4, -10).slopeFromOrigin(), 2.5 )
+        testEqual( Point(-6, 0).slope_from_origin(), 0 )
