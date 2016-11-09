@@ -8,19 +8,16 @@ Blurring
 Walkthrough
 -----------
 
-For the walkthrough, we will write a program to apply a red filter to an image.
+For the walkthrough, we will write a program to apply a red filter to an image. (*Note that when you run the code, it will take a few seconds to process.*)
 
 .. activecode:: blurring_walkthrough
 
     import image
     import sys
 
-    # Set the timeout to a larger number if timeout is occurring
-    sys.getExecutionLimit(30000)
-
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
-    win = image.ImageWin()
+    win = image.ImageWin(img.getWidth(), img.getHeight())
 
     for i in range(0, img.getWidth()):
         for j in range(0, img.getHeight()):
@@ -29,56 +26,86 @@ For the walkthrough, we will write a program to apply a red filter to an image.
             new_p = image.Pixel(red, 0, 0)
             newimg.setPixel(i, j, new_p)
 
+    # buy ourselves some time
+    sys.getExecutionLimit(30000) # If you are getting "timeout" errors, increase the 30000
+
     newimg.draw(win)
     win.exitonclick()
 
 Studio
 ------
 
-Blurring an image can be useful for de-noising an image for image processing such as object recognition and edge detection. Blurring can be achieved with a simple algorithm which averages each pixel with those around it. To visualize the algorithm, imagine a stencil which you can center over a pixel with the following shape:
+For this studio, your job is to write an algorithm that processes an image to make it "fuzzy" looking:
 
-+---+---+---+
-|   | 3 |   |
-+---+---+---+
-| 3 | 8 | 3 |
-+---+---+---+
-|   | 3 |   |
-+---+---+---+
-
-The 8 goes over the pixel we're currently working with and each neighboring cell is covered with one of the another numbers. Each number represents a weight for the pixel it covers. In this case we weight the center pixel the most and all its neighbors less as they move away. The new value for the center pixel will be the weighted average of the pixels in the stencil weighted by each number.
-
-To calculate the weighed average: take each color (Red, Green, and Blue) for each pixel, multiply it by the weight and add it the rest of the weight-color values; take the sum and divide it by 20. 20 comes from the sum of all the weights. If you do not use all the weights, only use the sum of the ones you did use. The new value represents the blurred color for the pixel. Repeat this process for all pixels in the image.
-
-You could use this image referenced by `Luther.jpg`.
+**Before:**
 
 .. raw:: html
 
     <img src="../_static/LutherBellPic.jpg" id="luther.jpg">
 
+**After:**
+
+.. raw:: html
+
+    <img src="../_static/lutherfuzzy.png">
+
+.. raw:: html
+
+    <!-- just a dumb line break to comensate for runestone generating ugly lack of whitespace -->
+    <br>
+
+The algorithm to achieve this effect is actually fairly simple: for each pixel, randomly choose one of its neighbor pixels, and use the neighbor's color instead.
+
+For example, imagine that the table below is a zoomed-in view of the pixels in our image, and that we are trying to alter the center pixel (the one whose color is ``E``):
+
++---+---+---+
+| A | B | C |
++---+---+---+
+| D | E | F |
++---+---+---+
+| G | H | I |
++---+---+---+
+
+We want to randomly choose one of the 9 pixels in this grid, and insert its color to replace the center one. Let's say we choose the bottom-left. This will alter the resulting image like so:
+
++---+---+---+
+| A | B | C |
++---+---+---+
+| D | G | F |
++---+---+---+
+| G | H | I |
++---+---+---+
+
+Notice that the center pixel received the color ``G``.
+
+Of course, you want to run *every* pixel through this same process, so the outer ones should change as well (but in the example above, we only focused on the particular moment when the center pixel was being altered).
+
+Also note that it is okay if, when randomly selecting a neighbor, you happen to choose the center pixel itself. The resulting pixel will be unchanged, but this should only happen rarely enough (once per 9 tries) that the overall image will still be nice and fuzzy. Not having to worry about this will shorten the amount of code you need to write.
+
 Tips
 ----
 
-- Be careful! What happens when you get to an edge?
-- If you use pixel indexes `i` and `j` you can access the neighbors by adding and subtracting one from those numbers, i.e.  `i+1`, `i-1`, ...
+- If you use pixel indexes `i` and `j`, you can access the neighbors by adding and subtracting one from those numbers, i.e.  `i+1`, `i-1`, ...
+- If your pixel is on the very edge of the image, then you won't have 8 neighbors to choose from. For example, on the left edge, you don't have any neighbors to your left. Lucky for you, we've given you starter code in which the iteration starts at 1 instead of 0, and stops 1 pixel short of the max. You're welcome!
 
 .. activecode:: blurring_studio
 
     import image
     import sys
-
-    # Set the timeout to a larger number if timeout is occuring.
-    sys.getExecutionLimit(30000)
+    import random
 
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
-    win = image.ImageWin()
+    win = image.ImageWin(img.getWidth(), img.getHeight())
 
-    for i in range(0, img.getWidth()):
-        for j in range(0, img.getHeight()):
-            old_p = img.getPixel(i, j)
-            # TODO: Complete the inner part of this loop to blur the image.
-            # new_p = image.Pixel(255, old_p.getBlue(), old_p.getGreen())
-            # newimg.setPixel(i, j, new_p)
+    for i in range(1, img.getWidth() - 1):
+        for j in range(1, img.getHeight() - 1):
+            # TODO: Randomly choose the coordinates of a neighboring pixel
+
+            # TODO: in the new image, set this pixel's color to the neighbor's color
+
+    # buy ourselves some time
+    sys.getExecutionLimit(30000) # If you are getting "timeout" errors, increase the 30000
 
     newimg.draw(win)
     win.exitonclick()
