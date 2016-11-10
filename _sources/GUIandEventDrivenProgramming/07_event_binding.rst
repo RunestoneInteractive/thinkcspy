@@ -11,7 +11,7 @@
    :prefix: gui-7-
    :start: 1
 
-Low Level Event Processing
+Low-Level Event Processing
 ==========================
 
 In the previous lessons you learned how to associate simple user actions with
@@ -32,14 +32,14 @@ Focus
 Remember from our previous discussion that the operating system is in control
 of your computer's screen, keyboard, mouse, and other input devices. When
 the user interacts with these input devices the operating system generates
-event objects that capture specific event information. Your computer is running
+``event objects`` that capture specific event information. Your computer is running
 multiple processes at any given time, so how does
 the computer know which process to send an event to? All GUI operating systems
 have the concept of an "active window." Only the "active window" receives events.
 We say that the "active window" has the **focus** of the user. Typically the
 application whose window is in front of all other windows on the computer
-screen has the operating systems **focus**. Only the process with the focus
-receives user events, while the other running applications do **not** receive
+screen has the operating system's **focus**. Only the process with the **focus**
+receives user events; the other running applications do **not** receive
 user events.
 
 The concept of **focus** goes further than the applications running on a
@@ -58,13 +58,13 @@ events than it desires to process. For example, you may not care that the
 pointing device just moved one pixel to the right. All "low level" user
 events are ignored by your program unless you specifically request that
 a particular type of event be sent to a specific function in your program.
-The task of associating a specific event handler function with a specific
+The task of associating a specific ``event handler`` function with a specific
 "low level" event is called **binding**.
 
 An event is always **bound** to a specific widget. For example, if you wanted
 to know when the cursor of a pointing device has moved over a widget, you would
 bind an  ``"<Enter>"`` event to the widget and specify a function to call when the
-event happens. This is done with the ``.bind(event_description, function_handler)``
+event happens. This is done with the ``.bind(event_description, event_handler)``
 method of a widget. Once this bind operation is complete and the
 application's main event loop has started, every time a pointing device is
 moved over the widget, the event handler will be called.
@@ -79,9 +79,9 @@ Here is an example of binding an ``"<Enter>"`` event to a Button.
   my_button = tk.Button(application_window, text="Example")
   my_button.bind("<Enter>", process_event)
 
-It is best practice to stub out event handlers and verify that events are
+It is best practice to "stub out" event handlers and verify that events are
 being processed correctly before you start developing an application's
-actual processing code. Here is an example of a stubbed out event handler:
+actual processing code. Here is an example of a "stubbed" out ``event handler``:
 
 .. code-block:: python
 
@@ -154,13 +154,13 @@ etc...
 Event Objects
 =============
 
-When a user generates an event, or the software generates an event, an event
-object is created. This object is automatically passed to the function that
+When a user generates an event, or the software generates an event, an ``event
+object`` is created. This object is automatically passed to the function that
 is registered to handle the event. Every event handler function that is **bound**
 to an event using the ``.bind(event_description, function_handler)`` function
-must be defined to receive one parameter, an event object.
+must be defined to receive one parameter, an ``event object``.
 
-An event object contains the following attributes.
+An ``event object`` contains the following attributes.
 
 ========================  ====================================================================
 Event Object Attribute    Description
@@ -180,7 +180,7 @@ Event Object Attribute    Description
 ``.width``, ``.height``   For configure events only, the new size of the widget, in pixels.
 ========================  ====================================================================
 
-A typical event handler will use the values in the event object it receives
+A typical event handler will use the values in the ``event object`` it receives
 to perform an appropriate action related to the event. For example,
 
 .. code-block:: python

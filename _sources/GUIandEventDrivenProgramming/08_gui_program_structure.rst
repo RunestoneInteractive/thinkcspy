@@ -28,10 +28,12 @@ of this code does not use a ``class`` definition and requires that a
 global variable called my_counter be used. This is because the label that
 represents the counter is created in the ``create_user_interface`` function
 but it must be accessed in the event handler function ``increment_counter``.
-In fact, the event handlers of a GUI program almost always need access to their
-interface widgets and the values can't be passed as parameters because an event
-handler function receives no parameters. Study the following example and
-pay close attention to where the ``my_counter`` variable is used.
+In fact, the event handlers of a GUI program almost always need access to multiple
+widgets in the program's interface and the values can't be passed as
+parameters because an ``command`` ``event handler`` function receives no
+parameters and a ``bind`` ``event handler`` function receives exactly one
+parameter -- an ``event object``. Study the following example and
+pay close attention to where the ``my_counter`` global variable is used.
 
 .. code-block:: python
 
@@ -47,12 +49,13 @@ pay close attention to where the ``my_counter`` variable is used.
       my_counter = ttk.Label(application_window, text="0")
       my_counter.grid(row=0, column=0)
 
-      increment_button = ttk.Button(application_window, text="Add 1 to counter",
-                                   command=increment_counter)
+      increment_button = ttk.Button(application_window, text="Add 1 to counter")
       increment_button.grid(row=1, column=0)
+      increment_button['command'] = increment_counter
 
-      quit_button = ttk.Button(application_window, text="Quit", command=window.destroy)
+      quit_button = ttk.Button(application_window, text="Quit")
       quit_button.grid(row=2, column=0)
+      quit_button['command'] = window.destroy
 
 
   def increment_counter():
@@ -69,14 +72,16 @@ pay close attention to where the ``my_counter`` variable is used.
 
 Let's compare the above program to an identical application that is designed
 as a Python ``class``. The ``class`` encapsulates all of the values needed
-for the GUI interface and event handlers and we don't need global variables!
+for the GUI interface and the ``event handlers`` and we don't need global
+variables!
 
 .. code-block:: python
 
   import tkinter as tk
   from tkinter import ttk
 
-  class Counter_program():
+  class CounterProgram():
+
       def __init__(self):
           self.window = tk.Tk()
           self.create_widgets()
@@ -85,30 +90,36 @@ for the GUI interface and event handlers and we don't need global variables!
           self.my_counter = ttk.Label(self.window, text="0")
           self.my_counter.grid(row=0, column=0)
 
-          increment_button = ttk.Button(self.window, text="Add 1 to counter",
-                                       command=self.increment_counter)
+          increment_button = ttk.Button(self.window, text="Add 1 to counter")
           increment_button.grid(row=1, column=0)
+          increment_button['command'] = self.increment_counter
 
-          quit_button = ttk.Button(self.window, text="Quit", command=self.window.destroy)
+          quit_button = ttk.Button(self.window, text="Quit")
           quit_button.grid(row=2, column=0)
+          quit_button['command'] = self.window.destroy
 
       def increment_counter(self):
           self.my_counter['text'] = str(int(self.my_counter['text']) + 1)
 
   # Create the entire GUI program
-  program = Counter_program()
+  program = CounterProgram()
 
   # Start the GUI event loop
   program.window.mainloop()
 
 Notice the following about this design:
 
-* The appplication's window is created in the constructor (``__init__``) and
-  then the interface widgets are created by a call to ``create_widgets``.
+* The application's window is created in the constructor (``__init__``) of
+  the ``CounterProgram`` class and then the interface widgets are created
+  by a call to ``create_widgets``.
 * The event handler, ``increment_counter`` can access the label
   ``self.my_counter`` using the object's attributes.
-* The "global code" creates an instance of the class ``Counter_program`` and
+* The code at "global scope" creates an instance of the class ``CounterProgram`` and
   starts the GUI event-loop.
+
+It is recommended that you develop all of your GUI programs as Python Classes.
+For complex designs, a Python ``Class`` can help manage the complexity of
+the code and the scoping of variables.
 
 .. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
 

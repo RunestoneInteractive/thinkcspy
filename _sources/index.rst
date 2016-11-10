@@ -46,6 +46,24 @@ Assignments
 
    assignments.rst
 
+GUI Programming
+:::::::::::::::
+
+.. toctree::
+   :caption: GUI Programming
+   :maxdepth: 1
+
+   GUIandEventDrivenProgramming/01_intro-GUI.rst
+   GUIandEventDrivenProgramming/02_standardDialogBoxes.rst
+   GUIandEventDrivenProgramming/03_widgets.rst
+   GUIandEventDrivenProgramming/04_layoutManagers.rst
+   GUIandEventDrivenProgramming/05_widget_grouping.rst
+   GUIandEventDrivenProgramming/06_commandEvents.rst
+   GUIandEventDrivenProgramming/07_eventBinding.rst
+   GUIandEventDrivenProgramming/08_gui_program_structure.rst
+   GUIandEventDrivenProgramming/09_modifyingWidgets.rst
+   GUIandEventDrivenProgramming/Glossary.rst
+
 General Introduction
 ::::::::::::::::::::
 
@@ -102,7 +120,7 @@ Debugging Interlude 1
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
    Debugging/Summary.rst
-   
+
 
 Python Turtle Graphics
 ::::::::::::::::::::::
@@ -349,7 +367,7 @@ Classes and Objects - Digging a Little Deeper
    ClassesDiggingDeeper/ArithmeticMethods.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
-   
+
 Labs
 ::::
 

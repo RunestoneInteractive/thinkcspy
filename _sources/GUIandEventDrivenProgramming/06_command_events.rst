@@ -14,12 +14,12 @@
 Command Events
 ==============
 
-When a user clicks on certain types of widgets, like a button, you want a
-specific action to be performed.
+When a user clicks on certain types of widgets, like a button, you typically
+want a specific action to be performed.
 This is accomplished by setting the ``command`` attribute of a widget to a
-specific "event handler" function. This can be any function that receives
-no arguments as parameters. You can set the "event handler" function using
-a named parameter when you create the widget, or set the widget's ``command``
+specific ``event handler`` function. This can be any function that receives
+no arguments as parameters. You can set the ``event handler`` function using
+a "named parameter" when you create the widget, or set the widget's ``command``
 attribute using a dictionary lookup. For example:
 
 .. code-block:: python
@@ -28,17 +28,19 @@ attribute using a dictionary lookup. For example:
     print("my_function was called.")
 
   my_button = tk.Button(application_window, text="Example", command=my_function)
+
   # or
+
   my_button = tk.Button(application_window, text="Example")
   my_button['command'] = my_function
 
 Note that you are setting the ``command`` property of the widget to a
-*function reference*; you are not calling the function! Therefore do not
+*function reference* -- you are not calling the function! Therefore, do not
 put parentheses after the function name when you make the assignment.
 
 The following widgets define a ``command`` property which defines a function
-that is called from the application's event loop whenever the specific event
-is performed by a user.
+that is called from the application's event loop whenever a specific, predefined
+event is performed by a user.
 
 ===================  =============================================================================
 Widget               The user event that causes the ``command`` function to be executed:
@@ -56,12 +58,12 @@ The following widgets do **not** have a ``command`` property, but they use other
 properties to respond to user events:
 
 =============  ===================  ========================================================
-Widget         Property             Other automatic callback options:
+Widget         Property             User events:
 =============  ===================  ========================================================
-``Menu``       ``postcommand``      every time someone brings up this menu.
-``Combobox``   ``postcommand``      when the user clicks on the down-arrow.
-               ``validatecommand``  dynamically validate the widget's text content.
-``Entry``      ``validatecommand``  dynamically validate the widget's text content.
+``Menu``       ``postcommand``      Every time someone brings up this menu.
+``Combobox``   ``postcommand``      When the user clicks on the down-arrow.
+``Combobox``   ``validatecommand``  Dynamically validate the widget's text content.
+``Entry``      ``validatecommand``  Dynamically validate the widget's text content.
 =============  ===================  ========================================================
 
 Note that the ``Label``, ``Message``, and ``Separator`` widgets do not respond
@@ -72,7 +74,7 @@ Hello World Again
 
 As a simple example, here is an enhanced "Hello World" program that contains
 a quit button that has a single ``command`` event handler. If the quit
-button is pressed by a user, the window's destroy method is called which
+button is pressed by a user, the window's destroy method is called -- which
 closes the window.
 
 .. code-block:: python
@@ -98,7 +100,7 @@ Other Events
 
 Using ``command`` events for simple actions is the easiest way to handle user
 events. For more complex situations, the next lesson explains how to associate
-"lower level" events with event handler functions.
+"lower level" events with ``event handler`` functions.
 
 .. index:: event, event description, event object, widget command property
 

@@ -17,12 +17,12 @@ Layout Mangers
 
 A widget will not be visible in a window until you assign it a size and location
 within it's parent widget. Assigning a specific size and location to every widget
-if tedious and error-prone. In addition, the desired behaviour for most GUI
-interfaces is that the widgets will resize and relocated in reasonable ways if
-their parent window is re-sized. We don't what to write code to re-size and
-re-locating widgets every time we develop a GUI program. Therefore,
+is tedious and error-prone. In addition, the desired behaviour for most GUI
+interfaces is that the widgets resize and relocate in reasonable ways if
+their parent window is re-sized. Trust me, you don't what to write code to
+resize and relocate widgets every time you develop a GUI program! Therefore,
 ``layout managers`` are included in the Tkinter module to do this work
-for us. We just have to give some basic positioning information to a
+for us. You just have to give some basic positioning information to a
 ``layout manager`` so it can calculate a position and a size for each widget.
 
 There are three ``layout managers`` in the ``Tkinter`` module:
@@ -35,15 +35,15 @@ pack            You specify the size and position of each widget *relative to ea
 grid            You place widgets in a cell of a 2-dimensional table defined by rows and columns.
 ==============  =============================================================================
 
-You should **never** mix and match these layout managers. Use only one for
-the widget layout within a particular parent widget.
+You should **never** mix and match these layout managers. Use only one of them
+for the widget layout within a particular parent widget.
 
 Specifying Dimensions
 =====================
 
-By default, any size or position specified as an integer is in pixels. If a
-different unit is desired, you can use a string and append an appropriate
-unit symbol. The following units are recognized:
+By default, any size or position specified as an integer is in pixel units.
+If a different unit of measurement is desired, you can use a string and
+append an appropriate unit symbol. The following units are recognized:
 
 =========  ====================================================================
 Example         Units
@@ -52,11 +52,11 @@ Example         Units
 "37c"           centimeters
 "37i"           inches
 "37m"           millimeters
-"37p"           "points" (as in a 12 point font). (Approximately 1/72 of an inch.)
+"37p"           "points" (as in a 12 point font). (One point is approximately 1/72 of an inch.)
 =========  ====================================================================
 
-**Place** Layout Manager
-========================
+*Place* Layout Manager
+======================
 
 All widgets have a :code:`.place(x, y, width, height)` method that can be used
 to specify the exact location and size of a widget. You can use this method
@@ -64,8 +64,8 @@ to create a static interface that will always look the same regardless of the
 parent's window size. This layout method is rarely used because the GUI window
 can't be easily re-sized in user-friendly ways.
 
-**Grid** Layout Manager
-=======================
+*Grid* Layout Manager
+=====================
 
 All widgets have a :code:`.grid(row=r, column=c)` method that will place a
 widget in the cell (r,c) of a 2-D table. By default the widget is rendered
@@ -81,10 +81,11 @@ Here are some examples:
 =============================  ====================================================================
 ``sticky`` Parameter           Description
 =============================  ====================================================================
-``tk.W``                       Move the widget left to the cell boundary.
+``tk.W``                       Move the widget to the left cell boundary.
 ``tk.W + tk.N``                Move the widget left and up so that it is in the upper-left corner.
 ``tk.E + tk.W``                Stretch the widget so that it fills the cell horizontally.
-``tk.E + tk.W + tk.S``         Stretch the widget so that it fills the cell horizontally and move it down.
+``tk.E + tk.W + tk.S``         Stretch the widget so that it fills the cell horizontally and move it
+                               down to the bottom cell boundary.
 ``tk.E + tk.W + tk.N + tk.S``  Stretch the widget so it fills the entire cell.
 =============================  ====================================================================
 
@@ -101,16 +102,16 @@ to the grid cell:
 .. code-block:: python
 
   my_button = tk.Button(application_window, text="Example")
-  my_botton.grid(row = 3, column = 1, sticky = tk.E + tk.W, pady = 10)
+  my_botton.grid(row=3, column=1, sticky=tk.E + tk.W, pady=10)
 
 One final note about grid layouts. You might think that you need to somehow
-tell ``tkinter`` how big your grid layout is. But you don't. It will figure
+tell ``tkinter`` how big your grid layout is -- but you don't. It will figure
 out how big the grid table is by simply examining all of the widgets inside
 a container. If there are cells that were not assigned a widget, those cells
 will be empty in the interface.
 
-**Pack** Layout Manager
-=======================
+*Pack* Layout Manager
+=====================
 
 The ``pack`` layout manager tries to place each widget "next to" the
 previous widget in a container. You can call it without any arguments and it
@@ -126,8 +127,8 @@ To summarize, let's review two very important points:
 
 * A widget will not be visible in a window until you assign it a size and
   location within it's parent widget.
-* You should **never** mix and match layout managers; use only one for
-  the widget layout within a particular parent widget.
+* You should **never** mix and match layout managers; use only one type of
+  layout manager for the widgets within a particular parent widget.
 
 .. index:: layout manager, place, grid, pack
 

@@ -12,9 +12,28 @@
    :start: 1
 
 
-GUI Widgets
-===========
+A Programming Example
+=====================
 
+Let's develop a simple GUI program to demonstrate the material presented in
+the previous lessons. In addition, you will benefit from developing GUI
+programs using *incremental development*. You should develop a program's
+user interface first by creating the widgets you need and their layout.
+When you are ready to develop the program's functionality, create function
+stubs for you ``event handlers`` and bind them to appropriate events. Test
+your program to make sure each event is being activated properly. Finally,
+implement the functionality of each ``event handler.`` The following example
+demonstrates this software development process.
+
+Our example GUI program will be a "whack-a-mole" game. A user will be presented
+with ``widgets`` that activate for a short time and the user will have to click
+on the ``widgets`` to score a point. We will show the user the number of
+"hits" and "misses" as the game progresses.
+
+Step 1: Build the user interface
+--------------------------------
+
+Let's create a user interface that has two frames side-by-side.
 As we discussed in the introduction, a GUI program allows a user
 to interact with a computer program using a pointing device that manipulates
 small pictures called ``icons`` or ``widgets``. The first task of a GUI
