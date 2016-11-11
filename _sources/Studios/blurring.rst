@@ -16,7 +16,7 @@ For the walkthrough, we will write a program to apply a red filter to an image.
     import sys
 
     # Set the timeout to a larger number if timeout is occurring
-    sys.getExecutionLimit(30000)
+    sys.setExecutionLimit(30000)
 
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
@@ -67,7 +67,7 @@ Tips
     import sys
 
     # Set the timeout to a larger number if timeout is occuring.
-    sys.getExecutionLimit(30000)
+    sys.setExecutionLimit(30000)
 
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
