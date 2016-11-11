@@ -15,7 +15,9 @@ Installing and Running Python Locally
 
 By "locally" we mean that you are now about to install and run python on your computer, as opposed to through some web-based or remote tool. This will be a little different for each operating system, so find the appropriate video below and follow along.
 
-We'll install Atom, a general-purpose code editor, along with *both* Python 2 and Python 3. We've been using Python 3 thus far, but we'll need to use Python 2 a bit later in the class.
+We'll install Atom, a general-purpose code editor, along with *both* Python 2 and Python 3. We've been using Python 3 thus far, but we'll need to use Python 2 a bit later in the class. After installing Python, we will create a simple "Hello World" Python program and run it on the command-line.
+
+**To receive credit for this assignment, you must demo your Hello World program to a TF in person**. We just want to make sure you are able to create a Python program on your computer, navigate to the correct spot in your file system where that program lives, and run the program in your terminal.
 
 Mac OS X
 ~~~~~~~~
