@@ -17,7 +17,7 @@ Widget Groupings
 
 You will design a more user friendly interface if you group and organize
 your widgets in a coherent design. Tkinter has four basic ways to group
-widgets. These are described in the following table. These are often referred
+widgets. These are described in the following table. They are often referred
 to as "container" widgets because in the widget hierarchy of a GUI program
 they are the parent widget of a group of related widgets.
 

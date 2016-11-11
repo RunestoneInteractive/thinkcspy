@@ -145,7 +145,7 @@ Color Chooser
 -------------
 
 Tkinter includes a nice dialog box for choosing colors. You provide it with
-a parent window and an initial color, and it return a color in two different
+a parent window and an initial color, and it returns a color in two different
 specifications: 1) a RGB value as a tuple, such as ``(255, 0, 0)`` which
 represents red, and 2) a hexadecimal string used in web pages, such
 as ``"#FF0000"`` which also represents red. If the user cancels the

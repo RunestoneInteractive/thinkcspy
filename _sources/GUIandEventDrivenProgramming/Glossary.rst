@@ -15,7 +15,7 @@ Glossary
 
     icon
       A small picture that represents some functionality in a computer
-      program. A user clicks on an icon to cause some action to be performed
+      program. A user clicks on an icon to cause an action to be performed
       by a program.
 
     widget
@@ -38,6 +38,7 @@ Glossary
       system events and then calls an appropriate event-handler for each event.
 
     event-handler
-      A function that processes an event.
+      A function that processes an event. These functions are also called
+      ``callback functions``.
 
 

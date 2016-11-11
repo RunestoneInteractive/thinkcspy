@@ -73,7 +73,7 @@ Specific Widget Properties  Applies to   Description
 ``resolution``              Scale        The increment amount along a ``scale`` (i.e., a slider)
 ==========================  ===========  ==================================================================
 
-For widgets that have a "variable" that a user manipulates, you must create a
+Some widgets have a "variable" that a user manipulates. For such widgets you must create a
 special tk object that stores the widget's value. Basically you are creating
 a non-visible widget that can have events associated with it.
 You can access the widget's value through ``.set(new_value)`` and ``.get()``

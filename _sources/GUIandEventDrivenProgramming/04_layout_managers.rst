@@ -93,7 +93,7 @@ In addition, if you do not want the widget to be rendered as small as possible,
 you can add space to the widget using ``ipadx`` and ``ipady``, which makes
 the widget itself larger. (The "i" stands for internal padding.) Or you can
 add space around the widget to force a cell to be larger using ``padx`` and ``pady``.
-This makes the area around the widget, but inside the table cell, larger.
+This makes the area inside the table cell larger.
 You can also have a widget span more than one cell in the grid using ``columnspan``
 and ``rowspan`` parameters. Here is an example grid command that stretches a
 button widget to the full width of a grid cell and adds extra space vertically

@@ -22,13 +22,13 @@ a stylus pen, or a human finger on a touch screen.
 
 We refer to programs that use a **graphical user interface** as "GUI programs."
 A GUI program is very different from a program that uses a **command line interface**
-which gets user input from typed characters on a keyboard.
+which receives user input from typed characters on a keyboard.
 Typically programs that use a **command line interface** perform a series of
 tasks in a predetermined order and then terminate.
 However, a GUI program
 creates the ``icons`` and ``widgets`` that are displayed to a user and then it
 simply waits for the user to interact with them. The order that tasks are
-performed by the program is under the user's control -- not the programs!
+performed by the program is under the user's control -- not the program's control!
 This means a GUI program must keep track of the "state" of its processing
 and respond correctly to user commands that are given in any order the user
 chooses. This style of programming is called "event driven programming."
@@ -87,7 +87,7 @@ GUI Programming Options
 Python does not implement GUI, event-driven-programming in its core
 functionality. GUI programming is implemented using imported modules which
 are often referred to as "toolkits." Anyone can implement external modules
-that facilitate GUI programming and many people have. Therefore you have
+that facilitate GUI programming, and many people have. Therefore you have
 many options available to you for GUI programming. A partial list of options
 can be found at https://docs.python.org/3/faq/gui.html. The following lessons
 explain how to use the ``Tkinter`` toolkit to create GUI programs. Once you
