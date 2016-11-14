@@ -15,6 +15,9 @@ For the walkthrough, we will write a program to apply a red filter to an image. 
     import image
     import sys
 
+    # Set the timeout to a larger number if timeout is occurring
+    sys.setExecutionLimit(30000)
+
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
@@ -25,9 +28,6 @@ For the walkthrough, we will write a program to apply a red filter to an image. 
             red = old_p.getRed()
             new_p = image.Pixel(red, 0, 0)
             newimg.setPixel(i, j, new_p)
-
-    # buy ourselves some time
-    sys.getExecutionLimit(30000) # If you are getting "timeout" errors, increase the 30000
 
     newimg.draw(win)
     win.exitonclick()
@@ -94,6 +94,9 @@ Tips
     import sys
     import random
 
+    # Set the timeout to a larger number if timeout is occuring.
+    sys.setExecutionLimit(30000)
+
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
@@ -103,9 +106,6 @@ Tips
             # TODO: Randomly choose the coordinates of a neighboring pixel
 
             # TODO: in the new image, set this pixel's color to the neighbor's color
-
-    # buy ourselves some time
-    sys.getExecutionLimit(30000) # If you are getting "timeout" errors, increase the 30000
 
     newimg.draw(win)
     win.exitonclick()

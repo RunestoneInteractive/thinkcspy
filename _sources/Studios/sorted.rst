@@ -8,16 +8,60 @@ Sorted
 Walkthrough
 -----------
 
+Write a function ``remove_char`` that takes two string arguments, ``a_str`` and ``a_char``. The first argument should be a string and the second should be a character (i.e. a string of length one). The function should return a new string, the result of which is ``a_str`` with each instance of ``a_char`` removed.
+
+You'll want to use the ``in`` operator, which returns a boolean and can be used as follows: ::
+
+    'a' in 'asdf' # evaluates to True
+    'A' in 'asdf' # evaluates to False
+    'z' in 'asdf' # evaluates to False
+
 .. activecode:: sorted_walkthrough
 
-    # TODO
+    from test import testEqual
+
+    def remove_char(a_str, a_char):
+
+        new_str = ''
+
+        for idx in range(len(a_str)):
+            if a_str[idx] != a_char:
+                new_str = new_str + a_str[idx]
+
+        return new_str
+
+    testEqual(remove_char('aardvark', 'a'), 'rdvrk')
+    testEqual(remove_char('aardvark', 'k'), 'aardvar')
+    testEqual(remove_char('asdf', 'z'), 'asdf')
+    testEqual(remove_char('', 'a'), '')
+
+Here's another, slightly different solution that uses the fact that a string is a list.
+
+.. activecode:: sorted_walkthrough_alt
+
+    from test import testEqual
+
+    def remove_char(a_str, a_char):
+
+        new_str = ''
+
+        for this_char in a_str:
+            if this_char != a_char:
+                new_str = new_str + this_char
+
+        return new_str
+
+    testEqual(remove_char('aardvark', 'a'), 'rdvrk')
+    testEqual(remove_char('aardvark', 'k'), 'aardvar')
+    testEqual(remove_char('asdf', 'z'), 'asdf')
+    testEqual(remove_char('', 'a'), '')
 
 Studio
 ------
 
 Since a string is just a sequence of characters, they can be sorted from least to greatest. Sorting can be hard so we're just going to check if a string is sorted. Write a function which returns a boolean indicating if the string is sorted or not.
 
-Here's an example of how your function should behave.
+Here's an example of how your function should behave. (Recall that the order operators are case-sensitive, so that ``"A" < "a"`` evaluates to `True`.)
 
 .. sourcecode:: python
 
