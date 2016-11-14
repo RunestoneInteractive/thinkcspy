@@ -10,12 +10,6 @@ Walkthrough
 
 Write a function ``remove_char`` that takes two string arguments, ``a_str`` and ``a_char``. The first argument should be a string and the second should be a character (i.e. a string of length one). The function should return a new string, the result of which is ``a_str`` with each instance of ``a_char`` removed.
 
-You'll want to use the ``in`` operator, which returns a boolean and can be used as follows: ::
-
-    'a' in 'asdf' # evaluates to True
-    'A' in 'asdf' # evaluates to False
-    'z' in 'asdf' # evaluates to False
-
 .. activecode:: sorted_walkthrough
 
     from test import testEqual
