@@ -321,3 +321,65 @@ Exercises
         cases before you code.*
 
         .. activecode:: ch_cl2_q8
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+    The code below contains a ``Chatbot`` class. A ``Chatbot`` is an object that can engage in rudimentary conversation with a human. You will be asked to define a subclass that inherits from this ``Chatbot`` superclass.
+
+    First, run the code below to talk to the chatbot. Then look over the code to make sure you understand it.
+
+    .. activecode:: chatbot
+
+        class Chatbot:
+            """ An object that can engage in rudimentary conversation with a human. """
+
+            def __init__(self, name):
+                self.name = name
+
+            def greeting(self):
+                """ Returns the Chatbot's way of introducing itself. """
+                return "Hello, my name is " + self.name + "."
+
+            def response(self, prompt_from_human):
+                """ Returns the Chatbot's response to something the human said. """
+                return "It is very interesting that you say: '" + prompt_from_human + "'"
+
+        # make a chatbot
+        sally = Chatbot("Sally")
+        # introduce the chatbot and allow the user to say something
+        human_message = input(sally.greeting())
+        # respond to the user
+        print(sally.response(human_message))
+
+        # TODO: keep reading! see below
+
+    Your job is to make a subclass called ``BoredChatbot`` that inherits from ``Chatbot``, but acts a little differently, in the following way:
+
+    * A bored chatbot has a short attention span. When the human says something that is longer than 20 characters, it should respond by saying:
+
+        "zzz... Oh excuse me, I dozed off reading your essay."
+
+    * If, on the other hand, the human says something shorter than 20 characters, then the bored chatbot should respond just like a normal chatbot would.
+
+    .. activecode:: bored_chatbot
+
+        class Chatbot:
+            """ An object that can engage in rudimentary conversation with a human. """
+
+            def __init__(self, name):
+                self.name = name
+
+            def greeting(self):
+                """ Returns the Chatbot's way of introducing itself. """
+                return "Hello, my name is " + self.name
+
+            def response(self, prompt_from_human):
+                """ Returns the Chatbot's response to something the human said. """
+                return "It is very interesting that you say: '" + prompt_from_human + "'"
+
+
+        # TODO define a class called BoredChatbot
