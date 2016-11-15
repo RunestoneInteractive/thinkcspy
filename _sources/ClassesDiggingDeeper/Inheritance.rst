@@ -310,7 +310,7 @@ For example, you might decide it would be really nice if every `Turtle` instance
 
     # move somewhere else
     tess.penup()
-    tess.forward()
+    tess.forward(30)
     tess.left(45)
     tess.pendown()
 
