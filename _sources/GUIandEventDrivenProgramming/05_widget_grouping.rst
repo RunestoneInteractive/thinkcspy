@@ -36,21 +36,27 @@ application window is the root of the hierarchy. Typically, the child widgets
 of an application window are a combination of "frames". The "frames" hold
 other widgets. A "frame" will not be visible until it is assigned a size
 and location using a layout manager. The image below shows examples of the
-four types of widget "containers". The "containers" used a ``grid`` layout
-manager on a 2x2 grid.
+four types of widget "containers". The "containers" in this example used a
+``grid`` layout manager on a 2x2 grid.
 
 .. figure:: Figures/Grouping_examples.png
   :align: center
 
   Examples of grouping widgets
 
-For ``Frame`` and ``LabelFrame`` groups, the frame is the "parent" of the
-widgets displayed inside the frame.
+For the ``Frame`` and ``LabelFrame`` groups, the frame is the "parent" of the
+widgets displayed inside the frame. That is, when the buttons were created,
+the frame was the first parameter to the ``tk.Button()`` function.
 
 For the ``PanedWindow`` and ``Notebook`` groups, you use an ``.add(widget)``
-function to add your widgets to the group.
+function to add your widgets to the group. You are still creating a hierarchy
+of widgets, but the syntax is different.
+
+You can download and run this example program, `all_frame_widgets.py`_ that allows you to interact
+with the four types of "contaners."
 
 
 .. index:: Tkinter, widget, widget hierarchy, Frame, LabelFrame, PanedWindow, Notebook
 
 
+.. _all_frame_widgets.py: Programs/all_frame_widgets.py

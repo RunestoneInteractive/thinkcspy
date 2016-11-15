@@ -68,6 +68,7 @@ If the user hits "Cancel," then ``None`` is returned.
 
 .. code-block:: python
 
+  import tkinter as tk
   from tkinter import simpledialog
 
   application_window = tk.Tk()
@@ -111,7 +112,9 @@ the dialog box, the returned value is an empty string.
 
 .. code-block:: python
 
+  import tkinter as tk
   from tkinter import filedialog
+  import os
 
   application_window = tk.Tk()
 
@@ -120,24 +123,24 @@ the dialog box, the returned value is an empty string.
 
   # Ask the user to select a folder.
   answer = filedialog.askdirectory(parent=application_window,
-                                   initialdir=".",
+                                   initialdir=os.getcwd(),
                                    title="Please select a folder:")
 
   # Ask the user to select a single file name.
   answer = filedialog.askopenfilename(parent=application_window,
-                                      initialdir=".",
+                                      initialdir=os.getcwd(),
                                       title="Please select a file:",
                                       filetypes=my_filetypes)
 
   # Ask the user to select a one or more file names.
   answer = filedialog.askopenfilenames(parent=application_window,
-                                       initialdir=".",
+                                       initialdir=os.getcwd(),
                                        title="Please select one or more files:",
                                        filetypes=my_filetypes)
 
   # Ask the user to select a single file name for saving.
   answer = filedialog.asksaveasfilename(parent=application_window,
-                                        initialdir=".",
+                                        initialdir=os.getcwd(),
                                         title="Please select a file name for saving:",
                                         filetypes=my_filetypes)
 

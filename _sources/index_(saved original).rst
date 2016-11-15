@@ -46,25 +46,6 @@ Assignments
 
    assignments.rst
 
-GUI Programming
-:::::::::::::::
-
-.. toctree::
-   :caption: GUI Programming
-   :maxdepth: 1
-
-   GUIandEventDrivenProgramming/01_intro_gui.rst
-   GUIandEventDrivenProgramming/02_standard_dialog_boxes.rst
-   GUIandEventDrivenProgramming/03_widgets.rst
-   GUIandEventDrivenProgramming/04_layout_managers.rst
-   GUIandEventDrivenProgramming/05_widget_grouping.rst
-   GUIandEventDrivenProgramming/06_command_events.rst
-   GUIandEventDrivenProgramming/07_event_binding.rst
-   GUIandEventDrivenProgramming/08_gui_program_structure.rst
-   GUIandEventDrivenProgramming/09_modifying_widgets.rst
-   GUIandEventDrivenProgramming/10_gui_program_example.rst
-   GUIandEventDrivenProgramming/Glossary.rst
-
 General Introduction
 ::::::::::::::::::::
 

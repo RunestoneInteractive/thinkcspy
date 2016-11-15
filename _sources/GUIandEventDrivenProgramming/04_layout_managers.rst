@@ -22,7 +22,7 @@ interfaces is that the widgets resize and relocate in reasonable ways if
 their parent window is re-sized. Trust me, you don't what to write code to
 resize and relocate widgets every time you develop a GUI program! Therefore,
 ``layout managers`` are included in the Tkinter module to do this work
-for us. You just have to give some basic positioning information to a
+for you. You just have to give some basic positioning information to a
 ``layout manager`` so it can calculate a position and a size for each widget.
 
 There are three ``layout managers`` in the ``Tkinter`` module:
@@ -36,12 +36,13 @@ grid            You place widgets in a cell of a 2-dimensional table defined by 
 ==============  =============================================================================
 
 You should **never** mix and match these layout managers. Use only one of them
-for the widget layout within a particular parent widget.
+for the widget layout within a particular "parent widget". (Widgets are organized
+in a hierarchy, which is explained in the next lesson.)
 
 Specifying Dimensions
 =====================
 
-By default, any size or position specified as an integer is in pixel units.
+By default, a size or position value specified as an integer is in pixel units.
 If a different unit of measurement is desired, you can use a string and
 append an appropriate unit symbol. The following units are recognized:
 
@@ -54,6 +55,19 @@ Example         Units
 "37m"           millimeters
 "37p"           "points" (as in a 12 point font). (One point is approximately 1/72 of an inch.)
 =========  ====================================================================
+
+Please note that some of the widgets change the meaning of their ``width``
+and ``height`` based on the widget's configuration. For example, if you have
+a ``Button`` with text on it, and you set the button's width and
+height, the size values are considered to be in ``text`` units. However, if
+you have a ``Button`` with an image on its face, the button's width and
+height values are interpreted as pixels. If you have a widget whose size is
+not acting as you would expect, it may be because the units are different than
+you expect.
+
+In general use, you rarely specify the size of widgets. Your ``layout manager``
+will set the size of a widget based on the contents of the widget and if you
+want the widget to be larger, you added some ``padding`` around it.
 
 *Place* Layout Manager
 ======================
@@ -102,13 +116,17 @@ to the grid cell:
 .. code-block:: python
 
   my_button = tk.Button(application_window, text="Example")
-  my_botton.grid(row=3, column=1, sticky=tk.E + tk.W, pady=10)
+  my_button.grid(row=3, column=1, sticky=tk.E + tk.W, pady=10)
 
-One final note about grid layouts. You might think that you need to somehow
+One final note about grid layouts. You might think that you need to
 tell ``tkinter`` how big your grid layout is -- but you don't. It will figure
 out how big the grid table is by simply examining all of the widgets inside
-a container. If there are cells that were not assigned a widget, those cells
-will be empty in the interface.
+a container widget. If there are cells that were not assigned a widget,
+those cells will be empty in the interface.
+
+To accomplish a desired interface design using a ``grid`` ``layout manager``
+is typically a process of experimentation. Don't expect to get your desired
+layout on the first try.
 
 *Pack* Layout Manager
 =====================
@@ -120,14 +138,36 @@ the exact rendering of a widget using ``pack`` is more complex than the ``grid``
 layout and therefore you are encouraged to use the ``grid`` layout manager
 for most interface design problems.
 
+For situations where you want to have a series of widgets in a vertical or
+horizontal row, the ``pack`` layout manager is fairly simple to use. The
+``side`` parameter can be ``TOP``, ``BOTTOM``, ``LEFT``, or ``RIGHT`` and
+specifies which side of the container to "pack" the widget against. You
+also use the ``ipadx``, ``ipady``, ``padx`` and ``pady`` parameters to add
+extra space around a widget. The parameter ``fill``
+can be ``X``, ``Y``, or ``BOTH`` to specify whether a widget stays as
+small as possible or whether if expands to fill all available space
+inside it's parent widget. If you want the widget to stretch to fill the
+available space, you also have to set the ``expand`` parameter to ``True``.
+
+Here is an example ``pack`` command for a button widget:
+
+.. code-block:: python
+
+  my_button = tk.Button(application_window, text="Example")
+  my_button.grid(side=tk.TOP, fill=tk.Y, expand=True, pady=10)
+
+To accomplish a desired interface design using a ``pack`` ``layout manager``
+is typically a process of experimentation. Don't expect to get your desired
+layout on the first try.
+
 Summary
 =======
 
-To summarize, let's review two very important points:
+To summarize, let's review two very important rules:
 
 * A widget will not be visible in a window until you assign it a size and
   location within it's parent widget.
-* You should **never** mix and match layout managers; use only one type of
+* You should **never** mix and match ``layout managers``; use only one type of
   layout manager for the widgets within a particular parent widget.
 
 .. index:: layout manager, place, grid, pack
