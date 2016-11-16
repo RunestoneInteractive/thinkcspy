@@ -32,12 +32,12 @@ performed by the program is under the user's control -- not the program's contro
 This means a GUI program must keep track of the "state" of its processing
 and respond correctly to user commands that are given in any order the user
 chooses. This style of programming is called "event driven programming."
-In fact, *GUI programming* and *event-driven programming* are synonymous.
+In fact, by definition, all *GUI programs* are *event-driven programs*.
 
-Event-driven Programming
-========================
+GUI Programming
+===============
 
-An event-driven program has the following structure:
+An GUI program has the following structure:
 
 * Create the icons and widgets that are displayed to a user and organize
   them inside a screen window.

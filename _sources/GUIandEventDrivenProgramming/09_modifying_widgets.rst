@@ -23,8 +23,9 @@ the following table.
 
   Remember that ``ttk`` widgets match the "look and feel"
   of the computer that is running your program, so there are limited attributes
-  you can change for ``tkk`` widgets. See the ``ttk`` ``style`` attribute information
-  at http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-style-layer.html.
+  you can change for ``ttk`` widgets. See the ``ttk`` ``style`` attribute information
+  at http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-style-layer.html if you
+  want to modify ``ttk`` widgets.)
 
 ========================   ==============================================================
 Common Widget Properties   Description
@@ -133,26 +134,26 @@ Widget               Documentation Resource
 ``ttk.Button``       http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Button.html
 ``tk.Menu``          http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/menu.html
 ``tk.Menubutton``    http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/menubutton.html
-``tkk.Menubutton``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Menubutton.html
+``ttk.Menubutton``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Menubutton.html
 ``tk.OptionMenu``    http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/optionmenu.html
-``tkk.Entry``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Entry.html
+``ttk.Entry``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Entry.html
 ``tk.Text``          http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/text.html
 ``tk.Checkbutton``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/radiobutton.html
-``tkk.Checkbutton``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Checkbutton.html
+``ttk.Checkbutton``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Checkbutton.html
 ``tk.Radiobutton``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/radiobutton.html
-``tkk.Radiobutton``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Radiobutton.html
+``ttk.Radiobutton``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Radiobutton.html
 ``tk.Listbox``       http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/listbox.html
-``tkk.Combobox``     http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Combobox.html
+``ttk.Combobox``     http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Combobox.html
 ``tk.Scale``         http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/scale.html
-``tkk.Scale``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Scale.html
+``ttk.Scale``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Scale.html
 *Container Widgets*
 ``tk.Frame``         http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/frame.html
-``tkk.Frame``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Frame.html
+``ttk.Frame``        http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Frame.html
 ``tk.LabelFrame``    http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/labelframe.html
-``tkk.LabelFrame``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-LabelFrame.html
+``ttk.LabelFrame``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-LabelFrame.html
 ``tk.PanedWindow``   http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/panedwindow.html
-``tkk.PanedWindow``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-PanedWindow.html
-``tkk.Notebook``     http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Notebook.html
+``ttk.PanedWindow``  http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-PanedWindow.html
+``ttk.Notebook``     http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Notebook.html
 ===================  =============================================================================
 
 .. index:: widget attributes

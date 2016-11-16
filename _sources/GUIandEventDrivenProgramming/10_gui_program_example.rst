@@ -8,149 +8,544 @@
     License".
 
 .. qnum::
-   :prefix: gui-3-
+   :prefix: gui-10-
    :start: 1
 
 
 A Programming Example
 =====================
 
-Let's develop a simple GUI program to demonstrate the material presented in
-the previous lessons. In addition, you will benefit from developing GUI
-programs using *incremental development*. You should develop a program's
-user interface first by creating the widgets you need and their layout.
-When you are ready to develop the program's functionality, create function
-stubs for you ``event handlers`` and bind them to appropriate events. Test
-your program to make sure each event is being activated properly. Finally,
-implement the functionality of each ``event handler.`` The following example
-demonstrates this software development process.
+Let's develop a non-trivial GUI program to demonstrate the material presented
+in the previous lessons. Our project will be to develop a GUI Whack-a-mole
+game where a user tries to click on "moles" as they randomly pop up out of
+the ground.
 
-Our example GUI program will be a "whack-a-mole" game. A user will be presented
-with ``widgets`` that activate for a short time and the user will have to click
-on the ``widgets`` to score a point. We will show the user the number of
-"hits" and "misses" as the game progresses.
+This discussion will take you through an *incremental development* cycle
+that creates a program in well-defined stages. While you might read a
+finished computer program from "top to bottom," that is not how it was
+developed. For a typical GUI program development, you are encouraged to go
+through these stages:
 
-Step 1: Build the user interface
---------------------------------
+# Using scratch paper, physically draw a rough sketch of your user interface.
+# Create the basic structure of your program and create the major frames that
+  will hold the widgets needed for your program. Give the frames an initial
+  size and color so that you can visually see them, given that there are no
+  widgets inside of them to determine their size.
+# Incrementally add all of the widgets you need for your program and size and
+  position them appropriately.
+# Create your callback functions, stub them out, and assign them to appropriate
+  events. Verify that the events are executing the correct functions.
+# Incrementally implement the functionality needed for each callback function.
 
-Let's create a user interface that has two frames side-by-side.
-As we discussed in the introduction, a GUI program allows a user
-to interact with a computer program using a pointing device that manipulates
-small pictures called ``icons`` or ``widgets``. The first task of a GUI
-program is to create the widgets needed for a program's interface. Each widget
-is designed for specific purposes and your program will be more
-user friendly if you use each widget according to its intended purpose.
+When you develop code using *incremental development* your program should
+always be executable. You continually add a few lines of code and then test
+them. If errors occur you almost always know were the errors came from!
+They came from the lines of code you just added.
 
-Widgets are basically images on a computer screen and they have a
-"look-and-feel" depending on the details of how the image is drawn.
-The "look-and-feel" of a widget is typically controlled by the operating system.
-For example, GUI programs on a Macintosh computer typically look different from
-programs on a Microsoft Windows computer. The ``tkinter`` module implements
-two versions of widgets: one is "generic," which makes widgets look the same
-regardless of what computer your program is running on, and the other
-implements widgets that emulate a computer's "look-and-feel".
-How you import the ``tkinter`` module determines which widgets are defined.
-Using the import statements shown below, the standard convention uses the
-name ``tk`` to access the "generic" widgets and the name ``ttk`` to access
-the stylized, "look-and-feel" widgets. You always need to import the
-``tk`` functionality because that allows you to create an application
-window. You can import the ``ttk`` functionality if you want "look-and-feel"
-widgets. You can inter-mix the ``tk`` and ``ttk`` widgets in an interface
-if you so choose.
+A Whack-a-mole Game
+-------------------
 
-.. code-block:: python
+Step 1: Make sure you have a reasonable GUI design and implementation plan
+before you start coding. Draw a sketch of your initial design on paper
+and consider how a user will interact with your program.
 
-  # To use the "generic" widgets
-  import tkinter as tk
-
-  # To use the stylized, "look-and-feel" widgets
-  from tkinter import ttk
-
-
-The following two charts list the standard, pre-defined widgets in the
-``tkinter`` module.
-
-The following widgets are used for user input. In some cases you have a
-choice between the ``tk`` and ``tkk`` versions. In other cases you must
-use the ``tk`` version because the equivalent ``ttk`` versions don't exist.
-
-=======================================  ==============================================================
-Widget                                   Purpose
-=======================================  ==============================================================
-``tk.Button``, ``tkk.Button``            Execute a specific task; a “do this now” command.
-``tk.Menu``                              Implements toplevel, pulldown, and popup menus.
-``tkk.Menubutton``                       Displays popup or pulldown menu items when activated.
-``tk.OptionMenu``                        Creates a popup menu, and a button to display it.
-``tkk.Entry``, ``tkk.Entry``             Enter one line of text.
-``tk.Text``                              Display and edit formatted text, possibly with multiple lines.
-``tk.Checkbutton``, ``tkk.Checkbutton``  Set on-off, True-False selections.
-``tk.Radiobutton``, ``tkk.Radiobutton``  Allow one-of-many selections.
-``tk.Listbox``                           Choose one or more alternatives from a list.
-``tkk.Combobox``                         Combines a text field with a pop-down list of values.
-``tk.Scale``, ``tkk.Scale``              Select a numerical value by moving a “slider” along a scale.
-=======================================  ==============================================================
-
-The following figure shows examples of these widgets. You can download
-and run this python program, `all_user_input_widgets.py`_, to interact with the widgets.
-
-.. figure:: Figures/All_user_input_widgets.png
+.. figure:: Figures/Whack_a_mole_design.png
   :align: center
 
-  Examples of user input widgets
+  Initial design of a Whack-a-mole game
 
-The following ``widgets`` display information to a user, but have no user interaction:
-
-============================  ================================================
-Widget                        Purpose
-============================  ================================================
-``tk.Label``, ``tkk.Label``   Display static text or an image.
-``tk.Message``                Display static multi-line text.
-``tkk.Separator``             Displays a horizontal or vertical separator bar.
-``tkk.Progressbar``           Shows the status of a long-running operation.
-``ttk.Treeview``              Displays a hierarchical collection of items.
-============================  ================================================
-
-You do not need to memorize the above lists, but you should probably re-read
-the lists again so that you are familiar with what is possible in a
-TKinter GUI interface. (Note that the TKinter module is customizable, which
-means that you can create your own widgets, but that is beyond what we will
-study in these lessons.)
-
-Creating Widgets
-================
-
-After importing the Tkinter modules as shown above, the first thing you
-need to do is create a window for your application. This is done by
-creating a ``Tk`` object:
+Step 2: Create the basic structure of your interface using appropriate frame
+widgets. You will need to give a size to the frames because they will contain
+no widgets, which how a frame typically gets its size. It is also suggested
+that you give each frame a unique color so it is easy to see the area of the
+window it covers. Here is a basic start for our whack-a-mole game (`whack_a_mole_v1.py`_):
 
 .. code-block:: python
 
-  application_window = tk.Tk()
+  class WhackAMole:
 
-Then you create widgets and add them to the window's widget
-hierarchy. For example, to create a button you would call either the
-``tk`` or the ``tkk`` ``Button`` method and send the ``application_window``
-as the first argument:
+      def __init__(self):
+          self.window = tk.Tk()
+          self.mole_frame, self.status_frame = self.create_frames()
+
+      def create_frames(self):
+          mole_frame = tk.Frame(self.window, bg='red', width=300, height=300)
+          mole_frame.grid(row=1, column=1)
+
+          status_frame = tk.Frame(self.window, bg='green', width=100, height=300)
+          status_frame.grid(row=1, column=2)
+
+          return mole_frame, status_frame
+
+  # Create the GUI program
+  program = WhackAMole()
+
+  # Start the GUI event loop
+  program.window.mainloop()
+
+Step 3: Incrementally add appropriate widgets to each frame. Don't attempt
+to add all the widgets at once. The initial design conceptualized the moles
+as buttons, so a grid of buttons was added to the left frame, one button
+for each mole. The exact size of the "mole field" needs to be determined at
+a future time, so initialize a CONSTANT that can be used to easily change it
+later.  (`whack_a_mole_v2.py`_)
 
 .. code-block:: python
 
-  cmd_button = tk.Button(application_window, text="Example")
-  # or
-  cmd_button = tkk.Button(application_window, text="Example")
+  import tkinter as tk
+  from tkinter import PhotoImage
 
-The parameters needed to correctly create each widget varies, so you will need to
-refer to the Python documentation for each specific widget type. As of fall
-2016, the most current version of the Tkinter module is version 25 and its
-documentation can be found at https://docs.python.org/3/library/tk.html
+  class WhackAMole:
+      NUM_MOLES_ACROSS = 4
 
-Notice that in the above code, ``Tk()`` and ``Button()`` are both capitalized.
-By convention, this indicates that the window and the button are instances
-of a Python class. The Tkinter module is entirely object-oriented and makes
-extensive use of object-oriented language features.
+      def __init__(self):
+          self.window = tk.Tk()
+          self.mole_frame, self.status_frame = self.create_frames()
+          self.mole_photo = PhotoImage(file="mole.png")
+          self.mole_buttons = self.create_moles()
 
-.. index:: Tkinter, widget, widget hierarchy, Button, Menu, MenuButton, OptionMenu,
-           Entry, Text, Checkbutton, Radiobutton, Listbox, Combobox, Scale,
-           Label, Message, Separator, Progressbar, Treeview
+      def create_frames(self):
+          mole_frame = tk.Frame(self.window, bg='red')
+          mole_frame.grid(row=1, column=1)
 
-.. _all_user_input_widgets.py: programs/all_user_input_widgets.py
+          status_frame = tk.Frame(self.window, bg='green', width=100)
+          status_frame.grid(row=1, column=2, sticky=tk.E + tk.W + tk.N + tk.S)
+
+          return mole_frame, status_frame
+
+      def create_moles(self):
+          # Source of mole image: https://play.google.com/store/apps/details?id=genergame.molehammer
+
+          mole_buttons = []
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              row_of_buttons = []
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  mole_button = tk.Button(self.mole_frame, image=self.mole_photo)
+                  mole_button.grid(row=r, column=c, padx=8, pady=8)
+
+                  row_of_buttons.append(mole_button)
+
+              mole_buttons.append(row_of_buttons)
+
+          return mole_buttons
+
+  # Create the GUI program
+  program = WhackAMole()
+
+  # Start the GUI event loop
+  program.window.mainloop()
+
+Continue to add appropriate widgets for the right frame. The final result is
+shown below, but recognize that it was developed little by little.
+(`whack_a_mole_v2.py`_)
+
+.. code-block:: python
+
+  import tkinter as tk
+  from tkinter import PhotoImage
+
+
+  class WhackAMole:
+      STATUS_BACKGROUND = "white"
+      NUM_MOLES_ACROSS = 4
+
+      def __init__(self):
+          self.window = tk.Tk()
+          self.mole_frame, self.status_frame = self.create_frames()
+          self.mole_photo = PhotoImage(file="mole.png")
+          self.mole_buttons = self.create_moles()
+
+          self.hit_counter, self.miss_counter, self.start_button \
+              = self.create_status_widgets()
+
+      def create_frames(self):
+          mole_frame = tk.Frame(self.window, bg='red')
+          mole_frame.grid(row=1, column=1)
+
+          status_frame = tk.Frame(self.window, bg=WhackAMole.STATUS_BACKGROUND)
+          status_frame.grid(row=1, column=2, sticky=tk.N + tk.S + tk.W + tk.W)
+
+          return mole_frame, status_frame
+
+      def create_moles(self):
+          # Source of mole image: https://play.google.com/store/apps/details?id=genergame.molehammer
+
+          mole_buttons = []
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              row_of_buttons = []
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  mole_button = tk.Button(self.mole_frame, image=self.mole_photo)
+                  mole_button.grid(row=r, column=c, padx=8, pady=8)
+
+                  row_of_buttons.append(mole_button)
+
+              mole_buttons.append(row_of_buttons)
+
+          return mole_buttons
+
+      def create_status_widgets(self):
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_label = tk.Label(self.status_frame, text="Number of Hits", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_label.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_label = tk.Label(self.status_frame, text="Number of Misses", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_label.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          start_button = tk.Button(self.status_frame, text="Start")
+          start_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          quit_button = tk.Button(self.status_frame, text="Quit")
+          quit_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          return hit_counter, miss_counter, start_button
+
+  # Create the GUI program
+  program = WhackAMole()
+
+  # Start the GUI event loop
+  program.window.mainloop()
+
+Step 4: Create a callback function for each event that will cause something
+to happen in your program. Stub these functions out with a single print
+statement in each one. Bind an event to each callback function. Now test
+your program and make sure each event causes the correct print-line in
+the Python console. (`whack_a_mole_v4.py`_)
+
+.. code-block:: python
+
+  import tkinter as tk
+  from tkinter import PhotoImage
+
+
+  class WhackAMole():
+      STATUS_BACKGROUND = "white"
+      NUM_MOLES_ACROSS = 4
+
+      def __init__(self):
+          self.window = tk.Tk()
+          self.mole_frame, self.status_frame = self.create_frames()
+          self.mole_photo = PhotoImage(file="mole.png")
+          self.mole_buttons = self.create_moles()
+
+          self.hit_counter, self.miss_counter, self.start_button, self.quit_button \
+              = self.create_status_widgets()
+
+          self.set_callbacks()
+
+      def create_frames(self):
+          mole_frame = tk.Frame(self.window, bg='red')
+          mole_frame.grid(row=1, column=1)
+
+          status_frame = tk.Frame(self.window, bg=WhackAMole.STATUS_BACKGROUND)
+          status_frame.grid(row=1, column=2, sticky=tk.E + tk.W + tk.N + tk.S)
+
+          return mole_frame, status_frame
+
+      def create_moles(self):
+          # Source of mole image: https://play.google.com/store/apps/details?id=genergame.molehammer
+
+          mole_buttons = []
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              row_of_buttons = []
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  mole_button = tk.Button(self.mole_frame, image=self.mole_photo)
+                  mole_button.grid(row=r, column=c, padx=8, pady=8)
+
+                  row_of_buttons.append(mole_button)
+
+              mole_buttons.append(row_of_buttons)
+
+          return mole_buttons
+
+      def create_status_widgets(self):
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_label = tk.Label(self.status_frame, text="Number of Hits", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_label.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_label = tk.Label(self.status_frame, text="Number of Misses", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_label.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          start_button = tk.Button(self.status_frame, text="Start")
+          start_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          quit_button = tk.Button(self.status_frame, text="Quit")
+          quit_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          return hit_counter, miss_counter, start_button, quit_button
+
+      def set_callbacks(self):
+          # Set the same callback for each mole button
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  self.mole_buttons[r][c]['command'] = self.mole_hit
+
+          self.start_button['command'] = self.start
+          self.quit_button['command'] = self.quit
+
+      def mole_hit(self):
+          print("mole button hit")
+
+      def start(self):
+          print("start button hit")
+
+      def quit(self):
+          print("quit button hit")
+
+  # Create the GUI program
+  program = WhackAMole()
+
+  # Start the GUI event loop
+  program.window.mainloop()
+
+Step 5: Add appropriate functionality to the callback functions. This is
+where the functional logic of your particular application resides. In the
+case of our whack-a-mole game, we need to be able to count the number of
+times a user clicks on a mole when it is visible. And we need the moles to
+appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
+
+.. code-block:: python
+
+  import tkinter as tk
+  from tkinter import PhotoImage
+  from tkinter import messagebox
+  from random import randint
+
+  # Metadata
+  __author__ = "Dr Wayne Brown"
+  __email__ = "Wayne.Brown@usafa.edu"
+  __date__ = "Nov 16, 2016"
+
+
+  class WhackAMole:
+      STATUS_BACKGROUND = "white"
+      NUM_MOLES_ACROSS = 4
+      MIN_TIME_DOWN = 1000
+      MAX_TIME_DOWN = 5000
+      MIN_TIME_UP = 1000
+      MAX_TIME_UP = 3000
+
+      def __init__(self):
+          self.window = tk.Tk()
+          self.window.title("Whack-a-mole")
+
+          self.mole_frame, self.status_frame = self.create_frames()
+
+          self.mole_photo = PhotoImage(file="mole.png")
+          self.mole_cover_photo = PhotoImage(file="mole_cover.png")
+          self.label_timers = {}
+
+          self.mole_labels = self.create_moles()
+
+          self.hit_counter, self.miss_counter, self.start_button, self.quit_button \
+              = self.create_status_widgets()
+
+          self.set_callbacks()
+          self.game_is_running = False
+
+      def create_frames(self):
+          mole_frame = tk.Frame(self.window)
+          mole_frame.grid(row=0, column=0)
+
+          status_frame = tk.Frame(self.window, bg=WhackAMole.STATUS_BACKGROUND)
+          status_frame.grid(row=0, column=1, sticky=tk.E + tk.W + tk.N + tk.S, ipadx=6)
+
+          return mole_frame, status_frame
+
+      def create_moles(self):
+          # Source of mole image: https://play.google.com/store/apps/details?id=genergame.molehammer
+
+          mole_labels = []
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              row_of_labels = []
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  mole_label = tk.Label(self.mole_frame, image=self.mole_photo)
+                  mole_label.grid(row=r, column=c, sticky=tk.E + tk.W + tk.N + tk.S)
+                  self.label_timers[id(mole_label)] = None
+
+                  row_of_labels.append(mole_label)
+
+              mole_labels.append(row_of_labels)
+
+          return mole_labels
+
+      def create_status_widgets(self):
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_label = tk.Label(self.status_frame, text="Number of Hits",
+                               bg=WhackAMole.STATUS_BACKGROUND)
+          hit_label.pack(side="top", fill=tk.Y, expand=True)
+
+          hit_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_label = tk.Label(self.status_frame, text="Number of Misses",
+                                bg=WhackAMole.STATUS_BACKGROUND)
+          miss_label.pack(side="top", fill=tk.Y, expand=True)
+
+          miss_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_counter.pack(side="top", fill=tk.Y, expand=True)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          start_button = tk.Button(self.status_frame, text="Start")
+          start_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          quit_button = tk.Button(self.status_frame, text="Quit")
+          quit_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
+
+          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer.pack(side="top", fill=tk.Y, expand=True)
+
+          return hit_counter, miss_counter, start_button, quit_button
+
+      def set_callbacks(self):
+          # Set the same callback for each mole label
+          for r in range(WhackAMole.NUM_MOLES_ACROSS):
+              for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                  self.mole_labels[r][c].bind("<ButtonPress-1>", self.mole_hit)
+
+          self.start_button['command'] = self.start
+          self.quit_button['command'] = self.quit
+
+      def mole_hit(self, event):
+
+          if self.game_is_running:
+              hit_label = event.widget
+              if hit_label['image'] == self.mole_cover_photo.name:
+                  # MISSED! Update the miss counter
+                  self.miss_counter['text'] = str(int(self.miss_counter['text']) + 1)
+              else:
+                  # HIT! Update the hit counter
+                  self.hit_counter['text'] = str(int(self.hit_counter['text']) + 1)
+                  # Remove the mole and don't update the miss counter
+                  self.put_down_mole(hit_label, False)
+
+      def start(self):
+          if self.start_button['text'] == 'Start':
+              # Change all the mole images to a blank image and
+              # set a random time for the moles to re-appear on each label.
+              for r in range(WhackAMole.NUM_MOLES_ACROSS):
+                  for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                      the_label = self.mole_labels[r][c]
+                      the_label['image'] = self.mole_cover_photo
+                      time_down = randint(WhackAMole.MIN_TIME_DOWN,
+                                          WhackAMole.MAX_TIME_DOWN)
+                      timer_object = the_label.after(time_down, self.pop_up_mole, the_label)
+                      self.label_timers[id(the_label)] = timer_object
+
+              self.game_is_running = True
+              self.start_button['text'] = "Stop"
+
+              self.hit_counter['text'] = "0"
+              self.miss_counter['text'] = "0"
+
+          else:  # The game is running, so stop the game and reset everything
+              # Show every mole and stop all the timers
+              for r in range(WhackAMole.NUM_MOLES_ACROSS):
+                  for c in range(WhackAMole.NUM_MOLES_ACROSS):
+                      the_label = self.mole_labels[r][c]
+                      # Show the mole
+                      the_label['image'] = self.mole_photo
+                      # Delete any timer that is associated with the mole
+                      the_label.after_cancel(self.label_timers[id(the_label)])
+
+              self.game_is_running = False
+              self.start_button['text'] = "Start"
+
+      def put_down_mole(self, the_label, timer_expired):
+
+          if self.game_is_running:
+              if timer_expired:
+                  # The mole is going down before it was clicked on, so update the miss counter
+                  self.miss_counter['text'] = str(int(self.miss_counter['text']) + 1)
+              else:
+                  # The timer did not expire, so manually stop the timer
+                  the_label.after_cancel(self.label_timers[id(the_label)])
+
+              # Make the mole invisible
+              the_label['image'] = self.mole_cover_photo
+
+              # Set a call to pop up the mole in the future
+              time_down = randint(WhackAMole.MIN_TIME_DOWN,
+                                  WhackAMole.MAX_TIME_DOWN)
+              timer_object = the_label.after(time_down, self.pop_up_mole, the_label)
+              # Remember the timer object so it can be canceled later, if need be
+              self.label_timers[id(the_label)] = timer_object
+
+      def pop_up_mole(self, the_label):
+          # Show the mole on the screen
+          the_label['image'] = self.mole_photo
+
+          if self.game_is_running:
+              # Set a call to make the mole disappear in the future
+              time_up = randint(WhackAMole.MIN_TIME_UP, WhackAMole.MAX_TIME_UP)
+              timer_object = the_label.after(time_up, self.put_down_mole, the_label, True)
+              self.label_timers[id(the_label)] = timer_object
+
+      def quit(self):
+          really_quit = messagebox.askyesno("Quiting?", "Do you really want to quit?")
+          if really_quit:
+              self.window.destroy()
+
+  # Create the GUI program
+  program = WhackAMole()
+
+  # Start the GUI event loop
+  program.window.mainloop()
+
+.. index:: Whack-a-mole game
+
+.. _whack_a_mole_v1.py: programs/whack_a_mole_v1.py
+.. _whack_a_mole_v2.py: programs/whack_a_mole_v2.py
+.. _whack_a_mole_v3.py: programs/whack_a_mole_v3.py
+.. _whack_a_mole_v4.py: programs/whack_a_mole_v4.py
+.. _whack_a_mole_v5.py: programs/whack_a_mole_v5.py
 

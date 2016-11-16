@@ -80,10 +80,11 @@ variables!
   import tkinter as tk
   from tkinter import ttk
 
-  class CounterProgram():
+  class CounterProgram:
 
       def __init__(self):
           self.window = tk.Tk()
+          self.my_counter = None  # All attributes should be initialize in init
           self.create_widgets()
 
       def create_widgets(self):

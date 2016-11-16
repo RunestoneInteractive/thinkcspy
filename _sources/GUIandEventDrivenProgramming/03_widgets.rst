@@ -62,7 +62,7 @@ Widget                                   Purpose
 ``tk.Menu``                              Implements toplevel, pulldown, and popup menus.
 ``tkk.Menubutton``                       Displays popup or pulldown menu items when activated.
 ``tk.OptionMenu``                        Creates a popup menu, and a button to display it.
-``tkk.Entry``, ``tkk.Entry``             Enter one line of text.
+``tk.Entry``, ``ttk.Entry``              Enter one line of text.
 ``tk.Text``                              Display and edit formatted text, possibly with multiple lines.
 ``tk.Checkbutton``, ``tkk.Checkbutton``  Set on-off, True-False selections.
 ``tk.Radiobutton``, ``tkk.Radiobutton``  Allow one-of-many selections.
