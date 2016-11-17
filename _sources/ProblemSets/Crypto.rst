@@ -22,23 +22,71 @@ Setup
 
 For this assignment, you’ll be writing code locally on your own machine, and running your code at the command line.
 
-Open up a terminal window on your computer, and use the ``cd`` command to navigate to the folder where you save documents for this class. If you have not yet created such a folder, go ahead and create one now.
+First, open up a terminal window on your computer. Let's first make sure you set up your directory structure in a nice, organized way. After completing the previous assignment, you should already have a broad parent folder with a name like ``lc101`` or ``code``, where you save all your assignments for this class. If you do not yet have such a folder on your file system, then create one now:
 
-Once you are inside your directory for the class, create a new sub-directory called ``crypto/``, and then ``cd`` into it:
+::
+
+    $ mkdir lc101
+
+Remember that in the example above, you should not actually type the dollar sign ``$``. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.
+
+Next, use the ``cd`` command to navigate so that you are inside that parent folder:
+
+::
+
+    $ cd lc101
+
+Once you are inside your directory for the class, create a new sub-directory for this assignment called ``crypto/``, and then ``cd`` into it:
 
 ::
 
     $ mkdir crypto
     $ cd crypto
 
+In general, for the remainder of LC 101, you should follow this same pattern for every new assignment:
 
-Remember that in the example above, you should not actually type the dollar sign ``$``. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.
+1. Navigate into the parent folder (e.g. ``lc101``).
+2. Create a new subfolder for the new assignment.
+3. Navigate into that new subfolder.
+4. Start coding!
 
+For example, if you are starting an assignment called *Hungry Hungry Hippos*, then you should do this:
+
+::
+
+    $ cd lc101
+    $ mkdir hungry-hungry-hippos
+    $ cd hungry-hungry-hippos
+
+And your overall directory structure will look like this:
+
+::
+
+    lc101/
+        |
+        +------ using-python-locally/
+        |           |
+        |           +----- hello.py
+        |
+        +------ crypto/
+        |           |
+        |           +----- [crypto stuff (you will see soon!)]
+        |
+        +------ hungry-hungry-hippos/
+        |           |
+        |           +----- [hippo stuff]
+        ... etc
 
 Part 1: Initials
 ----------------
 
-Create a new file called ``initials.py``. Open up that file in a text editor, and complete the following function:
+Now you can get started coding! Inside your ``crypto`` folder, create a new file called ``initials.py``:
+
+::
+
+    $ touch initials.py
+
+Open up that file in a text editor, and complete the following function:
 
 .. sourcecode:: python
 
