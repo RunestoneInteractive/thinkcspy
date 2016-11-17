@@ -8,9 +8,56 @@ Bugz
 Walkthrough
 -----------
 
+This is LaunchScrabble, a unique version of Scrabble! This function takes a list of words from a LaunchScrabble game and calculates the player's score. All words count as one point, but words that begin with 'q' are 10 points!
+
+But since 'q' words are worth so many points, we want to make sure our players aren't cheating and making up words that start with 'q'. So for every word that begins with 'q', the program checks to make sure the following letter is 'u'. If we find an exception, for instance "qrie", negate all their points and give that cheater an overall score of 0!
+
+The only problem is, the code doesn't work.
+
 .. activecode:: bugz_walkthrough
 
-    # TODO
+    def launch_scrabble(words):
+        points = 0
+        for word in words:
+            points += 1
+            if (word[0] == "q" and word[1] == "u"):
+                points += 10
+            else:
+                return 0
+        return points
+
+    test_words_1 = ['dog']
+    print('test_words_1 score:', launch_scrabble(test_words_1))
+
+    test_words_2 = ['quiet']
+    print('test_words_2 score:', launch_scrabble(test_words_2))
+
+**Problems:**
+
+1. All words that do not begin with 'q' will automatically return 0
+2. q words add 11 to the total points
+
+There are a couple ways to fix this (for instance, you could use nested conditionals or boolean logic to deal with the 'q' words), but one possible solution is below.
+
+.. activecode:: bugz_walkthrough_solution
+
+    def launch_scrabble(words):
+        points = 0
+        for word in words:
+            if (word[0] == "q"):
+                if (word[1] == "u"):
+                    points += 10
+                else:
+                    return 0
+            else:
+                points += 1
+        return points
+
+    test_words_1 = ['dog']
+    print('test_words_1 score:', launch_scrabble(test_words_1))
+
+    test_words_2 = ['quiet']
+    print('test_words_2 score:', launch_scrabble(test_words_2))
 
 Studio
 ------

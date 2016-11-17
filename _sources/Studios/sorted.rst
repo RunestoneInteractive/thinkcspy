@@ -29,7 +29,7 @@ Write a function ``remove_char`` that takes two string arguments, ``a_str`` and 
     testEqual(remove_char('asdf', 'z'), 'asdf')
     testEqual(remove_char('', 'a'), '')
 
-Here's another, slightly different solution that uses the fact that a string is a list.
+Here's another, slightly different solution that uses the fact that a string is a list. This one is generally a better way to loop over strings than what we did above, if you don't need to use the index of the current character.
 
 .. activecode:: sorted_walkthrough_alt
 
