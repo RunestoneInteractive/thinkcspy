@@ -16,9 +16,9 @@ A Programming Example
 =====================
 
 Let's develop a non-trivial GUI program to demonstrate the material presented
-in the previous lessons. Our project will be to develop a GUI Whack-a-mole
+in the previous lessons. We will develop a GUI Whack-a-mole
 game where a user tries to click on "moles" as they randomly pop up out of
-the ground.
+the "ground."
 
 This discussion will take you through an *incremental development* cycle
 that creates a program in well-defined stages. While you might read a
@@ -26,16 +26,16 @@ finished computer program from "top to bottom," that is not how it was
 developed. For a typical GUI program development, you are encouraged to go
 through these stages:
 
-# Using scratch paper, physically draw a rough sketch of your user interface.
-# Create the basic structure of your program and create the major frames that
-  will hold the widgets needed for your program. Give the frames an initial
-  size and color so that you can visually see them, given that there are no
-  widgets inside of them to determine their size.
-# Incrementally add all of the widgets you need for your program and size and
-  position them appropriately.
-# Create your callback functions, stub them out, and assign them to appropriate
-  events. Verify that the events are executing the correct functions.
-# Incrementally implement the functionality needed for each callback function.
+#. Using scratch paper, physically draw a rough sketch of your user interface.
+#. Create the basic structure of your program and create the major frames that
+   will hold the widgets needed for your program's interface. Give the frames
+   an initial size and color so that you can visually see them, given that
+   there are no widgets inside of them to determine their size.
+#. Incrementally add all of the widgets you need for your program and size and
+   position them appropriately.
+#. Create your callback functions, stub them out, and assign them to appropriate
+   events. Verify that the events are executing the correct functions.
+#. Incrementally implement the functionality needed for each callback function.
 
 When you develop code using *incremental development* your program should
 always be executable. You continually add a few lines of code and then test
@@ -54,9 +54,9 @@ and consider how a user will interact with your program.
 
   Initial design of a Whack-a-mole game
 
-Step 2: Create the basic structure of your interface using appropriate frame
+Step 2: Create the basic structure of your interface using appropriate ``frame``
 widgets. You will need to give a size to the frames because they will contain
-no widgets, which how a frame typically gets its size. It is also suggested
+no widgets, which is how a frame typically gets its size. It is also suggested
 that you give each frame a unique color so it is easy to see the area of the
 window it covers. Here is a basic start for our whack-a-mole game (`whack_a_mole_v1.py`_):
 
@@ -341,7 +341,19 @@ Step 5: Add appropriate functionality to the callback functions. This is
 where the functional logic of your particular application resides. In the
 case of our whack-a-mole game, we need to be able to count the number of
 times a user clicks on a mole when it is visible. And we need the moles to
-appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
+appear and disappear at random intervals. Originally each mole was a
+button widget, but the border around each button was distracting, so
+they were changed to label widgets. Two images were used to represent a mole:
+one image is a solid color that matches the frame's background, and the
+other image is a picture of a mole. By replacing the image used for each
+label we can make the moles visible or invisible. A label normally does
+not have an associated callback, so we ``bind`` a left mouse click
+event, ``"<ButtonPress-1>"`` to each label. We can determine whether
+the mouse click is a "hit" or a "miss" by examining the label under the
+click to see which image is currently set to the label. We use timer
+events to change the image on each label.
+Also notice the use of a messagebox to protect the program from accidental
+quitting. The end result is shown below. (`whack_a_mole_v5.py`_)
 
 .. code-block:: python
 
@@ -349,11 +361,6 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
   from tkinter import PhotoImage
   from tkinter import messagebox
   from random import randint
-
-  # Metadata
-  __author__ = "Dr Wayne Brown"
-  __email__ = "Wayne.Brown@usafa.edu"
-  __date__ = "Nov 16, 2016"
 
 
   class WhackAMole:
@@ -387,7 +394,8 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
           mole_frame.grid(row=0, column=0)
 
           status_frame = tk.Frame(self.window, bg=WhackAMole.STATUS_BACKGROUND)
-          status_frame.grid(row=0, column=1, sticky=tk.E + tk.W + tk.N + tk.S, ipadx=6)
+          status_frame.grid(row=0, column=1, sticky=tk.E + tk.W + tk.N + tk.S,
+                            ipadx=6)
 
           return mole_frame, status_frame
 
@@ -409,39 +417,46 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
           return mole_labels
 
       def create_status_widgets(self):
-          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer = tk.Label(self.status_frame, text="",
+                            bg=WhackAMole.STATUS_BACKGROUND)
           spacer.pack(side="top", fill=tk.Y, expand=True)
 
           hit_label = tk.Label(self.status_frame, text="Number of Hits",
                                bg=WhackAMole.STATUS_BACKGROUND)
           hit_label.pack(side="top", fill=tk.Y, expand=True)
 
-          hit_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          hit_counter = tk.Label(self.status_frame, text="0",
+                                 bg=WhackAMole.STATUS_BACKGROUND)
           hit_counter.pack(side="top", fill=tk.Y, expand=True)
 
-          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer = tk.Label(self.status_frame, text="",
+                            bg=WhackAMole.STATUS_BACKGROUND)
           spacer.pack(side="top", fill=tk.Y, expand=True)
 
           miss_label = tk.Label(self.status_frame, text="Number of Misses",
                                 bg=WhackAMole.STATUS_BACKGROUND)
           miss_label.pack(side="top", fill=tk.Y, expand=True)
 
-          miss_counter = tk.Label(self.status_frame, text="0", bg=WhackAMole.STATUS_BACKGROUND)
+          miss_counter = tk.Label(self.status_frame, text="0",
+                                  bg=WhackAMole.STATUS_BACKGROUND)
           miss_counter.pack(side="top", fill=tk.Y, expand=True)
 
-          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer = tk.Label(self.status_frame, text="",
+                            bg=WhackAMole.STATUS_BACKGROUND)
           spacer.pack(side="top", fill=tk.Y, expand=True)
 
           start_button = tk.Button(self.status_frame, text="Start")
           start_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
 
-          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer = tk.Label(self.status_frame, text="",
+                            bg=WhackAMole.STATUS_BACKGROUND)
           spacer.pack(side="top", fill=tk.Y, expand=True)
 
           quit_button = tk.Button(self.status_frame, text="Quit")
           quit_button.pack(side="top", fill=tk.Y, expand=True, ipadx=10)
 
-          spacer = tk.Label(self.status_frame, text="", bg=WhackAMole.STATUS_BACKGROUND)
+          spacer = tk.Label(self.status_frame, text="",
+                            bg=WhackAMole.STATUS_BACKGROUND)
           spacer.pack(side="top", fill=tk.Y, expand=True)
 
           return hit_counter, miss_counter, start_button, quit_button
@@ -478,7 +493,8 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
                       the_label['image'] = self.mole_cover_photo
                       time_down = randint(WhackAMole.MIN_TIME_DOWN,
                                           WhackAMole.MAX_TIME_DOWN)
-                      timer_object = the_label.after(time_down, self.pop_up_mole, the_label)
+                      timer_object = the_label.after(time_down,
+                                                     self.pop_up_mole, the_label)
                       self.label_timers[id(the_label)] = timer_object
 
               self.game_is_running = True
@@ -527,7 +543,8 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
           if self.game_is_running:
               # Set a call to make the mole disappear in the future
               time_up = randint(WhackAMole.MIN_TIME_UP, WhackAMole.MAX_TIME_UP)
-              timer_object = the_label.after(time_up, self.put_down_mole, the_label, True)
+              timer_object = the_label.after(time_up, self.put_down_mole,
+                                             the_label, True)
               self.label_timers[id(the_label)] = timer_object
 
       def quit(self):
@@ -541,11 +558,21 @@ appear and disappear at random intervals. (`whack_a_mole_v4.py`_)
   # Start the GUI event loop
   program.window.mainloop()
 
+Summary
+-------
+
+We developed a complete GUI application in 5 well-designed stages. Hopefully
+you see the value in incremental software development.
+
+However, the end result is not necessarily easy to understand or modify for
+future enhancements. The next lesson will introduce a scheme for breaking
+complete software into more managable pieces.
+
 .. index:: Whack-a-mole game
 
-.. _whack_a_mole_v1.py: programs/whack_a_mole_v1.py
-.. _whack_a_mole_v2.py: programs/whack_a_mole_v2.py
-.. _whack_a_mole_v3.py: programs/whack_a_mole_v3.py
-.. _whack_a_mole_v4.py: programs/whack_a_mole_v4.py
-.. _whack_a_mole_v5.py: programs/whack_a_mole_v5.py
+.. _whack_a_mole_v1.py: Programs/whack_a_mole_v1.py
+.. _whack_a_mole_v2.py: Programs/whack_a_mole_v2.py
+.. _whack_a_mole_v3.py: Programs/whack_a_mole_v3.py
+.. _whack_a_mole_v4.py: Programs/whack_a_mole_v4.py
+.. _whack_a_mole_v5.py: Programs/whack_a_mole_v5.py
 

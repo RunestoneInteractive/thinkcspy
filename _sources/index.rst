@@ -62,7 +62,8 @@ GUI Programming
    GUIandEventDrivenProgramming/07_event_binding.rst
    GUIandEventDrivenProgramming/08_gui_program_structure.rst
    GUIandEventDrivenProgramming/09_modifying_widgets.rst
-   GUIandEventDrivenProgramming/10_gui_program_example.rst
+   GUIandEventDrivenProgramming/10_timer_events.rst
+   GUIandEventDrivenProgramming/11_gui_program_example.rst
    GUIandEventDrivenProgramming/Glossary.rst
 
 General Introduction
