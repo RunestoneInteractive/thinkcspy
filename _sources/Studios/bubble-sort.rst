@@ -8,9 +8,32 @@ Bubble Sort
 Walkthrough
 -----------
 
+For the walkthrough, we'll write a function that takes two parameters: a sorted list and a new number. The function should return a new list that is the result of inserting the new number into the sorted list in the correct, sorted order.
+
 .. activecode:: bubble_sort_walkthrough
 
-    # TODO
+    from test import testEqual
+
+    def insert(sorted_list, num):
+
+        new_idx = 0
+
+        while new_idx < len(sorted_list) and num > sorted_list[new_idx]:
+            new_idx += 1
+
+        new_sorted_list = sorted_list[:new_idx]
+        new_sorted_list.append(num)
+
+        for item in sorted_list[new_idx:]:
+            new_sorted_list.append(item)
+
+        return new_sorted_list
+
+
+    testEqual(insert([2,3], 1), [1,2,3])
+    testEqual(insert([1,3], 2), [1,2,3])
+    testEqual(insert([1,2], 3), [1,2,3])
+
 
 Studio
 ------
