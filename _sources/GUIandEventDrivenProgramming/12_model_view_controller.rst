@@ -28,7 +28,8 @@ pieces is called the Model-View-Controller software design pattern. This is
 often abbreviated as **MVC** (Model-View-Controller). It divides a problem into
 three pieces:
 
-* Model - the *model* directly manages the data, logic, and rules of the application.
+* Model - the *model* directly manages an application's data and logic. If
+  the model changes, the *model* sends commands to update the user's view.
 * View - the *view* presents the results of the application to the user. It is
   in charge of all program output.
 * Controller - the *controller* accepts all user input and sends commands
@@ -44,15 +45,65 @@ what all computer processing is composed of, which is:
 
   input --> processing --> output
 
-The MVC design pattern has simply renamed the pieces and restricted which part
-can talk to the other parts. For MVC design:
+The MVC design pattern renames the pieces and restricted which part of the code
+can talk to the other parts of code. For MVC design:
 
 .. code-block:: python
 
   controller (input) --> model (processing) --> view (output)
 
+From the perspective of a GUI program, this means that the callback functions,
+which are called when a user causes events, are the *controller*,
+the *model* should perform all of the application logic, and the building and
+modification of the GUI widgets composes the *view*.
 
+Let's develop a Whack-a-mole game program using this design strategy. Instead
+of creating one Python Class for the entire game, the code will be developed as
+a set of cooperating objects. So where should we begin? I would suggest that
+the same stages of development we used in the previous lesson are a good
+approach, but we will create a separate Python ``class`` for most of the
+stages. Let's walk through the code development.
 
+Creating the *View*
+-------------------
+
+Let's create a Python ``class`` that builds the user interface for a
+Whack-a-mole game. The emphasis for this code is the creation of the widgets
+we need to display to the user. For this version let's allow the moles to
+be placed at random locations inside the left frame. To do this we must
+specify an exact size for the left frame. Otherwise the code is the same
+as the previous version.
+
+.. code:: python
+
+  Code
+
+Creating the *Model*
+--------------------
+
+The *model* for this Whack-a-mole game is fairly simple. We need to keep
+a counter for the number of user hits on moles that are visible, and a
+counter for the number of times a user clicks on a mole that is not visible
+(or just clicks on the left frame and not a mole widget.)
+
+Creating the *Controller*
+-------------------------
+
+The *controller* receives user events and sends messages to the *controller*
+to update the *model*'s state. For our Whack-a-mole game, we have the following
+four basic commands we need to send to the *model*:
+
+* A user clicked on something on the left frame.
+* The user wants to start a new game. (The user clicked on the "Start" button.)
+* The user wants to stop playing a game. (The user clicked on the "Stop button.)
+* The user wants to quit the application. (The user clicked on the "Quit" button.)
+
+The *controller** needs to recognize these events and send them to appropriate
+methods in the *model*. The *controller* needs to define callback functions for
+these events and register the appropriate event with the appropriate callback.
+Therefore, the *controller* needs access to the widgets in the *view* object.
+This can easily be accomplished by passing a reference to the *view* object
+to the *controller* when it is created.
 Summary
 -------
 
