@@ -1,7 +1,7 @@
 Crypto
 ===================
 
-In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complicated, composed of multiple parts working together, which combine together to create a complete working program that interacts with a user.
+In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complicated. Your assignment will be composed of multiple parts which will work together to create a complete working program that interacts with a user.
 
 This assignment consists of 4 parts:
 
@@ -86,7 +86,7 @@ Now you can get started coding! Inside your ``crypto`` folder, create a new file
 
     $ touch initials.py
 
-Open up that file in a text editor, and complete the following function:
+Open up that file in a text editor, such as Atom, and complete the following function:
 
 .. sourcecode:: python
 
@@ -168,7 +168,7 @@ After running your script, just test by hand that the output matches what you ex
 
     *NOTE* Remember that we’ve been using Python 3 in this class. So when you try to run your program, make sure you type ``python3 initials.py``, rather than simply ``python initials.py``, which would run the Python 2 interpreter.
 
-Either way, whether using the REPL or print statements, make sure to test your function agains a healthy variety of inputs.
+Either way, whether using the REPL or print statements, make sure to test your function against a healthy variety of inputs.
 
 Make It Interactive
 ~~~~~~~~~~~~~~~~~~~~
@@ -220,7 +220,7 @@ The final interactive program will run like this:
 
 We are going to do this in a few steps, so you can break the problem down into isolated pieces.
 
-First, open up a file ``caesar.py`` in your editor.
+First, open up a new file named ``caesar.py`` in your editor.
 
 alphabet_position
 ~~~~~~~~~~~~~~~~~
@@ -228,7 +228,7 @@ alphabet_position
 The first thing we are going to do is simply create a helper function which will
 prove useful in a few different places.
 
-Write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet. It should be case-insensitive.
+In your ``caesar.py`` file, write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet. It should be case-insensitive.
 
 Here are some example input parameter values, with the corresponding return
 values.
@@ -565,7 +565,7 @@ To be clear, for this assignment, we only require that you update ``caesar.py`` 
 C. New Feature: Validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's make one more improvement. You may or may not have noticed that if the user types certain things, your program will freak out.
+Let's make one more improvement in ``caesar.py``. You may or may not have noticed that if the user types certain things, your program will freak out.
 
 There are two main cases to handle:
 
@@ -646,7 +646,7 @@ Ok, go forth and validate! As with the previous feature, this is only a requirem
 Submitting Your Work
 --------------------
 
-When you have finished, there is one more step you must do. As you know, the grading robot can be very sensitive and picky. In order to accommodate the robot, it is very important that your code does not produce any unexpected output.
+When you have finished the Improvement features in Step 4, there is one more step you must do. As you know, the grading robot can be very sensitive and picky. In order to accommodate the robot, it is very important that your code does not produce any unexpected output.
 
 Here are the steps you must take:
 
@@ -782,10 +782,10 @@ Finally, as usual, click Submit!
 .. [1] This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
 .. _Caesar Cipher: https://en.wikipedia.org/wiki/Caesar_cipher#History_and_usage
-.. _The Accumulator Pattern: ../Strings/TheAccumulatorPatternwithStrings.html
+.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
 .. _Functions Can Call Other Functions: ../Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
-.. _Using Python Locally: LocalPython.html
+.. _Using Python Locally: ../ProblemSets/LocalPython.html
 .. _ASCII: http://www.asciitable.com
