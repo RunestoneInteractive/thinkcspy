@@ -343,6 +343,7 @@ Table of Contents
    ClassesDiggingDeeper/ObjectsareMutable.rst
    ClassesDiggingDeeper/Sameness.rst
    ClassesDiggingDeeper/ArithmeticMethods.rst
+   ClassesDiggingDeeper/Inheritance.rst
    ClassesDiggingDeeper/Glossary.rst
    ClassesDiggingDeeper/Exercises.rst
 

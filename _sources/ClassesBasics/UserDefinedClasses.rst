@@ -73,7 +73,7 @@ All that might sound confusing, but it should become clearer once you see the pr
 
 In the code above, we have added a few lines after the class definition. This code creates a new ``Point`` object and assigns it to the variable ``p``, and then creates another new ``Point`` object and assigns it to the variable ``q``.
 
-You will note that when you run the program, nothing happens. It turns out that this is not quite the case. Something did happen, namely the two ``Point``s have been created. We don't see any visible result, because we have not yet asked the points to do anything. But the points ``p`` and ``q`` have now "come into existence". A little portion of the computer's memory now looks like this:
+You will note that when you run the program, nothing happens. It turns out that this is not quite the case. Something did happen, namely the two ``Point`` instances were created. We don't see any visible result, because we have not yet asked the points to do anything. But the points ``p`` and ``q`` have now "come into existence". A little portion of the computer's memory now looks like this:
 
 .. image:: Figures/objectpic4.png
    :alt: Simple object has state and methods
