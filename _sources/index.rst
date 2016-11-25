@@ -46,6 +46,18 @@ Assignments
 
    assignments.rst
 
+Exceptions
+::::::::::
+
+.. toctree::
+   :caption: Exceptions
+   :maxdepth: 1
+
+   Exceptions/01_intro_exceptions.rst
+   Exceptions/02_standard_exceptions.rst
+   Exceptions/03_principles_for_using_exceptions.rst
+   Exceptions/04_exceptions_syntax.rst
+
 GUI Programming
 :::::::::::::::
 
