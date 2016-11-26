@@ -8,13 +8,13 @@ Yahtzee
 Walkthrough
 -----------
 
-Imagine that you work for a large retailer, writing software for its internal accounting system. You've been asked to write a function `average_sales` that can take a set of data representing daily sales at a given store, and calculate the average sales for each week represented by the data.
+Imagine that you work for a large retailer, writing software for its internal accounting system. You've been asked to write a function ``average_sales`` that can take a set of data representing daily sales at a given store, and calculate the average sales for each week represented by the data.
 
-The data is represented as follows:
+The data is structured as follows:
 
 A single week of daily sales is a list with 7 entries, one for each day of the week (0 = Monday, 6 = Sunday): ``[1512.30, 1555.72, 1989.77, 2101.33, 1884.45, 1333.33, 1456.23]``
 
-You are given data for several weeks at once, itself collected into another list:
+You are given data for several weeks at once, collected into a list:
 
 .. sourcecode:: python
 
