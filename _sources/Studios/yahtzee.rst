@@ -22,7 +22,7 @@ You are given data for several weeks at once, itself collected into another list
     [1215.340, 1565.99, 2989.34, 2301.77, 1234.81, 1923.44, 2282.39],
     ...]
 
-Here, ``sales[0]`` is a list of sales for the first week, ``sales[1]`` a list of sales for the second week, and so on. Your task is to implement ``average_sales`` so that it returns a list of the averages for each week.
+Here, ``sales[0]`` is a list of sales totals for each day of the first week, ``sales[1]`` a list of sales totals for each day of the second week, and so on. We will implement ``average_sales`` so that it returns a list of the averages for each week.
 
 So if ``sales`` is the list above and we call ``weekly_averages = average_sales(sales)``, then ``weekly_averages[0]`` is the average for week 0, and so on.
 
