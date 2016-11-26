@@ -67,7 +67,7 @@ IOError                Raised when an input/ output operation fails, such as
                        to open a file that does not exist. Also raised for
                        operating system-related errors.
 PermissionError        Raised when trying to run an operation without the
-                       adequate access rights
+                       adequate access rights.
 EOFError               Raised when there is no input from either the raw_input()
                        or input() function and the end of file is reached.
 KeyboardInterrupt      Raised when the user interrupts program execution,
@@ -77,7 +77,7 @@ KeyboardInterrupt      Raised when the user interrupts program execution,
 =====================  ================================================
 Other Exceptions       Description
 =====================  ================================================
-Exception              Base class for all exceptions. This catches all
+Exception              Base class for all exceptions. This catches most
                        exception messages.
 StopIteration          Raised when the next() method of an iterator
                        does not point to any object.

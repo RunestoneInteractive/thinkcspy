@@ -181,7 +181,7 @@ Summary
 
 Let's summarize our discussion. An *exception* is a message that something
 "out-of-the-ordinary" has happened and the normal flow-of-control needs to
-be abandoned. Then an *exception* is ``raised``, Python searches its run-time-stack
+be abandoned. When an *exception* is ``raised``, Python searches its run-time-stack
 for a ``try: except:`` block that can appropriately deal with the condition.
 The first ``try: except:`` block that knows how to deal with the issue is
 executed and then flow-of-control is returned to its normal sequential execution.
@@ -191,7 +191,7 @@ prints its run-time-stack to the console.
 As our final example, here is a program that crashes because no valid
 ``try: except:`` block was found to process the ``MyException`` message.
 Notice that the ``try: except:`` block in the main function only knows how
-to deal with ZeroDivisonError messages, not ``MyException`` messages.
+to deal with ``ZeroDivisonError`` messages, not ``MyException`` messages.
 
 .. code-block:: python
 
