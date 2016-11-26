@@ -1,7 +1,7 @@
 Inheritance
 -----------
 
-Object Oriented Programming is a large topic. In this book we will are only scratching the surface. Some of LaunchCode's later Skill Track courses cover OOP in detail, so you may learn a lot more later if you end up taking one of those courses. For now, the main goal is simply to give you a taste for the topic, and to equip you with enough basic knowledge that if you see objects and classes in the wild, you will have some understanding of what is going on. Toward that end, there is one more concept that we need to mention, because it will make an appearance in Unit 2. That concept is called *Inheritance*.
+Object Oriented Programming is a large topic. In this book we will only scratch the surface. Some of LaunchCode's later Skill Track courses cover OOP in detail, so you may learn a lot more later if you end up taking one of those courses. For now, the main goal is simply to give you a taste for the topic, and to equip you with enough basic knowledge that if you see objects and classes in the wild, you will have some understanding of what is going on. Toward that end, there is one more concept that we need to mention, because it will make an appearance in Unit 2. That concept is called *Inheritance*.
 
 Let's say we have a class called ``Cat`` to represent cats. Cats can eat, sleep and make noise:
 
