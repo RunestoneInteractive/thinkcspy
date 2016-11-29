@@ -18,7 +18,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-
+   :numbered:
 
    GeneralIntro/intro-TheWayoftheProgram.rst
    GeneralIntro/Algorithms.rst
@@ -40,6 +40,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
@@ -66,6 +67,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Debugging/WhatisDebugging.rst
    Debugging/Syntaxerrors.rst
@@ -90,6 +92,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    PythonTurtle/intro-HelloLittleTurtles.rst
    PythonTurtle/OurFirstTurtleProgram.rst
@@ -118,6 +121,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
@@ -144,6 +148,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Selection/BooleanValuesandBooleanExpressions.rst
    Selection/Logicaloperators.rst
@@ -167,6 +172,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
@@ -192,6 +198,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Strings/StringsRevisited.rst
    Strings/ACollectionDataType.rst
@@ -215,6 +222,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    StringsContinued/TraversalandtheforLoopByItem.rst
    StringsContinued/TraversalandtheforLoopByIndex.rst
@@ -240,6 +248,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Lists/Lists.rst
    Lists/ListLength.rst
@@ -269,6 +278,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    ListsContinued/UsingListsasParameters.rst
    ListsContinued/PureFunctions.rst
@@ -294,6 +304,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Dictionaries/intro-Dictionaries.rst
    Dictionaries/Dictionaryoperations.rst
@@ -314,6 +325,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    ClassesBasics/Objectorientedprogramming.rst
    ClassesBasics/Achangeofperspective.rst
@@ -338,6 +350,7 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    ClassesDiggingDeeper/Fractions.rst
    ClassesDiggingDeeper/ObjectsareMutable.rst
@@ -359,6 +372,7 @@ Studios
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
 
     Studios/holiday.rst
     Studios/donuts.rst
@@ -370,7 +384,7 @@ Studios
     Studios/bugz.rst
     Studios/bubble-sort.rst
     Studios/yahtzee.rst
-    Studios/midsummer.rst
+    Studios/counting-characters.rst
 
 
 External Assignments
@@ -378,6 +392,7 @@ External Assignments
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
 
     ProblemSets/LocalPython.rst
     ProblemSets/Crypto.rst
@@ -392,6 +407,7 @@ Hacker Chapter: Files
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Files/intro-WorkingwithDataFiles.rst
    Files/FindingaFileonyourDisk.rst
@@ -408,6 +424,7 @@ Hacker Chapter: Recursion
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    Recursion/WhatIsRecursion.rst
    Recursion/CalculatingtheSumofaListofNumbers.rst
@@ -424,6 +441,7 @@ Hacker Chapter: Special Topic -- L-Systems
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    LSystems/TurtlesandStringsandLSystems.rst
    LSystems/TheReturnofLSystems.rst
