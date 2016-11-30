@@ -752,9 +752,6 @@ Just to be totally clear, below is a skeleton of what each of your files should 
 
     #### helpers.py ####
 
-    from sys import argv, exit
-    from helpers import rotate_character
-
     def rotate_character(char, rot):
         # (beautiful code)
 
