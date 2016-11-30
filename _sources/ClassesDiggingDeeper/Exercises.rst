@@ -342,7 +342,7 @@ Weekly Graded Assignment
 
             def greeting(self):
                 """ Returns the Chatbot's way of introducing itself. """
-                return "Hello, my name is " + self.name + "."
+                return "Hello, my name is " + self.name
 
             def response(self, prompt_from_human):
                 """ Returns the Chatbot's response to something the human said. """
@@ -363,7 +363,9 @@ Weekly Graded Assignment
 
         "zzz... Oh excuse me, I dozed off reading your essay."
 
-    * If, on the other hand, the human says something shorter than 20 characters, then the bored chatbot should respond just like a normal chatbot would.
+    * If, on the other hand, the human says something with a length of 20 characters or less, then the bored chatbot should respond just like a normal chatbot would.
+    
+    Note that we are requiring you to use **inheritence**. Your new ``BoredChatbot`` class must be a **subclass** of the ``Chatbot`` class, and your subclass should only implement the things that make it distinct. (See the *Inheritence* chapter for a review of how this works.)
 
     .. activecode:: bored_chatbot
 
@@ -383,3 +385,5 @@ Weekly Graded Assignment
 
 
         # TODO define a class called BoredChatbot
+
+    When you think your code is correct, test it yourself by creating a few different instances and printing their responses to various inputs.
