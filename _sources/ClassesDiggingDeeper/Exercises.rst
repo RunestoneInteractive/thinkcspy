@@ -81,7 +81,7 @@ Exercises
                   r = Rectangle(Point(0, 0), 10, 5)
                   testEqual(r.area(), 50)
 
-               .. activecode:: classes_q3
+               .. activecode:: ch_cl2_q3
 
             .. tab:: Answer
 
@@ -154,7 +154,7 @@ Exercises
                   testEqual(r.width, 5)
                   testEqual(r.height, 10)
 
-              .. activecode:: classes_q5
+              .. activecode:: ch_cl2_q5
 
             .. tab:: Answer
 
@@ -212,7 +212,7 @@ Exercises
           testEqual(r.contains(Point(3, 4.99999)), True)
           testEqual(r.contains(Point(-3, -3)), False)
 
-       .. activecode:: classes_q6
+       .. activecode:: ch_cl2_q6
 
             from test import testEqual
 
@@ -263,7 +263,7 @@ Exercises
                Write a new method called ``diagonal`` that will return the length of the diagonal that runs
                from the lower left corner to the opposite corner.
 
-               .. activecode:: classes_q7
+               .. activecode:: ch_cl2_q7
 
             .. tab:: Answer
 

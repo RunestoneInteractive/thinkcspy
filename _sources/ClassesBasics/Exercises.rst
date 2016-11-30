@@ -22,7 +22,7 @@ Exercises
                takes a ``Point`` as a parameter and
                computes the distance between that point and self.
 
-               .. activecode:: classes_q1
+               .. activecode:: ch_cl_q1
 
             .. tab:: Answer
 
@@ -84,7 +84,7 @@ Exercises
                cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
                state of the point)
 
-               .. activecode:: classes_q5
+               .. activecode:: ch_cl_q5
 
             .. tab:: Answer
 
@@ -124,7 +124,7 @@ Exercises
 
     #.  Given three points that fall on the circumference of a circle, find the center and radius of the circle.
 
-        .. activecode:: classes_q6
+        .. activecode:: ch_cl_q6
 
 Weekly Graded Assignment
 ========================
@@ -144,7 +144,7 @@ Weekly Graded Assignment
 
     The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
 
-    .. activecode:: classes_q3
+    .. activecode:: ch_cl_q3
 
         class Point:
             """ Point class for representing and manipulating x,y coordinates. """
