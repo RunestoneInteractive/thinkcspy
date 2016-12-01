@@ -77,8 +77,6 @@ The pseudo code for the algorithm is as follows:
 
 Your job is to turn that pseudocode into real code!
 
-Write a function that will return the number of digits in an integer.
-
 .. activecode:: bubble_sort_studio
 
     # Sorts a list using bubble sort.
