@@ -58,8 +58,6 @@ Studio
 
 In this studio, we write some functions that could be used in a simulation of Yahtzee. The program asks the user for the number of die they roll and the number of times the dice are thrown. The rollDice function is given to you. You must create the ``sumOfRoll`` function. If you finish that, you move on to the bonus function, ``yahtzee``.
 
-If you don't
-
 .. activecode:: yahtzee_studio
 
     import random
