@@ -196,7 +196,7 @@ Part 2: Caesar
 
 Now it's time for some encryption!
 
-In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used the `Caesar Cipher`_ to encrypt a message. If you need a refresher, this is want the exercise said:
+In chapter 9, you completed an exercise that had you write a function called ``rot13``, which used the `Caesar Cipher`_ to encrypt a message. If you need a refresher, this is what the exercise said:
 
     Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
 
