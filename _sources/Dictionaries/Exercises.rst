@@ -170,4 +170,4 @@ Exercises
 
 
 			text = "hello my man, please excuse your professor to the restroom!"
-			testEqual(translate(text), "avast me matey, please arr your foul blaggart to the head!")
+			testEqual(translate(text), "avast me matey, please arr your foul blaggart to th' head!")
