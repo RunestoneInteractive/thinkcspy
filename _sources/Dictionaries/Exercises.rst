@@ -128,10 +128,10 @@ Exercises
 		   # make these tests work...
 		   # new_inventory = {}
 		   # add_fruit(new_inventory, 'strawberries', 10)
-		   # test.Equal('strawberries' in new_inventory, True)
-		   # test.Equal(new_inventory['strawberries'], 10)
+		   # testEqual('strawberries' in new_inventory, True)
+		   # testEqual(new_inventory['strawberries'], 10)
 		   # add_fruit(new_inventory, 'strawberries', 25)
-		   # test.Equal(new_inventory['strawberries'] , 25)
+		   # testEqual(new_inventory['strawberries'] , 25)
 
 
 	#. Here's a table of English to Pirate translations:
@@ -170,4 +170,4 @@ Exercises
 
 
 			text = "hello my man, please excuse your professor to the restroom!"
-			testEqual(translate(text), "avast me matey, please arr your foul blaggart to the head!")
+			testEqual(translate(text), "avast me matey, please arr yer foul blaggart to th' head!")
