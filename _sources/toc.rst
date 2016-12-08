@@ -385,6 +385,7 @@ Studios
     Studios/bubble-sort.rst
     Studios/yahtzee.rst
     Studios/counting-characters.rst
+    Studios/blog-design.rst
 
 
 External Assignments
