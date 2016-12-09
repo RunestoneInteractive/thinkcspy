@@ -13,7 +13,7 @@ to program in Python.  You can read the text, watch videos,
 and write and execute Python code.  In addition to simply executing code,
 there is a unique feature called 'codelens' that allows you to control the
 flow of execution in order to gain a better understanding of how the program
-works..
+works.
 
 .. image:: http://bnmnetp.me:8088/buildStatus/icon?job=thinkcspyBuild
 
