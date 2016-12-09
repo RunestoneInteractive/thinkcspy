@@ -164,9 +164,9 @@ Exercises
                     return len(n_str)
 
 
-                print(findNumDigits(50))
-                print(findNumDigits(20000))
-                print(findNumDigits(1))
+                print(numDigits(50))
+                print(numDigits(20000))
+                print(numDigits(1))
 
         .. tab:: Discussion
 
