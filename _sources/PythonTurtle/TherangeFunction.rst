@@ -11,7 +11,7 @@
    :prefix: turtle-8-
    :start: 1
 
-The range Function
+The ``range`` Function
 ------------------
 
 .. video:: advrange
