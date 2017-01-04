@@ -12,7 +12,7 @@ For the walkthrough, we will write a function called ``any`` that will tell us i
 
 .. activecode:: searching_walkthrough
 
-    list_of_boools = [False, True, False]
+    list_of_bools = [False, True, False]
 
     def any(a_list):
         """Return True if any item in the list is True, False otherwise"""
