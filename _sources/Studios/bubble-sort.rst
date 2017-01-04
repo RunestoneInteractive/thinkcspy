@@ -80,7 +80,6 @@ Your job is to turn that pseudocode into real code!
 .. activecode:: bubble_sort_studio
 
     # Sorts a list using bubble sort.
-    # Does not alter the original list but returns a sorted version of it.
     def bubble_sort(lst):
         # TODO your code here
 
