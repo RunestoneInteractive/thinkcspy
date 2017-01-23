@@ -1,9 +1,9 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+.. Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,15 +14,6 @@
 Omitting the `else` Clause: Unary Selection
 -------------------------------------------
 
-.. video:: unaryselection
-   :controls:
-   :thumb: ../_static/unaryselection.png
-
-   http://media.interactivepython.org/thinkcsVideos/unaryselection.mov
-   http://media.interactivepython.org/thinkcsVideos/unaryselection.webm
-
-
-
 
 .. sidebar::  Flowchart of an **if** with no **else**
 
@@ -31,7 +22,7 @@ Omitting the `else` Clause: Unary Selection
 Another form of the ``if`` statement is one in which the ``else`` clause is omitted entirely.
 This creates what is sometimes called **unary selection**.
 In this case, when the condition evaluates to ``True``, the statements are
-executed.  Otherwise the flow of execution continues to the statement after the body of the ``if``.
+executed. Otherwise the flow of execution continues to the statement after the body of the ``if``.
 
 
 .. activecode:: ch05_unaryselection
@@ -61,7 +52,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
    What does the following code print?
 
    .. code-block:: python
-     
+
      x = -10
      if x < 0:
          print("The negative number ",  x, " is not valid here.")
@@ -84,7 +75,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
    :answer_a: No
    :answer_b: Yes
    :correct: b
-   :feedback_a: Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
+   :feedback_a: Every else-block must have exactly one corresponding if-block. If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
    :feedback_b: This will cause an error because the second else-block is not attached to a corresponding if-block.
 
    Will the following code cause an error?
@@ -102,4 +93,3 @@ What would be printed if the value of ``x`` is negative?  Try it.
 .. index::
     single: nested conditionals
     single: conditionals; nested
-

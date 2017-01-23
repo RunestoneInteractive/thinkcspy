@@ -1,9 +1,9 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+.. Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,24 +14,17 @@
 The ``while`` Statement
 -----------------------
 
-.. video:: whileloop
-   :controls:
-   :thumb: ../_static/whileloop.png
-
-   http://media.interactivepython.org/thinkcsVideos/whileloop.mov
-   http://media.interactivepython.org/thinkcsVideos/whileloop.webm
-
-There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
-The ``while`` statement provides a much more general mechanism for iterating.  Similar to the ``if`` statement, it uses
-a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to ``True``.
+There is another Python statement that can also be used to build an iteration. It is called the ``while`` statement.
+The ``while`` statement provides a much more general mechanism for iterating. Similar to the ``if`` statement, it uses
+a boolean expression to control the flow of execution. The body of while will be repeated as long as the controlling boolean expression evaluates to ``True``.
 
 The following figure shows the flow of control.
 
 .. image:: Figures/while_flow.png
 
-We can use the ``while`` loop to create any type of iteration we wish, including anything that we have previously done with a ``for`` loop.  For example, the program in the previous section could be rewritten using ``while``.
-Instead of relying on the ``range`` function to produce the numbers for our summation, we will need to produce them ourselves.  To to this, we will create a variable called ``aNumber`` and initialize it to 1, the first number in the summation.  Every iteration will add ``aNumber`` to the running total until all the values have been used.
-In order to control the iteration, we must create a boolean expression that evaluates to ``True`` as long as we want to keep adding values to our running total.  In this case, as long as ``aNumber`` is less than or equal to the bound, we should keep going.
+We can use the ``while`` loop to create any type of iteration we wish, including anything that we have previously done with a ``for`` loop. For example, the program in the previous section could be rewritten using ``while``.
+Instead of relying on the ``range`` function to produce the numbers for our summation, we will need to produce them ourselves. To to this, we will create a variable called ``aNumber`` and initialize it to 1, the first number in the summation. Every iteration will add ``aNumber`` to the running total until all the values have been used.
+In order to control the iteration, we must create a boolean expression that evaluates to ``True`` as long as we want to keep adding values to our running total. In this case, as long as ``aNumber`` is less than or equal to the bound, we should keep going.
 
 
 
@@ -57,7 +50,7 @@ Here is a new version of the summation program that uses a while statement.
 
 You can almost read the ``while`` statement as if it were in natural language. It means,
 while ``aNumber`` is less than or equal to ``aBound``, continue executing the body of the loop. Within
-the body, each time, update ``theSum`` using the accumulator pattern and increment ``aNumber``. After the body of the loop, we go back up to the condition of the ``while`` and reevaluate it.  When ``aNumber`` becomes greater than ``aBound``, the condition fails and flow of control continues to the ``return`` statement.
+the body, each time, update ``theSum`` using the accumulator pattern and increment ``aNumber``. After the body of the loop, we go back up to the condition of the ``while`` and reevaluate it. When ``aNumber`` becomes greater than ``aBound``, the condition fails and flow of control continues to the ``return`` statement.
 
 The same program in codelens will allow you to observe the flow of execution.
 
@@ -109,15 +102,15 @@ other cases, it is not so easy to tell.
 
 .. note::
 
-	Introduction of the while statement causes us to think about the types of iteration we have seen.  The ``for`` statement will always iterate through a sequence of values like the list of names for the party or the list of numbers created by ``range``.  Since we know that it will iterate once for each value in the collection, it is often said that a ``for`` loop creates a
-	**definite iteration** because we definitely know how many times we are going to iterate.  On the other
+	Introduction of the while statement causes us to think about the types of iteration we have seen. The ``for`` statement will always iterate through a sequence of values like the list of names for the party or the list of numbers created by ``range``. Since we know that it will iterate once for each value in the collection, it is often said that a ``for`` loop creates a
+	**definite iteration** because we definitely know how many times we are going to iterate. On the other
 	hand, the ``while`` statement is dependent on a condition that needs to evaluate to ``False`` in order
-	for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
-	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem)
+	for the loop to terminate. Since we do not necessarily know when this will happen, it creates what we
+	call **indefinite iteration**. Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem)
 
 What you will notice here is that the ``while`` loop is more work for
-you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while``
-loop you have to control the loop variable yourself.  You give it an initial value, test
+you --- the programmer --- than the equivalent ``for`` loop. When using a ``while``
+loop you have to control the loop variable yourself. You give it an initial value, test
 for completion, and then make sure you change something in the body so that the loop
 terminates.
 
@@ -127,7 +120,7 @@ we need the extra power that we get from the ``while`` loop.
 
 .. note::
 
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
+   This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
 
    .. activecode:: scratch_07_01
 
@@ -146,15 +139,15 @@ we need the extra power that we get from the ``while`` loop.
 .. mchoice:: test_question7_2_2
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
-   :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
+   :answer_c: You cannot compare n to 0 in while loop. You must compare it to another variable.
    :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :correct: a
-   :feedback_a: The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
+   :feedback_a: The loop will run as long as n is positive. In this case, we can see that n will never become non-positive.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
-   :feedback_c: It is perfectly valid to compare n to 0.  Though indirectly, this is what causes the infinite loop.
+   :feedback_c: It is perfectly valid to compare n to 0. Though indirectly, this is what causes the infinite loop.
    :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
 
-   The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?
+   The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?
 
    .. code-block:: python
 

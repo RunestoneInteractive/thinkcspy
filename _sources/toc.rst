@@ -42,7 +42,6 @@ Table of Contents
    :maxdepth: 1
    :numbered:
 
-   SimplePythonData/intro-VariablesExpressionsandStatements.rst
    SimplePythonData/ValuesandDataTypes.rst
    SimplePythonData/Typeconversionfunctions.rst
    SimplePythonData/Variables.rst
