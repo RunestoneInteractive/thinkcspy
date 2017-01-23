@@ -122,11 +122,3 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
    .. code-block:: python
 
      return x + y < z
-
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_06_03

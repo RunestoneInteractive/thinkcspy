@@ -83,14 +83,6 @@ Here is how we use a key to look up the corresponding value.
 The key ``'two'`` yields the value ``'dos'``.
 
 
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_11_01
-
-
 **Check your understanding**
 
 .. mchoice:: test_question11_1_1

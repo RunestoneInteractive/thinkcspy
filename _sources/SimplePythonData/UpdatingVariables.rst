@@ -97,10 +97,3 @@ a variable, which means the same as incrementing it by 1.
    mybankbalance = 100
    mybankbalance = mybankbalance + 34
    print(mybankbalance)
-
-
-.. note::
-
-   This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_02

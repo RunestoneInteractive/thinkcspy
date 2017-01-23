@@ -20,7 +20,7 @@ to multiply the two individual denominators together.  Anything we do to the den
 
 Our ``add`` method will take a ``Fraction`` as a parameter.  It will return a new ``Fraction`` representing the sum.  We
 will use the equation shown above to compute the new numerator and the new denominator.  Since this equation will not
-give us lowest terms, we will utilize a similar technique as was used in the ``simplify`` method to find the 
+give us lowest terms, we will utilize a similar technique as was used in the ``simplify`` method to find the
 greatest common divisor and then divide each part of the new fraction.
 
 .. sourcecode:: python
@@ -104,12 +104,4 @@ However, now we can perform addition in the same manner that we are used to with
 	f2 = Fraction(1, 4)
 
 	f3 = f1 + f2    # calls the __add__ method of f1
-	print(f3)
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_cl_02	
-
-
+	print(f3)	

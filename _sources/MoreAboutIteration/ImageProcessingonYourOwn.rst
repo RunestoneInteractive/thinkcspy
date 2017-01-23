@@ -24,14 +24,3 @@ If you want to try some image processing on your own, outside of the textbook yo
 .. admonition:: Note
 
    One important caveat about using ``cImage.py`` is that it will only work with GIF files unless you also install the Python Image Library.  The easiest version to install is called ``Pillow``.  If you have the ``pip`` command installed on your computer this is really easy to install, with ``pip install pillow`` otherwise you will need to follow the instructions on the `Python Package Index <https://pypi.python.org/pypi/Pillow/>`_ page.  With Pillow installed you will be able to use almost any kind of image that you download.
-
-
-
-
-.. note::
-
-  This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-  .. activecode:: scratch_07_05
-
-

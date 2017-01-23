@@ -14,7 +14,7 @@ Functions and methods can return objects.  This is actually nothing new since ev
 been returning values for quite some time.  The difference here is that we want to have the method create an object using
 the constructor and then return it as the value of the method.
 
-    
+
 Suppose you have a point object
 and wish to find the midpoint halfway between it and some other target point.  We would like to write a method, call
 it ``halfway`` that takes another ``Point`` as a parameter and returns the ``Point`` that is halfway between the point and
@@ -37,11 +37,11 @@ the target.
 
         def distanceFromOrigin(self):
             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-          
+
         def __str__(self):
             return "x=" + str(self.x) + ", y=" + str(self.y)
 
-        def halfway(self, target): 
+        def halfway(self, target):
              mx = (self.x + target.x) / 2
              my = (self.y + target.y) / 2
              return Point(mx, my)
@@ -53,17 +53,7 @@ the target.
     print(mid)
     print(mid.getX())
     print(mid.getY())
-       
+
 
 The resulting Point, ``mid``, has an x value of 4 and a y value of 8.  We can also use any other methods since ``mid`` is a
 ``Point`` object.
-
-    
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_cl_01
-
-

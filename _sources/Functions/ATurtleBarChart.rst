@@ -67,7 +67,7 @@ Next, at the top of each bar, we'll print the value of the data.
 We will do this in the body of ``drawBar`` by adding   ``t.write(str(height))``
 as the new fourth line of the body.
 Note that we had to turn the
-number into a string.  
+number into a string.
 Finally, we'll add the two methods needed  to fill each bar.
 
 The one remaining problem is related the fact that our turtle lives in a world where position (0,0) is at the center of the drawing canvas.  In this problem, it would help if (0,0) were in the lower left hand corner.  To solve this we can use our ``setworldcoordinates`` method to rescale the window.  While we are at it, we should make the window fit the data.  The tallest bar will correspond to the maximum data value.  The width of the window will need to be proportional to the number of bars (the number of data values) where each has a width of 40.  Using this information, we can compute the coordinate
@@ -116,13 +116,3 @@ we have stored the data values in a list and used a few list functions.  We will
       drawBar(tess, a)
 
   wn.exitonclick()
-
-
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_05_06
-

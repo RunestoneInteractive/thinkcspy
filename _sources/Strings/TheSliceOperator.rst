@@ -18,12 +18,12 @@ A substring of a string is called a **slice**. Selecting a slice is similar to
 selecting a character:
 
 .. activecode:: chp08_slice1
-    
+
     singers = "Peter, Paul, and Mary"
     print(singers[0:5])
     print(singers[7:11])
     print(singers[17:21])
-    
+
 
 The `slice` operator ``[n:m]`` returns the part of the string from the n'th character
 to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
@@ -37,7 +37,7 @@ beginning of the string. If you omit the second index, the slice goes to the
 end of the string.
 
 .. activecode:: chp08_slice2
-    
+
     fruit = "banana"
     print(fruit[:3])
     print(fruit[3:])
@@ -59,7 +59,7 @@ What do you think ``fruit[:]`` means?
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
       s = "python rocks"
@@ -80,7 +80,7 @@ What do you think ``fruit[:]`` means?
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
       s = "python rocks"
@@ -88,13 +88,4 @@ What do you think ``fruit[:]`` means?
 
 
 
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_08_01
-
-
-
 .. index:: string comparison, comparison of strings
-

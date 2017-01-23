@@ -14,10 +14,10 @@
 List Methods
 ------------
 
-The dot operator can also be used to access built-in methods of list objects.  
+The dot operator can also be used to access built-in methods of list objects.
 ``append`` is a list method which adds the argument passed to it to the end of
 the list. Continuing with this example, we show several other list methods.  Many of them are
-easy to understand.  
+easy to understand.
 
 .. activecode:: chp09_meth1
 
@@ -81,7 +81,7 @@ remove      item            mutator       Removes the first occurrence of item
 Details for these and others
 can be found in the `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range>`_.
 
-It is important to remember that methods like ``append``, ``sort``, 
+It is important to remember that methods like ``append``, ``sort``,
 and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).
 
 .. activecode:: chp09_meth2
@@ -106,9 +106,9 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    :feedback_a: True was added first, then False was added last.
    :feedback_b: Yes, each item is added to the end of the list.
    :feedback_c: append adds at the end, not the beginning.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -126,9 +126,9 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    :feedback_a: Yes, first True was added at index 2, then False was added at index 0.
    :feedback_b: insert will place items at the index position specified and move everything down to the right.
    :feedback_c: insert does not remove anything or replace anything.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -145,9 +145,9 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    :feedback_a: pop(2) removes the item at index 2, not the 2 itself.
    :feedback_b: pop() removes the last item, not the first.
    :feedback_c: Yes, first the 8 was removed, then the last item, which was 5.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -155,8 +155,8 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
      temp = alist.pop()
      print(alist)
 
-   
-   
+
+
 .. mchoice:: test_question9_13_4
    :answer_a: [2, 8, 6, 5]
    :answer_b: [4, 2, 8, 6, 5]
@@ -167,23 +167,11 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    :feedback_b: pop(0) changes the list by removing the first item.
    :feedback_c: Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
    :feedback_d: pop(0) returns the first item in the list so alist has now been changed.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
      alist = alist.pop(0)
      print(alist)
-
-
-
-.. note::
-
-   This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_09_03
-
-
-
-

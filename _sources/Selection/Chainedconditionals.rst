@@ -58,13 +58,6 @@ Here is the same program using ``elif``.
 
 
 
-.. note::
-
-  This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-  .. activecode:: scratch_06_02
-
-
 **Check your understanding**
 
 .. mchoice:: test_question6_7_1
@@ -98,7 +91,7 @@ Here is the same program using ``elif``.
    .. code-block:: python
 
      I.
-     
+
      if x < 0:
          print("The negative number ",  x, " is not valid here.")
      else x > 0:
@@ -110,7 +103,7 @@ Here is the same program using ``elif``.
    .. code-block:: python
 
      II.
-     
+
      if x < 0:
          print("The negative number ",  x, " is not valid here.")
      elif x > 0:
@@ -121,7 +114,7 @@ Here is the same program using ``elif``.
    .. code-block:: python
 
      III.
-     
+
      if x < 0:
          print("The negative number ",  x, " is not valid here.")
      if x > 0:
@@ -149,6 +142,3 @@ Here is the same program using ``elif``.
          print("b")
      else:
          print("c")
-
-
-

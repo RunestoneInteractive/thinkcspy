@@ -192,13 +192,6 @@ been defined, we can call it as many times as we like with whatever actual param
     wn.exitonclick()
 
 
-.. note::
-
-   This workspace is provided for your convenience. You can use this activecode window to try out anything you like.
-
-   .. activecode:: scratch_05_01
-
-
 
 **Check your understanding**
 
