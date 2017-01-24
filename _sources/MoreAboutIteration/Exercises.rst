@@ -288,8 +288,7 @@ Exercises
 
             .. tab:: Question
 
-               Write a function to uniformly enlarge an image by a factor of 2 (double the size).
-
+               Write a function to uniformly enlarge an image by a factor of 2 (in other words, make the image twice as wide and twice as tall).
 
                .. activecode:: ex_7_19
                   :nocodelens:
