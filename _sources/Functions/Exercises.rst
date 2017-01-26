@@ -437,7 +437,9 @@ Weekly Graded Assignment
             # TODO implement your function to return the area of a circle whose radius is r
 
 
-        # below are some tests so you can see if your code is correct. You should not include this part in Vocareum.
+        # Below are some tests which can give you an indication that your code seems to be correct.
+        # IMPORTANT: You should NOT include this part when you submit in Vocareum.
+        # When you submit, only include the function above.
         from test import testEqual
 
         t = areaOfCircle(0)
