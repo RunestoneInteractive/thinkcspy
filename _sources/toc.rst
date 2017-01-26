@@ -394,7 +394,6 @@ External Assignments
     :maxdepth: 1
     :numbered: 1
 
-    ProblemSets/Initials.rst
     ProblemSets/Crypto.rst
 
 ----
