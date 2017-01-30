@@ -24,19 +24,27 @@ The assignment is broken into 2 parts:
 Part 1: Using Python Locally
 ----------------------------
 
-Blah blah
-
-If that sounds intimidating, don't worry. While learning how to use the command line can seem scary, it's not bad at all if you learn it in steps and practice regularly. Before you know it, you'll find interacting with your computer via the command line to be super useful, maybe even fun!
+In this section, you will learn how to interact with your computer using the command line, and then you will install everything you need to start writing and running code.
 
 Getting Familiar with the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before we install Python on our computers, let's get familiar with the command line. We're going to use Appendix A from the online book *Learn Python the Hard Way* (don't worry, the book is more approachable than the title makes it it sound). This section is called `Command Line Crash Course`_ and it contains 15 short tutorials teaching you the basics of how to interact with your computer's file system and operating system using a "terminal" or "shell". **Do all 15!**
+The command line "terminal" or "shell" is a text-based interface for interacting with your computer's file system and operating system. Learning how to use the command line can seem scary because the interface is very barebones, all text and no graphical elements. But it's not bad at all if you learn it in steps and practice regularly. Before you know it, you'll find interacting with your computer via the command line to be super useful.
+
+We're going to use an Appendix called *Command Line Crash Course* from an online book called *Learn Python the Hard Way* (don't worry, the book is more approachable than the title makes it it sound). This appendix contains 15 short tutorials teaching you command line basics.
+
+**Do all 15** tutorials from `Command Line Crash Course`_.
 
 Installing and Running Python Locally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Follow along with the video tutorial below, where we will install Atom, a general-purpose code editor, along with *both* Python 2 and Python 3. We've been using Python 3 thus far, but we'll need to use Python 2 a bit later in the class. After installing Python, we will create a simple "Hello World" Python program and run it on the command-line.
+Now that you have some familiarty with the command line, it is time to install everything.
+
+Follow along with the video tutorial below, where we will install Atom, a general-purpose code editor, and install Python itself. Finally, we will create a simple "Hello World" Python program, and run it on the command-line.
+
+.. note::
+
+    We will install *both* Python 2 and Python 3. We've been using Python 3 thus far, but later in the class we will need to use Python 2.
 
 The installation process will be a little different for each operating system, so find the appropriate video below and follow along.
 
@@ -78,7 +86,7 @@ This video walks through the details for Windows 10.
     <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/zNHqcy6ZguQ" frameborder="0" allowfullscreen></iframe></div>
 
 Windows 7 and 8: Editing the Path Environment Variable
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 This occurs around 24:30 of the video.
 
@@ -119,7 +127,7 @@ Setup
 
 First, you must create a new folder for the project, and a new file within the folder. And while we're here, let's make sure you set up your overall directory structure in a nice, organized way for future assignments.
 
-Open up a terminal window on your computer. After completing the installation video tutorial above, you should already have a broad parent folder with a name like ``lc101/`` or ``code/``, where you save all your assignments for this class.
+Open up a terminal (command line) window on your computer. After completing the installation video tutorial above, you should already have a broad parent folder with a name like ``lc101/`` or ``code/``, where you save all your assignments for this class.
 
 But if you do *not* yet have such a class parent folder on your file system, then create one now:
 
@@ -140,12 +148,12 @@ Once you are inside your directory for the class, create a new sub-directory for
 
 ::
 
-    $ mkdir initals
-    $ cd initals
+    $ mkdir initials
+    $ cd initials
 
 In general, for the remainder of LC 101, you should follow this same pattern for every new assignment:
 
-1. Navigate into the parent folder (e.g. ``lc101``).
+1. Navigate into the parent folder (e.g. ``lc101/``).
 2. Create a new subfolder for the new assignment.
 3. Navigate into that new subfolder.
 4. Start coding!
@@ -180,7 +188,7 @@ And your overall directory structure will look like this:
 The Initials Program
 ~~~~~~~~~~~~~~~~~~~~~
 
-Now you are finally ready to get started coding! Inside your ``initials/`` folder, create a new file called ``initials.py``:
+Now you are finally ready to start coding! Inside your ``initials/`` folder, create a new file called ``initials.py``:
 
 ::
 
@@ -194,7 +202,7 @@ Open up that file in a text editor, such as Atom, and complete the following fun
         """ Given a person's name, returns the person's initials (uppercase) """
         # TODO your code here
 
-Your function will receive one argument, ``fullname``, a string representing someone's name, and should return a string with that name's capitalized initials. You may assume that the name will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.
+Your function will receive one argument, ``fullname``, a string representing someone's name, and should return a string with that name's capitalized initials.
 
 Here are some examples of what your function should return for various ``fullname`` arguments:
 
@@ -203,7 +211,7 @@ Here are some examples of what your function should return for various ``fullnam
 +==================+=================+
 | Ozzie Smith      | OS              |
 +------------------+-----------------+
-| bonnie blair     | BB              |
+| Bonnie blair     | BB              |
 +------------------+-----------------+
 | George           | G               |
 +------------------+-----------------+
@@ -211,29 +219,31 @@ Here are some examples of what your function should return for various ``fullnam
 +------------------+-----------------+
 
 .. note::
-    Even if the name starts with a lowercase letter, you should always capitalize the initials. For example, if ``fullname == "ozzie smith"``, you should still return ``"OS"``
+    Even if the name starts with a lowercase letter, you should always capitalize the initials. For example, notice how even if ``fullname == "Bonnie blair"``, you should still return ``"BB"`` rather than ``"Bb"``
 
-If you were to invoke your function, it would look something like this:
+.. note::
+    You may assume that the name will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.
+
+If you were to invoke your function and print the result, it would look something like this:
 
 .. sourcecode:: python
 
-    answer = get_initials("Ozzie Smith")
-    print("The initials of 'Ozzie Smith' are", answer)
+    ozzie_inits = get_initials("Ozzie Smith")
+    print("The initials of 'Ozzie Smith' are", ozzie_inits)
     # => prints "The initials of 'Ozzie Smith' are OS"
 
-Notes, Tips and Hints
-~~~~~~~~~~~~~~~~~~~~~
+Okay, enough chit-chat. Go forth and code!
 
-- You'll need to collect the initials as you find them, and return them all together at the end. You may want to re-read about `The Accumulator Pattern`_.
-
+.. hint::
+    You'll need to collect the initials as you find them, and return them all together at the end. You may want to re-read about `The Accumulator Pattern`_.
 
 Testing
 ~~~~~~~
 
-When you (think you) are finished writing your ``get_initials`` function, you should test it to make sure it works. There are a few ways to do this:
+When (you think) you are finished writing your ``get_initials`` function, you should test it to make sure it works. There are a few ways to do this:
 
 1. You can import your script into a REPL (Python shell), and then feed various inputs into your function.
-2. You can just add some print statements (like the example above) to ``initials.py`` script.
+2. Alternatively, you can just add some print statements (like the "Ozzie Smith" example above) to your ``initials.py`` script, and check to see that various inputs produce the correct results.
 
 Technique 1 looks something like this:
 
@@ -275,7 +285,7 @@ Either way, whether using the REPL or print statements, make sure to test your f
 Make It Interactive
 ~~~~~~~~~~~~~~~~~~~~
 
-Just for fun, let's turn this into an interactive program that a user can run from the terminal. All you have to do is add an ``input`` statement to ask the user for his/her name, and then a ``print`` statement to report the results back to him/her. Your program should work like this:
+Let's now turn this into an interactive program that a user can run from the terminal. All you have to do is add an ``input`` statement to ask the user for his/her name, and then a ``print`` statement to report the results back to him/her. Your program should work like this:
 
 ::
 
@@ -290,3 +300,70 @@ Just to be clear about the example above:
 - Then, the program printed the second line asking for their name.
 - Then the user typed the third line ("Ozzie Smith").
 - Finally, the program printed the initials ("OS").
+
+Make it Importable
+~~~~~~~~~~~~~~~~~~~
+
+Almost done! There is one more thing you must do before submitting. Presumably, your file now looks like this:
+
+.. sourcecode:: python
+
+    def get_initials(fullname):
+        # some code here
+
+    # some more code here (input and print statements)
+
+As you know, the second block of code contains the lines that actually get executed when the user runs the script. The code *inside* the ``get_initials`` function, by contrast, only executes thanks to the fact that it *gets invoked* by one of the statements from that second block of code that sits all the way on the left, at the global level of scope.
+
+Generally speaking, however, it is actually bad practice to have "loose" statements floating around at that left-most, unindented scope of a script. There are two reasons why:
+
+**Issue 1: Organization.** As your script grows larger, it can become hard to keep track of all those loose statements, especially if you don't keep them all together in one block. At that point, you will start to loose track of exactly what happens when the script is run.
+
+**Issue 2: Importing.** When some other file tries to ``import`` this file, all the loose statements will be executed, which is probably not what the other file wanted. For example, say you are writing another script, and you once again encounter the need to parse initials from people's names. Instead of re-writing the ``get_initials`` function, this is a perfect chance to reuse the code you have already written by importing your ``initials.py`` file. Sounds great! But unfortunately, the moment you import the file, those ``input`` and ``print`` statements will blurt out and start talking to the user.
+
+The solution to Issue 1 is to move your ``input`` and ``print`` statements into a ``main`` function, like this:
+
+.. sourcecode:: python
+
+    def get_initials(fullname):
+        # some code here
+
+    def main()
+        # some more code here (input and print statements)
+
+    main()
+
+In the new version, notice that we have placed the second block of code inside a function called ``main``. This is the generally accepted pattern: Move all loose statements into a ``main`` function so that you have them together in one place. Finally, the *only* loose statement left is the invocation of ``main`` at the end.
+
+Issue 2 can be solved by adding one more line of code that places the ``main()`` invocation inside a (strange-looking) ``if`` statement:
+
+.. sourcecode:: python
+
+    def get_initials(fullname):
+        # some code here
+
+    def main()
+        # some more code here (input and print statements)
+
+    if __name__ == 'main':
+        main()
+
+In effect, that conditional says:
+
+    "If this is actually the main program that is being run, then go ahead and execute the ``main`` function. Otherwise, if this file is being imported, or something else is going on, then stay quiet and do nothing."
+
+.. note::
+    If you are curious about the ``if __name__ == 'main':`` conditional, you can check out this `Stack Overflow post`_.
+
+Now we are good to go! The program works normally when run directly from the command-line, but if some other file imports it, the ``main`` function will not execute.
+
+.. warning::
+    Before you submit your work, it is important that you transform your ``initials.py`` code to reflect the example above. The grading script is going to ``import`` your file, and if you have a loose ``input`` statement at the global scope level, that statement is going to execute and wait forever for input from a non-existent user, and you will find yourself waiting a very long time for your grade.
+
+.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
+.. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
+
+How to Submit
+--------------
+
+To submit your work, click the *Upload* button on the top-left of the Vocareum window, and upload your ``initials.py`` file.
