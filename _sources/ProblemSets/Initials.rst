@@ -367,5 +367,6 @@ To submit your work, click the *Upload* button on the top-left of the Vocareum w
 
 
 .. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
-.. _Using Python Locally: ../ProblemSets/LocalPython.html
+.. _Using Python Locally: #part-1-using-python-locally
+.. _Initials: #part-2-initials
 .. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
