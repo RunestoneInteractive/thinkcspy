@@ -41,14 +41,16 @@ Draw this pretty pattern.
 
 .. activecode:: wagon_wheel_studio
 
-Challenges
-----------
+Bonus Missions
+--------------
 
-*Modify the ``square`` function given to you in section 5.4 of the textbook. Modify this function so that instead of computing the square, it can compute any positive integer exponent that is given to the function.
+1. Modify the ``square`` function given to you in section 5.4 of the textbook. Modify this function so that instead of computing the square, it can compute any positive integer exponent that is given to the function.
 
-*Use your modified function from the previous problem to create a second function that can compute the volume of a sphere. Your ``sphereVol(r)`` function should take in a positive value for r and return the volume of a sphere with radius r which is given by the formula: 4/3 * pi * r^3.
+2. Use your modified function from the previous problem to create a second function that can compute the volume of a sphere. Your ``sphereVol(r)`` function should take in a positive value for r and return the volume of a sphere with radius r which is given by the formula: 4/3 * pi * r^3.
 
-*The fibonacci sequence is given as:
+.. activecode:: wagon_wheel_studio_bm1
+
+3. The fibonacci sequence is given as:
 
 0, 1, 1, 2, 3, 5, 8, ...
 
@@ -57,3 +59,5 @@ Notice that each number in the series is simply the sum of the previous two numb
 Note that it is tricky to compute ``fib(0) = 0`` and ``fib(1) = 1`` with the concepts we have currently covered. If you have done the prep work for chapter 6, however, you should be able to update your function to cover those two values.
 
 Finally, investigate the following question: what is the largest value of n that returns the correct fibonacci number? Why does this function stop working after that point?
+
+.. activecode:: wagon_wheel_studio_bm2
