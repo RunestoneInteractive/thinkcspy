@@ -18,16 +18,17 @@ Exercises
 
         .. tab:: Question
 
-           Write a program that prints ``We like Python's turtles!`` 1000 times.
-
            .. actex:: ex_3_1
+
+              Write a program that prints ``We like Python's turtles!`` 100 times.
+              ~~~~
 
         .. tab:: Answer
 
             .. activecode::  q1_answer
                 :nocanvas:
 
-                for i in range(1000):
+                for i in range(100):
                     print("We like Python's turtles!")
 
         .. tab:: Discussion
@@ -49,13 +50,15 @@ Exercises
 
         .. tab:: Question
 
-           Write a program that uses a for loop to print
-             |  ``One of the months of the year is January``
-             |  ``One of the months of the year is February``
-             |  ``One of the months of the year is March``
-             |  etc ...
 
            .. actex:: ex_3_3
+
+              Write a program that uses a for loop to print
+                 |  ``One of the months of the year is January``
+                 |  ``One of the months of the year is February``
+                 |  ``One of the months of the year is March``
+                 |  etc ...
+              ~~~~
 
         .. tab:: Answer
 
@@ -74,13 +77,14 @@ Exercises
 
 .. question:: turtle_ex_4
 
-   Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
-
-   a. Write a loop that prints each of the numbers on a new line.
-   b. Write a loop that prints each number and its square on a new line.
 
    .. actex:: ex_3_4
 
+      Assume you have a list of numbers ``12, 10, 32, 3, 66, 17, 42, 99, 20``
+
+      a. Write a loop that prints each of the numbers on a new line.
+      b. Write a loop that prints each number and its square on a new line.
+      ~~~~
 
 .. question:: turtle_ex_5
 
@@ -88,16 +92,17 @@ Exercises
 
         .. tab:: Question
 
-           Use ``for`` loops to make a turtle draw these regular polygons
-           (regular means all sides the same lengths, all angles the same):
-
-           * An equilateral triangle
-           * A square
-           * A hexagon (six sides)
-           * An octagon (eight sides)
-
            .. actex:: ex_3_5
               :nocodelens:
+
+              Use ``for`` loops to make a turtle draw these regular polygons
+              (regular means all sides the same lengths, all angles the same):
+
+              * An equilateral triangle
+              * A square
+              * A hexagon (six sides)
+              * An octagon (eight sides)
+              ~~~~
 
         .. tab:: Answer
 
@@ -168,11 +173,12 @@ Exercises
 
 .. question:: turtle_ex_6
 
-   Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
-   regular polygon.  The program should draw the polygon and then fill it in.
-
    .. actex:: ex_3_6
       :nocodelens:
+
+      Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
+      regular polygon.  The program should draw the polygon and then fill it in.
+      ~~~~
 
 
 .. question:: turtle_ex_7
@@ -181,10 +187,11 @@ Exercises
 
        .. tab:: Question
 
-            A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
-
             .. actex:: ex_3_7
                :nocodelens:
+
+               A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
+               ~~~~
 
        .. tab:: Answer
 
@@ -222,12 +229,12 @@ Exercises
 
 .. question:: turtle_ex_8
 
-   On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
-   and check your answer.
-
    .. actex:: ex_3_8
        :nocodelens:
 
+       On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
+       and check your answer.
+       ~~~~
        import turtle
        wn = turtle.Screen()
        tess = turtle.Turtle()
@@ -245,12 +252,13 @@ Exercises
 
         .. tab:: Question
 
-           Write a program to draw a shape like this:
-
-           .. image:: Figures/star.png
-
            .. actex:: ex_3_9
               :nocodelens:
+
+              Write a program to draw a shape like this:
+
+              .. image:: Figures/star.png
+              ~~~~
 
         .. tab:: Answer
 
@@ -274,12 +282,13 @@ Exercises
 
 .. question:: turtle_ex_10
 
-   Write a program to draw a face of a clock that looks something like this:
-
-   .. image:: Figures/tess_clock1.png
-
    .. actex:: ex_3_10
       :nocodelens:
+
+      Write a program to draw a face of a clock that looks something like this:
+
+      .. image:: Figures/tess_clock1.png
+      ~~~~
 
 .. question:: turtle_ex_11
 
@@ -287,11 +296,12 @@ Exercises
 
         .. tab:: Question
 
-           Write a program to draw some kind of picture.  Be creative and experiment
-           with the turtle methods provided in :ref:`turtle_methods`.
-
            .. actex:: ex_3_11
               :nocodelens:
+
+              Write a program to draw some kind of picture.  Be creative and experiment
+              with the turtle methods provided in :ref:`turtle_methods`.
+              ~~~~
 
         .. tab:: Answer
 
@@ -318,10 +328,11 @@ Exercises
 
 .. question:: turtle_ex_12
 
-   Create a turtle and assign it to a variable.  When you print its type, what do you get?
-
    .. actex:: ex_3_12
       :nocodelens:
+
+      Create a turtle and assign it to a variable.  When you print its type, what do you get?
+      ~~~~
 
 .. question:: turtle_ex_13
 
@@ -329,13 +340,14 @@ Exercises
 
         .. tab:: Question
 
-            A sprite is a simple spider shaped thing with n legs coming out from a center
-            point. The angle between each leg is 360 / n degrees.
-
-            Write a program to draw a sprite where the number of legs is provided by the user.
-
             .. actex:: ex_3_13
                :nocodelens:
+
+               A sprite is a simple spider shaped thing with n legs coming out from a center
+               point. The angle between each leg is 360 / n degrees.
+
+               Write a program to draw a sprite where the number of legs is provided by the user.
+               ~~~~
 
         .. tab:: Answer
 
