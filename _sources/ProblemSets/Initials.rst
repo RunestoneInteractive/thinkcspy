@@ -360,10 +360,12 @@ Now we are good to go! The program works normally when run directly from the com
 .. warning::
     Before you submit your work, it is important that you transform your ``initials.py`` code to reflect the example above. The grading script is going to ``import`` your file, and if you have a loose ``input`` statement at the global scope level, that statement is going to execute and wait forever for input from a non-existent user, and you will find yourself waiting a very long time for your grade.
 
-.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
-.. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
-
 How to Submit
 --------------
 
 To submit your work, click the *Upload* button on the top-left of the Vocareum window, and upload your ``initials.py`` file.
+
+
+.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
+.. _Using Python Locally: ../ProblemSets/LocalPython.html
+.. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
