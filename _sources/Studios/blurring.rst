@@ -109,19 +109,32 @@ Tips
 
     newimg.draw(win)
     win.exitonclick()
-	
+
 Bonus Missions
 --------------
 
-*Write a function that takes in an integer then displays the multiplication table of that size. For example, if the given integer was 3, the following multiplication table would be displayed:
+Bonus 1
+~~~~~~~~~
 
-0 0 0 0
-0 1 2 3
-0 2 4 6
-0 3 6 9
+Write a function that takes in an integer then displays the multiplication table of that size. For example, if the given integer was 3, the following multiplication table would be displayed:
 
-*Write a program that allows someone to play the classic game of rock, paper, scissors against the computer. First, prompt the user to enter how many games should be played in a "best of" format, i.e. best of 5 would require someone to win 3 times, best of 9 would require someone to win 5 times, etc.
+::
+
+    0 0 0 0
+    0 1 2 3
+    0 2 4 6
+    0 3 6 9
+
+.. activecode:: bonus_mult_table
+
+Bonus 2
+~~~~~~~~
+
+Write a program that allows someone to play the classic game of rock, paper, scissors against the computer. First, prompt the user to enter how many games should be played in a "best of" format, i.e. best of 5 would require someone to win 3 times, best of 9 would require someone to win 5 times, etc.
 
 Next, start to simulate the games. For the human player, you should prompt them to enter whether they would like to play rock, paper, or scissors. The computer player should randomly choose one of the three options. You should then display the result of the match and current number of wins for each player. If a tie occurs, it should not count towards the total number of matches played.
 
-Hint: it may be easier to use numbers to represent the three different choices of "rock", "paper", and "scissors."
+.. hint::
+    Hint: it may be easier to use numbers to represent the three different choices of "rock", "paper", and "scissors."
+
+.. activecode:: bonus_rock_paper_scissors
