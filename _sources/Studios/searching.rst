@@ -36,3 +36,12 @@ If you solve that problem with time to spare, modify your function so that it ta
         return False
 
     # Be sure to test your function with various inputs
+
+Bonus Missions
+--------------
+
+*We know from experience that when a coin is flipped it has a 50% chance of coming up heads and a 50% chance of coming up tails. You could then infer that if I flip a coin 200 times, 100 of those flips would be heads and 100 of those flips would be tails. In practice however, these numbers would not be exact - I might see 95 heads and 105 tails, for example.
+
+Write a function called ``flips`` that accepts the number of coin flips as a parameter. Your function should flip a "coin" that many times (using random numbers to simulate the coin flip) then return the number of times that the coin came up heads. Try out your function a few times - do you notice a difference in the number of heads for small numbers of flips vs. large numbers of flips?
+
+*Write a program that counts from 0 to 100. If the current number is divisible by 3, have your program print out the word "fizz." If the current number is divisible by 5, have your program print out the word "buzz." If the current number is divisible by 3 and divisible by 5, have your program print out the word "fizzbuzz." If the current number is not divisible by 3 or 5, simply print out the number.
