@@ -8,7 +8,7 @@ This assignment consists of 4 parts:
 1. **Caesar**: An encryption algorithm.
 2. **Vigenere**: An even cooler encryption algorithm.
 3. **Refactoring Shared Code:** Make some improvements to the way your code is structured.
-4. **Bonus Mission: Making Some Improvements**: A handful of small adjustments to add some features and improve the quality of your code. (This section is optional).
+4. **Bonus Missions**: Add a couple of additional features to improve user experience and prevent against crashes. (This section is optional).
 
 Ready? Let's do this! [1]_
 
@@ -50,7 +50,19 @@ In chapter 9, you might have worked on an exercise that asked you write a functi
 
     Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
 
-The idea is to iterate over the message character by character, rotating each letter 13 places to the right. So for example, **a** becomes **n**, **b** becomes **o**, **c** becomes **p** and so on. At the end of the alphabet we wrap around, so that **m** shifts to **z** and then **n** shifts to **a**.
+The idea is to iterate over the message character by character, rotating each letter 13 places to the right. So for example:
+
+- **a** becomes **n**
+- **b** becomes **o**,
+- **c** becomes **p**
+- ... and so on.
+
+At the end of the alphabet we wrap back around to a, so that:
+
+- **m** shifts to **z**
+- **n** shifts to **a**
+- **o** shifts to **b**
+- ...etc
 
 The end result is a *super secret coded message* that that looks like gibberish to any outsiders.
 
@@ -72,9 +84,6 @@ We are going to do this in a few steps, using some helper functions. This will h
 
 alphabet_position
 ~~~~~~~~~~~~~~~~~
-
-The first thing we are going to do is simply create a helper function which will
-prove useful in a few different places.
 
 Open up your ``caesar.py`` file in a text editor. In that file, write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet.
 
@@ -171,19 +180,6 @@ Ok, go code like a champ.
 encrypt
 ~~~~~~~
 
-At this point your ``caesar.py`` file should look like this:
-
-.. code-block:: python
-
-    def alphabet_position(letter):
-        # blah blah
-        # beautiful code is written here
-
-
-    def rotate_character(char, rot):
-        # more beautiful code
-
-
 Now let's get to the heart of the matter. Write one more function called ``encrypt(text, rot)``, which receives as input a string and an integer. This is just like the ``rot13`` function, but instead of hardcoding the number 13, your function should receive a second argument, `rot` which specifies the rotation amount. Your function should return the result of rotating each letter in the ``text`` by ``rot`` places to the right.
 
 Here are some example input values, with the corresponding return values:
@@ -233,13 +229,13 @@ Recall that, `as described`_ in the *Initials* assignment, you should place ever
 
 
     def main():
-        # your main code
+        # your main code (input and print statements)
 
     if __name__ == "main":
         main()
 
 
-Part 3: Vigenere
+Part 2: Vigenere
 ----------------
 
 If you're trying to pass notes in the back of class with your best friend Suzie, the Ceasar cipher would be fairly easy for a nosy outsider to decode. Let's implement a more complicated cipher algorithm.
@@ -262,27 +258,27 @@ Above, the user entered a message of "The crow flies at midnight" and an encrypt
 
 How did we arrive at that result? Here is a detailed breakdown:
 
-+--------------------------+---------------+-----------------+--------------+
-| char from input string   | cipher char   | rotation amount | result char  |
-+==========================+===============+=================+==============+
-| T                        | b             | 1               | U            |
-+--------------------------+---------------+-----------------+--------------+
-| h                        | o             | 14              | v            |
-+--------------------------+---------------+-----------------+--------------+
-| e                        | o             | 14              | s            |
-+--------------------------+---------------+-----------------+--------------+
-| (space)                  | n/a           | n/a             | (space)      |
-+--------------------------+---------------+-----------------+--------------+
-| c                        | m             | 12              | o            |
-+--------------------------+---------------+-----------------+--------------+
-| r                        | b             | 1               | s            |
-+--------------------------+---------------+-----------------+--------------+
-| o                        | o             | 14              | c            |
-+--------------------------+---------------+-----------------+--------------+
-| w                        | o             | 14              | k            |
-+--------------------------+---------------+-----------------+--------------+
-| (and so on…)             |               |                 |              |
-+--------------------------+---------------+-----------------+--------------+
++--------------------------+-----------------+-----------------+--------------+
+| char from input string   | char from key   | rotation amount | result char  |
++==========================+=================+=================+==============+
+| T                        | b               | 1               | U            |
++--------------------------+-----------------+-----------------+--------------+
+| h                        | o               | 14              | v            |
++--------------------------+-----------------+-----------------+--------------+
+| e                        | o               | 14              | s            |
++--------------------------+-----------------+-----------------+--------------+
+| (space)                  | n/a             | n/a             | (space)      |
++--------------------------+-----------------+-----------------+--------------+
+| c                        | m               | 12              | o            |
++--------------------------+-----------------+-----------------+--------------+
+| r                        | b               | 1               | s            |
++--------------------------+-----------------+-----------------+--------------+
+| o                        | o               | 14              | c            |
++--------------------------+-----------------+-----------------+--------------+
+| w                        | o               | 14              | k            |
++--------------------------+-----------------+-----------------+--------------+
+| (and so on …)            |                 |                 |              |
++--------------------------+-----------------+-----------------+--------------+
 
 .. note::
     As with Caesar, the upper or lower case of each character should be preserved, and non-alphabetical characters like ``" "`` and ``"!"`` should not get encrypted.
@@ -344,7 +340,7 @@ Import to the Rescue
 
 If a function is only defined in one place, a particular file somewhere, then how can some other file use it? It is actually quite easy: the other file simply needs to ``import`` the function. You have already used the ``import`` keyword throughout this course, whenever you wanted to access code written by other people, such as the ``math`` and ``random`` modules. It is also possible to create and import your own code. Here's how:
 
-#. In your editor, open up a new file called ``helpers.py``. Paste both functions, ``alphabet_position`` and ``rotate_character`` into this new file.
+#. In your editor, open up a new file called ``helpers.py``. Paste both helper functions, ``alphabet_position`` and ``rotate_character`` into this new file.
 
 #. Next, open up ``caesar.py``, and delete both of those functions.
 
@@ -353,7 +349,8 @@ If a function is only defined in one place, a particular file somewhere, then ho
     .. sourcecode:: python
 
         from helpers import alphabet_position, rotate_character
-    This says that we want to import code from a module ``helpers``, but that we only want to import particular pieces of that module, in this case the functions ``alphabet_position`` and ``rotate_character``.
+
+    This says that we want to import code from a module ``helpers``, but that we only want to import particular pieces of that module, specificially the functions ``alphabet_position`` and ``rotate_character``.
 
 Now we should be able to use those functions! Try running ``python3 caesar.py`` again, and you should find that it works just like it did before.
 
@@ -367,7 +364,7 @@ Once you have Caesar working, do the same thing for Vigenere: simply delete the 
 
 Now your helper functions are defined only once, and your code remains nice and DRY (Don't Repeat Yourself)!
 
-Bonus Mission: Making Some Improvements
+Part 4: Bonus Missions
 ----------------------------------------
 
 Congrats! You have created two very cool encryption programs.
@@ -580,11 +577,11 @@ Your Vigenere program should behave like this:
         $ python3 vigenere.py boom!
         usage: python3 vigenere.py keyword
         Arguments:
-        -keyword : The string to be used as a "cipher" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
+        -keyword : The string to be used as a "key" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
         $ python3 vigenere.py boom52
         usage: python3 vigenere.py keyword
         Arguments:
-        -keyword : The string to be used as a "cipher" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
+        -keyword : The string to be used as a "key" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
         $ python3 vigenere.py boom
         Type a message:
         The crow flies at midnight!
@@ -616,4 +613,5 @@ Finally, as usual, click Submit!
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
 .. _Using Python Locally: ../ProblemSets/LocalPython.html
 .. _ASCII: http://www.asciitable.com
+.. _Submission: #submission
 .. _as described: ../ProblemSets/Initials.html#make-it-importable
