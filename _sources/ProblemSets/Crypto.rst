@@ -346,11 +346,11 @@ If a function is only defined in one place, a particular file somewhere, then ho
 
 #. Finally, add this line to the top of ``caesar.py``:
 
-    .. sourcecode:: python
+   .. sourcecode:: python
 
-        from helpers import alphabet_position, rotate_character
+       from helpers import alphabet_position, rotate_character
 
-    This says that we want to import code from a module ``helpers``, but that we only want to import particular pieces of that module, specificially the functions ``alphabet_position`` and ``rotate_character``.
+   This says that we want to import code from a module ``helpers``, but that we only want to import particular pieces of that module, specificially the functions ``alphabet_position`` and ``rotate_character``.
 
 Now we should be able to use those functions! Try running ``python3 caesar.py`` again, and you should find that it works just like it did before.
 
@@ -373,11 +373,13 @@ If you want an extra challenge, keep reading here. Otherwise, you can skip to th
 
 Let's make a few improvements to the project by adding two new features:
 
-**Command-line Arguments:**
-    Add a feature that improves the user experience by allowing the user to type their rotation amount as a *command-line argument* rather than waiting for a prompt.
+1. **Command-line Arguments**
 
-**Validation:**
-    Add some validation on user input, so that if the user types something dumb, your program handles it gracefully, rather than crashing.
+   Add a feature that improves the user experience by allowing the user to type their rotation amount as a *command-line argument* rather than waiting for a prompt.
+
+2. **Validation**
+
+   Add some validation on user input, so that if the user types something dumb, your program handles it gracefully, rather than crashing.
 
 
 Bonus 1: Command-line Arguments
@@ -501,8 +503,8 @@ There are two main cases to handle:
 
 Rather than simply crash whenever one of these things happens, your program should handle it more gracefully, by printing a helpful "usage" message (explaining how to properly use your program), and then exiting immediately, rather than continuing on and crashing.
 
-Caesar
-........
+Caesar Validation
+......................
 
 Below is an example of the Caesar program you are trying to achieve. In the example, Caesar repeatedly exits gracefully as the user messes up, re-runs the program, messes up again, etc, before finally getting it right:
 
@@ -547,8 +549,8 @@ and then invoke the function like this:
 
 Ok, go validate that input!
 
-Vigenere
-.........
+Vigenere Validation
+......................
 
 After Caesar, make similar changes to Vigenere by validating the encryption key. Recall that previously, we said you could assume the encryption key (e.g. ``"boom"``) would contain letters only, no numbers or special characters. Now, you may no longer make that assumption. The user could type any crazy thing. You must enforce the letters-only rule yourself.
 
