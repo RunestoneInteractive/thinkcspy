@@ -3,14 +3,12 @@ Crypto
 
 In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complicated.
 
-This assignment consists of 4 parts:
+This assignment consists of 4 parts [1]_:
 
 1. **Caesar**: An encryption algorithm.
 2. **Vigenere**: An even cooler encryption algorithm.
 3. **Refactoring Shared Code:** Make some improvements to the way your code is structured.
 4. **Bonus Missions**: Add a couple of additional features to improve user experience and prevent against crashes. (This section is optional).
-
-Ready? Let's do this! [1]_
 
 Setup
 -----
@@ -336,7 +334,7 @@ The reason that copy / pasting is a bad idea is that now you have two copies of 
 
 
 Import to the Rescue
-.....................
+~~~~~~~~~~~~~~~~~~~~~~
 
 If a function is only defined in one place, a particular file somewhere, then how can some other file use it? It is actually quite easy: the other file simply needs to ``import`` the function. You have already used the ``import`` keyword throughout this course, whenever you wanted to access code written by other people, such as the ``math`` and ``random`` modules. It is also possible to create and import your own code. Here's how:
 
@@ -599,6 +597,9 @@ To submit your work, you must upload your files directly, using the *Upload* but
 - helpers.py
 
 Finally, as usual, click Submit!
+
+.. warning::
+    Remember that you should not have any ``input`` statements anywhere outside of your ``main`` function. This is true for both Caesar and Vigenere. If you find yourself waiting a very long time (30 seconds or more) for your grade, then this is the reason why.
 
 .. note::
     If you completed the Bonus Mission, you are eligible to receive one *Pat on the Head* from your TF. In order to redeem your *Pat on the Head*, you must demo your code in front of the TF, and show him or her that your program behaves as specified in the instructions.
