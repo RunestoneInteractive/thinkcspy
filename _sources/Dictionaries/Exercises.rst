@@ -61,8 +61,7 @@ Exercises
                             letter_count[char] = 1
 
                 keys = letter_count.keys()
-                keys.sort()
-                for char in keys:
+                for char in sorted(keys):
                     print(char, letter_count[char])
 
         .. tab:: Discussion
