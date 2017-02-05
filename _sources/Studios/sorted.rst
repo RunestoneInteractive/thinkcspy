@@ -71,3 +71,12 @@ Here's an example of how your function should behave. (Recall that the order ope
         """
         # TODO: Fill in details
         return False
+
+Bonus Missions
+--------------
+
+* Write a function that takes in a float and returns the number of digits that occur after the decimal point. For example, 3.14 should return 2, 9.876543 should return 6, and 9825 should return 0.
+
+* Write a function that takes in a string and converts that string to pig latin. Pig latin involves moving the first letter of a word to the end, then appending "ay." For example, the phrase "python code wins" would turn into "ythonpay odecay insway."
+
+For an extra challenge, handle the case where a word starts with a vowel. In this case, the word should be unmodified except for adding "ay" at the end. For example, "all open androids" would become "allay openay androidsay."
