@@ -345,7 +345,7 @@ Issue 2 can be solved by adding one more line of code that places the ``main()``
     def main()
         # some more code here (input and print statements)
 
-    if __name__ == 'main':
+    if __name__ == '__main__':
         main()
 
 In effect, that conditional says:
@@ -353,7 +353,7 @@ In effect, that conditional says:
     "If this is actually the main program that is being run, then go ahead and execute the ``main`` function. Otherwise, if this file is being imported, or something else is going on, then stay quiet and do nothing."
 
 .. note::
-    If you are curious about the ``if __name__ == 'main':`` conditional, you can check out this `Stack Overflow post`_.
+    If you are curious about the ``if __name__ == '__main__':`` conditional, you can check out this `Stack Overflow post`_.
 
 Now we are good to go! The program works normally when run directly from the command-line, but if some other file imports it, the ``main`` function will not execute.
 
