@@ -229,7 +229,7 @@ Recall that, `as described`_ in the *Initials* assignment, you should place ever
     def main():
         # your main code (input and print statements)
 
-    if __name__ == "main":
+    if __name__ == "__main__":
         main()
 
 
