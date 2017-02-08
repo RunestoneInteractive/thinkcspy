@@ -363,7 +363,10 @@ Now we are good to go! The program works normally when run directly from the com
 How to Submit
 --------------
 
-To submit your work, click the *Upload* button on the top-left of the Vocareum window, and upload your ``initials.py`` file.
+The submission process for this assignment is slightly **different** from that of your previous assignments. You will not be given a premade starter file into which you can paste your code. Instead, you must upload your own file into the workspace.
+
+1. Click the *Upload* button on the top-left of the Vocareum window, and select your ``initials.py`` file.
+2. Click *Submit*!
 
 
 .. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
