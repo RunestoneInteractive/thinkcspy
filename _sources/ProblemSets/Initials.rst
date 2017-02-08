@@ -328,7 +328,7 @@ The solution to Issue 1 is to move your ``input`` and ``print`` statements into 
     def get_initials(fullname):
         # some code here
 
-    def main()
+    def main():
         # some more code here (input and print statements)
 
     main()
@@ -342,7 +342,7 @@ Issue 2 can be solved by adding one more line of code that places the ``main()``
     def get_initials(fullname):
         # some code here
 
-    def main()
+    def main():
         # some more code here (input and print statements)
 
     if __name__ == '__main__':
