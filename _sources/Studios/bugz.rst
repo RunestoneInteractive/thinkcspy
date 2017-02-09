@@ -146,3 +146,14 @@ When registering for an online account, users must create a password. For your s
     pw2 = "puzzlesr4fun"
     print(password_checker(pw2))
     # should print True
+
+Bonus Missions
+~~~~~~~~~~~~~~
+
+* Write a function called ``stretch`` that takes in a string and doubles each of the letters contained in the string. For example, ``stretch("chihuahua")`` would return "cchhiihhuuaahhuuaa".
+
+* Add an optional parameter to your ``stretch`` function that indicates how many times each letter should be duplicated. The default value for this optional parameter should be 2. For example, ``stretch("chihuahua", 4)`` would return "cccchhhhiiiihhhhuuuuaaaahhhhuuuuaaaa" but ``stretch("chihuahua")`` should still return "cchhiihhuuaahhuuaa", as before.
+
+* Add an additional optional parameter to your ``stretch`` function that contains a list of characters. This version of ``stretch`` will only duplicate letters that are contained in the list. The default value for this new parameter should be the list of lowercase characters. For example, ``stretch("chihuahua", 3, "ha")`` would return "chhhihhhuaaahhhuaaa".
+
+.. activecode:: bugz_studio_stretch
