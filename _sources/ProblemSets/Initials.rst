@@ -176,9 +176,9 @@ And your overall directory structure will look like this:
         |           |
         |           +----- hello.py
         |
-        +------ initals/
+        +------ initials/
         |           |
-        |           +----- # initals stuff
+        |           +----- # initials stuff
         |
         +------ hungry-hungry-hippos/
         |           |
