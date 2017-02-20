@@ -377,7 +377,6 @@ Studios
     Studios/donuts.rst
     Studios/turtle-racing.rst
     Studios/wagon-wheel.rst
-    Studios/searching.rst
     Studios/blurring.rst
     Studios/sorted.rst
     Studios/bugz.rst
