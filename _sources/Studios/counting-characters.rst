@@ -114,7 +114,6 @@ For this example string, your output should look something like: ::
 Bonus Missions
 --------------
 
-*Create a function `factors` that takes in an integer `n` and generates a dictionary that contains the factors of all values from 1 to `n`. A factor is any number that evenly divides another number. For example, the factors of 6 are 1, 2, 3, and 6. Factors of 15 are 1, 3, 5, and 15. The keys of your dictionary should be an integer between 1 and `n` and the values should be a list of factors for that particular key.
+* Create a function ``factors`` that takes in an integer ``n`` and generates a dictionary that contains the factors of all values from 1 to ``n``. A factor is any number that evenly divides another number. For example, the factors of 6 are 1, 2, 3, and 6. Factors of 15 are 1, 3, 5, and 15. The keys of your dictionary should be an integer between 1 and ``n`` and the values should be a list of factors for that particular key.
 
-*Create a function `reverse` that takes in a dictionary and reverses it, such that all of the values become keys and all of the keys become values. Be careful: we do not wish to lose any information. Consider what to do if the original dictionary has lists of values for a particular key, or has duplicate values for some keys.
-
+* Create a function ``reverse`` that takes in a dictionary and reverses it, such that all of the values become keys and all of the keys become values. Be careful: we do not wish to lose any information. Consider what to do if the original dictionary has lists of values for a particular key, or has duplicate values for some keys.
