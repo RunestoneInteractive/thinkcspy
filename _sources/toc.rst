@@ -383,6 +383,7 @@ Studios
     Studios/bubble-sort.rst
     Studios/yahtzee.rst
     Studios/counting-characters.rst
+    Studios/class-design.rst
     Studios/blog-design.rst
 
 
