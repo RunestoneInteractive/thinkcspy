@@ -56,6 +56,7 @@ A student has a name and student ID number. A student can record grades and will
 
 .. activecode:: class_design_student
 
+
 Course
 +++++++
 
