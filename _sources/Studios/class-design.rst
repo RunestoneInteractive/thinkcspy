@@ -43,3 +43,22 @@ BaseballPlayer
 A baseball player has a name and a jersey number. Most players hit either right or left, but some can hit either way. This object should be able to react when a player completes a game, recording how many hits and RBIs the player earned in that game. A player has a certain number of runs and RBIs he or she has recorded over all games played. A player has a certain number of games he or she has played.
 
 .. activecode:: class_design_baseball_player
+
+Bonus Missions
+--------------
+
+These classes are a bit more involved than the ones above. You'll need to design and implement a working Student class before the Course class can work appropriately. Make sure to use your Student object within the Course object when it is appropriate to do so!
+
+Student
+++++++++
+
+A student has a name and student ID number. A student can record grades and will track how many credits they have taken as well as their GPA. A student can also report what their class standing is (Freshman, Sophomore, Junior, Senior, Graduated) based on the number of credits they have taken.
+
+.. activecode:: class_design_student
+
+Course
++++++++
+
+A course has a name and course number. A course has a certain number of seats - once those seats are filled, it is not possible for anyone else to take the course. A course has a roster of students (use your student object!). A course can add a student (if there are open seats) or drop a student. A course can report the average GPA of all students currently enrolled in the course.
+
+.. activecode:: class_design_course
