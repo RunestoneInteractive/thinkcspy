@@ -124,6 +124,6 @@ Weekly Graded Assignment
     .. activecode:: lc_ex_1_5
 
         clicks_str = input("By how many clicks has the dial been turned?")
-        clicks = int(clicks)
+        clicks = int(clicks_str)
 
         # TODO calculate the temperature, and report it back to the user
