@@ -200,7 +200,7 @@ Here are some example input values, with the corresponding return values:
     The ``text`` argument might contain non-alphabetic characters (spaces, numbers, symbols). You should leave these as they are.
 
 .. hint::
-    You should make use of your own ``rotate_letter`` function (which should make it very easy to satisfy the condition above).
+    You should make use of your own ``rotate_character`` function (which should make it very easy to satisfy the condition above).
 
 .. warning::
     Don't forget to test!
