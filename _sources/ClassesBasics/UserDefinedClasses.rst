@@ -23,7 +23,7 @@ Thinking about our diagram above, we could draw a ``point`` object as shown here
 
 
 Some of the typical operations that one associates with points might be to ask
-the point for its x coordinate, or to ask for its y coordinate. For these operations, can create methods with names like ``getX`` and ``getY``.
+the point for its x coordinate, or to ask for its y coordinate. For these operations, we can create methods with names like ``getX`` and ``getY``.
 
 .. image:: Figures/objectpic3.png
    :alt: A point also has methods
@@ -53,7 +53,7 @@ The syntax rules for a class definition are the same as for other compound state
 
 Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method** is automatically called whenever a new instance of ``Point`` is created.  It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
 
-All that might sound confusing, but it should become clearer once you see the process in action. We have defined our ``Point`` class, so now let's what happens once we actually *use* it, by instantiating individual point *objects*:
+All that might sound confusing, but it should become clearer once you see the process in action. We have defined our ``Point`` class, so now let's see what happens once we actually *use* it, by instantiating individual point *objects*:
 
 .. activecode:: chp13_classes1
 
