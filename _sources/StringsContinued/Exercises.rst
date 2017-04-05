@@ -228,7 +228,7 @@ Exercises
 
                   print(rot13('abcde'))
                   print(rot13('nopqr'))
-                  print(rot13(rot13('Since rot13 is symmetric you should see this message')))
+                  print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
 
             .. tab:: Answer
 
