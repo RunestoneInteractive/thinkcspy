@@ -45,7 +45,7 @@ A baseball player has a name and a jersey number. Most players hit either right 
 .. activecode:: class_design_baseball_player
 
 Bonus Missions
---------------
+~~~~~~~~~~~~~~
 
 These classes are a bit more involved than the ones above. You'll need to design and implement a working Student class before the Course class can work appropriately. Make sure to use your Student object within the Course object when it is appropriate to do so!
 
