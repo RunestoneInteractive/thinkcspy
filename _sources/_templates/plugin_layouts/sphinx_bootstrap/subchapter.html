@@ -5,6 +5,7 @@
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="{{ prev.link|e }}" ></a>
+
   {% endif %}
 
 {%- if next %}
@@ -13,12 +14,12 @@
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="{{ next.link|e }}" >Next Section - {{ next.title }}</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="{{ next.link|e }}" ></a>
 {%- endif %}
 
 <script type="text/javascript">
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>

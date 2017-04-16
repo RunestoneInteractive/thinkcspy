@@ -23,7 +23,7 @@ The following figure shows the flow of control.
 .. image:: Figures/while_flow.png
 
 We can use the ``while`` loop to create any type of iteration we wish, including anything that we have previously done with a ``for`` loop. For example, the program in the previous section could be rewritten using ``while``.
-Instead of relying on the ``range`` function to produce the numbers for our summation, we will need to produce them ourselves. To to this, we will create a variable called ``aNumber`` and initialize it to 1, the first number in the summation. Every iteration will add ``aNumber`` to the running total until all the values have been used.
+Instead of relying on the ``range`` function to produce the numbers for our summation, we will need to produce them ourselves. To do this, we will create a variable called ``aNumber`` and initialize it to 1, the first number in the summation. Every iteration will add ``aNumber`` to the running total until all the values have been used.
 In order to control the iteration, we must create a boolean expression that evaluates to ``True`` as long as we want to keep adding values to our running total. In this case, as long as ``aNumber`` is less than or equal to the bound, we should keep going.
 
 
