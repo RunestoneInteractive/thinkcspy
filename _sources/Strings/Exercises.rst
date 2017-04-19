@@ -105,7 +105,7 @@ Exercises
                   testEqual(remove('cyc', 'bicycle'), 'bile')
                   testEqual(remove('iss', 'Mississippi'), 'Missippi')
                   testEqual(remove('egg', 'bicycle'), 'bicycle')
-                  testEqual(remove('oo', 'Yahoohoo'), 'Yahh')
+                  testEqual(remove('oo', 'Yahoohoo'), 'Yahhoo')
 
 
 
