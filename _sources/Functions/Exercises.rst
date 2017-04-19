@@ -225,6 +225,33 @@ Exercises
                     print("The sum from 1 to 5 is",t)
 
 
+    #.
+
+        .. tabbed:: q9
+
+            .. tab:: Question
+
+                Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
+
+                .. image:: Figures/star.png
+
+                .. activecode:: ex_5_9
+
+            .. tab:: Answer
+
+                .. activecode:: q9_answer
+
+                    import turtle
+
+                    def drawFivePointStar(t):
+                        for i in range(5):
+                            t.forward(100)
+                            t.left(216)
+
+                    wolfram = turtle.Turtle()
+                    drawFivePointStar(wolfram)
+                    
+
     #.  Extend your program above. Draw five stars, but between each, pick up the pen,
         move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
         You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
@@ -392,31 +419,6 @@ Exercises
                     wn.exitonclick()
 
 
-    #.
-
-        .. tabbed:: q9
-
-            .. tab:: Question
-
-                Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
-
-                .. image:: Figures/star.png
-
-                .. activecode:: ex_5_9
-
-            .. tab:: Answer
-
-                .. activecode:: q9_answer
-
-                    import turtle
-
-                    def drawFivePointStar(t):
-                        for i in range(5):
-                            t.forward(100)
-                            t.left(216)
-
-                    wolfram = turtle.Turtle()
-                    drawFivePointStar(wolfram)
 
 
 Weekly Graded Assignment
