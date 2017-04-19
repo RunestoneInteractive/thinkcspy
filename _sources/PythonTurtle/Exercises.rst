@@ -188,7 +188,7 @@ Exercises
                    wn.exitonclick()
 
 
-    #. On a piece of scratch paper, trace the following program and show the drawing. When you are done, press ``run``
+    #. On a piece of scratch paper, trace the the path of the turtle in the following program. When you are done, press ``run``
        and check your answer.
 
        .. activecode:: ex_3_8
