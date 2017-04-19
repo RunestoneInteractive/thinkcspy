@@ -33,7 +33,7 @@ executed. Otherwise the flow of execution continues to the statement after the b
     print("This is always printed")
 
 
-What would be printed if the value of ``x`` is negative?  Try it.
+What would be printed if the value of ``x`` is negative? Try it.
 
 
 **Check your understanding**

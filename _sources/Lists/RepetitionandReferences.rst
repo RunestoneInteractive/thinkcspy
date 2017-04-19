@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,14 +14,14 @@
 Repetition and References
 -------------------------
 
-We have already seen the repetition operator working on strings as well as lists.  For example,
+We have already seen the repetition operator working on strings as well as lists. For example,
 
 .. activecode:: repref1
 
     origlist = [45, 76, 34, 55]
     print(origlist * 3)
 
-With a list, the repetition operator creates copies of the references.  Although this may seem simple enough, when we allow a list to refer to another list, a subtle problem can arise.
+With a list, the repetition operator creates copies of the references. Although this may seem simple enough, when we allow a list to refer to another list, a subtle problem can arise.
 
 Consider the following extension on the previous example.
 
@@ -34,7 +34,7 @@ Consider the following extension on the previous example.
 
     print(newlist)
 
-``newlist`` is a list of three references to ``origlist`` that were created by the repetition operator.  The reference diagram is shown below.
+``newlist`` is a list of three references to ``origlist`` that were created by the repetition operator. The reference diagram is shown below.
 
 
 
@@ -59,12 +59,12 @@ Now, what happens if we modify a value in ``origlist``.
 
     print(newlist)
 
-``newlist`` shows the change in three places.  This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``.
+``newlist`` shows the change in three places. This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``.
 
 .. image:: Figures/refrep2.png
    :alt: Same reference
 
-Here is the same example in codelens.  Step through the code paying particular attention to the result of executing the assignment statement ``origlist[1] = 99``.
+Here is the same example in codelens. Step through the code paying particular attention to the result of executing the assignment statement ``origlist[1] = 99``.
 
 .. codelens:: reprefstep
     :showoutput:

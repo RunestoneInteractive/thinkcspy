@@ -21,7 +21,7 @@ or a polygon with 42 sides, it would have been a nightmare to duplicate all that
 A basic building block of all programs is to be able to repeat some code
 over and over again. In computer science, we refer to this repetitive idea as **iteration**. In this section, we will explore some mechanisms for basic iteration.
 
-In Python, the **for** statement allows us to write programs that implement iteration.  As a simple example, let's say we have some friends, and
+In Python, the **for** statement allows us to write programs that implement iteration. As a simple example, let's say we have some friends, and
 we'd like to send them each an email inviting them to our party. We
 don't quite know how to send email yet, so for the moment we'll just print a
 message for each friend.

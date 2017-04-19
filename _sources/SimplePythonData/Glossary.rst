@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -56,7 +56,7 @@ Glossary
 
     expression
         A combination of operators and operands (variables and values) that represents a
-        single result value.  Expressions are evaluated to give that result.
+        single result value. Expressions are evaluated to give that result.
 
     float
         A Python data type which stores *floating-point* numbers.
@@ -72,7 +72,7 @@ Glossary
         To initialize a variable is to give it an initial value.
         Since in Python variables don't exist
         until they are assigned values, they are initialized when they are
-        created.  In other programming languages this is not the case, and
+        created. In other programming languages this is not the case, and
         variables can be created without being initialized, in which case they
         have either default or *garbage* values.
 
@@ -90,7 +90,7 @@ Glossary
         names.
 
     modulus operator
-		Also called remainder operator or integer remainder operator.  Gives the remainder after performing integer division.
+		Also called remainder operator or integer remainder operator. Gives the remainder after performing integer division.
 
     object
 		Also known as a data object (or data value).  The fundamental things that programs are designed to
@@ -119,7 +119,7 @@ Glossary
         execution.
 
     statement
-        An instruction that the Python interpreter can execute.  So far we have
+        An instruction that the Python interpreter can execute. So far we have
         only seen the assignment statement, but we will soon meet the
         ``import`` statement and the ``for`` statement.
 
@@ -139,6 +139,6 @@ Glossary
     variable name
         A name given to a variable. Variable names in Python consist of a
         sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins
-        with a letter.  In best programming practice, variable names should be
+        with a letter. In best programming practice, variable names should be
         chosen so that they describe their use in the program, making the
         program *self documenting*.

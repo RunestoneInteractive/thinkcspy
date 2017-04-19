@@ -114,7 +114,7 @@ loop you have to control the loop variable yourself. You give it an initial valu
 for completion, and then make sure you change something in the body so that the loop
 terminates.
 
-So why have two kinds of loop if ``for`` looks easier?  This next example shows an indefinite iteration where
+So why have two kinds of loop if ``for`` looks easier? This next example shows an indefinite iteration where
 we need the extra power that we get from the ``while`` loop.
 
 

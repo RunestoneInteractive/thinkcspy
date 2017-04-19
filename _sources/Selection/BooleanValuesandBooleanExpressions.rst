@@ -30,7 +30,7 @@ sensitive).
 
 .. note:: Boolean values are not strings!
 
-    It is extremely important to realize that True and False are not strings.  They are not
+    It is extremely important to realize that True and False are not strings. They are not
     surrounded by quotes. They are the only two values in the data type ``bool``. Take a close look at the
     types shown below.
 
@@ -72,7 +72,7 @@ no such thing as ``=<`` or ``=>``.
 .. assignment statement and a boolean expression that tests for equality.
 .. Because Python uses the equal token (``=``) for assignment,
 .. it is tempting to interpret a statement like
-.. ``a = b`` as a boolean test. Unlike mathematics, it is not!  Remember that the Python token
+.. ``a = b`` as a boolean test. Unlike mathematics, it is not! Remember that the Python token
 .. for the equality operator is ``==``.
 
 Note too that an equality test is symmetric, but assignment is not. For example,
@@ -96,7 +96,7 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_d: 3 + 4 evaluates to 7. 7 == 7 then evaluates to True, which is a Boolean value.
    :feedback_e: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value. If the quotes had not been included, False alone is in fact a Boolean value.
 
-   Which of the following is a Boolean expression?  Select all that apply.
+   Which of the following is a Boolean expression? Select all that apply.
 
 .. index::
     single: logical operator

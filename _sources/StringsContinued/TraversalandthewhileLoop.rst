@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -15,7 +15,7 @@ Traversal and the ``while`` Loop
 --------------------------------
 
 The ``while`` loop can also control the
-generation of the index values.  Remember that the programmer is responsible for setting up the initial
+generation of the index values. Remember that the programmer is responsible for setting up the initial
 condition, making sure that the condition is correct, and making sure that something changes inside the
 body to guarantee that the condition will eventually fail.
 
@@ -57,8 +57,8 @@ Here is the same example in codelens so that you can trace the values of the var
    :answer_b: 1
    :answer_c: 2
    :correct: a
-   :feedback_a: Yes, idx goes through the odd numbers starting at 1.  o is at position 4 and 8.
-   :feedback_b: o is at positions 4 and 8.  idx starts at 1, not 0.
+   :feedback_a: Yes, idx goes through the odd numbers starting at 1. o is at position 4 and 8.
+   :feedback_b: o is at positions 4 and 8. idx starts at 1, not 0.
    :feedback_c: There are 2 o characters but idx does not take on the correct index values.
 
 

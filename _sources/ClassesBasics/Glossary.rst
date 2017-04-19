@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -22,7 +22,7 @@ Glossary
         
     constructor
         Every class has a "factory", called by the same name as the class, for
-        making new instances.  If the class has an *initializer method*, this method
+        making new instances. If the class has an *initializer method*, this method
         is used to get the attributes (i.e. the state) of the new object properly set up. 
             
     initializer method
@@ -31,7 +31,7 @@ Glossary
         attributes to their initial (factory-default) state.
         
     instance
-        An object whose type is of some class.  Instance and object are used
+        An object whose type is of some class. Instance and object are used
         interchangeably.
         
     instantiate
@@ -43,8 +43,8 @@ Glossary
 
     object
         A compound data type that is often used to model a thing or concept in
-        the real world.  It bundles together the data and the operations that 
-        are relevant for that kind of data.  Instance and object are used
+        the real world. It bundles together the data and the operations that 
+        are relevant for that kind of data. Instance and object are used
         interchangeably.
 
     object-oriented programming

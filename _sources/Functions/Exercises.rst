@@ -118,7 +118,7 @@ Exercises
 
             .. tab:: Question
 
-                The two spirals in this picture differ only by the turn angle.  Draw both.
+                The two spirals in this picture differ only by the turn angle. Draw both.
 
                 *Note:* If you receive a ``TimeLimitError`` then you can do one or both of the following:
 
@@ -195,7 +195,7 @@ Exercises
             .. tab:: Question
 
                 Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-                including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
+                including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55. Use the
                 equation  (n * (n + 1)) / 2.
 
                 .. activecode:: ex_5_7
@@ -225,7 +225,7 @@ Exercises
                     print("The sum from 1 to 5 is",t)
 
 
-    #.  Extend your program above.  Draw five stars, but between each, pick up the pen,
+    #.  Extend your program above. Draw five stars, but between each, pick up the pen,
         move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
         You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
 
@@ -264,8 +264,8 @@ Exercises
 
 
 
-    #.  Write a function called drawSprite that will draw a sprite.  The function will need parameters for
-        the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
+    #.  Write a function called drawSprite that will draw a sprite. The function will need parameters for
+        the turtle, the number of legs, and the length of the legs. Invoke the function to create a sprite
         with 15 legs of length 120.
 
         .. activecode:: ex_5_12
@@ -359,7 +359,7 @@ Exercises
             .. tab:: Question
 
                 Write a function called `fancySquare` that will draw a square with fancy corners (spites on the corners).  You should
-                implement and use the `drawSprite` function from above.  For an even more interesting look, how about adding small
+                implement and use the `drawSprite` function from above. For an even more interesting look, how about adding small
                 triangles to the ends of the sprite legs.
 
                 .. activecode:: ex_5_17

@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -141,7 +141,7 @@ Exercises
 
 
     #.  Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
-        regular polygon.  The program should draw the polygon and then fill it in.
+        regular polygon. The program should draw the polygon and then fill it in.
 
 
 
@@ -154,7 +154,7 @@ Exercises
 
            .. tab:: Question
 
-                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
+                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc. A social science student records the angle of each turn before the next 100 steps are taken. Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend. After the pirate is done walking, print the current heading.
 
                 .. activecode:: ex_3_7
                    :nocodelens:
@@ -188,7 +188,7 @@ Exercises
                    wn.exitonclick()
 
 
-    #. On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press ``run``
+    #. On a piece of scratch paper, trace the following program and show the drawing. When you are done, press ``run``
        and check your answer.
 
        .. activecode:: ex_3_8
@@ -245,7 +245,7 @@ Exercises
 
             .. tab:: Question
 
-               Write a program to draw some kind of picture.  Be creative and experiment
+               Write a program to draw some kind of picture. Be creative and experiment
                with the turtle methods provided in :ref:`turtle_methods`.
 
                .. activecode:: ex_3_11
@@ -268,7 +268,7 @@ Exercises
                         tanenbaum.right(98)
 
 
-    #. Create a turtle and assign it to a variable.  When you print its type, what do you get?
+    #. Create a turtle and assign it to a variable. When you print its type, what do you get?
 
        .. activecode:: ex_3_12
           :nocodelens:
@@ -352,7 +352,7 @@ Exercises
 
             .. tab:: Question
 
-               The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
+               The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides. Look through the ``math`` module and see if you can find a function that will compute this relationship for you. Once you find it, write a short program to try it out.
 
                        .. activecode:: ex_mod_3
 
@@ -368,7 +368,7 @@ Exercises
                    print(hypotenuse)
 
 
-    #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
+    #.  Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic. Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
 
         .. activecode:: ex_mod_4
 

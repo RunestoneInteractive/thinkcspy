@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,7 +14,7 @@ We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``. Thes
 
 However, in many cases, it can helpful to have data objects that are uniquely tailored to represent concepts related to the specific problem we are trying to solve. For these situations, Python gives us the ability to **create our own custom classes**.
 
-A custom class pretty much always comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin.  This ``(x,y)`` is the state of the point.
+A custom class pretty much always comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin. This ``(x,y)`` is the state of the point.
 
 Thinking about our diagram above, we could draw a ``point`` object as shown here.
 
@@ -51,7 +51,7 @@ To start off, we will define the simplest possible point class, just a "data clu
 
 The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, ``class``, followed by the name of the class (in this case, ``Point``), and ending with a colon. Notice also that we use a capital "P": the standard convention is that the name of a class should be "CamelCase" and start with a capital letter.
 
-Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method** is automatically called whenever a new instance of ``Point`` is created.  It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
+Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method** is automatically called whenever a new instance of ``Point`` is created. It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
 
 All that might sound confusing, but it should become clearer once you see the process in action. We have defined our ``Point`` class, so now let's see what happens once we actually *use* it, by instantiating individual point *objects*:
 

@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,7 +14,7 @@
 Simple Tables
 -------------
 
-One of the things loops are good for is generating tabular data.  Before
+One of the things loops are good for is generating tabular data. Before
 computers were readily available, people had to calculate logarithms, sines and
 cosines, and other mathematical functions by hand. To make that easier,
 mathematics books contained long tables listing the values of these functions.
@@ -48,7 +48,7 @@ The string ``'\t'`` represents a **tab character**. The backslash character in
 are used to represent invisible characters like tabs and newlines. The sequence
 ``\n`` represents a **newline**.
 
-An escape sequence can appear anywhere in a string.  In this example, the tab
+An escape sequence can appear anywhere in a string. In this example, the tab
 escape sequence is the only thing in the string. How do you think you represent
 a backslash in a string?
 
@@ -76,12 +76,12 @@ column does not depend on the number of digits in the first column.
   :answer_a: A tab will line up items in a second column, regardless of how many characters were in the first column, while spaces will not.
   :answer_b: There is no difference
   :answer_c: A tab is wider than a sequence of spaces
-  :answer_d: You must use tabs for creating tables.  You cannot use spaces.
+  :answer_d: You must use tabs for creating tables. You cannot use spaces.
   :correct: a
   :feedback_a: Assuming the size of the first column is less than the size of the tab width.
   :feedback_b: Tabs and spaces will sometimes make output appear visually different.
   :feedback_c: A tab has a pre-defined width that is equal to a given number of spaces.
-  :feedback_d: You may use spaces to create tables.  The columns might look jagged, or they might not, depending on the width of the items in each column.
+  :feedback_d: You may use spaces to create tables. The columns might look jagged, or they might not, depending on the width of the items in each column.
 
   What is the difference between a tab (``'\t'``) and a sequence of spaces?
 

@@ -19,7 +19,7 @@ This book provides two special ways to execute Python programs. Both techniques 
 
 First, you can write, modify, and execute programs using a unique **activecode** interpreter that allows you to execute Python code right in the text itself (right from the web browser). Although this is certainly not the way real programs are written, it provides an excellent environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
-Take a look at the activecode interpreter in action. If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button.  Try pressing the *run* button below.
+Take a look at the activecode interpreter in action. If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button. Try pressing the *run* button below.
 
 .. activecode:: ch01_1
 

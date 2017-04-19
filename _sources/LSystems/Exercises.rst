@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -17,7 +17,7 @@ Exercises
 
         .. tab:: Question
 
-           Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
+           Here is another interesting L-System called a Hilbert curve. Use 90 degrees::
 
                L
                L -> +RF-LFL-FR+
@@ -88,7 +88,7 @@ Exercises
                 main()
 
 
-#. Here is a dragon curve.  Use 90 degrees.::
+#. Here is a dragon curve. Use 90 degrees.::
 
        FX
        X -> X+YF+
@@ -103,7 +103,7 @@ Exercises
 
         .. tab:: Question
 
-           Here is something called an arrowhead curve.  Use 60 degrees.::
+           Here is something called an arrowhead curve. Use 60 degrees.::
 
                YF
                X -> YF+XF+Y
@@ -171,7 +171,7 @@ Exercises
                 main()
 
 
-#. Try the Peano-Gosper curve.  Use 60 degrees.::
+#. Try the Peano-Gosper curve. Use 60 degrees.::
 
        FX
        X -> X+YF++YF-FX--FXFX-YF+
@@ -186,7 +186,7 @@ Exercises
 
         .. tab:: Question
 
-            The Sierpinski Triangle.  Use 60 degrees.::
+            The Sierpinski Triangle. Use 60 degrees.::
 
                FXF--FF--FF
                F -> FF
@@ -266,7 +266,7 @@ Exercises
         .. tab:: Question
 
            Here are the rules for an L-system that creates something that resembles
-           a common garden herb.  Implement the following rules and try it.  Use an
+           a common garden herb. Implement the following rules and try it. Use an
            angle of 25.7 degrees.
 
            ::
@@ -349,7 +349,7 @@ Exercises
                 main()
 
 
-#. Here is another L-System.  Use an Angle of 25.
+#. Here is another L-System. Use an Angle of 25.
 
     ::
 

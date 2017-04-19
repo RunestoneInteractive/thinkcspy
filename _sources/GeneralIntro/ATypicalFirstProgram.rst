@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -15,7 +15,7 @@ A Typical First Program
 -----------------------
 
 Traditionally, the first program written in a new language is called *Hello,
-World!* because all it does is display the words, Hello, World!  In Python, the source code
+World!* because all it does is display the words, Hello, World! In Python, the source code
 looks like this.
 
 .. sourcecode:: python
@@ -29,7 +29,7 @@ print anything on paper. It displays a value on the screen. In this case, the re
 
     Hello, World!
 
-Here is the example in activecode.  Give it a try!
+Here is the example in activecode. Give it a try!
 
 .. activecode:: ch01_2
 

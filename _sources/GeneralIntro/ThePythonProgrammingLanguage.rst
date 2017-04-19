@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -21,9 +21,9 @@ of are C++, PHP, and Java.
 
 As you might infer from the name high-level language, there are also
 **low-level languages**, sometimes referred to as machine languages or assembly
-languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer.  Assembly language uses a slightly easier format to refer to the low level instructions.
+languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer. Assembly language uses a slightly easier format to refer to the low level instructions.
 Loosely speaking, computers can only execute programs written in
-low-level languages.  To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in assembly language) have to be
+low-level languages. To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in assembly language) have to be
 processed before they can run. This extra processing takes some time, which is
 a small disadvantage of high-level languages.
 However, the advantages to high-level languages are enormous.
@@ -65,7 +65,7 @@ programmers interact with it, it is usually considered an interpreted language.
 
 There are two ways to use the Python interpreter: *shell mode* and *program
 mode*. In shell mode, you type Python expressions into the **Python shell**,
-and the interpreter immediately shows the result.  The example below shows the Python shell at work.
+and the interpreter immediately shows the result. The example below shows the Python shell at work.
 
 ::
 
@@ -144,7 +144,7 @@ most programs are more interesting than this one.
    :answer_d: It is high-level if it easy to program in and is very short; it is low-level if it is really hard to program in and the programs are really long.
    :correct: c
    :feedback_a: In this case high and low have nothing to do with altitude.
-   :feedback_b: High and low have nothing to do with the type of device you are programming for.  Instead, look at what it takes to run the program written in the language.
+   :feedback_b: High and low have nothing to do with the type of device you are programming for. Instead, look at what it takes to run the program written in the language.
    :feedback_c: Python is a high level language but must be interpreted into machine code (binary) before it can be executed.
    :feedback_d: While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
 
@@ -160,6 +160,6 @@ most programs are more interesting than this one.
    :feedback_a: Compiling is a software process, and running the interpreter is invoking a function, but how is a process different than a function?
    :feedback_b: Compilers take the entire source code and produce object code or the executable and interpreters execute the code line by line.
    :feedback_c: Both compilers and interpreters are software.
-   :feedback_d: Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
+   :feedback_d: Compilers can produce object code or byte code depending on the language. An interpreter produces neither.
 
    Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.

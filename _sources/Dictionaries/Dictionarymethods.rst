@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -61,7 +61,7 @@ the object on which to apply the method immediately to the left of the dot. The 
 parentheses in the case of ``keys`` indicate that this method takes no parameters.
 
 The ``values`` and ``items`` methods are similar to ``keys``. They return  view objects which can be turned
-into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
+into lists or iterated over directly. Note that the items are shown as tuples containing the key and the associated value.
 
 .. activecode:: chp12_dict8
 
@@ -77,7 +77,7 @@ into lists or iterated over directly.  Note that the items are shown as tuples c
         print("Got", k, "that maps to", inventory[k])
 
 Note that tuples are often useful for getting both the key and the value at the same
-time while you are looping.  The two loops do the same thing.
+time while you are looping. The two loops do the same thing.
 
 
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
@@ -98,9 +98,9 @@ This operator can be very useful since looking up a non-existent key in a
 dictionary causes a runtime error.
 
 The ``get`` method allows us to access the value associated with a key, similar to the ``[ ]`` operator.
-The important difference is that ``get`` will not cause a runtime error if the key is not present.  It
-will instead return None.  There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value
-in the case where the key is not present.  This can be seen in the final example below.  In this case, since "cherries" is not a key, return 0 (instead of None).
+The important difference is that ``get`` will not cause a runtime error if the key is not present. It
+will instead return None. There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value
+in the case where the key is not present. This can be seen in the final example below. In this case, since "cherries" is not a key, return 0 (instead of None).
 
 .. activecode:: chp12_dict10
 
@@ -120,10 +120,10 @@ in the case where the key is not present.  This can be seen in the final example
    :answer_c: elephant
    :answer_d: bear
    :correct: c
-   :feedback_a: keylist is a list of all the keys which is then sorted.  cat would be at index 1.
-   :feedback_b: keylist is a list of all the keys which is then sorted.  dog would be at index 2.
+   :feedback_a: keylist is a list of all the keys which is then sorted. cat would be at index 1.
+   :feedback_b: keylist is a list of all the keys which is then sorted. dog would be at index 2.
    :feedback_c: Yes, the list of keys is sorted and the item at index 3 is printed.
-   :feedback_d: keylist is a list of all the keys which is then sorted.  bear would be at index 0.
+   :feedback_d: keylist is a list of all the keys which is then sorted. bear would be at index 0.
 
 
    What is printed by the following statements?
@@ -145,7 +145,7 @@ in the case where the key is not present.  This can be seen in the final example
    :correct: a
    :feedback_a: get returns the value associated with a given key so this divides 12 by 6.
    :feedback_b: 12 is divided by 6, not the other way around.
-   :feedback_c: Take another look at the example for get above.  get returns the value associated with a given key.
+   :feedback_c: Take another look at the example for get above. get returns the value associated with a given key.
    :feedback_d: The integer division operator is being used on the values returned from the get method, not on the dictionary.
 
 
@@ -198,9 +198,9 @@ in the case where the key is not present.  This can be seen in the final example
    :answer_d: 61
    :correct: b
    :feedback_a: Add the values that have keys greater than 3, not equal to 3.
-   :feedback_b: Yes, the for statement iterates over the keys.  It adds the values of the keys that have length greater than 3.
-   :feedback_c: This is the accumulator pattern.  total starts at 0 but then changes as the iteration proceeds.
-   :feedback_d: Not all the values are added together.  The if statement only chooses some of them.
+   :feedback_b: Yes, the for statement iterates over the keys. It adds the values of the keys that have length greater than 3.
+   :feedback_c: This is the accumulator pattern. total starts at 0 but then changes as the iteration proceeds.
+   :feedback_d: Not all the values are added together. The if statement only chooses some of them.
 
 
    What is printed by the following statements?
