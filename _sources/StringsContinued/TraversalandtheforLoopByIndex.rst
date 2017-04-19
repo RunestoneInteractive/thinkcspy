@@ -11,7 +11,7 @@
    :prefix: strings-11-
    :start: 1
 
-Traversal and the ``for`` Loop: By Index
+Traversal and the for Loop: By Index
 ----------------------------------------
 
 It is also possible to use the ``range`` function to systematically generate the indices of the characters. The ``for`` loop can then be used to iterate over these positions.

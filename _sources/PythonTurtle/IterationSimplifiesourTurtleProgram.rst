@@ -11,7 +11,7 @@
    :prefix: turtle-6-
    :start: 1
 
-Iteration Simplifies our Turtle Program
+Iteration Simplifies Our Turtle Program
 ---------------------------------------
 
 To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees. We previously used 8 lines of Python code to have alex draw the four sides of a

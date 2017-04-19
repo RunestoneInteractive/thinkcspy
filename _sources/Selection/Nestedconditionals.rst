@@ -11,7 +11,7 @@
    :prefix: select-6-
    :start: 1
 
-Nested conditionals
+Nested Conditionals
 -------------------
 
 One conditional can also be **nested** within another. For example, assume we have two integer variables, ``x`` and ``y``.

@@ -11,7 +11,7 @@
    :prefix: strings-10-
    :start: 1
 
-Traversal and the ``for`` Loop: By Item
+Traversal and the for Loop: By Item
 ---------------------------------------
 
 A lot of computations involve processing a collection one item at a time. For strings this means

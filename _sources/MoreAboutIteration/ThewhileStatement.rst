@@ -11,7 +11,7 @@
    :prefix: iter-3-
    :start: 1
 
-The ``while`` Statement
+The while Statement
 -----------------------
 
 There is another Python statement that can also be used to build an iteration. It is called the ``while`` statement.

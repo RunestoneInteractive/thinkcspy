@@ -11,7 +11,7 @@
    :prefix: func-3-
    :start: 1
 
-Variables and Parameters are Local
+Variables and Parameters Are Local
 ----------------------------------
 
 An assignment statement in a function creates a **local variable** for the

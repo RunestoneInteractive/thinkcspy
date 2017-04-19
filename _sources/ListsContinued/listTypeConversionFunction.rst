@@ -11,7 +11,7 @@
    :prefix: list-25-
    :start: 1
 
-``list`` Type Conversion Function
+List Type Conversion Function
 ---------------------------------
     
 Python has a built-in type conversion function called 

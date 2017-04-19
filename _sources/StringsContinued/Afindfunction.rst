@@ -11,7 +11,7 @@
    :prefix: strings-15-
    :start: 1
 
-A ``find`` function
+A find Function
 -------------------
 
 Here is an implementation for the ``find`` method.

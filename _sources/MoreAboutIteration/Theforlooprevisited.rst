@@ -11,7 +11,7 @@
    :prefix: iter-2-
    :start: 1
 
-The ``for`` loop revisited
+The for Loop Revisited
 --------------------------
 
 Recall that the ``for`` loop processes each item in a list. Each item in

@@ -11,7 +11,7 @@
    :prefix: strings-12-
    :start: 1
 
-Traversal and the ``while`` Loop
+Traversal and the while Loop
 --------------------------------
 
 The ``while`` loop can also control the

@@ -11,7 +11,7 @@
    :prefix: func-7-
    :start: 1
 
-Using a Main Function
+Using a main Function
 ---------------------
 
 Using functions is a good idea. It helps us to modularize our code by breaking a program

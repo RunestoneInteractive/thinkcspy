@@ -11,7 +11,7 @@
    :prefix: select-2-
    :start: 1
 
-Logical operators
+Logical Operators
 -----------------
 
 There are three **logical operators**: ``and``, ``or``, and ``not``. The

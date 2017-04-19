@@ -11,7 +11,7 @@
    :prefix: func-2-
    :start: 1
 
-Functions that Return Values
+Functions That Return Values
 ----------------------------
 
 Most functions require arguments, values that control how the function does its

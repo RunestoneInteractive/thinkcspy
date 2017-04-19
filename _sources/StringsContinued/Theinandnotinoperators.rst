@@ -11,7 +11,7 @@
    :prefix: strings-15-
    :start: 1
 
-The ``in`` and ``not in`` operators
+The in and not in operators
 -----------------------------------
 
 The ``in`` operator tests if one string is a substring of another:

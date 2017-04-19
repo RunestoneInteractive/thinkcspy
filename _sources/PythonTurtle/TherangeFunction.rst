@@ -11,7 +11,7 @@
    :prefix: turtle-8-
    :start: 1
 
-The ``range`` Function
+The range Function
 ----------------------
 
 In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration

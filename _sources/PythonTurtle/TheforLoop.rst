@@ -11,7 +11,7 @@
    :prefix: turtle-3-
    :start: 1
 
-The For Loop
+The for Loop
 ----------------
 
 When we drew the square, it was quite tedious. We had to move then turn, move

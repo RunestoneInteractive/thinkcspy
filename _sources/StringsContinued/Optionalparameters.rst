@@ -11,7 +11,7 @@
    :prefix: strings-16-
    :start: 1
 
-Optional parameters
+Optional Parameters
 -------------------
 
 To find the locations of the second or third occurrence of a character in a

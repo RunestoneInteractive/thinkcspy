@@ -12,7 +12,7 @@
    :start: 1
 
 
-Flow of Execution of the For Loop
+Flow of Execution of the for Loop
 ---------------------------------
 
 As a program executes, the interpreter always keeps track of which statement is
