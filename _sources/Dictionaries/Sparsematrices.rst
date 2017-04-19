@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,7 +14,7 @@
 Sparse Matrices
 ---------------
 
-A matrix is a two dimensional collection, typically thought of as having rows and columns of data.  One of the easiest ways to create a matrix is to use a list of lists.  For example, consider the matrix shown below.  
+A matrix is a two dimensional collection, typically thought of as having rows and columns of data. One of the easiest ways to create a matrix is to use a list of lists. For example, consider the matrix shown below.  
 
 
 
@@ -22,7 +22,7 @@ A matrix is a two dimensional collection, typically thought of as having rows an
 .. image:: Figures/sparse.png
    :alt: sparse matrix 
 
-We can represent this collection as five rows, each row having five columns.  Using a list of lists representation, we will have a list of five items, each of which is a list of five items.  The
+We can represent this collection as five rows, each row having five columns. Using a list of lists representation, we will have a list of five items, each of which is a list of five items. The
 outer items represent the rows and the items in the nested lists represent the data in each column.
 
 
@@ -39,8 +39,8 @@ outer items represent the rows and the items in the nested lists represent the d
 
 
 
-One thing that you might note about this example matrix is that there are many items that are zero.  In fact, only three of the
-data values are nonzero.  This type of matrix has a special name.  It is called a `sparse matrix <http://en.wikipedia.org/wiki/Sparse_matrix>`__.
+One thing that you might note about this example matrix is that there are many items that are zero. In fact, only three of the
+data values are nonzero. This type of matrix has a special name. It is called a `sparse matrix <http://en.wikipedia.org/wiki/Sparse_matrix>`__.
 
 Since there is really no need to store all of the zeros, the list of lists representation is considered to be inefficient.
 An alternative representation is to use a dictionary. For the keys, we can use tuples that
@@ -65,7 +65,7 @@ use one index, which is a tuple of integers.
 There is one problem. If we specify an element that is zero, we get an error,
 because there is no entry in the dictionary with that key.
 The alternative version of the ``get`` method solves this problem.
-The first argument will be the key.  The second argument is the value ``get`` should
+The first argument will be the key. The second argument is the value ``get`` should
 return if the key is not in the dictionary (which would be 0 since it is sparse).
 
 .. activecode:: chp12_sparse

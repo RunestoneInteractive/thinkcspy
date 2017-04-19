@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -15,9 +15,9 @@ Accessing Elements
 ------------------
 
 The syntax for accessing the elements of a list is the same as the syntax for
-accessing the characters of a string.  We use the index operator ( ``[]`` -- not to
+accessing the characters of a string. We use the index operator ( ``[]`` -- not to
 be confused with an empty list). The expression inside the brackets specifies
-the index. Remember that the indices start at 0.  Any integer expression can be used
+the index. Remember that the indices start at 0. Any integer expression can be used
 as an index and as with strings, negative index values will locate items from the right instead
 of from the left.
 
@@ -54,7 +54,7 @@ of from the left.
    :answer_c: CAT
    :correct: c
    :feedback_a: alist[2] is the string cat so the upper method is legal
-   :feedback_b: 2 is the index.  We want the item at that index.
+   :feedback_b: 2 is the index. We want the item at that index.
    :feedback_c: Yes, the string cat is upper cased to become CAT.
    
    What is printed by the following statements?
@@ -74,7 +74,7 @@ of from the left.
    :feedback_a: Indexes start with 0, not 1.
    :feedback_b: Yes, the first character of the string at index 2 is c 
    :feedback_c: cat is the item at index 2 but then we index into it further.
-   :feedback_d: Using more than one index is fine.  You read it from left to right.
+   :feedback_d: Using more than one index is fine. You read it from left to right.
    
    What is printed by the following statements?
    

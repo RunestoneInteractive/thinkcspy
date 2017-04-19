@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -55,7 +55,7 @@ What do you think ``fruit[:]`` means?
    :feedback_a: That would be s[0:6].
    :feedback_b: That would be s[7:].
    :feedback_c: Yes, start with the character at index 3 and go up to but not include the character at index 8.
-   :feedback_d: This is called slicing, not indexing.  It requires a start and an end.
+   :feedback_d: This is called slicing, not indexing. It requires a start and an end.
 
 
    What is printed by the following statements?
@@ -73,10 +73,10 @@ What do you think ``fruit[:]`` means?
    :answer_c: rocksrocksrocks
    :answer_d: Error, you cannot use repetition with slicing.
    :correct: a
-   :feedback_a: Yes, rock starts at 7 and goes through 10.  Repeat it 3 times.
+   :feedback_a: Yes, rock starts at 7 and goes through 10. Repeat it 3 times.
    :feedback_b: Repetition does not add a space.
-   :feedback_c: Slicing will not include the character at index 11.  Just up to it (10 in this case).
-   :feedback_d: The slice will happen first, then the repetition.  So it is ok.
+   :feedback_c: Slicing will not include the character at index 11. Just up to it (10 in this case).
+   :feedback_d: The slice will happen first, then the repetition. So it is ok.
 
 
    What is printed by the following statements?

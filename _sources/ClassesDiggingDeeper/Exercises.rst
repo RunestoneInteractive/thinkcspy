@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -18,7 +18,7 @@ Exercises
             .. tab:: Question
 
               We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
-              Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
+              Create a class definition for a Rectangle class using this idea. To create a Rectangle object at location (4,5) with width 6
               and height 5, we would do the following::
 
                   r = Rectangle(Point(4, 5), 6, 5)
@@ -202,7 +202,7 @@ Exercises
                     testEqual(r.width, 5)
                     testEqual(r.height, 10)
 
-    #. Write a new method in the Rectangle class to test if a Point falls within the rectangle.  For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
+    #. Write a new method in the Rectangle class to test if a Point falls within the rectangle. For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
 
           r = Rectangle(Point(0, 0), 10, 5)
           testEqual(r.contains(Point(0, 0)), True)
@@ -313,11 +313,11 @@ Exercises
                     testEqual(r2.diagonal(), 2.2360679775)
 
     #.  In games, we often put a rectangular "bounding box" around our sprites in
-        the game.  We can then do *collision detection* between, say, bombs and
+        the game. We can then do *collision detection* between, say, bombs and
         spaceships, by comparing whether their rectangles overlap anywhere.
 
         Write a function to determine whether two rectangles collide. *Hint:
-        this might be quite a tough exercise!  Think carefully about all the
+        this might be quite a tough exercise! Think carefully about all the
         cases before you code.*
 
         .. activecode:: ch_cl2_q8

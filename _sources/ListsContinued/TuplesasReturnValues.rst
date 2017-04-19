@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -18,7 +18,7 @@ Functions can return tuples as return values. This is very useful --- we often w
 know some batsman's highest and lowest score, or we want to find the mean and the standard
 deviation, or we want to know the year, the month, and the day, or if we're doing
 some ecological modeling we may want to know the number of rabbits and the number
-of wolves on an island at a given time.  In each case, a function (which
+of wolves on an island at a given time. In each case, a function (which
 can only return a single value), can create a single tuple holding multiple elements.
 
 For example, we could write a function that returns both the area and the circumference

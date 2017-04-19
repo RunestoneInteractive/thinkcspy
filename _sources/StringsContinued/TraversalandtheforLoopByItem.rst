@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -11,10 +11,10 @@
    :prefix: strings-10-
    :start: 1
 
-Traversal and the ``for`` Loop: By Item
+Traversal and the for Loop: By Item
 ---------------------------------------
 
-A lot of computations involve processing a collection one item at a time.  For strings this means
+A lot of computations involve processing a collection one item at a time. For strings this means
 that we would like to process one character at a time.
 Often we start at the beginning, select each character in turn, do something
 to it, and continue until the end. This pattern of processing is called a
@@ -29,7 +29,7 @@ We have previously seen that the ``for`` statement can iterate over the items of
         invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
         print(invitation) 
       
-Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the ``range`` function.
+Recall that the loop variable takes on each value in the sequence of names. The body is performed once for each name. The same was true for the sequence of integers created by the ``range`` function.
 
 .. activecode:: ch08_5
     :nocanvas:

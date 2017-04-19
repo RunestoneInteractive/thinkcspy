@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -16,7 +16,7 @@ List Methods
 
 The dot operator can also be used to access built-in methods of list objects.
 ``append`` is a list method which adds the argument passed to it to the end of
-the list. Continuing with this example, we show several other list methods.  Many of them are
+the list. Continuing with this example, we show several other list methods. Many of them are
 easy to understand.
 
 .. activecode:: chp09_meth1
@@ -48,13 +48,13 @@ easy to understand.
     print(lastitem)
     print(mylist)
 
-There are two ways to use the ``pop`` method.  The first, with no parameter, will remove and return the
-last item of the list.  If you provide a parameter for the position, ``pop`` will remove and return the
-item at that position.  Either way the list is changed.
+There are two ways to use the ``pop`` method. The first, with no parameter, will remove and return the
+last item of the list. If you provide a parameter for the position, ``pop`` will remove and return the
+item at that position. Either way the list is changed.
 
-The following table provides a summary of the list methods shown above.  The column labeled
-`result` gives an explanation as to what the return value is as it relates to the new value of the list.  The word
-**mutator** means that the list is changed by the method but nothing is returned (actually ``None`` is returned).  A **hybrid** method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
+The following table provides a summary of the list methods shown above. The column labeled
+`result` gives an explanation as to what the return value is as it relates to the new value of the list. The word
+**mutator** means that the list is changed by the method but nothing is returned (actually ``None`` is returned).  A **hybrid** method is one that not only changes the list but also returns a value as its result. Finally, if the result is simply a return, then the list
 is unchanged by the method.
 
 Be sure
@@ -82,7 +82,7 @@ Details for these and others
 can be found in the `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range>`_.
 
 It is important to remember that methods like ``append``, ``sort``,
-and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).
+and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list. Calls like these will likely never appear as part of an assignment statement (see line 8 below).
 
 .. activecode:: chp09_meth2
 
@@ -165,7 +165,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    :correct: c
    :feedback_a: alist is now the value that was returned from pop(0).
    :feedback_b: pop(0) changes the list by removing the first item.
-   :feedback_c: Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
+   :feedback_c: Yes, first the 4 was removed from the list, then returned and assigned to alist. The list is lost.
    :feedback_d: pop(0) returns the first item in the list so alist has now been changed.
 
    What is printed by the following statements?

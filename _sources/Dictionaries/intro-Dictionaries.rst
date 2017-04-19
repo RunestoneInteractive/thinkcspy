@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -18,12 +18,12 @@ Dictionaries
 .. index:: dictionary, mapping type, key, value, key-value pair
 
 All of the compound data types we have studied in detail so far --- strings,
-lists, and tuples --- are sequential collections.  This means that the items in the collection are
+lists, and tuples --- are sequential collections. This means that the items in the collection are
 ordered from left to right and they use integers as indices to access
 the values they contain.
 
 **Dictionaries** are a different kind of collection. They are Python's
-built-in **mapping type**. A map is an unordered, associative collection.  The association, or mapping,
+built-in **mapping type**. A map is an unordered, associative collection. The association, or mapping,
 is from a **key**, which can be any immutable type,
 to a **value**, which can be any Python data object.
 
@@ -43,7 +43,7 @@ One way to create a dictionary is to start with the empty dictionary and add
 
 
 The first assignment creates an empty dictionary named ``eng2sp``.  The other
-assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key.
+assignments add new key-value pairs to the dictionary. The left hand side gives the dictionary and the key being associated. The right hand side gives the value being associated with that key.
 We can print the current
 value of the dictionary in the usual way.
 The key-value pairs of the dictionary are separated by commas. Each pair

@@ -93,7 +93,7 @@ Here is a program containing a function to capture this idea. Give it a try.
 
 This function is named ``drawSquare``. It has two parameters --- one to tell
 the function which turtle to move around and the other to tell it the size
-of the square we want drawn. In the function definition they are called ``t`` and ``sz`` respectively.  Make sure you know where the body of the function
+of the square we want drawn. In the function definition they are called ``t`` and ``sz`` respectively. Make sure you know where the body of the function
 ends --- it depends on the indentation and the blank lines don't count for
 this purpose!
 
@@ -203,7 +203,7 @@ been defined, we can call it as many times as we like with whatever actual param
    :correct: a
    :feedback_a: Yes, a function is a named sequence of statements.
    :feedback_b: While functions contain sequences of statements, not all sequences of statements are considered functions.
-   :feedback_c: While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values. Consider, for example, the turtle functions in this section.  They made the turtle draw a specific shape, rather than calculating a value.
+   :feedback_c: While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values. Consider, for example, the turtle functions in this section. They made the turtle draw a specific shape, rather than calculating a value.
    :feedback_d: This statement is called an assignment statement. It assigns the value on the right (9), to the name on the left (x).
 
    What is a function in Python?
@@ -310,6 +310,6 @@ been defined, we can call it as many times as we like with whatever actual param
    :answer_b: False
    :correct: a
    :feedback_a: Yes, you can call a function multiple times by putting the call in a loop.
-   :feedback_b: One of the purposes of a function is to allow you to call it more than once.  Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
+   :feedback_b: One of the purposes of a function is to allow you to call it more than once. Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
 
    True or false: A function can be called several times by placing a function call in the body of a loop.

@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -19,7 +19,7 @@ Exercises
 
             .. tab:: Question
 
-                The following sample file called ``studentdata.txt`` contains one line for each student in an imaginary class.  The
+                The following sample file called ``studentdata.txt`` contains one line for each student in an imaginary class. The
                 student's name is the first thing on each line, followed by some exam scores.
                 The number of scores might be different for each student.
 
@@ -74,7 +74,7 @@ Exercises
 
 
                 Using the text file ``studentdata.txt`` (shown in exercise 1) write a program that calculates the minimum and
-                maximum score for each student.  Print out their name as well.
+                maximum score for each student. Print out their name as well.
 
 
 
@@ -135,12 +135,12 @@ Exercises
         :math:`m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}`
 
         where :math:`\bar{x}` is the mean of the x-values, :math:`\bar{y}` is the mean of the y-
-        values and :math:`n` is the number of points.  If you are not familiar with the
-        mathematical :math:`\sum` it is the sum operation.  For example :math:`\sum{x_i}`
+        values and :math:`n` is the number of points. If you are not familiar with the
+        mathematical :math:`\sum` it is the sum operation. For example :math:`\sum{x_i}`
         means to add up all the x values.
 
         Your program should analyze the points and correctly scale the window using
-        ``setworldcoordinates`` so that that each point can be plotted.  Then you should
+        ``setworldcoordinates`` so that that each point can be plotted. Then you should
         draw the best fit line, in a different color, through the points.
 
 
@@ -157,8 +157,8 @@ Exercises
             .. tab:: Question
 
                 At the bottom of this page is a very long file called ``mystery.txt`` The lines of this
-                file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
-                for a turtle to lift up or put down its tail.  The pairs of numbers are some x,y coordinates.
+                file contain either the word UP or DOWN or a pair of numbers. UP and DOWN are instructions
+                for a turtle to lift up or put down its tail. The pairs of numbers are some x,y coordinates.
                 Write a program that reads the file ``mystery.txt`` and uses the turtle to draw the picture
                 described by the commands and the set of points.
 

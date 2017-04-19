@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -11,7 +11,7 @@
    :prefix: strings-16-
    :start: 1
 
-Optional parameters
+Optional Parameters
 -------------------
 
 To find the locations of the second or third occurrence of a character in a
@@ -43,7 +43,7 @@ starting position in the search string:
 The call ``find2('banana', 'a', 2)`` now returns ``3``, the index of the first
 occurrence of 'a' in 'banana' after index 2. What does
 ``find2('banana', 'n', 3)`` return? If you said, 4, there is a good chance you
-understand how ``find2`` works.  Try it.
+understand how ``find2`` works. Try it.
 
 Better still, we can combine ``find`` and ``find2`` using an
 **optional parameter**.
@@ -107,8 +107,8 @@ position, up to but not including the end position.
     print(find4(ss, '.'))
 
 
-The optional value for ``end`` is interesting.  We give it a default value ``None`` if the
-caller does not supply any argument.  In the body of the function we test what ``end`` is
+The optional value for ``end`` is interesting. We give it a default value ``None`` if the
+caller does not supply any argument. In the body of the function we test what ``end`` is
 and if the caller did not supply any argument, we reassign ``end`` to be the length of the string.
 If the caller has supplied an argument for ``end``, however, the caller's value will be used in the loop.
 

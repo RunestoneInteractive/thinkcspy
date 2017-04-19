@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -15,14 +15,14 @@ Tuples and Mutability
 ---------------------
 
 So far you have seen two types of sequential collections: strings, which are made up of
-characters; and lists, which are made up of elements of any type.  One of the
+characters; and lists, which are made up of elements of any type. One of the
 differences we noted is that the elements of a list can be modified, but the
 characters in a string cannot. In other words, strings are **immutable** and
 lists are **mutable**.
 
 A **tuple**, like a list, is a sequence of items of any type. Unlike lists,
 however, tuples are immutable. Syntactically, a tuple is a comma-separated
-sequence of values.  Although it is not necessary, it is conventional to 
+sequence of values. Although it is not necessary, it is conventional to 
 enclose tuples in parentheses:
 
 .. sourcecode:: python
@@ -30,8 +30,8 @@ enclose tuples in parentheses:
     julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
 
 Tuples are useful for representing what other languages often call *records* ---
-some related information that belongs together, like your student record.  There is
-no description of what each of these *fields* means, but we can guess.  A tuple
+some related information that belongs together, like your student record. There is
+no description of what each of these *fields* means, but we can guess. A tuple
 lets us "chunk" together related information and use it as a single thing.
 
 Tuples support the same sequence operations as strings and
@@ -47,10 +47,10 @@ tuple, we get an error.
     TypeError: 'tuple' object does not support item assignment
 
 Of course, even if we can't modify the elements of a tuple, we can make a variable
-reference a new tuple holding different information.  To construct the new tuple,
+reference a new tuple holding different information. To construct the new tuple,
 it is convenient that we can slice parts of the old tuple and join up the
-bits to make the new tuple.  So ``julia`` has a new recent film, and we might want
-to change her tuple.  We can easily slice off the parts we want and concatenate them with
+bits to make the new tuple. So ``julia`` has a new recent film, and we might want
+to change her tuple. We can easily slice off the parts we want and concatenate them with
 the new tuple.
 
 .. activecode:: ch09_tuple1

@@ -1,11 +1,11 @@
 ParseError
 ==========
 
-ParseErrors come in many different forms.  You will get this error when Python can't figure out what you are trying to say.  Usually its a problem with the syntax of one of your statements.
+ParseErrors come in many different forms. You will get this error when Python can't figure out what you are trying to say. Usually its a problem with the syntax of one of your statements.
 
-In terms of english writing its the equivalent of using grammar that is just plain wrong.  Consider the following sentence:  'john milk store the and go to buy'  Now maybe you can figure out that the sentence should have been 'John, go to the store and buy milk.' but a computer couldn't.
+In terms of english writing its the equivalent of using grammar that is just plain wrong. Consider the following sentence:  'john milk store the and go to buy'  Now maybe you can figure out that the sentence should have been 'John, go to the store and buy milk.' but a computer couldn't.
 
-The error message for a ParseError gives you a big clue as to where to find the error because it tells you the line number on which the error was detected.  Usually, but not always, this is the same line that has the error.
+The error message for a ParseError gives you a big clue as to where to find the error because it tells you the line number on which the error was detected. Usually, but not always, this is the same line that has the error.
 
 Some common kinds of Parse Errors are:
 
@@ -13,7 +13,7 @@ Some common kinds of Parse Errors are:
 
 * forgetting to put a : at the end of the line in a for loop or a function definition.
 
-* Not indenting your code properly.  For example::
+* Not indenting your code properly. For example::
 
     for i in range(10):
     print(i)
@@ -22,7 +22,7 @@ Some common kinds of Parse Errors are:
 
 * Having an incomplete statement, for example ``y = ``
 
-Sometimes you have to look at the line above where the error message tells you.  for example::
+Sometimes you have to look at the line above where the error message tells you. for example::
 
     print(int("20")
     print('hello world)

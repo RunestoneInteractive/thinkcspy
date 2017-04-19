@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -11,7 +11,7 @@
    :prefix: select-7-
    :start: 1
 
-Chained conditionals
+Chained Conditionals
 --------------------
 
 Python provides an alternative way to write nested selection such as the one shown in the previous section.
@@ -69,8 +69,8 @@ Here is the same program using ``elif``.
    :correct: b
    :feedback_a: You can not use a Boolean expression after an else.
    :feedback_b: Yes, II will give the same result.
-   :feedback_c: No, III will not give the same result.  The first if statement will be true, but the second will be false, so the else part will execute.
-   :feedback_d: No, Although II is correct III will not give the same result.  Try it.
+   :feedback_c: No, III will not give the same result. The first if statement will be true, but the second will be false, so the else part will execute.
+   :feedback_d: No, Although II is correct III will not give the same result. Try it.
    :feedback_e: No, in I you can not have a Boolean expression after an else.
 
    Which of I, II, and III below gives the same result as the following nested if?

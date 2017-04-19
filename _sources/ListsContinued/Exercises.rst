@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -100,7 +100,7 @@ Exercises
 
             .. tab:: Question
 
-               Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
+               Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented. Implement a Python function that works like the following:
 
                a. count
                #. in
@@ -161,12 +161,12 @@ Exercises
 
           test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
 
-          s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
+          s = 'I love spom! Spom is my favorite food. Spom, spom, spom, yum!'
           test(replace(s, 'om', 'am'),
-                 'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
+                 'I love spam! Spam is my favorite food. Spam, spam, spam, yum!')
 
           test(replace(s, 'o', 'a'),
-                 'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
+                 'I lave spam! Spam is my favarite faad. Spam, spam, spam, yum!')
 
        *Hint*: use the ``split`` and ``join`` methods.
 

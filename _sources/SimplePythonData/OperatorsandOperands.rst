@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -57,8 +57,8 @@ result.
     print(hours)
 
 What if, on the other hand, we had wanted to know how many *whole* hours there
-are and how many minutes remain.  To help answer this question, Python gives us a second flavor of
-the division operator.  This version, called **integer division**, uses the token
+are and how many minutes remain. To help answer this question, Python gives us a second flavor of
+the division operator. This version, called **integer division**, uses the token
 ``//``.  It always *truncates* its result down to the next smallest integer (to
 the left on the number line).
 
@@ -71,9 +71,9 @@ the left on the number line).
     hours = minutes // 60
     print(hours)
 
-Pay particular attention to the first two examples above.  Notice that the result of floating point division
+Pay particular attention to the first two examples above. Notice that the result of floating point division
 is ``1.75`` but the result of the integer division is simply ``1``.
-Take care that you choose the correct flavor of the division operator.  If
+Take care that you choose the correct flavor of the division operator. If
 you're working with expressions where you need floating point values, use the
 division operator ``/``.  If you want an integer result, use ``//``.
 
@@ -98,13 +98,13 @@ In the above example, 7 divided by 3 is 2 when we use integer division and there
 The modulus operator turns out to be surprisingly useful. For example, you can
 check whether one number is divisible by another---if ``x % y`` is zero, then
 ``x`` is divisible by ``y``.
-Also, you can extract the right-most digit or digits from a number.  For
+Also, you can extract the right-most digit or digits from a number. For
 example, ``x % 10`` yields the right-most digit of ``x`` (in base 10).
 Similarly ``x % 100`` yields the last two digits.
 
 Finally, returning to our time example, the remainder operator is extremely useful for doing conversions, say from seconds,
 to hours, minutes and seconds.
-If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
+If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form. Step through it to be sure you understand how the division and remainder operators are being used to
 compute the correct values.
 
 .. codelens:: ch02_19_codelens
@@ -145,7 +145,7 @@ compute the correct values.
    :answer_d: 2
    :correct: c
    :feedback_a: - The // operator does integer division and returns an integer result
-   :feedback_b: - The // operator does integer division and returns an integer result, but it truncates the result of the division.  It does not round.
+   :feedback_b: - The // operator does integer division and returns an integer result, but it truncates the result of the division. It does not round.
    :feedback_c: - The // operator does integer division and returns the truncated integer result.
    :feedback_d: - The // operator does integer division and returns the result of the division on an integer (not the remainder).
 

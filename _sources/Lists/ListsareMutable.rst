@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -30,7 +30,7 @@ update one of the list items.
 
 An
 assignment to an element of a list is called **item assignment**. Item
-assignment does not work for strings.  Recall that strings are immutable.
+assignment does not work for strings. Recall that strings are immutable.
 
 Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.
 
@@ -79,8 +79,8 @@ desired location.
    :answer_c: Error, it is illegal to assign
    :correct: b
    :feedback_a: Item assignment does not insert the new item into the list.
-   :feedback_b: Yes, the value True is placed in the list at index 2.  It replaces 8.
-   :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
+   :feedback_b: Yes, the value True is placed in the list at index 2. It replaces 8.
+   :feedback_c: Item assignment is allowed with lists. Lists are mutable.
 
    What is printed by the following statements?
 

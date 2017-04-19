@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -11,11 +11,11 @@
    :prefix: turtle-6-
    :start: 1
 
-Iteration Simplifies our Turtle Program
+Iteration Simplifies Our Turtle Program
 ---------------------------------------
 
-To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
-square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the `forward` and `left` four times, one time for
+To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees. We previously used 8 lines of Python code to have alex draw the four sides of a
+square. This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the `forward` and `left` four times, one time for
 each value in the list.
 
 .. activecode:: ch03_for1
@@ -32,10 +32,14 @@ each value in the list.
    wn.exitonclick()
 
 
+While "saving some lines of code" might be convenient, it is not the big
+deal here. What is much more important is that we've found a "repeating
+pattern" of statements, and we reorganized our program to repeat the pattern.
+Finding the chunks and somehow getting our programs arranged around those
+chunks is a vital  skill when learning *How to think like a computer scientist*.
 
-While "saving some lines of code" might be convenient, it is not the big deal here.  What is much more important is that we've found a "repeating pattern" of statements, and we reorganized our program to repeat the pattern. Finding the chunks and somehow getting our programs arranged around those chunks is a vital  skill when learning *How to think like a computer scientist*.
-
-The values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values.  For example, consider the following program.
+The values [0,1,2,3] were provided to make the loop body execute 4 times.
+We could have used any four values. For example, consider the following program.
 
 
 .. activecode:: ch03_forcolor
@@ -51,8 +55,9 @@ The values [0,1,2,3] were provided to make the loop body execute 4 times. We cou
 
    wn.exitonclick()
 
-In the previous example, there were four integers in the list.  This time there are four strings. Since there are four items in the list, the iteration will still occur four times.  ``aColor`` will
-take on each color in the list.  We can even take this one step further and use the value of ``aColor`` as part
+In the previous example, there were four integers in the list. This time there are four strings. Since there are four items in the list, the iteration will still occur four times.  ``aColor`` will
+take on each color in the list. We can even take this one step further and use the value of ``aColor`` as part
+
 of the computation.
 
 .. activecode:: colorlist
@@ -75,7 +80,8 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
 
 .. parsonsprob:: 3_8
 
-   The following program uses a turtle to draw a triangle as shown to the left, <img src="../_static/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+   The following program uses a turtle to draw a triangle as shown to the left, <img src="../_static/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up. The program should do all necessary set-up and create the turtle. After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees. After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention. Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p> 
+
    -----
    import turtle
    =====
@@ -95,7 +101,8 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
 
 .. parsonsprob:: 3_9
 
-   The following program uses a turtle to draw a rectangle as shown to the left, <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+   The following program uses a turtle to draw a rectangle as shown to the left, <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up. The program should do all necessary set-up and create the turtle. After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees. After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention. Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>  
+
    -----
    import turtle
    wn = turtle.Screen()
@@ -132,7 +139,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
    .. code-block:: python
 
      for number in [5, 4, 3, 2, 1, 0]:
-         print("I have", number, "cookies.  Iím going to eat one.")
+         print("I have", number, "cookies. Iím going to eat one.")
 
 
 .. mchoice:: test_question3_4_2
@@ -154,7 +161,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       :correct: b
       :feedback_a: Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
       :feedback_b: Yes, Python will process the items from left to right so the first time the value of number is 5 and the second time it is 4.
-      :feedback_c: Python gives number the value of items in the list, one at a time, in order.  number gets a new value each time the loop repeats.
+      :feedback_c: Python gives number the value of items in the list, one at a time, in order. number gets a new value each time the loop repeats.
       :feedback_d: Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
 
       In the following code, what is the value of number the second time Python executes the loop?
@@ -162,7 +169,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       .. code-block:: python
 
          for number in [5, 4, 3, 2, 1, 0]:
-             print("I have", number, "cookies.  Iím going to eat one.")
+             print("I have", number, "cookies. Iím going to eat one.")
 
 
 .. mchoice:: test_question3_4_4
@@ -170,9 +177,9 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.
       :correct: c
-      :feedback_a: The items in the list are not actually used to control the color of the turtle because aColor is never used inside the loop.  But, the loop will execute once for each color in the list.
+      :feedback_a: The items in the list are not actually used to control the color of the turtle because aColor is never used inside the loop. But, the loop will execute once for each color in the list.
       :feedback_b: Notice that aColor is never actually used inside the loop.
-      :feedback_c: The body of the loop only draws one side of the square.  It will be  repeated once for each item in the list.  However, the color of the turtle never changes.
+      :feedback_c: The body of the loop only draws one side of the square. It will be  repeated once for each item in the list. However, the color of the turtle never changes.
 
       Consider the following code:
 

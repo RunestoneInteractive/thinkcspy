@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -59,12 +59,12 @@ of the same object.
 
 
 This type of equality is called **shallow equality** because it compares only
-the references, not the contents of the objects.  Using the == operator to check equality between two user
+the references, not the contents of the objects. Using the == operator to check equality between two user
 defined objects
-will return the shallow equality result.  In other words, the ``Fraction`` objects are equal (==) if they are the same object.
+will return the shallow equality result. In other words, the ``Fraction`` objects are equal (==) if they are the same object.
 
 Of course, we could define equality to mean the fractions are the same in that they have the same numerator and the same
-denominator.  For example, here is a boolean function that performs this check.
+denominator. For example, here is a boolean function that performs this check.
 
 .. sourcecode:: python
 

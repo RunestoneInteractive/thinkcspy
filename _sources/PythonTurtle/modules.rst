@@ -37,7 +37,7 @@ that are defined inside.
 
 Here we are using ``Screen`` and ``Turtle``, both of which are defined inside the turtle module.
 
-But what if no one had told us about turtle?  How would we know
+But what if no one had told us about turtle? How would we know
 that it exists. How would we know what it can do for us? The answer is to ask for help and the best place to get
 help about the Python programming environment is to consult with the Python Documentation.
 

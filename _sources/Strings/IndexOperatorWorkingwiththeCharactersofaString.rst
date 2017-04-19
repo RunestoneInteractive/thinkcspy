@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -15,8 +15,8 @@ Index Operator: Working with the Characters of a String
 -------------------------------------------------------
 
 The **indexing operator** (Python uses square brackets to enclose the index) 
-selects a single character from a string.  The characters are accessed by their position or 
-index value.  For example, in the string shown below, the 14 characters are indexed left to right from postion 0 to position 13.  
+selects a single character from a string. The characters are accessed by their position or 
+index value. For example, in the string shown below, the 14 characters are indexed left to right from postion 0 to position 13.  
 
 
 .. image:: Figures/indexvalues.png
@@ -44,10 +44,10 @@ from zero. The letter at index zero of ``"Luther College"`` is ``L``.  So at
 position ``[2]`` we have the letter ``t``.
 
 If you want the zero-eth letter of a string, you just put 0, or any expression
-with the value 0, in the brackets.  Give it a try.
+with the value 0, in the brackets. Give it a try.
 
 The expression in brackets is called an **index**. An index specifies a member
-of an ordered collection.  In this case the collection of characters in the string. The index
+of an ordered collection. In this case the collection of characters in the string. The index
 *indicates* which character you want. It can be any integer
 expression so long as it evaluates to a valid index value.
 

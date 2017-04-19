@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -14,7 +14,7 @@ Exercises
 
     #. In Robert McCloskey's
        book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-       Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
+       Mack, Nack, Ouack, Pack, and Quack. This loop tries to output these names in order.
 
        .. sourcecode:: python
 
@@ -31,7 +31,7 @@ Exercises
         .. activecode:: ex_8_2
 
 
-    #. Print out a neatly formatted multiplication table, up to 12 x 12.  Your output should look something like this:
+    #. Print out a neatly formatted multiplication table, up to 12 x 12. Your output should look something like this:
 
         .. sourcecode:: python
 
@@ -137,11 +137,11 @@ Exercises
           testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
           testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
 
-    #. Write a function that implements a substitution cipher.  In a substitution
-       cipher one letter is substituted for another to garble the message.  For
-       example A -> Q, B -> T, C -> G etc.  your function should take two
+    #. Write a function that implements a substitution cipher. In a substitution
+       cipher one letter is substituted for another to garble the message. For
+       example A -> Q, B -> T, C -> G etc. your function should take two
        parameters, the message you want to encrypt, and a string that represents
-       the mapping of the 26 letters in the alphabet.  Your function should
+       the mapping of the 26 letters in the alphabet. Your function should
        return a string that is the encrypted version of the message.
 
        .. activecode:: ex_8_17
@@ -152,9 +152,9 @@ Exercises
 
             .. tab:: Question
 
-               Write a function that decrypts the message from the previous exercise.  It
-               should also take two parameters.  The encrypted message,
-               and the mixed up alphabet.  The function should return a string that is
+               Write a function that decrypts the message from the previous exercise. It
+               should also take two parameters. The encrypted message,
+               and the mixed up alphabet. The function should return a string that is
                the same as the original unencrypted message.
 
                .. activecode:: ex_8_18
@@ -195,7 +195,7 @@ Exercises
                     print(decrypted)
 
 
-    #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
+    #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present. In other words,
        there will never be a duplicate letter added to the new string.
 
        .. activecode:: ex_8_19
@@ -215,8 +215,8 @@ Exercises
 
                Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
                The Caesar cipher works like a substitution cipher but each character is replaced
-               by the character 13 characters to 'its right' in the alphabet.  So for example
-               the letter a becomes the letter n.  If a letter is past the middle of the alphabet
+               by the character 13 characters to 'its right' in the alphabet. So for example
+               the letter a becomes the letter n. If a letter is past the middle of the alphabet
                then the counting wraps around to the letter a again, so n becomes a, o becomes b
                and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
                to think of modulo arithmetic.
@@ -258,7 +258,7 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write a function that mirrors its argument.  For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
+    Write a function that mirrors its argument. For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
 
         .. activecode:: ex_8_6
 
