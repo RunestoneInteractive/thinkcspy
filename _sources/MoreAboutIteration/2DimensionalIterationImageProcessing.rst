@@ -294,15 +294,13 @@ Change the name of the file in the ``image.Image()`` call to see how these image
     img.draw(win)
     win.exitonclick()
 
-Let's take a closer look at the code. After importing the image module, we create two image objects. The first, ``img``, represents a typical digital photo. The second, ``newimg``, is an empty image that will be "filled in" as we process the original pixel by pixel. Note that the width and height of the empty image is set to be the same as the width and height of the original.
+Let's take a closer look at the code. After importing the image module, we create an image object, ``img``. We will work with the pixels of the image, transforming them according to the algorithm.
 
-Lines 8 and 9 create the nested iteration that we discussed earlier. This allows us to process each pixel in the image.
-Line 10 gets an individual pixel.
+Lines 8 and 9 create the nested iteration that we discussed earlier. This allows us to process each pixel in the image. Line 10 gets an individual pixel.
 
-Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it
-from 255. Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 15).
+Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it from 255. Once we have the ``newred``, ``newgreen``, and ``newblue`` values, we can create a new pixel (Line 16).
 
-Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
+Finally, we need to replace the original pixel with the new pixel. It is important to put the new pixel into the same location as the original pixel that it came from in the photo.
 
 Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows. We still create a negative image, but you can see that the pixels update in a very different order.
 
@@ -316,10 +314,6 @@ Try to change the program above so that the outer loop iterates over the columns
 
 	You can also do some complex arithmetic and create interesting effects, such as
 	`Sepia Tone <http://en.wikipedia.org/wiki/Sepia_tone#Sepia_toning>`_
-
-
-
-
 
 
 You have just passed a very important point in your study of Python programming. Even though there is much more that we will do, you have learned all of the basic building blocks that are necessary to solve many interesting problems. From an algorithm point of view, you can now implement selection and iteration. You can also solve problems by breaking them down into smaller parts, writing functions for those parts, and then calling the functions to complete the implementation.
