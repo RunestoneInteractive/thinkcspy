@@ -52,13 +52,13 @@ Follow these steps to get your first Python program up and running on your compu
 1. Make a directory to store your Python code on your computer using Git Bash.
 
    a) Make sure you are in your home directory with the command ``cd ~``.
-   #) Make a new directory named "code": ``mkdir code``.
-   #) Move into that directory: ``cd code``.
+   #) Make a new directory named "lc101": ``mkdir lc101``.
+   #) Move into that directory: ``cd lc101``.
 
 #. Enter your Python code and run it.
 
    a. Create a file in that directory named "hello.py": ``touch hello.py``.
-   #. Open your code directory in the Visual Studio Code editor from Git Bash with the command: ``code .``.
+   #. Open your "lc101" directory in the Visual Studio Code editor from Git Bash with the command: ``code .``.
    #. In your code editor, open ``hello.py`` and type ``print("Hello, World!")``. Then save the file (you can use the shortcut ``ctrl + s``).
    #. Back in Git Bash, run the program by typing ``python hello.py``. You should see "Hello, World!" appear (without the quotes).
 

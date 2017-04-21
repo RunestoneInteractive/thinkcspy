@@ -127,7 +127,7 @@ Setup
 
 First, you must create a new folder for the project, and a new file within the folder. And while we're here, let's make sure you set up your overall directory structure in a nice, organized way for future assignments.
 
-Open up a terminal (command line) window on your computer. After completing the installation video tutorial above, you should already have a broad parent folder with a name like ``lc101/`` or ``code/``, where you save all your assignments for this class.
+Open up a terminal (command line) window on your computer. After completing the installation video tutorial above, you should already have a broad parent folder with a name like ``lc101/``, where you save all your assignments for this class.
 
 But if you do *not* yet have such a class parent folder on your file system, then create one now:
 
@@ -249,7 +249,7 @@ Technique 1 looks something like this:
 
 ::
 
-    $ python3
+    $ python
     Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
     [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
@@ -263,22 +263,19 @@ Technique 1 looks something like this:
     ... etc
     quit()
 
-That looks complicated but its actually very easy. Try typing ``python3`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing and changing bunch of print statements starts to get annoying very quickly.
+That looks complicated but its actually very easy. Try typing ``python`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing and changing bunch of print statements starts to get annoying very quickly.
 
 But if you prefer Technique 2, here's how that works: Simply add print statements to your file, and then run your script on the command-line:
 
 ::
 
-    $ python3 caesar.py
+    $ python caesar.py
     The initials of 'Ozzie Smith' are OS
     The initials of 'bonnie blair' are BB
     The initials of 'Daniel Day Lewis' are DDL
     ... etc
 
 After running your script, just test by hand that the output matches what you expected to see.
-
-.. note::
-    Remember that we’ve been using Python 3 in this class. So when you try to run your program, make sure you type ``python3 initials.py``, rather than simply ``python initials.py``, which would run the Python 2 interpreter.
 
 Either way, whether using the REPL or print statements, make sure to test your function against a healthy variety of inputs.
 
@@ -289,7 +286,7 @@ Let's now turn this into an interactive program that a user can run from the ter
 
 ::
 
-    $ python3 initials.py
+    $ python initials.py
     What is your full name?
     Ozzie Smith
     OS
