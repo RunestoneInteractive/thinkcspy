@@ -1,3 +1,5 @@
+.. _Windows_Setup:
+
 Using Python Locally: Windows
 -----------------------------
 

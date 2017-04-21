@@ -1,5 +1,5 @@
 Initials
-=============
+---------
 
 The main goal of this assignment is to remove you from the comfortable sandbox of the Active Code editors in this online book, and introduce you to the tools you need to start writing Python code locally on your own computer. By the end of the assignment, you will have written a small text-based program that tells the user the initials of his or her name.
 
@@ -9,8 +9,8 @@ The assignment is broken into 2 parts:
     In part 1, we will guide you through all the setup work necessary for writing and executing Python code on your machine:
 
     - Learn how to use the *command line* interface on your computer
-    - Install Python
     - Install a text editor
+    - Install Python
     - Use your text editor to write Python code in a ``.py`` file
     - Execute your Python file on the command line.
 
@@ -22,103 +22,19 @@ The assignment is broken into 2 parts:
 
 
 Part 1: Using Python Locally
-----------------------------
+============================
 
-In this section, you will learn how to interact with your computer using the command line, and then you will install everything you need to start writing and running code.
+In this section, you will learn how to interact with your computer using the command line, and then you will install everything you need to start writing and running code. Pick the operating system you use to go to the associated setup instructions page:
 
-Getting Familiar with the Command Line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:ref:`Windows_SetUp`
 
-The command line "terminal" or "shell" is a text-based interface for interacting with your computer's file system and operating system. Learning how to use the command line can seem scary because the interface is very barebones, all text and no graphical elements. But it's not bad at all if you learn it in steps and practice regularly. Before you know it, you'll find interacting with your computer via the command line to be super useful.
+:ref:`Mac_SetUp`
 
-We're going to use an Appendix called *Command Line Crash Course* from an online book called *Learn Python the Hard Way* (don't worry, the book is more approachable than the title makes it it sound). This appendix contains 15 short tutorials teaching you command line basics.
+:ref:`Linux_SetUp`
 
-**Do all 15** tutorials from `Command Line Crash Course`_.
-
-Installing and Running Python Locally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now that you have some familiarty with the command line, it is time to install everything.
-
-Follow along with the video tutorial below, where we will install Atom, a general-purpose code editor, and install Python itself. Finally, we will create a simple "Hello World" Python program, and run it on the command-line.
-
-.. note::
-
-    We will install *both* Python 2 and Python 3. We've been using Python 3 thus far, but later in the class we will need to use Python 2.
-
-The installation process will be a little different for each operating system, so find the appropriate video below and follow along.
-
-Mac OS X
-@@@@@@@@@
-
-If you are on a Mac, follow along to this video:
-
-.. raw:: html
-
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/DZmkImpGSAU" frameborder="0" allowfullscreen></iframe></div>
-
-Linux
-@@@@@@
-
-This video walks through the process in Ubuntu 16.04.
-
-.. note::
-    If you're using a different version of Linux, it may be slightly different, and we encourage you to Google for answers to anything that may not be covered here.
-
-.. raw:: html
-
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/ypXJ1kwF7s4" frameborder="0" allowfullscreen></iframe></div>
-
-.. _Command Line Crash Course: http://learnpythonthehardway.org/book/appendixa.html
-
-Windows
-@@@@@@@@
-
-This video walks through the details for Windows 10.
-
-.. note::
-    If you're using Windows 7 or 8, see the notes below on a few things that will be slightly different for you.
-
-    If you have an even older version of Windows, such as Windows Vista or Windows XP, you may have a very different experience getting these tasks going. We encourage you to do some research of your own or work with a fellow student or TF. And after a bit of that, you may be ready to spring for that Windows upgrade!
-
-.. raw:: html
-
-    <div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/zNHqcy6ZguQ" frameborder="0" allowfullscreen></iframe></div>
-
-Windows 7 and 8: Editing the Path Environment Variable
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-This occurs around 24:30 of the video.
-
-When editing the Path environment variable after installing Python 2, you will see a slightly different dialog.
-
-.. image::  Figures/win7-win8-path-dialog.png
-    :scale: 50 %
-    :align: center
-
-Rather than the dialog pictured in the video, you'll see the more condensed dialog, shown above. To add Python 2 to your path, you need to manually type in the new location at the end of the existing path. *Be careful not to delete any of the path entries that are already there!*
-
-To the end of the text that is already present in the Path dialog, add (note the semicolon): ``;C:\Python27\``
-
-Accessing Folder Options in Windows 7
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-This occurs around 26:50 of the video.
-
-To access the Folder Options dialog and allow viewing of file extensions, you'll need to do the following:
-
-1. Open the Windows menu at the bottom left and search for "folder options"
-
-2. Open the result named "Folder Options" that is displayed under "Control Panel"
-
-.. image::  Figures/win7-folder-options.png
-    :scale: 50 %
-    :align: center
-
-The rest of the process of changing this setting is the same as in the video.
 
 Part 2: Initials
------------------
+=================
 
 Now that you have a little practice using the command-line, and have installed Python and a text editor, it is time to create your program.
 
@@ -127,7 +43,7 @@ Setup
 
 First, you must create a new folder for the project, and a new file within the folder. And while we're here, let's make sure you set up your overall directory structure in a nice, organized way for future assignments.
 
-Open up a terminal (command line) window on your computer. After completing the installation video tutorial above, you should already have a broad parent folder with a name like ``lc101/``, where you save all your assignments for this class.
+Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a broad parent folder with a name like ``lc101/``, where you save all your assignments for this class.
 
 But if you do *not* yet have such a class parent folder on your file system, then create one now:
 
@@ -194,7 +110,7 @@ Now you are finally ready to start coding! Inside your ``initials/`` folder, cre
 
     $ touch initials.py
 
-Open up that file in a text editor, such as Atom, and complete the following function:
+Open up that file in a text editor, such as Visual Studio Code, and complete the following function:
 
 .. sourcecode:: python
 
