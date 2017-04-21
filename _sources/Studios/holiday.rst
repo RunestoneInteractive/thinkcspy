@@ -32,7 +32,7 @@ For the walkthrough in class, we will create a tip calculator. This will allow u
 Studio
 ------
 
-It is possible to name the days 0 through 6, where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights, you arrive home on day number 6 (a Saturday).
+It is possible to name the days 0 through 6, where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights, you arrive home on day number 6 (a Saturday).
 
 Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
 

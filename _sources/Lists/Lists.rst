@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -24,7 +24,7 @@ elements of a list can have any type and for any one list, the items can be of d
 List Values
 -----------
 
-There are several ways to create a new list.  The simplest is to enclose the
+There are several ways to create a new list. The simplest is to enclose the
 elements in square brackets ( ``[`` and ``]``).
 
 .. sourcecode:: python
@@ -33,7 +33,7 @@ elements in square brackets ( ``[`` and ``]``).
     ["spam", "bungee", "swallow"]
 
 The first example is a list of four integers. The second is a list of three
-strings. As we said above, the elements of a list don't have to be the same type.  The following
+strings. As we said above, the elements of a list don't have to be the same type. The following
 list contains a string, a float, an integer, and
 another list.
 

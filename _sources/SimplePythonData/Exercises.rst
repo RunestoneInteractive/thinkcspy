@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -154,7 +154,7 @@ Exercises
                 Write a Python program that assigns the principal amount of 10000 to
                 variable `P`, assign to `n` the value 12, and assign to `r` the interest
                 rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-                `t`, that the money will be compounded for.  Calculate and print the final
+                `t`, that the money will be compounded for. Calculate and print the final
                 amount after `t` years.
 
                 .. activecode:: ex_2_7
@@ -179,7 +179,7 @@ Exercises
 
     #.
 
-        Write a program that will compute the area of a circle.  Prompt the user to enter the radius, and then print the answer, like this:
+        Write a program that will compute the area of a circle. Prompt the user to enter the radius, and then print the answer, like this:
 
         ::
 
@@ -196,7 +196,7 @@ Exercises
 
             .. tab:: Question
 
-                Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
+                Write a program that will compute the area of a rectangle. Prompt the user to enter the width and height of the rectangle.
                 Print a nice message with the answer.
 
                 .. activecode:: ex_2_9
@@ -218,7 +218,7 @@ Exercises
 
     #.
 
-        Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer, like this:
+        Write a program that will compute MPG for a car. Prompt the user to enter the number of miles driven and the number of gallons used. Print a nice message with the answer, like this:
 
         ::
 

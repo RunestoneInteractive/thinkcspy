@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -11,7 +11,7 @@
    :prefix: func-2-
    :start: 1
 
-Functions that Return Values
+Functions That Return Values
 ----------------------------
 
 Most functions require arguments, values that control how the function does its
@@ -60,7 +60,7 @@ Another built-in function that takes more than one argument is ``max``.
 ``max`` can be sent any number of arguments, separated by commas, and will
 return the maximum value sent. The arguments can be either simple values or
 expressions. In the last example, 503 is returned, since it is larger than 33,
-125, and 1.  Note that ``max`` also works on lists of values.
+125, and 1. Note that ``max`` also works on lists of values.
 
 Furthermore, functions like ``range``, ``int``, ``abs`` all return values that
 can be used to build more complex expressions.
@@ -82,9 +82,9 @@ piece of data that is returned from the function.
 .. image:: Figures/blackboxfun.png
 
 
-How do we write our own fruitful function?  Let's start by creating a very simple
+How do we write our own fruitful function? Let's start by creating a very simple
 mathematical function that we will call ``square``.  The square function will take one number
-as a parameter and return the result of squaring that number.  Here is the
+as a parameter and return the result of squaring that number. Here is the
 black-box diagram with the Python code following.
 
 
@@ -100,7 +100,7 @@ black-box diagram with the Python code following.
     result = square(toSquare)
     print("The result of ", toSquare, " squared is ", result)
 
-The **return** statement is followed by an expression which is evaluated.  Its
+The **return** statement is followed by an expression which is evaluated. Its
 result is returned to the caller as the "fruit" of calling this function.
 Because the return statement can contain any Python expression we could have
 avoided creating the **temporary variable** ``y`` and simply used
@@ -108,7 +108,7 @@ avoided creating the **temporary variable** ``y`` and simply used
 Try modifying the square function above to see that this works just the same.
 On the other hand, using **temporary variables** like ``y`` in the program above makes
 debugging
-easier.  These temporary variables are referred to as **local variables**.
+easier. These temporary variables are referred to as **local variables**.
 
 .. The line `toInvest = float(input("How much do you want to invest?"))`
 ..  also shows yet another example
@@ -141,35 +141,35 @@ where the function call was made.
     print("The result of ", toSquare, " squared is ", squareResult)
 
 Another important thing to notice as you step through this codelens
-demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
-Recall that the red arrow always points to the next line of code that will be executed.  The light green arrow points to the line
+demonstration is the movement of the red and green arrows. Codelens uses these arrows to show you where it is currently executing.
+Recall that the red arrow always points to the next line of code that will be executed. The light green arrow points to the line
 that was just executed in the last step.
 
 When you first start running this codelens demonstration you will notice that there is only a red arrow and it points to
-line 1.  This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line
+line 1. This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line
 of code.
 
 When you click on the forward button, notice that the red arrow moves to line 5, skipping lines 2 and 3 of the function (and
 the light green arrow has now appeared on line 1).  Why is this?
-The answer is that function definition is not the same as function execution.  Lines 2
-and 3 will not be executed until the function is called on line 6.  Line 1 defines the function and the name ``square`` is added to the
-global variables, but that is all the ``def`` does at that point.  The body of the function will be executed later.  Continue to click
+The answer is that function definition is not the same as function execution. Lines 2
+and 3 will not be executed until the function is called on line 6. Line 1 defines the function and the name ``square`` is added to the
+global variables, but that is all the ``def`` does at that point. The body of the function will be executed later. Continue to click
 the forward button to see how the flow of control moves from the call, back up to the body of the function, and then finally back to line 7, after the function has returned its value and the value has been assigned to ``squareResult``.
 
 
 .. Short variable names are more economical and sometimes make
 .. code easier to read:
 .. E = mc\ :sup:`2` would not be nearly so memorable if Einstein had
-.. used longer variable names!  If you do prefer short names,
+.. used longer variable names! If you do prefer short names,
 .. make sure you also have some comments to enlighten the reader
 .. about what the variables are used for.
 
 
-Finally, there is one more aspect of function return values that should be noted.  All Python functions return the value ``None`` unless there is an explicit return statement with
+Finally, there is one more aspect of function return values that should be noted. All Python functions return the value ``None`` unless there is an explicit return statement with
 a value other than ``None.``
 Consider the following common mistake made by beginning Python
-programmers.  As you step through this example, pay very close attention to the return
-value in the local variables listing.  Then look at what is printed when the
+programmers. As you step through this example, pay very close attention to the return
+value in the local variables listing. Then look at what is printed when the
 function returns.
 
 
@@ -185,8 +185,8 @@ function returns.
     print("The result of ", toSquare, " squared is ", squareResult)
 
 The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
-where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the
-function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
+where the call was done. Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the
+function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect. Typically, functions will return values that can be printed or processed in some other way by the caller.
 
 .. index::
     single: local variable
@@ -201,7 +201,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 .. mchoice:: test_question5_2_1
    :answer_a: You should never use a print statement in a function definition.
-   :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
+   :answer_b: You should not have any statements in a function after the return statement. Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
    :answer_d: A function cannot return a number.
    :correct: b
@@ -224,8 +224,8 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'
    :correct: a
-   :feedback_a: We have accidentally used print where we mean return.  Therefore, the function will return the value None by default.  This is a VERY COMMON mistake so watch out!  This mistake is also particularly difficult to find because when you run the function the output looks the same.  It is not until you try to assign its value to a variable that you can notice a difference.
-   :feedback_b: Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
+   :feedback_a: We have accidentally used print where we mean return. Therefore, the function will return the value None by default. This is a VERY COMMON mistake so watch out! This mistake is also particularly difficult to find because when you run the function the output looks the same. It is not until you try to assign its value to a variable that you can notice a difference.
+   :feedback_b: Careful! This is a very common mistake. Here we have printed the value x+y+z but we have not returned it. To return a value we MUST use the return keyword.
    :feedback_c: x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
 
    What will the following function return?

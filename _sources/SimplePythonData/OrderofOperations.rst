@@ -91,7 +91,7 @@ rules for its mathematical operators that mathematics does.
    :answer_c: 12
    :answer_d: 256
    :correct: a
-   :feedback_a: Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
+   :feedback_a: Exponentiation has precedence over multiplication, but its precedence goes from right to left! So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
    :feedback_b: Exponentiation (**) is processed right to left, so take 2 ** 3 first.
    :feedback_c: There are two exponentiations.
    :feedback_d: Remember to multiply by 3.

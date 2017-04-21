@@ -11,7 +11,7 @@
    :prefix: turtle-8-
    :start: 1
 
-The ``range`` Function
+The range Function
 ----------------------
 
 In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
@@ -102,7 +102,7 @@ produced by the ``range`` function.
 
 
 Finally, suppose we want to have a sequence of even numbers.
-How would we do that?  Easy, we add another parameter, a step,
+How would we do that? Easy, we add another parameter, a step,
 that tells range what to count by. For even numbers we want to start at 0
 and count by 2's. So if we wanted the first 10 even numbers we would use
 ``range(0,19,2)``. The most general form of the range is
@@ -163,4 +163,4 @@ Try it in codelens.
   :feedback_c: Range starts at 0 unless otherwise specified, and never includes its ending element (which is the argument it was passed).
   :feedback_d: If range is passed only one argument, it interprets that argument as the end of the list (not inclusive).
 
-  What happens if you give range only one argument?  For example: range(4)
+  What happens if you give range only one argument? For example: range(4)

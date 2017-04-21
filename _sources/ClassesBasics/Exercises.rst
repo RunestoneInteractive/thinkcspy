@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -58,13 +58,13 @@ Exercises
 
 
     #. Add a method ``reflect_x`` to the class ``Point`` which returns a new ``Point``, one which is the
-       reflection of the point across the x-axis.  For example,
+       reflection of the point across the x-axis. For example,
        ``Point(3, 5).reflect_x()`` is (3, -5)
 
        .. activecode:: ch_cl_02
 
 
-    #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c"). The coefficients a and b completely describe the line.  Write a method in the Point class so that if a point instance is given another point, it will compute the equation of the straight line joining the two points.  It must return the two coefficients as a tuple of two values.  For example,   ::
+    #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c"). The coefficients a and b completely describe the line. Write a method in the Point class so that if a point instance is given another point, it will compute the equation of the straight line joining the two points. It must return the two coefficients as a tuple of two values. For example,   ::
 
           >>> print(Point(4, 11).get_line_to(Point(6, 15)))
           >>> (2, 3)

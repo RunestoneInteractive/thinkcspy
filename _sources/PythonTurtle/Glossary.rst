@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -13,7 +13,7 @@ Glossary
 .. glossary::
 
     attribute
-        Some state or value that belongs to a particular object.  For example,
+        Some state or value that belongs to a particular object. For example,
         tess has a color.
 
     canvas
@@ -39,13 +39,13 @@ Glossary
 
 
     invoke
-        An object has methods.  We use the verb invoke to mean *activate the
+        An object has methods. We use the verb invoke to mean *activate the
         method*.  Invoking a method is done by putting parentheses after the
-        method name, with some possible arguments.  So  ``wn.exitonclick()`` is
+        method name, with some possible arguments. So  ``wn.exitonclick()`` is
         an invocation of the ``exitonclick`` method.
 
     iteration
-		A basic building block for algorithms (programs).  It allows steps to be repeated.  Sometimes called *looping*.
+		A basic building block for algorithms (programs).  It allows steps to be repeated. Sometimes called *looping*.
 
     loop body
         Any number of statements nested inside a loop. The nesting is indicated
@@ -58,7 +58,7 @@ Glossary
         condition of the loop.
 
     method
-        A function that is attached to an object.  Invoking or activating the
+        A function that is attached to an object. Invoking or activating the
         method causes the object to respond in some way, e.g. ``forward`` is
         the method when we say ``tess.forward(100)``.
 
@@ -68,7 +68,7 @@ Glossary
         the other program by using the *import* statement.
 
     object
-        A "thing" to which a variable can refer.  This could be a screen window,
+        A "thing" to which a variable can refer. This could be a screen window,
         or one of the turtles you have created.
 
 
@@ -82,12 +82,12 @@ Glossary
 		A function that will provide you with random numbers, usually between 0 and 1.
 
     range
-        A built-in function in Python for generating sequences of integers.  It
+        A built-in function in Python for generating sequences of integers. It
         is especially useful when we need to write a for loop that executes a
         fixed number of times.
 
     sequential
-		The default behavior of a program.  Step by step processing of algorithm.
+		The default behavior of a program. Step by step processing of algorithm.
 
     standard library
 		A collection of modules that are part of the normal installation of Python.

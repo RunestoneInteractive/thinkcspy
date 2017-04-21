@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -36,7 +36,7 @@ Exercises
                 #. False
 
 
-    #.  Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+    #.  Give the **logical opposites** of these conditions. You are not allowed to use the ``not`` operator.
 
         #.  ``a > b``
         #.  ``a >= b``
@@ -110,7 +110,7 @@ Exercises
             .. tab:: Question
 
                 In the turtle bar chart program, what do you expect to happen if one or more
-                of the data values in the list is negative?   Go back and try it out.  Change the
+                of the data values in the list is negative?   Go back and try it out. Change the
                 program so that when it prints the text value for the negative bars, it puts
                 the text above the base of the bar (on the 0 axis).
 
@@ -292,8 +292,8 @@ Exercises
 
 
     #.  Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
-        will determine whether the triangle is right-angled.  Assume that the third argument to the
-        function is always the longest side.  It will return ``True`` if the triangle
+        will determine whether the triangle is right-angled. Assume that the third argument to the
+        function is always the longest side. It will return ``True`` if the triangle
         is right-angled, or ``False`` otherwise.
 
         Hint: floating point arithmetic is not always exactly accurate,
@@ -394,7 +394,7 @@ Exercises
                     #. dateofeaster = 22 + d + e
 
 
-                Special note: The algorithm can give a date in April.  Also, if the year is one of four special
+                Special note: The algorithm can give a date in April. Also, if the year is one of four special
                 years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
 
                 Your program should print an error message if the user provides a date that is out of range.

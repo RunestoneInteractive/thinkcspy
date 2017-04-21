@@ -1,25 +1,25 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
 Arithmetic Methods
 ------------------
 
-We will conclude this chapter by adding a few more methods to our ``Fraction`` class.  In particular, we will implement
-arithmetic.  To begin, consider what it means to add two fractions together.
-Remember that you can only add fractions if they have the same denominator.  The easiest way to find a common denominator is
-to multiply the two individual denominators together.  Anything we do to the denominator needs to the done to the numerator.  This gives us the following equation for fraction addition::
+We will conclude this chapter by adding a few more methods to our ``Fraction`` class. In particular, we will implement
+arithmetic. To begin, consider what it means to add two fractions together.
+Remember that you can only add fractions if they have the same denominator. The easiest way to find a common denominator is
+to multiply the two individual denominators together. Anything we do to the denominator needs to the done to the numerator. This gives us the following equation for fraction addition::
 
      a/b + c/d = (ad + cb)/bd
 
 
-Our ``add`` method will take a ``Fraction`` as a parameter.  It will return a new ``Fraction`` representing the sum.  We
-will use the equation shown above to compute the new numerator and the new denominator.  Since this equation will not
+Our ``add`` method will take a ``Fraction`` as a parameter. It will return a new ``Fraction`` representing the sum. We
+will use the equation shown above to compute the new numerator and the new denominator. Since this equation will not
 give us lowest terms, we will utilize a similar technique as was used in the ``simplify`` method to find the
 greatest common divisor and then divide each part of the new fraction.
 
@@ -81,7 +81,7 @@ You can try the addition method and then modify the fractions and retry.
     print(f3)
 
 
-One final modification to this method will be quite useful.  Instead invoking the ``add`` method, we can use the
+One final modification to this method will be quite useful. Instead invoking the ``add`` method, we can use the
 addition operator "+".  This requires that we implement another special method, this time called ``__add__``.
 The details of the method are the same.
 

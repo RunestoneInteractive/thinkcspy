@@ -1,9 +1,9 @@
 ..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    Meyers, and Dario Mitchell. Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts. A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
 
@@ -74,7 +74,7 @@ Exercises
             .. tab:: Question
 
                Modify the turtle walk program so that you have two turtles each with a
-               random starting location.  Keep the turtles moving until one of them leaves the screen.
+               random starting location. Keep the turtles moving until one of them leaves the screen.
 
                .. activecode:: ex_7_13
                   :nocodelens:
@@ -268,7 +268,7 @@ Exercises
 
 
     #. Sepia Tone images are those brownish colored images that may remind you of
-       times past.  The formula for creating a sepia tone is as follows:
+       times past. The formula for creating a sepia tone is as follows:
 
        ::
 
@@ -325,11 +325,11 @@ Exercises
                    win.exitonclick()
 
 
-    #.   After you have scaled an image too much it looks blocky.  One way of
+    #.   After you have scaled an image too much it looks blocky. One way of
          reducing the blockiness of the image is to replace each pixel with the
-         average values of the pixels around it.  This has the effect of smoothing
-         out the changes in color.  Write a function that takes an image as a
-         parameter and smooths the image.  Your function should return a new image
+         average values of the pixels around it. This has the effect of smoothing
+         out the changes in color. Write a function that takes an image as a
+         parameter and smooths the image. Your function should return a new image
          that is the same as the old but smoothed.
 
            .. activecode:: ex_7_20
@@ -342,7 +342,7 @@ Exercises
             .. tab:: Question
 
                Write a general pixel mapper function that will take an image and a pixel mapping function as
-               parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
+               parameters. The pixel mapping function should perform a manipulation on a single pixel and return
                a new pixel.
 
                .. activecode:: ex_7_21
@@ -385,7 +385,7 @@ Exercises
 
     #. When you scan in images using a scanner they may have lots of noise due to
        dust particles on the image itself or the scanner itself,
-       or the images may even be damaged.  One way of eliminating this noise is
+       or the images may even be damaged. One way of eliminating this noise is
        to replace each pixel by the median value of the pixels surrounding it.
 
         .. activecode:: ex_7_22
