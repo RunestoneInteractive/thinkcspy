@@ -34,7 +34,7 @@ Exercises
 
     #. Write a program that prints out the lyrics to the song "99 Bottles of Beer on the Wall"
 
-        .. activecode:: ex_3_2
+       .. activecode:: ex_3_2
 
 
     #.
