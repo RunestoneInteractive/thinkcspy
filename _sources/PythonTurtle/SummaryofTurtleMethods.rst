@@ -17,7 +17,7 @@ Method      Parameters  Description
 ==========  ==========  =========================
 Turtle      None          Creates and returns a new turtle object
 forward     distance      Moves the turtle forward
-backward    distance      Moves the turle backward
+backward    distance      Moves the turtle backward
 right       angle         Turns the turtle clockwise
 left        angle         Turns the turtle counter clockwise
 up          None          Picks up the turtles tail

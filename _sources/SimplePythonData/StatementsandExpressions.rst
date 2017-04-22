@@ -14,13 +14,6 @@
 Statements and Expressions
 --------------------------
 
-.. video:: expression_vid
-    :controls:
-    :thumb: ../_static/expressions.png
-
-    http://media.interactivepython.org/thinkcsVideos/Expressions.mov
-    http://media.interactivepython.org/thinkcsVideos/Expressions.webm
-
 A **statement** is an instruction that the Python interpreter can execute. We
 have only seen the assignment statement so far. Some other kinds of statements
 that we'll see shortly are ``while`` statements, ``for`` statements, ``if``

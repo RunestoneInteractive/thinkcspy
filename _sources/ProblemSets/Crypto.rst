@@ -70,7 +70,7 @@ The final interactive program will run like this:
 
 ::
 
-    python3 caesar.py
+    python caesar.py
     Type a message:
     Hello, World!
     Rotate by:
@@ -114,7 +114,7 @@ When (you think) you are finished, the best way to test your function is to fire
 
 ::
 
-    $ python3
+    $ python
     >>> import caesar
     >>> caesar.alphabet_position("a")
     0
@@ -212,7 +212,7 @@ You're almost done with Caesar! The last step is simply to write some ``print`` 
 
 ::
 
-    $ python3 caesar.py
+    $ python caesar.py
     Type a message:
     Hello, World!
     Rotate by:
@@ -244,7 +244,7 @@ As you can see in the video, Vigenere uses a word as the encryption key, rather 
 
 ::
 
-    $ python3 vigenere.py
+    $ python vigenere.py
     Type a message:
     The crow flies at midnight!
     Encryption key:
@@ -317,7 +317,7 @@ Finally, add the appropriate ``print`` and ``input`` statements inside a ``main`
 
 ::
 
-    $ python3 vigenere.py
+    $ python vigenere.py
     Type a message:
     The crow flies at midnight!
     Encryption key:
@@ -350,7 +350,7 @@ If a function is only defined in one place, a particular file somewhere, then ho
 
    This says that we want to import code from a module ``helpers``, but that we only want to import particular pieces of that module, specificially the functions ``alphabet_position`` and ``rotate_character``.
 
-Now we should be able to use those functions! Try running ``python3 caesar.py`` again, and you should find that it works just like it did before.
+Now we should be able to use those functions! Try running ``python caesar.py`` again, and you should find that it works just like it did before.
 
 .. note::
     In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``.
@@ -394,7 +394,7 @@ For example, rather than Caesar behaving like this:
 
 ::
 
-    $ python3 caesar.py
+    $ python caesar.py
     Type a message:
     Hello, World!
     Rotate by:
@@ -405,7 +405,7 @@ For example, rather than Caesar behaving like this:
 
 ::
 
-    $ python3 caesar.py 5
+    $ python caesar.py 5
     Type a message:
     Hello, World!
     Mjqqt, Btwqi!
@@ -431,7 +431,7 @@ Now run your program, and you should see output like this:
 
 ::
 
-    $ python3 caesar.py 5
+    $ python caesar.py 5
     This is what the user typed on the command line: ['caesar.py', '5']
     Type a message:
     ... etc
@@ -440,7 +440,7 @@ The important part is the second line.
 
 Notice that:
 
-- The word ``'python3'`` is **not** included.
+- The word ``'python'`` is **not** included.
 - The first item, ``argv[0]`` is always the name of your script (in this case, ``'caesar.py'``).
 - The other arguments follow. (In this case, we only have one additional argument, ``'5'``).
 
@@ -450,7 +450,7 @@ First, modify ``caesar.py`` to match the behavior specified above, which, once a
 
 ::
 
-    $ python3 caesar.py 5
+    $ python caesar.py 5
     Type a message:
     Hello, World!
     Mjqqt, Btwqi!
@@ -459,7 +459,7 @@ Once you have finished Caesar, make similar changes to Vigenere so that the user
 
 ::
 
-    $ python3 vigenere.py boom
+    $ python vigenere.py boom
     Type a message:
     The crow flies at midnight!
     Uvs osck rmwse bh auebwsih!
@@ -475,7 +475,7 @@ There are two main cases to handle:
 
    ::
 
-       $ python3 caesar.py grandpa
+       $ python caesar.py grandpa
 
    If the user gives you something like "grandpa" instead of "5", your program will crash, probably with this error:
 
@@ -489,7 +489,7 @@ There are two main cases to handle:
 
    ::
 
-       $ python3 caesar.py
+       $ python caesar.py
 
    In this case, you will probably see:
 
@@ -508,13 +508,13 @@ Below is an example of the Caesar program you are trying to achieve. In the exam
 
 ::
 
-    $ python3 caesar.py
-    usage: python3 caesar.py n
-    $ python3 caesar.py grandpa
-    usage: python3 caesar.py n
-    $ python3 caesar.py 5.0
-    usage: python3 caesar.py n
-    $ python3 caesar.py 5
+    $ python caesar.py
+    usage: python caesar.py n
+    $ python caesar.py grandpa
+    usage: python caesar.py n
+    $ python caesar.py 5.0
+    usage: python caesar.py n
+    $ python caesar.py 5
     Type a message:
     Hello, World!
     Mjqqt, Btwqi!
@@ -525,7 +525,7 @@ To check if the argument is an integer, there is a string method called ``isdigi
 
 ::
 
-    $ python3
+    $ python
     >>> "grandpa".isdigit()
     False
     >>> "5.0".isdigit()
@@ -556,13 +556,13 @@ Your Vigenere program should behave like this:
 
 ::
 
-    $ python3 vigenere.py
-    usage: python3 vigenere.py keyword
-    $ python3 vigenere.py boom!
-    usage: python3 vigenere.py keyword
-    $ python3 vigenere.py boom52
-    usage: python3 vigenere.py keyword
-    $ python3 vigenere.py boom
+    $ python vigenere.py
+    usage: python vigenere.py keyword
+    $ python vigenere.py boom!
+    usage: python vigenere.py keyword
+    $ python vigenere.py boom52
+    usage: python vigenere.py keyword
+    $ python vigenere.py boom
     Type a message:
     The crow flies at midnight!
     Uvs osck rmwse bh auebwsih!
@@ -574,15 +574,15 @@ Your Vigenere program should behave like this:
 
     ::
 
-        $ python3 vigenere.py boom!
-        usage: python3 vigenere.py keyword
+        $ python vigenere.py boom!
+        usage: python vigenere.py keyword
         Arguments:
         -keyword : The string to be used as a "key" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
-        $ python3 vigenere.py boom52
-        usage: python3 vigenere.py keyword
+        $ python vigenere.py boom52
+        usage: python vigenere.py keyword
         Arguments:
         -keyword : The string to be used as a "key" to encrypt your message. Should only contain alphabetic characters-- no numbers or special characters.
-        $ python3 vigenere.py boom
+        $ python vigenere.py boom
         Type a message:
         The crow flies at midnight!
         Uvs osck rmwse bh auebwsih!
