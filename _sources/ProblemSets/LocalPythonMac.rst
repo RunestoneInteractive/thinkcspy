@@ -32,7 +32,9 @@ By "locally" we mean that you are now about to install and run Python directly o
 Install a code editor
 *********************
 
-First, we'll install Visual Studio Code, a general-purpose code editor that features a Python debugger. The steps to do this are:
+First, we'll install Visual Studio Code, a general-purpose code editor. There are lots of great code editors out there, but we'll use Visual Studio Code in large part due to its nice Python extension, which includes a very useful debugger.
+
+To install Visual Studio Code:
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
@@ -48,14 +50,14 @@ Now let's install Python 3 using Miniconda. Follow these steps:
 #. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
 #. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``
 # Close and reopen your Terminal window for the changes to take effect.
-#. Verify that Python 3 installed correctly by opening Git Bash and typing ``python -V``. It should print to the screen the version of Python you just installed.
+#. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
 Make Your First Local Python Program
 ====================================
 
 Follow these steps to get your first Python program up and running on your computer:
 
-1. Make a directory to store your Python code on your computer using Git Bash.
+1. Make a directory to store your Python code on your computer using Terminal.
 
    a) Make sure you are in your home directory with the command ``cd ~``
    #) Make a new directory named "lc101": ``mkdir lc101``
