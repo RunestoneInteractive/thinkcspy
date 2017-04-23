@@ -26,11 +26,11 @@ Part 1: Using Python Locally
 
 In this section, you will learn how to interact with your computer using the command line, and then you will install everything you need to start writing and running code. Pick the operating system you use to go to the associated setup instructions page:
 
-:ref:`Windows_SetUp`
+:ref:`Windows_Setup`
 
-:ref:`Mac_SetUp`
+:ref:`Mac_Setup`
 
-:ref:`Linux_SetUp`
+:ref:`Linux_Setup`
 
 
 Part 2: Initials
