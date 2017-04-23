@@ -277,7 +277,7 @@ Now we are good to go! The program works normally when run directly from the com
     Before you submit your work, it is important that you transform your ``initials.py`` code to reflect the example above. The grading script is going to ``import`` your file, and if you have a loose ``input`` statement at the global scope level, that statement is going to execute and wait forever for input from a non-existent user, and you will find yourself waiting a very long time for your grade.
 
 How to Submit
---------------
+=============
 
 The submission process for this assignment is slightly **different** from that of your previous assignments. You will not be given a premade starter file into which you can paste your code. Instead, you must upload your own file into the workspace.
 

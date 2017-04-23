@@ -19,7 +19,7 @@ First, open up a terminal window on your computer, and use the ``cd`` command to
 
 ::
 
-    $ cd ~/YOUR/PATH/TO/lc101/
+    $ cd ~/lc101/
 
 
 Once you are inside your directory for the class, create a new sub-directory for this assignment called ``crypto/``, and then ``cd`` into it:
@@ -37,7 +37,7 @@ Finally, go ahead and create two python source files, one for each of the two ma
     $ touch vigenere.py
 
 .. note::
-    Double-check your spelling!
+    Double-check your spelling! Both of these names are easy to misspell.
 
 Part 1: Caesar
 --------------
@@ -64,13 +64,13 @@ At the end of the alphabet we wrap back around to a, so that:
 
 The end result is a *super secret coded message* that that looks like gibberish to any outsiders.
 
-We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, rather than just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
+We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, not just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
 
 The final interactive program will run like this:
 
 ::
 
-    python caesar.py
+    $ python caesar.py
     Type a message:
     Hello, World!
     Rotate by:
@@ -83,7 +83,7 @@ We are going to do this in a few steps, using some helper functions. This will h
 alphabet_position
 ~~~~~~~~~~~~~~~~~
 
-Open up your ``caesar.py`` file in a text editor. In that file, write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet.
+Open up your ``caesar.py`` file in Visual Studio Code. In that file, write a function ``alphabet_position(letter)``, which receives a letter (that is, a string with only one alphabetic character) and returns the 0-based numerical position of that letter within the alphabet.
 
 Here are some example input parameter values, with the corresponding return
 values.
@@ -362,8 +362,8 @@ Once you have Caesar working, do the same thing for Vigenere: simply delete the 
 
 Now your helper functions are defined only once, and your code remains nice and DRY (Don't Repeat Yourself)!
 
-Part 4: Bonus Missions
-----------------------------------------
+Bonus Missions
+--------------
 
 Congrats! You have created two very cool encryption programs.
 
@@ -380,7 +380,7 @@ Let's make a few improvements to the project by adding two new features:
    Add some validation on user input, so that if the user types something dumb, your program handles it gracefully, rather than crashing.
 
 
-Bonus 1: Command-line Arguments
+Bonus Mission 1: Command-line Arguments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each of our programs requires two pieces of input from the user:
@@ -464,8 +464,8 @@ Once you have finished Caesar, make similar changes to Vigenere so that the user
     The crow flies at midnight!
     Uvs osck rmwse bh auebwsih!
 
-Bonus 2: Validation
-~~~~~~~~~~~~~~~~~~~~~~~
+Bonus Mission 2: Validation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You may or may not have noticed that if the user types certain things, your program will freak out.
 
