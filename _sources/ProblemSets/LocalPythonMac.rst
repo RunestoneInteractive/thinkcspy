@@ -34,11 +34,12 @@ Install a code editor
 
 First, we'll install Visual Studio Code, a general-purpose code editor. There are lots of great code editors out there, but we'll use Visual Studio Code in large part due to its nice Python extension, which includes a very useful debugger.
 
-To install Visual Studio Code:
+To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
-#. Open Visual Studio Code and click "View", then "Extensions". In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension.
+#. In Terminal, run ``code`` to open VS Code.
+#. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension.
 #. Add Visual Studio Code to your dock, just as you did with Terminal above.
 
 Install Miniconda Python 3
