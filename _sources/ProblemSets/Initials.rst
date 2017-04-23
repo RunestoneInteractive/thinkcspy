@@ -71,7 +71,7 @@ In general, for the remainder of LC 101, you should follow this same pattern for
 
 1. Navigate into the parent folder (e.g. ``lc101/``).
 2. Create a new subfolder for the new assignment.
-3. Navigate into that new subfolder.
+3. Change directories into that new subfolder.
 4. Start coding!
 
 For example, if you are starting an assignment called *Hungry Hungry Hippos*, then you should do this:
@@ -110,7 +110,7 @@ Now you are finally ready to start coding! Inside your ``initials/`` folder, cre
 
     $ touch initials.py
 
-Open up that file in a text editor, such as Visual Studio Code, and complete the following function:
+Open up that file in Visual Studio Code, and copy and paste in the following starter code:
 
 .. sourcecode:: python
 
@@ -118,7 +118,7 @@ Open up that file in a text editor, such as Visual Studio Code, and complete the
         """ Given a person's name, returns the person's initials (uppercase) """
         # TODO your code here
 
-Your function will receive one argument, ``fullname``, a string representing someone's name, and should return a string with that name's capitalized initials.
+Your function will receive one argument -- ``fullname``, a string representing someone's name -- and should return a string with that name's capitalized initials.
 
 Here are some examples of what your function should return for various ``fullname`` arguments:
 
@@ -161,13 +161,13 @@ When (you think) you are finished writing your ``get_initials`` function, you sh
 1. You can import your script into a REPL (Python shell), and then feed various inputs into your function.
 2. Alternatively, you can just add some print statements (like the "Ozzie Smith" example above) to your ``initials.py`` script, and check to see that various inputs produce the correct results.
 
-Technique 1 looks something like this:
+Technique 1 looks like this:
 
 ::
 
     $ python
-    Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
-    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00) 
+    [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>> from initials import get_initials
     >>> get_initials("Ozzie Smith")
@@ -178,6 +178,9 @@ Technique 1 looks something like this:
     DDL
     ... etc
     quit()
+
+.. note::
+    You must run ``python`` from your `lc101/initials` directory for the ``import`` command to work.
 
 That looks complicated but its actually very easy. Try typing ``python`` into your terminal and you'll see. Technique 1 is definitely recommended, because writing and changing bunch of print statements starts to get annoying very quickly.
 
