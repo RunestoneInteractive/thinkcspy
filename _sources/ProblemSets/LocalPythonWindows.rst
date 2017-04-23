@@ -32,7 +32,9 @@ By "locally" we mean that you are now about to install and run Python directly o
 Install a code editor
 *********************
 
-First, we'll install Visual Studio Code, a general-purpose code editor that features a Python debugger. The steps to do this are:
+First, we'll install Visual Studio Code, a general-purpose code editor. There are lots of great code editors out there, but we'll use Visual Studio Code in large part due to its nice Python extension, which includes a very useful debugger.
+
+To install Visual Studio Code:
 
 1. Go to `Visual Studio Code`_ and select the Windows platform to download (it should automatically feature *Download for Windows* and you can click that green button to download, otherwise select "installer" next to Windows after clicking the green dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
