@@ -34,7 +34,7 @@ Exercises
 
     #. Write a program that prints out the lyrics to the song "99 Bottles of Beer on the Wall"
 
-        .. activecode:: ex_3_2
+       .. activecode:: ex_3_2
 
 
     #.
@@ -202,7 +202,6 @@ Exercises
            tess.left(3600)
            tess.right(-90)
            tess.left(3600)
-           tess.left(3645)
            tess.forward(-100)
 
 

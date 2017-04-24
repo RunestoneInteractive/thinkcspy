@@ -15,9 +15,6 @@ For the walkthrough, we will write a program to apply a red filter to an image. 
     import image
     import sys
 
-    # Set the timeout to a larger number if timeout is occurring
-    sys.setExecutionLimit(30000)
-
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
@@ -94,9 +91,6 @@ Tips
     import sys
     import random
 
-    # Set the timeout to a larger number if timeout is occuring.
-    sys.setExecutionLimit(30000)
-
     img = image.Image("luther.jpg")
     newimg = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
@@ -126,6 +120,7 @@ Write a function that takes in an integer then displays the multiplication table
     0 3 6 9
 
 .. activecode:: bonus_mult_table
+
 
 Bonus 2
 ~~~~~~~~
