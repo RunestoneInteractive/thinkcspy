@@ -32,6 +32,7 @@ In this section, you will learn how to interact with your computer using the com
 
 :ref:`Linux_Setup`
 
+.. _initials_page:
 
 Part 2: Initials
 =================
@@ -166,7 +167,7 @@ Technique 1 looks like this:
 ::
 
     $ python
-    Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00) 
+    Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00)
     [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>> from initials import get_initials
