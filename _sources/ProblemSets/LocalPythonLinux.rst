@@ -8,7 +8,7 @@ It's time to get Python running independently on your own computer! This will re
 If that sounds intimidating, don't worry. While learning to use the command line can seem scary, it's not bad at all if you learn it in steps and practice regularly. Before you know it, you'll find interacting with your computer via the command line super useful and even fun!
 
 .. note::
-    These instructions apply to Ubuntu Linux. If you are running another flavor of Linux, you made find some differences. If so, we expect that you know how to use your operating system well enough to work through the differences.
+    These instructions apply to Ubuntu Linux. If you are running another flavor of Linux, you may find some differences. If so, we expect that you know how to use your operating system well enough to work through them.
 
 Getting Familiar with the Command Line
 ======================================
@@ -18,7 +18,7 @@ Before we install Python on our computers, let's get familiar with the command l
 Opening Terminal
 ****************
 
-Open the Terminal application. You can do this by clicking on the Ubuntu icon in the Launcher, and searching for "Terminal".
+Open the Terminal application. You can do this by clicking on the Ubuntu icon in the Launcher and searching for "Terminal".
 
 Once Terminal is open, right-click on its icon in the Launcher and select *Lock to Launcher*. We'll be using Terminal quite a bit, and this will keep it at short reach.
 
@@ -37,11 +37,12 @@ Install a code editor
 
 First, we'll install Visual Studio Code, a general-purpose code editor. There are lots of great code editors out there, but we'll use Visual Studio Code in large part due to its nice Python extension, which includes a very useful debugger.
 
-To install Visual Studio Code:
+To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Linux .deb installer to download. If this option is not displayed on the green button, select the Stable .deb package using the dropdown arrow).
 #. Follow the instructions to `run VS Code on Linux`_.
-#. In Terminal, run `code` to open VS Code.
+#. In Terminal, run ``code`` to open VS Code.
+#. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension.
 #. Add Visual Studio Code to the Launcher, just as you did with Terminal above.
 
 Install Miniconda Python 3
@@ -75,8 +76,11 @@ Follow these steps to get your first Python program up and running on your compu
 
 **Congratulations on running your first python program locally!!**
 
+Now you're ready work on the second part of `Initials`_.
+
 .. _Command Line Crash Course: http://learnpythonthehardway.org/book/appendixa.html
 .. _Visual Studio Code: https://code.visualstudio.com
 .. _Conda: https://conda.io/miniconda.html
 .. _Use Spotlight: https://support.apple.com/en-us/HT204014
 .. _run VS Code on Linux: https://code.visualstudio.com/docs/setup/linux
+.. _Initials: Initials.html#part-2-initials

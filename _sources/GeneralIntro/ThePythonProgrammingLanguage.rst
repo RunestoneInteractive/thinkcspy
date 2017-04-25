@@ -112,16 +112,6 @@ These examples show Python being run from a Unix command line. In other
 development environments, the details of executing programs may differ. Also,
 most programs are more interesting than this one.
 
-.. admonition:: Want to learn more about Python?
-
-	If you would like to learn more about installing and using Python, here are some video links.
-	`Installing Python for Windows <http://youtu.be/9EfGpN1Pnsg>`__ shows you how to install the Python environment under
-	Windows Vista,
-	`Installing Python for Mac <http://youtu.be/MEmEJCLLI2k>`__ shows you how to install under Mac OS/X, and
-	`Installing Python for Linux <http://youtu.be/RLPYBxfAud4>`__ shows you how to install from the Linux
-	command line.
-	`Using Python <http://youtu.be/kXbpB5_ywDw>`__ shows you some details about the Python shell and source code.
-
 **Check your understanding**
 
 .. mchoice:: question1_2_1

@@ -44,7 +44,7 @@ Setup
 
 First, you must create a new folder for the project, and a new file within the folder. And while we're here, let's make sure you set up your overall directory structure in a nice, organized way for future assignments.
 
-Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a broad parent folder with a name like ``lc101/``, where you save all your assignments for this class.
+Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a folder named ``lc101/`` in your home directory, where you will save all your assignments for this class.
 
 But if you do *not* yet have such a class parent folder on your file system, then create one now:
 
