@@ -32,6 +32,7 @@ In this section, you will learn how to interact with your computer using the com
 
 :ref:`Linux_Setup`
 
+.. _initials_page:
 
 Part 2: Initials
 =================
