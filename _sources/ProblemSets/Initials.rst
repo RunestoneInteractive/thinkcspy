@@ -32,6 +32,7 @@ In this section, you will learn how to interact with your computer using the com
 
 :ref:`Linux_Setup`
 
+.. _initials_page:
 
 Part 2: Initials
 =================
@@ -43,7 +44,7 @@ Setup
 
 First, you must create a new folder for the project, and a new file within the folder. And while we're here, let's make sure you set up your overall directory structure in a nice, organized way for future assignments.
 
-Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a broad parent folder with a name like ``lc101/``, where you save all your assignments for this class.
+Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a folder named ``lc101/`` in your home directory, where you will save all your assignments for this class.
 
 But if you do *not* yet have such a class parent folder on your file system, then create one now:
 
@@ -166,7 +167,7 @@ Technique 1 looks like this:
 ::
 
     $ python
-    Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00) 
+    Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00)
     [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>> from initials import get_initials

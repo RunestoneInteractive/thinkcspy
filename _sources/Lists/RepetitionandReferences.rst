@@ -21,7 +21,7 @@ We have already seen the repetition operator working on strings as well as lists
     origlist = [45, 76, 34, 55]
     print(origlist * 3)
 
-With a list, the repetition operator creates copies of the references. Although this may seem simple enough, when we allow a list to refer to another list, a subtle problem can arise.
+With a list, the repetition operator creates copies of the references. Although this may seem simple enough, when we allow a list to refer to *another* list, a subtle problem can arise.
 
 Consider the following extension on the previous example.
 
@@ -80,6 +80,26 @@ Here is the same example in codelens. Step through the code paying particular at
 
     print(newlist)
 
+It is worth noting that there is a difference between ``newlist = [origlist] * 3`` and an assignment statement where ``origlist`` is not in brackets:  ``anotherlist = origlist * 3``. The former creates a list of three references to ``origlist`` whereas the latter creates a *new object* using the values in ``origlist``. Note in the example below how ``newlist`` will change when a value in ``origlist`` changes, but ``anotherlist`` does not change because it is no longer bound to ``origlist``.
+
+.. activecode:: repref4
+
+    origlist = [45, 76, 34, 55]
+
+    newlist = [origlist] * 3
+
+    anotherlist = origlist * 3
+
+    print(newlist)
+
+    print(anotherlist)
+
+    origlist[1] = 99
+
+    print(newlist) # Note the change
+
+    print(anotherlist) # Note the lack of change
+
 **Check your understanding**
 
 .. mchoice:: test_question9_12_1
@@ -89,7 +109,7 @@ Here is the same example in codelens. Step through the code paying particular at
    :correct: c
    :feedback_a: print(alist) not print(blist)
    :feedback_b: blist is changed, not alist.
-   :feedback_c: Yes, alist was unchanged by the assignment statement. blist was a copy of the references in alist.
+   :feedback_c: Yes, alist was unchanged by the assignment statement.
 
    What is printed by the following statements?
 
@@ -107,10 +127,10 @@ Here is the same example in codelens. Step through the code paying particular at
    :answer_c: [4, 2, 8, 6, 5]
    :answer_d: [[4, 2, 8, 999, 5], [4, 2, 8, 6, 5]]
    :correct: b
-   :feedback_a: [alist] * 2 creates a list containing alist repeated 2 times
-   :feedback_b: Yes, blist contains two references, both to alist.
+   :feedback_a: [alist] * 2 creates a list containing two lists: alist repeated 2 times
+   :feedback_b: Yes, blist is a list containing two references to alist, so changes to alist appear in both.
    :feedback_c: print(blist)
-   :feedback_d: blist contains two references, both to alist so changes to alist appear both times.
+   :feedback_d: blist contains two references, both to alist, so changes to alist appear both times.
 
    What is printed by the following statements?
 

@@ -38,8 +38,8 @@ To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
-#. In Terminal, run ``code`` to open VS Code.
-#. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension.
+#. Close and reopen your Terminal window for the changes to take effect. In the new Terminal window, run ``code`` to open VS Code.
+#. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension. If prompted to restart VS Code, do so.
 #. Add Visual Studio Code to your dock, just as you did with Terminal above.
 
 Install Miniconda Python 3
@@ -49,7 +49,7 @@ Now let's install Python 3 using Miniconda. Follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Mac 64-bit (bash installer) (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
 #. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
-#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``
+#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. Accept all of the default options. If you view the license agreement, you'll have to page through using it using the spacebar.
 # Close and reopen your Terminal window for the changes to take effect.
 #. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
@@ -73,7 +73,10 @@ Follow these steps to get your first Python program up and running on your compu
 
 **Congratulations on running your first python program locally!!**
 
+Now you're ready work on the second part of `Initials`_.
+
 .. _Command Line Crash Course: http://learnpythonthehardway.org/book/appendixa.html
 .. _Visual Studio Code: https://code.visualstudio.com
 .. _Conda: https://conda.io/miniconda.html
 .. _Use Spotlight: https://support.apple.com/en-us/HT204014
+.. _Initials: Initials.html#part-2-initials

@@ -182,7 +182,6 @@ Table of Contents
    MoreAboutIteration/AlgorithmsRevisited.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
-   MoreAboutIteration/ImageProcessingonYourOwn.rst
    MoreAboutIteration/Glossary.rst
    MoreAboutIteration/Exercises.rst
 

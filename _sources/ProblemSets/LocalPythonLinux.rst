@@ -76,8 +76,11 @@ Follow these steps to get your first Python program up and running on your compu
 
 **Congratulations on running your first python program locally!!**
 
+Now you're ready work on the second part of `Initials`_.
+
 .. _Command Line Crash Course: http://learnpythonthehardway.org/book/appendixa.html
 .. _Visual Studio Code: https://code.visualstudio.com
 .. _Conda: https://conda.io/miniconda.html
 .. _Use Spotlight: https://support.apple.com/en-us/HT204014
 .. _run VS Code on Linux: https://code.visualstudio.com/docs/setup/linux
+.. _Initials: Initials.html#part-2-initials
