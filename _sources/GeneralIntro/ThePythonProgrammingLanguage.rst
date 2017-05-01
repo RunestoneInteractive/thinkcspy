@@ -69,7 +69,7 @@ and the interpreter immediately shows the result. The example below shows the Py
 
 ::
 
-    $ python3
+    $ python
     Python 3.2 (r32:88445, Mar 25 2011, 19:28:28)
     [GCC 4.5.2] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
