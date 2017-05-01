@@ -77,6 +77,7 @@ Table of Contents
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
+   Debugging/StyleHighlights.rst
    Debugging/Summary.rst
    Debugging/Exercises.rst
 
