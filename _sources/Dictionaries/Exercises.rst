@@ -118,19 +118,19 @@ Exercises
 	   .. activecode:: q2_dict_answer
 
 		   from test import testEqual
-		   
+
 		   #Note: The pass is a placeholder to allow
 		   #the code to compile. Remove it when you
 		   #begin coding.
-		   def add_fruit(inventory, fruit, quantity=0):
+		   def set_inventory(inventory, fruit, quantity=0):
 			pass
 
 		   # make these tests work...
 		   # new_inventory = {}
-		   # add_fruit(new_inventory, 'strawberries', 10)
+		   # set_inventory(new_inventory, 'strawberries', 10)
 		   # testEqual('strawberries' in new_inventory, True)
 		   # testEqual(new_inventory['strawberries'], 10)
-		   # add_fruit(new_inventory, 'strawberries', 25)
+		   # set_inventory(new_inventory, 'strawberries', 25)
 		   # testEqual(new_inventory['strawberries'] , 25)
 
 
