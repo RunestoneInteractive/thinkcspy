@@ -218,7 +218,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 
 .. mchoice:: test_question5_2_2
-   :answer_a: Nothing (no value)
+   :answer_a: None
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'
    :correct: a
