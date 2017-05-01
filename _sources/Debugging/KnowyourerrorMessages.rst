@@ -294,7 +294,7 @@ And one last bit of code to fix.
 ValueError
 ^^^^^^^^^^
 
-Value errors occur when you pass a parameter to a function and the function is expecting a certain type, but you pass it a different type.  We can illustrate that with this particular program in two different ways.
+Value errors occur when you pass a parameter to a function and the function is expecting a certain limitations on the values, and the value passed is not compatible.  We can illustrate that with this particular program in two different ways.
 
 .. activecode:: db_ex3_12
 
@@ -308,8 +308,8 @@ Value errors occur when you pass a parameter to a function and the function is e
    print(final_time_int)
 
 
-Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty value.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
+Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty string.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
 
-ValueErrors are not always caused by user input error, but in this program that is the case.  We'll look again at ValueErrors again when we get to more complicated programs.  For now it is worth repeating that you need to keep track of the types of your variables, and understand what types your function is expecting.  You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their type.
+ValueErrors are not always caused by user input error, but in this program that is the case.  We'll look again at ValueErrors again when we get to more complicated programs.  For now it is worth repeating that you need to keep track of the restrictions needed for your variables, and understand what your function is expecting.  You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their proper form.
 
 
