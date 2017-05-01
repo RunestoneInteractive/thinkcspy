@@ -174,15 +174,15 @@ Here's an example of a type error created by a Polish learner.  See if you can f
 
 .. activecode:: db_ex3_8
 
-    a = input(uu'wpisz godzine')
-    x = input(uu'wpisz liczbe godzin')
+    a = input('wpisz godzine')
+    x = input('wpisz liczbe godzin')
     int(x)
     int(a)
     h = x // 24
     s = x % 24
     print (h, s)
     a = a + s
-    print ('godzina teraz %s' %a) 
+    print ('godzina teraz', a) 
 
 
 
