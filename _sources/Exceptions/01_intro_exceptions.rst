@@ -11,8 +11,11 @@
    :prefix: exceptions-1-
    :start: 1
 
+Intro to Exceptions
+--------------------
+
 What is an exception?
-=====================
+======================
 
 An *exception* is a signal that a condition has occurred that can't be easily
 handled using the normal flow-of-control of a Python program. *Exceptions*
@@ -21,7 +24,7 @@ errors in Python are dealt with using *exceptions*, but not all
 *exceptions* are errors.
 
 Exception Handling Flow-of-control
-==================================
+===================================
 
 To explain what an *exception* does, let's review the normal "flow of control"
 in a Python program. In normal operation Python executes statements sequentially,
@@ -217,5 +220,3 @@ to deal with ``ZeroDivisonError`` messages, not ``MyException`` messages.
 
 
 .. index:: exception, flow-of-control, raise, try: except:
-
-
