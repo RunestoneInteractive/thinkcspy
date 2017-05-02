@@ -78,7 +78,7 @@ Bonus Missions
 Bonus 1
 ~~~~~~~
 
-Write a function that takes in a float and returns the number of digits that occur after the decimal point. For example, 3.14 should return 2, 9.876543 should return 6, and 9825 should return 0.
+Write a function that takes a sentence with an introductory prepositional phrase and returns the number of characters (including whitespace and punctuation) remaining in the string *after* the comma. For example, "Before you go to bed, you need to brush your teeth." returns 30 and "Under the warm sun, the cat slept deeply." returns 21.
 
 .. activecode:: sorted_bonus_1
 
