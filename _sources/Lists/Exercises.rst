@@ -51,7 +51,7 @@ Exercises
 
         .. tab:: Question
 
-           Starting with the list in Exercise 2, write Python statements to do the following:
+           Starting with the list of the previous exercise, write Python statements to do the following:
 
            a. Append "apple" and 76 to the list.
            #. Insert the value "cat" at position 3.
