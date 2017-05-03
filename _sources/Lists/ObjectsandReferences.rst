@@ -51,8 +51,8 @@ operator.  The *is* operator will return true if the two references are to the s
 
 The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it
 is the second of the two reference diagrams that describes the relationship. 
-Since strings are *immutable*, Python optimizes resources by making two names
-that refer to the same string value refer to the same object.
+Since strings are *immutable*, Python can optimize resources by making two names
+that refer to the same string literal value refer to the same object.
 
 This is not the case with lists.  Consider the following example.  Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
 
@@ -72,7 +72,7 @@ The reference diagram for this example looks like this:
 
 ``a`` and ``b`` have the same value but do not refer to the same object.
 
-There is one other important thing to notice about this reference diagram.  The variable ``a`` is a reference to a **collection of references**.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though ``a`` and ``b`` are two different lists (two different collections of references), the integer object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object.
+There is one other important thing to notice about this reference diagram.  The variable ``a`` is a reference to a **collection of references**.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though ``a`` and ``b`` are two different lists (two different collections of references), the integer object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object for some commonly used small integers.
 
 Here is the example in codelens.  Pay particular attention to the `id` values.
 
