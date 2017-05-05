@@ -62,7 +62,7 @@ At the end of the alphabet we wrap back around to a, so that:
 - **o** shifts to **b**
 - ...etc
 
-The end result is a *super secret coded message* that that looks like gibberish to any outsiders.
+The end result is a *super secret coded message* that looks like gibberish to any outsiders.
 
 We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, not just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
 
