@@ -26,8 +26,8 @@ Glossary
         module, or to access methods and attributes of an object.
 
     immutable
-        A compound data type whose elements can not be assigned new values.
-
+        Data types whose content cannot be changed after creation (e.g., strings, ints, floats, tuples).
+        
     index
         A variable or value used to select a member of an ordered collection, such as
         a character from a string, or an element from a list.
