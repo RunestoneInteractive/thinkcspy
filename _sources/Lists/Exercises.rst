@@ -112,7 +112,7 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write a function to find the sum of all the even numbers in a list.
+    Write a function to find the average of the numbers in a list after the highest and lowest valued numbers have been removed. (You can assume that no number will appear more than once in the list.) For example, given a list of ``[24,1,10,4,38,2]`` the numbers "1" and "38" should be removed and the average of the remaining numbers should be returned (in this case, the average is 10).
 
     Normally we start you off by providing the function definition statement, e.g.:
 
@@ -121,20 +121,19 @@ Weekly Graded Assignment
         def launch_rockets(destination, num_passengers):
               # your code here
 
-    But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``sum_evens``, so that the tests work. Your function should accept one argument, the list of numbers to be summed.
+    But in this case we will leave that to you! In other words, you will need to write that ``def`` line yourself. Make sure you give your function the name ``find_average``, so that the tests work. Your function should accept one argument, the list of numbers to find the average for.
 
     .. activecode:: ex_9_7
 
           # TODO
-          # define a function called sum_evens, which receives one argument, a list of numbers.
-          # your function should return the sum of all the even numbers in the list
+          # define a function called find_average, which receives one argument, a list of numbers.
+          # your function should remove both the highest and the lowest number in the list and then
+          # return the average of the remaining numbers in the list.
 
 
           # don't copy these tests into Vocareum
           from test import testEqual
 
-          testEqual(sum_evens([2,3,4]), 6)
-          testEqual(sum_evens([]), 0)
-          testEqual(sum_evens([0,7,2,4,2,1]), 8)
-          testEqual(sum_evens([0,1,2,3,4,5,6,7,8,9]), 20)
-          testEqual(sum_evens(range(200,500)), 52350)
+          testEqual(find_average([19,3,1,8,13]), 8)
+          testEqual(find_average([0,7,3,4,5,13,1]), 4)
+          testEqual(find_average([120,30,50]), 50)
