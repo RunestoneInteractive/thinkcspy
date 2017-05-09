@@ -119,7 +119,7 @@ When (you think) you are finished, the best way to test your function is to fire
     >>> caesar.alphabet_position("a")
     0
     >>> caesar.alphabet_position("E")
-    5
+    4
     # ... etc
 
 .. warning::
