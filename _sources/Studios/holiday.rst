@@ -10,6 +10,8 @@ Walkthrough
 
 For the walkthrough in class, we will create a tip calculator. This will allow us to work with input and output, and type conversion functions. We'll also use comments to stub out our file before coding.
 
+The program should prompt the user for the subtotal for their meal, along with the tip percentage, and print out the calculated tip.
+
 .. activecode:: holiday_walkthrough
 
     #prompt the user for meal subtotal
