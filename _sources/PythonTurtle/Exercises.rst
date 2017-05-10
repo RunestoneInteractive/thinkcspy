@@ -20,6 +20,8 @@ Exercises
 
                Write a program that prints ``We like Python's turtles!`` 1000 times.
 
+               Now, update that program to prompt the user for an integer and then print the same message the given number of times.
+
                .. activecode:: ex_3_1
 
             .. tab:: Answer
@@ -27,7 +29,9 @@ Exercises
                 .. activecode::  q1_answer
                     :nocanvas:
 
-                    for i in range(1000):
+                    num_messages = int(input("Number of messages to print"))
+
+                    for i in range(num_messages):
                         print("We like Python's turtles!")
 
 
@@ -35,6 +39,13 @@ Exercises
     #. Write a program that prints out the lyrics to the song "99 Bottles of Beer on the Wall"
 
        .. activecode:: ex_3_2
+
+
+    #. Write a program that prints even integers from 0 to 50.
+
+
+       .. activecode:: ex_3_evens
+
 
 
     #.
@@ -141,7 +152,7 @@ Exercises
 
 
     #.  Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
-        regular polygon. The program should draw the polygon and then fill it in.
+        regular polygon.
 
 
 
@@ -154,7 +165,7 @@ Exercises
 
            .. tab:: Question
 
-                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc. A social science student records the angle of each turn before the next 100 steps are taken. Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend. After the pirate is done walking, print the current heading.
+                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc. A social science student records the angle of each turn before the next 100 steps are taken. Her experimental data is ``160, -43, 270, -97, -43, 200, -940, 17, -86``. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.
 
                 .. activecode:: ex_3_7
                    :nocodelens:
@@ -181,9 +192,6 @@ Exercises
                        # and negative angles are clockwise
                        lovelace.left(angle)
                        lovelace.forward(100)
-
-                   # the .heading() method gives us the turtle's current heading in degrees
-                   print("The pirate's final heading was", lovelace.heading())
 
                    wn.exitonclick()
 
