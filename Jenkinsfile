@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                sh './build.sh'
+                withCredentials([string(credentialsId: 'webfactiondbpass', variable: 'DBPASS')]) {
+                    echo 'Building..'
+                    sh './build.sh'
+                }
             }
         }
         stage('Test') {
