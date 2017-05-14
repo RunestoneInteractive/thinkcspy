@@ -62,7 +62,7 @@ At the end of the alphabet we wrap back around to a, so that:
 - **o** shifts to **b**
 - ...etc
 
-The end result is a *super secret coded message* that that looks like gibberish to any outsiders.
+The end result is a *super secret coded message* that looks like gibberish to any outsiders.
 
 We're going to build a more general version of the rot13 algorithm that allows a message to be encrypted using *any* rotation amount, not just 13. Ultimately, users will be able to type a message in the terminal, and specify a rotation amount (13, 4, 600, etc), and your program will print the resulting encrypted message.
 
@@ -119,7 +119,7 @@ When (you think) you are finished, the best way to test your function is to fire
     >>> caesar.alphabet_position("a")
     0
     >>> caesar.alphabet_position("E")
-    5
+    4
     # ... etc
 
 .. warning::
@@ -299,7 +299,7 @@ Whenever you find yourself in a situation like this--faced with a coding task th
 
 In this case, the majority of the logic that Vigenere has in common with Caesar is encapsulated in those two helper functions you wrote, ``alphabet_position`` and ``rotate_character``. Indeed, that is why we intentionally guided you down the path of writing those functions. You are going to find both of those functions equally helpful for implementing Vigenere.
 
-Go ahead and copy / paste those functions into ``vigenere.py`` so you can use them. (In reality, copy / pasting is not a very smart thing to do here, and there is a better way, which you will see farther down in this assignemnt. But for now, just do it.)
+Go ahead and copy / paste those functions into ``vigenere.py`` so you can use them. (In reality, copy / pasting is not a very smart thing to do here, and there is a better way, which you will see farther down in this assignment. But for now, just do it.)
 
 encrypt
 ~~~~~~~
