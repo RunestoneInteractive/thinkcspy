@@ -178,20 +178,18 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write a function that will return a string of country codes from an argument that is a string of prices containing dollar amounts following the country codes. Your function will take as an argument a string of prices like the following: ``"US$40, AU$89, JP$200"``. In this example, the function would return the string ``"US, AU, JP"``.
-
-    **Hint:** You may want to break the original string into a list, manipulate the individual elements, then make it into a string again.
+    Write a function that will sum up all the elements in a list up to but not including the first even number.
 
     .. activecode:: ex_9_10
 
-       def get_country_codes(nums):
+       def sum_of_initial_odds(nums):
            # your code here
 
 
        # don't include these tests in Vocareum
        from test import testEqual
 
-       testEqual(get_country_codes("NZ$300, KR$1200, DK$5"), "NZ, KR, DK")
-       testEqual(get_country_codes("US$40, AU$89, JP$200"), "US, AU, JP")
-       testEqual(get_country_codes("AU$23, NG$900, MX$200, BG$790, ES$2"), "AU, NG, MX, BG, ES")
-       testEqual(get_country_codes("CA$40"), "CA")
+       testEqual(sum_of_initial_odds([1,3,1,4,3,8]), 5)
+       testEqual(sum_of_initial_odds([6,1,3,5,7]), 0)
+       testEqual(sum_of_initial_odds([1, -7, 10, 23]), -6)
+       testEqual(sum_of_initial_odds(range(1,555,2)), 76729)
