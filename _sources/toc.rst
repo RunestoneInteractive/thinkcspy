@@ -77,6 +77,7 @@ Table of Contents
    Debugging/HowtoAvoidDebugging.rst
    Debugging/BeginningtipsforDebugging.rst
    Debugging/KnowyourerrorMessages.rst
+   Debugging/StyleHighlights.rst
    Debugging/Summary.rst
    Debugging/Exercises.rst
 
@@ -433,6 +434,19 @@ Hacker Chapter: Recursion
    Recursion/SierpinskiTriangle.rst
    Recursion/Glossary.rst
    Recursion/ProgrammingExercises.rst
+
+
+Hacker Chapter: Exceptions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+   :numbered: 1
+
+   Exceptions/01_intro_exceptions.rst
+   Exceptions/02_standard_exceptions.rst
+   Exceptions/03_principles_for_using_exceptions.rst
+   Exceptions/04_exceptions_syntax.rst
 
 
 Hacker Chapter: Special Topic -- L-Systems

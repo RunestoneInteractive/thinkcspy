@@ -7,10 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Objects are Mutable
+Object Mutability
 -------------------
 
-We can change the state of an object by making an assignment to one of its instance variables.
+We can change the state of a mutable object by making an assignment to one of its instance variables.
 For example, we could change the numerator of the fraction by assigning a new
 value to ``self.num``.  Likewise, we could do the same thing for ``self.den``.
 

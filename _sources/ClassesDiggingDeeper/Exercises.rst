@@ -365,7 +365,7 @@ Weekly Graded Assignment
 
     * If, on the other hand, the human says something with a length of 20 characters or less, then the bored chatbot should respond just like a normal chatbot would.
     
-    Note that we are requiring you to use **inheritence**. Your new ``BoredChatbot`` class must be a **subclass** of the ``Chatbot`` class, and your subclass should only implement the things that make it distinct. (See the *Inheritence* chapter for a review of how this works.)
+    Note that we are requiring you to use **inheritance**. Your new ``BoredChatbot`` class must be a **subclass** of the ``Chatbot`` class, and your subclass should only implement the things that make it distinct. (See the *Inheritance* chapter for a review of how this works.)
 
     .. activecode:: bored_chatbot
 
