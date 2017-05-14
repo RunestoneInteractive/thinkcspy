@@ -139,7 +139,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
    .. code-block:: python
 
      for number in [5, 4, 3, 2, 1, 0]:
-         print("I have", number, "cookies. Iím going to eat one.")
+         print("I have", number, "cookies. I'm going to eat one.")
 
 
 .. mchoice:: test_question3_4_2
