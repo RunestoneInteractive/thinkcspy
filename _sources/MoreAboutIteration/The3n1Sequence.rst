@@ -52,7 +52,7 @@ You might like to have some fun and see if you can find a small starting number 
 
 Particular values aside, the interesting question is whether we can prove that this sequence terminates for *all* values of ``n``. So far, no one has been able to prove it *or* disprove it!
 
-Think about what would be needed for to prove or disprove the hypothesis *All positive integers will eventually converge to 1*.  With fast computers, we have been able to test every integer up to very large values, and so far, they all eventually end up at 1. But this doesn't mean that there might not be some as-yet untested number which does not reduce to 1.
+Think about what would be needed for to prove or disprove the hypothesis: *All positive integers will eventually converge to 1*.  With fast computers, we have been able to test every integer up to very large values, and so far, they all eventually end up at 1. But this doesn't mean that there might not be some as-yet untested number which does not reduce to 1.
 
 You'll notice that if you don't stop when you reach one, the sequence gets into its own loop: 1, 4, 2, 1, 4, 2, 1, 4, and so on. One possibility is that there might be other cycles that we just haven't found.
 
