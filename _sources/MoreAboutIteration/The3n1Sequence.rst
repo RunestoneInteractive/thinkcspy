@@ -46,8 +46,6 @@ The condition for this ``while`` loop is ``n != 1``.  In other words, the loop w
 
 Each time through the loop, the program prints the value of ``n`` and then checks whether it is even or odd using the remainder operator. If it is even, the value of ``n`` is divided by 2 using integer division. If it is odd, the value is replaced by ``3*n + 1``.
 
-Try
-
 Since ``n`` sometimes increases and sometimes decreases, it is not clear that ``n`` will ever reach 1, or that the program terminates. For some particular values of ``n``, we can prove that the sequence eventually reaches 1. For example, if the starting value is a power of two, then the value of ``n`` will be even each time through the loop until it reaches 1.
 
 You might like to have some fun and see if you can find a small starting number that needs more than a hundred steps before it terminates.
