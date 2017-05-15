@@ -17,9 +17,9 @@ Standard Exceptions
 Most of the standard *exceptions* built into Python are listed below.
 They are organized into related groups based on the types of issues they deal with.
 
-=====================  ================================================
+=====================  ===================================================================
 Language Exceptions    Description
-=====================  ================================================
+=====================  ===================================================================
 StandardError          Base class for all built-in exceptions except
                        StopIteration and SystemExit.
 ImportError	           Raised when an import statement fails.
@@ -43,11 +43,11 @@ RecursionError         Raised when the maximum recursion depth has been exceeded
 SystemError            Raised when the interpreter finds an internal problem,
                        but when this error is encountered the Python interpreter
                        does not exit.
-=====================  ================================================
+=====================  ===================================================================
 
-=====================  ================================================
+=====================  ===================================================================
 Math Exceptions        Description
-=====================  ================================================
+=====================  ===================================================================
 ArithmeticError	       Base class for all errors that occur for numeric calculation.
                        You know a math error occurred, but you don't know the
                        specific error.
@@ -56,11 +56,11 @@ OverflowError          Raised when a calculation exceeds maximum limit for a
 FloatingPointError     Raised when a floating point calculation fails.
 ZeroDivisonError       Raised when division or modulo by zero takes place for
                        all numeric types.
-=====================  ================================================
+=====================  ===================================================================
 
-=====================  ================================================
+=====================  ===================================================================
 I/O Exceptions         Description
-=====================  ================================================
+=====================  ===================================================================
 FileNotFoundError      Raised when a file or directory is requested but doesn’t exist.
 IOError                Raised when an input/ output operation fails, such as
                        the print statement or the open() function when trying
@@ -72,11 +72,11 @@ EOFError               Raised when there is no input from either the raw_input()
                        or input() function and the end of file is reached.
 KeyboardInterrupt      Raised when the user interrupts program execution,
                        usually by pressing Ctrl+c.
-=====================  ================================================
+=====================  ===================================================================
 
-=====================  ================================================
+=====================  ===================================================================
 Other Exceptions       Description
-=====================  ================================================
+=====================  ===================================================================
 Exception              Base class for all exceptions. This catches most
                        exception messages.
 StopIteration          Raised when the next() method of an iterator
@@ -92,7 +92,7 @@ AttributeError	       Raised in case of failure of an attribute reference
                        or assignment.
 NotImplementedError    Raised when an abstract method that needs to be
                        implemented in an inherited class is not actually implemented.
-=====================  ================================================
+=====================  ===================================================================
 
 All exceptions are objects. The classes that define the objects are organized
 in a hierarchy, which is shown below. This is important because the parent
@@ -169,5 +169,3 @@ and ``ZeroDivisionError`` exceptions.
 
 
 .. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
-
-
