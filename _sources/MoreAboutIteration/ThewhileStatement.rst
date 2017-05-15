@@ -112,21 +112,21 @@ So why have two kinds of loops if ``for`` looks easier? In the next section, we 
    :answer_a: True
    :answer_b: False
    :correct: a
-   :feedback_a: Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
-   :feedback_b: Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
+   :feedback_a: Although the ``while`` loop uses a different syntax, it is just as powerful as a ``for`` loop and often more flexible.
+   :feedback_b: Often a ``for`` loop is more natural and convenient for a task, but that same task can always be expressed using a ``while`` loop.
 
    True or False: You can rewrite any ``for`` loop as a ``while`` loop.
 
 .. mchoice:: test_question7_2_2
-   :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
-   :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
-   :answer_c: You cannot compare n to 0 in while loop. You must compare it to another variable.
-   :answer_d: In the while loop body, we must set n to False, and this code does not do that.
+   :answer_a: ``n`` starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
+   :answer_b: ``answer`` starts at 1 and is incremented by ``n`` each time, so it will always be positive
+   :answer_c: You cannot compare ``n`` to 0 in a ``while`` loop. You must compare it to another variable.
+   :answer_d: In the ``while`` loop body, we must set ``n`` to ``False``, and this code does not do that.
    :correct: a
-   :feedback_a: The loop will run as long as n is positive. In this case, we can see that n will never become non-positive.
-   :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
-   :feedback_c: It is perfectly valid to compare n to 0. Though indirectly, this is what causes the infinite loop.
-   :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
+   :feedback_a: The loop will run as long as ``n`` is positive. In this case, we can see that ``n`` will never become non-positive.
+   :feedback_b: While it is true that answer will always be positive, ``answer`` is not considered in the loop condition.
+   :feedback_c: It is perfectly valid to compare ``n`` to 0. Though indirectly, this is what causes the infinite loop.
+   :feedback_d: The loop condition must become ``False`` for the loop to terminate, but ``n`` by itself is not the condition in this case.
 
    The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?
 
