@@ -7,45 +7,33 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. qnum::
-   :prefix: iter-2-
-   :start: 1
-
 The for Loop Revisited
 --------------------------
 
 Recall that the ``for`` loop processes each item in a list. Each item in
-turn is (re-)assigned to the loop variable, and the body of the loop is executed.
-We saw this example in an earlier chapter.
+turn is (re-)assigned to the loop variable--also called the iterator variable--and the body of the loop is executed. We saw this example in an earlier chapter.
 
 .. activecode:: ch07_for1
 
-    for f in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-        print("Hi", f, "Please come to my party on Saturday")
+    for guest in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+        print("Hi", guest, ". Please come to my party on Saturday")
 
 
-We have also seen iteration paired with the update idea to form the accumulator pattern. For example, to compute
-the sum of the first n integers, we could create a for loop using the ``range`` to produce the numbers 1 through n.
-Using the accumulator pattern, we can start with a running total variable initialized to 0 and on each iteration, add the current value of the loop
-variable. A function to compute this sum is shown below.
+We have also seen iteration paired with a variable updated to form the accumulator pattern. For example, to compute the sum of the first ``n`` integers, we could create a for loop using the ``range`` function to produce the numbers 1 through ``n``. Using the accumulator pattern, we can start with a running total variable initialized to 0 and on each iteration, add the current value of the loop variable. A function to compute this sum is shown below.
 
 .. activecode:: ch07_summation
 
-    def sumTo(aBound):
-        theSum = 0
-        for aNumber in range(1, aBound + 1):
-            theSum = theSum + aNumber
+    def sum_to(n):
+        the_sum = 0
+        for a_number in range(1, n+1):
+            the_sum = the_sum + a_number
 
-        return theSum
+        return the_sum
 
-    print(sumTo(4))
+    print(sum_to(4))
 
-    print(sumTo(1000))
+    print(sum_to(1000))
 
-To review, the variable ``theSum`` is called the accumulator. It is initialized to zero before we start the loop. The loop variable, ``aNumber`` will take on the values produced by the ``range(1, aBound + 1)`` function call. Note that this produces all the integers from 1 up to the value of ``aBound``.  If we had not added 1 to ``aBound``, the range would have stopped one value short since ``range`` does not include the upper bound.
+To review, the variable ``the_sum`` is called the accumulator. It is initialized to zero before we start the loop. The loop variable, ``a_number`` will take on the values produced by the ``range(1, n+1)`` function call. Note that this produces all the integers from 1 up to the value of ``n``.  If we had not added 1 to ``n``, the range would have stopped one value short since ``range`` does not include the upper bound in the returned list.
 
-The assignment statement, ``theSum = theSum + aNumber``, updates ``theSum`` each time through the loop. This accumulates the running total. Finally, we return the value of the accumulator.
-
-
-
-
+The assignment statement, ``the_sum = the_sum + a_number``, updates ``the_sum`` each time through the loop. This accumulates the running total. Finally, we return the value of the accumulator.

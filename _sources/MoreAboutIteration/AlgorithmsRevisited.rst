@@ -14,8 +14,7 @@
 Algorithms Revisited
 --------------------
 
-Newton's method is an example of an **algorithm**: it is a mechanical process
-for solving a category of problems (in this case, computing square roots).
+In recent sections, we've explored various algorithm, including Newton's method and the 3n+1 sequence. Each of these are processes for solving a specific problem--computing square roots, or generating a sequence of integers according to specified rules.
 
 It is not easy to define an algorithm. It might help to start with something
 that is not an algorithm. When you learned to multiply single-digit numbers,
@@ -34,7 +33,7 @@ carry out. They are mechanical processes in which each step follows from the
 last according to a simple set of rules.
 
 On the other hand, understanding that hard problems can be solved by step-by-step
-algorithmic processess is one of the major simplifying breakthroughs that has
+algorithmic processes is one of the major simplifying breakthroughs that has
 had enormous benefits. So while the execution of the algorithm
 may be boring and may require no intelligence, algorithmic or computational
 thinking is having a vast impact. It is the process of designing algorithms that is interesting,
@@ -45,8 +44,6 @@ thought, are the hardest to express algorithmically. Understanding natural
 language is a good example. We all do it, but so far no one has been able to
 explain *how* we do it, at least not in the form of a step-by-step mechanical
 algorithm.
-
-
 
 
 .. index:: table, logarithm, Intel, Pentium, escape sequence, tab, newline,
