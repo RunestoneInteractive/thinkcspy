@@ -394,7 +394,7 @@ Exercises
                     #. dateofeaster = 22 + d + e
 
 
-                Special note: The algorithm can give a date in April. Also, if the year is one of four special
+                Special note: The algorithm can give a date greater than 31 (the number of days in March). When this happens, it signifies a date in April. Thus, 32 is April 1, 35 is April 4, and so on. Also, if the year is one of four special
                 years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
 
                 Your program should print an error message if the user provides a date that is out of range.
