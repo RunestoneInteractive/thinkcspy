@@ -45,7 +45,7 @@
 Table of Contents
 :::::::::::::::::
 
-This is a test branch -- try it again.
+This is a test branch -- try it again, this time with more patience.
 
 .. raw:: html
 
