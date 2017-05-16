@@ -19,10 +19,10 @@ strings look like numbers. The following are illegal (assuming that ``message``
 has type string):
 
 .. sourcecode:: python
-    
-    message - 1   
-    "Hello" / 123   
-    message * "Hello"   
+
+    message - 1
+    "Hello" / 123
+    message * "Hello"
     "15" + 2
 
 Interestingly, the ``+`` operator does work with strings, but for strings, the
@@ -33,12 +33,12 @@ joining the two operands by linking them end-to-end. For example:
     :nocanvas:
 
     fruit = "banana"
-    bakedGood = " nut bread"
-    print(fruit + bakedGood)
+    baked_good = " nut bread"
+    print(fruit + baked_good)
 
 The output of this program is ``banana nut bread``. The space before the word
 ``nut`` is part of the string and is necessary to produce the space between
-the concatenated strings. Take out the space and run it again.
+the concatenated strings. Take out the space and run it again. You'll see that the resulting output is ``banananut bread``.
 
 The ``*`` operator also works on strings. It performs repetition. For example,
 ``'Fun'*3`` is ``'FunFunFun'``. One of the operands has to be a string and the
@@ -78,8 +78,8 @@ done first, you will need to use parenthesis.
    :feedback_d: The + operator has different meanings depending on the operands, in this case, two strings.
 
 
-   What is printed by the following statements?
-   
+   What is printed by the following statement?
+
    .. code-block:: python
 
       s = "python"
@@ -100,14 +100,10 @@ done first, you will need to use parenthesis.
    :feedback_d: The + and * operator are defined for strings as well as numbers.
 
 
-   What is printed by the following statements?
-   
+   What is printed by the following statement?
+
    .. code-block:: python
- 
+
       s = "python"
       excl = "!"
       print(s+excl*3)
-
-
-
-
