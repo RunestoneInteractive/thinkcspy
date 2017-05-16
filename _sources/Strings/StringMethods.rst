@@ -14,11 +14,11 @@
 String Methods
 --------------
 
-We previously saw that each turtle instance has its own attributes and 
+We previously saw that each turtle instance has its own attributes and
 a number of methods that can be applied to the instance. For example,
 we wrote ``tess.right(90)`` when we wanted the turtle object ``tess`` to perform the ``right`` method to turn
 to the right 90 degrees. The "dot notation" is the way we connect the name of an object to the name of a method
-it can perform.  
+it can perform.
 
 Strings are also objects. Each string instance has its own attributes and methods. The most important attribute of the string is the collection of characters. There are a wide variety of methods. Try the following program.
 
@@ -31,8 +31,8 @@ Strings are also objects. Each string instance has its own attributes and method
     print(tt)
 
 
-In this example, ``upper`` is a method that can be invoked on any string object 
-to create a new string in which all the 
+In this example, ``upper`` is a method that can be invoked on any string object
+to create a new string in which all the
 characters are in uppercase.  ``lower`` works in a similar fashion changing all characters in the string
 to lowercase.  (The original string ``ss`` remains unchanged. A new string ``tt`` is created.)
 
@@ -63,7 +63,7 @@ rindex      item                Like rfind except causes a runtime error if item
 
 You should experiment with these
 methods so that you understand what they do. Note once again that the methods that return strings do not
-change the original. You can also consult the `Python documentation for strings <http://docs.python.org/py3k/library/stdtypes.html#index-21>`_.
+change the original. You can also consult the `Python documentation for strings <https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str>`_.
 
 .. activecode:: ch08_methods1
 
@@ -114,9 +114,9 @@ change the original. You can also consult the `Python documentation for strings 
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
       s = "python rocks"
       print(s.count("o") + s.count("p"))
 
@@ -136,9 +136,9 @@ change the original. You can also consult the `Python documentation for strings 
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
       s = "python rocks"
       print(s[1] * s.index("n"))
 
@@ -149,4 +149,3 @@ change the original. You can also consult the `Python documentation for strings 
     single: runtime error
     single: negative index
     single: index; negative
-
