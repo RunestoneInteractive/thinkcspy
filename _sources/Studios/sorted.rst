@@ -78,7 +78,7 @@ Bonus Missions
 Bonus 1
 ~~~~~~~
 
-Write a function that takes a sentence with an introductory prepositional phrase and returns the number of characters (including whitespace and punctuation) remaining in the string *after* the comma. For example, "Before you go to bed, you need to brush your teeth." returns 30 and "Under the warm sun, the cat slept deeply." returns 21.
+Write a function that takes a sentence with an introductory prepositional phrase and returns the number of characters (including whitespace and punctuation) remaining in the string *after* the comma. For example, "Before you go to bed, you need to brush your teeth." returns 30 and "Under the warm sun, the cat slept deeply." returns 22.
 
 .. activecode:: sorted_bonus_1
 
