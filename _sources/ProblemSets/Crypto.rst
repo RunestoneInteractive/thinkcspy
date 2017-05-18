@@ -236,7 +236,7 @@ Recall that, `as described`_ in the *Initials* assignment, you should place ever
 Part 2: Vigenere
 ----------------
 
-If you're trying to pass notes in the back of class with your best friend Suzie, the Ceasar cipher would be fairly easy for a nosy outsider to decode. Let's implement a more complicated cipher algorithm.
+If you're trying to pass notes in the back of class with your best friend Suzie, the Caesar cipher would be fairly easy for a nosy outsider to decode. Let's implement a more complicated cipher algorithm.
 
 First, watch `this short video`_ on the Vigenere cipher, courtesy of the CS50 folks at Harvard.
 
@@ -592,7 +592,7 @@ Submitting Your Work
 
 To submit your work, you must upload your files directly, using the *Upload* button in the top-left of the Vocareum window. Upload all 3 files:
 
-- casear.py
+- caesar.py
 - vigenere.py
 - helpers.py
 
