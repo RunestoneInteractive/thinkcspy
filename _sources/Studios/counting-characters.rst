@@ -23,7 +23,7 @@ We'll need to use a while loop for the input portion of the program, and store t
 
 .. sourcecode:: python
 
-    { 'grade': '3.0', 'credits': 3}
+    { 'grade': 3.0, 'credits': 3}
 
 
 To calculate the GPA you'll need the idea of a *quality score*. A quality score is the number of credits for the class multiplied by the point score. For example, if you get a B (3.0) in a class worth 3 credits, the quality score is 9.0. The GPA for a student is the sum of the quality scores divided by the total number of credits.
@@ -38,17 +38,20 @@ This will be written locally in a code editor, and run at the command line.
 
     grades = []
 
+    continue_entry = True
+
     # gather grade information
-    while True:
+    while continue_entry:
         grade = input("Your grade (0.0-4.0): ")
         credits = input("# credits: ")
 
-    # store grades
-    grades.append({'grade': float(grade), 'credits': int(credits)})
+        # store grades
+        grades.append({'grade': float(grade), 'credits': int(credits)})
 
-    continue_entry = input("Enter another grade? [y/n]: ")
-    if continue_entry == 'n':
-        break
+        user_wants_to_continue = input("Enter another grade? [y/n]: ")
+        if user_wants_to_continue == 'n':
+            continue_entry = False
+
 
     # compute GPA
     total_quality_score = 0
@@ -70,7 +73,7 @@ You should complete this studio locally on your computer, and *not* in this book
 
 To run your program, execute: ::
 
-    $ python3 counting.py
+    $ python counting.py
 
 Write a program that calculates the number of times each character occurs in a string and prints these stats to the console. You could get the string as input from the user, but for the sake of simplicity, you may also hard-code the string into your program as the value of a variable. Here's a test string, for your convenience: ::
 
