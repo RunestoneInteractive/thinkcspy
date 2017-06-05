@@ -175,7 +175,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.
       :correct: c
-      :feedback_a: The items in the list are not actually used to control the color of the turtle because aColor is never used inside the loop.  But, the loop will execute once for each color in the list.
+      :feedback_a: The question is not asking you to describe the outcome of the entire loop, the question is asking you about the outcome of a **single iteration** of the loop.
       :feedback_b: Notice that aColor is never actually used inside the loop.
       :feedback_c: The body of the loop only draws one side of the square.  It will be  repeated once for each item in the list.  However, the color of the turtle never changes.
 
