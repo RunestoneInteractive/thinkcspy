@@ -59,4 +59,4 @@ with the four types of "contaners."
 .. index:: Tkinter, widget, widget hierarchy, Frame, LabelFrame, PanedWindow, Notebook
 
 
-.. _all_frame_widgets.py: Programs/all_frame_widgets.py
+.. _all_frame_widgets.py: ../_static/Programs/all_frame_widgets.py

@@ -111,9 +111,9 @@ Summary
 
 .. index:: model-view-controller design pattern, MVC, MVC version of Whack-a-mole game
 
-.. _whack_a_mole_v1.py: Programs/whack_a_mole_v1.py
-.. _whack_a_mole_v2.py: Programs/whack_a_mole_v2.py
-.. _whack_a_mole_v3.py: Programs/whack_a_mole_v3.py
-.. _whack_a_mole_v4.py: Programs/whack_a_mole_v4.py
-.. _whack_a_mole_v5.py: Programs/whack_a_mole_v5.py
+.. _whack_a_mole_v1.py: ../_static/Programs/whack_a_mole_v1.py
+.. _whack_a_mole_v2.py: ../_static/Programs/whack_a_mole_v2.py
+.. _whack_a_mole_v3.py: ../_static/Programs/whack_a_mole_v3.py
+.. _whack_a_mole_v4.py: ../_static/Programs/whack_a_mole_v4.py
+.. _whack_a_mole_v5.py: ../_static/Programs/whack_a_mole_v5.py
 
