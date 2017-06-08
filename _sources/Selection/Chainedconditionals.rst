@@ -16,7 +16,7 @@ Chained conditionals
 
 Python provides an alternative way to write nested selection such as the one shown in the previous section.
 This is sometimes referred to as a **chained
-conditional**
+conditional**.
 
 .. sourcecode:: python
 
