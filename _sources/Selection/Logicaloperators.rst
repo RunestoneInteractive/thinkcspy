@@ -55,7 +55,7 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_c: Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be True.
    :feedback_d: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
 
-   What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
+   What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?
 
 
 
