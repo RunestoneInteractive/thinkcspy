@@ -14,15 +14,9 @@
 Type conversion functions
 -------------------------
 
-Sometimes it is necessary to convert values from one type to another. Python provides
-a few simple functions that will allow us to do that. The functions ``int``, ``float`` and ``str``
-will (attempt to) convert their arguments into types `int`, `float` and `str`
-respectively. We call these **type conversion** functions.
+Sometimes it is necessary to convert values from one type to another. Python provides a few simple functions that will allow us to do that. The functions ``int()``, ``float()`` and ``str()`` will (attempt to) convert their arguments into types ``int``, ``float`` and ``str`` respectively. We call these **type conversion** functions.
 
-The ``int`` function can take a floating point number or a string, and turn it
-into an int. For floating point numbers, it *discards* the decimal portion of
-the number - a process we call *truncation towards zero* on the number line.
-Let us see this in action:
+The ``int()`` function can take a floating point number or a string, and turn it into an integer. For floating point numbers, it *discards* the decimal portion of the number - a process we call *truncation towards zero* on the number line. Let us see this in action:
 
 .. activecode:: ch02_20
     :nocanvas:
@@ -37,12 +31,9 @@ Let us see this in action:
     print(int("23bottles"))
 
 
-The last case shows that a string has to be a syntactically legal number,
-otherwise you'll get one of those pesky runtime errors. Modify the example by deleting the
-``bottles`` and rerun the program. You should see the integer ``23``.
+The last case shows that a string has to be a syntactically legal number, otherwise you'll get one of those pesky runtime errors. Modify the example by deleting the ``bottles`` and rerun the program. You should see the integer ``23``.
 
-The type converter ``float`` can turn an integer, a float, or a syntactically
-legal string into a float.
+The type converter ``float()`` can turn an integer, a float, or a syntactically legal string into a float.
 
 .. activecode:: ch02_21
     :nocanvas:
@@ -51,8 +42,7 @@ legal string into a float.
     print(type(float("123.45")))
 
 
-The type converter ``str`` turns its argument into a string. Remember that when we print a string, the
-quotes are removed. However, if we print the type, we can see that it is definitely `str`.
+The type converter ``str()`` turns its argument into a string. Remember that when we print a string, the quotes are removed. However, if we print the type, we can see that it is definitely ``str``.
 
 .. activecode:: ch02_22
     :nocanvas:
@@ -69,10 +59,10 @@ quotes are removed. However, if we print the type, we can see that it is definit
    :answer_c: 54
    :answer_d: 53.785
    :correct: b
-   :feedback_a: The statement is valid Python code. It calls the int function on 53.785 and then prints the value that is returned.
-   :feedback_b: The int function truncates all values after the decimal and prints the integer value.
-   :feedback_c: When converting to an integer, the int function does not round.
-   :feedback_d: The int function removes the fractional part of 53.785 and returns an integer, which is then printed.
+   :feedback_a: The statement is valid Python code. It calls the int() function on 53.785 and then prints the value that is returned.
+   :feedback_b: The int() function truncates all values after the decimal and prints the integer value.
+   :feedback_c: When converting to an integer, the int() function does not round.
+   :feedback_d: The int() function removes the fractional part of 53.785 and returns an integer, which is then printed.
 
    What value is printed when the following statement executes?
 
@@ -82,4 +72,3 @@ quotes are removed. However, if we print the type, we can see that it is definit
 
 
 .. index:: variable, assignment, assignment statement, state snapshot
-
