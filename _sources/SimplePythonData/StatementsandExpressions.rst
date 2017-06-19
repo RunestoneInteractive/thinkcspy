@@ -14,17 +14,12 @@
 Statements and Expressions
 --------------------------
 
-A **statement** is an instruction that the Python interpreter can execute. We
-have only seen the assignment statement so far. Some other kinds of statements
-that we'll see shortly are ``while`` statements, ``for`` statements, ``if``
-statements,  and ``import`` statements.  (There are other kinds too!)
+A **statement** is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far. Some other kinds of statements that we'll see shortly are ``while`` statements, ``for`` statements, ``if`` statements,  and ``import`` statements. (There are other kinds, too!)
 
 
 .. index:: expression
 
-An **expression** is a combination of values, variables, operators, and calls
-to functions. Expressions need to be evaluated. If you ask Python to ``print`` an expression, the interpreter
-**evaluates** the expression and displays the result.
+An **expression** is a combination of values, variables, operators, and calls to functions. Expressions need to be evaluated. If you ask Python to *print* an expression, the interpreter **evaluates** the expression and displays the result.
 
 .. activecode:: ch02_13
     :nocanvas:
@@ -33,13 +28,9 @@ to functions. Expressions need to be evaluated. If you ask Python to ``print`` a
     print(len("hello"))
 
 
-In this example ``len`` is a built-in Python function that returns the number
-of characters in a string. We've previously seen the ``print`` and the
-``type`` functions, so this is our third example of a function!
+In this example ``len()`` is a built-in Python function that returns the number of characters in a string. We've previously seen the ``print()`` and the ``type()`` functions, so this is our third example of a function!
 
-The *evaluation of an expression* produces a value, which is why expressions
-can appear on the right hand side of assignment statements. A value all by
-itself is a simple expression, and so is a variable. Evaluating a variable gives the value that the variable refers to.
+The *evaluation of an expression* produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable. Evaluating a variable gives the value that the variable refers to.
 
 .. activecode:: ch02_14
     :nocanvas:
@@ -63,11 +54,9 @@ If we take a look at this same example in the Python shell, we will see one of t
 	3.14
 	>>>
 
-Note that when we enter the assignment statement, ``y = 3.14``, only the prompt is returned. There is no value. This
-is due to the fact that statements, such as the assignment statement, do not return a value. They are simply executed.
+Note that when we enter the assignment statement, ``y = 3.14``, only the prompt is returned. There is no value. This is due to the fact that statements, such as the assignment statement, do not return a value. They are simply executed.
 
 On the other hand, the result of executing the assignment statement is the creation of a reference from a variable, ``y``, to a value, ``3.14``.  When we execute the print function working on ``y``, we see the value that y is referring to. In fact, evaluating ``y`` by itself results in the same response.
 
 
 .. index:: operator, operand, expression, integer division
-

@@ -15,54 +15,24 @@ Order of Operations
 -------------------
 
 
-When more than one operator appears in an expression, the order of evaluation
-depends on the **rules of precedence**. Python follows the same precedence
-rules for its mathematical operators that mathematics does.
+When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. Python follows the same precedence rules for its mathematical operators that mathematics does.
 
 
-
-
-.. The acronym PEMDAS
-.. is a useful way to remember the order of operations:
-
-#. Parentheses have the highest precedence and can be used to force an
-   expression to evaluate in the order you want. Since expressions in
-   parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is
-   8. You can also use parentheses to make an expression easier to read, as in
-   ``(minute * 100) / 60``, even though it doesn't change the result.
-#. Exponentiation has the next highest precedence, so ``2**1+1`` is 3 and
-   not 4, and ``3*1**3`` is 3 and not 27. Can you explain why?
-#. Multiplication and both division operators have the same
-   precedence, which is higher than addition and subtraction, which
-   also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and
-   ``5-2*2`` is 1, not 6.
-#. Operators with the *same* precedence are
-   evaluated from left-to-right. In algebra we say they are *left-associative*.
-   So in the expression ``6-3+2``, the subtraction happens first, yielding 3.
-   We then add 2 to get the result 5. If the operations had been evaluated from
-   right to left, the result would have been ``6-(3+2)``, which is 1.
-
-.. (The
-..  acronym PEDMAS could mislead you to thinking that division has higher
-..  precedence than multiplication, and addition is done ahead of subtraction -
-..  don't be misled. Subtraction and addition are at the same precedence, and
-..  the left-to-right rule applies.)
+#. Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is 8. You can also use parentheses to make an expression easier to read, as in ``(minute * 100) / 60``, even though it doesn't change the result.
+#. Exponentiation has the next highest precedence, so ``2**1+1`` is 3 and not 4, and ``3*1**3`` is 3 and not 27. Can you explain why?
+#. Multiplication and both division operators have the same precedence, which is higher than addition and subtraction, which also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and ``5-2*2`` is 1, not 6.
+#. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression ``6-3+2``, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been ``6-(3+2)``, which is 1.
 
 .. note::
 
-    Due to some historical quirk, an exception to the left-to-right
-    left-associative rule is the exponentiation operator `**`. A useful hint
-    is to always use parentheses to force exactly the order you want when
-    exponentiation is involved:
+    Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator ``**``. A useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
     .. activecode:: ch02_23
         :nocanvas:
 
         print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
         print((2 ** 3) ** 2)   # use parentheses to force the order you want!
-
-.. The immediate mode command prompt of Python is great for exploring and
-.. experimenting with expressions like this.
+        
 
 **Check your understanding**
 
