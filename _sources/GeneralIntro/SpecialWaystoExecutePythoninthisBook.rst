@@ -16,7 +16,6 @@ Executing Python in this Book
 
 This book provides two special ways to execute Python programs. Both techniques are designed to assist you as you learn the Python programming language. They will help you increase your understanding of how Python programs work.
 
-
 First, you can write, modify, and execute programs using a unique **activecode** interpreter that allows you to execute Python code right in the text itself (right from the web browser). Although this is certainly not the way real programs are written, it provides an excellent environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
 Take a look at the activecode interpreter in action. If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button. Try pressing the *run* button below.
@@ -27,18 +26,11 @@ Take a look at the activecode interpreter in action. If we use the Python code f
    print(2 + 3)
 
 
-Now try modifying the activecode program shown above. First, modify the string in the first print statement
-by changing the word *adds* to the word *multiplies*. Now press *run*. You can see that the result of the program
-has changed. However, it still prints "5" as the answer. Modify the second print statement by changing the
-addition symbol, the "+", to the multiplication symbol, "*". Press *run* to see the new results.
+Now try modifying the activecode program shown above. First, modify the string in the first print statement by changing the word *adds* to the word *multiplies*. Now press *run*. You can see that the result of the program has changed. However, it still prints "5" as the answer. Modify the second print statement by changing the addition symbol, the "+", to the multiplication symbol, "*". Press *run* to see the new results.
 
-You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep one copy of the program you are working on. For example, press the *Save* button now. You have just saved the current contents of the activecode window. Now make a few changes and press the *Run* button. You have changed the current program.
-Press *Load* to return your program to its previously saved state.
+You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep one copy of the program you are working on. For example, press the *Save* button now. You have just saved the current contents of the activecode window. Now make a few changes and press the *Run* button. You have changed the current program. Press *Load* to return your program to its previously saved state.
 
-In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool. This tool, known as **codelens**, allows you to control the step by step execution of a program. It also lets you see the values of
-all variables as they are created and modified. The following example shows codelens in action on the same program as we saw above. Note that in activecode, the source code executes from beginning to end and you can see the final result. In codelens you can see and control the step by step progress. Note that the red arrow always points to the next line of code that is going to be executed. The light green
-arrow points to the line that was just executed.
-
+In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool. This tool, known as **codelens**, allows you to control the step by step execution of a program. It also lets you see the values of all variables as they are created and modified. The following example shows codelens in action on the same program as we saw above. Note that in activecode, the source code executes from beginning to end and you can see the final result. In codelens you can see and control the step by step progress. Note that the red arrow always points to the next line of code that is going to be executed. The light green arrow points to the line that was just executed.
 
 
 .. codelens:: firstexample
@@ -49,8 +41,7 @@ arrow points to the line that was just executed.
     print(2 + 3)
 
 
-The examples in this book use a mixture of the standard Python  interpreter, source code, activecode, and codelens. You
-will be able to tell which is which by looking for either the Python prompt in the case of a shell mode program, the *run* button for the activecode, or the *forward/backward* buttons for codelens.
+The examples in this book use a mixture of the standard Python  interpreter, source code, activecode, and codelens. You will be able to tell which is which by looking for either the Python prompt in the case of a shell mode program, the *run* button for the activecode, or the *forward/backward* buttons for codelens.
 
 
 **Check your understanding**

@@ -15,57 +15,27 @@
 The Python Programming Language
 -------------------------------
 
-The programming language you will be learning is Python. Python is an example
-of a **high-level language**; other high-level languages you might have heard
-of are C++, PHP, and Java.
+The programming language you will be learning is Python. Python is an example of a **high-level language**; other high-level languages you might have heard of are C++, PHP, and Java.
 
-As you might infer from the name high-level language, there are also
-**low-level languages**, sometimes referred to as machine languages or assembly
-languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer. Assembly language uses a slightly easier format to refer to the low level instructions.
-Loosely speaking, computers can only execute programs written in
-low-level languages. To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in assembly language) have to be
-processed before they can run. This extra processing takes some time, which is
-a small disadvantage of high-level languages.
-However, the advantages to high-level languages are enormous.
+As you might infer from the name "high-level language", there are also **low-level languages**, sometimes referred to as machine languages or assembly languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer. Assembly language uses a slightly easier format to refer to the low level instructions. Loosely speaking, computers can only execute programs written in low-level languages. To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in an assembly language) have to be processed before they can run. This extra processing takes some time, which is a small disadvantage of high-level languages. However, the advantages to high-level languages are enormous.
 
-First, it is much easier to program in a
-high-level language. Programs written in a high-level language take less time
-to write, they are shorter and easier to read, and they are more likely to be
-correct. Second, high-level languages are **portable**, meaning that they can
-run on different kinds of computers with few or no modifications. Low-level
-programs can run on only one kind of computer and have to be rewritten to run
-on another.
+First, it is much easier to program in a high-level language. Programs written in a high-level language take less time to write, they are shorter and easier to read, and they are more likely to be correct. Second, high-level languages are **portable**, meaning that they can run on different kinds of computers with few or no modifications. Low-level programs can run on only one kind of computer and have to be rewritten to run on another.
 
-Due to these advantages, almost all programs are written in high-level
-languages. Low-level languages are used only for a few specialized
-applications.
+Due to these advantages, almost all programs are written in high-level languages. Low-level languages are used only for a few specialized applications.
 
-Two kinds of programs process high-level languages into low-level languages:
-**interpreters** and **compilers**. An interpreter reads a high-level program
-and executes it, meaning that it does what the program says. It processes the
-program a little at a time, alternately reading lines and performing
-computations.
+Two kinds of programs process high-level languages into low-level languages: **interpreters** and **compilers**. An interpreter reads a high-level program and executes it, meaning that it does what the program says. It processes the program a little at a time, alternately reading lines and performing computations.
 
 .. image:: Figures/interpret.png
    :alt: Interpret illustration
 
-A compiler reads the program and translates it completely before the program
-starts running. In this case, the high-level program is called the **source
-code**, and the translated program is called the **object code** or the
-**executable**. Once a program is compiled, you can execute it repeatedly
-without further translation.
+A compiler reads the program and translates it completely before the program starts running. In this case, the high-level program is called the **source code**, and the translated program is called the **object code** or the **executable**. Once a program is compiled, you can execute it repeatedly without further translation.
 
 .. image:: Figures/compile.png
    :alt: Compile illustration
 
-Many modern languages use both processes. They are first compiled into a lower
-level language, called **byte code**, and then interpreted by a program called
-a **virtual machine**. Python uses both processes, but because of the way
-programmers interact with it, it is usually considered an interpreted language.
+Many modern languages use both processes. They are first compiled into a low-level language, called **byte code**, and then interpreted by a program called a **virtual machine**. Python uses both processes, but because of the way programmers interact with it, it is usually considered an interpreted language.
 
-There are two ways to use the Python interpreter: *shell mode* and *program
-mode*. In shell mode, you type Python expressions into the **Python shell**,
-and the interpreter immediately shows the result. The example below shows the Python shell at work.
+There are two ways to use the Python interpreter: *shell mode* and *program mode*. In shell mode, you type Python expressions into the **Python shell**, and the interpreter immediately shows the result. The example below shows the Python shell at work.
 
 ::
 
@@ -77,20 +47,11 @@ and the interpreter immediately shows the result. The example below shows the Py
     5
     >>>
 
-The ``>>>`` is called the **Python prompt**. The interpreter uses the prompt to
-indicate that it is ready for instructions. We typed ``2 + 3``.  The
-interpreter evaluated our expression and replied ``5``. On the next line
-it gave a new prompt indicating that it is ready for more input.
+The ``>>>`` is called the **Python prompt**. The interpreter uses the prompt to indicate that it is ready for instructions. We typed ``2 + 3``. The interpreter evaluated our expression and replied ``5``. On the next line it gave a new prompt indicating that it is ready for more input.
 
-Working directly in the interpreter is convenient for testing short bits of
-code because you get immediate feedback. Think of it as scratch paper used to
-help you work out problems.
+Working directly in the interpreter is convenient for testing short bits of code because you get immediate feedback. Think of it as scratch paper used to help you work out problems.
 
-Alternatively, you can write an entire program by placing lines of Python instructions
-in a file and then use the interpreter to
-execute the contents of the file as a whole. Such a file is often referred to as **source code**.  For
-example, we used a text editor to create a source code file named ``firstprogram.py`` with
-the following contents:
+Alternatively, you can write an entire program by placing lines of Python instructions in a file and then use the interpreter to execute the contents of the file as a whole. Such a file is often referred to as **source code**. For example, we used a text editor to create a source code file named ``firstprogram.py`` with the following contents:
 
 .. sourcecode:: python
 
@@ -98,9 +59,7 @@ the following contents:
     print(2 + 3)
 
 
-By convention, files that contain Python programs have names that end with
-``.py`` .  Following this convention will help your operating system and other
-programs identify a file as containing python code.
+By convention, files that contain Python programs have names that end with ``.py``.  Following this convention will help your operating system and other programs identify a file as containing python code.
 
 ::
 
@@ -108,9 +67,7 @@ programs identify a file as containing python code.
     My first program adds two numbers, 2 and 3:
     5
 
-These examples show Python being run from a Unix command line. In other
-development environments, the details of executing programs may differ. Also,
-most programs are more interesting than this one.
+These examples show Python being run from a Unix command line. In other development environments, the details of executing programs may differ. Also, most programs are more interesting than this one.
 
 **Check your understanding**
 
@@ -120,8 +77,8 @@ most programs are more interesting than this one.
    :answer_c: the environment/tool in which you are programming.
    :answer_d: the number (or “code”) that you must input at the top of each program to tell the computer how to execute your program.
    :correct: a
-   :feedback_a: The file that contains the instructions written in the high level language is called the source code file.
-   :feedback_b: This language is simply called the programming language, or simply the language.
+   :feedback_a: The file that contains the instructions written in the high-level language is called the source code file.
+   :feedback_b: This language is simply called the programming language.
    :feedback_c: The environment may be called the IDE, or integrated development environment, though not always.
    :feedback_d: There is no such number that you must type in at the start of your program.
 
@@ -135,7 +92,7 @@ most programs are more interesting than this one.
    :correct: c
    :feedback_a: In this case high and low have nothing to do with altitude.
    :feedback_b: High and low have nothing to do with the type of device you are programming for. Instead, look at what it takes to run the program written in the language.
-   :feedback_c: Python is a high level language but must be interpreted into machine code (binary) before it can be executed.
+   :feedback_c: Python is a high-level language but must be interpreted into machine code (binary) before it can be executed.
    :feedback_d: While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
 
 
