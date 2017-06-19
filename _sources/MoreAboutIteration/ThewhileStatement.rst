@@ -112,7 +112,7 @@ other cases, it is not so easy to tell.
 	**definite iteration** because we definitely know how many times we are going to iterate.  On the other
 	hand, the ``while`` statement is dependent on a condition that needs to evaluate to ``False`` in order
 	for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
-	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem)
+	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)
 
 What you will notice here is that the ``while`` loop is more work for
 you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while``
