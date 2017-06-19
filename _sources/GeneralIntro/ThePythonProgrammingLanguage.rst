@@ -51,7 +51,7 @@ The ``>>>`` is called the **Python prompt**. The interpreter uses the prompt to 
 
 Working directly in the interpreter is convenient for testing short bits of code because you get immediate feedback. Think of it as scratch paper used to help you work out problems.
 
-Alternatively, you can write an entire program by placing lines of Python instructions in a file and then use the interpreter to execute the contents of the file as a whole. Such a file is often referred to as **source code**. For example, we used a text editor to create a source code file named ``firstprogram.py`` with the following contents:
+Alternatively, you can write an entire program by placing lines of Python instructions in a file and then use the interpreter to execute the contents of the file as a whole. Such a file is often referred to as **source code**. For example, we used a text editor to create a source code file named ``first-program.py`` with the following contents:
 
 .. sourcecode:: python
 
@@ -63,7 +63,7 @@ By convention, files that contain Python programs have names that end with ``.py
 
 ::
 
-    $ python firstprogram.py
+    $ python first-program.py
     My first program adds two numbers, 2 and 3:
     5
 

@@ -14,16 +14,9 @@
 Comments
 --------
 
-As programs get bigger and more complicated, they get more difficult to read.
-Formal languages are dense, and it is often difficult to look at a piece of
-code and figure out what it is doing, or why.
-For this reason, it is a good idea to add notes to your programs to explain in
-natural language what the program is doing. These notes are called comments.
+As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why. For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing. These notes are called comments.
 
-A **comment** in a computer program is text that is intended only for the human
-reader - it is completely ignored by the interpreter.
-In Python, the `#` token starts a comment. The rest of the line is ignored.
-Here is a new version of *Hello, World!*.
+A **comment** in a computer program is text that is intended only for the human reader - it is completely ignored by the interpreter. In Python, the `#` token starts a comment. The rest of the line is ignored. Here is a new version of *Hello, World!*.
 
 .. activecode:: ch01_3
 
@@ -35,10 +28,7 @@ Here is a new version of *Hello, World!*.
 
     print("Hello, World!")     # Isn't this easy!
 
-Notice that when you run this program, it still only prints the phrase Hello, World! None of the comments appear.
-You'll also notice that we've left a blank line in the program. Blank lines
-are also ignored by the interpreter, but comments and blank lines can make your
-programs much easier for humans to parse. Use them liberally!
+Notice that when you run this program, it still only prints the phrase Hello, World! None of the comments appear. You'll also notice that we've left a blank line in the program. Blank lines are also ignored by the interpreter, but comments and blank lines can make your programs much easier for humans to parse. Use them liberally!
 
 **Check your understanding**
 

@@ -14,16 +14,13 @@
 A Typical First Program
 -----------------------
 
-Traditionally, the first program written in a new language is called *Hello,
-World!* because all it does is display the words, Hello, World! In Python, the source code
-looks like this.
+Traditionally, the first program written in a new language is called *Hello, World!* because all it does is display the words, "Hello, World!". In Python, the source code looks like this.
 
 .. sourcecode:: python
 
     print("Hello, World!")
 
-This is an example of using the **print function**, which doesn't actually
-print anything on paper. It displays a value on the screen. In this case, the result is the phrase:
+This is an example of using the **print function**, which doesn't actually print anything on paper. It displays a value on the screen. In this case, the result is the phrase:
 
 ::
 
@@ -35,12 +32,9 @@ Here is the example in activecode. Give it a try!
 
     print("Hello, World!")
 
-The quotation marks in the program mark the beginning and end of the value.
-They don't appear in the result.
+The quotation marks in the program mark the beginning and end of the value. They don't appear in the result.
 
-Some people judge the quality of a programming language by the simplicity of
-the Hello, World! program. By this standard, Python does about as well as
-possible.
+Some people judge the quality of a programming language by the simplicity of the *Hello, World!* program. By this standard, Python does about as well as possible.
 
 **Check your understanding**
 
