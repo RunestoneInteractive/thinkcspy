@@ -98,7 +98,7 @@ black-box diagram with the Python code following.
 
     toSquare = 10
     result = square(toSquare)
-    print("The result of ", toSquare, " squared is ", result)
+    print("The result of", toSquare, "squared is", result)
 
 The **return** statement is followed by an expression which is evaluated.  Its
 result is returned to the caller as the "fruit" of calling this function.
@@ -137,7 +137,7 @@ where the function call was made.
 
     toSquare = 10
     squareResult = square(toSquare)
-    print("The result of ", toSquare, " squared is ", squareResult)
+    print("The result of", toSquare, "squared is", squareResult)
 
 Another important thing to notice as you step through this codelens
 demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
@@ -180,7 +180,7 @@ function returns.
 
     toSquare = 10
     squareResult = square(toSquare)
-    print("The result of ", toSquare, " squared is ", squareResult)
+    print("The result of", toSquare, "squared is", squareResult)
 
 The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
 where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the 
@@ -218,7 +218,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 
 .. mchoice:: test_question5_2_2
-   :answer_a: Nothing (no value)
+   :answer_a: None
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'
    :correct: a

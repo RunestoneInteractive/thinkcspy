@@ -2,7 +2,7 @@
 
 .. meta::
    :description: An interactive version of the How to Think Like a Computer Scientist book
-   :keywords: python, introduction, computer science
+   :keywords: python, python3, introduction, computer science
 
 .. toc_version: 2
 
@@ -120,5 +120,4 @@ Indices and tables
 ::::::::::::::::::
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

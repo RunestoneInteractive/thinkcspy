@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcspy"
+project_name = "cspyloyola"
 ###############################
 
 master_url = None

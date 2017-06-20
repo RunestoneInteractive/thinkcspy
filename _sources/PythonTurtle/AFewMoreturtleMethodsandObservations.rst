@@ -29,7 +29,7 @@ Here are a few more things that you might find useful as you write programs that
   ``alex.backward(-100)`` to move alex forward!)
 
   Part of *thinking like a scientist* is to understand more of the structure
-  and rich relationships in your field.  So revising a few basic facts about
+  and rich relationships in your field.  So reviewing a few basic facts about
   geometry and number lines, like we've done here is a good start if we're
   going to play with turtles.
 

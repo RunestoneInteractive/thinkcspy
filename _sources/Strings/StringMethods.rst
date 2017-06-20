@@ -57,8 +57,8 @@ center      width               Returns a string centered in a field of width sp
 ljust       width               Returns a string left justified in a field of width spaces
 rjust       width               Returns a string right justified in a field of width spaces
 
-find        item                Returns the leftmost index where the substring item is found
-rfind       item                Returns the rightmost index where the substring item is found
+find        item                Returns the leftmost index where the substring item is found, or -1 if not found
+rfind       item                Returns the rightmost index where the substring item is found, or -1 if not found
 index       item                Like find except causes a runtime error if item is not found
 rindex      item                Like rfind except causes a runtime error if item is not found
 ==========  ==============      ==================================================================
