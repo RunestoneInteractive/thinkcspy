@@ -11,6 +11,8 @@
    :prefix: data-4-
    :start: 1
 
+.. _variables:
+
 Variables
 ---------
 

@@ -29,25 +29,57 @@ First, you can write, modify, and execute programs using a unique **activecode**
 in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
 environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
-Take a look at the activecode interpreter in action.  If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button.   Try pressing the *run* button below.
-
 .. activecode:: ch01_1
 
    print("My first program adds two numbers, 2 and 3:")
    print(2 + 3)
 
 
-Now try modifying the activecode program shown above.  First, modify the string in the first print statement
-by changing the word *adds* to the word *multiplies*.  Now press *run*.  You can see that the result of the program
-has changed.  However, it still prints "5" as the answer.  Modify the second print statement by changing the
-addition symbol, the "+", to the multiplication symbol, "*".  Press *run* to see the new results.
+Take a look at the activecode interpreter in action. 
 
-You can also make changes and save them for reloading later. *Save* and *Load* allow you to keep one copy of the program you are working on.  For example, press the *Save* button now.  You have just saved the current contents of the activecode window.  Now make a few changes and press the *Run* button.  You have changed the current program.
-Press *Load* to return your program to its previously saved state.
+What you see depends on whether you are *logged in* or not!  
+Code that you write and run is saved for all future sessions 
+only if you are *logged in*!  If you are logged in, you should see a
+green *Save & Run* button.  If you are not logged in you see only *Run*.  
+In the next discussion we will refer to both variants as the *Run* button.
 
-In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of
-all variables as they are created and modified.  The following example shows codelens in action on the same program as we saw above.  Note that in activecode, the source code executes from beginning to end and you can see the final result.  In codelens you can see and control the step by step progress.  Note that the red arrow always points to the next line of code that is going to be executed.  The light green
-arrow points to the line that was just executed.
+If we use the Python code from the previous example and make it active, 
+you will see that it can be executed directly by pressing the *Run* button. 
+Try pressing the *Run* (or *Save & Run*) button above.
+
+Now try modifying the activecode program shown above. 
+First, modify the string in the first print statement 
+by changing the word *adds* to the word *multiplies*. 
+Now press *Run*. You can see that the result of the program has changed. 
+However, it still prints “5” as the answer. 
+Modify the second print statement by changing the addition symbol, 
+the “+”, to the multiplication symbol, “*”. 
+Press *Run* to see the new results.
+
+As the name suggests, *Save & Run* also *saves* your latest version of the code,
+and you can recover it even in later sessions when *logged in*. If *not* logged in,
+*Run* saves versions *only until your browser leaves the current web page*,
+and then you lose all modifications.
+
+After you have run your code the first time,
+a *Load History* button that was beside the *Run* button turns into a slider.
+If you click on the slider location box, you can use your left and right arrow 
+buttons to switch to other versions you ran. 
+Alternately you can drag the box on the slider. 
+Now move the slider to see a previously saved state. You can just run it
+by pressing *Run*, or edit and then save and run it as the latest version.
+
+In addition to activecode, you can also execute Python code with the assistance 
+of a unique visualization tool.  This tool, known as **codelens**, 
+allows you to control the step by step execution of a program.  
+It also lets you see the values of
+all variables (introduced in :ref:`variables`) as they are created and modified.  
+The following example shows codelens in action on the same program as we saw above.  
+Note that in activecode, the source code executes 
+from beginning to end and you can see the final result.  
+In codelens you can see and control the step by step progress.  
+Note that the red arrow always points to the next line of code that is going to be executed.  
+The light green arrow points to the line that was just executed.
 
 
 

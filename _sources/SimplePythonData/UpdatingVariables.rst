@@ -64,7 +64,7 @@ a variable, which means the same as incrementing it by 1.
      eBook, you can have a look here.  There are also instructions for
      installing Python on your computer here.
 
-   * `Topic 2: <http://interactivepython.org/courselib/static/diveintopython3/index.html>`_ Dive Into Python 3,
+   * `Topic 2: <http://www.diveintopython3.net/>`_ Dive Into Python 3,
      this is an online textbook by Mark Pilgrim.  If you have already had some
      programming experience, this book takes you off the deep end with
      both feet.

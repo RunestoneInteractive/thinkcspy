@@ -25,7 +25,7 @@ project_name = "thinkcspy"
 master_url = None
 doctrees = None
 if master_url is None:
-    if gethostname() in ['web407.webfaction.com', 'rsbuilder']:
+    if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
         master_url = 'http://interactivepython.org'
         if os.path.exists('../../custom_courses/{}'.format(project_name)):
             doctrees = '../../custom_courses/{}/doctrees'.format(project_name)

@@ -79,7 +79,7 @@ The appropriate way to write this function would be to pass power as a parameter
 For practice, you should rewrite the badsquare example to have a second parameter called power.
 
 There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot 
-change variables defined outside the function.  Consider the following
+change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
 codelens example:
 
 .. codelens::  cl_powerof_bad
