@@ -18,9 +18,6 @@ Glossary
     algorithm
         A general step by step process for solving a problem.
 
-    bug
-        An error in a program.
-
     byte code
         An intermediate language between source code and object code. Many modern languages first compile source code into byte code and then interpret the byte code with a program called a *virtual machine*.
 
@@ -32,12 +29,6 @@ Glossary
 
     compile
         To translate a program written in a high-level language into a low-level language all at once, in preparation for later execution.
-
-    debugging
-        The process of finding and removing any of the three kinds of programming errors.
-
-    exception
-        Another name for a runtime error.
 
     executable
         Another name for object code that is ready to be executed.
@@ -60,9 +51,6 @@ Glossary
     object code
         The output of the compiler after it translates the program.
 
-    parse
-        To examine a program and analyze the syntactic structure.
-
     portability
         A property of a program that can run on more than one kind of computer.
 
@@ -81,26 +69,11 @@ Glossary
     Python shell
         An interactive user interface to the Python interpreter. The user of a Python shell types commands at the prompt (>>>), and presses the return key to send these commands immediately to the interpreter for processing.
 
-    runtime error
-        An error that does not occur until the program has started to execute but that prevents the program from continuing.
-
-    semantic error
-        An error in a program that makes it do something other than what the programmer intended.
-
-    semantics
-        The meaning of a program.
-
     shell mode
         A style of using Python where we type expressions at the command prompt, and the results are shown immediately. Contrast with **source code**, and see the entry under **Python shell**.
 
     source code
         A program, stored in a file, in a high-level language before being compiled or interpreted.
-
-    syntax
-        The structure of a program.
-
-    syntax error
-        An error in a program that makes it impossible to parse --- and therefore impossible to interpret.
 
     token
         One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.

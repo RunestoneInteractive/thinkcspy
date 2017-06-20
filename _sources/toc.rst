@@ -79,6 +79,7 @@ Table of Contents
    Debugging/KnowyourerrorMessages.rst
    Debugging/StyleHighlights.rst
    Debugging/Summary.rst
+   Debugging/Glossary.rst
    Debugging/Exercises.rst
 
 

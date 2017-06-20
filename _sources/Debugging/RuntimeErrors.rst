@@ -14,13 +14,17 @@
 Runtime Errors
 --------------
 
-The second type of error is a runtime error, so called because the error does
-not appear until you run the program. These errors are also called
-**exceptions** because they usually indicate that something exceptional (and
-bad) has happened.
+The second type of error is a runtime error, so called because the error does not appear until you run the program. These errors are also called **exceptions** because they usually indicate that something exceptional (and bad) has happened.
 
-Runtime errors are rare in the simple programs you will see in the first few
-chapters, so it might be a while before you encounter one.
+Runtime errors are rare in the simple programs you will see in the first few chapters, so it might be a while before you encounter one. To see a runtime error in the activecode below, run it and enter "0" when prompted for input.
+
+.. activecode:: db_ex3_7
+
+   num_people_str = input("How many people will be eating pizza: ")
+   num_slices = 8
+   num_people_int = int(num_people_str)
+   slices_per_person = num_slices / num_people_int
+   print("Each person gets ", slices_per_person, " slices.")
 
 **Check your understanding**
 
@@ -33,7 +37,6 @@ chapters, so it might be a while before you encounter one.
    :feedback_b: This is a problem with the formal structure of the program. Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.
    :feedback_c: This will produce the wrong answer, but Python will not consider it an error at all. The programmer is the one who understands that the answer produced is wrong.
 
-   Which of the following is a run-time error?
+   Which of the following is a runtime error?
 
-.. index:: semantics, semantic error
-
+.. index:: runtime error
