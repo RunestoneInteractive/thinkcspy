@@ -19,8 +19,7 @@ Exercises
 
             .. tab:: Question
 
-                Evaluate the following numerical expressions in your head, then use
-                the active code window to check your results:
+                Evaluate the following numerical expressions in your head, then use the active code window to check your results:
 
                 #. ``5 ** 2``
                 #. ``9 * 5``
@@ -106,9 +105,7 @@ Exercises
 
             .. tab:: Question
 
-                Take the sentence: *All work and no play makes Jack a dull boy.*
-                Store each word in a separate variable, then print out the sentence on
-                one line using ``print``.
+                Take the sentence: *All work and no play makes Jack a dull boy.* Store each word in a separate variable, then print out the sentence on one line using ``print``.
 
                 .. activecode:: ex_2_5
 
@@ -135,8 +132,7 @@ Exercises
 
     #.
 
-        Add parenthesis to the expression ``6 * 1 - 2`` to change its value
-        from 4 to -6.
+        Add parenthesis to the expression ``6 * 1 - 2`` to change its value from 4 to -6.
 
         .. activecode:: ex_2_6
 
@@ -147,17 +143,12 @@ Exercises
 
             .. tab:: Question
 
-                The formula for computing the final amount if one is earning
-                compound interest is given on Wikipedia as
+                The formula for computing the final amount if one is earning compound interest is given on Wikipedia as
 
                 .. image:: Figures/compoundInterest.png
                     :alt: formula for compound interest
 
-                Write a Python program that assigns the principal amount of 10000 to
-                variable `P`, assign to `n` the value 12, and assign to `r` the interest
-                rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-                `t`, that the money will be compounded for. Calculate and print the final
-                amount after `t` years.
+                Write a Python program that assigns the principal amount of 10000 to variable `P`, assign to `n` the value 12, and assign to `r` the interest rate of 8% (0.08).  Then have the program prompt the user for the number of years, `t`, that the money will be compounded for. Calculate and print the final amount after `t` years.
 
                 .. activecode:: ex_2_7
 
@@ -198,8 +189,7 @@ Exercises
 
             .. tab:: Question
 
-                Write a program that will compute the area of a rectangle. Prompt the user to enter the width and height of the rectangle.
-                Print a nice message with the answer.
+                Write a program that will compute the area of a rectangle. Prompt the user to enter the width and height of the rectangle. Print a nice message with the answer.
 
                 .. activecode:: ex_2_9
 
