@@ -14,17 +14,15 @@
 The `random` module
 -------------------
 
-We often want to use **random numbers** in programs. Here are a few typical uses:
+We often want to use random numbers in programs. Here are a few typical uses:
 
-* To play a game of chance where the computer needs to throw some dice, pick a number, or flip a coin,
-* To shuffle a deck of playing cards randomly,
-* To randomly allow a new enemy spaceship to appear and shoot at you,
-* To simulate possible rainfall when we make a computerized model for
-  estimating the environmental impact of building a dam,
-* For encrypting your banking session on the Internet.
+* To play a game of chance where the computer needs to throw some dice, pick a number, or flip a coin
+* To shuffle a deck of playing cards randomly
+* To randomly allow a new enemy spaceship to appear and shoot at you
+* To simulate possible rainfall when we make a computerized model for estimating the environmental impact of building a dam
+* To encrypt your banking session on the Internet
 
-Python provides a module ``random`` that helps with tasks like this. You can
-take a look at it in the documentation. Here are the key things we can do with it.
+Python provides a module ``random`` that helps with tasks like this. You can take a look at it in `the documentation <https://docs.python.org/3/library/random.html#module-random>`_. Here are the key things we can do with it:
 
 .. activecode:: chmodule_rand
 
@@ -38,22 +36,11 @@ take a look at it in the documentation. Here are the key things we can do with i
 
 Press the run button a number of times. Note that the values change each time. These are random numbers.
 
-The ``randrange`` function generates an integer between its lower and upper
-argument, using the same semantics as ``range`` --- so the lower bound is included, but
-the upper bound is excluded.   All the values have an equal probability of occurring
-(i.e. the results are *uniformly* distributed).
+The ``randrange`` function generates an integer between its lower and upper argument, using the same semantics as ``range`` --- so the lower bound is included, but the upper bound is excluded. All the values have an equal probability of occurring (i.e. the results are *uniformly* distributed).
 
-The ``random()`` function returns a floating point number in the range [0.0, 1.0) --- the
-square bracket means "closed interval on the left" and the round parenthesis means
-"open interval on the right".  In other words, 0.0 is possible, but all returned
-numbers will be strictly less than 1.0. It is usual to *scale* the results after
-calling this method, to get them into a range suitable for your application.
+The ``random()`` function returns a floating point number in the range [0.0, 1.0) --- the square bracket means "closed interval on the left" and the round parenthesis means "open interval on the right".  In other words, 0.0 is possible, but all returned numbers will be strictly less than 1.0. It is usual to *scale* the results after calling this method, to get them into a range suitable for your application.
 
-In the
-case shown here, we've converted the result of the method call to a number in
-the range [0.0, 5.0).  Once more, these are uniformly distributed numbers --- numbers
-close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
-If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.
+In the case shown below, we've converted the result of the method call to a number in the range [0.0, 5.0).  Once more, these are uniformly distributed numbers --- numbers close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0. If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.
 
 .. activecode:: chmodule_rand2
 
@@ -64,19 +51,9 @@ If you continue to press the run button you will see random values between 0.0 a
     print(result)
 
 
+.. index:: deterministic algorithm, pseudo-random, seed
 
-
-
-
-.. index:: deterministic algorithm,  algorithm; deterministic, unit tests
-
-It is important to note that
-random number generators are based on a **deterministic** algorithm --- repeatable and predictable.
-So they're called **pseudo-random** generators --- they are not genuinely random.
-They start with a *seed* value. Each time you ask for another random number, you'll get
-one based on the current seed attribute, and the state of the seed (which is one
-of the attributes of the generator) will be updated. The good news is that each time you run your program, the seed value
-is likely to be different meaning that even though the random numbers are being created algorithmically, you will likely
+It is important to note that random number generators are based on a **deterministic** algorithm --- repeatable and predictable. So they're called **pseudo-random** generators --- they are not genuinely random. They start with a **seed** value. Each time you ask for another random number, you'll get one based on the current seed attribute, and the state of the seed (which is one of the attributes of the generator) will be updated. The good news is that each time you run your program, the seed value is likely to be different. This means that even though the random numbers are being created algorithmically, you will likely
 get random behavior each time you execute.
 
 
@@ -134,3 +111,5 @@ get random behavior each time you execute.
    :feedback_d: While a programmer would need to ensure the computer did not select the same number more than once, it is easy to ensure this.
 
    One reason that lotteries don’t use computers to generate random numbers is:
+
+   .. index:: random

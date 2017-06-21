@@ -14,11 +14,7 @@
 Modules and Getting Help
 ------------------------
 
-A **module** is a file containing Python definitions and statements intended
-for use in other Python programs. There are many Python modules that come with
-Python as part of the **standard library**. We have already used one of these quite extensively,
-the ``turtle`` module. Recall that once we import the module, we can use things
-that are defined inside.
+A **module** is a file containing Python definitions and statements intended for use in other Python programs. There are many Python modules that come with Python as part of the **standard library**. We have already used one of these quite extensively, the ``turtle`` module. Recall that once we import the module, we can use things that are defined inside.
 
 
 .. activecode:: chmod_01
@@ -37,27 +33,14 @@ that are defined inside.
 
 Here we are using ``Screen`` and ``Turtle``, both of which are defined inside the turtle module.
 
-But what if no one had told us about turtle? How would we know
-that it exists. How would we know what it can do for us? The answer is to ask for help and the best place to get
-help about the Python programming environment is to consult with the Python Documentation.
+But what if no one had told us about turtle? How would we know that it exists. How would we know what it can do for us? The answer is to ask for help and the best place to get help about the Python programming environment is to consult the Python Documentation.
 
-
-The  `Python Documentation <http://docs.python.org/py3k/>`_ site for Python version 3 (the home page is shown below) is an extremely useful reference
-for all aspects of Python.
-The site contains
-a listing of all the standard modules that are available with Python
-(see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).
-You will also see that there is a `Language Reference <http://docs.python.org/py3k/reference/index.html>`_
-and a `Tutorial <http://docs.python.org/py3k/tutorial/index.html>`_, as well as
-installation instructions, how-tos, and frequently asked questions. We encourage you to become familiar with this site
-and to use it often.
-
+The `Python Documentation <http://docs.python.org/py3k/>`_ site for Python version 3 (the home page is shown below) is an extremely useful reference for all aspects of Python. The site contains a listing of all the standard modules that are available with Python (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_). You will also see that there is a `Language Reference <http://docs.python.org/py3k/reference/index.html>`_ and a `Tutorial <http://docs.python.org/py3k/tutorial/index.html>`_, as well as installation instructions, how-to guides, and frequently asked questions. We encourage you to become familiar with this site and to use it often.
 
 
 .. image:: Figures/pythondocmedium.png
 
-If you have not done so already, take a look at the Global Module Index. Here you will see an alphabetical listing of all
-the modules that are available as part of the standard library. Find the turtle module.
+If you have not done so already, take a look at the Global Module Index. Here you will see an alphabetical listing of all the modules that are available as part of the standard library. Find the turtle module.
 
 .. image:: Figures/moduleindexmedium.png
 
@@ -66,18 +49,11 @@ the modules that are available as part of the standard library. Find the turtle 
 You can see that all the turtle functionality that we have talked about is there. However, there is so much more. Take some time to read through and familiarize yourself with some of the other things that turtles can do.
 
 
-
 .. admonition:: Note: Python modules and limitations with activecode
 
-	Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
-	We mentioned in the first chapter that programming is normally done using some type of development
-	environment and that the
-	activecode used here was strictly to help us learn. It is not the way we write production programs.
+	Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning. We mentioned in the first chapter that programming is normally done using some type of development environment and that the activecode used here was strictly to help us learn. It is not the way we write production programs.
 
-	To that end, it is necessary to mention that many of the  modules available in standard Python
-	will **not** work in the activecode environment. In fact, only turtle, math, and random have been
-	ported at this point. If you wish to explore any
-	additional modules, you will need to also explore using a more robust development environment.
+	To that end, it is necessary to mention that many of the modules available in standard Python will **not** work in the activecode environment. In fact, only turtle, math, and random have been imported at this point. If you wish to explore any additional modules, you will need to also explore using a more robust development environment. This is something we will do toward the end of this book.
 
 **Check your understanding**
 
@@ -115,3 +91,5 @@ You can see that all the turtle functionality that we have talked about is there
    :feedback_b: Only turtle, math, and random have been ported to work in activecode at this time.
 
    True / False:  All standard Python modules will work in activecode.
+
+   .. index:: module, standard library, Python Documentation

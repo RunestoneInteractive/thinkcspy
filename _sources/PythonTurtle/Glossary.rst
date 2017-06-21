@@ -13,64 +13,43 @@ Glossary
 .. glossary::
 
     attribute
-        Some state or value that belongs to a particular object. For example,
-        tess has a color.
+        Some state or value that belongs to a particular object. For example, ``tess`` has a color.
 
     canvas
-        A surface within a window where drawing takes place.
-
-    control flow
-        See *flow of execution* in the next chapter.
+        A surface within a window, or ``Screen``, where drawing takes place.
 
     deterministic
 		A process that is repeatable and predictable.
 
     documentation
-	    A place where you can go to get detailed information about aspects of your
-	    programming language.
+	    A place where you can go to get detailed information about aspects of a programming language.
 
     for loop
-        A statement in Python for convenient repetition of statements in
-        the *body* of the loop.
+        A construct in Python for convenient repetition of statements in the *body* of the loop.
 
     instance
-        An object that belongs to a class.  `tess` and `alex` are different
-        instances of the class `Turtle`
-
+        An object that belongs to a class. E.g., ``tess`` and ``alex`` are different instances of the class ```Turtle``.
 
     invoke
-        An object has methods. We use the verb invoke to mean *activate the
-        method*.  Invoking a method is done by putting parentheses after the
-        method name, with some possible arguments. So  ``wn.exitonclick()`` is
-        an invocation of the ``exitonclick`` method.
+        An object has methods. We use the verb invoke to mean *activate the method*.  Invoking a method is done by putting parentheses after the method name, with some possible arguments. So  ``wn.exitonclick()`` is an invocation of the ``exitonclick`` method.
 
     iteration
-		A basic building block for algorithms (programs).  It allows steps to be repeated. Sometimes called *looping*.
+		A basic building block for algorithms (programs).  It allows steps to be repeated. Sometimes called *looping* or *repetition*.
 
     loop body
-        Any number of statements nested inside a loop. The nesting is indicated
-        by the fact that the statements are indented under the for loop
-        statement.
+        Any number of statements nested inside a loop. The nesting is indicated by the fact that the statements are indented under the for loop statement.
 
     loop variable
-        A variable used as part of a for loop. It is assigned a different value
-        on each iteration of the loop, and is used as part of the terminating
-        condition of the loop.
+        A variable used as part of a for loop. It is assigned a different value on each iteration of the loop, and is used as part of the terminating condition of the loop.
 
     method
-        A function that is attached to an object. Invoking or activating the
-        method causes the object to respond in some way, e.g. ``forward`` is
-        the method when we say ``tess.forward(100)``.
+        A function that is attached to an object. Invoking or activating the method causes the object to respond in some way, e.g. ``forward`` is the method when we say ``tess.forward(100)``.
 
     module
-        A file containing Python definitions and statements intended for use in
-        other Python programs. The contents of a module are made available to
-        the other program by using the *import* statement.
+        A file containing Python definitions and statements intended for use in other Python programs. The contents of a module are made available to the other program by using the *import* statement.
 
     object
-        A "thing" to which a variable can refer. This could be a screen window,
-        or one of the turtles you have created.
-
+        A "thing" to which a variable can refer. This could be a screen window, or one of the turtles you have created.
 
     pseudo-random number
 		A number that is not genuinely random but is instead created algorithmically.
@@ -82,9 +61,7 @@ Glossary
 		A function that will provide you with random numbers, usually between 0 and 1.
 
     range
-        A built-in function in Python for generating sequences of integers. It
-        is especially useful when we need to write a for loop that executes a
-        fixed number of times.
+        A built-in function in Python for generating sequences of integers. It is especially useful when we need to write a for loop that executes a fixed number of times.
 
     sequential
 		The default behavior of a program. Step by step processing of algorithm.
@@ -96,9 +73,7 @@ Glossary
         The collection of attribute values that a specific data object maintains.
 
     terminating condition
-        A condition that occurs which causes a loop to stop repeating its body.
-        In the ``for`` loops we saw in this chapter, the terminating condition
-        has been when there are no more elements to assign to the loop variable.
+        A condition that occurs which causes a loop to stop repeating its body. In the ``for`` loops we saw in this chapter, the terminating condition has been when there are no more elements to assign to the loop variable.
 
     turtle
         A data object used to create pictures (known as turtle graphics).

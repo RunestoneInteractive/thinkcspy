@@ -14,8 +14,7 @@
 The range Function
 ----------------------
 
-In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
-to happen four times. We said that we could have used any four values. In fact, we even used four colors.
+In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration to happen four times. We said that we could have used any four values. In fact, we even used four colors.
 
 .. sourcecode:: python
 
@@ -29,12 +28,7 @@ to happen four times. We said that we could have used any four values. In fact, 
 
    wn.exitonclick()
 
-It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-want to write simple ``for loop`` controlled iteration. Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
-In fact, these lists are so popular that Python gives us special built-in
-``range`` objects
-that can deliver a sequence of values to
-the ``for`` loop. The sequence provided by ``range`` always starts with 0. If you ask for ``range(4)``, then you will get 4 values starting with 0. In other words, 0, 1, 2, and finally 3. Notice that 4 is not included since we started with 0. Likewise, ``range(10)`` provides 10 values, 0 through 9.
+It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you want to write simple ``for`` loop controlled iteration. Even though you can use lists of any number of items, or any combination of integers, the conventional thing to do is to use a list of integers starting with 0. In fact, these lists are so popular that Python gives us a special built-in ``range`` function that can deliver a sequence of values to the ``for`` loop. The sequence provided by ``range`` always starts with 0. If you ask for ``range(4)``, then you will get 4 values starting with 0. In other words, 0, 1, 2, and finally 3. Notice that 4 is not included since we started with 0. Likewise, ``range(10)`` provides 10 values, 0 through 9. This starting of a count at 0, instead of at 1, is called **zero-based indexing** and is very common in computer programming.
 
 .. sourcecode:: python
 
@@ -57,29 +51,14 @@ So to repeat something four times, a good Python programmer would do this:
         alex.left(90)
 
 
-The `range <http://docs.python.org/py3k/library/functions
-.html?highlight=range#range>`_ function is actually a very powerful function
-when it comes to
-creating sequences of integers. It can take one, two, or three parameters. We have seen
-the simplest case of one parameter such as ``range(4)`` which creates ``[0, 1, 2, 3]``.
-But what if we really want to have the sequence ``[1, 2, 3, 4]``?
-We can do this by using a two parameter version of ``range`` where the first parameter is the starting point and the second parameter is the ending point. The evaluation of ``range(1,5)`` produces the desired sequence. What happened to the 5?
-In this case we interpret the parameters of the range function to mean
-range(start,stop+1).
+The `range <http://docs.python.org/py3k/library/functions.html?highlight=range#range>`_ function is actually a very powerful function when it comes to creating sequences of integers. It can take one, two, or three parameters. We have seen the simplest case of one parameter such as ``range(4)`` which creates ``[0, 1, 2, 3]``. But what if we really want to have the sequence ``[1, 2, 3, 4]`` instead? We can do this by using a two parameter version of ``range`` where the first parameter is the starting point and the second parameter is the ending point. The evaluation of ``range(1,5)`` produces the desired sequence. Why don't we see a 5 in the list? It's because we interpret the parameters of the range function to mean ``range(start,stop+1)``. So you must subtract 1 from the second parameter to know what the final integer in the list will be.
 
 
 .. note::
 
-    Why in the world would range not just work like range(start,
-    stop)?  Think about it like this. Because computer scientists like to
-    start counting at 0 instead of 1, ``range(N)`` produces a sequence of
-    things that is N long, but the consequence of this is that the final
-    number of the sequence is N-1. In the case of start,
-    stop it helps to simply think that the sequence begins with start and
-    continues as long as the number is less than stop.
+    Why in the world would range not just work like ``range(start, stop)``?  Think about it like this. Because computer scientists like to start counting at 0 instead of 1, ``range(N)`` produces a sequence of things that is N long, but the consequence of this is that the final number of the sequence is N-1. In the case of ``(start, stop)`` it helps to simply think that the sequence begins with ``start`` and continues as long as the number *is less than* ``stop``.
 
-Here are a two examples for you to run. Try them and then add another line below to create a sequence starting
-at 10 and going up to 20 (including 20).
+Here are two examples for you to run. Try them and then add another line below to create a sequence starting at 10 and going up to 20 (including 20).
 
 
 .. activecode:: ch03_5
@@ -89,8 +68,7 @@ at 10 and going up to 20 (including 20).
     print(range(1, 5))
 
 
-Codelens will help us to further understand the way range works. In this case, the variable ``i`` will take on values
-produced by the ``range`` function.
+Codelens will help us to further understand the way range works. In this case, the variable ``i`` will take on values produced by the ``range`` function.
 
 .. activecode:: rangeme
 
@@ -98,16 +76,7 @@ produced by the ``range`` function.
        print(i)
 
 
-
-
-
-Finally, suppose we want to have a sequence of even numbers.
-How would we do that? Easy, we add another parameter, a step,
-that tells range what to count by. For even numbers we want to start at 0
-and count by 2's. So if we wanted the first 10 even numbers we would use
-``range(0,19,2)``. The most general form of the range is
-``range(start, stop, step)``. You can also create a sequence of numbers that
-starts big and gets smaller by using a negative value for the step parameter.
+Finally, suppose we want to have a sequence of even numbers. How would we do that? Easy, we add another parameter, a ``step``, that tells range what to count by. Say that for even numbers we want to start at 0 and count by 2's. So if we wanted the first 10 *even* numbers we would use ``range(0,19,2)``. The most general form of the range is ``range(start, stop, step)``. You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.
 
 .. activecode:: ch03_6
     :nocanvas:
@@ -164,3 +133,5 @@ Try it in codelens.
   :feedback_d: If range is passed only one argument, it interprets that argument as the end of the list (not inclusive).
 
   What happens if you give range only one argument? For example: range(4)
+
+  .. index:: range, zero-based indexing, step

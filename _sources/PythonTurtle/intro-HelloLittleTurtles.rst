@@ -12,28 +12,18 @@ Hello Little Turtles!
 
 .. index::
     single: module
-    single: function
-    single: function definition
-    single: definition; function
     single: turtle module
-    
 
-There are many *modules* in Python that provide very powerful features that we can use in our own programs. Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations.
+
+There are many **modules** in Python that provide very powerful features that we can use in our own programs. Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations.
 
 In this chapter we will introduce a module that allows us to create an object called a **turtle** that can be used to draw pictures.
-
-.. turtles and get them
-.. turn left, etc. Your turtle's tail is also endowed with the ability to leave
-.. to draw shapes and patterns.
 
 Turtle graphics, as it is known, is based on a very simple metaphor. Imagine that you have a turtle that understands English. You can tell your turtle to do simple commands such as go forward and turn right. As the turtle moves around, if its tail is down touching the ground, it will draw a line (leave a trail behind) as it moves. If you tell your turtle to lift up its tail it can still move around but will not leave a trail. As you will see, you can make some pretty amazing drawings with this simple capability.
 
 .. note::
 
-	The turtles are fun, but the real purpose of the chapter is to teach ourselves
+	Turtles are fun, but the real purpose of this chapter is to teach ourselves
 	a little more Python and to develop our theme of *computational thinking*,
 	or *thinking like a computer scientist*. Most of the Python covered here will
-	be explored in more depth later.
-
-
-.. index:: object, invoke, method, attribute, state, canvas
+	be explored later in more depth.
