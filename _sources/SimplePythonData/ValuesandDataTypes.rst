@@ -11,6 +11,8 @@
    :prefix: data-2-
    :start: 1
 
+
+
 Values and Data Types
 ---------------------
 
@@ -43,6 +45,8 @@ class **int**.
 
 	When we show the value of a string using the ``print`` function, such as in the third example above, the quotes are no longer present.  The
 	value of the string is the sequence of characters inside the quotes.  The quotes are only necessary to help Python know what the value is.
+
+You may have used function notation in a math class, like ``y = f(x)``, likely only for functions that act on a single numeric value, and produce a single numeric value.  Python has no such restrictions:  Inputs and outputs may be of any type.
 
 
 In the Python shell, it is not necessary to use the ``print`` function to see the values shown above.  The shell evaluates the Python function and automatically prints the result.  For example, consider the shell session shown below.  When
@@ -88,7 +92,7 @@ are in quotation marks like strings.
 They're strings!
 
 Strings in Python can be enclosed in either single quotes (``'``) or double
-quotes (``"``), or three of each (``'''`` or ``"""``)
+quotes (``"`` - the double quote character), or three of the same separate quote characters (``'''`` or ``"""``).
 
 .. activecode:: ch02_4
     :nocanvas:
