@@ -100,6 +100,7 @@ Appendices
 
    Appendices/errorsAndDebug.rst
    SimplePythonData/at_1_1.rst
+   Appendices/PrecedenceTable.rst
 
 Acknowledgements
 ::::::::::::::::
@@ -116,7 +117,7 @@ Acknowledgements
     FrontBackMatter/contrib.rst
     FrontBackMatter/fdl-1.3.rst
 
-Indices and tables
+Index and Search
 ::::::::::::::::::
 
 * :ref:`genindex`
