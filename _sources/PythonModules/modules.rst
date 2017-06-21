@@ -55,7 +55,7 @@ The site contains
 a listing of all the standard modules that are available with Python
 (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).
 You will also see that there is a `Language Reference <http://docs.python.org/py3k/reference/index.html>`_
-and a `Tutorial <http://docs.python.org/py3k/tutorial/index.html>`_, as well as
+and a `Tutorial <http://docs.python.org/py3k/tutorial/index.html>`_ (mostly aimed at people who are already familiar with another programming language), as well as
 installation instructions, how-tos, and frequently asked questions.  We encourage you to become familiar with this site
 and to use it often.
 
@@ -83,7 +83,7 @@ You can see that all the turtle functionality that we have talked about is there
 
 	To that end, it is necessary to mention that many of the  modules available in standard Python
 	will **not** work in the activecode environment.  In fact, only turtle, math, and random have been
-	ported at this point.  If you wish to explore any
+	completely ported at this point.  If you wish to explore any
 	additional modules, you will need to also explore using a more robust development environment.
 
 **Check your understanding**
