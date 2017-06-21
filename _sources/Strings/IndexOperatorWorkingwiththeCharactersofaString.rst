@@ -11,6 +11,11 @@
    :prefix: strings-4-
    :start: 1
 
+.. index:: 
+   single: [ ]; string indexing
+   index; string
+   string; index
+
 Index Operator: Working with the Characters of a String
 -------------------------------------------------------
 

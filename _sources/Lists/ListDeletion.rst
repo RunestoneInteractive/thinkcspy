@@ -11,6 +11,8 @@
    :prefix: list-9-
    :start: 1
 
+.. index:: del; a list portion
+
 List Deletion
 -------------
 
@@ -32,7 +34,7 @@ As you might expect, ``del`` handles negative indices and causes a runtime
 error if the index is out of range.
 In addition, you can use a slice as an index for ``del``.
 As usual, slices select all the elements up to, but not including, the second
-index.
+index, but do not cause runtime errors if the index limits go too far.
 
 
 .. note::
@@ -41,8 +43,4 @@ index.
 
     .. activecode:: scratch_09_01
 
-
-
-
-.. index:: is operator, objects and values
 

@@ -11,6 +11,9 @@
    :prefix: dict-2-
    :start: 1
 
+.. index:: del; dictionary
+   statement; del
+
 Dictionary Operations
 ---------------------
 

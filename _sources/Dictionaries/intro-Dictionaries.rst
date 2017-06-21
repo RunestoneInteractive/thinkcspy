@@ -11,11 +11,13 @@
    :prefix: dict-1-
    :start: 1
 
+.. index:: dictionary, mapping type, key-value pair
+   single: [ ]; dictionary access
+   value; dictionary
+
+
 Dictionaries
 ============
-
-
-.. index:: dictionary, mapping type, key, value, key-value pair
 
 All of the compound data types we have studied in detail so far --- strings,
 lists, and tuples --- are sequential collections.  This means that the items in the collection are
@@ -119,6 +121,4 @@ The key ``'two'`` yields the value ``'dos'``.
      mydict = {"cat":12, "dog":6, "elephant":23}
      print(mydict["dog"])
 
-
-.. index:: del statement, statement; del
 

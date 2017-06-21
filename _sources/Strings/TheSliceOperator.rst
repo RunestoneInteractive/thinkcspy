@@ -11,6 +11,10 @@
    :prefix: strings-7-
    :start: 1
 
+.. index::
+   single: [ : ]; string slice
+   slice; string
+
 The Slice Operator
 ------------------
 
@@ -94,7 +98,4 @@ What do you think ``fruit[:]`` means?
 
     .. activecode:: scratch_08_01
 
-
-
-.. index:: string comparison, comparison of strings
 

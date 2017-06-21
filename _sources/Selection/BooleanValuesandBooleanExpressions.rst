@@ -11,6 +11,16 @@
    :prefix: select-1-
    :start: 1
 
+.. index:: True, False, boolean value
+   comparison; numbers
+   single:  <; numbers
+   single:  <=; numbers
+   single:  >; numbers
+   single:  >=; numbers
+   single:  ==; numbers
+   single:  !=; numbers
+
+
 Boolean Values and Boolean Expressions
 --------------------------------------
 
