@@ -11,6 +11,8 @@
    :prefix: list-11-
    :start: 1
 
+.. index:: alias
+
 Aliasing
 --------
 
@@ -75,6 +77,4 @@ economize.
      blist[3] = 999
      print(alist)
 
-
-.. index:: clone
 
