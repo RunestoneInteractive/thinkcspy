@@ -11,6 +11,9 @@
    :prefix: strings-10-
    :start: 1
 
+.. index:: traversal, for loop
+
+
 Traversal and the ``for`` Loop: By Item
 ---------------------------------------
 

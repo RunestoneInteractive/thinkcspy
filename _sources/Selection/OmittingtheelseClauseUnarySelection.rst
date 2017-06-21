@@ -99,7 +99,3 @@ What would be printed if the value of ``x`` is negative?  Try it.
      else:
          print("This is always printed")
 
-.. index::
-    single: nested conditionals
-    single: conditionals; nested
-

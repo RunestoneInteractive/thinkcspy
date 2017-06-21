@@ -11,6 +11,10 @@
    :prefix: select-7-
    :start: 1
 
+.. index::
+   single: chained conditional
+   single: conditional; chained
+
 Chained conditionals
 --------------------
 

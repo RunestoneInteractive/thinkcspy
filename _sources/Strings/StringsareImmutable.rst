@@ -11,6 +11,10 @@
    :prefix: strings-9-
    :start: 1
 
+.. index:: mutable, immutable
+   runtime error; string item assignment
+   string; immutable
+
 Strings are Immutable
 ---------------------
 
@@ -58,12 +62,4 @@ The solution here is to concatenate a new first letter onto a slice of
       s = "Ball"
       s[0] = "C"
       print(s)
-
-
-
-.. index:: traversal, for loop, concatenation, abecedarian series
-
-.. index::
-    single: McCloskey, Robert
-    single: Make Way for Ducklings    
 

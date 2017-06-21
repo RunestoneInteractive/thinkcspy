@@ -126,7 +126,7 @@ this purpose!
 
 .. index::
    single: ( ); function call
-   
+
 Defining a new function does not make the function run. To do that we need a
 **function call**.  This is also known as a **function invocation**. We've already seen how to call some built-in functions like
 ``print``, ``range`` and ``int``. Function calls contain the name of the function to be
@@ -212,7 +212,7 @@ been defined, we can call it as many times as we like with whatever actual param
    Even if a function call needs no arguments, 
    the parentheses ``( )`` after the function name are *required*.  This 
    can lead to a difficult bug:  A function name without the
-   parenthesis is a legal expression; for example,  
+   parenthesis is a legal expression *referring* to the function; for example,  
    ``print`` and ``alex.penup``, but they do 
    not *call* the associated functions.
 
