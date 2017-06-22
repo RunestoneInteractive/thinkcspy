@@ -34,8 +34,8 @@ The program should prompt the user for the subtotal for their meal, along with t
 Studio
 ------
 
-It is possible to name the days 0 through 6, where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights, you arrive home on day number 6 (a Saturday).
+It is possible to name the days 0 through 6, where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day 3 (a Wednesday) and you return home after 10 nights, you arrive home on day 6 (a Saturday).
 
-Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+Write a general version of the program which asks for the day number that your vacation starts on and the length of your holiday, and then tells you the number of the day of the week you will return on.
 
 .. activecode:: holiday_studio

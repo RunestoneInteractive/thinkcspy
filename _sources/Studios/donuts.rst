@@ -8,7 +8,7 @@ Donuts
 Walkthrough
 -----------
 
-Imagine you're an American tourist in London. You've brought with you a bunch of `union jack <https://en.wikipedia.org/wiki/Union_Jack>`_ souvenir flags to sell, the proceeds of which will fund your excursions to local pubs. Each flag would be sold for $3 in the US, and the average pint in London costs £3.79 (3 pounds, 79 pence).
+Imagine you're an American tourist in London. You've brought with you a bunch of `Union Jack <https://en.wikipedia.org/wiki/Union_Jack>`_ souvenir flags to sell, the proceeds of which will fund your excursions to local pubs. Each flag would be sold for $3 in the US, and the average pint in London costs £3.79 (3 pounds, 79 pence).
 
 In class, we will write a program that allows us to calculate how many pints of beer we would be able to afford if we sell a certain quantity of souvenir flags. Since the flags are purchased in dollars, we'll need to convert from dollars to pounds to determine the cost in the UK.
 
@@ -64,13 +64,13 @@ After getting input, you should:
 3. Inform the user of the total cost of their order.
 4. Don't forget to include sales-tax, which is, let's say, 5%.
 
-Here's an example of how the finished program should behave:
+Here's an example of how the finished program should behave. Note that lines starting with ``>>>`` represent user input.
 
 ::
 
     Welcome to the Loop Hole!
     Today's Manager's Special is:
-    Crunch Jelly: A traditional jelly donut in which the jelly filling is made entirely of Capn' Crunch Berries Oops All Berries
+    Crunch Jelly: A traditional jelly donut in which the jelly filling is made entirely of Capn' Crunch Oops! All Berries
     How many would you like?
     >>> 3.33333
     How much would you like to pay per donut (suggested price is $4.35 each)?
@@ -83,6 +83,6 @@ Notice that the total price ``$8.74999125`` went way beyond 2 decimal places. Ob
 
 (Also, don't be concerned if your program gives an answer with a slightly different number of decimal places than the example program above. This is just a precision issue.)
 
-For the Manager's Special, you can make something up (you are the Manager, after all), or just use the Crunch Berries example. Whatever you decide, you can simply hard-code it directly into your code. In other words, the flavor doesn't actually have to change depending on what day it is. The important part of this Studio is the math involved in calculating the cost of the user's order.
+For the Manager's Special, you can make something up (you are the Manager, after all), or just use the Crunch Berries example. Whatever you decide, you can simply hard-code it directly into your code. In other words, the flavor doesn't actually have to change depending on what day it is. The important part of this Studio is the process involved in calculating the cost of the user's order.
 
 .. activecode:: donuts_studio
