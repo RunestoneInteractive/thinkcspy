@@ -7,22 +7,16 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: style, readability
+
 Programming With Style
 ----------------------
 
-Readability is very important to programmers, since in practice programs are
-read and modified far more often then they are written.
+Readability is very important to programmers, since programs are read and modified far more often then they are written.
 
-.. Most of the code examples
-.. in this book will be consistent with the *Python Enhancement Proposal 8*
-.. (`PEP 8 <http://www.python.org/dev/peps/pep-0008/>`__), a style guide developed by the Python community.
-
-We'll have more to say about style as our programs become more complex, but a
-few pointers will be helpful already:
+We've already discussed using Python conventions and introduced the Python style guide, but here is a review of some important conventions you should be using in your code going forward:
 
 * use 4 spaces for indentation
 * imports should go at the top of the file
-* separate function definitions with two blank lines
-* keep function definitions together
-* keep top level statements, including function calls, together at the
-  bottom of the program
+* keep function definitions together in the file (not littered throughout your code)
+* keep top level statements, including function calls, together at the bottom of the program, preferably in a ``main`` function.

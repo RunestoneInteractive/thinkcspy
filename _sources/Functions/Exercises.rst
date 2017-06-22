@@ -9,11 +9,9 @@ Exercises
 
             .. tab:: Question
 
-                Use the drawsquare function we wrote in this chapter in a program to draw
-                the image shown below.
-                Assume each side is 20 units.
-                (Hint: notice that the turtle has already moved away from the ending point of the last
-                square when the program ends.)
+                Use the ``draw_square`` function we wrote in this chapter to draw the image shown below. Assume each side is 20 units.
+
+                (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
 
                 .. image:: Figures/five_squares.png
 
@@ -21,22 +19,27 @@ Exercises
 
                     import turtle
 
-                    def drawSquare(t, sz):
+                    def draw_square(t, sz):
                         """Get turtle t to draw a square with sz side"""
 
                         for i in range(4):
                             t.forward(sz)
                             t.left(90)
 
-                    wn = turtle.Screen()
-                    wn.bgcolor("lightgreen")
+                    def main():
+                        wn = turtle.Screen()
+                        wn.bgcolor("lightgreen")
 
-                    alex = turtle.Turtle()
-                    alex.color("pink")
+                        alex = turtle.Turtle()
+                        alex.color("pink")
 
-                    drawSquare(alex,20)
+                        draw_square(alex,20)
 
-                    wn.exitonclick()
+                        wn.exitonclick()
+
+                    if __name__ == "__main__":
+                        main()
+
 
 
             .. tab:: Answer
@@ -45,30 +48,32 @@ Exercises
 
                     import turtle
 
-                    def drawSquare(t, sz):
+                    def draw_square(t, sz):
                         """Make turtle t draw a square with side sz."""
                         for i in range(4):
                             t.forward(sz)
                             t.left(90)
 
-                    wn = turtle.Screen()       # Set up the window and its attributes
-                    wn.bgcolor("lightgreen")
+                    def main():
+                        wn = turtle.Screen()       # Set up the window and its attributes
+                        wn.bgcolor("lightgreen")
 
-                    alex = turtle.Turtle()     # create alex
-                    alex.color('hotpink')
-                    alex.pensize(3)
+                        alex = turtle.Turtle()     # create alex
+                        alex.color('hotpink')
+                        alex.pensize(3)
 
-                    for i in range(5):
-                        drawSquare(alex, 20)   # Call the function to draw the square
-                        alex.penup()
-                        alex.forward(40)       # move alex to the starting position for the next square
-                        alex.pendown()
+                        for i in range(5):
+                            draw_square(alex, 20)   # Call the function to draw the square
+                            alex.penup()
+                            alex.forward(40)       # move alex to the starting position for the next square
+                            alex.pendown()
 
-                    wn.exitonclick()
+                        wn.exitonclick()
 
+                    if __name__ == "__main__":
+                        main()
 
-    #.  Write a program to draw this. Assume the innermost square is 20 units per side,
-        and each successive square is 20 units bigger, per side, than the one inside it.
+    #.  Write a program to draw this. Assume the innermost square is 20 units per side and each successive square is 20 units bigger, per side, than the one inside it.
 
         .. image:: Figures/nested_squares.png
 
@@ -82,9 +87,7 @@ Exercises
 
             .. tab:: Question
 
-                Write a non-fruitful function ``drawPoly(someturtle, somesides, somesize)`` which makes a turtle
-                draw a regular polygon.
-                When called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
+                Write a non-fruitful function ``draw_poly(t, sides, side_length)`` which makes a turtle draw a regular polygon. When called with ``draw_poly(tess, 8, 50)``, it will draw a shape like this:
 
                 .. image:: Figures/regularpolygon.png
 
@@ -97,20 +100,23 @@ Exercises
 
                     import turtle
 
-                    def drawPoly(t, num_sides, side_length):
-                        for i in range(num_sides):
+                    def draw_poly(t, sides, side_length):
+                        for i in range(sides):
                             t.forward(side_length)
-                            t.left(360/num_sides)
+                            t.left(360/sides)
 
-                    wn = turtle.Screen()       # Set up the window and its attributes
-                    wn.bgcolor("lightgreen")
+                    def main():
+                        wn = turtle.Screen()       # Set up the window and its attributes
+                        wn.bgcolor("lightgreen")
 
-                    tess = turtle.Turtle()
-                    tess.color('hotpink')
-                    tess.pensize(3)
+                        tess = turtle.Turtle()
+                        tess.color('hotpink')
+                        tess.pensize(3)
 
-                    drawPoly(tess, 8, 50)
+                        draw_poly(tess, 8, 50)
 
+                    if __name__ == "__main__":
+                        main()
 
     #.
 
@@ -120,11 +126,7 @@ Exercises
 
                 The two spirals in this picture differ only by the turn angle. Draw both.
 
-                *Note:* If you receive a ``TimeLimitError`` then you can do one or both of the following:
-
-                1. Make the turtle go faster!
-
-                2. Add the following lines to the top of your file. These will increase the time your program is allowed to run to 35,000 milliseconds, or 35 seconds. You can change this number, if you need to.
+                *Note:* Because this program might receive a ``TimeLimitError`` we've added some code to our answer to make the turtle go faster (use its ``speed`` method) and to increase the time the program is allowed to run to 35 seconds. You can do the latter in your code using:
 
                 .. sourcecode:: python
 
@@ -145,7 +147,7 @@ Exercises
 
                     sys.setExecutionLimit(35000)
 
-                    def drawSpiral(t, angle):
+                    def draw_spiral(t, angle):
                         ''' takes a turtle, t, and an angle in degrees '''
                         length = 1
                         for i in range(84):
@@ -153,37 +155,36 @@ Exercises
                             t.right(angle)
                             length = length + 2
 
+                    def main():
+                        wn = turtle.Screen()       # Set up the window and its attributes
+                        wn.bgcolor("lightgreen")
 
-                    wn = turtle.Screen()       # Set up the window and its attributes
-                    wn.bgcolor("lightgreen")
+                        guido = turtle.Turtle()    # create guido
+                        guido.color('blue')
+                        guido.speed(10)
 
-                    guido = turtle.Turtle()    # create guido
-                    guido.color('blue')
-                    guido.speed(10)
+                        ## draw the first spiral ##
+                        # position guido
+                        guido.penup()
+                        guido.backward(110)
+                        guido.pendown()
 
-                    ## draw the first spiral ##
-                    # position guido
-                    guido.penup()
-                    guido.backward(110)
-                    guido.pendown()
+                        # draw the spiral using a 90 degree turn angle
+                        draw_spiral(guido, 90)
 
-                    # draw the spiral using a 90 degree turn angle
-                    drawSpiral(guido, 90)
+                        ## draw the second spiral ##
+                        # position guido
+                        guido.penup()
+                        guido.home()
+                        guido.forward(90)
+                        guido.pendown()
 
+                        draw_spiral(guido, 89)
 
-                    ## draw the second spiral ##
-                    # position guido
-                    guido.penup()
-                    guido.home()
-                    guido.forward(90)
-                    guido.pendown()
+                    if __name__ == "__main__":
+                        main()
 
-                    drawSpiral(guido, 89)
-
-
-
-    #.  Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
-        question above to have its turtle draw an equilateral triangle.
+    #.  Write a non-fruitful function ``draw_equi_triangle(turtle, size)`` which calls ``draw_poly`` from the question above to have its turtle draw an equilateral triangle.
 
         .. activecode:: ex_5_6
 
@@ -194,15 +195,11 @@ Exercises
 
             .. tab:: Question
 
-                Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-                including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55. Use the
-                equation  (n * (n + 1)) / 2.
+                Write a fruitful function ``sum_to(n)`` that returns the sum of all integer numbers up to and including ``n``.  So ``sum_to(10)`` would be ``1+2+3...+10`` which would return the value 55. Use the equation  (n * (n + 1)) / 2.
 
                 .. activecode:: ex_5_7
 
-                    from test import testEqual
-
-                    def sumTo(n):
+                    def sum_to(n):
                         # your code here
 
 
@@ -210,20 +207,21 @@ Exercises
 
                 .. activecode:: q7_answer
 
-                    from test import testEqual
-
-                    def sumTo(n):
+                    def sum_to(n):
                         result = (n * (n + 1)) / 2
                         return result
 
-                    # Now lets see how well this works
-                    t = sumTo(0)
-                    print("The sum from 1 to 0 is",t)
-                    t = sumTo(10)
-                    print("The sum from 1 to 10 is",t)
-                    t = sumTo(5)
-                    print("The sum from 1 to 5 is",t)
+                    def main():
+                        # Now lets see how well this works
+                        t = sum_to(0)
+                        print("The sum from 1 to 0 is",t)
+                        t = sum_to(10)
+                        print("The sum from 1 to 10 is",t)
+                        t = sum_to(5)
+                        print("The sum from 1 to 5 is",t)
 
+                    if __name__ == "__main__":
+                        main()
 
     #.
 
@@ -243,18 +241,19 @@ Exercises
 
                     import turtle
 
-                    def drawFivePointStar(t):
+                    def draw_star(t):
                         for i in range(5):
                             t.forward(100)
                             t.left(216)
 
-                    wolfram = turtle.Turtle()
-                    drawFivePointStar(wolfram)
-                    
+                    def main():
+                        wolfram = turtle.Turtle()
+                        draw_star(wolfram)
 
-    #.  Extend your program above. Draw five stars, but between each, pick up the pen,
-        move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
-        You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
+                    if __name__ == "__main__":
+                        main()
+
+    #.  Extend your program above. Draw five stars, but between each, pick up the pen, move forward by 350 units, turn right by 144, put the pen down, and draw the next star. You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
 
         .. image:: Figures/five_stars.png
 
@@ -269,8 +268,7 @@ Exercises
 
             .. tab:: Question
 
-                Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
-                equal to 3).
+                Extend the star function to draw an ``n`` pointed star.  (Hint: ``n`` must be an odd number greater or equal to 3).
 
                 .. activecode:: ex_5_11
 
@@ -281,19 +279,20 @@ Exercises
 
                     import turtle
 
-                    def drawStar(t, n):
+                    def draw_star(t, n):
                         for i in range(n):
                             t.forward(100)
                             t.left(180 - 180/n)
 
-                    stroustrup = turtle.Turtle()
-                    drawStar(stroustrup, 7)
+                    def main():
+                        sam = turtle.Turtle()
+                        draw_star(sam, 7)
+
+                    if __name__ == "__main__":
+                        main()
 
 
-
-    #.  Write a function called drawSprite that will draw a sprite. The function will need parameters for
-        the turtle, the number of legs, and the length of the legs. Invoke the function to create a sprite
-        with 15 legs of length 120.
+    #.  Write a function called ``draw_sprite`` that will draw a sprite. The function will need parameters for the turtle, the number of legs, and the length of the legs. Invoke the function to create a sprite  with 15 legs of length 120.
 
         .. activecode:: ex_5_12
 
@@ -304,12 +303,11 @@ Exercises
 
             .. tab:: Question
 
-                Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-                including `n`.   This time use the accumulator pattern.
+                Rewrite the function ``sum_to(n)`` that returns the sum of all integer numbers up to and including ``n``.   This time use the accumulator pattern.
 
                 .. activecode:: ex_5_13
 
-                    def sumTo(n):
+                    def sum_to(n):
                         # your code here
 
 
@@ -317,108 +315,64 @@ Exercises
 
                 .. activecode:: q13_answer
 
-                    def sumTo(n):
+                    def sum_to(n):
                         sum = 0
                         for i in range(1,n+1):
                             sum = sum + i
                         return sum
 
-                    # Now lets see how well this works
-                    t = sumTo(0)
-                    print("The sum from 1 to 0 is",t)
-                    t = sumTo(10)
-                    print("The sum from 1 to 10 is",t)
-                    t = sumTo(5)
-                    print("The sum from 1 to 5 is",t)
+                    def main():
+                        # Now lets see how well this works
+                        t = sum_to(0)
+                        print("The sum from 1 to 0 is",t)
+                        t = sum_to(10)
+                        print("The sum from 1 to 10 is",t)
+                        t = sum_to(5)
+                        print("The sum from 1 to 5 is",t)
 
-
-
-    #.  Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
-        Newton's algorithm.
-        Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
-        is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-
-        .. activecode:: ex_5_14
-
+                    if __name__ == "__main__":
+                        main()
 
     #.
 
-        .. tabbed:: ex_5
+        .. tabbed:: q14
 
             .. tab:: Question
 
-                Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
+                Write a function called ``fancy_square`` that will draw a square with fancy corners (sprites on the corners).  You should implement and use the ``draw_sprite`` function from above. 
 
-                .. activecode:: ex_5_15
-
-
-            .. tab:: Answer
-
-                .. activecode:: ex_5_answer
-
-                    def myPi(iters):
-                        ''' Calculate an approximation of PI using the Leibniz
-                        approximation with iters number of iterations '''
-                        pi = 0
-                        sign = 1
-                        denominator = 1
-                        for i in range(iters):
-                            pi = pi + (sign/denominator)
-                            sign = sign * -1  # alternate positive and negative
-                            denominator = denominator + 2
-
-                        pi = pi * 4.0
-                        return pi
-
-                    pi_approx = myPi(10000)
-                    print(pi_approx)
-
-
-
-    #.  Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
-
-        .. activecode:: ex_5_16
-
-    #.
-
-        .. tabbed:: q17
-
-            .. tab:: Question
-
-                Write a function called `fancySquare` that will draw a square with fancy corners (spites on the corners).  You should
-                implement and use the `drawSprite` function from above. For an even more interesting look, how about adding small
-                triangles to the ends of the sprite legs.
-
-                .. activecode:: ex_5_17
+                .. activecode:: ex_5_14
 
             .. tab:: Answer
 
-                .. activecode:: q17_answer
+                .. activecode:: q14_answer
 
                     import turtle
 
-                    def drawSprite(t, numlegs, leglength):
-                       angle = 360/numlegs
-                       for i in range(numlegs):
-                          t.forward(leglength)
-                          t.backward(leglength)
-                          t.left(angle)
+                    def draw_sprite(t, legs, leg_length):
+                        angle = 360/legs
+                        for i in range(legs):
+                            t.forward(leg_length)
+                            t.backward(leg_length)
+                            t.left(angle)
 
-                    def drawFancySquare(t, sz, lgs, lgl):
-                       for i in range(4):
-                           t.forward(sz)
-                           drawSprite(t, lgs, lgl)
-                           t.left(90)
+                    def fancy_square(t, sz, lgs, lgl):
+                        for i in range(4):
+                            t.forward(sz)
+                            draw_sprite(t, lgs, lgl)
+                            t.left(90)
 
-                    wn = turtle.Screen()
-                    wn.bgcolor("lightgreen")
+                    def main():
+                        wn = turtle.Screen()
+                        wn.bgcolor("lightgreen")
 
-                    alex = turtle.Turtle()
-                    drawFancySquare(alex, 100, 10, 15)
+                        alex = turtle.Turtle()
+                        fancy_square(alex, 100, 10, 15)
 
-                    wn.exitonclick()
+                        wn.exitonclick()
 
-
+                    if __name__ == "__main__":
+                        main()
 
 
 Weekly Graded Assignment
