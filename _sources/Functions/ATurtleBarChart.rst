@@ -11,6 +11,8 @@
    :prefix: func-10-
    :start: 1
 
+.. index:: bar chart
+
 A Turtle Bar Chart
 ------------------
 

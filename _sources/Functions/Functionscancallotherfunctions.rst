@@ -11,6 +11,12 @@
    :prefix: func-5-
    :start: 1
 
+.. index::
+    functional decomposition
+    generalization
+    abstraction
+
+
 Functions can Call Other Functions
 ----------------------------------
 
@@ -162,8 +168,5 @@ demonstrates two:
 
     * `Drawing a Circle <../Labs/lab04_01.html>`_ In this guided lab exercise we will work
       through a simple problem solving exercise related to drawing a circle with the turtle.
-
-.. index:: flow of execution
-
 
 

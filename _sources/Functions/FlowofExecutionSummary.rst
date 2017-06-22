@@ -11,6 +11,9 @@
    :prefix: func-6-
    :start: 1
 
+.. index:: flow of execution
+
+
 Flow of Execution Summary
 -------------------------
 
@@ -39,23 +42,10 @@ function completes, the program picks up where it left off in the function that
 called it. When it gets to the end of the program, it terminates.
 
 What's the moral of this sordid tale? When you read a program, don't read from
-top to bottom. Instead, follow the flow of execution.  This means that you will read the def statements as you
+top to bottom. Instead, follow the flow of execution.  This means that you will read the ``def`` statements as you
 are scanning from top to bottom, but you should skip the body of the function
 until you reach a point where that function is called.
 
-
-.. index::
-    single: parameter
-    single: function; parameter
-    single: argument
-    single: function; argument
-    single: import statement
-    single: statement; import
-    single: composition
-    single: function; composition
-
-
-.. index:: bar chart
 
 
 **Check your understanding**

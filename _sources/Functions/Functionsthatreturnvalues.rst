@@ -11,6 +11,9 @@
    :prefix: func-2-
    :start: 1
 
+.. index:: return
+   function; return
+   
 Functions that Return Values
 ----------------------------
 
@@ -130,13 +133,13 @@ function are in separate boxes.
 
 As you step through the example in codelens notice that the **return** statement not only causes the
 function to return a value, but it also returns the flow of control back to the place in the program
-where the function call was made.  this is true in gneral:
+where the function call was made.  this is true in general:
 
 .. note:: 
    The call to a function *terminates* after the execution of a return statement.  
-   This is fairly obvious is the return statement is the last statement in the function, but
+   This is fairly obvious if the return statement is the last statement in the function, but
    we will see later where it makes sense to have a return statement even when other statements
-   follow, and the further statements are not executed.
+   follow, and the further statements are *not* executed.
 
 
 

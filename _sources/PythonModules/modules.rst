@@ -11,6 +11,9 @@
    :prefix: modules-1-
    :start: 1
 
+.. index:: documentation online, Global Module Index
+   module; standard
+
 Modules and Getting Help
 ------------------------
 

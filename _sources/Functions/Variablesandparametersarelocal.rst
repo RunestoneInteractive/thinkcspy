@@ -11,6 +11,10 @@
    :prefix: func-3-
    :start: 1
 
+.. index:: local variable
+   variable; local
+   lifetime
+
 Variables and Parameters are Local
 ----------------------------------
 
@@ -67,6 +71,11 @@ nonsensical variation of the square function.
     result = badsquare(10)
     print(result)
 
+.. index::
+   local scope
+   global scope
+   scope
+
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate
 an important rule about how variables are looked up in Python.
@@ -95,6 +104,8 @@ codelens example:
 
 Now step through the code.  What do you notice about the values of variable ``power``
 in the local scope compared to the variable ``power`` in the global scope?
+
+.. index:: shadow
 
 The value of ``power`` in the local scope was different than the global scope.
 That is because in this example ``power`` was used on the left hand side of the
