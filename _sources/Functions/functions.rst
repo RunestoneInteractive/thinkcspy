@@ -11,7 +11,7 @@
    :prefix: func-1-
    :start: 1
 
-.. index:: function, compound statements, function definition, parameter, header, body, docstring
+.. index:: function, compound statements, function definition, parameter, header, body, docstring, function call
 
 Functions
 ---------

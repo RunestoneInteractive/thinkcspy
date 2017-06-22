@@ -396,7 +396,7 @@ Weekly Graded Assignment
         ...etc
 
 
-    b. Write a second loop that prints each number and its square on a new line, like this: ::
+    b. Write a second loop that prints each number and its square on a new line, precisely like this: ::
 
         The square of 12 is 144
         The square of 10 is 100
