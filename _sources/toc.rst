@@ -126,7 +126,7 @@ Table of Contents
 
    Functions/functions.rst
    Functions/Functionsthatreturnvalues.rst
-   Functions/Variablesandparametersarelocal.rst
+   Functions/Parametersandlocalvariables.rst
    Functions/TheAccumulatorPattern.rst
    Functions/Functionscancallotherfunctions.rst
    Functions/FlowofExecutionSummary.rst

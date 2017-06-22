@@ -67,8 +67,8 @@ Exercises
                 .. activecode:: q3_answer
 
 
-                    for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
-                        print("One of the months of the year is", amonth)
+                    for month in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
+                        print("One of the months of the year is", month)
 
 
     #.
@@ -344,8 +344,8 @@ Exercises
                   import random
 
                   for i in range(10):
-                    num = random.randrange(1, 200)
-                    print(num)
+                      num = random.randrange(1, 200)
+                      print(num)
 
 
     #.

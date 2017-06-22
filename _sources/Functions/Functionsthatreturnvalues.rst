@@ -14,7 +14,7 @@
 Functions That Return Values
 ----------------------------
 
-Most functions require arguments, values that control how the function does its job. For example, if you want to find the absolute value of a number, you have to indicate what the number is. Python has a built-in function for computing the absolute value:
+Most functions require arguments --- values that control how the function does its job. For example, if you want to find the absolute value of a number, you have to indicate what the number is. Python has a built-in function for computing the absolute value:
 
 .. activecode:: ch04_4
     :nocanvas:
