@@ -42,7 +42,11 @@ To test the new function, we call it with sample values.
     def daily_miles_traveled(before, after, days):
         return 0.0
 
-    print(daily_miles_traveled(1000.0, 1500.5, 5))
+    def main():
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
+
+    if __name__ == "__main__":
+        main()
 
 
 We chose these values because they are easy to work with. We can quickly figure out in our head that the total miles traveled are *500.5* and since there are 5 days spent driving, that equals an average of *100.1* miles traveled per day. When testing a function, it is useful to know what the right answer will be so you can quickly tell if your program is producing the correct output.
@@ -57,7 +61,11 @@ A logical first step in the computation is to find the difference between the tw
         total_miles = after - before
         return total_miles
 
-    print(daily_miles_traveled(1000.0, 1500.5, 5))
+    def main():
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
+
+    if __name__ == "__main__":
+        main()
 
 At this point, we return the total miles traveled just to check that we are getting the expected result of *500.5*. Next we can compute our desired final output, the average miles traveled per day.
 
@@ -68,7 +76,11 @@ At this point, we return the total miles traveled just to check that we are gett
         average_miles = total_miles / days
         return average_miles
 
-    print(daily_miles_traveled(1000.0, 1500.5, 5))
+    def main():
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
+
+    if __name__ == "__main__":
+        main()
 
 
 .. activecode:: ch06_milestraveledfinal
@@ -78,11 +90,15 @@ At this point, we return the total miles traveled just to check that we are gett
         average_miles = total_miles / days
         return average_miles
 
-    print(daily_miles_traveled(1000.0, 1500.5, 5))
+    def main():
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
+
+    if __name__ == "__main__":
+        main()
 
 Test this with a few different values to make sure it is working consistently. If that works correctly, you are done. Otherwise, examine the last line you added to confirm that the logic is correct and that it is free of typos.
 
-When you start out, you might add only a line or two of code at a time. As you gain more experience, you might find yourself writing and debugging bigger conceptual chunks. As you improve your programming skills you should find yourself managing bigger and bigger chunks: this is very similar to the way we learned to read letters, syllables, words, phrases, sentences, paragraphs, etc., or the way we learn to chunk music --- from indvidual notes to chords, bars, phrases, and so on.
+When you start out, you might add only a line or two of code at a time. As you gain more experience, you might find yourself writing and debugging bigger conceptual chunks. As you improve your programming skills you should find yourself managing bigger and bigger chunks: this is very similar to the way we learned to read letters, syllables, words, phrases, sentences, paragraphs, etc., or the way we learn to chunk music --- from individual notes to chords, bars, phrases, and so on.
 
 The key aspects of the process are:
 

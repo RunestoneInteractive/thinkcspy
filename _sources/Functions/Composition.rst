@@ -11,68 +11,55 @@
    :prefix: func-9-
    :start: 1
 
+.. index:: composition
+
 Composition
 -----------
 
-As we have already seen, you can call one function from within another.
-This ability to build functions by using other functions is called **composition**.
+As we have already seen, you can call one function from within another. This ability to build functions by using other functions is called **composition**.
 
-As an example, we'll write a function that takes two points, the center of the
-circle and a point on the perimeter, and computes the area of the circle.
+As an example, we'll expand our program from the previous chapter to tell us how much we will be reimbursed for travel expenses, since this was a road trip we took for work. Our workplace policy is that these expenses must be broken down by day. So we'll need to figure out the mileage reimbursement on a daily basis. We get a reimbursement of $.50 per mile. We also get a $100 per day reimbursement for food and lodging. Since there are multiple different computations to perform, it makes sense to break this program down into smaller chunks.
 
-Assume that the center point is stored in the variables ``xc`` and ``yc``, and
-the perimeter point is in ``xp`` and ``yp``. The first step is to find the
-radius of the circle, which is the distance between the two points.
-Fortunately, we've just written a function, ``distance``, that does just that,
-so now all we have to do is use it:
+First, let's review our program so far and then see what new input, output, and processing we need to add.
 
 .. sourcecode:: python
-    
-    radius = distance(xc, yc, xp, yp)
 
-The second step is to find the area of a circle with that radius and return it.
-Again we will use one of our earlier functions:
+    def daily_miles_traveled(before, after, days):
+        total_miles = after - before
+        average_miles = total_miles / days
+        return average_miles
 
-.. sourcecode:: python
-    
-    result = area(radius)
-    return result
+    def main():
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
 
-Wrapping that up in a function, we get:
+    if __name__ == "__main__":
+        main()
 
-.. activecode:: ch06_newarea
-    
-    def distance(x1, y1, x2, y2):
-	    dx = x2 - x1
-	    dy = y2 - y1
-	    dsquared = dx**2 + dy**2
-	    result = dsquared**0.5
-	    return result
+It looks like we'll need to add a function that will multiply the average daily miles traveled by the amount we are paid per mile to determine our mileage reimbursement. It should also add the per diem amount to that so that it returns the total amount we should be reimbursed per day. Then we'll need to call this function from ``main`` and pass in these three inputs. (Note that we want to make these pay per mile and per diem amounts parameters rather than **hard code** them within the function as $.50 and $100 respectively, since these values may change frequently).
 
-    def area(radius):
-        b = 3.14159 * radius**2
-        return b
+.. activecode:: ch06_newmileage
 
-    def area2(xc, yc, xp, yp):
-        radius = distance(xc, yc, xp, yp)
-        result = area(radius)
-        return result
+    def daily_miles_traveled(before, after, days):
+        total_miles = after - before
+        average_miles = total_miles / days
+        return average_miles
 
-    print(area2(0,0,1,1))
+    def reimbursement(miles, pay, extra_pay):
+        mileage = miles * pay
+        return mileage + extra_pay
 
+    def main():
+        daily_miles = daily_miles_traveled(1000.0, 2000.0, 5)
+        per_mile_pay = .50
+        per_diem = 100
+        daily_reimbursement = reimbursement(daily_miles, per_mile_pay, per_diem)
+        print("Amount you should be reimbursed per day:", daily_reimbursement)
 
+    if __name__ == "__main__":
+        main()
 
-We called this function ``area2`` to distinguish it from the ``area`` function
-defined earlier. There can only be one function with a given name within a
-module.
+We could now say that our ``main`` function is *composed* of our two other functions. We call our previously defined function ``daily_miles_traveled`` from within the ``main`` function and then we pass the data returned from that function as an argument to the ``reimbursement`` function. The ``reimbursement`` function then calculates and outputs our daily reimbursement total to the ``main`` function. The ``main`` function then outputs this total to the user by printing it on the screen.
 
-Note that we could have written the composition without storing the intermediate results.
+In this way we keep our tasks separated into smaller chunks of code, each handling a specific task. This will make it easier to reuse our code in other programs, and also easier to change or debug the code in this program.
 
-.. sourcecode:: python
-    
-    def area2(xc, yc, xp, yp):
-        return area(distance(xc, yc, xp, yp))
-
-
-.. index:: boolean function
-
+Notice how this also makes our program more flexible. For instance, the ``reimbursement`` function could be used to determine weekly reimbursements instead of just daily reimbursements. We wouldn't need to change anything within that function to do so, we would only change the arguments that we pass via the ``main`` function so that we are passing the weekly miles traveled and weekly extra reimbursement amounts to it instead of the daily miles and per diem amounts.
