@@ -85,8 +85,8 @@ this rather nice code that can draw a rectangle.
             t.forward(h)
             t.left(90)
 
-The parameter names are deliberately chosen as single letters to ensure they're not misunderstood.
-In real programs, once you've had more experience, we will insist on better variable names than this.
+The parameter names are chosen as single letters for conciseness.
+In real programs, we will insist on better variable names than this.
 The point is that the program doesn't "understand" that you're drawing a rectangle or that the
 parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful
 for humans.  They are not concepts that the program or the computer understands.
