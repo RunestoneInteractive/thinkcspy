@@ -339,7 +339,7 @@ Exercises
 
             .. tab:: Question
 
-                Write a function called ``fancy_square`` that will draw a square with fancy corners (sprites on the corners).  You should implement and use the ``draw_sprite`` function from above. 
+                Write a function called ``fancy_square`` that will draw a square with fancy corners (sprites on the corners).  You should implement and use the ``draw_sprite`` function from above.
 
                 .. activecode:: ex_5_14
 
@@ -380,7 +380,7 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write a function ``areaOfCircle(r)`` which returns the area of a circle of radius ``r``
+    Write a function ``area_of_circle(r)`` which returns the area of a circle of radius ``r``
 
     As a refresher, the area of any circle is equal to the radius squared, multiplied by pi (where pi is 3.14159....).
 
@@ -388,25 +388,26 @@ Weekly Graded Assignment
 
     .. activecode:: ex_5_8
 
-        # TODO: use def to define a function called areaOfCircle which takes an argument called r
+        # TODO: use def to define a function called area_of_circle which takes an argument called r
 
             # TODO implement your function to return the area of a circle whose radius is r
 
 
         # Below are some tests which can give you an indication that your code seems to be correct.
+
         # IMPORTANT: You should NOT include this part when you submit in Vocareum.
         # When you submit, only include the function above.
         from test import testEqual
 
-        t = areaOfCircle(0)
+        t = area_of_circle(0)
         testEqual(t, 0)
-        t = areaOfCircle(1)
+        t = area_of_circle(1)
         testEqual(t,math.pi)
-        t = areaOfCircle(100)
+        t = area_of_circle(100)
         testEqual(t, 31415.926535897932)
-        t = areaOfCircle(-1)
+        t = area_of_circle(-1)
         testEqual(t, math.pi)
-        t = areaOfCircle(-5)
+        t = area_of_circle(-5)
         testEqual(t, 25 * math.pi)
-        t = areaOfCircle(2.3)
+        t = area_of_circle(2.3)
         testEqual(t, 16.61902513749)
