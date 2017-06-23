@@ -56,19 +56,15 @@ Boolean functions are often used in conditional statements:
 
 It might be tempting to write something like
 ``if isDivisible(x, y) == True:``
-but the extra comparison is  not necessary.  The following example shows the ``isDivisible`` function at work.  Notice how
+but the extra comparison is redundant.  You only need an ``==`` expression if you are comparing some other type than boolean. (``isDivisible(x, y) == False`` can also be made more concise as 
+``not isDivisible(x, y)``). The following example shows the ``isDivisible`` function at work.  Notice how
 descriptive the code is when we move the testing details into a boolean function.  Try it
 with a few other actual parameters to see what is printed.
 
 .. activecode:: ch06_boolfun2
 
     def isDivisible(x, y):
-        if x % y == 0:
-            result = True
-        else:
-            result = False
-
-        return result
+        return x % y == 0
 
     if isDivisible(10, 5):
         print("That works")
@@ -82,12 +78,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
     :showoutput:
 
     def isDivisible(x, y):
-        if x % y == 0:
-            result = True
-        else:
-            result = False
-
-        return result
+        return x % y == 0
 
     if isDivisible(10, 5):
         print("That works")
@@ -116,7 +107,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
    :feedback_a: It is perfectly valid to return the result of evaluating a Boolean expression.
    :feedback_b: x +y < z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
 
-   Is the following statement legal in Python (assuming x, y and z are defined to be numbers)?
+   Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?
 
    .. code-block:: python
 
