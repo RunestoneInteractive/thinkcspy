@@ -77,8 +77,6 @@ The same program in codelens will allow you to observe the flow of execution.
 
 
 
-.. note:: The names of the variables have been chosen to help readability.
-
 More formally, here is the flow of execution for a ``while`` statement:
 
 #. Evaluate the condition, yielding ``False`` or ``True``.
@@ -93,6 +91,14 @@ indentation.
 This type of flow is called a **loop** because the third step loops back around
 to the top. Notice that if the condition is ``False`` the first time through the
 loop, the statements inside the loop are never executed.
+
+.. warning::
+   Though Python's ``while`` is very close to the English "while", 
+   there is an important difference:  In English "while X, do Y", 
+   we usually assume that immediately after X becomes false, we stop 
+   with Y.  In Python there is *not* an immediate stop:  After the 
+   initial test, any following tests come only after the execution of 
+   the *whole* body, even if the condition becomes false in the middle of the loop body.
 
 The body of the loop should change the value of one or more variables so that
 eventually the condition becomes ``False`` and the loop terminates. Otherwise the
@@ -120,7 +126,7 @@ loop you have to control the loop variable yourself.  You give it an initial val
 for completion, and then make sure you change something in the body so that the loop
 terminates.
 
-So why have two kinds of loop if ``for`` looks easier?  This next example shows an indefinite iteration where
+So why have two kinds of loop if ``for`` looks easier?  The next section, :ref:`randomly-walking-turtles`, shows an indefinite iteration where
 we need the extra power that we get from the ``while`` loop.
 
 
