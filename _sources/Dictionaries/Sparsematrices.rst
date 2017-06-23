@@ -14,6 +14,7 @@
 
 .. index:: matrix
    sparse matrix
+   
 
 Sparse Matrices
 ---------------

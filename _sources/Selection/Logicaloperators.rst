@@ -11,6 +11,13 @@
    :prefix: select-2-
    :start: 1
 
+.. index::logical operator
+   operator; logical
+   single: and 
+   single: or
+   single: not
+
+
 Logical operators
 -----------------
 

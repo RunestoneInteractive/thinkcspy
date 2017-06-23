@@ -11,6 +11,10 @@
    :prefix: select-5-
    :start: 1
 
+.. index:: unary selection
+   else; omitted
+
+
 Omitting the `else` Clause: Unary Selection
 -------------------------------------------
 
