@@ -80,12 +80,12 @@ Here is the complete program. Try it and then change the data to see that it can
 
   def main():
       data = [48, 117, 200, 240, 160, 260, 220]
-      maxheight = max(data)
-      numbars = len(data)
+      max_height = max(data)
+      num_bars = len(data)
       border = 10
 
       wn = turtle.Screen()             # Set up the window and its attributes
-      wn.setworldcoordinates(0-border, 0-border, 40 * numbars + border, maxheight + border)
+      wn.setworldcoordinates(0-border, 0-border, 40 * num_bars + border, max_height + border)
       wn.bgcolor("lightgreen")
 
       tess = turtle.Turtle()           # create tess and set some attributes

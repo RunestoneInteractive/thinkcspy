@@ -11,11 +11,12 @@
    :prefix: select-6-
    :start: 1
 
+.. index:: if statement, nested conditionals, flow of control, conditional
+
 Nested Conditionals
 -------------------
 
-One conditional can also be **nested** within another. For example, assume we have two integer variables, ``x`` and ``y``.
-The following pattern of selection shows how we might decide how they are related to each other.
+One conditional can also be **nested** within another. For example, assume we have two integer variables, ``x`` and ``y``. The following pattern of selection shows how we might decide how they are related to each other.
 
 .. sourcecode:: python
 
@@ -27,16 +28,11 @@ The following pattern of selection shows how we might decide how they are relate
         else:
             print("x and y must be equal")
 
-The outer conditional contains two branches.
-The second branch (the else from the outer) contains another ``if`` statement, which
-has two branches of its own. Those two branches could contain
-conditional statements as well.
+The outer conditional contains two branches. The second branch (the outer else) contains another ``if`` statement, which has two branches of its own. Those two branches could contain conditional statements as well.
 
 The flow of control for this example can be seen in this flowchart illustration.
 
 .. image:: Figures/flowchart_nested_conditional.png
-
-
 
 
 Here is a complete program that defines values for ``x`` and ``y``.  Run the program and see the result. Then change the values of the variables to change the flow of control.
@@ -56,11 +52,9 @@ Here is a complete program that defines values for ``x`` and ``y``.  Run the pro
 
 .. note::
 
-	In some programming languages, matching the if and the else is a problem. However, in Python this is not the case.
-	The indentation pattern tells us exactly which else
-	belongs to which if.
+	In some programming languages, matching the ``if`` and the ``else`` can be confusing. However, in Python this is not the case. The indentation pattern tells us exactly which ``else`` belongs to which ``if``.
 
-If you are still a bit unsure, here is the same selection as part of a codelens example. Step through it to see how the correct ``print`` is chosen.
+If you are still a bit unsure how the flow of control is working, here is the same selection as part of a codelens example. Step through it to see how the correct ``print`` is chosen.
 
 .. codelens:: sel1
     :showoutput:
@@ -99,8 +93,3 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
              print(x, " is a positive number")
          else:
              print(x," is 0")
-
-
-.. index::
-    single: chained conditional
-    single: conditional; chained

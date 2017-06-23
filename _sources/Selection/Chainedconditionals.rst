@@ -11,12 +11,12 @@
    :prefix: select-7-
    :start: 1
 
+.. index:: if statement, elif, chained conditional, selection, flow of control
+
 Chained Conditionals
 --------------------
 
-Python provides an alternative way to write nested selection such as the one shown in the previous section.
-This is sometimes referred to as a **chained
-conditional**
+Python provides an alternative way to write nested selection such as the one shown in the previous section. This is sometimes referred to as a **chained conditional**
 
 .. sourcecode:: python
 
@@ -31,15 +31,9 @@ The flow of control can be drawn in a different orientation but the resulting pa
 
 .. image:: Figures/flowchart_chained_conditional.png
 
-``elif`` is an abbreviation of ``else if``. Again, exactly one branch will be
-executed. There is no limit of the number of ``elif`` statements but only a
-single (and optional) final ``else`` statement is allowed and it must be the last
-branch in the statement.
+``elif`` is an abbreviation of "else if". Again, exactly one branch will be executed. There is no limit to the number of ``elif`` statements but only a single (and optional) final ``else`` statement is allowed and it must be the last branch in the statement.
 
-Each condition is checked in order. If the first is false, the next is checked,
-and so on. If one of them is true, the corresponding branch executes, and the
-statement ends. Even if more than one condition is true, only the first true
-branch executes.
+Each condition is checked in order. If the first is false, the next is checked, and so on. If one of them is true, the corresponding branch executes, and the statement ends. Even if more than one condition is true, only the first true branch executes.
 
 Here is the same program using ``elif``.
 
@@ -54,9 +48,7 @@ Here is the same program using ``elif``.
         print("x is greater than y")
     else:
         print("x and y must be equal")
-
-
-
+        
 
 **Check your understanding**
 

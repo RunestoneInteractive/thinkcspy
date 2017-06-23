@@ -36,28 +36,18 @@ Exercises
                 #. False
 
 
-    #.  Give the **logical opposites** of these conditions. You are not allowed to use the ``not`` operator.
-
-        #.  ``a > b``
-        #.  ``a >= b``
-        #.  ``a >= 18  and  day == 3``
-        #.  ``a >= 18  or  day != 3``
-
-            .. activecode:: ex_6_2
-
     #.
 
-        .. tabbed:: q3
+        .. tabbed:: q2
 
             .. tab:: Question
 
-                Write a function which is given an exam mark, and it returns the corresponding letter grade as a string according to this
-                scheme:
+                Write a function which is given an exam score, and it returns the corresponding letter grade as a string according to this scheme:
 
                 .. table::
 
                    =======   =====
-                   Mark      Grade
+                   score      Grade
                    =======   =====
                    >= 90     A
                    [80-90)   B
@@ -66,65 +56,61 @@ Exercises
                    < 60      F
                    =======   =====
 
-                The square and round brackets denote closed and open intervals.
-                A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
+                The square and round brackets denote closed and open intervals. A closed interval *includes* the number, an open interval *excludes* it. So 79.99999 gets grade C , but 80 gets grade B.
 
-                Test your function by printing the mark and the grade for a number of different marks.
+                Test your function by printing the score and the grade for a number of different scores.
 
-                .. activecode:: ex_6_3
+                .. activecode:: ex_6_2
 
             .. tab:: Answer
 
-                .. activecode:: q3_question
+                .. activecode:: q2_question
 
-                    def grade(mark):
-                        if mark >= 90:
+                    def grade(score):
+                        if score >= 90:
                             return "A"
                         else:
-                            if mark >= 80:
+                            if score >= 80:
                                 return "B"
                             else:
-                                if mark >= 70:
+                                if score >= 70:
                                     return "C"
                                 else:
-                                    if mark >= 60:
+                                    if score >= 60:
                                         return "D"
                                     else:
                                         return "F"
+                    def main():
+                        score = 83
+                        print( "Score:", str(score), "Grade:", grade(score))
 
-                    mark = 83
-                    print( "Mark:", str(mark), "Grade:", grade(mark))
+                    if __name__ == "__main__":
+                        main()
 
+    #.  Modify the turtle bar chart program from the previous chapter so that the bar for any value of 200 or more is filled with red, values between [100 and 200) are filled yellow, and bars representing values less than 100 are filled green.
 
-    #.  Modify the turtle bar chart program from the previous chapter so that the bar for any value
-        of 200 or more is filled with red, values between [100 and 200) are filled yellow,
-        and bars representing values less than 100 are filled green.
-
-        .. activecode:: ex_6_4
+        .. activecode:: ex_6_3
            :nocodelens:
 
     #.
 
-        .. tabbed:: q5
+        .. tabbed:: q4
 
             .. tab:: Question
 
-                In the turtle bar chart program, what do you expect to happen if one or more
-                of the data values in the list is negative?   Go back and try it out. Change the
-                program so that when it prints the text value for the negative bars, it puts
-                the text above the base of the bar (on the 0 axis).
+                In the `Turtle bar chart <https://runestone.launchcode.org/runestone/static/thinkcspy/Functions/ATurtleBarChart.html>`_ program, what do you expect to happen if one or more of the data values in the list is negative?   Go back and try it out. Then change the program so that when it prints the text value for the negative bars, it puts the text above the base of the bar (on the 0 axis).
 
-                .. activecode:: ex_6_5
+                .. activecode:: ex_6_4
                    :nocodelens:
 
             .. tab:: Answer
 
-                .. activecode:: answer_ex_6_5
+                .. activecode:: answer_ex_6_4
                         :nocodelens:
 
                         import turtle
 
-                        def drawBar(t, height):
+                        def draw_bar(t, height):
                             """ Get turtle t to draw one bar, of height. """
                             t.begin_fill()               # start filling this shape
                             if height < 0:
@@ -140,62 +126,44 @@ Exercises
                             t.left(90)
                             t.end_fill()                 # stop filling this shape
 
+                        def main():
+                            data = [48, -50, 200, 240, 160, 260, 220]
+                            max_height = max(data)
+                            min_height = min(data)
+                            num_bars = len(data)
+                            border = 10
 
+                            tess = turtle.Turtle()           # create tess and set some attributes
+                            tess.color("blue")
+                            tess.fillcolor("red")
+                            tess.pensize(3)
 
-                        xs = [48, -50, 200, 240, 160, 260, 220]  # here is the data
-                        maxheight = max(xs)
-                        minheight = min(xs)
-                        numbars = len(xs)
-                        border = 10
+                            wn = turtle.Screen()             # Set up the window and its attributes
+                            wn.bgcolor("lightgreen")
+                            if min_height > 0:
+                                bottom = 0
+                            else:
+                                bottom = min_height - border
 
-                        tess = turtle.Turtle()           # create tess and set some attributes
-                        tess.color("blue")
-                        tess.fillcolor("red")
-                        tess.pensize(3)
+                            wn.setworldcoordinates(0-border, bottom, 40 * num_bars + border, max_height + border)
 
-                        wn = turtle.Screen()             # Set up the window and its attributes
-                        wn.bgcolor("lightgreen")
-                        if minheight > 0:
-                            lly = 0
-                        else:
-                            lly = minheight - border
+                            for x in data:
+                                draw_bar(tess, x)
 
-                        wn.setworldcoordinates(0-border, lly, 40*numbars+border, maxheight+border)
+                            wn.exitonclick()
 
-
-                        for a in xs:
-                            drawBar(tess, a)
-
-                        wn.exitonclick()
-
-
-    #.  Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
-        the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
-
-        .. activecode:: ex_6_6
-            :nocodelens:
-
-            from test import testEqual
-
-            def findHypot(a,b):
-                # your code here
-
-            testEqual(findHypot(12.0, 5.0), 13.0)
-            testEqual(findHypot(14.0, 48.0), 50.0)
-            testEqual(findHypot(21.0, 72.0), 75.0)
-            testEqual(findHypot(1, 1.73205), 1.999999)
+                        if __name__ == "__main__":
+                            main()
 
     #.
 
-        .. tabbed:: q7
+        .. tabbed:: q5
 
             .. tab:: Question
 
-               Write a function called ``is_even(n)`` that takes an integer as an argument
-               and returns ``True`` if the argument is an **even number** and ``False`` if
-               it is **odd**.
+               Write a function called ``is_even(n)`` that takes an integer as an argument and returns ``True`` if the argument is an **even number** and ``False`` if it is **odd**. Note that instead of printing out the results we are using test statements. The goal is to pass all the tests that are listed underneath the function you will write. You do **not** need to add a ``main`` function to this code to run it.
 
-               .. activecode:: ex_6_7
+               .. activecode:: ex_6_5
                    :nocodelens:
 
                    from test import testEqual
@@ -210,7 +178,7 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q7_answer
+                .. activecode:: q5_answer
                     :nocodelens:
 
                     from test import testEqual
@@ -230,7 +198,7 @@ Exercises
     #. Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
        and ``False`` otherwise.
 
-       .. activecode:: ex_6_8
+       .. activecode:: ex_6_6
            :nocodelens:
 
            from test import testEqual
@@ -245,14 +213,13 @@ Exercises
 
     #.
 
-        .. tabbed:: q9
+        .. tabbed:: q7
 
             .. tab:: Question
 
-               Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
-               argument is an odd integer.
+               Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its argument is an odd integer.
 
-               .. activecode:: ex_6_9
+               .. activecode:: ex_6_7
                    :nocodelens:
 
                    from test import testEqual
@@ -268,7 +235,7 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q9_answer
+                .. activecode:: q7_answer
                     :nocodelens:
 
                     from test import testEqual
@@ -290,24 +257,49 @@ Exercises
                     testEqual(is_odd(1), True)
                     testEqual(is_odd(0), False)
 
+    #.
 
-    #.  Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
-        will determine whether the triangle is right-angled. Assume that the third argument to the
-        function is always the longest side. It will return ``True`` if the triangle
-        is right-angled, or ``False`` otherwise.
+        .. tabbed:: q8
 
-        Hint: floating point arithmetic is not always exactly accurate,
-        so it is not safe to test floating point numbers for equality.
-        If a good programmer wants to know whether
-        ``x`` is equal or close enough to ``y``, they would probably code it up as
+            .. tab:: Question
+
+                Write a fruitful function called ``pick_activity`` to help you pick an activity to engage in based on the current weather. It has two parameters, one for how hot it is and one for how wet it is. If it is hot and wet, it should tell you to watch Netflix. If it hot and dry, it should tell you to go swimming. If it is cold and wet, it should tell you to paint. If it is cold and dry, it should tell you to go to a cafe and read. Use the ``elif`` construct.
+
+                .. activecode:: ex_6_8
+
+            .. tab:: Answer
+
+                .. activecode:: q8_question
+
+                    def pick_activity(temp, damp):
+                        if temp == "hot" and damp == "wet":
+                            message = "Watch Netflix"
+                        elif temp == "hot" and damp == "dry":
+                            message = "Go swimming"
+                        elif temp == "cold" and damp == "wet":
+                            message = "Paint!"
+                        elif temp == "cold" and damp == "dry":
+                            message = "Got to a cafe and read"
+                        else:
+                            message = "Invalid input. Enter hot or cold, wet or dry."
+                        return message
+
+                    def main():
+                        print(pick_activity("hot", "wet"))
+
+                    if __name__ == "__main__":
+                        main()
+
+    #.  Write a function ``is_rightangled`` which, given the length of three sides of a triangle, will determine whether the triangle is right-angled. Assume that the third argument to the function is always the longest side. It will return ``True`` if the triangle is right-angled, or ``False`` otherwise.
+
+        Hint: floating point arithmetic is not always exactly accurate, so it is not safe to test floating point numbers for equality. If a good programmer wants to know whether ``x`` is equal or close enough to ``y``, they would probably code it up using the ``abs()`` function like so:
 
         .. sourcecode:: python
 
           if  abs(x - y) < 0.001:      # if x is approximately equal to y
               ...
 
-
-        .. activecode:: ex_6_10
+        .. activecode:: ex_6_9
             :nocodelens:
 
             from test import testEqual
@@ -324,13 +316,13 @@ Exercises
 
     #.
 
-        .. tabbed:: q11
+        .. tabbed:: q10
 
             .. tab:: Question
 
                 Extend the above program so that the sides can be given to the function in any order.
 
-                .. activecode:: ex_6_11
+                .. activecode:: ex_6_10
                     :nocodelens:
 
                     from test import testEqual
@@ -347,21 +339,21 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q11_answer
+                .. activecode:: q10_answer
                     :nocodelens:
 
                     from test import testEqual
 
                     def is_rightangled(a, b, c):
-                        is_rightangled = False
+                        rightangled = False
 
                         if a > b and a > c:
-                            is_rightangled = abs(b**2 + c**2 - a**2) < 0.001
+                            rightangled = abs(b**2 + c**2 - a**2) < 0.001
                         elif b > a and b > c:
-                            is_rightangled = abs(a**2 + c**2 - b**2) < 0.001
+                            rightangled = abs(a**2 + c**2 - b**2) < 0.001
                         else:
-                            is_rightangled = abs(a**2 + b**2 - c**2) < 0.001
-                        return is_rightangled
+                            rightangled = abs(a**2 + b**2 - c**2) < 0.001
+                        return rightangled
 
                     testEqual(is_rightangled(1.5, 2.0, 2.5), True)
                     testEqual(is_rightangled(4.0, 8.0, 16.0), False)
@@ -370,10 +362,9 @@ Exercises
                     testEqual(is_rightangled(4.1, 8.2, 9.168), False)
                     testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
 
-
     #.
 
-        .. tabbed:: q13
+        .. tabbed:: q11
 
             .. tab:: Question
 
@@ -381,30 +372,26 @@ Exercises
 
                 The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.
 
-                Ask the user to enter a year.
-                Compute the following:
+                Ask the user to enter a year. Compute the following:
+
+                1. a = year % 19
+                #. b = year % 4
+                #. c = year % 7
+                #. d = (19 * a + 24) % 30
+                #. e = (2 * b + 4 * c + 6 * d + 5) % 7
+                #. date_of_easter = 22 + d + e
 
 
-
-                    1. a = year % 19
-                    #. b = year % 4
-                    #. c = year % 7
-                    #. d = (19 * a + 24) % 30
-                    #. e = (2 * b + 4 * c + 6 * d + 5) % 7
-                    #. dateofeaster = 22 + d + e
-
-
-                Special note: The algorithm can give a date greater than 31 (the number of days in March). When this happens, it signifies a date in April. Thus, 32 is April 1, 35 is April 4, and so on. Also, if the year is one of four special
-                years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
+                Special note: The algorithm can give a date greater than 31 (the number of days in March). When this happens, it signifies a date in April. Thus, 32 is April 1, 35 is April 4, and so on. Also, if the year is one of four special years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
 
                 Your program should print an error message if the user provides a date that is out of range.
 
-                .. activecode:: ex_6_13
+                .. activecode:: ex_6_11
 
 
             .. tab:: Answer
 
-                .. activecode:: answer_ex_6_13
+                .. activecode:: answer_ex_6_11
 
                     year = int(input("Please enter a year"))
                     if year >= 1900 and year <= 2099:
@@ -413,15 +400,15 @@ Exercises
                         c = year % 7
                         d = (19*a + 24) % 30
                         e = (2*b + 4*c + 6*d + 5) % 7
-                        dateofeaster = 22 + d + e
+                        date_of_easter = 22 + d + e
 
                         if year == 1954 or year == 1981 or year == 2049 or year == 2076:
-                            dateofeaster = dateofeaster - 7
+                            date_of_easter = date_of_easter - 7
 
-                        if dateofeaster > 31:
-                            print("April", dateofeaster - 31)
+                        if date_of_easter > 31:
+                            print("April", date_of_easter - 31)
                         else:
-                            print("March", dateofeaster)
+                            print("March", date_of_easter)
                     else:
                         print("ERROR...year out of range")
 
@@ -441,24 +428,24 @@ Weekly Graded Assignment
     - 1900 is not a leap year, despite the fact that it is divisible by 4, because 1900 is a century and 1900 is not divisible by 400.
     - 1600 is a leap year, because 1600 is divisible by 4 and 1600 is divisible by 400
 
-    Write a function `isLeap` that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
+    Write a function ``is_leap`` that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
 
     .. activecode:: ex_6_12
         :nocodelens:
 
-        def isLeap(year):
+        def is_leap(year):
             # your code here
 
         # Below is a set of tests so you can check if your code is correct.
         # Do not copy this part into Vocareum.
         from test import testEqual
 
-        testEqual(isLeap(1944), True)
-        testEqual(isLeap(2011), False)
-        testEqual(isLeap(1986), False)
-        testEqual(isLeap(1956), True)
-        testEqual(isLeap(1957), False)
-        testEqual(isLeap(1800), False)
-        testEqual(isLeap(1900), False)
-        testEqual(isLeap(1600), True)
-        testEqual(isLeap(2056), True)
+        testEqual(is_leap(1944), True)
+        testEqual(is_leap(2011), False)
+        testEqual(is_leap(1986), False)
+        testEqual(is_leap(1956), True)
+        testEqual(is_leap(1957), False)
+        testEqual(is_leap(1800), False)
+        testEqual(is_leap(1900), False)
+        testEqual(is_leap(1600), True)
+        testEqual(is_leap(2056), True)

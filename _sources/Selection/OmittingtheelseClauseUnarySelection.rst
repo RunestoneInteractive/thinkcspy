@@ -11,7 +11,9 @@
    :prefix: select-5-
    :start: 1
 
-Omitting the `else` Clause: Unary Selection
+.. index:: if statement, unary selection, flow of execution
+
+Omitting the else Clause: Unary Selection
 -------------------------------------------
 
 
@@ -19,17 +21,14 @@ Omitting the `else` Clause: Unary Selection
 
    .. image:: Figures/flowchart_if_only.png
 
-Another form of the ``if`` statement is one in which the ``else`` clause is omitted entirely.
-This creates what is sometimes called **unary selection**.
-In this case, when the condition evaluates to ``True``, the statements are
-executed. Otherwise the flow of execution continues to the statement after the body of the ``if``.
+Another form of the ``if`` statement is one in which the ``else`` clause is omitted entirely. This creates what is sometimes called **unary selection**. In this case, when the condition evaluates to ``True``, the statements are executed. Otherwise the flow of execution continues to the statement after the body of the ``if``.
 
 
 .. activecode:: ch05_unaryselection
 
     x = 10
     if x < 0:
-        print("The negative number ",  x, " is not valid here.")
+        print("This is a negative number: ",  x)
     print("This is always printed")
 
 
@@ -75,7 +74,7 @@ What would be printed if the value of ``x`` is negative? Try it.
    :answer_a: No
    :answer_b: Yes
    :correct: b
-   :feedback_a: Every else-block must have exactly one corresponding if-block. If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
+   :feedback_a: Every else-block must have exactly one corresponding if-block. If you want to chain if-else statements together, you must use the elif construct, described in the chained conditionals section.
    :feedback_b: This will cause an error because the second else-block is not attached to a corresponding if-block.
 
    Will the following code cause an error?
@@ -89,7 +88,3 @@ What would be printed if the value of ``x`` is negative? Try it.
          print(x, " is a positive number")
      else:
          print("This is always printed")
-
-.. index::
-    single: nested conditionals
-    single: conditionals; nested

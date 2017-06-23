@@ -11,16 +11,16 @@
    :prefix: select-8-
    :start: 1
 
+.. index:: boolean functions,
+
 Boolean Functions
 -----------------
 
-We have already seen that boolean values result from the evaluation of boolean expressions. Since the result of any
-expression evaluation can be returned by a function (using the ``return`` statement),
-functions can return boolean values. This turns out to be a very convenient way to hide the details of complicated tests. For example:
+We have already seen that boolean values result from the evaluation of boolean expressions. The result of any expression evaluation can be returned by a function (using the ``return`` statement). In other words, functions can return boolean values. This turns out to be a very convenient way to hide the details of complicated tests. For example:
 
 .. activecode:: ch06_boolfun1
 
-    def isDivisible(x, y):
+    def is_divisible(x, y):
         if x % y == 0:
             result = True
         else:
@@ -28,41 +28,31 @@ functions can return boolean values. This turns out to be a very convenient way 
 
         return result
 
-    print(isDivisible(10, 5))
+    print(is_divisible(10, 5))
 
-The name of this function is ``isDivisible``. It is common to give **boolean
-functions** names that sound like yes/no questions.  ``isDivisible`` returns
-either ``True`` or ``False`` to indicate whether the ``x`` is or is not
-divisible by ``y``.
+The name of this function is ``is_divisible``. It is common to give **boolean functions** names that sound like yes/no questions.  ``is_divisible`` returns either ``True`` or ``False`` to indicate whether the ``x`` is or is not divisible by ``y``.
 
-We can make the function more concise by taking advantage of the fact that the
-condition of the ``if`` statement is itself a boolean expression. We can return
-it directly, avoiding the ``if`` statement altogether:
+We can make the function more concise by taking advantage of the fact that the condition of the ``if`` statement is itself a boolean expression. We can return it directly, avoiding the ``if`` statement altogether:
 
 .. sourcecode:: python
 
-    def isDivisible(x, y):
+    def is_divisible(x, y):
         return x % y == 0
-
 
 Boolean functions are often used in conditional statements:
 
 .. sourcecode:: python
 
-    if isDivisible(x, y):
+    if is_divisible(x, y):
         ... # do something ...
     else:
         ... # do something else ...
 
-It might be tempting to write something like
-``if isDivisible(x, y) == True:``
-but the extra comparison is  not necessary. The following example shows the ``isDivisible`` function at work. Notice how
-descriptive the code is when we move the testing details into a boolean function. Try it
-with a few other actual parameters to see what is printed.
+It might be tempting to write something like ``if is_divisible(x, y) == True:`` but the extra comparison is not necessary. The following example shows the ``is_divisible`` function at work. Notice how descriptive the code is when we move the testing details into a boolean function. Try it with a few other arguments to see what is printed.
 
 .. activecode:: ch06_boolfun2
 
-    def isDivisible(x, y):
+    def is_divisible(x, y):
         if x % y == 0:
             result = True
         else:
@@ -70,19 +60,22 @@ with a few other actual parameters to see what is printed.
 
         return result
 
-    if isDivisible(10, 5):
-        print("That works")
-    else:
-        print("Those values are no good")
+    def main():
+        if is_divisible(10, 5):
+            print("That works")
+        else:
+            print("Those values are no good")
 
-Here is the same program in codelens. When we evaluate the ``if`` statement in the main part of the program, the evaluation of
-the boolean expression causes a call to the ``isDivisible`` function. This is very easy to see in codelens.
+    if __name__ == "__main__":
+        main()
+
+Here is the same program in codelens. When we evaluate the ``if`` statement in the main part of the program, the evaluation of the boolean expression causes a call to the ``is_divisible`` function. This is very easy to see in codelens.
 
 .. codelens:: ch06_boolcodelens
     :showoutput:
     :python: py3
 
-    def isDivisible(x, y):
+    def is_divisible(x, y):
         if x % y == 0:
             result = True
         else:
@@ -90,12 +83,14 @@ the boolean expression causes a call to the ``isDivisible`` function. This is ve
 
         return result
 
-    if isDivisible(10, 5):
-        print("That works")
-    else:
-        print("Those values are no good")
+    def main():
+        if is_divisible(10, 5):
+            print("That works")
+        else:
+            print("Those values are no good")
 
-
+    if __name__ == "__main__":
+        main()
 
 **Check your understanding**
 

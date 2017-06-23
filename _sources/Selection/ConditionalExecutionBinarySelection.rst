@@ -11,14 +11,13 @@
    :prefix: select-4-
    :start: 1
 
+.. index:: conditional statements, selection, binary selection, if statement, condition, block, else clause
+
 Conditional Execution: Binary Selection
 ---------------------------------------
 
 
-In order to write useful programs, we almost always need the ability to check
-conditions and change the behavior of the program accordingly. **Selection statements**, sometimes
-also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.
-This is sometimes referred to as **binary selection** since there are two possible paths of execution.
+In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. **Selection statements**, sometimes also referred to as **conditional statements**, give us this ability. The simplest form of selection is the ``if`` **statement**. This is sometimes referred to as **binary selection** since there are two possible paths of execution.
 
 .. activecode:: ch05_4
 
@@ -39,32 +38,20 @@ The syntax for an ``if`` statement looks like this:
     else:
         STATEMENTS_2        # executed if condition evaluates to False
 
-The boolean expression after the ``if`` statement is called the **condition**.
-If it is true, then the indented statements get executed. If not, then the statements
-indented under the `else` clause get executed.
+The boolean expression after the ``if`` statement is called the **condition**. If it is true, then the indented statements get executed. If not, then the statements indented under the ``else`` clause get executed.
 
 .. sidebar::  Flowchart of a **if** statement with an **else**
 
    .. image:: Figures/flowchart_if_else.png
 
 
+As with the function definition from the last chapter and other compound statements like ``for``, the ``if`` statement consists of a header line and a body. The header line begins with the keyword ``if`` followed by a *boolean expression* and ends with a colon (``:``).
 
-As with the function definition from the last chapter and other compound
-statements like ``for``, the ``if`` statement consists of a header line and a body. The header
-line begins with the keyword ``if`` followed by a *boolean expression* and ends with
-a colon (:).
+The indented statements that follow are called a **block**. The first unindented statement marks the end of the block.
 
-The indented statements that follow are called a **block**. The first
-unindented statement marks the end of the block.
+If the boolean expression evaluates to ``True``, each of the statements inside the first block of statements is executed in order. But if the boolean expression evaluates to ``False``, then the entire first block of statements is skipped  and instead all the statements under the ``else`` clause are executed.
 
-Each of the statements inside the first block of statements is executed in order if the boolean
-expression evaluates to ``True``. The entire first block of statements
-is skipped if the boolean expression evaluates to ``False``, and instead
-all the statements under the ``else`` clause are executed.
-
-There is no limit on the number of statements that can appear under the two clauses of an
-``if`` statement, but there has to be at least one statement in each block.
-
+There is no limit on the number of statements that can appear under the two clauses of an ``if`` statement, but there has to be at least one statement in each block. Also, note that each ``if`` statement can have only *one* ``else`` clause.
 
 **Check your understanding**
 
@@ -138,7 +125,3 @@ There is no limit on the number of statements that can appear under the two clau
          TRUE
          FALSE
          TRUE
-
-
-
-.. index:: alternative execution, branch, wrapping code in a function
