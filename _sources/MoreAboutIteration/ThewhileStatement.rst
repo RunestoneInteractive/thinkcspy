@@ -77,8 +77,6 @@ The same program in codelens will allow you to observe the flow of execution.
 
 
 
-.. note:: The names of the variables have been chosen to help readability.
-
 More formally, here is the flow of execution for a ``while`` statement:
 
 #. Evaluate the condition, yielding ``False`` or ``True``.
@@ -93,6 +91,14 @@ indentation.
 This type of flow is called a **loop** because the third step loops back around
 to the top. Notice that if the condition is ``False`` the first time through the
 loop, the statements inside the loop are never executed.
+
+.. warning::
+   Though Python's ``while`` is very close to the English "while", 
+   there is an important difference:  In English "while X, do Y", 
+   we usually assume that immediately after X becomes false, we stop 
+   with Y.  In Python there is *not* an immediate stop:  After the 
+   initial test, any following tests come only after the execution of 
+   the *whole* body, even if the condition becomes false in the middle of the loop body.
 
 The body of the loop should change the value of one or more variables so that
 eventually the condition becomes ``False`` and the loop terminates. Otherwise the
@@ -120,7 +126,7 @@ loop you have to control the loop variable yourself.  You give it an initial val
 for completion, and then make sure you change something in the body so that the loop
 terminates.
 
-So why have two kinds of loop if ``for`` looks easier?  This next example shows an indefinite iteration where
+So why have two kinds of loop if ``for`` looks easier?  The next section, :ref:`randomly-walking-turtles`, shows an indefinite iteration where
 we need the extra power that we get from the ``while`` loop.
 
 
@@ -163,6 +169,30 @@ we need the extra power that we get from the ``while`` loop.
          answer = answer + n
          n = n + 1
      print(answer)
+
+
+.. mchoice:: test_question7_2_3
+   :answer_a: 4 7
+   :answer_b: 5 7
+   :answer_c: 7 15
+   :correct: c
+   :feedback_a: Setting a variable so the loop condition would be false in the middle of the loop body does not keep the variable from actually being set.
+   :feedback_b: Setting a variable so the loop condition would be false in the middle of the loop body does not stop execution of statements in the rest of the loop body.
+   :feedback_c: After n becomes 5 and the test would be False, but the test does not actually come until after the end of the loop - only then stopping execution of the repetition of the loop.
+  
+
+   What is printed by this code?
+
+   .. code-block:: python
+
+     n = 1
+     x = 2
+     while n < 5:
+         n = n + 1
+         x = x + 1
+         n = n + 2
+         x = x + n
+     print(n, x)
 
 
 

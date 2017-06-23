@@ -11,6 +11,10 @@
    :prefix: func-9-
    :start: 1
 
+.. index:: composition
+   function; composition
+
+
 Composition
 -----------
 
@@ -72,7 +76,4 @@ Note that we could have written the composition without storing the intermediate
     
     def area2(xc, yc, xp, yp):
         return area(distance(xc, yc, xp, yp))
-
-
-.. index:: boolean function
 

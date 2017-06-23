@@ -31,7 +31,7 @@ begin_fill  None          Remember the starting point for a filled polygon
 end_fill    None          Close the polygon and fill with the current fill color
 dot         None          Leave a dot at the current position
 stamp       None          Leaves an impression of a turtle shape at the current location
-shape       shapename     Should be 'arrow', 'classic', 'turtle', 'circle' or 'square'
+shape       shape name    Should be 'arrow', 'classic', 'turtle', 'circle' or 'square'
 ==========  ==========  =========================
 
 Once you are comfortable with the basics of turtle graphics you can read about even

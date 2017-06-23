@@ -11,10 +11,8 @@
    :prefix: func-1-
    :start: 1
 
-.. index::
-    single: function
-    single: function definition
-    single: definition; function
+.. index::function definition
+   single: def
 	
 
 Functions

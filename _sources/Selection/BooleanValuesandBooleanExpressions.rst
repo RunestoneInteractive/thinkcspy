@@ -115,7 +115,3 @@ is legal and ``7 = a`` is not. (Can you explain why?)
 
    Which of the following is a Boolean expression?  Select all that apply.
 
-.. index::
-    single: logical operator
-    single: operator; logical
-
