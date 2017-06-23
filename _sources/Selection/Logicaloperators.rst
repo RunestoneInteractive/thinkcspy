@@ -11,22 +11,16 @@
    :prefix: select-2-
    :start: 1
 
+.. index:: logical operators, truth tables, boolean value, boolean expression
+
 Logical Operators
 -----------------
 
-There are three **logical operators**: ``and``, ``or``, and ``not``. The
-semantics (meaning) of these operators is similar to their meaning in English.
-For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*
-at the same time, x is less than 10. How would you describe this in words? You would say that
-x is between 0 and 10, not including the endpoints.
+There are three **logical operators**: ``and``, ``or``, and ``not``. The semantics (meaning) of these operators is similar to their meaning in English. For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*, at the same time, ``x`` is less than 10. How else might you describe this? You could say that ``x`` is between 0 and 10, not including the endpoints.
 
-``n % 2 == 0 or n % 3 == 0`` is true if *either* of the conditions is true,
-that is, if the number is divisible by 2 *or* divisible by 3. In this case, one, or the other, or
-both of the parts has to be true for the result to be true.
+``n % 2 == 0 or n % 3 == 0`` is true if *either* of the conditions is true, that is, if the number is divisible by 2 *or* the number is divisible by 3. In this case, one, or the other, or both of the parts has to be true for the result to be true.
 
-Finally, the ``not`` operator negates a boolean expression, so ``not  x > y``
-is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
-``y``.
+Finally, the ``not`` operator negates a boolean expression, so ``not x > y`` is true if ``x > y`` is false, that is, the statement will evaluate to true if ``x`` is less than or equal to ``y``.
 
 .. activecode:: chp05_3
 
@@ -39,8 +33,38 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 
 .. admonition:: Common Mistake!
 
-	There is a very common mistake that occurs when programmers try to write boolean expressions. For example, what if we have a variable ``number`` and we want to check to see if its value is 5,6, or 7. In words we might say: "number equal to 5 or 6 or 7".  However, if we translate this into Python, ``number == 5 or 6 or 7``, it will not be correct. The ``or`` operator must join the results of three equality checks. The correct way to write this is ``number == 5 or number == 6 or number == 7``.  This may seem like a lot of typing but it is absolutely necessary. You cannot take a shortcut.
+	There is a very common mistake that occurs when programmers try to write boolean expressions. For example, what if we have a variable ``number`` and we want to check if its value is 5, 6, or 7. In words we might say: "number equal to 5 or 6 or 7".  However, if we translate this into Python as ``number == 5 or 6 or 7``, it will not be correct. The ``or`` operator must join the *results* of three equality checks. The correct way to write this is ``number == 5 or number == 6 or number == 7``.  This may seem like a lot of typing but it is absolutely necessary. You cannot take a shortcut.
 
+`Truth tables <https://en.wikipedia.org/wiki/Truth_table>`_ can be very helpful to us in determining the boolean value of an expression that uses a logical operator. Here is an example of a truth table that looks at two statements, ``p`` and ``q``, that are boolean expressions. It tells us which result, ``True`` or ``False``, we will get based on whether the boolean value of each statement is ``True`` or ``False``:
+
+==========  ==========  =========================
+``p``        ``q``         ``p and q``
+==========  ==========  =========================
+True        True        True
+True        False       False
+False       True        False
+False       False       False
+==========  ==========  =========================
+
+You can see from this that both statements must be true in order for the expression ``p and q`` to evaluate to ``True``. Similarly, we can do a truth table for the expression ``p or q`` and it will show us that only either ``p`` or ``q`` must be true for the whole expression to evaluate to ``True``:
+
+==========  ==========  =========================
+``p``        ``q``         ``p or q``
+==========  ==========  =========================
+True        True        True
+True        False       True
+False       True        True
+False       False       False
+==========  ==========  =========================
+
+Finally, we can make a truth table that will show us the value of the expression ``not p`` given the boolean value of the statement ``p``:
+
+==========  ==========
+``p``        ``not p``
+==========  ==========
+True        False
+False       True
+==========  ==========
 
 **Check your understanding**
 
@@ -54,6 +78,3 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_c: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
-
-
-

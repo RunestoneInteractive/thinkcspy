@@ -11,16 +11,14 @@
    :prefix: select-1-
    :start: 1
 
+.. index:: boolean value, boolean expression, True, False, comparison operators
+
 Boolean Values and Boolean Expressions
 --------------------------------------
 
-The Python type for storing true and false values is called ``bool``, named
-after the British mathematician, George Boole. George Boole created *Boolean
-Algebra*, which is the basis of all modern computer arithmetic.
+The Python type for storing true and false values is called ``bool``, named after the British mathematician, George Boole. George Boole created `Boolean Algebra <https://en.wikipedia.org/wiki/Boolean_algebra>`_ which is the basis of all modern computer arithmetic.
 
-There are only two **boolean values**. They are ``True`` and ``False``. Capitalization
-is important, since ``true`` and ``false`` are not boolean values (remember Python is case
-sensitive).
+There are only two **boolean values**. They are ``True`` and ``False``. Capitalization is important, since "true" and "false" are not boolean values in Python (remember Python is case sensitive).
 
 .. activecode:: ch05_1
 
@@ -30,9 +28,7 @@ sensitive).
 
 .. note:: Boolean values are not strings!
 
-    It is extremely important to realize that True and False are not strings. They are not
-    surrounded by quotes. They are the only two values in the data type ``bool``. Take a close look at the
-    types shown below.
+    It is extremely important to realize that ``True`` and ``False`` are not strings. They are not surrounded by quotes. They are the only two values in the data type ``bool``. Take a close look at the types shown below.
 
 
 .. activecode:: ch05_1a
@@ -40,17 +36,14 @@ sensitive).
     print(type(True))
     print(type("True"))
 
-A **boolean expression** is an expression that evaluates to a boolean value.
-The equality operator, ``==``, compares two values and produces a boolean value related to whether the
-two values are equal to one another.
+A **boolean expression** is an expression that evaluates to a boolean value. The equality operator, ``==``, compares two values and produces a boolean value related to whether the two values are equal to one another.
 
 .. activecode:: ch05_2
 
     print(5 == 5)
     print(5 == 6)
 
-In the first statement, the two operands are equal, so the expression evaluates
-to ``True``. In the second statement, 5 is not equal to 6, so we get ``False``.
+In the first statement, the two operands are equal, so the expression evaluates to ``True``. In the second statement, 5 is not equal to 6, so we get ``False``.
 
 The ``==`` operator is one of six common **comparison operators**; the others are:
 
@@ -62,22 +55,9 @@ The ``==`` operator is one of six common **comparison operators**; the others ar
     x >= y               # x is greater than or equal to y
     x <= y               # x is less than or equal to y
 
-Although these operations are probably familiar to you, the Python symbols are
-different from the mathematical symbols. A common error is to use a single
-equal sign (``=``) instead of a double equal sign (``==``). Remember that ``=``
-is an assignment operator and ``==`` is a comparison operator. Also, there is
-no such thing as ``=<`` or ``=>``.
+Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (``=``) instead of a double equal sign (``==``). Remember that ``=`` is an *assignment* operator and ``==`` is a *comparison* operator. Also, there is no such thing as ``=<`` or ``=>``.
 
-.. With reassignment it is especially important to distinguish between an
-.. assignment statement and a boolean expression that tests for equality.
-.. Because Python uses the equal token (``=``) for assignment,
-.. it is tempting to interpret a statement like
-.. ``a = b`` as a boolean test. Unlike mathematics, it is not! Remember that the Python token
-.. for the equality operator is ``==``.
-
-Note too that an equality test is symmetric, but assignment is not. For example,
-if ``a == 7`` then ``7 == a``. But in Python, the statement ``a = 7``
-is legal and ``7 = a`` is not. (Can you explain why?)
+Note too that an equality test is symmetric, but assignment is not. For example, if ``a == 7`` then ``7 == a``. But in Python, the statement ``a = 7`` is legal and ``7 = a`` is not. (Can you explain why?)
 
 
 **Check your understanding**
@@ -95,7 +75,3 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_d: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value. If the quotes had not been included, False alone is in fact a Boolean value.
 
    Which of the following is a Boolean expression? Select all that apply.
-
-.. index::
-    single: logical operator
-    single: operator; logical

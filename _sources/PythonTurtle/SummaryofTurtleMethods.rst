@@ -9,7 +9,7 @@
 
 ..  _turtle_methods:
 
-Summary of turtle Methods
+Summary of Turtle Methods
 -------------------------
 
 ==========  ==========  =========================
@@ -34,6 +34,6 @@ stamp       None          Leaves an impression of a turtle shape at the current 
 shape       shapename     Should be 'arrow', 'classic', 'turtle', or 'circle'
 ==========  ==========  =========================
 
-Once you are comfortable with the basics of turtle graphics you can read about even more options on the `Python Docs Website <http://docs.python.org/dev/py3k/library/turtle.html>`_. Note that we will describe Python Docs in more detail in the next section.
+Once you are comfortable with the basics of Turtle graphics you can read about even more options on the `Python Docs Website <http://docs.python.org/dev/py3k/library/turtle.html>`_. Note that we will describe Python Docs in more detail in the next section.
 
 .. index:: turtle methods
