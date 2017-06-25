@@ -33,7 +33,9 @@ Finally, the ``not`` operator negates a boolean expression, so ``not x > y`` is 
 
 .. admonition:: Common Mistake!
 
-	There is a very common mistake that occurs when programmers try to write boolean expressions. For example, what if we have a variable ``number`` and we want to check if its value is 5, 6, or 7. In words we might say: "number equal to 5 or 6 or 7".  However, if we translate this into Python as ``number == 5 or 6 or 7``, it will not be correct. The ``or`` operator must join the *results* of three equality checks. The correct way to write this is ``number == 5 or number == 6 or number == 7``.  This may seem like a lot of typing but it is absolutely necessary. You cannot take a shortcut.
+  There is a very common mistake that occurs when programmers try to write boolean expressions. For example, what if we have a variable ``num`` and we want to check if its value is 5, 6, or 7. In words we might say: "num equal to 5 or 6 or 7".  However, if we translate this into Python as ``num == 5 or 6 or 7``, it will not be correct. The ``or`` operator must join the *results* of three equality checks. The correct way to write this is ``num == 5 or num == 6 or num == 7``.  This may seem like a lot of typing but it is absolutely necessary. You cannot take a shortcut.
+
+  An exception is the case of chaining comparison operators. For example, in Python it is permissible to write ``x < y < z`` which means the same as its mathematical expression and is functionally equivalent to the Python expression ``x < y and y < z``.
 
 `Truth tables <https://en.wikipedia.org/wiki/Truth_table>`_ can be very helpful to us in determining the boolean value of an expression that uses a logical operator. Here is an example of a truth table that looks at two statements, ``p`` and ``q``, that are boolean expressions. It tells us which result, ``True`` or ``False``, we will get based on whether the boolean value of each statement is ``True`` or ``False``:
 

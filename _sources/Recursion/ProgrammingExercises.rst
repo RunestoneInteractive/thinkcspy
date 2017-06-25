@@ -21,8 +21,7 @@ Programming Exercises
 #. Modify the recursive tree program using one or all of the following
    ideas:
 
-   -  Modify the thickness of the branches so that as the ``branchLen``
-      gets smaller, the line gets thinner.
+   -  Modify the thickness of the branches so that as the ``branchLen`` gets smaller, the line gets thinner.
 
    -  Modify the color of the branches so that as the ``branchLen`` gets
       very short it is colored like a leaf.
@@ -38,36 +37,36 @@ Programming Exercises
 
    If you implement all of the above ideas you will have a very
    realistic looking tree.
-   
+
    .. activecode:: ex_rec_3
       :nocodelens:
 
 #. Find or invent an algorithm for drawing a fractal mountain. Hint: One
    approach to this uses triangles again.
-   
+
    .. activecode:: ex_rec_4
       :nocodelens:
 
 #. Write a recursive function to compute the Fibonacci sequence. How
    does the performance of the recursive function compare to that of an
    iterative version?
-   
+
    .. activecode:: ex_rec_5
 
 #. Implement a solution to the Tower of Hanoi using three stacks to keep
    track of the disks.
-   
+
    .. activecode:: ex_rec_6
 
 #. Using the turtle graphics module, write a recursive program to
    display a Hilbert curve.
-   
+
    .. activecode:: ex_rec_7
       :nocodelens:
 
 #. Using the turtle graphics module, write a recursive program to
    display a Koch snowflake.
-   
+
    .. activecode:: ex_rec_8
       :nocodelens:
 
@@ -81,7 +80,7 @@ Programming Exercises
 #. Generalize the problem above so that the parameters to your solution
    include the sizes of each jug and the final amount of water to be
    left in the larger jug.
-   
+
    .. activecode:: ex_rec_10
 
 #. Write a program that solves the following problem: Three missionaries
@@ -91,7 +90,7 @@ Programming Exercises
    either bank, the missionaries will be eaten. Find a series of
    crossings that will get everyone safely to the other side of the
    river.
-   
+
    .. activecode:: ex_rec_11
 
 #. Modify the Tower of Hanoi program using turtle graphics to animate
@@ -102,11 +101,11 @@ Programming Exercises
       :nocodelens:
 
 #. Pascal’s triangle is a number triangle with numbers arranged in
-   staggered rows such that 
+   staggered rows such that
 
    .. math::
       a_{nr} = {n! \over{r! (n-r)!}}
-   
+
    This equation is the equation for a binomial coefficient. You can
    build Pascal’s triangle by adding the two numbers that are diagonally
    above a number in the triangle. An example of Pascal’s triangle is
@@ -123,6 +122,5 @@ Programming Exercises
    Write a program that prints out Pascal’s triangle. Your program
    should accept a parameter that tells how many rows of the triangle to
    print.
-   
-   .. activecode:: ex_rec_13
 
+   .. activecode:: ex_rec_13

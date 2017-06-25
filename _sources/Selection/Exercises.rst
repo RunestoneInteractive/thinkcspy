@@ -204,7 +204,7 @@ Exercises
            from test import testEqual
 
            def is_odd(n):
-               # your code here
+               # Your code here
 
            testEqual(is_odd(10), False)
            testEqual(is_odd(5), True)
@@ -379,7 +379,7 @@ Exercises
                 #. c = year % 7
                 #. d = (19 * a + 24) % 30
                 #. e = (2 * b + 4 * c + 6 * d + 5) % 7
-                #. date_of_easter = 22 + d + e
+                #. date = 22 + d + e
 
 
                 Special note: The algorithm can give a date greater than 31 (the number of days in March). When this happens, it signifies a date in April. Thus, 32 is April 1, 35 is April 4, and so on. Also, if the year is one of four special years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
@@ -388,29 +388,45 @@ Exercises
 
                 .. activecode:: ex_6_11
 
+                    def date_of_easter(year):
+                        # Your code here
+
+                    def main():
+                        # Your code here
+
+                    if __name__ == "__main__":
+                        main()
 
             .. tab:: Answer
 
                 .. activecode:: answer_ex_6_11
 
-                    year = int(input("Please enter a year"))
-                    if year >= 1900 and year <= 2099:
-                        a = year % 19
-                        b = year % 4
-                        c = year % 7
-                        d = (19*a + 24) % 30
-                        e = (2*b + 4*c + 6*d + 5) % 7
-                        date_of_easter = 22 + d + e
+                    def date_of_easter(year):
+                        if year >= 1900 and year <= 2099:
+                            a = year % 19
+                            b = year % 4
+                            c = year % 7
+                            d = (19*a + 24) % 30
+                            e = (2*b + 4*c + 6*d + 5) % 7
+                            date = 22 + d + e
 
-                        if year == 1954 or year == 1981 or year == 2049 or year == 2076:
-                            date_of_easter = date_of_easter - 7
+                            if year == 1954 or year == 1981 or year == 2049 or year == 2076:
+                                date = date - 7
 
-                        if date_of_easter > 31:
-                            print("April", date_of_easter - 31)
+                            if date > 31:
+                                return("April " + str(date - 31))
+                            else:
+                                return("March " + str(date))
                         else:
-                            print("March", date_of_easter)
-                    else:
-                        print("ERROR...year out of range")
+                            return("ERROR...year out of range")
+
+                    def main():
+                        year = int(input("Please enter a year"))
+                        print(date_of_easter(year))
+
+                    if __name__ == "__main__":
+                        main()
+
 
 
 

@@ -24,7 +24,7 @@ Runtime errors are rare in the simple programs you will see in the first few cha
    num_slices = 8
    num_people_int = int(num_people_str)
    slices_per_person = num_slices / num_people_int
-   print("Each person gets ", slices_per_person, " slices.")
+   print("Each person gets", slices_per_person, "slices.")
 
 **Check your understanding**
 

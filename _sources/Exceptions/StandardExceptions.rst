@@ -11,11 +11,14 @@
    :prefix: exceptions-2-
    :start: 1
 
+.. index:: exceptions, standard exceptions, errors
+
 Standard Exceptions
 ===================
 
-Most of the standard *exceptions* built into Python are listed below.
-They are organized into related groups based on the types of issues they deal with.
+Good exception handling involves **both** creating exceptions for special cases unique to your program and then catching and handling these with ``try: except:`` blocks **and** catching and handling **standard exceptions** that you think may be triggered by your program. For example, if you know it is possible that a user may enter a zero as input for a variable used as a divisor, and you want to change the flow of control in response to this, then you'll want to make a ``try: except:`` block that handles a ``ZeroDivisionError``. Note that with standard exceptions, you do not need to use ``raise``. E.g., you would never write code to raise a ``ZeroDivisionError``; it will be raised automatically in the matching situation.
+
+Standard exceptions are exceptions that are built into Python; most of them are listed below. They are organized into related groups based on the types of issues they deal with. Some of these may not yet be familiar to you, but this will be a handy reference as you continue learning Python.
 
 =====================  ===================================================================
 Language Exceptions    Description
@@ -54,7 +57,7 @@ ArithmeticError	       Base class for all errors that occur for numeric calculat
 OverflowError          Raised when a calculation exceeds maximum limit for a
                        numeric type.
 FloatingPointError     Raised when a floating point calculation fails.
-ZeroDivisonError       Raised when division or modulo by zero takes place for
+ZeroDivisionError      Raised when division or modulo by zero takes place for
                        all numeric types.
 =====================  ===================================================================
 
@@ -94,12 +97,7 @@ NotImplementedError    Raised when an abstract method that needs to be
                        implemented in an inherited class is not actually implemented.
 =====================  ===================================================================
 
-All exceptions are objects. The classes that define the objects are organized
-in a hierarchy, which is shown below. This is important because the parent
-class of a set of related exceptions will catch all exception messages for
-itself and its child exceptions. For example, an ``ArithmeticError``
-exception will catch itself and all ``FloatingPointError``, ``OverflowError``,
-and ``ZeroDivisionError`` exceptions.
+All exceptions are objects. The classes that define the objects are organized in a hierarchy, which is shown below. This is important because the parent class of a set of related exceptions will catch all exception messages for itself and its child exceptions. For example, an ``ArithmeticError`` exception will catch itself and all ``FloatingPointError``, ``OverflowError``, and ``ZeroDivisionError`` exceptions.
 
 .. code-block:: Python
 
@@ -166,6 +164,3 @@ and ``ZeroDivisionError`` exceptions.
              +-- UnicodeWarning
              +-- BytesWarning
              +-- ResourceWarning
-
-
-.. index:: graphical user interface, GUI, event-driven programming, event loop, event-handler, TKinter, dialog box
