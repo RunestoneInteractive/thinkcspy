@@ -179,8 +179,9 @@ Table of Contents
    Exceptions/StandardExceptions.rst
    Exceptions/PrinciplesforUsingExceptions.rst
    Exceptions/ExceptionSyntax.rst
-   Exceptions/DebuggingReview.rst
    Exceptions/PrinciplesofProblemSolving.rst
+   Exceptions/DebuggingReview.rst
+
 
 7. More About Iteration
 ::::::::::::::::::::::::::::::::::

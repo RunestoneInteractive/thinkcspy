@@ -95,4 +95,4 @@ Here is a typical example of file processing. Note that the outer ``try: except:
   except IOError:
       print "Error: my_file.txt does not exist or it can't be opened for output."
 
-.. index:: exception syntax
+.. index:: exception syntax, exception
