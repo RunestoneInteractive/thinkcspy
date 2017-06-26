@@ -11,6 +11,8 @@
    :prefix: intro-2-
    :start: 1
 
+.. index:: algorithm
+
 Algorithms
 ----------
 

@@ -79,7 +79,7 @@ The way we are going to do this is to delegate the work of deciding whether the 
     if __name__ == "__main__":
         main()
 
-Now we have a working program that draws a random walk of our turtle that has a 90% chance of staying on the screen. We are in a good position, because a large part of our program is working and we can focus on the next bit of work: deciding whether the turtle is inside the screen boundaries or not.
+Now we have a working program that draws a random walk of our turtle that has a 90% chance of staying on the screen. We are in a good position because a large part of our program is working and we can focus on the next bit of work: deciding whether the turtle is inside the screen boundaries or not.
 
 We can find out the width and the height of the screen using the ``window_width`` and ``window_height`` methods of the screen object. However, remember that the turtle starts at position (0,0) in the middle of the screen. So we never want the turtle to go farther right than width/2 or farther left than negative width/2. We also never want the turtle to go further up than height/2 or further down than negative height/2. Once we know what the boundaries are we can use some conditionals to check the turtle position against the boundaries and return ``False`` if the turtle is outside or ``True`` if the turtle is inside.
 

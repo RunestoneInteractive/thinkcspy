@@ -8,23 +8,21 @@
     License".
 
 .. qnum::
-   :prefix: iter-8-
+   :prefix: iter-7-
    :start: 1
+
+.. index:: tables, loops, escape sequence, cursor, tab, newline
 
 Simple Tables
 -------------
 
-One of the things loops are good for is generating tabular data. Before
-computers were readily available, people had to calculate logarithms, sines and
-cosines, and other mathematical functions by hand. To make that easier,
-mathematics books contained long tables listing the values of these functions.
-Creating the tables was slow and boring, and they tended to be full of errors.
+One of the things loops are good for is generating tabular data. Before computers were readily available, people had to calculate logarithms, sines and cosines, and other mathematical functions by hand. To make that easier, mathematics books contained long tables listing the values of these functions. Creating the tables was slow and boring, and they tended to be full of errors.
 
-When computers came of age, one of the initial reactions was, "This is great! We can use the computers to generate the tables, so there will be no errors." That turned out to be true, but also shortsighted. Why? As soon as it became cheap enough to create small computers (aka calculators), tables became mostly obsolete. Why carry large books of tables around when a relatively small machine could carry out the same calculations on-demand?
+When computers came of age, one of the initial reactions was, "This is great! We can use the computers to generate the math tables, so there will be no errors." That turned out to be true, but also shortsighted. Why? As soon as it became cheap enough to create small computers (aka calculators), tables became mostly obsolete. Why carry large books of tables around when a relatively small machine could carry out the same calculations on demand?
 
-For some operations, however, computers use tables of values to get an approximate answer and then perform computations to improve the approximation. In some cases, there have been errors in the underlying tables, most famously in the table the `Intel Pentium processor chip <https://en.wikipedia.org/wiki/Pentium_FDIV_bug>`_ used to perform floating-point division.
+For some operations, however, computers can use tables of values to get an approximate answer and then perform computations to improve the approximation. In some cases, there have been errors in the underlying tables, most famously in the table the `Intel Pentium processor chip <https://en.wikipedia.org/wiki/Pentium_FDIV_bug>`_ used to perform floating-point division.
 
-Although a power of 2 table is not as useful as it once was, it still makes a good example of iteration. The following program outputs a sequence of values in the left column and 2 raised to the power of that value in the right column:
+Although a power of 2 table is not as useful as it once was, it still makes a good example of iteration. The following program outputs a sequence of values in the left column and *2 raised to the power of that value* in the right column:
 
 .. activecode:: ch07_table1
     :nocodelens:
@@ -35,7 +33,7 @@ Although a power of 2 table is not as useful as it once was, it still makes a go
     for x in range(13):        # generate values for columns
         print(x, '\t', 2 ** x)
 
-The string ``'\t'`` represents a **tab character**. The backslash character in ``'\t'`` indicates the beginning of an **escape sequence**.  Escape sequences are used to represent invisible characters like tabs and newlines. The sequence ``\n`` represents a **newline**.
+The string ``'\t'`` represents a **tab character**. The backslash character in ``'\t'`` indicates the beginning of an **escape sequence**. Escape sequences are used to represent invisible characters like tabs and newlines. The sequence ``\n`` represents a **newline character**.
 
 An escape sequence can appear anywhere in a string. In this example, the tab escape sequence is the only thing in the string. How do you think you represent a backslash in a string?
 
@@ -57,8 +55,3 @@ The tab character shifts the cursor to the right until it reaches one of the tab
   :feedback_d: You may use spaces to create tables. The columns might look jagged, or they might not, depending on the width of the items in each column.
 
   What is the difference between a tab (``'\t'``) and a sequence of spaces?
-
-
-.. index::
-    single: local variable
-    single: variable; local

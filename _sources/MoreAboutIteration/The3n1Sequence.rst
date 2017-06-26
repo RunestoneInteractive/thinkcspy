@@ -105,4 +105,4 @@ Any problem statement like "search this list of words" or "check all integers up
 
 By contrast, if you are required to repeat some computation until some condition is met, as we did in the two problems above, you'll need a ``while`` loop.
 
-As we noted before, the former case is called a **definite iteration** --- we have definite bounds for what is needed. The latter case is called an **indefinite iteration** --- we are not sure how many iterations we'll need. For an indefinite iteration, it is generally impossible to determine the maximum number of times the loop might run!
+As we noted before, the former case is called a **definite iteration** --- we have definite bounds for what is needed. The latter case is called an **indefinite iteration** --- we are not sure how many iterations we'll need. For an indefinite iteration, it is generally impossible to determine the maximum number of times the loop might run.

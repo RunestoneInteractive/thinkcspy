@@ -13,81 +13,50 @@ Exercises
 
 .. container:: full_width
 
-    #.
-
-        .. tabbed:: q1
-
-            .. tab:: Question
-
-               Add a print statement to Newton's ``sqrt`` function that
-               prints out ``better`` each time it is calculated. Call your modified
-               function with 25 as an argument and record the results.
-
-               .. activecode:: ex_7_7
-
-
-            .. tab:: Answer
-
-                .. activecode:: q1_answer
-
-                    def newtonSqrt(n):
-                        approx = 0.5 * n
-                        better = 0.5 * (approx + n/approx)
-                        while better != approx:
-                            approx = better
-                            better = 0.5 * (approx + n/approx)
-                            print("Approx:", better)
-                        return approx
-
-
-                    print("Final approx:", newtonSqrt(25))
-
 
     #. Write a function ``print_triangular_numbers(n)`` that prints out the first
        n triangular numbers. A call to ``print_triangular_numbers(5)`` would
        produce the following output::
 
            1       1
-           2       3
-           3       6
-           4       10
-           5       15
+           3
+           6
+           10
+           15
 
-       (*hint: use a web search to find out what a triangular number is.*)
+       (*Hint: use a web search to find out what a triangular number is.*)
 
-       .. activecode:: ex_7_8
+       .. activecode:: ex_iter_triangle
 
 
     #. Modify the walking turtle program so that rather than a 90 degree left or right turn the
        angle of the turn is determined randomly at each step.
 
-        .. activecode:: ex_7_14
+        .. activecode:: ex_turtle_modify_walk
            :nocodelens:
-
-
 
 
     #.
 
-        .. tabbed:: q5
+        .. tabbed:: q3
 
             .. tab:: Question
 
                Modify the turtle walk program so that you have two turtles each with a
                random starting location. Keep the turtles moving until one of them leaves the screen.
 
-               .. activecode:: ex_7_13
+               .. activecode:: ex_turtle_two_walk
                   :nocodelens:
 
             .. tab:: Answer
 
-                .. activecode:: q5_answer
+                .. activecode:: q3_answer
                     :nocodelens:
 
                     import random
                     import turtle
 
-                    def moveRandom(wn, t):
+                    def move_random(wn, t):
                         coin = random.randrange(0,2)
                         if coin == 0:
                             t.left(90)
@@ -96,77 +65,77 @@ Exercises
 
                         t.forward(50)
 
-                    def areColliding(t1, t2):
+                    def are_colliding(t1, t2):
                         if t1.distance(t2) < 2:
                             return True
                         else:
                             return False
 
-                    def isInScreen(w, t):
-                        leftBound = - w.window_width() / 2
-                        rightBound = w.window_width() / 2
-                        topBound = w.window_height() / 2
-                        bottomBound = -w.window_height() / 2
+                    def is_in_screen(w, t):
+                        left_bound = - w.window_width() / 2
+                        right_bound = w.window_width() / 2
+                        top_bound = w.window_height() / 2
+                        bottom_bound = -w.window_height() / 2
 
                         turtleX = t.xcor()
                         turtleY = t.ycor()
 
-                        stillIn = True
-                        if turtleX > rightBound or turtleX < leftBound:
-                            stillIn = False
-                        if turtleY > topBound or turtleY < bottomBound:
-                            stillIn = False
-                        return stillIn
+                        still_in = True
+                        if turtleX > right_bound or turtleX < left_bound:
+                            still_in = False
+                        if turtleY > top_bound or turtleY < bottom_bound:
+                            still_in = False
+                        return still_in
 
-                    t1 = turtle.Turtle()
-                    t2 = turtle.Turtle()
-                    wn = turtle.Screen()
+                    def main():
+                        t1 = turtle.Turtle()
+                        t2 = turtle.Turtle()
+                        wn = turtle.Screen()
 
-                    t1.shape('turtle')
-                    t2.shape('circle')
+                        t1.shape('turtle')
+                        t2.shape('circle')
 
-                    leftBound = -wn.window_width() / 2
-                    rightBound = wn.window_width() / 2
-                    topBound = wn.window_height() / 2
-                    bottomBound = -wn.window_height() / 2
+                        left_bound = -wn.window_width() / 2
+                        right_bound = wn.window_width() / 2
+                        top_bound = wn.window_height() / 2
+                        bottom_bound = -wn.window_height() / 2
 
-                    t1.up()
-                    t1.goto(random.randrange(leftBound, rightBound),
-                            random.randrange(bottomBound, topBound))
-                    t1.setheading(random.randrange(0, 360))
-                    t1.down()
+                        t1.up()
+                        t1.goto(random.randrange(left_bound, right_bound),
+                                random.randrange(bottom_bound, top_bound))
+                        t1.setheading(random.randrange(0, 360))
+                        t1.down()
 
-                    t2.up()
-                    t2.goto(random.randrange(leftBound, rightBound),
-                            random.randrange(bottomBound, topBound))
-                    t2.setheading(random.randrange(0, 360))
-                    t2.down()
+                        t2.up()
+                        t2.goto(random.randrange(left_bound, right_bound),
+                                random.randrange(bottom_bound, top_bound))
+                        t2.setheading(random.randrange(0, 360))
+                        t2.down()
 
+                        while is_in_screen(wn, t1) and is_in_screen(wn, t2):
+                            move_random(wn, t1)
+                            move_random(wn, t2)
 
-                    while isInScreen(wn, t1) and isInScreen(wn, t2):
-                        moveRandom(wn, t1)
-                        moveRandom(wn, t2)
+                        wn.exitonclick()
 
-                    wn.exitonclick()
-
+                    if __name__ == "__main__":
+                        main()
 
 
     #. Modify the previous turtle walk program so that the turtle turns around
        when it hits the wall or when one turtle collides with another turtle.
 
-       .. activecode:: ex_7_12
+       .. activecode:: ex_turtle_walk_turn
           :nocodelens:
-
-
 
 
     #.
 
-        .. tabbed:: q7
+        .. tabbed:: q5
 
             .. tab:: Question
 
-               Write a function to remove all the red from an image.
+               Write a program to remove all the red from an image.
 
                .. raw:: html
 
@@ -174,33 +143,33 @@ Exercises
                    <h4 style="text-align: left;">For this and the following exercises, use the
                    luther.jpg photo.</h4>
 
-               .. activecode:: ex_7_15
+               .. activecode:: ex_iter_luther
                   :nocodelens:
 
             .. tab:: Answer
 
-                .. activecode:: q7_answer
+                .. activecode:: q5_answer
                     :nocodelens:
 
                     import image
 
                     img = image.Image("luther.jpg")
-                    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+                    new_img = image.EmptyImage(img.getWidth(), img.getHeight())
                     win = image.ImageWin()
 
                     for col in range(img.getWidth()):
                         for row in range(img.getHeight()):
                             p = img.getPixel(col, row)
 
-                            newred = 0
+                            new_red = 0
                             green = p.getGreen()
                             blue = p.getBlue()
 
-                            newpixel = image.Pixel(newred, green, blue)
+                            new_pixel = image.Pixel(new_red, green, blue)
 
-                            newimg.setPixel(col, row, newpixel)
+                            new_img.setPixel(col, row, new_pixel)
 
-                    newimg.draw(win)
+                    new_img.draw(win)
                     win.exitonclick()
 
 
@@ -211,7 +180,7 @@ Exercises
 
     #.
 
-        .. tabbed:: q9
+        .. tabbed:: q6
 
             .. tab:: Question
 
@@ -222,12 +191,12 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q9_answer
+                .. activecode:: q6_answer
                     :nocodelens:
 
                     import image
 
-                    def convertBlackWhite(input_image):
+                    def convert_black_white(input_image):
                         grayscale_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
 
                         for col in range(input_image.getWidth()):
@@ -240,10 +209,10 @@ Exercises
 
                                 avg = (red + green + blue) / 3.0
 
-                                newpixel = image.Pixel(avg, avg, avg)
-                                grayscale_image.setPixel(col, row, newpixel)
+                                new_pixel = image.Pixel(avg, avg, avg)
+                                grayscale_image.setPixel(col, row, new_pixel)
 
-                        blackwhite_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
+                        black_white_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
                         for col in range(input_image.getWidth()):
                             for row in range(input_image.getHeight()):
                                 p = grayscale_image.getPixel(col, row)
@@ -253,38 +222,38 @@ Exercises
                                 else:
                                     val = 0
 
-                                newpixel = image.Pixel(val, val, val)
-                                blackwhite_image.setPixel(col, row, newpixel)
-                        return blackwhite_image
+                                new_pixel = image.Pixel(val, val, val)
+                                black_white_image.setPixel(col, row, new_pixel)
+                        return black_white_image
 
+                    def main():
+                        win = image.ImageWin()
+                        img = image.Image("luther.jpg")
 
-                    win = image.ImageWin()
-                    img = image.Image("luther.jpg")
+                        bw_img = convert_black_white(img)
+                        bw_img.draw(win)
 
-                    bw_img = convertBlackWhite(img)
-                    bw_img.draw(win)
+                        win.exitonclick()
 
-                    win.exitonclick()
+                    if __name__ == "__main__":
+                        main()
 
-
-    #. Sepia Tone images are those brownish colored images that may remind you of
-       times past. The formula for creating a sepia tone is as follows:
+    #. Sepia Tone images are those brownish colored images that may remind you of times past. The formula for creating a sepia tone is as follows:
 
        ::
 
-            newR = (R × 0.393 + G × 0.769 + B × 0.189)
-            newG = (R × 0.349 + G × 0.686 + B × 0.168)
-            newB = (R × 0.272 + G × 0.534 + B × 0.131)
+            new_r = (R × 0.393 + G × 0.769 + B × 0.189)
+            new_g = (R × 0.349 + G × 0.686 + B × 0.168)
+            new_b = (R × 0.272 + G × 0.534 + B × 0.131)
 
-       Write a function to convert an image to sepia tone. *Hint:*
-       Remember that RGB values must be integers between 0 and 255.
+       Write a function to convert an image to sepia tone. *Hint:* Remember that RGB values must be integers between 0 and 255.
 
         .. activecode:: ex_7_18
            :nocodelens:
 
     #.
 
-        .. tabbed:: q11
+        .. tabbed:: q7
 
             .. tab:: Question
 
@@ -295,98 +264,46 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: answer_7_11
-                   :nocodelens:
+                .. activecode:: q7_answer
+                  :nocodelens:
 
-                   import image
+                  import image
 
-                   def double(oldimage):
-                       oldw = oldimage.getWidth()
-                       oldh = oldimage.getHeight()
+                  def double(old_image):
+                      old_w = old_image.getWidth()
+                      old_h = old_image.getHeight()
 
-                       newim = image.EmptyImage(oldw * 2, oldh * 2)
-                       for row in range(oldh):
-                           for col in range(oldw):
-                               oldpixel = oldimage.getPixel(col, row)
+                      new_img = image.EmptyImage(old_w * 2, old_h * 2)
+                      for row in range(old_h):
+                          for col in range(old_w):
+                              old_pixel = old_image.getPixel(col, row)
 
-                               newim.setPixel(2*col, 2*row, oldpixel)
-                               newim.setPixel(2*col+1, 2*row, oldpixel)
-                               newim.setPixel(2*col, 2*row+1, oldpixel)
-                               newim.setPixel(2*col+1, 2*row+1, oldpixel)
+                              new_img.setPixel(2*col, 2*row, old_pixel)
+                              new_img.setPixel(2*col+1, 2*row, old_pixel)
+                              new_img.setPixel(2*col, 2*row+1, old_pixel)
+                              new_img.setPixel(2*col+1, 2*row+1, old_pixel)
 
-                       return newim
+                      return new_img
 
-                   win = image.ImageWin()
-                   img = image.Image("luther.jpg")
+                  def main():
+                      win = image.ImageWin()
+                      img = image.Image("luther.jpg")
 
-                   bigimg = double(img)
-                   bigimg.draw(win)
+                      big_img = double(img)
+                      big_img.draw(win)
 
-                   win.exitonclick()
+                      win.exitonclick()
 
+                  if __name__ == "__main__":
+                       main()
 
-    #.   After you have scaled an image too much it looks blocky. One way of
-         reducing the blockiness of the image is to replace each pixel with the
-         average values of the pixels around it. This has the effect of smoothing
-         out the changes in color. Write a function that takes an image as a
-         parameter and smooths the image. Your function should return a new image
-         that is the same as the old but smoothed.
+    #.   After you have scaled an image too much it looks blocky. One way of reducing the blockiness of the image is to replace each pixel with the average values of the pixels around it. This has the effect of smoothing out the changes in color. Write a function that takes an image as a parameter and smooths the image. Your function should return a new image that is the same as the old one but smoothed.
 
            .. activecode:: ex_7_20
               :nocodelens:
 
-    #.
 
-        .. tabbed:: q13
-
-            .. tab:: Question
-
-               Write a general pixel mapper function that will take an image and a pixel mapping function as
-               parameters. The pixel mapping function should perform a manipulation on a single pixel and return
-               a new pixel.
-
-               .. activecode:: ex_7_21
-                  :nocodelens:
-
-            .. tab:: Answer
-
-                .. activecode:: q13_answer
-                    :nocodelens:
-
-                    import image
-
-                    def pixelMapper(oldimage, rgbFunction):
-                        width = oldimage.getWidth()
-                        height = oldimage.getHeight()
-                        newim = image.EmptyImage(width, height)
-
-                        for row in range(height):
-                            for col in range(width):
-                                originalpixel = oldimage.getPixel(col, row)
-                                newpixel = rgbFunction(originalpixel)
-                                newim.setPixel(col, row, newpixel)
-
-                        return newim
-
-                    def graypixel(oldpixel):
-                        intensitysum = oldpixel.getRed() + oldpixel.getGreen() + oldpixel.getBlue()
-                        aveRGB = intensitysum // 3
-                        newPixel = image.Pixel(aveRGB, aveRGB, aveRGB)
-                        return newPixel
-
-                    win = image.ImageWin()
-                    img = image.Image("luther.jpg")
-
-                    newim = pixelMapper(img, graypixel)
-                    newim.draw(win)
-
-                    win.exitonclick()
-
-
-    #. When you scan in images using a scanner they may have lots of noise due to
-       dust particles on the image itself or the scanner itself,
-       or the images may even be damaged. One way of eliminating this noise is
-       to replace each pixel by the median value of the pixels surrounding it.
+    #. When you scan in images using a scanner they may have lots of noise due to dust particles on the image itself or the scanner itself, or the images may even be damaged. One way of eliminating this noise is to replace each pixel by the median value of the pixels surrounding it. Write a program to do this.
 
         .. activecode:: ex_7_22
            :nocodelens:

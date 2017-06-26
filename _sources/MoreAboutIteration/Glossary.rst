@@ -12,63 +12,23 @@ Glossary
 
 .. glossary::
 
-
-    algorithm
-        A step-by-step process for solving a category of problems.
-
-    body
-        The statements inside a loop.
-
-
     counter
-        A variable used to count something, usually initialized to zero and
-        incremented in the body of a loop.
+        A variable used to count something, usually initialized to zero and incremented in the body of a loop.
 
     cursor
-        An invisible marker that keeps track of where the next character will
-        be printed.
-
+        An invisible marker that keeps track of where the next character will be printed.
 
     definite iteration
-        A loop where we have an upper bound on the number of times the
-        body will be executed. Definite iteration is usually best coded
-        as a ``for`` loop.
-
-
+        A loop where we have an upper bound on the number of times the body will be executed. Definite iteration is usually best coded as a ``for`` loop.
 
     escape sequence
-        An escape character, \\, followed by one or more printable characters
-        used to designate a nonprintable character.
-
-    generalize
-        To replace something unnecessarily specific (like a constant value)
-        with something appropriately general (like a variable or parameter).
-        Generalization makes code more versatile, more likely to be reused, and
-        sometimes even easier to write.
-
-
+        An escape character, ``\``, followed by one or more printable characters used to designate a non-printable character.
 
     infinite loop
         A loop in which the terminating condition is never satisfied.
 
     indefinite iteration
-        A loop where we just need to keep going until some condition is met.
-        A ``while`` statement is used for this case.
-
-
-
-    iteration
-        Repeated execution of a set of programming statements.
-
-    loop
-        A statement or group of statements that execute repeatedly until a
-        terminating condition is satisfied.
-
-    loop variable
-        A variable used as part of the terminating condition of a loop.
-
-
-    
+        A loop we need to keep repeating until some condition is met. A ``while`` statement is used for this case.
 
     nested loop
         A loop inside the body of another loop.
@@ -77,17 +37,6 @@ Glossary
         A special character that causes the cursor to move to the beginning of
         the next line.
 
-
-    reassignment
-        Making more than one assignment to the same variable during the
-        execution of a program.
-
-
-
-     
     tab
         A special character that causes the cursor to move to the next tab stop
         on the current line.
-
-
-
