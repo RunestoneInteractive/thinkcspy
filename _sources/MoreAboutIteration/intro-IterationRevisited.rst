@@ -11,26 +11,11 @@
    :prefix: iter-1-
    :start: 1
 
+.. index:: iteration
+
 Iteration Revisited
 ===================
 
-.. index:: iteration, assignment, assignment statement, reassignment
+Computers are often used to automate repetitive tasks. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly.
 
-.. index::
-    single: statement; assignment
-
-
-Computers are often used to automate repetitive tasks. Repeating identical or
-similar tasks without making errors is something that computers do well and
-people do poorly.
-
-Repeated execution of a sequence of statements is called **iteration**.  Because
-iteration is so common, Python provides several language features to make it
-easier. We've already seen the ``for`` statement in a previous chapter. This is a very common
-form of iteration in Python. In this chapter
-we are going to look at the ``while`` statement --- another way to have your
-program do iteration.
-
-
-.. index:: for loop
-
+Repeated execution of a sequence of statements is called **iteration**.  Because iteration is such a common task, Python provides several language features to make it easier. We've already seen the ``for`` statement in a previous chapter. This is a very common form of iteration in Python. In this chapter we are going to review the ``for`` loop and then introduce the ``while`` statement --- another way to have your program do iteration.

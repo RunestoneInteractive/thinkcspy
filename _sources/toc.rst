@@ -199,6 +199,7 @@ Table of Contents
    MoreAboutIteration/intro-IterationRevisited.rst
    MoreAboutIteration/Theforlooprevisited.rst
    MoreAboutIteration/ThewhileStatement.rst
+   MoreAboutIteration/breakandcontinueStatements.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
    MoreAboutIteration/The3n1Sequence.rst
    MoreAboutIteration/NewtonsMethod.rst
