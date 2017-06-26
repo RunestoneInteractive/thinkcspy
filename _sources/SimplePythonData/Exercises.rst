@@ -116,18 +116,18 @@ Exercises
 
                     ## question 5 solution ##
 
-                    word1 = "All"
-                    word2 = "work"
-                    word3 = "and"
-                    word4 = "no"
-                    word5 = "play"
-                    word6 = "makes"
-                    word7 = "Jack"
-                    word8 = "a"
-                    word9 = "dull"
-                    word10 = "boy."
+                    word_1 = "All"
+                    word_2 = "work"
+                    word_3 = "and"
+                    word_4 = "no"
+                    word_5 = "play"
+                    word_6 = "makes"
+                    word_7 = "Jack"
+                    word_8 = "a"
+                    word_9 = "dull"
+                    word_10 = "boy."
 
-                    print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
+                    print(word_1, word_2, word_3, word_4, word_5, word_6, word_7, word_8, word_9, word_10)
 
 
     #.
@@ -229,7 +229,7 @@ Exercises
 
             .. tab:: Question
 
-                Write a program that will convert degrees celsius to degrees fahrenheit.
+                Write a program that will convert degrees Celsius to degrees Fahrenheit.
 
                 .. activecode:: ex_2_11
 
@@ -242,16 +242,16 @@ Exercises
 
                     deg_c = int(input("What is the temperature in Celsius? "))
 
-                    # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
+                    # formula to convert C to F is: (degrees Celsius) times (9/5) plus (32)
                     deg_f = deg_c * (9 / 5) + 32
 
-                    print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
+                    print(deg_c, " degrees Celsius is", deg_f, " degrees Fahrenheit.")
 
 
 
     #.
 
-        Write a program that will convert degrees fahrenheit to degrees celsius, like this:
+        Write a program that will convert degrees Fahrenheit to degrees Celsius, like this:
 
         ::
 

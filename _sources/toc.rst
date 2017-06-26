@@ -181,6 +181,7 @@ Table of Contents
    Exceptions/ExceptionSyntax.rst
    Exceptions/PrinciplesofProblemSolving.rst
    Exceptions/DebuggingReview.rst
+   Exceptions/Exercises.rst
 
 
 7. More About Iteration

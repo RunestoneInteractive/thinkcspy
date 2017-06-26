@@ -1,0 +1,167 @@
+Exercises
+---------
+.. container:: full_width
+
+1.
+
+    .. tabbed:: q1
+
+        .. tab:: Question
+
+            Solve the following non-coding problem to practice your problem solving skills:
+
+            A farmer is on his way to market with a fox, a chicken, and a bag of corn. He must cross a river to get there. On the bank of the river is a boat that is big enough only for the farmer and one additional item, so he must take the three across one at a time.
+
+            * If the farmer takes the fox first, the chicken will eat the corn.
+            * If the farmer takes the corn first, the fox will eat the chicken.
+            * If the farmer takes the chicken first, the fox *will not* eat the corn. However, he'll then have to take either the fox or corn on the next trip, and when left alone to return for the final item one of the first two situations will occur.
+
+            How can the farmer get all three across without losing one?
+
+        .. tab:: Answer
+
+            We know that the following pairs can't be left alone: fox and chicken, chicken and corn. Therefore, we have to start with the chicken. If the farmer takes the chicken across, the corn and fox will be left alone, which is fine.
+
+            When the farmer returns for the next item, he can choose either fox or corn next. Let's say he chooses the fox. The farmer takes the fox across the river. But then he can't leave the fox and chicken alone, so *he must take the chicken back with him*. This is the crucial detail to solve this problem.
+
+            The farmer returns the chicken, picks up the bag of corn to take it across and leave with the fox, and then returns for the chicken.
+
+2.
+
+    .. tabbed:: q2
+
+        .. tab:: Question
+
+            Solve the following non-coding problem to practice your problem solving skills:
+
+            You have three boxes that contain some combination of apples and oranges:
+
+            * One has only apples
+            * One has only oranges
+            * One has both apples and oranges
+
+            The boxes have labels signifying each of the three, but *each box is mislabeled*.
+
+            You may ask for one item from one of the boxes to be shown to you. This item will be randomly pulled from the box.
+
+            How can you figure out the correct labeling of the boxes?
+
+        .. tab:: Answer
+
+            Let's imagine the boxes lined up side-by-side. For convenience in discussing them, let's say box #1 is on the left, box #2 in the middle, and box #3 is on the right. Let's also assume that the labels are as follows:
+
+            +-------+--------------------+
+            | Box # | Label              |
+            +-------+--------------------+
+            | 1     | Apples             |
+            +-------+--------------------+
+            | 2     | Apples and Oranges |
+            +-------+--------------------+
+            | 3     | Oranges            |
+            +-------+--------------------+
+
+            The most important detail in the problem statement is that *all of the boxes are mislabeled*. This gives us the following options.
+
+            +-------+--------------------+-----------------------------+
+            | Box # | Label              | Possible Correct Labels     |
+            +-------+--------------------+-----------------------------+
+            | 1     | Apples             | Oranges, Apples and Oranges |
+            +-------+--------------------+-----------------------------+
+            | 2     | Apples and Oranges | Apples, Oranges             |
+            +-------+--------------------+-----------------------------+
+            | 3     | Oranges            | Apples, Apples and Oranges  |
+            +-------+--------------------+-----------------------------+
+
+            The next key observation is that if we determine the correct label for any one of the boxes, we'll know the correct label for the others by elimination. For example, if we know that box #1 actually contains Oranges only, then that will eliminate Oranges as the possible label for box 2, which will in turn eliminate Apples as the possibility for box #3.
+
+            Therefore we want to find a strategy that allows us to determine the correct label for a single box. Since we're only given one choice of box to see one item from, the only choice that will work is box #2. If we're shown one item from box #2 and it is an orange, we'll know that it must contain oranges only. On the other hand, were we to ask for one item from box #1 and be given an orange, we would still be left with the 2 possibilities listed.
+
+            So our strategy is to ask for an item from box #2. For the sake of example, let's assume we're given an orange. Then we know that the correct labels have to be:
+
+            +-------+--------------------+---------------------+
+            | Box # | Label              | Correct Labels      |
+            +-------+--------------------+---------------------+
+            | 1     | Apples             | Apples and Oranges  |
+            +-------+--------------------+---------------------+
+            | 2     | Apples and Oranges | Oranges             |
+            +-------+--------------------+---------------------+
+            | 3     | Oranges            | Apples              |
+            +-------+--------------------+---------------------+
+
+            If we're given an apple from box #2, a similar scenario plays out and the correct labels are:
+
+            +-------+--------------------+---------------------+
+            | Box # | Label              | Correct Labels      |
+            +-------+--------------------+---------------------+
+            | 1     | Apples             | Oranges             |
+            +-------+--------------------+---------------------+
+            | 2     | Apples and Oranges | Apples              |
+            +-------+--------------------+---------------------+
+            | 3     | Oranges            | Apples and Oranges  |
+            +-------+--------------------+---------------------+
+
+3.
+
+    .. tabbed:: q3
+
+        .. tab:: Question
+
+            Solve the following non-coding problem to practice your problem solving skills:
+
+            You have a job in the quality control department at a ball factory. A coworker left behind 10 boxes of balls. You know that each normal ball weighs 10g, and each defective ball weighs 9g. There are nine boxes consisting of only normal balls, and one box of only defective balls.
+
+            You have a digital scale and can take only one measurement. How can you determine which box contains the defective balls?
+
+        .. tab:: Answer
+
+            This one requires a much higher degree of creativity than the previous problems. Many students find this extremely difficult.
+
+            Since we only have one chance to use the scale, we must think of a technique that will work no matter which box has the defective/lighter balls.
+
+            Suppose we line up the boxes left-to-right, numbered 1-10. Let's take one ball from box #1, two balls from box #2, three balls from box #3, and so on. This will give us 55 balls.
+
+            If we weigh them, we will get a measurement ``w`` that is some number of grams less than 550g, since that would be the weight if all of the balls weighed 10g. Consider the difference:
+
+              ``d = 550 - w``
+
+            This difference will be between 1 and 10, since only one box has 9g balls, and we took between 1 and 10 balls from that box. In fact, this difference tells us which box has the 9g balls. For example, if the difference is 5g, then we know that there were 5 9g balls in the group that we weighted, and thus those balls came from box #5. In general, the difference ``d`` indicates the number of the box containing the defective balls.
+
+4.
+
+    .. tabbed:: q4
+
+        .. tab:: Question
+
+            Fill out the ``main`` function below so that you handle two exceptions that may be raised by your call to ``some_function``. If this function raises a ``ValueError``, print "value error happening now"; if this function raises a ``UnicodeError``, print "unicode error happening now". Make sure your code can handle both errors. (Note: since ``some_function`` isn't filled out, neither exception will be raised when you run the program.)
+
+            .. activecode:: exceptions_ex1
+
+              def some_function():
+                  # Imagine code that could raise value or unicode errors
+                  pass
+
+              def main():
+                  # Put your exception handling code below
+                  some_function()
+
+              if __name__ == "__main__":
+                  main()
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer1
+
+              def some_function():
+                  # Imagine code that could raise value or unicode errors
+                  pass
+
+              def main():
+                  try:
+                      some_function()
+                  except UnicodeError:
+                      print("unicode error happening now")
+                  except ValueError:
+                      print("value error happening now")
+
+              if __name__ == "__main__":
+                  main()
