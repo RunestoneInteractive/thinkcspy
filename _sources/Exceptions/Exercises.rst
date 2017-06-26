@@ -134,7 +134,7 @@ Exercises
 
             Fill out the ``main`` function below so that you handle two exceptions that may be raised by your call to ``some_function``. If this function raises a ``ValueError``, print "value error happening now"; if this function raises a ``UnicodeError``, print "unicode error happening now". Make sure your code can handle both errors. (Note: since ``some_function`` isn't filled out, neither exception will be raised when you run the program.)
 
-            .. activecode:: exceptions_ex1
+            .. activecode:: exceptions_ex4
 
               def some_function():
                   # Imagine code that could raise value or unicode errors
@@ -149,7 +149,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: exceptions_answer1
+            .. activecode:: exceptions_answer4
 
               def some_function():
                   # Imagine code that could raise value or unicode errors
@@ -165,3 +165,270 @@ Exercises
 
               if __name__ == "__main__":
                   main()
+
+These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function).
+
+5.
+
+    .. tabbed:: q5
+
+        .. tab:: Question
+
+            Write a function ``line(n)`` that returns a line with exactly n hashes.
+
+            **Example:**
+              ``print(line(5))``
+
+            **Output:**
+              ``#####``
+
+            .. activecode:: exceptions_ex5
+
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer5
+
+              def line(n):
+                  line_str = ''
+                  for i in range(n):
+                      line_str = line_str + '#'
+
+                  return line_str
+
+6.
+
+    .. tabbed:: q6
+
+        .. tab:: Question
+
+            Write a function ``square(n)`` that returns an ``n`` by ``n`` square of hashes. Utilize your ``line`` function.
+
+            **Example:**
+              ``print(square(5))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+              #####
+              #####
+              #####
+              #####
+              #####
+
+            .. activecode:: exceptions_ex6
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer6
+
+              def line(n):
+                  line_str = ''
+                  for i in range(n):
+                      line_str = line_str + '#'
+
+                  return line_str
+
+              def square(n):
+                  square_str = ''
+                  for i in range(n):
+                      square_str += (line(n) + '\n')
+                  return square_str
+
+7.
+
+    .. tabbed:: q7
+
+        .. tab:: Question
+
+            Write a function ``rectangle(width, height)`` that returns a rectangle of the width and height given by the parameters. Again, utilize your ``line`` function to do this.
+
+            **Example:**
+              ``print(rectangle(5, 3))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+              #####
+              #####
+              #####
+
+            .. activecode:: exceptions_ex7
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer7
+
+              def line(n):
+                  line_str = ''
+                  for i in range(n):
+                      line_str = line_str + '#'
+
+                  return line_str
+
+              def rectangle(width, height):
+                  rectangle_str = ''
+                  for i in range(height):
+                      rectangle_str += (line(width) + '\n')
+
+                  return rectangle_str
+
+8.
+
+    .. tabbed:: q8
+
+        .. tab:: Question
+
+            Write a function ``stairs(n)`` that prints the pattern shown below, with height ``n``.  Again, utilize your ``line`` function to do this.
+
+            **Example:**
+              ``stairs(5))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+              #
+              ##
+              ###
+              ####
+              #####
+
+            .. activecode:: exceptions_ex8
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer8
+
+              def line(n):
+                  line_str = ''
+                  for i in range(n):
+                      line_str = line_str + '#'
+
+                  return line_str
+
+              def stairs(n):
+                  stair_str = ''
+                  for level_len in range(n):
+                      stair_str += (line(level_len+1) + '\n')
+
+                  return stair_str
+
+9.
+
+    .. tabbed:: q9
+
+        .. tab:: Question
+
+            Write a function ``space_line(spaches, hashes)`` that returns a line with exactly the specified number of spaces, followed by the specified number of hashes.
+
+            **Example:**
+              ``print(space_line(3,5))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+              #This is where the edge is, so there's 3 spaces before hashes
+                 #####
+
+            .. activecode:: exceptions_ex9
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer9
+
+              def space_line(spaces, hashes):
+                  return spaces * ' ' + hashes * '#'
+
+10.
+
+    .. tabbed:: q10
+
+        .. tab:: Question
+
+            Write a function ``triangle(n)`` that returns an upright triangle of height ``n``.
+
+            **Example:**
+              ``print(triangle(5))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+                    #
+                   ###
+                  #####
+                 #######
+                #########
+
+            .. activecode:: exceptions_ex10
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer10
+
+              def space_line(spaces, hashes):
+                  return spaces * ' ' + hashes * '#'
+
+              def triangle(n):
+                  triangle_str = ''
+                  for i in range(n):
+                      triangle_str += (space_line(n-i-1, 2*i+1) + '\n')
+                  return triangle_str
+
+
+11.
+
+    .. tabbed:: q11
+
+        .. tab:: Question
+
+            Write a function ``diamond(n)`` that returns a diamond where the triangle formed by the top portion has height ``n``. Notice that this means the diamond has ``2n - 1`` rows.
+
+            **Example:**
+              ``diamond(5))``
+
+            **Output:**
+
+            .. code-block:: Python
+
+                    #
+                   ###
+                  #####
+                 #######
+                #########
+                 #######
+                  #####
+                   ###
+                    #
+
+            .. activecode:: exceptions_ex11
+
+
+        .. tab:: Answer
+
+            .. activecode:: exceptions_answer11
+
+              def space_line(spaces, hashes):
+                  return spaces * ' ' + hashes * '#'
+
+              def triangle(n):
+                  triangle_str = ''
+                  for i in range(n):
+                      triangle_str += (space_line(n-i-1, 2*i+1) + '\n')
+                  return triangle_str
+
+              def diamond(n):
+                  diamond_str = triangle(n)
+                  for i in range(n-2, -1, -1):
+                      diamond_str += (space_line(n-i-1, 2*i+1) + '\n')
+                  return diamond_str
