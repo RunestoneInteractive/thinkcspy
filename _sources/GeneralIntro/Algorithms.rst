@@ -16,6 +16,10 @@ Algorithms
 
 Since problem solving is a central part of computer science, the solutions that you create through the problem solving process are also important. In computer science, we refer to these solutions as **algorithms**.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.
 
+One of the characteristics of algorithms is that they do not require any intelligence to carry out (i.e., they can be done by computers). They are mechanical processes in which each step follows from the last according to a simple set of rules. On the other hand, determining the steps of each algorithm --- what exactly needs to be done, and in what order, to solve the problem at hand --- requires a great deal of thought and experimentation. So while the *execution* of the algorithm may be boring and require no intelligence, it is the *process of designing* algorithms that is interesting, intellectually challenging, and a central part of what we call programming.
+
+Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain *how* we do it, at least not in the form of a step-by-step mechanical algorithm.
+
 Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution. Once we have such a solution, we can use our computer to automate the execution. As noted above, programming is a skill that allows a computer scientist to take an algorithm and represent it in a program that can be followed by a computer. These programs are written in **programming languages**.
 
 **Check your understanding**

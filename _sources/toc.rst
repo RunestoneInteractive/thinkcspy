@@ -202,8 +202,6 @@ Table of Contents
    MoreAboutIteration/breakandcontinueStatements.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
    MoreAboutIteration/The3n1Sequence.rst
-   MoreAboutIteration/NewtonsMethod.rst
-   MoreAboutIteration/AlgorithmsRevisited.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
    MoreAboutIteration/Glossary.rst

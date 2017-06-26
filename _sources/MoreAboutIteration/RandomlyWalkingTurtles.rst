@@ -8,25 +8,22 @@
     License".
 
 .. qnum::
-   :prefix: iter-4-
+   :prefix: iter-5-
    :start: 1
+
+.. index:: indefinite iteration, turtle, while, functional decomposition
 
 Randomly Walking Turtles
 ------------------------
 
-Suppose we want to entertain ourselves by watching a turtle wander around randomly inside the screen. When we run the program we want the turtle and program to behave in the following way:
+Suppose we want to entertain ourselves by watching a turtle wander around randomly inside the screen. When we run the program we want it to behave in the following way:
 
 #. The turtle begins in the center of the screen.
-#. Flip a coin. If its heads then turn to the left 90 degrees. If its tails
-   then turn to the right 90 degrees.
-#. Take 50 steps forward.
-#. If the turtle has moved outside the screen then stop, otherwise go back to
-   step 2 and repeat.
+#. Flip a coin. If it's heads then the turtle turns left 90 degrees. If it's tails then the turtle turns right 90 degrees.
+#. The turtle takes 50 steps forward.
+#. If the turtle has moved outside the screen then stop, otherwise go back to step 2 and repeat.
 
-Notice that we cannot predict how many times the turtle will need to flip the
-coin before it wanders out of the screen, so we can't use a ``for`` loop in this
-case. In fact, although very unlikely, this program might never end,
-that is why we call this indefinite iteration.
+Notice that we cannot predict how many times the turtle will need to flip the coin before it wanders out of the screen, so we can't use a ``for`` loop in this case. In fact, although very unlikely, this program might never end, that is why we call this type of iteration *indefinite*.
 
 Based on the problem description above, we can outline a program as follows:
 
@@ -40,9 +37,9 @@ Based on the problem description above, we can outline a program as follows:
             turn left
         else:
             turn right
-        move the turtle forward 50
+        move the turtle forward 50 steps
 
-The only thing that might seem a bit confusing to you is the part about whether or not the turtle is still in the screen. But this is the nice thing about programming: we can delay the tough stuff and get *something* in our program working right away.
+The only thing that might seem a bit confusing is the part about whether or not the turtle is still in the screen. But this is the nice thing about programming: we can delay the tough stuff and get *something* in our program working right away.
 
 The way we are going to do this is to delegate the work of deciding whether the turtle is still in the screen or not to a boolean function. Let's call this boolean function ``is_in_screen`` We can write a very simple version of this boolean function by having it always return ``True``, or by having it decide randomly, the point is to have it do something simple so that we can focus on the parts we already know how to do well and get them working. Since having it always return ``True`` would not be a good idea, we will write our version to decide randomly. Let's say that there is a 90% chance the turtle is still in the window and a 10% chance that the turtle has escaped.
 
@@ -60,41 +57,44 @@ The way we are going to do this is to delegate the work of deciding whether the 
             return False
 
 
-    max = turtle.Turtle()
-    screen = turtle.Screen()
+    def main():
+        julia = turtle.Turtle()
+        screen = turtle.Screen()
 
-    max.shape('turtle')
-    while is_in_screen(screen, max):
+        julia.shape('turtle')
+        while is_in_screen(screen, julia):
 
-        # simulates a coin flip (0 is heads, 1 is tails)
-        coin = random.randrange(0, 2)
+            # simulates a coin flip (0 is heads, 1 is tails)
+            coin = random.randrange(0, 2)
 
-        if coin == 0:
-            max.left(90)
-        else:
-            max.right(90)
+            if coin == 0:
+                julia.left(90)
+            else:
+                julia.right(90)
 
-        max.forward(50)
+            julia.forward(50)
 
-    screen.exitonclick()
+        screen.exitonclick()
 
+    if __name__ == "__main__":
+        main()
 
-Now we have a working program that draws a random walk of our turtle that has a 90% chance of staying on the screen. We are in a good position, because a large part of our program is working and we can focus on the next bit of work--deciding whether the turtle is inside the screen boundaries or not.
+Now we have a working program that draws a random walk of our turtle that has a 90% chance of staying on the screen. We are in a good position, because a large part of our program is working and we can focus on the next bit of work: deciding whether the turtle is inside the screen boundaries or not.
 
-We can find out the width and the height of the screen using the ``window_width`` and ``window_height`` methods of the screen object. However, remember that the turtle starts at position (0,0) in the middle of the screen. So we never want the turtle to go farther right than width/2 or farther left than negative width/2. We never want the turtle to go further up than height/2 or further doscreen than negative height/2. Once we know what the boundaries are we can use some conditionals to check the turtle position against the boundaries and return ``False`` if the turtle is outside or ``True`` if the turtle is inside.
+We can find out the width and the height of the screen using the ``window_width`` and ``window_height`` methods of the screen object. However, remember that the turtle starts at position (0,0) in the middle of the screen. So we never want the turtle to go farther right than width/2 or farther left than negative width/2. We also never want the turtle to go further up than height/2 or further down than negative height/2. Once we know what the boundaries are we can use some conditionals to check the turtle position against the boundaries and return ``False`` if the turtle is outside or ``True`` if the turtle is inside.
 
-Once we have computed our boundaries we can get the current position of the turtle and then use conditionals to decide. Here is one implementation:
+Once we have computed our boundaries we can get the current position of the turtle and then use conditionals to decide if it is still in the window. Here is one implementation:
 
 .. sourcecode:: python
 
-    def is_in_screen(screen, a_turtle):
+    def is_in_screen(screen, t):
         left_bound = -(screen.window_width() / 2)
         right_bound = screen.window_width() / 2
         top_bound = screen.window_height() / 2
         bottom_bound = -(screen.window_height() / 2)
 
-        turtle_x = a_turtle.xcor()
-        turtle_y = a_turtle.ycor()
+        turtle_x = t.xcor()
+        turtle_y = t.ycor()
 
         still_in = True
         if turtle_x > right_bound or turtle_x < left_bound:
@@ -104,7 +104,7 @@ Once we have computed our boundaries we can get the current position of the turt
 
         return still_in
 
-There are lots of ways that the conditional could be written. In this case, we have given ``still_in`` the default value of ``True`` and we use two ``if`` statements to set the value to ``False`` if the conditions determine the turtle has left the screen.  You could rewrite this to use nested conditionals or ``elif`` statements and set ``still_in`` to ``True`` in an ``else`` clause.
+There are lots of ways that the conditional could be written. In this case, we have given ``still_in`` the default value of ``True`` and we use two ``if`` statements to set the value to ``False`` if the conditions determine the turtle has left the screen.  Another way you could write this is to use nested conditionals or ``elif`` statements and set ``still_in`` to ``True`` in an ``else`` clause.
 
 Here is the full version of our random walk program.
 
@@ -131,22 +131,26 @@ Here is the full version of our random walk program.
 
         return still_in
 
-    max = turtle.Turtle()
-    screen = turtle.Screen()
+    def main():
+        julia = turtle.Turtle()
+        screen = turtle.Screen()
 
-    max.shape('turtle')
-    while is_in_screen(screen, max):
-        coin = random.randrange(0, 2)
-        if coin == 0:
-            max.left(90)
-        else:
-            max.right(90)
+        julia.shape('turtle')
+        while is_in_screen(screen, julia):
+            coin = random.randrange(0, 2)
+            if coin == 0:
+                julia.left(90)
+            else:
+                julia.right(90)
 
-        max.forward(50)
+            julia.forward(50)
 
-    screen.exitonclick()
+        screen.exitonclick()
 
-We could have written this program without using a boolean function. As an exercise, you could to try to rewrite it using a complex condition in the while statement. However, using a boolean function makes the program much more readable and easier to understand. It also gives us another tool to use if this was a larger program and we needed to have a check for whether the turtle was still in the screen in another part of the program. Breaking up this program into a couple of parts is another example of functional decomposition.
+    if __name__ == "__main__":
+        main()
+
+We could have written this program without using a boolean function. As an exercise, you could to try to rewrite it using a complex condition in the ``while`` statement. However, using a boolean function makes the program much more readable and easier to understand. It also gives us a reusable function for use if this program were larger and we needed to have a check  in another part of the program for whether the turtle was still in the screen. Breaking up this program into a couple of parts is another example of functional decomposition.
 
 **Check your understanding**
 
@@ -156,8 +160,8 @@ We could have written this program without using a boolean function. As an exerc
    :answer_c: only a while loop
    :correct: a
    :feedback_a: Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so either a for loop or a while loop will work.
-   :feedback_b: As you learned in section 7.2, a while loop can always be used for anything a for loop can be used for.
-   :feedback_c: Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so this is an example of definite iteration.
+   :feedback_b: As you learned earlier, a while loop can always be used for anything a for loop can be used for.
+   :feedback_c: Although you do not know how many iterations your loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so this is an example of definite iteration, and therefore a while loop is not the only choice.
 
    Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.
 

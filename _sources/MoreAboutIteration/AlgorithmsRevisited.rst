@@ -11,13 +11,14 @@
    :prefix: iter-7-
    :start: 1
 
+.. index:: algorithm, problem solving
+
 Algorithms Revisited
 --------------------
 
-In recent sections, we've explored various algorithm, including Newton's method and the 3n+1 sequence. Each of these are processes for solving a specific problem--computing square roots, or generating a sequence of integers according to specified rules.
+In the last section, we explored two algorithms, the 3n+1 sequence and user input for continuing a program. Each of these are processes for solving a specific problem --- generating a sequence of integers according to specified rules or conditionally executing a program based on user input.
 
-It is not easy to define an algorithm. It might help to start with something
-that is not an algorithm. When you learned to multiply single-digit numbers,
+It is not always easy to determine what kind of solution is an algorithm. It might help to start with something that is not an algorithm. When you learned to multiply single-digit numbers,
 you probably memorized the multiplication table. In effect, you memorized 100
 specific solutions. That kind of knowledge is not algorithmic.
 
@@ -44,7 +45,3 @@ thought, are the hardest to express algorithmically. Understanding natural
 language is a good example. We all do it, but so far no one has been able to
 explain *how* we do it, at least not in the form of a step-by-step mechanical
 algorithm.
-
-
-.. index:: table, logarithm, Intel, Pentium, escape sequence, tab, newline,
-           cursor
