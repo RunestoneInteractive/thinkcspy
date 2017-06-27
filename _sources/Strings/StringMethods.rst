@@ -11,18 +11,16 @@
    :prefix: strings-5-
    :start: 1
 
+.. index:: string methods, dot notation, str.format, immutability
+
 String Methods
 --------------
 
-We previously saw that each turtle instance has its own attributes and
-a number of methods that can be applied to the instance. For example,
-we wrote ``tess.right(90)`` when we wanted the turtle object ``tess`` to perform the ``right`` method to turn
-to the right 90 degrees. The "dot notation" is the way we connect the name of an object to the name of a method
-it can perform.
+We previously saw that each turtle instance has its own attributes and a number of methods that can be applied to the instance. For example, we wrote ``tess.right(90)`` when we wanted the turtle object ``tess`` to perform the ``right`` method to turn to the right 90 degrees. The *dot notation* is the way we connect the name of an object to the name of a method it can perform.
 
-Strings are also objects. Each string instance has its own attributes and methods. The most important attribute of the string is the collection of characters. There are a wide variety of methods. Try the following program.
+Strings are also objects. Each string instance has its own methods. There are a wide variety of ``str`` methods, some of which we've used already like ``ord`` and ``chr``. Several more methods are shown in the table below. As an example, try the following program.
 
-.. activecode:: chp08_upper
+.. activecode:: string_upper
 
     ss = "Hello, World"
     print(ss.upper())
@@ -31,10 +29,7 @@ Strings are also objects. Each string instance has its own attributes and method
     print(tt)
 
 
-In this example, ``upper`` is a method that can be invoked on any string object
-to create a new string in which all the
-characters are in uppercase.  ``lower`` works in a similar fashion changing all characters in the string
-to lowercase.  (The original string ``ss`` remains unchanged. A new string ``tt`` is created.)
+In this example, ``upper`` is a method that can be invoked on any string object to create a *new* string in which all the characters are in uppercase. The method ``lower`` works in a similar fashion by changing all characters in the string to lowercase. (The original string ``ss`` remains unchanged. A new string ``tt`` is created.)
 
 In addition to ``upper`` and ``lower``, the following table provides a summary of some other useful string methods. There are a few activecode examples that follow so that you can try them out.
 
@@ -61,11 +56,9 @@ index       item                Like find except causes a runtime error if item 
 rindex      item                Like rfind except causes a runtime error if item is not found
 ==========  ==============      ==================================================================
 
-You should experiment with these
-methods so that you understand what they do. Note once again that the methods that return strings do not
-change the original. You can also consult the `Python documentation for strings <https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str>`_.
+You should experiment with these methods so that you understand what they do. Note that the methods that return strings *do not change the original*. Strings are immutable (we will discuss this trait in more detail below). You can also consult the `Python documentation for strings <https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str>`_ for additional details and more methods.
 
-.. activecode:: ch08_methods1
+.. activecode:: string_methods1
 
     ss = "    Hello, World    "
 
@@ -80,7 +73,7 @@ change the original. You can also consult the `Python documentation for strings 
     print(news)
 
 
-.. activecode:: ch08_methods2
+.. activecode:: string_methods2
 
 
     food = "banana bread"
@@ -100,6 +93,49 @@ change the original. You can also consult the `Python documentation for strings 
 
     print(food.index("e"))
 
+One method that you should experiment with is the ``str.format()`` method. This method will prove especially useful in Unit 2. This method can be called on a string in order to replace fields delimited by braces ``{ }``. Inside the braces is where you will put either the index of a positional argument, or the name of a keyword argument. Inside the ``format()`` call you put the variable or expression you want to add to the string. For example:
+
+.. code-block:: Python
+
+    >>> "I have {0} pigs on my farm".format("eight")
+    'I have eight pigs on my farm'
+    >>> "I have {0} goats on my farm".format(1 + 8)
+    'I have 9 goats on my farm'
+
+.. activecode:: string_methods
+
+    num_hens = 18
+    num_roosters = 3
+
+    farm_news = "I have {0} hens and {1} roosters, a total of {2} chickens."
+    print(farm_news.format(num_hens, num_roosters, num_hens + num_roosters))
+
+    farm_update = "I still have {hens} hens and {roosters} roosters, a total of {sum} chickens."
+    print(farm_update.format(hens=num_hens, roosters=num_roosters, sum=num_hens + num_roosters))
+
+String Immutability
+===================
+
+As we stated above, strings are **immutable**, which means you cannot change an existing string. The best you can do is create a new string that is a variation on the original.
+
+It is tempting to use the ``[ ]`` operator on the left side of an assignment, with the intention of changing a character in a string. For example, in the following code, we would like to change the first letter of ``greeting``.
+
+.. activecode:: cg08_imm1
+
+    greeting = "Hello, world!"
+    greeting[0] = "J"            # ERROR!
+    print(greeting)
+
+Instead of producing the output ``Jello, world!``, this code produces the runtime error ``TypeError: 'str' object does not support item assignment``.
+
+The solution here is to concatenate a new first letter onto a slice of ``greeting``. This operation has no effect on the original string.
+
+.. activecode:: ch08_imm2
+
+    greeting = "Hello, world!"
+    new_greeting = 'J' + greeting[1:]
+    print(new_greeting)
+    print(greeting)            # remains unchanged
 
 **Check your understanding**
 
@@ -119,8 +155,6 @@ change the original. You can also consult the `Python documentation for strings 
 
       s = "python rocks"
       print(s.count("o") + s.count("p"))
-
-
 
 
 .. mchoice:: test_question8_3_2
@@ -143,9 +177,19 @@ change the original. You can also consult the `Python documentation for strings 
       print(s[1] * s.index("n"))
 
 
-.. index::
-    single: len function
-    single: function; len
-    single: runtime error
-    single: negative index
-    single: index; negative
+.. mchoice:: test_question8_7_1
+   :answer_a: Ball
+   :answer_b: Call
+   :answer_c: Error
+   :correct: c
+   :feedback_a: Assignment is not allowed with strings.
+   :feedback_b: Assignment is not allowed with strings.
+   :feedback_c: Yes, strings are immutable.
+
+   What is printed by the following statements:
+
+   .. code-block:: python
+
+      s = "Ball"
+      s[0] = "C"
+      print(s)

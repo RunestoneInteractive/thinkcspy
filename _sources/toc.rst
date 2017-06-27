@@ -163,13 +163,13 @@ Table of Contents
    Selection/Exercises.rst
 
 
-6b. Exceptions and Problem Solving
+7. Exceptions and Problem Solving
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
 
-   ChapterHeadings/Heading6b.rst
+   ChapterHeadings/Heading7.rst
 
 .. toctree::
    :maxdepth: 1
@@ -184,13 +184,13 @@ Table of Contents
    Exceptions/Exercises.rst
 
 
-7. More About Iteration
+8. More About Iteration
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
 
-   ChapterHeadings/Heading7.rst
+   ChapterHeadings/Heading8.rst
 
 .. toctree::
    :maxdepth: 1
@@ -208,32 +208,8 @@ Table of Contents
    MoreAboutIteration/Exercises.rst
 
 
-8. Strings
+9. Strings
 ::::::::::::::::::::::::
-
-.. toctree::
-   :hidden:
-
-   ChapterHeadings/Heading8.rst
-
-.. toctree::
-   :maxdepth: 1
-   :numbered: 1
-
-   Strings/StringsRevisited.rst
-   Strings/ACollectionDataType.rst
-   Strings/OperationsonStrings.rst
-   Strings/IndexOperatorWorkingwiththeCharactersofaString.rst
-   Strings/StringMethods.rst
-   Strings/Length.rst
-   Strings/TheSliceOperator.rst
-   Strings/StringComparison.rst
-   Strings/StringsareImmutable.rst
-   Strings/Exercises.rst
-
-
-9. Strings, Continued
-::::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
@@ -244,12 +220,28 @@ Table of Contents
    :maxdepth: 1
    :numbered: 1
 
-   StringsContinued/TraversalandtheforLoopByItem.rst
-   StringsContinued/TraversalandtheforLoopByIndex.rst
-   StringsContinued/TraversalandthewhileLoop.rst
-   StringsContinued/Theinandnotinoperators.rst
-   StringsContinued/TheAccumulatorPatternwithStrings.rst
-   StringsContinued/Loopingandcounting.rst
+   Strings/ACollectionDataType.rst
+   Strings/OperationsonStrings.rst
+   Strings/IndexOperatorWorkingwiththeCharactersofaString.rst
+   Strings/TheSliceOperator.rst
+   Strings/StringMethods.rst
+   Strings/StringTraversal.rst
+   Strings/Loopingandcounting.rst
+   Strings/Exercises.rst
+
+
+9b. Strings, Continued
+::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :hidden:
+
+   ChapterHeadings/Heading6b.rst
+
+.. toctree::
+   :maxdepth: 1
+   :numbered: 1
+
    StringsContinued/Afindfunction.rst
    StringsContinued/Optionalparameters.rst
    StringsContinued/Characterclassification.rst

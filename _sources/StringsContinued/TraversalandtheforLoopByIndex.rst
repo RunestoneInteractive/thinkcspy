@@ -14,9 +14,7 @@
 Traversal and the for Loop: By Index
 ----------------------------------------
 
-It is also possible to use the ``range`` function to systematically generate the indices of the characters. The ``for`` loop can then be used to iterate over these positions.
-These positions can be used together with the indexing operator to access the individual
-characters in the string.
+It is also possible to use the ``range`` function to systematically generate the indices (plural of index) of the characters. The ``for`` loop can then be used to iterate over these positions. These positions can be used together with the indexing operator to access the individual characters in the string.
 
 Consider the following codelens example.
 
@@ -24,37 +22,32 @@ Consider the following codelens example.
     :python: py3
 
     fruit = "apple"
-    for idx in range(5):
-        currentChar = fruit[idx]
-        print(currentChar)
+    for index in range(5):
+        current_char = fruit[index]
+        print(current_char)
 
-The index positions in "apple" are 0,1,2,3 and 4. This is exactly the same sequence of integers returned by ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed. Then, ``idx`` will be reassigned to 1 and "p" will be displayed. This will repeat for all the range values up to but not including 5. Since "e" has index 4, this will be exactly right to show all
-of the characters.
+The index positions in "apple" are 0,1,2,3 and 4. This is exactly the same sequence of integers returned by ``range(5)``. The first time through the for loop, ``index`` will be 0 and the "a" will be printed. Then, ``index`` will be reassigned to 1 and "p" will be displayed. This will repeat for all the range values up to but not including 5. Since "e" has index 4, this will be exactly right to show all of the characters.
 
-In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.	Make sure you understand why the range function behaves
-correctly when using ``len`` of the string as its parameter value.
+In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``. This is a very common pattern for traversing any sequence by position.Make sure you understand why the range function behaves correctly when using ``len`` of the string as its parameter value.
 
 .. activecode:: ch08_7b
     :nocanvas:
 
-
     fruit = "apple"
-    for idx in range(len(fruit)):
-        print(fruit[idx])
+    for index in range(len(fruit)):
+        print(fruit[index])
 
 
-You may also note that iteration by position allows the programmer to control the direction of the
-traversal by changing the sequence of index values. Recall that we can create ranges that count down as
-well as up so the following code will print the characters from right to left.
+You may also note that iteration by position allows the programmer to control the direction of the traversal by changing the sequence of index values. Recall that we can create ranges that count down as well as up so the following code will print the characters from right to left.
 
 .. codelens:: ch08_8
     :python: py3
 
     fruit = "apple"
-    for idx in range(len(fruit)-1, -1, -1):
-        print(fruit[idx])
+    for index in range(len(fruit)-1, -1, -1):
+        print(fruit[index])
 
-Trace the values of ``idx`` and satisfy yourself that they are correct. In particular, note the start and end of the range.
+Trace the values of ``index`` and satisfy yourself that they are correct. In particular, note the start and end of the range.
 
 **Check your understanding**
 
@@ -70,11 +63,11 @@ Trace the values of ``idx`` and satisfy yourself that they are correct. In parti
    :feedback_d: The for statement can have any statements inside, including if as well as for.
 
 
-   How many times is the letter o printed by the following statements?
+   How many times is the letter "o" printed by the following statements?
 
    .. code-block:: python
 
       s = "python rocks"
-      for idx in range(len(s)):
-          if idx % 2 == 0:
-              print(s[idx])
+      for index in range(len(s)):
+          if index % 2 == 0:
+              print(s[index])

@@ -12,9 +12,7 @@ Exercises
 
 .. container:: full_width
 
-    #. In Robert McCloskey's
-       book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-       Mack, Nack, Ouack, Pack, and Quack. This loop tries to output these names in order.
+    #. In Robert McCloskey's book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop tries to output these names in order.
 
        .. sourcecode:: python
 
@@ -80,69 +78,8 @@ Exercises
           testEqual(is_palindrome('a'), True)
           testEqual(is_palindrome(''), True)
 
-    #.
 
-        .. tabbed:: q11
-
-            .. tab:: Question
-
-               Write a function that removes the first occurrence of a string from another string.
-
-               .. activecode:: ex_8_10
-                  :nocodelens:
-
-                  from test import testEqual
-
-                  def remove(substr,theStr):
-                      # your code here
-
-                  testEqual(remove('an', 'banana'), 'bana')
-                  testEqual(remove('cyc', 'bicycle'), 'bile')
-                  testEqual(remove('iss', 'Mississippi'), 'Missippi')
-                  testEqual(remove('egg', 'bicycle'), 'bicycle')
-
-
-
-            .. tab:: Answer
-
-                .. activecode:: q11_answer
-                    :nocodelens:
-
-                    from test import testEqual
-
-                    def remove(substr,theStr):
-                        index = theStr.find(substr)
-                        if index < 0: # substr doesn't exist in theStr
-                            return theStr
-                        return_str = theStr[:index] + theStr[index+len(substr):]
-                        return return_str
-
-                    testEqual(remove('an', 'banana'), 'bana')
-                    testEqual(remove('cyc', 'bicycle'), 'bile')
-                    testEqual(remove('iss', 'Mississippi'), 'Missippi')
-                    testEqual(remove('egg', 'bicycle'), 'bicycle')
-
-
-    #. Write a function that removes all occurrences of a string from another string.
-
-       .. activecode:: ex_8_11
-
-          from test import testEqual
-
-          def remove_all(substr,theStr):
-              # your code here
-
-          testEqual(remove_all('an', 'banana'), 'ba')
-          testEqual(remove_all('cyc', 'bicycle'), 'bile')
-          testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
-          testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
-
-    #. Write a function that implements a substitution cipher. In a substitution
-       cipher one letter is substituted for another to garble the message. For
-       example A -> Q, B -> T, C -> G etc. your function should take two
-       parameters, the message you want to encrypt, and a string that represents
-       the mapping of the 26 letters in the alphabet. Your function should
-       return a string that is the encrypted version of the message.
+    #. Write a function that implements a substitution cipher. In a substitution cipher one letter is substituted for another to garble the message. For example A -> Q, B -> T, C -> G etc. your function should take two parameters, the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. Your function should return a string that is the encrypted version of the message.
 
        .. activecode:: ex_8_17
 
@@ -195,16 +132,15 @@ Exercises
                     print(decrypted)
 
 
-    #. Write a function called  ``removeDups`` that takes a string and creates a new string by only adding those characters that are not already present. In other words,
-       there will never be a duplicate letter added to the new string.
+    #. Write a function called ``remove_dupes`` that takes a string and creates a new string by only adding those characters that are not already present. In other words, there will never be a duplicate letter added to the new string.
 
        .. activecode:: ex_8_19
 
-          def removeDups(astring):
+          def remove_dupes(string):
               # your code here
 
 
-          print(removeDups("mississippi"))   #should print misp
+          print(remove_dupes("mississippi"))   #should print misp
 
 
     #.
@@ -213,22 +149,20 @@ Exercises
 
             .. tab:: Question
 
-               Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
-               The Caesar cipher works like a substitution cipher but each character is replaced
-               by the character 13 characters to 'its right' in the alphabet. So for example
-               the letter a becomes the letter n. If a letter is past the middle of the alphabet
-               then the counting wraps around to the letter a again, so n becomes a, o becomes b
-               and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
-               to think of modulo arithmetic.
+               Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to "its right" in the alphabet. So for example the letter "a" becomes the letter "n". If a letter is past the middle of the alphabet then the counting wraps around to the letter "a" again, so "n" becomes "a", "o" becomes "b" and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic (using the remainder operator).
 
                .. activecode:: ex_8_20
 
                   def rot13(mess):
                       # Your code here
 
-                  print(rot13('abcde'))
-                  print(rot13('nopqr'))
-                  print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+                  def main():
+                      print(rot13('abcde'))
+                      print(rot13('nopqr'))
+                      print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+
+                  if __name__ == "__main__":
+                      main()
 
             .. tab:: Answer
 
@@ -248,9 +182,13 @@ Exercises
                                     encrypted = encrypted + alphabet[rotated_index % 26]
                         return encrypted
 
-                    print(rot13('abcde'))
-                    print(rot13('nopqr'))
-                    print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+                    def main():
+                        print(rot13('abcde'))
+                        print(rot13('nopqr'))
+                        print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+
+                    if __name__ == "__main__":
+                        main()
 
 
 Weekly Graded Assignment
@@ -258,7 +196,7 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write a function that mirrors its argument. For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the `reverse` function that you wrote in the previous exercise
+    Write a function that mirrors its argument. For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the ``reverse`` function that you wrote in a previous exercise). 
 
     .. activecode:: ex_8_6
 

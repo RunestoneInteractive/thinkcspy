@@ -8,20 +8,20 @@
     License".
 
 .. qnum::
-   :prefix: strings-2-
+   :prefix: strings-1-
    :start: 1
 
-A Collection Data Type
-----------------------
+.. index:: strings, characters, collection, data type
 
-So far we have seen built-in types like: ``int``, ``float``,
-``bool``, ``str``, as well as lists. The first three--``int``, ``float``, and
-``bool``--are considered to be simple or primitive data types because their values are not composed of any smaller parts. They cannot be broken down. On the other hand, strings and lists are different from the others because they are made up of smaller pieces. In the case of strings, they are made up of smaller strings each containing one **character**.
+Strings: A Collection Data Type
+--------------------------------
 
-Types that are comprised of smaller pieces are called **collection data types**. Depending on what we are doing, we may want to treat a collection data type as a single entity (the whole), or we may want to access its parts. This duality is useful.
+Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out. Our definition was simple: a string is simply some characters inside quotes. In this chapter we explore strings in much more detail. Strings are objects with methods that can be performed on them. They are also what is called a **collection data type**. Let's look at what this means.
+
+So far we have seen built-in types like: ``int``, ``float``, ``bool``, ``str``, ``list``. The first three --- ``int``, ``float``, and ``bool`` --- are considered to be simple or primitive data types because their values are not composed of any smaller parts. They cannot be broken down. On the other hand, strings and lists are different from the others because they are made up of smaller pieces. In the case of strings, they are made up of smaller strings each containing one **character**.
 
 Strings can be defined as sequential collections of characters. This means that the individual characters that make up the string are assumed to be in a particular order from left to right.
 
 A string that contains no characters, often referred to as the **empty string**, is still considered to be a string. It is simply a sequence of zero characters and is represented by '' or "" (two single or two double quotes with nothing in between).
 
-.. index:: string operations, concatenation
+Types --- like strings and lists --- that are comprised of smaller pieces are called *collection data types*. Depending on what we are doing, we may want to treat a collection data type as a single entity (the whole), or we may want to access its parts. This duality is useful.

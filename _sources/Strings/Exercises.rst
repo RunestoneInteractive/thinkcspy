@@ -45,7 +45,7 @@ Exercises
 
     #.
 
-        .. tabbed:: q5
+        .. tabbed:: q2
 
             .. tab:: Question
 
@@ -56,16 +56,15 @@ Exercises
 
             .. tab:: Answer
 
-                .. activecode:: q5_answer
+                .. activecode:: q2_answer
 
-                    def findNumDigits(n):
+                    def find_num_digits(n):
                         n_str = str(n)
                         return len(n_str)
 
-
-                    print(findNumDigits(50))
-                    print(findNumDigits(20000))
-                    print(findNumDigits(1))
+                    print(find_num_digits(50))
+                    print(find_num_digits(20000))
+                    print(find_num_digits(1))
 
 
 
@@ -76,7 +75,7 @@ Exercises
 
           from test import testEqual
 
-          def remove_letter(theLetter, theString):
+          def remove_letter(letter, original_string):
               # your code here
 
           testEqual(remove_letter('a', 'apple'), 'pple')
@@ -98,7 +97,7 @@ Exercises
 
                   from test import testEqual
 
-                  def remove(substr,theStr):
+                  def remove(substr,original_string):
                       # your code here
 
                   testEqual(remove('an', 'banana'), 'bana')
@@ -108,7 +107,6 @@ Exercises
                   testEqual(remove('oo', 'Yahoohoo'), 'Yahhoo')
 
 
-
             .. tab:: Answer
 
                 .. activecode:: q11_answer
@@ -116,11 +114,11 @@ Exercises
 
                     from test import testEqual
 
-                    def remove(substr,theStr):
-                        index = theStr.find(substr)
-                        if index < 0: # substr doesn't exist in theStr
-                            return theStr
-                        return_str = theStr[:index] + theStr[index+len(substr):]
+                    def remove(substr,original_string):
+                        index = original_string.find(substr)
+                        if index < 0: # substr doesn't exist in original_string
+                            return original_string
+                        return_str = original_string[:index] + original_string[index+len(substr):]
                         return return_str
 
                     testEqual(remove('an', 'banana'), 'bana')
@@ -129,21 +127,134 @@ Exercises
                     testEqual(remove('egg', 'bicycle'), 'bicycle')
 
 
+    #. Write a function ``reverse`` that receives a string argument, and returns a reversed version of the string.
 
-    #. Write a function that removes all occurrences of a string from another string.
-
-       .. activecode:: ex_8_11
+       .. activecode:: ex_8_5
 
           from test import testEqual
 
-          def remove_all(substr,theStr):
+          def reverse(text):
               # your code here
 
-          testEqual(remove_all('an', 'banana'), 'ba')
-          testEqual(remove_all('cyc', 'bicycle'), 'bile')
-          testEqual(remove_all('iss', 'Mississippi'), 'Mippi')
-          testEqual(remove_all('eggs', 'bicycle'), 'bicycle')
+          testEqual(reverse("happy"), "yppah")
+          testEqual(reverse("Python"), "nohtyP")
+          testEqual(reverse(""), "")
 
+
+    #. Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
+
+       .. activecode:: ex_8_8
+
+          from test import testEqual
+
+          def is_palindrome(text):
+              # your code here
+
+          testEqual(is_palindrome('abba'), True)
+          testEqual(is_palindrome('abab'), False)
+          testEqual(is_palindrome('straw warts'), True)
+          testEqual(is_palindrome('a'), True)
+          testEqual(is_palindrome(''), True)
+
+
+    #. Write a function that implements a substitution cipher. In a substitution cipher one letter is substituted for another to garble the message. For example A -> Q, B -> T, C -> G etc. your function should take two parameters, the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. Your function should return a string that is the encrypted version of the message.
+
+       .. activecode:: ex_8_17
+
+    #.
+
+        .. tabbed:: q19
+
+            .. tab:: Question
+
+               Write a function that decrypts the message from the previous exercise. It
+               should also take two parameters. The encrypted message,
+               and the mixed up alphabet. The function should return a string that is
+               the same as the original unencrypted message.
+
+               .. activecode:: ex_8_18
+
+            .. tab:: Answer
+
+                .. activecode:: q19_answer
+
+                    def encrypt(message, cipher):
+                        alphabet = "abcdefghijklmnopqrstuvwxyz"
+                        encrypted = ''
+                        for char in message:
+                            if char == ' ':
+                                encrypted = encrypted + ' '
+                            else:
+                                pos = alphabet.index(char)
+                                encrypted = encrypted + cipher[pos]
+                        return encrypted
+
+                    def decrypt(encrypted, cipher):
+                        alphabet = "abcdefghijklmnopqrstuvwxyz"
+                        decrypted = ''
+                        for char in encrypted:
+                            if char == ' ':
+                                decrypted = decrypted + ' '
+                            else:
+                                pos = cipher.index(char)
+                                decrypted = decrypted + alphabet[pos]
+                        return decrypted
+
+
+                    cipher = "badcfehgjilknmporqtsvuxwzy"
+
+                    encrypted = encrypt('hello world', cipher)
+                    print encrypted
+
+                    decrypted = decrypt(encrypted, cipher)
+                    print(decrypted)
+
+    #.
+
+        .. tabbed:: q21
+
+            .. tab:: Question
+
+               Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to "its right" in the alphabet. So for example the letter "a" becomes the letter "n". If a letter is past the middle of the alphabet then the counting wraps around to the letter "a" again, so "n" becomes "a", "o" becomes "b" and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic (using the remainder operator).
+
+               .. activecode:: ex_8_20
+
+                  def rot13(mess):
+                      # Your code here
+
+                  def main():
+                      print(rot13('abcde'))
+                      print(rot13('nopqr'))
+                      print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+
+                  if __name__ == "__main__":
+                      main()
+
+            .. tab:: Answer
+
+                .. activecode:: q21_answer
+
+                    def rot13(mess):
+                        alphabet = 'abcdefghijklmnopqrstuvwxyz'
+                        encrypted = ''
+                        for char in mess:
+                            if char == ' ':
+                                encrypted = encrypted + ' '
+                            else:
+                                rotated_index = alphabet.index(char) + 13
+                                if rotated_index < 26:
+                                    encrypted = encrypted + alphabet[rotated_index]
+                                else:
+                                    encrypted = encrypted + alphabet[rotated_index % 26]
+                        return encrypted
+
+                    def main():
+                        print(rot13('abcde'))
+                        print(rot13('nopqr'))
+                        print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
+
+                    if __name__ == "__main__":
+                        main()
 
 Weekly Graded Assignment
 ========================
@@ -171,7 +282,7 @@ Weekly Graded Assignment
     .. activecode:: ex_8_3
 
         def analyze_text(text):
-            # your code here
+            # Your code here
 
 
         # Don't copy these tests into Vocareum

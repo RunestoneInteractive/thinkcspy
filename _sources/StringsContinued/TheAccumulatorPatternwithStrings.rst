@@ -14,11 +14,9 @@
 The Accumulator Pattern with Strings
 ------------------------------------
 
+Combining the ``in`` operator with string concatenation using ``+`` and the accumulator pattern, we can write a function that removes all the vowels from a string. The idea is to start with a string and iterate over each character, checking to see if the character is a vowel. As we process the characters, we will build up a new string consisting of only the non-vowel characters. To do this, we use the accumulator pattern.
 
-Combining the ``in`` operator with string concatenation using ``+`` and the accumulator pattern, we can
-write a function that removes all the vowels from a string. The idea is to start with a string and iterate over each character, checking to see if the character is a vowel. As we process the characters, we will build up a new string consisting of only the nonvowel characters. To do this, we use the accumulator pattern.
-
-Remember that the accumulator pattern allows us to keep a "running total".  With strings, we are not accumulating a numeric total. Instead we are accumulating characters onto a string.
+Remember that the accumulator pattern allows us to keep a "running total". With strings, we are not accumulating a numeric total. Instead we are accumulating characters onto a string.
 
 .. activecode:: ch08_acc1
 
@@ -43,9 +41,6 @@ Line 5 uses the ``not in`` operator to check whether the current character is no
        eachChar != 'U':
 
          sWithoutVowels = sWithoutVowels + eachChar
-
-
-
 
 Look carefully at line 6 in the above program (``sWithoutVowels = sWithoutVowels + eachChar``).  We will do this for every character that is not a vowel. This should look
 very familiar. As we were describing earlier, it is an example of the accumulator pattern, this time using a string to "accumulate" the final result.

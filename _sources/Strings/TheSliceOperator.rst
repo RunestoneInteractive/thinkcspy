@@ -8,16 +8,17 @@
     License".
 
 .. qnum::
-   :prefix: strings-7-
+   :prefix: strings-4-
    :start: 1
+
+.. index:: strings, slice operator
 
 The Slice Operator
 ------------------
 
-A substring of a string is called a **slice**. Selecting a slice is similar to
-selecting a character:
+A substring of a string is called a **slice**. Selecting a slice is similar to selecting a character:
 
-.. activecode:: chp08_slice1
+.. activecode:: string_slice1
 
     singers = "Peter, Paul, and Mary"
     print(singers[0:5])
@@ -25,16 +26,9 @@ selecting a character:
     print(singers[17:21])
 
 
-The `slice` operator ``[n:m]`` returns the part of the string from the n'th character
-to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
-go up to but do not include the character at index m.
-This
-behavior may seem counter-intuitive but if you recall the ``range`` function, it did not include its end
-point either.
+The **slice** operator ``[n:m]`` returns the part of the string from the n'th character to the m'th character, including the first but excluding the last. In other words, start with the character at index n and go up to the character at index m - 1. This behavior may seem counter-intuitive but if you recall the ``range`` function, it did not include its end point either.
 
-If you omit the first index (before the colon), the slice starts at the
-beginning of the string. If you omit the second index, the slice goes to the
-end of the string.
+If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string.
 
 .. activecode:: chp08_slice2
 
@@ -66,7 +60,6 @@ What do you think ``fruit[:]`` means?
       print(s[3:8])
 
 
-
 .. mchoice:: test_question8_5_2
    :answer_a: rockrockrock
    :answer_b: rock rock rock
@@ -85,7 +78,3 @@ What do you think ``fruit[:]`` means?
 
       s = "python rocks"
       print(s[7:11] * 3)
-
-
-
-.. index:: string comparison, comparison of strings
