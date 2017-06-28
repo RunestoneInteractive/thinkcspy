@@ -16,9 +16,6 @@
 Intro to Exceptions
 --------------------
 
-What is an Exception?
-======================
-
 An **exception** is a signal that a condition has occurred that can't easily be handled using the normal flow of control of a Python program. Recall that in our Debugging chapter we mentioned exceptions when describing **runtime errors**:
 
   "The second type of error is a runtime error, so called because the error does not appear until you run the program. These errors are also called exceptions because they usually indicate that something exceptional (and bad) has happened."

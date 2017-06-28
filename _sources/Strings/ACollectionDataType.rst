@@ -11,7 +11,7 @@
    :prefix: strings-1-
    :start: 1
 
-.. index:: strings, characters, collection, data type
+.. index:: strings, characters, collection data type
 
 Strings: A Collection Data Type
 --------------------------------

@@ -8,7 +8,7 @@ Exercises
 
         .. tab:: Question
 
-            Solve the following non-coding problem to practice your problem solving skills:
+            Solve the following non-coding problem to practice your problem solving skills.
 
             A farmer is on his way to market with a fox, a chicken, and a bag of corn. He must cross a river to get there. On the bank of the river is a boat that is big enough only for the farmer and one additional item, so he must take the three across one at a time.
 
@@ -32,7 +32,7 @@ Exercises
 
         .. tab:: Question
 
-            Solve the following non-coding problem to practice your problem solving skills:
+            Solve the following non-coding problem to practice your problem solving skills.
 
             You have three boxes that contain some combination of apples and oranges:
 
@@ -106,7 +106,7 @@ Exercises
 
         .. tab:: Question
 
-            Solve the following non-coding problem to practice your problem solving skills:
+            Solve the following non-coding problem to practice your problem solving skills.
 
             You have a job in the quality control department at a ball factory. A coworker left behind 10 boxes of balls. You know that each normal ball weighs 10g, and each defective ball weighs 9g. There are nine boxes consisting of only normal balls, and one box of only defective balls.
 

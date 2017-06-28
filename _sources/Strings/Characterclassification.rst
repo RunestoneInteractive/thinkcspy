@@ -8,8 +8,10 @@
     License".
 
 .. qnum::
-   :prefix: strings-17-
+   :prefix: strings-8-
    :start: 1
+
+.. index:: string module, character
 
 Character Classification
 ------------------------
@@ -21,12 +23,11 @@ The string ``string.ascii_lowercase`` contains all of the ascii letters that the
 .. activecode:: character_classification
 
     import string
-    
+
     print(string.ascii_lowercase)
     print(string.ascii_uppercase)
     print(string.digits)
     print(string.punctuation)
-
 
 
 For more information consult the ``string`` module documentaiton (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).

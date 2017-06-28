@@ -227,27 +227,10 @@ Table of Contents
    Strings/StringMethods.rst
    Strings/StringTraversal.rst
    Strings/Loopingandcounting.rst
+   Strings/Characterclassification.rst
+   Strings/Summary.rst
+   Strings/Glossary.rst
    Strings/Exercises.rst
-
-
-9b. Strings, Continued
-::::::::::::::::::::::::::::::::
-
-.. toctree::
-   :hidden:
-
-   ChapterHeadings/Heading6b.rst
-
-.. toctree::
-   :maxdepth: 1
-   :numbered: 1
-
-   StringsContinued/Afindfunction.rst
-   StringsContinued/Optionalparameters.rst
-   StringsContinued/Characterclassification.rst
-   StringsContinued/Summary.rst
-   StringsContinued/Glossary.rst
-   StringsContinued/Exercises.rst
 
 
 10. Lists

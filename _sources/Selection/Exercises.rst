@@ -56,7 +56,7 @@ Exercises
                    < 60      F
                    =======   =====
 
-                The square and round brackets denote closed and open intervals. A closed interval *includes* the number, an open interval *excludes* it. So 79.99999 gets grade C , but 80 gets grade B.
+                The square and round brackets denote closed and open intervals, respectively. A closed interval *includes* the number, an open interval *excludes* it. So 79.99999 gets grade C , but 80 gets grade B.
 
                 Test your function by printing the score and the grade for a number of different scores.
 

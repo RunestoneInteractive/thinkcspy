@@ -20,13 +20,17 @@ If you want to find out if a particular character is in a string, you could iter
 
 .. activecode:: loop_char
 
-    char_exists = False
+    def find_char(text):
+        char_exists = False
 
-    for char in "Go Spot Go":
-        if char == "S":
-            char_exists = True
+        for char in "Go Spot Go":
+            if char == text:
+                char_exists = True
 
-    print(char_exists)
+        return char_exists
+
+    print(find_char("S"))
+    print(find_char("f"))
 
 But you could also just use the convenient ``in`` operator (or its opposite, ``not in``) and it will return the same information. The ``in`` operator tests if one string is a substring of another:
 
@@ -118,7 +122,7 @@ Let's look at another example of the accumulator pattern, but this one does calc
     if __name__ == "__main__":
         main()
 
-The function ``count`` takes a string as its parameter. The ``for`` statement iterates through each character in the string and checks to see if the character is equal to the value of ``char``. If so, the counting variable, ``letter_count``, is incremented by one. When all characters have been processed, the ``letter_count`` is returned.
+The function ``count`` takes a string as its parameter. The ``for`` statement iterates through each character in the string and checks to see if the character is equal to the value of ``char``. If so, the counting variable, ``letter_count``, is incremented by one. When all characters have been processed, the ``letter_count`` is returned. (Note that ``str`` does have a ``count`` method that you can use to perform the same task.)
 
 **Check your understanding**
 
