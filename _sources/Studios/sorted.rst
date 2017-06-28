@@ -8,19 +8,19 @@ Sorted
 Walkthrough
 -----------
 
-Write a function ``remove_char`` that takes two string arguments, ``a_str`` and ``a_char``. The first argument should be a string and the second should be a character (i.e. a string of length one). The function should return a new string, the result of which is ``a_str`` with each instance of ``a_char`` removed.
+Write a function ``remove_char`` that takes two string arguments, ``string`` and ``char``. The first argument should be a string and the second should be a character (i.e. a string of length one). The function should return a new string, the result of which is ``string`` with each instance of ``char`` removed.
 
 .. activecode:: sorted_walkthrough
 
     from test import testEqual
 
-    def remove_char(a_str, a_char):
+    def remove_char(string, char):
 
         new_str = ''
 
-        for idx in range(len(a_str)):
-            if a_str[idx] != a_char:
-                new_str = new_str + a_str[idx]
+        for index in range(len(string)):
+            if string[index] != char:
+                new_str = new_str + string[index]
 
         return new_str
 
@@ -35,12 +35,12 @@ Here's another, slightly different solution that uses the fact that a string is 
 
     from test import testEqual
 
-    def remove_char(a_str, a_char):
+    def remove_char(string, char):
 
         new_str = ''
 
-        for this_char in a_str:
-            if this_char != a_char:
+        for this_char in string:
+            if this_char != char:
                 new_str = new_str + this_char
 
         return new_str

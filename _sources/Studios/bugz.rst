@@ -12,14 +12,14 @@ This is LaunchScrabble, a unique version of Scrabble! This function takes a list
 
 But since 'q' words are worth so many points, we want to make sure our players aren't cheating and making up words that start with 'q'. So for every word that begins with 'q', the program checks to make sure the following letter is 'u'. If we find an exception, for instance "qrie", negate all their points and give that cheater an overall score of 0!
 
-The only problem is, the code doesn't work.
+The only problem is, the code we have so far doesn't work.
 
 .. activecode:: bugz_walkthrough
 
     def launch_scrabble(words):
         points = 0
         for word in words:
-            points += 1
+            points += 1     # equivalent to points = points + 1
             if (word[0] == "q" and word[1] == "u"):
                 points += 10
             else:
@@ -62,7 +62,7 @@ There are a couple ways to fix this (for instance, you could use nested conditio
 Studio
 ------
 
-Today's studio, rather than explicitly pertaining to Strings, is more of an overall review. You will get some practice debugging a variety of common mistakes that new coders make.
+Today's studio, rather than explicitly pertaining to strings, is more of an overall review. You will get some practice debugging a variety of common mistakes that new coders make.
 
 Below are a handful of code snippets that are broken. See if you can fix them!
 
@@ -80,8 +80,8 @@ The function below, ``print_every(i, nums)`` receives a list of numbers ``nums``
             print(i)
         counter += 1
 
-    print_every(3, [4, 7, 2, 8, 1, 0, 9, 6])
-    # should print 4, then print 8, then print 9
+    print_every(3, [4, 7, 2, 10, 1, 0, 9, 6])
+    # should print 4, then print 10, then print 9
 
 
 **Seniors Bar**
@@ -155,5 +155,7 @@ Bonus Missions
 * Add an optional parameter to your ``stretch`` function that indicates how many times each letter should be duplicated. The default value for this optional parameter should be 2. For example, ``stretch("chihuahua", 4)`` would return "cccchhhhiiiihhhhuuuuaaaahhhhuuuuaaaa" but ``stretch("chihuahua")`` should still return "cchhiihhuuaahhuuaa", as before.
 
 * Add an additional optional parameter to your ``stretch`` function that contains a list of characters. This version of ``stretch`` will only duplicate letters that are contained in the list. The default value for this new parameter should be the list of lowercase characters. For example, ``stretch("chihuahua", 3, "ha")`` would return "chhhihhhuaaahhhuaaa".
+
+You can read about optional parameters, also called optional arguments, in this `Python Tutorial section <https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions>`_ .
 
 .. activecode:: bugz_studio_stretch

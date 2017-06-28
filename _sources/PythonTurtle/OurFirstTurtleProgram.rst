@@ -31,7 +31,7 @@ The program as shown will only draw the first two sides of the rectangle. After 
 
 
 
-Here are a couple of things you'll need to understand about this program.
+Here are few key points about this program.
 
 The first line tells Python to load a **module** named ``turtle``.  That module brings us two new types that we can use: the ``Turtle`` type, and the ``Screen`` type. The dot notation ``turtle.Turtle`` means *"The Turtle type that is defined within the turtle module"*.   (Remember that Python is case sensitive, so the module name, ``turtle``, with a lowercase "t", is different from the type ``Turtle`` because of the uppercase "T".)
 
@@ -43,8 +43,7 @@ In lines 4-6, we instruct the **object** ``alex`` to move and to turn. We do thi
 
 .. admonition:: Complete the rectangle ...
 
-    Modify the program above by adding the commands necessary to have *alex* complete the
-    rectangle.
+    Modify the program above by adding the commands necessary to have *alex* complete the rectangle.
 
 **Check your understanding**
 

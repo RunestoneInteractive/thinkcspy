@@ -83,7 +83,7 @@ Table of Contents
    Debugging/Exercises.rst
 
 
-4. Turtles
+4. Modules (and Turtles!)
 :::::::::::::::::::::::::::::::::::::
 
 .. toctree::

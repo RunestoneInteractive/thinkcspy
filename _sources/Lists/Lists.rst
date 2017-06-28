@@ -11,6 +11,8 @@
    :prefix: list-2-
    :start: 1
 
+.. index:: lists
+
 Lists
 =====
 

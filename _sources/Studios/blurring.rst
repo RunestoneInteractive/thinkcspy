@@ -16,7 +16,7 @@ For the walkthrough, we will write a program to apply a red filter to an image. 
     import sys
 
     img = image.Image("luther.jpg")
-    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+    new_img = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
 
     for i in range(0, img.getWidth()):
@@ -24,9 +24,9 @@ For the walkthrough, we will write a program to apply a red filter to an image. 
             old_p = img.getPixel(i, j)
             red = old_p.getRed()
             new_p = image.Pixel(red, 0, 0)
-            newimg.setPixel(i, j, new_p)
+            new_img.setPixel(i, j, new_p)
 
-    newimg.draw(win)
+    new_img.draw(win)
     win.exitonclick()
 
 Studio
@@ -48,36 +48,33 @@ For this studio, your job is to write an algorithm that processes an image to ma
 
 .. raw:: html
 
-    <!-- just a dumb line break to comensate for runestone generating ugly lack of whitespace -->
+    <!-- just a dumb line break to compensate for runestone generating ugly lack of whitespace -->
     <br>
 
-The algorithm to achieve this effect is actually fairly simple: for each pixel, randomly choose one of its neighbor pixels, and use the neighbor's color instead.
+The algorithm to achieve this effect is actually fairly simple: for each pixel, randomly choose one of its neighboring pixels, and use that pixel's color instead.
 
 For example, imagine that the table below is a zoomed-in view of the pixels in our image, and that we are trying to alter the center pixel (the one whose color is ``E``):
 
-+---+---+---+
-| A | B | C |
-+---+---+---+
-| D | E | F |
-+---+---+---+
-| G | H | I |
-+---+---+---+
+::
+
+    A  B  C
+    D  E  F
+    G  H  I
+
 
 We want to randomly choose one of the 9 pixels in this grid, and insert its color to replace the center one. Let's say we choose the bottom-left. This will alter the resulting image like so:
 
-+---+---+---+
-| A | B | C |
-+---+---+---+
-| D | G | F |
-+---+---+---+
-| G | H | I |
-+---+---+---+
+::
+
+    A  B  C
+    D  G  F
+    G  H  I
 
 Notice that the center pixel received the color ``G``.
 
 Of course, you want to run *every* pixel through this same process, so the outer ones should change as well (but in the example above, we only focused on the particular moment when the center pixel was being altered).
 
-Also note that it is okay if, when randomly selecting a neighbor, you happen to choose the center pixel itself. The resulting pixel will be unchanged, but this should only happen rarely enough (once per 9 tries) that the overall image will still be nice and fuzzy. Not having to worry about this will shorten the amount of code you need to write.
+Also note that it is okay if, when randomly selecting a neighbor, you happen to choose the center pixel itself. The resulting pixel will be unchanged, but this should happen rarely enough (once per 9 tries) that the overall image will still be nice and fuzzy. Not worrying about this fluke will shorten the amount of code you need to write.
 
 Tips
 ----
@@ -92,7 +89,7 @@ Tips
     import random
 
     img = image.Image("luther.jpg")
-    newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+    new_img = image.EmptyImage(img.getWidth(), img.getHeight())
     win = image.ImageWin(img.getWidth(), img.getHeight())
 
     for i in range(1, img.getWidth() - 1):
@@ -101,7 +98,7 @@ Tips
 
             # TODO: in the new image, set this pixel's color to the neighbor's color
 
-    newimg.draw(win)
+    new_img.draw(win)
     win.exitonclick()
 
 Bonus Missions
@@ -110,7 +107,7 @@ Bonus Missions
 Bonus 1
 ~~~~~~~~~
 
-Write a function that takes in an integer then displays the multiplication table of that size. For example, if the given integer was 3, the following multiplication table would be displayed:
+Write a function that takes in an integer and then displays the multiplication table of that size. For example, if the given integer was 3, the following multiplication table would be displayed:
 
 ::
 
