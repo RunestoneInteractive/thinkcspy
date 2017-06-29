@@ -10,8 +10,7 @@
 Fractions
 ---------
 
-We have all had to work with fractions when we were younger. Or, perhaps you do a lot of cooking and have to
-manage measurements for ingredients. In any case, fractions are something that we are familiar with.
+We have all had to work with fractions when we were younger. Or, perhaps you do a lot of cooking and have to manage measurements for ingredients. In any case, fractions are something that we are familiar with.
 In this chapter we will develop a class to represent a fraction including some of the most common methods that we
 would like fractions to be able to do.
 
@@ -20,7 +19,7 @@ on the top is called the numerator and the number on the bottom is called the de
 for the line and sometimes they use a straight line. The fact is that it really does not matter so long as you know which
 is the numerator and which is the denominator.
 
-To design our class, we simply need to use the analysis above to realize that the `state` of a fraction object can be 
+To design our class, we simply need to use the analysis above to realize that the `state` of a fraction object can be
 completely described by representing two integers. We can begin by implementing the ``Fraction`` class and the ``__init__``
 method which will allow the user to provide a numerator and a denominator for the fraction being created.
 
@@ -57,6 +56,5 @@ The figure below shows the state of ``myfraction``.  We have also added a few si
 state values for the fraction.
 
 .. image:: Figures/fractionpic1.png
-   
-.. index:: mutable data type
 
+.. index:: mutable data type

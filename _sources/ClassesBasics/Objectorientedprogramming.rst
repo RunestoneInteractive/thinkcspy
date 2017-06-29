@@ -9,8 +9,7 @@
 
 
 
-.. index:: object-oriented programming
-
+.. index:: object-oriented programming, 
 
 Object-oriented programming
 ---------------------------
@@ -36,4 +35,3 @@ operate on data. In object-oriented programming the focus is on the creation of
 Usually, each object definition corresponds to some object or concept in the real
 world and the functions that operate on that object correspond to the ways
 real-world objects interact.
-

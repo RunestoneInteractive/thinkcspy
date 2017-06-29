@@ -18,10 +18,7 @@ Exercises
 
 			.. tab:: Question
 
-			   Write a program that allows the user to enter a string. It then prints a
-			   table of the letters of the alphabet in alphabetical order which occur in
-			   the string together with the number of times each letter occurs. Case should
-			   be ignored. A sample run of the program might look this this::
+			   Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together with the number of times each letter occurs. Case should be ignored. A sample run of the program might look this this::
 
 				   Please enter a sentence: ThiS is String with Upper and lower case Letters.
 				   a  2
