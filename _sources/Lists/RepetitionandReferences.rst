@@ -11,6 +11,8 @@
    :prefix: list-13-
    :start: 1
 
+.. index:: repetition, references, lists
+
 Repetition and References
 -------------------------
 
@@ -18,8 +20,8 @@ We have already seen the repetition operator working on strings as well as lists
 
 .. activecode:: repref1
 
-    origlist = [45, 76, 34, 55]
-    print(origlist * 3)
+    orig_list = [45, 76, 34, 55]
+    print(orig_list * 3)
 
 With a list, the repetition operator creates copies of the references. Although this may seem simple enough, when we allow a list to refer to *another* list, a subtle problem can arise.
 
@@ -27,78 +29,72 @@ Consider the following extension on the previous example.
 
 .. activecode:: repref2
 
-    origlist = [45, 76, 34, 55]
-    print(origlist * 3)
+    orig_list = [45, 76, 34, 55]
+    print(orig_list * 3)
 
-    newlist = [origlist] * 3
+    new_list = [orig_list] * 3
 
-    print(newlist)
+    print(new_list)
 
-``newlist`` is a list of three references to ``origlist`` that were created by the repetition operator. The reference diagram is shown below.
-
-
+``new_list`` is a list of three references to ``orig_list`` that were created by the repetition operator. The reference diagram is shown below.
 
 .. image:: Figures/refrep1.png
    :alt: Repetition of a nested list
 
-
-
-
-Now, what happens if we modify a value in ``origlist``.
-
+Now, what happens if we modify a value in ``orig_list``.
 
 .. activecode:: repref3
 
-    origlist = [45, 76, 34, 55]
+    orig_list = [45, 76, 34, 55]
 
-    newlist = [origlist] * 3
+    new_list = [orig_list] * 3
 
-    print(newlist)
+    print(new_list)
 
-    origlist[1] = 99
+    orig_list[1] = 99
 
-    print(newlist)
+    print(new_list)
 
-``newlist`` shows the change in three places. This can easily be seen by noting that in the reference diagram, there is only one ``origlist``, so any changes to it appear in all three references from ``newlist``.
+``new_list`` shows the change in three places. This can easily be seen by noting that in the reference diagram, there is only one ``orig_list``, so any changes to it appear in all three references from ``new_list``.
 
 .. image:: Figures/refrep2.png
    :alt: Same reference
 
-Here is the same example in codelens. Step through the code paying particular attention to the result of executing the assignment statement ``origlist[1] = 99``.
+Here is the same example in codelens. Step through the code paying particular attention to the result of executing the assignment statement ``orig_list[1] = 99``.
 
 .. codelens:: reprefstep
     :showoutput:
     :python: py3
 
-    origlist = [45, 76, 34, 55]
+    orig_list = [45, 76, 34, 55]
 
-    newlist = [origlist] * 3
+    new_list = [orig_list] * 3
 
-    print(newlist)
+    print(new_list)
 
-    origlist[1] = 99
+    orig_list[1] = 99
 
-    print(newlist)
+    print(new_list)
 
-It is worth noting that there is a difference between ``newlist = [origlist] * 3`` and an assignment statement where ``origlist`` is not in brackets:  ``anotherlist = origlist * 3``. The former creates a list of three references to ``origlist`` whereas the latter creates a *new object* using the values in ``origlist``. Note in the example below how ``newlist`` will change when a value in ``origlist`` changes, but ``anotherlist`` does not change because it is no longer bound to ``origlist``.
+It is worth noting that there is a difference between ``new_list = [orig_list] * 3`` and an assignment statement where ``orig_list`` is not in brackets:  ``another_list = orig_list * 3``. The former creates a list of three references to ``orig_list`` whereas the latter creates a *new object* using the values in ``orig_list``. Note in the example below how ``new_list`` will change when a value in ``orig_list`` changes, but ``another_list`` does not change because it is no longer bound to ``orig_list``.
 
 .. activecode:: repref4
 
-    origlist = [45, 76, 34, 55]
+    orig_list = [45, 76, 34, 55]
 
-    newlist = [origlist] * 3
+    new_list = [orig_list] * 3
 
-    anotherlist = origlist * 3
+    another_list = orig_list * 3
 
-    print(newlist)
+    print(new_list)
 
-    print(anotherlist)
+    print(another_list)
 
-    origlist[1] = 99
+    orig_list[1] = 99
 
-    print(newlist) # Note the change
+    print(new_list) # Note the change
 
-    print(anotherlist) # Note the lack of change
+    print(another_list) # Note the lack of change
 
 **Check your understanding**
 
@@ -120,7 +116,6 @@ It is worth noting that there is a difference between ``newlist = [origlist] * 3
      blist[3] = 999
      print(alist)
 
-
 .. mchoice:: test_question9_12_2
    :answer_a: [4, 2, 8, 999, 5, 4, 2, 8, 999, 5]
    :answer_b: [[4, 2, 8, 999, 5], [4, 2, 8, 999, 5]]
@@ -140,9 +135,3 @@ It is worth noting that there is a difference between ``newlist = [origlist] * 3
      blist = [alist] * 2
      alist[3] = 999
      print(blist)
-
-
-
-
-
-.. index:: list; append

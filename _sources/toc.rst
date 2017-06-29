@@ -251,12 +251,8 @@ Table of Contents
    Lists/ListMethods.rst
    Lists/Listsandforloops.rst
    Lists/ConcatenationandRepetition.rst
-
-
-
    Lists/ObjectsandReferences.rst
    Lists/Aliasing.rst
-   Lists/CloningLists.rst
    Lists/RepetitionandReferences.rst
 
 

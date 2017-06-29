@@ -27,7 +27,6 @@ Also, as with strings, the ``+`` operator concatenates lists. Similarly, the ``*
     print([0] * 4)
     print([1, 2, ["hello", "goodbye"]] * 2)
 
-
 It is important to see that these operators **create new lists** from the elements of the operand lists. If you concatenate a list with 2 items and a list with 4 items, you will get a new list with 6 items (*not a list with two sublists*).  Similarly, repetition of a list of 2 items 4 times will give a list with 8 items.
 
 One way for us to make this more clear is to run a part of this example in codelens. As you step through the code, you will see the variables being created and the lists that they refer to. Pay particular attention to the fact that when ``new_list`` is created by the statement ``new_list = fruit + num_list``, it refers to a completely new list formed by making copies of the items from ``fruit`` and ``num_list``.  You can see this very clearly in the codelens object diagram. *The objects are different*.
@@ -68,7 +67,6 @@ Also be aware that you can only concatenate *lists* together. So if you wanted t
      alist = [1, 3, 5]
      blist = [2, 4, 6]
      print(alist + blist)
-
 
 
 .. mchoice:: test_question9_5_2

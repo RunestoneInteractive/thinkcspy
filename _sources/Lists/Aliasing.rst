@@ -11,11 +11,12 @@
    :prefix: list-11-
    :start: 1
 
-Aliasing
---------
+.. index:: alias, cloning, lists
 
-Since variables refer to objects, if we assign one variable to another, both
-variables refer to the same object:
+Aliasing and Cloning Lists
+---------------------------
+
+Since variables refer to objects, if we assign one variable to another, both variables refer to the same object:
 
 .. activecode:: listalias1
 
@@ -28,10 +29,7 @@ In this case, the reference diagram looks like this:
 .. image:: Figures/refdiag4.png
    :alt: State snapshot for multiple references (aliases) to a list
 
-Because the same list has two different names, ``a`` and ``b``, we say that it
-is **aliased**. Changes made with one alias affect the other. In the codelens example below, you can see that ``a`` and ``b`` refer
-to the same list after executing the assignment statement ``b = a``.
-
+Because the same list has two different names, ``a`` and ``b``, we say that it is **aliased**. *Changes made with one alias affect the other*. In the codelens example below, you can see that ``a`` and ``b`` refer to the same list after executing the assignment statement ``b = a``.
 
 .. codelens:: chp09_is3
     :showoutput:
@@ -51,12 +49,30 @@ to the same list after executing the assignment statement ``b = a``.
     print(a)
 
 
+Although this behavior can be useful, it is sometimes unexpected or undesirable. In general, it is safer to avoid aliasing when you are working with mutable objects. Of course, for immutable objects, there's no problem; they can't be updated or changed. That's why Python is free to alias strings and integers when it sees an opportunity to economize.
 
-Although this behavior can be useful, it is sometimes unexpected or
-undesirable. In general, it is safer to avoid aliasing when you are working
-with mutable objects. Of course, for immutable objects, there's no problem.
-That's why Python is free to alias strings and integers when it sees an opportunity to
-economize.
+So if we don't want to alias the list, we need another option. If we want to modify a list and also keep the original list intact and unchanged, we need to be able to make a copy of the list itself, not just the reference. This process is sometimes called **cloning**, to avoid the ambiguity of the word copy.
+
+The easiest way to clone a list is to use the slice operator.
+
+Taking any slice of ``a`` creates a new list. In this case the slice happens to consist of the whole list.
+
+.. codelens:: chp09_is4
+    :showoutput:
+    :python: py3
+
+    a = [81, 82, 83]
+
+    b = a[:]       # make a clone using slice
+    print(a == b)
+    print(a is b)
+
+    b[0] = 5
+
+    print(a)
+    print(b)
+
+Now we are free to make changes to ``b`` without worrying about ``a``.  Again, we can clearly see in codelens that ``a`` and ``b`` are entirely different list objects.
 
 **Check your understanding**
 
@@ -75,6 +91,3 @@ economize.
      blist = alist
      blist[3] = 999
      print(alist)
-
-
-.. index:: clone
