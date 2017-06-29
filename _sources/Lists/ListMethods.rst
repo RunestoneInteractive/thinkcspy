@@ -11,7 +11,7 @@
    :prefix: list-4-
    :start: 1
 
-.. index:: list methods, append, mutator, hybrid, sort
+.. index:: list methods, append, mutator, hybrid, sort, pop
 
 List Methods
 ------------

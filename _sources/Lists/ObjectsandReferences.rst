@@ -16,7 +16,7 @@
 Objects and References
 ----------------------
 
-Before we proceed further, let's examine objects and references. We introduced them at the beginning of the unit in the `lesson on variables <https://runestone.launchcode.org/runestone/static/thinkcspy/SimplePythonData/Variables.html >`_, but now we'll look at them in more detail with regard to strings and lists.
+In order to better understand the rest of this chapter's content, let's examine objects and references. We introduced them at the beginning of the unit in the `lesson on variables <https://runestone.launchcode.org/runestone/static/thinkcspy/SimplePythonData/Variables.html >`_, but now we'll look at them in more detail with regard to strings and lists.
 
 If we execute these assignment statements,
 

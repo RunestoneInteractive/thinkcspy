@@ -246,7 +246,7 @@ Table of Contents
    :numbered: 1
 
    Lists/Lists.rst
-   Lists/ListandStringsareSimilar.rst
+   Lists/ListsandStringsareSimilar.rst
    Lists/ListsareMutable.rst
    Lists/ListMethods.rst
    Lists/Listsandforloops.rst

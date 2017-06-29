@@ -14,7 +14,7 @@
 .. index:: lists, nested list, sublist, elements, index
 
 Lists
-=====
+======
 
 A **list** is a sequential collection of Python data values, where each value is identified by an index. The values that make up a list are called its **elements**. Lists are similar to strings, which are ordered collections of characters, except that the elements of a list can have *any type* and for any one list, the items can be of different types.
 
@@ -34,7 +34,7 @@ The first example is a list of four integers. The second is a list of three stri
 
     ["hello", 2.0, 5, [10, 20]]
 
-A list within another list is said to be **nested** and the inner list is often called a **sublist**. We'll talk more about nested lists below. Finally, there is a special list that contains no elements. It is called an empty list and is denoted ``[]``.
+A list within another list is said to be **nested** and the inner list is often called a **sublist**. We'll talk more about nested lists below. Finally, there is a special list that contains no elements. It is called the empty list and is denoted ``[]``.
 
 As you would expect, we can also assign list values to variables and pass lists as parameters to functions.
 

@@ -11,9 +11,9 @@
    :prefix: list-3-
    :start: 1
 
-.. index:: mutable, list, item assignment
+.. index:: mutable, list, item assignment, slice
 
-Lists are Mutable
+Lists Are Mutable
 -----------------
 
 Unlike strings, lists are **mutable**. This means we can change an item in a list by accessing it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can update one of the list items.

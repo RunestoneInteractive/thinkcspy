@@ -11,7 +11,7 @@
    :prefix: list-2-
    :start: 1
 
-.. index:: list, len, in, slice, list deletion
+.. index:: lists, len, in, slice, list deletion, strings
 
 Lists and Strings are Similar
 ==============================
@@ -21,7 +21,7 @@ Lists, like strings, are collection data types. Many of the operations you learn
 List Length
 -----------
 
-As with strings, the function ``len`` returns the length of a list (the number of items in the list).  However, since lists can have items which are themselves lists, it important to note that ``len`` only returns the top-most length. In other words, sublists are considered to be a single item when counting the length of the list.
+As with strings, the function ``len`` returns the length of a list (the number of items in the list).  However, since lists can have items which are themselves lists, it important to note that ``len`` only returns the length of the top-most list. In other words, sublists are considered to be a single item when counting the length of the list.
 
 .. activecode:: chp09_01a
 

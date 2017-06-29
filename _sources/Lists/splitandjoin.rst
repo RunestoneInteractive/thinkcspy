@@ -11,7 +11,7 @@
    :prefix: list-24-
    :start: 1
 
-.. index:: separator, glue, split, join, delimiter, lists, string, type conversion
+.. index:: separator, glue, split, join, delimiter, list, string, type conversion
 
 split and join
 ----------------
@@ -50,7 +50,7 @@ The inverse of the ``split`` method is ``join``, which is used on a list. You ch
 The list whose elements you glued together (``wds`` in this example) is not itself modified. Also, you can use empty glue or multi-character strings as glue.
 
 List Type Conversion Function
----------------------------------
+==============================
 
 Python has a built-in type conversion function called ``list`` that tries to turn whatever you give it into a list. For example, try the following:
 

@@ -16,7 +16,7 @@ Glossary
         Multiple variables that contain references to the same object.
 
     clone
-        To *create a new object* that has the same value as an existing object. Copying a reference to an object creates an alias but doesn't clone the object.
+        To *create a new object* that has the same value as an existing object. Copying a reference to an object creates an alias but does not clone the object.
 
     delimiter
         A character or string used to indicate where a string should be split.
