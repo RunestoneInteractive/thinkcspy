@@ -8,16 +8,15 @@
     License".
 
 .. qnum::
-   :prefix: list-14-
+   :prefix: list-4-
    :start: 1
+
+.. index:: list methods, append, mutator, hybrid, sort
 
 List Methods
 ------------
 
-The dot operator can also be used to access built-in methods of list objects.
-``append`` is a list method which adds the argument passed to it to the end of
-the list. Continuing with this example, we show several other list methods. Many of them are
-easy to understand.
+The dot operator can also be used to access built-in methods of list objects. ``append`` is a list method which adds the argument passed to it to the end of the list. Continuing with this example, we show several other list methods. Many of them are easy to understand.
 
 .. activecode:: chp09_meth1
 
@@ -48,19 +47,11 @@ easy to understand.
     print(lastitem)
     print(mylist)
 
-There are two ways to use the ``pop`` method. The first, with no parameter, will remove and return the
-last item of the list. If you provide a parameter for the position, ``pop`` will remove and return the
-item at that position. Either way the list is changed.
+There are two ways to use the ``pop`` method. The first, with no parameter, will remove and return the last item of the list. If you provide a parameter for the position, ``pop`` will remove and return the item at that position. Either way the list is changed.
 
-The following table provides a summary of the list methods shown above. The column labeled
-`result` gives an explanation as to what the return value is as it relates to the new value of the list. The word
-**mutator** means that the list is changed by the method but nothing is returned (actually ``None`` is returned).  A **hybrid** method is one that not only changes the list but also returns a value as its result. Finally, if the result is simply a return, then the list
-is unchanged by the method.
+The following table provides a summary of the list methods shown above. In the column labeled "result", the word **mutator** means that the list is changed by calling the method on it but nothing is returned (actually ``None`` is returned). A **hybrid** method is one that not only changes the list *but also returns a value* as its result. Finally, if the result is simply a return, then the list is unchanged by the method.
 
-Be sure
-to experiment with these methods to gain a better understanding of what they do.
-
-
+Be sure to experiment with these methods to gain a better understanding of what they do.
 
 
 ==========  ==============  ============  ================================================
@@ -78,11 +69,9 @@ remove      item            mutator       Removes the first occurrence of item
 ==========  ==============  ============  ================================================
 
 
-Details for these and others
-can be found in the `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range>`_.
+Details for these and other methods can be found in the `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range>`_.
 
-It is important to remember that methods like ``append``, ``sort``,
-and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list. Calls like these will likely never appear as part of an assignment statement (see line 8 below).
+It is important to remember that methods like ``append``, ``sort``, and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to the result of sorting ``mylist`` will result in losing the entire list. Calls like these should never appear as part of an assignment statement (see line 8 below).
 
 .. activecode:: chp09_meth2
 
@@ -93,8 +82,9 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
     mylist.append(12)
     print(mylist)
 
-    mylist = mylist.sort()   #probably an error
+    mylist = mylist.sort()   # error
     print(mylist)
+
 
 **Check your understanding**
 
@@ -115,7 +105,6 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
      alist.append(True)
      alist.append(False)
      print(alist)
-
 
 
 .. mchoice:: test_question9_13_2
@@ -154,7 +143,6 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
      temp = alist.pop(2)
      temp = alist.pop()
      print(alist)
-
 
 
 .. mchoice:: test_question9_13_4

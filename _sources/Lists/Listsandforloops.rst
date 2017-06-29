@@ -8,14 +8,15 @@
     License".
 
 .. qnum::
-   :prefix: list-17-
+   :prefix: list-5-
    :start: 1
+
+.. index:: list traversal, iteration
 
 Lists and for loops
 -----------------------
 
-It is also possible to perform **list traversal** using iteration by item as well as iteration by index.
-
+Returning to the theme of how lists are similar to strings, it is also possible to perform **list traversal** using iteration by item as well as iteration by index, just as we did with strings.
 
 .. activecode:: chp09_03a
 
@@ -24,8 +25,7 @@ It is also possible to perform **list traversal** using iteration by item as wel
     for afruit in fruits:     # by item
         print(afruit)
 
-It almost reads like natural language: For (every) fruit in (the list of) fruits,
-print (the name of the) fruit.
+It almost reads like natural language: For (every) fruit in (the list of) fruits, print (the name of the) fruit.
 
 We can also use the indices to access the items in an iterative fashion.
 
@@ -36,28 +36,9 @@ We can also use the indices to access the items in an iterative fashion.
     for position in range(len(fruits)):     # by index
         print(fruits[position])
 
+In this example, each time through the loop, the variable ``position`` is used as an index into the list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range so that we can iterate correctly no matter how many items are in the list.
 
-In this example, each time through the loop, the variable ``position`` is used as an index into the
-list, printing the ``position``-eth element. Note that we used ``len`` as the upper bound on the range
-so that we can iterate correctly no matter how many items are in the list.
-
-
-
-
-Any sequence expression can be used in a ``for`` loop. For example, the ``range`` function returns a sequence of integers.
-
-.. activecode:: chp09_for3
-    
-    for number in range(20):
-        if number % 3 == 0:
-            print(number)
-
-
-This example prints all the multiples of 3 between 0 and 19.
-
-Since lists are mutable, it is often desirable to traverse a list, modifying
-each of its elements as you go. The following code squares all the numbers from ``1`` to
-``5`` using iteration by position.
+Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go. The following code squares all the numbers from ``1`` to ``5`` using iteration by position.
 
 .. activecode:: chp09_for4
 
@@ -69,14 +50,8 @@ each of its elements as you go. The following code squares all the numbers from 
 
     print(numbers)
 
-Take a moment to think about ``range(len(numbers))`` until you understand how
-it works. We are interested here in both the *value* and its *index* within the
-list, so that we can assign a new value to it.
+Take a moment to think about ``range(len(numbers))`` until you understand how it works. We are interested here in both the *value* and its *index* within the list, so that we can assign a new value to it.
 
-
-    
-    
-    
 
 **Check your understanding**
 
@@ -90,9 +65,9 @@ list, so that we can assign a new value to it.
    :feedback_b: There are too many items in this list. Only 5 append operations are performed.
    :feedback_c: Yes, the for loop processes each item of the list. 5 is added before it is appended to blist.
    :feedback_d: 5 is added to each item before the append is performed.
-   
+
    What is printed by the following statements?
-   
+
    .. code-block:: python
 
      alist = [4, 2, 8, 6, 5]
@@ -100,7 +75,3 @@ list, so that we can assign a new value to it.
      for item in alist:
          blist.append(item+5)
      print(blist)
-
-
-.. index:: parameter
-

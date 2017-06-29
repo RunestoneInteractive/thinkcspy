@@ -246,20 +246,20 @@ Table of Contents
    :numbered: 1
 
    Lists/Lists.rst
-   Lists/ListLength.rst
-   Lists/AccessingElements.rst
-   Lists/ListMembership.rst
-   Lists/ConcatenationandRepetition.rst
-   Lists/ListSlices.rst
+   Lists/ListandStringsareSimilar.rst
    Lists/ListsareMutable.rst
-   Lists/ListDeletion.rst
+   Lists/ListMethods.rst
+   Lists/Listsandforloops.rst
+   Lists/ConcatenationandRepetition.rst
+
+
+
    Lists/ObjectsandReferences.rst
    Lists/Aliasing.rst
    Lists/CloningLists.rst
    Lists/RepetitionandReferences.rst
-   Lists/ListMethods.rst
-   Lists/AppendversusConcatenate.rst
-   Lists/Listsandforloops.rst
+
+
    Lists/Exercises.rst
 
 
@@ -280,12 +280,8 @@ Table of Contents
    ListsContinued/WhichisBetter.rst
    ListsContinued/FunctionsthatProduceLists.rst
    ListsContinued/ListComprehensions.rst
-   ListsContinued/NestedLists.rst
    ListsContinued/StringsandLists.rst
    ListsContinued/listTypeConversionFunction.rst
-   ListsContinued/TuplesandMutability.rst
-   ListsContinued/TupleAssignment.rst
-   ListsContinued/TuplesasReturnValues.rst
    ListsContinued/Glossary.rst
    ListsContinued/Exercises.rst
 
@@ -306,6 +302,9 @@ Table of Contents
    Dictionaries/Dictionarymethods.rst
    Dictionaries/Aliasingandcopying.rst
    Dictionaries/Sparsematrices.rst
+   Dictionaries/TuplesandMutability.rst
+   Dictionaries/TupleAssignment.rst
+   Dictionaries/TuplesasReturnValues.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
 

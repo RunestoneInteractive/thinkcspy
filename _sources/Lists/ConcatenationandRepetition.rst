@@ -11,11 +11,12 @@
    :prefix: list-6-
    :start: 1
 
+.. index:: concatenation, repetition, lists
+
 Concatenation and Repetition
 ----------------------------
 
-Again, as with strings, the ``+`` operator concatenates lists.
-Similarly, the ``*`` operator repeats the items in a list a given number of times.
+Also, as with strings, the ``+`` operator concatenates lists. Similarly, the ``*`` operator repeats the items in a list a given number of times.
 
 .. activecode:: chp09_5
 
@@ -27,34 +28,25 @@ Similarly, the ``*`` operator repeats the items in a list a given number of time
     print([1, 2, ["hello", "goodbye"]] * 2)
 
 
-It is important to see that these operators create new lists from the elements of the operand lists. If you concatenate a list with 2 items and a list with 4 items, you will get a new list with 6 items (not a list with two sublists).  Similarly, repetition of a list of 2 items 4 times will give a list with 8 items.
+It is important to see that these operators **create new lists** from the elements of the operand lists. If you concatenate a list with 2 items and a list with 4 items, you will get a new list with 6 items (*not a list with two sublists*).  Similarly, repetition of a list of 2 items 4 times will give a list with 8 items.
 
-One way for us to make this more clear is to run a part of this example in codelens. As you step through the code, you will see the variables being created and the lists that they refer to. Pay particular attention to the fact that when ``newlist`` is created by the statement ``newlist = fruit + numlist``, it refers to a completely new list formed by making copies of the items from ``fruit`` and ``numlist``.  You can see this very clearly in the codelens object diagram. The objects are different.
-
-
+One way for us to make this more clear is to run a part of this example in codelens. As you step through the code, you will see the variables being created and the lists that they refer to. Pay particular attention to the fact that when ``new_list`` is created by the statement ``new_list = fruit + num_list``, it refers to a completely new list formed by making copies of the items from ``fruit`` and ``num_list``.  You can see this very clearly in the codelens object diagram. *The objects are different*.
 
 .. codelens:: chp09_concatid
     :python: py3
 
     fruit = ["apple", "orange", "banana", "cherry"]
-    numlist = [6, 7]
+    num_list = [6, 7]
 
-    newlist = fruit + numlist
+    new_list = fruit + num_list
 
     zeros = [0] * 4
 
+Note that concatenation is similar to the append method, but with the important difference that ``append`` only *modifies* the original list. It does not *create a new list* as concatenation does.
 
+Also be aware that you can only concatenate *lists* together. So if you wanted to concatenate the ``fruit`` list above with a string like ``"kiwi"``, you would need to put it in square brackets::
 
-
-
-In Python, every object has a unique identification tag. Likewise, there is a built-in function that can be called on any object to return its unique id. The function is appropriately called ``id`` and takes a single parameter, the object that you are interested in knowing about. You can see in the example below that a real id is usually a very large integer value (corresponding to an address in memory).
-
-.. sourcecode:: python
-
-    >>> alist = [4, 5, 6]
-    >>> id(alist)
-    4300840544
-    >>>
+   more_fruit = fruit + ["kiwi"]
 
 **Check your understanding**
 
@@ -96,3 +88,19 @@ In Python, every object has a unique identification tag. Likewise, there is a bu
 
      alist = [1, 3, 5]
      print(alist * 3)
+
+
+.. mchoice:: test_question9_15_1
+   :answer_a: [4, 2, 8, 6, 5, 999]
+   :answer_b: Error, you cannot concatenate a list with an integer.
+   :correct: b
+   :feedback_a: You cannot concatenate a list with an integer.
+   :feedback_b: Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
+
+   What is printed by the following statements?
+
+   .. code-block:: python
+
+     alist = [4, 2, 8, 6, 5]
+     alist = alist + 999
+     print(alist)

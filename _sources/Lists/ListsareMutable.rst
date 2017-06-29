@@ -8,15 +8,15 @@
     License".
 
 .. qnum::
-   :prefix: list-8-
+   :prefix: list-3-
    :start: 1
+
+.. index:: mutable, list, item assignment
 
 Lists are Mutable
 -----------------
 
-Unlike strings, lists are **mutable**.  This means we can change an item in a list by accessing
-it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
-update one of the list items.
+Unlike strings, lists are **mutable**. This means we can change an item in a list by accessing it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can update one of the list items.
 
 .. activecode:: ch09_7
 
@@ -27,10 +27,7 @@ update one of the list items.
     fruit[-1] = "orange"
     print(fruit)
 
-
-An
-assignment to an element of a list is called **item assignment**. Item
-assignment does not work for strings. Recall that strings are immutable.
+An assignment to an element of a list is called **item assignment**. Item assignment does not work for strings. Recall that strings are immutable.
 
 Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.
 
@@ -41,8 +38,6 @@ Here is the same example in codelens so that you can step through the statements
 
     fruit[0] = "pear"
     fruit[-1] = "orange"
-
-
 
 By combining assignment with the slice operator we can update several elements at once.
 
@@ -60,8 +55,7 @@ We can also remove elements from a list by assigning the empty list to them.
     alist[1:3] = []
     print(alist)
 
-We can even insert elements into a list by squeezing them into an empty slice at the
-desired location.
+We can even insert elements into a list by squeezing them into an empty slice at the desired location.
 
 .. activecode:: ch09_10
 
@@ -89,6 +83,3 @@ desired location.
      alist = [4, 2, 8, 6, 5]
      alist[2] = True
      print(alist)
-
-
-.. index:: del statement, statement; del
