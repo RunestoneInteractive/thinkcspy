@@ -16,7 +16,7 @@
 Objects and References
 ----------------------
 
-In order to better understand the rest of this chapter's content, let's examine objects and references. We introduced them at the beginning of the unit in the `lesson on variables <https://runestone.launchcode.org/runestone/static/thinkcspy/SimplePythonData/Variables.html >`_, but now we'll look at them in more detail with regard to strings and lists.
+In order to better understand the rest of this chapter's content, let's examine objects and references. We introduced them at the beginning of the unit in the `lesson on variables <https://runestone.launchcode.org/runestone/static/thinkcspy/SimplePythonData/Variables.html>`_, but now we'll look at them in more detail with regard to strings and lists.
 
 If we execute these assignment statements,
 
@@ -51,7 +51,7 @@ We can test whether two names refer to the same object using the *is* operator. 
 
 The answer is ``True``. This tells us that both ``a`` and ``b`` refer to the same object, and that it is the second of the two reference diagrams that describes the relationship. Since strings are *immutable*, Python optimizes resources by making two names that refer to the same string value refer to the same object.
 
-This is not the case with lists. Consider the following example. Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
+**This is not the case with lists.** Consider the following example. Here, ``a`` and ``b`` refer to two different lists, each of which happens to have the same element values.
 
 .. activecode:: chp09_is2
 

@@ -21,16 +21,16 @@ Two of the most useful methods involving lists and strings are the complimentary
 .. activecode:: ch09_split1
 
     song = "The rain in Spain..."
-    wds = song.split()
-    print(wds)
+    words = song.split()
+    print(words)
 
 An optional argument called a **delimiter** can be used to specify which characters to use as word boundaries. The following example uses the string ``ai`` as the delimiter:
 
 .. activecode:: ch09_split2
 
     song = "The rain in Spain..."
-    wds = song.split('ai')
-    print(wds)
+    words = song.split('ai')
+    print(words)
 
 Notice that the delimiter doesn't appear in the result.
 
@@ -38,16 +38,16 @@ The inverse of the ``split`` method is ``join``, which is used on a list. You ch
 
 .. activecode:: ch09_join
 
-    wds = ["red", "blue", "green"]
+    words = ["red", "blue", "green"]
     glue = ';'
-    s = glue.join(wds)
+    s = glue.join(words)
     print(s)
-    print(wds)
+    print(words)
 
-    print("***".join(wds))
-    print("".join(wds))
+    print("***".join(words))
+    print("".join(words))
 
-The list whose elements you glued together (``wds`` in this example) is not itself modified. Also, you can use empty glue or multi-character strings as glue.
+The list whose elements you glued together (``words`` in this example) is not itself modified. Also, you can use empty glue or multi-character strings as glue.
 
 List Type Conversion Function
 ==============================

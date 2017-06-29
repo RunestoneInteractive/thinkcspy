@@ -8,7 +8,7 @@ Bubble Sort
 Walkthrough
 -----------
 
-For the walkthrough, we'll write a function that takes two parameters: a sorted list and a new number. The function should return a new list that is the result of inserting the new number into the sorted list in the correct, sorted order.
+For the walkthrough, we'll write a function that takes two parameters: a sorted list of numbers and a new number. The function should return a new list that is the result of inserting the new number into the sorted list in the correct, sorted order.
 
 .. activecode:: bubble_sort_walkthrough
 
@@ -38,9 +38,9 @@ For the walkthrough, we'll write a function that takes two parameters: a sorted 
 Studio
 ------
 
-One rite-of-passage in your programming life is to learn a bunch of canonical "sorting" algorithms: procedures for taking a jumbled list of numbers (or anything "sortable"), and putting all the numbers in order.
+One rite-of-passage in your programming life is to learn a bunch of canonical *sorting algorithms*: procedures for taking a jumbled list of numbers (or anything "sortable"), and putting all the numbers in order.
 
-The simplest such algorithm is called Bubble Sort. The main idea of Bubble Sort is to swap any two successive elements in a list if they are not in order.
+The simplest such algorithm is called "Bubble Sort". The main idea of Bubble Sort is to swap any two successive elements in a list if they are not in order.
 
 For example, the list ``[2, 1]`` would be sorted by swapping the ``1`` and ``2`` yielding ``[1, 2]``.
 
@@ -63,15 +63,15 @@ The pseudo code for the algorithm is as follows:
 
 ::
 
-    function bubbleSort (list)
+    function bubble_sort (list)
         is_sorted = False
         while is_sorted is False
-            nswaps = 0 ## Number of swaps made
+            num_swaps = 0 ## Number of swaps made
             for each pair, a b,  of sequential numbers in list
                 if a is greater than b
                     swap a and b
-                    nswaps = nswaps + 1
-            if nswaps is still 0, then set is_sorted to True
+                    num_swaps = num_swaps + 1
+            if num_swaps is still 0, then set is_sorted to True
         return list
 
 
@@ -80,7 +80,7 @@ Your job is to turn that pseudocode into real code!
 .. activecode:: bubble_sort_studio
 
     # Sorts a list using bubble sort.
-    def bubble_sort(lst):
+    def bubble_sort(alist):
         # TODO your code here
 
 

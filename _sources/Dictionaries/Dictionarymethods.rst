@@ -11,12 +11,12 @@
    :prefix: dict-3-
    :start: 1
 
+.. index:: dictionary methods, keys, view, get, in, not in, for
+
 Dictionary Methods
 ------------------
 
-Dictionaries have a number of useful built-in methods.
-The following table provides a summary and more details can be found in the
-`Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict>`_.
+Dictionaries have a number of useful built-in methods. The following table provides a summary and more details can be found in the `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict>`_.
 
 ==========  ==============      =======================================================
 Method      Parameters          Description
@@ -28,9 +28,7 @@ get         key                 Returns the value associated with key; None othe
 get         key,alt             Returns the value associated with key; alt otherwise
 ==========  ==============      =======================================================
 
-The ``keys`` method returns what Python 3 calls a **view** of its underlying keys.
-We can iterate over the view or turn the view into a
-list by using the ``list`` conversion function.
+The ``keys`` method returns what Python 3 calls a **view** of its underlying keys. We can iterate over the view or turn the view into a list by using the ``list`` conversion function.
 
 .. activecode:: chp12_dict6
 
@@ -39,13 +37,11 @@ list by using the ``list`` conversion function.
     for akey in inventory.keys():     # the order in which we get the keys is not defined
        print("Got key", akey, "which maps to value", inventory[akey])
 
-    ks = list(inventory.keys())
-    print(ks)
+    key_list = list(inventory.keys())
+    print(key_list)
 
 
-It is so common to iterate over the keys in a dictionary that you can
-omit the ``keys`` method call in the ``for`` loop --- iterating over
-a dictionary implicitly iterates over its keys.
+It is so common to iterate over the keys in a dictionary that you can omit the ``keys`` method call in the ``for`` loop --- iterating over a dictionary implicitly iterates over its keys.
 
 .. activecode:: chp12_dict7
 
@@ -55,13 +51,9 @@ a dictionary implicitly iterates over its keys.
        print("Got key", k)
 
 
-As we saw earlier with strings and lists, dictionary methods use dot notation,
-which specifies the name of the method to the right of the dot and the name of
-the object on which to apply the method immediately to the left of the dot. The empty
-parentheses in the case of ``keys`` indicate that this method takes no parameters.
+As we saw earlier with strings and lists, dictionary methods use dot notation, which specifies the name of the method to the right of the dot and the name of the object on which to apply the method immediately to the left of the dot. The empty parentheses in the case of ``keys`` indicate that this method takes no parameters.
 
-The ``values`` and ``items`` methods are similar to ``keys``. They return  view objects which can be turned
-into lists or iterated over directly. Note that the items are shown as tuples containing the key and the associated value.
+The ``values`` and ``items`` methods are similar to ``keys``. They return view objects which can be turned into lists or iterated over directly. Note that the items are shown as tuples containing the key and the associated value.
 
 .. activecode:: chp12_dict8
 
@@ -76,9 +68,7 @@ into lists or iterated over directly. Note that the items are shown as tuples co
     for k in inventory:
         print("Got", k, "that maps to", inventory[k])
 
-Note that tuples are often useful for getting both the key and the value at the same
-time while you are looping. The two loops do the same thing.
-
+Note that tuples (which will be discussed later in this chapter) are often useful for getting both the key and the value at the same time while you are looping. You can see an example of using the tuple in the first ``for`` loop. The two loops do the same thing, the former just does it using a tuple.
 
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 
@@ -93,14 +83,11 @@ The ``in`` and ``not in`` operators can test if a key is in the dictionary:
     else:
         print("We have no bananas")
 
+This operator can be very useful since looking up a non-existent key in a dictionary causes a *runtime error*.
 
-This operator can be very useful since looking up a non-existent key in a
-dictionary causes a runtime error.
+The ``get`` method allows us to access the value associated with a key, similar to the ``[ ]`` operator. The important difference is that ``get`` will not cause a runtime error if the key is not present. It will instead return None.
 
-The ``get`` method allows us to access the value associated with a key, similar to the ``[ ]`` operator.
-The important difference is that ``get`` will not cause a runtime error if the key is not present. It
-will instead return None. There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value
-in the case where the key is not present. This can be seen in the final example below. In this case, since "cherries" is not a key, return 0 (instead of None).
+There exists a variation of ``get`` that allows a second parameter that serves as an alternative return value in the case where the key is not present. This can be seen in the final example below. In this case, since "cherries" is not a key, return 0 (instead of ``None``).
 
 .. activecode:: chp12_dict10
 
@@ -120,21 +107,20 @@ in the case where the key is not present. This can be seen in the final example 
    :answer_c: elephant
    :answer_d: bear
    :correct: c
-   :feedback_a: keylist is a list of all the keys which is then sorted. cat would be at index 1.
-   :feedback_b: keylist is a list of all the keys which is then sorted. dog would be at index 2.
+   :feedback_a: key_list is a list of all the keys which is then sorted. cat would be at index 1.
+   :feedback_b: key_list is a list of all the keys which is then sorted. dog would be at index 2.
    :feedback_c: Yes, the list of keys is sorted and the item at index 3 is printed.
-   :feedback_d: keylist is a list of all the keys which is then sorted. bear would be at index 0.
+   :feedback_d: key_list is a list of all the keys which is then sorted. bear would be at index 0.
 
 
    What is printed by the following statements?
 
    .. sourcecode:: python
 
-     mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-     keylist = list(mydict.keys())
-     keylist.sort()
-     print(keylist[3])
-
+     my_dict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+     key_list = list(my_dict.keys())
+     key_list.sort()
+     print(key_list[3])
 
 
 .. mchoice:: test_question11_3_2
@@ -153,10 +139,9 @@ in the case where the key is not present. This can be seen in the final example 
 
    .. sourcecode:: python
 
-     mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-     answer = mydict.get("cat") // mydict.get("dog")
+     my_dict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+     answer = my_dict.get("cat") // my_dict.get("dog")
      print(answer)
-
 
 
 .. mchoice:: test_question11_3_3
@@ -170,9 +155,8 @@ in the case where the key is not present. This can be seen in the final example 
 
    .. sourcecode:: python
 
-     mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-     print("dog" in mydict)
-
+     my_dict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+     print("dog" in my_dict)
 
 
 .. mchoice:: test_question11_3_4
@@ -186,9 +170,8 @@ in the case where the key is not present. This can be seen in the final example 
 
    .. sourcecode:: python
 
-      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-      print(23 in mydict)
-
+      my_dict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+      print(23 in my_dict)
 
 
 .. mchoice:: test_question11_3_5
@@ -208,12 +191,8 @@ in the case where the key is not present. This can be seen in the final example 
    .. sourcecode:: python
 
       total = 0
-      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-      for akey in mydict:
+      my_dict = {"cat":12, "dog":6, "elephant":23, "bear":20}
+      for akey in my_dict:
          if len(akey) > 3:
-            total = total + mydict[akey]
+            total = total + my_dict[akey]
       print(total)
-
-
-
-.. index:: aliases

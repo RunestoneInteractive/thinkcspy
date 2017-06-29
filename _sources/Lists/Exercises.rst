@@ -32,7 +32,7 @@ Exercises
 
 
 
-    #.  Create a list called ``my_list`` with the following six items: 76, 92.3, "hello", True, 4, 76. Do it with both append and with concatenation, one item at a time.
+    #.  Create a list called ``my_list`` with the following six items: ``76, 92.3, "hello", True, 4, 76``. Do it with both append and with concatenation, one item at a time.
 
         .. activecode:: ex_9_2
 
@@ -193,7 +193,8 @@ Exercises
                #. index
                #. insert
 
-
+               Note that you cannot call your version of the ``in`` function "in", since that is a reserved keyword. You could call it ``is_in`` instead.
+               
                .. activecode:: ex_9_12
 
             .. tab:: Answer

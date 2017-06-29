@@ -25,10 +25,10 @@ Functions which take lists as arguments and change them during execution are cal
 
 .. activecode:: chp09_parm1
 
-    def double_stuff(aList):
-        """ Overwrite each element in aList with double its value. """
-        for position in range(len(aList)):
-            aList[position] = 2 * aList[position]
+    def double_stuff(alist):
+        """ Overwrite each element in alist with double its value. """
+        for position in range(len(alist)):
+            alist[position] = 2 * alist[position]
 
     def main():
         things = [2, 5, 9]
@@ -39,23 +39,23 @@ Functions which take lists as arguments and change them during execution are cal
     if __name__ == "__main__":
         main()
 
-The parameter ``aList`` and the variable ``things`` are aliases for the same object.
+The parameter ``alist`` and the variable ``things`` are aliases for the same object.
 
 .. image:: Figures/references4.png
    :alt: State snapshot for multiple references to a list as a parameter
 
 Since the list object is shared by two references, there is only one copy. If a function modifies the elements of a list parameter, the change also occurs in the original.
 
-This can be easily seen in codelens. Note that after the call to ``double_stuff``, the formal parameter ``aList`` refers to the same object as the actual parameter ``things``.  There is only one copy of the list object itself.
+This can be easily seen in codelens. Note that after the call to ``double_stuff``, the formal parameter ``alist`` refers to the same object as the actual parameter ``things``.  There is only one copy of the list object itself.
 
 
 .. codelens:: chp09_parm1_trace
     :python: py3
 
-    def double_stuff(aList):
-        """ Overwrite each element in aList with double its value. """
-        for position in range(len(aList)):
-            aList[position] = 2 * aList[position]
+    def double_stuff(alist):
+        """ Overwrite each element in alist with double its value. """
+        for position in range(len(alist)):
+            alist[position] = 2 * alist[position]
 
     def main():
         things = [2, 5, 9]
@@ -71,10 +71,10 @@ On the contrary, a **pure function** does not produce side effects. It communica
 
 .. activecode:: ch09_mod2
 
-    def double_stuff(a_list):
-        """ Return a new list in which contains doubles of the elements in a_list. """
+    def double_stuff(alist):
+        """ Return a new list in which contains doubles of the elements in alist. """
         new_list = []
-        for value in a_list:
+        for value in alist:
             new_elem = 2 * value
             new_list.append(new_elem)
         return new_list
@@ -93,10 +93,10 @@ Once again, codelens helps us to see the actual references and objects as they a
 .. codelens:: ch09_mod3
     :python: py3
 
-    def double_stuff(a_list):
-        """ Return a new list in which contains doubles of the elements in a_list. """
+    def double_stuff(alist):
+        """ Return a new list in which contains doubles of the elements in alist. """
         new_list = []
-        for value in a_list:
+        for value in alist:
             new_elem = 2 * value
             new_list.append(new_elem)
         return new_list
