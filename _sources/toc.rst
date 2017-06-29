@@ -254,40 +254,20 @@ Table of Contents
    Lists/ObjectsandReferences.rst
    Lists/Aliasing.rst
    Lists/RepetitionandReferences.rst
-
-
+   Lists/UsingListsasParameters.rst
+   Lists/ListComprehensions.rst
+   Lists/splitandjoin.rst
+   Lists/Glossary.rst
    Lists/Exercises.rst
 
 
-11. Lists, Continued
+11. Dictionaries
 ::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
 
    ChapterHeadings/Heading11.rst
-
-.. toctree::
-   :maxdepth: 1
-   :numbered: 1
-
-   ListsContinued/UsingListsasParameters.rst
-   ListsContinued/PureFunctions.rst
-   ListsContinued/WhichisBetter.rst
-   ListsContinued/FunctionsthatProduceLists.rst
-   ListsContinued/ListComprehensions.rst
-   ListsContinued/StringsandLists.rst
-   ListsContinued/listTypeConversionFunction.rst
-   ListsContinued/Glossary.rst
-   ListsContinued/Exercises.rst
-
-12. Dictionaries
-:::::::::::::::::::::::::::
-
-.. toctree::
-   :hidden:
-
-   ChapterHeadings/Heading12.rst
 
 .. toctree::
    :maxdepth: 1
@@ -305,13 +285,13 @@ Table of Contents
    Dictionaries/Exercises.rst
 
 
-13. Classes and Objects -- Basics
+12. Classes and Objects --- Basics
 :::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
 
-   ChapterHeadings/Heading13.rst
+   ChapterHeadings/Heading12.rst
 
 .. toctree::
    :maxdepth: 1
@@ -330,13 +310,13 @@ Table of Contents
    ClassesBasics/Exercises.rst
 
 
-14. Classes and Objects -- Digging a Little Deeper
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+13. Classes and Objects --- Digging Deeper
+::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :hidden:
 
-   ChapterHeadings/Heading14.rst
+   ChapterHeadings/Heading13.rst
 
 .. toctree::
    :maxdepth: 1

@@ -1,4 +1,4 @@
-Lists, Continued
+Dictionaries
 ++++++++++++++++++++++++++
 
 .. image:: images/ch11.jpg

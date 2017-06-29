@@ -11,11 +11,10 @@
    :prefix: dict-1-
    :start: 1
 
+.. index:: dictionary, mapping type, key, value, key-value pair
+
 Dictionaries
 ============
-
-
-.. index:: dictionary, mapping type, key, value, key-value pair
 
 All of the compound data types we have studied in detail so far --- strings,
 lists, and tuples --- are sequential collections. This means that the items in the collection are
