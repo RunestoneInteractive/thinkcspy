@@ -8,7 +8,7 @@ Wagon Wheel
 Walkthrough
 -----------
 
-For the walkthrough, we will write a program that uses functions to draw a line star with a chosen number of lines.
+For this walkthrough, we will write a program that uses functions to draw a line star with a chosen number of lines.
 
 .. activecode:: wagon_wheel_walkthrough
 

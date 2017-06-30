@@ -15,6 +15,9 @@ Glossary
     dictionary
         A collection of key-value pairs that maps from keys to values. The keys can be any immutable type, and the values can be any type.
 
+    enumerate
+        A built-in Python function that enables us to iterate over a collection and generates an auto-incremented index.
+        
     key
         A data item that is *mapped to* a value in a dictionary. Keys are used to look up values in a dictionary.
 

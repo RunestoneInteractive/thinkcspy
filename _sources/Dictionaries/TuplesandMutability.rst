@@ -26,7 +26,12 @@ A **tuple**, like a list, is a sequence of items of any type. Unlike lists, howe
 
 Tuples are useful for representing what other languages often call **records** --- some related information that belongs together, like your student record, for example. There is no description of what each of these *fields* means, but we can guess. A tuple lets us "chunk" together related information and use it as a single thing.
 
-Tuples support the same sequence operations as strings and lists. For example, the index operator selects an element from a tuple.
+Tuples support the same sequence operations as strings and lists. For example, the index operator selects an element from a tuple, and the slice operator selects multiple elements from the tuple.
+
+.. sourcecode:: python
+
+    print(julia[1])   # will print Roberts
+    print(julia[3:4]) # will print ('Duplicity', 2009)
 
 And, as with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
@@ -35,7 +40,7 @@ And, as with strings, if we try to use item assignment to modify one of the elem
     julia[0] = 'X'
     TypeError: 'tuple' object does not support item assignment
 
-Of course, even if we can't modify the elements of a tuple, we can make a variable reference a new tuple holding different information. To construct the new tuple, it is convenient that we can *slice* parts of the old tuple and join up the bits to make the new tuple. So ``julia`` has a new recent film, and we might want to change her tuple. We can easily slice off the parts we want and *concatenate* them with the new tuple.
+Of course, even if we can't modify the elements of a tuple, we can make a variable reference a new tuple holding different information. To construct the new tuple, it is convenient that we can **slice** parts of the old tuple and join up the bits to make the new tuple. So ``julia`` has a new recent film, and we might want to change her tuple. We can easily slice off the parts we want and **concatenate** them with the new tuple.
 
 .. activecode:: ch09_tuple1
 

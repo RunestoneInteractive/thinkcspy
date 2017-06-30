@@ -8,7 +8,7 @@ Blurring
 Walkthrough
 -----------
 
-For the walkthrough, we will write a program to apply a red filter to an image. (*Note that when you run the code, it will take a few seconds to process.*)
+For this walkthrough, we will write a program to apply a red filter to an image. (*Note that when you run the code, it will take a few seconds to process.*)
 
 .. activecode:: blurring_walkthrough
 

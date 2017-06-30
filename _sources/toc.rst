@@ -348,6 +348,7 @@ Studios
     Studios/donuts.rst
     Studios/turtle-racing.rst
     Studios/wagon-wheel.rst
+    Studios/sherlock.rst
     Studios/blurring.rst
     Studios/sorted.rst
     Studios/bugz.rst

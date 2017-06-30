@@ -65,8 +65,7 @@ Exercises
 						print(char, letter_count[char])
 
 
-	#. Give the Python interpreter's response to each of the following from a
-	   continuous interpreter session:
+	#. Give the Python interpreter's response to each of the following from a continuous interpreter session:
 
 	   a.
 		  .. sourcecode:: python
@@ -109,18 +108,17 @@ Exercises
 			  >>> 'apples' in d
 
 
-	   Be sure you understand why you get each result. Then apply what you
-	   have learned to fill in the body of the function below:
+	   Be sure you understand why you get each result. Then apply what you have learned to fill in the body of the function below:
 
 	   .. activecode:: q2_dict_answer
 
 		   from test import testEqual
 
-		   #Note: The pass is a placeholder to allow
-		   #the code to compile. Remove it when you
-		   #begin coding.
+		   # Note: The pass is a placeholder to allow the code
+		   # to compile. Remove it when you begin coding.
+
 		   def set_inventory(inventory, fruit, quantity=0):
-			pass
+					 pass
 
 		   # make these tests work...
 		   # new_inventory = {}
@@ -168,3 +166,162 @@ Exercises
 
 			text = "hello my man, please excuse your professor to the restroom!"
 			testEqual(translate(text), "avast me matey, please arr yer foul blaggart to th' head!")
+
+	#.
+
+		.. tabbed:: q4
+
+			.. tab:: Question
+
+					Write a program that will function as a grade book, allowing a user (a professor or teacher) to enter the class roster for a course, along with each student's cumulative grade. It then prints the class roster along with the average cumulative grade. Grades are on a 0-100 percentage scale. Use 2 lists (``grades`` and ``students``) and the ``enumerate`` function in your solution.
+
+					A test run of this program would yield the following::
+
+						Enter your students (or ENTER to finish):
+				    Chris
+				    Jesse
+				    Sally
+
+				    Grade for Chris: 3.0
+				    Grade for Jesse: 4.0
+				    Grade for Sally: 3.5
+
+				    Class roster:
+				    Chris (3.0)
+				    Jesse (4.0)
+				    Sally (3.5)
+
+				    Average grade: 3.5
+
+				.. activecode:: ex_11_04
+
+			.. tab:: Answer
+
+				.. activecode:: q4_answer
+
+					def main():
+
+							students = []
+
+							# Use a space to allow for the while check below
+							new_student = " "
+
+							print("Enter your students (or ENTER to finish):")
+
+							# Get student names
+							while (new_student != ""):
+
+									new_student = input()
+
+									if new_student != "":
+											students.append(new_student)
+
+							# Get student grades
+							grades = [0]*len(students)
+							for idx, student in enumerate(students):
+									new_grade = float(input("Grade for " + student + ": "))
+									grades[idx] = new_grade
+
+							# Print class roster
+							print("\nClass roster:")
+							for idx, student in enumerate(students):
+									print(student + " (" + str(grades[idx]) + ")")
+
+							avg = sum(grades) / len(grades)
+							print("\nAverage grade: " + str(avg))
+
+					if __name__ == '__main__':
+							main()
+
+	#. Implement the functionality of the above program using a dictionary instead of a list.
+
+			.. activecode:: ex_11_05
+
+	#.
+		.. tabbed:: q6
+
+			.. tab:: Question
+
+					Make a dictionary where the key is a worker's name, and the value is a list where the first element is clock in time, second element is clock out time, third element is total hours worked that day. Each worker's list starts at [0, 0, 0]. Create functions for ``clock_in``and ``clock_out``.
+
+					* ``clock_in`` takes the dictionary of workers, the name of the worker, and the clock in time as params. When the worker clocks in, enter and save their clock in time as the first elem in the associated list value.
+
+					* ``clock_out`` takes same params, but with a clock out time instead of clock in time. When the worker clocks out, enter and save their clock out time and calculate the hours worked for that day and store it as the third element in the list.
+
+					To make this program a little easier, we're entering the clock in and clock out times as integers. As a bonus mission, try adding the times as strings representing the 24 hour clock (e.g., ``"08:00"``), and then figure out how to calculate the time worked. And you can do this exercise either by aliasing or copying the dictionary.
+
+					.. activecode:: ex_11_06
+
+							# TODO: Implement the clock_in and clock_out functions
+
+							def main():
+									workers = {"George Spelvin": [0,0,0], "Jane Doe": [0,0,0], "John Smith": [0,0,0]}
+									print(workers.get("George Spelvin"))   # should print [0,0,0]
+									clock_in(workers, "George Spelvin", 8)
+									clock_out(workers, "George Spelvin", 17)
+									print(workers.get("George Spelvin"))   # should print [8, 17, 9]
+
+							if __name__ == "__main__":
+									main()
+
+			.. tab:: Answer
+
+					.. activecode:: q6_answer
+
+						def clock_in(worker_dict, name, clock_in_time):
+								worker_info = worker_dict.get(name)
+								worker_info[0] = clock_in_time
+								worker_dict[name] = worker_info
+
+						def clock_out(worker_dict, name, clock_out_time):
+								worker_info = worker_dict.get(name)
+								worker_info[1] = clock_out_time
+								worker_info[2] = worker_info[1] - worker_info[0]
+								worker_dict[name] = worker_info
+
+						def main():
+								workers = {"George Spelvin": [0,0,0], "Jane Doe": [0,0,0], "John Smith": [0,0,0]}
+								print(workers.get("George Spelvin"))   # should print [0,0,0]
+								clock_in(workers, "George Spelvin", 8)
+								clock_out(workers, "George Spelvin", 17)
+								print(workers.get("George Spelvin"))   # should print [8, 17, 9]
+
+						if __name__ == "__main__":
+								main()
+
+
+Weekly Graded Assignment
+========================
+
+.. container:: full_width
+
+		Write an ``add_contact`` function that modifies a dictionary of contacts. The ``contacts`` dictionary has the contact name as its key, and the value is a tuple containing the phone number and email for the contact.::
+
+				contacts = {name: (phone, email), name: (phone, email), etc.}
+
+		The ``add_contact`` function should do the following:
+
+		1. Take the following three parameters: the contact dictionary to be updated, a string of the contact's name, and the tuple containing the contact's phone and email.
+		2. Update the dictionary by adding this new contact to it.
+		3. Create a new, **sorted** list of tuples representing *all* of the contact info (one tuple for each contact).
+		4. Return this list to the calling function.
+
+		For example, after filling in your code for the ``add_contact`` function, running the program below should print the following::
+
+				[('Almodovar, Pedro', '1-990-622-3892', 'pedro@filmbuffs.com'), ('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda', '1-917-222-2222', 'tilda@greatActors.com')]
+
+		.. activecode:: add_contact_assign
+
+			# Create add_contact function
+
+
+			# The below is just for your testing purposes.
+			# In Vocareum, only put code for the function above
+			def main():
+			    contact_dict = {"Rimbaud, Arthur": ("1-636-555-5555", "arthur@notlive.com"),
+			        "Swinton, Tilda": ("1-917-222-2222", "tilda@greatActors.com"),
+			        "Almodovar, Pedro": ("1-990-622-3892", "pedro@filmbuffs.com")}
+			    print(add_contact(contact_dict, "Freud, Anna", ("1-541-754-3010", "anna@psychoanalysis.com")))
+
+			if __name__ == "__main__":
+			    main()
