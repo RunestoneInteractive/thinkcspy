@@ -11,47 +11,31 @@
    :prefix: list-26-
    :start: 1
 
+.. index:: tuples, mutability, records, fields, slice
+
 Tuples and Mutability
 ---------------------
 
-So far you have seen two types of sequential collections: strings, which are made up of
-characters; and lists, which are made up of elements of any type. One of the
-differences we noted is that the elements of a list can be modified, but the
-characters in a string cannot. In other words, strings are **immutable** and
-lists are **mutable**.
+Now we'll turn our attention from dictionaries to tuples. In the previous two chapters you learned about two types of sequential collections: strings, which are made up of characters; and lists, which are made up of elements of any type. One of the differences we noted is that the elements of a list can be modified, but the characters in a string cannot. In other words, strings are **immutable** and lists are **mutable**.
 
-A **tuple**, like a list, is a sequence of items of any type. Unlike lists,
-however, tuples are immutable. Syntactically, a tuple is a comma-separated
-sequence of values. Although it is not necessary, it is conventional to 
-enclose tuples in parentheses:
+A **tuple**, like a list, is a sequence of items of any type. Unlike lists, however, *tuples are immutable*. Syntactically, a tuple is a comma-separated sequence of values. Although it is not necessary, it is conventional to enclose tuples in parentheses:
 
 .. sourcecode:: python
 
     julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
 
-Tuples are useful for representing what other languages often call *records* ---
-some related information that belongs together, like your student record. There is
-no description of what each of these *fields* means, but we can guess. A tuple
-lets us "chunk" together related information and use it as a single thing.
+Tuples are useful for representing what other languages often call **records** --- some related information that belongs together, like your student record, for example. There is no description of what each of these *fields* means, but we can guess. A tuple lets us "chunk" together related information and use it as a single thing.
 
-Tuples support the same sequence operations as strings and
-lists. 
-For example, the index operator selects an element from a tuple.
+Tuples support the same sequence operations as strings and lists. For example, the index operator selects an element from a tuple.
 
-As with strings, if we try to use item assignment to modify one of the elements of the
-tuple, we get an error.
+And, as with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 
 .. sourcecode:: python
 
     julia[0] = 'X'
     TypeError: 'tuple' object does not support item assignment
 
-Of course, even if we can't modify the elements of a tuple, we can make a variable
-reference a new tuple holding different information. To construct the new tuple,
-it is convenient that we can slice parts of the old tuple and join up the
-bits to make the new tuple. So ``julia`` has a new recent film, and we might want
-to change her tuple. We can easily slice off the parts we want and concatenate them with
-the new tuple.
+Of course, even if we can't modify the elements of a tuple, we can make a variable reference a new tuple holding different information. To construct the new tuple, it is convenient that we can *slice* parts of the old tuple and join up the bits to make the new tuple. So ``julia`` has a new recent film, and we might want to change her tuple. We can easily slice off the parts we want and *concatenate* them with the new tuple.
 
 .. activecode:: ch09_tuple1
 
@@ -66,20 +50,20 @@ the new tuple.
     print(julia)
 
 
-To create a tuple with a single element (but you're probably not likely
-to do that too often), we have to include the final comma, because without
-the final comma, Python treats the ``(5)`` below as an integer in parentheses:
+Tuples as Return Values
+========================
 
-.. activecode:: chp09_tuple2
+Functions can return tuples as return values. This is very useful --- we often want to know some athlete's highest and lowest score, or we want to find the mean and the standard deviation, or if we're doing some ecological modeling we may want to know the number of rabbits and the number of wolves on an island at a given time. In each case, a function (which can only return a single value), can create a single tuple holding multiple elements.
 
-    tup = (5,)
-    print(type(tup))
+For example, we could write a function that returns both the area and the circumference of a circle of radius r.
 
-    x = (5)
-    print(type(x))
- 
+.. activecode:: chp09_tuple3
 
-.. index::
-    single: assignment; tuple 
-    single: tuple; assignment  
 
+    def circle_info(r):
+        """ Return (circumference, area) of a circle of radius r """
+        c = 2 * 3.14159 * r
+        a = 3.14159 * r * r
+        return (c, a)
+
+    print(circle_info(10))

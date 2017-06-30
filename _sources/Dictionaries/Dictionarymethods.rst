@@ -11,7 +11,7 @@
    :prefix: dict-3-
    :start: 1
 
-.. index:: dictionary methods, keys, view, get, in, not in, for
+.. index:: dictionary methods, keys, view, get, in, not in, for, tuple
 
 Dictionary Methods
 ------------------

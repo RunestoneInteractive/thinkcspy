@@ -16,7 +16,7 @@
 Dictionary Operations
 ---------------------
 
-The ``del`` statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock. If someone buys all of the pears, we can remove the entry from the dictionary.
+**Dictionaries are mutable**. Therefore, like lists, their contents can be changed. One way to do that is with the ``del`` statement which removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock. If someone buys all of the pears, we can remove the entry from the dictionary.
 
 .. codelens:: ch12_dict4
     :python: py3
@@ -26,7 +26,7 @@ The ``del`` statement removes a key-value pair from a dictionary. For example, t
     del inventory['pears']
 
 
-Dictionaries are also *mutable*. As we've seen before with lists, this means that the dictionary can be modified by referencing an association on the left hand side of the assignment statement. In the previous example, instead of deleting the entry for ``pears``, we could have set the inventory to ``0``.
+And --- as we've seen with lists --- since it is mutable, the dictionary can be modified by referencing an association on the left hand side of the assignment statement. In the previous example, instead of deleting the entry for ``pears``, we could have set the inventory to ``0``.
 
 .. codelens:: ch12_dict4a
     :python: py3

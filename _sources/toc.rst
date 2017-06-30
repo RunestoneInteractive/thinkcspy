@@ -261,7 +261,7 @@ Table of Contents
    Lists/Exercises.rst
 
 
-11. Dictionaries
+11. Dictionaries and Tuples
 ::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -277,10 +277,10 @@ Table of Contents
    Dictionaries/Dictionaryoperations.rst
    Dictionaries/Dictionarymethods.rst
    Dictionaries/Aliasingandcopying.rst
-   Dictionaries/Sparsematrices.rst
    Dictionaries/TuplesandMutability.rst
    Dictionaries/TupleAssignment.rst
-   Dictionaries/TuplesasReturnValues.rst
+   Dictionaries/Sparsematrices.rst
+   Dictionaries/Enumerate.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
 

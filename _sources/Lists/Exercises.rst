@@ -28,7 +28,7 @@ Exercises
 
             .. tab:: Answer
 
-                Your diagram should show two variables referring to two different lists. ``a`` refers to the original list with 1, 2, and 3. ``b`` refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
+                Your diagram should show two variables referring to two different lists. ``a`` refers to the original list with 1, 2, and 3. ``b`` refers to a list with 5, 2, and 3 since the zero-eth element was replaced with 5.
 
 
 
@@ -194,7 +194,7 @@ Exercises
                #. insert
 
                Note that you cannot call your version of the ``in`` function "in", since that is a reserved keyword. You could call it ``is_in`` instead.
-               
+
                .. activecode:: ex_9_12
 
             .. tab:: Answer
