@@ -8,17 +8,17 @@ Sherlock
 Walkthrough
 -----------
 
-In this walkthrough we'll practice the problem solving skill of breaking a large task down into smaller, subproblems and solving those on our way to finding the ultimate solution.
+In this walkthrough we'll practice the problem solving skill of breaking down a large task into smaller subproblems and solving these on our way to finding the ultimate solution.
 
 The problem we are assigned is the following:
 
-    Write a function that takes a list of integers, along with a string that should be one of "positive" or "negative". Based on this second argument, print all of the integers that are positive or negative.
+    Write a function that takes a list of integers, along with a string with a value of "positive" or "negative". Based on this second argument, print all of the integers that are positive or negative.
 
 We'll break this problem into three levels of difficulty and solve each one in turn:
 
 * **Level 1** Write a function that takes an integer and prints "positive" if it's positive, "negative" if it's negative, and prints nothing if it's 0.
 * **Level 2** Write a function that takes a list of integers and prints only the positive ones.
-* **Level 3** Write a function that takes a list of integers, along with a string that should be one of "positive" or "negative". Based on this second argument, print all of the integers that are positive or negative.
+* **Level 3** Write a function that takes a list of integers, along with a string with a value of "positive" or "negative". Based on this second argument, print all of the integers that are positive or negative.
 
 .. activecode:: sherlock_walkthrough
 
@@ -48,9 +48,9 @@ We'll break this problem into three levels of difficulty and solve each one in t
 Studio
 ------
 
-For this studio, we are going to hone our detective skills by finding and fixing the bugs in the program below.
+For this studio, we are going to hone our detective skills by finding and fixing the bugs in the following program.
 
-Sherlock Holmes, in one of his famous "black moods", has locked himself in his Baker Street flat. He only wants to allow two people to enter, Dr. Watson and Inspector Lestrade. Everyone else he wants to send away.
+  Sherlock Holmes, in one of his famous "black moods", has locked himself in his Baker Street flat. There are only two people on his list of who may enter, Dr. Watson and Inspector Lestrade. Everyone else he wants to send away.
 
 We've written a program to reflect his wishes, but the code doesn't seem to work at all. In fact, it's a hot mess of errors!
 

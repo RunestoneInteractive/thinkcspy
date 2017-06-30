@@ -38,7 +38,7 @@ Tuple assignment solves this problem neatly:
 
     (a, b) = (b, a)
 
-The left side is a tuple of variables; the right side is a tuple of values. Each value is assigned to its respective variable. All the expressions on the right side are evaluated before any of the assignments. This feature makes tuple assignment quite versatile.
+The left side is a tuple of variables; the right side is a tuple of values. Each value is assigned to its respective variable. All the expressions on the right side are evaluated before any of the assignments occur. This feature makes tuple assignment quite versatile.
 
 Naturally, the number of variables on the left and the number of values on the right have to be the same.
 

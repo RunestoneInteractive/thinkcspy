@@ -24,7 +24,7 @@ A matrix is a two dimensional collection, typically thought of as having rows an
 .. image:: Figures/sparse.png
    :alt: sparse matrix
 
-We can represent this collection as five rows, each row having five columns. Using a "list of lists" representation, we will have a list of five items, each of which is a list of five items. The outer items represent the rows and the items in the nested lists represent the data in each column.
+We can represent this collection as five rows, with each row having five columns. Using a "list of lists" representation, we will have a list of five items, each of which is a list of five items. The outer items represent the rows and the items in the nested lists represent the data in each column.
 
 .. sourcecode:: python
 
