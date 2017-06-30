@@ -132,7 +132,7 @@ Exercises
 
     #. Implement the functionality of the above program using a dictionary instead of a list.
 
-        .. activecode:: ex_11_5
+       .. activecode:: ex_11_5
 
 
     #.
@@ -189,31 +189,31 @@ Exercises
 
     #. Here's a table of English to Pirate translations:
 
-        ==========  ==============
-        English     Pirate
-        ==========  ==============
-        sir	        matey
-        hotel	      fleabag inn
-        student	    swabbie
-        boy	        matey
-        madam	      proud beauty
-        professor	  foul blaggart
-        restaurant	  galley
-        your	        yer
-        excuse	      arr
-        students	    swabbies
-        are	        be
-        lawyer	      foul blaggart
-        restroom	    th' head
-        my	          me
-        hello	      avast
-        is	          be
-        man	        matey
-        ==========  ==============
+       ==========  ==============
+       English     Pirate
+       ==========  ==============
+       sir	        matey
+       hotel	      fleabag inn
+       student	    swabbie
+       boy	        matey
+       madam	      proud beauty
+       professor	  foul blaggart
+       restaurant	  galley
+       your	        yer
+       excuse	      arr
+       students	    swabbies
+       are	        be
+       lawyer	      foul blaggart
+       restroom	    th' head
+       my	          me
+       hello	      avast
+       is	          be
+       man	        matey
+       ==========  ==============
 
-        Write a program that asks the user for a sentence in English and then translates that sentence to Pirate.
+       Write a program that asks the user for a sentence in English and then translates that sentence to Pirate.
 
-        .. activecode:: ex_11_04
+       .. activecode:: ex_11_04
 
             from test import testEqual
 
@@ -227,66 +227,72 @@ Exercises
 
     #. Give the Python interpreter's response to each of the following from a continuous interpreter session:
 
-    	   a.
-    		  .. sourcecode:: python
+       a.
 
-    			>>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
-    			>>> d['bananas']
+           .. sourcecode:: python
 
-    	   b.
-    		  .. sourcecode:: python
+             >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
+             >>> d['bananas']
 
-    			>>> d['oranges'] = 20
-    			>>> len(d)
+       b.
 
-    	   c.
-    		  .. sourcecode:: python
+           .. sourcecode:: python
 
-    			>>> 'grapes' in d
+             >>> d['oranges'] = 20
+             >>> len(d)
 
-    	   d.
-    		  .. sourcecode:: python
+       c.
 
-    			>>> d['pears']
+           .. sourcecode:: python
 
-    	   e.
-    		  .. sourcecode:: python
+             >>> 'grapes' in d
 
-    			>>> d.get('pears', 0)
+       d.
 
-    	   f.
-    		  .. sourcecode:: python
+           .. sourcecode:: python
 
-    			>>> fruits = d.keys()
-    			>>> sorted(fruits)
-    			>>> print(fruits)
+             >>> d['pears']
 
-    	   g.
-    		  .. sourcecode:: python
+       e.
 
-    			  >>> del d['apples']
-    			  >>> 'apples' in d
+           .. sourcecode:: python
 
+             >>> d.get('pears', 0)
 
-    	   Be sure you understand why you get each result. Then apply what you have learned to fill in the body of the function below:
+       f.
 
-    	   .. activecode:: q2_dict_answer
+           .. sourcecode:: python
 
-    		   from test import testEqual
+             >>> fruits = d.keys()
+             >>> sorted(fruits)
+             >>> print(fruits)
 
-    		   #Note: The pass is a placeholder to allow
-    		   #the code to compile. Remove it when you
-    		   #begin coding.
-    		   def set_inventory(inventory, fruit, quantity=0):
-    			     pass
+       g.
 
-    		   # make these tests work...
-    		   # new_inventory = {}
-    		   # set_inventory(new_inventory, 'strawberries', 10)
-    		   # testEqual('strawberries' in new_inventory, True)
-    		   # testEqual(new_inventory['strawberries'], 10)
-    		   # set_inventory(new_inventory, 'strawberries', 25)
-    		   # testEqual(new_inventory['strawberries'] , 25)
+           .. sourcecode:: python
+
+             >>> del d['apples']
+             >>> 'apples' in d
+
+       Be sure you understand why you get each result. Then apply what you have learned to fill in the body of the function below:
+
+       .. activecode:: q2_dict_answer
+
+           from test import testEqual
+
+           # Note: The pass is a placeholder to allow
+           # the code to compile. Remove it when you
+           # begin coding.
+           def set_inventory(inventory, fruit, quantity=0):
+               pass
+
+           # make these tests work...
+           # new_inventory = {}
+           # set_inventory(new_inventory, 'strawberries', 10)
+           # testEqual('strawberries' in new_inventory, True)
+           # testEqual(new_inventory['strawberries'], 10)
+           # set_inventory(new_inventory, 'strawberries', 25)
+           # testEqual(new_inventory['strawberries'] , 25)
 
 
 Weekly Graded Assignment
