@@ -75,15 +75,17 @@ Exercises
 
                 A test run of this program would yield the following::
 
-                    Enter your students (or ENTER to finish)
+                    # this is the first batch of input the user would enter
                     Chris
                     Jesse
                     Sally
 
+                    # this is the second batch of input the user would enter
                     Grade for Chris: 3.0
                     Grade for Jesse: 4.0
                     Grade for Sally: 3.5
 
+                    # below is what your program should output
                     Class roster:
                     Chris (3.0)
                     Jesse (4.0)
@@ -103,8 +105,6 @@ Exercises
 
                         # Use a space to allow for the while check below
                         new_student = " "
-
-                        print("Enter your students (or ENTER to finish):")
 
                         # Get student names
                         while (new_student != ""):
@@ -300,20 +300,21 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write an ``add_contact`` function that modifies a dictionary of contacts. The ``contacts`` dictionary has the contact name as its key, and the value is a tuple containing the phone number and email for the contact.::
+    Write an ``add_contact`` function that modifies a dictionary of contacts. The ``contacts`` dictionary has the contact name as its key, and the value is a tuple containing the phone number and email for the contact::
 
         contacts = {name: (phone, email), name: (phone, email), etc.}
 
     The ``add_contact`` function should do the following:
 
-    1. Take the following three parameters: the contact dictionary to be updated, a string of the contact's name, and the tuple containing the contact's phone and email.
-    2. Update the dictionary by adding this new contact to it.
-    3. Create a new, **sorted** list of tuples representing *all* of the contact info (one tuple for each contact).
+    1. Take two parameters: the contact dictionary to be updated, and a list (which contains a *string* of the contact's name and a *tuple* containing the contact's phone and email).
+    2. Update the dictionary by adding this new contact to it. (This modifies the original dictionary since we will use aliasing, not copying.)
+    3. Create a new, **sorted** list *of tuples* representing **all** of the contact info (one tuple for each contact).
     4. Return this list to the calling function.
 
     For example, after filling in your code for the ``add_contact`` function, running the program below should print the following::
 
     [('Almodovar, Pedro', '1-990-622-3892', 'pedro@filmbuffs.com'), ('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda', '1-917-222-2222', 'tilda@greatActors.com')]
+    [('Almodovar, Pedro', '1-990-622-3892', 'pedro@filmbuffs.com'), ('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda', '1-917-222-2222', 'tilda@greatActors.com'), ('Welles, Orson', '1-312-720-8888', 'orson@notlive.com')]
 
     .. activecode:: add_contact_assign
 
@@ -326,8 +327,11 @@ Weekly Graded Assignment
             contact_dict = {"Rimbaud, Arthur": ("1-636-555-5555", "arthur@notlive.com"),
                 "Swinton, Tilda": ("1-917-222-2222", "tilda@greatActors.com"),
                 "Almodovar, Pedro": ("1-990-622-3892", "pedro@filmbuffs.com")}
-            print(add_contact(contact_dict, "Freud, Anna",
-                ("1-541-754-3010", "anna@psychoanalysis.com")))
+
+            print(add_contact(contact_dict, ["Freud, Anna",
+                ("1-541-754-3010", "anna@psychoanalysis.com")]))
+            print(add_contact(contact_dict, ["Welles, Orson",
+                ("1-312-720-8888", "orson@notlive.com")]))
 
         if __name__ == "__main__":
             main()

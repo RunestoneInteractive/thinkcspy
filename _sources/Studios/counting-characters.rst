@@ -8,7 +8,7 @@ Counting Characters
 Walkthrough
 -----------
 
-Write a "gradebook" program that takes grade data for a student and prints the resulting GPA. The output should look something like this: ::
+Write a GPA calculator program that takes grade data for a student and prints the resulting GPA. The output should look something like this: ::
 
     Your grade (0.0-4.0): 4
     # credits: 3
@@ -33,7 +33,7 @@ This will be written locally in a code editor, and run at the command line.
 .. sourcecode:: python
 
     """
-    A program to take grade input and calculate a student's gpa
+    A program to take grade input and calculate a student's GPA
     """
 
     grades = []
@@ -58,9 +58,9 @@ This will be written locally in a code editor, and run at the command line.
     total_credits = 0
 
     # calculate quality scores and total
-    for gradeinfo in grades:
-        total_quality_score += (gradeinfo['grade'] * gradeinfo['credits'])
-        total_credits += gradeinfo['credits']
+    for grade_info in grades:
+        total_quality_score += (grade_info['grade'] * grade_info['credits'])
+        total_credits += grade_info['credits']
 
     gpa = total_quality_score / total_credits
     print("Your GPA is:", gpa)
