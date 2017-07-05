@@ -43,7 +43,7 @@ Let's try the program again, but this time in an activecode:
    print(final_time_int)
 
 
-Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  Thats **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
+Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  That's **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
 .. mchoice:: db_qex32
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
@@ -54,7 +54,7 @@ Aha!  Now we have an error message that might be useful.  The name error tells u
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
 
-   Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
+   Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error?
 
 
 In writing and using this book over the last few years we have collected a lot of statistics about the programs in this book.  Here are some statistics about error messages for the exercise we have been looking at.
@@ -88,7 +88,7 @@ ParseError
 
 Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.
 
-Usually ParseErrors can be traced back to missing punctuation characters, such as parenthesis, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
+Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.
 
 Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.
 
@@ -203,7 +203,7 @@ Here's an example of a type error created by a Polish learner.  See if you can f
         So, the solution to this problem is to change lines 3 and 4 so they are assignment statements.
 
 
-**Finding Clues**  One thing that can help you in this situation is to print out the values and the types of the variables involved in the statement that is causing the error.  You might try adding a print statement after line 4 ``print(x, type(x))``  You will see that at least we have confirmed that x is of type string.  Now you need to start to work backward through the program.  You need to ask yourself, where is x used in the program?  x is used on lines 2, 3, and of course 5 and 6 (where we are getting an error).  So maybe you move the print statement to be after line 2 and again after 3.  Line 3 is where you expect the value of x to be changed to an integer.  Could line 4 be mysteriously changine x back to a string?  Not very likely.  So the value and type of x is just what you would expect it to be after line 2, but not after line 3.  This helps you isolate the problem to line 3.  In fact if you employ one of our earlier techniques of commenting out line 3 you will see that this has no impact on the error, and is a big clue that line 3 as it is currently written is useless.
+**Finding Clues**  One thing that can help you in this situation is to print out the values and the types of the variables involved in the statement that is causing the error.  You might try adding a print statement after line 4 ``print(x, type(x))``  You will see that at least we have confirmed that x is of type string.  Now you need to start to work backward through the program.  You need to ask yourself, where is x used in the program?  x is used on lines 2, 3, and of course 5 and 6 (where we are getting an error).  So maybe you move the print statement to be after line 2 and again after 3.  Line 3 is where you expect the value of x to be changed to an integer.  Could line 4 be mysteriously changing x back to a string?  Not very likely.  So the value and type of x is just what you would expect it to be after line 2, but not after line 3.  This helps you isolate the problem to line 3.  In fact if you employ one of our earlier techniques of commenting out line 3 you will see that this has no impact on the error, and is a big clue that line 3 as it is currently written is useless.
 
 
 NameError
@@ -230,7 +230,7 @@ Name errors almost always mean that you have used a variable before it has a val
 
 **Finding Clues**  With name errors one of the best things you can do is use the editor, or browser search function.  Quite often if you search for the exact word in the error message one of two things will happen:
 
-1.  The word you are searching for will appear only once in your code, its also likely that it will be on the right hand side of an assignment statment, or as a parameter to a function.  That should confirm for you that you have a typo somewhere.  If the name in question **is** what you thought it should be then you probably have a typo on the left hand side of an assignment statement on a line before your error message occurs.  Start looking backward at your assignment statements.  In some cases its really nice to leave all the highlighted strings from the search function visible as they will help you very quickly find a line where you might have expected your variable to be highlighted.
+1.  The word you are searching for will appear only once in your code, it's also likely that it will be on the right hand side of an assignment statement, or as a parameter to a function.  That should confirm for you that you have a typo somewhere.  If the name in question **is** what you thought it should be then you probably have a typo on the left hand side of an assignment statement on a line before your error message occurs.  Start looking backward at your assignment statements.  In some cases it's really nice to leave all the highlighted strings from the search function visible as they will help you very quickly find a line where you might have expected your variable to be highlighted.
 
 2.  The second thing that may happen is that you will be looking directly at a line where you expected the search to find the string in question, but it will not be highlighted.  Most often that will be the typo right there.
 
