@@ -52,7 +52,7 @@ rules for its mathematical operators that mathematics does.
    precedence, which is higher than addition and subtraction, which
    also have the same precedence. So ``2*3-1`` yields 5 rather than 4, and
    ``5-2*2`` is 1, not 6.
-#. Operators with the *same* precedence are
+#. Operators with the *same* precedence (except for ``**``) are
    evaluated from left-to-right. In algebra we say they are *left-associative*.
    So in the expression ``6-3+2``, the subtraction happens first, yielding 3.
    We then add 2 to get the result 5. If the operations had been evaluated from
@@ -66,7 +66,7 @@ rules for its mathematical operators that mathematics does.
 
 .. note::
 
-    Due to some historical quirk, an exception to the left-to-right
+    An exception to the left-to-right
     left-associative rule is the exponentiation operator `**`. A useful hint
     is to always use parentheses to force exactly the order you want when
     exponentiation is involved:
@@ -79,6 +79,9 @@ rules for its mathematical operators that mathematics does.
 
 .. The immediate mode command prompt of Python is great for exploring and
 .. experimenting with expressions like this.
+
+See :ref:`operator-summary` for *all* the operators introduced in this book.
+You will also see many upcoming non-mathematical Python operators.
 
 **Check your understanding**
 

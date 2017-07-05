@@ -17,6 +17,7 @@
    single: *; multiplication of numbers
    single: **
    multiplication
+   operators and operands
 
 Operators and Operands
 ----------------------

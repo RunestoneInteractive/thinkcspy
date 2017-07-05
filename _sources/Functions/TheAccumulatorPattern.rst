@@ -11,6 +11,8 @@
    :prefix: func-4-
    :start: 1
 
+.. index:: accumulator pattern
+
 The Accumulator Pattern
 -----------------------
 
@@ -41,7 +43,7 @@ to update the running total by adding the number to it.
 In words we could say it this way.  To square the value of `n`, we will repeat the process of updating a running total `n` times.  To update the running total, we take the old value of the "running total" and add `n`.  That sum becomes the new
 value of the "running total".
 
-Here is the program in activecode.  Note that the function definition is the same as it was before.  All that has changed
+Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed
 is the details of how the squaring is done.  This is a great example of "black box" design.  We can change out the details inside of the box and still use the function exactly as we did before.
 
 
@@ -91,15 +93,6 @@ Here is the same program in codelens.  Step through the function and watch the "
     toSquare = 10
     squareResult = square(toSquare)
     print("The result of", toSquare, "squared is", squareResult)
-
-
-
-
-
-.. index::
-    functional decomposition
-    generalization
-    abstraction
 
 
 .. note::
