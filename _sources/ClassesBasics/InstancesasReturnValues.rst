@@ -7,38 +7,34 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: return value
+
 Instances as Return Values
 --------------------------
 
-Functions and methods can return objects. This is actually nothing new since everything in Python is an object and we have
-been returning values for quite some time. The difference here is that we want to have the method create an object using
-the constructor and then return it as the value of the method.
+Functions and methods can return objects. This is actually nothing new since everything in Python is an object and we have been returning values for quite some time. The difference here is that we want to have the method *create an object* using the constructor and then return it as the value of the method.
 
-
-Suppose you have a point object
-and wish to find the midpoint halfway between it and some other target point. We would like to write a method, call
-it ``halfway`` that takes another ``Point`` as a parameter and returns the ``Point`` that is halfway between the point and
-the target.
+Suppose you have a point object and wish to find the midpoint halfway between it and some other target point. We would like to write a method called ``halfway`` that takes another point object as a parameter and returns a new point object that is halfway between the original point and the target.
 
 .. activecode:: chp13_classesmid1
 
     class Point:
 
-        def __init__(self, initX, initY):
+        def __init__(self, init_x, init_y):
             """ Create a new point at the given coordinates. """
-            self.x = initX
-            self.y = initY
+            self.x = init_x
+            self.y = init_y
 
-        def getX(self):
+        def get_x(self):
             return self.x
 
-        def getY(self):
+        def get_y(self):
             return self.y
 
-        def distanceFromOrigin(self):
+        def distance_from_origin(self):
             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-        def __str__(self):
+        def __repr__(self):
             return "x=" + str(self.x) + ", y=" + str(self.y)
 
         def halfway(self, target):
@@ -51,9 +47,7 @@ the target.
     mid = p.halfway(q)
 
     print(mid)
-    print(mid.getX())
-    print(mid.getY())
+    print(mid.get_x())
+    print(mid.get_y())
 
-
-The resulting Point, ``mid``, has an x value of 4 and a y value of 8. We can also use any other methods since ``mid`` is a
-``Point`` object.
+The resulting point object, ``mid``, has an x value of 4 and a y value of 8. We can also use any other class methods on it, like ``distance_from_origin`` since ``mid`` is an object of the ``Point`` class.

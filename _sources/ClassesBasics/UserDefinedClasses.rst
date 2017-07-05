@@ -7,14 +7,16 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: custom class, user-defined class, constructor, __init__, class, object, instance, instantiation
+
 User Defined Classes
 --------------------
 
 We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``. These were defined by Python and made available for us to use.
 
-However, in many cases, it can helpful to have data objects that are uniquely tailored to represent concepts related to the specific problem we are trying to solve. For these situations, Python gives us the ability to **create our own custom classes**.
+However, it can be helpful to have data objects that are uniquely tailored to represent concepts related to the specific problem we are trying to solve. For these situations, Python gives us the ability to **create our own custom classes**.
 
-A custom class pretty much always comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin. This ``(x,y)`` is the state of the point.
+A custom class usually comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two-dimensional space, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin. This ``(x,y)`` is the state of the point.
 
 Thinking about our diagram above, we could draw a ``point`` object as shown here.
 
@@ -22,8 +24,7 @@ Thinking about our diagram above, we could draw a ``point`` object as shown here
    :alt: A point has an x and a y
 
 
-Some of the typical operations that one associates with points might be to ask
-the point for its x coordinate, or to ask for its y coordinate. For these operations, we can create methods with names like ``getX`` and ``getY``.
+Some of the typical operations that one associates with points might be to ask the point for its x coordinate, or to ask for its y coordinate. For these operations, we can create methods with names like ``get_x`` and ``get_y``.
 
 .. image:: Figures/objectpic3.png
    :alt: A point also has methods
@@ -36,7 +37,7 @@ Syntax for Defining and Using a Class
 
 Now that we understand what a "point" object might look like conceptually, let's turn to the actual nuts and bolts of defining a point class in Python.
 
-To start off, we will define the simplest possible point class, just a "data cluster" composed of an `x` and a `y`. We will refrain from defining the ``getX`` and ``getY`` methods (or any other fancier methods) for now. The code for defining our point class looks like this:
+To start off, we will define the simplest possible point class, just a "data cluster" composed of an `x` and a `y`. We will refrain from defining the ``get_x`` and ``get_y`` methods (or any other fancier methods) for now. The code for defining our ``Point`` class looks like this:
 
 .. sourcecode:: python
 
@@ -49,7 +50,7 @@ To start off, we will define the simplest possible point class, just a "data clu
             self.x = 0
             self.y = 0
 
-The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, ``class``, followed by the name of the class (in this case, ``Point``), and ending with a colon. Notice also that we use a capital "P": the standard convention is that the name of a class should be "CamelCase" and start with a capital letter.
+The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, ``class``, followed by the name of the class (in this case, ``Point``), and ending with a colon. Notice also that we use a capital "P": the standard convention is that the name of a class should be "CapWords" and start with a capital letter.
 
 Underneath the header, you define the class's methods. Our ``Point`` class has only one method so far, ``__init__``. Any time you create a new class, you should include a method with the special name ``__init__``. This **initializer method** is automatically called whenever a new instance of ``Point`` is created. It gives the programmer (you) the opportunity to set up the attributes required within the new instance by giving them their initial state values. In the case above, our ``__init__`` method causes every newly created Point to start off as ``(0, 0)``, by assigning ``0`` to both ``self.x`` and ``self.y``. The ``self`` parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
 
@@ -97,7 +98,7 @@ You can see this for yourself, via codelens:
 
     print("Nothing seems to have happened with the points")
 
-You can see that when we invoke the ``Point()`` function in line 9, Python creates a new "empty" ``Point`` object, and then passes that point into our ``__init__`` method. Inside the ``__init__`` method we are able to give that point two attributes called ``x`` and ``y``, and set ``x`` and ``y`` equal to ``0``. Finally, the new point is returned and we assign it to the ``p`` variable.
+You can see that when we invoke the ``Point()`` function in line 9, Python creates a new "empty" ``point`` object, and then passes that point into our ``__init__`` method. Inside the ``__init__`` method we are able to give that point two attributes called ``x`` and ``y``, and set ``x`` and ``y`` equal to ``0``. Finally, the new point is returned and we assign it to the ``p`` variable.
 
 Classes vs Objects (or Instances)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -144,6 +145,6 @@ More on Constructors
 
 A function invocation like ``Turtle()`` or ``Point()``, which creates a new object instance, is called a **constructor**. Every class automatically uses the name of the class as the name of the constructor function. When the constructor function is invoked, a new instance of ``Point`` or ``Turtle`` is created, and then inside the ``__init__`` function you have the opportunity to configure the new instance into some kind of reasonable "default starting state".
 
-It may be helpful to think of a class as a factory for making objects. The class itself isn't an instance of a point, but it contains the machinery to make point instances. Every time you call the constructor, you're asking the factory to make you a new object. As the object comes off the production line, its initialization method is executed in order to get the object properly set up with its factory default settings.
+It may be helpful to think of a class as *a factory for making objects*. The class itself isn't an instance of a point, but it contains the machinery to make point instances. Every time you call the constructor, you're asking the factory to make you a new object. As the object goes through the production line, its initialization method is executed in order to get the object properly set up with its factory default settings.
 
 The combined process of "make me a new object" and "get its settings initialized to the factory default settings" is called **instantiation**.

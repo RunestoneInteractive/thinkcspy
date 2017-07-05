@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: state, method, object
+
 Objects Revisited
 -----------------
 
@@ -22,8 +24,3 @@ Individual turtles are different in that even though they are all turtles, they 
 
 .. image:: Figures/objectpic1.png
    :alt: Simple object has state and methods
-
-
-
-
-.. index:: compound data type

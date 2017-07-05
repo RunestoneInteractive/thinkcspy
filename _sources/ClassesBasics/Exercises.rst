@@ -18,10 +18,29 @@ Exercises
 
             .. tab:: Question
 
-               Add a ``distanceFromPoint`` method that works similar to ``distanceFromOrigin`` except that it takes a ``Point`` as a parameter and
+               Add a ``distance_from_point`` method that works similar to ``distance_from_origin`` except that it takes a ``Point`` as a parameter and
                computes the distance between that point and self.
 
                .. activecode:: ch_cl_q1
+
+                    class Point:
+
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
+
+                        def get_x(self):
+                            return self.x
+
+                        def get_y(self):
+                            return self.y
+
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
+                            return "x=" + str(self.x) + ", y=" + str(self.y)
 
             .. tab:: Answer
 
@@ -30,30 +49,32 @@ Exercises
                     import math
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
                             """ Create a new point at the given coordinates. """
-                            self.x = initX
-                            self.y = initY
+                            self.x = init_x
+                            self.y = init_y
 
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def distanceFromOrigin(self):
+                        def distance_from_origin(self):
                             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-                        def distanceFromPoint(self, otherP):
-                            dx = (otherP.getX() - self.x)
-                            dy = (otherP.getY() - self.y)
+                        def __repr__(self):
+                            return "x=" + str(self.x) + ", y=" + str(self.y)
+
+                        def distance_from_point(self, otherP):
+                            dx = (otherP.get_x() - self.x)
+                            dy = (otherP.get_y() - self.y)
                             return math.sqrt(dy**2 + dx**2)
 
                     p = Point(3, 3)
                     q = Point(6, 7)
-                    print(p.distanceFromPoint(q))
+                    print(p.distance_from_point(q))
 
 
     #. Add a method ``reflect_x`` to the class ``Point`` which returns a new ``Point``, one which is the
@@ -62,16 +83,74 @@ Exercises
 
        .. activecode:: ch_cl_02
 
+            class Point:
 
-    #. The equation of a straight line is  "y = ax + b", (or perhaps "y = mx + c"). The coefficients a and b completely describe the line. Write a method in the Point class so that if a point instance is given another point, it will compute the equation of the straight line joining the two points. It must return the two coefficients as a tuple of two values. For example,   ::
+                def __init__(self, init_x, init_y):
+                    """ Create a new point at the given coordinates. """
+                    self.x = init_x
+                    self.y = init_y
 
-          >>> print(Point(4, 11).get_line_to(Point(6, 15)))
-          >>> (2, 3)
+                def get_x(self):
+                    return self.x
 
-       This tells us that the equation of the line joining the two points is "y = 2x + 3".
-       When will your method fail?
+                def get_y(self):
+                    return self.y
+
+                def distance_from_origin(self):
+                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                def __repr__(self):
+                    return "x=" + str(self.x) + ", y=" + str(self.y)
+
+    #.  Add a method ``slope_from_origin``, which returns the slope of the line joining the origin to the point. For example,
+
+        ::
+
+            >>> Point(4, 10).slope_from_origin()
+            2.5
+            >>> Point(12, -3).slope_from_origin()
+            -0.25
+            >>> Point(-6, 0).slope_from_origin()
+            0
+
+        The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
+
 
        .. activecode:: ch_cl_04
+
+            class Point:
+
+                def __init__(self, init_x, init_y):
+                    """ Create a new point at the given coordinates. """
+                    self.x = init_x
+                    self.y = init_y
+
+                def get_x(self):
+                    return self.x
+
+                def get_y(self):
+                    return self.y
+
+                def distance_from_origin(self):
+                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                def __repr__(self):
+                    return "x=" + str(self.x) + ", y=" + str(self.y)
+
+                # TODO define a method called slope_from_origin here
+
+
+            # some tests to check your code
+            from test import testEqual
+            testEqual( Point(4, 10).slope_from_origin(), 2.5 )
+            testEqual( Point(5, 10).slope_from_origin(), 2 )
+            testEqual( Point(0, 10).slope_from_origin(), None )
+            testEqual( Point(20, 10).slope_from_origin(), 0.5 )
+            testEqual( Point(20, 20).slope_from_origin(), 1 )
+            testEqual( Point(4, -10).slope_from_origin(), -2.5 )
+            testEqual( Point(-4, -10).slope_from_origin(), 2.5 )
+            testEqual( Point(-6, 0).slope_from_origin(), 0 )
+
 
     #.
 
@@ -79,39 +158,55 @@ Exercises
 
             .. tab:: Question
 
-               Add a method called ``move`` that will take two parameters, call them ``dx`` and ``dy``.  The method will
-               cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
-               state of the point)
+               Add a method called ``move`` that will take two parameters, call them ``dx`` and ``dy``.  The method will cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the state of the point)
 
                .. activecode:: ch_cl_q5
+
+                    class Point:
+
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
+
+                        def get_x(self):
+                            return self.x
+
+                        def get_y(self):
+                            return self.y
+
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
+                            return "x=" + str(self.x) + ", y=" + str(self.y)
 
             .. tab:: Answer
 
                 .. activecode:: ch_cl_05_answer
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
                             """ Create a new point at the given coordinates. """
-                            self.x = initX
-                            self.y = initY
+                            self.x = init_x
+                            self.y = init_y
 
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def distanceFromOrigin(self):
+                        def distance_from_origin(self):
                             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
+                            return "x=" + str(self.x) + ", y=" + str(self.y)
 
                         def move(self, dx, dy):
                             self.x = self.x + dx
                             self.y = self.y + dy
-
-                        def __str__(self):
-                            return str(self.x) + "," + str(self.y)
 
 
                     p = Point(7, 6)
@@ -121,57 +216,28 @@ Exercises
 
 
 
-    #.  Given three points that fall on the circumference of a circle, find the center and radius of the circle.
-
-        .. activecode:: ch_cl_q6
-
 Weekly Graded Assignment
 ========================
 
 .. container:: full_width
 
-    The starter code below contains a ``Point`` class. Add a method ``slopeFromOrigin``, which returns the slope of the line joining the origin to the point. For example,
+    Create a ``Car`` class that has the following characteristics:
+
+    * It has an ``oil_level`` attribute and a ``gas_level`` attribute.
+    * It has a constructor (``__init__`` method) that sets the default oil and gas levels to *5.0* and *12.0* respectively.
+    * It has the following methods: ``get_oil_level``, ``get_gas_level``, ``set_oil``, and ``set_gas``. The first two do not have parameters and will return a float representing how much oil or gas is currently in the car. The latter two each take a parameter of a single float value and set the ``oil_level`` and ``gas_level`` attributes, respectively, to that value
+    * It has a ``__repr__`` method that returns ...
 
     ::
 
-        >>> Point(4, 10).slopeFromOrigin()
-        2.5
-        >>> Point(12, -3).slopeFromOrigin()
-        -0.25
-        >>> Point(-6, 0).slopeFromOrigin()
-        0
+        example?
 
-    The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
 
     .. activecode:: ch_cl_q3
 
         class Point:
-            """ Point class for representing and manipulating x,y coordinates. """
 
-            def __init__(self, initX, initY):
+            def __init__(self, init_x, init_y):
                 """ Create a new point at the given coordinates. """
-                self.x = initX
-                self.y = initY
-
-            def getX(self):
-                return self.x
-
-            def getY(self):
-                return self.y
-
-            def distanceFromOrigin(self):
-                return ((self.x ** 2) + (self.y ** 2)) ** 0.5
-
-            # TODO define a method called slopeFromOrigin here
-
-
-        # some tests to check your code
-        from test import testEqual
-        testEqual( Point(4, 10).slopeFromOrigin(), 2.5 )
-        testEqual( Point(5, 10).slopeFromOrigin(), 2 )
-        testEqual( Point(0, 10).slopeFromOrigin(), None )
-        testEqual( Point(20, 10).slopeFromOrigin(), 0.5 )
-        testEqual( Point(20, 20).slopeFromOrigin(), 1 )
-        testEqual( Point(4, -10).slopeFromOrigin(), -2.5 )
-        testEqual( Point(-4, -10).slopeFromOrigin(), 2.5 )
-        testEqual( Point(-6, 0).slopeFromOrigin(), 0 )
+                self.x = init_x
+                self.y = init_y
