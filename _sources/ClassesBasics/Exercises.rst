@@ -116,40 +116,40 @@ Exercises
         The equation for calculating slope between any two points is **slope = (Y2 - Y1) / (X2 - X1)**. Remember that dividing by 0 is not allowed, so there are some inputs that will cause your method to fail. Return ``None`` when that happens.
 
 
-       .. activecode:: ch_cl_04
+        .. activecode:: ch_cl_04
 
-            class Point:
+              class Point:
 
-                def __init__(self, init_x, init_y):
-                    """ Create a new point at the given coordinates. """
-                    self.x = init_x
-                    self.y = init_y
+                  def __init__(self, init_x, init_y):
+                      """ Create a new point at the given coordinates. """
+                      self.x = init_x
+                      self.y = init_y
 
-                def get_x(self):
-                    return self.x
+                  def get_x(self):
+                      return self.x
 
-                def get_y(self):
-                    return self.y
+                  def get_y(self):
+                      return self.y
 
-                def distance_from_origin(self):
-                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+                  def distance_from_origin(self):
+                      return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-                def __repr__(self):
-                    return "x=" + str(self.x) + ", y=" + str(self.y)
+                  def __repr__(self):
+                      return "x=" + str(self.x) + ", y=" + str(self.y)
 
-                # TODO define a method called slope_from_origin here
+                  # TODO define a method called slope_from_origin here
 
 
-            # some tests to check your code
-            from test import testEqual
-            testEqual( Point(4, 10).slope_from_origin(), 2.5 )
-            testEqual( Point(5, 10).slope_from_origin(), 2 )
-            testEqual( Point(0, 10).slope_from_origin(), None )
-            testEqual( Point(20, 10).slope_from_origin(), 0.5 )
-            testEqual( Point(20, 20).slope_from_origin(), 1 )
-            testEqual( Point(4, -10).slope_from_origin(), -2.5 )
-            testEqual( Point(-4, -10).slope_from_origin(), 2.5 )
-            testEqual( Point(-6, 0).slope_from_origin(), 0 )
+              # some tests to check your code
+              from test import testEqual
+              testEqual( Point(4, 10).slope_from_origin(), 2.5 )
+              testEqual( Point(5, 10).slope_from_origin(), 2 )
+              testEqual( Point(0, 10).slope_from_origin(), None )
+              testEqual( Point(20, 10).slope_from_origin(), 0.5 )
+              testEqual( Point(20, 20).slope_from_origin(), 1 )
+              testEqual( Point(4, -10).slope_from_origin(), -2.5 )
+              testEqual( Point(-4, -10).slope_from_origin(), 2.5 )
+              testEqual( Point(-6, 0).slope_from_origin(), 0 )
 
 
     #.
@@ -223,21 +223,34 @@ Weekly Graded Assignment
 
     Create a ``Car`` class that has the following characteristics:
 
-    * It has an ``oil_level`` attribute and a ``gas_level`` attribute.
-    * It has a constructor (``__init__`` method) that sets the default oil and gas levels to *5.0* and *12.0* respectively.
-    * It has the following methods: ``get_oil_level``, ``get_gas_level``, ``set_oil``, and ``set_gas``. The first two do not have parameters and will return a float representing how much oil or gas is currently in the car. The latter two each take a parameter of a single float value and set the ``oil_level`` and ``gas_level`` attributes, respectively, to that value
-    * It has a ``__repr__`` method that returns ...
+    * It has a ``gas_level`` attribute.
+    * It has a constructor (``__init__`` method) that takes a float representing the initial gas level and sets the gas level of the car to this value.
+    * It has an ``add_gas`` method that takes a single float value and adds this amount to the current value of the ``gas_level`` attribute.
+    * It has a ``fill_up`` method that sets the car's gas level up to 13.0 by adding the amount of gas necessary to reach this level. It will return a float of the amount of gas that had to be added to the car to get the gas level up to 13.0. However, if the car's gas level was greater than or equal to 13.0 *to begin with*, then it doesn't need to add anything and it simply returns a ``0``.
+
+    (Note: you can call the ``add_gas`` method from within the ``fill_up`` method by using this syntax: ``self.add_gas(amount)``.)
+
+    Here's an example.
 
     ::
 
-        example?
+        example_car = Car(9)
+        print(example_car.fill_up())  # should print 4
 
+        another_car = Car(18)
+        print(another_car.fill_up()) # should print 0
+
+    Reminder: Don't forget about the ``self`` parameter!
 
     .. activecode:: ch_cl_q3
 
-        class Point:
+        # TODO: add the Car class
 
-            def __init__(self, init_x, init_y):
-                """ Create a new point at the given coordinates. """
-                self.x = init_x
-                self.y = init_y
+
+        # some tests to check your code, Do Not Post These in Vocareum
+        from test import testEqual
+        testEqual( Car(10).fill_up(), 3 )
+        testEqual( Car(20).fill_up(), 0 )
+        testEqual( Car(5.5).fill_up(), 7.5 )
+        testEqual( Car(12.5).fill_up(), 0.5 )
+        testEqual( Car(13).fill_up(), 0 )
