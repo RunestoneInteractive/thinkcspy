@@ -133,4 +133,4 @@ extensive use of object-oriented language features.
            Entry, Text, Checkbutton, Radiobutton, Listbox, Combobox, Scale,
            Label, Message, Separator, Progressbar, Treeview
 
-.. _all_user_input_widgets.py: Programs/all_user_input_widgets.py
+.. _all_user_input_widgets.py: ../_static/Programs/all_user_input_widgets.py
