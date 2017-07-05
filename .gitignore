@@ -3,3 +3,5 @@ build_info
 .idea
 .idea/*
 pavement.pyc
+# for builds on Mac:
+**/.DS_Store

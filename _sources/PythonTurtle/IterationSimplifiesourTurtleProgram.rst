@@ -76,6 +76,16 @@ of the computation.
 
 In this case, the value of ``aColor`` is used to change the color attribute of ``alex``.  Each iteration causes ``aColor`` to change to the next value in the list.
 
+The for-loop is our first example of a **compound statement**.  
+Syntactically a compound statement is a statement. 
+The level of indentation of
+a (whole) compound statement is the indentation of its heading.  
+In the example above there are five statements with the same
+indentation, executed sequentially: the import, 2 assignments, the *whole* for-loop, 
+and ``wn.exitonclick()``.  The for-loop compound statement is executed completely before
+going on to the next sequential statement, ``wn.exitonclick()``.
+
+
 **Mixed up program**
 
 .. parsonsprob:: 3_8
@@ -147,9 +157,9 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
    :correct: a
    :feedback_a: The loop body can have any number of lines, all indented from the loop header.
    :feedback_b: The loop body may have more than one line.
-   :feedback_c: Python does not use semi-colons in its syntax, but relies mainly on indentation.
+   :feedback_c: Python does not need semi-colons in its syntax, but relies mainly on indentation.
 
-   How does python know what lines are contained in the loop body?
+   How does python know what statements are contained in the loop body?
 
 .. mchoice:: test_question3_4_3
       :answer_a: 2

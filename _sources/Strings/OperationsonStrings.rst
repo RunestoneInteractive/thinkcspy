@@ -11,6 +11,10 @@
    :prefix: strings-3-
    :start: 1
 
+.. index::
+   single: +; string concatenation
+   single: *; string repetition
+
 Operations on Strings
 ---------------------
 

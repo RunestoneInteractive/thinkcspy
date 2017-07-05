@@ -11,6 +11,9 @@
    :prefix: func-2-
    :start: 1
 
+.. index:: return
+   function; return
+   
 Functions that Return Values
 ----------------------------
 
@@ -65,6 +68,10 @@ expressions. In the last example, 503 is returned, since it is larger than 33,
 Furthermore, functions like ``range``, ``int``, ``abs`` all return values that
 can be used to build more complex expressions.
 
+.. index:: fruitful function
+   variable; global
+   global variable
+
 So an important difference between these functions and one like ``drawSquare`` is that
 ``drawSquare`` was not executed because we wanted it to compute a value --- on the contrary,
 we wrote ``drawSquare`` because we wanted it to execute a sequence of steps that caused
@@ -98,7 +105,7 @@ black-box diagram with the Python code following.
 
     toSquare = 10
     result = square(toSquare)
-    print("The result of ", toSquare, " squared is ", result)
+    print("The result of", toSquare, "squared is", result)
 
 The **return** statement is followed by an expression which is evaluated.  Its
 result is returned to the caller as the "fruit" of calling this function.
@@ -108,7 +115,8 @@ avoided creating the **temporary variable** ``y`` and simply used
 Try modifying the square function above to see that this works just the same.
 On the other hand, using **temporary variables** like ``y`` in the program above makes
 debugging
-easier.  These temporary variables are referred to as **local variables**.
+easier.  These temporary variables are examples of **local variables**, pursued further
+in the next section.
 
 .. The line `toInvest = float(input("How much do you want to invest?"))`
 ..  also shows yet another example
@@ -120,12 +128,18 @@ argument --- ``toSquare`` --- has nothing to do with the name of the formal para
 --- ``x``.  It is as if  ``x = toSquare`` is executed when ``square`` is called.
 It doesn't matter what the value was named in
 the caller. In ``square``, it's name is ``x``.  You can see this very clearly in
-codelens, where the global variables and the local variables for the square
+codelens, where the **global variables** (variables defined outside of any function) and the local variables for the square
 function are in separate boxes.
 
 As you step through the example in codelens notice that the **return** statement not only causes the
 function to return a value, but it also returns the flow of control back to the place in the program
-where the function call was made.
+where the function call was made.  this is true in general:
+
+.. note:: 
+   The call to a function *terminates* after the execution of a return statement.  
+   This is fairly obvious if the return statement is the last statement in the function, but
+   we will see later where it makes sense to have a return statement even when other statements
+   follow, and the further statements are *not* executed.
 
 
 
@@ -137,7 +151,7 @@ where the function call was made.
 
     toSquare = 10
     squareResult = square(toSquare)
-    print("The result of ", toSquare, " squared is ", squareResult)
+    print("The result of", toSquare, "squared is", squareResult)
 
 Another important thing to notice as you step through this codelens
 demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
@@ -180,19 +194,11 @@ function returns.
 
     toSquare = 10
     squareResult = square(toSquare)
-    print("The result of ", toSquare, " squared is ", squareResult)
+    print("The result of", toSquare, "squared is", squareResult)
 
 The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
-where the call was done.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the 
+where the call was made.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the 
 function will be ``None``.  In this case, ``squareResult`` will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
-
-.. index::
-    single: local variable
-    single: variable; local
-    single: lifetime
-
-
-
 
 
 **Check your understanding**
@@ -218,7 +224,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 
 .. mchoice:: test_question5_2_2
-   :answer_a: Nothing (no value)
+   :answer_a: None
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'
    :correct: a

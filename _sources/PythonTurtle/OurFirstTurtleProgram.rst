@@ -54,12 +54,13 @@ prefer to call it a window, or in the case of this web version of Python
 simply a canvas), which we assign to variable `wn`. Every window
 contains a **canvas**, which is the area inside the window on which we can draw.
 
-In line 3 we create a turtle. The variable `alex` is made to refer to this
+In line 3 we create a turtle. The variable ``alex`` is made to refer to this
 turtle.   These first three lines set us up so that we are ready to do some drawing.
 
-In lines 4-6, we instruct the **object** alex to move and to turn. We do this
+In lines 4-6, we instruct the **object** ``alex`` to move and to turn. We do this
 by **invoking** or activating alex's **methods** --- these are the
-instructions that all turtles know how to respond to.
+instructions that all turtles know how to respond to.  Here the dot indicates that
+the methods invoked belong to and refer to the object ``alex``.
 
 
 .. admonition:: Complete the rectangle ...
@@ -174,7 +175,7 @@ screen until we click on it.
        user's responses in a variable, and modify the color of the window
        according to the user's wishes.
        (Hint: you can find a list of permitted color names at
-       http://www.w3schools.com/html/html_colornames.asp.  It includes some quite
+       https://www.w3schools.com/colors/colors_names.asp.  It includes some quite
        unusual ones, like "PeachPuff"  and "HotPink".)
     #. Do similar changes to allow the user, at runtime, to set tess' color.
     #. Do the same for the width of tess' pen.  *Hint:* your dialog with the

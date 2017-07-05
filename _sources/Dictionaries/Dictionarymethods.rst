@@ -225,5 +225,3 @@ in the case where the key is not present.  This can be seen in the final example
    
 
 
-.. index:: aliases
-

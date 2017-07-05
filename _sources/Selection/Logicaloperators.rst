@@ -11,6 +11,13 @@
    :prefix: select-2-
    :start: 1
 
+.. index::logical operator
+   operator; logical
+   single: and 
+   single: or
+   single: not
+
+
 Logical operators
 -----------------
 
@@ -46,16 +53,14 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 
 .. mchoice:: test_question6_2_1
    :answer_a: x &gt; 0 and &lt; 5
-   :answer_b: 0 &lt; x &lt; 5
-   :answer_c: x &gt; 0 or x &lt; 5
-   :answer_d: x &gt; 0 and x &lt; 5
-   :correct: d
+   :answer_b: x &gt; 0 or x &lt; 5
+   :answer_c: x &gt; 0 and x &lt; 5
+   :correct: c
    :feedback_a: Each comparison must be between exactly two values.  In this case the right-hand expression &lt; 5 lacks a value on its left.
-   :feedback_b: This is tricky.  Although most other programming languages do not allow this syntax, in Python, this syntax is allowed.  However, you should not use it.  Instead, make multiple comparisons by using and or or.
-   :feedback_c: Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be True.
-   :feedback_d: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
+   :feedback_b: Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be True.
+   :feedback_c: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write 0 &lt; x &lt; 5.
 
-   What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
+   What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?
 
 
 

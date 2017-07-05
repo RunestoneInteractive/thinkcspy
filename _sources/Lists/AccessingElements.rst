@@ -11,6 +11,9 @@
    :prefix: list-4-
    :start: 1
 
+.. index::
+   single: [ ]; list indexing
+
 Accessing Elements
 ------------------
 

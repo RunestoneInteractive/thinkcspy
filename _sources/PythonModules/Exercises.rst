@@ -39,7 +39,7 @@ Exercises
 
 .. question:: pymod_ex_2
 
-   Repeat the above exercise but this time print 10 random numbers between 25 and 35.
+   Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.
 
    .. actex:: ex_mod_2
 

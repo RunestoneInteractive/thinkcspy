@@ -11,6 +11,10 @@
    :prefix: func-7-
    :start: 1
 
+.. index:: main function
+   function; main
+
+
 Using a Main Function
 ---------------------
 

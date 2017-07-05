@@ -11,6 +11,10 @@
    :prefix: select-5-
    :start: 1
 
+.. index:: unary selection
+   else; omitted
+
+
 Omitting the `else` Clause: Unary Selection
 -------------------------------------------
 
@@ -98,8 +102,4 @@ What would be printed if the value of ``x`` is negative?  Try it.
          print(x, " is a positive number")
      else:
          print("This is always printed")
-
-.. index::
-    single: nested conditionals
-    single: conditionals; nested
 

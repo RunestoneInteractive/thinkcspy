@@ -29,7 +29,7 @@ Here are a few more things that you might find useful as you write programs that
   ``alex.backward(-100)`` to move alex forward!)
 
   Part of *thinking like a scientist* is to understand more of the structure
-  and rich relationships in your field.  So revising a few basic facts about
+  and rich relationships in your field.  So reviewing a few basic facts about
   geometry and number lines, like we've done here is a good start if we're
   going to play with turtles.
 
@@ -79,7 +79,7 @@ Let's do an example that shows off some of these new features.
    tess.color("blue")
    tess.shape("turtle")
 
-   print(range(5, 60, 2))
+   print(list(range(5, 60, 2)))
    tess.up()                     # this is new
    for size in range(5, 60, 2):    # start with size = 5 and grow by 2
        tess.stamp()                # leave an impression on the canvas
@@ -88,8 +88,8 @@ Let's do an example that shows off some of these new features.
 
    wn.exitonclick()
 
-The list of integers shown above is created by printing the ``range(5,60,2)`` result.  It is only
-done to show you the distances being used to move the turtle forward.  The actual use appears
+The list of integers printed above for ``list(range(5,60,2))`` is only displayed
+to show you the distances being used to move the turtle forward.  The actual use appears
 as part of the ``for`` loop.
 
 One more thing to be careful about.  All except one of the shapes you see on the screen here are
@@ -150,7 +150,4 @@ color, or to put her pen down and draw a line, or to change her shape, etc.)
     * `Turtle Race <../Labs/lab03_01.html>`_ In this guided lab exercise we will work
       through a simple problem solving exercise related to having some turtles
       race.
-
-
-.. _summary_of_turtle_methods:
 

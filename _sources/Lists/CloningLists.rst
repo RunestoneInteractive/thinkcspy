@@ -11,6 +11,9 @@
    :prefix: list-12-
    :start: 1
 
+.. index:: clone
+   list; clone
+
 Cloning Lists
 -------------
 

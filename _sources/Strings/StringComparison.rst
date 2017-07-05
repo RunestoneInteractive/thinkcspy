@@ -11,6 +11,17 @@
    :prefix: strings-8-
    :start: 1
 
+
+.. index:: string; comparison
+   comparison; strings
+   single: >; strings
+   single: <; strings
+   single: >=; strings
+   single: <=; strings
+   single: ==; strings
+   single: !=; strings
+
+
 String Comparison
 -----------------
 
@@ -133,8 +144,4 @@ One thing to note in the last two examples is the fact that the space character 
 
       "dog" < "Doghouse"
 
-
-   
-
-.. index:: mutable, immutable, runtime error
 

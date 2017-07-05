@@ -45,6 +45,11 @@ Let's try the program again, but this time in an activecode:
 
 Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  Thats **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
+.. note::
+   The error descriptions you see in activecode may be different (and more understandable!) than in a regular 
+   Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners, 
+   including the wording chosen to describe errors.
+
 .. mchoice:: db_qex32
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
    :answer_b: wait_time_int does not have a value so it cannot be used on the right hand side.
@@ -174,15 +179,15 @@ Here's an example of a type error created by a Polish learner.  See if you can f
 
 .. activecode:: db_ex3_8
 
-    a = input(uu'wpisz godzine')
-    x = input(uu'wpisz liczbe godzin')
+    a = input('wpisz godzine')
+    x = input('wpisz liczbe godzin')
     int(x)
     int(a)
     h = x // 24
     s = x % 24
     print (h, s)
     a = a + s
-    print ('godzina teraz %s' %a) 
+    print ('godzina teraz', a) 
 
 
 
@@ -294,7 +299,7 @@ And one last bit of code to fix.
 ValueError
 ^^^^^^^^^^
 
-Value errors occur when you pass a parameter to a function and the function is expecting a certain type, but you pass it a different type.  We can illustrate that with this particular program in two different ways.
+Value errors occur when you pass a parameter to a function and the function is expecting a certain limitations on the values, and the value passed is not compatible.  We can illustrate that with this particular program in two different ways.
 
 .. activecode:: db_ex3_12
 
@@ -308,8 +313,8 @@ Value errors occur when you pass a parameter to a function and the function is e
    print(final_time_int)
 
 
-Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty value.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
+Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``   This error is not because you have made a mistake in your program.  Although sometimes we do want to check the user input to make sure its valid, but we don't have all the tools we need for that yet.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty string.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.
 
-ValueErrors are not always caused by user input error, but in this program that is the case.  We'll look again at ValueErrors again when we get to more complicated programs.  For now it is worth repeating that you need to keep track of the types of your variables, and understand what types your function is expecting.  You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their type.
+ValueErrors are not always caused by user input error, but in this program that is the case.  We'll look again at ValueErrors again when we get to more complicated programs.  For now it is worth repeating that you need to keep track of the restrictions needed for your variables, and understand what your function is expecting.  You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their proper form.
 
 

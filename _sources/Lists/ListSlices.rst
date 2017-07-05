@@ -11,6 +11,10 @@
    :prefix: list-7-
    :start: 1
 
+.. index::
+   single: [ : ]; list slice
+   slice; list
+
 List Slices
 -----------
 
