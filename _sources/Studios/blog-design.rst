@@ -14,7 +14,7 @@ When viewing these class diagrams, there are 4 main components:
 
 1. **Class name** - the class name is at the top of the box representing a given class
 2. **Methods** - the methods that the class contains, along with the arguments that each method takes
-3. **Fields** - the fields/properties that the class contains
+3. **Fields** - the fields/properties that the class contains (aka, *attributes*)
 4. **Inheritance** - an arrow from one class to another indicates that the former class *inherits from* or *extends* the latter class
 
 These class diagrams are special cases of a more general format for representing classes and objects visually, known as **Universal Modeling Languages (UML)**. You can read more about UML at `Wikipedia <https://en.wikipedia.org/wiki/Unified_Modeling_Language>`_.
@@ -54,14 +54,18 @@ The code we'll write mimics the idea of a multi-format blog platform, such as Tu
             return self.title + " played " + str(self.plays) + " times"
 
 
-    plain_post = Post("10 Best Albums of 2016", "Chris Bay", "1. Little Scream - Cult Following 2. ...")
-    vid_post = VideoPost("Little Scream - Love As a Weapon", "Chris Bay", "https://youtu.be/Tq4Vw4MB6eA")
+    def main():
+        plain_post = Post("10 Best Albums of 2016", "Chris Bay", "1. Little Scream - Cult Following 2. ...")
+        vid_post = VideoPost("Little Scream - Love As a Weapon", "Chris Bay", "https://youtu.be/Tq4Vw4MB6eA")
 
-    vid_post.play()
-    vid_post.play()
+        vid_post.play()
+        vid_post.play()
 
-    print(vid_post)
-    print(plain_post)
+        print(vid_post)
+        print(plain_post)
+
+    if __name__ == "__main__":
+        main()
 
 .. note::
 

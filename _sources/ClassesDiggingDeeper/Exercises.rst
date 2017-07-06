@@ -17,57 +17,97 @@ Exercises
 
             .. tab:: Question
 
-              We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
-              Create a class definition for a Rectangle class using this idea. To create a Rectangle object at location (4,5) with width 6
-              and height 5, we would do the following::
+              We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height. Create a class definition for a Rectangle class using this idea. For instance, to create a Rectangle object at location (4,5) with width 6 and height 5, we would do the following::
 
                   r = Rectangle(Point(4, 5), 6, 5)
 
               .. activecode:: classes_deeper_q1
+
+                  class Point:
+
+                      def __init__(self, init_x, init_y):
+                          """ Create a new point at the given coordinates. """
+                          self.x = init_x
+                          self.y = init_y
+
+                      def get_x(self):
+                          return self.x
+
+                      def get_y(self):
+                          return self.y
+
+                      def distance_from_origin(self):
+                          return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                      def __repr__(self):
+                          return "x=" + str(self.x) + ", y=" + str(self.y)
 
             .. tab:: Answer
 
                 .. activecode:: ch_cl2_answer1
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
 
-                            self.x = initX
-                            self.y = initY
-
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def __str__(self):
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
                             return "x=" + str(self.x) + ", y=" + str(self.y)
 
 
                     class Rectangle:
                         """Rectangle class using Point, width and height"""
 
-                        def __init__(self, initP, initW, initH):
+                        def __init__(self, init_p, init_w, init_h):
 
-                            self.location = initP
-                            self.width = initW
-                            self.height = initH
+                            self.location = init_p
+                            self.width = init_w
+                            self.height = init_h
 
-                    loc = Point(4, 5)
-                    r = Rectangle(loc, 6, 5)
-                    print(r)
+                        def __repr__(self):
+                            return "I'm a rectangle with width {} and height {}".format(self.width, self.height)
 
+                    def main():
+                        loc = Point(4, 5)
+                        r = Rectangle(loc, 6, 5)
+                        print(r)
 
+                    if __name__ == "__main__":
+                        main()
 
-
-    #. Add the following accessor methods to the Rectangle class: ``getWidth``, ``getHeight``, ``__str__``.
+    #. Add the following accessor methods to the Rectangle class: ``get_width`` and ``get_height``.
 
        .. activecode:: ch_cl2_q2
 
+            class Point:
 
+                def __init__(self, init_x, init_y):
+                    """ Create a new point at the given coordinates. """
+                    self.x = init_x
+                    self.y = init_y
+
+                def get_x(self):
+                    return self.x
+
+                def get_y(self):
+                    return self.y
+
+                def distance_from_origin(self):
+                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                def __repr__(self):
+                    return "x=" + str(self.x) + ", y=" + str(self.y)
 
 
     #.
@@ -83,6 +123,29 @@ Exercises
 
                .. activecode:: ch_cl2_q3
 
+                    class Point:
+
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
+
+                        def get_x(self):
+                            return self.x
+
+                        def get_y(self):
+                            return self.y
+
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
+                            return "x=" + str(self.x) + ", y=" + str(self.y)
+
+                    from test import testEqual
+                    r = Rectangle(Point(0, 0), 10, 5)
+                    testEqual(r.area(), 50)
+
             .. tab:: Answer
 
                 .. activecode:: ch_cl2_q3answer
@@ -90,31 +153,36 @@ Exercises
                     from test import testEqual
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
 
-                            self.x = initX
-                            self.y = initY
-
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def __str__(self):
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
                             return "x=" + str(self.x) + ", y=" + str(self.y)
 
 
                     class Rectangle:
                         """Rectangle class using Point, width and height"""
 
-                        def __init__(self, initP, initW, initH):
+                        def __init__(self, init_p, init_w, init_h):
 
-                            self.location = initP
-                            self.width = initW
-                            self.height = initH
+                            self.location = init_p
+                            self.width = init_w
+                            self.height = init_h
+
+                        def __repr__(self):
+                            return "I'm a rectangle with width {} and height {}".format(self.width, self.height)
 
                         def area(self):
                             return self.width * self.height
@@ -129,8 +197,7 @@ Exercises
                     testEqual(r2.area(), 36)
 
 
-    #. Write a ``perimeter`` method in the Rectangle class so that we can find
-       the perimeter of any rectangle instance::
+    #. Write a ``perimeter`` method in the Rectangle class so that we can find the perimeter of any rectangle instance::
 
           r = Rectangle(Point(0, 0), 10, 5)
           testEqual(r.perimeter(), 30)
@@ -138,14 +205,36 @@ Exercises
 
        .. activecode:: ch_cl2_q4
 
+          class Point:
+
+              def __init__(self, init_x, init_y):
+                  """ Create a new point at the given coordinates. """
+                  self.x = init_x
+                  self.y = init_y
+
+              def get_x(self):
+                  return self.x
+
+              def get_y(self):
+                  return self.y
+
+              def distance_from_origin(self):
+                  return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+              def __repr__(self):
+                  return "x=" + str(self.x) + ", y=" + str(self.y)
+
+          from test import testEqual
+          r = Rectangle(Point(0, 0), 10, 5)
+          testEqual(r.perimeter(), 30)
+
     #.
 
         .. tabbed:: q5
 
             .. tab:: Question
 
-              Write a ``transpose`` method in the Rectangle class that swaps the width
-              and the height of any rectangle instance::
+              Write a ``transpose`` method in the Rectangle class that swaps the width and the height of any rectangle instance::
 
                   r = Rectangle(Point(100, 50), 10, 5)
                   testEqual(r.width, 10)
@@ -156,6 +245,34 @@ Exercises
 
               .. activecode:: ch_cl2_q5
 
+                  class Point:
+
+                      def __init__(self, init_x, init_y):
+                          """ Create a new point at the given coordinates. """
+                          self.x = init_x
+                          self.y = init_y
+
+                      def get_x(self):
+                          return self.x
+
+                      def get_y(self):
+                          return self.y
+
+                      def distance_from_origin(self):
+                          return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                      def __repr__(self):
+                          return "x=" + str(self.x) + ", y=" + str(self.y)
+
+                  from test import testEqual
+                  r = Rectangle(Point(100, 50), 10, 5)
+                  testEqual(r.width, 10)
+                  testEqual(r.height, 5)
+                  r.transpose()
+                  testEqual(r.width, 5)
+                  testEqual(r.height, 10)
+
+
             .. tab:: Answer
 
                 .. activecode:: ch_cl2_q5answer
@@ -163,38 +280,42 @@ Exercises
                     from test import testEqual
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
 
-                            self.x = initX
-                            self.y = initY
-
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def __str__(self):
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
                             return "x=" + str(self.x) + ", y=" + str(self.y)
 
 
                     class Rectangle:
                         """Rectangle class using Point, width and height"""
 
-                        def __init__(self, initP, initW, initH):
+                        def __init__(self, init_p, init_w, init_h):
 
-                            self.location = initP
-                            self.width = initW
-                            self.height = initH
+                            self.location = init_p
+                            self.width = init_w
+                            self.height = init_h
+
+                        def __repr__(self):
+                            return "I'm a rectangle with width {} and height {}".format(self.width, self.height)
 
                         def transpose(self):
                             temp = self.width
                             self.width = self.height
                             self.height = temp
 
-                    #test methods
                     r = Rectangle(Point(100, 50), 10, 5)
                     testEqual(r.width, 10)
                     testEqual(r.height, 5)
@@ -202,7 +323,8 @@ Exercises
                     testEqual(r.width, 5)
                     testEqual(r.height, 10)
 
-    #. Write a new method in the Rectangle class to test if a Point falls within the rectangle. For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
+
+    #. Write a new method called ``contains`` in the Rectangle class to test if a Point falls within the rectangle. For this exercise, assume that a rectangle at (0,0) with width 10 and height 5 has *open* upper bounds on the width and height, i.e. it stretches in the x direction from [0 to 10), where 0 is included but 10 is excluded, and from [0 to 5) in the y direction. So it does not contain the point (10, 2). These tests should pass::
 
           r = Rectangle(Point(0, 0), 10, 5)
           testEqual(r.contains(Point(0, 0)), True)
@@ -217,34 +339,24 @@ Exercises
             from test import testEqual
 
             class Point:
-                """Point class for representing and manipulating x,y coordinates. """
 
-                def __init__(self, initX, initY):
+                def __init__(self, init_x, init_y):
+                    """ Create a new point at the given coordinates. """
+                    self.x = init_x
+                    self.y = init_y
 
-                    self.x = initX
-                    self.y = initY
-
-                def getX(self):
+                def get_x(self):
                     return self.x
 
-                def getY(self):
+                def get_y(self):
                     return self.y
 
-                def __str__(self):
+                def distance_from_origin(self):
+                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                def __repr__(self):
                     return "x=" + str(self.x) + ", y=" + str(self.y)
 
-
-            class Rectangle:
-                """Rectangle class using Point, width and height"""
-
-                def __init__(self, initP, initW, initH):
-
-                    self.location = initP
-                    self.width = initW
-                    self.height = initH
-
-                def contains(self, point):
-                    # Your code here!
 
             r = Rectangle(Point(0, 0), 10, 5)
             testEqual(r.contains(Point(0, 0)), True)
@@ -260,10 +372,38 @@ Exercises
 
             .. tab:: Question
 
-               Write a new method called ``diagonal`` that will return the length of the diagonal that runs
-               from the lower left corner to the opposite corner.
+               Write a new method called ``diagonal`` that will return the length of the diagonal that runs from the lower left corner to the opposite corner.
 
                .. activecode:: ch_cl2_q7
+
+                  class Point:
+
+                      def __init__(self, init_x, init_y):
+                          """ Create a new point at the given coordinates. """
+                          self.x = init_x
+                          self.y = init_y
+
+                      def get_x(self):
+                          return self.x
+
+                      def get_y(self):
+                          return self.y
+
+                      def distance_from_origin(self):
+                          return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                      def __repr__(self):
+                          return "x=" + str(self.x) + ", y=" + str(self.y)
+
+                  from test import testEqual
+                  r = Rectangle(Point(0, 0), 10, 5)
+                  testEqual(r.diagonal(), 11.1803398875)
+
+                  r1 = Rectangle(Point(0,0), 12, 4)
+                  testEqual(r1.diagonal(), 12.6491106407)
+
+                  r2 = Rectangle(Point(0,0), 1,2)
+                  testEqual(r2.diagonal(), 2.2360679775)
 
             .. tab:: Answer
 
@@ -272,35 +412,39 @@ Exercises
                     from test import testEqual
 
                     class Point:
-                        """ Point class for representing and manipulating x,y coordinates. """
 
-                        def __init__(self, initX, initY):
+                        def __init__(self, init_x, init_y):
+                            """ Create a new point at the given coordinates. """
+                            self.x = init_x
+                            self.y = init_y
 
-                            self.x = initX
-                            self.y = initY
-
-                        def getX(self):
+                        def get_x(self):
                             return self.x
 
-                        def getY(self):
+                        def get_y(self):
                             return self.y
 
-                        def __str__(self):
+                        def distance_from_origin(self):
+                            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+                        def __repr__(self):
                             return "x=" + str(self.x) + ", y=" + str(self.y)
 
 
                     class Rectangle:
                         """Rectangle class using Point, width and height"""
 
-                        def __init__(self, initP, initW, initH):
+                        def __init__(self, init_p, init_w, init_h):
 
-                            self.location = initP
-                            self.width = initW
-                            self.height = initH
+                            self.location = init_p
+                            self.width = init_w
+                            self.height = init_h
+
+                        def __repr__(self):
+                            return "I'm a rectangle with width {} and height {}".format(self.width, self.height)
 
                         def diagonal(self):
-
-                            d = (self.width**2 + self.height**2) ** 0.5
+                            d = (self.width ** 2 + self.height ** 2) ** 0.5
                             return d
 
                     r = Rectangle(Point(0, 0), 10, 5)
@@ -312,13 +456,9 @@ Exercises
                     r2 = Rectangle(Point(0,0), 1,2)
                     testEqual(r2.diagonal(), 2.2360679775)
 
-    #.  In games, we often put a rectangular "bounding box" around our sprites in
-        the game. We can then do *collision detection* between, say, bombs and
-        spaceships, by comparing whether their rectangles overlap anywhere.
+    #.  There are some games where we put a rectangular "bounding box" around our sprites in the game. We can then do *collision detection* between, say, bombs and spaceships, by comparing whether their rectangles overlap anywhere.
 
-        Write a function to determine whether two rectangles collide. *Hint:
-        this might be quite a tough exercise! Think carefully about all the
-        cases before you code.*
+        Write a function to determine whether two rectangles collide. *Hint: this might be quite a tough exercise! Think carefully about all the cases as you code.*
 
         .. activecode:: ch_cl2_q8
 
@@ -364,7 +504,7 @@ Weekly Graded Assignment
         "zzz... Oh excuse me, I dozed off reading your essay."
 
     * If, on the other hand, the human says something with a length of 20 characters or less, then the bored chatbot should respond just like a normal chatbot would.
-    
+
     Note that we are requiring you to use **inheritance**. Your new ``BoredChatbot`` class must be a **subclass** of the ``Chatbot`` class, and your subclass should only implement the things that make it distinct. (See the *Inheritance* chapter for a review of how this works.)
 
     .. activecode:: bored_chatbot

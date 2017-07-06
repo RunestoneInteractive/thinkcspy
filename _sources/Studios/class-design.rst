@@ -14,9 +14,9 @@ For each problem below, you are presented with a story. Based on this story, you
 
 We are not in a rush to implement these objects. Good design takes time. It will help to work out your design before you write code, using paper and pencil if necessary.
 
-Once you have come up with a design for the object, you should implement it. Use your design to help you decide which fields and methods need to be created. Create some simple tests to make sure you implementation behaves as you expect it to.
+Once you have come up with a design for the object, you should implement it. Use your design to help you decide which fields and methods need to be created. Create some simple tests to make sure your implementation behaves as you expect it to.
 
-We'll complete one of these together in class, and you should choose one of the others to complete.
+We'll complete one of these together in class, and you should choose one of the others to complete on your own as the studio portion.
 
 Design Problems
 ~~~~~~~~~~~~~~~
@@ -24,7 +24,7 @@ Design Problems
 Rectangle
 +++++++++
 
-A rectangle has a length and a width. A rectangle should be able to provide its area and perimeter. A rectangle can indicate whether it is smaller than another rectangle in terms of area. A rectnagle can indicate whether it is in fact a square.
+A rectangle has a length and a width. A rectangle should be able to provide its area and perimeter. A rectangle can indicate whether it is smaller than another rectangle in terms of area. A rectangle can indicate whether it is in fact a square.
 
 .. activecode:: class_design_rectangle
 

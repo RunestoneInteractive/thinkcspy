@@ -140,22 +140,22 @@ Exercises
           testEqual(is_palindrome(''), True)
 
 
-    #. Write a function that mirrors its argument. For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the ``reverse`` function).
+    #.  Write a function that mirrors its argument. For example, ``mirror('good')`` should return a string holding the value ``gooddoog``. (Hint: Make use of the ``reverse`` function).
 
-      .. activecode:: ex_8_6
+        .. activecode:: ex_8_6
 
-          def mirror(text):
-              # your code here
+            def mirror(text):
+                # your code here
 
-          def reverse(text):
-              # your code here
+            def reverse(text):
+                # your code here
 
 
-          from test import testEqual
-          testEqual(mirror('good'), 'gooddoog')
-          testEqual(mirror('Python'), 'PythonnohtyP')
-          testEqual(mirror(''), '')
-          testEqual(mirror('a'), 'aa')
+            from test import testEqual
+            testEqual(mirror('good'), 'gooddoog')
+            testEqual(mirror('Python'), 'PythonnohtyP')
+            testEqual(mirror(''), '')
+            testEqual(mirror('a'), 'aa')
 
 
     #. Write a function that implements a substitution cipher. In a substitution cipher one letter is substituted for another to garble the message. For example A -> Q, B -> T, C -> G etc. your function should take two parameters, the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. Your function should return a string that is the encrypted version of the message.

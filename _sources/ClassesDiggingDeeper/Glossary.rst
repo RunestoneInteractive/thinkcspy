@@ -11,21 +11,13 @@ Glossary
 --------
 
 .. glossary::
-        
-    deep copy
-        To copy the contents of an object as well as any embedded objects, and
-        any objects embedded in them, and so on; implemented by the
-        ``deepcopy`` function in the ``copy`` module.
-        
+
+
     deep equality
-        Equality of values, or two references that point to objects that have
-        the same value.
-            
-    shallow copy
-        To copy the contents of an object, including any references to embedded
-        objects; implemented by the ``copy`` function in the ``copy`` module.
-        
+        Equality of values, i.e., two references that point to objects that have the same value.
+
+    inheritance
+        Allows us to define a class that "inherits" the functionality of its parent class, or superclass, and enables us to modify or extend that functionality in our new subclass.
+
     shallow equality
         Equality of references, or two references that point to the same object.
-
-
