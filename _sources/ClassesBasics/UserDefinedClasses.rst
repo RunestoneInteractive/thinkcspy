@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: custom class, user-defined class, constructor, __init__, class, object, instance, instantiation
+.. index:: custom class, user defined class, constructor, __init__, class, object, instance, instantiation, class definition
 
 User Defined Classes
 --------------------
@@ -16,7 +16,7 @@ We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``. Thes
 
 However, it can be helpful to have data objects that are uniquely tailored to represent concepts related to the specific problem we are trying to solve. For these situations, Python gives us the ability to **create our own custom classes**.
 
-A custom class usually comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two-dimensional space, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin. This ``(x,y)`` is the state of the point.
+A custom class  (or, *user defined class*) usually comes about when you want to cluster together a few disparate pieces of information into one larger coherent concept. As an example, consider the concept of a mathematical point. In two-dimensional space, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, ``(0, 0)`` represents the origin, and ``(x, y)`` represents the point ``x`` units to the right and ``y`` units up from the origin. This ``(x,y)`` is the state of the point.
 
 Thinking about our diagram above, we could draw a ``point`` object as shown here.
 
@@ -98,14 +98,12 @@ You can see this for yourself, via codelens:
 
     print("Nothing seems to have happened with the points")
 
-You can see that when we invoke the ``Point()`` function in line 9, Python creates a new "empty" ``point`` object, and then passes that point into our ``__init__`` method. Inside the ``__init__`` method we are able to give that point two attributes called ``x`` and ``y``, and set ``x`` and ``y`` equal to ``0``. Finally, the new point is returned and we assign it to the ``p`` variable.
+You can see that when we invoke the ``Point()`` function in line 9, Python creates a new "empty" ``point`` object, and then passes that point into our ``__init__`` method. Inside the ``__init__`` method we are able to give that point two attributes called ``x`` and ``y``, and set ``x`` and ``y`` equal to ``0``. Finally, the new point is returned and we assign it to the ``p`` variable. Then the same process occurs for the ``q`` variable and we end up with two different ``Point`` instances.
 
 Classes vs Objects (or Instances)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is important to understand the difference between a class, and an individual "instance" of that class.
-
-The following program adds a few additional print statements:
+It is important to understand the difference between a class, and an individual "instance" of that class. Look at the following program which adds a few additional print statements:
 
 .. activecode:: chp13_classes2
 
@@ -126,7 +124,7 @@ The following program adds a few additional print statements:
     print(p is q)
 
 
-You can see that the output suggests that each one is a ``Point object``. However, notice that the ``is`` operator returns ``False`` meaning that they are *different* objects (we will have more to say about this in a later chapter).
+You can see that the output suggests that each one is a ``Point`` object. However, notice that the ``is`` operator returns ``False`` meaning that they are *different* objects (we will have more to say about this in a later chapter).
 
 This should look familiar --- we've used classes before to create more than one object:
 

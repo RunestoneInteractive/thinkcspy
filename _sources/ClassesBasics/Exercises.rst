@@ -72,9 +72,13 @@ Exercises
                             dy = (otherP.get_y() - self.y)
                             return math.sqrt(dy**2 + dx**2)
 
-                    p = Point(3, 3)
-                    q = Point(6, 7)
-                    print(p.distance_from_point(q))
+                    def main():
+                        p = Point(3, 3)
+                        q = Point(6, 7)
+                        print(p.distance_from_point(q))
+
+                    if __name__ == "__main__":
+                        main()
 
 
     #. Add a method ``reflect_x`` to the class ``Point`` which returns a new ``Point``, one which is the
@@ -208,13 +212,14 @@ Exercises
                             self.x = self.x + dx
                             self.y = self.y + dy
 
+                    def main():
+                        p = Point(7, 6)
+                        print(p)
+                        p.move(5, 10)
+                        print(p)
 
-                    p = Point(7, 6)
-                    print(p)
-                    p.move(5, 10)
-                    print(p)
-
-
+                    if __name__ == "__main__":
+                        main()
 
 Weekly Graded Assignment
 ========================

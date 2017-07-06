@@ -44,9 +44,13 @@ Here is a simple function called ``distance`` involving our new ``Point`` object
         dist = math.sqrt(x_diff**2 + y_diff**2)
         return dist
 
-    p = Point(4, 3)
-    q = Point(0, 0)
-    print(distance(p, q))
+    def main():
+        p = Point(4, 3)
+        q = Point(0, 0)
+        print(distance(p, q))
+
+    if __name__=="__main__":
+        main()
 
 
-``distance`` takes two points and returns the distance between them. Note that ``distance`` is **not** a method of the Point class. You can see this by looking at the indentation pattern. It is not inside the class definition. The other way we can know that ``distance`` is not a method of Point is that ``self`` is not included as a formal parameter. In addition, we do not invoke ``distance`` using the dot notation.
+The function ``distance`` takes two points and returns the distance between them. Note that ``distance`` is **not** a method of the Point class. You can see this by looking at the indentation pattern. It is not inside the class definition. The other way we can know that ``distance`` is not a method of Point is that ``self`` is not included as a formal parameter. In addition, we do not invoke ``distance`` using the dot notation.

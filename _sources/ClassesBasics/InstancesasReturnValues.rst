@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: return value
+.. index:: return value, instance
 
 Instances as Return Values
 --------------------------
@@ -38,16 +38,20 @@ Suppose you have a point object and wish to find the midpoint halfway between it
             return "x=" + str(self.x) + ", y=" + str(self.y)
 
         def halfway(self, target):
-             mx = (self.x + target.x) / 2
-             my = (self.y + target.y) / 2
-             return Point(mx, my)
+            mx = (self.x + target.x) / 2
+            my = (self.y + target.y) / 2
+            return Point(mx, my)
 
-    p = Point(3, 4)
-    q = Point(5, 12)
-    mid = p.halfway(q)
+    def main():
+        p = Point(3, 4)
+        q = Point(5, 12)
+        mid = p.halfway(q)
 
-    print(mid)
-    print(mid.get_x())
-    print(mid.get_y())
+        print(mid)
+        print(mid.get_x())
+        print(mid.get_y())
+
+    if __name__ == "__main__":
+        main()
 
 The resulting point object, ``mid``, has an x value of 4 and a y value of 8. We can also use any other class methods on it, like ``distance_from_origin`` since ``mid`` is an object of the ``Point`` class.

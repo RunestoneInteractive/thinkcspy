@@ -14,7 +14,7 @@ Improving our Constructor
 
 Our constructor so far can only create points at location ``(0,0)``.  To create a point at position (7, 6) requires that we provide some additional capability for the user to pass information to the constructor. Since constructors are simply specially named functions, we can use parameters (as we've seen before) to provide the specific information.
 
-We can make our class constructor more general by putting extra parameters into the ``__init__`` method, as shown in this codelens example.
+We can make our class constructor more generally useful by putting extra parameters into the ``__init__`` method, as shown in this codelens example.
 
 .. codelens:: chp13_improveconstructor
     :python: py3

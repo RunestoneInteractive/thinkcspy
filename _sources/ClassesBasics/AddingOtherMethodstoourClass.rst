@@ -12,7 +12,7 @@
 Adding Other Methods to our Class
 ---------------------------------
 
-The key advantage of using a class like ``Point`` rather than something like a simple tuple ``(7, 6)``now becomes apparent. We can add methods to the ``Point`` class that are sensible operations for points. Had we chosen to use a simple tuple to represent the point, we would not have this capability. Creating a class like ``Point`` brings an exceptional amount of "organizational power" to our programs, and to our thinking. We can group together the sensible operations and the kinds of data they apply to, and each instance of the class can have its own state.
+The key advantage of using a class like ``Point`` rather than something like a simple tuple ``(7, 6)`` now becomes apparent. We can add methods to the ``Point`` class that are sensible operations for points. Had we chosen to use a simple tuple to represent the point, we would not have this capability. Creating a class like ``Point`` brings an exceptional amount of "organizational power" to our programs, and to our thinking. We can group together the sensible operations and the kinds of data they apply to, and each instance of the class can have its own state.
 
 A **method** behaves like a function but it is invoked on a specific instance. For example, with a turtle named ``tess``, ``tess.right(90)`` asks the ``tess`` object to perform its ``right`` method and turn 90 degrees. Methods are accessed using dot notation.
 
