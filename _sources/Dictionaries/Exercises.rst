@@ -300,38 +300,48 @@ Weekly Graded Assignment
 
 .. container:: full_width
 
-    Write an ``add_contact`` function that modifies a dictionary of contacts. The ``contacts`` dictionary has the contact name as its key, and the value is a tuple containing the phone number and email for the contact::
+    Write a ``sort_contacts`` function that takes a dictionary of contacts as a parameter and returns a sorted list of those contacts, where each contact is a tuple.
+
+    The contacts dictionary that will be passed into the function has the contact name as its key, and the value is a tuple containing the phone number and email for the contact. ::
 
         contacts = {name: (phone, email), name: (phone, email), etc.}
 
-    The ``add_contact`` function should do the following:
+    The ``sort_contacts`` function should then create a new, sorted (by last name) list of tuples representing all of the contact info (one tuple for each contact) that was in the dictionary. It should then return this list to the calling function.
 
-    1. Take two parameters: the contact dictionary to be updated, and a list (which contains a *string* of the contact's name and a *tuple* containing the contact's phone and email).
-    2. Update the dictionary by adding this new contact to it. (This modifies the original dictionary since we will use aliasing, not copying.)
-    3. Create a new, **sorted** list *of tuples* representing **all** of the contact info (one tuple for each contact).
-    4. Return this list to the calling function.
+    For example, given a dictionary argument of: ::
 
-    For example, after filling in your code for the ``add_contact`` function, running the program below should print the following::
+        {"Horney, Karen": ("1-541-656-3010", "karen@psychoanalysis.com"),
+        "Welles, Orson": ("1-312-720-8888", "orson@notlive.com"),
+        "Freud, Anna": ("1-541-754-3010", "anna@psychoanalysis.com")}
 
-    [('Almodovar, Pedro', '1-990-622-3892', 'pedro@filmbuffs.com'), ('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda', '1-917-222-2222', 'tilda@greatActors.com')]
-    [('Almodovar, Pedro', '1-990-622-3892', 'pedro@filmbuffs.com'), ('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda', '1-917-222-2222', 'tilda@greatActors.com'), ('Welles, Orson', '1-312-720-8888', 'orson@notlive.com')]
+    ``sort_contacts`` should return this: ::
 
-    .. activecode:: add_contact_assign
+        [('Freud, Anna', '1-541-754-3010', 'anna@psychoanalysis.com'), ('Horney, Karen', '1-541-656-3010', 'karen@psychoanalysis.com'), ('Welles, Orson', '1-312-720-8888', 'orson@notlive.com')]
 
-        # Create add_contact function
+    .. activecode:: sort_contacts_assign
+
+        # Create sort_contacts function
 
 
-        # The below is just for your testing purposes.
-        # In Vocareum, only put code for the function above
-        def main():
-            contact_dict = {"Rimbaud, Arthur": ("1-636-555-5555", "arthur@notlive.com"),
-                "Swinton, Tilda": ("1-917-222-2222", "tilda@greatActors.com"),
-                "Almodovar, Pedro": ("1-990-622-3892", "pedro@filmbuffs.com")}
+        # The code below is just for your testing purposes. Make sure you pass all the tests.
+        # In Vocareum, only put code for the sort_contacts function above
+        from test import testEqual
 
-            print(add_contact(contact_dict, ["Freud, Anna",
-                ("1-541-754-3010", "anna@psychoanalysis.com")]))
-            print(add_contact(contact_dict, ["Welles, Orson",
-                ("1-312-720-8888", "orson@notlive.com")]))
-
-        if __name__ == "__main__":
-            main()
+        testEqual(sort_contacts({"Horney, Karen": ("1-541-656-3010", "karen@psychoanalysis.com"),
+                "Welles, Orson": ("1-312-720-8888", "orson@notlive.com"),
+                "Freud, Anna": ("1-541-754-3010", "anna@psychoanalysis.com")}), [('Freud, Anna', '1-541-754-3010',
+                'anna@psychoanalysis.com'), ('Horney, Karen', '1-541-656-3010', 'karen@psychoanalysis.com'),
+                ('Welles, Orson', '1-312-720-8888', 'orson@notlive.com')])
+        testEqual(sort_contacts({"Summitt, Pat": ("1-865-355-4320", "pat@greatcoaches.com"),
+            "Rudolph, Wilma": ("1-410-5313-584", "wilma@olympians.com")}),
+            [('Rudolph, Wilma', '1-410-5313-584', 'wilma@olympians.com'),
+            ('Summitt, Pat', '1-865-355-4320', 'pat@greatcoaches.com')])
+        testEqual(sort_contacts({"Dinesen, Isak": ("1-718-939-2548", "isak@storytellers.com")}),
+            [('Dinesen, Isak', '1-718-939-2548', 'isak@storytellers.com')])
+        testEqual(sort_contacts({"Rimbaud, Arthur": ("1-636-555-5555", "arthur@notlive.com"),
+            "Swinton, Tilda": ("1-917-222-2222", "tilda@greatActors.com"),
+            "Almodovar, Pedro": ("1-990-622-3892", "pedro@filmbuffs.com"), "Kandinsky, Wassily":
+            ("1-333-555-9999", "kandinsky@painters.com")}), [('Almodovar, Pedro', '1-990-622-3892',
+            'pedro@filmbuffs.com'), ('Kandinsky, Wassily', '1-333-555-9999', 'kandinsky@painters.com'),
+            ('Rimbaud, Arthur', '1-636-555-5555', 'arthur@notlive.com'), ('Swinton, Tilda',
+            '1-917-222-2222', 'tilda@greatActors.com')])
