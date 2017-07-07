@@ -81,17 +81,17 @@ Exercises
                     Sally
 
                     # this is the second batch of input the user would enter
-                    Grade for Chris: 3.0
-                    Grade for Jesse: 4.0
-                    Grade for Sally: 3.5
+                    Grade for Chris: 90
+                    Grade for Jesse: 80
+                    Grade for Sally: 70
 
                     # below is what your program should output
                     Class roster:
-                    Chris (3.0)
-                    Jesse (4.0)
-                    Sally (3.5)
+                    Chris (90.0)
+                    Jesse (80.0)
+                    Sally (70.0)
 
-                    Average grade: 3.5
+                    Average grade: 80.0
 
                 .. activecode:: ex_11_02
 

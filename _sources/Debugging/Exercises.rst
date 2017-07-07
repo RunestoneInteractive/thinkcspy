@@ -24,7 +24,7 @@ Exercises
 
            What type of error did the above program have?
 
-    #.  Picture a compass where 0 degrees represents North, 90 degrees represents East, and so on, all the way around to 360 degrees, which is again the same as 0 degrees: true North.
+    #.  Picture a compass where 0 degrees represents North, 90 degrees represents East, and so on, all the way around to 360 degrees, which is again the same as 0 degrees: true north.
 
         The program below envisions the scenario in which a person is facing North (aka 0 degrees) and spins some number of rotations, either clockwise or counter-clockwise (-1 represents a full counter-clockwise spin and 1 represents a full clockwise spin). It calculates the direction they end up facing in degrees. However, it doesn't work properly. Find and fix the error in the program.
 

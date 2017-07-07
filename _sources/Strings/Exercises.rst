@@ -62,10 +62,13 @@ Exercises
                         n_str = str(n)
                         return len(n_str)
 
-                    print(find_num_digits(50))
-                    print(find_num_digits(20000))
-                    print(find_num_digits(1))
+                    def main():
+                        print(find_num_digits(50))
+                        print(find_num_digits(20000))
+                        print(find_num_digits(1))
 
+                    if __name__ == "__main__":
+                        main()
 
     #.
 
@@ -205,7 +208,7 @@ Exercises
                     cipher = "badcfehgjilknmporqtsvuxwzy"
 
                     encrypted = encrypt('hello world', cipher)
-                    print encrypted
+                    print(encrypted)
 
                     decrypted = decrypt(encrypted, cipher)
                     print(decrypted)

@@ -197,6 +197,12 @@ These next several problems are variations on a theme. Each will have you return
 
                   return line_str
 
+              def main():
+                  print(line(5))
+
+              if __name__ == "__main__":
+                  main()
+
 6.
 
     .. tabbed:: q6
@@ -238,6 +244,12 @@ These next several problems are variations on a theme. Each will have you return
                       square_str += (line(n) + '\n')
                   return square_str
 
+              def main():
+                  print(square(5))
+
+              if __name__ == "__main__":
+                  main()
+
 7.
 
     .. tabbed:: q7
@@ -277,6 +289,12 @@ These next several problems are variations on a theme. Each will have you return
                       rectangle_str += (line(width) + '\n')
 
                   return rectangle_str
+
+              def main():
+                  print(rectangle(5, 3))
+
+              if __name__ == "__main__":
+                  main()
 
 8.
 
@@ -320,6 +338,12 @@ These next several problems are variations on a theme. Each will have you return
 
                   return stair_str
 
+              def main():
+                  print(stairs(5))
+
+              if __name__ == "__main__":
+                  main()
+
 9.
 
     .. tabbed:: q9
@@ -347,6 +371,12 @@ These next several problems are variations on a theme. Each will have you return
 
               def space_line(spaces, hashes):
                   return spaces * ' ' + hashes * '#'
+
+              def main():
+                  print(space_line(3, 5))
+
+              if __name__ == "__main__":
+                  main()
 
 10.
 
@@ -385,6 +415,11 @@ These next several problems are variations on a theme. Each will have you return
                       triangle_str += (space_line(n-i-1, 2*i+1) + '\n')
                   return triangle_str
 
+              def main():
+                  print(triangle(5))
+
+              if __name__ == "__main__":
+                  main()
 
 11.
 
@@ -432,3 +467,9 @@ These next several problems are variations on a theme. Each will have you return
                   for i in range(n-2, -1, -1):
                       diamond_str += (space_line(n-i-1, 2*i+1) + '\n')
                   return diamond_str
+
+              def main():
+                  print(diamond(5))
+
+              if __name__ == "__main__":
+                  main()

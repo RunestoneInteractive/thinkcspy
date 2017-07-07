@@ -14,9 +14,7 @@ Exercises
 .. container:: full_width
 
 
-    #. Write a function ``print_triangular_numbers(n)`` that prints out the first
-       n triangular numbers. A call to ``print_triangular_numbers(5)`` would
-       produce the following output::
+    #. Write a function ``print_triangular_numbers(n)`` that prints out the first ``n`` triangular numbers. A call to ``print_triangular_numbers(5)`` would produce the following output::
 
            1
            3
@@ -29,8 +27,7 @@ Exercises
        .. activecode:: ex_iter_triangle
 
 
-    #. Modify the walking turtle program so that rather than a 90 degree left or right turn the
-       angle of the turn is determined randomly at each step.
+    #. Modify the walking turtle program so that rather than a 90 degree left or right turn the angle of the turn is determined randomly at each step.
 
         .. activecode:: ex_turtle_modify_walk
            :nocodelens:
@@ -42,8 +39,7 @@ Exercises
 
             .. tab:: Question
 
-               Modify the turtle walk program so that you have two turtles each with a
-               random starting location. Keep the turtles moving until one of them leaves the screen.
+               Modify the turtle walk program so that you have two turtles each with a random starting location. Keep the turtles moving until one of them leaves the screen.
 
                .. activecode:: ex_turtle_two_walk
                   :nocodelens:
@@ -122,8 +118,7 @@ Exercises
                         main()
 
 
-    #. Modify the previous turtle walk program so that the turtle turns around
-       when it hits the wall or when one turtle collides with another turtle.
+    #. Modify the previous turtle walk program so that the turtle turns around when it hits the wall or when one turtle collides with another turtle.
 
        .. activecode:: ex_turtle_walk_turn
           :nocodelens:
