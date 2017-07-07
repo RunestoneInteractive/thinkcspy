@@ -11,26 +11,27 @@
    :prefix: data-8-
    :start: 1
 
+.. index:: type conversion, input, int, float, str
+
 Input
 -----
 
-
 The program in the previous section works fine but is very limited in that it only works with one value for ``total_secs``. What if we wanted to rewrite the program so that it was more general? One thing we could do is allow the user to enter any value they wish for the number of seconds. The program could then print the proper result for that starting value.
 
-In order to do this, we need a way to get **input** from the user. Luckily, in Python there is a built-in function to accomplish this task. As you might expect, it is called ``input()``.
+In order to do this, we need a way to get **input** from the user. Luckily, in Python there is a built-in function to accomplish this task. As you might expect, it is called ``input``.
 
 .. sourcecode:: python
 
     n = input("Please enter your name: ")
 
-The input function allows the coder to provide a **prompt string**. When the function is evaluated, the prompt is shown. The user of the program can enter their name and press `return`. When this happens the text that has been entered is returned from the ``input()`` function, and in this case assigned to the variable ``n``. Make sure you run this example a number of times and try some different names in the input box that appears.
+The ``input`` function allows the coder to provide a **prompt string**. When the function is evaluated, the prompt is shown. The user of the program can enter their name and press `return`. When this happens the text that has been entered is returned from the ``input`` function, and in this case assigned to the variable ``n``. Make sure you run this example a number of times and try some different names in the input box that appears.
 
 .. activecode:: inputfun
 
     n = input("Please enter your name: ")
     print("Hello", n)
 
-It is very important to note that the ``input()`` function returns a string value. Even if you asked the user to enter their age, you would get back a string like ``"17"``. It would be your job, as the programmer, to convert that string into an int or a float, using the ``int()`` or ``float()`` converter functions we saw earlier.
+It is very important to note that the ``input`` function returns a string value. Even if you asked the user to enter their age, you would get back a string like ``"17"``. It would be your job, as the programmer, to convert that string into an int or a float, using the ``int()`` or ``float()`` converter functions we saw earlier.
 
 To modify our previous program, we will add an input statement to allow the user to enter the number of seconds. Then we will convert that string to an integer. From there the process is the same as before. To complete the example, we will print some appropriate output.
 
@@ -69,6 +70,3 @@ The variable ``str_seconds`` will refer to the string that is entered by the use
      n = input("Please enter your age: ")
      # user types in 18
      print ( type(n) )
-
-
-.. index:: order of operations, rules of precedence

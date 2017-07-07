@@ -7,13 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: module, turtle
+
 Hello Little Turtles!
 =====================
-
-.. index::
-    single: module
-    single: turtle module
-
 
 There are many **modules** in Python that provide very powerful features that we can use in our own programs. Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations.
 
@@ -23,7 +20,4 @@ Turtle graphics, as it is known, is based on a very simple metaphor. Imagine tha
 
 .. note::
 
-	Turtles are fun, but the real purpose of this chapter is to teach ourselves
-	a little more Python and to develop our theme of *computational thinking*,
-	or *thinking like a computer scientist*. Most of the Python covered here will
-	be explored later in more depth.
+	Turtles are fun, but the real purpose of this chapter is to teach ourselves a little more Python and to develop our theme of *computational thinking*, or *thinking like a computer scientist*. Most of the Python covered here will be explored later in more depth.

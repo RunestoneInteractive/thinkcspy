@@ -11,6 +11,8 @@
    :prefix: data-3-
    :start: 1
 
+.. index:: type conversion, str, float, int
+
 Type conversion functions
 -------------------------
 
@@ -69,6 +71,3 @@ The type converter ``str()`` turns its argument into a string. Remember that whe
    .. code-block:: python
 
       print( int(53.785) )
-
-
-.. index:: variable, assignment, assignment statement, state snapshot

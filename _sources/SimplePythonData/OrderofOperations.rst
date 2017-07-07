@@ -11,12 +11,12 @@
    :prefix: data-9-
    :start: 1
 
+.. index:: order of operations, rules of precedence
+
 Order of Operations
 -------------------
 
-
 When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. Python follows the same precedence rules for its mathematical operators that mathematics does.
-
 
 #. Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, ``2 * (3-1)`` is 4, and ``(1+1)**(5-2)`` is 8. You can also use parentheses to make an expression easier to read, as in ``(minute * 100) / 60``, even though it doesn't change the result.
 #. Exponentiation has the next highest precedence, so ``2**1+1`` is 3 and not 4, and ``3*1**3`` is 3 and not 27. Can you explain why?
@@ -32,7 +32,7 @@ When more than one operator appears in an expression, the order of evaluation de
 
         print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
         print((2 ** 3) ** 2)   # use parentheses to force the order you want!
-        
+
 
 **Check your understanding**
 

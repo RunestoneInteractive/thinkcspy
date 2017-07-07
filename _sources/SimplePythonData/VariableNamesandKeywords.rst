@@ -11,6 +11,8 @@
    :prefix: data-5-
    :start: 1
 
+.. index:: variable, naming conventions, keywords
+
 Variable Names and Keywords
 ---------------------------
 
@@ -64,6 +66,3 @@ Programmers generally choose names for their variables that are meaningful to th
    :feedback_b: -  The + character is not allowed in variable names (everything else in this name is fine).
 
    True or False:  the following is a legal variable name in Python:   A_good_grade_is_A+
-
-
-.. index:: statement

@@ -52,4 +52,4 @@ Some people judge the quality of a programming language by the simplicity of the
    The print function:
 
 
-.. index:: comments
+.. index:: Hello World

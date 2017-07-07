@@ -11,6 +11,8 @@
    :prefix: intro-4-
    :start: 1
 
+.. index:: activecode, codelens
+
 Executing Python in this Book
 -----------------------------
 
@@ -73,5 +75,3 @@ The examples in this book use a mixture of the standard Python  interpreter, sou
    :feedback_d: By stepping forward through the Python code in codelens, you are executing the Python program.
 
    Codelens allows you to (select all that apply):
-
-.. index:: program, algorithm

@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: debugging
+
 How to be a Successful Programmer
 ===============================================
 
@@ -14,4 +16,4 @@ One of the most important skills you need to acquire to complete this book succe
 
 Programming is an odd thing in a way. As programmers, we spend the vast majority of our time trying to get our program to work. We struggle, we stress, we spend hours deep in frustration trying to get our program to execute correctly. Then, when we do get it going, we celebrate, hand it in, and move on to the next homework assignment or programming task.
 
-But here is the secret: when you are successful, you are happy, your brain releases a bit of chemical that makes you feel good. You need to organize your programming so that you have lots of little successes. It turns out your brain doesn't care all that much if you have successfully written a small "Hello world" program or a a complex programing taking thousands of lines of code. You still get that little release that makes you happy. When you are happy you want to go on and solve the next little problem.
+But here is the secret: when you are successful, you are happy, your brain releases a bit of chemical that makes you feel good. You need to organize your programming so that you have lots of little successes. It turns out your brain doesn't care all that much if you have successfully written a small "Hello World" program or a a complex programing taking thousands of lines of code. You still get that little release that makes you happy. When you are happy you want to go on and solve the next little problem.

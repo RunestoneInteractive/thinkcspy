@@ -40,5 +40,3 @@ Later chapters will make more suggestions about debugging and other programming 
    :feedback_d: You cannot debug without first having a program, meaning that someone had to do the programming first.
 
    The difference between programming and debugging is:
-
-.. index:: formal language, natural language, parse, token

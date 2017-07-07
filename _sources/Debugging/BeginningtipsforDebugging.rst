@@ -11,6 +11,8 @@
    :prefix: debug-3-
    :start: 1
 
+.. index:: debugging
+
 Beginning Tips for Debugging
 ----------------------------
 

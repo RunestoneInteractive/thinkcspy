@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: Python Style Guide
+
 Python Style Guidelines
 -----------------------
 

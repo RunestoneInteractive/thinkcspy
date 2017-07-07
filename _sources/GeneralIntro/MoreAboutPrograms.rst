@@ -11,6 +11,8 @@
    :prefix: intro-5-
    :start: 1
 
+.. index:: input, output, condition, repetition
+
 More About Programs
 -------------------
 
@@ -52,6 +54,3 @@ Believe it or not, that's pretty much all there is to it. Every program you've e
    :feedback_d: Programs often implement algorithms, but they are not the same thing. An algorithm is a step by step list of instructions, but those instructions are not necessarily precise enough for a computer to follow. A program must be written in a programming language that the computer knows how to interpret.
 
    A program is:
-
-
-.. index:: debugging, bug

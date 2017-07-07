@@ -11,6 +11,8 @@
    :prefix: turtle-2-
    :start: 1
 
+.. index:: turtle, attribute, method, canvas, module, import, state
+
 Our First Turtle Program
 ------------------------
 
@@ -246,6 +248,3 @@ Each time we run this program, a new drawing window pops up, and will remain on 
    jamal.forward(100)
    =====
    wn.exitonclick()
-
-
-.. index:: turtle, attribute, method, canvas, module, import, state

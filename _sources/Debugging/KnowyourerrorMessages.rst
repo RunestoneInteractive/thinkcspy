@@ -11,6 +11,8 @@
    :prefix: debug-4-
    :start: 1
 
+.. index:: error messages
+
 Know Your Error Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -306,7 +308,6 @@ Value errors occur when you pass a parameter to a function and the function is e
 
    final_time_int = current_time_int + wait_time_int
    print(final_time_int)
-
 
 Run the program but instead of typing in anything to the dialog box just click OK. You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 4``. This error is not because you have made a mistake in your program. Although sometimes we do want to check the user input to make sure its valid, we don't have all the tools we need for that yet. The error happens because the user did not give us something we can convert to an integer, instead we got an empty value. Try running the program again. Now this time enter "ten" instead of the number 10. You will get a similar error message.
 

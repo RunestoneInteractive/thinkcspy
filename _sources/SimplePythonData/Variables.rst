@@ -11,6 +11,8 @@
    :prefix: data-4-
    :start: 1
 
+.. index:: variable, assignment statement, assignment token, value
+
 Variables
 ---------
 
@@ -131,6 +133,3 @@ A great deal of programming is about having the computer remember things. For ex
      day = 32.5
      day = 19
      print(day)
-
-
-.. index:: keyword, underscore character

@@ -11,6 +11,8 @@
    :prefix: intro-13-
    :start: 1
 
+.. index:: comments
+
 Comments
 --------
 

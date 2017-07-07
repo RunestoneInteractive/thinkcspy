@@ -8,5 +8,4 @@ The single most important skill for a computer scientist is **problem solving**.
 On one level, you will be learning to program, a useful skill by itself. On another level, you will use programming as a means to an end. As we go along, that end will become clearer.
 
 
-.. index:: programming language, portable, high-level language,
-           low-level language, compile, interpret
+.. index:: problem solving

@@ -11,6 +11,8 @@
    :prefix: data-11-
    :start: 1
 
+.. index:: variable, increment, decrement, initialization
+
 Updating Variables
 ------------------
 
@@ -20,7 +22,14 @@ One of the most common forms of reassignment is an **update** where the new valu
 
     x = x + 1
 
-This translates to: "get the current value of x, add one, and then update x with the new value". In other words, the new value of x is the old value of x, plus 1. Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process. First, evaluate the right-hand side expression. Second, let the variable name on the left-hand side refer to this new resulting object. The fact that ``x`` appears on both sides does not matter. The semantics of the assignment statement makes sure that there is no confusion as to the result.
+This translates to: "get the current value of x, add one, and then update x with the new value". In other words, the new value of x is the old value of x, plus 1.
+
+Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process:
+
+1. Evaluate the right-hand side expression.
+2. Set the variable name on the left-hand side refer to this new resulting object.
+
+The fact that ``x`` appears on both sides does not matter. The semantics of the assignment statement makes sure that there is no confusion as to the result.
 
 .. activecode:: ch07_update1
 
@@ -33,6 +42,10 @@ This translates to: "get the current value of x, add one, and then update x with
 If you try to update a variable that doesn't exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the name on the left. Before you can update a variable, you have to **initialize** it, usually with a simple assignment. In the above example, ``x`` was initialized to 6.
 
 Updating a variable by adding 1 is called an **increment**; subtracting 1 is called a **decrement**. Sometimes programmers also talk about **bumping** a variable, which means the same as incrementing it by 1.
+
+.. note::
+
+    You can also increment or decrement a variable by using the following syntax which is equivalent to the example above. For incrementing, instead of ``x = x + 1`` you can use: ``x += 1``. For decrementing, instead of ``x = x - 1`` you can use: ``x -= 1``.
 
 **Check your understanding**
 

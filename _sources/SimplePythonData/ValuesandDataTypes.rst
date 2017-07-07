@@ -11,6 +11,8 @@
    :prefix: data-2-
    :start: 1
 
+.. index:: value, data type, string, float, integer, class, objects, type, print
+
 Values and Data Types
 ---------------------
 
@@ -162,6 +164,3 @@ Remember not to put commas or spaces in your integers, no matter how big they ar
    :feedback_d: Strings can be enclosed in single quotes.
 
    What is the data type of 'this is what kind of data'?
-
-
-.. index:: type converter functions, int, float, str, truncation

@@ -11,6 +11,7 @@
    :prefix: turtle-2-
    :start: 1
 
+.. index:: instance, state
 
 Instances --- A Herd of Turtles
 -------------------------------
@@ -120,6 +121,3 @@ Here are some *Thinking like a computer scientist* observations:
    tina.forward(150)
    =====
    wn.exitonclick()
-
-
-.. index:: instance, state

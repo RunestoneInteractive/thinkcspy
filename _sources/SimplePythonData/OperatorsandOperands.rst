@@ -11,6 +11,8 @@
    :prefix: data-7-
    :start: 1
 
+.. index:: operators, operands
+
 Operators and Operands
 ----------------------
 
@@ -60,7 +62,7 @@ What if, on the other hand, we had wanted to know how many *whole* hours there a
 
 Pay particular attention to the first two examples above. Notice that the result of floating point division is ``1.75`` but the result of the integer division is simply ``1``. Take care that you choose the correct flavor of the division operator depending on the result you want. If you're working with expressions where you need floating point values, use the division operator ``/``.  If you want an integer result, use ``//``.
 
-.. index:: modulus
+.. index:: modulus, remainder operator
 
 The **modulo operator**, sometimes also called **modulus**, the **remainder operator**, or **integer remainder operator** works on integers (and integer expressions) and yields the remainder when the first operand is divided by the second. In Python, the modulus operator is a percent sign (``%``). The syntax is the same as for other operators.
 
@@ -143,8 +145,3 @@ Finally, returning to our time example, the remainder operator is extremely usef
    .. code-block:: python
 
       print(18 % 4)
-
-
-.. index:: input, input dialog
-
-.. _input:
