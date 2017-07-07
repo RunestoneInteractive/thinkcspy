@@ -1,7 +1,7 @@
 Crypto
 ===================
 
-In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complicated.
+In contrast with the small isolated exercises you have been doing so far, the goal of this assignment is to give you the opportunity to create something a little larger and more complex.
 
 This assignment consists of 4 parts [1]_:
 
@@ -46,7 +46,7 @@ Now it's time for some encryption!
 
 In chapter 9, you might have worked on an exercise that asked you write a function called ``rot13``, which used the `Caesar Cipher`_ to encrypt a message. If you need a refresher, this is what the exercise said:
 
-    Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to ‘its right’ in the alphabet. So for example the letter a becomes the letter n. If a letter is past the middle of the alphabet then the counting wraps around to the letter a again, so n becomes a, o becomes b and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic.
+    Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message. The Caesar cipher works like a substitution cipher but each character is replaced by the character 13 characters to “its right” in the alphabet. So for example the letter “a” becomes the letter “n”. If a letter is past the middle of the alphabet then the counting wraps around to the letter “a” again, so “n” becomes “a”, “o” becomes “b” and so on. *Hint*: Whenever you talk about things wrapping around its a good idea to think of modulo arithmetic (using the remainder operator).
 
 The idea is to iterate over the message character by character, rotating each letter 13 places to the right. So for example:
 
@@ -110,7 +110,7 @@ values.
 .. note::
     You can assume that your input will definitely be a letter. Don't worry about what might happen if somebody tries to use your function with an input parameter that is something other than a single letter, like ``alphabet_position("grandpa22!")``
 
-When (you think) you are finished, the best way to test your function is to fire up the python shell in your terminal, and then import your file as a module:
+When (you think) you are finished, the best way to test your function is to fire up the Python shell in your terminal, and then import your file as a module:
 
 ::
 
@@ -295,7 +295,7 @@ Reusing your Caesar code
 
 You probably noticed that Vigenere is very similar to Caesar. The only difference is that the rotation amount varies throughout the course of the message.
 
-Whenever you find yourself in a situation like this--faced with a coding task that is very similar to one you did previously--your instinct should be to sniff around for ways to reuse the code you have already written. Ideally, all the work that is required by both tasks should be factored out into reusable components (like functions).
+Whenever you find yourself in a situation like this -- faced with a coding task that is very similar to one you did previously -- your instinct should be to sniff around for ways to reuse the code you have already written. Ideally, all the work that is required by both tasks should be factored out into reusable components (like functions).
 
 In this case, the majority of the logic that Vigenere has in common with Caesar is encapsulated in those two helper functions you wrote, ``alphabet_position`` and ``rotate_character``. Indeed, that is why we intentionally guided you down the path of writing those functions. You are going to find both of those functions equally helpful for implementing Vigenere.
 
@@ -353,7 +353,7 @@ If a function is only defined in one place, a particular file somewhere, then ho
 Now we should be able to use those functions! Try running ``python caesar.py`` again, and you should find that it works just like it did before.
 
 .. note::
-    In order for this to work, it is essential that ``helpers.py`` is in the same directory as ``caesar.py``.
+    In order for this to work, it is essential that ``helpers.py`` be in the same directory as ``caesar.py``.
 
 .. note::
     The technique we are using here is a little simpler than the way this is normally done. For larger projects, where the structure is a tree of folders within folders, there is a slightly more involved procedure for reusing code, which does not require both modules to live together in the same folder. If you're curious, you can read up more about creating modules in Python in the `Python module documentation`_.
@@ -415,8 +415,7 @@ Notice how, on the first line, the user included the number ``5`` as an *argumen
 
 In order to implement this feature, you obviously need some way of knowing, inside your ``caesar.py`` script, that the user typed the number ``5`` as a command-line argument.
 
-Conveniently enough, it just so happens that inside any Python program, you *do* have access to a list containing each of the words the user typed on the command line.
-This list of strings lives in a module called ``sys``, and has the variable name ``argv`` (short for "argument vector" ("vector" is another word for a list)).
+Conveniently enough, it just so happens that inside any Python program, you *do* have access to a list containing each of the words the user typed on the command line. This list of strings lives in a module called ``sys``, and has the variable name ``argv``, short for "argument vector" ("vector" is another word for a list).
 
 Try adding the following two lines to the beginning of your ``main`` function in your ``caesar.py`` file:
 
@@ -521,16 +520,16 @@ Below is an example of the Caesar program you are trying to achieve. In the exam
 
 4th time is the charm!
 
-To check if the argument is an integer, there is a string method called ``isdigit`` which you should use. It works just like ``isalpha``, but checks for integers rather than alphabetic characters:
+To check if the argument is an integer, there is a string method called ``is_digit`` which you should use. It works just like ``isalpha``, but checks for integers rather than alphabetic characters:
 
 ::
 
     $ python
-    >>> "grandpa".isdigit()
+    >>> "grandpa".is_digit()
     False
-    >>> "5.0".isdigit()
+    >>> "5.0".is_digit()
     False
-    >>> "5".isdigit()
+    >>> "5".is_digit()
     True
 
 To exit your program early, you can invoke the ``exit`` function, which is part of the ``sys`` module. Simply import the function by adding ``exit`` to your previous ``import`` statement:
@@ -609,12 +608,12 @@ Finally, as usual, click Submit!
 .. [1] This problem set is inspired by the original Crypto Pset in CS50, adopted for Python rather than C.
 
 .. _Caesar Cipher: https://en.wikipedia.org/wiki/Caesar_cipher#History_and_usage
-.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
+.. _The Accumulator Pattern: ../Strings/Loopingandcounting.html/#the-accumulator-pattern-with-strings
 .. _Functions Can Call Other Functions: ../Functions/Functionscancallotherfunctions.html
 .. _official documentation: https://docs.python.org/3/library/sys.html
 .. _this short video: https://www.youtube.com/watch?v=9zASwVoshiM&feature=youtu.be
 .. _Python module documentation: https://docs.python.org/3/tutorial/modules.html
 .. _Using Python Locally: ../ProblemSets/LocalPython.html
 .. _ASCII: http://www.asciitable.com
-.. _Submission: #submission
+.. _Submission: #submitting-your-work
 .. _as described: ../ProblemSets/Initials.html#make-it-importable

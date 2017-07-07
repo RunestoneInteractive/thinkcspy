@@ -38,7 +38,9 @@ To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
-#. Close and reopen your Terminal window for the changes to take effect. In the new Terminal window, run ``code`` to open VS Code.
+#. Launch VS Code
+#. Open the Command Palette (⇧⌘P) in VS Code and type 'shell command' to find the ``Shell Command: Install 'code' command in PATH command``. Select this and then quit VS Code (we'll relaunch it from the command line in the next step).
+#. Close and reopen your Terminal window for the changes to take effect. In the new Terminal window, run ``code`` to open VS Code. If you run into any problems with this, check out this article_ on VS Code setup.
 #. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension. If prompted to restart VS Code, do so.
 #. Add Visual Studio Code to your dock, just as you did with Terminal above.
 
@@ -80,3 +82,4 @@ Now you're ready work on the second part of `Initials`_.
 .. _Conda: https://conda.io/miniconda.html
 .. _Use Spotlight: https://support.apple.com/en-us/HT204014
 .. _Initials: Initials.html#part-2-initials
+.. _article: https://code.visualstudio.com/docs/setup/mac

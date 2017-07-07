@@ -15,9 +15,9 @@ Before we install Python on our computers, let's get familiar with the command l
 Install Git for Windows
 ***********************
 
-The first step is to install Git for Windows so that you can use Git Bash as your command line interface. We want to use this instead of Powershell, because Git Bash uses UNIX commands which are used on Linux and macOS command lines as well. Additionally, we'll use Git extensively later in the course.
+If you haven't already done this during **Unit 0: Coding Prep**, then the first step is to install Git for Windows so that you can use Git Bash as your command line interface. We want to use this instead of Powershell, because Git Bash uses UNIX commands which are used on Linux and macOS command lines as well. Additionally, we'll use Git extensively later in the course.
 
-Download `Git for Windows`_. On all the install modal screens, just choose the default options. Once you have downloaded it, you can open Git Bash to use the shell.
+Download `Git for Windows`_. On all the install modal screens, just choose all the default options. Once you have downloaded it, you can open Git Bash to use the shell.
 
 Practice the command line
 *************************

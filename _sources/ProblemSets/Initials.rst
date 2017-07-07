@@ -15,10 +15,7 @@ The assignment is broken into 2 parts:
     - Execute your Python file on the command line.
 
 2. `Initials`_
-    In part 2, you will get down to business creating the program described above. This will be just like one of the typical Exercises at the end of the chapters in this book. The only differences will be:
-
-    - You will be writing your code in a text editor and saving it locally on your computer.
-    - You will learn how to use a special function called ``__main__`` so that your program is organized with a clean separation of responsibilities.
+    In part 2, you will get down to business creating the program described above. This will be just like one of the typical Exercises at the end of the chapters in this book. The only difference is that you will be writing your code in a text editor and saving it locally on your computer.
 
 
 Part 1: Using Python Locally
@@ -31,6 +28,9 @@ In this section, you will learn how to interact with your computer using the com
 :ref:`Mac_Setup`
 
 :ref:`Linux_Setup`
+
+.. note::
+    If you have already completed our **Unit 0: Coding Prep**, then you have already practiced working on the command line. In this case, it is up to you to decide whether you'd like to do the command line practice suggested in these sections for review, or -- if you feel you're proficient on the command line -- to skip it.
 
 .. _initials_page:
 
@@ -111,7 +111,7 @@ Now you are finally ready to start coding! Inside your ``initials/`` folder, cre
 
     $ touch initials.py
 
-Open up that file in Visual Studio Code, and copy and paste in the following starter code:
+Open up that file in your text editor (e.g., Visual Studio Code), and copy and paste in the following starter code:
 
 .. sourcecode:: python
 
@@ -272,7 +272,7 @@ In effect, that conditional says:
 .. note::
     If you are curious about the ``if __name__ == '__main__':`` conditional, you can check out this `Stack Overflow post`_.
 
-Now we are good to go! The program works normally when run directly from the command-line, but if some other file imports it, the ``main`` function will not execute.
+Now we are good to go! The program works normally when run directly from the command-line, but if some other file imports it, the ``main`` function will not execute. All of this should be a review, since we have been using this structure throughout the book after learning about ``__main__`` in the Functions chapter. But it is especially important to follow this organization now that you are using Python locally and submitting entire files to Vocareum (more about this below).
 
 .. warning::
     Before you submit your work, it is important that you transform your ``initials.py`` code to reflect the example above. The grading script is going to ``import`` your file, and if you have a loose ``input`` statement at the global scope level, that statement is going to execute and wait forever for input from a non-existent user, and you will find yourself waiting a very long time for your grade.
@@ -280,13 +280,13 @@ Now we are good to go! The program works normally when run directly from the com
 How to Submit
 =============
 
-The submission process for this assignment is slightly **different** from that of your previous assignments. You will not be given a premade starter file into which you can paste your code. Instead, you must upload your own file into the workspace.
+The submission process for this assignment is slightly **different** from that of your previous assignments. You will not be given a pre-made starter file into which you can paste your code. Instead, you must upload your own file into the workspace.
 
 1. Click the *Upload* button on the top-left of the Vocareum window, and select your ``initials.py`` file.
 2. Click *Submit*!
 
 
-.. _The Accumulator Pattern: ../StringsContinued/TheAccumulatorPatternwithStrings.html
+.. _The Accumulator Pattern: ../Strings/Loopingandcounting.html/#the-accumulator-pattern-with-strings
 .. _Using Python Locally: #part-1-using-python-locally
 .. _Initials: #part-2-initials
 .. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
