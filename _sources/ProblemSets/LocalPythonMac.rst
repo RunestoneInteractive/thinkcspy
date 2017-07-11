@@ -50,10 +50,10 @@ Install Miniconda Python 3
 Now let's install Python 3 using Miniconda. Follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Mac 64-bit (bash installer) (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
-#. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
-#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. Accept all of the default options. If you view the license agreement, you'll have to page through using it using the spacebar.
-# Close and reopen your Terminal window for the changes to take effect.
-#. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
+2. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
+3. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. Accept all of the default options. If you view the license agreement, you'll have to page through using it using the spacebar.
+4.Close and reopen your Terminal window for the changes to take effect.
+5. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
 Make Your First Local Python Program
 ====================================
