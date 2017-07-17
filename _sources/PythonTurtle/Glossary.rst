@@ -27,6 +27,9 @@ Glossary
     for loop
         A construct in Python for convenient repetition of statements in the *body* of the loop.
 
+    import
+        The ``import`` statement is used to gain access to the code (e.g., classes and functions) contained in another module. It searches for the named module and binds the results of that search to a name in the current program (the one that is requesting the import). 
+
     instance
         An object that belongs to a class. E.g., ``tess`` and ``alex`` are different instances of the class ```Turtle``.
 
