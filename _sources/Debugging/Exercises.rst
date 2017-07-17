@@ -91,39 +91,35 @@ Weekly Graded Assignment
 
     You have a thermostat that allows you to set the room to any temperature between 40 and 89 degrees.
 
-    The thermostat can be adjusted by turning a circular dial. For instance, if the temperature is set to 50 degrees and you turn the dial 10 clicks toward the left, you will set the temperature to 40 degrees. But if you keep turning 1 click to the left it will circle back around to 89 degrees. If you are at 40 degrees and turn to the right by one click, you will get 41 degrees. As you continue to turn to the right, the temperature goes up, and the temperature gets closer and closer to 89 degrees. But as soon as you complete one full rotation (50 clicks), the temperature cycles back around to 40 degrees.
+    The thermostat can be adjusted by turning a circular dial. For instance, if the temperature is set to 50 degrees and you turn the dial 10 clicks toward the left, you will set the temperature to 40 degrees. But if you keep turning 1 click to the left (represented as -1) it will circle back around to 89 degrees. If you are at 40 degrees and turn to the right by one click, you will get 41 degrees. As you continue to turn to the right, the temperature goes up, and the temperature gets closer and closer to 89 degrees. But as soon as you complete one full rotation (50 clicks), the temperature cycles back around to 40 degrees.
 
-    Write a program that calculates the temperature based on how much the dial has been turned. You should prompt the user for a number of clicks-to-the-right (from the starting point of 40 degrees). Then you should print the current temperature.
+    Write a program that calculates the temperature based on how much the dial has been turned. The number of clicks (from the starting point of 40 degrees) is contained in a variable. You should print the current temperature for each given click variable so that your output is as follows: ::
 
-    Here is an example of how your program should behave (When you see `>>>`, that line represents what the user is typing in): ::
-
-        By how many clicks has the dial been turned?
-        >>> 0
         The temperature is 40
-
-        By how many clicks has the dial been turned?
-        >>> 24
-        The temperature is 64
-
-        By how many clicks has the dial been turned?
-        >>> 74
-        The temperature is 64
-
-        By how many clicks has the dial been turned?
-        >>> 49
         The temperature is 89
-
-        By how many clicks has the dial been turned?
-        >>> 51
+        The temperature is 64
         The temperature is 41
-
-        By how many clicks has the dial been turned?
-        >>> -1
         The temperature is 89
+        The temperature is 40
 
     .. activecode:: lc_ex_1_5
 
-        clicks_str = input("By how many clicks has the dial been turned?")
-        clicks = int(clicks_str)
+        #For each click variable, calculate the temperature and print it as shown in the instructions
 
+        click_1 = 0
+        # TODO calculate the temperature, and report it back to the user
+
+        click_2 = 49
+        # TODO calculate the temperature, and report it back to the user
+
+        click_3 = 74
+        # TODO calculate the temperature, and report it back to the user
+
+        click_4 = 51
+        # TODO calculate the temperature, and report it back to the user
+
+        click_5 = -1
+        # TODO calculate the temperature, and report it back to the user
+
+        click_6 = 200
         # TODO calculate the temperature, and report it back to the user

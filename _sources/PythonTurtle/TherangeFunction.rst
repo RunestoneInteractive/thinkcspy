@@ -73,7 +73,7 @@ Codelens will help us to further understand the way range works. In this case, t
 .. activecode:: rangeme
 
     for i in range(10):
-       print(i)
+        print(i)
 
 
 Finally, suppose we want to have a sequence of even numbers. How would we do that? Easy, we add another parameter, a ``step``, that tells range what to count by. Say that for even numbers we want to start at 0 and count by 2's. So if we wanted the first 10 *even* numbers we would use ``range(0,19,2)``. The most general form of the range is ``range(start, stop, step)``. You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.
