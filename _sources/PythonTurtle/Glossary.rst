@@ -28,7 +28,7 @@ Glossary
         A construct in Python for convenient repetition of statements in the *body* of the loop.
 
     import
-        The ``import`` statement is used to gain access to the code (e.g., classes and functions) contained in another module. It searches for the named module and binds the results of that search to a name in the current program (the one that is requesting the import). 
+        The ``import`` statement is used to gain access to the code (e.g., classes and functions) contained in another module. It searches for the named module and binds the results of that search to a name in the current program (the one that is requesting the import).
 
     instance
         An object that belongs to a class. E.g., ``tess`` and ``alex`` are different instances of the class ```Turtle``.
@@ -67,7 +67,7 @@ Glossary
 		  A function that will provide you with random numbers, usually between 0 and 1.
 
     range
-        A built-in function in Python for generating sequences of integers. It is especially useful when we need to write a for loop that executes a fixed number of times.
+        A built-in type in Python that is especially useful when we need to write a ``for`` loop.
 
     sequential
 		  The default behavior of a program. Step by step processing of algorithm.

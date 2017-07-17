@@ -101,7 +101,7 @@ Table of Contents
    PythonTurtle/TheforLoop.rst
    PythonTurtle/FlowofExecutionoftheforLoop.rst
    PythonTurtle/IterationSimplifiesourTurtleProgram.rst
-   PythonTurtle/TherangeFunction.rst
+   PythonTurtle/TherangeType.rst
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
    PythonTurtle/modules.rst
