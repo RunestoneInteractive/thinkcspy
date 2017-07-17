@@ -27,7 +27,7 @@ We're going to use Appendix A from the online book *Learn Python the Hard Way* (
 Installing and Running Python Locally
 =====================================
 
-By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool.
+By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool. Please follow all of the instructions below *exactly*.
 
 Install a code editor
 *********************
@@ -46,9 +46,17 @@ Install Miniconda Python 3
 Now let's install Python 3 using Miniconda. Follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Windows 64-bit installer (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
-#. When you open the installer for Miniconda, after agreeing to the terms, you'll see a screen that says "Install for: ". Select the button that says "All Users" and then click "Next" to carry on with the installation process.
-#. Verify that Python 3 installed correctly by opening Git Bash and typing ``python -V``. It should print to the screen the version of Python you just installed.
-#. Now, close and reopen Git Bash again and enter the following commands into your shell: ``cd ~`` and press Enter, and then ``touch .bashrc`` and press Enter, and then ``start .bashrc`` and press Enter. The ``.bashrc`` file will open in a text editor. Enter this line into the file exactly as it appears: ``alias python='winpty python.exe'`` then save and close the file. Back on the command line, enter ``source .bashrc`` and press Enter. You may see a message about ``.bashrc`` and ``bash_profile``; that's all good.
+#. When you open the installer for Miniconda, after agreeing to the terms, you'll see a screen that says "Install for: ". Select the button that says "All Users" and then click "Next" to carry on with the installation process. **Accept all of the default options** during this process.
+#. Now, **close and reopen** Git Bash for the changes to take effect.
+#. Verify that Python 3 installed correctly by typing ``python -V``. It should print to the screen the version of Python you just installed.
+#. Enter the following commands into Git Bash:
+
+   1. ``cd ~`` and press Enter.
+   #. ``touch .bashrc`` and press Enter.
+   #. ``start .bashrc`` and press Enter.
+
+   The ``.bashrc`` file will open in a text editor. Enter this line into the file exactly as it appears here: ``alias python='winpty python.exe'`` then save and close the file.
+#. Back on the command line, enter ``source .bashrc`` and press Enter. You may see a message about *.bashrc* and *bash_profile*; that's all good.
 
 Make Your First Local Python Program
 ====================================

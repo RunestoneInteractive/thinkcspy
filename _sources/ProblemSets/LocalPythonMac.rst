@@ -27,7 +27,7 @@ We're going to use Appendix A from the online book *Learn Python the Hard Way* (
 Installing and Running Python Locally
 =====================================
 
-By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool.
+By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool. Please follow all of the install instructions below *exactly*.
 
 Install a code editor
 *********************
@@ -38,7 +38,7 @@ To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
 #. Double click the downloaded file and follow the installer instructions (the default selections are fine).
-#. Launch VS Code
+#. Launch VS Code.
 #. Open the Command Palette (⇧⌘P) in VS Code and type 'shell command' to find the ``Shell Command: Install 'code' command in PATH command``. Select this and then quit VS Code (we'll relaunch it from the command line in the next step).
 #. Close and reopen your Terminal window for the changes to take effect. In the new Terminal window, run ``code`` to open VS Code. If you run into any problems with this, check out this article_ on VS Code setup.
 #. Select *View > Extensions* within VS Code. In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension. If prompted to restart VS Code, do so.
@@ -50,10 +50,10 @@ Install Miniconda Python 3
 Now let's install Python 3 using Miniconda. Follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Mac 64-bit (bash installer) (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
-2. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
-3. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. Accept all of the default options. If you view the license agreement, you'll have to page through using it using the spacebar.
-4.Close and reopen your Terminal window for the changes to take effect.
-5. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
+#. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``.
+#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. **Accept all of the default options**. If you view the license agreement, you'll have to page through using it using the spacebar.
+#. **Close and reopen your Terminal window for the changes to take effect**.
+#. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
 Make Your First Local Python Program
 ====================================

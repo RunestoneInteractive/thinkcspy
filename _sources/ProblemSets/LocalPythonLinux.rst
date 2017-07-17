@@ -30,7 +30,7 @@ We're going to use Appendix A from the online book *Learn Python the Hard Way* (
 Installing and Running Python Locally
 =====================================
 
-By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool.
+By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool. Please follow all of the instructions below *exactly*.
 
 Install a code editor
 *********************
@@ -53,7 +53,7 @@ Now let's install Python 3 using Miniconda. Follow these steps:
 1. Go to Conda_ and download the Miniconda "Python 3.6" Linux 64-bit (bash installer) (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
 #. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``
 #. Run the installer script: ``bash Miniconda3-latest-Linux-x86_64.sh``. When asked if you want to prepend your path in `.bashrc` with the Miniconda Python path, enter "yes".
-#. Close and reopen your Terminal window for the changes to take effect.
+#. **Close and reopen** your Terminal window for the changes to take effect.
 #. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
 Make Your First Local Python Program
