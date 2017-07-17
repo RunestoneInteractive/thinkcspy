@@ -255,8 +255,8 @@ Exercises
 
         ::
 
-            What is the temperature in Farenheit?
+            What is the temperature in Fahrenheit?
             >>> 32
-            32.0 degrees Farenheit is 0.0 degrees Celsius.
+            32.0 degrees Fahrenheit is 0.0 degrees Celsius.
 
         .. activecode:: ex_2_12
