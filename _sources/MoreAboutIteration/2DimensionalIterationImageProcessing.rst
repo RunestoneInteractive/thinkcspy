@@ -47,7 +47,7 @@ Here are the red, green and blue intensities for some common colors. Note that "
 	Magenta  255      0        255
 	=======  =======  =======  =======
 
-In order to manipulate an image, we need to be able to access individual pixels. This capability is provided by a module called **image**. The image module defines two classes: ``Image`` and ``Pixel``.
+In order to manipulate an image, we need to be able to access individual pixels. This capability is provided by a module called **image**. The image module we will use --- which is *not* a standard Python module --- defines two classes: ``Image`` and ``Pixel``.
 
 Each Pixel object has three attributes: the red intensity, the green intensity, and the blue intensity. A pixel provides three methods that allow us to ask for the intensity values. They are called ``getRed``, ``getGreen``, and ``getBlue``.  In addition, we can ask a pixel to change an intensity value using its ``setRed``, ``setGreen``, and ``setBlue`` methods.
 
@@ -346,7 +346,7 @@ What remains is to focus on ways that we can better represent our problems in te
    :feedback_c: If you remove the blue and green values from the pixels, the image will look different, even though there does not appear to be any blue or green in the original image (remember that other colors are made of combinations of red, green and blue).
    :feedback_d: Because we have changed the value of the pixels from what they were in the original ActiveCode box code, the image will not be the same.
 
-   What would the image produced from ActiveCode box 16 look like if you replaced the lines:
+   What would the image produced from the previous ActiveCode look like if you replaced the lines:
 
    .. code-block:: python
 

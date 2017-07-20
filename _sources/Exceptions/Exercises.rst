@@ -350,7 +350,7 @@ These next several problems are variations on a theme. Each will have you return
 
         .. tab:: Question
 
-            Write a function ``space_line(spaches, hashes)`` that returns a line with exactly the specified number of spaces, followed by the specified number of hashes.
+            Write a function ``space_line(spaces, hashes)`` that returns a line with exactly the specified number of spaces, followed by the specified number of hashes.
 
             **Example:**
               ``print(space_line(3,5))``

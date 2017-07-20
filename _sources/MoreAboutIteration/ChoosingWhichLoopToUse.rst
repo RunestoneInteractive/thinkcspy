@@ -94,7 +94,7 @@ Another example of a time when it makes sense to use a ``while`` loop is in the 
     if __name__ == "__main__":
         main()
 
-Notice that just as we had to increment ``num`` in our ``while`` loop example of the accumulator pattern, we also have to prompt the user for input again *within the body* of the ``while`` loop to avoid an infinite loop. Otherwise the program will keep printing the results of ``flip_coin()`` indefinitely.
+Notice that just as we had to increment ``num`` in our ``while`` loop example of the accumulator pattern a few pages back in Section 3 of this chapter, we also have to prompt the user for input again *within the body* of the ``while`` loop to avoid an infinite loop. Otherwise the program will keep printing the results of ``flip_coin()`` indefinitely.
 
 Choosing Between for and while
 ===============================

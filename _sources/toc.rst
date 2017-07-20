@@ -201,7 +201,7 @@ Table of Contents
    MoreAboutIteration/ThewhileStatement.rst
    MoreAboutIteration/breakandcontinueStatements.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
-   MoreAboutIteration/The3n1Sequence.rst
+   MoreAboutIteration/ChoosingWhichLoopToUse.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
    MoreAboutIteration/Glossary.rst

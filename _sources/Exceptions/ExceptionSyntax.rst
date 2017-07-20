@@ -93,6 +93,6 @@ Here is a typical example of file processing. Note that the outer ``try: except:
       finally:
           f.close()
   except IOError:
-      print "Error: my_file.txt does not exist or it can't be opened for output."
+      print("Error: my_file.txt does not exist or it can't be opened for output.")
 
 .. index:: exception syntax, exception

@@ -275,11 +275,11 @@ Exercises
 
                         for col in range(input_image.getWidth()):
                             for row in range(input_image.getHeight()):
-                                p = input_image.getPixel(col, row)
+                                original_pixel = input_image.getPixel(col, row)
 
-                                red = p.getRed()
-                                green = p.getGreen()
-                                blue = p.getBlue()
+                                red = original_pixel.getRed()
+                                green = original_pixel.getGreen()
+                                blue = original_pixel.getBlue()
 
                                 avg = (red + green + blue) / 3.0
 
@@ -289,8 +289,8 @@ Exercises
                         black_white_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
                         for col in range(input_image.getWidth()):
                             for row in range(input_image.getHeight()):
-                                p = grayscale_image.getPixel(col, row)
-                                red = p.getRed()
+                                original_pixel = grayscale_image.getPixel(col, row)
+                                red = original_pixel.getRed()
                                 if red > 140:
                                     val = 255
                                 else:
