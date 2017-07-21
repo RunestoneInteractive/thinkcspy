@@ -1,3 +1,5 @@
+.. index:: install Python locally, accumulator pattern, __name__, project directory
+
 Initials
 ---------
 
@@ -286,7 +288,7 @@ The submission process for this assignment is slightly **different** from that o
 2. Click *Submit*!
 
 
-.. _The Accumulator Pattern: ../Strings/Loopingandcounting.html/#the-accumulator-pattern-with-strings
+.. _The Accumulator Pattern: ../Strings/Loopingandcounting.html#the-accumulator-pattern-with-strings
 .. _Using Python Locally: #part-1-using-python-locally
 .. _Initials: #part-2-initials
 .. _Stack Overflow post: http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185
