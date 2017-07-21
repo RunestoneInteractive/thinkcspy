@@ -25,7 +25,7 @@ finger to point to each statement in turn.  So you could think of control flow
 as "Python's moving finger".
 
 Control flow until now has been strictly top to bottom, one statement at a
-time.  We call this type of control **sequential**.  In Pythion flow is sequential as long as
+time.  We call this type of control **sequential**.  In Python flow is sequential as long as
 successive statements are indented the *same* amount.  The ``for`` statement 
 introduces indented sub-statements after the for-loop heading.
 
