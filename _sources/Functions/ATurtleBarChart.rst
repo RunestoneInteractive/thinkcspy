@@ -13,6 +13,8 @@
 
 .. index:: bar chart
 
+.. _bar_chart:
+
 A Turtle Bar Chart
 ------------------
 

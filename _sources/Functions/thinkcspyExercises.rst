@@ -551,3 +551,13 @@ Exercises
             .. disqus::
                 :shortname: interactivepython
                 :identifier: db5d8808bf5749579718bdd2088b539f
+
+.. question:: functions_ex_18
+
+   There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
+
+   The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
+
+   .. actex:: ex_5_18
+
+
