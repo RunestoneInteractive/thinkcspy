@@ -51,18 +51,18 @@ The values [0,1,2,3] were provided to make the loop body execute 4 times. We cou
 In the previous example, there were four integers in the list. This time there are four strings. Since there are four items in the list, the iteration will still occur four times.  The ``a_color`` variable will be assigned each color in the list. We can even take this one step further and use the value of ``a_color`` as part of the computation.
 
 .. activecode:: colorlist
-    :nocodelens:
+   :nocodelens:
 
-    import turtle            # set up alex
-    wn = turtle.Screen()
-    alex = turtle.Turtle()
+   import turtle            # set up alex
+   wn = turtle.Screen()
+   alex = turtle.Turtle()
 
-    for a_color in ["yellow", "red", "purple", "blue"]:
+   for a_color in ["yellow", "red", "purple", "blue"]:
        alex.color(a_color)
        alex.forward(50)
        alex.left(90)
 
-    wn.exitonclick()
+   wn.exitonclick()
 
 In this case, the value of ``a_color`` is used to change the color attribute of ``alex``.  Each iteration causes ``a_color`` to change to the next value in the list.
 
