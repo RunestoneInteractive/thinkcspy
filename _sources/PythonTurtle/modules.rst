@@ -18,17 +18,17 @@ A **module** is a file containing Python definitions and statements intended for
 
 
 .. activecode:: chmod_01
-    :nocodelens:
+   :nocodelens:
 
-    import turtle            # allows us to use the turtles library
+   import turtle            # allows us to use the turtles library
 
-    wn = turtle.Screen()     # creates a graphics window
-    alex = turtle.Turtle()   # create a turtle named alex
+   wn = turtle.Screen()     # creates a graphics window
+   alex = turtle.Turtle()   # create a turtle named alex
 
-    alex.forward(150)        # tell alex to move forward by 150 units
-    alex.left(90)            # turn by 90 degrees
-    alex.forward(75)         # complete the second side of a rectangle
-    wn.exitonclick()
+   alex.forward(150)        # tell alex to move forward by 150 units
+   alex.left(90)            # turn by 90 degrees
+   alex.forward(75)         # complete the second side of a rectangle
+   wn.exitonclick()
 
 
 Here we are using ``Screen`` and ``Turtle``, both of which are defined inside the turtle module.

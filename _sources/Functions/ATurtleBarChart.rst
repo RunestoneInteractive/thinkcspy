@@ -61,42 +61,42 @@ While we're at it, we should make the window fit the data. The tallest bar will 
 Here is the complete program. Try it and then change the data to see that it can adapt to the new values. Note also that we have stored the data values in a list and used a few list functions. Don't worry that they are unfamiliar to you now. We will have much more to say about lists in a later chapter.
 
 .. activecode:: ch05_barchart
-  :nocodelens:
+   :nocodelens:
 
-  import turtle
+   import turtle
 
-  def draw_bar(t, height):
-      """ Get turtle t to draw one bar, of height. """
-      t.begin_fill()               # start filling this shape
-      t.left(90)
-      t.forward(height)
-      t.write(str(height))
-      t.right(90)
-      t.forward(40)
-      t.right(90)
-      t.forward(height)
-      t.left(90)
-      t.end_fill()                 # stop filling this shape
+   def draw_bar(t, height):
+       """ Get turtle t to draw one bar, of height. """
+       t.begin_fill()               # start filling this shape
+       t.left(90)
+       t.forward(height)
+       t.write(str(height))
+       t.right(90)
+       t.forward(40)
+       t.right(90)
+       t.forward(height)
+       t.left(90)
+       t.end_fill()                 # stop filling this shape
 
-  def main():
-      data = [48, 117, 200, 240, 160, 260, 220]
-      max_height = max(data)
-      num_bars = len(data)
-      border = 10
+   def main():
+       data = [48, 117, 200, 240, 160, 260, 220]
+       max_height = max(data)
+       num_bars = len(data)
+       border = 10
 
-      wn = turtle.Screen()             # Set up the window and its attributes
-      wn.setworldcoordinates(0-border, 0-border, 40 * num_bars + border, max_height + border)
-      wn.bgcolor("lightgreen")
+       wn = turtle.Screen()             # Set up the window and its attributes
+       wn.setworldcoordinates(0-border, 0-border, 40 * num_bars + border, max_height + border)
+       wn.bgcolor("lightgreen")
 
-      tess = turtle.Turtle()           # create tess and set some attributes
-      tess.color("blue")
-      tess.fillcolor("red")
-      tess.pensize(3)
+       tess = turtle.Turtle()           # create tess and set some attributes
+       tess.color("blue")
+       tess.fillcolor("red")
+       tess.pensize(3)
 
-      for x in data:
-          draw_bar(tess, x)
+       for x in data:
+           draw_bar(tess, x)
 
-      wn.exitonclick()
+       wn.exitonclick()
 
-  if __name__ == "__main__":
-      main()
+   if __name__ == "__main__":
+       main()

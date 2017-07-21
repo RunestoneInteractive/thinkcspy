@@ -16,62 +16,63 @@ Exercises
                 .. image:: Figures/five_squares.png
 
                 .. activecode:: ex_5_1
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    def draw_square(t, sz):
-                        """Get turtle t to draw a square with sz side"""
+                   def draw_square(t, sz):
+                       """Get turtle t to draw a square with sz side"""
 
-                        for i in range(4):
-                            t.forward(sz)
-                            t.left(90)
+                       for i in range(4):
+                           t.forward(sz)
+                           t.left(90)
 
-                    def main():
-                        wn = turtle.Screen()
-                        wn.bgcolor("lightgreen")
+                   def main():
+                       wn = turtle.Screen()
+                       wn.bgcolor("lightgreen")
 
-                        alex = turtle.Turtle()
-                        alex.color("pink")
+                       alex = turtle.Turtle()
+                       alex.color("pink")
 
-                        draw_square(alex,20)
+                       draw_square(alex,20)
 
-                        wn.exitonclick()
+                       wn.exitonclick()
 
-                    if __name__ == "__main__":
-                        main()
-
+                   if __name__ == "__main__":
+                       main()
 
 
             .. tab:: Answer
 
                 .. activecode:: q1_answer
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    def draw_square(t, sz):
-                        """Make turtle t draw a square with side sz."""
-                        for i in range(4):
-                            t.forward(sz)
-                            t.left(90)
+                   def draw_square(t, sz):
+                       """Make turtle t draw a square with side sz."""
+                       for i in range(4):
+                           t.forward(sz)
+                           t.left(90)
 
-                    def main():
-                        wn = turtle.Screen()       # Set up the window and its attributes
-                        wn.bgcolor("lightgreen")
+                   def main():
+                       wn = turtle.Screen()       # Set up the window and its attributes
+                       wn.bgcolor("lightgreen")
 
-                        alex = turtle.Turtle()     # create alex
-                        alex.color('hotpink')
-                        alex.pensize(3)
+                       alex = turtle.Turtle()     # create alex
+                       alex.color('hotpink')
+                       alex.pensize(3)
 
-                        for i in range(5):
-                            draw_square(alex, 20)   # Call the function to draw the square
-                            alex.penup()
-                            alex.forward(40)       # move alex to the starting position for the next square
-                            alex.pendown()
+                       for i in range(5):
+                           draw_square(alex, 20)   # Call the function to draw the square
+                           alex.penup()
+                           alex.forward(40)       # move alex to the starting position for the next square
+                           alex.pendown()
 
-                        wn.exitonclick()
+                       wn.exitonclick()
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
     #.  Write a program to draw this. Assume the innermost square is 20 units per side and each successive square is 20 units bigger, per side, than the one inside it.
 
@@ -141,48 +142,49 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q5_answer
+                   :nocodelens:
 
-                    import turtle
-                    import sys
+                   import turtle
+                   import sys
 
-                    sys.setExecutionLimit(35000)
+                   sys.setExecutionLimit(35000)
 
-                    def draw_spiral(t, angle):
-                        ''' takes a turtle, t, and an angle in degrees '''
-                        length = 1
-                        for i in range(84):
-                            t.forward(length)
-                            t.right(angle)
-                            length = length + 2
+                   def draw_spiral(t, angle):
+                       ''' takes a turtle, t, and an angle in degrees '''
+                       length = 1
+                       for i in range(84):
+                           t.forward(length)
+                           t.right(angle)
+                           length = length + 2
 
-                    def main():
-                        wn = turtle.Screen()       # Set up the window and its attributes
-                        wn.bgcolor("lightgreen")
+                   def main():
+                       wn = turtle.Screen()       # Set up the window and its attributes
+                       wn.bgcolor("lightgreen")
 
-                        guido = turtle.Turtle()    # create guido
-                        guido.color('blue')
-                        guido.speed(10)
+                       guido = turtle.Turtle()    # create guido
+                       guido.color('blue')
+                       guido.speed(10)
 
-                        ## draw the first spiral ##
-                        # position guido
-                        guido.penup()
-                        guido.backward(110)
-                        guido.pendown()
+                       ## draw the first spiral ##
+                       # position guido
+                       guido.penup()
+                       guido.backward(110)
+                       guido.pendown()
 
-                        # draw the spiral using a 90 degree turn angle
-                        draw_spiral(guido, 90)
+                       # draw the spiral using a 90 degree turn angle
+                       draw_spiral(guido, 90)
 
-                        ## draw the second spiral ##
-                        # position guido
-                        guido.penup()
-                        guido.home()
-                        guido.forward(90)
-                        guido.pendown()
+                       ## draw the second spiral ##
+                       # position guido
+                       guido.penup()
+                       guido.home()
+                       guido.forward(90)
+                       guido.pendown()
 
-                        draw_spiral(guido, 89)
+                       draw_spiral(guido, 89)
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
     #.  Write a non-fruitful function ``draw_equi_triangle(turtle, size)`` which calls ``draw_poly`` from the question above to have its turtle draw an equilateral triangle.
 
@@ -238,20 +240,21 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q9_answer
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    def draw_star(t):
-                        for i in range(5):
-                            t.forward(100)
-                            t.left(216)
+                   def draw_star(t):
+                       for i in range(5):
+                           t.forward(100)
+                           t.left(216)
 
-                    def main():
-                        wolfram = turtle.Turtle()
-                        draw_star(wolfram)
+                   def main():
+                       wolfram = turtle.Turtle()
+                       draw_star(wolfram)
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
     #.  Extend your program above. Draw five stars, but between each, pick up the pen, move forward by 350 units, turn right by 144, put the pen down, and draw the next star. You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
 
@@ -276,20 +279,21 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q11_answer
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    def draw_star(t, n):
-                        for i in range(n):
-                            t.forward(100)
-                            t.left(180 - 180/n)
+                   def draw_star(t, n):
+                       for i in range(n):
+                           t.forward(100)
+                           t.left(180 - 180/n)
 
-                    def main():
-                        sam = turtle.Turtle()
-                        draw_star(sam, 7)
+                   def main():
+                       sam = turtle.Turtle()
+                       draw_star(sam, 7)
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
 
     #.  Write a function called ``draw_sprite`` that will draw a sprite. The function will need parameters for the turtle, the number of legs, and the length of the legs. Invoke the function to create a sprite  with 15 legs of length 120.
@@ -346,33 +350,34 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q14_answer
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    def draw_sprite(t, legs, leg_length):
-                        angle = 360/legs
-                        for i in range(legs):
-                            t.forward(leg_length)
-                            t.backward(leg_length)
-                            t.left(angle)
+                   def draw_sprite(t, legs, leg_length):
+                       angle = 360/legs
+                       for i in range(legs):
+                           t.forward(leg_length)
+                           t.backward(leg_length)
+                           t.left(angle)
 
-                    def fancy_square(t, sz, lgs, lgl):
-                        for i in range(4):
-                            t.forward(sz)
-                            draw_sprite(t, lgs, lgl)
-                            t.left(90)
+                   def fancy_square(t, sz, lgs, lgl):
+                       for i in range(4):
+                           t.forward(sz)
+                           draw_sprite(t, lgs, lgl)
+                           t.left(90)
 
-                    def main():
-                        wn = turtle.Screen()
-                        wn.bgcolor("lightgreen")
+                   def main():
+                       wn = turtle.Screen()
+                       wn.bgcolor("lightgreen")
 
-                        alex = turtle.Turtle()
-                        fancy_square(alex, 100, 10, 15)
+                       alex = turtle.Turtle()
+                       fancy_square(alex, 100, 10, 15)
 
-                        wn.exitonclick()
+                       wn.exitonclick()
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
 
 Weekly Graded Assignment

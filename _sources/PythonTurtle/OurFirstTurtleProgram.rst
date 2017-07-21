@@ -21,14 +21,14 @@ Let's write some lines of Python code to create a new turtle and start drawing a
 The program as shown will only draw the first two sides of the rectangle. After line 4 you will have a straight line going from the center of the drawing canvas towards the right. After line 6, you will have a canvas with a turtle and a half drawn rectangle. Press the run button to try it and see.
 
 .. activecode:: ch03_1
-    :nocodelens:
+   :nocodelens:
 
-    import turtle            	# allows us to use the turtles library
-    wn = turtle.Screen()    	# creates a graphics window
-    alex = turtle.Turtle()   	# create a turtle named alex
-    alex.forward(150)        	# tell alex to move forward by 150 units
-    alex.left(90)           	# turn by 90 degrees
-    alex.forward(75)         	# complete the second side of a rectangle
+   import turtle            	# allows us to use the turtles library
+   wn = turtle.Screen()    	# creates a graphics window
+   alex = turtle.Turtle()   	# create a turtle named alex
+   alex.forward(150)        	# tell alex to move forward by 150 units
+   alex.left(90)           	# turn by 90 degrees
+   alex.forward(75)         	# complete the second side of a rectangle
 
 
 
@@ -112,22 +112,22 @@ The color of the turtle, the width of its pen(tail), the position of the turtle 
 Quite a number of methods exist that allow us to modify the turtle and screen objects. In the example below, we show just a couple and have only commented on those lines that are different from the previous example. Note also that we have decided to call our turtle object ``tess``.
 
 .. activecode:: ch03_2
-    :nocodelens:
+   :nocodelens:
 
-    import turtle
+   import turtle
 
-    wn = turtle.Screen()
-    wn.bgcolor("lightgreen")        # set the window background color
+   wn = turtle.Screen()
+   wn.bgcolor("lightgreen")        # set the window background color
 
-    tess = turtle.Turtle()
-    tess.color("blue")              # make tess blue
-    tess.pensize(3)                 # set the width of her pen
+   tess = turtle.Turtle()
+   tess.color("blue")              # make tess blue
+   tess.pensize(3)                 # set the width of her pen
 
-    tess.forward(150)
-    tess.left(120)
-    tess.forward(150)
+   tess.forward(150)
+   tess.left(120)
+   tess.forward(150)
 
-    wn.exitonclick()                # wait for a user click on the canvas
+   wn.exitonclick()                # wait for a user click on the canvas
 
 
 The last line plays a very important role. The ``wn`` variable refers to the window shown above. When we invoke its ``exitonclick`` method, the program pauses execution and waits for the user to click the mouse somewhere in the window. When this click event occurs, the response is to close the turtle window and exit (stop execution of) the Python program.

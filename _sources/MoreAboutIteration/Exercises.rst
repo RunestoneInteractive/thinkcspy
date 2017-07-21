@@ -25,7 +25,7 @@ Exercises
        (*Hint: use a web search to find out what a triangular number is.*)
 
        .. activecode:: ex_iter_triangle
-
+          :nocodelens:
 
     #. Modify the walking turtle program so that rather than a 90 degree left or right turn the angle of the turn is determined randomly at each step.
 
@@ -47,75 +47,75 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q3_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import random
-                    import turtle
+                   import random
+                   import turtle
 
-                    def move_random(wn, t):
-                        coin = random.randrange(0,2)
-                        if coin == 0:
-                            t.left(90)
-                        else:
-                            t.right(90)
+                   def move_random(wn, t):
+                       coin = random.randrange(0,2)
+                       if coin == 0:
+                           t.left(90)
+                       else:
+                           t.right(90)
 
-                        t.forward(50)
+                       t.forward(50)
 
-                    def are_colliding(t1, t2):
-                        if t1.distance(t2) < 2:
-                            return True
-                        else:
-                            return False
+                   def are_colliding(t1, t2):
+                       if t1.distance(t2) < 2:
+                           return True
+                       else:
+                           return False
 
-                    def is_in_screen(w, t):
-                        left_bound = - w.window_width() / 2
-                        right_bound = w.window_width() / 2
-                        top_bound = w.window_height() / 2
-                        bottom_bound = -w.window_height() / 2
+                   def is_in_screen(w, t):
+                       left_bound = - w.window_width() / 2
+                       right_bound = w.window_width() / 2
+                       top_bound = w.window_height() / 2
+                       bottom_bound = -w.window_height() / 2
 
-                        turtleX = t.xcor()
-                        turtleY = t.ycor()
+                       turtle_x = t.xcor()
+                       turtle_y = t.ycor()
 
-                        still_in = True
-                        if turtleX > right_bound or turtleX < left_bound:
-                            still_in = False
-                        if turtleY > top_bound or turtleY < bottom_bound:
-                            still_in = False
-                        return still_in
+                       still_in = True
+                       if turtle_x > right_bound or turtle_x < left_bound:
+                           still_in = False
+                       if turtle_y > top_bound or turtle_y < bottom_bound:
+                           still_in = False
+                       return still_in
 
-                    def main():
-                        t1 = turtle.Turtle()
-                        t2 = turtle.Turtle()
-                        wn = turtle.Screen()
+                   def main():
+                       t1 = turtle.Turtle()
+                       t2 = turtle.Turtle()
+                       wn = turtle.Screen()
 
-                        t1.shape('turtle')
-                        t2.shape('circle')
+                       t1.shape('turtle')
+                       t2.shape('circle')
 
-                        left_bound = -wn.window_width() / 2
-                        right_bound = wn.window_width() / 2
-                        top_bound = wn.window_height() / 2
-                        bottom_bound = -wn.window_height() / 2
+                       left_bound = -wn.window_width() / 2
+                       right_bound = wn.window_width() / 2
+                       top_bound = wn.window_height() / 2
+                       bottom_bound = -wn.window_height() / 2
 
-                        t1.up()
-                        t1.goto(random.randrange(left_bound, right_bound),
-                                random.randrange(bottom_bound, top_bound))
-                        t1.setheading(random.randrange(0, 360))
-                        t1.down()
+                       t1.up()
+                       t1.goto(random.randrange(left_bound, right_bound),
+                               random.randrange(bottom_bound, top_bound))
+                       t1.setheading(random.randrange(0, 360))
+                       t1.down()
 
-                        t2.up()
-                        t2.goto(random.randrange(left_bound, right_bound),
-                                random.randrange(bottom_bound, top_bound))
-                        t2.setheading(random.randrange(0, 360))
-                        t2.down()
+                       t2.up()
+                       t2.goto(random.randrange(left_bound, right_bound),
+                               random.randrange(bottom_bound, top_bound))
+                       t2.setheading(random.randrange(0, 360))
+                       t2.down()
 
-                        while is_in_screen(wn, t1) and is_in_screen(wn, t2):
-                            move_random(wn, t1)
-                            move_random(wn, t2)
+                       while is_in_screen(wn, t1) and is_in_screen(wn, t2):
+                           move_random(wn, t1)
+                           move_random(wn, t2)
 
-                        wn.exitonclick()
+                       wn.exitonclick()
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
 
     #. Modify the previous turtle walk program so that the turtle turns around when it hits the wall or when one turtle collides with another turtle.
@@ -178,30 +178,30 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q5_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import sys
+                   import sys
 
-                    def workout_coach(lift_name, wt):
-                        print("Time to", lift_name, wt, "pounds! You got this!")
+                   def workout_coach(lift_name, wt):
+                       print("Time to", lift_name, wt, "pounds! You got this!")
 
-                    def main():
-                        sys.setExecutionLimit(120000)
-                        lifts = ["squat", "bench", "deadlift"]
-                        for lift in lifts:
-                            keep_lifting = "yes"
-                            weight = 0
-                            input_prompt = "Keep doing the " + lift + "? Enter yes for the next set."
-                            while keep_lifting == "yes":
-                                weight = weight + 10
-                                if lift == "bench" and weight > 200:
-                                    break
-                                else:
-                                    workout_coach(lift, weight)
-                                keep_lifting = input(input_prompt)
+                   def main():
+                       sys.setExecutionLimit(120000)
+                       lifts = ["squat", "bench", "deadlift"]
+                       for lift in lifts:
+                           keep_lifting = "yes"
+                           weight = 0
+                           input_prompt = "Keep doing the " + lift + "? Enter yes for the next set."
+                           while keep_lifting == "yes":
+                               weight = weight + 10
+                               if lift == "bench" and weight > 200:
+                                   break
+                               else:
+                                   workout_coach(lift, weight)
+                               keep_lifting = input(input_prompt)
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
     #.
 
@@ -223,28 +223,28 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q6_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import image
+                   import image
 
-                    img = image.Image("luther.jpg")
-                    new_img = image.EmptyImage(img.getWidth(), img.getHeight())
-                    win = image.ImageWin(img.getWidth(), img.getHeight())
+                   img = image.Image("luther.jpg")
+                   new_img = image.EmptyImage(img.getWidth(), img.getHeight())
+                   win = image.ImageWin(img.getWidth(), img.getHeight())
 
-                    for col in range(img.getWidth()):
-                        for row in range(img.getHeight()):
-                            p = img.getPixel(col, row)
+                   for col in range(img.getWidth()):
+                       for row in range(img.getHeight()):
+                           p = img.getPixel(col, row)
 
-                            new_red = 0
-                            green = p.getGreen()
-                            blue = p.getBlue()
+                           new_red = 0
+                           green = p.getGreen()
+                           blue = p.getBlue()
 
-                            new_pixel = image.Pixel(new_red, green, blue)
+                           new_pixel = image.Pixel(new_red, green, blue)
 
-                            new_img.setPixel(col, row, new_pixel)
+                           new_img.setPixel(col, row, new_pixel)
 
-                    new_img.draw(win)
-                    win.exitonclick()
+                   new_img.draw(win)
+                   win.exitonclick()
 
 
     #. Write a function to convert the image to grayscale.
@@ -266,51 +266,51 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q8_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import image
+                   import image
 
-                    def convert_black_white(input_image):
-                        grayscale_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
+                   def convert_black_white(input_image):
+                       grayscale_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
 
-                        for col in range(input_image.getWidth()):
-                            for row in range(input_image.getHeight()):
-                                original_pixel = input_image.getPixel(col, row)
+                       for col in range(input_image.getWidth()):
+                           for row in range(input_image.getHeight()):
+                               original_pixel = input_image.getPixel(col, row)
 
-                                red = original_pixel.getRed()
-                                green = original_pixel.getGreen()
-                                blue = original_pixel.getBlue()
+                               red = original_pixel.getRed()
+                               green = original_pixel.getGreen()
+                               blue = original_pixel.getBlue()
 
-                                avg = (red + green + blue) / 3.0
+                               avg = (red + green + blue) / 3.0
 
-                                new_pixel = image.Pixel(avg, avg, avg)
-                                grayscale_image.setPixel(col, row, new_pixel)
+                               new_pixel = image.Pixel(avg, avg, avg)
+                               grayscale_image.setPixel(col, row, new_pixel)
 
-                        black_white_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
-                        for col in range(input_image.getWidth()):
-                            for row in range(input_image.getHeight()):
-                                original_pixel = grayscale_image.getPixel(col, row)
-                                red = original_pixel.getRed()
-                                if red > 140:
-                                    val = 255
-                                else:
-                                    val = 0
+                       black_white_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
+                       for col in range(input_image.getWidth()):
+                           for row in range(input_image.getHeight()):
+                               original_pixel = grayscale_image.getPixel(col, row)
+                               red = original_pixel.getRed()
+                               if red > 140:
+                                   val = 255
+                               else:
+                                   val = 0
 
-                                new_pixel = image.Pixel(val, val, val)
-                                black_white_image.setPixel(col, row, new_pixel)
-                        return black_white_image
+                               new_pixel = image.Pixel(val, val, val)
+                               black_white_image.setPixel(col, row, new_pixel)
+                       return black_white_image
 
-                    def main():
-                        img = image.Image("luther.jpg")
-                        win = image.ImageWin(img.getWidth(), img.getHeight())
+                   def main():
+                       img = image.Image("luther.jpg")
+                       win = image.ImageWin(img.getWidth(), img.getHeight())
 
-                        bw_img = convert_black_white(img)
-                        bw_img.draw(win)
+                       bw_img = convert_black_white(img)
+                       bw_img.draw(win)
 
-                        win.exitonclick()
+                       win.exitonclick()
 
-                    if __name__ == "__main__":
-                        main()
+                   if __name__ == "__main__":
+                       main()
 
     #. Sepia Tone images are those brownish colored images that may remind you of times past. The formula for creating a sepia tone is as follows:
 
@@ -339,37 +339,37 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q10_answer
-                  :nocodelens:
+                   :nocodelens:
 
-                  import image
+                   import image
 
-                  def double(old_image):
-                      old_w = old_image.getWidth()
-                      old_h = old_image.getHeight()
+                   def double(old_image):
+                       old_w = old_image.getWidth()
+                       old_h = old_image.getHeight()
 
-                      new_img = image.EmptyImage(old_w * 2, old_h * 2)
-                      for row in range(old_h):
-                          for col in range(old_w):
-                              old_pixel = old_image.getPixel(col, row)
+                       new_img = image.EmptyImage(old_w * 2, old_h * 2)
+                       for row in range(old_h):
+                           for col in range(old_w):
+                               old_pixel = old_image.getPixel(col, row)
 
-                              new_img.setPixel(2*col, 2*row, old_pixel)
-                              new_img.setPixel(2*col+1, 2*row, old_pixel)
-                              new_img.setPixel(2*col, 2*row+1, old_pixel)
-                              new_img.setPixel(2*col+1, 2*row+1, old_pixel)
+                               new_img.setPixel(2*col, 2*row, old_pixel)
+                               new_img.setPixel(2*col+1, 2*row, old_pixel)
+                               new_img.setPixel(2*col, 2*row+1, old_pixel)
+                               new_img.setPixel(2*col+1, 2*row+1, old_pixel)
 
-                      return new_img
+                       return new_img
 
-                  def main():
-                      img = image.Image("luther.jpg")
-                      win = image.ImageWin(img.getWidth() * 2, img.getHeight() * 2)
+                   def main():
+                       img = image.Image("luther.jpg")
+                       win = image.ImageWin(img.getWidth() * 2, img.getHeight() * 2)
 
-                      big_img = double(img)
-                      big_img.draw(win)
+                       big_img = double(img)
+                       big_img.draw(win)
 
-                      win.exitonclick()
+                       win.exitonclick()
 
-                  if __name__ == "__main__":
-                       main()
+                   if __name__ == "__main__":
+                        main()
 
     #.   After you have scaled an image too much it looks blocky. One way of reducing the blockiness of the image is to replace each pixel with the average values of the pixels around it. This has the effect of smoothing out the changes in color. Write a function that takes an image as a parameter and smooths the image. Your function should return a new image that is the same as the old one but smoothed.
 
