@@ -42,13 +42,13 @@ The values [0,1,2,3] were provided to make the loop body execute 4 times. We cou
    wn = turtle.Screen()
    alex = turtle.Turtle()
 
-   for aColor in ["yellow", "red", "purple", "blue"]:      # repeat four times
+   for a_color in ["yellow", "red", "purple", "blue"]:      # repeat four times
        alex.forward(50)
        alex.left(90)
 
    wn.exitonclick()
 
-In the previous example, there were four integers in the list. This time there are four strings. Since there are four items in the list, the iteration will still occur four times.  The ``aColor`` variable will be assigned each color in the list. We can even take this one step further and use the value of ``aColor`` as part of the computation.
+In the previous example, there were four integers in the list. This time there are four strings. Since there are four items in the list, the iteration will still occur four times.  The ``a_color`` variable will be assigned each color in the list. We can even take this one step further and use the value of ``a_color`` as part of the computation.
 
 .. activecode:: colorlist
     :nocodelens:
@@ -57,14 +57,14 @@ In the previous example, there were four integers in the list. This time there a
     wn = turtle.Screen()
     alex = turtle.Turtle()
 
-    for aColor in ["yellow", "red", "purple", "blue"]:
-       alex.color(aColor)
+    for a_color in ["yellow", "red", "purple", "blue"]:
+       alex.color(a_color)
        alex.forward(50)
        alex.left(90)
 
     wn.exitonclick()
 
-In this case, the value of ``aColor`` is used to change the color attribute of ``alex``.  Each iteration causes ``aColor`` to change to the next value in the list.
+In this case, the value of ``a_color`` is used to change the color attribute of ``alex``.  Each iteration causes ``a_color`` to change to the next value in the list.
 
 **Mixed up program**
 
@@ -167,15 +167,15 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.
       :correct: c
-      :feedback_a: The items in the list are not actually used to control the color of the turtle because aColor is never used inside the loop. But, the loop will execute once for each color in the list.
-      :feedback_b: Notice that aColor is never actually used inside the loop.
+      :feedback_a: The items in the list are not actually used to control the color of the turtle because a_color is never used inside the loop. But, the loop will execute once for each color in the list.
+      :feedback_b: Notice that a_color is never actually used inside the loop.
       :feedback_c: The body of the loop only draws one side of the square. It will be  repeated once for each item in the list. However, the color of the turtle never changes.
 
       Consider the following code:
 
       .. code-block:: python
 
-        for aColor in ["yellow", "red", "green", "blue"]:
+        for a_color in ["yellow", "red", "green", "blue"]:
            alex.forward(50)
            alex.left(90)
 
