@@ -82,7 +82,7 @@ The Value of Pi
 
 After the loop has completed and visualization has been drawn, we still need to actually compute pi and print it.  Use the relationship given above.
 
-Run your program with larger values of ``numdarts`` to see if the approximation gets better.  If you want to speed things up for large values of ``numdarts``, set the tracer to be 100 using ``fred.tracer(100)``.
+Run your program with larger values of ``numdarts`` to see if the approximation gets better.  If you want to speed things up for large values of ``numdarts``, set the tracer to be 100 using ``wn.tracer(100)``.
 
 
 
