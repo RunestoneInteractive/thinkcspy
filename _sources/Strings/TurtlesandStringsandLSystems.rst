@@ -16,7 +16,7 @@ Turtles and Strings and L-Systems
 
 This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.
 
-In 1968 Astrid Lindenmayer, a biologist, invented a formal system that
+In 1968 Aristid Lindenmayer, a biologist, invented a formal system that
 provides a mathematical description of plant growth known as an
 **L-system**.  L-systems were designed to model the growth of biological
 systems.  You can think of L-systems as containing the instructions for how
