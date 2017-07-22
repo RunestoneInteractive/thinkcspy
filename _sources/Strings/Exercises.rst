@@ -816,11 +816,11 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(remove_dups("pooh"),"ph","Tested remove_dups on string 'pooh'")
+            self.assertEqual(remove_dups("pooh"),"poh","Tested remove_dups on string 'pooh'")
             self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
             self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
             self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
-            self.assertEqual(remove_dups("oo"),"","Tested remove_dups on string 'oo'")
+            self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
 
       myTests().main()
 
