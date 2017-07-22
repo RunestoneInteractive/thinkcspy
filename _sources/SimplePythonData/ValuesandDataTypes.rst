@@ -43,7 +43,7 @@ class **int**.
 
 .. note::
 
-	When we show the value of a string using the ``print`` function, such as in the third example above, the quotes are no longer present.  The
+	When we show the value of a string using the ``print`` function, such as in the third example above, the quotes are not present in the output.  The
 	value of the string is the sequence of characters inside the quotes.  The quotes are only necessary to help Python know what the value is.
 
 You may have used function notation in a math class, like ``y = f(x)``, likely only for functions that act on a single numeric value, and produce a single numeric value.  Python has no such restrictions:  Inputs and outputs may be of any type.
