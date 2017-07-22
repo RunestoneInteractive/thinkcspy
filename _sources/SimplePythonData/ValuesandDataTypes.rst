@@ -121,11 +121,6 @@ Triple quoted strings can even span multiple lines:
 .. activecode:: ch02_6
     :nocanvas:
 
-    message = """This message will
-    span several
-    lines."""
-    print(message)
-
     print("""This message will span
     several lines
     of the text.""")
