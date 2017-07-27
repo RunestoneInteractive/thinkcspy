@@ -18,10 +18,10 @@ Exercises
 
             .. tab:: Question
 
-                Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together with the number of times each letter occurs. Case should be ignored. A sample run of the program might look this this::
+                Write a program that allows the user to enter a string. It then prints a table of the letters of the alphabet in alphabetical order which occur in the string together with the number of times each letter occurs. Case should be ignored. A sample run of the program might look like this::
 
-                      Please enter a sentence: ThiS is String with Upper and lower case Letters.
-                      a  2
+                      Please enter a sentence: ThiS is a String with Upper and lower case Letters.
+                      a  3
                       c  1
                       d  1
                       e  5
@@ -141,11 +141,11 @@ Exercises
 
             .. tab:: Question
 
-                Make a dictionary where the key is a worker's name, and the value is a list where the first element is clock in time, second element is clock out time, third element is total hours worked that day. Each worker's list starts at [0, 0, 0]. Create functions for ``clock_in`` and ``clock_out``.
+                Make a dictionary where the key is a worker's name, and the value is a list where the first element is the clock in time, second element is the clock out time, and the third element is the total hours worked that day. Each worker's list starts at [0, 0, 0]. Create functions for ``clock_in`` and ``clock_out``.
 
-                * ``clock_in`` takes the dictionary of workers, the name of the worker, and the clock in time as params. When the worker clocks in, enter and save their clock in time as the first elem in the associated list value.
+                * ``clock_in`` takes the dictionary of workers, the name of the worker, and the clock in time as parameters. When the worker clocks in, enter and save their clock in time as the first element in the associated list value.
 
-                * ``clock_out`` takes same params, but with a clock out time instead of clock in time. When the worker clocks out, enter and save their clock out time and calculate the hours worked for that day and store it as the third element in the list.
+                * ``clock_out`` takes the same parameters, but with a clock out time instead of clock in time. When the worker clocks out, enter and save their clock out time and calculate the hours worked for that day and store it as the third element in the list.
 
                 To make this program a little easier, we're entering the clock in and clock out times as integers. As a bonus mission, try adding the times as strings representing the 24 hour clock (e.g., ``"08:00"``), and then figure out how to calculate the time worked. And you can do this exercise either by aliasing or copying the dictionary.
 

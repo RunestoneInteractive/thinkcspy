@@ -16,7 +16,7 @@
 Tuple Assignment
 ----------------
 
-Python has a very powerful **tuple assignment** feature that allows a tuple of variables on the left of an assignment to be assigned values from a tuple on the right of the assignment.
+Python has a very powerful **tuple assignment** feature that allows a tuple of variables on the left of an assignment to be assigned values from a tuple on the right of the assignment. For example, given the tuple `julia` that we looked at in the previous section, we can do the following:
 
 .. sourcecode:: python
 

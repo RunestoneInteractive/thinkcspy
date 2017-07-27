@@ -30,7 +30,7 @@ First, let's review our program so far and then see what new input, output, and 
         return average_miles
 
     def main():
-        print(daily_miles_traveled(1000.0, 1500.5, 5))
+        print(daily_miles_traveled(1000.0, 2000.0, 5))
 
     if __name__ == "__main__":
         main()

@@ -166,7 +166,7 @@ Exercises
               if __name__ == "__main__":
                   main()
 
-These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function).
+These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function). These problems build in difficulty, and are examples in how solving smaller problems can lead you to incrementally build the solutions to larger problems.
 
 5.
 
@@ -174,7 +174,7 @@ These next several problems are variations on a theme. Each will have you return
 
         .. tab:: Question
 
-            Write a function ``line(n)`` that returns a line with exactly n hashes.
+            Write a function ``line(n)`` that returns a line with exactly ``n`` hashes.
 
             **Example:**
               ``print(line(5))``
