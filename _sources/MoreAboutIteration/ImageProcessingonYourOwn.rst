@@ -11,6 +11,8 @@
    :prefix: iter-10-
    :start: 1
 
+.. _image-processing-on-own:
+
 Image Processing on Your Own
 ----------------------------
 
