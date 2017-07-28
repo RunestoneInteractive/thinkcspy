@@ -17,23 +17,24 @@ Exercises
 
         .. tab:: Question
 
-            Evaluate the following numerical expressions in your head, then use
-            the active code window to check your results:
-
-            #. ``5 ** 2``
-            #. ``9 * 5``
-            #. ``15 / 12``
-            #. ``12 / 15``
-            #. ``15 // 12``
-            #. ``12 // 15``
-            #. ``5 % 2``
-            #. ``9 % 5``
-            #. ``15 % 12``
-            #. ``12 % 15``
-            #. ``6 % 6``
-            #. ``0 % 7``
-
             .. activecode:: ch02_ex1
+
+               Evaluate the following numerical expressions in your head, then use
+               the active code window to check your results:
+
+               #. ``5 ** 2``
+               #. ``9 * 5``
+               #. ``15 / 12``
+               #. ``12 / 15``
+               #. ``15 // 12``
+               #. ``12 // 15``
+               #. ``5 % 2``
+               #. ``9 % 5``
+               #. ``15 % 12``
+               #. ``12 % 15``
+               #. ``6 % 6``
+               #. ``0 % 7``
+               ~~~~
 
                print(5 ** 2)
 
@@ -60,13 +61,11 @@ Exercises
 
 .. question:: spd_ex_2
 
-   What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
-
-   ::
-
-       2 + (3 - 1) * 10 / 5 * (2 + 3)
-
    .. actex:: ex_2_2
+
+      What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.
+      ~~~~
+      2 + (3 - 1) * 10 / 5 * (2 + 3)
 
 
 
@@ -76,13 +75,14 @@ Exercises
 
         .. tab:: Question
 
-            Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
-            If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
-            Write a Python program to solve the general version of the above problem.
-            Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
-            Your program should output what the time will be on the clock when the alarm goes off.
-
             .. actex:: ex_2_3
+
+               Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
+               If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
+               Write a Python program to solve the general version of the above problem.
+               Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
+               Your program should output what the time will be on the clock when the alarm goes off.
+               ~~~~
 
         .. tab:: Answer
 
@@ -112,12 +112,13 @@ Exercises
 
 .. question:: spd_ex_4
 
-   It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
-   leaving on day number 3 (a Wednesday) and you return home after 10 nights.
-   Write a general version of the program which asks for the starting day number, and
-   the length of your stay, and it will tell you the number of day of the week you will return on.
-
    .. actex:: ex_2_4
+
+      It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
+      leaving on day number 3 (a Wednesday) and you return home after 10 nights.
+      Write a general version of the program which asks for the starting day number, and
+      the length of your stay, and it will tell you the number of day of the week you will return on.
+      ~~~~
 
        # Problem 4
        # My Name:
@@ -129,11 +130,12 @@ Exercises
 
         .. tab:: Question
 
-            Take the sentence: *All work and no play makes Jack a dull boy.*
-            Store each word in a separate variable, then print out the sentence on
-            one line using ``print``.
-
             .. actex:: ex_2_5
+
+               Take the sentence: *All work and no play makes Jack a dull boy.*
+               Store each word in a separate variable, then print out the sentence on
+               one line using ``print``.
+               ~~~~
 
         .. tab:: Answer
 
@@ -164,10 +166,11 @@ Exercises
 
 .. question:: spd_ex_6
 
-   Add parenthesis to the expression ``6 * 1 - 2`` to change its value
-   from 4 to -6.
-
    .. actex:: ex_2_6
+
+      Add parenthesis to the expression ``6 * 1 - 2`` to change its value
+      from 4 to -6.
+      ~~~~
 
 
 .. question:: spd_ex_7
@@ -176,19 +179,20 @@ Exercises
 
         .. tab:: Question
 
-            The formula for computing the final amount if one is earning
-            compound interest is given on Wikipedia as
-
-            .. image:: Figures/compoundInterest.png
-                :alt: formula for compound interest
-
-            Write a Python program that assigns the principal amount of 10000 to
-            variable `P`, assign to `n` the value 12, and assign to `r` the interest
-            rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-            `t`, that the money will be compounded for.  Calculate and print the final
-            amount after `t` years.
-
             .. actex:: ex_2_7
+
+               The formula for computing the final amount if one is earning
+               compound interest is given on Wikipedia as
+
+               .. image:: Figures/compoundInterest.png
+                   :alt: formula for compound interest
+
+               Write a Python program that assigns the principal amount of 10000 to
+               variable `P`, assign to `n` the value 12, and assign to `r` the interest
+               rate of 8% (0.08).  Then have the program prompt the user for the number of years,
+               `t`, that the money will be compounded for.  Calculate and print the final
+               amount after `t` years.
+               ~~~~
 
         .. tab:: Answer
 
@@ -216,10 +220,11 @@ Exercises
 
 .. question:: spd_ex_8
 
-   Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
-   back to the user with the answer.
-
    .. actex:: ex_2_8
+
+      Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
+      back to the user with the answer.
+      ~~~~
 
 
 .. question:: spd_ex_9
@@ -228,10 +233,11 @@ Exercises
 
         .. tab:: Question
 
-            Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
-            Print a nice message with the answer.
-
             .. actex:: ex_2_9
+
+               Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
+               Print a nice message with the answer.
+               ~~~~
 
         .. tab:: Answer
 
@@ -256,11 +262,11 @@ Exercises
 
 .. question:: spd_ex_10
 
-   Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
-   gallons used.  Print a nice message with the answer.
-
    .. actex:: ex_2_10
 
+      Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
+      gallons used.  Print a nice message with the answer.
+      ~~~~
 
 .. question:: spd_ex_11
 
@@ -268,9 +274,10 @@ Exercises
 
         .. tab:: Question
 
-            Write a program that will convert degrees celsius to degrees fahrenheit.
-
             .. actex:: ex_2_11
+
+               Write a program that will convert degrees celsius to degrees fahrenheit.
+               ~~~~
 
         .. tab:: Answer
 
@@ -294,6 +301,7 @@ Exercises
 
 .. question:: spd_ex_12
 
-   Write a program that will convert degrees fahrenheit to degrees celsius.
-
    .. actex:: ex_2_12
+
+      Write a program that will convert degrees fahrenheit to degrees celsius.
+      ~~~~
