@@ -54,7 +54,7 @@ Exercises
            Starting with the list of the previous exercise, write Python statements to do the following:
 
            a. Append "apple" and 76 to the list.
-           #. Insert the value "cat" at position 3.
+           #. Insert the value "cat" at index 3.
            #. Insert the value 99 at the start of the list.
            #. Find the index of "hello".
            #. Count the number of 76s in the list.
