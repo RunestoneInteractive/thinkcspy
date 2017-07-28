@@ -11,6 +11,11 @@
    :prefix: iter-8-
    :start: 1
 
+.. index:: table, escape sequence, tab, newline,
+           cursor
+
+
+
 Simple Tables
 -------------
 
@@ -63,12 +68,6 @@ of the previous program.
 Because of the tab characters between the columns, the position of the second
 column does not depend on the number of digits in the first column.
 
-
-
-
-.. index::
-    single: local variable
-    single: variable; local
 
 **Check your understanding**
 

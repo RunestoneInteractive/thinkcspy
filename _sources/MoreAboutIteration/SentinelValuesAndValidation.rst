@@ -10,7 +10,11 @@
 .. qnum::
    :prefix: iter-x-
    :start: 1
-   
+
+.. index::
+    single: sentinel value
+    single: value; sentinel
+       
 Other uses of ``while``
 ------------------------------
 
@@ -55,6 +59,7 @@ will use a ``price`` of zero to mean "this is my last item." In this program,
 zero is a **sentinel value**, a value used to signal the end of the loop. Here's the code:
     
 .. activecode:: ch07_sentinel
+    :timelimit: 60
 
     def checkout():
         total = 0
@@ -83,9 +88,12 @@ There are still a few problems with this program.
 * If you enter zero the first time you are asked for a price, the loop will end, and the program
   will try to divide by zero. Use an ``if``/``else`` statement outside the loop to avoid the
   division by zero and tell the user that you can't compute an average without data.
-* This program doesn't display the amounts to two decimal places. In a Python program,
-  the ``format()`` function will do that, but it is not implemented in ActiveCode, so unlike the
-  first two problems, you can't do anything about this one, sorry.
+* This program doesn't display the amounts to two decimal places. In the next chapter you will 
+  see the :ref:`Format-Strings` that will do the trick.
+
+.. index::
+    single: validation
+    single: input; validating
 
 Validating Input
 ~~~~~~~~~~~~~~~~~~~
@@ -100,6 +108,7 @@ the ``upper()`` method which is described in :ref:`stringMethods` to convert a s
 When you run the following code, try typing something other than Y or N to see how the code reacts:
     
 .. activecode:: ch07_validation
+    :timelimit: 60
 
     def get_yes_or_no(message):
         valid_input = False
@@ -119,9 +128,3 @@ When you run the following code, try typing something other than Y or N to see h
         print('Too bad. If cooked right, they are quite tasty.')
         
        
-.. index::
-    single: validation
-    single: input; validating
-    single: sentinel value
-    single: value; sentinel
-    

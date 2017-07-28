@@ -11,6 +11,8 @@
    :prefix: iter-7-
    :start: 1
 
+.. index:: algorithm
+
 Algorithms Revisited
 --------------------
 
@@ -47,10 +49,6 @@ explain *how* we do it, at least not in the form of a step-by-step mechanical
 algorithm.
 
 
-
-
-.. index:: table, logarithm, Intel, Pentium, escape sequence, tab, newline,
-           cursor
 
 
 .. note::

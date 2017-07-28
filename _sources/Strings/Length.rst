@@ -11,6 +11,14 @@
    :prefix: strings-6-
    :start: 1
 
+.. index::
+    single: len function
+    single: function; len
+    single: runtime error
+    single: negative index
+    single: index; negative
+
+
 Length
 ------
 
@@ -37,7 +45,7 @@ That won't work. It causes the runtime error
 letter at index position 6 in ``"Banana"``. 
 Since we started counting at zero, the six indexes are
 numbered 0 to 5. To get the last character, we have to subtract 1 from
-``length``.  Give it a try in the example above.
+the length.  Give it a try in the example above.
 
 .. activecode:: ch08_len3
     
@@ -46,17 +54,11 @@ numbered 0 to 5. To get the last character, we have to subtract 1 from
     lastch = fruit[sz-1]
     print(lastch)
 
-.. Alternatively, we can use **negative indices**, which count backward from the
-.. end of the string. The expression ``fruit[-1]`` yields the last letter,
-.. ``fruit[-2]`` yields the second to last, and so on.  Try it!
+Alternatively in Python, we can use **negative indices**, which count backward from the
+end of the string. The expression ``fruit[-1]`` yields the last letter,
+``fruit[-2]`` yields the second to last, and so on.  Try it!  
+Most other languages do *not* allow the negative indices, but they are a handy feature of Python!
 
-Typically, a Python programmer will access the last character by combining the
-two lines of code from above.
-
-
-.. sourcecode:: python
-    
-    lastch = fruit[len(fruit)-1]
 
 **Check your understanding**
 
@@ -95,6 +97,26 @@ two lines of code from above.
    
       s = "python rocks"
       print(s[len(s)-5])
+
+
+.. mchoice:: test_question8_4_3
+   :answer_a: c
+   :answer_b: k
+   :answer_c: s
+   :answer_d: Error, negative indices are illegal.
+   :correct: a
+   :feedback_a: Yes, 3 characters from the end.
+   :feedback_b: Count backward 3 characters.
+   :feedback_c: When expressed with a negative index the last character s is at index -1.
+   :feedback_d: Python does use negative indices to count backward from the end.
+
+
+   What is printed by the following statements?
+   
+   .. code-block:: python
+   
+      s = "python rocks"
+      print(s[-3])
 
 
 

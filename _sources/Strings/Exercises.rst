@@ -875,3 +875,30 @@ Exercises
             .. disqus::
                 :shortname: interactivepython
                 :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
+
+
+#. Modify this code so it prints each subtotal, the total cost, and average price 
+   to exactly two decimal places.
+
+   ..   actex:: ex_8_22
+        :timelimit: 60
+
+        def checkout():
+            total = 0
+            count = 0
+            moreItems = True
+            while moreItems:
+                price = float(input('Enter price of item (0 when done): '))
+                if price != 0:
+                    count = count + 1
+                    total = total + price
+                    print('Subtotal: $', total)
+                else:
+                    moreItems = False
+            average = total / count
+            print('Total items:', count)
+            print('Total $', total)
+            print('Average price per item: $', average)
+
+        checkout()
+
