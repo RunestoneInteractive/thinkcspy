@@ -103,4 +103,12 @@ construct a simple sentence.
     qbfile.close()
 
 
+.. note::
+   You can obtain a line from the keyboard with the ``input`` function, and you can process lines of a file.  
+   However "line" is used differently:  With ``input`` Python reads through the newline you enter from the keyboard,
+   but the newline (``'\n'``) is *not* included in the line returned by ``input``. It is dropped. 
+   When a line is taken from a file, the terminating newline *is* included as the last character (unless you
+   are reading the final line of a file that happens to not have a newline at the end).
 
+In the quarterback example it is irrelevant whether the final line has a newline character at the end or not, 
+since it would be stripped off by the ``split`` method call.

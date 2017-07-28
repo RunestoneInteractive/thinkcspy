@@ -146,12 +146,21 @@ Now let's look at another method of reading our file using a ``while`` loop.  Th
 
     infile.close()
 
-The important thing to notice is that on line 2 we have the statement ``line = infile.readline()``.  
+There are several important things to notice in tis code:
+
+On line 2 we have the statement ``line = infile.readline()``.  
 We call this initial read the **priming read**.
-It is very important because the while condition needs to have a value for the ``line`` variable.  The ``readline`` method will return the
-empty string if there is no more data in the file.  The condition ``while line:`` means `while the content of line is not the empty string`.  Remember that a
-blank line in the file actually has a single character, the ``\n`` character (newline).  So, the only way that a line of data from the
-file can be empty is if you are reading at the end of the file.
+It is very important because the while condition needs to have a value for the ``line`` variable.  
+
+The ``readline`` method will return the
+empty string if there is no more data in the file.  
+An empty string is an empty sequence of characters.  
+When Python is looking for a Boolean condition, as in ``while line:``, 
+it treats an empty sequence type as ``False``, and a non-empty sequence as ``True``.  
+Remember that a
+blank line in the file actually has a single character, the ``\n`` character (newline).  
+So, the only way that a line of data from the
+file can be empty is if you are reading at the end of the file, and the ``while`` condition becomes ``False``.
 
 Finally, notice that the last line of the body of the ``while`` loop performs another ``readline``.  This statement will reassign the variable ``line`` to the next line of the file.  It represents the `change of state` that is necessary for the iteration to
 function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.
