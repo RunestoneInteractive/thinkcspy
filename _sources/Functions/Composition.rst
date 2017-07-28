@@ -30,7 +30,7 @@ First, let's review our program so far and then see what new input, output, and 
         return average_miles
 
     def main():
-        print(daily_miles_traveled(1000.0, 2000.0, 5))
+        print(daily_miles_traveled(1000.0, 1500.5, 5))
 
     if __name__ == "__main__":
         main()
@@ -49,7 +49,7 @@ It looks like we'll need to add a function that will multiply the average daily 
         return mileage + extra_pay
 
     def main():
-        daily_miles = daily_miles_traveled(1000.0, 2000.0, 5)
+        daily_miles = daily_miles_traveled(1000.0, 1500.5, 5)
         per_mile_pay = .50
         per_diem = 100
         daily_reimbursement = reimbursement(daily_miles, per_mile_pay, per_diem)
