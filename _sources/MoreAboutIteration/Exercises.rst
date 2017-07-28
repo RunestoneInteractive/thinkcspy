@@ -19,12 +19,12 @@ Exercises
 
         .. tab:: Question
 
-           Add a print statement to Newton's ``sqrt`` function that
-           prints out ``better`` each time it is calculated. Call your modified
-           function with 25 as an argument and record the results.
-
            .. actex:: ex_7_7
 
+              Add a print statement to Newton's ``sqrt`` function that
+              prints out ``better`` each time it is calculated. Call your modified
+              function with 25 as an argument and record the results.
+              ~~~~
               def newtonSqrt(n):
                   # your code here
 
@@ -55,20 +55,20 @@ Exercises
 
 .. question:: moreiter_ex_2
 
-   Write a function ``print_triangular_numbers(n)`` that prints out the first
-   n triangular numbers. A call to ``print_triangular_numbers(5)`` would
-   produce the following output::
-
-       1       1
-       2       3
-       3       6
-       4       10
-       5       15
-
-   (*hint: use a web search to find out what a triangular number is.*)
-
    .. actex:: ex_7_8
 
+      Write a function ``print_triangular_numbers(n)`` that prints out the first
+      n triangular numbers. A call to ``print_triangular_numbers(5)`` would
+      produce the following output::
+   
+          1       1
+          2       3
+          3       6
+          4       10
+          5       15
+   
+      (*hint: use a web search to find out what a triangular number is.*)
+      ~~~~
       def print_triangular_numbers(n):
           # your code here
 
