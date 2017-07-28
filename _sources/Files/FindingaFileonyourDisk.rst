@@ -39,6 +39,8 @@ but the same principles are in use.  For example on windows the path might be
    character to separate folder names in a path, and even on Windows
    system the file path will work just fine.
 
+.. index:: absolute file path, relative file path
+
 You can access files in sub-folders, also called directories, under your home directory
 by adding a slash and the name of the folder.  For example, if you had a file
 called ``hello.py`` in a folder called ``CS150`` that is inside a folder called
@@ -74,8 +76,10 @@ could access each of the data files using the following *relative file paths*:
 Here's the important rule to remember: If your file and your Python program are
 in the same directory you can simply use the filename like this:
 ``open('myfile.txt', 'r')``. If your file and your Python program are in
-different directories then you must use a *relative file path* to the file
-like this: ``open('../myData/data3.txt', 'r')``.
+different directories then you must refer to one or more directiroies, 
+either in a *relative file path* to the file
+like this: ``open('../myData/data3.txt', 'r')``, or in an *absolute file path* like
+``open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')``.
 
 Glossary
 --------
@@ -92,4 +96,3 @@ Glossary
         working directory of a program. An *relative file path* never starts
         with a ``/``.
 
-.. index:: absolute file path, relative file path
