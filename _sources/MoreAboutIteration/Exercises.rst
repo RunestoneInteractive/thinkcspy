@@ -79,12 +79,12 @@ Exercises
 
         .. tab:: Question
 
-           Write a function, ``is_prime``, that takes a single integer argument
-           and returns ``True`` when the argument is a *prime number* and ``False``
-           otherwise.
-
            .. actex:: ex_7_9
 
+              Write a function, ``is_prime``, that takes a single integer argument
+              and returns ``True`` when the argument is a *prime number* and ``False``
+              otherwise.
+              ~~~~
               def is_prime(n):
                   # your code here
 
@@ -126,13 +126,12 @@ Exercises
 
 .. question:: moreiter_ex_4
 
-   Modify the walking turtle program so that rather than a 90 degree left or right turn the
-   angle of the turn is determined randomly at each step.
-
     .. actex:: ex_7_14
        :nocodelens:
 
-
+       Modify the walking turtle program so that rather than a 90 degree left or right turn the
+       angle of the turn is determined randomly at each step.
+       ~~~~
 
 
 .. question:: moreiter_ex_5
@@ -141,11 +140,12 @@ Exercises
 
         .. tab:: Question
 
-           Modify the turtle walk program so that you have two turtles each with a
-           random starting location.  Keep the turtles moving until one of them leaves the screen.
-
            .. actex:: ex_7_13
               :nocodelens:
+
+              Modify the turtle walk program so that you have two turtles each with a
+              random starting location.  Keep the turtles moving until one of them leaves the screen.
+              ~~~~
 
         .. tab:: Answer
 
@@ -226,13 +226,12 @@ Exercises
 
 .. question:: moreiter_ex_6
 
-   Modify the previous turtle walk program so that the turtle turns around
-   when it hits the wall or when one turtle collides with another turtle.
-
    .. actex:: ex_7_12
       :nocodelens:
 
-
+      Modify the previous turtle walk program so that the turtle turns around
+      when it hits the wall or when one turtle collides with another turtle.
+      ~~~~
 
 
 .. question:: moreiter_ex_7
@@ -241,16 +240,17 @@ Exercises
 
         .. tab:: Question
 
-           Write a function to remove all the red from an image.
-
-           .. raw:: html
-
-               <img src="../_static/LutherBellPic.jpg" id="luther.jpg">
-               <h4 style="text-align: left;">For this and the following exercises, use the
-               luther.jpg photo.</h4>
-
            .. actex:: ex_7_15
               :nocodelens:
+
+              Write a function to remove all the red from an image.
+   
+              .. raw:: html
+   
+                  <img src="../_static/LutherBellPic.jpg" id="luther.jpg">
+                  <h4 style="text-align: left;">For this and the following exercises, use the
+                  luther.jpg photo.</h4>
+              ~~~~
 
         .. tab:: Answer
 
@@ -286,10 +286,11 @@ Exercises
 
 .. question:: moreiter_ex_8
 
-   Write a function to convert the image to grayscale.
-
    .. actex:: ex_7_16
       :nocodelens:
+
+      Write a function to convert the image to grayscale.
+      ~~~~
 
 
 .. question:: moreiter_ex_9
@@ -298,10 +299,11 @@ Exercises
 
         .. tab:: Question
 
-           Write a function to convert an image to black and white.
-
            .. actex:: ex_7_17
               :nocodelens:
+
+              Write a function to convert an image to black and white.
+              ~~~~
 
         .. tab:: Answer
 
@@ -357,20 +359,21 @@ Exercises
 
 .. question:: moreiter_ex_10
 
-   Sepia Tone images are those brownish colored images that may remind you of
-   times past.  The formula for creating a sepia tone is as follows:
-
-   ::
-
-        newR = (R × 0.393 + G × 0.769 + B × 0.189)
-        newG = (R × 0.349 + G × 0.686 + B × 0.168)
-        newB = (R × 0.272 + G × 0.534 + B × 0.131)
-
-   Write a function to convert an image to sepia tone. *Hint:*
-   Remember that rgb values must be integers between 0 and 255.
-
    .. actex:: ex_7_18
       :nocodelens:
+
+      Sepia Tone images are those brownish colored images that may remind you of
+      times past.  The formula for creating a sepia tone is as follows:
+   
+      ::
+   
+           newR = (R × 0.393 + G × 0.769 + B × 0.189)
+           newG = (R × 0.349 + G × 0.686 + B × 0.168)
+           newB = (R × 0.272 + G × 0.534 + B × 0.131)
+   
+      Write a function to convert an image to sepia tone. *Hint:*
+      Remember that rgb values must be integers between 0 and 255.
+      ~~~~
 
 .. question:: moreiter_ex_11
 
@@ -378,11 +381,11 @@ Exercises
 
         .. tab:: Question
 
-           Write a function to uniformly enlarge an image by a factor of 2 (double the size).
-
-
            .. actex:: ex_7_19
               :nocodelens:
+
+              Write a function to uniformly enlarge an image by a factor of 2 (double the size).
+              ~~~~
 
         .. tab:: Answer
 
@@ -424,15 +427,16 @@ Exercises
 
 .. question:: moreiter_ex_12
 
-   After you have scaled an image too much it looks blocky.  One way of
-   reducing the blockiness of the image is to replace each pixel with the
-   average values of the pixels around it.  This has the effect of smoothing
-   out the changes in color.  Write a function that takes an image as a
-   parameter and smooths the image.  Your function should return a new image
-   that is the same as the old but smoothed.
-
        .. actex:: ex_7_20
           :nocodelens:
+
+          After you have scaled an image too much it looks blocky.  One way of
+          reducing the blockiness of the image is to replace each pixel with the
+          average values of the pixels around it.  This has the effect of smoothing
+          out the changes in color.  Write a function that takes an image as a
+          parameter and smooths the image.  Your function should return a new image
+          that is the same as the old but smoothed.
+          ~~~~
 
 .. question:: moreiter_ex_13
 
@@ -440,12 +444,13 @@ Exercises
 
         .. tab:: Question
 
-           Write a general pixel mapper function that will take an image and a pixel mapping function as
-           parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
-           a new pixel.
-
            .. actex:: ex_7_21
               :nocodelens:
+
+              Write a general pixel mapper function that will take an image and a pixel mapping function as
+              parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
+              a new pixel.
+              ~~~~
 
         .. tab:: Answer
 
@@ -490,13 +495,14 @@ Exercises
 
 .. question:: moreiter_ex_14
 
-   When you scan in images using a scanner they may have lots of noise due to
-   dust particles on the image itself or the scanner itself,
-   or the images may even be damaged.  One way of eliminating this noise is
-   to replace each pixel by the median value of the pixels surrounding it.
-
    .. actex:: ex_7_22
       :nocodelens:
+
+      When you scan in images using a scanner they may have lots of noise due to
+      dust particles on the image itself or the scanner itself,
+      or the images may even be damaged.  One way of eliminating this noise is
+      to replace each pixel by the median value of the pixels surrounding it.
+      ~~~~
 
 .. question:: moreiter_ex_15
 
@@ -504,11 +510,11 @@ Exercises
 
         .. tab:: Question
 
-           Research the Sobel edge detection algorithm and implement it.
-
            .. actex:: ex_7_23
               :nocodelens:
 
+              Research the Sobel edge detection algorithm and implement it.
+              ~~~~
 
         .. tab:: Answer
 

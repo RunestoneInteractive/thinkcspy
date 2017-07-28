@@ -17,15 +17,15 @@ Exercises
 
         .. tab:: Question
 
-            What do these expressions evaluate to?
-
-            #.  ``3 == 3``
-            #.  ``3 != 3``
-            #.  ``3 >= 4``
-            #.  ``not (3 < 4)``
-
                 .. actex:: ex_6_1
 
+                   What do these expressions evaluate to?
+       
+                   #.  ``3 == 3``
+                   #.  ``3 != 3``
+                   #.  ``3 >= 4``
+                   #.  ``not (3 < 4)``
+                   ~~~~
 
         .. tab:: Answer
 
@@ -43,14 +43,15 @@ Exercises
 
 .. question:: selection_ex_2
 
-   Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
-
-   #.  ``a > b``
-   #.  ``a >= b``
-   #.  ``a >= 18  and  day == 3``
-   #.  ``a >= 18  or  day != 3``
-
    .. actex:: ex_6_2
+
+      Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+   
+      #.  ``a > b``
+      #.  ``a >= b``
+      #.  ``a >= 18  and  day == 3``
+      #.  ``a >= 18  or  day != 3``
+      ~~~~
 
 .. question:: selection_ex_3
 
@@ -58,28 +59,28 @@ Exercises
 
         .. tab:: Question
 
-            Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
-            scheme:
-
-            .. table::
-
-               =======   =====
-               Mark      Grade
-               =======   =====
-               >= 90     A
-               [80-90)   B
-               [70-80)   C
-               [60-70)   D
-               < 60      F
-               =======   =====
-
-            The square and round brackets denote closed and open intervals.
-            A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
-
-            Test your function by printing the mark and the grade for a number of different marks.
-
             .. actex:: ex_6_3
 
+               Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
+               scheme:
+   
+               .. table::
+   
+                  =======   =====
+                  Mark      Grade
+                  =======   =====
+                  >= 90     A
+                  [80-90)   B
+                  [70-80)   C
+                  [60-70)   D
+                  < 60      F
+                  =======   =====
+   
+               The square and round brackets denote closed and open intervals.
+               A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
+   
+               Test your function by printing the mark and the grade for a number of different marks.
+               ~~~~
                 def getGrade(grade):
                       #your code here
 
@@ -130,12 +131,13 @@ Exercises
 
 .. question:: selection_ex_4
 
-   Modify the turtle bar chart program from the previous chapter so that the bar for any value
-   of 200 or more is filled with red, values between [100 and 200) are filled yellow,
-   and bars representing values less than 100 are filled green.
-
    .. actex:: ex_6_4
       :nocodelens:
+
+      Modify the turtle bar chart program from the previous chapter so that the bar for any value
+      of 200 or more is filled with red, values between [100 and 200) are filled yellow,
+      and bars representing values less than 100 are filled green.
+      ~~~~
 
 .. question:: selection_ex_5
 
@@ -212,12 +214,12 @@ Exercises
 
 .. question:: selection_ex_6
 
-   Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
-   the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
-
    .. actex:: ex_6_6
       :nocodelens:
 
+      Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
+      the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
+      ~~~~
       def findHypot(a,b):
           # your code here
 
@@ -290,12 +292,12 @@ Exercises
 
 .. question:: selection_ex_8
 
-   Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
-   and ``False`` otherwise.
-
    .. actex:: ex_6_8
        :nocodelens:
 
+       Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
+       and ``False`` otherwise.
+       ~~~~
        def is_odd(n):
            # your code here
 
@@ -318,12 +320,12 @@ Exercises
 
         .. tab:: Question
 
-           Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
-           argument is an odd integer.
-
            .. actex:: ex_6_9
                :nocodelens:
 
+               Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
+               argument is an odd integer.
+               ~~~~
                def is_odd(n):
                    # your code here
 
@@ -373,25 +375,25 @@ Exercises
 
 .. question:: selection_ex_10
 
-   Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
-   will determine whether the triangle is right-angled.  Assume that the third argument to the
-   function is always the longest side.  It will return ``True`` if the triangle
-   is right-angled, or ``False`` otherwise.
-
-   Hint: floating point arithmetic is not always exactly accurate,
-   so it is not safe to test floating point numbers for equality.
-   If a good programmer wants to know whether
-   ``x`` is equal or close enough to ``y``, they would probably code it up as
-
-   .. sourcecode:: python
-
-      if  abs(x - y) < 0.001:      # if x is approximately equal to y
-          ...
-
 
    .. actex:: ex_6_10
       :nocodelens:
 
+      Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
+      will determine whether the triangle is right-angled.  Assume that the third argument to the
+      function is always the longest side.  It will return ``True`` if the triangle
+      is right-angled, or ``False`` otherwise.
+   
+      Hint: floating point arithmetic is not always exactly accurate,
+      so it is not safe to test floating point numbers for equality.
+      If a good programmer wants to know whether
+      ``x`` is equal or close enough to ``y``, they would probably code it up as
+   
+      .. sourcecode:: python
+   
+         if  abs(x - y) < 0.001:      # if x is approximately equal to y
+             ...
+      ~~~~
       def is_rightangled(a, b, c):
           # your code here
 
@@ -415,11 +417,11 @@ Exercises
 
         .. tab:: Question
 
-            Extend the above program so that the sides can be given to the function in any order.
-
             .. actex:: ex_6_11
                 :nocodelens:
 
+                Extend the above program so that the sides can be given to the function in any order.
+                ~~~~
                 def is_rightangled(a, b, c):
                     # your code here
 
@@ -472,19 +474,19 @@ Exercises
 
 .. question:: selection_ex_12
 
-   3 criteria must be taken into account to identify leap years:
-
-   The year is evenly divisible by 4;
-
-   If the year can be evenly divided by 100, it is NOT a leap year, unless;
-
-   The year is also evenly divisible by 400. Then it is a leap year.
-   
-   Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
-
    .. actex:: ex_6_12
       :nocodelens:
 
+      3 criteria must be taken into account to identify leap years:
+   
+      The year is evenly divisible by 4;
+   
+      If the year can be evenly divided by 100, it is NOT a leap year, unless;
+   
+      The year is also evenly divisible by 400. Then it is a leap year.
+      
+      Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
+      ~~~~
       def isLeap(year):
           # your code here
 
@@ -509,30 +511,30 @@ Exercises
 
         .. tab:: Question
 
-            Implement the calculator for the date of Easter.
-
-            The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.
-
-            Ask the user to enter a year.
-            Compute the following:
-
-
-
-                1. a = year % 19
-                #. b = year % 4
-                #. c = year % 7
-                #. d = (19 * a + 24) % 30
-                #. e = (2 * b + 4 * c + 6 * d + 5) % 7
-                #. dateofeaster = 22 + d + e
-
-
-            Special note: The algorithm can give a date in April.  Also, if the year is one of four special
-            years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
-
-            Your program should print an error message if the user provides a date that is out of range.
-
             .. actex:: ex_6_13
 
+               Implement the calculator for the date of Easter.
+   
+               The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.
+   
+               Ask the user to enter a year.
+               Compute the following:
+   
+   
+   
+                   1. a = year % 19
+                   #. b = year % 4
+                   #. c = year % 7
+                   #. d = (19 * a + 24) % 30
+                   #. e = (2 * b + 4 * c + 6 * d + 5) % 7
+                   #. dateofeaster = 22 + d + e
+   
+   
+               Special note: The algorithm can give a date in April.  Also, if the year is one of four special
+               years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
+   
+               Your program should print an error message if the user provides a date that is out of range.
+               ~~~~
 
         .. tab:: Answer
 
