@@ -40,9 +40,10 @@ Exercises
 
 .. question:: strings_ex_2
 
-   Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
-
    .. actex:: ex_9_2
+
+      Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
+      ~~~~
 
 
 .. question:: strings_ex_3
@@ -51,18 +52,19 @@ Exercises
 
         .. tab:: Question
 
-           Starting with the list of the previous exercise, write Python statements to do the following:
-
-           a. Append "apple" and 76 to the list.
-           #. Insert the value "cat" at position 3.
-           #. Insert the value 99 at the start of the list.
-           #. Find the index of "hello".
-           #. Count the number of 76s in the list.
-           #. Remove the first occurrence of 76 from the list.
-           #. Remove True from the list using ``pop`` and ``index``.
-
 
            .. actex:: ex_9_3
+
+              Starting with the list of the previous exercise, write Python statements to do the following:
+   
+              a. Append "apple" and 76 to the list.
+              #. Insert the value "cat" at position 3.
+              #. Insert the value 99 at the start of the list.
+              #. Find the index of "hello".
+              #. Count the number of 76s in the list.
+              #. Remove the first occurrence of 76 from the list.
+              #. Remove True from the list using ``pop`` and ``index``.
+              ~~~~
 
         .. tab:: Answer
 
@@ -91,9 +93,10 @@ Exercises
 
 .. question:: strings_ex_4
 
-   Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
-
    .. actex:: ex_9_4
+
+      Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
+      ~~~~
 
 .. question:: strings_ex_5
 
@@ -134,12 +137,12 @@ Exercises
 
 .. question:: strings_ex_6
 
-   Write a function ``sum_of_squares(xs)`` that computes the sum
-   of the squares of the numbers in the list ``xs``.  For example,
-   ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
-
    .. actex:: ex_7_11
 
+      Write a function ``sum_of_squares(xs)`` that computes the sum
+      of the squares of the numbers in the list ``xs``.  For example,
+      ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
+      ~~~~   
       def sum_of_squares(xs):
           # your code here
 
@@ -161,10 +164,10 @@ Exercises
 
         .. tab:: Question
 
-           Write a function to count how many odd numbers are in a list.
-
            .. actex:: ex_9_6
 
+              Write a function to count how many odd numbers are in a list.
+              ~~~~
               def countOdd(lst):
                   # your code here
 
@@ -212,10 +215,10 @@ Exercises
 
 .. question:: strings_ex_8
 
-   Sum up all the even numbers in a list.
-
    .. actex:: ex_9_7
 
+      Sum up all the even numbers in a list.
+      ~~~~
       def sumEven(lst):
           # your code here
 
@@ -238,10 +241,10 @@ Exercises
 
         .. tab:: Question
 
-           Sum up all the negative numbers in a list.
-
            .. actex:: ex_9_8
 
+              Sum up all the negative numbers in a list.
+              ~~~~
               def sumNegatives(lst):
                   # your code here
 
@@ -288,10 +291,11 @@ Exercises
 
 .. question:: strings_ex_10
 
-   Count how many words in a list have length 5.
 
    .. actex:: ex_9_9
 
+      Count how many words in a list have length 5.
+      ~~~~
       def countWords(lst):
           # your code here
 
@@ -350,10 +354,10 @@ Exercises
 
 .. question:: strings_ex_12
 
-   Count how many words occur in a list up to and including the first occurrence of the word "sam".
-
    .. actex:: ex_9_11
 
+      Count how many words occur in a list up to and including the first occurrence of the word "sam".
+      ~~~~
       def count(lst):
           # your code here
 
@@ -365,16 +369,16 @@ Exercises
 
         .. tab:: Question
 
-           Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
-
-           a. count
-           #. in
-           #. reverse
-           #. index
-           #. insert
-
-
            .. actex:: ex_9_12
+
+              Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
+   
+              a. count
+              #. in
+              #. reverse
+              #. index
+              #. insert
+              ~~~~ 
 
         .. tab:: Answer
 
@@ -429,22 +433,22 @@ Exercises
 
 .. question:: strings_ex_14
 
-   Write a function ``replace(s, old, new)`` that replaces all occurences of
-   ``old`` with ``new`` in a string ``s``::
-
-      test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
-
-      s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
-      test(replace(s, 'om', 'am'),
-             'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
-
-      test(replace(s, 'o', 'a'),
-             'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
-
-   *Hint*: use the ``split`` and ``join`` methods.
-
    .. actex:: ex_9_13
 
+      Write a function ``replace(s, old, new)`` that replaces all occurences of
+      ``old`` with ``new`` in a string ``s``::
+   
+         test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
+   
+         s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
+         test(replace(s, 'om', 'am'),
+                'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
+   
+         test(replace(s, 'o', 'a'),
+                'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
+   
+      *Hint*: use the ``split`` and ``join`` methods.
+      ~~~~
       def replace(s, old, new):
           # your code here
 
@@ -468,19 +472,19 @@ Exercises
 
         .. tab:: Question
 
-           Here are the rules for an L-system that creates something that resembles
-           a common garden herb.  Implement the following rules and try it.  Use an
-           angle of 25.7 degrees.
-
-           ::
-
-               H
-               H --> HFX[+H][-H]
-               X --> X[-FFF][+FFF]FX
-
-
            .. actex:: ex_9_14
               :nocodelens:
+
+              Here are the rules for an L-system that creates something that resembles
+              a common garden herb.  Implement the following rules and try it.  Use an
+              angle of 25.7 degrees.
+   
+              ::
+   
+                  H
+                  H --> HFX[+H][-H]
+                  X --> X[-FFF][+FFF]FX
+              ~~~~
 
         .. tab:: Answer
 
@@ -561,12 +565,13 @@ Exercises
 
 .. question:: strings_ex_16
 
-   Here is another L-System.  Use an Angle of 25.
-
-   ::
-
-       F
-       F --> F[-F]F[+F]F
-
    .. actex:: ex_9_16
       :nocodelens:
+
+      Here is another L-System.  Use an Angle of 25.
+   
+      ::
+   
+          F
+          F --> F[-F]F[+F]F
+      ~~~~   

@@ -16,32 +16,32 @@ Exercises
 
         .. tab:: Question
 
-           Write a program that allows the user to enter a string.  It then prints a
-           table of the letters of the alphabet in alphabetical order which occur in
-           the string together with the number of times each letter occurs. Case should
-           be ignored. A sample run of the program might look this this::
-
-               Please enter a sentence: ThiS is String with Upper and lower case Letters.
-               a  2
-               c  1
-               d  1
-               e  5
-               g  1
-               h  2
-               i  4
-               l  2
-               n  2
-               o  1
-               p  2
-               r  4
-               s  5
-               t  5
-               u  1
-               w  2
-               $
-
            .. actex:: ex_11_01
 
+               Write a program that allows the user to enter a string.  It then prints a
+               table of the letters of the alphabet in alphabetical order which occur in
+               the string together with the number of times each letter occurs. Case should
+               be ignored. A sample run of the program might look this this::   
+                   Please enter a sentence: ThiS is String with Upper and lower case Letters.
+                   a  2
+                   c  1
+                   d  1
+                   e  5
+                   g  1
+                   h  2
+                   i  4
+                   l  2
+                   n  2
+                   o  1
+                   p  2
+                   r  4
+                   s  5
+                   t  5
+                   u  1
+                   w  2
+                   $
+               ~~~~
+               
         .. tab:: Answer
 
             .. activecode:: q1_answer
@@ -73,55 +73,55 @@ Exercises
 
 .. question:: dict_ex_2
 
-   Give the Python interpreter's response to each of the following from a
-   continuous interpreter session:
-
-   a.
-      .. sourcecode:: python
-
-          >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
-          >>> d['banana']
-
-   b.
-      .. sourcecode:: python
-
-          >>> d['oranges'] = 20
-          >>> len(d)
-
-   c.
-      .. sourcecode:: python
-
-          >>> 'grapes' in d
-
-   d.
-      .. sourcecode:: python
-
-          >>> d['pears']
-
-   e.
-      .. sourcecode:: python
-
-          >>> d.get('pears', 0)
-
-   f.
-      .. sourcecode:: python
-
-          >>> fruits = d.keys()
-          >>> fruits.sort()
-          >>> print(fruits)
-
-   g.
-      .. sourcecode:: python
-
-          >>> del d['apples']
-          >>> 'apples' in d
-
-
-   Be sure you understand why you get each result. Then apply what you
-   have learned to fill in the body of the function below:
-
    .. activecode:: q2_dict_answer
 
+       Give the Python interpreter's response to each of the following from a
+       continuous interpreter session:
+    
+       a.
+          .. sourcecode:: python
+    
+              >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
+              >>> d['banana']
+    
+       b.
+          .. sourcecode:: python
+    
+              >>> d['oranges'] = 20
+              >>> len(d)
+    
+       c.
+          .. sourcecode:: python
+    
+              >>> 'grapes' in d
+    
+       d.
+          .. sourcecode:: python
+    
+              >>> d['pears']
+    
+       e.
+          .. sourcecode:: python
+    
+              >>> d.get('pears', 0)
+    
+       f.
+          .. sourcecode:: python
+    
+              >>> fruits = d.keys()
+              >>> fruits.sort()
+              >>> print(fruits)
+    
+       g.
+          .. sourcecode:: python
+    
+              >>> del d['apples']
+              >>> 'apples' in d
+    
+    
+       Be sure you understand why you get each result. Then apply what you
+       have learned to fill in the body of the function below:
+       ~~~~
        def add_fruit(inventory, fruit, quantity=0):
             pass
 
@@ -139,30 +139,31 @@ Exercises
 
         .. tab:: Question
 
-           Write a program called ``alice_words.py`` that creates a text file named
-           ``alice_words.txt`` containing an alphabetical listing of all the words, and the
-           number of times each occurs, in the text version of `Alice's Adventures in Wonderland`.
-           (You can obtain a free plain text version of the book, along with many others, from
-           http://www.gutenberg.org.) The first 10 lines of your output file should look
-           something like this
-
-            =========== ===========
-            Word              Count
-            =========== ===========
-            a                 631
-            a-piece           1
-            abide             1
-            able              1
-            about             94
-            above             3
-            absence           1
-            absurd            2
-            =========== ===========
-
-           How many times does the word, ``alice``, occur in the book?  If you are writing this
-           in the activecode window simply print out the results rather than write them to a file.
-
            .. actex:: ex_11_02
+
+              Write a program called ``alice_words.py`` that creates a text file named
+              ``alice_words.txt`` containing an alphabetical listing of all the words, and the
+              number of times each occurs, in the text version of `Alice's Adventures in Wonderland`.
+              (You can obtain a free plain text version of the book, along with many others, from
+              http://www.gutenberg.org.) The first 10 lines of your output file should look
+              something like this
+   
+               =========== ===========
+               Word              Count
+               =========== ===========
+               a                 631
+               a-piece           1
+               abide             1
+               able              1
+               about             94
+               above             3
+               absence           1
+               absurd            2
+               =========== ===========
+   
+              How many times does the word, ``alice``, occur in the book?  If you are writing this
+              in the activecode window simply print out the results rather than write them to a file.
+              ~~~~   
 
         .. tab:: Answer
 
@@ -212,9 +213,10 @@ Exercises
 
 .. question:: dict_ex_4
 
-   What is the longest word in Alice in Wonderland? How many characters does it have?
-
    .. actex:: ex_11_03
+
+      What is the longest word in Alice in Wonderland? How many characters does it have?
+      ~~~~
 
 .. question:: dict_ex_5
 
@@ -222,35 +224,36 @@ Exercises
 
         .. tab:: Question
 
-            Here's a table of English to Pirate translations
-
-            ==========  ==============
-            English     Pirate
-            ==========  ==============
-            sir	        matey
-            hotel	    fleabag inn
-            student	    swabbie
-            boy	        matey
-            madam	    proud beauty
-            professor	foul blaggart
-            restaurant	galley
-            your	    yer
-            excuse	    arr
-            students	swabbies
-            are	        be
-            lawyer	    foul blaggart
-            the	        th'
-            restroom	head
-            my	        me
-            hello	    avast
-            is	        be
-            man	        matey
-            ==========  ==============
-
-            Write a program that asks the user for a sentence in English and then translates that
-            sentence to Pirate.
-
             .. actex:: ex_11_04
+
+               Here's a table of English to Pirate translations
+   
+               ==========   ==============
+               English      Pirate
+               ==========   ==============
+               sir	        matey
+               hotel	    fleabag inn
+               student	    swabbie
+               boy	        matey
+               madam	    proud beauty
+               professor	foul blaggart
+               restaurant	galley
+               your         yer
+               excuse	    arr
+               students	    swabbies
+               are	        be
+               lawyer	    foul blaggart
+               the	        th'
+               restroom	    head
+               my	        me
+               hello	    avast
+               is	        be
+               man	        matey
+               ==========   ==============
+   
+               Write a program that asks the user for a sentence in English and then translates that
+               sentence to Pirate.
+               ~~~~
 
 
         .. tab:: Answer
