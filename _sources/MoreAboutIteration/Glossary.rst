@@ -17,7 +17,8 @@ Glossary
         A step-by-step process for solving a category of problems.
 
     body
-        The statements inside a loop.
+        The indented statements after a heading ending in a colon,
+        for instance after a for-loop heading.
 
 
     counter
