@@ -11,6 +11,11 @@
    :prefix: list-28-
    :start: 1
 
+.. index::
+    single: tuple; return value
+    return; tuple
+
+
 Tuples as Return Values
 -----------------------
 
