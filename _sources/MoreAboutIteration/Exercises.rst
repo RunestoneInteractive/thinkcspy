@@ -21,14 +21,11 @@ Exercises
 
            .. actex:: ex_7_7
 
-               Add a print statement to Newton's ``sqrt`` function that
-               prints out ``better`` each time it is calculated. Call your modified
-               function with 25 as an argument and record the results.
-               ~~~~
-
-               def newtonSqrt(n):
-                   # your code here
-
+              Add a print statement to Newton's ``sqrt`` function that
+              prints out ``better`` each time it is calculated. Call your modified
+              function with 25 as an argument and record the results.
+              ~~~~
+              def newtonSqrt(n):
 
 
         .. tab:: Answer
@@ -71,6 +68,19 @@ Exercises
       (*hint: use a web search to find out what a triangular number is.*)
       ~~~~
 
+
+      Write a function ``print_triangular_numbers(n)`` that prints out the first
+      n triangular numbers. A call to ``print_triangular_numbers(5)`` would
+      produce the following output::
+   
+          1       1
+          2       3
+          3       6
+          4       10
+          5       15
+   
+      (*hint: use a web search to find out what a triangular number is.*)
+      ~~~~
       def print_triangular_numbers(n):
           # your code here
 
@@ -135,8 +145,6 @@ Exercises
        Modify the walking turtle program so that rather than a 90 degree left or right turn the
        angle of the turn is determined randomly at each step.
        ~~~~
-
-
 
 
 .. question:: moreiter_ex_5
@@ -257,6 +265,7 @@ Exercises
                   luther.jpg photo.</h4>
               ~~~~
 
+
         .. tab:: Answer
 
             .. activecode:: q7_answer
@@ -307,8 +316,8 @@ Exercises
            .. actex:: ex_7_17
               :nocodelens:
 
-               Write a function to convert an image to black and white.
-               ~~~~
+              Write a function to convert an image to black and white.
+              ~~~~
 
         .. tab:: Answer
 
@@ -380,6 +389,7 @@ Exercises
       Remember that rgb values must be integers between 0 and 255.
       ~~~~
 
+
 .. question:: moreiter_ex_11
 
    .. tabbed:: q11
@@ -391,8 +401,7 @@ Exercises
 
               Write a function to uniformly enlarge an image by a factor of 2 (double the size).
               ~~~~
-
-
+              
         .. tab:: Answer
 
             .. activecode:: answer_7_11
@@ -521,7 +530,6 @@ Exercises
 
               Research the Sobel edge detection algorithm and implement it.
               ~~~~
-
 
         .. tab:: Answer
 

@@ -161,7 +161,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
   :feedback_a: This command generates the sequence with just the number 2 because the first parameter (2) tells range where to start, the second number tells range where to end (before 5) and the third number tells range how many numbers to skip between elements (8).  Since 10 >= 5, there is only one number in this sequence.
   :feedback_b: This command generates the sequence 2, 5 because 8 is not less than 8 (the specified number past the end).
   :feedback_c: The first number is the starting point, the second is past the last allowed, and the third is the amount to increment by.
-  :feedback_d: This command generates the sequence 8, 5, 3 because it starts at 8, ends before 1, and skips to every third number going down.
+  :feedback_d: This command generates the sequence 8, 5, 2 because it starts at 8, ends before 1, and skips to every third number going down.
 
   What command correctly generates the sequence 2, 5, 8?
 

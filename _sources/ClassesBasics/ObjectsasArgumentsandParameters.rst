@@ -10,7 +10,7 @@
 Objects as Arguments and Parameters
 -------------------------------------
 
-You can pass an object as a argument in the usual way.  We've already seen
+You can pass an object as an argument in the usual way.  We've already seen
 this in some of the turtle examples where we passed the turtle to
 some function like ``drawRectangle`` so that the function could 
 control and use whatever turtle instance we passed to it.

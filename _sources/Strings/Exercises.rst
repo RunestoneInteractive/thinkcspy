@@ -47,23 +47,25 @@ Exercises
                 :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
 
 
-#. In Robert McCloskey's
-   book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-   Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
-
-   .. sourcecode:: python
-
-        prefixes = "JKLMNOPQ"
-        suffix = "ack"
-
-	for p in prefixes:
-	    print(p + suffix)
-
-
-   Of course, that's not quite right because Ouack and Quack are misspelled.
-   Can you fix it?
-
+#. 
     .. actex:: ex_8_2
+
+       In Robert McCloskey's
+       book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
+       Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
+    
+       .. sourcecode:: python
+    
+            prefixes = "JKLMNOPQ"
+            suffix = "ack"
+    
+	    for p in prefixes:
+	        print(p + suffix)
+    
+    
+       Of course, that's not quite right because Ouack and Quack are misspelled.
+       Can you fix it?
+       ~~~~ 
 
 #.
 
@@ -71,16 +73,16 @@ Exercises
 
         .. tab:: Question
 
-           Assign to a variable in your program a triple-quoted string that contains
-           your favorite paragraph of text - perhaps a poem, a speech, instructions
-           to bake a cake, some inspirational verses, etc.
-
-           Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
-
-               Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
-
            .. actex:: ex_8_3
 
+              Assign to a variable in your program a triple-quoted string that contains
+              your favorite paragraph of text - perhaps a poem, a speech, instructions
+              to bake a cake, some inspirational verses, etc.
+   
+              Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
+   
+                  Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+              ~~~~
               def count(p):
                   # your code here
 
@@ -120,10 +122,12 @@ Exercises
                 :identifier: disqus_bf88b1c4616d43f289c798b56a43b01c
 
 
-#. Print out a neatly formatted multiplication table, up to 12 x 12.
+#. 
 
    .. actex:: ex_8_4
-
+      
+      Print out a neatly formatted multiplication table, up to 12 x 12.
+      ~~~~
 
 #.
 
@@ -131,10 +135,10 @@ Exercises
 
         .. tab:: Question
 
-           Write a function that will return the number of digits in an integer.
-
            .. actex:: ex_7_10
 
+              Write a function that will return the number of digits in an integer.
+              ~~~~
               def numDigits(n):
                   # your code here
 
@@ -175,11 +179,13 @@ Exercises
                 :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
 
 
-#. Write a function that reverses its string argument.
+#. 
 
    .. actex:: ex_8_5
       :nocodelens:
-
+      
+      Write a function that reverses its string argument.
+      ~~~~
       def reverse(astring):
           # your code here
 
@@ -258,11 +264,13 @@ Exercises
                 :identifier: disqus_70b7ac515456497c952a2de5caa27ab9
 
 
-#. Write a function that removes all occurrences of a given letter from a string.
+#. 
 
    .. actex:: ex_8_7
       :nocodelens:
 
+      Write a function that removes all occurrences of a given letter from a string.
+      ~~~~
       def remove_letter(theLetter, theString):
           # your code here
 
@@ -290,11 +298,11 @@ Exercises
 
         .. tab:: Question
 
-           Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
-
            .. actex:: ex_8_8
               :nocodelens:
 
+              Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
+              ~~~~
               def is_palindrome(myStr):
                   # your code here
 
@@ -350,11 +358,13 @@ Exercises
                 :identifier: disqus_605923545bb849f7b8d41bbf823518e9
 
 
-#. Write a function that counts how many times a substring occurs in a string.
+#. 
 
    .. actex:: ex_8_9
       :nocodelens:
 
+      Write a function that counts how many times a substring occurs in a string.
+      ~~~~
       def count(substr,theStr):
           # your code here
 
@@ -386,11 +396,11 @@ Exercises
 
         .. tab:: Question
 
-           Write a function that removes the first occurrence of a string from another string.
-
            .. actex:: ex_8_10
               :nocodelens:
 
+              Write a function that removes the first occurrence of a string from another string.
+              ~~~~
               def remove(substr,theStr):
                   # your code here
 
@@ -439,10 +449,12 @@ Exercises
                 :identifier: disqus_2f2772134b604a6498748138542d312d
 
 
-#. Write a function that removes all occurrences of a string from another string.
+#. 
 
    .. actex:: ex_8_11
 
+      Write a function that removes all occurrences of a string from another string.
+      ~~~~
       def remove_all(substr,theStr):
           # your code here
 
@@ -471,14 +483,15 @@ Exercises
 
         .. tab:: Question
 
-           Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
-
-               L
-               L -> +RF-LFL-FR+
-               R -> -LF+RFR+FL-
-
            .. actex:: ex_8_12
               :nocodelens:
+
+              Here is another interesting L-System called a Hilbert curve.  Use 90 degrees::
+   
+                  L
+                  L -> +RF-LFL-FR+
+                  R -> -LF+RFR+FL-
+              ~~~~
 
         .. tab:: Answer
 
@@ -549,14 +562,16 @@ Exercises
                 :identifier: disqus_ab823200fac64461a9e88f53b75f5795
 
 
-#. Here is a dragon curve.  Use 90 degrees.::
-
-       FX
-       X -> X+YF+
-       Y -> -FX-Y
-
+#. 
    .. actex:: ex_8_13
       :nocodelens:
+
+      Here is a dragon curve.  Use 90 degrees.::
+   
+          FX
+          X -> X+YF+
+          Y -> -FX-Y
+      ~~~~
 
 #.
 
@@ -564,14 +579,15 @@ Exercises
 
         .. tab:: Question
 
-           Here is something called an arrowhead curve.  Use 60 degrees.::
-
-               YF
-               X -> YF+XF+Y
-               Y -> XF-YF-X
-
            .. actex:: ex_8_14
               :nocodelens:
+
+              Here is something called an arrowhead curve.  Use 60 degrees.::
+   
+                  YF
+                  X -> YF+XF+Y
+                  Y -> XF-YF-X
+              ~~~~
 
         .. tab:: Answer
 
@@ -639,14 +655,16 @@ Exercises
                 :identifier: disqus_9b2dfba083a64d5c894f873af2e93a1b
 
 
-#. Try the Peano-Gosper curve.  Use 60 degrees.::
-
-       FX
-       X -> X+YF++YF-FX--FXFX-YF+
-       Y -> -FX+YFYF++YF+FX--FX-Y
-
+#. 
    .. actex:: ex_8_15
       :nocodelens:
+
+      Try the Peano-Gosper curve.  Use 60 degrees.::
+   
+          FX
+          X -> X+YF++YF-FX--FXFX-YF+
+          Y -> -FX+YFYF++YF+FX--FX-Y
+      ~~~~
 
 #.
 
@@ -654,14 +672,15 @@ Exercises
 
         .. tab:: Question
 
-            The Sierpinski Triangle.  Use 60 degrees.::
-
-               FXF--FF--FF
-               F -> FF
-               X -> --FXF++FXF++FXF--
-
            .. actex:: ex_8_16
               :nocodelens:
+
+               The Sierpinski Triangle.  Use 60 degrees.::
+   
+                  FXF--FF--FF
+                  F -> FF
+                  X -> --FXF++FXF++FXF--
+              ~~~~
 
         .. tab:: Answer
 
@@ -735,14 +754,16 @@ Exercises
                 :identifier: disqus_912a5f19d3964dc2af7a067dcd832c7e
 
 
-#. Write a function that implements a substitution cipher.  In a substitution
-   cipher one letter is substituted for another to garble the message.  For
-   example A -> Q, B -> T, C -> G etc.  your function should take two
-   parameters, the message you want to encrypt, and a string that represents
-   the mapping of the 26 letters in the alphabet.  Your function should
-   return a string that is the encrypted version of the message.
-
+#. 
    .. actex:: ex_8_17
+
+      Write a function that implements a substitution cipher.  In a substitution
+      cipher one letter is substituted for another to garble the message.  For
+      example A -> Q, B -> T, C -> G etc.  your function should take two
+      parameters, the message you want to encrypt, and a string that represents
+      the mapping of the 26 letters in the alphabet.  Your function should
+      return a string that is the encrypted version of the message.
+      ~~~~
 
 #.
 
@@ -750,12 +771,13 @@ Exercises
 
         .. tab:: Question
 
-           Write a function that decrypts the message from the previous exercise.  It
-           should also take two parameters.  The encrypted message,
-           and the mixed up alphabet.  The function should return a string that is
-           the same as the original unencrypted message.
-
            .. actex:: ex_8_18
+
+              Write a function that decrypts the message from the previous exercise.  It
+              should also take two parameters.  The encrypted message,
+              and the mixed up alphabet.  The function should return a string that is
+              the same as the original unencrypted message.
+              ~~~~
 
         .. tab:: Answer
 
@@ -799,11 +821,13 @@ Exercises
                 :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
-#. Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
-   there will never be a duplicate letter added to the new string.
+#. 
 
    .. actex:: ex_8_19
 
+      Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
+      there will never be a duplicate letter added to the new string.
+      ~~~~
       def remove_dups(astring):
           # your code here
 
@@ -816,11 +840,11 @@ Exercises
       class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(remove_dups("pooh"),"ph","Tested remove_dups on string 'pooh'")
+            self.assertEqual(remove_dups("pooh"),"poh","Tested remove_dups on string 'pooh'")
             self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
             self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
             self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
-            self.assertEqual(remove_dups("oo"),"","Tested remove_dups on string 'oo'")
+            self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
 
       myTests().main()
 
@@ -831,16 +855,16 @@ Exercises
 
         .. tab:: Question
 
-           Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
-           The Caesar cipher works like a substitution cipher but each character is replaced
-           by the character 13 characters to 'its right' in the alphabet.  So for example
-           the letter a becomes the letter n.  If a letter is past the middle of the alphabet
-           then the counting wraps around to the letter a again, so n becomes a, o becomes b
-           and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
-           to think of modulo arithmetic.
-
            .. actex:: ex_8_20
 
+              Write a function called ``rot13`` that uses the Caesar cipher to encrypt a message.
+              The Caesar cipher works like a substitution cipher but each character is replaced
+              by the character 13 characters to 'its right' in the alphabet.  So for example
+              the letter a becomes the letter n.  If a letter is past the middle of the alphabet
+              then the counting wraps around to the letter a again, so n becomes a, o becomes b
+              and so on.  *Hint:* Whenever you talk about things wrapping around its a good idea
+              to think of modulo arithmetic.
+              ~~~~
               def rot13(mess):
                   # Your code here
 

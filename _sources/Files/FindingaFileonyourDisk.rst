@@ -77,19 +77,4 @@ in the same directory you can simply use the filename like this:
 different directories then you must use a *relative file path* to the file
 like this: ``open('../myData/data3.txt', 'r')``.
 
-Glossary
---------
-
-.. glossary::
-
-    absolute file path
-        The name of a file that includes a path to the file from the *root*
-        directory of a file system. An *absolute file path* always starts
-        with a ``/``.
-
-    relative file path
-        The name of a file that includes a path to the file from the current
-        working directory of a program. An *relative file path* never starts
-        with a ``/``.
-
 .. index:: absolute file path, relative file path

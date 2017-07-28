@@ -32,3 +32,12 @@ Glossary
    write
       Will add characters to the end of a file that has been opened for writing.
 
+   absolute file path
+      The name of a file that includes a path to the file from the *root*
+      directory of a file system. An *absolute file path* always starts
+      with a ``/``.
+
+   relative file path
+      The name of a file that includes a path to the file from the current
+      working directory of a program. An *relative file path* never starts
+      with a ``/``.

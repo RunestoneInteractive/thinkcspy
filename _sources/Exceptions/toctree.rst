@@ -9,3 +9,4 @@ Exceptions
    02_standard_exceptions.rst
    03_principles_for_using_exceptions.rst
    04_exceptions_syntax.rst
+   glossary.rst
