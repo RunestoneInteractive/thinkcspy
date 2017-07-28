@@ -227,7 +227,8 @@ Exercises
 .. question:: moreiter_ex_6
 
    Modify the previous turtle walk program so that the turtle turns around
-   when it hits the wall or when one turtle collides with another turtle.
+   when it hits the wall or when one turtle collides with another turtle
+   (when the positions of the two turtles are closer than some small number).
 
    .. actex:: ex_7_12
       :nocodelens:
