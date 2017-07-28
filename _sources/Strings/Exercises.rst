@@ -205,7 +205,8 @@ Exercises
 
         .. tab:: Question
 
-           Write a function that mirrors its argument.
+           Write a function that mirrors its string argument, 
+           generating a string containing the original string and the string backwards.
 
            .. actex:: ex_8_6
               :nocodelens:
@@ -350,7 +351,7 @@ Exercises
                 :identifier: disqus_605923545bb849f7b8d41bbf823518e9
 
 
-#. Write a function that counts how many times a substring occurs in a string.
+#. Write a function that counts how many non-overlapping occurences of a substring appear in a string.
 
    .. actex:: ex_8_9
       :nocodelens:
