@@ -40,11 +40,16 @@ If you omit the first index (before the colon), the slice starts at the
 beginning of the string. If you omit the second index, the slice goes to the
 end of the string.
 
+There is no Index Out Of Range exception for a slice.  
+A slice is forgiving and shifts any offending index to something legal. 
+
 .. activecode:: chp08_slice2
     
     fruit = "banana"
     print(fruit[:3])
     print(fruit[3:])
+    print(fruit[3:-10])
+    print(fruit[3:99])
 
 What do you think ``fruit[:]`` means?
 
