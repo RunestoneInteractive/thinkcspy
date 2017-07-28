@@ -14,7 +14,7 @@
 A ``find`` function
 -------------------
 
-Here is an implementation for the ``find`` method.
+Here is an implementation for a restricted ``find`` method, where the target is a single character.
 
 .. activecode:: ch08_run3
     
@@ -57,7 +57,8 @@ The other part of the condition is the same as we used previously to traverse th
 string.  Since we have now combined these two parts with a logical ``and``, it is necessary for them
 both to be *True* to continue iterating.  If one part fails, the condition fails and the iteration stops.
 
-When the iteration stops, we simply ask a question to find out why and then return the proper value.
+When the iteration stops, we must ask a question to find out the individual condition that caused the termination,
+and then return the proper value.  This is a pattern for dealing with while loops with compound conditions.
 
 .. note::
 
@@ -65,9 +66,4 @@ When the iteration stops, we simply ask a question to find out why and then retu
 	soon as we find what we are looking for, we can cry Eureka!  and stop looking.  The way
 	we stop looking is by setting ``found`` to True which causes the condition to fail.
 
-
-
-.. index:: optional parameter, default value, parameter; optional
-
-.. _optional_parameters:
 
