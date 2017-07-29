@@ -22,7 +22,6 @@ Character classification
 
 It is often helpful to examine a character and test whether it is upper- or
 lowercase, or whether it is a character or a digit. The ``string`` module
-in standard Python
 provides several constants that are useful for these purposes. One of these,
 ``string.digits`` is equivalent to "0123456789".  It can be used to check if a character
 is a digit using the ``in`` operator.
