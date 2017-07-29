@@ -38,7 +38,7 @@ ValueError             Raised when the built-in function for a data type has
                        the valid type of arguments, but the arguments have
                        invalid values specified.
 RuntimeError	         Raised when a generated error does not fall into any category.
-MemoryError            Raised when a operation runs our of memory.
+MemoryError            Raised when a operation runs out of memory.
 RecursionError         Raised when the maximum recursion depth has been exceeded.
 SystemError            Raised when the interpreter finds an internal problem,
                        but when this error is encountered the Python interpreter

@@ -66,7 +66,7 @@ format      substitutions       Involved! See :ref:`Format-Strings`, below
 
 You should experiment with these
 methods so that you understand what they do.  Note once again that the methods that return strings do not
-change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/py3k/library/stdtypes.html#index-21>`_.
+change the original.  You can also consult the `Python documentation for strings <https://docs.python.org/3/library/stdtypes.html#string-methods>`_.
 
 .. activecode:: ch08_methods1
 

@@ -16,7 +16,7 @@ Turtles and Strings and L-Systems
 
 This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.
 
-In 1968 Astrid Lindenmayer, a biologist, invented a formal system that
+In 1968 Aristid Lindenmayer, a biologist, invented a formal system that
 provides a mathematical description of plant growth known as an
 **L-system**.  L-systems were designed to model the growth of biological
 systems.  You can think of L-systems as containing the instructions for how
@@ -39,8 +39,8 @@ B -> AB   Rule 2 Change B to AB
 Each rule set contains an axiom which represents the starting point in the transformations that will follow.  The rules are of the form::
 
         left hand side -> right hand side
-        
-where the left hand side is a single symbol and the right had side is a sequence of symbols.  You can think of both sides as being simple strings.
+
+where the left hand side is a single symbol and the right hand side is a sequence of symbols.  You can think of both sides as being simple strings.
 The way the rules are used is to replace occurrences of the left hand side with the corresponding right hand side.
 
 Now let's look at these simple rules in action, starting with the string A::
@@ -186,7 +186,7 @@ L-system string and then it creates a turtle and passes it and the string to the
     :nocodelens:
 
     import turtle
-    
+
     def createLSystem(numIters,axiom):
         startString = axiom
         endString = ""
@@ -228,7 +228,7 @@ L-system string and then it creates a turtle and passes it and the string to the
         print(inst)
         t = turtle.Turtle()            # create the turtle
         wn = turtle.Screen()
-        
+
         t.up()
         t.back(200)
         t.down()
@@ -242,4 +242,3 @@ L-system string and then it creates a turtle and passes it and the string to the
 Feel free to try some different angles and segment lengths to see how the drawing changes.
 
 .. index:: counting pattern
-

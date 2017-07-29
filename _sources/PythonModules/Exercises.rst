@@ -16,9 +16,10 @@ Exercises
 
         .. tab:: Question
 
-           Use a ``for`` statement to print 10 random numbers.
-
            .. actex:: ex_mod_1
+
+              Use a ``for`` statement to print 10 random numbers.
+              ~~~~
 
         .. tab:: Answer
 
@@ -39,9 +40,10 @@ Exercises
 
 .. question:: pymod_ex_2
 
-   Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.
-
    .. actex:: ex_mod_2
+
+      Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.
+      ~~~~
 
 .. question:: pymod_ex_3
 
@@ -49,9 +51,10 @@ Exercises
 
         .. tab:: Question
 
-           The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
-
            .. actex:: ex_mod_3
+
+              The **Pythagorean Theorem** tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the ``math`` module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.
+              ~~~~
 
         .. tab:: Answer
 
@@ -72,7 +75,7 @@ Exercises
 
 .. question:: pymod_ex_4
 
-   Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
-
    .. actex:: ex_mod_4
 
+      Search on the internet for a way to calculate an approximation for **pi**.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of ``math.pi`` from the math module.
+      ~~~~

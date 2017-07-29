@@ -110,7 +110,7 @@ operators.
     print(remainder)
 
 
-In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.
+In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.
 
 The modulus operator turns out to be surprisingly useful. For example, you can
 check whether one number is divisible by another---if ``x % y`` is zero, then
