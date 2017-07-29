@@ -900,12 +900,14 @@ Exercises
                 :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
 
 
-#. Modify this code so it prints each subtotal, the total cost, and average price 
-   to exactly two decimal places.
+#. 
 
    ..   actex:: ex_8_22
         :timelimit: 60
-
+        
+        Modify this code so it prints each subtotal, the total cost, and average price 
+        to exactly two decimal places.
+        ~~~~
         def checkout():
             total = 0
             count = 0

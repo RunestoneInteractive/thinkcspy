@@ -81,18 +81,3 @@ either in a *relative file path* to the file
 like this: ``open('../myData/data3.txt', 'r')``, or in an *absolute file path* like
 ``open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')``.
 
-Glossary
---------
-
-.. glossary::
-
-    absolute file path
-        The name of a file that includes a path to the file from the *root*
-        directory of a file system. An *absolute file path* always starts
-        with a ``/``.
-
-    relative file path
-        The name of a file that includes a path to the file from the current
-        working directory of a program. An *relative file path* never starts
-        with a ``/``.
-
