@@ -244,16 +244,16 @@ be included in the final *formatted* string. The rule is to double
 the braces: ``{{`` and ``}}``. For example mathematical set
 notation uses braces. The initial and final doubled
 braces in the format string below generate literal braces in the
-formatted string:
+formatted string::
 
-.. activecode:: ch08_methods7
 
     a = 5
     b = 9
     setStr = 'The set is {{{}, {}}}.'.format(a, b)
     print(setStr)
 
-
+Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
+printing doubled braces, but standard Python prints ``{5, 9}``.
 
 .. mchoice:: test_question8_3_3
    :answer_a: Nothing - it causes an error
