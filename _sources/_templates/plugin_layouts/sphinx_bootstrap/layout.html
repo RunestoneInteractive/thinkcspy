@@ -135,6 +135,7 @@
 
         <li class="divider-vertical"></li>
 
+        {% if use_services == 'true' %}
         <!-- user account dropdown -->
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
@@ -161,7 +162,7 @@
           </ul>
         </li>
         <!-- end user account dropdown -->
-
+        {% endif %}
         <li class="divider-vertical"></li>
 
         <!-- help menu dropdown -->
@@ -208,6 +209,7 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <link rel="shortcut icon" href="/{{appname}}/static/favicon.ico" type="image/ico" />
+
 <script type="text/javascript">
   eBookConfig = {};
   eBookConfig.host = '{{course_url}}' ? '{{course_url}}' : 'http://127.0.0.1:8000';
@@ -263,7 +265,10 @@
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
-      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
+      {% if use_services == 'true' %}
+      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span>
+      {% endif %}
+      | <a href="#">Back to top</a>
       {% if theme_source_link_position == "footer" %}
         <br />
         {% include "sourcelink.html" %}
