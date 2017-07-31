@@ -5,3 +5,8 @@ build_info
 pavement.pyc
 # for builds on Mac:
 **/.DS_Store
+.vscode
+*~
+*.bak
+*.orig
+\#*\#
