@@ -76,7 +76,7 @@ could access each of the data files using the following *relative file paths*:
 Here's the important rule to remember: If your file and your Python program are
 in the same directory you can simply use the filename like this:
 ``open('myfile.txt', 'r')``. If your file and your Python program are in
-different directories then you must refer to one or more directiroies, 
+different directories then you must refer to one or more directories, 
 either in a *relative file path* to the file
 like this: ``open('../myData/data3.txt', 'r')``, or in an *absolute file path* like
 ``open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')``.
