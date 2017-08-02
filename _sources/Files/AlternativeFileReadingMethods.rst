@@ -146,7 +146,7 @@ Now let's look at another method of reading our file using a ``while`` loop.  Th
 
     infile.close()
 
-There are several important things to notice in tis code:
+There are several important things to notice in this code:
 
 On line 2 we have the statement ``line = infile.readline()``.  
 We call this initial read the **priming read**.
