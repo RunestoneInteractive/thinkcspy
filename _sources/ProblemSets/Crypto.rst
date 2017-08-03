@@ -520,16 +520,16 @@ Below is an example of the Caesar program you are trying to achieve. In the exam
 
 4th time is the charm!
 
-To check if the argument is an integer, there is a string method called ``is_digit`` which you should use. It works just like ``isalpha``, but checks for integers rather than alphabetic characters:
+To check if the argument is an integer, there is a string method called ``isdigit`` which you should use. It works just like ``isalpha``, but checks for integers rather than alphabetic characters:
 
 ::
 
     $ python
-    >>> "grandpa".is_digit()
+    >>> "grandpa".isdigit()
     False
-    >>> "5.0".is_digit()
+    >>> "5.0".isdigit()
     False
-    >>> "5".is_digit()
+    >>> "5".isdigit()
     True
 
 To exit your program early, you can invoke the ``exit`` function, which is part of the ``sys`` module. Simply import the function by adding ``exit`` to your previous ``import`` statement:
