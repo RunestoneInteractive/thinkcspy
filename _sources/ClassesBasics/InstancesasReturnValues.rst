@@ -58,7 +58,9 @@ the target.
 The resulting Point, ``mid``, has an x value of 4 and a y value of 8.  We can also use any other methods since ``mid`` is a
 ``Point`` object.
 
-    
+In the definition of the method ``halfway`` see how the requirement to always use dot notation with attributes disambiguates 
+the meaning of the attributes ``x`` and ``y``: 
+We can always see whether the coordinates of Point ``self`` or ``target`` are being referred to.  
 
 .. note::
 
