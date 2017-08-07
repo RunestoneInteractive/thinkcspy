@@ -7,6 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: class; user defined
+   user defined class
+   attribute
+
 User Defined Classes
 --------------------
 
@@ -89,7 +93,14 @@ So let's use our new Point class now.
     print("Nothing seems to have happened with the points")
 
 During the initialization of the objects, we created two
-attributes called `x` and `y` for each, and gave them both the value 0.  You will note that when you run the
+attributes called `x` and `y` for each, and gave them both the value 0. 
+
+.. note::
+   The asignments are not to ``x`` and ``y``, but to ``self.x`` and ``self.y``.  
+   The attributes ``x`` and ``y`` are *always* attached to a particular instance.  
+   The instance is always explicitly referenced with dot notation. 
+
+You will note that when you run the
 program, nothing happens.  It turns out that this is not quite the case.  In fact, two ``Points`` have been created, each
 having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don't see any other result.
 
