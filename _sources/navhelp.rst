@@ -47,7 +47,7 @@ environment for learning a programming language like Python since you can experi
 
 Take a look at the ActiveCode interpreter in action.  If we take a simple Python program and make it active, you will see that it can be executed directly by pressing the *Run* button.   Try pressing the *Run* button below.
 
-.. activecode:: codeexample1
+.. activecode:: nav_codeexample1
 
    print("My first program adds two numbers, 2 and 3:")
    print(2 + 3)
@@ -59,7 +59,7 @@ The CodeLens Tool
 In addition to ActiveCode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **CodeLens**, allows you to control the step by step execution of a program.  It also lets you see the values of
 all variables as they are created and modified.  The following example shows CodeLens in action on the same simple program as we saw above.  Remember that in ActiveCode, the source code executes from beginning to end and you can see the final result.  In Codelens you can see and control the step by step progress.  Try clicking on the *Forward* button below.
 
-.. codelens:: firstexample
+.. codelens:: nav_firstexample_cl
     :showoutput:
 
     print("My first program adds two numbers, 2 and 3:")
@@ -75,7 +75,7 @@ understand why an answer may or may not be correct.
 
 **Check your understanding**
 
-.. mchoice:: question1_1
+.. mchoice:: nav_question1_1
    :answer_a: Python
    :answer_b: Java
    :answer_c: C
@@ -93,7 +93,7 @@ This next type of question allows more than one correct answer to be required.  
 correct number as well as the feedback for each.
 
 
-.. mchoice:: question1_2
+.. mchoice:: nav_question1_2
    :multiple_answers:
    :answer_a: red
    :answer_b: yellow
@@ -110,7 +110,7 @@ correct number as well as the feedback for each.
 
 **Check your understanding**
 
-.. parsonsprob:: question1_100_4
+.. parsonsprob:: nav_question1_100_4
 
    Construct a block of code that correctly implements the accumulator pattern.
    -----
@@ -128,7 +128,7 @@ Aside from reading the text, it is sometimes useful to hear someone tell you abo
 In order to accomplish this, we provide a way to integrate simple, short videos into the text.  For example, if you click
 on the video shown below, you will hear us talk about the tools that will be described shortly.
 
-.. video:: videoinfo
+.. video:: nav_videoinfo
     :controls:
     :thumb: _static/activecodethumb.png
 
