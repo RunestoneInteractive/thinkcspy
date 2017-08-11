@@ -17,7 +17,7 @@ Hello Little Turtles!
     single: definition; function
     single: turtle module
 
-.. video:: assignvid
+.. video:: vid_turtleintro
     :controls:
     :thumb: ../_static/turtleintro.png
 
