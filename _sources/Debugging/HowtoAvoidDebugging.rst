@@ -16,15 +16,17 @@ How to Avoid Debugging
 
 Perhaps the most important lesson in debugging is that it is **largely avoidable** -- if you work carefully.
 
-1.  **Start Small**  This is probably the single biggest piece of advice for programmers at every level.  Of course its tempting to sit down and crank out an entire program at once.  But, when the program -- inevitably -- does not work then you have a myriad of options for things that might be wrong.  Where to start?  Where to look first?  How to figure out what went wrong?  I'll get to that in the next section.  So, start with something really small.  Maybe just two lines and then make sure that runs ok.  Hitting the run button is quick and easy, and gives you immediate feedback about whether what you have just done is ok or not.  Another immediate benefit of having something small working is that you have something to turn in.  Turning in a small, incomplete program, is almost always better than nothing.
+1.  **Identify a correct solution**  You must have a firm grasp on what constitutes a correct solution -- what the program should do in specific circumstances -- what output should be produced for some given input. You need to understand **what** you are trying to accomplish but not necessarily **how** to do it. You can then identify whether there remains work to do or bugs to correct. This is probably the single biggest piece of advice for programmers at every level.  
+
+2.  **Start Small**  It is tempting to sit down and crank out an entire program at once.  But, when the program -- inevitably -- does not work, you have a myriad of options for things that might be wrong.  Where to start?  Where to look first?  How to figure out what went wrong?  I'll get to that in the next section.  So, start with something really small.  Maybe just two lines and then make sure that runs ok.  Hitting the run button is quick and easy, and gives you immediate feedback about whether what you have just done is ok or not.  Another immediate benefit of having something small working is that you have something to turn in.  Turning in a small, incomplete program, is almost always better than nothing.
 
 
-3.  **Keep it working**  Once you have a small part of your program working the next step is to figure out something small to add to it.  If you keep adding small pieces of the program one at a time, it is much easier to figure out what went wrong, as it is most likely that the problem is going to be in the new code you have just added.  Less new code means its easier to figure out where the problem is.
+3.  **Keep improving it**  Once you have a small part of your program working the next step is to figure out something small to add to it -- how can you move closer to a correct solution.  If you keep adding small pieces of the program one at a time, it is much easier to figure out what went wrong, as it is most likely that the problem is going to be in the new code you have just added.  Less new code means its easier to figure out where the problem is.
 
-This notion of **Get something working and keep it working** is a mantra that you can repeat throughout your career as a programmer.  It's a great way to avoid the frustrations mentioned above.  Think of it this way.  Every time you have a little success, your brain releases a tiny bit of chemical that makes you happy.  So, you can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.
+This notion of **Get something working and keep improving it** is a mantra that you can repeat throughout your career as a programmer.  It's a great way to avoid the frustrations mentioned above.  Think of it this way.  Every time you have a little success, your brain releases a tiny bit of chemical that makes you happy.  So, you can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.
 
 
-Ok, let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off.
+Ok, let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off. For example, if ``current_time`` is 8 and ``wait_time`` is 5, ``final_time`` should be 13 (1 pm).
 
 So, where to start?  The problem requires two pieces of input from the user, so let's start there and make sure we can get the data we need.
 
@@ -37,7 +39,7 @@ So, where to start?  The problem requires two pieces of input from the user, so 
    print(wait_time)
 
 
-So far so good.  Now let's take the next step.  We need to figure out what the time will be after waiting ``wait_time`` number of hours.  A good first approximation to that is to simply add ``wait_time`` to ``current_time`` and print out the result.  So lets try that.
+So far so good.  Now let's take the next step.  We need to figure out what the time will be after waiting ``wait_time`` number of hours.  A reasonable solution is to simply add ``wait_time`` to ``current_time`` and print out the result.  So lets try that.
 
 .. activecode:: db_ex3_2
 
@@ -50,7 +52,7 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
    final_time = current_time + wait_time
    print(final_time)
 
-Hmm, when you run that example you see that something funny has happened.
+Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.
 
 .. mchoice:: db_q_ex3_1
    :answer_a: Python is stupid and does not know how to add properly.
@@ -63,7 +65,9 @@ Hmm, when you run that example you see that something funny has happened.
 
    Which of the following best describes what is wrong with the  previous example?
 
-This error was probably pretty simple to spot, because we printed out the value of ``final_time`` and it is easy to see that the numbers were just concatenated together rather than added.  So what do we do about the problem?  We will need to convert both ``current_time`` and ``wait_time`` to ``int``.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.
+This error was probably pretty simple to spot, because we printed out the value of ``final_time`` and it is easy to see that the numbers were just concatenated together rather than added.  
+
+So what do we do about the problem?  We will need to convert both ``current_time`` and ``wait_time`` to ``int``.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.
 
 
 .. activecode:: db_ex3_3
@@ -80,9 +84,12 @@ This error was probably pretty simple to spot, because we printed out the value 
 
 .. index:: boundary conditions, testing, debugging
 
-Now, thats a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for the current time and 5 for the wait time then 13 is correct.  But if you entered 17 (5pm) for the hours and 9 for the wait time then the result of 26 is not correct.  This illustrates an important aspect of **testing**, which is that it is important to test your code on a range of inputs.  It is especially important to test your code on **boundary conditions**.  In this case you would want to test your program for hours including 0, 23, and some in between.  You would want to test your wait times for 0, and some really large numbers.  What about negative numbers?  Negative numbers don't make sense, but since we don't really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.  
+Now, that's a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for ``current_time`` and 5 for ``wait_time`` then 13 is correct.  But if you entered 17 (5 pm) for ``current_time`` and 9 for ``wait_time`` then the result of 26 is not correct.
 
-So finally we need to account for those numbers that are bigger than 23.  For this we will need one final step, using the modulo operator.
+This illustrates an important aspect of **testing**: it is important to test your code on a range of inputs.  It is especially important to test your code on **boundary conditions**.  For this particular problem, you should test your program with ``current_time`` of 0, 23, and some values in between.  You should test your ``wait_time`` for 0, and some larger values.  What about negative numbers?  Negative numbers don't make sense, and since we don't really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.  
+
+So to account for those numbers that are bigger than 23, we need one final step: using the modulus operator.
+
 
 .. activecode:: db_ex3_4
 
