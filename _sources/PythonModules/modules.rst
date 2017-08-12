@@ -17,7 +17,7 @@
 Modules and Getting Help
 ------------------------
 
-.. video:: inputvid
+.. video:: vid_modules
     :controls:
     :thumb: ../_static/modules.png
 
