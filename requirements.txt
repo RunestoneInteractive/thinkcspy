@@ -1,2 +1,2 @@
-runestone>=3.0.0b5
+runestone>=3.0.0
 SQLAlchemy>=1.0.8
