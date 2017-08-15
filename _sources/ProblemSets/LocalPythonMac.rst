@@ -12,6 +12,11 @@ Getting Familiar with the Command Line
 
 Before we install Python on our computers, let's get familiar with the command line.
 
+Install Git
+*************
+
+If you haven't already done this during **Unit 0: Coding Prep**, then the first step is to ensure Git is installed on your Mac. To do so, open the terminal (see instructions below), and type ``git --version``. If you see a git version listed, e.g., "git 2.5.4", then you are good to go. Otherwise, you will get an alert asking you if you would like to install the developer tools. Click "Install".
+
 Opening Terminal
 ****************
 
@@ -37,7 +42,7 @@ First, we'll install Visual Studio Code, a general-purpose code editor. There ar
 To install Visual Studio Code (VS Code):
 
 1. Go to `Visual Studio Code`_ and select the Mac platform to download. If the "Download for Mac" message is not displayed on the green button, select the Stable macOS package using the dropdown arrow).
-#. Double click the downloaded file and follow the installer instructions (the default selections are fine).
+#. Double click the downloaded file and follow the installer instructions (the default selections are fine. If there is an option to set the PATH environmental Variable, select it).
 #. Launch VS Code.
 #. Open the Command Palette (⇧⌘P) in VS Code and type 'shell command' to find the ``Shell Command: Install 'code' command in PATH command``. Select this and then quit VS Code (we'll relaunch it from the command line in the next step).
 #. Close and reopen your Terminal window for the changes to take effect. In the new Terminal window, run ``code`` to open VS Code. If you run into any problems with this, check out this article_ on VS Code setup.
@@ -47,11 +52,11 @@ To install Visual Studio Code (VS Code):
 Install Miniconda Python 3
 ****************************
 
-Now let's install Python 3 using Miniconda. Follow these steps:
+Now let's install Python 3 using Miniconda. **Before continuing, ensure that the shell you are using for terminal is bash**. If you are using any other shell (e.g., zsh or tcsh) the following instructions will not work properly. Visit this link_ for guidance on changing your shell. Now, follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Mac 64-bit (bash installer) (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
 #. In the Terminal application, change to your ``Downloads/`` directory: ``cd ~/Downloads``.
-#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. **Accept all of the default options**. If you view the license agreement, you'll have to page through using it using the spacebar.
+#. Run the installer script: ``bash Miniconda3-latest-MacOSX-x86_64.sh``. **Accept all of the default options and make sure to select to change the bashrc file when prompted.**. If you view the license agreement, you'll have to page through using it using the spacebar.
 #. **Close and reopen your Terminal window for the changes to take effect**.
 #. Verify that Python 3 installed correctly by opening Terminal and typing ``python -V``. It should print to the screen the version of Python you just installed.
 
@@ -83,3 +88,4 @@ Now you're ready work on the second part of `Initials`_.
 .. _Use Spotlight: https://support.apple.com/en-us/HT204014
 .. _Initials: Initials.html#part-2-initials
 .. _article: https://code.visualstudio.com/docs/setup/mac
+.. _link: http://osxdaily.com/2012/03/21/change-shell-mac-os-x

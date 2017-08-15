@@ -31,7 +31,7 @@ Tuples support the same sequence operations as strings and lists. For example, t
 .. sourcecode:: python
 
     print(julia[1])   # will print Roberts
-    print(julia[3:4]) # will print ('Duplicity', 2009)
+    print(julia[3:5]) # will print ('Duplicity', 2009)
 
 And, as with strings, if we try to use item assignment to modify one of the elements of the tuple, we get an error.
 

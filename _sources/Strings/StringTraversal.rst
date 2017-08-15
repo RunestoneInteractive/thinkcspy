@@ -16,7 +16,7 @@
 String Traversal
 -----------------
 
-A lot of computations involve processing a collection one item at a time. For strings this means that we would like to process one character at a time. Often we start at the beginning, select each character in turn, do something to it, and continue until the end. This pattern of processing is called a **traversal**. In this lesson we'll look at a few different was to traverse a string: two using the ``for`` loop and one using the ``while`` loop.
+A lot of computations involve processing a collection one item at a time. For strings this means that we would like to process one character at a time. Often we start at the beginning, select each character in turn, do something to it, and continue until the end. This pattern of processing is called a **traversal**. In this lesson we'll look at a few different ways to traverse a string: two using the ``for`` loop and one using the ``while`` loop.
 
 The for Loop: By Item
 ======================

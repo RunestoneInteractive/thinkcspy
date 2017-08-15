@@ -37,8 +37,9 @@ First, we'll install Visual Studio Code, a general-purpose code editor. There ar
 To install Visual Studio Code:
 
 1. Go to `Visual Studio Code`_ and select the Windows platform to download (it should automatically feature *Download for Windows* and you can click that green button to download, otherwise select "installer" next to Windows after clicking the green dropdown arrow).
-#. Double click the downloaded file and follow the installer instructions (the default selections are fine).
+#. Double click the downloaded file and follow the installer instructions (the default selections are fine--just make sure that the box with the option to add this to your PATH is checked).
 #. Open Visual Studio Code and click "View", then "Extensions". In the Extensions menu that will appear, you'll see an option named "Python" with a subheader of "Linting, Debugging(multi-threaded...)". Click the green "Install" button for this extension.
+#. Close and reopen Visual Studio Code for the changes to take effect.
 
 Install Miniconda Python 3
 **************************
@@ -46,7 +47,11 @@ Install Miniconda Python 3
 Now let's install Python 3 using Miniconda. Follow these steps:
 
 1. Go to Conda_ and download the Miniconda "Python 3.6" Windows 64-bit installer (Note: the version may have changed since the time of this writing; just make sure to select the latest version of Python beginning with "3.").
-#. When you open the installer for Miniconda, after agreeing to the terms, you'll see a screen that says "Install for: ". Select the button that says "All Users" and then click "Next" to carry on with the installation process. **Accept all of the default options** during this process.
+#. Open the installer for Miniconda and go through the installation process. During this process, make sure that you select the following:
+
+   1. On the *Install for* screen select "All Users" (*not* "Just Me").
+   #. On the *Advanced Options* screen select "Add Anaconda to my PATH environment variable" and "Register Anaconda as my default Python 3.6"
+
 #. Now, **close and reopen** Git Bash for the changes to take effect.
 #. Verify that Python 3 installed correctly by typing ``python -V``. It should print to the screen the version of Python you just installed.
 #. Enter the following commands into Git Bash:
@@ -57,6 +62,7 @@ Now let's install Python 3 using Miniconda. Follow these steps:
 
    The ``.bashrc`` file will open in a text editor. Enter this line into the file exactly as it appears here: ``alias python='winpty python.exe'`` then save and close the file.
 #. Back on the command line, enter ``source .bashrc`` and press Enter. You may see a message about *.bashrc* and *bash_profile*; that's all good.
+#. Note that if you have any issues with the above, it is sometimes helpful to run Git Bash as an administrator. To do so, right click on the desktop shortcut for Git Bash and select "Run as Administrator".
 
 Make Your First Local Python Program
 ====================================
