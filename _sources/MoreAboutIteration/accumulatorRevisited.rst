@@ -12,7 +12,7 @@ Here is another accumulator pattern program. It adds up the reciprocals of power
 
 You may have studied this sequence in a math class and learned that the sum approaches but never reaches 2.0. That is true in theory. However, when we implement this summation in a program, we see something different. 
 
-.. activecode:: 
+.. activecode:: chp07_sum2n
 
     def sumTo():
         """ Return the sum of reciprocals of powers of 2 """
