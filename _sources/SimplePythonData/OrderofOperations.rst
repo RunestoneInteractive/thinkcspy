@@ -121,4 +121,25 @@ You will also see many upcoming non-mathematical Python operators.
 
       2 ** 2 ** 3 * 3
 
+Here are animations for the above expressions:
+
+.. showeval:: se_tq281
+   :trace_mode: true
+
+   16 - 2 * 5 // 3 + 1
+   ~~~~
+   16 - {{2 * 5}}{{10}} // 3 + 1
+   16 - {{10 // 3}}{{3}} + 1
+   {{16 - 3}}{{13}} + 1
+   {{13 + 1}}{{14}}
+
+.. showeval:: se_tq282
+   :trace_mode: true
+
+   2 ** 2 ** 3 * 3
+   ~~~~
+   2 ** {{2 ** 3}}{{8}} * 3
+   {{2 ** 8}}{{256}} * 3
+   {{256 * 3}}{{768}}
+
 
