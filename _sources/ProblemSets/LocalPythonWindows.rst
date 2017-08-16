@@ -27,7 +27,7 @@ We're going to use Appendix A from the online book *Learn Python the Hard Way* (
 Installing and Running Python Locally
 =====================================
 
-By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool. Please follow all of the instructions below *exactly*.
+By "locally" we mean that you are now about to install and run Python directly on your computer, as opposed to through some web-based or remote tool. **Please follow all of the instructions below exactly**.
 
 Install a code editor
 *********************
