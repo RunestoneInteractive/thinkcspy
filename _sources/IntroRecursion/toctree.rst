@@ -12,4 +12,4 @@ Recursion
    intro-VisualizingRecursion.rst
    SierpinskiTriangle.rst
    Glossary.rst
-   Exercises.rst
+   ProgrammingExercises.rst

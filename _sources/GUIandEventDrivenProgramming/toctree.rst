@@ -16,5 +16,6 @@ GUI and Event Driven Programming
    09_modifying_widgets.rst
    10_timer_events.rst
    11_gui_program_example.rst
+   12_model_view_controller.rst
    Glossary.rst
    
