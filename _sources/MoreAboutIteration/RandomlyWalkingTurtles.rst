@@ -11,6 +11,8 @@
    :prefix: iter-4-
    :start: 1
 
+.. _randomly-walking-turtles:
+
 Randomly Walking Turtles
 ------------------------
 
@@ -19,7 +21,7 @@ randomly inside the screen.  When we run the program we want the turtle and
 program to behave in the following way:
 
 #. The turtle begins in the center of the screen.
-#. Flip a coin. If its heads then turn to the left 90 degrees. If its tails
+#. Flip a coin. If it's heads then turn to the left 90 degrees. If it's tails
    then turn to the right 90 degrees.
 #. Take 50 steps forward.
 #. If the turtle has moved outside the screen then stop, otherwise go back to
@@ -212,4 +214,3 @@ program into a couple of parts is another example of functional decomposition.
    :feedback_d: While the isInScreen function does use the size of the window and position of the turtle, it does not return the turtle position.
 
    In the random walk program in this section, what does the isInScreen function do?
-

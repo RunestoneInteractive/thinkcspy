@@ -16,7 +16,8 @@ Precedence of Operators
 
 We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression ``x*5 >= 10 and y-6 <= 20`` will be evaluated so as to first perform the arithmetic and then check the relationships.  The ``and`` will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.
 
-The following table summarizes the operator precedence from highest to lowest.  A complete table for the entire language can be found in the `Python Documentation <http://docs.python.org/py3k/reference/expressions.html#expression-lists>`_.
+The following table summarizes the precedence discussed so far from highest to lowest.  
+See :ref:`operator-summary` for *all* the operators introduced in this book.
 
 =======   ==============  ===============
 Level     Category        Operators
@@ -54,14 +55,20 @@ Level     Category        Operators
 
    Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 > 10 and 4+6==11
 
+Here is an animation for the above expression:
+
+.. showeval:: se_tq631
+   :trace_mode: true
+
+   5 * 3 > 10 and 4 + 6 == 11
+   ~~~~
+   {{5 * 3}}{{15}} > 10 and 4 + 6 == 11
+   {{15 > 10}}{{True}} and 4 + 6 == 11
+   True and {{4 + 6}}{{10}} == 11
+   True and {{10 == 11}}{{False}}
+   {{True and False}}{{False}}
+
 .. index:: conditional branching, conditional execution, if, elif, else,
            if statement, compound statement, statement block, block, body,
            pass statement
-
-.. index::
-    single: statement; if
-    single: compound statement; header
-    single: compound statement; body
-    single: conditional statement
-    single: statement; pass
 

@@ -11,6 +11,11 @@
    :prefix: strings-16-
    :start: 1
 
+.. index:: optional parameter, default value
+   parameter; optional
+
+.. _optional_parameters:
+
 Optional parameters
 -------------------
 
@@ -114,11 +119,6 @@ If the caller has supplied an argument for ``end``, however, the caller's value 
 
 The semantics of ``start`` and ``end`` in this function are precisely the same as they are in
 the ``range`` function.
-
-
-
-.. index:: module, string module, dir function, dot notation, function type,
-           docstring
 
 
 

@@ -11,6 +11,10 @@
    :prefix: func-7-
    :start: 1
 
+.. index:: main function
+   function; main
+
+
 Using a Main Function
 ---------------------
 
@@ -48,7 +52,7 @@ In many programming languages (e.g. Java and C++), it is not possible to simply 
 
 The following activecode shows this idea.  In line 11 we have defined a new function called ``main`` that doesn't need any parameters.  The five lines of main processing are now placed inside this function.  Finally, in order to execute that main processing code, we need to invoke the ``main`` function (line 20).  When you push run, you will see that the program works the same as it did before.
 
-.. activecode:: ch04_1
+.. activecode:: ch04_1main
     :nocodelens:
 
     import turtle

@@ -11,6 +11,9 @@
    :prefix: intro-9-
    :start: 1
 
+.. index:: semantic error, logic error, error; semantic, error; logic
+
+
 Semantic Errors
 ---------------
 
@@ -28,7 +31,7 @@ looking at the output of the program and trying to figure out what it is doing.
 
 .. mchoice:: question1_8_1
    :answer_a: Attempting to divide by 0.
-   :answer_b: Forgetting a semi-colon at the end of a statement where one is required.
+   :answer_b: Forgetting a colon at the end of a statement where one is required.
    :answer_c: Forgetting to divide by 100 when printing a percentage amount.
    :correct: c
    :feedback_a: A semantic error is an error in logic. In this case the program does not produce the correct output because the problem is not solved correctly. This would be considered a run-time error.
@@ -37,9 +40,17 @@ looking at the output of the program and trying to figure out what it is doing.
 
    Which of the following is a semantic error?
 
+.. mchoice:: question1_8_2
+   :answer_a: The programmer.
+   :answer_b: The compiler / interpreter.
+   :answer_c: The computer.
+   :answer_d: The teacher / instructor.
+   :correct: a
+   :feedback_a: You must fully understand the problem so the you can tell if your program properly solves it.
+   :feedback_b: The compiler and / or interpreter will only do what you instruct it to do. It does not understand what the problem is that you want to solve.
+   :feedback_c: The computer does not understand your problem. It just executes the instructions that it is given.
+   :feedback_d: Your teacher and instructor may be able to find most of your semantic errors, but only because they have experience solving problems.  However it is your responsibility to understand the problem so you can develop a correct solution.
 
-.. index::
-    single: Holmes, Sherlock
-    single: Doyle, Arthur Conan
-    single: Linux
+
+   Who or what typically finds semantic errors?
 

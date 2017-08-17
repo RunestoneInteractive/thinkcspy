@@ -17,8 +17,10 @@ Glossary
         One of the named data items that makes up an instance.
 
     class
-        A user-defined compound type. A class can also be thought of as a
+        A class can be thought of as a
         template for the objects that are instances of it.
+        It defines a data type.
+        A class can be provided by the Python system or be user-defined. 
         
     constructor
         Every class has a "factory", called by the same name as the class, for
@@ -42,10 +44,10 @@ Glossary
         instances of that class. 
 
     object
-        A compound data type that is often used to model a thing or concept in
+        A compound form of data that is often used to model a thing or concept in
         the real world.  It bundles together the data and the operations that 
-        are relevant for that kind of data.  Instance and object are used
-        interchangeably.
+        are relevant for that thing or concept. It has the type of its defining class.  
+        Instance and object are used interchangeably.
 
     object-oriented programming
         A powerful style of programming in which data and the operations 

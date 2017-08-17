@@ -10,6 +10,8 @@
 
 
 .. index:: object-oriented programming
+   OOP
+   object
 
 
 Object-oriented programming

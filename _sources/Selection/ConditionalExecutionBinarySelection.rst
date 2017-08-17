@@ -11,6 +11,10 @@
    :prefix: select-4-
    :start: 1
 
+.. index:: heading, body, selection, if, else, pass, compound statement, conditional statement
+   statement; if
+   statement; pass
+
 Conditional Execution: Binary Selection
 ---------------------------------------
 
@@ -47,8 +51,8 @@ The syntax for an ``if`` statement looks like this:
         STATEMENTS_2        # executed if condition evaluates to False
 
 The boolean expression after the ``if`` statement is called the **condition**.
-If it is true, then the indented statements get executed. If not, then the statements
-indented under the `else` clause get executed.
+If it is true, then the immediately following indented statements get executed. If not, then the statements
+indented under the ``else`` clause get executed.
 
 .. sidebar::  Flowchart of a **if** statement with an **else**
 
@@ -61,8 +65,7 @@ statements like ``for``, the ``if`` statement consists of a header line and a bo
 line begins with the keyword ``if`` followed by a *boolean expression* and ends with
 a colon (:).
 
-The indented statements that follow are called a **block**. The first
-unindented statement marks the end of the block.
+The more indented statements that follow are called a **block**. 
 
 Each of the statements inside the first block of statements is executed in order if the boolean
 expression evaluates to ``True``. The entire first block of statements
@@ -72,6 +75,10 @@ all the statements under the ``else`` clause are executed.
 There is no limit on the number of statements that can appear under the two clauses of an
 ``if`` statement, but there has to be at least one statement in each block.
 
+Each compound statement includes a heading and all the following further-indented statements in 
+the block after the heading.  The ``if`` - ``else`` statement is an unusual compound statement because it
+has more than one part at the same level of indentation as the ``if`` heading, 
+(the ``else`` clause, with its own indented block).
 
 .. admonition:: Lab
 
@@ -106,7 +113,7 @@ There is no limit on the number of statements that can appear under the two clau
    :feedback_c: Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.
    :feedback_d: Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
 
-   What does the following code print (choose from output a, b, c or nothing).
+   What does the following code print (choose from output a, b, c or nothing)?
 
    .. code-block:: python
 
@@ -152,8 +159,4 @@ There is no limit on the number of statements that can appear under the two clau
          TRUE
          FALSE
          TRUE
-
-
-
-.. index:: alternative execution, branch, wrapping code in a function
 

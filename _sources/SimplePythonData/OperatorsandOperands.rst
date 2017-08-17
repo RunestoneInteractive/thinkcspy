@@ -11,6 +11,14 @@
    :prefix: data-7-
    :start: 1
 
+.. index::
+   single: +; addition
+   single: - 
+   single: *; multiplication of numbers
+   single: **
+   multiplication
+   operators and operands
+
 Operators and Operands
 ----------------------
 
@@ -42,6 +50,12 @@ expect.
     print(2 * 3)
     print(2 ** 3)
     print(3 ** 2)
+
+.. index::
+   division /  //  % remainder
+   single: /  
+   single: //
+   single: ( ); grouping
 
 When a variable name appears in the place of an operand, it is replaced with
 the value that it refers to before the operation is performed.
@@ -77,7 +91,10 @@ Take care that you choose the correct flavor of the division operator.  If
 you're working with expressions where you need floating point values, use the
 division operator ``/``.  If you want an integer result, use ``//``.
 
+
 .. index:: modulus
+   single: %
+   remainder
 
 The **modulus operator**, sometimes also called the **remainder operator** or **integer remainder operator** works on integers (and integer expressions) and yields
 the remainder when the first operand is divided by the second. In Python, the
@@ -93,7 +110,7 @@ operators.
     print(remainder)
 
 
-In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.
+In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.
 
 The modulus operator turns out to be surprisingly useful. For example, you can
 check whether one number is divisible by another---if ``x % y`` is zero, then

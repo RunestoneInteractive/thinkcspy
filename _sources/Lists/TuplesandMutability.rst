@@ -36,7 +36,8 @@ lets us "chunk" together related information and use it as a single thing.
 
 Tuples support the same sequence operations as strings and
 lists. 
-For example, the index operator selects an element from a tuple.
+For example, the index operator selects an element from a tuple.  
+A tuple can be the sequence in a for-loop.
 
 As with strings, if we try to use item assignment to modify one of the elements of the
 tuple, we get an error.
@@ -62,6 +63,9 @@ the new tuple.
 
     print(len(julia))
 
+    for field in julia:
+        print(field)
+
     julia = julia[:3] + ("Eat Pray Love", 2010) + julia[5:]
     print(julia)
 
@@ -79,7 +83,4 @@ the final comma, Python treats the ``(5)`` below as an integer in parentheses:
     print(type(x))
  
 
-.. index::
-    single: assignment; tuple 
-    single: tuple; assignment  
 

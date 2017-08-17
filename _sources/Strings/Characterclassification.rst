@@ -11,6 +11,12 @@
    :prefix: strings-17-
    :start: 1
 
+
+
+.. index:: module; string
+   string module 
+
+
 Character classification
 ------------------------
 
@@ -23,10 +29,11 @@ is a digit using the ``in`` operator.
 The string ``string.ascii_lowercase`` contains all of the ascii letters that the system
 considers to be lowercase. Similarly, ``string.ascii_uppercase`` contains all of the
 uppercase letters. ``string.punctuation`` comprises all the characters considered
-to be punctuation. Try the following and see what you get.
+to be punctuation. Run the following:
 
-.. sourcecode:: python
+   .. activecode:: string_class_1
     
+    import string
     print(string.ascii_lowercase)
     print(string.ascii_uppercase)
     print(string.digits)

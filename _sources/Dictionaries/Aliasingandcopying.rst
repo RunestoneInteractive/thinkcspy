@@ -11,6 +11,11 @@
    :prefix: dict-4-
    :start: 1
 
+.. index::
+   alias; dictionary
+   copy; dictionary
+   dictionary; alias and copy
+
 Aliasing and Copying
 --------------------
 
@@ -63,6 +68,4 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
      yourdict["elephant"] = 999
      print(mydict["elephant"])
 
-
-.. index:: matrix
 

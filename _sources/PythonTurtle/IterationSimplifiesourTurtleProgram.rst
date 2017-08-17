@@ -76,6 +76,16 @@ of the computation.
 
 In this case, the value of ``aColor`` is used to change the color attribute of ``alex``.  Each iteration causes ``aColor`` to change to the next value in the list.
 
+The for-loop is our first example of a **compound statement**.  
+Syntactically a compound statement is a statement. 
+The level of indentation of
+a (whole) compound statement is the indentation of its heading.  
+In the example above there are five statements with the same
+indentation, executed sequentially: the import, 2 assignments, the *whole* for-loop, 
+and ``wn.exitonclick()``.  The for-loop compound statement is executed completely before
+going on to the next sequential statement, ``wn.exitonclick()``.
+
+
 **Mixed up program**
 
 .. parsonsprob:: 3_8
@@ -147,9 +157,9 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
    :correct: a
    :feedback_a: The loop body can have any number of lines, all indented from the loop header.
    :feedback_b: The loop body may have more than one line.
-   :feedback_c: Python does not use semi-colons in its syntax, but relies mainly on indentation.
+   :feedback_c: Python does not need semi-colons in its syntax, but relies mainly on indentation.
 
-   How does python know what lines are contained in the loop body?
+   How does python know what statements are contained in the loop body?
 
 .. mchoice:: test_question3_4_3
       :answer_a: 2
@@ -175,7 +185,7 @@ In this case, the value of ``aColor`` is used to change the color attribute of `
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.
       :correct: c
-      :feedback_a: The items in the list are not actually used to control the color of the turtle because aColor is never used inside the loop.  But, the loop will execute once for each color in the list.
+      :feedback_a: The question is not asking you to describe the outcome of the entire loop, the question is asking you about the outcome of a **single iteration** of the loop.
       :feedback_b: Notice that aColor is never actually used inside the loop.
       :feedback_c: The body of the loop only draws one side of the square.  It will be  repeated once for each item in the list.  However, the color of the turtle never changes.
 

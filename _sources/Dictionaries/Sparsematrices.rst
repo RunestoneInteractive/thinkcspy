@@ -11,6 +11,11 @@
    :prefix: dict-5-
    :start: 1
 
+
+.. index:: matrix
+   sparse matrix
+   
+
 Sparse Matrices
 ---------------
 

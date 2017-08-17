@@ -6,9 +6,6 @@
     '_static'+'/bootstrap-3.0.0/js/bootstrap.min.js',
     '_static'+'/bootstrap-sphinx.js',
     '_static'+'/waypoints.min.js',
-    '_static'+'/rangy-core.js',
-    '_static'+'/rangy-textrange.js',
-    '_static'+'/rangy-cssclassapplier.js',
     '_static'+'/user-highlights.js',
     '_static'+'/jquery.idle-timer.js',
     '_static'+'/processing-1.4.1.min.js',
@@ -83,12 +80,6 @@
                 <div>
                   <b>Help support us:</b>
                 </div>
-                <div class="gittip">
-                  <iframe style="border:0;"
-                    src="https://www.gittip.com/bnmnetp/widget.html"
-                    width="48pt" height="22pt" class="gittip-button">
-                  </iframe>
-                </div>
                 <div>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                   <input type="hidden" name="cmd" value="_s-xclick">
@@ -141,6 +132,7 @@
 
         <li class="divider-vertical"></li>
 
+        {% if use_services == 'true' %}
         <!-- user account dropdown -->
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
@@ -167,7 +159,7 @@
           </ul>
         </li>
         <!-- end user account dropdown -->
-
+        {% endif %}
         <li class="divider-vertical"></li>
 
         <!-- help menu dropdown -->
@@ -177,7 +169,7 @@
           </a>
           <ul class="dropdown-menu user-menu">
             <li><a href='/{{appname}}/static/{{course_id}}/navhelp.html'>Navigation Help</a></li>
-            <li><a href='/{{appname}}/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li><a href='http://runestoneinteractive.org/customcourse.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
             <li><a href='/{{ appname }}/default/reportabug?course={{ course_id }}&page={{ pathto(pagename,1) }}'>Report A Problem</a></li>
@@ -214,6 +206,7 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <link rel="shortcut icon" href="/{{appname}}/static/favicon.ico" type="image/ico" />
+
 <script type="text/javascript">
   eBookConfig = {};
   eBookConfig.host = '{{course_url}}' ? '{{course_url}}' : 'http://127.0.0.1:8000';
@@ -269,7 +262,10 @@
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
-      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span> | <a href="#">Back to top</a>
+      {% if use_services == 'true' %}
+      <span id='numuserspan'></span> readers online now | <span class='loggedinuser'></span>
+      {% endif %}
+      | <a href="#">Back to top</a>
       {% if theme_source_link_position == "footer" %}
         <br />
         {% include "sourcelink.html" %}
@@ -305,7 +301,62 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+    $(window).load(function () {
+    /*
+     * Scroll the window to avoid the topnav bar
+     * https://github.com/twitter/bootstrap/issues/1768
+     */
+    if ($(".navbar.navbar-fixed-top").length > 0) {
+      // var navHeight = $(".navbar").height(),
+      var navHeight = 40,
+        shiftWindow = function() { scrollBy(0, -navHeight - 10); };
+      if (location.hash) {
+        setTimeout(shiftWindow, 1);
+      }
+      window.addEventListener("hashchange", shiftWindow);
+    }
+  });
+
 </script>
+
+<script type="text/javascript" >
+  {
+    var resizerTimeout = null; 
+    var initialTimerInterval = setInterval(function(){
+      if (window.annotator){ 
+        clearInterval(initialTimerInterval);
+        setInterval(resizeBook, 1000);
+      }
+    },300);
+
+
+    function resizeBook() {
+      setTimeout(function() {
+        var sidebarWidth = $(".annotator-toolbar").width(); 
+        if (window.annotator.isOpen()) {
+          sidebarWidth += $(".annotator-outer").width();
+        }
+
+        var windowWidth = $(window).width();
+        var bookWidth = windowWidth - sidebarWidth;
+
+        $(".navbar-default, .footer").css({width:bookWidth}); 
+        $("#relations-next").css({"right":sidebarWidth+"px"});  
+        // $(".container").css({"max-width": "none !important;"});
+
+        var currentMarginRight = parseInt($("#main-content").css("margin-right")); 
+        if (window.annotator.isOpen() && (currentMarginRight < sidebarWidth+10)) {
+          $("#main-content").css({"margin-right":sidebarWidth+"px"}); 
+        } else {
+          $("#main-content").css({"margin-right":""}); 
+        }
+      }, 100);
+    }
+  }
+</script>
+<script async src="https://hypothes.is/embed.js"></script>
+
 {% endif %}
 
 {% endblock %}

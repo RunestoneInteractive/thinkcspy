@@ -33,7 +33,18 @@ value.  The new value of x is the old value of x plus 1.  Although this assignme
 look a bit strange, remember that executing assignment is a two-step process.  First, evaluate the
 right-hand side expression.  Second, let the variable name on the left-hand side refer to this new
 resulting object.  The fact that ``x`` appears on both sides does not matter.  The semantics of the assignment
-statement makes sure that there is no confusion as to the result.
+statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.
+
+.. showeval:: se_updatevar1
+   :trace_mode: true
+
+   x = 6
+   x = x + 1
+   ~~~~
+   x = {{x}}{{6}} + 1
+   x = 6 + {{1}}{{1}}
+   x = {{6 + 1}}{{7}}
+
 
 .. activecode:: ch07_update1
 
@@ -64,7 +75,7 @@ a variable, which means the same as incrementing it by 1.
      eBook, you can have a look here.  There are also instructions for
      installing Python on your computer here.
 
-   * `Topic 2: <http://interactivepython.org/courselib/static/diveintopython3/index.html>`_ Dive Into Python 3,
+   * `Topic 2: <http://www.diveintopython3.net/>`_ Dive Into Python 3,
      this is an online textbook by Mark Pilgrim.  If you have already had some
      programming experience, this book takes you off the deep end with
      both feet.

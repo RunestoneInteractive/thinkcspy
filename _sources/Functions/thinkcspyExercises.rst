@@ -19,15 +19,16 @@ Exercises
 
         .. tab:: Question
 
-            Use the drawsquare function we wrote in this chapter in a program to draw
-            the image shown below.
-            Assume each side is 20 units.
-            (Hint: notice that the turtle has already moved away from the ending point of the last
-            square when the program ends.)
-
-            .. image:: Figures/five_squares.png
-
             .. actex:: ex_5_1
+
+                Use the drawsquare function we wrote in this chapter in a program to draw
+                the image shown below.
+                Assume each side is 20 units.
+                (Hint: notice that the turtle has already moved away from the ending point of the last
+                square when the program ends.)
+
+                .. image:: Figures/five_squares.png
+                ~~~~
 
                 import turtle
 
@@ -84,13 +85,13 @@ Exercises
 
 .. question:: functions_ex_2
 
-   Write a program to draw this. Assume the innermost square is 20 units per side,
-   and each successive square is 20 units bigger, per side, than the one inside it.
-
-    .. image:: Figures/nested_squares.png
-
-
     .. actex:: ex_5_2
+
+       Write a program to draw this. Assume the innermost square is 20 units per side,
+       and each successive square is 20 units bigger, per side, than the one inside it.
+
+       .. image:: Figures/nested_squares.png
+       ~~~~
 
 
 .. question:: functions_ex_3
@@ -99,13 +100,14 @@ Exercises
 
         .. tab:: Question
 
-            Write a non-fruitful function ``drawPoly(someturtle, somesides, somesize)`` which makes a turtle
-            draw a regular polygon.
-            When called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
-
-            .. image:: Figures/regularpolygon.png
-
             .. actex:: ex_5_3
+
+               Write a non-fruitful function ``drawPoly(someturtle, somesides, somesize)`` which makes a turtle
+               draw a regular polygon.
+               When called with ``drawPoly(tess, 8, 50)``, it will draw a shape like this:
+
+               .. image:: Figures/regularpolygon.png
+               ~~~~
 
 
         .. tab:: Answer
@@ -136,11 +138,12 @@ Exercises
 
 .. question:: functions_ex_4
 
-   Draw this pretty pattern.
-
-   .. image:: Figures/tess08.png
-
    .. actex:: ex_5_4
+
+      Draw this pretty pattern.
+
+      .. image:: Figures/tess08.png
+      ~~~~
 
 .. question:: functions_ex_5
 
@@ -148,12 +151,13 @@ Exercises
 
         .. tab:: Question
 
-            The two spirals in this picture differ only by the turn angle.  Draw both.
-
-            .. image:: Figures/tess_spirals.png
-               :height: 240
-
             .. actex:: ex_5_5
+
+               The two spirals in this picture differ only by the turn angle.  Draw both.
+
+               .. image:: Figures/tess_spirals.png
+                  :height: 240
+               ~~~~
 
         .. tab:: Answer
 
@@ -204,10 +208,11 @@ Exercises
 
 .. question:: functions_ex_6
 
-   Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
-   previous question to have its turtle draw a equilateral triangle.
-
    .. actex:: ex_5_6
+
+      Write a non-fruitful function ``drawEquitriangle(someturtle, somesize)`` which calls ``drawPoly`` from the
+      previous question to have its turtle draw a equilateral triangle.
+      ~~~~
 
 
 .. question:: functions_ex_7
@@ -216,11 +221,12 @@ Exercises
 
         .. tab:: Question
 
-            Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-            including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
-            equation  (n * (n + 1)) / 2.
-
             .. actex:: ex_5_7
+
+               Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+               including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
+               equation  (n * (n + 1)) / 2.
+               ~~~~
 
                 def sumTo(n):
                     # your code here
@@ -265,9 +271,10 @@ Exercises
 
 .. question:: functions_ex_8
 
-   Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
-
     .. actex:: ex_5_8
+
+       Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+       ~~~~
 
         def areaOfCircle(r):
             # your code here
@@ -293,11 +300,12 @@ Exercises
 
         .. tab:: Question
 
-            Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
-
-            .. image:: Figures/star.png
-
             .. actex:: ex_5_9
+
+               Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.
+
+               .. image:: Figures/star.png
+               ~~~~
 
         .. tab:: Answer
 
@@ -321,15 +329,16 @@ Exercises
 
 .. question:: functions_ex_10
 
-   Extend your program above.  Draw five stars, but between each, pick up the pen,
-   move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
-   You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
-
-   .. image:: Figures/five_stars.png
-
-   What would it look like if you didn't pick up the pen?
-
    .. actex:: ex_5_10
+
+      Extend your program above.  Draw five stars, but between each, pick up the pen,
+      move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
+      You'll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):
+
+      .. image:: Figures/five_stars.png
+
+      What would it look like if you didn't pick up the pen?
+      ~~~~
 
 
 .. question:: functions_ex_11
@@ -338,10 +347,11 @@ Exercises
 
         .. tab:: Question
 
-            Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
-            equal to 3).
-
             .. actex:: ex_5_11
+
+               Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
+               equal to 3).
+               ~~~~
 
 
         .. tab:: Answer
@@ -366,11 +376,12 @@ Exercises
 
 .. question:: functions_ex_12
 
-   Write a function called drawSprite that will draw a sprite.  The function will need parameters for
-   the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
-   with 15 legs of length 120.
-
    .. actex:: ex_5_12
+
+      Write a function called drawSprite that will draw a sprite.  The function will need parameters for
+      the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
+      with 15 legs of length 120.
+      ~~~~
 
 
 .. question:: functions_ex_13
@@ -379,10 +390,11 @@ Exercises
 
         .. tab:: Question
 
-            Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-            including `n`.   This time use the accumulator pattern.
-
             .. actex:: ex_5_13
+
+               Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+               including `n`.   This time use the accumulator pattern.
+               ~~~~
 
                 def sumTo(n):
                     # your code here
@@ -427,12 +439,13 @@ Exercises
 
 .. question:: functions_ex_14
 
-   Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
-   Newton's algorithm.
-   Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
-   is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-
     .. actex:: ex_5_14
+
+       Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
+       Newton's algorithm.
+       Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
+       is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
+       ~~~~
 
         def mySqrt(n):
             # your code here
@@ -457,9 +470,10 @@ Exercises
 
         .. tab:: Question
 
-            Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
-
             .. actex:: ex_5_15
+
+               Write a function called ``myPi`` that will return an approximation of PI (3.14159...).  Use the `Leibniz <http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80>`_ approximation.
+               ~~~~
 
                 def myPi(iters):
                     # Calculate an approximation of PI using the Leibniz
@@ -497,9 +511,10 @@ Exercises
 
 .. question:: functions_ex_16
 
-   Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
-
     .. actex:: ex_5_16
+
+       Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
+       ~~~~
 
         def myPi(iters):
             # Calculate an approximation of PI using the Madhava
@@ -513,11 +528,12 @@ Exercises
 
         .. tab:: Question
 
-            Write a function called `fancySquare` that will draw a square with fancy corners (spites on the corners).  You should
-            implement and use the `drawSprite` function from above.  For an even more interesting look, how about adding small
-            triangles to the ends of the sprite legs.
-
             .. actex:: ex_5_17
+
+               Write a function called `fancySquare` that will draw a square with fancy corners (sprites on the corners).  You should
+               implement and use the `drawSprite` function from above.  For an even more interesting look, how about adding small
+               triangles to the ends of the sprite legs.
+               ~~~~
 
         .. tab:: Answer
 
@@ -551,3 +567,52 @@ Exercises
             .. disqus::
                 :shortname: interactivepython
                 :identifier: db5d8808bf5749579718bdd2088b539f
+
+.. question:: functions_ex_18
+
+    .. actex:: ex_5_18
+
+       There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
+       The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
+       ~~~~
+
+        import turtle
+
+        def drawBar(t, height):
+            """ Get turtle t to draw one bar, of height. """
+            t.begin_fill()               # start filling this shape
+            t.left(90)
+            t.forward(height)
+            t.write(str(height))
+            t.right(90)
+            t.forward(40)
+            t.right(90)
+            t.forward(height)
+            t.left(90)
+            t.end_fill()                 # stop filling this shape
+
+
+
+        xs = [48, 117, 200, 240, 160, 260, 220]  # here is the data
+        maxheight = max(xs)
+        numbars = len(xs)
+        border = 10
+
+        wn = turtle.Screen()             # Set up the window and its attributes
+        wn.setworldcoordinates(0-border, 0-border, 40*numbars+border, maxheight+border)
+        wn.bgcolor("lightgreen")
+
+        tess = turtle.Turtle()           # create tess and set some attributes
+        tess.color("blue")
+        tess.fillcolor("red")
+        tess.pensize(3)
+
+
+
+        for a in xs:
+            drawBar(tess, a)
+
+        wn.exitonclick()
+
+
+

@@ -11,6 +11,9 @@
    :prefix: list-2-
    :start: 1
 
+.. index::
+   single: [ ]; list literal
+
 List Values
 -----------
 

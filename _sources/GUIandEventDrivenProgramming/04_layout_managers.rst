@@ -161,7 +161,7 @@ is typically a process of experimentation. Don't expect to get your desired
 layout on the first try.
 
 Summary
-=======
+-------
 
 To summarize, let's review two very important rules:
 

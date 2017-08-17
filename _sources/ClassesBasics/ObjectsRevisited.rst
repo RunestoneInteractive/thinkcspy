@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: state of an object
+   
 Objects Revisited
 -----------------
 
@@ -19,9 +21,4 @@ all turtles, they differ in the specific values of the individual state attribut
 
 .. image:: Figures/objectpic1.png
    :alt: Simple object has state and methods
-
-
-
-
-.. index:: compound data type
 

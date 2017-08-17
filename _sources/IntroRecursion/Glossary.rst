@@ -19,13 +19,6 @@ Glossary
     data structure
         An organization of data for the purpose of making it easier to use.
 
-    exception
-        An error that occurs at runtime.
-
-    handle an exception
-        To prevent an exception from terminating a program by wrapping
-        the block of code in a ``try`` / ``except`` construct.
-
     immutable data type
         A data type which cannot be modified.  Assignments to elements or
         slices of immutable types cause a runtime error.
@@ -38,9 +31,6 @@ Glossary
         A data type which can be modified. All mutable types are compound
         types.  Lists and dictionaries (see next chapter) are mutable data
         types; strings and tuples are not.
-
-    raise
-        To cause an exception by using the ``raise`` statement.
 
     recursion
         The process of calling the function that is already executing.

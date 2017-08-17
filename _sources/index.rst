@@ -2,7 +2,7 @@
 
 .. meta::
    :description: An interactive version of the How to Think Like a Computer Scientist book
-   :keywords: python, introduction, computer science
+   :keywords: python, python3, introduction, computer science
 
 .. toc_version: 2
 
@@ -50,12 +50,12 @@ Table of Contents
 .. raw:: html
 
    <ul>
-   <li><a href="assignments.html">Assignments</a></li>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
    </ul>
 
 .. toctree::
    :numbered:
-   :maxdepth: 3
+   :maxdepth: 3 
 
    GeneralIntro/toctree.rst
    SimplePythonData/toctree.rst
@@ -104,6 +104,7 @@ Appendices
 
    Appendices/errorsAndDebug.rst
    SimplePythonData/at_1_1.rst
+   Appendices/PrecedenceTable.rst
 
 Acknowledgements
 ::::::::::::::::
@@ -120,9 +121,8 @@ Acknowledgements
     FrontBackMatter/contrib.rst
     FrontBackMatter/fdl-1.3.rst
 
-Indices and tables
+Index and Search
 ::::::::::::::::::
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

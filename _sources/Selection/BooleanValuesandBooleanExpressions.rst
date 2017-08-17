@@ -11,6 +11,16 @@
    :prefix: select-1-
    :start: 1
 
+.. index:: True, False, boolean value
+   comparison; numbers
+   single:  <; numbers
+   single:  <=; numbers
+   single:  >; numbers
+   single:  >=; numbers
+   single:  ==; numbers
+   single:  !=; numbers
+
+
 Boolean Values and Boolean Expressions
 --------------------------------------
 
@@ -104,8 +114,4 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_e: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
 
    Which of the following is a Boolean expression?  Select all that apply.
-
-.. index::
-    single: logical operator
-    single: operator; logical
 

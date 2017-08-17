@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index::   sameness
+
 Sameness
 --------
 
@@ -19,8 +21,8 @@ you say, Chris and I have the same mother, you mean that his mother and yours
 are the same person.
 
 When you talk about objects, there is a similar ambiguity. For example, if two
-``Fraction``\ s are the same, does that mean they contain the same data
-(same numerator and denominator) or that they are actually the same object?
+``Fraction``\ s are the same, does that mean they represent the same rational number 
+or that they are actually the same object?
 
 We've already seen the ``is`` operator in the chapter on lists, where we
 talked about aliases.
@@ -48,7 +50,7 @@ It allows us to find out if two references refer to the same object.
     print(myfraction is ourfraction)
 
 
-Even though ``myfraction`` and ``yourfraction`` contain the same numerator and denominator, they are not the same object. 
+Even though ``myfraction`` and ``yourfraction`` refer to the same rational number, they are not the same object. 
 
 .. image:: Figures/fractionpic2.png
 
@@ -63,20 +65,21 @@ the references, not the contents of the objects.  Using the == operator to check
 defined objects
 will return the shallow equality result.  In other words, the ``Fraction`` objects are equal (==) if they are the same object.
 
-Of course, we could define equality to mean the fractions are the same in that they have the same numerator and the same
-denominator.  For example, here is a boolean function that performs this check.
+Of course, we could define equality to mean the fractions are the same in that they represent the same 
+rational number.  Recall from algebra that a/b = c/d is equivalent to a\*d = b\*c.
+Here is a boolean function that performs this check.
 
 .. sourcecode:: python
 
-    def sameFraction(f1, f2):
-        return (f1.getNum() == f2.getNum()) and (f1.getDen() == f2.getDen())
+    def sameRational(f1, f2):
+        return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()
 
 This type of equality is known as **deep equality** since it compares the values "deep" in the object, not just the reference to the object. 
   
 .. activecode:: fractions_eq1
 
-    def sameFraction(f1, f2):
-        return (f1.getNum() == f2.getNum()) and (f1.getDen() == f2.getDen())
+    def sameRational(f1, f2):
+        return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()
  
     class Fraction:
 
@@ -98,8 +101,9 @@ This type of equality is known as **deep equality** since it compares the values
     myfraction = Fraction(3, 4)
     yourfraction = Fraction(3, 4)
     print(myfraction is yourfraction)
-    print(sameFraction(myfraction, yourfraction))
-
+    print(sameRational(myfraction, yourfraction))
+    notInLowestTerms = Fraction(15, 20)
+    print(sameRational(myfraction, notInLowestTerms))
 
 Of course, if the two variables refer to the same object, they have both
 shallow and deep equality.

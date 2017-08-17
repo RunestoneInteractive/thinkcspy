@@ -11,6 +11,10 @@
    :prefix: func-10-
    :start: 1
 
+.. index:: bar chart
+
+.. _bar_chart:
+
 A Turtle Bar Chart
 ------------------
 
@@ -118,7 +122,11 @@ we have stored the data values in a list and used a few list functions.  We will
   wn.exitonclick()
 
 
-
+This code is quite concise, but each height label is partly covered by the top
+segment of its bar.  Can you modifiy the 
+``drawBar`` code, moving the label up slightly
+but not changing the bar? 
+Hint: The label cannot be drawn during the polygon fill sequence.
 
 .. note::
 

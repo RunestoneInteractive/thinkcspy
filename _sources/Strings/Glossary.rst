@@ -25,8 +25,9 @@ Glossary
         Use of the **dot operator**, ``.``, to access functions inside a
         module, or to access methods and attributes of an object.
 
-    immutable
-        A compound data type whose elements can not be assigned new values.
+    immutable data type
+        A data type whose values cannot be changed. Modifying functions create
+        a totally new object that does not change the original one.
 
     index
         A variable or value used to select a member of an ordered collection, such as

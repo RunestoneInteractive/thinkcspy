@@ -93,6 +93,15 @@ pygments_style = 'sphinx'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
+# `rst_prolog <http://www.sphinx-doc.org/en/stable/config.html#confval-rst_prolog>`_:
+# A string of reStructuredText that will be included at the beginning of every
+# source file that is read.
+rst_prolog = (
+# For fill-in-the-blank questions, provide a convenient means to indicate a blank.
+"""
+.. |blank| replace:: :blank:`x`
+"""
+)
 
 # -- Options for HTML output ---------------------------------------------------
 
@@ -170,11 +179,11 @@ html_short_title ='How to Think Like a Computer Scientist'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path = ['_sources/_static']  + runestone_static_dirs()
+html_static_path = ['./_sources/_static']  + runestone_static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-#html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.

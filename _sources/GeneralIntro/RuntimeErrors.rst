@@ -11,6 +11,8 @@
    :prefix: intro-8-
    :start: 1
 
+.. index:: error;runtime, runtime error
+
 Runtime Errors
 --------------
 
@@ -35,5 +37,18 @@ chapters, so it might be a while before you encounter one.
 
    Which of the following is a run-time error?
 
-.. index:: semantics, semantic error
+.. mchoice:: question1_7_2
+   :answer_a: The programmer.
+   :answer_b: The compiler / interpreter.
+   :answer_c: The computer.
+   :answer_d: The teacher / instructor.
+   :correct: b
+   :feedback_a: Programmers rarely find all the runtime errors, there is a computer program that will do it for us.
+   :feedback_b: If an instruction is illegal to perform at that point in the execution, the interpreter will stop with a message describing the exception.
+   :feedback_c: Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
+   :feedback_d: Your teacher and instructor may be able to find most of your runtime errors, but only because they have experience looking at code and possibly writing code.  With experience runtime errors are easier to find.  But we also have an automated way of finding these types of errors.
+
+
+   Who or what typically finds runtime errors?
+
 
