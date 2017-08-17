@@ -92,5 +92,27 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
      print ( type(n) )
 
 
+.. clickablearea:: ca_id_ints
+    :question: Click on all of the variables of type `int` in the code below
+    :iscode:
+    :feedback: Remember input returns a `str`
+
+    :click-incorrect:seconds:endclick: = input("Please enter the number of seconds you wish to convert")
+    
+    :click-correct:hours:endclick: = int(seconds) // :click-incorrect:3600:endclick:
+    :click-correct:secs_still_remaining:endclick: = :click-correct:total_secs:endclick: % 3600
+    print(:click-correct:secs_still_remaining:endclick:)
+
+.. clickablearea:: ca_id_str
+    :question: Click on all of the variables of type `str` in the code below
+    :iscode:
+    :feedback: 
+
+    :click-correct:seconds:endclick: = input(:click-incorrect:"Please enter the number of seconds you wish to convert":endclick:)
+    
+    :click-incorrect:hours:endclick: = int(:click-correct:seconds:endclick:) // :click-incorrect:3600:endclick:
+    :click-incorrect:secs_still_remaining:endclick: = :click-incorrect:total_secs:endclick: % 3600
+    print(:click-incorrect:secs_still_remaining:endclick:)
+
 .. index:: order of operations, rules of precedence
 
