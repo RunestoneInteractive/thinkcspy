@@ -19,3 +19,5 @@ General Introduction
    ATypicalFirstProgram.rst
    Comments.rst
    Glossary.rst
+   Exercises.rst
+   
