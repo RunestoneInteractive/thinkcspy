@@ -63,8 +63,8 @@ Here is an animation for the above expression:
    5 * 3 > 10 and 4 + 6 == 11
    ~~~~
    {{5 * 3}}{{15}} > 10 and 4 + 6 == 11
-   15 > 10 and {{4 + 6}}{{10}} == 11
-   {{15 > 10}}{{True}} and 10 == 11
+   {{15 > 10}}{{True}} and 4 + 6 == 11
+   True and {{4 + 6}}{{10}} == 11
    True and {{10 == 11}}{{False}}
    {{True and False}}{{False}}
 
