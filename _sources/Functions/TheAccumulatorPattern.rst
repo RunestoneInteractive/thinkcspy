@@ -95,6 +95,18 @@ Here is the same program in codelens.  Step through the function and watch the "
     print("The result of", toSquare, "squared is", squareResult)
 
 
+The General Accumulator Pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    initialize the accumulator variable
+    repeat:
+        modify the accumulator variable
+
+    # when the loop terminates the accumulator has the correct value
+
+
 .. note::
 
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
@@ -145,5 +157,40 @@ Here is the same program in codelens.  Step through the function and watch the "
    =====
    print(thesum)
 
+A Variation on the Accumulator Pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. activecode:: ch04_accum3
+
+   def square(x):
+       '''raise x to the second power'''
+       runningtotal = 0
+       for counter in range(x):
+           runningtotal = runningtotal + x
+
+       return runningtotal
+
+   toSquare = 10
+   squareResult = square(toSquare)
+   print("The result of", toSquare, "squared is", squareResult)
+
+
+.. admonition:: Modify the program ...
+
+   Change the value of ``toSquare`` in line 9 to ``-10`` and run.
+
+   We now see that our function has a semantic error. Remember when we first introduced the square function, unit testing and equivalence classes?
+
+   Change the value of ``toSquare`` in line 9 back to ``10`` and run.
+
+   What would happen if we change ``runningtotal = runningtotal + x`` to use **multiplication** instead of addition?  Make this change to the program and look at the output.
+
+   It is very important to properly initialize the accumulator variable. Do a web search on ``additive identity`` and ``multiplicative identity``. **Properly initialize the accumulator variable** and run the program.
+
+   Now we get an answer other than 0. However, the answer is not the square of of ``x``. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of ``x``? **Change line 4 to repeat the correct number of times**. Now the program should produce the correct result.
+
+   Change the value of ``toSquare`` in line 9 to ``-10`` and run. Now negative inputs also work!
+
+   Remember that the boundary between our equivalence classes is 0. Try that value for ``toSquare`` also.
 
 
