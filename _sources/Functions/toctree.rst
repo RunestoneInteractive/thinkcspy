@@ -7,6 +7,7 @@ Functions
 
    functions.rst
    Functionsthatreturnvalues.rst
+   UnitTesting.rst
    Variablesandparametersarelocal.rst
    TheAccumulatorPattern.rst
    Functionscancallotherfunctions.rst
