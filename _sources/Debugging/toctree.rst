@@ -10,3 +10,4 @@ Debugging Interlude 1
    BeginningtipsforDebugging.rst
    KnowyourerrorMessages.rst
    Summary.rst
+   Exercises.rst
