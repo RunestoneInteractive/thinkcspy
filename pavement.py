@@ -26,7 +26,7 @@ master_url = None
 doctrees = None
 if master_url is None:
     if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
-        master_url = 'http://interactivepython.org'
+        master_url = 'http://runestone.academy'
         if os.path.exists('../../custom_courses/{}'.format(project_name)):
             doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
         else:
@@ -58,7 +58,7 @@ options(
             'use_services': 'true',
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'thinkcspy',
+            'basecourse': project_name,
         }
 
     )
