@@ -38,7 +38,7 @@ To run the Python shell you will first need to start up the Terminal
 application, on the Mac you can find this under Utilities in the Applications
 folder, on most versions of Linux you can find it under the accessories menu.
 Once you have a terminal started, you simply type python and press the return
-key.  To shart the shell under windows simply go to the start menu and choose
+key.  To start the shell under windows simply go to the start menu and choose
 `Python (command line)` from the menu.
 
 
@@ -66,7 +66,7 @@ Of course the problem with the Python shell is that you can't save anything,
 so you always have to retype whatever you want to do over again.  It's also
 difficult to do anything more than a few lines long because if you make a
 typo you end up retying everything.  Fortunately there is a solution for that
-as well.  Python alows you to write a program, and save it as a text file
+as well.  Python allows you to write a program, and save it as a text file
 with the extension `.py` and then you can run that program right from the
 command line.
 
@@ -75,7 +75,7 @@ Here is a simple example of a Python program.
 .. sourcecode::  python
 
     print('Hello World')
-    print('2 + 3 = ', 2+3)
+    print('2 + 3 = ', 2 + 3)
 
 Let's assume that you have typed in the lines above in Notepad or TextEdit or
 some similar editor, if you already know emacs or vi you are a awesome!  Now
@@ -115,8 +115,7 @@ is a video that explains how to do it.
 
 We are assuming that you use Python 3.x, as of this writing the latest
 version is Python 3.2.1.  This link will tell you how to update or install
-Python on Linux, Mac, or Windows. `Install Python <http://www.diveintopython3
-.org/installing-python.html>`_
+Python on Linux, Mac, or Windows. `Install Python <http://www.diveintopython3.net/installing-python.html>`_
 
 Glossary
 --------
