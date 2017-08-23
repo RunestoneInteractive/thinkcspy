@@ -49,20 +49,37 @@ Obviously, this version of the function doesn't compute distances; it always
 returns zero. But it is syntactically correct, and it will run, which means
 that we can test it before we make it more complicated.
 
-To test the new function, we call it with sample values.
+We import the test module to enable us to write a unit test for the function.
+
 
 
 .. activecode:: ch06_distance1
     
+    import test
     def distance(x1, y1, x2, y2):
         return 0.0
 
-    print(distance(1, 2, 4, 6))
+    test.testEqual(distance(1, 2, 1, 2), 0)
+
+The ``testEqual`` function from the test module calls the distance function with sample inputs: (1,2, 1,2).
+The first 1,2 are the coordinates of the first point and the second 1,2 are the coordinates of the second point.
+What is the distance between these two points? Zero. ``testEqual`` compares what is returned by the distance function
+and the 0 (the correct answer).
+
+.. admonition:: Extend the program ...
+
+   On line 6, write another unit test. Use (1,2, 4,6) as the parameters to the distance function. How far apart are these two points? Use that value (instead of 0) as the correct answer for this unit test.
+
+   On line 7, write another unit test. Use (0,0, 1,1) as the parameters to the distance function. How far apart are these two points? Use that value as the correct answer for this unit test.
+
+   The first test passes but the others fail since the distance function does not yet contain all the necessary steps.
 
 
-We chose these values so that the horizontal distance equals 3 and the vertical
+**When testing a function, it is essential to know the right answer.**
+
+For the second test the horizontal distance equals 3 and the vertical
 distance equals 4; that way, the result is 5 (the hypotenuse of a 3-4-5
-triangle). When testing a function, it is useful to know the right answer.
+triangle). For the third test, we have a 1-1-sqrt(2) triangle.
 
 At this point we have confirmed that the function is syntactically correct, and
 we can start adding lines of code. After each incremental change, we test the
@@ -99,6 +116,7 @@ we compute and return the result.
 
 .. activecode:: ch06_distancefinal
     
+    import test
     def distance(x1, y1, x2, y2):
         dx = x2 - x1
         dy = y2 - y1
@@ -106,11 +124,26 @@ we compute and return the result.
         result = dsquared**0.5
         return result
 
-    print(distance(1, 2, 4, 6))
+    test.testEqual(distance(1,2, 1,2), 0)
+    test.testEqual(distance(1,2, 4,6), 5)
+    test.testEqual(distance(0,0, 1,1), 1.41)
+
+.. admonition:: Fix the error ...
+
+   Two of the tests pass but the last one fails. Is there still an error in the function?
+
+   Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.
+
+   - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2`` after 1.41. The parameter 2 could be replaced with a different number. By default the precision is 5.
+
+   - Copy line 11 to line 12. Delete ``, 2`` and run. The test fails.
+
+   - Change ``1.41`` to ``1.41421`` and run.
 
 
-If that works correctly, you are done. Otherwise, you might want to print the
-value of ``result`` before the return statement.
+Now all four the tests pass! Wonderful! However, you may still need to perform additional tests.
+
+
 
 When you start out, you might add only a line or two of code at a time. As you
 gain more experience, you might find yourself writing and debugging bigger
