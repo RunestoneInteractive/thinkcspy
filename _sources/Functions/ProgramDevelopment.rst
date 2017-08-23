@@ -136,7 +136,7 @@ we compute and return the result.
 
    - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2`` after 1.41. The parameter 2 could be replaced with a different number. By default the precision is 5.
 
-   - Copy line 11 to line 12. Delete ``, 2`` and run. The test fails.
+   - Copy line 11 to line 12. Delete ``, 2`` and run. The test fails since it is testing to the default precision (5 digits to the right of the decimal point).
 
    - Change ``1.41`` to ``1.41421`` and run.
 
