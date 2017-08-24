@@ -134,11 +134,16 @@ we compute and return the result.
 
    Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.
 
-   - There are circumstances where 2 digits to the right of the decimal point is sufficiently precise. Correct the test by typing ``, 2`` after 1.41. The parameter 2 could be replaced with a different number. By default the precision is 5.
+   The third test fails because by default testEqual checks 5 digits to the right of the decimal point.
 
-   - Copy line 11 to line 12. Delete ``, 2`` and run. The test fails since it is testing to the default precision (5 digits to the right of the decimal point).
+   - Change ``1.41`` to ``1.41421`` and run. The test will pass.
+   
+   There are circumstances where 2 digits to the right of the decimal point is sufficiently precise.
 
-   - Change ``1.41`` to ``1.41421`` and run.
+   - Copy line 11 on to line 12. On line 12, change ``1.41421`` to ``1.41``. Run. The test fails.
+
+   - Type ``, 2`` after 1.41. (The 2 represents the precision of the test -- how many digits to the right of the decimal that must be correct.) Run.
+
 
 
 Now all four the tests pass! Wonderful! However, you may still need to perform additional tests.
@@ -154,6 +159,7 @@ to chunk music --- from indvidual notes to chords, bars, phrases, and so on.
 
 The key aspects of the process are:
 
+#. Make sure you know what you are trying to accomplish. Then you can write appropriate unit tests.
 #. Start with a working skeleton program and make small incremental changes. At any
    point, if there is an error, you will know exactly where it is.
 #. Use temporary variables to hold intermediate values so that you can easily inspect
@@ -163,5 +169,4 @@ The key aspects of the process are:
    but only do this if it does not make the program more difficult to read.
 
    
-.. index:: composition, function composition
 
