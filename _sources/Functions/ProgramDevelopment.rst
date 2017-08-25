@@ -114,6 +114,8 @@ should be 25).
 Finally, using the fractional exponent ``0.5`` to find the square root,
 we compute and return the result.
 
+.. index:: testing, unit test
+
 .. activecode:: ch06_distancefinal
     
     import test
