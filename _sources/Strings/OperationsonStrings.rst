@@ -15,6 +15,8 @@
    single: +; string concatenation
    single: *; string repetition
 
+.. _ops-on-strings:
+
 Operations on Strings
 ---------------------
 
