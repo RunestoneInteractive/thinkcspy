@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. index:: indefinite iteration
+
 .. qnum::
    :prefix: iter-4-
    :start: 1
@@ -39,7 +41,7 @@ So based on the problem description above, we can outline a program as follows:
     create a window and a turtle
 
     while the turtle is still in the window:
-        generate a random number between 0 and 1
+        generate a random number, 0 or 1
         if the number == 0 (heads):
             turn left
         else:
@@ -185,6 +187,7 @@ that if you ever need to write a similar program, you can reuse this function
 with confidence the next time you need it.  Breaking up this
 program into a couple of parts is another example of functional decomposition.
 
+The neatest way to rewrite isInScreen would be with no ``if`` statements at all - see the chapter exercises.
 
 
 .. index:: 3n + 1 sequence
