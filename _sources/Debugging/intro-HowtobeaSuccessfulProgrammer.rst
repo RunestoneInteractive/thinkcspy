@@ -88,12 +88,12 @@ it is important to know:
 - You can get information from a user and return information via keyboard and screen.
 - You can remember, recall, update, and use information using variables.
 - You can deal directly with various kinds of data: numbers and strings at this point.
-- There are basic operations you can do with the data (arithmetic, concatenating string,
+- There are basic operations you can do with the data (arithmetic, reading and printing strings,
   converting between data types).
 - At a slightly higher level, you might already have the idea of basic recurring patterns,
   like solving a straightforward problem with **input-processing-output**.
-- You will see shortly that you have more tools:  decision, repetition, more built-in
-  ways to deal with data (like more string operations shortly), creating your own data types....
+- You will see shortly that you have more tools:  functions, decision, repetition, more built-in
+  ways to deal with data, creating your own data types....
 
 .. index:: pseudo-code
 
@@ -101,7 +101,7 @@ You can start by writing your plan down, indicating main ideas.
 People often use a combination of prose and Python 
 (or whatever programming language you are using).  
 The combination is called *pseudo-code*.
-If you are having a lot of trouble still with syntax, and worrying about that distracting
+If you are having a lot of trouble still with Python syntax, and worrying about that distracting
 you from getting the main idea sequence, 
 then do not be afraid to start with mostly prose in a meaningful sequence, and later refine it.
 A logical sequence is one of the most important things to get clear!
@@ -179,7 +179,8 @@ You can be pretty sure that after a while you will have learned to catch these t
 with ``input`` on your first pass,  
 and you can take the separate round of ``input`` checking off your list....
 
-The next part is actually coding your program.  The later sections of this chapter deal with that part.
+The next part is actually coding your program and testing the code.  
+The later sections of this chapter deal with that very important part at length.
 
 **What to do** *after* **you finish an exercise is important, too!**  The natural thing psychologically,
 particularly if you had a struggle, is to think, "Whew, outta here!!!!"
