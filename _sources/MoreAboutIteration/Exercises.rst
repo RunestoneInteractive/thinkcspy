@@ -663,8 +663,8 @@ Exercises
               It may help to first convert so there is a single ``if`` statement
               with a more elaborate compound condition.
               Recall that generally ``if`` statements that just set a boolean return value,
-              can be removed and the return value can be derived from the
-              condition.   
+              can be removed and the return value can be derived from the ``if`` statement's
+              condition. 
               ~~~~
 
               import random
