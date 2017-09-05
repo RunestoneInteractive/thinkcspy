@@ -647,3 +647,58 @@ Exercises
             .. disqus::
                 :shortname: interactivepython
                 :identifier: disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974
+
+
+
+.. question:: moreiter_ex_16
+
+   .. tabbed:: q16
+
+        .. tab:: Question
+
+           .. actex:: ex_7_24
+
+              Going back to the Randomly Walking Turtles,
+              modify the  function, ``isInScreen``, so it has no ``if`` statements.  
+              It may help to first convert so there is a single ``if`` statement
+              with a more elaborate compound condition.
+              Recall that generally ``if`` statements that just set a boolean return value,
+              can be removed and the return value can be derived from the
+              condition.   
+              ~~~~
+
+              import random
+              import turtle
+
+              def isInScreen(w,t):
+                  leftBound = - w.window_width() / 2
+                  rightBound = w.window_width() / 2
+                  topBound = w.window_height() / 2
+                  bottomBound = -w.window_height() / 2
+
+                  turtleX = t.xcor()
+                  turtleY = t.ycor()
+
+                  stillIn = True
+                  if turtleX > rightBound or turtleX < leftBound:
+                      stillIn = False
+                  if turtleY > topBound or turtleY < bottomBound:
+                      stillIn = False
+
+                  return stillIn
+
+              t = turtle.Turtle()
+              wn = turtle.Screen()
+
+              t.shape('turtle')
+              while isInScreen(wn,t):
+                  coin = random.randrange(0, 2)
+                  if coin == 0:
+                      t.left(90)
+                  else:
+                      t.right(90)
+
+                  t.forward(50)
+
+              wn.exitonclick()
+
