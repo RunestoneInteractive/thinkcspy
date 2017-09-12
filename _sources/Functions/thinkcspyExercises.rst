@@ -223,10 +223,10 @@ Exercises
 
             .. actex:: ex_5_7
 
-               Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-               including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
-               equation  (n * (n + 1)) / 2.
-               ~~~~
+                Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+                including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
+                equation  (n * (n + 1)) / 2.
+                ~~~~
 
                 def sumTo(n):
                     # your code here
@@ -273,8 +273,8 @@ Exercises
 
     .. actex:: ex_5_8
 
-       Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
-       ~~~~
+        Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+        ~~~~
 
         def areaOfCircle(r):
             # your code here
@@ -392,9 +392,9 @@ Exercises
 
             .. actex:: ex_5_13
 
-               Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-               including `n`.   This time use the accumulator pattern.
-               ~~~~
+                Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+                including `n`.   This time use the accumulator pattern.
+                ~~~~
 
                 def sumTo(n):
                     # your code here
@@ -441,11 +441,11 @@ Exercises
 
     .. actex:: ex_5_14
 
-       Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
-       Newton's algorithm.
-       Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
-       is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-       ~~~~
+        Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
+        Newton's algorithm.
+        Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
+        is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
+        ~~~~
 
         def mySqrt(n):
             # your code here
@@ -513,8 +513,8 @@ Exercises
 
     .. actex:: ex_5_16
 
-       Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
-       ~~~~
+        Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
+        ~~~~
 
         def myPi(iters):
             # Calculate an approximation of PI using the Madhava
@@ -572,9 +572,9 @@ Exercises
 
     .. actex:: ex_5_18
 
-       There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
-       The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
-       ~~~~
+        There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
+        The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
+        ~~~~
 
         import turtle
 
