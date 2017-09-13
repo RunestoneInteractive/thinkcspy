@@ -273,25 +273,25 @@ Exercises
 
     .. actex:: ex_5_8
 
-        Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
-        ~~~~
+       Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
+       ~~~~
 
-        def areaOfCircle(r):
-            # your code here
+       def areaOfCircle(r):
+           # your code here
 
-        ====
-        from unittest.gui import TestCaseGui
+       ====
+       from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
 
-            def testOne(self):
-                self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
-                self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
-                self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
-                self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
+           def testOne(self):
+               self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
+               self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
+               self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
+               self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
 
 
-        myTests().main()
+       myTests().main()
 
 
 .. question:: functions_ex_9
@@ -392,25 +392,24 @@ Exercises
 
             .. actex:: ex_5_13
 
-                Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-                including `n`.   This time use the accumulator pattern.
-                ~~~~
+               Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+               including `n`.   This time use the accumulator pattern.
+               ~~~~
 
-                def sumTo(n):
-                    # your code here
+               def sumTo(n):
+                   # your code here
 
-                ====
-                from unittest.gui import TestCaseGui
+               ====
+               from unittest.gui import TestCaseGui
+               class myTests(TestCaseGui):
 
-                class myTests(TestCaseGui):
+                   def testOne(self):
+                       self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
+                       self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
+                       self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
+                       self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
 
-                    def testOne(self):
-                        self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
-                        self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
-                        self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
-                        self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
-
-                myTests().main()
+               myTests().main()
 
 
         .. tab:: Answer
@@ -441,27 +440,26 @@ Exercises
 
     .. actex:: ex_5_14
 
-        Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
-        Newton's algorithm.
-        Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
-        is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-        ~~~~
+       Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
+       Newton's algorithm.
+       Newton's approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
+       is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
+       ~~~~
 
-        def mySqrt(n):
-            # your code here
+       def mySqrt(n):
+           # your code here
 
-        ====
-        from unittest.gui import TestCaseGui
+       ====
+       from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
+           def testOne(self):
+               self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
+               self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
+               self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
+               self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
 
-            def testOne(self):
-                self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
-                self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
-                self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
-                self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
-
-        myTests().main()
+       myTests().main()
 
 
 .. question:: functions_ex_15
