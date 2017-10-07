@@ -12,7 +12,6 @@ Exercises
 ---------
 
 .. question:: functions_ex_1
-
    :number: 1
 
    .. tabbed:: q1
@@ -611,6 +610,3 @@ Exercises
             drawBar(tess, a)
 
         wn.exitonclick()
-
-
-
