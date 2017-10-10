@@ -21,10 +21,10 @@ from the others by the & symbol. This example has a query variable named ``q`` w
 *python+bottle*, and a variable named ``go`` whose value is *Submit*.
 
 Bottle applications can access query variables using a dictionary named
-bottle.request.params (dictionaries are discussed in detail in 
+``bottle.request.params`` (dictionaries are discussed in detail in 
 :doc:`../Dictionaries/intro-Dictionaries`). 
 When a browser sends a request to a Bottle application that contains
-a query string, the data in the query string is placed in the bottle.request.params
+a query string, the data in the query string is placed in the ``bottle.request.params``
 dictionary, where it can be retrieved by the application. For example, in the Bing search
 URL above, if Bing were a Bottle application, it could access the values in the query string 
 like this::
@@ -35,7 +35,7 @@ like this::
 This would retrieve the values 'bottle' and 'Submit' from the query string and store them,
 respectively, in ``q`` and ``go``.
 
-Here is an ehanced version of the original bottlehello.py program that gets the user's name
+Here is an enhanced version of the original bottlehello.py program that gets the user's name
 from the query string and uses it to greet the user:
 
 .. sourcecode:: python
@@ -65,9 +65,23 @@ To test this example, you would need to enter the following URL into the browser
 If the name parameter is omitted, the application will crash when it attempts to
 retrieve the query parameter from the dictionary, because indexing a dictionary
 with a key that is not present in the dictionary is illegal. 
-To make the application more robust, we could
-change line 6 to use the dictionary ``get()`` method, which allows us
-to supply a default value to use in case the user omits the query parameter::
+To make the application more robust, we could change line 6 to 
+check to see if the name parameter was submitted::
+
+    if 'name' in bottle.request.params:
+        name = bottle.request.params['name']
+    else:
+        name = 'World'
+
+The test ``'name' in bottle.request.params`` is True if 'name'
+was present in the query parameters, and False if not.
+
+A shorter way to handle a missing query parameter is to change line 6 to use the
+dictionary ``get()`` method, which allows us to supply a default value to use in
+case the user omits the query parameter::
 
     name = bottle.request.params.get('name', 'World')
+
+This line does the same check as the if statement, and stores the value
+'World' in ``name`` if no name parameter was supplied.
 

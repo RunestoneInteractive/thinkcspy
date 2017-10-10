@@ -144,4 +144,6 @@ You can use triple-quoted strings with format(), as shown in the example web
 application above. format() can also display floating-point numbers to a given
 precision, format date/time values, and do many other useful formatting tasks.
 For more examples of how to use format(), see the `Python documentation
-<https://docs.python.org/3/library/string.html#formatexamples>`_.
+<https://docs.python.org/3/library/string.html#formatexamples>`_, or 
+`this helpful tutorial <https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3>`_.
+
