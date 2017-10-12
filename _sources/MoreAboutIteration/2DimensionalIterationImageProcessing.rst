@@ -251,7 +251,7 @@ In the RGB color model, we can consider the opposite of the red component as the
 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
 ``255-50`` or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.
 
-The program below implements this algorithm using the previous image (luther.jpg).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (cy.png and goldygopher.png).  
+The program below implements this algorithm using the previous image (luther.jpg).  Run it to see the resulting negative image.  Note that there is a lot of processing taking place and this may take a few seconds to complete.  In addition, here are two other images that you can use (cy.png and goldygopher.png).
 
 
 .. raw:: html
@@ -293,8 +293,8 @@ Change the name of the file in the ``image.Image()`` call to see how these image
     img.draw(win)
     win.exitonclick()
 
-Let's take a closer look at the code.  After importing the image module, we create two image objects.  The first, ``img``, represents a typical digital photo.  The second, ``newimg``, is an empty image that will be "filled in" as we process the original pixel by pixel.  Note that the width and height of the empty image is set to be the same as the width and height of the original.
-
+Let's take a closer look at the code.  After importing the image module, we create an image object called ``img`` that represents a typical digital photo.  we will update each pixel in this image from top to bottom, left to right, which you should be able to observe.  You can change the values in ``setDelay`` to make the program progress faster or slower.
+  
 Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
 Line 10 gets an individual pixel.
 
@@ -408,6 +408,3 @@ What remains is to focus on ways that we can better represent our problems in te
       newred = p.getRed()
       newgreen = 0
       newblue = 0
-
-
-
