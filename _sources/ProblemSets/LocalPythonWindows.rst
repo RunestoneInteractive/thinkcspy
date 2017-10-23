@@ -53,7 +53,6 @@ Now let's install Python 3 using Miniconda. Follow these steps:
    #. On the *Advanced Options* screen select "Add Anaconda to my PATH environment variable" and "Register Anaconda as my default Python 3.6"
 
 #. Now, **close and reopen** Git Bash for the changes to take effect.
-#. Verify that Python 3 installed correctly by typing ``python -V``. It should print to the screen the version of Python you just installed.
 #. Enter the following commands into Git Bash:
 
    1. ``cd ~`` and press Enter.
@@ -63,6 +62,7 @@ Now let's install Python 3 using Miniconda. Follow these steps:
    The ``.bashrc`` file will open in a text editor. Enter this line into the file exactly as it appears here: ``alias python='winpty python.exe'`` then save and close the file.
 #. Back on the command line, enter ``source .bashrc`` and press Enter. You may see a message about *.bashrc* and *bash_profile*; that's all good.
 #. Note that if you have any issues with the above, it is sometimes helpful to run Git Bash as an administrator. To do so, right click on the desktop shortcut for Git Bash and select "Run as Administrator".
+#. Verify that Python 3 installed correctly by typing ``python -V``. It should print to the screen the version of Python you just installed.
 
 Make Your First Local Python Program
 ====================================
