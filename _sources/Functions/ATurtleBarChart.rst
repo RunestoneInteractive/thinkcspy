@@ -18,7 +18,7 @@ A Turtle Bar Chart
 
 Recall from our discussion of modules that there were a number of things that turtles can do. Here are a couple more tricks (remember that they are all described in the Python documentation).
 
-* We can get a turtle to display text on the canvas at the turtle's current position. This method is called ``write``. For example,  ``alex.write("Hello")`` would write the string ``hello`` at the current position.
+* We can get a turtle to display text on the canvas at the turtle's current position. This method is called ``write``. For example,  ``alex.write("Hello")`` would write the string ``Hello`` at the current position.
 * We can fill a shape (circle, semicircle, triangle, etc.) with a fill color. It is a two-step process. First you call the method ``begin_fill``, for example ``alex.begin_fill()``.  Then you draw the shape. Finally, you call ``end_fill`` ( ``alex.end_fill()``).
 * We've previously set the color of our turtle --- we can now also set it's fill color, which need not be the same as the turtle and the pen color. To do this, we use a method called ``fillcolor``, for example, ``alex.fillcolor("red")``.
 
