@@ -305,7 +305,7 @@ These next several problems are variations on a theme. Each will have you return
             Write a function ``stairs(n)`` that prints the pattern shown below, with height ``n``.  Again, utilize your ``line`` function to do this.
 
             **Example:**
-              ``stairs(5))``
+              ``stairs(5)``
 
             **Output:**
 
@@ -430,7 +430,7 @@ These next several problems are variations on a theme. Each will have you return
             Write a function ``diamond(n)`` that returns a diamond where the triangle formed by the top portion has height ``n``. Notice that this means the diamond has ``2n - 1`` rows.
 
             **Example:**
-              ``diamond(5))``
+              ``diamond(5)``
 
             **Output:**
 
