@@ -236,7 +236,7 @@ As you know, the second block of code contains the lines that actually get execu
 
 Generally speaking, however, it is actually bad practice to have "loose" statements floating around at that left-most, unindented scope of a script. There are two reasons why:
 
-**Issue 1: Organization.** As your script grows larger, it can become hard to keep track of all those loose statements, especially if you don't keep them all together in one block. At that point, you will start to loose track of exactly what happens when the script is run.
+**Issue 1: Organization.** As your script grows larger, it can become hard to keep track of all those loose statements, especially if you don't keep them all together in one block. At that point, you will start to lose track of exactly what happens when the script is run.
 
 **Issue 2: Importing.** When some other file tries to ``import`` this file, all the loose statements will be executed, which is probably not what the other file wanted. For example, say you are writing another script, and you once again encounter the need to parse initials from people's names. Instead of re-writing the ``get_initials`` function, this is a perfect chance to reuse the code you have already written by importing your ``initials.py`` file. Sounds great! But unfortunately, the moment you import the file, those ``input`` and ``print`` statements will blurt out and start talking to the user.
 
