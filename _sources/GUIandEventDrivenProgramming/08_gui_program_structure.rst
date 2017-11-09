@@ -80,6 +80,13 @@ variables!
   import tkinter as tk
   from tkinter import ttk
 
+  def main():
+      # Create the entire GUI program
+      program = CounterProgram()
+
+      # Start the GUI event loop
+      program.window.mainloop()
+
   class CounterProgram:
 
       def __init__(self):
@@ -102,11 +109,8 @@ variables!
       def increment_counter(self):
           self.my_counter['text'] = str(int(self.my_counter['text']) + 1)
 
-  # Create the entire GUI program
-  program = CounterProgram()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Notice the following about this design:
 
@@ -115,7 +119,7 @@ Notice the following about this design:
   by a call to ``create_widgets``.
 * The event handler, ``increment_counter`` can access the label
   ``self.my_counter`` using the object's attributes.
-* The code at "global scope" creates an instance of the class ``CounterProgram`` and
+* The code creates an instance of the class ``CounterProgram`` and
   starts the GUI event-loop.
 
 It is recommended that you develop all of your GUI programs as Python Classes.
