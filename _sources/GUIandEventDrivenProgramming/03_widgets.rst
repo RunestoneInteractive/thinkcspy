@@ -52,23 +52,23 @@ The following two charts list the standard, pre-defined widgets in the
 ``tkinter`` module.
 
 The following widgets are used for user input. In some cases you have a
-choice between the ``tk`` and ``tkk`` versions. In other cases you must
+choice between the ``tk`` and ``ttk`` versions. In other cases you must
 use the ``tk`` version because the equivalent ``ttk`` versions don't exist.
 
 =======================================  ==============================================================
 Widget                                   Purpose
 =======================================  ==============================================================
-``tk.Button``, ``tkk.Button``            Execute a specific task; a “do this now” command.
+``tk.Button``, ``ttk.Button``            Execute a specific task; a “do this now” command.
 ``tk.Menu``                              Implements toplevel, pulldown, and popup menus.
-``tkk.Menubutton``                       Displays popup or pulldown menu items when activated.
+``ttk.Menubutton``                       Displays popup or pulldown menu items when activated.
 ``tk.OptionMenu``                        Creates a popup menu, and a button to display it.
 ``tk.Entry``, ``ttk.Entry``              Enter one line of text.
 ``tk.Text``                              Display and edit formatted text, possibly with multiple lines.
-``tk.Checkbutton``, ``tkk.Checkbutton``  Set on-off, True-False selections.
-``tk.Radiobutton``, ``tkk.Radiobutton``  Allow one-of-many selections.
+``tk.Checkbutton``, ``ttk.Checkbutton``  Set on-off, True-False selections.
+``tk.Radiobutton``, ``ttk.Radiobutton``  Allow one-of-many selections.
 ``tk.Listbox``                           Choose one or more alternatives from a list.
-``tkk.Combobox``                         Combines a text field with a pop-down list of values.
-``tk.Scale``, ``tkk.Scale``              Select a numerical value by moving a “slider” along a scale.
+``ttk.Combobox``                         Combines a text field with a pop-down list of values.
+``tk.Scale``, ``ttk.Scale``              Select a numerical value by moving a “slider” along a scale.
 =======================================  ==============================================================
 
 The following figure shows examples of these widgets. You can download
@@ -84,10 +84,10 @@ The following ``widgets`` display information to a user, but have no user intera
 ============================  ================================================
 Widget                        Purpose
 ============================  ================================================
-``tk.Label``, ``tkk.Label``   Display static text or an image.
+``tk.Label``, ``ttk.Label``   Display static text or an image.
 ``tk.Message``                Display static multi-line text.
-``tkk.Separator``             Displays a horizontal or vertical separator bar.
-``tkk.Progressbar``           Shows the status of a long-running operation.
+``ttk.Separator``             Displays a horizontal or vertical separator bar.
+``ttk.Progressbar``           Shows the status of a long-running operation.
 ``ttk.Treeview``              Displays a hierarchical collection of items.
 ============================  ================================================
 
@@ -110,14 +110,14 @@ creating a ``Tk`` object:
 
 Then you create widgets and add them to the window's widget
 hierarchy. For example, to create a button you would call either the
-``tk`` or the ``tkk`` ``Button`` method and send the ``application_window``
+``tk`` or the ``ttk`` ``Button`` method and send the ``application_window``
 as the first argument:
 
 .. code-block:: python
 
   cmd_button = tk.Button(application_window, text="Example")
   # or
-  cmd_button = tkk.Button(application_window, text="Example")
+  cmd_button = ttk.Button(application_window, text="Example")
 
 The parameters needed to correctly create each widget varies, so you will need to
 refer to the Python documentation for each specific widget type. As of fall

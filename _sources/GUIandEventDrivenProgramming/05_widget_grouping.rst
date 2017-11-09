@@ -24,11 +24,11 @@ they are the parent widget of a group of related widgets.
 ============================  =============================================================================
 Widget                        Purpose
 ============================  =============================================================================
-``tk.Frame``, ``tkk.Frame``   Create a container for a set of widgets to be displayed as a unit.
-``tkk.LabelFrame``            Group a number of related widgets using a border and a title.
+``tk.Frame``, ``ttk.Frame``   Create a container for a set of widgets to be displayed as a unit.
+``ttk.LabelFrame``            Group a number of related widgets using a border and a title.
 ``tk.PanedWindow``            Group one or more widgets into “panes”, where the "panes"
                               can be re-sized by the user by dragging separator lines.
-``tkk.Notebook``              A tabbed set of frames, only one of which is visible at any given time.
+``ttk.Notebook``              A tabbed set of frames, only one of which is visible at any given time.
 ============================  =============================================================================
 
 Widgets are always organized as a hierarchy, where the main
