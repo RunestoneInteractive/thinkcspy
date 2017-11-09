@@ -154,7 +154,7 @@ Here is an example ``pack`` command for a button widget:
 .. code-block:: python
 
   my_button = tk.Button(application_window, text="Example")
-  my_button.grid(side=tk.TOP, fill=tk.Y, expand=True, pady=10)
+  my_button.pack(side=tk.TOP, fill=tk.Y, expand=True, pady=10)
 
 To accomplish a desired interface design using a ``pack`` ``layout manager``
 is typically a process of experimentation. Don't expect to get your desired
