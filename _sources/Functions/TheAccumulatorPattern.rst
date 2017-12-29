@@ -16,12 +16,11 @@
 The Accumulator Pattern
 -----------------------
 
-.. video:: function_accumulator_pattern
-   :controls:
-   :thumb: ../_static/accumulatorpattern.png
-
-   http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.mov
-   http://media.interactivepython.org/thinkcsVideos/accumulatorpattern.webm
+.. youtube:: aqhREpceEMI
+    :divid: function_accumulator_pattern
+    :height: 315
+    :width: 560
+    :align: left
 
 In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
 in the function was simple: multiply the number by itself.
@@ -192,5 +191,3 @@ A Variation on the Accumulator Pattern
    Change the value of ``toSquare`` in line 9 to ``-10`` and run. Now negative inputs also work!
 
    Remember that the boundary between our equivalence classes is 0. Try that value for ``toSquare`` also.
-
-

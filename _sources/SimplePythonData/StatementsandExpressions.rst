@@ -14,12 +14,12 @@
 Statements and Expressions
 --------------------------
 
-.. video:: expression_vid
-    :controls:
-    :thumb: ../_static/expressions.png
+.. youtube:: 3WgmLIsXFkI
+    :divid: expression_vid
+    :height: 315
+    :width: 560
+    :align: left
 
-    http://media.interactivepython.org/thinkcsVideos/Expressions.mov
-    http://media.interactivepython.org/thinkcsVideos/Expressions.webm
 
 A **statement** is an instruction that the Python interpreter can execute. We
 have only seen the assignment statement so far.  Some other kinds of statements
@@ -77,4 +77,3 @@ On the other hand, the result of executing the assignment statement is the creat
 
 
 .. index:: operator, operand, expression, integer division
-

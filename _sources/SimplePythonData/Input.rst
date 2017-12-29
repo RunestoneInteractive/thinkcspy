@@ -14,12 +14,11 @@
 Input
 -----
 
-.. video:: inputvid
-    :controls:
-    :thumb: ../_static/inputthumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/input.mov
-    http://media.interactivepython.org/thinkcsVideos/input.webm
+.. youtube:: 2KYixkCBXSQ
+    :divid: inputvid
+    :height: 315
+    :width: 560
+    :align: left
 
 
 The program in the previous section works fine but is very limited in that it only works with one value for ``total_secs``.  What if we wanted to rewrite the program so that it was more general.  One thing we could
@@ -98,7 +97,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
     :feedback: Remember input returns a `str`
 
     :click-incorrect:seconds:endclick: = input("Please enter the number of seconds you wish to convert")
-    
+
     :click-correct:hours:endclick: = int(seconds) // :click-incorrect:3600:endclick:
     :click-correct:secs_still_remaining:endclick: = :click-correct:total_secs:endclick: % 3600
     print(:click-correct:secs_still_remaining:endclick:)
@@ -106,13 +105,12 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 .. clickablearea:: ca_id_str
     :question: Click on all of the variables of type `str` in the code below
     :iscode:
-    :feedback: 
+    :feedback:
 
     :click-correct:seconds:endclick: = input(:click-incorrect:"Please enter the number of seconds you wish to convert":endclick:)
-    
+
     :click-incorrect:hours:endclick: = int(:click-correct:seconds:endclick:) // :click-incorrect:3600:endclick:
     :click-incorrect:secs_still_remaining:endclick: = :click-incorrect:total_secs:endclick: % 3600
     print(:click-incorrect:secs_still_remaining:endclick:)
 
 .. index:: order of operations, rules of precedence
-
