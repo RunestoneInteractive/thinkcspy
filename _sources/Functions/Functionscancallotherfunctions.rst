@@ -47,6 +47,7 @@ Now we will look at another example that uses two functions. This example illust
 
 To draw a rectangle we need to be able to call a function with different arguments for width and height. Unlike the case of the square, we cannot repeat the same argument four times, because the four sides are not equal in a rectangle that is not a square. However, it is the case that drawing the bottom and right sides follows the same sequence as drawing the top and left sides. So we eventually come up with this rather nice code that can draw a rectangle.
 
+
 .. code-block:: python
 
     def draw_rectangle(t, w, h):
@@ -71,6 +72,7 @@ But now we might recall how a square relates to a rectangle; it is just a specia
 Here is the entire example with the necessary set up code.
 
 .. activecode:: ch04_3
+    :nocodelens:
 
     import turtle
 
