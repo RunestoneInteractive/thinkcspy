@@ -18,7 +18,7 @@ A Turtle Bar Chart
 
 Recall from our discussion of modules that there were a number of things that turtles can do. Here are a couple more tricks (remember that they are all described in the Python documentation).
 
-* We can get a turtle to display text on the canvas at the turtle's current position. This method is called ``write``. For example,  ``alex.write("Hello")`` would write the string ``hello`` at the current position.
+* We can get a turtle to display text on the canvas at the turtle's current position. This method is called ``write``. For example,  ``alex.write("Hello")`` would write the string ``Hello`` at the current position.
 * We can fill a shape (circle, semicircle, triangle, etc.) with a fill color. It is a two-step process. First you call the method ``begin_fill``, for example ``alex.begin_fill()``.  Then you draw the shape. Finally, you call ``end_fill`` ( ``alex.end_fill()``).
 * We've previously set the color of our turtle --- we can now also set it's fill color, which need not be the same as the turtle and the pen color. To do this, we use a method called ``fillcolor``, for example, ``alex.fillcolor("red")``.
 
@@ -61,42 +61,42 @@ While we're at it, we should make the window fit the data. The tallest bar will 
 Here is the complete program. Try it and then change the data to see that it can adapt to the new values. Note also that we have stored the data values in a list and used a few list functions. Don't worry that they are unfamiliar to you now. We will have much more to say about lists in a later chapter.
 
 .. activecode:: ch05_barchart
-  :nocodelens:
+   :nocodelens:
 
-  import turtle
+   import turtle
 
-  def draw_bar(t, height):
-      """ Get turtle t to draw one bar, of height. """
-      t.begin_fill()               # start filling this shape
-      t.left(90)
-      t.forward(height)
-      t.write(str(height))
-      t.right(90)
-      t.forward(40)
-      t.right(90)
-      t.forward(height)
-      t.left(90)
-      t.end_fill()                 # stop filling this shape
+   def draw_bar(t, height):
+       """ Get turtle t to draw one bar, of height. """
+       t.begin_fill()               # start filling this shape
+       t.left(90)
+       t.forward(height)
+       t.write(str(height))
+       t.right(90)
+       t.forward(40)
+       t.right(90)
+       t.forward(height)
+       t.left(90)
+       t.end_fill()                 # stop filling this shape
 
-  def main():
-      data = [48, 117, 200, 240, 160, 260, 220]
-      max_height = max(data)
-      num_bars = len(data)
-      border = 10
+   def main():
+       data = [48, 117, 200, 240, 160, 260, 220]
+       max_height = max(data)
+       num_bars = len(data)
+       border = 10
 
-      wn = turtle.Screen()             # Set up the window and its attributes
-      wn.setworldcoordinates(0-border, 0-border, 40 * num_bars + border, max_height + border)
-      wn.bgcolor("lightgreen")
+       wn = turtle.Screen()             # Set up the window and its attributes
+       wn.setworldcoordinates(0-border, 0-border, 40 * num_bars + border, max_height + border)
+       wn.bgcolor("lightgreen")
 
-      tess = turtle.Turtle()           # create tess and set some attributes
-      tess.color("blue")
-      tess.fillcolor("red")
-      tess.pensize(3)
+       tess = turtle.Turtle()           # create tess and set some attributes
+       tess.color("blue")
+       tess.fillcolor("red")
+       tess.pensize(3)
 
-      for x in data:
-          draw_bar(tess, x)
+       for x in data:
+           draw_bar(tess, x)
 
-      wn.exitonclick()
+       wn.exitonclick()
 
-  if __name__ == "__main__":
-      main()
+   if __name__ == "__main__":
+       main()

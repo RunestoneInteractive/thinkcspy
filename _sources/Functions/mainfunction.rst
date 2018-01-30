@@ -23,7 +23,7 @@ Using functions is a good idea. It helps us to modularize our code by breaking a
     import turtle
 
     def draw_square(t, sz):
-        """Make turtle t draw a square of with side sz."""
+        """Make turtle t draw a square with side lengths of sz."""
 
         for i in range(4):
             t.forward(sz)

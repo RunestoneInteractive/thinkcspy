@@ -52,7 +52,7 @@ If the line you are wrapping involves an operator, break the line before the ope
 ::
 
    # Instead of writing a line like this:
-   income = (gross_wages + taxable_interest + (dividends = qualified_dividends) -
+   income = (gross_wages + taxable_interest + (dividends - qualified_dividends) -
           ira_deduction - student_loan_interest)
 
    # Write it like this:

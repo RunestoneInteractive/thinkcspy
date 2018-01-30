@@ -47,7 +47,7 @@ Here are the red, green and blue intensities for some common colors. Note that "
 	Magenta  255      0        255
 	=======  =======  =======  =======
 
-In order to manipulate an image, we need to be able to access individual pixels. This capability is provided by a module called **image**. The image module defines two classes: ``Image`` and ``Pixel``.
+In order to manipulate an image, we need to be able to access individual pixels. This capability is provided by a module called **image**. The image module we will use --- which is *not* a standard Python module --- defines two classes: ``Image`` and ``Pixel``.
 
 Each Pixel object has three attributes: the red intensity, the green intensity, and the blue intensity. A pixel provides three methods that allow us to ask for the intensity values. They are called ``getRed``, ``getGreen``, and ``getBlue``.  In addition, we can ask a pixel to change an intensity value using its ``setRed``, ``setGreen``, and ``setBlue`` methods.
 
@@ -69,17 +69,17 @@ In the example below, we first create a pixel with 45 units of red, 76 units of 
 
   There have been occasional issues with using the ``image`` module in the Firefox browser. If you are unable to run the code on this page that uses the ``image`` module, please try running it in a different browser.
 
-.. activecode::  pixelex1a
-    :nocodelens:
+.. activecode:: pixelex1a
+   :nocodelens:
 
-    import image
+   import image
 
-    p = image.Pixel(45, 76, 200)
-    print(p.getRed())
-    p.setRed(66)
-    print(p.getRed())
-    p.setBlue(p.getGreen())
-    print(p.getGreen(), p.getBlue())
+   p = image.Pixel(45, 76, 200)
+   print(p.getRed())
+   p.setRed(66)
+   print(p.getRed())
+   p.setBlue(p.getGreen())
+   print(p.getGreen(), p.getBlue())
 
 **Check your understanding**
 
@@ -125,17 +125,17 @@ Consider the image shown below. Assume that the image is stored in a file called
     <img src="../_static/LutherBellPic.jpg" id="luther.jpg">
 
 
-.. activecode::  pixelex1
-    :nocodelens:
+.. activecode:: pixelex1
+   :nocodelens:
 
-    import image
-    img = image.Image("luther.jpg")
+   import image
+   img = image.Image("luther.jpg")
 
-    print(img.getWidth())
-    print(img.getHeight())
+   print(img.getWidth())
+   print(img.getHeight())
 
-    p = img.getPixel(45, 55)
-    print(p.getRed(), p.getGreen(), p.getBlue())
+   p = img.getPixel(45, 55)
+   print(p.getRed(), p.getGreen(), p.getBlue())
 
 
 When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels. Also, the pixel at column 45, row 55, has RGB values of 165, 161, and 158. Try a few other pixel locations by changing the ``getPixel`` arguments and rerunning the program.
@@ -148,7 +148,7 @@ When you run the program you can see that the image has a width of 400 pixels an
    :answer_c: 165 161 158
    :answer_d: 201 104 115
    :correct: b
-   :feedback_a: These are the values for the pixel at row 30, column 100. Get the values for row 100 and column 30 with p = img.getPixel(100, 30).
+   :feedback_a: These are the values for the pixel at row 30, column 100. Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
    :feedback_b: Yes, the RGB values are 183 179 170 at row 100 and column 30.
    :feedback_c: These are the values from the original example (row 45, column 55). Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
    :feedback_d: These are simply made-up values that may or may not appear in the image. Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
@@ -226,30 +226,30 @@ The program below implements this algorithm using the previous image (luther.jpg
 Change the name of the file in the ``image.Image()`` call to see how these images look as negatives. Also, note that there is an ``exitonclick`` method call at the very end which will close the window when you click on it. This will allow you to "clear the screen" before drawing the next negative.
 
 
-.. activecode::  acimg_1
-    :nocodelens:
+.. activecode:: acimg_1
+   :nocodelens:
 
-    import image
+   import image
 
-    img = image.Image("luther.jpg")
-    win = image.ImageWin(img.getWidth(), img.getHeight())
-    img.draw(win)
-    img.setDelay(1,15)   # setDelay(0) turns off animation
+   img = image.Image("luther.jpg")
+   win = image.ImageWin(img.getWidth(), img.getHeight())
+   img.draw(win)
+   img.setDelay(1,15)   # setDelay(0) turns off animation
 
-    for row in range(img.getHeight()):
-        for col in range(img.getWidth()):
-            p = img.getPixel(col, row)
+   for row in range(img.getHeight()):
+       for col in range(img.getWidth()):
+           p = img.getPixel(col, row)
 
-            new_red = 255 - p.getRed()
-            new_green = 255 - p.getGreen()
-            new_blue = 255 - p.getBlue()
+           new_red = 255 - p.getRed()
+           new_green = 255 - p.getGreen()
+           new_blue = 255 - p.getBlue()
 
-            new_pixel = image.Pixel(new_red, new_green, new_blue)
+           new_pixel = image.Pixel(new_red, new_green, new_blue)
 
-            img.setPixel(col, row, new_pixel)
+           img.setPixel(col, row, new_pixel)
 
-    img.draw(win)
-    win.exitonclick()
+   img.draw(win)
+   win.exitonclick()
 
 Let's take a closer look at the code. After importing the image module, we create an image object, ``img``. We will work with the pixels of the image, transforming them according to the algorithm.
 
@@ -346,7 +346,7 @@ What remains is to focus on ways that we can better represent our problems in te
    :feedback_c: If you remove the blue and green values from the pixels, the image will look different, even though there does not appear to be any blue or green in the original image (remember that other colors are made of combinations of red, green and blue).
    :feedback_d: Because we have changed the value of the pixels from what they were in the original ActiveCode box code, the image will not be the same.
 
-   What would the image produced from ActiveCode box 16 look like if you replaced the lines:
+   What would the image produced from the previous ActiveCode look like if you replaced the lines:
 
    .. code-block:: python
 

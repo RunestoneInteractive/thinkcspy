@@ -20,7 +20,7 @@ There are three **logical operators**: ``and``, ``or``, and ``not``. The semanti
 
 ``n % 2 == 0 or n % 3 == 0`` is true if *either* of the conditions is true, that is, if the number is divisible by 2 *or* the number is divisible by 3. In this case, one, or the other, or both of the parts has to be true for the result to be true.
 
-Finally, the ``not`` operator negates a boolean expression, so ``not x > y`` is true if ``x > y`` is false, that is, the statement will evaluate to true if ``x`` is less than or equal to ``y``.
+Finally, the ``not`` operator negates a boolean expression, so ``not i > j`` is true if ``i > j`` is false, that is, the statement will evaluate to true if ``i`` is less than or equal to ``j``.
 
 .. activecode:: chp05_3
 
@@ -30,6 +30,13 @@ Finally, the ``not`` operator negates a boolean expression, so ``not x > y`` is 
     n = 25
     print(n % 2 == 0 or n % 3 == 0)
 
+    i = 2
+    j = 3
+    print(not(i > j))
+
+    i = 3
+    j = 3
+    print(not(i > j))
 
 .. admonition:: Common Mistake!
 

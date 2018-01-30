@@ -166,7 +166,7 @@ Exercises
               if __name__ == "__main__":
                   main()
 
-These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function).
+These next several problems are variations on a theme. Each will have you return a string that consists of a shape built out of ``#`` (hash) characters. It is left up to you to add the code you would need to run your functions (i.e., adding a ``main`` function and calling the respective function). These problems build in difficulty, and are examples in how solving smaller problems can lead you to incrementally build the solutions to larger problems.
 
 5.
 
@@ -174,7 +174,7 @@ These next several problems are variations on a theme. Each will have you return
 
         .. tab:: Question
 
-            Write a function ``line(n)`` that returns a line with exactly n hashes.
+            Write a function ``line(n)`` that returns a line with exactly ``n`` hashes.
 
             **Example:**
               ``print(line(5))``
@@ -305,7 +305,7 @@ These next several problems are variations on a theme. Each will have you return
             Write a function ``stairs(n)`` that prints the pattern shown below, with height ``n``.  Again, utilize your ``line`` function to do this.
 
             **Example:**
-              ``stairs(5))``
+              ``stairs(5)``
 
             **Output:**
 
@@ -350,7 +350,7 @@ These next several problems are variations on a theme. Each will have you return
 
         .. tab:: Question
 
-            Write a function ``space_line(spaches, hashes)`` that returns a line with exactly the specified number of spaces, followed by the specified number of hashes.
+            Write a function ``space_line(spaces, hashes)`` that returns a line with exactly the specified number of spaces, followed by the specified number of hashes.
 
             **Example:**
               ``print(space_line(3,5))``
@@ -430,7 +430,7 @@ These next several problems are variations on a theme. Each will have you return
             Write a function ``diamond(n)`` that returns a diamond where the triangle formed by the top portion has height ``n``. Notice that this means the diamond has ``2n - 1`` rows.
 
             **Example:**
-              ``diamond(5))``
+              ``diamond(5)``
 
             **Output:**
 

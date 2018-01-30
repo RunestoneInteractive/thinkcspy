@@ -20,8 +20,37 @@ It is important to understand that each of the functions we write can be used an
 
 Here's a simple example of functional decomposition using two functions. The first function called ``square`` simply computes the square of a given number. The second function called ``sum_of_squares`` makes use of ``square`` to compute the sum of three numbers that have been squared.
 
-
 .. activecode:: sumofsquares
+
+    def square(i):
+        j = i * i
+        return j
+
+    def sum_of_squares(x, y, z):
+        a = square(x)
+        b = square(y)
+        c = square(z)
+
+        return a + b + c
+
+    num_1 = -5
+    num_2 = 2
+    num_3 = 10
+    result = sum_of_squares(num_1, num_2, num_3)
+    print(result)
+
+    num_4 = -2
+    num_5 = 7
+    num_6 = 9
+    result_2 = sum_of_squares(num_4, num_5, num_6)
+    print(result_2)
+
+
+Even though this is a simple demonstration, this example illustrates a couple of important Python concepts, like code reusability, along with using arguments. You can see why functions are useful by looking at how we are able to do the same thing (sum the squares) in 2 different instances to get 2 different results, but we only have to write the code that will perform the calculations once. Because we have that code in functions, we can reuse it by calling the functions with different arguments.
+
+Now let's change this example slightly to demonstrate scope by using local and global variables that have the same name.
+
+.. codelens:: sumofsquares2
 
     def square(x):
         y = x * x
@@ -41,7 +70,7 @@ Here's a simple example of functional decomposition using two functions. The fir
     print(result)
 
 
-Even though this is a simple demonstration, this example illustrates many important Python concepts, including using local and global variables, along with parameter passing. Note that when you step through this example, codelens bolds line 1 and line 5 as the functions are defined. The body of ``square`` is not executed until it is called from the ``sum_of_squares`` function for the first time on line 6. Also notice that when ``square`` is called there are two groups of local variables, one for ``square`` and one for ``sum_of_squares``. As you step through you will notice that ``x`` and ``y`` are local variables in both functions and may even have different values. This illustrates that even though they are named the same, they are distinct.
+Note that when you step through this example, codelens bolds line 1 and line 5 as the functions are defined. The body of ``square`` is not executed until it is called from the ``sum_of_squares`` function for the first time on line 6. Also notice that when ``square`` is called there are two groups of local variables, one for ``square`` and one for ``sum_of_squares``. As you step through you will notice that ``x`` and ``y`` are local variables in both functions and may even have different values. This illustrates that even though they are named the same, they are distinct. And you can see the same thing is true about the variables ``a``, ``b``, and ``c`` --- the ones that are in the function ``sum_of_squares`` are different from the ones at the bottom of the program, outside the function definition.
 
 Now we will look at another example that uses two functions. This example illustrates an important computer science problem solving technique called **generalization**. Assume we want to write a function to draw a rectangle. The generalization step is to realize that a square is just a special kind of rectangle. Therefore, our approach to solving the problem of how to draw a rectangle can borrow from our solution to how to draw a square.
 

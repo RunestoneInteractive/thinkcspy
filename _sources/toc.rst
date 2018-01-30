@@ -101,7 +101,7 @@ Table of Contents
    PythonTurtle/TheforLoop.rst
    PythonTurtle/FlowofExecutionoftheforLoop.rst
    PythonTurtle/IterationSimplifiesourTurtleProgram.rst
-   PythonTurtle/TherangeFunction.rst
+   PythonTurtle/TherangeType.rst
    PythonTurtle/AFewMoreturtleMethodsandObservations.rst
    PythonTurtle/SummaryofTurtleMethods.rst
    PythonTurtle/modules.rst
@@ -201,7 +201,7 @@ Table of Contents
    MoreAboutIteration/ThewhileStatement.rst
    MoreAboutIteration/breakandcontinueStatements.rst
    MoreAboutIteration/RandomlyWalkingTurtles.rst
-   MoreAboutIteration/The3n1Sequence.rst
+   MoreAboutIteration/ChoosingWhichLoopToUse.rst
    MoreAboutIteration/SimpleTables.rst
    MoreAboutIteration/2DimensionalIterationImageProcessing.rst
    MoreAboutIteration/Glossary.rst

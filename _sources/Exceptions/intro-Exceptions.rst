@@ -56,7 +56,7 @@ Now say function ``d`` determines that the current processing won't work for som
 
 Well, that is exactly what an exception does. An exception is a message to any function currently on the executing program's **run-time stack**. (The run-time stack is what keeps track of the active function calls while a program is executing. It is also known as a `call stack <https://en.wikipedia.org/wiki/Call_stack>`_.)
 
-In Python, your create an exception message using the ``raise`` command. The simplest format for a ``raise`` command is the keyword ``raise`` followed by the name of an exception. Notice that the Pythonic naming convention for exceptions is to use the *CapWords* case. It is also conventional for the last word of the exception name to be "Error", if the exception is indeed an error.
+In Python, you create an exception message using the ``raise`` command. The simplest format for a ``raise`` command is the keyword ``raise`` followed by the name of an exception. Notice that the Pythonic naming convention for exceptions is to use the *CapWords* case. It is also conventional for the last word of the exception name to be "Error", if the exception is indeed an error.
 
 .. code-block:: Python
 

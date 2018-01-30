@@ -173,44 +173,44 @@ Exercises
            .. tab:: Answer
 
                .. activecode:: q7_answer
-                   :nocodelens:
+                  :nocodelens:
 
-                   import turtle
+                  import turtle
 
-                   wn = turtle.Screen()
-                   lovelace = turtle.Turtle()
+                  wn = turtle.Screen()
+                  lovelace = turtle.Turtle()
 
-                   # move the turtle forward a little so that the whole path fits on the screen
-                   lovelace.penup()
-                   lovelace.forward(60)
+                  # move the turtle forward a little so that the whole path fits on the screen
+                  lovelace.penup()
+                  lovelace.forward(60)
 
-                   # now draw the drunk pirate's path
-                   lovelace.pendown()
-                   for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
+                  # now draw the drunk pirate's path
+                  lovelace.pendown()
+                  for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
 
-                       # we use .left() so that positive angles are counter-clockwise
-                       # and negative angles are clockwise
-                       lovelace.left(angle)
-                       lovelace.forward(100)
+                      # we use .left() so that positive angles are counter-clockwise
+                      # and negative angles are clockwise
+                      lovelace.left(angle)
+                      lovelace.forward(100)
 
-                   wn.exitonclick()
+                  wn.exitonclick()
 
 
     #. On a piece of scratch paper, trace the the path of the turtle in the following program. When you are done, press ``run``
        and check your answer.
 
        .. activecode:: ex_3_8
-           :nocodelens:
+          :nocodelens:
 
-           import turtle
-           wn = turtle.Screen()
-           tess = turtle.Turtle()
-           tess.speed(5)
-           tess.right(90)
-           tess.left(3600)
-           tess.right(-90)
-           tess.left(3600)
-           tess.forward(-100)
+          import turtle
+          wn = turtle.Screen()
+          tess = turtle.Turtle()
+          tess.speed(5)
+          tess.right(90)
+          tess.left(3600)
+          tess.right(-90)
+          tess.left(3600)
+          tess.forward(-100)
 
 
     #.
@@ -229,15 +229,15 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q9_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    turing = turtle.Turtle()
+                   turing = turtle.Turtle()
 
-                    for i in range(5):
-                        turing.forward(110)
-                        turing.left(216)
+                   for i in range(5):
+                       turing.forward(110)
+                       turing.left(216)
 
 
     #. Write a program to draw a face of a clock that looks something like this:
@@ -262,18 +262,17 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q11_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    tanenbaum = turtle.Turtle()
+                   tanenbaum = turtle.Turtle()
+                   tanenbaum.hideturtle()
+                   tanenbaum.speed(20)
 
-                    tanenbaum.hideturtle()
-                    tanenbaum.speed(20)
-
-                    for i in range(350):
-                        tanenbaum.forward(i)
-                        tanenbaum.right(98)
+                   for i in range(350):
+                       tanenbaum.forward(i)
+                       tanenbaum.right(98)
 
 
     #. Create a turtle and assign it to a variable. When you print its type, what do you get?
@@ -298,32 +297,32 @@ Exercises
             .. tab:: Answer
 
                 .. activecode:: q13_answer
-                    :nocodelens:
+                   :nocodelens:
 
-                    import turtle
+                   import turtle
 
-                    wn = turtle.Screen()
+                   wn = turtle.Screen()
 
-                    babbage = turtle.Turtle()
-                    babbage.shape("triangle")
+                   babbage = turtle.Turtle()
+                   babbage.shape("triangle")
 
-                    n = int(input("How many legs should this sprite have? "))
-                    angle = 360 / n
+                   n = int(input("How many legs should this sprite have? "))
+                   angle = 360 / n
 
-                    for i in range(n):
-                        # draw the leg
-                        babbage.right(angle)
-                        babbage.forward(65)
-                        babbage.stamp()
+                   for i in range(n):
+                       # draw the leg
+                       babbage.right(angle)
+                       babbage.forward(65)
+                       babbage.stamp()
 
-                        # go back to the middle and turn back around
-                        babbage.right(180)
-                        babbage.forward(65)
-                        babbage.right(180)
+                       # go back to the middle and turn back around
+                       babbage.right(180)
+                       babbage.forward(65)
+                       babbage.right(180)
 
-                    babbage.shape("circle")
+                   babbage.shape("circle")
 
-                    wn.exitonclick()
+                   wn.exitonclick()
 
 
     #.

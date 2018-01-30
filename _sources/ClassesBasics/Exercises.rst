@@ -155,7 +155,6 @@ Exercises
               testEqual( Point(-4, -10).slope_from_origin(), 2.5 )
               testEqual( Point(-6, 0).slope_from_origin(), 0 )
 
-
     #.
 
         .. tabbed:: q5
@@ -220,6 +219,37 @@ Exercises
 
                     if __name__ == "__main__":
                         main()
+
+
+    #.
+
+        .. tabbed:: q6
+
+            .. tab:: Question
+
+              In this exercise, you are to set up a user defined class, Airplane, which stores information about planes.  There are some attributes of an airplane we will like to store, specifically the following: name (the name of the aircraft), pilot_capacity (how many pilots can fly the plane), top_speed (maximum speed the plane travels), and year (year manufactured).  Using the ``__init__`` method, initialize the attributes (listed above) of an object created by the class.
+
+               .. activecode:: airplane_class
+
+                    # your code here, user defined class
+
+                        def __init__#your code goes here
+                            """ Create a new airplane with the attributes listed above. """
+                            # your code here
+
+
+            .. tab:: Answer
+
+                .. activecode:: airplane_class_answer
+
+                    class Airplane:
+
+                        def __init__(self, name, pilot_capacity, top_speed, year):
+                            """ Create a new airplane with the attributes listed above. """
+                            self.name = name
+                            self.pilot_capacity = pilot_capacity
+                            self.top_speed = top_speed
+                            self.year = years
 
 Weekly Graded Assignment
 ========================
