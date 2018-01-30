@@ -48,7 +48,7 @@ Bonus Missions
 
 .. activecode:: wagon_wheel_studio_bm1
 
-2. The `Fibonacci sequence<https://en.wikipedia.org/wiki/Fibonacci_number>`_ is given as:
+2. The `Fibonacci sequence <https://en.wikipedia.org/wiki/Fibonacci_number>`_ is given as:
 
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 
