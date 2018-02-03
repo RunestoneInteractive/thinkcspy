@@ -85,7 +85,7 @@ Exercises
 
         .. tab:: Question
 
-           .. actex:: classes_q3
+           .. actex:: ch_cl2_q3
 
               Add a method ``area`` to the Rectangle class that returns the area of any instance::
            
@@ -154,7 +154,7 @@ Exercises
 
         .. tab:: Question
 
-           .. actex:: classes_q5
+           .. actex:: ch_cl2_q5
 
               Write a ``transpose`` method in the Rectangle class that swaps the width
               and the height of any rectangle instance::
@@ -213,7 +213,7 @@ Exercises
 
 .. question:: cdd_ex_6
 
-   .. actex:: classes_q6
+   .. actex:: ch_cl2_q6
       :nocodelens:
 
       Write a new method in the Rectangle class to test if a Point falls within
@@ -238,7 +238,7 @@ Exercises
 
         .. tab:: Question
 
-           .. actex:: classes_q7
+           .. actex:: ch_cl2_q7
 
               Write a new method called ``diagonal`` that will return the length of the diagonal that runs
               from the lower left corner to the opposite corner.
