@@ -191,7 +191,7 @@ But if you prefer Technique 2, here's how that works: Simply add print statement
 
 ::
 
-    $ python caesar.py
+    $ python initials.py
     The initials of 'Ozzie Smith' are OS
     The initials of 'bonnie blair' are BB
     The initials of 'Daniel Day Lewis' are DDL
