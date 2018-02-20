@@ -59,6 +59,8 @@ options(
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
             'basecourse': 'thinkcspy',
+            'downloads_enabled': 'false',
+            'default_ac_lang': 'python',
         }
 
     )
