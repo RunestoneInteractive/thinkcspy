@@ -204,11 +204,12 @@ Exercises
        students	    swabbies
        are	        be
        lawyer	      foul blaggart
-       restroom	    th' head
+       restroom	        head
        my	          me
        hello	      avast
        is	          be
        man	        matey
+       the          th'
        ==========  ==============
 
        Write a program that asks the user for a sentence in English and then translates that sentence to Pirate.
