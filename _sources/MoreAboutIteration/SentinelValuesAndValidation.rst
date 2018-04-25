@@ -59,7 +59,7 @@ will use a ``price`` of zero to mean "this is my last item." In this program,
 zero is a **sentinel value**, a value used to signal the end of the loop. Here's the code:
 
 .. activecode:: ch07_sentinel
-    :timelimit: 60
+    :timelimit: 60000
 
     def checkout():
         total = 0
