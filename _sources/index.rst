@@ -25,8 +25,6 @@
    :modal:
    :modalTitle: About this Project
 
-   About this Project
-   ------------------
 
    This interactive book is a product of the `Runestone Interactive <http://runestoneinteractive.org>`_ Project at Luther College, led by `Brad Miller <http://reputablejournal.com>`_ and David Ranum.  There have been many contributors to the project.  Our thanks especially to the following:
 
