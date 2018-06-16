@@ -14,12 +14,11 @@
 Reassignment
 ------------
 
-.. video:: reassignmentvid
-    :controls:
-    :thumb: ../_static/reassignmentthumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/reassignment.mov
-    http://media.interactivepython.org/thinkcsVideos/reassignment.webm
+.. youtube:: G86akhNFHZA
+    :divid: reassignmentvid
+    :height: 315
+    :width: 560
+    :align: left
 
 
 As we have mentioned previously, it is legal to make more than one assignment to the
@@ -65,7 +64,7 @@ Line 4 changes the value of ``a`` but does not change the value of
 Developing your mental model of How Python Evaluates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening. 
+Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.
 
 .. showeval:: se_reassign
     :trace_mode: true
@@ -107,5 +106,3 @@ In the first statement `a = 5` the literal number 5 evaluates to 5, and is given
      x = 15
      y = x
      x = 22
-
-

@@ -17,13 +17,11 @@ Hello Little Turtles!
     single: definition; function
     single: turtle module
 
-.. video:: vid_turtleintro
-    :controls:
-    :thumb: ../_static/turtleintro.png
-
-    http://media.interactivepython.org/thinkcsVideos/turtleintro.mov
-    http://media.interactivepython.org/thinkcsVideos/turtleintro.webm
-
+.. youtube:: Yxyx6KpKRzY
+    :divid: vid_turtleintro
+    :height: 315
+    :width: 560
+    :align: left
 
 
 There are many *modules* in Python that provide very powerful features that we
@@ -51,4 +49,3 @@ some pretty amazing drawings with this simple capability.
 
 
 .. index:: object, invoke, method, attribute, state, canvas
-

@@ -31,12 +31,7 @@ this as: "In the module turtle, access the Python element called Turtle".
 
 We will now turn our attention to a few other modules that you might find useful.
 
-
-.. video:: randmodvid
-    :controls:
-    :thumb: ../_static/mathrandommodule.png
-
-    http://media.interactivepython.org/thinkcsVideos/mathrandommodule.mov
-    http://media.interactivepython.org/thinkcsVideos/mathrandommodule.webm
-
-
+.. youtube:: SGVgAV0v-Ww
+    :height: 315
+    :width: 560
+    :align: left

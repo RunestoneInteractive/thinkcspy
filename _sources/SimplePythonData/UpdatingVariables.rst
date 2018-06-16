@@ -14,12 +14,11 @@
 Updating Variables
 ------------------
 
-.. video:: updatevid
-    :controls:
-    :thumb: ../_static/updatethumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/update.mov
-    http://media.interactivepython.org/thinkcsVideos/update.webm
+.. youtube:: Px1c-3GP-5o
+    :divid: updatevid
+    :height: 315
+    :width: 560
+    :align: left
 
 One of the most common forms of reassignment is an **update** where the new
 value of the variable depends on the old.  For example,
@@ -138,6 +137,3 @@ a variable, which means the same as incrementing it by 1.
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
    .. activecode:: scratch_02
-
-
-

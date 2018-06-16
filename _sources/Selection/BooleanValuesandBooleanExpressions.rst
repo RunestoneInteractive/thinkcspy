@@ -24,12 +24,11 @@
 Boolean Values and Boolean Expressions
 --------------------------------------
 
-.. video:: booleanexpressions
-   :controls:
-   :thumb: ../_static/booleanexpressions.png
-
-   http://media.interactivepython.org/thinkcsVideos/booleanexpressions.mov
-   http://media.interactivepython.org/thinkcsVideos/booleanexpressions.webm
+.. youtube:: LD-F4RODy-I
+    :divid: booleanexpressions
+    :height: 315
+    :width: 560
+    :align: left
 
 The Python type for storing true and false values is called ``bool``, named
 after the British mathematician, George Boole. George Boole created *Boolean
@@ -114,4 +113,3 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_e: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
 
    Which of the following is a Boolean expression?  Select all that apply.
-

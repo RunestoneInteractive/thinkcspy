@@ -128,12 +128,11 @@ Aside from reading the text, it is sometimes useful to hear someone tell you abo
 In order to accomplish this, we provide a way to integrate simple, short videos into the text.  For example, if you click
 on the video shown below, you will hear us talk about the tools that will be described shortly.
 
-.. video:: nav_videoinfo
-    :controls:
-    :thumb: _static/activecodethumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/activecodelens.mov
-    http://media.interactivepython.org/thinkcsVideos/activecodelens.webm
+.. youtube:: LZ7H1X8ar9E
+    :divid: nav_videoinfo
+    :height: 315
+    :width: 560
+    :align: left
 
 
 
@@ -142,4 +141,3 @@ on the video shown below, you will hear us talk about the tools that will be des
     <link href='_static/guiders-1.3.0.css' rel='stylesheet' type='text/css'>
     <script src='_static/guiders-1.3.0.js' type='text/javascript'></script>
     <script src='_static/navhelp.js' type='text/javascript'></script>
-

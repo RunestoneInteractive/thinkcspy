@@ -13,17 +13,16 @@
 
 .. index::function definition
    single: def
-	
+
 
 Functions
 ---------
 
-.. video:: function_intro
-   :controls:
-   :thumb: ../_static/function_intro.png
-
-   http://media.interactivepython.org/thinkcsVideos/FunctionsIntro.mov
-   http://media.interactivepython.org/thinkcsVideos/FunctionsIntro.webm
+.. youtube:: 4wKtB57J5J4
+    :divid: function_intro
+    :height: 315
+    :width: 560
+    :align: left
 
 In Python, a **function** is a named sequence of statements
 that belong together.  Their primary purpose is to help us
@@ -129,10 +128,10 @@ Defining a new function does not make the function run. To do that we need a
 **function call**.  This is also known as a **function invocation**. We've already seen how to call some built-in functions like
 ``print``, ``range`` and ``int``. Function calls contain the name of the function to be
 executed followed by a list of values in parentheses, called *arguments*, which are assigned
-to the parameters in the function definition.  
+to the parameters in the function definition.
 So in the second to the last line of
 the program, we call the function, and pass ``alex`` as the turtle to be manipulated,
-and 50 as the size of the square we want.  
+and 50 as the size of the square we want.
 
 .. The parameters being sent to the function, sometimes referred to as the **actual parameters** or **arguments**,
 .. represent the specific data items that the function will use when it is executing.
@@ -207,11 +206,11 @@ been defined, we can call it as many times as we like with whatever actual param
 
 .. warning::
 
-   Even if a function call needs no arguments, 
-   the parentheses ``( )`` after the function name are *required*.  This 
+   Even if a function call needs no arguments,
+   the parentheses ``( )`` after the function name are *required*.  This
    can lead to a difficult bug:  A function name without the
-   parenthesis is a legal expression *referring* to the function; for example,  
-   ``print`` and ``alex.penup``, but they do 
+   parenthesis is a legal expression *referring* to the function; for example,
+   ``print`` and ``alex.penup``, but they do
    not *call* the associated functions.
 
 .. note::
@@ -342,4 +341,3 @@ been defined, we can call it as many times as we like with whatever actual param
    :feedback_b: One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
 
    True or false: A function can be called several times by placing a function call in the body of a loop.
-
