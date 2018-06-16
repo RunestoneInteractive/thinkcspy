@@ -18,14 +18,7 @@ Order of Operations
     :divid: precedencevid
     :height: 315
     :width: 560
-    :align: left
-
-
-.. youtube:: vyTuDe7cWoQ
-    :divid: associativityvid
-    :height: 315
-    :width: 560
-    :align: left
+    :align: center
 
 
 
