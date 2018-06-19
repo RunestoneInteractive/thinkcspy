@@ -51,7 +51,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q1_answer
+            .. activecode:: func_q1_answer
 
                 import turtle
 
@@ -111,7 +111,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+            .. activecode:: func_q3_answer
 
                 import turtle
 
@@ -160,7 +160,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: func_q5_answer
 
                 import turtle
 
@@ -246,7 +246,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: func_q7_answer
 
                 from test import testEqual
 
@@ -308,7 +308,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: func_q9_answer
 
                 import turtle
 
@@ -355,7 +355,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: func_q11_answer
 
                 import turtle
 
@@ -413,7 +413,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: func_q13_answer
 
                 def sumTo(n):
                     sum = 0
@@ -481,7 +481,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: func_q15_answer
 
                 def myPi(iters):
                     ''' Calculate an approximation of PI using the Leibniz
@@ -534,7 +534,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q17_answer
+            .. activecode:: func_q17_answer
 
                 import turtle
 

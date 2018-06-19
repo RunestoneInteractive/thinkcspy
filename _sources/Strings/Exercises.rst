@@ -88,7 +88,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+            .. activecode:: str_q3_answer
 
                 def count(p):
                     lows = "abcdefghijklmnopqrstuvwxyz"
@@ -161,7 +161,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: str_q5_answer
 
                 def numDigits(n):
                     n_str = str(n)
@@ -239,7 +239,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: str_q7_answer
                 :nocodelens:
 
                 from test import testEqual
@@ -329,7 +329,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: str_q9_answer
                 :nocodelens:
 
                 from test import testEqual
@@ -424,7 +424,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: str_q11_answer
                 :nocodelens:
 
                 from test import testEqual
@@ -494,7 +494,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: str_q13_answer
                 :nocodelens:
 
                 import turtle
@@ -590,7 +590,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: str_q15_answer
                 :nocodelens:
 
                 import turtle
@@ -683,7 +683,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q17_answer
+            .. activecode:: str_q17_answer
                 :nocodelens:
 
                 import turtle
@@ -780,7 +780,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q19_answer
+            .. activecode:: str_q19_answer
 
                 def encrypt(message, cipher):
                     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -873,7 +873,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q21_answer
+            .. activecode:: str_q21_answer
 
                 def rot13(mess):
                     alphabet = 'abcdefghijklmnopqrstuvwxyz'

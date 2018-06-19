@@ -17,7 +17,7 @@ Exercises
 
         .. tab:: Question
 
-            .. actex:: ex_6_1
+            .. actex:: ex_6_1_files
                :nocodelens:
                :available_files: studentdata.txt
 
@@ -76,7 +76,7 @@ Exercises
 
         .. tab:: Question
 
-            .. actex:: ex_6_3
+            .. actex:: ex_6_3_files
                :nocodelens:
                :available_files: studentdata.txt
 

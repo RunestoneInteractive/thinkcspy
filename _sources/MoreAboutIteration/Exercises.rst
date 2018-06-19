@@ -30,7 +30,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q1_answer
+            .. activecode:: miter_q1_answer
 
                 def newtonSqrt(n):
                     approx = 0.5 * n
@@ -117,7 +117,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+            .. activecode:: miter_q3_answer
 
                 def is_prime(n):
                     for i in range(2, n):
@@ -162,7 +162,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: miter_q5_answer
                 :nocodelens:
 
                 import random
@@ -269,7 +269,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: miter_q7_answer
                 :nocodelens:
 
                 import image
@@ -322,7 +322,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: miter_q9_answer
                 :nocodelens:
 
                 import image
@@ -470,7 +470,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: miter_q13_answer
                 :nocodelens:
 
                 import image
@@ -534,7 +534,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: miter_q15_answer
                 :nocodelens:
 
                 import image

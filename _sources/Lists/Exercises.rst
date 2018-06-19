@@ -112,7 +112,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: lst_q5_answer
 
                 import random
 
@@ -189,7 +189,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: lst_q7_answer
 
                 import random
 
@@ -266,7 +266,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: lst_q9_answer
 
                 import random
 
@@ -328,7 +328,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: lst_q11_answer
 
                 import random
 
@@ -383,7 +383,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: lst_q13_answer
 
                 def count(obj, lst):
                     count = 0
@@ -489,7 +489,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: lst_q15_answer
                 :nocodelens:
 
                 import turtle
