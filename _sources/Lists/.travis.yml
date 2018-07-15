@@ -6,3 +6,6 @@ script:
 - pip install -r requirements.txt
 - pip install psycopg2-binary
 - runestone build --all
+notifications:
+  slack:
+    secure: OfeZ/+YHpSl7GNFkzEKu0uObuMdymKmDEeDyfB++RaglalcgkDQAqrCPx+YVw6brXOHGeC6BkGJe/Fs143Ai8/yf38nMmZg/dej5nLgZNST67jWaapIydx5QeuCrsRKvUP+z6yEYoBkYXTsYPyTiKGGsyzvX6dimZRT4nD8qrv0=
