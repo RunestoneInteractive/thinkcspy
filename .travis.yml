@@ -22,5 +22,7 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -avz build/thinkcspy bmiller@dev.runestone.academy:/tmp
-  
+  script: 
+  - ssh-keyscan dev.runestone.academy >> ~/.ssh/known_hosts
+  - rsync -avz build/thinkcspy bmiller@dev.runestone.academy:/tmp
+
