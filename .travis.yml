@@ -1,0 +1,24 @@
+language: python
+python:
+- '2.7'
+before_install:
+- openssl aes-256-cbc -K $encrypted_b52943e120ac_key -iv $encrypted_b52943e120ac_iv
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
+script:
+- export LANG=en_US.UTF-8
+- pip install -r requirements.txt
+- pip install psycopg2-binary
+- runestone build --all
+notifications:
+  slack:
+    secure: OfeZ/+YHpSl7GNFkzEKu0uObuMdymKmDEeDyfB++RaglalcgkDQAqrCPx+YVw6brXOHGeC6BkGJe/Fs143Ai8/yf38nMmZg/dej5nLgZNST67jWaapIydx5QeuCrsRKvUP+z6yEYoBkYXTsYPyTiKGGsyzvX6dimZRT4nD8qrv0=
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash deploy.sh
+env:
+  global:
+    secure: wMF8/cLWx+CFCjs+OdtYeikJZo7MB5qQKw3uah2dljqxtdTQflh+9/hj5ry7qXMy7nxn/iM7ZrMgWJrdK8RJrcnBzkV4/bUuYtLoVQpyK+osODdbLVO8hXPkf155aEu02NOkbIycKMtTomXij3cm7w73IM+bf5Y6crHkBALm4cbkXJpees3Ycm02fLX2Ke6oZrQEF7o/d3GaY3OYNRUNli1tnGDaQlTJcwNw9jT61cptY/fEQhzjthq3ov89tM0WmEa+04j6AyHCthPttOapK0M4+I8yqcCUk9VGKU8qyr1z93PE4+PJnPAHv0pZZPbS1TQX21Eg93Kmn6Sjfa2y1yaWlI585ipo6pImyYxgzbxj+9x8wzSG889uvuSZ+CKr/aCKTLAJqZXiAQRaV3AL89AIPPdgooHrQgFL7OFY+yAm6Z/YiEhUuiVhWiYDJNop2US/praUAzZQHCHalB/sunFYEOItmm9PUXk9BqmDIAeWql2x3mHlCNOFYnTfLvQj8UuulQ5LrUnzkAxckpkSiLVzfTSBb2DxgqX9Z/ZrSGpXZgHc1vPmsqmOY57PNGJV+Rzl3zkRrP7nvx8ieqRF1rWJLc35wqUkcvCiwcQ3YpqbmJJQRLYYDRsszNzmGltTgLw2015FQo7b9Vz/tKjuUltDdn1bPOyrLBTYkCJDNYg=

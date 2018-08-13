@@ -11,6 +11,7 @@ Exercises
 ---------
 
 .. question:: dict_ex_1
+   :number: 1
 
    .. tabbed:: q1
 
@@ -45,7 +46,7 @@ Exercises
                
         .. tab:: Answer
 
-            .. activecode:: q1_answer
+            .. activecode:: de_q1_answer
 
                 x = input("Enter a sentence")
 

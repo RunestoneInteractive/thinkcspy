@@ -12,7 +12,6 @@ Exercises
 ---------
 
 .. question:: functions_ex_1
-
    :number: 1
 
    .. tabbed:: q1
@@ -52,7 +51,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q1_answer
+            .. activecode:: func_q1_answer
 
                 import turtle
 
@@ -112,7 +111,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+            .. activecode:: func_q3_answer
 
                 import turtle
 
@@ -161,7 +160,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: func_q5_answer
 
                 import turtle
 
@@ -223,10 +222,10 @@ Exercises
 
             .. actex:: ex_5_7
 
-               Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
-               including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
-               equation  (n * (n + 1)) / 2.
-               ~~~~
+                Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
+                including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
+                equation  (n * (n + 1)) / 2.
+                ~~~~
 
                 def sumTo(n):
                     # your code here
@@ -247,7 +246,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: func_q7_answer
 
                 from test import testEqual
 
@@ -276,22 +275,22 @@ Exercises
        Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
        ~~~~
 
-        def areaOfCircle(r):
-            # your code here
+       def areaOfCircle(r):
+           # your code here
 
-        ====
-        from unittest.gui import TestCaseGui
+       ====
+       from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
 
-            def testOne(self):
-                self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
-                self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
-                self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
-                self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
+           def testOne(self):
+               self.assertAlmostEqual(areaOfCircle(5.0),78.53981633974483,5,"Tested input: areaOfCircle(5.0)")
+               self.assertEqual(areaOfCircle(5.0),78.53981633974483,"Tested input: areaOfCirlce(5.0)")
+               self.assertEqual(areaOfCircle(0),0.0,"Tested input: areaOfCirlce(0)")
+               self.assertAlmostEqual(areaOfCircle(31415.926535897932),3100627668.0299816,5,"Tested input: areaOfCirlce(31415.926535897932)")
 
 
-        myTests().main()
+       myTests().main()
 
 
 .. question:: functions_ex_9
@@ -309,7 +308,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: func_q9_answer
 
                 import turtle
 
@@ -356,7 +355,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: func_q11_answer
 
                 import turtle
 
@@ -396,26 +395,25 @@ Exercises
                including `n`.   This time use the accumulator pattern.
                ~~~~
 
-                def sumTo(n):
-                    # your code here
+               def sumTo(n):
+                   # your code here
 
-                ====
-                from unittest.gui import TestCaseGui
+               ====
+               from unittest.gui import TestCaseGui
+               class myTests(TestCaseGui):
 
-                class myTests(TestCaseGui):
+                   def testOne(self):
+                       self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
+                       self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
+                       self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
+                       self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
 
-                    def testOne(self):
-                        self.assertEqual(sumTo(15),120,"Tested sumTo on input 15")
-                        self.assertEqual(sumTo(0),0,"Tested sumTo on input 0")
-                        self.assertEqual(sumTo(25),325,"Tested sumTo on input 25")
-                        self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
-
-                myTests().main()
+               myTests().main()
 
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: func_q13_answer
 
                 def sumTo(n):
                     sum = 0
@@ -447,21 +445,20 @@ Exercises
        is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
        ~~~~
 
-        def mySqrt(n):
-            # your code here
+       def mySqrt(n):
+           # your code here
 
-        ====
-        from unittest.gui import TestCaseGui
+       ====
+       from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
+           def testOne(self):
+               self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
+               self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
+               self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
+               self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
 
-            def testOne(self):
-                self.assertAlmostEqual(mySqrt(4.0),2.0,0,"Tested mySqrt on input 4.0")
-                self.assertAlmostEqual(mySqrt(9.0),3.0,4,"Tested accuracy of mySqrt on input 3.0")
-                self.assertAlmostEqual(mySqrt(36.0),6.0,5,"Tested accuracy of mySqrt on input 6.0")
-                self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
-
-        myTests().main()
+       myTests().main()
 
 
 .. question:: functions_ex_15
@@ -484,7 +481,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: func_q15_answer
 
                 def myPi(iters):
                     ''' Calculate an approximation of PI using the Leibniz
@@ -513,8 +510,8 @@ Exercises
 
     .. actex:: ex_5_16
 
-       Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
-       ~~~~
+        Write a function called `myPi` that will return an approximation of PI (3.14159...).  Use the `Madhava <http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama>`_ approximation.
+        ~~~~
 
         def myPi(iters):
             # Calculate an approximation of PI using the Madhava
@@ -537,7 +534,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q17_answer
+            .. activecode:: func_q17_answer
 
                 import turtle
 
@@ -572,9 +569,9 @@ Exercises
 
     .. actex:: ex_5_18
 
-       There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
-       The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
-       ~~~~
+        There was a whole program in :ref:`bar_chart` to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
+        The current version of the ``drawBar`` function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to ``drawBar`` for the distance to move up.  For the ``barChart`` function make that parameter be some small fraction of ``maxheight+border``.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
+        ~~~~
 
         import turtle
 
@@ -613,6 +610,3 @@ Exercises
             drawBar(tess, a)
 
         wn.exitonclick()
-
-
-

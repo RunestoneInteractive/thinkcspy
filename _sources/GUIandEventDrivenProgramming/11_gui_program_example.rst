@@ -62,6 +62,14 @@ window it covers. Here is a basic start for our whack-a-mole game (`whack_a_mole
 
 .. code-block:: python
 
+
+  def main():
+      # Create the entire GUI program
+      program = WhackAMole()
+
+      # Start the GUI event loop
+      program.window.mainloop()
+
   class WhackAMole:
 
       def __init__(self):
@@ -77,11 +85,8 @@ window it covers. Here is a basic start for our whack-a-mole game (`whack_a_mole
 
           return mole_frame, status_frame
 
-  # Create the GUI program
-  program = WhackAMole()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Step 3: Incrementally add appropriate widgets to each frame. Don't attempt
 to add all the widgets at once. The initial design conceptualized the moles
@@ -94,6 +99,13 @@ later.  (`whack_a_mole_v2.py`_)
 
   import tkinter as tk
   from tkinter import PhotoImage
+
+  def main():
+      # Create the entire GUI program
+      program = WhackAMole()
+
+      # Start the GUI event loop
+      program.window.mainloop()
 
   class WhackAMole:
       NUM_MOLES_ACROSS = 4
@@ -129,11 +141,8 @@ later.  (`whack_a_mole_v2.py`_)
 
           return mole_buttons
 
-  # Create the GUI program
-  program = WhackAMole()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Continue to add appropriate widgets for the right frame. The final result is
 shown below, but recognize that it was developed little by little.
@@ -144,6 +153,12 @@ shown below, but recognize that it was developed little by little.
   import tkinter as tk
   from tkinter import PhotoImage
 
+  def main():
+      # Create the entire GUI program
+      program = WhackAMole()
+
+      # Start the GUI event loop
+      program.window.mainloop()
 
   class WhackAMole:
       STATUS_BACKGROUND = "white"
@@ -219,11 +234,8 @@ shown below, but recognize that it was developed little by little.
 
           return hit_counter, miss_counter, start_button
 
-  # Create the GUI program
-  program = WhackAMole()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Step 4: Create a callback function for each event that will cause something
 to happen in your program. Stub these functions out with a single print
@@ -236,6 +248,12 @@ the Python console. (`whack_a_mole_v4.py`_)
   import tkinter as tk
   from tkinter import PhotoImage
 
+  def main():
+      # Create the entire GUI program
+      program = WhackAMole()
+
+      # Start the GUI event loop
+      program.window.mainloop()
 
   class WhackAMole():
       STATUS_BACKGROUND = "white"
@@ -331,11 +349,8 @@ the Python console. (`whack_a_mole_v4.py`_)
       def quit(self):
           print("quit button hit")
 
-  # Create the GUI program
-  program = WhackAMole()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Step 5: Add appropriate functionality to the callback functions. This is
 where the functional logic of your particular application resides. In the
@@ -362,6 +377,12 @@ quitting. The end result is shown below. (`whack_a_mole_v5.py`_)
   from tkinter import messagebox
   from random import randint
 
+  def main():
+      # Create the entire GUI program
+      program = WhackAMole()
+
+      # Start the GUI event loop
+      program.window.mainloop()
 
   class WhackAMole:
       STATUS_BACKGROUND = "white"
@@ -552,11 +573,8 @@ quitting. The end result is shown below. (`whack_a_mole_v5.py`_)
           if really_quit:
               self.window.destroy()
 
-  # Create the GUI program
-  program = WhackAMole()
-
-  # Start the GUI event loop
-  program.window.mainloop()
+  if __name__ == "__main__":
+      main()
 
 Summary
 -------

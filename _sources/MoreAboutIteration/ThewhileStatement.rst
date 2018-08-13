@@ -14,12 +14,11 @@
 The ``while`` Statement
 -----------------------
 
-.. video:: whileloop
-   :controls:
-   :thumb: ../_static/whileloop.png
-
-   http://media.interactivepython.org/thinkcsVideos/whileloop.mov
-   http://media.interactivepython.org/thinkcsVideos/whileloop.webm
+.. youtube:: blTBEqybQmQ
+    :divid: whileloop
+    :height: 315
+    :width: 560
+    :align: left
 
 There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
 The ``while`` statement provides a much more general mechanism for iterating.  Similar to the ``if`` statement, it uses
@@ -93,11 +92,11 @@ to the top. Notice that if the condition is ``False`` the first time through the
 loop, the statements inside the loop are never executed.
 
 .. warning::
-   Though Python's ``while`` is very close to the English "while", 
-   there is an important difference:  In English "while X, do Y", 
-   we usually assume that immediately after X becomes false, we stop 
-   with Y.  In Python there is *not* an immediate stop:  After the 
-   initial test, any following tests come only after the execution of 
+   Though Python's ``while`` is very close to the English "while",
+   there is an important difference:  In English "while X, do Y",
+   we usually assume that immediately after X becomes false, we stop
+   with Y.  In Python there is *not* an immediate stop:  After the
+   initial test, any following tests come only after the execution of
    the *whole* body, even if the condition becomes false in the middle of the loop body.
 
 The body of the loop should change the value of one or more variables so that
@@ -152,7 +151,7 @@ we need the extra power that we get from the ``while`` loop.
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
-   :answer_d: In the while loop body, we must set n to False, and this code does not do that.  
+   :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :correct: a
    :feedback_a: The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
@@ -179,7 +178,7 @@ we need the extra power that we get from the ``while`` loop.
    :feedback_a: Setting a variable so the loop condition would be false in the middle of the loop body does not keep the variable from actually being set.
    :feedback_b: Setting a variable so the loop condition would be false in the middle of the loop body does not stop execution of statements in the rest of the loop body.
    :feedback_c: After n becomes 5 and the test would be False, but the test does not actually come until after the end of the loop - only then stopping execution of the repetition of the loop.
-  
+
 
    What is printed by this code?
 
@@ -193,6 +192,3 @@ we need the extra power that we get from the ``while`` loop.
          n = n + 2
          x = x + n
      print(n, x)
-
-
-

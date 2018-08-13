@@ -16,12 +16,11 @@
 Variables
 ---------
 
-.. video:: assignvid
-    :controls:
-    :thumb: ../_static/assignment.png
-
-    http://media.interactivepython.org/thinkcsVideos/Variables.mov
-    http://media.interactivepython.org/thinkcsVideos/Variables.webm
+.. youtube:: 1uQM-TVlaMo
+    :divid: assignvid
+    :height: 315
+    :width: 560
+    :align: left
 
 One of the most powerful features of a programming language is the ability to
 manipulate **variables**. A variable is a name that refers to a value.
@@ -173,4 +172,3 @@ or change the variable so that it will always reflect the correct value.
 
 
 .. index:: keyword, underscore character
-

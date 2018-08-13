@@ -18,14 +18,11 @@
 Omitting the `else` Clause: Unary Selection
 -------------------------------------------
 
-.. video:: unaryselection
-   :controls:
-   :thumb: ../_static/unaryselection.png
-
-   http://media.interactivepython.org/thinkcsVideos/unaryselection.mov
-   http://media.interactivepython.org/thinkcsVideos/unaryselection.webm
-
-
+.. youtube:: Fd4a8ktQURc
+    :divid: unaryselection
+    :height: 315
+    :width: 560
+    :align: left
 
 
 .. sidebar::  Flowchart of an **if** with no **else**
@@ -65,7 +62,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
    What does the following code print?
 
    .. code-block:: python
-     
+
      x = -10
      if x < 0:
          print("The negative number ",  x, " is not valid here.")
@@ -102,4 +99,3 @@ What would be printed if the value of ``x`` is negative?  Try it.
          print(x, " is a positive number")
      else:
          print("This is always printed")
-

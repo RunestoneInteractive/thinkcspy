@@ -25,7 +25,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode::  q1_answer
+            .. activecode::  pt_q1_answer
                 :nocanvas:
 
                 for i in range(100):
@@ -62,7 +62,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+            .. activecode:: pt_q3_answer
 
 
                 for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
@@ -195,7 +195,7 @@ Exercises
 
        .. tab:: Answer
 
-           .. activecode:: q7_answer
+           .. activecode:: pt_q7_answer
                :nocodelens:
 
                import turtle
@@ -262,7 +262,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: pt_q9_answer
                 :nocodelens:
 
                 import turtle
@@ -305,7 +305,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: pt_q11_answer
                 :nocodelens:
 
                 import turtle
@@ -351,7 +351,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: pt_q13_answer
                 :nocodelens:
 
                 import turtle

@@ -17,7 +17,7 @@ Exercises
 
         .. tab:: Question
 
-            .. actex:: ex_6_1
+            .. actex:: ex_6_1_files
                :nocodelens:
                :available_files: studentdata.txt
 
@@ -76,7 +76,7 @@ Exercises
 
         .. tab:: Question
 
-            .. actex:: ex_6_3
+            .. actex:: ex_6_3_files
                :nocodelens:
                :available_files: studentdata.txt
 
@@ -94,6 +94,9 @@ Exercises
 
                 for aline in f:
                     items = aline.split()
+                    for i in range(len(items[1:])):
+                        #converting scores from strings to integers
+                        items[i+1] = int(items[i+1]
                     print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
 
                 f.close()

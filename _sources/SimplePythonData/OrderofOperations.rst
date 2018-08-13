@@ -14,20 +14,11 @@
 Order of Operations
 -------------------
 
-.. video:: precedencevid
-    :controls:
-    :thumb: ../_static/precedencethumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/precedence.mov
-    http://media.interactivepython.org/thinkcsVideos/precedence.webm
-
-
-.. video:: associativityvid
-    :controls:
-    :thumb: ../_static/associativitythumb.png
-
-    http://media.interactivepython.org/thinkcsVideos/associativity.mov
-    http://media.interactivepython.org/thinkcsVideos/associativity.webm
+.. youtube:: Ezve3QJv6Aw
+    :divid: precedencevid
+    :height: 315
+    :width: 560
+    :align: center
 
 
 
@@ -141,5 +132,3 @@ Here are animations for the above expressions:
    2 ** {{2 ** 3}}{{8}} * 3
    {{2 ** 8}}{{256}} * 3
    {{256 * 3}}{{768}}
-
-

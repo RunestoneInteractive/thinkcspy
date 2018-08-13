@@ -19,7 +19,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "cps110spring2018"
+project_name = "cps110fall2018"
 ###############################
 
 master_url = None
@@ -59,6 +59,8 @@ options(
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
             'basecourse': project_name,
+            'downloads_enabled': 'false',
+            'default_ac_lang': 'python',
         }
 
     )

@@ -11,19 +11,17 @@
    :prefix: turtle-3-
    :start: 1
 
-.. index:: for loop, iteration, body 
+.. index:: for loop, iteration, body
    loop; for
 
 The ``for`` Loop
 ----------------
 
-.. video:: forloopvid
-   :controls:
-   :thumb: ../_static/for_loop.png
-
-   http://media.interactivepython.org/thinkcsVideos/for_loop.mov
-   http://media.interactivepython.org/thinkcsVideos/for_loop.webm
-
+.. youtube:: xGSfiZt5cdw
+    :divid: forloopvid
+    :height: 315
+    :width: 560
+    :align: left
 
 When we drew the square, it was quite tedious.  We had to move then turn, move
 then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
@@ -49,7 +47,7 @@ Take a look at the output produced when you press the ``run`` button.  There is 
 
 
 * **name** in this ``for`` statement is called the **loop variable**.
-* The list of names in the square brackets is called a Python **list**.  
+* The list of names in the square brackets is called a Python **list**.
   Lists are very useful.  We will have much
   more to say about them later.
 * Line 2  is the **loop body**.  The loop body is always
@@ -65,6 +63,3 @@ Take a look at the output produced when you press the ``run`` button.  There is 
   friend.
 * At the end of each execution of the body of the loop, Python returns
   to the ``for`` statement, to see if there are more items to be handled.
-
-
-

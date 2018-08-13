@@ -14,12 +14,11 @@
 The range Function
 ------------------
 
-.. video:: advrange
-   :controls:
-   :thumb: ../_static/advrange.png
-
-   http://media.interactivepython.org/thinkcsVideos/AdvancedRange.mov
-   http://media.interactivepython.org/thinkcsVideos/AdvancedRange.webm
+.. youtube:: YK8QlIT3__M
+    :divid: advrange
+    :height: 315
+    :width: 560
+    :align: left
 
 In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
 to happen four times.  We said that we could have used any four values.  In fact, we even used four colors.
@@ -87,10 +86,10 @@ of range, that is the last index included + 1.
     continues as long as the number is less than stop.
 
 .. note::
-   The range function is *lazy*:  It produces the next element only when needed.  
+   The range function is *lazy*:  It produces the next element only when needed.
    With a regular Python 3 interpreter, printing a range does *not* calculate all the elements.
-   To immediately calculate all the elements in a range, 
-   wrap the range in a list, like ``list(range(4))``.  
+   To immediately calculate all the elements in a range,
+   wrap the range in a list, like ``list(range(4))``.
    Activecode is not designed to work on very long sequences, and it may allow you to be
    sloppy, avoiding the list function, and *see* the elements in the range with ``print(range(4))``.
 
@@ -129,7 +128,7 @@ starts big and gets smaller by using a negative value for the step parameter.
     print(list(range(0, 20, 2)))
     print(list(range(10, 0, -1)))
 
-Try it in codelens.  Do you see why the first two statements produce the same result?  
+Try it in codelens.  Do you see why the first two statements produce the same result?
 
 
 .. codelens:: rangeme2
@@ -185,7 +184,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
   :answer_d: range(20, 5, -5)
   :correct: b
   :feedback_a: The step 5 is positive, while the given sequence is decreasing.  This answer creates the reversed, increasing sequence.
-  :feedback_b: Yes: If we take steps of -5, not worrying about the ending, we get 20, 25, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5. 
+  :feedback_b: Yes: If we take steps of -5, not worrying about the ending, we get 20, 25, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5.
   :feedback_c: The step 5 is positive so the sequence would need to increase from 20 toward 4.  That does not make sense and the sequence would be empty.
   :feedback_d: the sequence can never include the second parameter (5).  The second parameter must always be past the end of the range sequence.
 
@@ -195,13 +194,10 @@ Try it in codelens.  Do you see why the first two statements produce the same re
 .. mchoice:: test_question3_5_5
   :answer_a: No other value would give the same sequence.
   :answer_b: The only other choice is 14.
-  :answer_c: 11, 13, or 14 
+  :answer_c: 11, 13, or 14
   :correct: c
-  :feedback_a: The sequence produced has steps of 4: 2, 6, 10.  The next would be 14, but it is not before the limit 12.  There are other limit choices past 10, but not past 14. 
-  :feedback_b: 14 would work:  It is also past 10, and not past 14, but there are other integers with the same properties. 
+  :feedback_a: The sequence produced has steps of 4: 2, 6, 10.  The next would be 14, but it is not before the limit 12.  There are other limit choices past 10, but not past 14.
+  :feedback_b: 14 would work:  It is also past 10, and not past 14, but there are other integers with the same properties.
   :feedback_c: Yes, any integer past 10, and not past the next step at 14 would work.
-  
+
   What could the second parameter (12) in range(2, 12, 4) be replaced with and generate exactly the same sequence?
-
-
-

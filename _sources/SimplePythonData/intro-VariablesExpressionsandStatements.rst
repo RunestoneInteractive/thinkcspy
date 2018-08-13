@@ -18,16 +18,13 @@ Variables, Expressions and Statements
 
 .. _values_n_types:
 
-.. video:: typesnconvert
-    :controls:
-    :thumb: ../_static/valuesNtypes.png
-
-    http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.mov
-    http://media.interactivepython.org/thinkcsVideos/TypesNTypeConversion.webm
+.. youtube:: vNfCfowr-pQ
+    :divid: typesnconvert
+    :height: 315
+    :width: 560
+    :align: left
 
 In order to get started learning any programming language there are a number of
 concepts and ideas that are necessary.
 The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental
 building blocks of Python.
-
-

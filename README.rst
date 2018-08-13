@@ -15,8 +15,9 @@ there is a unique feature called 'codelens' that allows you to control the
 flow of execution in order to gain a better understanding of how the program
 works.
 
-.. image:: http://bnmnetp.me:8088/buildStatus/icon?job=thinkcspyBuild
-
+.. image:: https://travis-ci.org/RunestoneInteractive/thinkcspy.svg?branch=master
+    :target: https://travis-ci.org/RunestoneInteractive/thinkcspy
+    
 Getting Started
 ===============
 

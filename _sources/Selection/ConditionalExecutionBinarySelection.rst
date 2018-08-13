@@ -18,17 +18,15 @@
 Conditional Execution: Binary Selection
 ---------------------------------------
 
-.. video:: binaryselection
-   :controls:
-   :thumb: ../_static/binaryselection.png
-
-   http://media.interactivepython.org/thinkcsVideos/binaryselection.mov
-   http://media.interactivepython.org/thinkcsVideos/binaryselection.webm
+.. youtube:: HriDtn-0Dcw
+    :height: 315
+    :width: 560
+    :align: left
 
 
 In order to write useful programs, we almost always need the ability to check
 conditions and change the behavior of the program accordingly. **Selection statements**, sometimes
-also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.  
+also referred to as **conditional statements**, give us this ability. The simplest form of selection is the **if statement**.
 This is sometimes referred to as **binary selection** since there are two possible paths of execution.
 
 .. activecode:: ch05_4
@@ -65,7 +63,7 @@ statements like ``for``, the ``if`` statement consists of a header line and a bo
 line begins with the keyword ``if`` followed by a *boolean expression* and ends with
 a colon (:).
 
-The more indented statements that follow are called a **block**. 
+The more indented statements that follow are called a **block**.
 
 Each of the statements inside the first block of statements is executed in order if the boolean
 expression evaluates to ``True``. The entire first block of statements
@@ -75,9 +73,9 @@ all the statements under the ``else`` clause are executed.
 There is no limit on the number of statements that can appear under the two clauses of an
 ``if`` statement, but there has to be at least one statement in each block.
 
-Each compound statement includes a heading and all the following further-indented statements in 
+Each compound statement includes a heading and all the following further-indented statements in
 the block after the heading.  The ``if`` - ``else`` statement is an unusual compound statement because it
-has more than one part at the same level of indentation as the ``if`` heading, 
+has more than one part at the same level of indentation as the ``if`` heading,
 (the ``else`` clause, with its own indented block).
 
 .. admonition:: Lab
@@ -159,4 +157,3 @@ has more than one part at the same level of indentation as the ``if`` heading,
          TRUE
          FALSE
          TRUE
-

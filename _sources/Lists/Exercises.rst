@@ -11,7 +11,7 @@ Exercises
 ---------
 
 .. question:: strings_ex_1
-
+   :number: 1
 
    .. tabbed:: q1
 
@@ -64,24 +64,26 @@ Exercises
               #. Count the number of 76s in the list.
               #. Remove the first occurrence of 76 from the list.
               #. Remove True from the list using ``pop`` and ``index``.
+              ~~~~
+              # Your code here
 
         .. tab:: Answer
 
-            .. activecode:: q3_answer
+           .. activecode:: ex_9_3_answer
 
-                myList = [76, 92.3, 'hello', True, 4, 76]
+              myList = [76, 92.3, 'hello', True, 4, 76]
 
-                myList.append("apple")         # a
-                myList.append(76)              # a
-                myList.insert(3, "cat")        # b
-                myList.insert(0, 99)           # c
+              myList.append("apple")         # a
+              myList.append(76)              # a
+              myList.insert(3, "cat")        # b
+              myList.insert(0, 99)           # c
 
-                print(myList.index("hello"))   # d
-                print(myList.count(76))        # e
-                myList.remove(76)              # f
-                myList.pop(myList.index(True)) # g
+              print(myList.index("hello"))   # d
+              print(myList.count(76))        # e
+              myList.remove(76)              # f
+              myList.pop(myList.index(True)) # g
 
-                print (myList)
+              print (myList)
 
         .. tab:: Discussion
 
@@ -110,7 +112,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q5_answer
+            .. activecode:: lst_q5_answer
 
                 import random
 
@@ -187,7 +189,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q7_answer
+            .. activecode:: lst_q7_answer
 
                 import random
 
@@ -264,7 +266,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q9_answer
+            .. activecode:: lst_q9_answer
 
                 import random
 
@@ -326,7 +328,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q11_answer
+            .. activecode:: lst_q11_answer
 
                 import random
 
@@ -381,7 +383,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q13_answer
+            .. activecode:: lst_q13_answer
 
                 def count(obj, lst):
                     count = 0
@@ -487,7 +489,7 @@ Exercises
 
         .. tab:: Answer
 
-            .. activecode:: q15_answer
+            .. activecode:: lst_q15_answer
                 :nocodelens:
 
                 import turtle
