@@ -60,6 +60,8 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_6_3
+               :practice: T
+               :autograde: unittest
 
                Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
                scheme:
@@ -216,6 +218,8 @@ Exercises
 .. question:: selection_ex_6
 
    .. actex:: ex_6_6
+      :practice: T
+      :autograde: unittest
       :nocodelens:
 
       Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
@@ -245,6 +249,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_6_7
+               :practice: T
+               :autograde: unittest
                :nocodelens:
 
                Write a function called ``is_even(n)`` that takes an integer as an argument
@@ -296,6 +302,8 @@ Exercises
 .. question:: selection_ex_8
 
    .. actex:: ex_6_8
+       :practice: T
+       :autograde: unittest
        :nocodelens:
 
        Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
@@ -325,6 +333,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_6_9
+               :practice: T
+               :autograde: unittest
                :nocodelens:
 
                Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
@@ -382,6 +392,8 @@ Exercises
 
 
    .. actex:: ex_6_10
+      :practice: T
+      :autograde: unittest
       :nocodelens:
 
       Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
@@ -423,6 +435,8 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_6_11
+                :practice: T
+                :autograde: unittest
                 :nocodelens:
 
                 Extend the above program so that the sides can be given to the function in any order.
@@ -481,6 +495,8 @@ Exercises
 .. question:: selection_ex_12
 
    .. actex:: ex_6_12
+      :practice: T
+      :autograde: unittest
       :nocodelens:
 
       3 criteria must be taken into account to identify leap years:

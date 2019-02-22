@@ -221,6 +221,8 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_5_7
+                :practice: T
+                :autograde: unittest
 
                 Write a fruitful function ``sumTo(n)`` that returns the sum of all integer numbers up to and
                 including `n`.   So ``sumTo(10)`` would be ``1+2+3...+10`` which would return the value 55.  Use the
@@ -271,6 +273,8 @@ Exercises
 .. question:: functions_ex_8
 
     .. actex:: ex_5_8
+       :practice: T
+       :autograde: unittest
 
        Write a function `areaOfCircle(r)` which returns the area of a circle of radius `r`.  Make sure you use the math module in your solution.
        ~~~~
@@ -390,6 +394,8 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_5_13
+               :practice: T
+               :autograde: unittest
 
                Rewrite the function ``sumTo(n)`` that returns the sum of all integer numbers up to and
                including `n`.   This time use the accumulator pattern.
@@ -438,6 +444,8 @@ Exercises
 .. question:: functions_ex_14
 
     .. actex:: ex_5_14
+       :practice: T
+       :autograde: unittest
 
        Write a function called ``mySqrt`` that will approximate the square root of a number, call it n, by using
        Newton's algorithm.

@@ -92,6 +92,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_7_9
+              :practice: T
+              :autograde: unittest
 
               Write a function, ``is_prime``, that takes a single integer argument
               and returns ``True`` when the argument is a *prime number* and ``False``
