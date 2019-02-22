@@ -51,6 +51,7 @@ Aha!  Now we have an error message that might be useful.  The name error tells u
    including the wording chosen to describe errors.
 
 .. mchoice:: db_qex32
+   :practice: T
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
    :answer_b: wait_time_int does not have a value so it cannot be used on the right hand side.
    :answer_c: This is not really an error, Python is broken.

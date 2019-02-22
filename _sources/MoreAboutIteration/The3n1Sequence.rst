@@ -106,6 +106,7 @@ be other cycles that we just haven't found.
 **Check your understanding**
 
 .. mchoice:: test_question7_4_1
+   :practice: T
    :answer_a: Yes.
    :answer_b: No.
    :answer_c: No one knows.

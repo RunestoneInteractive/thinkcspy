@@ -60,6 +60,7 @@ of key-value pairs:
 **Check your understanding**
 
 .. mchoice:: test_question11_2_1
+   :practice: T
    :answer_a: 12
    :answer_b: 0
    :answer_c: 18

@@ -27,6 +27,7 @@ chapters, so it might be a while before you encounter one.
 **Check your understanding**
 
 .. mchoice:: question1_7_1
+   :practice: T
    :answer_a: Attempting to divide by 0.
    :answer_b: Forgetting a colon at the end of a statement where one is required.
    :answer_c: Forgetting to divide by 100 when printing a percentage amount.
@@ -38,6 +39,7 @@ chapters, so it might be a while before you encounter one.
    Which of the following is a run-time error?
 
 .. mchoice:: question1_7_2
+   :practice: T
    :answer_a: The programmer.
    :answer_b: The compiler / interpreter.
    :answer_c: The computer.

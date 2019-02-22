@@ -99,6 +99,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
 **Check your understanding**
 
 .. mchoice:: test_question9_13_1
+   :practice: T
    :answer_a: [4, 2, 8, 6, 5, False, True]
    :answer_b: [4, 2, 8, 6, 5, True, False]
    :answer_c: [True, False, 4, 2, 8, 6, 5]
@@ -119,6 +120,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
 
 
 .. mchoice:: test_question9_13_2
+   :practice: T
    :answer_a: [False, 4, 2, True, 8, 6, 5]
    :answer_b: [4, False, True, 2, 8, 6, 5]
    :answer_c: [False, 2, True, 6, 5]
@@ -138,6 +140,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
 
 
 .. mchoice:: test_question9_13_3
+   :practice: T
    :answer_a: [4, 8, 6]
    :answer_b: [2, 6, 5]
    :answer_c: [4, 2, 6]
@@ -158,6 +161,7 @@ and ``reverse`` all return ``None``.  This means that re-assigning ``mylist`` to
    
    
 .. mchoice:: test_question9_13_4
+   :practice: T
    :answer_a: [2, 8, 6, 5]
    :answer_b: [4, 2, 8, 6, 5]
    :answer_c: 4

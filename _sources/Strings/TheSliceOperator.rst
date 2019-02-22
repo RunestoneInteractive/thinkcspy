@@ -56,6 +56,7 @@ What do you think ``fruit[:]`` means?
 **Check your understanding**
 
 .. mchoice:: test_question8_5_1
+   :practice: T
    :answer_a: python
    :answer_b: rocks
    :answer_c: hon r
@@ -77,6 +78,7 @@ What do you think ``fruit[:]`` means?
 
 
 .. mchoice:: test_question8_5_2
+   :practice: T
    :answer_a: rockrockrock
    :answer_b: rock rock rock
    :answer_c: rocksrocksrocks

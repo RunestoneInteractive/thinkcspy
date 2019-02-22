@@ -204,6 +204,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 **Check your understanding**
 
 .. mchoice:: test_question5_2_1
+   :practice: T
    :answer_a: You should never use a print statement in a function definition.
    :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
@@ -224,6 +225,7 @@ function will be ``None``.  In this case, ``squareResult`` will refer to that va
 
 
 .. mchoice:: test_question5_2_2
+   :practice: T
    :answer_a: None
    :answer_b: The value of x + y + z
    :answer_c: The string 'x + y + z'

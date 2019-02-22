@@ -132,6 +132,7 @@ going on to the next sequential statement, ``wn.exitonclick()``.
 **Check your understanding**
 
 .. mchoice:: test_question3_4_1
+   :practice: T
    :answer_a: 1
    :answer_b: 5
    :answer_c: 6
@@ -151,6 +152,7 @@ going on to the next sequential statement, ``wn.exitonclick()``.
 
 
 .. mchoice:: test_question3_4_2
+   :practice: T
    :answer_a: They are indented to the same degree from the loop header.
    :answer_b: There is always exactly one line in the loop body.
    :answer_c: The loop body ends with a semi-colon (;) which is not shown in the code above.
@@ -162,6 +164,7 @@ going on to the next sequential statement, ``wn.exitonclick()``.
    How does python know what statements are contained in the loop body?
 
 .. mchoice:: test_question3_4_3
+      :practice: T
       :answer_a: 2
       :answer_b: 4
       :answer_c: 5
@@ -181,6 +184,7 @@ going on to the next sequential statement, ``wn.exitonclick()``.
 
 
 .. mchoice:: test_question3_4_4
+      :practice: T
       :answer_a: Draw a square using the same color for each side.
       :answer_b: Draw a square using a different color for each side.
       :answer_c: Draw one side of a square.

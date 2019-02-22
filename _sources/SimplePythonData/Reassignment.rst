@@ -88,6 +88,7 @@ In the first statement `a = 5` the literal number 5 evaluates to 5, and is given
 **Check your understanding**
 
 .. mchoice:: test_question2_9_1
+   :practice: T
    :answer_a: x is 15 and y is 15
    :answer_b: x is 22 and y is 22
    :answer_c: x is 15 and y is 22

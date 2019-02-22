@@ -62,6 +62,7 @@ economize.
 **Check your understanding**
 
 .. mchoice:: test_question9_10_1
+   :practice: T
    :answer_a: [4, 2, 8, 6, 5]
    :answer_b: [4, 2, 8, 999, 5]
    :correct: b

@@ -88,6 +88,7 @@ has more than one part at the same level of indentation as the ``if`` heading,
 **Check your understanding**
 
 .. mchoice:: test_question6_4_1
+   :practice: T
    :answer_a: Just one.
    :answer_b: Zero or more.
    :answer_c: One or more.
@@ -101,6 +102,7 @@ has more than one part at the same level of indentation as the ``if`` heading,
    How many statements can appear in each block (the if and the else) in a conditional statement?
 
 .. mchoice:: test_question6_4_2
+   :practice: T
    :answer_a: TRUE
    :answer_b: FALSE
    :answer_c: TRUE on one line and FALSE on the next
@@ -122,6 +124,7 @@ has more than one part at the same level of indentation as the ``if`` heading,
 
 
 .. mchoice:: test_question6_4_3
+   :practice: T
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c

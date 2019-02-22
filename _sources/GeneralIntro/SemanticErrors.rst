@@ -30,6 +30,7 @@ looking at the output of the program and trying to figure out what it is doing.
 **Check your understanding**
 
 .. mchoice:: question1_8_1
+   :practice: T
    :answer_a: Attempting to divide by 0.
    :answer_b: Forgetting a colon at the end of a statement where one is required.
    :answer_c: Forgetting to divide by 100 when printing a percentage amount.
@@ -41,6 +42,7 @@ looking at the output of the program and trying to figure out what it is doing.
    Which of the following is a semantic error?
 
 .. mchoice:: question1_8_2
+   :practice: T
    :answer_a: The programmer.
    :answer_b: The compiler / interpreter.
    :answer_c: The computer.

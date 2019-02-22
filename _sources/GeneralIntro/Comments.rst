@@ -43,6 +43,7 @@ programs much easier for humans to parse.  Use them liberally!
 **Check your understanding**
 
 .. mchoice:: question1_12_1
+   :practice: T
    :answer_a: To tell the computer what you mean in your program.
    :answer_b: For the people who are reading your code to know, in natural language, what the program is doing.
    :answer_c: Nothing, they are extraneous information that is not needed.

@@ -30,6 +30,7 @@ used them previously with strings and they also work here.
 **Check your understanding**
 
 .. mchoice:: test_question9_4_1
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -45,6 +46,7 @@ used them previously with strings and they also work here.
 
 
 .. mchoice:: test_question9_4_2
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: b

@@ -56,6 +56,7 @@ Note that it is only possible to process the characters one at a time from left 
 **Check your understanding**
 
 .. mchoice:: test_question8_8_1
+   :practice: T
    :answer_a: 10
    :answer_b: 11
    :answer_c: 12
@@ -79,6 +80,7 @@ Note that it is only possible to process the characters one at a time from left 
    
    
 .. mchoice:: test_question8_8_2
+   :practice: T
    :answer_a: 4
    :answer_b: 5
    :answer_c: 6

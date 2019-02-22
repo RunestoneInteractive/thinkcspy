@@ -37,6 +37,7 @@ left to right.
 **Check your understanding**
 
 .. mchoice:: test_question9_21_1
+   :practice: T
    :answer_a: 6
    :answer_b: 8
    :answer_c: 888

@@ -84,6 +84,7 @@ remember, what the variable is used for.
 **Check your understanding**
 
 .. mchoice:: test_question2_4_1
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: b

@@ -57,6 +57,7 @@ As you would expect, we can also assign list values to variables and pass lists 
 **Check your understanding**
 
 .. mchoice:: test_question9_1_1
+   :practice: T
    :answer_a: False
    :answer_b: True
    :correct: a

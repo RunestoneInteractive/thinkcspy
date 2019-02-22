@@ -34,6 +34,7 @@ experience, you will make fewer errors and you will also be able to find your er
 **Check your understanding**
 
 .. mchoice:: question1_6_1
+   :practice: T
    :answer_a: Attempting to divide by 0.
    :answer_b: Forgetting a colon at the end of a statement where one is required.
    :answer_c: Forgetting to divide by 100 when printing a percentage amount.
@@ -46,6 +47,7 @@ experience, you will make fewer errors and you will also be able to find your er
 
 
 .. mchoice:: question1_6_2
+   :practice: T
    :answer_a: The programmer.
    :answer_b: The compiler / interpreter.
    :answer_c: The computer.

@@ -34,6 +34,7 @@ end of the sequence.
 **Check your understanding**
 
 .. mchoice:: test_question9_6_1
+   :practice: T
    :answer_a: [ [ ], 3.14, False]
    :answer_b: [ [ ], 3.14]
    :answer_c: [ [56, 57, "dog"], [ ], 3.14, False]

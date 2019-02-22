@@ -55,6 +55,7 @@ So far so good.  Now let's take the next step.  We need to figure out what the t
 Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.
 
 .. mchoice:: db_q_ex3_1
+   :practice: T
    :answer_a: Python is stupid and does not know how to add properly.
    :answer_b: There is nothing wrong here.
    :answer_c: Python is doing string concatenation, not integer addition.

@@ -59,6 +59,7 @@ problem by using the three laws of recursion.
 .. admonition:: Self Check
 
    .. mchoice:: question_recsimp_1
+      :practice: T
       :correct: c
       :answer_a: 6
       :answer_b: 5
@@ -72,6 +73,7 @@ problem by using the three laws of recursion.
       How many recursive calls are made when computing the sum of the list [2,4,6,8,10]?
 
    .. mchoice:: question_recsimp_2
+      :practice: T
       :correct: d
       :answer_a: n == 0
       :answer_b: n == 1

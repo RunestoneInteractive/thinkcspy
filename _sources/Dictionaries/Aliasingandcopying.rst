@@ -49,6 +49,7 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
 **Check your understanding**
 
 .. mchoice:: test_question11_4_1
+   :practice: T
    :answer_a: 23
    :answer_b: None
    :answer_c: 999

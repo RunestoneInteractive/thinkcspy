@@ -77,6 +77,7 @@ You will also see many upcoming non-mathematical Python operators.
 **Check your understanding**
 
 .. mchoice:: test_question2_8_1
+   :practice: T
    :answer_a: 14
    :answer_b: 24
    :answer_c: 3
@@ -96,6 +97,7 @@ You will also see many upcoming non-mathematical Python operators.
 
 
 .. mchoice:: test_question2_8_2
+   :practice: T
    :answer_a: 768
    :answer_b: 128
    :answer_c: 12

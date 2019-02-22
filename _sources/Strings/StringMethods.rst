@@ -107,6 +107,7 @@ change the original.  You can also consult the `Python documentation for strings
 **Check your understanding**
 
 .. mchoice:: test_question8_3_1
+   :practice: T
    :answer_a: 0
    :answer_b: 2
    :answer_c: 3
@@ -127,6 +128,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 
 .. mchoice:: test_question8_3_2
+   :practice: T
    :answer_a: yyyyy
    :answer_b: 55555
    :answer_c: n
@@ -256,6 +258,7 @@ Unfortunately, at the time of this writing, the ActiveCode format implementation
 printing doubled braces, but standard Python prints ``{5, 9}``.
 
 .. mchoice:: test_question8_3_3
+   :practice: T
    :answer_a: Nothing - it causes an error
    :answer_b: sum of {} and {} is {}; product: {}. 2 6 8 12
    :answer_c: sum of 2 and 6 is 8; product: 12.
@@ -277,6 +280,7 @@ printing doubled braces, but standard Python prints ``{5, 9}``.
 
 
 .. mchoice:: test_question8_3_4
+   :practice: T
    :answer_a: 2.34567 2.34567 2.34567
    :answer_b: 2.3 2.34 2.34567
    :answer_c: 2.3 2.35 2.3456700
