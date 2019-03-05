@@ -17,4 +17,4 @@ Functions
    Composition.rst
    ATurtleBarChart.rst
    Glossary.rst
-   thinkcspyExercises.rst
+   Exercises.rst
