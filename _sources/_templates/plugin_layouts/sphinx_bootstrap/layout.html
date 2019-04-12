@@ -51,7 +51,7 @@
 
       <div>
         <a class="brand-logo" style='background: transparent url("{{pathto('_static/img/logo_small.png', 1)}}") no-repeat 0px 0px;' href="/{{appname}}/default/user/login">&nbsp; </a>
-        <a class="navbar-brand" href="{{ pathto(master_doc) }}">{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}</a>
+        <a class="navbar-brand" href="{{ pathto(master_doc) }}">{% if course_title -%}{{ course_title|e }}{%- else -%}{{ course_id|e }}{%- endif -%}</a>
       </div>
     </div>
 

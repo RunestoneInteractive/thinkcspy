@@ -51,6 +51,7 @@ options(
         doctrees = doctrees,
         template_args = {
             'course_id':project_name,
+            'course_title': 'How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist',
             'login_required':'false',
             'appname':master_app,
             'loglevel':10,
