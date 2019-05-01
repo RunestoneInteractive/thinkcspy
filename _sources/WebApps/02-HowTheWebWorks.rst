@@ -20,20 +20,20 @@ A web browser, at its core, is a fairly simple application. Basically, web brows
 
 Let's take a specific example. Start up your browser and type in the following URL:
 
-http://cs.bju.edu/cps/courses/cps110/index.html
+https://cs.bju.edu/cps110/
 
 .. note::
 
     A URL ("Uniform Resource Locator") is the address of a document on the Web. It
     has three sections: the protocol (ex. http:), the server where the document is located (ex.
     www.cs.bju.edu), and the path to the requested resource on the server (ex. 
-    /cps/courses/cps110/textbook.html).
+    /cps110/).
     
 When you press Enter, here's what happens:
 
 1. The browser opens a network connection to the web server named cs.bju.edu
 
-2. The browser requests the file /cps/courses/cps110/index.html from the web server
+2. The browser requests a file located at /cps110/ from the web server
 
 3. The web server transmits the HTML file back to the browser
 

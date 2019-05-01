@@ -19,14 +19,14 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcspy"
+project_name = "cps110fall2019"
 ###############################
 
 master_url = None
 doctrees = None
 if master_url is None:
     if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
-        master_url = 'http://interactivepython.org'
+        master_url = 'https://runestone.academy'
         if os.path.exists('../../custom_courses/{}'.format(project_name)):
             doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
         else:
@@ -36,7 +36,7 @@ if master_url is None:
         doctrees = './build/{}/doctrees'.format(project_name)
 
 master_app = 'runestone'
-serving_dir = "./build/thinkcspy"
+serving_dir = "./build/" + project_name
 dest = "../../static"
 
 options(
@@ -52,14 +52,14 @@ options(
         template_args = {
             'course_id':project_name,
             'course_title': 'How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist',
-            'login_required':'false',
+            'login_required':'true',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'thinkcspy',
+            'basecourse': project_name,
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
         }
