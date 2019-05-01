@@ -8,10 +8,12 @@ and displays results.
 .. sourcecode:: python
    :linenos:
 
-    import bottle
+    from flask import Flask, request
     from datetime import datetime
 
-    @bottle.route('/')
+    app = Flask(__name__)
+
+    @app.route('/')
     def home():
         return """
             <html><body>
@@ -24,10 +26,10 @@ and displays results.
             </body></html>
             """
 
-    @bottle.route('/greet')
+    @app.route('/greet')
     def greet():
-        username = bottle.request.params.get('username', 'World')
-        favfood = bottle.request.params['favfood']
+        username = request.args.get('username', 'World')
+        favfood = request.args['favfood']
         if favfood == '':
             msg = 'You did not tell me your favorite food.'
         else:
@@ -40,20 +42,20 @@ and displays results.
             </body></html>
             """.format(username, msg)
 
-    # Launch the BottlePy dev server 
-    bottle.run(host='localhost',debug=True)
+    # Launch the FlaskPy dev server 
+    app.run(host="localhost", debug=True)
     
 The program is organized as follows:
 
-* Lines 4-15 define the ``home()`` function, which defines the starting page for
+* Lines 6-17 define the ``home()`` function, which defines the starting page for
   the application. It displays a form that prompts for the user's
   name and favorite food.
   
 * The form's action attribute on Line 9 specifies that the form submission will be directed
   to the path **/greet**. Processing for this path is defined by the ``greet()`` 
-  function on lines 17-31.
+  function on lines 19-33.
   
-* Lines 19-26 extract the information submitted on the form and compute a 
+* Lines 21-26 extract the information submitted on the form and compute a 
   response message.
   
   
