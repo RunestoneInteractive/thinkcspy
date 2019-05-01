@@ -20,7 +20,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcspy"
+project_name = "cps110fall2019"
 ###############################
 
 master_url = None
@@ -31,7 +31,7 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = "./build/thinkcspy"
+serving_dir = "./build/" + project_name
 dest = "../../static"
 
 options(
@@ -47,7 +47,7 @@ options(
         template_args = {
             'course_id':project_name,
             'course_title': 'How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist',
-            'login_required':'false',
+            'login_required':'true',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
@@ -55,7 +55,7 @@ options(
             'python3': 'true',
             'dynamic_pages': dynamic_pages,
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'thinkcspy',
+            'basecourse': project_name,
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
             'enable_chatcodes': 'false',

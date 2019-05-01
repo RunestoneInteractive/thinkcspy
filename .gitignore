@@ -1,5 +1,6 @@
 __pycache__/
 build_info
+build
 .idea
 .idea/*
 pavement.pyc
