@@ -9,8 +9,8 @@ Web Applications
    02-HowTheWebWorks.rst
    03-HowWebApplicationsWork.rst                                                                                   
    04-WebApplicationsAndHtmlForms.rst                                                                              
-   05-WritingWebApplicationsWithBottle.rst                                                                         
-   06-MoreAboutBottle.rst                                                                                          
-   07-InputForABottleWebApplication.rst                                                                            
+   05-WritingWebApplicationsWithFlask.rst                                                                         
+   06-MoreAboutFlask.rst                                                                                          
+   07-InputForAFlaskWebApplication.rst                                                                            
    08-WebApplicationsWithAUserInterface.rst
    

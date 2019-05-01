@@ -20,7 +20,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "cps110fall2019"
+project_name = "bjucps110"
 ###############################
 
 master_url = None
