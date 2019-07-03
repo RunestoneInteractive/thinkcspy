@@ -7,6 +7,7 @@ import os.path
 import sys
 from socket import gethostname
 import pkg_resources
+from runestone import get_master_url
 
 sys.path.append(getcwd())
 sys.path.append('../modules')
@@ -23,17 +24,11 @@ project_name = "thinkcspy"
 ###############################
 
 master_url = None
-doctrees = None
+doctrees = './build/{}/doctrees'.format(project_name)
+dynamic_pages = True
+
 if master_url is None:
-    if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
-        master_url = 'http://interactivepython.org'
-        if os.path.exists('../../custom_courses/{}'.format(project_name)):
-            doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
-        else:
-            doctrees = './build/{}/doctrees'.format(project_name)
-    else:
-        master_url = 'http://127.0.0.1:8000'
-        doctrees = './build/{}/doctrees'.format(project_name)
+    master_url = get_master_url()
 
 master_app = 'runestone'
 serving_dir = "./build/thinkcspy"
@@ -58,10 +53,13 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
+            'dynamic_pages': dynamic_pages,
             'dburl': 'postgresql://bmiller@localhost/runestone',
             'basecourse': 'thinkcspy',
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
+            'enable_chatcodes': 'false',
+            'allow_pairs': 'false'
         }
 
     )
