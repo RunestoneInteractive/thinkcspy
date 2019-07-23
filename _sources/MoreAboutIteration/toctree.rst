@@ -10,7 +10,7 @@ More About Iteration
    ThewhileStatement.rst
    RandomlyWalkingTurtles.rst
    The3n1Sequence.rst
-   Newton'sMethod.rst
+   NewtonsMethod.rst
    accumulatorRevisited.rst
    SentinelValuesAndValidation.rst
    AlgorithmsRevisited.rst
