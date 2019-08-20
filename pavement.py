@@ -20,7 +20,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "bjucps110"
+project_name = "thinkcpsy"
 ###############################
 
 master_url = None
@@ -47,7 +47,7 @@ options(
         template_args = {
             'course_id':project_name,
             'course_title': 'How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist',
-            'login_required':'true',
+            'login_required':'false',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
@@ -55,7 +55,7 @@ options(
             'python3': 'true',
             'dynamic_pages': dynamic_pages,
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': project_name,
+            'basecourse': 'thinkcpsy',
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
             'enable_chatcodes': 'false',
