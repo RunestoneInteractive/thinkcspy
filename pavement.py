@@ -20,7 +20,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcpsy"
+project_name = "thinkcspy"
 ###############################
 
 master_url = None
@@ -55,7 +55,7 @@ options(
             'python3': 'true',
             'dynamic_pages': dynamic_pages,
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'thinkcpsy',
+            'basecourse': 'thinkcspy',
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
             'enable_chatcodes': 'false',
