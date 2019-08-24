@@ -32,7 +32,7 @@ if master_url is None:
 
 master_app = 'runestone'
 serving_dir = "./build/thinkcspy"
-dest = "../../static"
+dest = "./published"
 
 options(
     sphinx = Bunch(docroot=".",),
