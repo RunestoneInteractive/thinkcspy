@@ -39,7 +39,6 @@
 
 
 
-
 Table of Contents
 :::::::::::::::::
 
@@ -66,10 +65,12 @@ Table of Contents
    Files/toctree.rst
    Dictionaries/toctree.rst
    Exceptions/toctree.rst
+   WebApps/toctree.rst
    GUIandEventDrivenProgramming/toctree.rst
    IntroRecursion/toctree.rst
    ClassesBasics/toctree.rst
    ClassesDiggingDeeper/toctree.rst
+   Inheritance/toctree.rst
 
 Labs
 ::::

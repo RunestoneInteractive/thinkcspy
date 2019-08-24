@@ -31,7 +31,7 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = "./build/thinkcspy"
+serving_dir = "./build/" + project_name
 dest = "./published"
 
 options(
