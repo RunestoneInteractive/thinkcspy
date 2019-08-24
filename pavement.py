@@ -32,7 +32,7 @@ if master_url is None:
 
 master_app = 'runestone'
 serving_dir = "./build/" + project_name
-dest = "../../static"
+dest = "./published"
 
 options(
     sphinx = Bunch(docroot=".",),

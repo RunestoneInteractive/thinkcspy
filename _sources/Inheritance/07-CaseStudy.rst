@@ -54,7 +54,7 @@ information for an address? One approach would be to store the parts of the addr
 are consistent, such as the recipient name and the country, in instance variables, and 
 store the rest of the address as a list of address lines:
 
-.. sourcecode:: python
+.. activecode:: address_class_1
 
     class Address:
         def __init__(self, recipient, addressLines, country):
@@ -64,6 +64,7 @@ store the rest of the address as a list of address lines:
         
 
     addr = Address('Abe Jones', ['123 Somewhere Ln', 'Greenville, SC  29609'], 'USA')
+    print(addr)
 
 This approach treats an address as a collection of unstructured bits of information. If we want to
 look up an address, we can search by full name or country, but if we want to find all
@@ -73,7 +74,7 @@ address line along with the state abbreviation.
 
 An approach that stores addresses as structured pieces of information might look like this:
 
-.. sourcecode:: python
+.. activecode:: structured_addr_1
 
     class StructuredAddress:
         def __init__(self, country, recipient, street, city, state, postalCode):
@@ -90,7 +91,7 @@ An approach that stores addresses as structured pieces of information might look
             print(self.city + ", " + self.state + "  " + self.postalCode)
             print(self.country)    
         
-    addr = StructuredAddress('USA', 'Abe Jones', None, '103 Anywhere Ln', 
+    addr = StructuredAddress('USA', 'Abe Jones', '103 Anywhere Ln', 
                    'Greenville', 'SC', '29609')    
     addr.display()
 
@@ -144,7 +145,7 @@ Let's apply inheritance to the problem of managing structured postal addresses.
 We will define a base class that contains the attributes in common to all
 postal addresses: recipient and country.
 
-.. sourcecode:: python
+.. activecode:: base_postal
 
     class BasePostalAddress:
         def __init__(self, country, recipient):
@@ -168,7 +169,8 @@ information is present and of an appropriate length.
 Next, we build on BasePostalAddress by creating a separate class for each
 country that inherits from it:
 
-.. sourcecode:: python
+.. activecode:: international_postal
+    :include: base_postal		
 
     class IrishPostalAddress(BasePostalAddress):
         def __init__(self, recipient, postalCode):
@@ -184,16 +186,17 @@ country that inherits from it:
             return super().validate() and len(self.postalCode) == 7
 
     class USPostalAddress(BasePostalAddress):
-        def __init__(self, recipient, street, city, state, zip):
+        def __init__(self, recipient, street, city, state, zipcode):
             super().__init__("USA", recipient)
             self.street = street
+	    self.city = city
             self.state = state
-            self.zip = zip
+            self.zip = zipcode
         
         def display(self):
             print(self.recipient)
             print(self.street)
-            print(self.city + ", " + self.state + "  " + self.postalCode)
+            print(self.city + ", " + self.state + "  " + self.zip)
             print(self.country)
 
         def validate(self):
@@ -210,8 +213,9 @@ A List of Addresses
 Now, let's construct a list containing both US and Irish addresses,
 and display them using a loop:
 
-.. sourcecode:: python
-
+.. activecode:: postal_list_ac
+    :include: base_postal, international_postal
+	      
     addrList = [IrishPostalAddress("Alf Jones", "A26F4G9"),
                 USPostalAddress("Abe Jones", "103 Anywhere Ln", 
                     "Greenville", "SC", "29609"),

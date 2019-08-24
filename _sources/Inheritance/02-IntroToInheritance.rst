@@ -3,7 +3,7 @@ Introduction to Inheritance
 
 Recall the Point class from earlier in the book:
 
-.. sourcecode:: python
+.. activecode:: pointclass_1
 
     class Point:
         
@@ -18,7 +18,7 @@ Recall the Point class from earlier in the book:
             return "x=" + str(self.x) + ", y=" + str(self.y)
         
     p = Point(7, 6)
-
+    print(p)
 
 Now, suppose we want to create a class that works like ``Point`` 
 in every respect, but also keeps track of a short description for the point.
@@ -32,7 +32,8 @@ paste.
 
 We begin like this:
 
-.. sourcecode:: python
+.. activecode:: labeledpoint
+    :include: pointclass_1
 
     class LabeledPoint(Point):
         pass
@@ -51,7 +52,8 @@ invoke any Point methds we want to on it:
 Now, let's refine LabeledPoint so that it holds a label, along with the x and y 
 coordinates:
 
-.. sourcecode:: python
+.. activecode:: labeledpoint_2
+    :include: pointclass_1
    
     class LabeledPoint(Point):
 
@@ -64,6 +66,7 @@ coordinates:
             return "x=" + str(self.x) + ", y=" + str(self.y) + " (" + self.label + ")"            
 
     labeledPt = LabeledPoint(7,6,"Here")
+    print(labeledPt)
     
 Here, we have redefined two of the methods that LabeledPoint inherits from Point: 
 ``__init__()`` and ``__str__()``. 
@@ -75,8 +78,8 @@ executes code in the child's class; an invocation of the method on an instance
 of the parent class executes code in the parent's class. For example,
 consider the following:
 
-.. sourcecode:: python
-   :linenos:
+.. activecode:: combinedpts
+    :include: pointclass_1, labeledpoint_2
 
     pt = Point(5,10)
     labeledPt = LabeledPoint(7, 6, "Here")
