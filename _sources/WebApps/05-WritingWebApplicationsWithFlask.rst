@@ -2,7 +2,7 @@ Writing Web Applications With Flask
 ------------------------------------
 
 In this section, you will learn how to write web applications using a Python framework 
-called Flash.
+called Flask.
 
 Here is an example of a Flask web application:
 
