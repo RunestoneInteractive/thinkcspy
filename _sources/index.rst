@@ -99,6 +99,7 @@ Appendices
 
    Appendices/errorsAndDebug.rst
    Appendices/PrecedenceTable.rst
+   Appendices/testmodule.rst
 
 Acknowledgements
 ::::::::::::::::
