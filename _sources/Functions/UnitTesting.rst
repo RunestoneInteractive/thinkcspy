@@ -26,7 +26,7 @@ To write a **unit test**, we must know the correct result when calling the funct
    On line 8, write another unit test (that should pass) for the ``square`` function.
 
 .. note::
-   The ``test`` module is not a standard Python module. Instead, there are other more powerful and more modern modules. However, the ``test`` module offers a simple introduction to testing that is appropriate at this stage in the interactive text.
+   The ``test`` module is not a standard Python module. Instead, there are other more powerful and more modern modules. However, the ``test`` module offers a simple introduction to testing that is appropriate at this stage in the interactive text. The :ref:`test-module` is included as an appendix in this interactive text.
 
 Choosing Good Unit Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^
