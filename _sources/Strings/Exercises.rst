@@ -390,10 +390,10 @@ Exercises
             def testOne(self):
                 self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
                 self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
-                self.assertEqual(count("ana","banana"),2,"Tested count on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("ana","banana"),1,"Tested count on inputs of 'ana' and 'banana'")
                 self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
                 self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
-                self.assertEqual(count("aaa","aaaaaa"),4,"Tested count on input of 'aaa' and 'aaaaaa'")
+                self.assertEqual(count("aaa","aaaaaa"),2,"Tested count on input of 'aaa' and 'aaaaaa'")
 
 
 
