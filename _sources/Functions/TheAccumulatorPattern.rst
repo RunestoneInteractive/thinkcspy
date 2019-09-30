@@ -131,8 +131,8 @@ The General Accumulator Pattern
    .. code-block:: python
 
      def square(x):
-         runningtotal = 0
          for counter in range(x):
+             runningtotal = 0
              runningtotal = runningtotal + x
          return runningtotal
 
