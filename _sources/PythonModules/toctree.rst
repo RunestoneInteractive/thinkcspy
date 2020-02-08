@@ -9,5 +9,6 @@ Python Modules
    MoreAboutUsingModules.rst
    Themathmodule.rst
    Therandommodule.rst
+   CreatingModules.rst
    Glossary.rst
    Exercises.rst
