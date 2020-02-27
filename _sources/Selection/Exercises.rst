@@ -63,6 +63,9 @@ Exercises
                :practice: T
                :autograde: unittest
 
+               .. image:: Figures/contains-unit-test-icon.png
+                :width: 25
+
                Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
                scheme:
    
@@ -80,7 +83,7 @@ Exercises
    
                The square and round brackets denote closed and open intervals.
                A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
-   
+               
                Test your function by printing the mark and the grade for a number of different marks.
                ~~~~
                def getGrade(grade):
@@ -222,6 +225,9 @@ Exercises
       :autograde: unittest
       :nocodelens:
 
+      .. image:: Figures/contains-unit-test-icon.png
+        :width: 25
+
       Write a function ``findHypot``.  The function will be given the length of two sides of a right-angled triangle and it should return
       the length of the hypotenuse.  (Hint:  ``x ** 0.5`` will return the square root, or use ``sqrt`` from the math module)
       ~~~~
@@ -252,6 +258,9 @@ Exercises
                :practice: T
                :autograde: unittest
                :nocodelens:
+
+               .. image:: Figures/contains-unit-test-icon.png
+                :width: 25
 
                Write a function called ``is_even(n)`` that takes an integer as an argument
                and returns ``True`` if the argument is an **even number** and ``False`` if
@@ -306,6 +315,9 @@ Exercises
        :autograde: unittest
        :nocodelens:
 
+       .. image:: Figures/contains-unit-test-icon.png
+        :width: 25
+
        Now write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd
        and ``False`` otherwise.
        ~~~~
@@ -336,6 +348,9 @@ Exercises
                :practice: T
                :autograde: unittest
                :nocodelens:
+
+               .. image:: Figures/contains-unit-test-icon.png
+                :width: 25
 
                Modify ``is_odd`` so that it uses a call to ``is_even`` to determine if its
                argument is an odd integer.
@@ -396,6 +411,9 @@ Exercises
       :autograde: unittest
       :nocodelens:
 
+      .. image:: Figures/contains-unit-test-icon.png
+        :width: 25
+
       Write a function ``is_rightangled`` which, given the length of three sides of a triangle,
       will determine whether the triangle is right-angled.  Assume that the third argument to the
       function is always the longest side.  It will return ``True`` if the triangle
@@ -438,6 +456,9 @@ Exercises
                 :practice: T
                 :autograde: unittest
                 :nocodelens:
+
+                .. image:: Figures/contains-unit-test-icon.png
+                    :width: 25
 
                 Extend the above program so that the sides can be given to the function in any order.
                 ~~~~
@@ -498,6 +519,9 @@ Exercises
       :practice: T
       :autograde: unittest
       :nocodelens:
+
+      .. image:: Figures/contains-unit-test-icon.png
+        :width: 25
 
       3 criteria must be taken into account to identify leap years:
    
