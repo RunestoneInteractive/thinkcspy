@@ -31,7 +31,7 @@
    * This book is based on the `Original work <http://www.openbookproject.net/thinkcs/python/english2e/>`_ by:  Jeffrey Elkner, Allen B. Downey, and Chris Meyers
    * Activecode based on `Skulpt <http://skulpt.org>`_
    * Codelens based on `Online Python Tutor <http://www.pythontutor.com>`_
-   * Many contributions from the `CSLearning4U research group <http://home.cc.gatech.edu/csl/CSLearning4U>`_ at Georgia Tech.
+   * Many contributions from the `CSLearning4U research group <https://www.gvu.gatech.edu/research/projects/cslearning4u-creating-electronic-books-teacher-cs-learning>`_ at Georgia Tech.
    * ACM-SIGCSE for the special projects grant that funded our student Isaac Dontje Lindell for the summer of 2013.
    * NSF
 
