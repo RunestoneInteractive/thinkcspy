@@ -139,6 +139,8 @@ Exercises
 .. question:: strings_ex_6
 
    .. actex:: ex_7_11
+      :practice: T
+      :autograde: unittest
 
       Write a function ``sum_of_squares(xs)`` that computes the sum
       of the squares of the numbers in the list ``xs``.  For example,
@@ -166,6 +168,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_9_6
+              :practice: T
+              :autograde: unittest
 
               Write a function to count how many odd numbers are in a list.
               ~~~~
@@ -217,6 +221,8 @@ Exercises
 .. question:: strings_ex_8
 
    .. actex:: ex_9_7
+      :practice: T
+      :autograde: unittest
 
       Sum up all the even numbers in a list.
       ~~~~
@@ -243,6 +249,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_9_8
+              :practice: T
+              :autograde: unittest
 
               Sum up all the negative numbers in a list.
               ~~~~
@@ -309,6 +317,8 @@ Exercises
            Sum all the elements in a list up to but not including the first even number.
 
            .. actex:: ex_9_10
+              :practice: T
+              :autograde: unittest
 
               def sumUntilEven(lst):
                   # your code here
@@ -435,6 +445,8 @@ Exercises
 .. question:: strings_ex_14
 
    .. actex:: ex_9_13
+      :practice: T
+      :autograde: unittest
 
       Write a function ``replace(s, old, new)`` that replaces all occurences of
       ``old`` with ``new`` in a string ``s``::

@@ -7,6 +7,7 @@ import os.path
 import sys
 from socket import gethostname
 import pkg_resources
+from runestone import get_master_url
 
 sys.path.append(getcwd())
 sys.path.append('../modules')
@@ -23,21 +24,15 @@ project_name = "cps110spring2019"
 ###############################
 
 master_url = None
-doctrees = None
+doctrees = './build/{}/doctrees'.format(project_name)
+dynamic_pages = True
+
 if master_url is None:
-    if gethostname() in ['web608.webfaction.com', 'rsbuilder']:
-        master_url = 'https://runestone.academy'
-        if os.path.exists('../../custom_courses/{}'.format(project_name)):
-            doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
-        else:
-            doctrees = './build/{}/doctrees'.format(project_name)
-    else:
-        master_url = 'http://127.0.0.1:8000'
-        doctrees = './build/{}/doctrees'.format(project_name)
+    master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = "./build/thinkcspy"
-dest = "../../static"
+serving_dir = "./build/" + project_name
+dest = "./published"
 
 options(
     sphinx = Bunch(docroot=".",),
@@ -51,16 +46,20 @@ options(
         doctrees = doctrees,
         template_args = {
             'course_id':project_name,
-            'login_required':'true',
+            'course_title': 'How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist',
+            'login_required':'false',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
+            'dynamic_pages': dynamic_pages,
             'dburl': 'postgresql://bmiller@localhost/runestone',
             'basecourse': project_name,
             'downloads_enabled': 'false',
             'default_ac_lang': 'python',
+            'enable_chatcodes': 'false',
+            'allow_pairs': 'false'
         }
 
     )

@@ -91,6 +91,7 @@ You can see that all the turtle functionality that we have talked about is there
 **Check your understanding**
 
 .. mchoice:: question4_1_1
+   :practice: T
    :answer_a: A file containing Python definitions and statements intended for use in other Python programs.
    :answer_b: A separate block of code within a program.
    :answer_c: One line of code in a program.
@@ -104,6 +105,7 @@ You can see that all the turtle functionality that we have talked about is there
    In Python a module is:
 
 .. mchoice:: question4_1_2
+   :practice: T
    :answer_a: Go to the Python Documentation site.
    :answer_b: Look at the import statements of the program you are working with or writing.
    :answer_c: Ask the professor
@@ -117,6 +119,7 @@ You can see that all the turtle functionality that we have talked about is there
    To find out information on the standard modules available with Python you should:
 
 .. mchoice:: question4_1_3
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: b

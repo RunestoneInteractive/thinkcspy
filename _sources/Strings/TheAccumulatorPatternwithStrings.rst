@@ -72,6 +72,7 @@ Step through the function using codelens to see the accumulator variable grow.
 **Check your understanding**
 
 .. mchoice:: test_question8_11_1
+   :practice: T
    :answer_a: Ball
    :answer_b: BALL
    :answer_c: LLAB

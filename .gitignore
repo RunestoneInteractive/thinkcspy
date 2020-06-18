@@ -2,6 +2,7 @@
 __pycache__/
 build_info
 build
+published
 .idea
 .idea/*
 pavement.pyc
@@ -12,3 +13,5 @@ pavement.pyc
 *.bak
 *.orig
 \#*\#
+sphinx-enki-info.txt
+sphinx_settings.json

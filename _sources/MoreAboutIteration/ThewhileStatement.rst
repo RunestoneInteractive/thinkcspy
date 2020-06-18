@@ -139,6 +139,7 @@ we need the extra power that we get from the ``while`` loop.
 **Check your understanding**
 
 .. mchoice:: test_question7_2_1
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -148,6 +149,7 @@ we need the extra power that we get from the ``while`` loop.
    True or False: You can rewrite any for-loop as a while-loop.
 
 .. mchoice:: test_question7_2_2
+   :practice: T
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
@@ -171,6 +173,7 @@ we need the extra power that we get from the ``while`` loop.
 
 
 .. mchoice:: test_question7_2_3
+   :practice: T
    :answer_a: 4 7
    :answer_b: 5 7
    :answer_c: 7 15

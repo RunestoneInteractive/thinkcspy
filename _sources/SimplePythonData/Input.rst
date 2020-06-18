@@ -72,6 +72,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 **Check your understanding**
 
 .. mchoice:: test_question2_7_1
+   :practice: T
    :answer_a: &lt;class 'str'&gt;
    :answer_b: &lt;class 'int'&gt;
    :answer_c: &lt;class 18&gt;
@@ -98,8 +99,8 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
     :click-incorrect:seconds:endclick: = input("Please enter the number of seconds you wish to convert")
 
-    :click-correct:hours:endclick: = int(seconds) // :click-incorrect:3600:endclick:
-    :click-correct:total_secs:endclick: = int(seconds) 
+    :click-correct:hours:endclick: = int(:click-incorrect:seconds:endclick:) // 3600
+    :click-correct:total_secs:endclick: = int(:click-incorrect:seconds:endclick:)
     :click-correct:secs_still_remaining:endclick: = :click-correct:total_secs:endclick: % 3600
     print(:click-correct:secs_still_remaining:endclick:)
 
@@ -108,10 +109,10 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
     :iscode:
     :feedback:
 
-    :click-correct:seconds:endclick: = input(:click-incorrect:"Please enter the number of seconds you wish to convert":endclick:)
+    :click-correct:seconds:endclick: = input("Please enter the number of seconds you wish to convert")
 
-    :click-incorrect:hours:endclick: = int(:click-correct:seconds:endclick:) // :click-incorrect:3600:endclick:
-    :click-incorrect:total_secs:endclick: = int(seconds) 
+    :click-incorrect:hours:endclick: = int(:click-correct:seconds:endclick:) // 3600
+    :click-incorrect:total_secs:endclick: = int(:click-correct:seconds:endclick:)
     :click-incorrect:secs_still_remaining:endclick: = :click-incorrect:total_secs:endclick: % 3600
     print(:click-incorrect:secs_still_remaining:endclick:)
 

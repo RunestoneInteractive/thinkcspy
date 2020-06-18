@@ -16,11 +16,11 @@
 String Methods
 --------------
 
-We previously saw that each turtle instance has its own attributes and 
+We previously saw that each turtle instance has its own attributes and
 a number of methods that can be applied to the instance.  For example,
 we wrote ``tess.right(90)`` when we wanted the turtle object ``tess`` to perform the ``right`` method to turn
 to the right 90 degrees.  The "dot notation" is the way we connect the name of an object to the name of a method
-it can perform.  
+it can perform.
 
 Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.
 
@@ -33,8 +33,8 @@ Strings are also objects.  Each string instance has its own attributes and metho
     print(tt)
 
 
-In this example, ``upper`` is a method that can be invoked on any string object 
-to create a new string in which all the 
+In this example, ``upper`` is a method that can be invoked on any string object
+to create a new string in which all the
 characters are in uppercase.  ``lower`` works in a similar fashion changing all characters in the string
 to lowercase.  (The original string ``ss`` remains unchanged.  A new string ``tt`` is created.)
 
@@ -107,6 +107,7 @@ change the original.  You can also consult the `Python documentation for strings
 **Check your understanding**
 
 .. mchoice:: test_question8_3_1
+   :practice: T
    :answer_a: 0
    :answer_b: 2
    :answer_c: 3
@@ -117,9 +118,9 @@ change the original.  You can also consult the `Python documentation for strings
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
       s = "python rocks"
       print(s.count("o") + s.count("p"))
 
@@ -127,6 +128,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 
 .. mchoice:: test_question8_3_2
+   :practice: T
    :answer_a: yyyyy
    :answer_b: 55555
    :answer_c: n
@@ -139,14 +141,14 @@ change the original.  You can also consult the `Python documentation for strings
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
       s = "python rocks"
       print(s[1] * s.index("n"))
 
 
-.. index:: 
+.. index::
    braces; format string
    single: {}; format string
    format string
@@ -164,7 +166,7 @@ In grade school quizzes a common convention is to use fill-in-the blanks. For in
 
 
 and you can fill in the name of the person greeted, and combine
-given text with a chosen insertion. *We use this as an analogy:*  
+given text with a chosen insertion. *We use this as an analogy:*
 Python has a similar
 construction, better called fill-in-the-braces. The string method ``format``,  makes
 substitutions into places in a string
@@ -173,7 +175,7 @@ enclosed in braces. Run this code:
 .. activecode:: ch08_methods3
 
     person = input('Your name: ')
-    greeting = 'Hello {}!'.format(person) 
+    greeting = 'Hello {}!'.format(person)
     print(greeting)
 
 
@@ -188,7 +190,7 @@ the syntax where the first (and only) location in the string with
 braces has a substitution made from the first (and only) parameter.
 
 In the code above, this new string is assigned to the identifier
-``greeting``, and then the string is printed. 
+``greeting``, and then the string is printed.
 
 The identifier
 ``greeting`` was introduced to break the operations into a clearer
@@ -198,35 +200,35 @@ version:
 
 .. activecode:: ch08_methods4
 
-    person = input('Enter your name: ') 
-    print('Hello {}!'.format(person)) 
+    person = input('Enter your name: ')
+    print('Hello {}!'.format(person))
 
-There can be multiple substitutions, with data of any type.  
+There can be multiple substitutions, with data of any type.
 Next we use floats.  Try original price $2.50  with a 7% discount:
 
 .. activecode:: ch08_methods5
 
-    origPrice = float(input('Enter the original price: $')) 
-    discount = float(input('Enter discount percentage: ')) 
+    origPrice = float(input('Enter the original price: $'))
+    discount = float(input('Enter discount percentage: '))
     newPrice = (1 - discount/100)*origPrice
     calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
     print(calculation)
 
 The parameters are inserted into the braces in order.
 
-If you used the data suggested, this result is not satisfying.  
+If you used the data suggested, this result is not satisfying.
 Prices should appear with exactly two places beyond the decimal point,
 but that is not the default way to display floats.
 
-Format strings can give further information inside the braces 
+Format strings can give further information inside the braces
 showing how to specially format data.
-In particular floats can be shown with a specific number of decimal places.  
+In particular floats can be shown with a specific number of decimal places.
 For two decimal places, put ``:.2f`` inside the braces for the monetary values:
 
 .. activecode:: ch08_methods6
 
-    origPrice = float(input('Enter the original price: $')) 
-    discount = float(input('Enter discount percentage: ')) 
+    origPrice = float(input('Enter the original price: $'))
+    discount = float(input('Enter discount percentage: '))
     newPrice = (1 - discount/100)*origPrice
     calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
     print(calculation)
@@ -241,7 +243,7 @@ skip here, explicitly numbering substitutions and taking substitutions from a di
 A technical point: Since braces have special meaning in a format
 string, there must be a special rule if you want braces to actually
 be included in the final *formatted* string. The rule is to double
-the braces: ``{{`` and ``}}``. For example mathematical set
+the braces: ``{ {`` and ``}}``. For example mathematical set
 notation uses braces. The initial and final doubled
 braces in the format string below generate literal braces in the
 formatted string::
@@ -249,13 +251,14 @@ formatted string::
 
     a = 5
     b = 9
-    setStr = 'The set is {{{}, {}}}.'.format(a, b)
+    setStr = 'The set is { { { }, {} } }.'.format(a, b)
     print(setStr)
 
 Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
 printing doubled braces, but standard Python prints ``{5, 9}``.
 
 .. mchoice:: test_question8_3_3
+   :practice: T
    :answer_a: Nothing - it causes an error
    :answer_b: sum of {} and {} is {}; product: {}. 2 6 8 12
    :answer_c: sum of 2 and 6 is 8; product: 12.
@@ -268,15 +271,16 @@ printing doubled braces, but standard Python prints ``{5, 9}``.
 
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
        x = 2
        y = 6
        print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
 
 
 .. mchoice:: test_question8_3_4
+   :practice: T
    :answer_a: 2.34567 2.34567 2.34567
    :answer_b: 2.3 2.34 2.34567
    :answer_c: 2.3 2.35 2.3456700
@@ -284,12 +288,12 @@ printing doubled braces, but standard Python prints ``{5, 9}``.
    :feedback_a: The numbers before the f in the braces give the number of digits to display after the decimal point.
    :feedback_b: Close, but round to the number of digits and display the full number of digits specified.
    :feedback_c: Yes, correct number of digits with rounding!
-   
+
 
    What is printed by the following statements?
-   
+
    .. code-block:: python
-   
+
        v = 2.34567
        print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
 

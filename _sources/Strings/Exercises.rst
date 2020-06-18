@@ -136,6 +136,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_7_10
+              :practice: T
+              :autograde: unittest
 
               Write a function that will return the number of digits in an integer.
               ~~~~
@@ -182,6 +184,8 @@ Exercises
 #. 
 
    .. actex:: ex_8_5
+      :practice: T
+      :autograde: unittest
       :nocodelens:
       
       Write a function that reverses its string argument.
@@ -215,6 +219,8 @@ Exercises
            generating a string containing the original string and the string backwards.
 
            .. actex:: ex_8_6
+              :practice: T
+              :autograde: unittest
               :nocodelens:
 
               def mirror(mystr):
@@ -268,6 +274,8 @@ Exercises
 #. 
 
    .. actex:: ex_8_7
+      :practice: T
+      :autograde: unittest
       :nocodelens:
 
       Write a function that removes all occurrences of a given letter from a string.
@@ -300,6 +308,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_8_8
+              :practice: T
+              :autograde: unittest
               :nocodelens:
 
               Write a function that recognizes palindromes. (Hint: use your ``reverse`` function to make this easy!).
@@ -362,6 +372,8 @@ Exercises
 #. Write a function that counts how many non-overlapping occurences of a substring appear in a string.
 
    .. actex:: ex_8_9
+      :practice: T
+      :autograde: unittest
       :nocodelens:
 
       def count(substr,theStr):
@@ -378,10 +390,10 @@ Exercises
             def testOne(self):
                 self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
                 self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
-                self.assertEqual(count("ana","banana"),2,"Tested count on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("ana","banana"),1,"Tested count on inputs of 'ana' and 'banana'")
                 self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
                 self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
-                self.assertEqual(count("aaa","aaaaaa"),4,"Tested count on input of 'aaa' and 'aaaaaa'")
+                self.assertEqual(count("aaa","aaaaaa"),2,"Tested count on input of 'aaa' and 'aaaaaa'")
 
 
 
@@ -396,6 +408,8 @@ Exercises
         .. tab:: Question
 
            .. actex:: ex_8_10
+              :practice: T
+              :autograde: unittest
               :nocodelens:
 
               Write a function that removes the first occurrence of a string from another string.
@@ -451,6 +465,8 @@ Exercises
 #. 
 
    .. actex:: ex_8_11
+      :practice: T
+      :autograde: unittest
 
       Write a function that removes all occurrences of a string from another string.
       ~~~~
@@ -823,6 +839,8 @@ Exercises
 #. 
 
    .. actex:: ex_8_19
+      :practice: T
+      :autograde: unittest
 
       Write a function called  ``remove_dups`` that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
       there will never be a duplicate letter added to the new string.

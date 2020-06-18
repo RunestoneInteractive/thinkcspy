@@ -136,6 +136,7 @@ compute the correct values.
 **Check your understanding**
 
 .. mchoice:: test_question2_6_1
+   :practice: T
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
@@ -155,6 +156,7 @@ compute the correct values.
 
 
 .. mchoice:: test_question2_6_2
+   :practice: T
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4
@@ -173,6 +175,7 @@ compute the correct values.
 
 
 .. mchoice:: test_question2_6_3
+   :practice: T
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4

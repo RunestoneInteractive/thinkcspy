@@ -63,6 +63,7 @@ Most other languages do *not* allow the negative indices, but they are a handy f
 **Check your understanding**
 
 .. mchoice:: test_question8_4_1
+   :practice: T
    :answer_a: 11
    :answer_b: 12
    :correct: b
@@ -80,6 +81,7 @@ Most other languages do *not* allow the negative indices, but they are a handy f
 
 
 .. mchoice:: test_question8_4_2
+   :practice: T
    :answer_a: o
    :answer_b: r
    :answer_c: s
@@ -100,6 +102,7 @@ Most other languages do *not* allow the negative indices, but they are a handy f
 
 
 .. mchoice:: test_question8_4_3
+   :practice: T
    :answer_a: c
    :answer_b: k
    :answer_c: s

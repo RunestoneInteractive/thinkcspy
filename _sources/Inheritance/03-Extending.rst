@@ -28,7 +28,7 @@ Here is a complete code listing showing both classes, with a version
 of ``__str__()`` for ``LabeledPoint`` that invokes its parent's implementation
 using ``super()`` to avoid duplicating the functionality provided in ``Point``.
 
-.. sourcecode:: python
+.. activecode:: combined_pts_1
 
     class Point:
         

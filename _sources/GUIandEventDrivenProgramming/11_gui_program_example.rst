@@ -95,6 +95,10 @@ for each mole. The exact size of the "mole field" needs to be determined at
 a future time, so initialize a CONSTANT that can be used to easily change it
 later.  (`whack_a_mole_v2.py`_)
 
+.. image:: Figures/mole.png
+
+.. image:: Figures/mole_cover.png
+
 .. code-block:: python
 
   import tkinter as tk

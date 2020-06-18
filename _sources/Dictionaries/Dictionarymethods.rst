@@ -124,6 +124,7 @@ in the case where the key is not present.  This can be seen in the final example
 **Check your understanding**
 
 .. mchoice:: test_question11_3_1
+   :practice: T
    :answer_a: cat
    :answer_b: dog
    :answer_c: elephant
@@ -147,6 +148,7 @@ in the case where the key is not present.  This can be seen in the final example
    
    
 .. mchoice:: test_question11_3_2
+   :practice: T
    :answer_a: 2
    :answer_b: 0.5
    :answer_c: bear
@@ -169,6 +171,7 @@ in the case where the key is not present.  This can be seen in the final example
    
    
 .. mchoice:: test_question11_3_3
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: a
@@ -185,6 +188,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 .. mchoice:: test_question11_3_4
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: b
@@ -201,6 +205,7 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 .. mchoice:: test_question11_3_5
+   :practice: T
    :answer_a: 18
    :answer_b: 43
    :answer_c: 0

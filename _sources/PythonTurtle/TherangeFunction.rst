@@ -139,6 +139,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
 **Check your understanding**
 
 .. mchoice:: test_question3_5_1
+  :practice: T
   :answer_a: Range should generate a sequence that stops before 10 (including 9).
   :answer_b: Range should generate a sequence that starts at 10 (including 10).
   :answer_c: Range should generate a sequence starting at 3 that stops at 10 (including 10).
@@ -152,6 +153,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
   In the command range(3, 10, 2), what does the second argument (10) specify?
 
 .. mchoice:: test_question3_5_2
+  :practice: T
   :answer_a: range(2, 5, 8)
   :answer_b: range(2, 8, 3)
   :answer_c: range(2, 10, 3)
@@ -165,6 +167,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
   What command correctly generates the sequence 2, 5, 8?
 
 .. mchoice:: test_question3_5_3
+  :practice: T
   :answer_a: It will generate a sequence starting at 0, with every number included up to but not including the argument it was passed.
   :answer_b: It will generate a sequence starting at 1, with every number up to but not including the argument it was passed.
   :answer_c: It will generate a sequence starting at 1, with every number including the argument it was passed.
@@ -178,13 +181,14 @@ Try it in codelens.  Do you see why the first two statements produce the same re
   What happens if you give range only one argument?  For example: range(4)
 
 .. mchoice:: test_question3_5_4
+  :practice: T
   :answer_a: range(5, 25, 5)
   :answer_b: range(20, 3, -5)
   :answer_c: range(20, 5, 4)
   :answer_d: range(20, 5, -5)
   :correct: b
   :feedback_a: The step 5 is positive, while the given sequence is decreasing.  This answer creates the reversed, increasing sequence.
-  :feedback_b: Yes: If we take steps of -5, not worrying about the ending, we get 20, 25, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5.
+  :feedback_b: Yes: If we take steps of -5, not worrying about the ending, we get 20, 15, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5.
   :feedback_c: The step 5 is positive so the sequence would need to increase from 20 toward 4.  That does not make sense and the sequence would be empty.
   :feedback_d: the sequence can never include the second parameter (5).  The second parameter must always be past the end of the range sequence.
 
@@ -192,6 +196,7 @@ Try it in codelens.  Do you see why the first two statements produce the same re
 
 
 .. mchoice:: test_question3_5_5
+  :practice: T
   :answer_a: No other value would give the same sequence.
   :answer_b: The only other choice is 14.
   :answer_c: 11, 13, or 14

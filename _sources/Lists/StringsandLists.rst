@@ -61,6 +61,7 @@ you can use empty glue or multi-character strings as glue.
 **Check your understanding**
 
 .. mchoice:: test_question9_22_1
+   :practice: T
    :answer_a: Poe
    :answer_b: EdgarAllanPoe
    :answer_c: EAP

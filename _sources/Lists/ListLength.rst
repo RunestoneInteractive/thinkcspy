@@ -29,6 +29,7 @@ item when counting the length of the list.
 **Check your understanding**
 
 .. mchoice:: test_question9_2_1
+   :practice: T
    :answer_a: 4
    :answer_b: 5
    :correct: b
@@ -44,6 +45,7 @@ item when counting the length of the list.
    
    
 .. mchoice:: test_question9_2_2
+   :practice: T
    :answer_a: 7
    :answer_b: 8
    :correct: a

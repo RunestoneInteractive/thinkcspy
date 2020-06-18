@@ -1,3 +1,2 @@
-runestone>=3.1.0
-SQLAlchemy>=1.0.8
+runestone>=4.0.0
 psycopg2-binary

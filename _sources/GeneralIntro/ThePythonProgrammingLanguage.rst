@@ -125,6 +125,7 @@ most programs are more interesting than this one.
 **Check your understanding**
 
 .. mchoice:: question1_2_1
+   :practice: T
    :answer_a: the instructions in a program, stored in a file.
    :answer_b: the language that you are programming in (e.g., Python).
    :answer_c: the environment/tool in which you are programming.
@@ -138,6 +139,7 @@ most programs are more interesting than this one.
    Source code is another name for:
 
 .. mchoice:: question1_2_2
+   :practice: T
    :answer_a: It is high-level if you are standing and low-level if you are sitting.
    :answer_b: It is high-level if you are programming for a computer and low-level if you are programming for a phone or mobile device.
    :answer_c: It is high-level if the program must be processed before it can run, and low-level if the computer can execute it without additional processing.
@@ -152,6 +154,7 @@ most programs are more interesting than this one.
     What is the difference between a high-level programming language and a low-level programming language?
 
 .. mchoice:: question1_2_3
+   :practice: T
    :answer_a: 1 = a process, 2 = a function
    :answer_b: 1 = translating an entire book, 2 = translating a line at a time
    :answer_c: 1 = software, 2 = hardware

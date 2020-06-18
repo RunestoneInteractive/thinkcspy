@@ -49,6 +49,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
 **Check your understanding**
 
 .. mchoice:: test_question6_5_1
+   :practice: T
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
@@ -82,6 +83,7 @@ What would be printed if the value of ``x`` is negative?  Try it.
 
 
 .. mchoice:: test_question6_5_2
+   :practice: T
    :answer_a: No
    :answer_b: Yes
    :correct: b

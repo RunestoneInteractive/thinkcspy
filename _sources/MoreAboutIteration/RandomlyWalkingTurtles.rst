@@ -192,6 +192,7 @@ program into a couple of parts is another example of functional decomposition.
 **Check your understanding**
 
 .. mchoice:: test_question7_3_1
+   :practice: T
    :answer_a: a for-loop or a while-loop
    :answer_b: only a for-loop
    :answer_c: only a while-loop
@@ -203,6 +204,7 @@ program into a couple of parts is another example of functional decomposition.
    Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.
 
 .. mchoice:: test_question7_3_2
+   :practice: T
    :answer_a: Returns True if the turtle is still on the screen and False if the turtle is no longer on the screen.
    :answer_b: Uses a while loop to move the turtle randomly until it goes off the screen.
    :answer_c: Turns the turtle right or left at random and moves the turtle forward 50.

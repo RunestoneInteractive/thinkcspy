@@ -86,6 +86,7 @@ Here are some *How to think like a computer scientist* observations:
 **Check your understanding**
 
 .. mchoice:: test_question3_2_1
+   :practice: T
    :answer_a: True
    :answer_b: False
    :correct: b

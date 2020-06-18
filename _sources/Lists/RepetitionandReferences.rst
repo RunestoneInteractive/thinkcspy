@@ -82,6 +82,7 @@ Here is the same example in codelens.  Step through the code paying particular a
 **Check your understanding**
 
 .. mchoice:: test_question9_12_1
+   :practice: T
    :answer_a: [4, 2, 8, 999, 5, 4, 2, 8, 6, 5]
    :answer_b: [4, 2, 8, 999, 5]
    :answer_c: [4, 2, 8, 6, 5]
@@ -101,6 +102,7 @@ Here is the same example in codelens.  Step through the code paying particular a
 
 
 .. mchoice:: test_question9_12_2
+   :practice: T
    :answer_a: [4, 2, 8, 999, 5, 4, 2, 8, 999, 5]
    :answer_b: [[4, 2, 8, 999, 5], [4, 2, 8, 999, 5]]
    :answer_c: [4, 2, 8, 6, 5]

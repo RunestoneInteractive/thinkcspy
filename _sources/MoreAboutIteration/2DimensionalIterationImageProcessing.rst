@@ -96,6 +96,7 @@ the same as the current amount of green.
 **Check your understanding**
 
 .. mchoice:: test_question7_8_1_1
+   :practice: T
    :answer_a: Dark red
    :answer_b: Light red
    :answer_c: Dark green
@@ -172,6 +173,7 @@ pixel at column 45, row 55, has RGB values of 165, 161, and 158.  Try a few othe
 **Check your understanding**
 
 .. mchoice:: test_question7_8_2_1
+   :practice: T
    :answer_a: 149 132 122
    :answer_b: 183 179 170
    :answer_c: 165 161 158
@@ -327,6 +329,7 @@ What remains is to focus on ways that we can better represent our problems in te
 **Check your understanding**
 
 .. mchoice:: test_question7_8_3_1
+   :practice: T
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
@@ -383,6 +386,7 @@ What remains is to focus on ways that we can better represent our problems in te
 
 
 .. mchoice:: test_question7_8_3_2
+   :practice: T
    :answer_a: It would look like a red-washed version of the bell image
    :answer_b: It would be a solid red rectangle the same size as the original image
    :answer_c: It would look the same as the original image

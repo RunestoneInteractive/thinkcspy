@@ -72,6 +72,7 @@ column does not depend on the number of digits in the first column.
 **Check your understanding**
 
 .. mchoice:: test_question7_7_1
+  :practice: T
   :answer_a: A tab will line up items in a second column, regardless of how many characters were in the first column, while spaces will not.
   :answer_b: There is no difference
   :answer_c: A tab is wider than a sequence of spaces

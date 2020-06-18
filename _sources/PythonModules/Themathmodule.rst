@@ -60,6 +60,7 @@ for the math module.
 **Check your understanding**
 
 .. mchoice:: question4_2_1
+   :practice: T
    :answer_a: import math
    :answer_b: include math
    :answer_c: use math

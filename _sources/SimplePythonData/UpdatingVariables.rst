@@ -82,6 +82,7 @@ a variable, which means the same as incrementing it by 1.
 **Check your understanding**
 
 .. mchoice:: test_question2_10_1
+   :practice: T
    :answer_a: 12
    :answer_b: -1
    :answer_c: 11
@@ -102,6 +103,7 @@ a variable, which means the same as incrementing it by 1.
      print(x)
 
 .. mchoice:: test_question2_10_2
+   :practice: T
    :answer_a: 12
    :answer_b: 9
    :answer_c: 15

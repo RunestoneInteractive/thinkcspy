@@ -72,6 +72,7 @@ Here is the same program using ``elif``.
 **Check your understanding**
 
 .. mchoice:: test_question6_7_1
+   :practice: T
    :answer_a: I only
    :answer_b: II only
    :answer_c: III only
@@ -135,6 +136,7 @@ Here is the same program using ``elif``.
 
 
 .. mchoice:: test_question6_7_2
+   :practice: T
    :answer_a: a
    :answer_b: b
    :answer_c: c

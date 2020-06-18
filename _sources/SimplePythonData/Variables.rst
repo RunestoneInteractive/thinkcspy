@@ -151,6 +151,7 @@ or change the variable so that it will always reflect the correct value.
 **Check your understanding**
 
 .. mchoice:: test_question2_3_2
+   :practice: T
    :answer_a: Nothing is printed. A runtime error occurs.
    :answer_b: Thursday
    :answer_c: 32.5

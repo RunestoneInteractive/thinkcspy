@@ -45,6 +45,7 @@ possible.
 **Check your understanding**
 
 .. mchoice:: question1_11_1
+   :practice: T
    :answer_a: sends information to the printer to be printed on paper.
    :answer_b: displays a value on the screen.
    :answer_c: tells the computer to put the information in print, rather than cursive, format.

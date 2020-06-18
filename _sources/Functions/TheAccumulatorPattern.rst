@@ -115,6 +115,7 @@ The General Accumulator Pattern
 **Check your understanding**
 
 .. mchoice:: test_question5_4_1
+   :practice: T
    :answer_a: The square function will return x instead of x * x
    :answer_b: The square function will cause an error
    :answer_c: The square function will work as expected and return x * x
@@ -130,8 +131,8 @@ The General Accumulator Pattern
    .. code-block:: python
 
      def square(x):
-         runningtotal = 0
          for counter in range(x):
+             runningtotal = 0
              runningtotal = runningtotal + x
          return runningtotal
 

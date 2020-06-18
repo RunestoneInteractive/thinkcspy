@@ -87,7 +87,7 @@ or **global scope**.  This is exactly the case illustrated in the code above.
 The appropriate way to write this function would be to pass power as a parameter.
 For practice, you should rewrite the badsquare example to have a second parameter called power.
 
-There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot 
+There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
 change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
 codelens example:
 
@@ -146,17 +146,19 @@ But this example demonstrates that that is clearly not how Python operates.
 **Check your understanding**
 
 .. mchoice:: test_question5_3_1
+   :practice: T
    :answer_a: Its value
    :answer_b: The range of statements in the code where a variable can be accessed.
    :answer_c: Its name
    :correct: b
    :feedback_a: Value is the contents of the variable.  Scope concerns where the variable is &quot;known&quot;.
-   :feedback_b:
+   :feedback_b: The range in which a variable can be accessed is it's scope. For example if a variable is defined in a function, then the scope of the variable is that function.
    :feedback_c: The name of a variable is just an identifier or alias.  Scope concerns where the variable is &quot;known&quot;.
 
    What is a variable's scope?
 
 .. mchoice:: test_question5_3_2
+   :practice: T
    :answer_a: A temporary variable that is only used inside a function
    :answer_b: The same as a parameter
    :answer_c: Another name for any variable
@@ -168,6 +170,7 @@ But this example demonstrates that that is clearly not how Python operates.
    What is a local variable?
 
 .. mchoice:: test_question5_3_3
+   :practice: T
    :answer_a: Yes, and there is no reason not to.
    :answer_b: Yes, but it is considered bad form.
    :answer_c: No, it will cause an error.
@@ -177,4 +180,3 @@ But this example demonstrates that that is clearly not how Python operates.
    :feedback_c: Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
 
    Can you use the same name for a local variable as a global variable?
-

@@ -58,6 +58,7 @@
    PythonModules/MoreAboutUsingModules.rst
    PythonModules/Themathmodule.rst
    PythonModules/Therandommodule.rst
+   PythonModules/CreatingModules.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
 
