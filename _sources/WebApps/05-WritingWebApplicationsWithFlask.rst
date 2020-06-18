@@ -18,11 +18,12 @@ Here is an example of a Flask web application:
     def hello():
         return """<html><body>
             <h1>Hello, world!</h1>
-            The time is {0}.</body></html>""".format(
-                str(datetime.now()))
+            The time is """ + str(datetime.now()) + """.
+            </body></html>"""
 
-    # Launch the Flask dev server 
-    app.run(host="localhost", debug=True)
+    if __name__ == "__main__":
+        # Launch the Flask dev server 
+        app.run(host="localhost", debug=True)
 
 The application begins by importing the Flask framework on line 1. Lines 6-11 define a function ``hello()``
 that serves up a simple web page containing the date and time. The call to ``app.run()`` on Line 14 
@@ -40,8 +41,18 @@ you can accomplish this using the pip command included with your Python distribu
 Next, execute your flaskhello.py program from the command line::
 
     python flaskhello.py
+
+.. note:: 
+
+    If you are using a Mac or Linux computer, use the following command to install flask::
+
+        pip3 install flask
+
+    and execute your flaskhello.py program using the following command::
+
+        python3 flaskhello.py
     
-You should see a message similar to the following appear on the console::
+When you launch the program, you should see a message similar to the following appear on the console::
 
     * Serving Flask app "sample" (lazy loading)
     * Environment: production
@@ -61,13 +72,13 @@ You should see a message similar to the following appear on the console::
     section, "More About Flask," for a discussion of port numbers and how
     to address this issue.
     
-Once the Flask server is running, open a web browser and enter the following URL:
+Once the Flask server is running, use your browser to navigate to the following URL:
 
-http://localhost:5000/
-    
-You should see a "Hello, world!" message appear:
+    http://localhost:5000/
 
-.. image:: Figures/flaskhello.png
+Your browser sends a request to the Flask server, and you should see a "Hello, world!" message appear:
+
+.. figure:: Figures/flaskhello.png
 
 To send the request again, press the Reload button in your browser. You should
 see the date and time change.
