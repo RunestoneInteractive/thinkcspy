@@ -15,6 +15,7 @@
    single: [ ]; dictionary access
    value; dictionary
 
+.. _dictionaries:
 
 Dictionaries
 ============

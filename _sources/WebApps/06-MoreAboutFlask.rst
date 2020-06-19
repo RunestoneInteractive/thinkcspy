@@ -20,16 +20,18 @@ try to send a request to the application from the browser, the browser will disp
 error message indicating that it cannot contact the server. Go ahead and try this, so you can
 recognize what the error message looks like in your particular browser.
     
-Recall that every URL has at least three components: the protocol, server, and the path. In our
+Recall that every URL has at least three components: the **protocol**, **server**, and the **path**. In our
 case the URL http://localhost:5000/ has the server name *localhost*, the path */*, and 
-an additional component: the port number, *8080*. Let's discuss some details about each of these.
+an additional component: the port number, *5000*. Let's discuss some details about each of these.
 
 Server name 
     When you use the name *localhost* in a URL, the browser attempts to connect to
     a server program running on your computer. This is the usual scenario when you are developing
     a web application: the browser and the server application are both running on the same computer.
-    Later, when you deploy the application to be hosted on an actual server, you will use the name
-    of the server in the URL instead of the name *localhost*.
+    When you deploy the application to be hosted on an actual server, you will use the name
+    of the server in the URL instead of the name *localhost*. If you want to experiment with
+    deploying Flask applications to a public web server, check out `pythonanywhere.com <https://pythonanywhere.com>`_,
+    which (at the time of writing) provides free hosting for Flask web applications.
 
 Port number
     Each server application running on
@@ -81,23 +83,28 @@ click a link to view the time. When the user clicks the link, the time appears.
 
     @app.route('/')
     def hello():
-        return """
-            <html><body>
-                <h1>Hello, world!</h1>
-                Click <a href="/time">here</a> for the time.
-            </body></html>
-            """
+        return HELLO_HTML
+
+    HELLO_HTML = """
+        <html><body>
+            <h1>Hello, world!</h1>
+            Click <a href="/time">here</a> for the time.
+        </body></html>
+        """
 
     @app.route('/time')
     def time():
-        return """
-            <html><body>
-                The time is {0}.
-            </body></html>
-            """.format(str(datetime.now()))
+        return TIME_HTML.format(datetime.now())
 
-    # Launch the FlaskPy dev server 
-    app.run(host="localhost", debug=True)
+    TIME_HTML = """
+        <html><body>
+            The time is {0}.
+        </body></html>
+        """
+
+    if __name__ == "__main__":
+        # Launch the Flask dev server 
+        app.run(host="localhost", debug=True)
 
 Here's how it works:
 
@@ -111,41 +118,12 @@ Here's how it works:
    containing the time to the browser.
    
 Note that the user does not have to click the link in order to display the time. For
-example, the user could enter the URL http://localhost:8080/time directly into the
+example, the user could enter the URL http://localhost:5000/time directly into the
 browser to bypass the greeting page and get directly to the page showing the time.
 
+The example above used the format() method to build an HTML string. For more information
+on format(), see :ref:`Format-Strings`.
 
-The format() method
-~~~~~~~~~~~~~~~~~~~
-
-The example above used the format() method to build an HTML string. The format()
-method in the ``str`` class is designed to reduce the clutter required to build
-complicated strings that include data from program variables.
-
-To use format(), you create a string containing placeholder markers like {0} and
-{1}:
-
-    msg = "A {0} ate my {1}."
-
-Then, you invoke the format() method on the string, and provide parameters that
-supply the values to be substituted in place of the placeholder markers. Here is
-a basic example:
-
-.. sourcecode:: python
-
-    msg = "A {0} ate my {1}."
-    word1 = "dog"
-    word2 = "homework"
-    print(msg.format(word1, word2))
-
-The value "dog" is substituted for the {0}, and "homework" is substituted for
-{1}. The numbers in the placeholders refer to the positions of the parameters in
-the call to format.
-
-You can use triple-quoted strings with format(), as shown in the example web
-application above. format() can also display floating-point numbers to a given
-precision, format date/time values, and do many other useful formatting tasks.
-For more examples of how to use format(), see the `Python documentation
-<https://docs.python.org/3/library/string.html#formatexamples>`_, or 
-`this helpful tutorial <https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3>`_.
-
+Also, notice how the example above defines separate HELLO_HTML and TIME_HTML variables to hold the HTML. This helps
+reduce cluttering the handler functions with HTML code, and separating the Python logic from the HTML also improves the
+overall readability and maintainability of the code.

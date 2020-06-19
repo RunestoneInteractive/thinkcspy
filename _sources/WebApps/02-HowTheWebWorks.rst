@@ -18,28 +18,29 @@ A web browser, at its core, is a fairly simple application. Basically, web brows
     web browser doesn't know what to do with a file, it usually prompts the user to save the file, so the
     user can do something with it.
 
-Let's take a specific example. Start up your browser and type in the following URL:
+Let's take a specific example. Use your browser to access the following URL:
 
-https://cs.bju.edu/cps110/
+    https://docs.python.org/3/library/index.html
 
 .. note::
 
-    A URL ("Uniform Resource Locator") is the address of a document on the Web. It
-    has three sections: the protocol (ex. http:), the server where the document is located (ex.
-    www.cs.bju.edu), and the path to the requested resource on the server (ex. 
-    /cps110/).
+    A URL ("Uniform Resource Locator") is the address of a resource on the Web. It
+    has three sections: the **protocol** (ex. https:) the browser uses to request the resource, 
+    the **server** where the document is located (ex.
+    ``docs.python.org``), and the **path** to the requested resource on the server (ex. 
+    ``/3/library/index.html``).
     
-When you press Enter, here's what happens:
+When you click on this link, here's what happens:
 
-1. The browser opens a network connection to the web server named cs.bju.edu
+1. The browser opens a network connection to the web server named docs.python.org
 
-2. The browser requests a file located at /cps110/ from the web server
+2. The browser requests a file located on the server at /3/library/index.html 
 
 3. The web server transmits the HTML file back to the browser
 
 4. The browser renders the HTML document    
 
-.. image:: Figures/webrequest.jpg
+.. figure:: Figures/webrequest.jpg
 
 If you want to see the file transmitted by the web server to the browser, right-click in the browser window
 and choose **View Page Source** (your browser's option to view the source may be slightly different). 

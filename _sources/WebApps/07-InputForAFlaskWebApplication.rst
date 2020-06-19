@@ -22,7 +22,7 @@ from the others by the & symbol. This example has a query variable named ``q`` w
 
 Flask applications can access query variables using a dictionary named
 ``request.args`` (dictionaries are discussed in detail in 
-:doc:`../Dictionaries/intro-Dictionaries`). 
+:ref:`dictionaries`). 
 When a browser sends a request to a Flask application that contains
 a query string, the data in the query string is placed in the ``request.args``
 dictionary, where it can be retrieved by the application. For example, in the Bing search
@@ -49,16 +49,18 @@ from the query string and uses it to greet the user:
     @app.route('/')
     def hello():
         name = request.args['name']
-        return """
-            <html><body>
-                <h1>Hello, {0}!</h1>
-                The time is {1}.
-            </body></html>
-            """.format(
+        return HELLO_HTML.format(
                 name, str(datetime.now()))
 
-    # Launch the FlaskPy dev server 
-    app.run(host="localhost", debug=True)
+    HELLO_HTML = """
+        <html><body>
+            <h1>Hello, {0}!</h1>
+            The time is {1}.
+        </body></html>"""
+
+    if __name__ == "__main__":
+        # Launch the Flask dev server 
+        app.run(host="localhost", debug=True)
 
 To test this example, you would need to enter the following URL into the browser:
 
@@ -78,12 +80,14 @@ check to see if the name parameter was submitted::
 The test ``'name' in request.args`` is True if 'name'
 was present in the query parameters, and False if not.
 
-A shorter way to handle a missing query parameter is to change line 6 to use the
+A shorter way to handle a missing query parameter is to use the
 dictionary ``get()`` method, which allows us to supply a default value to use in
-case the user omits the query parameter::
+case the user omits the query parameter. The if statement above could be
+rewritten with a single line of code::
 
     name = request.args.get('name', 'World')
 
-This line does the same check as the if statement, and stores the value
-'World' in ``name`` if no name parameter was supplied.
+This line does the same check as the if statement. If 'name' is present
+in the query parameters, its value is stored in ``name``. Otherwise, the value
+'World' is stored in ``name`` if no name parameter was supplied.
 
