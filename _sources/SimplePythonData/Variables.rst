@@ -79,7 +79,7 @@ by the variable.
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
 
-.. codelens:: ch02_9_codelens
+.. codelens:: ch02_9_cl
     :showoutput:
 
     message = "What's up, Doc?"
