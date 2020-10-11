@@ -93,7 +93,7 @@ of range, that is the last index included + 1.
    Activecode is not designed to work on very long sequences, and it may allow you to be
    sloppy, avoiding the list function, and *see* the elements in the range with ``print(range(4))``.
 
-Here are a two examples for you to run.  Try them and then add another line below to create a sequence starting
+Here are two examples for you to run.  Try them and then add another line below to create a sequence starting
 at 10 and going up to 20 (including 20).
 
 .. activecode:: ch03_5
