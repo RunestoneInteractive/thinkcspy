@@ -7,10 +7,10 @@ at all.
 
 Try typing the following URL into your browser:
 
-http://google.com/search?q=Microsoft
+   https://google.com/search?q=Microsoft
 
 You'll get back a page of search results about Microsoft from the Google search engine (at least, you
-will unless Google has changed how it performs searches since the time I wrote this chapter). How did
+will unless Google has changed how it performs searches since this chapter was written). How did
 this happen?
 
 Well, your browser did what it always does when you type in a URL:
