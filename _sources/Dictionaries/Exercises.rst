@@ -231,6 +231,7 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_11_04
+               :autograde: unittest
 
                Here's a table of English to Pirate translations
    
@@ -257,34 +258,60 @@ Exercises
                man	        matey
                ==========   ==============
    
-               Write a program that asks the user for a sentence in English and then translates that
-               sentence to Pirate.
+               Write a function named ``translator`` that takes a parameter containing a sentence in English 
+               (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.
+               
+               For example, the sentence "hello there students" should be translated to "avast there swabbies".
                ~~~~
+               def translator(english):
+
+                 pirate = {}
+                 pirate['sir'] = 'matey'
+                 pirate['hotel'] = 'fleabag inn'
+                 pirate['student'] = 'swabbie'
+                 pirate['boy'] = 'matey'
+                 pirate['restaurant'] = 'galley'
+                 pirate['hello'] = 'avast'
+                 pirate['students'] = 'swabbies'
+
+                 # Complete the function
+
+               ====
+               from unittest.gui import TestCaseGui
+
+               class myTests(TestCaseGui):
+
+                   def testOne(self):
+                       self.assertEqual(translator("hello there students"),'avast there swabbies','translator("hello there students") yields "avast there swabbies"')
+                       self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
+
+               myTests().main()
 
 
         .. tab:: Answer
 
             .. activecode:: ch11_q5_answer
 
-                pirate = {}
-                pirate['sir'] = 'matey'
-                pirate['hotel'] = 'fleabag inn'
-                pirate['student'] = 'swabbie'
-                pirate['boy'] = 'matey'
-                pirate['restaurant'] = 'galley'
-                # and so on
+               def translator(sentence):
 
-                sentence = input("Please enter a sentence in English")
+                 pirate = {}
+                 pirate['sir'] = 'matey'
+                 pirate['hotel'] = 'fleabag inn'
+                 pirate['student'] = 'swabbie'
+                 pirate['boy'] = 'matey'
+                 pirate['restaurant'] = 'galley'
+                 pirate['hello'] = 'avast'
+                 pirate['students'] = 'swabbies'
 
-                psentence = []
-                words = sentence.split()
-                for aword in words:
+                 psentence = []
+                 words = sentence.split()
+                 for aword in words:
                     if aword in pirate:
                         psentence.append(pirate[aword])
                     else:
                         psentence.append(aword)
 
-                print(" ".join(psentence))
+                 return " ".join(psentence)
 
 
         .. tab:: Discussion
