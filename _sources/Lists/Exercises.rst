@@ -628,3 +628,34 @@ Exercises
           F
           F --> F[-F]F[+F]F
       ~~~~   
+
+.. question:: strings_ex_17
+
+   .. tabbed:: q17
+
+        .. tab:: Question
+
+            .. actex:: ex_9_17
+
+                Create a list named ``randlist`` containing 100 random integers between 0 and 1000 (use iteration, append, and the random module). 
+                ~~~~
+
+                ====
+                from unittest.gui import TestCaseGui
+
+                class myTests(TestCaseGui):
+
+                    def testOne(self):
+                        self.assertEqual(len(randlist),100,"randlist should contain 100 numbers")
+
+                myTests().main()
+
+        .. tab:: Answer
+
+            .. activecode:: ac_ex_9_17
+
+                import random
+
+                randlist = []
+                for i in range(100):
+                    randlist.append(random.randint(0, 1000))
