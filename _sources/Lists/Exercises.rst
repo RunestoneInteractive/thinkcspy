@@ -40,10 +40,46 @@ Exercises
 
 .. question:: strings_ex_2
 
-   .. actex:: ex_9_2
+    .. tabbed:: tab_strings_ex_2
 
-      Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.  Do it with both append and with concatenation, one item at a time.
-      ~~~~
+        .. tab:: Question
+
+            .. actex:: ex_9_2
+               :autograde: unittest
+
+               Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76. 
+               Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
+               use the append method to append the item to the list, and the last three statements should use concatenation.
+               ~~~~
+
+               myList = []
+
+               # Your code here
+
+               ====
+               from unittest.gui import TestCaseGui
+
+               class myTests(TestCaseGui):
+
+                   def testOne(self):
+                       self.assertEqual(myList,[76, 92.3, 'hello', True, 4, 76],"myList should contain the specified items")
+                       self.assertIn(".append(", self.getEditorText(), 'append method must be used')
+
+               myTests().main()
+
+
+        .. tab:: Answer
+
+            .. activecode:: ex_9_2_answer
+
+                myList = []
+                myList.append(76)
+                myList.append(92.3)
+                myList.append("hello")
+                myList = myList + [True]
+                myList = myList + [4]
+                myList = myList + [76]
+                print(myList)
 
 
 .. question:: strings_ex_3
@@ -65,6 +101,8 @@ Exercises
               #. Remove the first occurrence of 76 from the list.
               #. Remove True from the list using ``pop`` and ``index``.
               ~~~~
+              myList = [76, 92.3, 'hello', True, 4, 76]
+
               # Your code here
 
         .. tab:: Answer
