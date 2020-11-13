@@ -636,6 +636,7 @@ Exercises
         .. tab:: Question
 
             .. actex:: ex_9_17
+                :autograde: unittest
 
                 Create a list named ``randlist`` containing 100 random integers between 0 and 1000 (use iteration, append, and the random module). 
                 ~~~~
