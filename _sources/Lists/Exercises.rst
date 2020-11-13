@@ -132,10 +132,41 @@ Exercises
 
 .. question:: strings_ex_4
 
-   .. actex:: ex_9_4
+   .. tabbed:: tab_q4
 
-      Create a list containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).  Write a function called ``average`` that will take the list as a parameter and return the average.
-      ~~~~
+        .. tab:: Question
+
+            .. actex:: ex_9_4
+                :autograde: unittest
+
+                Write a function called ``average`` that takes a list of numbers as a parameter and returns the average of the numbers.
+                ~~~~
+                def average(numlist):
+                    # Complete the function definition
+
+                ====
+                from unittest.gui import TestCaseGui
+
+                class myTests(TestCaseGui):
+
+                    def testOne(self):
+                        self.assertEqual(int(average([1, 3, 5, 7])),4,"average([1, 3, 5, 7]) should be 4")
+                        self.assertEqual(int(average([9, 5, 4])),6,"average([9, 5, 4]) should be 6")
+
+                myTests().main()
+
+        .. tab:: Answer
+
+            .. activecode:: ex_9_4_solution
+
+                def average(numlist):
+
+                    total = 0
+                    for num in numlist:
+                        total = total + num
+
+                    return total / len(numlist)   
+
 
 .. question:: strings_ex_5
 
@@ -143,16 +174,31 @@ Exercises
 
         .. tab:: Question
 
-           Write a Python function that will take a the list of 100 random integers between 0 and 1000 and return the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
-
            .. actex:: ex_9_5
+              :autograde: unittest
+
+              Write a Python function named ``max`` that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named ``max`` but pretend you cannot use it.)
+
+              ~~~~
+              def max(lst):
+                  # Complete the function
+
+              ====
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+
+                  def testOne(self):
+                      self.assertEqual(max([3, 31, 5, 7]),31,"max([3, 31, 5, 7]) should be 31")
+                      self.assertEqual(max([3, 13, 51, 7]),51,"max([3, 13, 51, 7]) should be 51")
+
+              myTests().main()
+
 
 
         .. tab:: Answer
 
             .. activecode:: lst_q5_answer
-
-                import random
 
                 def max(lst):
                     max = 0
@@ -160,12 +206,6 @@ Exercises
                         if e > max:
                             max = e
                     return max
-
-                lst = []
-                for i in range(100):
-                    lst.append(random.randint(0, 1000))
-
-                print(max(lst))
 
         .. tab:: Discussion
 
@@ -626,3 +666,35 @@ Exercises
           F
           F --> F[-F]F[+F]F
       ~~~~   
+
+.. question:: strings_ex_17
+
+   .. tabbed:: q17
+
+        .. tab:: Question
+
+            .. actex:: ex_9_17
+                :autograde: unittest
+
+                Create a list named ``randlist`` containing 100 random integers between 0 and 1000 (use iteration, append, and the random module). 
+                ~~~~
+
+                ====
+                from unittest.gui import TestCaseGui
+
+                class myTests(TestCaseGui):
+
+                    def testOne(self):
+                        self.assertEqual(len(randlist),100,"randlist should contain 100 numbers")
+
+                myTests().main()
+
+        .. tab:: Answer
+
+            .. activecode:: ac_ex_9_17
+
+                import random
+
+                randlist = []
+                for i in range(100):
+                    randlist.append(random.randint(0, 1000))
