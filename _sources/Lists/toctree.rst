@@ -22,6 +22,7 @@ Lists
    TheReturnofLSystems.rst
    AppendversusConcatenate.rst
    Listsandforloops.rst
+   TheAccumulatorPatternwithLists.rst
    UsingListsasParameters.rst
    PureFunctions.rst
    WhichisBetter.rst

@@ -13,6 +13,8 @@
 
 .. index:: accumulator pattern
 
+.. _accumulator:
+
 The Accumulator Pattern
 -----------------------
 
