@@ -71,6 +71,7 @@ Table of Contents
    ClassesBasics/toctree.rst
    ClassesDiggingDeeper/toctree.rst
    Inheritance/toctree.rst
+   UnitTesting/toctree.rst
 
 Labs
 ::::
