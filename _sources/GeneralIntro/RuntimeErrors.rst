@@ -41,7 +41,7 @@ chapters, so it might be a while before you encounter one.
 .. mchoice:: question1_7_2
    :practice: T
    :answer_a: The programmer.
-   :answer_b: The compiler / interpreter.
+   :answer_b: The interpreter.
    :answer_c: The computer.
    :answer_d: The teacher / instructor.
    :correct: b
