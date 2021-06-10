@@ -48,8 +48,9 @@ Exercises
 
 
 #. 
+    
     .. actex:: ex_8_2
-
+    
        In Robert McCloskey's
        book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
        Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
@@ -61,11 +62,40 @@ Exercises
     
 	    for p in prefixes:
 	        print(p + suffix)
-    
+        
+        # Fix the loop to get the correct output.
+   
+            
     
        Of course, that's not quite right because Ouack and Quack are misspelled.
        Can you fix it?
-       ~~~~ 
+       ~~~~
+       
+       ====
+    
+       from unittest.gui import TestCaseGui
+       
+       class myTests(TestCaseGui):
+           def testOne(self):
+
+               o = self.getOutput()
+               code = self.getEditorText()
+               self.assertIn("if", code, "Needs a conditional.")
+               self.assertIn("for", code, "Needs a loop.")
+               self.assertIn("Jack", o, "J + ack = Jack")
+               self.assertIn("Kack", o, "K + ack = Kack")
+               self.assertIn("Lack", o, "L + ack = Lack")
+               self.assertIn("Mack", o, "M + ack = Mack")
+               self.assertIn("Nack", o, "N + ack = Nack")
+               self.assertIn("Ouack", o, "Don't forget the misspellings. Quack is required.")
+               self.assertIn("Pack", o, "P + ack = Pack")
+               self.assertIn("Quack", o, "Don't forget the misspellings. Quack is required.")
+               self.assertNotIn("Oack", o, "Account for the misspellings. Qack should not be in output.")
+               self.assertNotIn("Qack", o, "Account for the misspellings. Qack should not be in output.")
+       myTests().main()
+
+
+
 
 #.
 
@@ -85,6 +115,25 @@ Exercises
               ~~~~
               def count(p):
                   # your code here
+                
+         
+              from unittest.gui import TestCaseGui
+
+              class myTests(TestCaseGui):
+                  def testOne(self):
+                      string1 = "e"
+                      string2 = "eieio"
+                      string3 = "eeeeeeeeeeee"
+                      string4 = "elephant"
+                      self.assertEqual(count(string1), 1, "Just one e")
+                      self.assertEqual(count(""), 0, "Empty string")
+                      self.assertEqual(count(string2), 2, "Two")
+                      self.assertEqual(count(string3), 12, "Twelve")
+                      self.assertNotEqual(count(string4), 3, "Has two Es")
+              myTests().main()
+
+
+
 
         .. tab:: Answer
 
@@ -155,8 +204,6 @@ Exercises
                     self.assertEqual(numDigits(55),2,"Tested numDigits on input of 55")
                     self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
                     self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
-
-
 
               myTests().main()
 
