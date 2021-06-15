@@ -405,7 +405,7 @@ Exercises
                 :autograde: unittest
                 :nocodelens:
 
-                Write a function that counts how many **non-overlapping** occurences of a substring appear in a string. For example, in the string "xyxyxyx", the number of **overlapping** occurences of "xyx" is 3 (i.e. "xyx"yxyx, xy"xyx"yx, and xyxy"xyx"). However, the number of **non-overlapping** occurences of "xyx" is just 2 (i.e. "xyx"yxyx and xyxy"xyx")
+                Write a function that counts how many **non-overlapping** occurences of a substring appear in a string. For example, in the string "xyxyxyx", the number of **overlapping** occurences of "xyx" is 3 (i.e. "xyx"yxyx, xy"xyx"yx, and xyxy"xyx"). However, the number of **non-overlapping** occurences of "xyx" is just 2 (i.e. "xyx"yxyx and xyxy"xyx").
                 ~~~~
                 def count(substr,theStr):
                     # your code here
