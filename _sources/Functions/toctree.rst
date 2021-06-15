@@ -14,6 +14,7 @@ Functions
    FlowofExecutionSummary.rst
    mainfunction.rst
    ProgramDevelopment.rst
+   ProgrammingWithStyle.rst
    Composition.rst
    ATurtleBarChart.rst
    Glossary.rst
