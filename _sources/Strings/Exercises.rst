@@ -120,11 +120,18 @@ Exercises
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):
-                    def testOne(self):
-                        string1 = "e"
-                        self.assertEqual(count(string1), 1, "Just one e")
-
-                myTests().main()
+                def testOne(self):
+                    string1 = "e"
+                    string2 = "eieio"
+                    string3 = "eeeeeeeeeeee"
+                    string4 = "elephant"
+                    self.assertEqual(count(string1), 1, "Just one E")
+                    self.assertEqual(count(""), 0, "Empty string")
+                    self.assertEqual(count(string2), 2, "Two")
+                    self.assertEqual(count(string3), 12, "Twelve")
+                    self.assertNotEqual(count(string4), 3, "Has two Es")
+                    
+            myTests().main()
 
                   
         .. tab:: Answer
