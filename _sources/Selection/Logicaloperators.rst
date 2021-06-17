@@ -21,6 +21,12 @@
 Logical operators
 -----------------
 
+.. youtube:: 57dPVbnRouU
+   :divid: logical_operators
+   :height: 369
+   :width: 655
+   :align: left
+
 There are three **logical operators**: ``and``, ``or``, and ``not``. The
 semantics (meaning) of these operators is similar to their meaning in English.
 For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*
@@ -103,33 +109,33 @@ Two powerful simplification laws (called de Morgan’s laws) that are often help
    not (x and y)  ==  (not x) or (not y)
    not (x or y)   ==  (not x) and (not y)
 
-For example, suppose we can slay the dragon only if our magic lightsabre sword is charged to 90% or higher, and we have 100 or more energy units in our protective shield. We find this fragment of Python code in the game:
+For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:
 
 .. sourcecode:: python
 
-   if not ((sword_charge >= 0.90) and (shield_energy >= 100)):
-      print("Your attack has no effect, the dragon fries you to a crisp!")
+   if not ((phone_charge >= 0.50) and (phone_storage >= .15)):
+      print("You cannot restart your phone. Battery too low or not enough free space.")
    else:
-      print("The dragon crumples in a heap. You rescue the gorgeous princess!")
+      print("Updating now...Several restarts may be required.")
 
       
-de Morgan’s laws together with the logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:
+Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:
 
 .. sourcecode:: python
 
-   if (sword_charge < 0.90) or (shield_energy < 100):
-      print("Your attack has no effect, the dragon fries you to a crisp!")
+   if (phone_charge < 0.50) or (phone_storage < .15):
+      print("You cannot restart your phone. Battery too low or not enough free space.")
    else:
-      print("The dragon crumples in a heap. You rescue the gorgeous princess!")
+      print("Updating now...Several restarts may be required.")
 
 We could also get rid of the ``not`` by swapping around the ``then`` and ``else`` parts of the conditional. So here is a third version, also equivalent:
   
 .. sourcecode:: python
    
-   if (sword_charge >= 0.90) and (shield_energy >= 100):
-      print("The dragon crumples in a heap. You rescue the gorgeous princess!")
+   if (phone_charge >= 0.50) and (phone_storage >= .15):
+      print("Updating now...Several restarts may be required.")
    else:
-      print("Your attack has no effect, the dragon fries you to a crisp!")
+      print("You cannot restart your phone. Battery too low or not enough free space.")
       
 This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.
 
