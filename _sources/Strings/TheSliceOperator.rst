@@ -53,25 +53,6 @@ A slice is forgiving and shifts any offending index to something legal.
 
 What do you think ``fruit[:]`` means?
 
-**The split method**
-
-One of the most useful methods on strings is the **split** method: it splits a single multi-word string into 
-a list of individual words, removing all the whitespace between them. (Whitespace means any tabs, newlines, or spaces.) 
-This allows us to read input as a single string, and split it into words.
-
-.. activecode:: chp08_split1
-
-    ss = "Well I never did said Alice"
-    word_split=ss.split() 
-    print(word_split)
-
-    # You can also sepcify the split point:
-    words= "I:Love:Python"         
-    print(words.split(":"))                #split at (:)             
-
-
-
-
 **Check your understanding**
 
 .. mchoice:: test_question8_5_1
