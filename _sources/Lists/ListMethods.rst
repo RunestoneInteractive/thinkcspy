@@ -17,7 +17,7 @@ List Methods
 The dot operator can also be used to access built-in methods of list objects.  
 ``append`` is a list method which adds the argument passed to it to the end of
 the list. Continuing with this example, we show several other list methods.  Many of them are
-easy to understand.  
+easy to understand.
 
 .. activecode:: chp09_meth1
 
