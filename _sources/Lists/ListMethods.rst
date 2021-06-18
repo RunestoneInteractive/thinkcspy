@@ -28,11 +28,11 @@ easy to understand.
     mylist.append(12)
     print(mylist)
 
-    mylist.insert(1, 12)
+    mylist.insert(1, 12)        # Insert 12 at pos 1, shift other items up
     print(mylist)
-    print(mylist.count(12))
+    print(mylist.count(12))     # How many times is 12 in mylist?
 
-    print(mylist.index(3))
+    print(mylist.index(3))      # Find index of first 3 in mylist
     print(mylist.count(5))
 
     mylist.reverse()
@@ -41,12 +41,14 @@ easy to understand.
     mylist.sort()
     print(mylist)
 
-    mylist.remove(5)
+    mylist.remove(5)            # Removes the first 12 in the list
     print(mylist)
 
-    lastitem = mylist.pop()
+    lastitem = mylist.pop()     # Removes and returns the last item of the list
     print(lastitem)
     print(mylist)
+
+
 
 There are two ways to use the ``pop`` method.  The first, with no parameter, will remove and return the
 last item of the list.  If you provide a parameter for the position, ``pop`` will remove and return the
