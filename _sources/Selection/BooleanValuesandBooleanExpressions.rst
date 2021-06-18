@@ -66,9 +66,9 @@ two values are equal to one another.
 
     print(5 == 6)
     
-    j = "hel"
-    print(j + "lo" == "hello")
-
+    j = "hel" + "lo"
+    k = "hello"
+    print(j == k)
     
 
 In the first statement, the two operands are equal, so the expression evaluates
