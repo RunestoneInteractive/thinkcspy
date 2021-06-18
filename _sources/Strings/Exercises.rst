@@ -105,28 +105,36 @@ Exercises
 
            .. actex:: ex_8_3
 
-                Assign to a variable in your program a triple-quoted string that contains
-                your favorite paragraph of text - perhaps a poem, a speech, instructions
-                to bake a cake, some inspirational verses, etc.
+              Assign to a variable in your program a triple-quoted string that contains
+              your favorite paragraph of text - perhaps a poem, a speech, instructions
+              to bake a cake, some inspirational verses, etc.
    
-                Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
+              Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this::
    
-                    Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
-                ~~~~
-                def count(p):
-                    # your code here
+                  Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.
+              ~~~~
+              def count(p):
+                  # your code here
+                
+         
+              from unittest.gui import TestCaseGui
 
-                ====
-                from unittest.gui import TestCaseGui
+              class myTests(TestCaseGui):
+                  def testOne(self):
+                      string1 = "e"
+                      string2 = "eieio"
+                      string3 = "eeeeeeeeeeee"
+                      string4 = "elephant"
+                      self.assertEqual(count(string1), 1, "Just one e")
+                      self.assertEqual(count(""), 0, "Empty string")
+                      self.assertEqual(count(string2), 2, "Two")
+                      self.assertEqual(count(string3), 12, "Twelve")
+                      self.assertNotEqual(count(string4), 3, "Has two Es")
+              myTests().main()
 
-                class myTests(TestCaseGui):
-                    def testOne(self):
-                        string1 = "e"
-                        self.assertEqual(count(string1), 1, "Just one e")
 
-                myTests().main()
 
-                  
+
         .. tab:: Answer
 
             .. activecode:: str_q3_answer
@@ -408,41 +416,36 @@ Exercises
                 :identifier: disqus_605923545bb849f7b8d41bbf823518e9
 
 
-                
-#.
+#. Write a function that counts how many non-overlapping occurences of a substring appear in a string.
 
-    .. tabbed:: q10
+   .. actex:: ex_8_9
+      :practice: T
+      :autograde: unittest
+      :nocodelens:
 
-        .. tab:: Question
-            
-            .. actex:: ex_8_9
-                :practice: T
-                :autograde: unittest
-                :nocodelens:
-
-                Write a function that counts how many **non-overlapping** occurences of a substring appear in a string. For example, in the string "xyxyxyx", the number of **overlapping** occurences of "xyx" is 3 (i.e. "xyx"yxyx, xy"xyx"yx, and xyxy"xyx"). However, the number of **non-overlapping** occurences of "xyx" is just 2 (i.e. "xyx"yxyx and xyxy"xyx").
-                ~~~~
-                def count(substr,theStr):
-                    # your code here
+      def count(substr,theStr):
+          # your code here
 
 
-                ====
+      ====
 
 
-                from unittest.gui import TestCaseGui
+      from unittest.gui import TestCaseGui
 
-                class myTests(TestCaseGui):
+      class myTests(TestCaseGui):
 
-                    def testOne(self):
-                        self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
-                        self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
-                        self.assertEqual(count("ana","banana"),1,"Tested count on inputs of 'ana' and 'banana'")
-                        self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
-                        self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
-                        self.assertEqual(count("aaa","aaaaaa"),2,"Tested count on input of 'aaa' and 'aaaaaa'")
-                        self.assertEqual(count("issi","Mississippi"),1,"Tested count on input of 'issi' and 'Mississippi'")
+            def testOne(self):
+                self.assertEqual(count("is","Mississippi"),2,"Tested count on inputs of 'is' and 'Mississippi'")
+                self.assertEqual(count("an","banana"),2,"Tested count on inputs of 'an' and 'banana'")
+                self.assertEqual(count("ana","banana"),1,"Tested count on inputs of 'ana' and 'banana'")
+                self.assertEqual(count("nana","banana"),1,"Tested count on inputs of 'nana' and 'banana'")
+                self.assertEqual(count("nanan","banana"),0,"Tested count on inputs of 'nanan' and 'banana'")
+                self.assertEqual(count("aaa","aaaaaa"),2,"Tested count on input of 'aaa' and 'aaaaaa'")
 
-                myTests().main()
+
+
+
+      myTests().main()
 
 
 #.
