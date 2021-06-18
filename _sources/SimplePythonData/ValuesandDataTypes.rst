@@ -77,6 +77,7 @@ is in later chapters.
 .. activecode:: ch02_2
     :nocanvas:
 
+    print(type(17))
     print(type(3.2))
 
 

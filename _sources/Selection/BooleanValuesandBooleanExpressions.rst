@@ -65,6 +65,10 @@ two values are equal to one another.
     print(5 == 5)
 
     print(5 == 6)
+    
+    j = "hel"
+    print(j + "lo" == "hello")
+
 
     j = "hel"
     print(j + "lo" == "hello")
