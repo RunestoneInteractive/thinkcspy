@@ -21,12 +21,6 @@
 Logical operators
 -----------------
 
-.. youtube:: 57dPVbnRouU
-   :divid: logical_operators
-   :height: 369
-   :width: 655
-   :align: left
-
 There are three **logical operators**: ``and``, ``or``, and ``not``. The
 semantics (meaning) of these operators is similar to their meaning in English.
 For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*
