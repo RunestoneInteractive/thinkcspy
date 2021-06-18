@@ -251,11 +251,29 @@ formatted string::
 
     a = 5
     b = 9
-    setStr = 'The set is { { { }, {} } }.'.format(a, b)
+    setStr =  'The set is {​{ {},{} }​}.'.format(a, b)
     print(setStr)
 
 Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
 printing doubled braces, but standard Python prints ``{5, 9}``.
+
+You can have multiple placeholders indexing the same argument, or perhaps even have extra 
+arguments that are not referenced at all:
+
+.. activecode:: ch08_formatspecification
+
+    letter = """
+    Dear {0} {2}.
+     {0}, I have an interesting money-making proposition for you!
+     If you deposit $10 million into my bank account, I can
+     double your money ...
+    """
+
+    print(letter.format("Paris", "Whitney", "Hilton"))
+    print(letter.format("Bill", "Henry", "Gates"))
+
+
+
 
 .. mchoice:: test_question8_3_3
    :practice: T
