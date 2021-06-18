@@ -73,6 +73,8 @@ two values are equal to one another.
 
 In the first statement, the two operands are equal, so the expression evaluates
 to ``True``.  In the second statement, 5 is not equal to 6, so we get ``False``.
+In the third statement, we see that concatenation in j wil result in the same value
+for k, which will evaluate to ``True``.
 
 The ``==`` operator is one of six common **comparison operators**; the others are:
 
