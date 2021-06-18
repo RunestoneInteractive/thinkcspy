@@ -69,9 +69,6 @@ two values are equal to one another.
     j = "hel"
     print(j + "lo" == "hello")
 
-
-    j = "hel"
-    print(j + "lo" == "hello")
     
 
 In the first statement, the two operands are equal, so the expression evaluates
