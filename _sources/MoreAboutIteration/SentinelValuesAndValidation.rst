@@ -112,13 +112,13 @@ When you run the following code, try typing something other than Y or N to see h
 
     def get_yes_or_no(message):
         valid_input = False
+        answer = input(message)
         while not valid_input:
-            answer = input(message)
             answer = answer.upper() # convert to upper case
             if answer == 'Y' or answer == 'N':
                 valid_input = True
             else:
-                print('Please enter Y for yes or N for no.')
+                answer = input('Please enter Y for yes or N for no. \n' + message)
         return answer
 
     response = get_yes_or_no('Do you like lima beans? Y)es or N)o: ')
