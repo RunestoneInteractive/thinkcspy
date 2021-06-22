@@ -79,8 +79,8 @@ Also, Google has provided this short video showing different logical operators:
 
 .. youtube::  57dPVbnRouU
    :divid: GoogleLogic
-   :height: 315
-   :width: 560
+   :height: 375
+   :width: 667
    :align: left
   
 In the video, each letter is representative of a logical operater and only shows its color when the 
@@ -109,10 +109,10 @@ which we will not be using.
 
 .. mchoice:: test_question6_2_2
    :practice: T
-   :answer_a: A ``and`` B
-   :answer_b: A ``or`` B 
-   :answer_c: ``not`` A
-   :answer_d: ``not`` B
+   :answer_a: A and B
+   :answer_b: A or B 
+   :answer_c: not A
+   :answer_d: not B
    :correct: b, d
    :feedback_a: Both A and B need to be True in order for this to be True. 
    :feedback_b: Either A or B need to be True in order for this to be True.
