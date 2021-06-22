@@ -53,24 +53,28 @@ Exercises
     
        In Robert McCloskey's
        book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-       Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
+       Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order. 
     
        .. sourcecode:: python
-    
-            prefixes = "JKLMNOPQ"
-            suffix = "ack"
-    
-	    for p in prefixes:
-	        print(p + suffix)
-        
-        # Fix the loop to get the correct output.
-   
-            
-    
-       Of course, that's not quite right because Ouack and Quack are misspelled.
-       Can you fix it?
-       ~~~~
        
+           prefixes = "JKLMNOPQ" 
+           suffix = "ack"
+    
+           for p in prefixes:
+               print(p + suffix)
+                
+       Of course, that's not quite right because Ouack and Quack are misspelled.
+       Can you fix it? 
+       ~~~~
+
+       prefixes = "JKLMNOPQ" 
+       suffix = "ack"
+    
+       for p in prefixes:
+           print(p + suffix)
+        
+       # Fix the loop to get the correct output.
+
        ====
     
        from unittest.gui import TestCaseGui
@@ -115,7 +119,8 @@ Exercises
               ~~~~
               def count(p):
                   # your code here
-                
+
+              ====         
          
               from unittest.gui import TestCaseGui
 
