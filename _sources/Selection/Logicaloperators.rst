@@ -44,6 +44,50 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
     print(n % 2 == 0 or n % 3 == 0)
 
 
+When trying to show how logical operators work, computer scientists and mathematicians alike will use 
+**truth tables**. A truth table is a small table that lists all possible inputs on its left columns and
+then will display the output of its particular logical operator in the right column. Take the logical
+operator ``and`` for example:
+
+===== =====  =================== 
+===== =====  ===================
+**a** **b**  **a** ``and`` **b**
+  T   T      T
+  T   F      F 
+  F   T      F 
+  F   F      F 
+===== =====  ===================
+
+The *T* in the table stands for ``True`` while the *F* stands for ``False``. Notice that when **a** and **b**
+are both ``True``, the logcial operator ``and`` outputs ``True``. This is exactly how 
+we normally use "and" in everyday conversation. Here are the rest of the operators:
+
++-------+-------+---------------------+--------------------+---------------+---------------+   
++=======+=======+=====================+====================+===============+===============+
+| **a** | **b** | **a** ``and`` **b** | **a** ``or`` **b** | ``not`` **a** | ``not`` **b** | 
++-------+-------+---------------------+--------------------+---------------+---------------+
+| T     | T     | T                   | T                  | F             | F             |   
++-------+-------+---------------------+--------------------+---------------+---------------+
+| T     | F     | F                   | T                  | F             | T             |  
++-------+-------+---------------------+--------------------+---------------+---------------+
+| F     | T     | F                   | F                  | T             | F             |         
++-------+-------+---------------------+--------------------+---------------+---------------+
+| F     | F     | F                   | F                  | T             | T             |  
++-------+-------+---------------------+--------------------+---------------+---------------+
+
+Also, Google has provided this short video showing different logical operators:
+
+.. youtube::  57dPVbnRouU
+   :divid: GoogleLogic
+   :height: 315
+   :width: 560
+   :align: left
+  
+In the video, each letter is representative of a logical operater and only shows its color when the 
+corresponding **x** or **y** is showing in the second **G**. If you take a look at xor, you will notice
+it is only colorful when either **x** or **y** is showing, but not both. This is called ``exclusive or``,
+which we will not be using.
+
 .. admonition:: WARNING!
 
 	There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable ``number`` and we want to check to see if its value is 5,6, or 7.  In words we might say: "number equal to 5 or 6 or 7".  However, if we translate this into Python, ``number == 5 or 6 or 7``, it will not be correct.  The ``or`` operator must join the results of three equality checks.  The correct way to write this is ``number == 5 or number == 6 or number == 7``.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.
@@ -62,6 +106,21 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_c: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write 0 &lt; x &lt; 5.
 
    What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?
+
+.. mchoice:: test_question6_2_2
+   :practice: T
+   :answer_a: A ``and`` B
+   :answer_b: A ``or`` B 
+   :answer_c: ``not`` A
+   :answer_d: ``not`` B
+   :correct: b, d
+   :feedback_a: Both A and B need to be True in order for this to be True. 
+   :feedback_b: Either A or B need to be True in order for this to be True.
+   :feedback_c: A needs to be False in order for this to be True.
+   :feedback_d: B needs to be False in order for this to be True.
+
+   Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck. 
+   If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?
 
 
 Logical Opposites
