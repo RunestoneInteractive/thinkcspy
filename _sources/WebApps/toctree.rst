@@ -13,4 +13,5 @@ Web Applications
    06-MoreAboutFlask.rst                                                                                          
    07-InputForAFlaskWebApplication.rst                                                                            
    08-WebApplicationsWithAUserInterface.rst
+   Glossary.rst
    

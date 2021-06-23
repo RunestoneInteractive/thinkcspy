@@ -9,7 +9,7 @@ the following in the console::
     127.0.0.1 - - [21/Apr/2016 08:02:28] "GET / HTTP/1.1" 200 -
     
 Every time the Flask server receives a request from a browser, it writes a log message to the
-console. The message contains information such as the IP address of the computer that sent the request
+console. The message contains information such as the **IP address** of the computer that sent the request
 (127.0.0.1 is a special address indicating the request came from the browser on the same
 computer that the Flask server is running on);
 the date and time of the request; the path of the incoming request ("/" in this case); and the status

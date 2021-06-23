@@ -20,7 +20,7 @@ you typed into the form, packaged it up into a query string, and transmitted it 
 server. You see, when you fill out a form on a web page and click Submit, the browser uses the form
 data to construct a URL, and then sends a normal request to the web server.
 
-Even if you're a novice at writing HTML pages, it's not hard to learn to create HTML forms. Take a look
+Even if you're a novice at writing **HTML pages**, it's not hard to learn to create HTML forms. Take a look
 at this simplified version of the Google home page:
 
 .. sourcecode:: html
