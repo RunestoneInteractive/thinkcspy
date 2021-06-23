@@ -18,88 +18,47 @@ One of the most commonly performed data processing tasks is to read data from a 
 
 :ref:`Table 2 <filemethods2a>` above shows one additional file method that we have not used thus far.  The ``write`` method allows us to add data to a text file.  Recall that text files contain sequences of characters.  We usually think of these character sequences as being the lines of the file where each line ends with the newline ``\n`` character.  Be very careful to notice that the ``write`` method takes one parameter, a string.  When invoked, the characters of the string will be added to the end of the file.  This means that it is the programmers job to include the newline characters as part of the string if desired.
 
-As an example, consider the ``qbdata.txt`` file once again.  Assume that we have been asked to provide a file consisting of only the names of the
-quarterbacks.  In addition, the names should be in the order last name followed by first name with the names separated by a comma.  This
-is a very common type of request, usually due to the fact that someone has a program that requires its data input format to be different from what is available.
+As an example, consider the ``ccdata.txt`` file once again.  Assume that we have been asked to provide 
+a file consisting of only the global emission and the year of this climate change. In addition, the year 
+should come first followed by the global emmision, separated by space.
 
 To construct this file, we will approach the problem using a similar algorithm as above.  After opening the file, we will iterate through the
 lines, break each line into its parts, choose the parts that we need, and then output them.  Eventually, the output will be written to a file.
 
-The program below solves part of the problem.  Notice that it reads the data and creates a string consisting of last name followed by a comma followed by the first name.  In this example, we simply print the lines as they are created.
+The program below solves part of the problem. Notice that it reads the data and creates a string consisting of the year of the climate change followed by the global emission. In this example, we simply print the lines as they are created.
 
-.. sourcecode:: python
+.. activecode:: python_cc_example_1
 
-    infile = open("qbdata.txt", "r")
+    infile = open("ccdata.txt", "r")
     aline = infile.readline()
+    print("Year\tEmmision\n")
     while aline:
         items = aline.split()
-        dataline = items[1] + ',' + items[0]
+        dataline = items[0] + '\t' + items[2]
         print(dataline)
         aline = infile.readline()
 
     infile.close()
 
-When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the ``open`` function, ``outfile = open("qbnames.txt",'w')``, using the ``'w'`` flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.  
+When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the ``open`` function, ``outfile = open("emissiondata.txt",'w')``, using the ``'w'`` flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.  
 
 Once the file has been created, we just need to call the ``write`` method passing the string that we wish to add to the file.  In this case, the string is already being printed so we will just change the ``print`` into a call to the ``write`` method.  However, there is one additional part of the data line that we need to include.  The newline character needs to be concatenated  to the end of the line.  The entire line now becomes ``outfile.write(dataline + '\n')``.  We also need to close the file when we are done.
 
 The complete program is shown below.
 
-.. sourcecode:: python
+.. activecode:: python_cc_example_2
 
-    infile = open("qbdata.txt", "r")
-    outfile = open("qbnames.txt", "w")
+    infile = open("ccdata.txt", "r")
+    outfile = open("emissiondata.txt", "w")
 
     aline = infile.readline()
+    outfile.write("Year \tEmmision\n")
     while aline:
         items = aline.split()
-        dataline = items[1] + ',' + items[0]
+        dataline = items[0] + '\t' + items[2]
         outfile.write(dataline + '\n')
         aline = infile.readline()
 
     infile.close()
     outfile.close()
-    
-    
-The contents of the ``qbnames.txt`` file are as follows.
-
-.. raw:: html
-
-    <pre id="">
-    McCoy,Colt
-    Freeman,Josh
-    Vick,Michael
-    Schaub,Matt
-    Rivers,Philip
-    Hasselbeck,Matt
-    Clausen,Jimmy
-    Flacco,Joe
-    Orton,Kyle
-    Campbell,Jason
-    Manning,Peyton
-    Brees,Drew
-    Ryan,Matt
-    Cassel,Matt
-    Sanchez,Mark
-    Favre,Brett
-    Garrard,David
-    Manning,Eli
-    Palmer,Carson
-    Smith,Alex
-    Henne,Chad
-    Romo,Tony
-    Cutler,Jay
-    Kitna,Jon
-    Brady,Tom
-    Roethlisberger,Ben
-    Collins,Kerry
-    Anderson,Derek
-    Fitzpatrick,Ryan
-    McNabb,Donovan
-    Kolb,Kevin
-    Rodgers,Aaron
-    Bradford,Sam
-    Hill,Shaun
-    </pre>
-    
 

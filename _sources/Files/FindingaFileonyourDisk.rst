@@ -23,7 +23,9 @@ and the path as the full name.  For example on a Mac if you save the file
 but the same principles are in use.  For example on windows the path might be
 ``C:\Users\yourname\My Documents\hello.txt``
 
-.. sidebar:: The History of Path Separators
+.. note:: 
+
+   **The History of Path Separators**
 
    Why is the path separator a ``/`` on Unix/Linux/MacOS systems and ``\`` on
    Microsoft Windows systems? The concept of a hierarchy of folders
