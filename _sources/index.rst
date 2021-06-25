@@ -98,6 +98,7 @@ Appendices
    :caption: Appendices
    :maxdepth: 1
 
+   Appendices/PyCharm_IDE.rst
    Appendices/errorsAndDebug.rst
    Appendices/PrecedenceTable.rst
    Appendices/testmodule.rst
