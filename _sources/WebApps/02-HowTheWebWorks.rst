@@ -4,7 +4,7 @@ How the Web Works
 Before learning how to write a web application, you need to understand a bit about how
 web browsers work, and how web applications interact with users.
 
-A web browser, at its core, is a fairly simple application. Basically, web browsers 
+A **web browser**, at its core, is a fairly simple application. Basically, web browsers 
 
 1. Request files from web servers.
     The World-Wide Web is composed of thousands of web servers connected to the Internet. Each web
@@ -24,7 +24,7 @@ Let's take a specific example. Use your browser to access the following URL:
 
 .. note::
 
-    A URL ("Uniform Resource Locator") is the address of a resource on the Web. It
+    A **URL** ("Uniform Resource Locator") is the address of a resource on the Web. It
     has three sections: the **protocol** (ex. https:) the browser uses to request the resource, 
     the **server** where the document is located (ex.
     ``docs.python.org``), and the **path** to the requested resource on the server (ex. 
