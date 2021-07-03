@@ -79,3 +79,28 @@ economize.
      print(alist)
 
 
+.. mchoice:: test_question9_10_2
+   :multiple_answers:
+   :answer_a: print(list1 == list2)
+   :answer_b: print(list1 is list2)
+   :answer_c: print(list1 is list3)
+   :answer_d: print(list2 is not list3)
+   :answer_e: print(list2 != list3)
+   :correct: a,c,d
+   :feedback_a: list1 and list2 have the same value
+   :feedback_b: list1 and list2 have the same value but do not refer to the same object 
+   :feedback_c: list3 is assigned to list1, so they refer to the same object
+   :feedback_d: list2 and list3 do not refer to the same object.
+   :feedback_e: list2 and list3 have the same value
+   :practice: T
+
+
+    Consider the following lists: 
+
+    .. code-block:: python
+
+        list1=[1,100,1000]
+        list2=[1,100,1000]
+        list3=list1     
+
+    Which statements will output **True**? (Select **all** that apply).
