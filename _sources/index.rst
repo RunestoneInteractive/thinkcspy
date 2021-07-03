@@ -99,6 +99,7 @@ Appendices
    :maxdepth: 1
 
    Appendices/errorsAndDebug.rst
+   Appendices/usingIDE.rst
    Appendices/PrecedenceTable.rst
    Appendices/testmodule.rst
 
