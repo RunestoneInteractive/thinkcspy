@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: exceptions-3-
+   :prefix: exceptions-4-
    :start: 1
 
 Principles for using Exceptions

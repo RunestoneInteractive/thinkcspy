@@ -41,179 +41,113 @@ invocations, this sequential execution is interrupted.
 Do you see the pattern? If the flow-of-control is not purely sequential, it
 always executes the first statement immediately following the altered
 flow-of-control. That is why we can say that Python flow-of-control is
-sequential. But there are cases where this sequential flow-of-control does
-not work well. An example will best explain this.
+sequential.
 
-Let's suppose that a program contains complex logic that is appropriately
-subdivided into functions. The program is running and it currently is executing
-function D, which was called by function C, which was called by function B,
-which was called by function A, which was called from the main function. This
-is illustrated by the following simplistic code example:
 
-.. code-block:: python
+Raising and Catching Errors with ``try`` and ``except``
+-------------------------------------------------------
 
-  def main()
-    A()
+.. index:: try, except, Exception
 
-  def A():
-    B()
+The try/except control structure provides a way to process a run-time error 
+and continue on with program execution. Until now, any run-time error, such asking 
+for the 8th item in a list with only 3 items, or dividing by 0, has caused the 
+program execution to stop. In the browser ActiveCode windows, you get an error 
+message in a box below. When you are executing python programs from the command-line, 
+you also get an error message saying something about what went wrong and what line it occurred on. After the run-time error is encountered, the python interpreter does not try to execute the rest of the code. You have to make some change in your code and rerun the whole program.
 
-  def B():
-    C()
+With try/except, you tell the python interpreter:
 
-  def C():
-    D()
+* Try to execute a block of code, the "try" clause.
+   * If the whole block of code executes without any run-time errors, just carry on with the rest of the program after the try/except statement.
 
-  def D()
-    # processing
+* If a run-time error does occur during execution of the block of code:
+   * skip the rest of that block of code (but don't exit the whole program)
+   * execute a block of code in the "except" clause
+   * then carry on with the rest of the program after the try/except statement
 
-Function D determines that the current processing won't work for some reason
-and needs to send a message to the main function to try something different.
-However, all that function D can do using normal flow-of-control is to return
-a value to function C. So function D returns a special value to function C
-that means "try something else". Function C has to recognize this value,
-quit its processing, and return the special value to function B. And so forth
-and so on. It would be very helpful if function D could communicate directly
-with the main function (or functions A and B) without sending a special value
-through the intermediate calling functions. Well, that is exactly what an
-*exception* does. An *exception* is a message to any function currently on the
-executing program's "run-time-stack". (The "run-time-stack" is what keeps track
-of the active function calls while a program is executing.)
+.. sourcecode:: python
 
-In Python, your create an *exception* message using the ``raise`` command. The
-simplest format for a ``raise`` command is the keyword ``raise`` followed by
-the name of an exception. For example:
+   try:
+      <try clause code block>
+   except <ErrorType>:
+      <exception handler code block>
 
-.. code-block:: Python
+The syntax is fairly straightforward. The only tricky part is that after the word except, there can optionally be a specification of the kinds of errors that will be handled. The catchall is the class Exception. If you write ``except Exception:`` all runtime errors will be handled. If you specify a more restricted class of errors, only those errors will be handled; any other kind of error will still cause the program to stop running and an error message to be printed.
 
-  raise ExceptionName
+The code below causes an error of type IndexError, by trying to access the third element of a two-element list.
 
-So what happens to an *exception* message after it is created? The normal
-flow-of-control of a Python program is interrupted and Python starts looking
-for any code in its run-time-stack that is interested in dealing with the
-message. It always searches from its current location at the bottom of the
-run-time-stack, up the stack, in the order the functions were originally
-called. A ``try: except:`` block is used to say "hey,
-I can deal with that message." The first ``try: except:`` block that Python
-finds on its search back up the run-time-stack will be executed. If there
-is no ``try: except:`` block found, the program "crashes" and prints its
-run-time-stack to the console.
+.. activecode:: exceptions_1
+   :nocanvas:
 
-Let's take a look at several code examples to illustrate this process. If
-function D had a ``try: except:`` block around the code that ``raised`` a
-``MyException`` message, then the flow-of-control would be passed to the
-local ``except`` block. That is, function D would handle it's own issues.
+   items = ['a', 'b']
+   third = items[2]
+   
+   
+The code below causes an error of type ZeroDivisionError, or less specifically ArithmeticError.
 
-.. code-block:: python
+.. activecode:: exceptions_2
+   :nocanvas:
 
-  def main()
-    A()
+   x = 5
+   y = x/0
 
-  def A():
-    B()
+Let's see what happens if we wrap some of this problematic code in a try/except statement. Note that ``this won't print`` doesn't print: when the error is encountered, the rest of the try block is skipped and the exception block is executed. When the except block is done, it continues on with the next line of code that's outdented to the same level as the try: ``continuing`` is printed.
 
-  def B():
-    C()
+.. activecode:: exceptions_3
+   :nocanvas:
+   
+   try:
+       items = ['a', 'b']
+       third = items[2]
+       print("This won't print")
+   except Exception:
+       print("got an error")
+   
+   print("continuing")
 
-  def C():
-    D()
+ 
+If we catch only IndexEror, and we actually have a divide by zero error, the program does stop executing.   
+   
+.. activecode:: exceptions_4
+   :nocanvas:
+   
+   try:
+       items = ['a', 'b']
+       third = items[2]
+       print("This won't print")
+   except IndexError:
+       print("error 1")
+      
+   print("continuing")
+   
+   try:
+       x = 5
+       y = x/0
+       print("This won't print, either")
+   except IndexError:
+       print("error 2")
+       
+       
+   print("continuing again")
+   
+   
+There's one other useful feature. The exception code can access a variable that contains information about exactly what the error was. Thus, for example, in the except clause you could print out the information that would normally be printed as an error message but continue on with execution of the rest of the program. To do that, you specify a variable name after the exception class that's being handled. The exception clause code can refer to that variable name.
 
-  def D()
-    try:
-      # processing code
-      if something_special_happened:
-        raise MyException
-    except MyException:
-      # execute if the MyException message happened
+.. activecode:: exceptions_5
+   :nocanvas:
+   
+   try:
+       items = ['a', 'b']
+       third = items[2]
+       print("This won't print")
+   except Exception as e:
+       print("got an error")
+       print(e)
+   
+   print("continuing")
 
-But perhaps function C is better able to handle the issue, so you could put
-the ``try: except:`` block in function C:
 
-.. code-block:: python
-
-  def main()
-    A()
-
-  def A():
-    B()
-
-  def B():
-    C()
-
-  def C():
-    try:
-      D()
-    except MyException:
-      # execute if the MyException message happened
-
-  def D()
-    # processing code
-    if something_special_happened:
-      raise MyException
-
-But perhaps the main function is better able to handle the issue, so you
-could put the ``try: except:`` block in the main function:
-
-.. code-block:: python
-
-  def main()
-    try:
-      A()
-    except MyException:
-      # execute if the MyException message happened
-
-  def A():
-    B()
-
-  def B():
-    C()
-
-  def C():
-    D()
-
-  def D()
-    # processing code
-    if something_special_happened:
-      raise MyException
-
-Summary
-=======
-
-Let's summarize our discussion. An *exception* is a message that something
-"out-of-the-ordinary" has happened and the normal flow-of-control needs to
-be abandoned. When an *exception* is ``raised``, Python searches its run-time-stack
-for a ``try: except:`` block that can appropriately deal with the condition.
-The first ``try: except:`` block that knows how to deal with the issue is
-executed and then flow-of-control is returned to its normal sequential execution.
-If no appropriate ``try: except:`` block is found, the program "crashes" and
-prints its run-time-stack to the console.
-
-As our final example, here is a program that crashes because no valid
-``try: except:`` block was found to process the ``MyException`` message.
-Notice that the ``try: except:`` block in the main function only knows how
-to deal with ``ZeroDivisonError`` messages, not ``MyException`` messages.
-
-.. code-block:: python
-
-  def main()
-    try:
-      A()
-    except ZeroDivisonError:
-      # execute if a ZeroDivisonError message happened
-
-  def A():
-    B()
-
-  def B():
-    C()
-
-  def C():
-    D()
-
-  def D()
-    # processing code
-    if something_special_happened:
-      raise MyException
 
 
 .. index:: exception, flow-of-control, raise, try: except:

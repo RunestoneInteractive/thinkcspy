@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: exceptions-2-
+   :prefix: exceptions-3-
    :start: 1
 
 Standard Exceptions
