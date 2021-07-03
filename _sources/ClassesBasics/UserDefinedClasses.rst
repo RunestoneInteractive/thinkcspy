@@ -174,3 +174,35 @@ get the object properly set up with its factory default settings.
 The combined process of "make me a new object" and "get its settings initialized
 to the factory default settings" is called **instantiation**.  
 
+
+
+**Check Your Understanding**
+
+.. mchoice:: chp17_objects
+   :practice: T
+   :answer_a: True True
+   :answer_b: True False
+   :answer_c: False True
+   :answer_d: False False
+   :correct: c
+   :feedback_a: Look closely at how the objects are instantiated.
+   :feedback_b: Look closely at how the objects are instantiated and the types of the objects.
+   :feedback_c: Correct, the BMW object is not the Tesla object but they are of the same type.
+   :feedback_d: Look closer at types of the objects. 
+
+   What is the the output of the following print code?
+
+   .. code-block:: python
+
+       class Car:
+
+           def __init__(self):
+               self.color = "Red"
+               self.size = "Big"
+       BMW = Car()
+       Tesla = Car()
+
+       x = BMW is Tesla
+       y = type(BMW)==type(Tesla)
+
+       print(x, y)
