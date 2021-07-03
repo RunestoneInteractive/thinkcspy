@@ -12,5 +12,6 @@ Files
    AlternativeFileReadingMethods.rst
    WritingTextFiles.rst
    WithStatements.rst
+   FetchingSomethingFromTheWeb.rst
    Glossary.rst
    Exercises.rst
