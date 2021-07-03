@@ -46,6 +46,33 @@ To review, the variable ``theSum`` is called the accumulator.  It is initialized
 
 The assignment statement, ``theSum = theSum + aNumber``, updates ``theSum`` each time through the loop.  This accumulates the running total.  Finally, we return the value of the accumulator.
 
+**Check Your Understanding**
 
+.. mchoice:: mc07_8_2
+    :practice: T
+    :answer_a: 5
+    :answer_b: 8
+    :answer_c: 15
+    :answer_d: 18
+    :answer_e: 20
+    :correct: d
+    :feedback_a: This is how many times the inner loop will print for each iteration of the outer loop.
+    :feedback_b: Keep in mind that the inner loop is part of the body of the outer loop.
+    :feedback_c: The inner loop will print a total of 15 times; however the outer loop is also printing the same phrase.
+    :feedback_d: Correct! The nested loop will be run 3 times, making a total of 18.
+    :feedback_e: Pay attention to the order of x and y 
+
+    The following code contains an nested loop.  How many times will the phrase **"We made it here!"** be printed on the console?
+    
+
+    .. sourcecode:: python
+
+        def printnums(x,y):
+            for h in range(y):
+                print("We made it here!")
+                for i in range(x):
+                    print("We made it here!")
+
+        printnums(5, 3)
 
 
