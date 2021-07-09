@@ -136,7 +136,7 @@ Operator  Definiton                 Logical Opposites
 **<**     Less than                 **>=**
 **<=**    Less Than or Equal to     **>**
 **>**     Greater Than              **<=**
-**>=**    Greater Than or Equal to  **<=**
+**>=**    Greater Than or Equal to  **<**
 ========  ========================  =================
 
 Understanding these logical opposites allows us to sometimes get rid of ``not`` operators. ``not`` operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.
