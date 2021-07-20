@@ -41,48 +41,38 @@ Downloading Your IDE
 Each download may look different, but here is the general install proccess for 
 PyCharm:
 
-.. figure:: Figures/setup_page_01.JPG
+.. figure:: image/setup_page_01.jpg
     :align: center
     :alt: This is a screenshot of the opening page to the PyCharm IDE Setup manager.
-
-    Figure 1
 
 Save your install in a path that best works for you. Here we will save it in the 
 default path.
     
-.. figure:: Figures/setup_page_02.JPG
+.. figure:: image/setup_page_02.jpg
     :align: center
     :alt: This is a screenshot of how to choose the destination folder for the PyCharm IDE Setup manager.
-
-    Figure 2
 
 Select the installments that word best for your computer. Here, the selection for 
 **Add launchers dir to the PATH** helps the computer to recognized automatically which 
 folder should be opened in PyCharm. 
 
-.. figure:: Figures/setup_page_03.JPG
+.. figure:: image/setup_page_03.jpg
     :align: center
     :alt: This is a screenshot of the different installation options to choose from inside the Setup Manager.
-
-    Figure 3
 
 Only import settings settings to your IDE if you have set them up previously. For new
 installs, not importing settings is most likely best.
 
-.. figure:: Figures/IDE_setup_05.JPG
+.. figure:: image/IDE_setup_05.jpg
     :align: center
     :alt: This is a screenshot of the Import PyCharm Settings page for the PyCharm Setup Manager.
-
-    Figure 4
 
 Once you have everything up and running, your home screen should looks something similar 
 to this!
 
-.. figure:: Figures/IDE_setup_06.JPG
+.. figure:: image/IDE_setup_06.jpg
     :align: center
     :alt: This is a screenshot of the home page for the Pycharm IDE.
-
-    Figure 5
 
 The last thing you need to do is to configure your interpreter that will be used in your 
 IDE. While some downloads will automatically configure this for you, PyCharm needs the 
@@ -92,27 +82,21 @@ like to clone, then press on **New Project** and then navigate to the options fo
 download. Here, clicking **Make available to all projects** will set the base options for all
 new projects to use this Interpreter.
 
-.. figure:: Figures/IDE_setup_08.JPG
+.. figure:: image/IDE_setup_08.jpg
     :align: center
     :alt: This is a screenshot of page seen after clicking "New Project" on the homepage in the Pycharm IDE.
 
-    Figure 6
-
-.. figure:: Figures/IDE_setup_09.JPG
+.. figure:: image/IDE_setup_09.jpg
     :align: center
     :alt: This is a screenshot of the initial settings page when loading a new project in the Pycharm IDE.
-
-    Figure 7
 
 If you already have a repo on your local computer and would like to set up the interpreter from
 there, you can navigate to **File** -> **Settings** -> **Project <project name>** -> 
 **Python Interpreter**
 
-.. figure:: Figures/using_IDE_15.JPG
+.. figure:: image/using_IDE_15.jpg
     :align: center
     :alt: This is a screenshot of the setting page while already inside a project for the Pycharm IDE.
-
-    Figure 8
 
 Using an IDE
 ^^^^^^^^^^^^
@@ -123,11 +107,9 @@ the code. From there, you can Run the code, Debug the code, use the Git option t
 and push your work, and so much more Playing around with it and figuring out new things is the
 best part!
 
-.. figure:: Figures/using_IDE_10.PNG
+.. figure:: image/using_IDE_10.png
     :align: center
     :alt: This is a screenshot of the context menu inside the Pycharm IDE.
-
-    Figure 9
 
 
 Debugging with an IDE
@@ -145,11 +127,9 @@ will have mostly similar tools, like the debugging button.
 In PyCharm, your debugging tool will look like this:
 
 
-.. figure:: Figures/debug.PNG
+.. figure:: image/Debug_01.png
     :align: center
     :alt: This is a screenshot of the debug button at the tope of the PyCharm IDE.
-
-    Figure 10
 
 For more information on PyCharm debugging, you can follow ‘this link
 <https://www.jetbrains.com/help/pycharm/part-1-debugging-python-code.html#step>__’.
@@ -166,11 +146,9 @@ of your troubles, usually at the end of the errors list. Some code or descriptor
 given to help you fix the issue, but sometimes they are cryptic.
 
 
-.. figure:: Figures/script_vs_console.JPG
+.. figure:: image/script_vs_console.png
     :align: center
     :alt: This is a screenshot of the Console and scrip editor of the Pycharm IDE with a successful repo opened inside.
-
-    Figure 11
 
 Remember that when coding, the console is different from the script. The console 
 can display results and you can type line-by-line code. It will remember while you’re 
