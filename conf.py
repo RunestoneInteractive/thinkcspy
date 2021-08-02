@@ -45,6 +45,10 @@ master_doc = 'index'
 # General information about the project.
 project = u'How to Think Like a Computer Scientist'
 copyright = u'2014 Brad Miller, David Ranum, Created using Runestone Interactive'
+course_description = """Based on the original open source book by Allan Downy and Jeff Elkner. Learn Python, this edition is expanded with additional topics and is fully interactive.  Try examples, answer questions, interactively, right in the book!"""
+key_words = "intro google active learning fun data turtle graphics learn"
+shelf_section = "Intro to Computer Science"
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
