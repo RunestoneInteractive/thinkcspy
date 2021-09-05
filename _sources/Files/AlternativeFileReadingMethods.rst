@@ -16,7 +16,7 @@ Alternative File Reading Methods
 
 Again, recall the contents of the ccdata.txt file.
 
-.. datafile:: ccdata.txt
+.. datafile:: ccdata2.txt
 
     1850                  -0.37                                       2.24E-7
     1860                  -0.34	                                      3.94E-7
