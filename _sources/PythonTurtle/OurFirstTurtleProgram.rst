@@ -160,7 +160,7 @@ The color of the turtle, the width of its pen(tail), the position of the turtle
 within the window, which way it is facing, and so on are all part of its
 current **state**.   Similarly, the window object has a background color which is part of its state.
 
-Quite a number of methods exist that allow us to modify the turtle and
+Quite a number of attributes and methods exist that allow us to modify the turtle and
 window objects.  In the example below, we show just show a couple and have only commented those
 lines that are different from the previous example.  Note also that we have decided to call our turtle object *tess*.
 
