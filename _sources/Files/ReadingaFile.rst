@@ -24,7 +24,7 @@ other years. The format of the data file is as follows:
 
     Year, Global Average Temperature, Global Emmision of CO2
 
-.. datafile:: ccdata0.txt
+.. datafile:: ccdata.txt
 
     1850                  -0.37                                       2.24E-7
     1860                  -0.34	                                      3.94E-7
