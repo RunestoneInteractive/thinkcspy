@@ -11,7 +11,7 @@
    :prefix: exceptions-2-
    :start: 1
 
-Runetime Stack and ``raise`` command
+Runtime Stack and ``raise`` command
 ====================================
 
 There are cases where the sequential flow-of-control does
