@@ -79,9 +79,9 @@ construct a simple sentence.
 
 .. activecode:: files_for
     :nocodelens:
-    :available_files: ccdata.txt
+    :available_files: ccdata1.txt
 
-    ccfile = open("ccdata.txt", "r")
+    ccfile = open("ccdata1.txt", "r")
 
     for aline in ccfile:
         values = aline.split()

@@ -115,7 +115,7 @@ Now let's look at another method of reading our file using a ``while`` loop.  Th
 .. activecode:: files_while
     :nocodelens:
 
-    infile = open("ccdata.txt", "r")
+    infile = open("ccdata2.txt", "r")
     line = infile.readline()
     while line:
         values = line.split()
