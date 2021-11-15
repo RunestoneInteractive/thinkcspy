@@ -41,7 +41,7 @@ easy to understand.
     mylist.sort()
     print(mylist)
 
-    mylist.remove(5)            # Removes the first 12 in the list
+    mylist.remove(5)            # Removes the first 5 items in the list
     print(mylist)
 
     lastitem = mylist.pop()     # Removes and returns the last item of the list
