@@ -1,0 +1,42 @@
+<section xml:id="the-in-and-not-in-operators">
+        <title>The <c>in</c> and <c>not in</c> operators</title>
+        <p>The <c>in</c> operator tests if one string is a substring of another:</p>
+
+<listing xml:id="chp8_in1">
+    <caption/>
+    <program xml:id="chp8_in1_editor" interactive="activecode" language="python">
+        <input>
+print('p' in 'apple')
+print('i' in 'apple')
+print('ap' in 'apple')
+print('pa' in 'apple')
+        </input>
+    </program>
+</listing>
+        <p>Note that a string is a substring of itself, and the empty string is a
+            substring of any other string. (Also note that computer scientists
+            like to think about these edge cases quite carefully!)</p>
+
+<listing xml:id="chp8_in2">
+    <caption/>
+    <program xml:id="chp8_in2_editor" interactive="activecode" language="python">
+        <input>
+print('a' in 'a')
+print('apple' in 'apple')
+print('' in 'a')
+print('' in 'apple')
+        </input>
+    </program>
+</listing>
+        <p>The <c>not in</c> operator returns the logical opposite result of <c>in</c>.</p>
+
+<listing xml:id="chp8_in3">
+    <caption/>
+    <program xml:id="chp8_in3_editor" interactive="activecode" language="python">
+        <input>
+print('x' not in 'apple')
+        </input>
+    </program>
+</listing>
+    </section>
+

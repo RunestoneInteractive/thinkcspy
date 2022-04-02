@@ -1,0 +1,67 @@
+<section xml:id="dictionary-operations">
+        <title>Dictionary Operations</title>
+        <p>The <c>del</c> statement removes a key-value pair from a dictionary. For example,
+            the following dictionary contains the names of various fruits and the number of
+            each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.</p>
+<exercise runestone="ch12_dict4"/>        <p>Dictionaries are also mutable.  As we&#8217;ve seen before with lists, this means that the dictionary can
+            be modified by referencing an association on the left hand side of the assignment statement.  In the previous
+            example, instead of deleting the entry for <c>pears</c>, we could have set the inventory to <c>0</c>.</p>
+<exercise runestone="ch12_dict4a"/>        <p>Similarily,
+            a new shipment of 200 bananas arriving could be handled like this.</p>
+<exercise runestone="ch12_dict5"/>        <p>Notice that there are now 512 bananas&#8212;the dictionary has been modified.  Note also that the <c>len</c> function also works on dictionaries.  It returns the number
+            of key-value pairs:</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question11_2_1">
+        <statement>
+
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
+mydict = {"cat":12, "dog":6, "elephant":23}
+mydict["mouse"] = mydict["cat"] + mydict["dog"]
+print(mydict["mouse"])
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>12</p>
+                </statement>
+                <feedback>
+                    12 is associated with the key cat.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    The key mouse will be associated with the sum of the two values.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>18</p>
+                </statement>
+                <feedback>
+                    Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Error, there is no entry with mouse as the key.</p>
+                </statement>
+                <feedback>
+                    Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

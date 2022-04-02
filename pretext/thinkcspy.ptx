@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+  <book xml:id="thinkcspy" permid="tcs">
+    <title>How to Think Like a Computer Scientist</title>
+    <subtitle>Interactive Edition</subtitle>
+
+    <xi:include href="./GeneralIntro/toctree.ptx"/>
+
+    <xi:include href="./SimplePythonData/toctree.ptx"/>
+
+  </book>
+</pretext>
+

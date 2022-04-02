@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Python Turtle Graphics</title>
+        <xi:include href='./intro-HelloLittleTurtles.ptx' />
+        <xi:include href='./OurFirstTurtleProgram.ptx' />
+        <xi:include href='./InstancesAHerdofTurtles.ptx' />
+        <xi:include href='./TheforLoop.ptx' />
+        <xi:include href='./FlowofExecutionoftheforLoop.ptx' />
+        <xi:include href='./IterationSimplifiesourTurtleProgram.ptx' />
+        <xi:include href='./TherangeFunction.ptx' />
+        <xi:include href='./AFewMoreturtleMethodsandObservations.ptx' />
+        <xi:include href='./SummaryofTurtleMethods.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

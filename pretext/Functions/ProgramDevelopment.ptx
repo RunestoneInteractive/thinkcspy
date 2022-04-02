@@ -1,0 +1,149 @@
+<section xml:id="program-development">
+        <title>Program Development</title>
+        <p>At this point, you should be able to look at complete functions and tell what
+            they do. Also, if you have been doing the exercises, you have written some
+            small functions. As you write larger functions, you might start to have more
+            difficulty, especially with runtime and semantic errors.</p>
+        <p>To deal with increasingly complex programs, we are going to suggest a technique
+            called <strong>incremental development</strong>. The goal of incremental development is to
+            avoid long debugging sessions by adding and testing only a small amount of code
+            at a time.</p>
+        <p>As an example, suppose you want to find the distance between two points, given
+            by the coordinates (x<subscript>1</subscript>, y<subscript>1</subscript>) and
+            (x<subscript>2</subscript>, y<subscript>2</subscript>).  By the Pythagorean theorem, the distance is:</p>
+        <image source="images/Functions/Figures/distance_formula.png" alt="Distance formula"/>
+        <p>The first step is to consider what a <c>distance</c> function should look like in
+            Python. In other words, what are the inputs (parameters) and what is the output
+            (return value)?</p>
+        <p>In this case, the two points are the inputs, which we can represent using four
+            parameters. The return value is the distance, which is a floating-point value.</p>
+        <p>Already we can write an outline of the function that captures our thinking so far.</p>
+        <program language="python"><input>
+def distance(x1, y1, x2, y2):
+    return 0.0
+</input></program>
+        <p>Obviously, this version of the function doesn&#8217;t compute distances; it always
+            returns zero. But it is syntactically correct, and it will run, which means
+            that we can test it before we make it more complicated.</p>
+        <p>We import the test module to enable us to write a unit test for the function.</p>
+
+<listing xml:id="ch06_distance1">
+    <caption/>
+    <program xml:id="ch06_distance1_editor" interactive="activecode" language="python">
+        <input>
+import test
+def distance(x1, y1, x2, y2):
+    return 0.0
+
+test.testEqual(distance(1, 2, 1, 2), 0)
+        </input>
+    </program>
+</listing>
+        <p>The <c>testEqual</c> function from the test module calls the distance function with sample inputs: (1,2, 1,2).
+            The first 1,2 are the coordinates of the first point and the second 1,2 are the coordinates of the second point.
+            What is the distance between these two points? Zero. <c>testEqual</c> compares what is returned by the distance function
+            and the 0 (the correct answer).</p>
+        <admonition classes="admonition-extend-the-program">
+            <title>Extend the program &#8230;</title>
+            <p>On line 6, write another unit test. Use (1,2, 4,6) as the parameters to the distance function. How far apart are these two points? Use that value (instead of 0) as the correct answer for this unit test.</p>
+            <p>On line 7, write another unit test. Use (0,0, 1,1) as the parameters to the distance function. How far apart are these two points? Use that value as the correct answer for this unit test.</p>
+            <p>The first test passes but the others fail since the distance function does not yet contain all the necessary steps.</p>
+        </admonition>
+        <p><strong>When testing a function, it is essential to know the right answer.</strong></p>
+        <p>For the second test the horizontal distance equals 3 and the vertical
+            distance equals 4; that way, the result is 5 (the hypotenuse of a 3-4-5
+            triangle). For the third test, we have a 1-1-sqrt(2) triangle.</p>
+        <p>At this point we have confirmed that the function is syntactically correct, and
+            we can start adding lines of code. After each incremental change, we test the
+            function again. If an error occurs at any point, we know where it must be &#8212; in
+            the last line we added.</p>
+        <p>A logical first step in the computation is to find the differences
+            x<subscript>2</subscript>- x<subscript>1</subscript> and y<subscript>2</subscript>- y<subscript>1</subscript>.  We will store
+            those values in temporary variables named <c>dx</c> and <c>dy</c>.</p>
+        <program language="python"><input>
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    return 0.0
+</input></program>
+        <p>Next we compute the sum of squares of <c>dx</c> and <c>dy</c>.</p>
+        <program language="python"><input>
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    dsquared = dx**2 + dy**2
+    return 0.0
+</input></program>
+        <p>Again, we could run the program at this stage and check the value of <c>dsquared</c> (which
+            should be 25).</p>
+        <p>Finally, using the fractional exponent <c>0.5</c> to find the square root,
+            we compute and return the result.</p>
+        
+        
+
+<listing xml:id="ch06_distancefinal">
+    <caption/>
+    <program xml:id="ch06_distancefinal_editor" interactive="activecode" language="python">
+        <input>
+import test
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    dsquared = dx**2 + dy**2
+    result = dsquared**0.5
+    return result
+
+test.testEqual(distance(1,2, 1,2), 0)
+test.testEqual(distance(1,2, 4,6), 5)
+test.testEqual(distance(0,0, 1,1), 1.41)
+        </input>
+    </program>
+</listing>
+        <admonition classes="admonition-fix-the-error">
+            <title>Fix the error &#8230;</title>
+            <p>Two of the tests pass but the last one fails. Is there still an error in the function?</p>
+            <p>Frequently we discover errors in the functions that we are writing. However, it is possible that there is an error in a test. Here the error is in the precision of the correct answer.</p>
+            <p>The third test fails because by default testEqual checks 5 digits to the right of the decimal point.</p>
+            <p><ul>
+                <li>
+                    <p>Change <c>1.41</c> to <c>1.41421</c> and run. The test will pass.</p>
+                </li>
+            </ul></p>
+            <p>There are circumstances where 2 digits to the right of the decimal point is sufficiently precise.</p>
+            <p><ul>
+                <li>
+                    <p>Copy line 11 on to line 12. On line 12, change <c>1.41421</c> to <c>1.41</c>. Run. The test fails.</p>
+                </li>
+                <li>
+                    <p>Type <c>, 2</c> after 1.41. (The 2 represents the precision of the test &#8211; how many digits to the right of the decimal that must be correct.) Run.</p>
+                </li>
+            </ul></p>
+            <p>Now all four the tests pass! Wonderful! However, you may still need to perform additional tests.</p>
+        </admonition>
+        <p>When you start out, you might add only a line or two of code at a time. As you
+            gain more experience, you might find yourself writing and debugging bigger
+            conceptual chunks. As you improve your programming skills you should find yourself
+            managing bigger and bigger chunks: this is very similar to the way we learned to read
+            letters, syllables, words, phrases, sentences, paragraphs, etc., or the way we learn
+            to chunk music &#8212; from indvidual notes to chords, bars, phrases, and so on.</p>
+        <p>The key aspects of the process are:</p>
+        <p><ol label="1">
+            <li>
+                <p>Make sure you know what you are trying to accomplish. Then you can write appropriate unit tests.</p>
+            </li>
+            <li>
+                <p>Start with a working skeleton program and make small incremental changes. At any
+                    point, if there is an error, you will know exactly where it is.</p>
+            </li>
+            <li>
+                <p>Use temporary variables to hold intermediate values so that you can easily inspect
+                    and check them.</p>
+            </li>
+            <li>
+                <p>Once the program is working, you might want to consolidate multiple statements
+                    into compound expressions,
+                    but only do this if it does not make the program more difficult to read.</p>
+            </li>
+        </ol></p>
+    </section>
+

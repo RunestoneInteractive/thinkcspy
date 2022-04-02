@@ -1,0 +1,23 @@
+<section xml:id="web-applications">
+        <title>Web Applications</title>
+        <p>In this chapter, you will learn how to create web applications in Python. There are two kinds of web
+            applications &#8211; &#8220;client side&#8221; web applications and &#8220;server side&#8221; web applications. You&#8217;ve probably used
+            both kinds in your travels on the World-Wide Web.</p>
+        <p><ul>
+            <li>
+                <p><strong>Client-side</strong> web applications are programs that are downloaded to a web browser and executed on
+                    the user&#8217;s local machine. Client-side applications are typically written in JavaScript and embedded
+                    in web pages.</p>
+            </li>
+            <li>
+                <p><strong>Server-side</strong> web applications are programs that run on web server computers, rather than on the
+                    user&#8217;s local machine. Typically, a server-side web application displays a form with text boxes and
+                    other data collection mechanisms. The user fills out the form, clicks a submit button, and the
+                    browser sends the form to the web application on the server, which processes the request, and responds
+                    with another web page. If you&#8217;ve ever shopped online, you&#8217;ve used a server-side web application.</p>
+            </li>
+        </ul></p>
+        <p>In this chapter, you will learn to build server-side web applications, which I will refer to simply as &#8220;web
+            applications.&#8221;</p>
+    </section>
+

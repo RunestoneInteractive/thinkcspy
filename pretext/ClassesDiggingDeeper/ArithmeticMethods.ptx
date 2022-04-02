@@ -1,0 +1,106 @@
+<section xml:id="arithmetic-methods">
+        <title>Arithmetic Methods</title>
+        <p>We will conclude this chapter by adding a few more methods to our <c>Fraction</c> class.  In particular, we will implement
+            arithmetic.  To begin, consider what it means to add two fractions together.
+            Remember that you can only add fractions if they have the same denominator.  The easiest way to find a common denominator is
+            to multiply the two individual denominators together.  Anything we do to the denominator needs to the done to the numerator.  This gives us the following equation for fraction addition:</p>
+        <pre>a/b + c/d = (ad + cb)/bd</pre>
+        <p>Our <c>add</c> method will take a <c>Fraction</c> as a parameter.  It will return a new <c>Fraction</c> representing the sum.  We
+            will use the equation shown above to compute the new numerator and the new denominator.  Since this equation will not
+            give us lowest terms, we will utilize a similar technique as was used in the <c>simplify</c> method to find the
+            greatest common divisor and then divide each part of the new fraction.</p>
+        <program language="python"><input>
+def add(self,otherfraction):
+
+    newnum = self.num*otherfraction.den + self.den*otherfraction.num
+    newden = self.den * otherfraction.den
+
+    common = gcd(newnum,newden)
+
+    return Fraction(newnum//common,newden//common)
+</input></program>
+        <p>You can try the addition method and then modify the fractions and retry.</p>
+
+<listing xml:id="fractions_add1">
+    <caption/>
+    <program xml:id="fractions_add1_editor" interactive="activecode" language="python">
+        <input>
+def gcd(m, n):
+    while m % n != 0:
+        oldm = m
+        oldn = n
+
+        m = oldn
+        n = oldm % oldn
+
+    return n
+
+class Fraction:
+
+    def __init__(self, top, bottom):
+
+        self.num = top        # the numerator is on top
+        self.den = bottom     # the denominator is on the bottom
+
+    def __str__(self):
+        return str(self.num) + "/" + str(self.den)
+
+    def simplify(self):
+        common = gcd(self.num, self.den)
+
+        self.num = self.num // common
+        self.den = self.den // common
+
+    def add(self,otherfraction):
+
+        newnum = self.num*otherfraction.den + self.den*otherfraction.num
+        newden = self.den * otherfraction.den
+
+        common = gcd(newnum, newden)
+
+        return Fraction(newnum // common, newden // common)
+
+f1 = Fraction(1, 2)
+f2 = Fraction(1, 4)
+
+f3 = f1.add(f2)
+print(f3)
+        </input>
+    </program>
+</listing>
+        <p>One final modification to this method will be quite useful.  Instead invoking the <c>add</c> method, we can use the
+            addition operator &#8220;+&#8221;.  This requires that we implement another special method, this time called <c>__add__</c>.
+            The details of the method are the same.</p>
+        <program language="python"><input>
+def __add__(self, otherfraction):
+
+    newnum = self.num*otherfraction.den + self.den*otherfraction.num
+    newden = self.den * otherfraction.den
+
+    common = gcd(newnum, newden)
+
+    return Fraction(newnum // common, newden // common)
+</input></program>
+        <p>However, now we can perform addition in the same manner that we are used to with other numeric data.</p>
+        <program language="python"><input>
+f1 = Fraction(1, 2)
+f2 = Fraction(1, 4)
+
+f3 = f1 + f2    # calls the __add__ method of f1
+print(f3)
+</input></program>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+<listing xml:id="scratch_cl_02">
+    <caption/>
+    <program xml:id="scratch_cl_02_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+    </section>
+

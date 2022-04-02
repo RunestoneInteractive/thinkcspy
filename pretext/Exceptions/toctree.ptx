@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Exceptions</title>
+        <xi:include href='./01_intro_exceptions.ptx' />
+        <xi:include href='./02_runtime_stack_and_raise_command.ptx' />
+        <xi:include href='./03_standard_exceptions.ptx' />
+        <xi:include href='./04_principles_for_using_exceptions.ptx' />
+        <xi:include href='./05_exceptions_syntax.ptx' />
+        <xi:include href='./06_the_finally_clause.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

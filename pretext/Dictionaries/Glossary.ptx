@@ -1,0 +1,39 @@
+<section xml:id="glossary">
+        <title>Glossary</title>
+        <glossary sorted="False">
+            
+                <gi>
+                    <title>dictionary</title>
+                    
+                        <p>A collection of key-value pairs that maps from keys to values. The keys
+                            can be any immutable type, and the values can be any type.</p>
+                    
+                </gi>
+                <gi>
+                    <title>key</title>
+                    
+                        <p>A data item that is <emphasis>mapped to</emphasis> a value in a dictionary. Keys are used
+                            to look up values in a dictionary.</p>
+                    
+                </gi>
+                <gi>
+                    <title>key-value pair</title>
+                    
+                        <p>One of the pairs of items in a dictionary. Values are looked up in a
+                            dictionary by key.</p>
+                    
+                </gi>
+                <gi>
+                    <title>mapping type</title>
+                    
+                        <p>A mapping type is a data type comprised of a collection of keys and
+                            associated values. Python&#8217;s only built-in mapping type is the
+                            dictionary.  Dictionaries implement the
+                            <url href="http://en.wikipedia.org/wiki/Associative_array" visual="http://en.wikipedia.org/wiki/Associative_array">associative array</url>
+                            abstract data type.</p>
+                    
+                </gi>
+            
+        </glossary>
+    </section>
+

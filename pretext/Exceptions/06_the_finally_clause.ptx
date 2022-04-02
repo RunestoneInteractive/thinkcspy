@@ -1,0 +1,56 @@
+<section xml:id="the-finally-clause-of-the-try-statement">
+        <title>The <c>finally</c> clause of the <c>try</c> statement</title>
+        <p>A common programming pattern is to grab a resource of some kind &#8212; e.g. we
+            create a window for turtles to draw on, or we dial up a connection to our
+            internet service provider, or we may open a file for writing. Then we perform
+            some computation which may raise an exception, or may work without any
+            problems.</p>
+        <p>Whatever happens, we want to &#8220;clean up&#8221; the resources we grabbed &#8212; e.g. close
+            the window, disconnect our dial-up connection, or close the file. The <c>finally</c>
+            clause of the <c>try</c> statement is the way to do just this. Consider this
+            (somewhat contrived) example:</p>
+
+<listing xml:id="ch13_7_1">
+    <caption/>
+    <program xml:id="ch13_7_1_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+import time
+
+def show_poly():
+  try:
+    win = turtle.Screen()   # Grab/create a resource, e.g. a window
+    tess = turtle.Turtle()
+
+    # This dialog could be cancelled,
+    #   or the conversion to int might fail, or n might be zero.
+    n = int(input("How many sides do you want in your polygon?"))
+    angle = 360 / n
+    for i in range(n):      # Draw the polygon
+        tess.forward(35)
+        tess.left(angle)
+    time.sleep(3)           # Make program wait a few seconds
+  except Exception as e:
+    print("insufficient number of sides")
+    print(e)
+  finally:
+    win.bye()               # Close the turtle's window
+
+show_poly()
+        </input>
+    </program>
+</listing>
+        <p>In lines 20&#8211;22, <c>show_poly</c> is called three times. Each one creates a new
+            window for its turtle, and draws a polygon with the number of sides input by
+            the user. But what if the user enters a string that cannot be converted to
+            an <c>int</c>? What if they close the dialog? We&#8217;ll get an exception, <emphasis>but even though
+                we&#8217;ve had an exception, we still want to close the turtle&#8217;s window</emphasis>. Lines 17&#8211;18
+            does this for us. Whether we complete the statements in the <c>try</c> clause successfully
+            or not, the <c>finally</c> block will always be executed.</p>
+        <p>Notice that the exception is still unhandled &#8212; only an <c>except</c> clause can
+            handle an exception, so our program will still crash. But at least its turtle
+            window will be closed before it crashes!</p>
+        
+        
+    </section>
+

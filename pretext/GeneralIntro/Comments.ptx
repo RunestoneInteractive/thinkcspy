@@ -1,0 +1,93 @@
+<section xml:id="comments">
+        <title>Comments</title>
+        <p>As programs get bigger and more complicated, they get more difficult to read.
+            Formal languages are dense, and it is often difficult to look at a piece of
+            code and figure out what it is doing, or why.
+            For this reason, it is a good idea to add notes to your programs to explain in
+            natural language what the program is doing.  These notes are called comments.</p>
+        <p>A <strong>comment</strong> in a computer program is text that is intended only for the human
+            reader - it is completely ignored by the interpreter.
+            In Python, the <title_reference>#</title_reference> token starts a comment.  The rest of the line is ignored.
+            Here is a new version of <emphasis>Hello, World!</emphasis>.</p>
+
+<listing xml:id="ch01_3">
+    <caption/>
+    <program xml:id="ch01_3_editor" interactive="activecode" language="python">
+        <input>
+#---------------------------------------------------
+# This demo program shows off how elegant Python is!
+# Written by Joe Soap, December 2010.
+# Anyone may freely copy or modify this program.
+#---------------------------------------------------
+
+print("Hello, World!")     # Isn't this easy!
+        </input>
+    </program>
+</listing>
+        <p>Notice that when you run this program, it still only prints the phrase Hello, World!  None of the comments appear.
+            You&#8217;ll also notice that we&#8217;ve left a blank line in the program.  Blank lines
+            are also ignored by the interpreter, but comments and blank lines can make your
+            programs much easier for humans to parse.  Use them liberally!</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="question1_12_1">
+        <statement>
+
+        <p>What are comments for?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>To tell the computer what you mean in your program.</p>
+                </statement>
+                <feedback>
+                    Comments are ignored by the computer.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>For the people who are reading your code to know, in natural language, what the program is doing.</p>
+                </statement>
+                <feedback>
+                    The computer ignores comments.  It's for the humans that will "consume" your program.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Nothing, they are extraneous information that is not needed.</p>
+                </statement>
+                <feedback>
+                    Comments can provide much needed information for anyone reading the program.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Nothing in a short program.  They are only needed for really large programs.</p>
+                </statement>
+                <feedback>
+                    Even small programs benefit from comments.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+<listing xml:id="scratch_01">
+    <caption/>
+    <program xml:id="scratch_01_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+    </section>
+

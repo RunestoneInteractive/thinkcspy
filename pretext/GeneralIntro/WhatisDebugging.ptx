@@ -1,0 +1,63 @@
+<section xml:id="what-is-debugging">
+    <title>What is Debugging?</title>
+    <p>Programming is a complex process.  Since it is done by human beings, errors may often occur.
+            Programming errors are called <strong>bugs</strong> and the process
+            of tracking them down and correcting them is called <strong>debugging</strong>.  Some claim
+            that in 1945, a dead moth caused a problem on relay number 70, panel F, of one
+            of the first computers at Harvard, and the term <strong>bug</strong> has remained in use
+            since. For more about this historic event, see <url href="http://en.wikipedia.org/wiki/File:H96566k.jpg" visual="http://en.wikipedia.org/wiki/File:H96566k.jpg">first bug</url>.
+    </p>
+    <p>Three kinds of errors can occur in a program: <url href="http://en.wikipedia.org/wiki/Syntax_error" visual="http://en.wikipedia.org/wiki/Syntax_error">syntax errors</url>,        <url href="http://en.wikipedia.org/wiki/Runtime_error" visual="http://en.wikipedia.org/wiki/Runtime_error">runtime errors</url>, and <url href="http://en.wikipedia.org/wiki/Logic_error" visual="http://en.wikipedia.org/wiki/Logic_error">semantic errors</url>.  It is useful to distinguish
+            between them in order to track them down more quickly.</p>
+    <p>
+        <strong>Check your understanding</strong>
+    </p>
+
+    <exercise xml:id="question1_5_1">
+        <statement>
+
+            <p>Debugging is:</p>
+
+        </statement>
+        <choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>tracking down programming errors and correcting them.</p>
+                </statement>
+                <feedback>
+                    Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>removing all the bugs from your house.</p>
+                </statement>
+                <feedback>
+                    Maybe, but that is not what we are talking about in this context.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>finding all the bugs in the program.</p>
+                </statement>
+                <feedback>
+                    This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>fixing the bugs in the program.</p>
+                </statement>
+                <feedback>
+                    This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
+                </feedback>
+            </choice>
+        </choices>
+
+    </exercise>
+</section>
+

@@ -1,0 +1,156 @@
+<section xml:id="how-to-avoid-debugging">
+        <title>How to Avoid Debugging</title>
+        <p>Perhaps the most important lesson in debugging is that it is <strong>largely avoidable</strong> &#8211; if you work carefully.</p>
+        <p><ol label="1">
+            <li>
+                <p><strong>Understand the Problem</strong>  You must have a firm grasp on <strong>what</strong> you are trying to accomplish but not
+                    necessarily <strong>how</strong> to do it. You do not need to understand the entire problem. But you must understand
+                    at least a portion of it and what the program should do in a specific circumstance &#8211; what output should
+                    be produced for some given input. This will allow you to test your progress. You can then identify if a
+                    solution is correct or whether there remains work to do or bugs to fix. This is probably the single
+                    biggest piece of advice for programmers at every level.</p>
+            </li>
+            <li>
+                <p><strong>Start Small</strong>  It is tempting to sit down and crank out an entire program at once.  But, when the program
+                    &#8211; inevitably &#8211; does not work, you have a myriad of options for things that might be wrong.  Where to start?
+                    Where to look first?  How to figure out what went wrong?  I&#8217;ll get to that in the next section.  So, start
+                    with something really small.  Maybe just two lines and then make sure that runs.  Hitting the run button
+                    is quick and easy. It gives you immediate feedback about whether what you have just done works or not.
+                    Another immediate benefit of having something small working is that you have something to turn in.  Turning
+                    in a small, incomplete program, is almost always better than nothing.</p>
+            </li>
+            <li>
+                <p><strong>Keep Improving It</strong>  Once you have a small part of your program working, the next step is to figure out
+                    something small to add to it &#8211; how can you move closer to a correct solution. As you add to your program,
+                    you gain greater insight into the underlying problem you are trying to solve.</p>
+                <p>If you keep adding small pieces of the program one at a time, it is much easier to figure out what went
+                    wrong. (This of course means you must be able to recognize if there is an error. And that is done through
+                    testing.)</p>
+                <p>As long as you always test each new bit of code, it is most likely that any error is in the new code you
+                    have just added. Less new code means its easier to figure out where the problem is.</p>
+            </li>
+        </ol></p>
+        <p>This notion of <strong>Get something working and keep improving it</strong> is a mantra that you can repeat throughout your
+            career as a programmer.  It&#8217;s a great way to avoid the frustrations mentioned above.  Think of it this way.
+            Every time you have a little success, your brain releases a tiny bit of chemical that makes you happy.  So, you
+            can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.</p>
+        <note>
+            <p>The technique of start small and keep improving is the basis of <strong>Agile</strong> software development. This
+                practice is used widely in the industry.</p>
+        </note>
+        <p>Ok, let&#8217;s look at an example.  Let&#8217;s solve the problem posed in question 3 at the end of the Simple Python Data chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off. For example, if <c>current_time</c> is 8 and <c>wait_time</c> is 5, <c>final_time</c> should be 13 (1 pm).</p>
+        <p>So, where to start?  The problem requires two pieces of input from the user, so let&#8217;s start there and make sure we can get the data we need.</p>
+
+<listing xml:id="db_ex3_1">
+    <caption/>
+    <program xml:id="db_ex3_1_editor" interactive="activecode" language="python">
+        <input>
+current_time = input("what is the current time (in hours)?")
+wait_time = input("How many hours do you want to wait")
+
+print(current_time)
+print(wait_time)
+        </input>
+    </program>
+</listing>
+        <p>So far so good.  Now let&#8217;s take the next step.  We need to figure out what the time will be after waiting <c>wait_time</c> number of hours.  A reasonable solution is to simply add <c>wait_time</c> to <c>current_time</c> and print out the result.  So lets try that.</p>
+
+<listing xml:id="db_ex3_2">
+    <caption/>
+    <program xml:id="db_ex3_2_editor" interactive="activecode" language="python">
+        <input>
+current_time = input("What is the current time (in hours 0 - 23)?")
+wait_time = input("How many hours do you want to wait")
+
+print(current_time)
+print(wait_time)
+
+final_time = current_time + wait_time
+print(final_time)
+        </input>
+    </program>
+</listing>
+        <p>Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.</p>
+
+    <exercise xml:id="db_q_ex3_1">
+        <statement>
+
+        <p>Which of the following best describes what is wrong with the  previous example?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Python is stupid and does not know how to add properly.</p>
+                </statement>
+                <feedback>
+                    No, Python is probabaly not broken.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>There is nothing wrong here.</p>
+                </statement>
+                <feedback>
+                    No, try adding the two numbers together yourself, you will definitely get a different result.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>Python is doing string concatenation, not integer addition.</p>
+                </statement>
+                <feedback>
+                    Yes!  Remember that input returns a string.  Now we will need to convert the string to an integer
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>This error was probably pretty simple to spot, because we printed out the value of <c>final_time</c> and it is easy to see that the numbers were just concatenated together rather than added.</p>
+        <p>So what do we do about the problem?  We will need to convert both <c>current_time</c> and <c>wait_time</c> to <c>int</c>.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let&#8217;s look at another iteration of the program that does that, and the conversion to integer.</p>
+
+<listing xml:id="db_ex3_3">
+    <caption/>
+    <program xml:id="db_ex3_3_editor" interactive="activecode" language="python">
+        <input>
+current_time_str = input("What is the current time (in hours 0-23)?")
+wait_time_str = input("How many hours do you want to wait")
+
+current_time_int = int(current_time_str)
+wait_time_int = int(wait_time_str)
+
+final_time_int = current_time_int + wait_time_int
+print(final_time_int)
+        </input>
+    </program>
+</listing>
+        
+        
+        <p xml:id="index-0">Now, that&#8217;s a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for <c>current_time</c> and 5 for <c>wait_time</c> then 13 is correct.  But if you entered 17 (5 pm) for <c>current_time</c> and 9 for <c>wait_time</c> then the result of 26 is not correct.</p>
+        <p>This illustrates an important aspect of <strong>testing</strong>: it is important to test your code on a range of inputs.  It is especially important to test your code on <strong>boundary conditions</strong>.  For this particular problem, you should test your program with <c>current_time</c> of 0, 23, and some values in between.  You should test your <c>wait_time</c> for 0, and some larger values.  What about negative numbers?  Negative numbers don&#8217;t make sense, and since we don&#8217;t really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.</p>
+        <p>So to account for those numbers that are bigger than 23, we need one final step: using the modulus operator.</p>
+
+<listing xml:id="db_ex3_4">
+    <caption/>
+    <program xml:id="db_ex3_4_editor" interactive="activecode" language="python">
+        <input>
+current_time_str = input("What is the current time (in hours 0-23)?")
+wait_time_str = input("How many hours do you want to wait")
+
+current_time_int = int(current_time_str)
+wait_time_int = int(wait_time_str)
+
+final_time_int = current_time_int + wait_time_int
+
+final_answer = final_time_int % 24
+
+print("The time after waiting is: ", final_answer)
+        </input>
+    </program>
+</listing>
+        <p>Of course even in this simple progression, there are other ways you could have gone astray.  We&#8217;ll look at some of those and how you track them down in the next section.</p>
+    </section>
+

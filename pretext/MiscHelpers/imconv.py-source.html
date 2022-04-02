@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">immap</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">impat</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\.\. (\|image\d+\|)\s+image::\s+(.*)$&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">impat</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">g</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">immap</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">nf</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c1">#re.search(&quot;\\s+(\\|image\\d+\\|)\\s+\\{(.*)?\\}\\s+\\{(.*)\\}&quot;, searchText)</span>
+<span class="c1">#iminline = re.compile(&quot;\\s+(\\|image\\d+\\|)\\s+\\{(.*)?\\}\\s+\\{(.*)\\}&quot;)</span>
+
+<span class="n">iminline</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+(\|image\d+\|)\s+\{(.*)\}\s+\{(.*)\}&#39;</span><span class="p">)</span>
+<span class="n">figrep</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Figure\s\{(fig_.*?)\}&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">iminline</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">g</span><span class="p">:</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;.. _</span><span class="si">%s</span><span class="s1">:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;.. figure:: </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">immap</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;   :align: center</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;   </span><span class="si">%s</span><span class="se">\n\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">g</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">figrep</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;:ref:`Figure x &lt;\1&gt;`&#39;</span><span class="p">,</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">nf</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        
+<span class="n">nf</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</body>
+</html>

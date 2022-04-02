@@ -1,0 +1,20 @@
+<section xml:id="a-collection-data-type">
+        <title>A Collection Data Type</title>
+        <p>So far we have seen built-in types like: <c>int</c>, <c>float</c>,
+            <c>bool</c>, <c>str</c> and we&#8217;ve seen lists.
+            <c>int</c>, <c>float</c>, and
+            <c>bool</c> are considered to be simple or primitive data types because their values are not composed
+            of any smaller parts.  They cannot be broken down.
+            On the other hand, strings and lists are different from the others because they
+            are made up of smaller pieces.  In the case of strings, they are made up of smaller
+            strings each containing one <strong>character</strong>.</p>
+        <p>Types that are comprised of smaller pieces are called <strong>collection data types</strong>.
+            Depending on what we are doing, we may want to treat a collection data type as a
+            single entity (the whole), or we may want to access its parts. This ambiguity is useful.</p>
+        <p>Strings can be defined as sequential collections of characters.  This means that the individual characters
+            that make up the string are assumed to be in a particular order from left to right.</p>
+        <p>A string that contains no characters, often referred to as the <strong>empty string</strong>, is still considered to be a string.  It is simply a sequence of zero characters and is represented by &#8216;&#8217; or &#8220;&#8221; (two single or two double quotes with nothing in between).</p>
+        
+        
+    </section>
+

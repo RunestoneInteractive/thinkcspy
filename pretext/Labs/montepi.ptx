@@ -1,0 +1,60 @@
+<section xml:id="approximating-the-value-of-pi">
+        <title>Approximating the Value of Pi</title>
+        <p>Almost everyone has heard of the famous mathematical constant called <strong>Pi</strong>.  We use it most often to find the circumference or the area of a circle.  For simplicity, the value that is commonly used for pi is 3.14.  However, it turns out that pi is what mathematicians call an <strong>irrational number</strong>, meaning that that it has an infinite, nonrepeating number of decimal digits. The value is</p>
+        <p>3.1415926535897932384626433832795028841971693993751058209749445923078164062&#8230;</p>
+        <p>In this lab, we will approximate the value of pi using a technique known as <strong>Monte Carlo Simulation</strong>.  This means that we will use random numbers to simulate a &#8220;game of chance&#8221;.  The result of this game will be an approximation for pi.</p>
+        <subsection xml:id="setup">
+            <title>Setup</title>
+            <p>The game that we will use for this simulation is &#8220;darts&#8221;.  We will &#8220;randomly&#8221; throw a number of darts at a specially configured dartboard.  The set up for our board is shown below.  In the figure, you can see that we have a round dartboard mounted on a square piece of wood.  The dartboard has a radius of one unit.  The piece of wood is exactly two units square so that the round board fits perfectly inside the square.</p>
+            <image source="images/Labs/Figures/dartboards.png"/>
+            <p>But how will this help us to approximate pi?  Consider the area of the circular dartboard.  It has a radius of one so
+                its area is pi.  The area of the square piece of wood is 4 (2 x 2).  The ratio of the area of the circle to the area of the square is pi/4.  If we throw a whole bunch of darts and let them randomly land on the square piece of wood, some will also land on the dartboard.  The number of darts that land on the dartboard, divided by the number that we throw total, will be in the ratio described above (pi/4).  Multiply by 4 and we have pi.</p>
+        </subsection>
+        <subsection xml:id="throwing-darts">
+            <title>Throwing Darts</title>
+            <p>Now that we have our dartboard setup, we can throw darts.  We will assume that we are good enough at throwing darts that we always hit the wood.  However, sometimes the darts will hit the dartboard and sometimes they  will miss.</p>
+            <p>Inorder to simulate throwing the darts, we can generate two random numbers between zero and one.  The first will be the &#8220;x coordinate&#8221; of the dart and the second will be the &#8220;y coordinate&#8221;.  However, we have a problem.  The coordinates for the dartboard go from -1 to 1.</p>
+            <p>How can we turn a random number between 0 to 1 into a random number between -1 and 1?</p>
+            <p>The program has been started for you.  You need to fill in the part that will &#8220;throw the dart&#8221;.  Once you know the x,y coordinate, have the turtle move to that location and make a <c>dot</c>.  Note that the tail is already up so it will not leave a line.</p>
+
+<listing xml:id="piguessstart">
+    <caption/>
+    <program xml:id="piguessstart_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+import math
+import random
+
+fred = turtle.Turtle()
+
+wn = turtle.Screen()
+wn.setworldcoordinates(-1,-1,1,1)
+
+fred.up()
+
+numdarts = 10
+for i in range(numdarts):
+    randx = random.random()
+    randy = random.random()
+
+    x =
+    y =
+
+wn.exitonclick()
+        </input>
+    </program>
+</listing>
+        </subsection>
+        <subsection xml:id="counting-darts">
+            <title>Counting Darts</title>
+            <p>We already know the total number of darts being thrown.  The variable <c>numdarts</c> keeps this for us.  What we need to figure out is how many darts land in the circle?  Since the circle is centered at (0,0) and it has a radius of 1, the question is really simply a matter of checking to see whether the dart has landed within 1 unit of the center.  Luckily, there is a turtle method called <c>distance</c> that will return the distance from the turtle to any other position.  It needs the x,y for the other position.</p>
+            <p>For example, <c>fred.distance(12,5)</c> would return the distance from fred&#8217;s current position to position (12,5).</p>
+            <p>Now we simply need to use this method in a conditional to ask whether fred is within 1 unit from the center.  If so, color the dart <c>red</c>, otherwise, color it <c>blue</c>.  Also, if we find that it is in the circle, count it.  Create an accumulator variable, call it <c>insideCount</c>, initialize it to zero, and then increment it when necessary.  Remember that the increment is a form of the accumulator pattern using reassignment.</p>
+        </subsection>
+        <subsection xml:id="the-value-of-pi">
+            <title>The Value of Pi</title>
+            <p>After the loop has completed and visualization has been drawn, we still need to actually compute pi and print it.  Use the relationship given above.</p>
+            <p>Run your program with larger values of <c>numdarts</c> to see if the approximation gets better.  If you want to speed things up for large values of <c>numdarts</c>, set the tracer to be 100 using <c>wn.tracer(100)</c>.</p>
+        </subsection>
+    </section>
+

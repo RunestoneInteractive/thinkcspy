@@ -1,0 +1,27 @@
+<section xml:id="glossary">
+        <title>Glossary</title>
+        <glossary sorted="False">
+            
+                <gi>
+                    <title>exception</title>
+                    
+                        <p>An error that occurs at runtime.</p>
+                    
+                </gi>
+                <gi>
+                    <title>handle an exception</title>
+                    
+                        <p>To prevent an exception from terminating a program by wrapping
+                            the block of code in a <c>try</c> / <c>except</c> construct.</p>
+                    
+                </gi>
+                <gi>
+                    <title>raise</title>
+                    
+                        <p>To cause an exception by using the <c>raise</c> statement.</p>
+                    
+                </gi>
+            
+        </glossary>
+    </section>
+

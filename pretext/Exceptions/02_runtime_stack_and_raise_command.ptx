@@ -1,0 +1,126 @@
+<section xml:id="runetime-stack-and-raise-command">
+        <title>Runetime Stack and <c>raise</c> command</title>
+        <p>There are cases where the sequential flow-of-control does
+            not work well. An example will best explain this.</p>
+        <p>Let&#8217;s suppose that a program contains complex logic that is appropriately
+            subdivided into functions. The program is running and it currently is executing
+            function D, which was called by function C, which was called by function B,
+            which was called by function A, which was called from the main function. This
+            is illustrated by the following simplistic code example:</p>
+        <program language="python"><input>
+def main()
+  A()
+
+def A():
+  B()
+
+def B():
+  C()
+
+def C():
+  D()
+
+def D()
+  # processing
+</input></program>
+        <p>Function D determines that the current processing won&#8217;t work for some reason
+            and needs to send a message to the main function to try something different.
+            However, all that function D can do using normal flow-of-control is to return
+            a value to function C. So function D returns a special value to function C
+            that means &#8220;try something else&#8221;. Function C has to recognize this value,
+            quit its processing, and return the special value to function B. And so forth
+            and so on. It would be very helpful if function D could communicate directly
+            with the main function (or functions A and B) without sending a special value
+            through the intermediate calling functions. Well, that is exactly what an
+            <emphasis>exception</emphasis> does. An <emphasis>exception</emphasis> is a message to any function currently on the
+            executing program&#8217;s &#8220;run-time-stack&#8221;. (The &#8220;run-time-stack&#8221; is what keeps track
+            of the active function calls while a program is executing.)</p>
+        <p>In Python, your create an <emphasis>exception</emphasis> message using the <c>raise</c> command. The
+            simplest format for a <c>raise</c> command is the keyword <c>raise</c> followed by
+            the name of an exception. For example:</p>
+        <program language="Python"><input>
+raise ExceptionName
+</input></program>
+        <p>So what happens to an <emphasis>exception</emphasis> message after it is created? The normal
+            flow-of-control of a Python program is interrupted and Python starts looking
+            for any code in its run-time-stack that is interested in dealing with the
+            message. It always searches from its current location at the bottom of the
+            run-time-stack, up the stack, in the order the functions were originally
+            called. A <c>try: except:</c> block is used to say &#8220;hey,
+            I can deal with that message.&#8221; The first <c>try: except:</c> block that Python
+            finds on its search back up the run-time-stack will be executed. If there
+            is no <c>try: except:</c> block found, the program &#8220;crashes&#8221; and prints its
+            run-time-stack to the console.</p>
+        <p>Let&#8217;s take a look at several code examples to illustrate this process. If
+            function D had a <c>try: except:</c> block around the code that <c>raised</c> a
+            <c>MyException</c> message, then the flow-of-control would be passed to the
+            local <c>except</c> block. That is, function D would handle it&#8217;s own issues.</p>
+        <program language="python"><input>
+def main()
+  A()
+
+def A():
+  B()
+
+def B():
+  C()
+
+def C():
+  D()
+
+def D()
+  try:
+    # processing code
+    if something_special_happened:
+      raise MyException
+  except MyException:
+    # execute if the MyException message happened
+</input></program>
+        <p>But perhaps function C is better able to handle the issue, so you could put
+            the <c>try: except:</c> block in function C:</p>
+        <program language="python"><input>
+def main()
+  A()
+
+def A():
+  B()
+
+def B():
+  C()
+
+def C():
+  try:
+    D()
+  except MyException:
+    # execute if the MyException message happened
+
+def D()
+  # processing code
+  if something_special_happened:
+    raise MyException
+</input></program>
+        <p>But perhaps the main function is better able to handle the issue, so you
+            could put the <c>try: except:</c> block in the main function:</p>
+        <program language="python"><input>
+def main()
+  try:
+    A()
+  except MyException:
+    # execute if the MyException message happened
+
+def A():
+  B()
+
+def B():
+  C()
+
+def C():
+  D()
+
+def D()
+  # processing code
+  if something_special_happened:
+    raise MyException
+</input></program>
+    </section>
+    

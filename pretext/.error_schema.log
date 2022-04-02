@@ -1,0 +1,3 @@
+/Users/bmiller/Runestone/books/thinkcspy/pretext/thinkcspy.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got subtitle
+/Users/bmiller/Runestone/books/thinkcspy/pretext/thinkcspy.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
+/Users/bmiller/Runestone/books/thinkcspy/pretext/thinkcspy.ptx:5:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content

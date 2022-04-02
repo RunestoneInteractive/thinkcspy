@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Lists</title>
+        <xi:include href='./intro-Lists.ptx' />
+        <xi:include href='./ListValues.ptx' />
+        <xi:include href='./ListLength.ptx' />
+        <xi:include href='./AccessingElements.ptx' />
+        <xi:include href='./ListMembership.ptx' />
+        <xi:include href='./ConcatenationandRepetition.ptx' />
+        <xi:include href='./ListSlices.ptx' />
+        <xi:include href='./ListsareMutable.ptx' />
+        <xi:include href='./ListDeletion.ptx' />
+        <xi:include href='./ObjectsandReferences.ptx' />
+        <xi:include href='./Aliasing.ptx' />
+        <xi:include href='./CloningLists.ptx' />
+        <xi:include href='./RepetitionandReferences.ptx' />
+        <xi:include href='./ListMethods.ptx' />
+        <xi:include href='./TheReturnofLSystems.ptx' />
+        <xi:include href='./AppendversusConcatenate.ptx' />
+        <xi:include href='./Listsandforloops.ptx' />
+        <xi:include href='./TheAccumulatorPatternwithLists.ptx' />
+        <xi:include href='./UsingListsasParameters.ptx' />
+        <xi:include href='./PureFunctions.ptx' />
+        <xi:include href='./WhichisBetter.ptx' />
+        <xi:include href='./FunctionsthatProduceLists.ptx' />
+        <xi:include href='./ListComprehensions.ptx' />
+        <xi:include href='./NestedLists.ptx' />
+        <xi:include href='./StringsandLists.ptx' />
+        <xi:include href='./listTypeConversionFunction.ptx' />
+        <xi:include href='./TuplesandMutability.ptx' />
+        <xi:include href='./TupleAssignment.ptx' />
+        <xi:include href='./TuplesasReturnValues.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

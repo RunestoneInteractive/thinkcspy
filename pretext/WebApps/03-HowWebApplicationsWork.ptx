@@ -1,0 +1,45 @@
+<section xml:id="how-web-applications-work">
+        <title>How Web Applications Work</title>
+        <p>Most of the time, when your browser requests a file from a web server, the server simply transmits the
+            contents of the file back to the browser. But sometimes, the &#8220;file&#8221; your browser requests isn&#8217;t really a file
+            at all.</p>
+        <p>Try typing the following URL into your browser:</p>
+        <block_quote>
+            <p><url href="https://google.com/search?q=Microsoft" visual="https://google.com/search?q=Microsoft">https://google.com/search?q=Microsoft</url></p>
+        </block_quote>
+        <p>You&#8217;ll get back a page of search results about Microsoft from the Google search engine (at least, you
+            will unless Google has changed how it performs searches since this chapter was written). How did
+            this happen?</p>
+        <p>Well, your browser did what it always does when you type in a URL:</p>
+        <p><ol label="1">
+            <li>
+                <p>The browser opened a network connection to the web server named google.com</p>
+            </li>
+            <li>
+                <p>The browser requested the &#8220;file&#8221; named /search?q=Microsoft from the web server</p>
+            </li>
+            <li>
+                <p>What the web server did at this point is different than the example above.
+                    There&#8217;s no &#8220;file&#8221; named &#8220;/search?q=Microsoft&#8221; on the Google web server.
+                    Instead, the web server ran a web application to
+                    search through Google&#8217;s massive database of websites for pages that mention &#8220;Microsoft&#8221;. The web
+                    application dynamically generated an HTML document containing the search results, and the web
+                    server transmitted that document back to the browser.</p>
+            </li>
+            <li>
+                <p>The browser rendered the HTML document</p>
+            </li>
+        </ol></p>
+        <p>As far as your browser is concerned, there is no difference between requesting a &#8220;static&#8221; HTML file
+            from a web server, and requesting a dynamically generated HTML file. It&#8217;s up to the web server to examine
+            the request submitted by the web browser to determine whether it should serve up a regular document,
+            or run a web application to generate a response.</p>
+        <p>Anytime you&#8217;re browsing the web, and you notice that the URL of the page you&#8217;re viewing has a question
+            mark (?), you can be fairly certain that the page was generated &#8220;on the fly&#8221; by a web application on
+            a web server. By the way, the portion of the URL that comes after the ? is called the &#8220;query string,&#8221; and
+            contains input for the web application. Try changing the <strong>query string</strong> by substituting &#8220;Firefox&#8221; for &#8220;Microsoft&#8221;
+            to see what I mean.</p>
+        <p>In summary, a (server-side) web application is a program that is run by a web server to produce output
+            in response to an incoming request from a web browser.</p>
+    </section>
+

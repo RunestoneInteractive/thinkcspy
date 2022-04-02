@@ -1,0 +1,36 @@
+<section xml:id="glossary">
+        <title>Glossary</title>
+        <glossary sorted="False">
+            
+                <gi>
+                    <title>deep copy</title>
+                    
+                        <p>To copy the contents of an object as well as any embedded objects, and
+                            any objects embedded in them, and so on; implemented by the
+                            <c>deepcopy</c> function in the <c>copy</c> module.</p>
+                    
+                </gi>
+                <gi>
+                    <title>deep equality</title>
+                    
+                        <p>Equality of values, or two references that point to objects that have
+                            the same value.</p>
+                    
+                </gi>
+                <gi>
+                    <title>shallow copy</title>
+                    
+                        <p>To copy the contents of an object, including any references to embedded
+                            objects; implemented by the <c>copy</c> function in the <c>copy</c> module.</p>
+                    
+                </gi>
+                <gi>
+                    <title>shallow equality</title>
+                    
+                        <p>Equality of references, or two references that point to the same object.</p>
+                    
+                </gi>
+            
+        </glossary>
+    </section>
+

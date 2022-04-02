@@ -1,0 +1,101 @@
+<section xml:id="glossary">
+        <title>Glossary</title>
+        <glossary sorted="False">
+            
+                <gi>
+                    <title>block</title>
+                    
+                        <p>A group of consecutive statements with the same indentation.</p>
+                    
+                </gi>
+                <gi>
+                    <title>body</title>
+                    
+                        <p>The block of statements in a compound statement that follows the
+                            header.</p>
+                    
+                </gi>
+                <gi>
+                    <title>boolean expression</title>
+                    
+                        <p>An expression that is either true or false.</p>
+                    
+                </gi>
+                <gi>
+                    <title>boolean function</title>
+                    
+                        <p>A function that returns a boolean value.  The only possible
+                            values of the <c>bool</c> type are <c>False</c> and <c>True</c>.</p>
+                    
+                </gi>
+                <gi>
+                    <title>boolean value</title>
+                    
+                        <p>There are exactly two boolean values: <c>True</c> and <c>False</c>. Boolean
+                            values result when a boolean expression is evaluated by the Python
+                            interepreter.  They have type <c>bool</c>.</p>
+                    
+                </gi>
+                <gi>
+                    <title>branch</title>
+                    
+                        <p>One of the possible paths of the flow of execution determined by
+                            conditional execution.</p>
+                    
+                </gi>
+                <gi>
+                    <title>chained conditional</title>
+                    
+                        <p>A conditional branch with more than two possible flows of execution. In
+                            Python chained conditionals are written with <c>if ... elif ... else</c>
+                            statements.</p>
+                    
+                </gi>
+                <gi>
+                    <title>comparison operator</title>
+                    
+                        <p>One of the operators that compares two values: <c>==</c>, <c>!=</c>, <c>&gt;</c>,
+                            <c>&lt;</c>, <c>&gt;=</c>, and <c>&lt;=</c>.</p>
+                    
+                </gi>
+                <gi>
+                    <title>condition</title>
+                    
+                        <p>The boolean expression in a conditional statement that determines which
+                            branch is executed.</p>
+                    
+                </gi>
+                <gi>
+                    <title>conditional statement</title>
+                    
+                        <p>A statement that controls the flow of execution depending on some
+                            condition. In Python the keywords <c>if</c>, <c>elif</c>, and <c>else</c> are
+                            used for conditional statements.</p>
+                    
+                </gi>
+                <gi>
+                    <title>logical operator</title>
+                    
+                        <p>One of the operators that combines boolean expressions: <c>and</c>,
+                            <c>or</c>, and <c>not</c>.</p>
+                    
+                </gi>
+                <gi>
+                    <title>modulus operator</title>
+                    
+                        <p>An operator, denoted with a percent sign ( <c>%</c>), that works on
+                            integers and yields the remainder when one number is divided by
+                            another.</p>
+                    
+                </gi>
+                <gi>
+                    <title>nesting</title>
+                    
+                        <p>One program structure within another, such as a conditional statement
+                            inside a branch of another conditional statement.</p>
+                    
+                </gi>
+            
+        </glossary>
+    </section>
+

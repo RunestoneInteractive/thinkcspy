@@ -1,0 +1,66 @@
+<section xml:id="list-slices">
+        <title>List Slices</title>
+        <p>The slice operation we saw with strings also work on lists.  Remember that the first index is the starting point for the slice and the second number is one index past the end of the slice (up to but not including that element).  Recall also
+            that if you omit the first index (before the colon), the slice starts at the
+            beginning of the sequence. If you omit the second index, the slice goes to the
+            end of the sequence.</p>
+
+<listing xml:id="chp09_6">
+    <caption/>
+    <program xml:id="chp09_6_editor" interactive="activecode" language="python">
+        <input>
+a_list = ['a', 'b', 'c', 'd', 'e', 'f']
+print(a_list[1:3])
+print(a_list[:4])
+print(a_list[3:])
+print(a_list[:])
+        </input>
+    </program>
+</listing>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question9_6_1">
+        <statement>
+
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
+alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+print(alist[4:])
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>[ [ ], 3.14, False]</p>
+                </statement>
+                <feedback>
+                    Yes, the slice starts at index 4 and goes up to and including the last item.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>[ [ ], 3.14]</p>
+                </statement>
+                <feedback>
+                    By leaving out the upper bound on the slice, we go up to and including the last item.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>[ [56, 57, "dog"], [ ], 3.14, False]</p>
+                </statement>
+                <feedback>
+                    Index values start at 0.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        
+        
+    </section>
+

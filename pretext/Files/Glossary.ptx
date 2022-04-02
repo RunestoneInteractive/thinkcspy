@@ -1,0 +1,61 @@
+<section xml:id="glossary">
+        <title>Glossary</title>
+        <glossary sorted="False">
+            
+                <gi>
+                    <title>open</title>
+                    
+                        <p>You must open a file before you can read its contents.</p>
+                    
+                </gi>
+                <gi>
+                    <title>close</title>
+                    
+                        <p>When you are done with a file, you should close it.</p>
+                    
+                </gi>
+                <gi>
+                    <title>read</title>
+                    
+                        <p>Will read the entire contents of a file as a string.  This is often used in an assignment statement
+                            so that a variable can reference the contents of the file.</p>
+                    
+                </gi>
+                <gi>
+                    <title>readline</title>
+                    
+                        <p>Will read a single line from the file, up to and including the first instance of the newline character.</p>
+                    
+                </gi>
+                <gi>
+                    <title>readlines</title>
+                    
+                        <p>Will read the entire contents of a file into a list where each line of the file is a string and is an element in the list.</p>
+                    
+                </gi>
+                <gi>
+                    <title>write</title>
+                    
+                        <p>Will add characters to the end of a file that has been opened for writing.</p>
+                    
+                </gi>
+                <gi>
+                    <title>absolute file path</title>
+                    
+                        <p>The name of a file that includes a path to the file from the <emphasis>root</emphasis>
+                            directory of a file system. An <emphasis>absolute file path</emphasis> always starts
+                            with a <c>/</c>.</p>
+                    
+                </gi>
+                <gi>
+                    <title>relative file path</title>
+                    
+                        <p>The name of a file that includes a path to the file from the current
+                            working directory of a program. An <emphasis>relative file path</emphasis> never starts
+                            with a <c>/</c>.</p>
+                    
+                </gi>
+            
+        </glossary>
+    </section>
+

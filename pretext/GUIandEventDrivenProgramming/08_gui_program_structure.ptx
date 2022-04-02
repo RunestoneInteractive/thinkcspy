@@ -1,0 +1,118 @@
+<section xml:id="the-design-of-gui-programs">
+        <title>The Design of GUI Programs</title>
+        <p>For very simple GUI programs, no special program design is needed, as
+            demonstrated in the previous &#8220;Hello World&#8221; example programs. However, any
+            non-trivial GUI program will require extensive use of global variables if
+            the structure of the code does not use a Python <c>class</c>. You have learned
+            in previous lessons that global variables are bad because they make
+            debugging programs more difficult. Therefore we want a design for GUI
+            programs that avoids global variables as much as possible.</p>
+        <p>To demonstrate this, let&#8217;s look at two versions of a simple program that
+            increments a counter each time a user clicks a button. The first version
+            of this code does not use a <c>class</c> definition and requires that a
+            global variable called my_counter be used. This is because the label that
+            represents the counter is created in the <c>create_user_interface</c> function
+            but it must be accessed in the event handler function <c>increment_counter</c>.
+            In fact, the event handlers of a GUI program almost always need access to multiple
+            widgets in the program&#8217;s interface and the values can&#8217;t be passed as
+            parameters because an <c>command</c> <c>event handler</c> function receives no
+            parameters and a <c>bind</c> <c>event handler</c> function receives exactly one
+            parameter &#8211; an <c>event object</c>. Study the following example and
+            pay close attention to where the <c>my_counter</c> global variable is used.</p>
+        <program language="python"><input>
+import tkinter as tk
+from tkinter import ttk
+
+global my_counter
+
+
+def create_user_interface(application_window):
+    global my_counter
+
+    my_counter = ttk.Label(application_window, text="0")
+    my_counter.grid(row=0, column=0)
+
+    increment_button = ttk.Button(application_window, text="Add 1 to counter")
+    increment_button.grid(row=1, column=0)
+    increment_button['command'] = increment_counter
+
+    quit_button = ttk.Button(application_window, text="Quit")
+    quit_button.grid(row=2, column=0)
+    quit_button['command'] = window.destroy
+
+
+def increment_counter():
+    global my_counter
+    my_counter['text'] = str(int(my_counter['text']) + 1)
+
+# Create the application window
+window = tk.Tk()
+
+create_user_interface(window)
+
+# Start the GUI event loop
+window.mainloop()
+</input></program>
+        <p>Let&#8217;s compare the above program to an identical application that is designed
+            as a Python <c>class</c>. The <c>class</c> encapsulates all of the values needed
+            for the GUI interface and the <c>event handlers</c> and we don&#8217;t need global
+            variables!</p>
+        <program language="python"><input>
+import tkinter as tk
+from tkinter import ttk
+
+def main():
+    # Create the entire GUI program
+    program = CounterProgram()
+
+    # Start the GUI event loop
+    program.window.mainloop()
+
+class CounterProgram:
+
+    def __init__(self):
+        self.window = tk.Tk()
+        self.my_counter = None  # All attributes should be initialize in init
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.my_counter = ttk.Label(self.window, text="0")
+        self.my_counter.grid(row=0, column=0)
+
+        increment_button = ttk.Button(self.window, text="Add 1 to counter")
+        increment_button.grid(row=1, column=0)
+        increment_button['command'] = self.increment_counter
+
+        quit_button = ttk.Button(self.window, text="Quit")
+        quit_button.grid(row=2, column=0)
+        quit_button['command'] = self.window.destroy
+
+    def increment_counter(self):
+        self.my_counter['text'] = str(int(self.my_counter['text']) + 1)
+
+if __name__ == "__main__":
+    main()
+</input></program>
+        <p>Notice the following about this design:</p>
+        <p><ul>
+            <li>
+                <p>The application&#8217;s window is created in the constructor (<c>__init__</c>) of
+                    the <c>CounterProgram</c> class and then the interface widgets are created
+                    by a call to <c>create_widgets</c>.</p>
+            </li>
+            <li>
+                <p>The event handler, <c>increment_counter</c> can access the label
+                    <c>self.my_counter</c> using the object&#8217;s attributes.</p>
+            </li>
+            <li>
+                <p>The code creates an instance of the class <c>CounterProgram</c> and
+                    starts the GUI event-loop.</p>
+            </li>
+        </ul></p>
+        <p>It is recommended that you develop all of your GUI programs as Python Classes.
+            For complex designs, a Python <c>Class</c> can help manage the complexity of
+            the code and the scoping of variables.</p>
+        
+        
+    </section>
+

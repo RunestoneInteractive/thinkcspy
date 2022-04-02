@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Debugging Interlude 1</title>
+        <xi:include href='./intro-HowtobeaSuccessfulProgrammer.ptx' />
+        <xi:include href='./HowtoAvoidDebugging.ptx' />
+        <xi:include href='./BeginningtipsforDebugging.ptx' />
+        <xi:include href='./KnowyourerrorMessages.ptx' />
+        <xi:include href='./Summary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

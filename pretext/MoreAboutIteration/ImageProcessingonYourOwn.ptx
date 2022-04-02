@@ -1,0 +1,26 @@
+<section xml:id="image-processing-on-your-own image-processing-on-own">
+        <title>Image Processing on Your Own</title>
+        <p>If you want to try some image processing on your own, outside of the textbook you can do so using the cImage module. The easiest way to get this is to run the command <c>pip install cImage</c> from the command line.  You can also download <c>cImage.py</c> from <url href="https://github.com/bnmnetp/cImage" visual="https://github.com/bnmnetp/cImage">The github page</url> .   If you get the file from github, put <c>cImage.py</c> in the same folder as your program you can then do the following to be fully compatible with the code in this book.</p>
+        <program language="python"><input>
+import cImage as image
+img = image.Image("myfile.gif")
+</input></program>
+        <admonition classes="admonition-note">
+            <title>Note</title>
+            <p>One important caveat about using <c>cImage.py</c> is that it will only work with GIF files unless you also install the Python Image Library.   Don&#8217;t worry if you pip install cImage it will automatically take care of this for you.  Otherwise, the easiest version to install is called <c>Pillow</c>.  If you have the <c>pip</c> command installed on your computer this is really easy to install, with <c>pip install pillow</c> otherwise you will need to follow the instructions on the <url href="https://pypi.python.org/pypi/Pillow/" visual="https://pypi.python.org/pypi/Pillow/">Python Package Index</url> page.  With Pillow installed you will be able to use almost any kind of image that you download.</p>
+        </admonition>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+<listing xml:id="scratch_07_05">
+    <caption/>
+    <program xml:id="scratch_07_05_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+    </section>
+

@@ -1,0 +1,15 @@
+<section xml:id="summary">
+        <title>Summary</title>
+        <p><ul>
+            <li>
+                <p>Make sure you take the time to understand error messages.  They can help you a lot.</p>
+            </li>
+            <li>
+                <p><c>print</c> statements are your friends.  Use them to help you uncover what is <strong>really</strong> happening in your code.</p>
+            </li>
+            <li>
+                <p>Work backward from the error.  Many times an error message is caused by something that has happened before it in the program.  Always remember that python evaluates a program top to bottom.</p>
+            </li>
+        </ul></p>
+    </section>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Dictionaries</title>
+        <xi:include href='./intro-Dictionaries.ptx' />
+        <xi:include href='./Dictionaryoperations.ptx' />
+        <xi:include href='./Dictionarymethods.ptx' />
+        <xi:include href='./Aliasingandcopying.ptx' />
+        <xi:include href='./Sparsematrices.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

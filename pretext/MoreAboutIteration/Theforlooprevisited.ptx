@@ -1,0 +1,107 @@
+<section xml:id="the-for-loop-revisited">
+        <title>The <c>for</c> loop revisited</title>
+        <p>Recall that the <c>for</c> loop processes each item in a list.  Each item in
+            turn is (re-)assigned to the loop variable, and the body of the loop is executed.
+            We saw this example in an earlier chapter.</p>
+
+<listing xml:id="ch07_for1">
+    <caption/>
+    <program xml:id="ch07_for1_editor" interactive="activecode" language="python">
+        <input>
+for f in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+    print("Hi", f, "Please come to my party on Saturday")
+        </input>
+    </program>
+</listing>
+        <p>We have also seen iteration paired with the update idea to form the accumulator pattern.  For example, to compute
+            the sum of the first n integers, we could create a for loop using the <c>range</c> to produce the numbers 1 through n.
+            Using the accumulator pattern, we can start with a running total variable initialized to 0 and on each iteration, add the current value of the loop
+            variable.  A function to compute this sum is shown below.</p>
+
+<listing xml:id="ch07_summation">
+    <caption/>
+    <program xml:id="ch07_summation_editor" interactive="activecode" language="python">
+        <input>
+def sumTo(aBound):
+    theSum = 0
+    for aNumber in range(1, aBound + 1):
+        theSum = theSum + aNumber
+
+    return theSum
+
+print(sumTo(4))
+
+print(sumTo(1000))
+        </input>
+    </program>
+</listing>
+        <p>To review, the variable <c>theSum</c> is called the accumulator.  It is initialized to zero before we start the loop.  The loop variable, <c>aNumber</c> will take on the values produced by the <c>range(1, aBound + 1)</c> function call.  Note that this produces all the integers from 1 up to the value of <c>aBound</c>.  If we had not added 1 to <c>aBound</c>, the range would have stopped one value short since <c>range</c> does not include the upper bound.</p>
+        <p>The assignment statement, <c>theSum = theSum + aNumber</c>, updates <c>theSum</c> each time through the loop.  This accumulates the running total.  Finally, we return the value of the accumulator.</p>
+        <p><strong>Check Your Understanding</strong></p>
+
+    <exercise xml:id="mc07_8_2">
+        <statement>
+
+        <p>The following code contains an nested loop.  How many times will the phrase <strong>&#8220;We made it here!&#8221;</strong> be printed on the console?</p>
+        <program language="python"><input>
+def printnums(x,y):
+    for h in range(y):
+        print("We made it here!")
+        for i in range(x):
+            print("We made it here!")
+
+printnums(5, 3)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>5</p>
+                </statement>
+                <feedback>
+                    This is how many times the inner loop will print for each iteration of the outer loop.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>8</p>
+                </statement>
+                <feedback>
+                    Keep in mind that the inner loop is part of the body of the outer loop.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>15</p>
+                </statement>
+                <feedback>
+                    The inner loop will print a total of 15 times; however the outer loop is also printing the same phrase.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>18</p>
+                </statement>
+                <feedback>
+                    Correct! The nested loop will be run 3 times, making a total of 18.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>20</p>
+                </statement>
+                <feedback>
+                    Pay attention to the order of x and y
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

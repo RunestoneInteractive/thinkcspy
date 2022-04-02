@@ -1,0 +1,78 @@
+<section xml:id="input-for-a-flask-web-application">
+        <title>Input For A Flask Web Application</title>
+        <p>In this section, we will design a web application that obtains input from
+            the user. In the example in this section, the user must encode the input directly
+            into the URL. In the next section, we&#8217;ll provide a more user-friendly approach
+            for obtaining input.</p>
+        <p>The URL used to interact with a web application can contain input data in addition to the
+            path. This input data is typically encoded into the URL in the form of a query string.
+            Here&#8217;s an example of a URL containing a query string:</p>
+        <block_quote>
+            <p><url href="http://www.bing.com/search?q=python+flask&amp;go=Submit" visual="http://www.bing.com/search?q=python+flask&amp;go=Submit">http://www.bing.com/search?q=python+flask&amp;go=Submit</url></p>
+        </block_quote>
+        <p>The query string is the portion that comes after the ? symbol:</p>
+        <pre>q=python+flask&amp;go=Submit</pre>
+        <p>It contains a set of query variables and values, each query variable/value pair separated
+            from the others by the &amp; symbol. This example has a query variable named <c>q</c> whose value is
+            <emphasis>python+flask</emphasis>, and a variable named <c>go</c> whose value is <emphasis>Submit</emphasis>.</p>
+        <p>Flask applications can access query variables using a dictionary named
+            <c>request.args</c> (dictionaries are discussed in detail in
+            <xref ref="../Dictionaries/intro-Dictionaries#dictionaries"/>).
+            When a browser sends a request to a Flask application that contains
+            a query string, the data in the query string is placed in the <c>request.args</c>
+            dictionary, where it can be retrieved by the application. For example, in the Bing search
+            URL above, if Bing were a Flask application, it could access the values in the query string
+            like this:</p>
+        <pre>q = request.args['q']
+go = request.args['go']</pre>
+        <p>This would retrieve the values &#8216;python flask&#8217; and &#8216;Submit&#8217; from the query string and store them,
+            respectively, in <c>q</c> and <c>go</c>.</p>
+        <p>Here is an enhanced version of the original flaskhello.py program that gets the user&#8217;s name
+            from the query string and uses it to greet the user:</p>
+        <program language="python"><input>
+ from flask import Flask, request
+ from datetime import datetime
+
+ app = Flask(__name__)
+
+ @app.route('/')
+ def hello():
+     name = request.args['name']
+     return HELLO_HTML.format(
+             name, str(datetime.now()))
+
+ HELLO_HTML = """
+     &lt;html&gt;&lt;body&gt;
+         &lt;h1&gt;Hello, {0}!&lt;/h1&gt;
+         The time is {1}.
+     &lt;/body&gt;&lt;/html&gt;"""
+
+ if __name__ == "__main__":
+     # Launch the Flask dev server
+     app.run(host="localhost", debug=True)
+</input></program>
+        <p>To test this example, you would need to enter the following URL into the browser:</p>
+        <block_quote>
+            <p><url href="http://localhost:5000/?name=Frank" visual="http://localhost:5000/?name=Frank">http://localhost:5000/?name=Frank</url></p>
+        </block_quote>
+        <p>If the name parameter is omitted, the application will crash when it attempts to
+            retrieve the query parameter from the dictionary, because indexing a dictionary
+            with a key that is not present in the dictionary is illegal.
+            To make the application more robust, we could change line 8 to
+            check to see if the name parameter was submitted:</p>
+        <pre>if 'name' in request.args:
+    name = request.args['name']
+else:
+    name = 'World'</pre>
+        <p>The test <c>'name' in request.args</c> is True if &#8216;name&#8217;
+            was present in the query parameters, and False if not.</p>
+        <p>A shorter way to handle a missing query parameter is to use the
+            dictionary <c>get()</c> method, which allows us to supply a default value to use in
+            case the user omits the query parameter. The if statement above could be
+            rewritten with a single line of code:</p>
+        <pre>name = request.args.get('name', 'World')</pre>
+        <p>This line does the same check as the if statement. If &#8216;name&#8217; is present
+            in the query parameters, its value is stored in <c>name</c>. Otherwise, the value
+            &#8216;World&#8217; is stored in <c>name</c> if no name parameter was supplied.</p>
+    </section>
+

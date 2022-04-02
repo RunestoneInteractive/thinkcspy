@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title><title><no title></title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <link rel="stylesheet" href="../pygments.css" type="text/css">
+</head>
+<body>
+<h2><title><no title></title></h2>
+
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Implement the entire game of Whack-a-mole game.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># =====================================================================</span>
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">PhotoImage</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="c1"># Metadata</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&quot;Dr Wayne Brown&quot;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s2">&quot;Wayne.Brown@usafa.edu&quot;</span>
+<span class="n">__date__</span> <span class="o">=</span> <span class="s2">&quot;Nov 16, 2016&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">WhackAMole</span><span class="p">:</span>
+    <span class="n">STATUS_BACKGROUND</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span>
+    <span class="n">NUM_MOLES_ACROSS</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">MIN_TIME_DOWN</span> <span class="o">=</span> <span class="mi">1000</span>
+    <span class="n">MAX_TIME_DOWN</span> <span class="o">=</span> <span class="mi">5000</span>
+    <span class="n">MIN_TIME_UP</span> <span class="o">=</span> <span class="mi">1000</span>
+    <span class="n">MAX_TIME_UP</span> <span class="o">=</span> <span class="mi">3000</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">window</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Whack-a-mole&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mole_frame</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_frames</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mole_photo</span> <span class="o">=</span> <span class="n">PhotoImage</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">&quot;mole.png&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mole_cover_photo</span> <span class="o">=</span> <span class="n">PhotoImage</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">&quot;mole_cover.png&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mole_labels</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_moles</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">hit_counter</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_button</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">quit_button</span> \
+            <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_status_widgets</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_callbacks</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">create_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">mole_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">window</span><span class="p">)</span>
+        <span class="n">mole_frame</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">status_frame</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">window</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">status_frame</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">E</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">W</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">N</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="n">ipadx</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">mole_frame</span><span class="p">,</span> <span class="n">status_frame</span>
+
+    <span class="k">def</span> <span class="nf">create_moles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Source of mole image: https://play.google.com/store/apps/details?id=genergame.molehammer</span>
+
+        <span class="n">mole_labels</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+            <span class="n">row_of_labels</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                <span class="n">mole_label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mole_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">mole_photo</span><span class="p">)</span>
+                <span class="n">mole_label</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">r</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">E</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">W</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">N</span> <span class="o">+</span> <span class="n">tk</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">mole_label</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">None</span>
+
+                <span class="n">row_of_labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mole_label</span><span class="p">)</span>
+
+            <span class="n">mole_labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_of_labels</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">mole_labels</span>
+
+    <span class="k">def</span> <span class="nf">create_status_widgets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">spacer</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">spacer</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">hit_label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Number of Hits&quot;</span><span class="p">,</span>
+                             <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">hit_label</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">hit_counter</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">hit_counter</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">spacer</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">spacer</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">miss_label</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Number of Misses&quot;</span><span class="p">,</span>
+                              <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">miss_label</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">miss_counter</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">miss_counter</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">spacer</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">spacer</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">start_button</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Start&quot;</span><span class="p">)</span>
+        <span class="n">start_button</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ipadx</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="n">spacer</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">spacer</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="n">quit_button</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Quit&quot;</span><span class="p">)</span>
+        <span class="n">quit_button</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ipadx</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="n">spacer</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">STATUS_BACKGROUND</span><span class="p">)</span>
+        <span class="n">spacer</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">hit_counter</span><span class="p">,</span> <span class="n">miss_counter</span><span class="p">,</span> <span class="n">start_button</span><span class="p">,</span> <span class="n">quit_button</span>
+
+    <span class="k">def</span> <span class="nf">set_callbacks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Set the same callback for each mole label</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">mole_labels</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;ButtonPress-1&gt;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_hit</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_button</span><span class="p">[</span><span class="s1">&#39;command&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">start</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">quit_button</span><span class="p">[</span><span class="s1">&#39;command&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">quit</span>
+
+    <span class="k">def</span> <span class="nf">mole_hit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span><span class="p">:</span>
+            <span class="n">hit_label</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">widget</span>
+            <span class="k">if</span> <span class="n">hit_label</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_cover_photo</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                <span class="c1"># MISSED! Update the miss counter</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># HIT! Update the hit counter</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">hit_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">hit_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="c1"># Remove the mole and don&#39;t update the miss counter</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">put_down_mole</span><span class="p">(</span><span class="n">hit_label</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_button</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Start&#39;</span><span class="p">:</span>
+            <span class="c1"># Change all the mole images to a blank image and</span>
+            <span class="c1"># set a random time for the moles to re-appear on each label.</span>
+            <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                    <span class="n">the_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_labels</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span>
+                    <span class="n">the_label</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_cover_photo</span>
+                    <span class="n">time_down</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">MIN_TIME_DOWN</span><span class="p">,</span>
+                                        <span class="n">WhackAMole</span><span class="o">.</span><span class="n">MAX_TIME_DOWN</span><span class="p">)</span>
+                    <span class="n">timer_object</span> <span class="o">=</span> <span class="n">the_label</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="n">time_down</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pop_up_mole</span><span class="p">,</span> <span class="n">the_label</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">the_label</span><span class="p">)]</span> <span class="o">=</span> <span class="n">timer_object</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">start_button</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stop&quot;</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">hit_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>
+
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># The game is running, so stop the game and reset everything</span>
+            <span class="c1"># Show every mole and stop all the timers</span>
+            <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">NUM_MOLES_ACROSS</span><span class="p">):</span>
+                    <span class="n">the_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_labels</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span>
+                    <span class="c1"># Show the mole</span>
+                    <span class="n">the_label</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_photo</span>
+                    <span class="c1"># Delete any timer that is associated with the mole</span>
+                    <span class="n">the_label</span><span class="o">.</span><span class="n">after_cancel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">the_label</span><span class="p">)])</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">start_button</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Start&quot;</span>
+
+    <span class="k">def</span> <span class="nf">put_down_mole</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">the_label</span><span class="p">,</span> <span class="n">timer_expired</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">timer_expired</span><span class="p">:</span>
+                <span class="c1"># The mole is going down before it was clicked on, so update the miss counter</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">miss_counter</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># The timer did not expire, so manually stop the timer</span>
+                <span class="n">the_label</span><span class="o">.</span><span class="n">after_cancel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">the_label</span><span class="p">)])</span>
+
+            <span class="c1"># Make the mole invisible</span>
+            <span class="n">the_label</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_cover_photo</span>
+
+            <span class="c1"># Set a call to pop up the mole in the future</span>
+            <span class="n">time_down</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">MIN_TIME_DOWN</span><span class="p">,</span>
+                                <span class="n">WhackAMole</span><span class="o">.</span><span class="n">MAX_TIME_DOWN</span><span class="p">)</span>
+            <span class="n">timer_object</span> <span class="o">=</span> <span class="n">the_label</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="n">time_down</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pop_up_mole</span><span class="p">,</span> <span class="n">the_label</span><span class="p">)</span>
+            <span class="c1"># Remember the timer object so it can be canceled later, if need be</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">the_label</span><span class="p">)]</span> <span class="o">=</span> <span class="n">timer_object</span>
+
+    <span class="k">def</span> <span class="nf">pop_up_mole</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">the_label</span><span class="p">):</span>
+        <span class="c1"># Show the mole on the screen</span>
+        <span class="n">the_label</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mole_photo</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">game_is_running</span><span class="p">:</span>
+            <span class="c1"># Set a call to make the mole disappear in the future</span>
+            <span class="n">time_up</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="n">WhackAMole</span><span class="o">.</span><span class="n">MIN_TIME_UP</span><span class="p">,</span> <span class="n">WhackAMole</span><span class="o">.</span><span class="n">MAX_TIME_UP</span><span class="p">)</span>
+            <span class="n">timer_object</span> <span class="o">=</span> <span class="n">the_label</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="n">time_up</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">put_down_mole</span><span class="p">,</span> <span class="n">the_label</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">label_timers</span><span class="p">[</span><span class="nb">id</span><span class="p">(</span><span class="n">the_label</span><span class="p">)]</span> <span class="o">=</span> <span class="n">timer_object</span>
+
+    <span class="k">def</span> <span class="nf">quit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">really_quit</span> <span class="o">=</span> <span class="n">messagebox</span><span class="o">.</span><span class="n">askyesno</span><span class="p">(</span><span class="s2">&quot;Quiting?&quot;</span><span class="p">,</span> <span class="s2">&quot;Do you really want to quit?&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">really_quit</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+
+<span class="c1"># Create the GUI program</span>
+<span class="n">program</span> <span class="o">=</span> <span class="n">WhackAMole</span><span class="p">()</span>
+
+<span class="c1"># Start the GUI event loop</span>
+<span class="n">program</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</body>
+</html>

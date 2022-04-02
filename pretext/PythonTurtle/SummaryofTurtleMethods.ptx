@@ -1,0 +1,229 @@
+<section xml:id="summary-of-turtle-methods turtle-methods">
+        <title>Summary of Turtle Methods</title>
+        <tabular>
+            
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Method
+                        </cell>
+                        <cell>
+                            Parameters
+                        </cell>
+                        <cell>
+                            Description
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            Turtle
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Creates and returns a new turtle object
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            forward
+                        </cell>
+                        <cell>
+                            distance
+                        </cell>
+                        <cell>
+                            Moves the turtle forward
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            backward
+                        </cell>
+                        <cell>
+                            distance
+                        </cell>
+                        <cell>
+                            Moves the turle backward
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            right
+                        </cell>
+                        <cell>
+                            angle
+                        </cell>
+                        <cell>
+                            Turns the turtle clockwise
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            left
+                        </cell>
+                        <cell>
+                            angle
+                        </cell>
+                        <cell>
+                            Turns the turtle counter clockwise
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            up
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Picks up the turtles tail
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            down
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Puts down the turtles tail
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            color
+                        </cell>
+                        <cell>
+                            color name
+                        </cell>
+                        <cell>
+                            Changes the color of the turtle&#8217;s tail
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            fillcolor
+                        </cell>
+                        <cell>
+                            color name
+                        </cell>
+                        <cell>
+                            Changes the color of the turtle will use to fill a polygon
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            heading
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Returns the current heading
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            position
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Returns the current position
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            goto
+                        </cell>
+                        <cell>
+                            x,y
+                        </cell>
+                        <cell>
+                            Move the turtle to position x,y
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            begin_fill
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Remember the starting point for a filled polygon
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            end_fill
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Close the polygon and fill with the current fill color
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            dot
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Leave a dot at the current position
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            stamp
+                        </cell>
+                        <cell>
+                            None
+                        </cell>
+                        <cell>
+                            Leaves an impression of a turtle shape at the current location
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            shape
+                        </cell>
+                        <cell>
+                            shape name
+                        </cell>
+                        <cell>
+                            Should be &#8216;arrow&#8217;, &#8216;classic&#8217;, &#8216;turtle&#8217;, &#8216;circle&#8217; or &#8216;square&#8217;
+                        </cell>
+                    </row>
+                
+            
+        </tabular>
+        <p>Once you are comfortable with the basics of turtle graphics you can read about even
+            more options on the <url href="http://docs.python.org/dev/py3k/library/turtle.html" visual="http://docs.python.org/dev/py3k/library/turtle.html">Python Docs Website</url>.  Note that we
+            will describe Python Docs in more detail in the next chapter.</p>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+<listing xml:id="scratch_03">
+    <caption/>
+    <program xml:id="scratch_03_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+    </section>
+

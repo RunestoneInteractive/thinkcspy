@@ -1,0 +1,585 @@
+<section xml:id="string-methods stringmethods">
+        <title>String Methods</title>
+        <p>We previously saw that each turtle instance has its own attributes and
+            a number of methods that can be applied to the instance.  For example,
+            we wrote <c>tess.right(90)</c> when we wanted the turtle object <c>tess</c> to perform the <c>right</c> method to turn
+            to the right 90 degrees.  The &#8220;dot notation&#8221; is the way we connect the name of an object to the name of a method
+            it can perform.</p>
+        <p>Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.</p>
+
+<listing xml:id="chp08_upper">
+    <caption/>
+    <program xml:id="chp08_upper_editor" interactive="activecode" language="python">
+        <input>
+ss = "Hello, World"
+print(ss.upper())
+
+tt = ss.lower()
+print(tt)
+        </input>
+    </program>
+</listing>
+        <p>In this example, <c>upper</c> is a method that can be invoked on any string object
+            to create a new string in which all the
+            characters are in uppercase.  <c>lower</c> works in a similar fashion changing all characters in the string
+            to lowercase.  (The original string <c>ss</c> remains unchanged.  A new string <c>tt</c> is created.)</p>
+        <p>In addition to <c>upper</c> and <c>lower</c>, the following table provides a summary of some other useful string methods.  There are a few activecode examples that follow so that you can try them out.</p>
+        <tabular>
+            
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Method
+                        </cell>
+                        <cell>
+                            Parameters
+                        </cell>
+                        <cell>
+                            Description
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            upper
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string in all uppercase
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            lower
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string in all lowercase
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            capitalize
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string with first character capitalized, the rest lower
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            strip
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string with the leading and trailing whitespace removed
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            lstrip
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string with the leading whitespace removed
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            rstrip
+                        </cell>
+                        <cell>
+                            none
+                        </cell>
+                        <cell>
+                            Returns a string with the trailing whitespace removed
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            count
+                        </cell>
+                        <cell>
+                            item
+                        </cell>
+                        <cell>
+                            Returns the number of occurrences of item
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            replace
+                        </cell>
+                        <cell>
+                            old, new
+                        </cell>
+                        <cell>
+                            Replaces all occurrences of old substring with new
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            center
+                        </cell>
+                        <cell>
+                            width
+                        </cell>
+                        <cell>
+                            Returns a string centered in a field of width spaces
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            ljust
+                        </cell>
+                        <cell>
+                            width
+                        </cell>
+                        <cell>
+                            Returns a string left justified in a field of width spaces
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            rjust
+                        </cell>
+                        <cell>
+                            width
+                        </cell>
+                        <cell>
+                            Returns a string right justified in a field of width spaces
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            find
+                        </cell>
+                        <cell>
+                            item
+                        </cell>
+                        <cell>
+                            Returns the leftmost index where the substring item is found, or -1 if not found
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            rfind
+                        </cell>
+                        <cell>
+                            item
+                        </cell>
+                        <cell>
+                            Returns the rightmost index where the substring item is found, or -1 if not found
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            index
+                        </cell>
+                        <cell>
+                            item
+                        </cell>
+                        <cell>
+                            Like find except causes a runtime error if item is not found
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            rindex
+                        </cell>
+                        <cell>
+                            item
+                        </cell>
+                        <cell>
+                            Like rfind except causes a runtime error if item is not found
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            format
+                        </cell>
+                        <cell>
+                            substitutions
+                        </cell>
+                        <cell>
+                            Involved! See <xref ref=""/>, below
+                        </cell>
+                    </row>
+                
+            
+        </tabular>
+        <p>You should experiment with these
+            methods so that you understand what they do.  Note once again that the methods that return strings do not
+            change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.</p>
+
+<listing xml:id="ch08_methods1">
+    <caption/>
+    <program xml:id="ch08_methods1_editor" interactive="activecode" language="python">
+        <input>
+ss = "    Hello, World    "
+
+els = ss.count("l")
+print(els)
+
+print("***" + ss.strip() + "***")
+print("***" + ss.lstrip() + "***")
+print("***" + ss.rstrip() + "***")
+
+news = ss.replace("o", "***")
+print(news)
+        </input>
+    </program>
+</listing>
+
+<listing xml:id="ch08_methods2">
+    <caption/>
+    <program xml:id="ch08_methods2_editor" interactive="activecode" language="python">
+        <input>
+food = "banana bread"
+print(food.capitalize())
+
+print("*" + food.center(25) + "*")
+print("*" + food.ljust(25) + "*")     # stars added to show bounds
+print("*" + food.rjust(25) + "*")
+
+print(food.find("e"))
+print(food.find("na"))
+print(food.find("b"))
+
+print(food.rfind("e"))
+print(food.rfind("na"))
+print(food.rfind("b"))
+
+print(food.index("e"))
+        </input>
+    </program>
+</listing>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question8_3_1">
+        <statement>
+
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
+s = "python rocks"
+print(s.count("o") + s.count("p"))
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    There are definitely o and p characters.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    There are 2 o characters but what about p?
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>3</p>
+                </statement>
+                <feedback>
+                    Yes, add the number of o characters and the number of p characters.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question8_3_2">
+        <statement>
+
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
+s = "python rocks"
+print(s[1] * s.index("n"))
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>yyyyy</p>
+                </statement>
+                <feedback>
+                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.  Repetition is done last.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>55555</p>
+                </statement>
+                <feedback>
+                    Close.  5 is not repeated, it is the number of times to repeat.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>n</p>
+                </statement>
+                <feedback>
+                    This expression uses the index of n
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Error, you cannot combine all those things together.</p>
+                </statement>
+                <feedback>
+                    This is fine, the repetition operator used the result of indexing and the index method.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        
+        
+        
+        <subsection xml:id="string-format-method format-strings">
+            <title>String Format Method</title>
+            <p>In grade school quizzes a common convention is to use fill-in-the blanks. For instance,</p>
+            <block_quote>
+                <p>Hello _____!</p>
+            </block_quote>
+            <p>and you can fill in the name of the person greeted, and combine
+                given text with a chosen insertion. <emphasis>We use this as an analogy:</emphasis>
+                Python has a similar
+                construction, better called fill-in-the-braces. The string method <c>format</c>,  makes
+                substitutions into places in a string
+                enclosed in braces. Run this code:</p>
+
+<listing xml:id="ch08_methods3">
+    <caption/>
+    <program xml:id="ch08_methods3_editor" interactive="activecode" language="python">
+        <input>
+person = input('Your name: ')
+greeting = 'Hello {}!'.format(person)
+print(greeting)
+        </input>
+    </program>
+</listing>
+            <p>There are several new ideas here!</p>
+            <p>The string for the <c>format</c> method has a special form, with braces embedded.
+                Such a string is called a <emphasis>format string</emphasis>.  Places where
+                braces are embedded are replaced by the value of an expression
+                taken from the parameter list for the <c>format</c> method. There are many
+                variations on the syntax between the braces. In this case we use
+                the syntax where the first (and only) location in the string with
+                braces has a substitution made from the first (and only) parameter.</p>
+            <p>In the code above, this new string is assigned to the identifier
+                <c>greeting</c>, and then the string is printed.</p>
+            <p>The identifier
+                <c>greeting</c> was introduced to break the operations into a clearer
+                sequence of steps. However, since the value of <c>greeting</c> is only
+                referenced once, it can be eliminated with the more concise
+                version:</p>
+
+<listing xml:id="ch08_methods4">
+    <caption/>
+    <program xml:id="ch08_methods4_editor" interactive="activecode" language="python">
+        <input>
+person = input('Enter your name: ')
+print('Hello {}!'.format(person))
+        </input>
+    </program>
+</listing>
+            <p>There can be multiple substitutions, with data of any type.
+                Next we use floats.  Try original price $2.50  with a 7% discount:</p>
+
+<listing xml:id="ch08_methods5">
+    <caption/>
+    <program xml:id="ch08_methods5_editor" interactive="activecode" language="python">
+        <input>
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+print(calculation)
+        </input>
+    </program>
+</listing>
+            <p>The parameters are inserted into the braces in order.</p>
+            <p>If you used the data suggested, this result is not satisfying.
+                Prices should appear with exactly two places beyond the decimal point,
+                but that is not the default way to display floats.</p>
+            <p>Format strings can give further information inside the braces
+                showing how to specially format data.
+                In particular floats can be shown with a specific number of decimal places.
+                For two decimal places, put <c>:.2f</c> inside the braces for the monetary values:</p>
+
+<listing xml:id="ch08_methods6">
+    <caption/>
+    <program xml:id="ch08_methods6_editor" interactive="activecode" language="python">
+        <input>
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
+print(calculation)
+        </input>
+    </program>
+</listing>
+            <p>The 2 in the format modifier can be replaced by another integer to round to that
+                specified number of digits.</p>
+            <p>This kind of format string depends directly on the order of the
+                parameters to the format method. There are other approaches that we will
+                skip here, explicitly numbering substitutions and taking substitutions from a dictionary.</p>
+            <p>A technical point: Since braces have special meaning in a format
+                string, there must be a special rule if you want braces to actually
+                be included in the final <emphasis>formatted</emphasis> string. The rule is to double
+                the braces: <c>{ {</c> and <c>}}</c>. For example mathematical set
+                notation uses braces. The initial and final doubled
+                braces in the format string below generate literal braces in the
+                formatted string:</p>
+            <pre>a = 5
+b = 9
+setStr =  'The set is {&#8203;{ {},{} }&#8203;}.'.format(a, b)
+print(setStr)</pre>
+            <p>Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
+                printing doubled braces, but standard Python prints <c>{5, 9}</c>.</p>
+            <p>You can have multiple placeholders indexing the same argument, or perhaps even have extra
+                arguments that are not referenced at all:</p>
+
+<listing xml:id="ch08_formatspecification">
+    <caption/>
+    <program xml:id="ch08_formatspecification_editor" interactive="activecode" language="python">
+        <input>
+letter = """
+Dear {0} {2}.
+ {0}, I have an interesting money-making proposition for you!
+ If you deposit $10 million into my bank account, I can
+ double your money ...
+"""
+
+print(letter.format("Paris", "Whitney", "Hilton"))
+print(letter.format("Bill", "Henry", "Gates"))
+        </input>
+    </program>
+</listing>
+
+    <exercise xml:id="test_question8_3_3">
+        <statement>
+
+            <p>What is printed by the following statements?</p>
+            <program language="python"><input>
+x = 2
+y = 6
+print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Nothing - it causes an error</p>
+                </statement>
+                <feedback>
+                    It is legal format syntax:  put the data in place of the braces.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>sum of {} and {} is {}; product: {}. 2 6 8 12</p>
+                </statement>
+                <feedback>
+                    Put the data into the format string; not after it.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>sum of 2 and 6 is 8; product: 12.</p>
+                </statement>
+                <feedback>
+                    Yes, correct substitutions!
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>sum of {2} and {6} is {8}; product: {12}.</p>
+                </statement>
+                <feedback>
+                    Close:  REPLACE the braces.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question8_3_4">
+        <statement>
+
+            <p>What is printed by the following statements?</p>
+            <program language="python"><input>
+v = 2.34567
+print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>2.34567 2.34567 2.34567</p>
+                </statement>
+                <feedback>
+                    The numbers before the f in the braces give the number of digits to display after the decimal point.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2.3 2.34 2.34567</p>
+                </statement>
+                <feedback>
+                    Close, but round to the number of digits and display the full number of digits specified.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>2.3 2.35 2.3456700</p>
+                </statement>
+                <feedback>
+                    Yes, correct number of digits with rounding!
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        </subsection>
+    </section>
+

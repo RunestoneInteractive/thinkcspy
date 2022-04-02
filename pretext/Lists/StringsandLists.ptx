@@ -1,0 +1,111 @@
+<section xml:id="strings-and-lists">
+        <title>Strings and Lists</title>
+        <p>Two of the most useful methods on strings involve lists of
+            strings. The <c>split</c> method
+            breaks a string into a list of words.  By
+            default, any number of whitespace characters is considered a word boundary.</p>
+
+<listing xml:id="ch09_split1">
+    <caption/>
+    <program xml:id="ch09_split1_editor" interactive="activecode" language="python">
+        <input>
+song = "The rain in Spain..."
+wds = song.split()
+print(wds)
+        </input>
+    </program>
+</listing>
+        <p>An optional argument called a <strong>delimiter</strong> can be used to specify which
+            characters to use as word boundaries. The following example uses the string
+            <c>ai</c> as the delimiter:</p>
+
+<listing xml:id="ch09_split2">
+    <caption/>
+    <program xml:id="ch09_split2_editor" interactive="activecode" language="python">
+        <input>
+song = "The rain in Spain..."
+wds = song.split('ai')
+print(wds)
+        </input>
+    </program>
+</listing>
+        <p>Notice that the delimiter doesn&#8217;t appear in the result.</p>
+        <p>The inverse of the <c>split</c> method is <c>join</c>.  You choose a
+            desired <strong>separator</strong> string, (often called the <emphasis>glue</emphasis>)
+            and join the list with the glue between each of the elements.</p>
+
+<listing xml:id="ch09_join">
+    <caption/>
+    <program xml:id="ch09_join_editor" interactive="activecode" language="python">
+        <input>
+wds = ["red", "blue", "green"]
+glue = ';'
+s = glue.join(wds)
+print(s)
+print(wds)
+
+print("***".join(wds))
+print("".join(wds))
+        </input>
+    </program>
+</listing>
+        <p>The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
+            you can use empty glue or multi-character strings as glue.</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question9_22_1">
+        <statement>
+
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
+myname = "Edgar Allan Poe"
+namelist = myname.split()
+init = ""
+for aname in namelist:
+    init = init + aname[0]
+print(init)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Poe</p>
+                </statement>
+                <feedback>
+                    Three characters but not the right ones.  namelist is the list of names.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>EdgarAllanPoe</p>
+                </statement>
+                <feedback>
+                    Too many characters in this case.  There should be a single letter from each name.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>EAP</p>
+                </statement>
+                <feedback>
+                    Yes, split creates a list of the three names.  The for loop iterates through the names and creates a string from the first characters.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>William Shakespeare</p>
+                </statement>
+                <feedback>
+                    That does not make any sense.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

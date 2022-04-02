@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>General Introduction</title>
+        <xi:include href='./intro-TheWayoftheProgram.ptx' />
+        <xi:include href='./Algorithms.ptx' />
+        <xi:include href='./ThePythonProgrammingLanguage.ptx' />
+        <xi:include href='./SpecialWaystoExecutePythoninthisBook.ptx' />
+        <xi:include href='./MoreAboutPrograms.ptx' />
+        <xi:include href='./WhatisDebugging.ptx' />
+        <xi:include href='./Syntaxerrors.ptx' />
+        <xi:include href='./RuntimeErrors.ptx' />
+        <xi:include href='./SemanticErrors.ptx' />
+        <xi:include href='./ExperimentalDebugging.ptx' />
+        <xi:include href='./FormalandNaturalLanguages.ptx' />
+        <xi:include href='./ATypicalFirstProgram.ptx' />
+        <xi:include href='./Comments.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

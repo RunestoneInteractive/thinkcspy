@@ -1,0 +1,14 @@
+<section xml:id="low-level-event-processing">
+        <title>Low-Level Event Processing</title>
+        <p>In the previous lessons you learned how to associate simple user actions with
+            the most common user events, such as clicking on a button. For
+            simple GUI programs this is typically sufficient. But for more complex programs
+            you might need to process &#8220;lower level&#8221; events, such as recognizing when
+            the user&#8217;s cursor is over a widget, or when a widget becomes the focus
+            of user input. To handle these types of events you need to implement
+            <strong>event binding</strong>. This lesson provides an overview of how to process any
+            event that happens on a computer. We will not use these techniques in
+            most of the simple GUI programs we discuss, but you should be aware of
+            what is possible.</p>
+    </section>
+    

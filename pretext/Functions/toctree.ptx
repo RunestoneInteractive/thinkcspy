@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Functions</title>
+        <xi:include href='./functions.ptx' />
+        <xi:include href='./Functionsthatreturnvalues.ptx' />
+        <xi:include href='./UnitTesting.ptx' />
+        <xi:include href='./Variablesandparametersarelocal.ptx' />
+        <xi:include href='./TheAccumulatorPattern.ptx' />
+        <xi:include href='./Functionscancallotherfunctions.ptx' />
+        <xi:include href='./FlowofExecutionSummary.ptx' />
+        <xi:include href='./mainfunction.ptx' />
+        <xi:include href='./ProgramDevelopment.ptx' />
+        <xi:include href='./Composition.ptx' />
+        <xi:include href='./ATurtleBarChart.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

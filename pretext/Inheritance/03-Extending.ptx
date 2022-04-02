@@ -1,0 +1,56 @@
+<section xml:id="extending">
+        <title>Extending</title>
+        <p>If you compare the code in the __init__ methods of <c>Point</c> and <c>LabeledPoint</c>, you can
+            see that there is some duplication&#8211;the initialization of x and y. We can
+            eliminate the duplication by having <c>LabeledPoint</c>&#8217;s <c>__init__()</c> method invoke
+            <c>Point</c>&#8217;s <c>__init__()</c> method. That way, each class will be responsible for
+            initializing its own instance variables.</p>
+        <p>A method in a child class that overrides a method in the parent can invoke
+            the overridden method using <c>super()</c>, like this:</p>
+        <program language="python"><input>
+ class LabeledPoint(Point):
+
+     def __init__(self, initX, initY, label):
+         super().__init__(initX, initY)
+         self.label = label
+</input></program>
+        <p>In this example, line 4 invokes the <c>__init__()</c> method in <c>Point</c>,
+            passing the values of <c>initX</c> and <c>initY</c>
+            to be used in initializing the <c>x</c> and <c>y</c> instance variables.</p>
+        <p>Here is a complete code listing showing both classes, with a version
+            of <c>__str__()</c> for <c>LabeledPoint</c> that invokes its parent&#8217;s implementation
+            using <c>super()</c> to avoid duplicating the functionality provided in <c>Point</c>.</p>
+
+<listing xml:id="combined_pts_1">
+    <caption/>
+    <program xml:id="combined_pts_1_editor" interactive="activecode" language="python">
+        <input>
+class Point:
+
+    def __init__(self, initX, initY):
+        self.x = initX
+        self.y = initY
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def __str__(self):
+        return "x=" + str(self.x) + ", y=" + str(self.y)
+
+class LabeledPoint(Point):
+
+    def __init__(self, initX, initY, label):
+        super().__init__(initX, initY)
+        self.label = label
+
+    def __str__(self):
+        return super().__str__() + " (" + self.label + ")"
+
+p = LabeledPoint(7,6,"Here")
+print(p)
+print(p.distanceFromOrigin())
+        </input>
+    </program>
+</listing>
+    </section>
+

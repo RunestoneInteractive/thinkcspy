@@ -1,0 +1,336 @@
+<section xml:id="case-study-structured-postal-addresses">
+        <title>Case Study: Structured Postal Addresses</title>
+        <p>Postal addresses are interesting things. Every country has its own format
+            for postal addresses, and sometimes one country can have multiple address
+            formats.</p>
+        <p>Postal addresses generally consist of a few standard elements: the recipient
+            name; street address; city or locality; state or province; and a postal code.
+            However, other elements are often included, such as neighborhood, district,
+            post office identifier, and so on. For example, the following is</p>
+        <block_quote>
+            <line_block>
+                <line>Mr. Abe Jones</line>
+                <line>Acme Corporation</line>
+                <line>123 Somewhere Ln</line>
+                <line>Greenville, SC  29609</line>
+                <line>USA</line>
+            </line_block>
+        </block_quote>
+        <p>This same address would be written as follows for delivery to the Netherlands
+            (in the example, the street, city, and state are unchanged, even though they do not exist
+            in the Netherlands):</p>
+        <block_quote>
+            <line_block>
+                <line>Acme Corporation</line>
+                <line>Mr. Abe Jones</line>
+                <line>Somewhere Ln 123</line>
+                <line>29609 SC  Greenville</line>
+                <line>NETHERLANDS</line>
+            </line_block>
+        </block_quote>
+        <p>Addresses in Ireland are complex, having up to 12 parts (such as building name and number,
+            primary and secondary thoroughfare, primary and secondary locality, town, county, &#8230;)
+            plus an Eircode, a unique identifier assigned to each of the ~2 million addresses in Ireland.
+            For example, Abe might live at the following address (English translation
+            is given in parentheses, and would be omitted):</p>
+        <block_quote>
+            <line_block>
+                <line>Abe Jones</line>
+                <line>Cnoc na Sceiche (The Hill of the Thorn)</line>
+                <line>Leac an Anfa (The Flagstone of the Storm)</line>
+                <line>Cathair na Mart (The City of the Beeves)</line>
+                <line>Co. Mhaigh Eo (The County of the Plain of the Yews)</line>
+                <line>A65 F4E2</line>
+                <line>IRELAND</line>
+            </line_block>
+        </block_quote>
+        <p>(One would think that since each address has its own unique Eircode,
+            it ought to be possible to address mail to Abe Jones, A65 F4E2, IRELAND.
+            On second thought, perhaps that is not such a great idea. Can you imagine
+            the practical concerns with such a scheme?)</p>
+        <subsection xml:id="storing-postal-addresses">
+            <title>Storing Postal Addresses</title>
+            <p>Suppose we want to write a contact management application. Among other things, the application
+                stores names and addresses. What would be the best way to design a class that holds the
+                information for an address? One approach would be to store the parts of the address that
+                are consistent, such as the recipient name and the country, in instance variables, and
+                store the rest of the address as a list of address lines:</p>
+
+<listing xml:id="address_class_1">
+    <caption/>
+    <program xml:id="address_class_1_editor" interactive="activecode" language="python">
+        <input>
+class Address:
+    def __init__(self, recipient, addressLines, country):
+        self.country = country
+        self.recipient = recipient
+        self.addressLines = addressLines
+
+
+addr = Address('Abe Jones', ['123 Somewhere Ln', 'Greenville, SC  29609'], 'USA')
+print(addr)
+        </input>
+    </program>
+</listing>
+            <p>This approach treats an address as a collection of unstructured bits of information. If we want to
+                look up an address, we can search by full name or country, but if we want to find all
+                addresses in Greenville, or all addresses in zip code 29609, we can&#8217;t do it very easily,
+                since information such as city and zip code is mashed together in an unstructured
+                address line along with the state abbreviation.</p>
+            <p>An approach that stores addresses as structured pieces of information might look like this:</p>
+
+<listing xml:id="structured_addr_1">
+    <caption/>
+    <program xml:id="structured_addr_1_editor" interactive="activecode" language="python">
+        <input>
+class StructuredAddress:
+    def __init__(self, country, recipient, street, city, state, postalCode):
+        self.country = country
+        self.recipient = recipient
+        self.street = street
+        self.city = city
+        self.state = state
+        self.postalCode = postalCode
+
+    def display(self):
+        print(self.recipient)
+        print(self.street)
+        print(self.city + ", " + self.state + "  " + self.postalCode)
+        print(self.country)
+
+addr = StructuredAddress('USA', 'Abe Jones', '103 Anywhere Ln',
+               'Greenville', 'SC', '29609')
+addr.display()
+        </input>
+    </program>
+</listing>
+            <p>Now, if we have a list of StructuredAddress objects and we want to find all of the ones
+                that hold addresses in Greenville, we can do it much more easily:</p>
+            <program language="python"><input>
+for addr in addrList:
+    if addr.city == 'Greenville':
+        addr.display()
+</input></program>
+        </subsection>
+        <subsection xml:id="storing-international-addresses">
+            <title>Storing International Addresses</title>
+            <p>But now we have another problem. Our StructuredAddress works fine for U.S. addresses,
+                but not for those of other countries. Suppose we want to handle Irish and Italian
+                addresses. We might enhance the display() method to handle these with appropriate
+                logic:</p>
+            <program language="python"><input>
+def display(self):
+    print(self.recipient)
+
+    if self.country == 'USA':
+        print(self.street)
+        print(self.city + ", " + self.state + "  " + self.postalCode)
+    elif self.country == 'IRELAND':
+        print(self.postalCode)
+    elif self.country == 'ITALY':
+        print(self.street)
+        print(self.postalCode + ' ' + self.city + ' ' + self.state)
+    else:
+        pass
+
+    print(self.country)
+</input></program>
+            <p>This example works for Italian addresses because they conveniently have the same
+                elements as U.S. addresses (just displayed in a slightly different order). For Irish
+                addresses, we ignore the complicated address format and assume that the Irish post
+                office will get mail to the recipient because of Ireland&#8217;s unique Eircode scheme.
+                But what if we wanted to include the additional elements of Irish addresses? We might
+                create additional instance variables for those elements in our StructuredAddress class.
+                However, you can probably see that approach will quickly become unwieldy.</p>
+        </subsection>
+        <subsection xml:id="inheritance-applied">
+            <title>Inheritance Applied</title>
+            <p>Let&#8217;s apply inheritance to the problem of managing structured postal addresses.
+                We will define a base class that contains the attributes in common to all
+                postal addresses: recipient and country.</p>
+
+<listing xml:id="base_postal">
+    <caption/>
+    <program xml:id="base_postal_editor" interactive="activecode" language="python">
+        <input>
+class BasePostalAddress:
+    def __init__(self, country, recipient):
+        self.country = country
+        self.recipient = recipient
+
+    def display(self):
+        print(self.recipient)
+        print(self.country)
+
+    def validate(self):
+        return self.recipient != '' and self.country != ''
+        </input>
+    </program>
+</listing>
+            <p>This class isn&#8217;t very useful by itself; relatively few people in the world
+                could receive mail addressed to them using only their name and country.
+                But it does establish two methods to perform functionality we want all
+                addresses to perform: display themselves, and check whether the required
+                information is present and of an appropriate length.</p>
+            <p>Next, we build on BasePostalAddress by creating a separate class for each
+                country that inherits from it:</p>
+
+<listing xml:id="international_postal">
+    <caption/>
+    <program xml:id="international_postal_editor" interactive="activecode" language="python">
+        <input>
+class IrishPostalAddress(BasePostalAddress):
+    def __init__(self, recipient, postalCode):
+        super().__init__("IRELAND", recipient)
+        self.postalCode = postalCode
+
+    def display(self):
+        print(self.recipient)
+        print(self.postalCode)
+        print(self.country)
+
+    def validate(self):
+        return super().validate() and len(self.postalCode) == 7
+
+class USPostalAddress(BasePostalAddress):
+    def __init__(self, recipient, street, city, state, zipcode):
+        super().__init__("USA", recipient)
+        self.street = street
+        self.city = city
+        self.state = state
+        self.zip = zipcode
+
+    def display(self):
+        print(self.recipient)
+        print(self.street)
+        print(self.city + ", " + self.state + "  " + self.zip)
+        print(self.country)
+
+    def validate(self):
+        return (super().validate() and self.city != '' and
+            len(self.state) == 2 and
+            (len(self.postalCode) == 5 or len(self.postalCode) == 9))
+        </input>
+    </program>
+</listing>
+        </subsection>
+        <subsection xml:id="a-list-of-addresses">
+            <title>A List of Addresses</title>
+            <p>Now, let&#8217;s construct a list containing both US and Irish addresses,
+                and display them using a loop:</p>
+
+<listing xml:id="postal_list_ac">
+    <caption/>
+    <program xml:id="postal_list_ac_editor" interactive="activecode" language="python">
+        <input>
+addrList = [IrishPostalAddress("Alf Jones", "A26F4G9"),
+            USPostalAddress("Abe Jones", "103 Anywhere Ln",
+                "Greenville", "SC", "29609"),
+            IrishPostalAddress("Gabe Jones", "A65F4E2")]
+
+for addr in addrList:
+    addr.display()
+        </input>
+    </program>
+</listing>
+            <p>Normally, if a program iterates over a list that contains different
+                types of objects, it has to be careful about making assumptions about
+                the methods and operations that it can invoke on the different objects
+                in the list, since an attempt to invoke a method or apply an operator
+                to an object that does not support the method or operator will result
+                in a runtime error. In this case, we know that all of the objects in the list
+                inherit from <c>BasePostalAddress</c>. It is safe to invoke any methods
+                defined in <c>BasePostalAddress</c>, since all children of
+                <c>BasePostalAddress</c> are guaranteed to contain those methods.
+                Programs that use inheritance often contain loops like this.</p>
+            <p>Notice something else. As the loop iterates over the list, each time
+                the <c>display()</c> method is invoked, the computer will execute the one
+                that is defined for the specific object referenced by <c>addr</c>. The first
+                time through the loop, addr references an <c>IrishPostalAddress</c>, so the
+                <c>display()</c> method for Irish addresses is invoked. The second time through
+                the loop, the <c>display()</c> method in <c>USPostalAddress</c> is invoked. This
+                behavior&#8212;where the computer always executes the method that is
+                defined for the object being referenced&#8212;is called <emphasis>polymorphism</emphasis>.
+                Python exhibits this behavior whether or not the objects in question
+                utilize inheritance, but languages like Java and C++, polymorphism is
+                available only through inheritance.</p>
+        </subsection>
+        <subsection xml:id="using-isinstance">
+            <title>Using isinstance</title>
+            <p>Let&#8217;s try something else with our list of addresses. Suppose
+                we wanted to display all addresses with a given city.
+                We might write some code like this:</p>
+            <program language="python"><input>
+for addr in addrList:
+    if addr.city == 'Greenville':
+        addr.display()
+</input></program>
+            <p>However, we would get into trouble on the first iteration of the
+                loop. The first address is an Irish address, which does not have a
+                <c>city</c> attribute. Python would raise an error. We want to
+                perform this test only for US addresses.</p>
+            <p>In this case, since all addresses have a country attribute,
+                we could write the loop this way:</p>
+            <program language="python"><input>
+for addr in addrList:
+    if addr.country == 'USA' and addr.city == 'Greenville':
+        addr.display()
+</input></program>
+            <p>Another way to test the address is to find out if the object
+                belongs to a specific class. Python provides the <c>isinstance()</c>
+                function for this purpose. <c>isinstance()</c> is designed for situations
+                where you want to access a field or invoke a method on an object,
+                but you want to do so only if the object provides the needed
+                functionality. Given an object <emphasis>obj</emphasis> and a class <emphasis>cls</emphasis>,
+                <c>isinstance(obj, cls)</c> returns True if <emphasis>obj</emphasis> is an instance of <emphasis>cls</emphasis>
+                (or a subclass of <emphasis>cls</emphasis>), and False if it is not. Here is how we might
+                use it in our loop:</p>
+            <program language="python"><input>
+for addr in addrList:
+    if isinstance(addr, USPostalAddress) and addr.city == 'Greenville':
+        addr.display()
+</input></program>
+            <p>In this version of the code, the city attribute will be tested only
+                if <c>addr</c> references an instance of <c>USPostalAddress</c>, or a child of
+                <c>USPostalAddress</c> (which would also have a city attribute).</p>
+            <p>Now that you&#8217;ve learned about <c>isinstance()</c>, you should know that, like
+                inheritance itself, <c>isinstance()</c> should be used sparingly. Code that
+                invokes <c>isinstance()</c> is often performing work on an object that the
+                object should be designed to do itself, and is not utilizing inheritance
+                and polymorphism to its full potential.</p>
+            <p>To make this loop better utilize inheritance and polymorphism, we need
+                a way to test each address to see if it is in a given city. Let&#8217;s
+                add a method to BasePostalAddress for this purpose. It will
+                return a boolean indicating whether the address is in a certain city.</p>
+            <program language="python"><input>
+class BasePostalAddress:
+
+    ...
+
+    def isInCity(self, city):
+        return False
+</input></program>
+            <p>BasePostalAddresses do not have a city attribute, so they just return
+                False. USPostalAddresses do have a city, so we&#8217;ll override this method
+                for that class:</p>
+            <program language="python"><input>
+class USPostalAddress:
+
+    ...
+
+    def isInCity(self, city):
+        return self.city == city
+</input></program>
+            <p>Now, we rewrite our loop to use <c>isInCity()</c> to perform the test:</p>
+            <program language="python"><input>
+for addr in addrList:
+    if addr.isInCity('Greenville'):
+        addr.display()
+</input></program>
+            <p>Notice how we&#8217;ve eliminated the <c>isinstance()</c> test. Also, notice
+                how this test works for <c>IrishPostalAddress</c> objects, even though we
+                didn&#8217;t define <c>isInCity()</c> for <c>IrishPostalAddress</c>, since
+                <c>IrishPostalAddress</c> inherits its version from <c>BasePostalAddress</c>.</p>
+        </subsection>
+    </section>
+

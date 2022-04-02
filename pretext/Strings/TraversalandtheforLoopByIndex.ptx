@@ -1,0 +1,81 @@
+<section xml:id="traversal-and-the-for-loop-by-index">
+        <title>Traversal and the <c>for</c> Loop: By Index</title>
+        <p>It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.  The <c>for</c> loop can then be used to iterate over these positions.
+            These positions can be used together with the indexing operator to access the individual
+            characters in the string.</p>
+        <p>Consider the following codelens example.</p>
+<exercise runestone="ch08_7"/>        <p>The index positions in &#8220;apple&#8221; are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by <c>range(5)</c>.  The first time through the for loop, <c>idx</c> will be 0 and the &#8220;a&#8221; will be printed.  Then, <c>idx</c> will be reassigned to 1 and &#8220;p&#8221; will be displayed.  This will repeat for all the range values up to but not including 5.  Since &#8220;e&#8221; has index 4, this will be exactly right to show all
+            of the characters.</p>
+        <p>In order to make the iteration more general, we can use the <c>len</c> function to provide the bound for <c>range</c>.  This is a very common pattern for traversing any sequence by position.        Make sure you understand why the range function behaves
+            correctly when using <c>len</c> of the string as its parameter value.</p>
+
+<listing xml:id="ch08_7b">
+    <caption/>
+    <program xml:id="ch08_7b_editor" interactive="activecode" language="python">
+        <input>
+fruit = "apple"
+for idx in range(len(fruit)):
+    print(fruit[idx])
+        </input>
+    </program>
+</listing>
+        <p>You may also note that iteration by position allows the programmer to control the direction of the
+            traversal by changing the sequence of index values.  Recall that we can create ranges that count down as
+            well as up so the following code will print the characters from right to left.</p>
+<exercise runestone="ch08_8"/>        <p>Trace the values of <c>idx</c> and satisfy yourself that they are correct.  In particular, note the start and end of the range.</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question8_9_1">
+        <statement>
+
+        <p>How many times is the letter o printed by the following statements?</p>
+        <program language="python"><input>
+s = "python rocks"
+for idx in range(len(s)):
+    if idx % 2 == 0:
+        print(s[idx])
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    The for loop visits each index but the selection only prints some of them.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    o is at positions 4 and 8
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    Yes, it will print all the characters in even index positions and the o character appears both times in an even location.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Error, the for statement cannot have an if inside.</p>
+                </statement>
+                <feedback>
+                    The for statement can have any statements inside, including if as well as for.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

@@ -1,0 +1,127 @@
+<section xml:id="operator-precedence-table operator-summary">
+        <title>Operator precedence table</title>
+        
+        
+        <p xml:id="index-0">The following table summarizes the operator precedence of Python operators <emphasis>in this book</emphasis>, from
+            highest precedence (most binding) to lowest
+            precedence (least binding).  Operators in
+            the same box have the same precedence.  Unless syntax is explicitly given,
+            operators are binary.  Operators in the same box group left to right (except for
+            exponentiation, which groups from right to left).
+            This is many of the entries from the complete Python table at
+            <url href="https://docs.python.org/3/reference/expressions.html#operator-precedence" visual="https://docs.python.org/3/reference/expressions.html#operator-precedence">https://docs.python.org/3/reference/expressions.html#operator-precedence</url>.</p>
+        <p>In the row for comparisons, membership tests, and identity tests, all have the same
+            precedence and have a left-to-right chaining feature; for example <c>3 &lt; x &lt;= y != z</c>.</p>
+        <tabular>
+            
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Operator
+                        </cell>
+                        <cell>
+                            Description
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            <c>(expressions...)</c>,
+                                <c>[expressions...]</c>,
+                                <c>{key: value...}</c>,
+                                <c>{expressions...}</c>
+                        </cell>
+                        <cell>
+                            Binding or tuple display,
+                                list display,
+                                dictionary display,
+                                set display
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>x[index]</c>, <c>x[index:index]</c>,
+                                <c>x(arguments...)</c>, <c>x.attribute</c>
+                        </cell>
+                        <cell>
+                            Subscription, slicing,
+                                call, attribute reference
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>**</c>
+                        </cell>
+                        <cell>
+                            Exponentiation
+                                (groups right to left)
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>-x</c>
+                        </cell>
+                        <cell>
+                            Negation
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>*</c>, <c>/</c>, <c>//</c>, <c>%</c>
+                        </cell>
+                        <cell>
+                            Multiplication,
+                                real and integer division,
+                                remainder
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>+</c>, <c>-</c>
+                        </cell>
+                        <cell>
+                            Addition and subtraction
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>in</c>, <c>not in</c>, <c>is</c>, <c>is not</c>,
+                                <c>&lt;</c>, <c>&lt;=</c>, <c>&gt;</c>, <c>&gt;=</c>, <c>!=</c>, <c>==</c>
+                        </cell>
+                        <cell>
+                            Comparisons, including membership
+                                tests and identity tests
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>not x</c>
+                        </cell>
+                        <cell>
+                            Boolean NOT
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>and</c>
+                        </cell>
+                        <cell>
+                            Boolean AND
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <c>or</c>
+                        </cell>
+                        <cell>
+                            Boolean OR
+                        </cell>
+                    </row>
+                
+            
+        </tabular>
+    </section>
+

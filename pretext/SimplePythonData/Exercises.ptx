@@ -1,0 +1,402 @@
+<section xml:id="spd_exercises">
+        <title>Exercises</title>
+        <QuestionNode xml:id="spd-ex-1" line="13" names="spd_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_1', 'qnumber': '', 'question_label': '2.13.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ch02_ex1">
+    <caption/>
+    <program xml:id="ch02_ex1_editor" interactive="activecode" language="python">
+        <input>
+
+print(5 ** 2)
+        </input>
+    </program>
+</listing>
+                    <p>Evaluate the following numerical expressions in your head, then use
+                        the active code window to check your results:</p>
+                    <p><ol label="1">
+                        <li>
+                            <p><c>5 ** 2</c></p>
+                        </li>
+                        <li>
+                            <p><c>9 * 5</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 / 12</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 / 15</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 // 12</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 // 15</c></p>
+                        </li>
+                        <li>
+                            <p><c>5 % 2</c></p>
+                        </li>
+                        <li>
+                            <p><c>9 % 5</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 % 12</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 % 15</c></p>
+                        </li>
+                        <li>
+                            <p><c>6 % 6</c></p>
+                        </li>
+                        <li>
+                            <p><c>0 % 7</c></p>
+                        </li>
+                    </ol></p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                    <p><ol label="1">
+                        <li>
+                            <p><c>5 ** 2  = 25</c></p>
+                        </li>
+                        <li>
+                            <p><c>9 * 5 = 45</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 / 12 = 1.25</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 / 15 = 0.8</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 // 12 = 1</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 // 15 = 0</c></p>
+                        </li>
+                        <li>
+                            <p><c>5 % 2 = 1</c></p>
+                        </li>
+                        <li>
+                            <p><c>9 % 5 = 4</c></p>
+                        </li>
+                        <li>
+                            <p><c>15 % 12 = 3</c></p>
+                        </li>
+                        <li>
+                            <p><c>12 % 15 = 12</c></p>
+                        </li>
+                        <li>
+                            <p><c>6 % 6 = 0</c></p>
+                        </li>
+                        <li>
+                            <p><c>0 % 7 = 0</c></p>
+                        </li>
+                    </ol></p>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="58" runestone_options="{'shortname': 'interactivepython', 'identifier': 'c0a62044cac248859ce3695b46697ecc', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-2" line="62" names="spd_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_2', 'qnumber': '', 'question_label': '2.13.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_2">
+    <caption/>
+    <program xml:id="ex_2_2_editor" interactive="activecode" language="python">
+        <input>
+2 + (3 - 1) * 10 / 5 * (2 + 3)
+        </input>
+    </program>
+</listing>
+            <p>What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-3" line="72" names="spd_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_3', 'qnumber': '', 'question_label': '2.13.5'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q3" line="74" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_2_3">
+    <caption/>
+    <program xml:id="ex_2_3_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
+                        If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
+                        Write a Python program to solve the general version of the above problem.
+                        Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
+                        Your program should output what the time will be on the clock when the alarm goes off.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="spd_q3_answer">
+    <caption/>
+    <program xml:id="spd_q3_answer_editor" interactive="activecode" language="python">
+        <input>
+## question 3 solution ##
+
+current_time_string = input("What is the current time (in hours)? ")
+waiting_time_string = input("How many hours do you have to wait? ")
+
+current_time_int = int(current_time_string)
+waiting_time_int = int(waiting_time_string)
+
+hours = current_time_int + waiting_time_int
+
+timeofday = hours % 24
+
+print(timeofday)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="108" runestone_options="{'shortname': 'interactivepython', 'identifier': 'a77ed6163c254612b0d649034b261659', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-4" line="113" names="spd_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_4', 'qnumber': '', 'question_label': '2.13.8'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_4">
+    <caption/>
+    <program xml:id="ex_2_4_editor" interactive="activecode" language="python">
+        <input>
+
+ # Problem 4
+ # My Name:
+        </input>
+    </program>
+</listing>
+            <p>It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
+                leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6)
+                Write a general version of the program which asks for the starting day number, and
+                the length of your stay, and it will tell you the number of day of the week you will return on.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-5" line="127" names="spd_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_5', 'qnumber': '', 'question_label': '2.13.10'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q5" line="129" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_2_5">
+    <caption/>
+    <program xml:id="ex_2_5_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Take the sentence: <emphasis>All work and no play makes Jack a dull boy.</emphasis>
+                        Store each word in a separate variable, then print out the sentence on
+                        one line using <c>print</c>.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="spd_q5_answer">
+    <caption/>
+    <program xml:id="spd_q5_answer_editor" interactive="activecode" language="python">
+        <input>
+## question 5 solution ##
+
+word1 = "All"
+word2 = "work"
+word3 = "and"
+word4 = "no"
+word5 = "play"
+word6 = "makes"
+word7 = "Jack"
+word8 = "a"
+word9 = "dull"
+word10 = "boy."
+
+print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="163" runestone_options="{'shortname': 'interactivepython', 'identifier': 'd1a30631e500449481955e02d3761dd3', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-6" line="167" names="spd_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_6', 'qnumber': '', 'question_label': '2.13.13'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_6">
+    <caption/>
+    <program xml:id="ex_2_6_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Add parenthesis to the expression <c>6 * 1 - 2</c> to change its value
+                from 4 to -6.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-7" line="176" names="spd_ex_7" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_7', 'qnumber': '', 'question_label': '2.13.15'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q7" line="178" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q7', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_2_7">
+    <caption/>
+    <program xml:id="ex_2_7_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>The formula for computing the final amount if one is earning
+                        compound interest is given on Wikipedia as</p>
+                    <image source="images/SimplePythonData/Figures/compoundInterest.png" alt="formula for compound interest"/>
+                    <p>Write a Python program that assigns the principal amount of 10000 to
+                        variable <title_reference>P</title_reference>, assign to <title_reference>n</title_reference> the value 12, and assign to <title_reference>r</title_reference> the interest
+                        rate of 8% (0.08).  Then have the program prompt the user for the number of years,
+                        <title_reference>t</title_reference>, that the money will be compounded for.  Calculate and print the final
+                        amount after <title_reference>t</title_reference> years.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="spd_q7_answer">
+    <caption/>
+    <program xml:id="spd_q7_answer_editor" interactive="activecode" language="python">
+        <input>
+## question 7 solution ##
+
+P = 10000
+n = 12
+r = 0.08
+
+t = int(input("Compound for how many years? "))
+
+final = P * ( ((1 + (r/n)) ** (n * t)) )
+
+print ("The final amount after", t, "years is", final)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="217" runestone_options="{'shortname': 'interactivepython', 'identifier': 'f14145f85af93420ba0c05fca5d1b4d9a', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-8" line="221" names="spd_ex_8" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_8', 'qnumber': '', 'question_label': '2.13.18'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_8">
+    <caption/>
+    <program xml:id="ex_2_8_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
+                back to the user with the answer.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-9" line="230" names="spd_ex_9" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_9', 'qnumber': '', 'question_label': '2.13.20'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q9" line="232" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q9', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_2_9">
+    <caption/>
+    <program xml:id="ex_2_9_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
+                        Print a nice message with the answer.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="spd_q9_answer">
+    <caption/>
+    <program xml:id="spd_q9_answer_editor" interactive="activecode" language="python">
+        <input>
+## question 9 solution
+
+width = int(input("Width? "))
+height = int(input("Height? "))
+
+area = width * height
+
+print("The area of the rectangle is", area)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="259" runestone_options="{'shortname': 'interactivepython', 'identifier': 'f69d286cc58943b6aef1d886e279a12b', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-10" line="263" names="spd_ex_10" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_10', 'qnumber': '', 'question_label': '2.13.23'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_10">
+    <caption/>
+    <program xml:id="ex_2_10_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
+                gallons used.  Print a nice message with the answer.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-11" line="271" names="spd_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_11', 'qnumber': '', 'question_label': '2.13.25'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+            <TabbedStuffNode divid="q11" line="273" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_2_11">
+    <caption/>
+    <program xml:id="ex_2_11_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a program that will convert degrees celsius to degrees fahrenheit.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="spd_q11_answer">
+    <caption/>
+    <program xml:id="spd_q11_answer_editor" interactive="activecode" language="python">
+        <input>
+## question 11 solution ##
+
+deg_c = int(input("What is the temperature in Celsius? "))
+
+# formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
+deg_f = deg_c * (9 / 5) + 32
+
+print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="298" runestone_options="{'shortname': 'interactivepython', 'identifier': 'c4a929d598ab4c46b484f6abbcec2655', 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="spd-ex-12" line="302" names="spd_ex_12" runestone_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_12', 'qnumber': '', 'question_label': '2.13.28'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
+
+<listing xml:id="ex_2_12">
+    <caption/>
+    <program xml:id="ex_2_12_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Write a program that will convert degrees fahrenheit to degrees celsius.</p>
+        </QuestionNode>
+    </section>
+

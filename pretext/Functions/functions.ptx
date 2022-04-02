@@ -1,0 +1,539 @@
+<section xml:id="functions">
+        <title>Functions</title>
+
+    <video xml:id="function_intro" youtube="4wKtB57J5J4" width="560"/>
+            <p>In Python, a <strong>function</strong> is a named sequence of statements
+            that belong together.  Their primary purpose is to help us
+            organize programs into chunks that match how we think about
+            the solution to the problem.</p>
+        
+        
+        <p xml:id="index-0">The syntax for a <strong>function definition</strong> is:</p>
+        <program language="python"><input>
+def name( parameters ):
+    statements
+</input></program>
+        <p>You can make up any names you want for the functions you create, except that
+            you can&#8217;t use a name that is a Python keyword, and the names must follow the rules
+            for legal identifiers that were given previously. The parameters specify
+            what information, if any, you have to provide in order to use the new function.  Another way to say this is that the parameters specify what the function needs to do its work.</p>
+        <p>There can be any number of statements inside the function, but they have to be
+            indented from the <c>def</c>. In the examples in this book, we will use the
+            standard indentation of four spaces. Function definitions are the second of
+            several <strong>compound statements</strong> we will see, all of which have the same
+            pattern:</p>
+        <p><ol label="1">
+            <li>
+                <p>A header line which begins with a keyword and ends with a colon.</p>
+            </li>
+            <li>
+                <p>A <strong>body</strong> consisting of one or more Python statements, each
+                    indented the same amount &#8211; <emphasis>4 spaces is the Python standard</emphasis> &#8211; from
+                    the header line.</p>
+            </li>
+        </ol></p>
+        <p>We&#8217;ve already seen the <c>for</c> loop which follows this pattern.</p>
+        <p>In a function definition, the keyword in the header is <c>def</c>, which is
+            followed by the name of the function and some <emphasis>parameters</emphasis> enclosed in
+            parentheses. The parameter list may be empty, or it may contain any number of
+            parameters separated from one another by commas. In either case, the parentheses are required.</p>
+        <p>We need to say a bit more about the parameters.  In the definition, the parameter list is more specifically known
+            as the <strong>formal parameters</strong>.  This list of names describes those things that the function will
+            need to receive from the user of the function.  When you use a function, you provide values to the formal parameters.</p>
+        <p>The figure below shows this relationship.  A function needs certain information to do its work.  These values, often called <strong>arguments</strong> or <strong>actual parameters</strong>, are passed to the function by the user.</p>
+        <image source="images/Functions/Figures/blackboxproc.png"/>
+        <p>This type of diagram is often called a <strong>black-box diagram</strong> because it only states the requirements from the perspective of the user.  The user must know the name of the function and what arguments need to be passed.  The details of how the function works are hidden inside the &#8220;black-box&#8221;.</p>
+        <p>Suppose we&#8217;re working with turtles and a common operation we need is to draw
+            squares.  It would make sense if we did not have to duplicate all the steps each time we want to make a square.   &#8220;Draw a square&#8221; can be thought of as an <emphasis>abstraction</emphasis> of a number of smaller steps.  We will need to provide two pieces of information for the function to do its work: a turtle to do the drawing and a size for the side of the square.  We could represent this using the following black-box diagram.</p>
+        <image source="images/Functions/Figures/turtleproc.png"/>
+        <p>Here is a program containing a function to capture this idea.  Give it a try.</p>
+
+<listing xml:id="ch04_1">
+    <caption/>
+    <program xml:id="ch04_1_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+
+def drawSquare(t, sz):
+    """Make turtle t draw a square of with side sz."""
+
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+
+wn = turtle.Screen()              # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+alex = turtle.Turtle()            # create alex
+drawSquare(alex, 50)             # Call the function to draw the square passing the actual turtle and the actual side size
+
+wn.exitonclick()
+        </input>
+    </program>
+</listing>
+        <p>This function is named <c>drawSquare</c>.  It has two parameters &#8212; one to tell
+            the function which turtle to move around and the other to tell it the size
+            of the square we want drawn.  In the function definition they are called <c>t</c> and <c>sz</c> respectively.   Make sure you know where the body of the function
+            ends &#8212; it depends on the indentation and the blank lines don&#8217;t count for
+            this purpose!</p>
+        <admonition classes="admonition-docstrings">
+            <title>docstrings</title>
+            <p>If the first thing after the function header is a string (some tools insist that
+                it must be a triple-quoted string), it is called a <strong>docstring</strong>
+                and gets special treatment in Python and in some of the programming tools.</p>
+            <p>Another way to retrieve this information is to use the interactive
+                interpreter, and enter the expression <c>&lt;function_name&gt;.__doc__</c>, which will retrieve the
+                docstring for the function.  So the string you write as documentation at the start of a function is
+                retrievable by python tools <emphasis>at runtime</emphasis>.  This is different from comments in your code,
+                which are completely eliminated when the program is parsed.</p>
+            <p>By convention, Python programmers use docstrings for the key documentation of
+                their functions.</p>
+        </admonition>
+        
+        
+        <p xml:id="index-1">Defining a new function does not make the function run. To do that we need a
+            <strong>function call</strong>.  This is also known as a <strong>function invocation</strong>. We&#8217;ve already seen how to call some built-in functions like
+            <c>print</c>, <c>range</c> and <c>int</c>. Function calls contain the name of the function to be
+            executed followed by a list of values in parentheses, called <emphasis>arguments</emphasis>, which are assigned
+            to the parameters in the function definition.
+            So in the second to the last line of
+            the program, we call the function, and pass <c>alex</c> as the turtle to be manipulated,
+            and 50 as the size of the square we want.</p>
+        <!--The parameters being sent to the function, sometimes referred to as the **actual parameters** or **arguments**,-->
+        <!--represent the specific data items that the function will use when it is executing.-->
+        <p>Once we&#8217;ve defined a function, we can call it as often as we like and its
+            statements will be executed each time we call it.  In this case, we could use it to get
+            one of our turtles to draw a square and then we can move the turtle and have it draw a different square in a
+            different location.  Note that we lift the tail so that when <c>alex</c> moves there is no trace.  We put the tail
+            back down before drawing the next square.  Make sure you can identify both invocations of the <c>drawSquare</c> function.</p>
+
+<listing xml:id="ch04_1a">
+    <caption/>
+    <program xml:id="ch04_1a_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+
+def drawSquare(t, sz):
+    """Make turtle t draw a square of with side sz."""
+
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+
+wn = turtle.Screen()          # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+alex = turtle.Turtle()        # create alex
+drawSquare(alex, 50)          # Call the function to draw the square
+
+alex.penup()
+alex.goto(100,100)
+alex.pendown()
+
+drawSquare(alex,75)           # Draw another square
+
+wn.exitonclick()
+        </input>
+    </program>
+</listing>
+        <p>In the next example, we&#8217;ve changed the <c>drawSquare</c>
+            function a little and we get <c>tess</c> to draw 15 squares with some variations.  Once the function has
+            been defined, we can call it as many times as we like with whatever actual parameters we like.</p>
+
+<listing xml:id="ch04_2">
+    <caption/>
+    <program xml:id="ch04_2_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+
+def drawMulticolorSquare(t, sz):
+    """Make turtle t draw a multi-colour square of sz."""
+    for i in ['red','purple','hotpink','blue']:
+        t.color(i)
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()           # create tess and set some attributes
+tess.pensize(3)
+
+size = 20                        # size of the smallest square
+for i in range(15):
+    drawMulticolorSquare(tess, size)
+    size = size + 10             # increase the size for next time
+    tess.forward(10)             # move tess along a little
+    tess.right(18)               # and give her some extra turn
+
+wn.exitonclick()
+        </input>
+    </program>
+</listing>
+        <warning>
+            <p>Even if a function call needs no arguments,
+                the parentheses <c>( )</c> after the function name are <emphasis>required</emphasis>.  This
+                can lead to a difficult bug:  A function name without the
+                parenthesis is a legal expression <emphasis>referring</emphasis> to the function; for example,
+                <c>print</c> and <c>alex.penup</c>, but they do
+                not <emphasis>call</emphasis> the associated functions.</p>
+        </warning>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+<listing xml:id="scratch_05_01">
+    <caption/>
+    <program xml:id="scratch_05_01_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question5_1_1">
+        <statement>
+
+        <p>What is a function in Python?</p>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>A named sequence of statements.</p>
+                </statement>
+                <feedback>
+                    Yes, a function is a named sequence of statements.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Any sequence of statements.</p>
+                </statement>
+                <feedback>
+                    While functions contain sequences of statements, not all sequences of statements are considered functions.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A mathematical expression that calculates a value.</p>
+                </statement>
+                <feedback>
+                    While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values.  Consider, for example, the turtle functions in this section.   They made the turtle draw a specific shape, rather than calculating a value.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A statement of the form x = 5 + 4.</p>
+                </statement>
+                <feedback>
+                    This statement is called an assignment statement.  It assigns the value on the right (9), to the name on the left (x).
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_2">
+        <statement>
+
+        <p>What is one main purpose of a function?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>To improve the speed of execution</p>
+                </statement>
+                <feedback>
+                    Functions have little effect on how fast the program runs.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>To help the programmer organize programs into chunks that match how they think about the solution to the problem.</p>
+                </statement>
+                <feedback>
+                    While functions are not required, they help the programmer better think about the solution by organizing pieces of the solution into logical chunks that can be reused.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>All Python programs must be written using functions</p>
+                </statement>
+                <feedback>
+                    In the first several chapters, you have seen many examples of Python programs written without the use of functions.  While writing and using functions is desirable and essential for good programming style as your programs get longer, it is not required.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>To calculate values.</p>
+                </statement>
+                <feedback>
+                    Not all functions calculate values.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_3">
+        <statement>
+
+        <p>Which of the following is a valid function header (first line of a function definition)?</p>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>def drawCircle(t):</p>
+                </statement>
+                <feedback>
+                    A function may take zero or more parameters.  It does not have to have two.  In this case the size of the circle might be specified in the body of the function.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>def drawCircle:</p>
+                </statement>
+                <feedback>
+                    A function needs to specify its parameters in its header.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>drawCircle(t, sz):</p>
+                </statement>
+                <feedback>
+                    A function definition needs to include the keyword def.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>def drawCircle(t, sz)</p>
+                </statement>
+                <feedback>
+                    A function definition header must end in a colon (:).
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_4">
+        <statement>
+
+        <p>What is the name of the following function?</p>
+        <program language="python"><input>
+def drawSquare(t, sz):
+    """Make turtle t draw a square of with side sz."""
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>def drawSquare(t, sz)</p>
+                </statement>
+                <feedback>
+                    This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>drawSquare</p>
+                </statement>
+                <feedback>
+                    Yes, the name of the function is given after the keyword def and before the list of parameters.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>drawSquare(t, sz)</p>
+                </statement>
+                <feedback>
+                    This includes the function name and its parameters
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Make turtle t draw a square with side sz.</p>
+                </statement>
+                <feedback>
+                    This is a comment stating what the function does.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_5">
+        <statement>
+
+        <p>What are the parameters of the following function?</p>
+        <program language="python"><input>
+def drawSquare(t, sz):
+    """Make turtle t draw a square of with side sz."""
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>i</p>
+                </statement>
+                <feedback>
+                    i is a variable used inside of the function, but not a parameter, which is passed in to the function.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>t</p>
+                </statement>
+                <feedback>
+                    t is only one of the parameters to this function.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>t, sz</p>
+                </statement>
+                <feedback>
+                    Yes, the function specifies two parameters: t and sz.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>t, sz, i</p>
+                </statement>
+                <feedback>
+                    the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_6">
+        <statement>
+
+        <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?  Assume we already have a turtle named alex.</p>
+        <program language="python"><input>
+def drawSquare(t, sz):
+    """Make turtle t draw a square of with side sz."""
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>def drawSquare(t, sz)</p>
+                </statement>
+                <feedback>
+                    No, t and sz are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>drawSquare</p>
+                </statement>
+                <feedback>
+                    A function call always requires parentheses after the name of the function.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>drawSquare(10)</p>
+                </statement>
+                <feedback>
+                    This function takes two parameters (arguments)
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>drawSquare(alex, 10):</p>
+                </statement>
+                <feedback>
+                    A colon is only required in a function definition.  It will cause an error with a function call.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>drawSquare(alex, 10)</p>
+                </statement>
+                <feedback>
+                    Since alex was already previously defined and 10 is a value, we have passed in two correct values for this function.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="test_question5_1_7">
+        <statement>
+
+        <p>True or false: A function can be called several times by placing a function call in the body of a loop.</p>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>True</p>
+                </statement>
+                <feedback>
+                    Yes, you can call a function multiple times by putting the call in a loop.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>False</p>
+                </statement>
+                <feedback>
+                    One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

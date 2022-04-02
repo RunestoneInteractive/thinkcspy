@@ -1,0 +1,132 @@
+<section xml:id="exercises">
+        <title>Exercises</title>
+        <p><ol label="1">
+            <li>
+                <TabbedStuffNode divid="tab_ut_reverse" line="14" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/UnitTesting/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'tab_ut_reverse', 'divclass': 'alert alert-warning'}">
+                    <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ac_ut_reverse">
+    <caption/>
+    <program xml:id="ac_ut_reverse_editor" interactive="activecode" language="python">
+        <input>
+def test_reverse():
+    # Complete the assert statements below
+
+    assert ________________
+    assert ________________
+    assert ________________
+====
+
+from unittest.gui import TestCaseGui
+
+testABC = False
+testB = False
+testEmpty = False
+
+def reverse(astring):
+    """Returns the reverse of `astring`"""
+    global testABC, testB, testEmpty
+
+    if astring == 'abc':
+        testABC = True
+    elif astring == 'b':
+        testB = True
+    elif astring == '':
+        testEmpty = True
+
+    l = list(astring)
+    l.reverse()
+    return ''.join(l)
+
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        test_reverse()
+        code = self.getEditorText().replace(' ','').replace('"', '').replace("'", '')
+        self.assertTrue(testABC and '==cba' in code, "Assert tested 'abc'")
+        self.assertTrue(testB and '==b' in code, "Assert tested 'b'")
+        self.assertTrue(testEmpty and '==\n' in code, "Assert tested ''")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                        <p>A function named <c>reverse</c> takes a string argument, reverses it, and returns the result:</p>
+                        <pre>def reverse(astring):
+    """Returns the reverse of `astring`"""</pre>
+                        <p>Complete the assert statements in the ActiveCode editor below to create a unit test for <c>reverse</c>.
+                            Your asserts should check that <c>reverse</c> works properly for the following test cases (&#8220;Input&#8221;
+                            refers to the value passed as a parameter, and &#8220;Expected Output&#8221; is the result returned from
+                            <c>reverse</c>):</p>
+                        <pre>             Input    Expected Output
+             -------- ---------------
+Test Case 1: 'abc'    'cba'
+Test Case 2: 'b'      'b'
+Test Case 3: ''       ''</pre>
+                    </TabNode>
+                    <TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
+                        <p>If you&#8217;re not sure how to get started with this one, review <xref ref="WritingUnitTests#writing-unit-tests"/>.</p>
+                    </TabNode>
+                    <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                        <pre>assert reverse('abc') == 'cba'
+assert reverse('b') == 'b'
+assert reverse('') == ''</pre>
+                    </TabNode>
+                </TabbedStuffNode>
+            </li>
+            <li>
+                <TabbedStuffNode divid="tab_ut_testable" line="95" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/UnitTesting/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'tab_ut_testable', 'divclass': 'alert alert-warning'}">
+                    <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ac_ut_testable">
+    <caption/>
+    <program xml:id="ac_ut_testable_editor" interactive="activecode" language="python">
+        <input>
+
+def stripletters(msg):
+    result = ''
+    for ch in msg:
+        if not ch.isalpha():
+            result += ch
+
+    print(result)
+
+assert stripletters('ab12c') == '12'
+assert stripletters('12') == '12'
+
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(stripletters('ab12c'), '12', "stripletters('ab12c') == '12'")
+        self.assertEqual(stripletters('12'), '12', "stripletters('12') == '12'")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                        <p>A function named <c>stripletters</c> takes a string argument, removes all letters from it, and
+                            displays the result (see below). However, this function is not testable.</p>
+                        <p>Modify the function so that it can be tested with the assert statements that follow.</p>
+                    </TabNode>
+                    <TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
+                        <p>Review <xref ref="DesigningTestableFunctions#designing-testable-functions"/>.</p>
+                    </TabNode>
+                    <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                        <pre>def stripletters(msg):
+    result = ''
+    for ch in msg:
+        if not ch.isalpha():
+            result += ch
+
+    return result</pre>
+                    </TabNode>
+                </TabbedStuffNode>
+            </li>
+        </ol></p>
+    </section>
+

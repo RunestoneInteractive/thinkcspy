@@ -1,0 +1,230 @@
+<section xml:id="exercises">
+        <title>Exercises</title>
+        <QuestionNode xml:id="cb-ex-1" line="13" names="cb_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_1', 'qnumber': '', 'question_label': '17.11.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+            <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="classes_q1">
+    <caption/>
+    <program xml:id="classes_q1_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Add a <c>distanceFromPoint</c> method that works similar to <c>distanceFromOrigin</c> except that it
+                        takes a <c>Point</c> as a parameter and
+                        computes the distance between that point and self.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ch_cl_ex_1_answer">
+    <caption/>
+    <program xml:id="ch_cl_ex_1_answer_editor" interactive="activecode" language="python">
+        <input>
+import math
+
+class Point:
+    """ Point class for representing and manipulating x,y coordinates. """
+
+    def __init__(self, initX, initY):
+        """ Create a new point at the given coordinates. """
+        self.x = initX
+        self.y = initY
+
+    def getX(self):
+        return self.x
+
+    def getY(self):
+        return self.y
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def distanceFromPoint(self, otherP):
+        dx = (otherP.getX() - self.x)
+        dy = (otherP.getY() - self.y)
+        return math.sqrt(dy**2 + dx**2)
+
+p = Point(3, 3)
+q = Point(6, 7)
+print(p.distanceFromPoint(q))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="62" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_090fe2d30b8d4fe58b829d06c58661f0', 'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="cb-ex-2" line="67" names="cb_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_2', 'qnumber': '', 'question_label': '17.11.4'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+
+<listing xml:id="ch_cl_02">
+    <caption/>
+    <program xml:id="ch_cl_02_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Add a method <c>reflect_x</c> to Point which returns a new Point, one which is the
+                reflection of the point about the x-axis.  For example,
+                <c>Point(3, 5).reflect_x()</c> is (3, -5)</p>
+        </QuestionNode>
+        <QuestionNode xml:id="cb-ex-3" line="76" names="cb_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_3', 'qnumber': '', 'question_label': '17.11.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+            <TabbedStuffNode divid="q3" line="78" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="classes_q3">
+    <caption/>
+    <program xml:id="classes_q3_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Add a method <c>slope_from_origin</c> which returns the slope of the line joining the origin
+                        to the point.   For example,</p>
+                    <pre>&gt;&gt;&gt; Point(4, 10).slope_from_origin()
+2.5</pre>
+                    <p>What cases will cause your method to fail? Return None when it happens.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ch_cl_ex_3_answer">
+    <caption/>
+    <program xml:id="ch_cl_ex_3_answer_editor" interactive="activecode" language="python">
+        <input>
+class Point:
+    """ Point class for representing and manipulating x,y coordinates. """
+
+    def __init__(self, initX, initY):
+        """ Create a new point at the given coordinates. """
+        self.x = initX
+        self.y = initY
+
+    def getX(self):
+        return self.x
+
+    def getY(self):
+        return self.y
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def slope_from_origin(self):
+        if self.x == 0:
+           return None
+        else:
+           return self.y / self.x
+
+
+p = Point(4, 10)
+print(p.slope_from_origin())
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="127" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_d70d350ae8284138a5726f8140c45533', 'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="cb-ex-4" line="132" names="cb_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_4', 'qnumber': '', 'question_label': '17.11.9'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+
+<listing xml:id="ch_cl_04">
+    <caption/>
+    <program xml:id="ch_cl_04_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>The equation of a straight line is  &#8220;y = ax + b&#8221;, (or perhaps &#8220;y = mx + c&#8221;).
+                The coefficients a and b completely describe the line.  Write a method in the
+                Point class so that if a point instance is given another point, it will compute the equation
+                of the straight line joining the two points.  It must return the two coefficients as a tuple
+                of two values.  For example,</p>
+            <pre>&gt;&gt;&gt; print(Point(4, 11).get_line_to(Point(6, 15)))
+&gt;&gt;&gt; (2, 3)</pre>
+            <p>This tells us that the equation of the line joining the two points is &#8220;y = 2x + 3&#8221;.
+                When will your method fail?</p>
+        </QuestionNode>
+        <QuestionNode xml:id="cb-ex-5" line="149" names="cb_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_5', 'qnumber': '', 'question_label': '17.11.11'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+            <TabbedStuffNode divid="q5" line="151" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="classes_q5">
+    <caption/>
+    <program xml:id="classes_q5_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Add a method called <c>move</c> that will take two parameters, call them <c>dx</c> and <c>dy</c>.  The method will
+                        cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
+                        state of the point)</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ch_cl_05_answer">
+    <caption/>
+    <program xml:id="ch_cl_05_answer_editor" interactive="activecode" language="python">
+        <input>
+class Point:
+    """ Point class for representing and manipulating x,y coordinates. """
+
+    def __init__(self, initX, initY):
+        """ Create a new point at the given coordinates. """
+        self.x = initX
+        self.y = initY
+
+    def getX(self):
+        return self.x
+
+    def getY(self):
+        return self.y
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def move(self, dx, dy):
+        self.x = self.x + dx
+        self.y = self.y + dy
+
+    def __str__(self):
+        return str(self.x) + "," + str(self.y)
+
+
+p = Point(7, 6)
+print(p)
+p.move(5, 10)
+print(p)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="199" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_fc589edaa0e14bd28175850c95b79d15', 'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="cb-ex-6" line="204" names="cb_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_6', 'qnumber': '', 'question_label': '17.11.14'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
+
+<listing xml:id="classes_q6">
+    <caption/>
+    <program xml:id="classes_q6_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Given three points that fall on the circumference of a circle, find the center and radius of the circle.</p>
+        </QuestionNode>
+    </section>
+

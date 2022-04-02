@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>More About Iteration</title>
+        <xi:include href='./intro-IterationRevisited.ptx' />
+        <xi:include href='./Theforlooprevisited.ptx' />
+        <xi:include href='./ThewhileStatement.ptx' />
+        <xi:include href='./RandomlyWalkingTurtles.ptx' />
+        <xi:include href='./The3n1Sequence.ptx' />
+        <xi:include href='./NewtonsMethod.ptx' />
+        <xi:include href='./accumulatorRevisited.ptx' />
+        <xi:include href='./SentinelValuesAndValidation.ptx' />
+        <xi:include href='./AlgorithmsRevisited.ptx' />
+        <xi:include href='./SimpleTables.ptx' />
+        <xi:include href='./2DimensionalIterationImageProcessing.ptx' />
+        <xi:include href='./ImageProcessingonYourOwn.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

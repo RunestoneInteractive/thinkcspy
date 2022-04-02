@@ -1,0 +1,80 @@
+<section xml:id="strings-are-immutable">
+        <title>Strings are Immutable</title>
+        <p>One final thing that makes strings different from some other Python collection types is that
+            you are not allowed to modify the individual characters in the collection.  It is tempting to use the <c>[]</c> operator on the left side of an assignment,
+            with the intention of changing a character in a string.  For example, in the following code, we would like to change the first letter of <c>greeting</c>.</p>
+
+<listing xml:id="cg08_imm1">
+    <caption/>
+    <program xml:id="cg08_imm1_editor" interactive="activecode" language="python">
+        <input>
+greeting = "Hello, world!"
+greeting[0] = 'J'            # ERROR!
+print(greeting)
+        </input>
+    </program>
+</listing>
+        <p>Instead of producing the output <c>Jello, world!</c>, this code produces the
+            runtime error <c>TypeError: 'str' object does not support item assignment</c>.</p>
+        <p>Strings are <strong>immutable</strong>, which means you cannot change an existing string. The
+            best you can do is create a new string that is a variation on the original.</p>
+
+<listing xml:id="ch08_imm2">
+    <caption/>
+    <program xml:id="ch08_imm2_editor" interactive="activecode" language="python">
+        <input>
+greeting = "Hello, world!"
+newGreeting = 'J' + greeting[1:]
+print(newGreeting)
+print(greeting)            # same as it was
+        </input>
+    </program>
+</listing>
+        <p>The solution here is to concatenate a new first letter onto a slice of
+            <c>greeting</c>. This operation has no effect on the original string.</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question8_7_1">
+        <statement>
+
+        <p>What is printed by the following statements:</p>
+        <program language="python"><input>
+s = "Ball"
+s[0] = "C"
+print(s)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Ball</p>
+                </statement>
+                <feedback>
+                    Assignment is not allowed with strings.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Call</p>
+                </statement>
+                <feedback>
+                    Assignment is not allowed with strings.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>Error</p>
+                </statement>
+                <feedback>
+                    Yes, strings are immutable.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

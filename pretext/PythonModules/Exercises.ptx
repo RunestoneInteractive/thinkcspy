@@ -1,0 +1,100 @@
+<section xml:id="exercises">
+        <title>Exercises</title>
+        <QuestionNode xml:id="pymod-ex-1" line="13" names="pymod_ex_1" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'pymod_ex_1', 'qnumber': '', 'question_label': '5.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+            <TabbedStuffNode divid="q1" line="15" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_mod_1">
+    <caption/>
+    <program xml:id="ex_mod_1_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Use a <c>for</c> statement to print 10 random numbers.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="mod_q1_answer">
+    <caption/>
+    <program xml:id="mod_q1_answer_editor" interactive="activecode" language="python">
+        <input>
+import random
+
+howmany = 10
+for counter in range(howmany):
+    arandom = random.random()
+    print(arandom)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="37" runestone_options="{'shortname': 'interactivepython', 'identifier': 'mods_111', 'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="pymod-ex-2" line="41" names="pymod_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'pymod_ex_2', 'qnumber': '', 'question_label': '5.7.4'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+
+<listing xml:id="ex_mod_2">
+    <caption/>
+    <program xml:id="ex_mod_2_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="pymod-ex-3" line="48" names="pymod_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'pymod_ex_3', 'qnumber': '', 'question_label': '5.7.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+            <TabbedStuffNode divid="q3" line="50" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_mod_3">
+    <caption/>
+    <program xml:id="ex_mod_3_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>The <strong>Pythagorean Theorem</strong> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="mod_q3_answer">
+    <caption/>
+    <program xml:id="mod_q3_answer_editor" interactive="activecode" language="python">
+        <input>
+import math
+
+side1 = 3
+side2 = 4
+hypotenuse = math.hypot(side1,side2)
+print(hypotenuse)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="72" runestone_options="{'shortname': 'interactivepython', 'identifier': 'mods_333', 'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="pymod-ex-4" line="76" names="pymod_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'pymod_ex_4', 'qnumber': '', 'question_label': '5.7.9'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
+
+<listing xml:id="ex_mod_4">
+    <caption/>
+    <program xml:id="ex_mod_4_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Search on the internet for a way to calculate an approximation for <strong>pi</strong>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
+        </QuestionNode>
+    </section>
+

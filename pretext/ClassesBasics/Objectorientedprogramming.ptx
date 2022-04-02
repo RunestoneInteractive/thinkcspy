@@ -1,0 +1,18 @@
+<section xml:id="object-oriented-programming">
+        <title>Object-oriented programming</title>
+        <p>Python is an <strong>object-oriented programming language</strong>.  That means it
+            provides features that support <url href="http://en.wikipedia.org/wiki/Object-oriented_programming" visual="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</url> (<strong>OOP</strong>).</p>
+        <p>Object-oriented programming has its roots in the 1960s, but it wasn&#8217;t until the
+            mid 1980s that it became the main <url href="http://en.wikipedia.org/wiki/Programming_paradigm" visual="http://en.wikipedia.org/wiki/Programming_paradigm">programming paradigm</url> used in the creation
+            of new software. It was developed as a way to handle the rapidly increasing
+            size and complexity of software systems and to make it easier to modify these
+            large and complex systems over time.</p>
+        <p>Up to now, some of the programs we have been writing use a <url href="http://en.wikipedia.org/wiki/Procedural_programming" visual="http://en.wikipedia.org/wiki/Procedural_programming">procedural programming</url> paradigm. In
+            procedural programming the focus is on writing functions or <emphasis>procedures</emphasis> which
+            operate on data. In object-oriented programming the focus is on the creation of
+            <strong>objects</strong> which contain both data and functionality together.
+            Usually, each object definition corresponds to some object or concept in the real
+            world and the functions that operate on that object correspond to the ways
+            real-world objects interact.</p>
+    </section>
+

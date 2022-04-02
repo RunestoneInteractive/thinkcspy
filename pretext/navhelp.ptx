@@ -1,0 +1,169 @@
+<section xml:id="getting-around-the-book quick-help">
+        <title>Getting Around The Book</title>
+        <p>This page will help you learn how to get around this interactive textbook and use the embedded tools.</p>
+        <subsection xml:id="navigation-bar">
+            <title>Navigation Bar</title>
+            <image source="images/_static/navbar_logo_link.png"/>
+            <image source="images/_static/navbar_title_link.png"/>
+            <line_block>
+                <line/>
+            </line_block>
+            <image source="images/_static/navbar_page_dropdown.png"/>
+            <line_block>
+                <line/>
+            </line_block>
+            <image source="images/_static/navbar_search_dropdown.png"/>
+            <line_block>
+                <line/>
+            </line_block>
+            <image source="images/_static/navbar_user_dropdown.png"/>
+        </subsection>
+        <subsection xml:id="activecode-windows">
+            <title>ActiveCode Windows</title>
+            <p>One of the most important things that you can do when you are learning a programming language is to write programs.  Unfortunately,
+                typical textbooks allow you to read about programming but don&#8217;t allow you to practice.  We have created a unique tool called
+                <strong>ActiveCode</strong> that allows you to write, modify, and execute programs right
+                in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
+                environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
+            <p>Take a look at the ActiveCode interpreter in action.  If we take a simple Python program and make it active, you will see that it can be executed directly by pressing the <emphasis>Run</emphasis> button.   Try pressing the <emphasis>Run</emphasis> button below.</p>
+
+<listing xml:id="nav_codeexample1">
+    <caption/>
+    <program xml:id="nav_codeexample1_editor" interactive="activecode" language="python">
+        <input>
+print("My first program adds two numbers, 2 and 3:")
+print(2 + 3)
+        </input>
+    </program>
+</listing>
+        </subsection>
+        <subsection xml:id="the-codelens-tool">
+            <title>The CodeLens Tool</title>
+            <p>In addition to ActiveCode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as <strong>CodeLens</strong>, allows you to control the step by step execution of a program.  It also lets you see the values of
+                all variables as they are created and modified.  The following example shows CodeLens in action on the same simple program as we saw above.  Remember that in ActiveCode, the source code executes from beginning to end and you can see the final result.  In Codelens you can see and control the step by step progress.  Try clicking on the <emphasis>Forward</emphasis> button below.</p>
+<exercise runestone="nav_firstexample_cl"/>        </subsection>
+        <subsection xml:id="self-check-questions">
+            <title>Self-Check Questions</title>
+            <p>Finally, it is also possible to embed simple questions into the text.  These
+                questions provide a way for you to check yourselves as you go along.  The questions also provide feedback so that you can
+                understand why an answer may or may not be correct.</p>
+            <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="nav_question1_1">
+        <statement>
+
+            <p>What programming language does this site help you to learn?</p>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>Python</p>
+                </statement>
+                <feedback>
+                    Yes, Python is a great language to learn, whether you are a beginner or an experienced programmer.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Java</p>
+                </statement>
+                <feedback>
+                    Java is a good object oriented language but it has some details that make it hard for the beginner.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>C</p>
+                </statement>
+                <feedback>
+                    C is an imperative programming language that has been around for a long time, but it is not the one that we use.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>ML</p>
+                </statement>
+                <feedback>
+                    No, ML is a functional programming language.  You can use Python to write functional programs as well.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+            <p>This next type of question allows more than one correct answer to be required.  The feedback will tell you whether you have the
+                correct number as well as the feedback for each.</p>
+
+    <exercise xml:id="nav_question1_2">
+        <statement>
+
+            <p>Which colors might be found in a rainbow? (choose all that are correct)</p>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>red</p>
+                </statement>
+                <feedback>
+                    Red is a definitely on of the colors.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>yellow</p>
+                </statement>
+                <feedback>
+                    Yes, yellow is correct.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>black</p>
+                </statement>
+                <feedback>
+                    Remember the acronym...ROY G BIV.  B stands for blue.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>green</p>
+                </statement>
+                <feedback>
+                    Yes, green is one of the colors.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+            <p><strong>Check your understanding</strong></p>
+<exercise xml:id="nav_question1_100_4" indent="yes" language="python"><statement>
+            <p>Construct a block of code that correctly implements the accumulator pattern.</p>
+</statement>
+<blocks><block order="1">
+<cline>x = 0</cline>
+<cline>for i in range(10)</cline>
+<cline>   x = x + 1</cline>
+</block></blocks></exercise>        </subsection>
+        <subsection xml:id="embedded-videos">
+            <title>Embedded Videos</title>
+            <p>Our toolset provides a number of different things that will help you to learn to program in the Python programming language.
+                Aside from reading the text, it is sometimes useful to hear someone tell you about different aspects of the topic being discussed.
+                In order to accomplish this, we provide a way to integrate simple, short videos into the text.  For example, if you click
+                on the video shown below, you will hear us talk about the tools that will be described shortly.</p>
+
+    <video xml:id="nav_videoinfo" youtube="LZ7H1X8ar9E" width="560"/>
+                <raw format="html" xml:space="preserve">&lt;link href='_static/guiders-1.3.0.css' rel='stylesheet' type='text/css'&gt;
+&lt;script src='_static/guiders-1.3.0.js' type='text/javascript'&gt;&lt;/script&gt;
+&lt;script src='_static/navhelp.js' type='text/javascript'&gt;&lt;/script&gt;</raw>
+        </subsection>
+    </section>
+

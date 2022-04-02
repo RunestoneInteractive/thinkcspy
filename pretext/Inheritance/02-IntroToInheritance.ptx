@@ -1,0 +1,104 @@
+<section xml:id="introduction-to-inheritance">
+        <title>Introduction to Inheritance</title>
+        <p>Recall the Point class from earlier in the book:</p>
+
+<listing xml:id="pointclass_1">
+    <caption/>
+    <program xml:id="pointclass_1_editor" interactive="activecode" language="python">
+        <input>
+class Point:
+
+    def __init__(self, initX, initY):
+        self.x = initX
+        self.y = initY
+
+    def distanceFromOrigin(self):
+        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+
+    def __str__(self):
+        return "x=" + str(self.x) + ", y=" + str(self.y)
+
+p = Point(7, 6)
+print(p)
+        </input>
+    </program>
+</listing>
+        <p>Now, suppose we want to create a class that works like <c>Point</c>
+            in every respect, but also keeps track of a short description for the point.
+            We could create a <c>LabeledPoint</c> class by copying and pasting the definition for
+            <c>Point</c>,
+            changing the name to <c>LabeledPoint</c>, and modifying the class to suit our
+            purposes. However, any time you copy and paste code, keep in mind that
+            you are copying and pasting bugs that may exist in the code. Inheritance
+            provides a way to reuse the definition of Point without having to copy and
+            paste.</p>
+        <p>We begin like this:</p>
+
+<listing xml:id="labeledpoint">
+    <caption/>
+    <program xml:id="labeledpoint_editor" interactive="activecode" language="python">
+        <input>
+class LabeledPoint(Point):
+    pass
+        </input>
+    </program>
+</listing>
+        <p>This example defines a class named <c>LabeledPoint</c> that inherits from the <c>Point</c> class.
+            Putting the name <c>Point</c> in parenthesis tells Python that the new class,
+            <c>LabeledPoint</c>, begins with all of the methods defined in its parent, <c>Point</c>.
+            For example, we can instantiate LabeledPoint using the Point constructor, and
+            invoke any Point methds we want to on it:</p>
+        <program language="python"><input>
+p = LabeledPoint(7,6)
+dist = p.distanceFromOrigin()
+</input></program>
+        <p>Now, let&#8217;s refine LabeledPoint so that it holds a label, along with the x and y
+            coordinates:</p>
+
+<listing xml:id="labeledpoint_2">
+    <caption/>
+    <program xml:id="labeledpoint_2_editor" interactive="activecode" language="python">
+        <input>
+class LabeledPoint(Point):
+
+    def __init__(self, initX, initY, label):
+        self.x = initX
+        self.y = initY
+        self.label = label
+
+    def __str__(self):
+        return "x=" + str(self.x) + ", y=" + str(self.y) + " (" + self.label + ")"
+
+labeledPt = LabeledPoint(7,6,"Here")
+print(labeledPt)
+        </input>
+    </program>
+</listing>
+        <p>Here, we have redefined two of the methods that LabeledPoint inherits from Point:
+            <c>__init__()</c> and <c>__str__()</c>.
+            This is called <emphasis>overriding</emphasis>. When a child class redefines methods that are defined
+            in its parent, we say that the child <emphasis>overrides</emphasis> the functionality inherited from
+            its parent. When both the parent class and child class have a method with the
+            same name, an invocation of the method on an instance of the child class
+            executes code in the child&#8217;s class; an invocation of the method on an instance
+            of the parent class executes code in the parent&#8217;s class. For example,
+            consider the following:</p>
+
+<listing xml:id="combinedpts">
+    <caption/>
+    <program xml:id="combinedpts_editor" interactive="activecode" language="python">
+        <input>
+pt = Point(5,10)
+labeledPt = LabeledPoint(7, 6, "Here")
+
+ptStr = str(pt)
+labeledPtStr = str(labeledPt)
+        </input>
+    </program>
+</listing>
+        <p>In Line 4, the call to <c>str(pt)</c> invokes the <c>__str__()</c> method in <c>Point</c>, because
+            pt refers to an instance of <c>Point</c>. In Line 5, the call to <c>str(labeledPt)</c>
+            invokes the <c>__str__()</c> method in <c>LabeledPoint</c>, because <c>labeledPt</c>
+            refers to an instance of <c>LabeledPoint</c>.</p>
+    </section>
+

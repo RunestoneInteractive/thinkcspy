@@ -1,0 +1,23 @@
+<section xml:id="functions-that-produce-lists">
+        <title>Functions that Produce Lists</title>
+        <p>The pure version of <c>doubleStuff</c> above made use of an
+            important <strong>pattern</strong> for your toolbox. Whenever you need to
+            write a function that creates and returns a list, the pattern is
+            usually:</p>
+        <pre>initialize a result variable to be an empty list
+loop
+   create a new element
+   append it to result
+return the result</pre>
+        <p>Let us show another use of this pattern.  Assume you already have a function
+            <c>is_prime(x)</c> that can test if x is prime.  Now, write a function
+            to return a list of all prime numbers less than n:</p>
+        <pre>def primes_upto(n):
+    """ Return a list of all prime numbers less than n. """
+    result = []
+    for i in range(2, n):
+        if is_prime(i):
+            result.append(i)
+    return result</pre>
+    </section>
+

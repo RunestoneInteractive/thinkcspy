@@ -1,0 +1,105 @@
+<section xml:id="algorithms">
+        <title>Algorithms</title>
+        <p>If problem solving is a central part of computer science, then the solutions that you create through
+            the problem solving process are also important.  In computer science, we refer to these solutions
+            as <strong>algorithms</strong>.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
+        <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution.  Once we have such a solution, we can use our computer to automate the execution.  As noted
+            above, programming is a skill that allows a computer scientist to take an algorithm and represent it in
+            a notation (a program) that can be followed by a computer.  These programs are written in <strong>programming languages</strong>.</p>
+        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="question1_1_1">
+        <statement>
+
+        <p>What is the most important skill for a computer scientist?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>To think like a computer.</p>
+                </statement>
+                <feedback>
+                    Computers do not think, they only do what we humans tell them to do via programs.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>To be able to write code really well.</p>
+                </statement>
+                <feedback>
+                    While it is necessary for most computer scientists to know how to write code, it is not the most important skill.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>To be able to solve problems.</p>
+                </statement>
+                <feedback>
+                    Computer scientists are all about solving problems.  We use computers to automate solutions to problems and to do things faster and more accurately than we can do by hand or manually.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>To be really good at math.</p>
+                </statement>
+                <feedback>
+                    Computer science and math are similar in many ways and it helps to have a strong mathematical foundation, but you do not have to be good at math to be a good computer scientist.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise xml:id="question1_1_2">
+        <statement>
+
+        <p>An algorithm is:</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>A solution to a problem that can be solved by a computer.</p>
+                </statement>
+                <feedback>
+                    While it is true that algorithms often do solve problems, this is not the best answer.  An algorithm is more than just the solution to the problem for a computer.  An algorithm can be used to solve all sorts of problems, including those that have nothing to do with computers.
+                </feedback>
+            </choice>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>A step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
+                </statement>
+                <feedback>
+                    Algorithms are like recipes:  they must be followed exactly, they must be clear and unambiguous, and they must end.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A series of instructions implemented in a programming language.</p>
+                </statement>
+                <feedback>
+                    Programming languages are used to express algorithms, but an algorithm does not have to be expressed in terms of a programming language.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A special kind of notation used by computer scientists.</p>
+                </statement>
+                <feedback>
+                    Computer scientists sometimes use a special notation to illustrate or document an algorithm, but this is not the definition of an algorithm.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+
