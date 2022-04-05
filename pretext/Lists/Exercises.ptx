@@ -1,0 +1,763 @@
+<section xml:id="lists_exercises">
+        <title>Exercises</title>
+        <QuestionNode xml:id="strings-ex-1" line="13" names="strings_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_1', 'qnumber': '', 'question_label': '10.31.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+                    <p>Draw a reference diagram for <c>a</c> and <c>b</c> before and after the third line of
+                        the following python code is executed:</p>
+                    <program language="python"><input>
+a = [1, 2, 3]
+b = a[:]
+b[0] = 5
+</input></program>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                    <p>Your diagram should show two variables referring to two different lists.  <c>a</c> refers to the original list with 1,2, and 3.
+                        <c>b</c> refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.</p>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="36" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_12314cf40dbe407cb145f029870c0347', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-2" line="41" names="strings_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_2', 'qnumber': '', 'question_label': '10.31.2'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="tab_strings_ex_2" line="43" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'tab_strings_ex_2', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_2">
+    <caption/>
+    <program xml:id="ex_9_2_editor" interactive="activecode" language="python">
+        <input>
+
+myList = []
+
+# Your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(myList,[76, 92.3, 'hello', True, 4, 76],"myList should contain the specified items")
+        self.assertIn(".append(", self.getEditorText(), 'append method must be used')
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, &#8220;hello&#8221;, True, 4, 76.
+                        Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
+                        use the append method to append the item to the list, and the last three statements should use concatenation.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ex_9_2_answer">
+    <caption/>
+    <program xml:id="ex_9_2_answer_editor" interactive="activecode" language="python">
+        <input>
+myList = []
+myList.append(76)
+myList.append(92.3)
+myList.append("hello")
+myList = myList + [True]
+myList = myList + [4]
+myList = myList + [76]
+print(myList)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-3" line="85" names="strings_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_3', 'qnumber': '', 'question_label': '10.31.5'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q3" line="87" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_3">
+    <caption/>
+    <program xml:id="ex_9_3_editor" interactive="activecode" language="python">
+        <input>
+myList = [76, 92.3, 'hello', True, 4, 76]
+
+# Your code here
+        </input>
+    </program>
+</listing>
+                    <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
+                    <p><ol label="a">
+                        <li>
+                            <p>Append &#8220;apple&#8221; and 76 to the list.</p>
+                        </li>
+                        <li>
+                            <p>Insert the value &#8220;cat&#8221; at position 3.</p>
+                        </li>
+                        <li>
+                            <p>Insert the value 99 at the start of the list.</p>
+                        </li>
+                        <li>
+                            <p>Find the index of &#8220;hello&#8221;.</p>
+                        </li>
+                        <li>
+                            <p>Count the number of 76s in the list.</p>
+                        </li>
+                        <li>
+                            <p>Remove the first occurrence of 76 from the list.</p>
+                        </li>
+                        <li>
+                            <p>Remove True from the list using <c>pop</c> and <c>index</c>.</p>
+                        </li>
+                    </ol></p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ex_9_3_answer">
+    <caption/>
+    <program xml:id="ex_9_3_answer_editor" interactive="activecode" language="python">
+        <input>
+myList = [76, 92.3, 'hello', True, 4, 76]
+
+myList.append("apple")         # a
+myList.append(76)              # a
+myList.insert(3, "cat")        # b
+myList.insert(0, 99)           # c
+
+print(myList.index("hello"))   # d
+print(myList.count(76))        # e
+myList.remove(76)              # f
+myList.pop(myList.index(True)) # g
+
+print (myList)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="128" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_b9034b274ebe4c55a58c44315ee681a4', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-4" line="133" names="strings_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_4', 'qnumber': '', 'question_label': '10.31.8'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="tab_q4" line="135" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'tab_q4', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_4">
+    <caption/>
+    <program xml:id="ex_9_4_editor" interactive="activecode" language="python">
+        <input>
+def average(numlist):
+    # Complete the function definition
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(int(average([1, 3, 5, 7])),4,"average([1, 3, 5, 7]) should be 4")
+        self.assertEqual(int(average([9, 5, 4])),6,"average([9, 5, 4]) should be 6")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ex_9_4_solution">
+    <caption/>
+    <program xml:id="ex_9_4_solution_editor" interactive="activecode" language="python">
+        <input>
+def average(numlist):
+
+    total = 0
+    for num in numlist:
+        total = total + num
+
+    return total / len(numlist)
+        </input>
+    </program>
+</listing>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-5" line="171" names="strings_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_5', 'qnumber': '', 'question_label': '10.31.11'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q5" line="173" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_5">
+    <caption/>
+    <program xml:id="ex_9_5_editor" interactive="activecode" language="python">
+        <input>
+def max(lst):
+    # Complete the function
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(max([3, 31, 5, 7]),31,"max([3, 31, 5, 7]) should be 31")
+        self.assertEqual(max([3, 13, 51, 7]),51,"max([3, 13, 51, 7]) should be 51")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named <c>max</c> but pretend you cannot use it.)</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q5_answer">
+    <caption/>
+    <program xml:id="lst_q5_answer_editor" interactive="activecode" language="python">
+        <input>
+def max(lst):
+    max = 0
+    for e in lst:
+        if e &gt; max:
+            max = e
+    return max
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="212" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_714fd5537ebf41189ce5fb6fb16d1d26', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-6" line="217" names="strings_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_6', 'qnumber': '', 'question_label': '10.31.14'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_7_11">
+    <caption/>
+    <program xml:id="ex_7_11_editor" interactive="activecode" language="python">
+        <input>
+def sum_of_squares(xs):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sum_of_squares([2,3,4]),29,"Tested sum_of_squares on input [2,3,4]")
+        self.assertEqual(sum_of_squares([0,1,-1]),2,"Tested sum_of_squares on input [0,1,-1]")
+        self.assertEqual(sum_of_squares([5,12,14]),365,"Tested sum_of_squares on input [5,12,14]")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+            <p>Write a function <c>sum_of_squares(xs)</c> that computes the sum
+                of the squares of the numbers in the list <c>xs</c>.  For example,
+                <c>sum_of_squares([2, 3, 4])</c> should return 4+9+16 which is 29:</p>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-7" line="242" names="strings_ex_7" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_7', 'qnumber': '', 'question_label': '10.31.16'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q7" line="244" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q7', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_6">
+    <caption/>
+    <program xml:id="ex_9_6_editor" interactive="activecode" language="python">
+        <input>
+def countOdd(lst):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(countOdd([1,3,5,7,9]),5,"Tested countOdd on input [1,3,5,7,9]")
+        self.assertEqual(countOdd([1,2,3,4,5]),3,"Tested countOdd on input [-1,-2,-3,-4,-5]")
+        self.assertEqual(countOdd([2,4,6,8,10]),0,"Tested countOdd on input [2,4,6,8,10]")
+        self.assertEqual(countOdd([0,-1,12,-33]),2,"Tested countOdd on input [0,-1,12,-33]")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Write a function to count how many odd numbers are in a list.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q7_answer">
+    <caption/>
+    <program xml:id="lst_q7_answer_editor" interactive="activecode" language="python">
+        <input>
+import random
+
+def countOdd(lst):
+    odd = 0
+    for e in lst:
+        if e % 2 != 0:
+            odd = odd + 1
+    return odd
+
+# make a random list to test the function
+lst = []
+for i in range(100):
+    lst.append(random.randint(0, 1000))
+
+print(countOdd(lst))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="294" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_fdd366b1b4c8494082a385e1e1197844', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-8" line="299" names="strings_ex_8" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_8', 'qnumber': '', 'question_label': '10.31.19'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_9_7">
+    <caption/>
+    <program xml:id="ex_9_7_editor" interactive="activecode" language="python">
+        <input>
+def sumEven(lst):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sumEven([1,3,5,7,9]),0,"Tested sumEven on input [1,3,5,7,9]")
+        self.assertEqual(sumEven([-1,-2,-3,-4,-5]),-6,"Tested sumEven on input [-1,-2,-3,-4,-5]")
+        self.assertEqual(sumEven([2,4,6,7,9]),12,"Tested sumEven on input [2,4,6,7,9]")
+        self.assertEqual(sumEven([0,1,12,33]),12,"Tested sumEven on input [0,1,12,33]")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+            <p>Sum up all the even numbers in a list.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-9" line="323" names="strings_ex_9" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_9', 'qnumber': '', 'question_label': '10.31.21'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q9" line="325" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q9', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_8">
+    <caption/>
+    <program xml:id="ex_9_8_editor" interactive="activecode" language="python">
+        <input>
+def sumNegatives(lst):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sumNegatives([-1,-2,-3,-4,-5]),-15,"Tested sumNegatives on input [-1,-2,-3,-4,-5]")
+        self.assertEqual(sumNegatives([1,-3,5,-7,9]),-10,"Tested sumNegatives on input [1,-3,5,-7,9]")
+        self.assertEqual(sumNegatives([-2,-4,6,-7,9]),-13,"Tested sumNegatives on input [-2,-4,6,-7,9]")
+        self.assertEqual(sumNegatives([0,1,2,3,4]),0,"Tested sumNegatives on input [0,1,2,3,4]")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Sum up all the negative numbers in a list.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q9_answer">
+    <caption/>
+    <program xml:id="lst_q9_answer_editor" interactive="activecode" language="python">
+        <input>
+import random
+
+def sumNegative(lst):
+    sum = 0
+    for e in lst:
+        if e &lt; 0:
+            sum = sum + e
+    return sum
+
+lst = []
+for i in range(100):
+    lst.append(random.randrange(-1000, 1000))
+
+print(sumNegative(lst))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="374" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_bfe671ac1e0942f2be4de7179921f83f', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-10" line="379" names="strings_ex_10" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_10', 'qnumber': '', 'question_label': '10.31.24'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_9_9">
+    <caption/>
+    <program xml:id="ex_9_9_editor" interactive="activecode" language="python">
+        <input>
+def countWords(lst):
+    # your code here
+        </input>
+    </program>
+</listing>
+            <p>Count how many words in a list have length 5.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-11" line="389" names="strings_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_11', 'qnumber': '', 'question_label': '10.31.26'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q11" line="391" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+                    <p>Sum all the elements in a list up to but not including the first even number.</p>
+
+<listing xml:id="ex_9_10">
+    <caption/>
+    <program xml:id="ex_9_10_editor" interactive="activecode" language="python">
+        <input>
+def sumUntilEven(lst):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(sumUntilEven([1,2,3,4,5]),1,"Tested sumUntilEven on input [1,2,3,4.5]")
+        self.assertEqual(sumUntilEven([1,3,5,7,9]),25,"Tested sumUntilEven on input [1,3,5,7,9]")
+        self.assertEqual(sumUntilEven([2,4,6,7,9]),0,"Tested sumUntilEven on input [2,4,6,7,9]")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q11_answer">
+    <caption/>
+    <program xml:id="lst_q11_answer_editor" interactive="activecode" language="python">
+        <input>
+import random
+
+def sum(lst):
+    sum = 0
+    index = 0
+    while index &lt; len(lst) and lst[index] % 2 != 0:
+        sum = sum + lst[index]
+        index = index + 1
+    return sum
+
+lst = []
+for i in range(100):
+    lst.append(random.randint(0,1000))
+
+print(sum(lst))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="439" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_90f95bbe4a49428caa9ed0c5e02747b1', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-12" line="444" names="strings_ex_12" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_12', 'qnumber': '', 'question_label': '10.31.29'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_9_11">
+    <caption/>
+    <program xml:id="ex_9_11_editor" interactive="activecode" language="python">
+        <input>
+def count(lst):
+    # your code here
+        </input>
+    </program>
+</listing>
+            <p>Count how many words occur in a list up to and including the first occurrence of the word &#8220;sam&#8221;.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-13" line="455" names="strings_ex_13" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_13', 'qnumber': '', 'question_label': '10.31.31'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q13" line="457" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q13', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_12">
+    <caption/>
+    <program xml:id="ex_9_12_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
+                    <p><ol label="a">
+                        <li>
+                            <p>count</p>
+                        </li>
+                        <li>
+                            <p>in</p>
+                        </li>
+                        <li>
+                            <p>reverse</p>
+                        </li>
+                        <li>
+                            <p>index</p>
+                        </li>
+                        <li>
+                            <p>insert</p>
+                        </li>
+                    </ol></p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q13_answer">
+    <caption/>
+    <program xml:id="lst_q13_answer_editor" interactive="activecode" language="python">
+        <input>
+def count(obj, lst):
+    count = 0
+    for e in lst:
+        if e == obj:
+            count = count + 1
+    return count
+
+def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
+    for e in lst:
+        if e == obj:
+            return True
+    return False
+
+def reverse(lst):
+    reversed = []
+    for i in range(len(lst)-1, -1, -1): # step through the original list backwards
+        reversed.append(lst[i])
+    return reversed
+
+def index(obj, lst):
+    for i in range(len(lst)):
+        if lst[i] == obj:
+            return i
+    return -1
+
+def insert(obj, index, lst):
+    newlst = []
+    for i in range(len(lst)):
+        if i == index:
+            newlst.append(obj)
+        newlst.append(lst[i])
+    return newlst
+
+lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+print(count(1, lst))
+print(is_in(4, lst))
+print(reverse(lst))
+print(index(2, lst))
+print(insert('cat', 4, lst))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="518" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_39ee0274e51d4c888cc20b6fefa4069c', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-14" line="523" names="strings_ex_14" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_14', 'qnumber': '', 'question_label': '10.31.34'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_9_13">
+    <caption/>
+    <program xml:id="ex_9_13_editor" interactive="activecode" language="python">
+        <input>
+def replace(s, old, new):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(replace('Mississippi','i','I'),'MIssIssIppI',"Tested replace on input 'Mississippi','i','I'")
+        self.assertEqual(replace('Bookkeeper','e','A'),'BookkAApAr',"Tested failed on input 'Bookkeeper','e','A'")
+        self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+            <p>Write a function <c>replace(s, old, new)</c> that replaces all occurences of
+                <c>old</c> with <c>new</c> in a string <c>s</c>:</p>
+            <pre>test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
+
+s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
+test(replace(s, 'om', 'am'),
+       'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
+
+test(replace(s, 'o', 'a'),
+       'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')</pre>
+            <p><emphasis>Hint</emphasis>: use the <c>split</c> and <c>join</c> methods.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-15" line="560" names="strings_ex_15" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_15', 'qnumber': '', 'question_label': '10.31.36'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q15" line="562" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q15', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_14">
+    <caption/>
+    <program xml:id="ex_9_14_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Here are the rules for an L-system that creates something that resembles
+                        a common garden herb.  Implement the following rules and try it.  Use an
+                        angle of 25.7 degrees.</p>
+                    <pre>H
+H --&gt; HFX[+H][-H]
+X --&gt; X[-FFF][+FFF]FX</pre>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="lst_q15_answer">
+    <caption/>
+    <program xml:id="lst_q15_answer_editor" interactive="activecode" language="python">
+        <input>
+import turtle
+
+def createLSystem(numIters, axiom):
+    startString = axiom
+    endString = ""
+    for i in range(numIters):
+        endString = processString(startString)
+        startString = endString
+
+    return endString
+
+def processString(oldStr):
+    newstr = ""
+    for ch in oldStr:
+        newstr = newstr + applyRules(ch)
+
+    return newstr
+
+def applyRules(ch):
+    newstr = ""
+    if ch == 'H':
+        newstr = 'HFX[+H][-H]'   # Rule 1
+    elif ch == 'X':
+        newstr = 'X[-FFF][+FFF]FX'
+    else:
+        newstr = ch     # no rules apply so keep the character
+
+    return newstr
+
+def drawLsystem(aTurtle, instructions, angle, distance):
+    savedInfoList = []
+    for cmd in instructions:
+        if cmd == 'F':
+            aTurtle.forward(distance)
+        elif cmd == 'B':
+            aTurtle.backward(distance)
+        elif cmd == '+':
+            aTurtle.right(angle)
+        elif cmd == '-':
+            aTurtle.left(angle)
+        elif cmd == '[':
+            savedInfoList.append([aTurtle.heading(), aTurtle.xcor(), aTurtle.ycor()])
+            #print(savedInfoList)
+        elif cmd == ']':
+            newInfo = savedInfoList.pop()
+            aTurtle.setheading(newInfo[0])
+            aTurtle.setposition(newInfo[1], newInfo[2])
+
+
+def main():
+    inst = createLSystem(4, "H")   # create the string
+    print(inst)
+    t = turtle.Turtle()            # create the turtle
+    wn = turtle.Screen()
+    t.up()
+    t.back(200)
+    t.down()
+    t.speed(9)
+    drawLsystem(t, inst, 27.5, 5)  # draw the picture
+
+    wn.exitonclick()
+
+main()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="652" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_10a1fdd1fadb401b8e733afd9d105052', 'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-16" line="657" names="strings_ex_16" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_16', 'qnumber': '', 'question_label': '10.31.39'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+
+<listing xml:id="ex_9_16">
+    <caption/>
+    <program xml:id="ex_9_16_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Here is another L-System.  Use an Angle of 25.</p>
+            <pre>F
+F --&gt; F[-F]F[+F]F</pre>
+        </QuestionNode>
+        <QuestionNode xml:id="strings-ex-17" line="670" names="strings_ex_17" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_17', 'qnumber': '', 'question_label': '10.31.41'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
+            <TabbedStuffNode divid="q17" line="672" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q17', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_9_17">
+    <caption/>
+    <program xml:id="ex_9_17_editor" interactive="activecode" language="python">
+        <input>
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(len(randlist),100,"randlist should contain 100 numbers")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Create a list named <c>randlist</c> containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="ac_ex_9_17">
+    <caption/>
+    <program xml:id="ac_ex_9_17_editor" interactive="activecode" language="python">
+        <input>
+import random
+
+randlist = []
+for i in range(100):
+    randlist.append(random.randint(0, 1000))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+    </section>
+

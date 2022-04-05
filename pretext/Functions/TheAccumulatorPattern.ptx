@@ -1,4 +1,4 @@
-<section xml:id="the-accumulator-pattern accumulator">
+<section xml:id="the-accumulator-pattern">
         <title>The Accumulator Pattern</title>
 
     <video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="560"/>
@@ -128,7 +128,7 @@ def square(x):
 </choices>
 
     </exercise>
-<exercise xml:id="question5_4_1p" indent="yes" language="python"><statement>
+<exercise xml:id="question5_4_1p" indent="show" language="python"><statement>
             <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
 </statement>
 <blocks><block order="4">

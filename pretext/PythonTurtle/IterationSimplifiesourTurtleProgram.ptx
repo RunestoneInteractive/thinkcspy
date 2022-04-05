@@ -1,0 +1,335 @@
+<section xml:id="iteration-simplifies-our-turtle-program">
+        <title>Iteration Simplifies our Turtle Program</title>
+        <p>To draw a square we&#8217;d like to do the same thing four times &#8212; move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
+            square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the <title_reference>forward</title_reference> and <title_reference>left</title_reference> four times, one time for
+            each value in the list.</p>
+
+        <listing xml:id="ch03_for1">
+            <caption/>
+            <program xml:id="ch03_for1_editor" interactive="activecode" language="python">
+                <input>
+import turtle            # set up alex
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+for i in [0, 1, 2, 3]:      # repeat four times
+    alex.forward(50)
+    alex.left(90)
+
+wn.exitonclick()
+                </input>
+            </program>
+        </listing>
+        <p>While &#8220;saving some lines of code&#8221; might be convenient, it is not the big
+            deal here.  What is much more important is that we&#8217;ve found a &#8220;repeating
+            pattern&#8221; of statements, and we reorganized our program to repeat the pattern.
+            Finding the chunks and somehow getting our programs arranged around those
+            chunks is a vital  skill when learning <emphasis>How to think like a computer scientist</emphasis>.
+        </p>
+        <p>The values [0,1,2,3] were provided to make the loop body execute 4 times.
+            We could have used any four values.  For example, consider the following program.</p>
+
+        <listing xml:id="ch03_forcolor">
+            <caption/>
+            <program xml:id="ch03_forcolor_editor" interactive="activecode" language="python">
+                <input>
+import turtle            # set up alex
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+for aColor in ["yellow", "red", "purple", "blue"]:      # repeat four times
+    alex.forward(50)
+    alex.left(90)
+
+wn.exitonclick()
+                </input>
+            </program>
+        </listing>
+        <p>In the previous example, there were four integers in the list.  This time there are four strings.  Since there are four items in the list, the iteration will still occur four times.  <c>aColor</c> will
+            take on each color in the list.  We can even take this one step further and use the value of <c>aColor</c> as part
+            of the computation.</p>
+
+        <listing xml:id="colorlist">
+            <caption/>
+            <program xml:id="colorlist_editor" interactive="activecode" language="python">
+                <input>
+import turtle            # set up alex
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+for aColor in ["yellow", "red", "purple", "blue"]:
+   alex.color(aColor)
+   alex.forward(50)
+   alex.left(90)
+
+wn.exitonclick()
+                </input>
+            </program>
+        </listing>
+        <p>In this case, the value of <c>aColor</c> is used to change the color attribute of <c>alex</c>.  Each iteration causes <c>aColor</c> to change to the next value in the list.</p>
+        <p>The for-loop is our first example of a <strong>compound statement</strong>.
+            Syntactically a compound statement is a statement.
+            The level of indentation of
+            a (whole) compound statement is the indentation of its heading.
+            In the example above there are five statements with the same
+            indentation, executed sequentially: the import, 2 assignments, the <emphasis>whole</emphasis> for-loop,
+            and <c>wn.exitonclick()</c>.  The for-loop compound statement is executed completely before
+            going on to the next sequential statement, <c>wn.exitonclick()</c>.
+        </p>
+        <p>
+            <strong>Mixed up program</strong>
+        </p>
+        <exercise xml:id="rs3_8" indent="show" language="python">
+            <statement>
+                <p>The following program uses a turtle to draw a triangle as shown to the left:</p>
+                <image source="images/PythonTurtle/Figures/TurtleTriangle.png" width="150%"/>
+                <p>But the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees.  After the loop, set the window to close when the user clicks in it.</p>
+                <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+            </statement>
+            <blocks>
+                <block order="4">
+                    <cline>import turtle</cline>
+                </block>
+                <block order="5">
+                    <cline>wn = turtle.Screen()</cline>
+                    <cline>marie = turtle.Turtle()</cline>
+                </block>
+                <block order="1">
+                    <cline># repeat 3 times</cline>
+                    <cline>for i in [0,1,2]:</cline>
+                </block>
+                <block order="2">
+                    <cline>  marie.forward(175)</cline>
+                </block>
+                <block order="3">
+                    <cline>  marie.left(120)</cline>
+                </block>
+                <block order="6">
+                    <cline>wn.exitonclick()</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <p>
+            <strong>Mixed up program</strong>
+        </p>
+        <exercise xml:id="rs3_9" indent="show" language="python">
+            <statement>
+                <p>The following program uses a turtle to draw a rectangle as shown to the left:</p>
+                <image source="images/PythonTurtle/Figures/TurtleRect.png" width="150%"/>
+                <p>But the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.</p>
+                <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+            </statement>
+            <blocks>
+                <block order="3">
+                    <cline>import turtle</cline>
+                    <cline>wn = turtle.Screen()</cline>
+                    <cline>carlos = turtle.Turtle()</cline>
+                </block>
+                <block order="5">
+                    <cline># repeat 2 times</cline>
+                    <cline>for i in [1,2]:</cline>
+                </block>
+                <block order="2">
+                    <cline>  carlos.forward(175)</cline>
+                </block>
+                <block order="6">
+                    <cline>  carlos.right(90)</cline>
+                </block>
+                <block order="4">
+                    <cline>  carlos.forward(150)</cline>
+                    <cline>  carlos.right(90)</cline>
+                </block>
+                <block order="1">
+                    <cline>wn.exitonclick()</cline>
+                </block>
+            </blocks>
+        </exercise>
+        <p>
+            <strong>Check your understanding</strong>
+        </p>
+
+        <exercise xml:id="test_question3_4_1">
+            <statement>
+
+                <p>In the following code, how many lines does this code print?</p>
+                <program language="python"><input>
+for number in [5, 4, 3, 2, 1, 0]:
+    print("I have", number, "cookies.  I'm going to eat one.")
+</input></program>
+
+            </statement>
+            <choices>
+
+                <choice>
+                    <statement>
+                        <p>1</p>
+                    </statement>
+                    <feedback>
+                    The loop body prints one line, but the body will execute exactly one time for each element in the list [5, 4, 3, 2, 1, 0].
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>5</p>
+                    </statement>
+                    <feedback>
+                    Although the biggest number in the list is 5, there are actually 6 elements in the list.
+                    </feedback>
+                </choice>
+
+                <choice data-correct="yes">
+                    <statement>
+                        <p>6</p>
+                    </statement>
+                    <feedback>
+                    The loop body will execute (and print one line) for each of the 6 elements in the list [5, 4, 3, 2, 1, 0].
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>10</p>
+                    </statement>
+                    <feedback>
+                    The loop body will not execute more times than the number of elements in the list.
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+
+        <exercise xml:id="test_question3_4_2">
+            <statement>
+
+                <p>How does python know what statements are contained in the loop body?</p>
+
+            </statement>
+            <choices>
+
+                <choice data-correct="yes">
+                    <statement>
+                        <p>They are indented to the same degree from the loop header.</p>
+                    </statement>
+                    <feedback>
+                    The loop body can have any number of lines, all indented from the loop header.
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>There is always exactly one line in the loop body.</p>
+                    </statement>
+                    <feedback>
+                    The loop body may have more than one line.
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>The loop body ends with a semi-colon (;) which is not shown in the code above.</p>
+                    </statement>
+                    <feedback>
+                    Python does not need semi-colons in its syntax, but relies mainly on indentation.
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+
+        <exercise xml:id="test_question3_4_3">
+            <statement>
+
+                <p>In the following code, what is the value of number the second time Python executes the loop?</p>
+                <program language="python"><input>
+for number in [5, 4, 3, 2, 1, 0]:
+    print("I have", number, "cookies.  I'm going to eat one.")
+</input></program>
+
+            </statement>
+            <choices>
+
+                <choice>
+                    <statement>
+                        <p>2</p>
+                    </statement>
+                    <feedback>
+                    Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
+                    </feedback>
+                </choice>
+
+                <choice data-correct="yes">
+                    <statement>
+                        <p>4</p>
+                    </statement>
+                    <feedback>
+                    Yes, Python will process the items from left to right so the first time the value of number is 5 and the second time it is 4.
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>5</p>
+                    </statement>
+                    <feedback>
+                    Python gives number the value of items in the list, one at a time, in order.  number gets a new value each time the loop repeats.
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>1</p>
+                    </statement>
+                    <feedback>
+                    Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+
+        <exercise xml:id="test_question3_4_4">
+            <statement>
+
+                <p>Consider the following code:</p>
+                <program language="python"><input>
+for aColor in ["yellow", "red", "green", "blue"]:
+   alex.forward(50)
+   alex.left(90)
+</input></program>
+                <p>What does each iteration through the loop do?</p>
+
+            </statement>
+            <choices>
+
+                <choice>
+                    <statement>
+                        <p>Draw a square using the same color for each side.</p>
+                    </statement>
+                    <feedback>
+                    The question is not asking you to describe the outcome of the entire loop, the question is asking you about the outcome of a **single iteration** of the loop.
+                    </feedback>
+                </choice>
+
+                <choice>
+                    <statement>
+                        <p>Draw a square using a different color for each side.</p>
+                    </statement>
+                    <feedback>
+                    Notice that aColor is never actually used inside the loop.
+                    </feedback>
+                </choice>
+
+                <choice data-correct="yes">
+                    <statement>
+                        <p>Draw one side of a square.</p>
+                    </statement>
+                    <feedback>
+                    The body of the loop only draws one side of the square.  It will be  repeated once for each item in the list.  However, the color of the turtle never changes.
+                    </feedback>
+                </choice>
+            </choices>
+
+        </exercise>
+    </section>
+

@@ -1,0 +1,695 @@
+<section xml:id="moreaboutiteration_exercises">
+        <title>Exercises</title>
+        <QuestionNode xml:id="moreiter-ex-1" line="15" names="moreiter_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_1', 'qnumber': '', 'question_label': '8.14.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q1" line="18" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_7">
+    <caption/>
+    <program xml:id="ex_7_7_editor" interactive="activecode" language="python">
+        <input>
+def newtonSqrt(n):
+        </input>
+    </program>
+</listing>
+                    <p>Add a print statement to Newton&#8217;s <c>sqrt</c> function that
+                        prints out <c>better</c> each time it is calculated. Call your modified
+                        function with 25 as an argument and record the results.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q1_answer">
+    <caption/>
+    <program xml:id="miter_q1_answer_editor" interactive="activecode" language="python">
+        <input>
+def newtonSqrt(n):
+    approx = 0.5 * n
+    better = 0.5 * (approx + n/approx)
+    while better != approx:
+        approx = better
+        better = 0.5 * (approx + n/approx)
+        print("Approx:", better)
+    return approx
+
+
+print("Final approx:", newtonSqrt(25))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="49" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_5784e08291ba43199d43fdab277849f5', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-2" line="54" names="moreiter_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_2', 'qnumber': '', 'question_label': '8.14.4'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_8">
+    <caption/>
+    <program xml:id="ex_7_8_editor" interactive="activecode" language="python">
+        <input>
+
+
+Write a function ``print_triangular_numbers(n)`` that prints out the first
+n triangular numbers. A call to ``print_triangular_numbers(5)`` would
+produce the following output::
+
+    1       1
+    2       3
+    3       6
+    4       10
+    5       15
+
+(*hint: use a web search to find out what a triangular number is.*)
+~~~~
+def print_triangular_numbers(n):
+    # your code here
+        </input>
+    </program>
+</listing>
+            <p>Write a function <c>print_triangular_numbers(n)</c> that prints out the first
+                n triangular numbers. A call to <c>print_triangular_numbers(5)</c> would
+                produce the following output:</p>
+            <pre>1       1
+2       3
+3       6
+4       10
+5       15</pre>
+            <p>(<emphasis>hint: use a web search to find out what a triangular number is.</emphasis>)</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-3" line="88" names="moreiter_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_3', 'qnumber': '', 'question_label': '8.14.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q3" line="90" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_9">
+    <caption/>
+    <program xml:id="ex_7_9_editor" interactive="activecode" language="python">
+        <input>
+
+def is_prime(n):
+    # your code here
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(is_prime(2),True,"Tested on 2, which is a prime number.")
+        self.assertEqual(is_prime(4187),False,"Tested on 4187, which is not a prime number. It is divisible by 53 and 79.")
+        self.assertEqual(is_prime(22),False,"Tested on 22, which is not a prime number. It is divisible by 2 and 11.")
+        self.assertEqual(is_prime(4813),True,"Tested on 4813, which is a prime number.")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Write a function, <c>is_prime</c>, that takes a single integer argument
+                        and returns <c>True</c> when the argument is a <emphasis>prime number</emphasis> and <c>False</c>
+                        otherwise.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q3_answer">
+    <caption/>
+    <program xml:id="miter_q3_answer_editor" interactive="activecode" language="python">
+        <input>
+def is_prime(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+print(is_prime(25))
+print(is_prime(7))
+print(is_prime(251))
+print(is_prime(20))
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="137" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_418de05233374e76b3b66aeb96b55656', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-4" line="142" names="moreiter_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_4', 'qnumber': '', 'question_label': '8.14.9'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_14">
+    <caption/>
+    <program xml:id="ex_7_14_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Modify the walking turtle program so that rather than a 90 degree left or right turn the
+                angle of the turn is determined randomly at each step.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-5" line="152" names="moreiter_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_5', 'qnumber': '', 'question_label': '8.14.11'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q5" line="154" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_13">
+    <caption/>
+    <program xml:id="ex_7_13_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Modify the turtle walk program so that you have two turtles each with a
+                        random starting location.  Keep the turtles moving until one of them leaves the screen.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q5_answer">
+    <caption/>
+    <program xml:id="miter_q5_answer_editor" interactive="activecode" language="python">
+        <input>
+import random
+import turtle
+
+def moveRandom(wn, t):
+    coin = random.randrange(0,2)
+    if coin == 0:
+        t.left(90)
+    else:
+        t.right(90)
+
+    t.forward(50)
+
+def areColliding(t1, t2):
+    if t1.distance(t2) &lt; 2:
+        return True
+    else:
+        return False
+
+def isInScreen(w, t):
+    leftBound = - w.window_width() / 2
+    rightBound = w.window_width() / 2
+    topBound = w.window_height() / 2
+    bottomBound = -w.window_height() / 2
+
+    turtleX = t.xcor()
+    turtleY = t.ycor()
+
+    stillIn = True
+    if turtleX &gt; rightBound or turtleX &lt; leftBound:
+        stillIn = False
+    if turtleY &gt; topBound or turtleY &lt; bottomBound:
+        stillIn = False
+    return stillIn
+
+t1 = turtle.Turtle()
+t2 = turtle.Turtle()
+wn = turtle.Screen()
+
+t1.shape('turtle')
+t2.shape('circle')
+
+leftBound = -wn.window_width() / 2
+rightBound = wn.window_width() / 2
+topBound = wn.window_height() / 2
+bottomBound = -wn.window_height() / 2
+
+t1.up()
+t1.goto(random.randrange(leftBound, rightBound),
+        random.randrange(bottomBound, topBound))
+t1.setheading(random.randrange(0, 360))
+t1.down()
+
+t2.up()
+t2.goto(random.randrange(leftBound, rightBound),
+        random.randrange(bottomBound, topBound))
+t2.setheading(random.randrange(0, 360))
+t2.down()
+
+
+while isInScreen(wn, t1) and isInScreen(wn, t2):
+    moveRandom(wn, t1)
+    moveRandom(wn, t2)
+
+wn.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="237" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_0cd01637a1814f86b11f576c37a46437', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-6" line="242" names="moreiter_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_6', 'qnumber': '', 'question_label': '8.14.14'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_12">
+    <caption/>
+    <program xml:id="ex_7_12_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Modify the previous turtle walk program so that the turtle turns around
+                when it hits the wall or when one turtle collides with another turtle
+                (when the positions of the two turtles are closer than some small number).</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-7" line="253" names="moreiter_ex_7" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_7', 'qnumber': '', 'question_label': '8.14.16'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q7" line="255" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q7', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_15">
+    <caption/>
+    <program xml:id="ex_7_15_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a function to remove all the red from an image.</p>
+                    <raw format="html" xml:space="preserve">&lt;img src="../_static/LutherBellPic.jpg" id="luther.jpg"&gt;
+&lt;h4 style="text-align: left;"&gt;For this and the following exercises, use the
+luther.jpg photo.&lt;/h4&gt;</raw>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q7_answer">
+    <caption/>
+    <program xml:id="miter_q7_answer_editor" interactive="activecode" language="python">
+        <input>
+import image
+
+img = image.Image("luther.jpg")
+newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+win = image.ImageWin()
+
+for col in range(img.getWidth()):
+    for row in range(img.getHeight()):
+        p = img.getPixel(col, row)
+
+        newred = 0
+        green = p.getGreen()
+        blue = p.getBlue()
+
+        newpixel = image.Pixel(newred, green, blue)
+
+        newimg.setPixel(col, row, newpixel)
+
+newimg.draw(win)
+win.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="300" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_777006b154ca4af7ab8bd11cc25c208a', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-8" line="304" names="moreiter_ex_8" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_8', 'qnumber': '', 'question_label': '8.14.19'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_16">
+    <caption/>
+    <program xml:id="ex_7_16_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Write a function to convert the image to grayscale.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-9" line="313" names="moreiter_ex_9" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_9', 'qnumber': '', 'question_label': '8.14.21'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q9" line="315" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q9', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_17">
+    <caption/>
+    <program xml:id="ex_7_17_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a function to convert an image to black and white.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q9_answer">
+    <caption/>
+    <program xml:id="miter_q9_answer_editor" interactive="activecode" language="python">
+        <input>
+import image
+
+def convertBlackWhite(input_image):
+    grayscale_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
+
+    for col in range(input_image.getWidth()):
+        for row in range(input_image.getHeight()):
+            p = input_image.getPixel(col, row)
+
+            red = p.getRed()
+            green = p.getGreen()
+            blue = p.getBlue()
+
+            avg = (red + green + blue) / 3.0
+
+            newpixel = image.Pixel(avg, avg, avg)
+            grayscale_image.setPixel(col, row, newpixel)
+
+    blackwhite_image = image.EmptyImage(input_image.getWidth(), input_image.getHeight())
+    for col in range(input_image.getWidth()):
+        for row in range(input_image.getHeight()):
+            p = grayscale_image.getPixel(col, row)
+            red = p.getRed()
+            if red &gt; 140:
+                val = 255
+            else:
+                val = 0
+
+            newpixel = image.Pixel(val, val, val)
+            blackwhite_image.setPixel(col, row, newpixel)
+    return blackwhite_image
+
+
+win = image.ImageWin()
+img = image.Image("luther.jpg")
+
+bw_img = convertBlackWhite(img)
+bw_img.draw(win)
+
+win.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="373" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_0f0fb41d607743998a86962a11eed53d', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-10" line="377" names="moreiter_ex_10" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_10', 'qnumber': '', 'question_label': '8.14.24'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_18">
+    <caption/>
+    <program xml:id="ex_7_18_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>Sepia Tone images are those brownish colored images that may remind you of
+                times past.  The formula for creating a sepia tone is as follows:</p>
+            <pre>newR = (R &#215; 0.393 + G &#215; 0.769 + B &#215; 0.189)
+newG = (R &#215; 0.349 + G &#215; 0.686 + B &#215; 0.168)
+newB = (R &#215; 0.272 + G &#215; 0.534 + B &#215; 0.131)</pre>
+            <p>Write a function to convert an image to sepia tone. <emphasis>Hint:</emphasis>
+                Remember that rgb values must be integers between 0 and 255.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-11" line="396" names="moreiter_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_11', 'qnumber': '', 'question_label': '8.14.26'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q11" line="398" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_19">
+    <caption/>
+    <program xml:id="ex_7_19_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a function to uniformly enlarge an image by a factor of 2 (double the size).</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="answer_7_11">
+    <caption/>
+    <program xml:id="answer_7_11_editor" interactive="activecode" language="python">
+        <input>
+import image
+
+def double(oldimage):
+    oldw = oldimage.getWidth()
+    oldh = oldimage.getHeight()
+
+    newim = image.EmptyImage(oldw * 2, oldh * 2)
+    for row in range(oldh):
+        for col in range(oldw):
+            oldpixel = oldimage.getPixel(col, row)
+
+            newim.setPixel(2*col, 2*row, oldpixel)
+            newim.setPixel(2*col+1, 2*row, oldpixel)
+            newim.setPixel(2*col, 2*row+1, oldpixel)
+            newim.setPixel(2*col+1, 2*row+1, oldpixel)
+
+    return newim
+
+img = image.Image("luther.jpg")
+win = image.ImageWin(img.getWidth()*2, img.getHeight()*2)
+
+bigimg = double(img)
+bigimg.draw(win)
+
+win.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="442" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_9ca319187b4a4c2399402de0d99c0b1d', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-12" line="446" names="moreiter_ex_12" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_12', 'qnumber': '', 'question_label': '8.14.29'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_20">
+    <caption/>
+    <program xml:id="ex_7_20_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>After you have scaled an image too much it looks blocky.  One way of
+                reducing the blockiness of the image is to replace each pixel with the
+                average values of the pixels around it.  This has the effect of smoothing
+                out the changes in color.  Write a function that takes an image as a
+                parameter and smooths the image.  Your function should return a new image
+                that is the same as the old but smoothed.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-13" line="459" names="moreiter_ex_13" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_13', 'qnumber': '', 'question_label': '8.14.31'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q13" line="461" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q13', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_21">
+    <caption/>
+    <program xml:id="ex_7_21_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Write a general pixel mapper function that will take an image and a pixel mapping function as
+                        parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
+                        a new pixel.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q13_answer">
+    <caption/>
+    <program xml:id="miter_q13_answer_editor" interactive="activecode" language="python">
+        <input>
+import image
+
+def pixelMapper(oldimage, rgbFunction):
+    width = oldimage.getWidth()
+    height = oldimage.getHeight()
+    newim = image.EmptyImage(width, height)
+
+    for row in range(height):
+        for col in range(width):
+            originalpixel = oldimage.getPixel(col, row)
+            newpixel = rgbFunction(originalpixel)
+            newim.setPixel(col, row, newpixel)
+
+    return newim
+
+def graypixel(oldpixel):
+    intensitysum = oldpixel.getRed() + oldpixel.getGreen() + oldpixel.getBlue()
+    aveRGB = intensitysum // 3
+    newPixel = image.Pixel(aveRGB, aveRGB, aveRGB)
+    return newPixel
+
+win = image.ImageWin()
+img = image.Image("luther.jpg")
+
+newim = pixelMapper(img, graypixel)
+newim.draw(win)
+
+win.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="510" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_eb9f71a62de24efaa61f64b5a7e5d9c9', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-14" line="514" names="moreiter_ex_14" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_14', 'qnumber': '', 'question_label': '8.14.34'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+
+<listing xml:id="ex_7_22">
+    <caption/>
+    <program xml:id="ex_7_22_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+            <p>When you scan in images using a scanner they may have lots of noise due to
+                dust particles on the image itself or the scanner itself,
+                or the images may even be damaged.  One way of eliminating this noise is
+                to replace each pixel by the median value of the pixels surrounding it.</p>
+        </QuestionNode>
+        <QuestionNode xml:id="moreiter-ex-15" line="525" names="moreiter_ex_15" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_15', 'qnumber': '', 'question_label': '8.14.36'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+            <TabbedStuffNode divid="q15" line="527" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q15', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ex_7_23">
+    <caption/>
+    <program xml:id="ex_7_23_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</listing>
+                    <p>Research the Sobel edge detection algorithm and implement it.</p>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+<listing xml:id="miter_q15_answer">
+    <caption/>
+    <program xml:id="miter_q15_answer_editor" interactive="activecode" language="python">
+        <input>
+import image
+import math
+import sys
+
+# Code adapted from http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/image-processing/edge_detection.html
+# Licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+
+# this algorithm takes some time for larger images - this increases the amount of time
+# the program is allowed to run before it times out
+sys.setExecutionLimit(20000)
+
+img = image.Image("luther.jpg")
+newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+win = image.ImageWin()
+
+for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1 to width-1)
+    for y in range(1, img.getHeight()-1): # ignore edge pixels for simplicity (1 to height-1)
+
+        # initialise Gx to 0 and Gy to 0 for every pixel
+        Gx = 0
+        Gy = 0
+
+        # top left pixel
+        p = img.getPixel(x-1, y-1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # intensity ranges from 0 to 765 (255 * 3)
+        intensity = r + g + b
+
+        # accumulate the value into Gx, and Gy
+        Gx += -intensity
+        Gy += -intensity
+
+        # remaining left column
+        p = img.getPixel(x-1, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gx += -2 * (r + g + b)
+
+        p = img.getPixel(x-1, y+1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gx += -(r + g + b)
+        Gy += (r + g + b)
+
+        # middle pixels
+        p = img.getPixel(x, y-1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gy += -2 * (r + g + b)
+
+        p = img.getPixel(x, y+1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gy += 2 * (r + g + b)
+
+        # right column
+        p = img.getPixel(x+1, y-1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gx += (r + g + b)
+        Gy += -(r + g + b)
+
+        p = img.getPixel(x+1, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gx += 2 * (r + g + b)
+
+        p = img.getPixel(x+1, y+1)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        Gx += (r + g + b)
+        Gy += (r + g + b)
+
+        # calculate the length of the gradient (Pythagorean theorem)
+        length = math.sqrt((Gx * Gx) + (Gy * Gy))
+
+        # normalise the length of gradient to the range 0 to 255
+        length = length / 4328 * 255
+
+        length = int(length)
+
+        # draw the length in the edge image
+        newpixel = image.Pixel(length, length, length)
+        newimg.setPixel(x, y, newpixel)
+
+newimg.draw(win)
+win.exitonclick()
+        </input>
+    </program>
+</listing>
+                </TabNode>
+                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
+                    <DisqusNode line="649" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_dd2d9ca5ea744aafbf7cdc2a4ad5e974', 'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
+                    </DisqusNode>
+                </TabNode>
+            </TabbedStuffNode>
+        </QuestionNode>
+    </section>
+

@@ -10,6 +10,12 @@
 
     <xi:include href="./SimplePythonData/toctree.ptx"/>
 
+    <xi:include href="./Debugging/toctree.ptx"/>
+    <xi:include href="./PythonTurtle/toctree.ptx"/>
+    <xi:include href="./PythonModules/toctree.ptx"/>
+    <xi:include href="./Functions/toctree.ptx"/>
+
+
   </book>
 </pretext>
 

@@ -158,7 +158,7 @@ print(x)
 </choices>
 
     </exercise>
-<exercise xml:id="question2_10_3" indent="yes" language="python"><statement>
+<exercise xml:id="question2_10_3" indent="show" language="python"><statement>
         <p>Construct the code that will result in the value 134 being printed.</p>
 </statement>
 <blocks><block order="1">

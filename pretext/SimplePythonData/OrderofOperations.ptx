@@ -1,8 +1,8 @@
 <section xml:id="order-of-operations">
         <title>Order of Operations</title>
 
-        <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="560"/>
-        <p>When more than one operator appears in an expression, the order of evaluation
+    <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="560"/>
+            <p>When more than one operator appears in an expression, the order of evaluation
             depends on the <strong>rules of precedence</strong>. Python follows the same precedence
             rules for its mathematical operators that mathematics does.</p>
         <!--The acronym PEMDAS-->
@@ -35,7 +35,7 @@
         </ol></p>
         <!--(The-->
         <!--acronym PEDMAS could mislead you to thinking that division has higher-->
-        <!--precedence than multiplication, and addition is done ahead of subtraction -->
+        <!--precedence than multiplication, and addition is done ahead of subtraction so-->
         <!--don't be misled.  Subtraction and addition are at the same precedence, and-->
         <!--the left-to-right rule applies.)-->
         <note>
@@ -44,36 +44,32 @@
                 is to always use parentheses to force exactly the order you want when
                 exponentiation is involved:</p>
 
-            <exercise>
-                <listing xml:id="ch02_23">
-                    <caption/>
-                    <program xml:id="ch02_23_editor" interactive="yes" language="python">
-                        <input>
+<listing xml:id="ch02_23">
+    <caption/>
+    <program xml:id="ch02_23_editor" interactive="activecode" language="python">
+        <input>
 print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
 print((2 ** 3) ** 2)   # use parentheses to force the order you want!
-                        </input>
-                    </program>
-                </listing>
-            </exercise>
+        </input>
+    </program>
+</listing>
         </note>
         <!--The immediate mode command prompt of Python is great for exploring and-->
         <!--experimenting with expressions like this.-->
         <p>See <xref ref="../Appendices/PrecedenceTable#operator-summary"/> for <emphasis>all</emphasis> the operators introduced in this book.
             You will also see many upcoming non-mathematical Python operators.</p>
-    <p>
-        <strong>Check your understanding</strong>
-    </p>
+        <p><strong>Check your understanding</strong></p>
 
     <exercise xml:id="test_question2_8_1">
         <statement>
 
-            <p>What is the value of the following expression:</p>
-            <program language="python"><input>
+        <p>What is the value of the following expression:</p>
+        <program language="python"><input>
 16 - 2 * 5 // 3 + 1
 </input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice data-correct="yes">
                 <statement>
@@ -110,20 +106,20 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
                     Remember that // does integer division.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question2_8_2">
         <statement>
 
-            <p>What is the value of the following expression:</p>
-            <program language="python"><input>
+        <p>What is the value of the following expression:</p>
+        <program language="python"><input>
 2 ** 2 ** 3 * 3
 </input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice data-correct="yes">
                 <statement>
@@ -160,11 +156,9 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
                     Remember to multiply by 3.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-    <p>Here are animations for the above expressions:</p>
-    <exercise runestone="se_tq281"/>
-    <exercise runestone="se_tq282"/>
-</section>
+        <p>Here are animations for the above expressions:</p>
+<exercise runestone="se_tq281"/><exercise runestone="se_tq282"/>    </section>
 

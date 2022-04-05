@@ -145,7 +145,7 @@ print(2 + 3)
 
     </exercise>
             <p><strong>Check your understanding</strong></p>
-<exercise xml:id="nav_question1_100_4" indent="yes" language="python"><statement>
+<exercise xml:id="nav_question1_100_4" indent="show" language="python"><statement>
             <p>Construct a block of code that correctly implements the accumulator pattern.</p>
 </statement>
 <blocks><block order="1">

@@ -1,0 +1,256 @@
+<section xml:id="testing-with-pytest">
+        <title>Testing with pytest</title>
+        <p>Writing automated unit tests is very helpful in reducing the effort needed to build software. However, the simple
+            approach described so far is inadequate to help programmers realize the full benefits of unit testing. In this section,
+            we introduce a unit test framework which addresses some practical issues that crop up when you try to apply
+            unit testing techniques in software development projects. Here are some of the issues with using plain assertion unit
+            tests:</p>
+        <p><ul>
+            <li>
+                <p>Simple assert-based tests don&#8217;t give very good diagnostic information when they fail. It would help to have better
+                    reporting. For example, when an assert fails, it would help us in diagnosing the error to see what value the function
+                    actually produced. An AssertionError doesn&#8217;t give us that information.</p>
+            </li>
+            <li>
+                <p>We need a better way to organize our unit test code. So far, I&#8217;ve suggested creating separate programs to hold
+                    the functions under test together with their unit test code. But that isn&#8217;t practical for most projects. For example,
+                    functions often need to call other functions in the program in order to do their work. It&#8217;s not convenient to
+                    bring those auxiliary functions over into separate test programs.</p>
+            </li>
+            <li>
+                <p>We need a way to keep the unit test around and use it even after the function is first developed
+                    to help us catch bugs that are inadvertently introduced into the function when we make modifications to it.</p>
+            </li>
+        </ul></p>
+        <p>Unit testing frameworks help to address these issues, by improving error reporting, providing a structure
+            for programmers to organize their unit tests, and making it possible to leverage existing unit tests when
+            making enhancements to functions. <strong>pytest</strong> is one unit testing framework that provides these benefits.</p>
+        <p>For our purposes, the attractive thing about pytest is that writing unit tests with pytest feels a lot like writing unit
+            tests using plain assert statements. The only difference is that you put your assert statements into test functions.
+            Here&#8217;s an example of how it works:</p>
+
+<listing xml:id="ac_round6_pytest1">
+    <caption/>
+    <program xml:id="ac_round6_pytest1_editor" interactive="activecode" language="python">
+        <input>
+def round6(num: float) -&gt; int:
+    """This function has a bug in it"""
+    return int(num + .6)
+
+# ---- automated unit test ----
+
+def test_round6():
+    assert round6(9.7) == 10
+    assert round6(8.5) == 8
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class pyTests(TestCaseGui):
+
+    def testOne(self):
+        for item in globals():
+            if item.startswith("test_"):
+                try:
+                    globals()[item]()
+                    self.assertEqual(item + " passed", item + " passed", item + " passed")
+                except Exception as e:
+                    self.assertEqual(item + " failed", item + " passed", item + " failed: " + str(e))
+
+pyTests().main()
+        </input>
+    </program>
+</listing>
+        <!--test:
+
+success = True
+for item in globals():
+    if item.startswith("test_"):
+        try:
+            globals()[item]()
+        except Exception as e:
+            success = False
+            print(item + "() test failed with ", e)
+
+if success:
+    print("All tests passed!")-->
+        <p>This code example defines two functions: the function to be tested, <c>round6</c>, and a function named <c>test_round6</c>
+            that contains unit test code. When using the pytest approach, you write your unit test as a function whose name must
+            start with the prefix <c>test_</c>. Inside the function, you write normal assert statements to test the desired function.
+            Notice that you do not write a line to <emphasis>call</emphasis> the unit test function. Instead, when you launch pytest to run the unit
+            tests, pytest scans your script and executes only the functions with the prefix <c>test_</c>.</p>
+        <p>This ActiveCode environment simulates pytest by scanning for and executing functions with a <c>test_</c> prefix when you
+            click <strong>Run</strong>. Go ahead and try it - rename the test_round6 function to <c>test_itworks</c> and try running the test again.</p>
+        <subsection xml:id="organizing-pytest-functions">
+            <title>Organizing pytest Functions</title>
+            <p>The example above uses a single pytest function, with both asserts in the same pytest function. The
+                disadvantage of that approach is that the first failing assert prevents the rest of the asserts from
+                being tested.</p>
+            <p>If you want, you can write multiple pytest functions to test a single function. That way, when an
+                assert fails in one test function, the rest of the pytest functions can still run and report success or
+                failure.</p>
+            <p>You can name your pytest functions with names that indicate what they are testing. For
+                example, try changing the ActiveCode example above so that it defines two test functions: one named
+                <c>test_round6_rounds_up</c>, containing the first assert, and one named <c>test_round6_rounds_down</c>,
+                containing the second assert. Your code should look like this:</p>
+            <pre>def test_round6_rounds_up():
+    assert round6(9.7) == 10
+
+def test_round6_rounds_down():
+    assert round6(8.5) == 8</pre>
+            <p>If you use good pytest function names, when a pytest function has an assertion failure, you can
+                easily tell what the problem was.</p>
+        </subsection>
+        <subsection xml:id="using-pytest">
+            <title>Using pytest</title>
+            <p>To use pytest, you must first install it using the <strong>pip</strong> command. Open your computer&#8217;s command line window
+                (not the Python interpreter) and enter the following command to install:</p>
+            <p><ul>
+                <li>
+                    <p>Windows:</p>
+                    <pre>pip install pytest</pre>
+                </li>
+                <li>
+                    <p>Mac/Linux:</p>
+                    <pre>pip3 install pytest</pre>
+                </li>
+            </ul></p>
+            <p>After you have installed pytest, you run pytest unit tests from the command line window. To run pytest unit
+                tests, try copying the code from the ActiveCode example above and pasting it into a Python file named (ex.)
+                <strong>myround.py</strong>. Then, use the <strong>pytest</strong> command to run your tests by opening a command window,
+                navigating to the folder where you stored myround.py, and executing the following command:</p>
+            <pre>pytest myround.py</pre>
+        </subsection>
+        <subsection xml:id="understanding-pytest-failure-reports">
+            <title>Understanding pytest Failure Reports</title>
+            <p>When you run the pytest command and an assertion fails, you see a report like this:</p>
+            <pre>=============================== FAILURES ================================
+______________________________ test_round6 ______________________________
+    def test_round6():
+        assert round6(9.7) == 10
+&gt;       assert round6(8.5) == 8
+E       assert 9 == 8
+E        +  where 9 = round6(8.5)
+
+myround.py:8: AssertionError</pre>
+            <p>Let&#8217;s take a closer look at this report to understand what it&#8217;s telling you.</p>
+            <p><ol label="1">
+                <li>
+                    <p>First, notice the line with the <c>&gt;</c> symbol:</p>
+                    <pre>&gt;       assert round6(8.5) == 8</pre>
+                    <p>The <c>&gt;</c> symbol points to the line with the assertion that failed.</p>
+                </li>
+                <li>
+                    <p>Next, notice the lines marked <c>E</c>:</p>
+                    <pre>E       assert 9 == 8
+E        +  where 9 = round6(8.5)</pre>
+                    <p>This indicates that the call to <c>round6(8.5)</c> returned the value 9, instead of the value 8.
+                        The value <c>9</c> is the actual result of the function. Knowing the value actually produced by
+                        the function can help you to troubleshoot the bug and correct the problem.</p>
+                </li>
+            </ol></p>
+        </subsection>
+        <subsection xml:id="integrated-unit-testing-with-pytest">
+            <title>Integrated Unit Testing with pytest</title>
+            <p>When you use the pytest framework, you can include pytest test functions in your main program, along with the rest of
+                your program code. This allows you to keep your tests together with the functions that they test, and you can run either
+                your program (using the python command) or the unit tests (using the pytest command).</p>
+            <p>Take a look at this example that shows a function (<c>round6</c>, containing a bug), together with a
+                unit test function (<c>test_round6</c>), and a main program that uses <c>round6</c>:</p>
+            <program language="python"><input>
+def round6(num: float) -&gt; int:
+    return int(num + .6)
+
+# ---- automated unit test ----
+
+def test_round6():
+    assert round6(9.7) == 10
+    assert round6(8.5) == 8
+
+# ----- main program follows -----
+
+if __name__ == '__main__':
+    num = float(input('Enter a value:'))
+    print('The value rounded is: ' + str(round6(num)))
+</input></program>
+            <p>Notice how the main program is inside the <c>if</c> statement on line 12. This if condition is true when the program is run
+                using the <strong>python</strong> command, and allows the main program to execute. When the unit tests are executed using the
+                <strong>pytest</strong> command, any top-level code outside a function in the python file gets executed when <strong>pytest</strong> scans the
+                script looking for unit test functions with a <c>test_</c> prefix. The <c>if</c> condition is false in this scenario, and that
+                prevents the main program from executing when <strong>pytest</strong> is scanning the script. If that explanation didn&#8217;t make total
+                sense, just remember: in order for pytest to work correctly, any code that is part of the main program must be inside an
+                <c>if</c> statement like the one in this example, so that it doesn&#8217;t interfere with pytests&#8217;s unit testing process.</p>
+            <p><strong>Check your understanding</strong></p>
+            <TabbedStuffNode divid="tab_grade_unittest" line="213" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/UnitTesting/TestingWithpytest.rst" tabbed_stuff_options="{'subchapter': 'TestingWithpytest', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'tab_grade_unittest', 'divclass': 'alert alert-warning'}">
+                <TabNode tabname="Question" tabnode_options="{'subchapter': 'TestingWithpytest', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+
+<listing xml:id="ac_grade_pytest">
+    <caption/>
+    <program xml:id="ac_grade_pytest_editor" interactive="activecode" language="python">
+        <input>
+# Write a pytest unit test function named ``test_grade``
+
+
+====
+from unittest.gui import TestCaseGui
+
+testA = False
+testB = False
+testF = False
+illegal = False
+
+def grade(score):
+    global illegal, testA, testB, testF
+
+    if score &gt; 100 or score &lt; 0:
+        illegal = True
+        return ''
+    elif score &gt;= 90:
+        testA = True
+        return 'A'
+    elif score &gt;= 80:
+        testB = True
+        return 'B'
+    else:
+        testF = True
+        return 'F'
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        code = self.getEditorText().replace(' ','').replace('"', '').replace("'", '')
+        self.assertEqual(test_grade(), None, 'test_grade function defined' )
+        self.assertTrue(testA and '==A' in code, "Assert tested 90..100")
+        self.assertTrue(testB and '==B' in code, "Assert tested 80..90")
+        self.assertTrue(testF and '==F' in code, "Assert tested 0..80")
+
+myTests().main()
+        </input>
+    </program>
+</listing>
+                    <p>Write a pytest unit test function named <c>test_grade</c> to test a function
+                        with the following specification. Your asserts should
+                        check that the function produces an appropriate value
+                        for each of the three postcondition cases.</p>
+                    <program language="python"><input>
+def grade(score):
+    """Determines letter grade given a numeric score
+
+    Precondition: 0 &lt;= `score` &lt;= 100
+    Postcondition: Returns 'A' if 90 &lt;= `score` &lt;= 100,
+      'B' if 80 &lt;= `score` &lt; 90, 'F' if 0 &lt;= `score` &lt; 80
+    """
+</input></program>
+                </TabNode>
+                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'TestingWithpytest', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                    <p>The following is a suggested pytest unit test.</p>
+                    <pre>def test_grade():
+    assert grade(92) == 'A'
+    assert grade(85) == 'B'
+    assert grade(69) == 'F'</pre>
+                </TabNode>
+            </TabbedStuffNode>
+        </subsection>
+    </section>
+

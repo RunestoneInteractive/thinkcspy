@@ -1,4 +1,4 @@
-<section xml:id="exercises">
+<section xml:id="classesbasics_exercises">
         <title>Exercises</title>
         <QuestionNode xml:id="cb-ex-1" line="13" names="cb_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'cb_ex_1', 'qnumber': '', 'question_label': '17.11.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst">
             <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/ClassesBasics/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'ClassesBasics', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">

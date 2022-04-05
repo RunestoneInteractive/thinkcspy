@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext>
-    <book xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>How to Think like a Computer Scientist</title>
-        <subtitle>Interactive Edition</subtitle>
-
-        <xi:include href='./GeneralIntro/toctree.ptx' />
-        <xi:include href='./SimplePythonData/toctree.ptx' />
-    </chapter>
-</pretext>
+<meta content="An interactive version of the How to Think Like a Computer Scientist book" name="description">
+    </meta>
+    

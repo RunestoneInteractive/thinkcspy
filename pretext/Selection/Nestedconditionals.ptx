@@ -1,0 +1,86 @@
+<section xml:id="nested-conditionals">
+        <title>Nested conditionals</title>
+        <p>One conditional can also be <strong>nested</strong> within another. For example, assume we have two integer variables, <c>x</c> and <c>y</c>.
+            The following pattern of selection shows how we might decide how they are related to each other.</p>
+        <program language="python"><input>
+if x &lt; y:
+    print("x is less than y")
+else:
+    if x &gt; y:
+        print("x is greater than y")
+    else:
+        print("x and y must be equal")
+</input></program>
+        <p>The outer conditional contains two branches.
+            The second branch (the else from the outer) contains another <c>if</c> statement, which
+            has two branches of its own. Those two branches could contain
+            conditional statements as well.</p>
+        <p>The flow of control for this example can be seen in this flowchart illustration.</p>
+        <image source="images/Selection/Figures/flowchart_nested_conditional.png"/>
+        <p>Here is a complete program that defines values for <c>x</c> and <c>y</c>.  Run the program and see the result.  Then change the values of the variables to change the flow of control.</p>
+
+<listing xml:id="sel2">
+    <caption/>
+    <program xml:id="sel2_editor" interactive="activecode" language="python">
+        <input>
+x = 10
+y = 10
+
+if x &lt; y:
+    print("x is less than y")
+else:
+    if x &gt; y:
+        print("x is greater than y")
+    else:
+        print("x and y must be equal")
+        </input>
+    </program>
+</listing>
+        <note>
+            <p>In some programming languages, matching the if and the else is a problem.  However, in Python this is not the case.
+                The indentation pattern tells us exactly which else
+                belongs to which if.</p>
+        </note>
+        <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
+<exercise runestone="sel1"/>        <p><strong>Check your understanding</strong></p>
+
+    <exercise xml:id="test_question6_6_1">
+        <statement>
+
+        <p>Will the following code cause an error?</p>
+        <program language="python"><input>
+x = -10
+if x &lt; 0:
+    print("The negative number ",  x, " is not valid here.")
+else:
+    if x &gt; 0:
+        print(x, " is a positive number")
+    else:
+        print(x," is 0")
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice data-correct="yes">
+                <statement>
+                    <p>No</p>
+                </statement>
+                <feedback>
+                    This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>Yes</p>
+                </statement>
+                <feedback>
+                    This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

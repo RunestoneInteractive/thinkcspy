@@ -1,4 +1,4 @@
-<section xml:id="exercises">
+<section xml:id="pythonmodules_exercises">
         <title>Exercises</title>
         <QuestionNode xml:id="pymod-ex-1" line="13" names="pymod_ex_1" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'pymod_ex_1', 'qnumber': '', 'question_label': '5.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst">
             <TabbedStuffNode divid="q1" line="15" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonModules/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">

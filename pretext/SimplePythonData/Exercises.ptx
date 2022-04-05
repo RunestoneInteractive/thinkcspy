@@ -1,4 +1,4 @@
-<section xml:id="spd_exercises">
+<section xml:id="simplepythondata_exercises">
         <title>Exercises</title>
         <QuestionNode xml:id="spd-ex-1" line="13" names="spd_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'spd_ex_1', 'qnumber': '', 'question_label': '2.13.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst">
             <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/SimplePythonData/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'SimplePythonData', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
