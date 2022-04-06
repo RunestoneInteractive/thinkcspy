@@ -39,7 +39,7 @@ For example, our LabeledPoint example could have been implemented as follows:
     print(p.distanceFromOrigin())
 
 The first thing to notice about this version of LabeledPoint 
-does not inherit from Point. Instead, its constructor 
+is that it does not inherit from Point. Instead, its constructor 
 instantiates a Point and stores a reference to it in its ``point`` 
 instance variable so that it can be used by the other methods.
 
