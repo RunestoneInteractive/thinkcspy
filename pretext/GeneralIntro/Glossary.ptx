@@ -25,7 +25,7 @@
                     
                         <p>An intermediate language between source code and object code. Many
                             modern languages first compile source code into byte code and then
-                            interpret the byte code with a program called a <emphasis>virtual machine</emphasis>.</p>
+                            interpret the byte code with a program called a <em>virtual machine</em>.</p>
                     
                 </gi>
                 <gi>
@@ -182,7 +182,7 @@
                     
                         <p>A style of using Python where we type expressions at the command
                             prompt, and the results are shown immediately.  Contrast with
-                            <strong>source code</strong>, and see the entry under <strong>Python shell</strong>.</p>
+                            <alert>source code</alert>, and see the entry under <alert>Python shell</alert>.</p>
                     
                 </gi>
                 <gi>

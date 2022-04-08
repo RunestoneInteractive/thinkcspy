@@ -5,6 +5,6 @@
         <p>We can make our class constructor more general by putting extra parameters into
             the <c>__init__</c> method, as shown in this codelens example.</p>
 <exercise runestone="chp13_improveconstructor"/>        <p>Now when we create new points, we supply the x and y coordinates as parameters.  When the point is created, the values of <c>initX</c> and <c>initY</c> are assigned to the state of the object.</p>
-        <image source="images/ClassesBasics/Figures/objectpic5.png" alt="Simple object has state and methods"/>
+        <image source="ClassesBasics/Figures/objectpic5.png" alt="Simple object has state and methods"/>
     </section>
 

@@ -76,8 +76,8 @@ print(labeledPt)
 </listing>
         <p>Here, we have redefined two of the methods that LabeledPoint inherits from Point:
             <c>__init__()</c> and <c>__str__()</c>.
-            This is called <emphasis>overriding</emphasis>. When a child class redefines methods that are defined
-            in its parent, we say that the child <emphasis>overrides</emphasis> the functionality inherited from
+            This is called <em>overriding</em>. When a child class redefines methods that are defined
+            in its parent, we say that the child <em>overrides</em> the functionality inherited from
             its parent. When both the parent class and child class have a method with the
             same name, an invocation of the method on an instance of the child class
             executes code in the child&#8217;s class; an invocation of the method on an instance

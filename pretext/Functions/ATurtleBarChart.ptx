@@ -22,7 +22,7 @@
         <p><c>xs = [48, 117, 200, 240, 160, 260, 220]</c></p>
         <p>Corresponding to each data measurement, we&#8217;ll draw a simple rectangle of that height, with a fixed width.
             Here is a simplified version of what we would like to create.</p>
-        <image source="images/Functions/Figures/tess_bar_1.png"/>
+        <image source="Functions/Figures/tess_bar_1.png"/>
         <p>We can quickly see that drawing a bar will be similar to drawing a rectangle or a square.  Since we will need to do it
             a number of times, it makes sense to create a function, <c>drawBar</c>, that will need a turtle and the height of the bar.  We will assume that the width of the bar will be 40 units.  Once we have the function, we can use a basic for loop to process the list of data values.</p>
         <program language="python"><input>

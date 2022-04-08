@@ -8,7 +8,7 @@
             amount of &#8220;organizational power&#8221; to our programs, and to our thinking.
             We can group together the sensible operations, and the kinds of data
             they apply to, and each instance of the class can have its own state.</p>
-        <p>A <strong>method</strong> behaves like a function but it is invoked on a specific
+        <p>A <alert>method</alert> behaves like a function but it is invoked on a specific
             instance.  For example, with a turtle named <c>tess</c>,  <c>tess.right(90)</c> asks the <c>tess</c> object to perform its
             <c>right</c> method and turn 90 degrees.   Methods are accessed using dot notation.</p>
         <p>Let&#8217;s add two simple methods to allow a point to give us information about its state.  The <c>getX</c> method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how

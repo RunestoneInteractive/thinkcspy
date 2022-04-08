@@ -61,7 +61,7 @@ Use a production WSGI server instead.
         </block_quote>
         <p>Your browser sends a request to the Flask server, and you should see a &#8220;Hello, world!&#8221; message appear:</p>
         <figure>
-            <image source="images/WebApps/Figures/flaskhello.png"/>
+            <image source="WebApps/Figures/flaskhello.png"/>
         </figure>
         <p>To send the request again, press the Reload button in your browser. You should
             see the date and time change.</p>

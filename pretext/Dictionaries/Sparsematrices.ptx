@@ -1,7 +1,7 @@
 <section xml:id="sparse-matrices">
         <title>Sparse Matrices</title>
         <p>A matrix is a two dimensional collection, typically thought of as having rows and columns of data.  One of the easiest ways to create a matrix is to use a list of lists.  For example, consider the matrix shown below.</p>
-        <image source="images/Dictionaries/Figures/sparse.png" alt="sparse matrix"/>
+        <image source="Dictionaries/Figures/sparse.png" alt="sparse matrix"/>
         <p>We can represent this collection as five rows, each row having five columns.  Using a list of lists representation, we will have a list of five items, each of which is a list of five items.  The
             outer items represent the rows and the items in the nested lists represent the data in each column.</p>
         <program language="python"><input>

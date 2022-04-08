@@ -1,16 +1,20 @@
 <section xml:id="instances-a-herd-of-turtles">
-        <title>Instances &#8212; A Herd of Turtles</title>
-        <p>Just like we can have many different integers in a program, we can have many
-            turtles.  Each of them is an independent object and we call each one an <strong>instance</strong> of the Turtle type (class).  Each instance has its own
+    <title>Instances &#8212; A Herd of Turtles</title>
+    <p>
+        Just like we can have many different integers in a program, we can have many
+            turtles.  Each of them is an independent object and we call each one an
+        <alert>instance</alert>
+        of the Turtle type (class).  Each instance has its own
             attributes and methods &#8212; so alex might draw with a thin black pen and be at
             some position, while tess might be going in her own direction with a fat pink
             pen.  So here is what happens when alex completes a square and tess
-            completes her triangle:</p>
+            completes her triangle:
+    </p>
 
-        <listing xml:id="ch03_3">
-            <caption/>
-            <program xml:id="ch03_3_editor" interactive="activecode" language="python">
-                <input>
+    <listing xml:id="ch03_3">
+        <caption />
+        <program xml:id="ch03_3_editor" interactive="activecode" language="python">
+            <input>
 import turtle
 wn = turtle.Screen()             # Set up the window and its attributes
 wn.bgcolor("lightgreen")
@@ -43,17 +47,26 @@ alex.left(90)
 
 wn.exitonclick()
                 </input>
-            </program>
-        </listing>
-        <p>Here are some <emphasis>How to think like a computer scientist</emphasis> observations:</p>
-        <p><ul>
+        </program>
+    </listing>
+    <p>
+        Here are some
+        <em>How to think like a computer scientist</em>
+        observations:
+    </p>
+    <p>
+        <ul>
             <li>
-                <p>There are 360 degrees in a full circle.  If you add up all the turns that a
-                    turtle makes, <emphasis>no matter what steps occurred between the turns</emphasis>, you can
+                <p>
+                    There are 360 degrees in a full circle.  If you add up all the turns that a
+                    turtle makes,
+                    <em>no matter what steps occurred between the turns</em>
+                    , you can
                     easily figure out if they add up to some multiple of 360.  This should
                     convince you that alex is facing in exactly the same direction as he was when
                     he was first created. (Geometry conventions have 0 degrees facing East and
-                    that is the case here too!)</p>
+                    that is the case here too!)
+                </p>
             </li>
             <li>
                 <p>We could have left out the last turn for alex, but that would not have been
@@ -64,11 +77,15 @@ wn.exitonclick()
                     bigger programs easier for us humans!</p>
             </li>
             <li>
-                <p>We did the same with tess: she drew her triangle and turned through a full
+                <p>
+                    We did the same with tess: she drew her triangle and turned through a full
                     360 degress.  Then we turned her around and moved her aside.  Even the blank
-                    line 18 is a hint about how the programmer&#8217;s <emphasis>mental chunking</emphasis> is working: in
+                    line 18 is a hint about how the programmer&#8217;s
+                    <em>mental chunking</em>
+                    is working: in
                     big terms, tess&#8217; movements were chunked as &#8220;draw the triangle&#8221;  (lines 12-17)
-                    and then &#8220;move away from the origin&#8221; (lines 19 and 20).</p>
+                    and then &#8220;move away from the origin&#8221; (lines 19 and 20).
+                </p>
             </li>
             <li>
                 <p>One of the key uses for comments is to record your mental chunking, and big
@@ -77,112 +94,120 @@ wn.exitonclick()
             <li>
                 <p>And, uh-huh, two turtles may not be enough for a herd, but you get the idea!</p>
             </li>
-        </ul></p>
-        <p>
-            <strong>Check your understanding</strong>
-        </p>
+        </ul>
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
-        <exercise xml:id="test_question3_2_1">
-            <statement>
+    <exercise xml:id="test_question3_2_1">
+        <statement>
 
-                <p>True or False: You can only have one active turtle at a time.  If you create a second one, you will no longer be able to access or use the first.</p>
+            <p>True or False: You can only have one active turtle at a time.  If you create a second one, you will no longer be able to access or use the first.</p>
 
-            </statement>
-            <choices>
+        </statement>
+        <choices>
 
-                <choice>
-                    <statement>
-                        <p>True</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>True</p>
+                </statement>
+                <feedback>
                     You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  To convince yourself this is true, try interleaving the instructions for alex and tess in ActiveCode box 3.
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice data-correct="yes">
-                    <statement>
-                        <p>False</p>
-                    </statement>
-                    <feedback>
+            <choice correct="yes">
+                <statement>
+                    <p>False</p>
+                </statement>
+                <feedback>
                     You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  If you are not totally convinced, try interleaving the instructions for alex and tess in ActiveCode box 3.
                     </feedback>
-                </choice>
-            </choices>
+            </choice>
+        </choices>
 
-        </exercise>
-        <p>
-            <strong>Mixed up programs</strong>
-        </p>
-        <exercise xml:id="rs3_6" indent="show" language="python">
-            <statement>
-                <p>The following program has one turtle, &#8220;jamal&#8221;, draw a capital L in blue and then another, &#8220;tina&#8221;, draw a line to the west in orange as shown to the left:</p>
-                <image source="images/PythonTurtle/Figures/TwoTurtles1.png" width="150%"/>
-                <p>The program should do all set-up, have &#8220;jamal&#8221; draw the L, and then have &#8220;tina&#8221; draw the line.   Finally, it should set the window to close when the user clicks in it.</p>
-                <p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <emphasis>Check Me</emphasis> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
-            </statement>
-            <blocks>
-                <block order="1">
-                    <cline>import turtle</cline>
-                    <cline>wn = turtle.Screen()</cline>
-                </block>
-                <block order="3">
-                    <cline>jamal = turtle.Turtle()</cline>
-                    <cline>jamal.pensize(10)</cline>
-                    <cline>jamal.color("blue")</cline>
-                    <cline>jamal.right(90)</cline>
-                    <cline>jamal.forward(150)</cline>
-                </block>
-                <block order="4">
-                    <cline>jamal.left(90)</cline>
-                    <cline>jamal.forward(75)</cline>
-                </block>
-                <block order="5">
-                    <cline>tina = turtle.Turtle()</cline>
-                    <cline>tina.pensize(10)</cline>
-                    <cline>tina.color("orange")</cline>
-                    <cline>tina.left(180)</cline>
-                    <cline>tina.forward(75)</cline>
-                </block>
-                <block order="2">
-                    <cline>wn.exitonclick()</cline>
-                </block>
-            </blocks>
-        </exercise>
-        <exercise xml:id="rs3_7" indent="show" language="python">
-            <statement>
-                <p>The following program has one turtle, &#8220;jamal&#8221;, draw a line to the north in blue and then another, &#8220;tina&#8221;, draw a line to the east in orange as shown to the left:</p>
-                <image source="images/PythonTurtle/Figures/TwoTurtlesL.png" width="150%"/>
-                <p>The program should import the turtle module, get the window to draw on, create the turtle &#8220;jamal&#8221;, have it draw a line to the north, then create the turtle &#8220;tina&#8221;, and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.</p>
-                <p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <emphasis>Check Me</emphasis> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
-            </statement>
-            <blocks>
-                <block order="3">
-                    <cline>import turtle</cline>
-                </block>
-                <block order="1">
-                    <cline>wn = turtle.Screen()</cline>
-                </block>
-                <block order="5">
-                    <cline>jamal = turtle.Turtle()</cline>
-                    <cline>jamal.color("blue")</cline>
-                    <cline>jamal.pensize(10)</cline>
-                </block>
-                <block order="6">
-                    <cline>jamal.left(90)</cline>
-                    <cline>jamal.forward(150)</cline>
-                </block>
-                <block order="2">
-                    <cline>tina = turtle.Turtle()</cline>
-                    <cline>tina.pensize(10)</cline>
-                    <cline>tina.color("orange")</cline>
-                    <cline>tina.forward(150)</cline>
-                </block>
-                <block order="4">
-                    <cline>wn.exitonclick()</cline>
-                </block>
-            </blocks>
-        </exercise>
-        
-        
-    </section>
+    </exercise>
+    <p>
+        <alert>Mixed up programs</alert>
+    </p>
+    <exercise xml:id="rs3_6" indent="show" language="python">
+        <statement>
+            <p>The following program has one turtle, &#8220;jamal&#8221;, draw a capital L in blue and then another, &#8220;tina&#8221;, draw a line to the west in orange as shown to the left:</p>
+            <image source="PythonTurtle/Figures/TwoTurtles1.png" width="100%" />
+            <p>The program should do all set-up, have &#8220;jamal&#8221; draw the L, and then have &#8220;tina&#8221; draw the line.   Finally, it should set the window to close when the user clicks in it.</p>
+            <p>
+                Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
+                <em>Check Me</em>
+                to see if you are right. You will be told if any of the lines are in the wrong order.
+            </p>
+        </statement>
+        <blocks>
+            <block order="1">
+                <cline>import turtle</cline>
+                <cline>wn = turtle.Screen()</cline>
+            </block>
+            <block order="3">
+                <cline>jamal = turtle.Turtle()</cline>
+                <cline>jamal.pensize(10)</cline>
+                <cline>jamal.color("blue")</cline>
+                <cline>jamal.right(90)</cline>
+                <cline>jamal.forward(150)</cline>
+            </block>
+            <block order="4">
+                <cline>jamal.left(90)</cline>
+                <cline>jamal.forward(75)</cline>
+            </block>
+            <block order="5">
+                <cline>tina = turtle.Turtle()</cline>
+                <cline>tina.pensize(10)</cline>
+                <cline>tina.color("orange")</cline>
+                <cline>tina.left(180)</cline>
+                <cline>tina.forward(75)</cline>
+            </block>
+            <block order="2">
+                <cline>wn.exitonclick()</cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise xml:id="rs3_7" indent="show" language="python">
+        <statement>
+            <p>The following program has one turtle, &#8220;jamal&#8221;, draw a line to the north in blue and then another, &#8220;tina&#8221;, draw a line to the east in orange as shown to the left:</p>
+            <image source="PythonTurtle/Figures/TwoTurtlesL.png" width="100%" />
+            <p>The program should import the turtle module, get the window to draw on, create the turtle &#8220;jamal&#8221;, have it draw a line to the north, then create the turtle &#8220;tina&#8221;, and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.</p>
+            <p>
+                Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
+                <em>Check Me</em>
+                to see if you are right. You will be told if any of the lines are in the wrong order.
+            </p>
+        </statement>
+        <blocks>
+            <block order="3">
+                <cline>import turtle</cline>
+            </block>
+            <block order="1">
+                <cline>wn = turtle.Screen()</cline>
+            </block>
+            <block order="5">
+                <cline>jamal = turtle.Turtle()</cline>
+                <cline>jamal.color("blue")</cline>
+                <cline>jamal.pensize(10)</cline>
+            </block>
+            <block order="6">
+                <cline>jamal.left(90)</cline>
+                <cline>jamal.forward(150)</cline>
+            </block>
+            <block order="2">
+                <cline>tina = turtle.Turtle()</cline>
+                <cline>tina.pensize(10)</cline>
+                <cline>tina.color("orange")</cline>
+                <cline>tina.forward(150)</cline>
+            </block>
+            <block order="4">
+                <cline>wn.exitonclick()</cline>
+            </block>
+        </blocks>
+    </exercise>
 
+
+</section>

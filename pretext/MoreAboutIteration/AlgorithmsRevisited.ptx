@@ -1,6 +1,6 @@
 <section xml:id="algorithms-revisited">
         <title>Algorithms Revisited</title>
-        <p>Newton&#8217;s method is an example of an <strong>algorithm</strong>: it is a mechanical process
+        <p>Newton&#8217;s method is an example of an <alert>algorithm</alert>: it is a mechanical process
             for solving a category of problems (in this case, computing square roots).</p>
         <p>It is not easy to define an algorithm. It might help to start with something
             that is not an algorithm. When you learned to multiply single-digit numbers,
@@ -24,7 +24,7 @@
         <p>Some of the things that people do naturally, without difficulty or conscious
             thought, are the hardest to express algorithmically.  Understanding natural
             language is a good example. We all do it, but so far no one has been able to
-            explain <emphasis>how</emphasis> we do it, at least not in the form of a step-by-step mechanical
+            explain <em>how</em> we do it, at least not in the form of a step-by-step mechanical
             algorithm.</p>
         <note>
             <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>

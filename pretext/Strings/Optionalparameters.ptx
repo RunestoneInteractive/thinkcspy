@@ -34,7 +34,7 @@ print(find2('banana', 'a', 2))
             <c>find2('banana', 'n', 3)</c> return? If you said, 4, there is a good chance you
             understand how <c>find2</c> works.  Try it.</p>
         <p>Better still, we can combine <c>find</c> and <c>find2</c> using an
-            <strong>optional parameter</strong>.</p>
+            <alert>optional parameter</alert>.</p>
 
 <listing xml:id="chp08_fun5">
     <caption/>
@@ -63,7 +63,7 @@ print(find3('banana', 'a', 2))
 </listing>
         <p>The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just
             like <c>find2</c>, while in the call <c>find3('banana', 'a')</c>, <c>start</c> will be
-            set to the <strong>default value</strong> of <c>0</c>.</p>
+            set to the <alert>default value</alert> of <c>0</c>.</p>
         <p>Adding another optional parameter to <c>find</c> makes it search from a starting
             position, up to but not including the end position.</p>
 

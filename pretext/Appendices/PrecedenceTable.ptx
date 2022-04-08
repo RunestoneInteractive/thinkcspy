@@ -1,8 +1,8 @@
-<section xml:id="operator-precedence-table operator-summary">
+<appendix xml:id="operator-precedence-table">
         <title>Operator precedence table</title>
         
         
-        <p xml:id="index-0">The following table summarizes the operator precedence of Python operators <emphasis>in this book</emphasis>, from
+        <p>The following table summarizes the operator precedence of Python operators <em>in this book</em>, from
             highest precedence (most binding) to lowest
             precedence (least binding).  Operators in
             the same box have the same precedence.  Unless syntax is explicitly given,
@@ -12,7 +12,7 @@
             <url href="https://docs.python.org/3/reference/expressions.html#operator-precedence" visual="https://docs.python.org/3/reference/expressions.html#operator-precedence">https://docs.python.org/3/reference/expressions.html#operator-precedence</url>.</p>
         <p>In the row for comparisons, membership tests, and identity tests, all have the same
             precedence and have a left-to-right chaining feature; for example <c>3 &lt; x &lt;= y != z</c>.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -122,6 +122,6 @@
                     </row>
                 
             
-        </tabular>
-    </section>
+        </tabular></table>
+    </appendix>
 

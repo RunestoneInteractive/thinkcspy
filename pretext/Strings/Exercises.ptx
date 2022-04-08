@@ -113,7 +113,7 @@ myTests().main()
     </program>
 </listing>
                 <p>In Robert McCloskey&#8217;s
-                    book <emphasis>Make Way for Ducklings</emphasis>, the names of the ducklings are Jack, Kack, Lack,
+                    book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
                     Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.</p>
                 <program language="python"><input>
 prefixes = "JKLMNOPQ"
@@ -1010,7 +1010,7 @@ print(rot13(rot13('Since rot13 is symmetric you should see this message')))
                             by the character 13 characters to &#8216;its right&#8217; in the alphabet.  So for example
                             the letter a becomes the letter n.  If a letter is past the middle of the alphabet
                             then the counting wraps around to the letter a again, so n becomes a, o becomes b
-                            and so on.  <emphasis>Hint:</emphasis> Whenever you talk about things wrapping around its a good idea
+                            and so on.  <em>Hint:</em> Whenever you talk about things wrapping around its a good idea
                             to think of modulo arithmetic.</p>
                     </TabNode>
                     <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Strings', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">

@@ -1,10 +1,16 @@
 <section xml:id="syntax-errors">
     <title>Syntax errors</title>
-    <p>Python can only execute a program if the program is syntactically correct;
-            otherwise, the process fails and returns an error message.  <strong>Syntax</strong> refers
+    <p>
+        Python can only execute a program if the program is syntactically correct;
+            otherwise, the process fails and returns an error message.
+        <alert>Syntax</alert>
+        refers
             to the structure of a program and the rules about that structure. For example,
             in English, a sentence must begin with a capital letter and end with a period.
-            this sentence contains a <strong>syntax error</strong>. So does this one</p>
+            this sentence contains a
+        <alert>syntax error</alert>
+        . So does this one
+    </p>
     <p>For most readers, a few syntax errors are not a significant problem, which is
             why we can read the poetry of e. e. cummings without problems.
             Python is not so forgiving. If there is a single syntax error anywhere in your
@@ -13,7 +19,7 @@
             will probably spend a lot of time tracking down syntax errors. However, as you gain
             experience, you will make fewer errors and you will also be able to find your errors faster.</p>
     <p>
-        <strong>Check your understanding</strong>
+        <alert>Check your understanding</alert>
     </p>
 
     <exercise xml:id="question1_6_1">
@@ -33,7 +39,7 @@
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Forgetting a colon at the end of a statement where one is required.</p>
                 </statement>
@@ -71,7 +77,7 @@
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>The compiler / interpreter.</p>
                 </statement>
@@ -101,4 +107,3 @@
 
     </exercise>
 </section>
-

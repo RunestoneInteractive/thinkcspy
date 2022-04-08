@@ -37,7 +37,7 @@ print(p)
             uses this naming technique for special methods.</p>
         <p>The <c>__str__</c> method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what a <c>Point</c> should look like when it gets printed.  In this case, we
             have decided that the string representation will include the values of x and y as well as some identifying text.  It
-            is required that the <c>__str__</c> method create and <emphasis>return</emphasis> a string.</p>
+            is required that the <c>__str__</c> method create and <em>return</em> a string.</p>
 
 <listing xml:id="chp13_classesstr2">
     <caption/>
@@ -75,7 +75,7 @@ print(p)
             automatically use this when printing things?  Yes again!</p>
         <p>But, as we saw earlier, these automatic mechanisms do not do exactly what we want.  Python provides many default implementations for
             methods that we as programmers will probably want to change.  When a programmer changes the meaning of a special method we
-            say that we <strong>override</strong> the method.  Note also that the <c>str</c> type converter function uses whatever <c>__str__</c> method we
+            say that we <alert>override</alert> the method.  Note also that the <c>str</c> type converter function uses whatever <c>__str__</c> method we
             provide.</p>
     </section>
 

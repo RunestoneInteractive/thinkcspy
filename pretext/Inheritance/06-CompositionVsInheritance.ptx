@@ -12,11 +12,11 @@
         <p>So, it&#8217;s easier to address the question of which technique to use by
             defining when inheritance is an appropriate choice.
             Inheritance is appropriate when the proposed child class (the one reusing
-            the functionality in its parent) represents a <emphasis>specialization</emphasis> of its parent.
+            the functionality in its parent) represents a <em>specialization</em> of its parent.
             Class A is a specialization of Class B if class A represents a specific type of
             class B. This is generally the case if you can fill in the following sentence
             with the names of the proposed child and parent classes:</p>
-        <p><strong>(child class) is a type of (parent class).</strong></p>
+        <p><alert>(child class) is a type of (parent class).</alert></p>
         <p>Let&#8217;s try some examples. Using the LabeledPoint example from the previous
             section: &#8220;<c>LabeledPoint</c> is a type of <c>Point</c>.&#8221; Since a
             LabeledPoint is a specific type of Point&#8211;a Point that has a label&#8211;that
@@ -32,8 +32,8 @@
             inheritance seems plausible. But wait&#8211;let&#8217;s apply the &#8220;is-a&#8221; linguistic test.
             Filling in the blanks in the sentence template above, we get: &#8220;Rectangle
             is a type of Point.&#8221; Most people would feel there is something wrong with
-            that statement. A rectangle is <emphasis>not</emphasis> a more specific type of a point.
-            A rectangle <emphasis>contains</emphasis> points and <emphasis>consists of</emphasis> points, but is not itself
+            that statement. A rectangle is <em>not</em> a more specific type of a point.
+            A rectangle <em>contains</em> points and <em>consists of</em> points, but is not itself
             a point. Thus, it fails the linguistic test; composition is the better
             choice here.</p>
         <p>So what happens if you decide to ignore the linguistic test and go ahead

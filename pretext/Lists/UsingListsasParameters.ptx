@@ -1,7 +1,7 @@
 <section xml:id="using-lists-as-parameters">
         <title>Using Lists as Parameters</title>
         <p>Functions which take lists as arguments and change them during execution are
-            called <strong>modifiers</strong> and the changes they make are called <strong>side effects</strong>.
+            called <alert>modifiers</alert> and the changes they make are called <alert>side effects</alert>.
             Passing a list as an argument actually passes a reference to the list, not a
             copy of the list. Since lists are mutable, changes made to the
             elements referenced by the parameter change
@@ -27,7 +27,7 @@ print(things)
 </listing>
         <p>The parameter <c>aList</c> and the variable <c>things</c> are aliases for the
             same object.</p>
-        <image source="images/Lists/Figures/references4.png" alt="State snapshot for multiple references to a list as a parameter"/>
+        <image source="Lists/Figures/references4.png" alt="State snapshot for multiple references to a list as a parameter"/>
         <p>Since the list object is shared by two references, there is only one copy.
             If a function modifies the elements of a list parameter, the caller sees the change since the change
             is occurring to the original.</p>

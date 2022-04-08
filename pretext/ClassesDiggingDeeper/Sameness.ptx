@@ -1,6 +1,6 @@
 <section xml:id="sameness">
         <title>Sameness</title>
-        <p>The meaning of the word <emphasis>same</emphasis> seems perfectly clear until you give it some
+        <p>The meaning of the word <em>same</em> seems perfectly clear until you give it some
             thought and then you realize there is more to it than you expected.</p>
         <p>For example, if you say, Chris and I have the same car, you mean that his car
             and yours are the same make and model, but that they are two different cars. If
@@ -38,11 +38,11 @@ print(myfraction is ourfraction)
     </program>
 </listing>
         <p>Even though <c>myfraction</c> and <c>yourfraction</c> refer to the same rational number, they are not the same object.</p>
-        <image source="images/ClassesDiggingDeeper/Figures/fractionpic2.png"/>
+        <image source="ClassesDiggingDeeper/Figures/fractionpic2.png"/>
         <p>If we assign <c>myfraction</c> to <c>ourfraction</c>, then the two variables are aliases
             of the same object.</p>
-        <image source="images/ClassesDiggingDeeper/Figures/fractionpic3.png"/>
-        <p>This type of equality is called <strong>shallow equality</strong> because it compares only
+        <image source="ClassesDiggingDeeper/Figures/fractionpic3.png"/>
+        <p>This type of equality is called <alert>shallow equality</alert> because it compares only
             the references, not the contents of the objects.  Using the == operator to check equality between two user
             defined objects
             will return the shallow equality result.  In other words, the <c>Fraction</c> objects are equal (==) if they are the same object.</p>
@@ -53,7 +53,7 @@ print(myfraction is ourfraction)
 def sameRational(f1, f2):
     return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()
 </input></program>
-        <p>This type of equality is known as <strong>deep equality</strong> since it compares the values &#8220;deep&#8221; in the object, not just the reference to the object.</p>
+        <p>This type of equality is known as <alert>deep equality</alert> since it compares the values &#8220;deep&#8221; in the object, not just the reference to the object.</p>
 
 <listing xml:id="fractions_eq1">
     <caption/>
@@ -92,7 +92,7 @@ print(sameRational(myfraction, notInLowestTerms))
             shallow and deep equality.</p>
         <admonition classes="admonition-beware-of">
             <title>Beware of  ==</title>
-            <p>&#8220;When I use a word,&#8221; Humpty Dumpty said, in a rather scornful tone, &#8220;it means just what I choose it to mean &#8212; neither more nor less.&#8221;   <emphasis>Alice in Wonderland</emphasis></p>
+            <p>&#8220;When I use a word,&#8221; Humpty Dumpty said, in a rather scornful tone, &#8220;it means just what I choose it to mean &#8212; neither more nor less.&#8221;   <em>Alice in Wonderland</em></p>
             <p>Python has a powerful feature that allows a designer of a class to decide what an operation
                 like <c>==</c> or <c>&lt;</c> should mean.  (We&#8217;ve just shown how we can control how our own objects
                 are converted to strings, so we&#8217;ve already made a start!)  We&#8217;ll cover more detail later.

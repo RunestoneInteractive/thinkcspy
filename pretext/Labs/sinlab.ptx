@@ -4,7 +4,7 @@
         <subsection xml:id="what-is-the-sine-function">
             <title>What is the sine function?</title>
             <p>The sine function, sometimes called the sine wave, is a smooth, repetitive oscillation that occurs often in many fields including mathematics, physics, and engineering.  A single repetition is shown below.  Note that the x axis is given in degrees.</p>
-            <image source="images/Labs/Figures/sinpic.png"/>
+            <image source="Labs/Figures/sinpic.png"/>
             <p>For this lab, we will use the math library to generate the values that
                 we need.
                 To help you understand the sine function, consider the following Python program.
@@ -49,7 +49,7 @@ for angle in range(????):
 fred.goto(50,60)
 </input></program>
             <p>Recall that the default turtle screen starts with the turtle in the middle at position (0,0).  You can think of the screen as a piece of graph paper.  The x axis runs horizontally and the y axis runs vertically.  The point where they meet in the middle is (0,0).  Positions to the left of the center have an x value that is negative.  Positions that are below the center have a y value that is negative.</p>
-            <image source="images/Labs/Figures/graphpaper.jpg"/>
+            <image source="Labs/Figures/graphpaper.jpg"/>
             <p>Let&#8217;s try the <c>goto</c> method.  Experiment with the method to make sure you understand the coordinate system of the screen.  Try both positive and negative numbers.</p>
 
 <listing xml:id="sinlab1">

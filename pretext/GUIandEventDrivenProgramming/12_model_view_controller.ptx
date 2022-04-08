@@ -9,25 +9,25 @@
             to effectively break down complex problems into manageable pieces?</p>
         <p>One of the most widely used ways to break down a GUI program into manageable
             pieces is called the Model-View-Controller software design pattern. This is
-            often abbreviated as <strong>MVC</strong> (Model-View-Controller). It divides a problem into
+            often abbreviated as <alert>MVC</alert> (Model-View-Controller). It divides a problem into
             three pieces:</p>
         <p><ul>
             <li>
-                <p>Model - the <emphasis>model</emphasis> directly manages an application&#8217;s data and logic. If
-                    the model changes, the <emphasis>model</emphasis> sends commands to update the user&#8217;s view.</p>
+                <p>Model - the <em>model</em> directly manages an application&#8217;s data and logic. If
+                    the model changes, the <em>model</em> sends commands to update the user&#8217;s view.</p>
             </li>
             <li>
-                <p>View - the <emphasis>view</emphasis> presents the results of the application to the user. It is
+                <p>View - the <em>view</em> presents the results of the application to the user. It is
                     in charge of all program output.</p>
             </li>
             <li>
-                <p>Controller - the <emphasis>controller</emphasis> accepts all user input and sends commands
+                <p>Controller - the <em>controller</em> accepts all user input and sends commands
                     to the model to change the model&#8217;s state.</p>
             </li>
         </ul></p>
-        <p>To says this in more general terms, the <emphasis>controller</emphasis> manages the applications
-            input, the <emphasis>model</emphasis> manages the application&#8217;s &#8220;state&#8221; and enforces application
-            consistency, and the <emphasis>view</emphasis> updates the output,
+        <p>To says this in more general terms, the <em>controller</em> manages the applications
+            input, the <em>model</em> manages the application&#8217;s &#8220;state&#8221; and enforces application
+            consistency, and the <em>view</em> updates the output,
             which is what the user sees on the screen. This is basically identical to
             what all computer processing is composed of, which is:</p>
         <program language="python"><input>
@@ -39,9 +39,9 @@ input --&gt; processing --&gt; output
 controller (input) --&gt; model (processing) --&gt; view (output)
 </input></program>
         <p>From the perspective of a GUI program, this means that the callback functions,
-            which are called when a user causes events, are the <emphasis>controller</emphasis>,
-            the <emphasis>model</emphasis> should perform all of the application logic, and the building and
-            modification of the GUI widgets composes the <emphasis>view</emphasis>.</p>
+            which are called when a user causes events, are the <em>controller</em>,
+            the <em>model</em> should perform all of the application logic, and the building and
+            modification of the GUI widgets composes the <em>view</em>.</p>
         <p>Let&#8217;s develop a Whack-a-mole game program using this design strategy. Instead
             of creating one Python Class for the entire game, the code will be developed as
             a set of cooperating objects. So where should we begin? I would suggest that
@@ -49,7 +49,7 @@ controller (input) --&gt; model (processing) --&gt; view (output)
             approach, but we will create a separate Python <c>class</c> for most of the
             stages. Let&#8217;s walk through the code development.</p>
         <subsection xml:id="creating-the-view">
-            <title>Creating the <emphasis>View</emphasis></title>
+            <title>Creating the <em>View</em></title>
             <p>Let&#8217;s create a Python <c>class</c> that builds the user interface for a
                 Whack-a-mole game. The emphasis for this code is the creation of the widgets
                 we need to display to the user. For this version let&#8217;s allow the moles to
@@ -61,17 +61,17 @@ Code
 </input></program>
         </subsection>
         <subsection xml:id="creating-the-model">
-            <title>Creating the <emphasis>Model</emphasis></title>
-            <p>The <emphasis>model</emphasis> for this Whack-a-mole game is fairly simple. We need to keep
+            <title>Creating the <em>Model</em></title>
+            <p>The <em>model</em> for this Whack-a-mole game is fairly simple. We need to keep
                 a counter for the number of user hits on moles that are visible, and a
                 counter for the number of times a user clicks on a mole that is not visible
                 (or just clicks on the left frame and not a mole widget.)</p>
         </subsection>
         <subsection xml:id="creating-the-controller">
-            <title>Creating the <emphasis>Controller</emphasis></title>
-            <p>The <emphasis>controller</emphasis> receives user events and sends messages to the <emphasis>controller</emphasis>
-                to update the <emphasis>model</emphasis>&#8217;s state. For our Whack-a-mole game, we have the following
-                four basic commands we need to send to the <emphasis>model</emphasis>:</p>
+            <title>Creating the <em>Controller</em></title>
+            <p>The <em>controller</em> receives user events and sends messages to the <em>controller</em>
+                to update the <em>model</em>&#8217;s state. For our Whack-a-mole game, we have the following
+                four basic commands we need to send to the <em>model</em>:</p>
             <p><ul>
                 <li>
                     <p>A user clicked on something on the left frame.</p>
@@ -86,12 +86,12 @@ Code
                     <p>The user wants to quit the application. (The user clicked on the &#8220;Quit&#8221; button.)</p>
                 </li>
             </ul></p>
-            <p>The <emphasis>controller*</emphasis> needs to recognize these events and send them to appropriate
-                methods in the <emphasis>model</emphasis>. The <emphasis>controller</emphasis> needs to define callback functions for
+            <p>The <em>controller*</em> needs to recognize these events and send them to appropriate
+                methods in the <em>model</em>. The <em>controller</em> needs to define callback functions for
                 these events and register the appropriate event with the appropriate callback.
-                Therefore, the <emphasis>controller</emphasis> needs access to the widgets in the <emphasis>view</emphasis> object.
-                This can easily be accomplished by passing a reference to the <emphasis>view</emphasis> object
-                to the <emphasis>controller</emphasis> when it is created.
+                Therefore, the <em>controller</em> needs access to the widgets in the <em>view</em> object.
+                This can easily be accomplished by passing a reference to the <em>view</em> object
+                to the <em>controller</em> when it is created.
                 Summary
                 &#8212;&#8212;-</p>
             

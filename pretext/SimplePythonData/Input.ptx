@@ -1,43 +1,74 @@
 <section xml:id="input">
-        <title>Input</title>
+    <title>Input</title>
 
-    <video xml:id="inputvid" youtube="2KYixkCBXSQ" width="560"/>
-            <p>The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general.  One thing we could
+    <video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto" />
+    <p>
+        The program in the previous section works fine but is very limited in that it only works with one value for
+        <c>total_secs</c>
+        .  What if we wanted to rewrite the program so that it was more general.  One thing we could
             do is allow the user to enter any value they wish for the number of seconds.  The program could then print the
-            proper result for that starting value.</p>
-        <p>In order to do this, we need a way to get <strong>input</strong> from the user.  Luckily, in Python
-            there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.</p>
-        <program language="python"><input>
-n = input("Please enter your name: ")
-</input></program>
-        <p>The input function allows the user to provide a <strong>prompt string</strong>.  When the function is evaluated, the prompt is
-            shown.
-            The user of the program can enter the name and press <title_reference>return</title_reference>. When this
-            happens the text that has been entered is returned from the <title_reference>input</title_reference> function,
-            and in this case assigned to the variable <title_reference>n</title_reference>.  Make sure you run this example a number
-            of times and try some different names in the input box that appears.</p>
-
-<listing xml:id="inputfun">
-    <caption/>
-    <program xml:id="inputfun_editor" interactive="activecode" language="python">
+            proper result for that starting value.
+    </p>
+    <p>
+        In order to do this, we need a way to get
+        <alert>input</alert>
+        from the user.  Luckily, in Python
+            there is a built-in function to accomplish this task.  As you might expect, it is called
+        <c>input</c>
+        .
+    </p>
+    <program language="python">
         <input>
+n = input("Please enter your name: ")
+</input>
+    </program>
+    <p>
+        The input function allows the user to provide a
+        <alert>prompt string</alert>
+        .  When the function is evaluated, the prompt is
+            shown.
+            The user of the program can enter the name and press
+        <title_reference>return</title_reference>
+        . When this
+            happens the text that has been entered is returned from the
+        <title_reference>input</title_reference>
+        function,
+            and in this case assigned to the variable
+        <title_reference>n</title_reference>
+        .  Make sure you run this example a number
+            of times and try some different names in the input box that appears.
+    </p>
+
+    <listing xml:id="inputfun">
+        <caption />
+        <program xml:id="inputfun_editor" interactive="activecode" language="python">
+            <input>
 n = input("Please enter your name: ")
 print("Hello", n)
         </input>
-    </program>
-</listing>
-        <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
-            <c>"17"</c>.  It would be your job, as the programmer, to convert that string into
-            an int or a float, using the <c>int</c> or <c>float</c> converter functions we saw
-            earlier.</p>
-        <p>To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then
+        </program>
+    </listing>
+    <p>
+        It is very important to note that the
+        <c>input</c>
+        function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
+        <c>"17"</c>
+        .  It would be your job, as the programmer, to convert that string into
+            an int or a float, using the
+        <c>int</c>
+        or
+        <c>float</c>
+        converter functions we saw
+            earlier.
+    </p>
+    <p>To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then
             we will convert that string to an integer.  From there the process is the same as before.  To complete the example, we will
             print some appropriate output.</p>
 
-<listing xml:id="int_secs">
-    <caption/>
-    <program xml:id="int_secs_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="int_secs">
+        <caption />
+        <program xml:id="int_secs_editor" interactive="activecode" language="python">
+            <input>
 str_seconds = input("Please enter the number of seconds you wish to convert")
 total_secs = int(str_seconds)
 
@@ -48,26 +79,40 @@ secs_finally_remaining = secs_still_remaining  % 60
 
 print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
         </input>
-    </program>
-</listing>
-        <p>The variable <c>str_seconds</c> will refer to the string that is entered by the user. As we said above, even though this string may be <c>7684</c>, it is still a string and not a number.  To convert it to an integer, we use the <c>int</c> function.
-            The result is referred to by <c>total_secs</c>.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.</p>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        The variable
+        <c>str_seconds</c>
+        will refer to the string that is entered by the user. As we said above, even though this string may be
+        <c>7684</c>
+        , it is still a string and not a number.  To convert it to an integer, we use the
+        <c>int</c>
+        function.
+            The result is referred to by
+        <c>total_secs</c>
+        .  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question2_7_1">
         <statement>
 
-        <p>What is printed when the following statements execute?</p>
-        <program language="python"><input>
+            <p>What is printed when the following statements execute?</p>
+            <program language="python">
+                <input>
 n = input("Please enter your age: ")
 # user types in 18
 print ( type(n) )
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>&lt;class 'str'&gt;</p>
                 </statement>
@@ -102,10 +147,10 @@ print ( type(n) )
                     18 is the value of what the user typed, not the type of the data.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-<exercise runestone="ca_id_ints"/><exercise runestone="ca_id_str"/>        
-        
-    </section>
+    <exercise runestone="ca_id_ints" />
+    <exercise runestone="ca_id_str" />
 
+</section>

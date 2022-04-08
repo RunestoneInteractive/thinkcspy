@@ -55,8 +55,8 @@
                     <title>recursive definition</title>
                     
                         <p>A definition which defines something in terms of itself. To be useful
-                            it must include <emphasis>base cases</emphasis> which are not recursive. In this way it
-                            differs from a <emphasis>circular definition</emphasis>.  Recursive definitions often
+                            it must include <em>base cases</em> which are not recursive. In this way it
+                            differs from a <em>circular definition</em>.  Recursive definitions often
                             provide an elegant way to express complex data structures.</p>
                     
                 </gi>

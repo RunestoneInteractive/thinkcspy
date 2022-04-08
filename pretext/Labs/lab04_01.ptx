@@ -9,9 +9,9 @@
             we are limited by the turtle functions we already know about, for example,
             left, right, forward.  There is not a method for drawing a curved line with a
             turtle (well, actually there is, but we&#8217;re not going to use it).</p>
-        <p>One of the first strategies we will employ is called <emphasis>simplification</emphasis>.  Let&#8217;s
+        <p>One of the first strategies we will employ is called <em>simplification</em>.  Let&#8217;s
             look at something simpler than drawing a circle and see what we can learn,
-            as we look at some simpler examples we&#8217;ll try to <emphasis>generalize</emphasis> what we learn
+            as we look at some simpler examples we&#8217;ll try to <em>generalize</em> what we learn
             to help us build a more complex function.</p>
         <p>One thing we already know how to do is to write a function to draw a square.
             Now a square doesn&#8217;t look anything like a circle, but maybe if we look at

@@ -1,11 +1,17 @@
 <section xml:id="variables">
     <title>Variables</title>
 
-    <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="560"/>
-    <p>One of the most powerful features of a programming language is the ability to
-            manipulate <strong>variables</strong>. A variable is a name that refers to a value.</p>
+    <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto" />
     <p>
-        <strong>Assignment statements</strong> create new variables and also give them values to refer to.</p>
+        One of the most powerful features of a programming language is the ability to
+            manipulate
+        <alert>variables</alert>
+        . A variable is a name that refers to a value.
+    </p>
+    <p>
+        <alert>Assignment statements</alert>
+        create new variables and also give them values to refer to.
+    </p>
     <program language="python">
         <input>
 message = "What's up, Doc?"
@@ -13,15 +19,39 @@ n = 17
 pi = 3.14159
         </input>
     </program>
-    <p>This example makes three assignments. The first assigns the string value
-        <c>"What's up, Doc?"</c> to a new variable named <c>message</c>. The second gives the
-            integer <c>17</c> to <c>n</c>, and the third assigns the floating-point number
-        <c>3.14159</c> to a variable called <c>pi</c>.
+    <p>
+        This example makes three assignments. The first assigns the string value
+        <c>"What's up, Doc?"</c>
+        to a new variable named
+        <c>message</c>
+        . The second gives the
+            integer
+        <c>17</c>
+        to
+        <c>n</c>
+        , and the third assigns the floating-point number
+        <c>3.14159</c>
+        to a variable called
+        <c>pi</c>
+        .
     </p>
-    <p>The <strong>assignment token</strong>,        <c>=</c>, should not be confused with <emphasis>equality</emphasis> (we will see later that equality uses the
-        <c>==</c> token).  The assignment statement links a <emphasis>name</emphasis>, on the left hand
-            side of the operator, with a <emphasis>value</emphasis>, on the right hand side.  This is why you
-            will get an error if you enter:</p>
+    <p>
+        The
+        <alert>assignment token</alert>
+        ,
+        <c>=</c>
+        , should not be confused with
+        <em>equality</em>
+        (we will see later that equality uses the
+        <c>==</c>
+        token).  The assignment statement links a
+        <em>name</em>
+        , on the left hand
+            side of the operator, with a
+        <em>value</em>
+        , on the right hand side.  This is why you
+            will get an error if you enter:
+    </p>
     <program language="python">
         <input>
 17 = n
@@ -31,18 +61,24 @@ pi = 3.14159
         <p>When reading or writing code, say to yourself &#8220;n is assigned 17&#8221; or &#8220;n gets
                 the value 17&#8221; or &#8220;n is a reference to the object 17&#8221; or &#8220;n refers to the object 17&#8221;.  Don&#8217;t say &#8220;n equals 17&#8221;.</p>
     </tip>
-    <p>A common way to represent variables on paper is to write the name with an arrow
-            pointing to the variable&#8217;s value. This kind of figure, known as a <strong>reference diagram</strong>, is often called a <strong>state
-                snapshot</strong> because it shows what state each of the variables is in at a
+    <p>
+        A common way to represent variables on paper is to write the name with an arrow
+            pointing to the variable&#8217;s value. This kind of figure, known as a
+        <alert>reference diagram</alert>
+        , is often called a
+        <alert>state
+                snapshot</alert>
+        because it shows what state each of the variables is in at a
             particular instant in time.  (Think of it as the variable&#8217;s state of mind).
-            This diagram shows the result of executing the assignment statements shown above.</p>
-    <image source="images/SimplePythonData/Figures/refdiagram1.png" alt="Reference Diagram"/>
+            This diagram shows the result of executing the assignment statements shown above.
+    </p>
+    <image source="SimplePythonData/Figures/refdiagram1.png" alt="Reference Diagram" />
     <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
 
     <listing xml:id="ch02_9">
-        <caption/>
+        <caption />
         <program xml:id="ch02_9_editor" interactive="activecode" language="python">
             <input>
 message = "What's up, Doc?"
@@ -57,7 +93,7 @@ print(pi)
     </listing>
     <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-    <exercise runestone="ch02_9_cl"/>
+    <exercise runestone="ch02_9_cl" />
     <p>Now, as you step through the statements, you can see
             the variables and the values they reference as those references are
             created.</p>
@@ -65,7 +101,7 @@ print(pi)
             types; again, we can ask the interpreter what they are.</p>
 
     <listing xml:id="ch02_10">
-        <caption/>
+        <caption />
         <program xml:id="ch02_10_editor" interactive="activecode" language="python">
             <input>
 message = "What's up, Doc?"
@@ -79,24 +115,36 @@ print(type(pi))
         </program>
     </listing>
     <p>The type of a variable is the type of the object it currently refers to.</p>
-    <p>We use variables in a program to &#8220;remember&#8221; things, like the current score at
-            the football game.  But variables are <emphasis>variable</emphasis>. This means they can change
+    <p>
+        We use variables in a program to &#8220;remember&#8221; things, like the current score at
+            the football game.  But variables are
+        <em>variable</em>
+        . This means they can change
             over time, just like the scoreboard at a football game.  You can assign a value
-            to a variable, and later assign a different value to the same variable.</p>
+            to a variable, and later assign a different value to the same variable.
+    </p>
     <note>
-        <p>This is different from math. In math, if you give <title_reference>x</title_reference> the value 3, it
+        <p>
+            This is different from math. In math, if you give
+            <title_reference>x</title_reference>
+            the value 3, it
                 cannot change to refer to a different value half-way through your
-                calculations!</p>
+                calculations!
+        </p>
     </note>
-    <p>To see this, read and then run the following program.
-            You&#8217;ll notice we change the value of <title_reference>day</title_reference> three times, and on the third
-            assignment we even give it a value that is of a different type.</p>
-    <exercise runestone="ch02_11"/>
+    <p>
+        To see this, read and then run the following program.
+            You&#8217;ll notice we change the value of
+        <title_reference>day</title_reference>
+        three times, and on the third
+            assignment we even give it a value that is of a different type.
+    </p>
+    <exercise runestone="ch02_11" />
     <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep
             track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update
             or change the variable so that it will always reflect the correct value.</p>
     <p>
-        <strong>Check your understanding</strong>
+        <alert>Check your understanding</alert>
     </p>
 
     <exercise xml:id="test_question2_3_2">
@@ -142,7 +190,7 @@ print(day)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>19</p>
                 </statement>
@@ -156,4 +204,3 @@ print(day)
 
 
 </section>
-

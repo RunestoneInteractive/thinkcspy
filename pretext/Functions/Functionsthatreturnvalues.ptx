@@ -1,84 +1,125 @@
 <section xml:id="functions-that-return-values">
-        <title>Functions that Return Values</title>
-        <p>Most functions require arguments, values that control how the function does its
+    <title>Functions that Return Values</title>
+    <p>Most functions require arguments, values that control how the function does its
             job. For example, if you want to find the absolute value of a number, you have
             to indicate what the number is. Python has a built-in function for computing
             the absolute value:</p>
 
-        <listing xml:id="ch04_4">
-            <caption/>
-            <program xml:id="ch04_4_editor" interactive="activecode" language="python">
-                <input>
+    <listing xml:id="ch04_4">
+        <caption />
+        <program xml:id="ch04_4_editor" interactive="activecode" language="python">
+            <input>
 print(abs(5))
 
 print(abs(-5))
                 </input>
-            </program>
-        </listing>
-        <p>In this example, the arguments to the <c>abs</c> function are 5 and -5.</p>
-        <p>Some functions take more than one argument. For example the math module contains a function
+        </program>
+    </listing>
+    <p>
+        In this example, the arguments to the
+        <c>abs</c>
+        function are 5 and -5.
+    </p>
+    <p>
+        Some functions take more than one argument. For example the math module contains a function
             called
-            <c>pow</c> which takes two arguments, the base and the exponent.</p>
-        <!--Inside the function,-->
-        <!--the values that are passed get assigned to variables called **parameters**.-->
+        <c>pow</c>
+        which takes two arguments, the base and the exponent.
+    </p>
+    <!--Inside the function,-->
+    <!--the values that are passed get assigned to variables called **parameters**.-->
 
-        <listing xml:id="ch04_5">
-            <caption/>
-            <program xml:id="ch04_5_editor" interactive="activecode" language="python">
-                <input>
+    <listing xml:id="ch04_5">
+        <caption />
+        <program xml:id="ch04_5_editor" interactive="activecode" language="python">
+            <input>
 import math
 print(math.pow(2, 3))
 
 print(math.pow(7, 4))
                 </input>
-            </program>
-        </listing>
-        <note>
-            <p>Of course, we have already seen that raising a base to an exponent can be done with the ** operator.</p>
-        </note>
-        <p>Another built-in function that takes more than one argument is <c>max</c>.
-        </p>
+        </program>
+    </listing>
+    <note>
+        <p>Of course, we have already seen that raising a base to an exponent can be done with the ** operator.</p>
+    </note>
+    <p>
+        Another built-in function that takes more than one argument is
+        <c>max</c>
+        .
+    </p>
 
-        <listing xml:id="ch04_6">
-            <caption/>
-            <program xml:id="ch04_6_editor" interactive="activecode" language="python">
-                <input>
+    <listing xml:id="ch04_6">
+        <caption />
+        <program xml:id="ch04_6_editor" interactive="activecode" language="python">
+            <input>
 print(max(7, 11))
 print(max(4, 1, 17, 2, 12))
 print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
                 </input>
-            </program>
-        </listing>
-        <p>
-            <c>max</c> can be sent any number of arguments, separated by commas, and will
+        </program>
+    </listing>
+    <p>
+        <c>max</c>
+        can be sent any number of arguments, separated by commas, and will
             return the maximum value sent. The arguments can be either simple values or
             expressions. In the last example, 503 is returned, since it is larger than 33,
-            125, and 1.  Note that <c>max</c> also works on lists of values.</p>
-        <p>Furthermore, functions like <c>range</c>,            <c>int</c>,            <c>abs</c> all return values that
-            can be used to build more complex expressions.</p>
-        
-        
-        <p xml:id="index-1">So an important difference between these functions and one like <c>drawSquare</c> is that
-            <c>drawSquare</c> was not executed because we wanted it to compute a value &#8212; on the contrary,
-            we wrote <c>drawSquare</c> because we wanted it to execute a sequence of steps that caused
-            the turtle to draw a specific shape.</p>
-        <p>Functions that return values are sometimes called <strong>fruitful functions</strong>.
-            In many other languages, a chunk that doesn&#8217;t return a value is called a <strong>procedure</strong>,
-            but we will stick here with the Python way of also calling it a function, or if we want
-            to stress it, a <emphasis>non-fruitful</emphasis> function.</p>
-        <p>Fruitful functions still allow the user to provide information (arguments).  However there is now an additional
-            piece of data that is returned from the function.</p>
-        <image source="images/Functions/Figures/blackboxfun.png"/>
-        <p>How do we write our own fruitful function?  Let&#8217;s start by creating a very simple
-            mathematical function that we will call <c>square</c>.  The square function will take one number
-            as a parameter and return the result of squaring that number.  Here is the
-            black-box diagram with the Python code following.</p>
-        <image source="images/Functions/Figures/squarefun.png"/>
+            125, and 1.  Note that
+        <c>max</c>
+        also works on lists of values.
+    </p>
+    <p>
+        Furthermore, functions like
+        <c>range</c>
+        ,
+        <c>int</c>
+        ,
+        <c>abs</c>
+        all return values that
+            can be used to build more complex expressions.
+    </p>
 
-        <listing xml:id="ch04_square">
-            <caption/>
-            <program xml:id="ch04_square_editor" interactive="activecode" language="python">
-                <input>
+
+    <p>
+        So an important difference between these functions and one like
+        <c>drawSquare</c>
+        is that
+        <c>drawSquare</c>
+        was not executed because we wanted it to compute a value &#8212; on the contrary,
+            we wrote
+        <c>drawSquare</c>
+        because we wanted it to execute a sequence of steps that caused
+            the turtle to draw a specific shape.
+    </p>
+    <p>
+        Functions that return values are sometimes called
+        <alert>fruitful functions</alert>
+        .
+            In many other languages, a chunk that doesn&#8217;t return a value is called a
+        <alert>procedure</alert>
+        ,
+            but we will stick here with the Python way of also calling it a function, or if we want
+            to stress it, a
+        <em>non-fruitful</em>
+        function.
+    </p>
+    <p>Fruitful functions still allow the user to provide information (arguments).  However there is now an additional
+            piece of data that is returned from the function.</p>
+    <image source="Functions/Figures/blackboxfun.png" />
+    <p>
+        How do we write our own fruitful function?  Let&#8217;s start by creating a very simple
+            mathematical function that we will call
+        <c>square</c>
+        .  The square function will take one number
+            as a parameter and return the result of squaring that number.  Here is the
+            black-box diagram with the Python code following.
+    </p>
+    <image source="Functions/Figures/squarefun.png" />
+
+    <listing xml:id="ch04_square">
+        <caption />
+        <program xml:id="ch04_square_editor" interactive="activecode" language="python">
+            <input>
 def square(x):
     y = x * x
     return y
@@ -87,166 +128,226 @@ toSquare = 10
 result = square(toSquare)
 print("The result of", toSquare, "squared is", result)
                 </input>
-            </program>
-        </listing>
-        <p>The <strong>return</strong> statement is followed by an expression which is evaluated.  Its
+        </program>
+    </listing>
+    <p>
+        The
+        <alert>return</alert>
+        statement is followed by an expression which is evaluated.  Its
             result is returned to the caller as the &#8220;fruit&#8221; of calling this function.
             Because the return statement can contain any Python expression we could have
-            avoided creating the <strong>temporary variable</strong>
-            <c>y</c> and simply used
-            <c>return x*x</c>.
+            avoided creating the
+        <alert>temporary variable</alert>
+        <c>y</c>
+        and simply used
+        <c>return x*x</c>
+        .
             Try modifying the square function above to see that this works just the same.
-            On the other hand, using <strong>temporary variables</strong> like <c>y</c> in the program above makes
+            On the other hand, using
+        <alert>temporary variables</alert>
+        like
+        <c>y</c>
+        in the program above makes
             debugging
-            easier.  These temporary variables are examples of <strong>local variables</strong>, pursued further
-            in the next section.</p>
-        <!--The line `toInvest = float(input("How much do you want to invest?"))`-->
-        <!--also shows yet another example-->
-        <!--of *composition* - we can call a function like `float`, and its arguments
+            easier.  These temporary variables are examples of
+        <alert>local variables</alert>
+        , pursued further
+            in the next section.
+    </p>
+    <!--The line `toInvest = float(input("How much do you want to invest?"))`-->
+    <!--also shows yet another example-->
+    <!--of *composition* - we can call a function like `float`, and its arguments
 .. can be the results of other function calls (like `input`) that we've called along the way.-->
-        <p>Notice something important here. The name of the variable we pass as an
-            argument &#8212; <c>toSquare</c> &#8212; has nothing to do with the name of the formal parameter
-            &#8212;            <c>x</c>.  It is as if  <c>x = toSquare</c> is executed when <c>square</c> is called.
+    <p>
+        Notice something important here. The name of the variable we pass as an
+            argument &#8212;
+        <c>toSquare</c>
+        &#8212; has nothing to do with the name of the formal parameter
+            &#8212;
+        <c>x</c>
+        .  It is as if
+        <c>x = toSquare</c>
+        is executed when
+        <c>square</c>
+        is called.
             It doesn&#8217;t matter what the value was named in
-            the caller. In <c>square</c>, it&#8217;s name is <c>x</c>.  You can see this very clearly in
-            codelens, where the <strong>global variables</strong> (variables defined outside of any function) and the local variables for the square
-            function are in separate boxes.</p>
-        <p>As you step through the example in codelens notice that the <strong>return</strong> statement not only causes the
+            the caller. In
+        <c>square</c>
+        , it&#8217;s name is
+        <c>x</c>
+        .  You can see this very clearly in
+            codelens, where the
+        <alert>global variables</alert>
+        (variables defined outside of any function) and the local variables for the square
+            function are in separate boxes.
+    </p>
+    <p>
+        As you step through the example in codelens notice that the
+        <alert>return</alert>
+        statement not only causes the
             function to return a value, but it also returns the flow of control back to the place in the program
-            where the function call was made.  this is true in general:</p>
-        <note>
-            <p>The call to a function <emphasis>terminates</emphasis> after the execution of a return statement.
+            where the function call was made.  this is true in general:
+    </p>
+    <note>
+        <p>
+            The call to a function
+            <em>terminates</em>
+            after the execution of a return statement.
                 This is fairly obvious if the return statement is the last statement in the function, but
                 we will see later where it makes sense to have a return statement even when other statements
-                follow, and the further statements are <emphasis>not</emphasis> executed.</p>
-        </note>
-        <exercise runestone="ch04_clsquare"/>
-        <p>Another important thing to notice as you step through this codelens
+                follow, and the further statements are
+            <em>not</em>
+            executed.
+        </p>
+    </note>
+    <exercise runestone="ch04_clsquare" />
+    <p>Another important thing to notice as you step through this codelens
             demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
             Recall that the red arrow always points to the next line of code that will be executed.  The light green arrow points to the line
             that was just executed in the last step.</p>
-        <p>When you first start running this codelens demonstration you will notice that there is only a red arrow and it points to
+    <p>When you first start running this codelens demonstration you will notice that there is only a red arrow and it points to
             line 1.  This is because line 1 is the next line to be executed and since it is the first line, there is no previously executed line
             of code.</p>
-        <p>When you click on the forward button, notice that the red arrow moves to line 5, skipping lines 2 and 3 of the function (and
+    <p>
+        When you click on the forward button, notice that the red arrow moves to line 5, skipping lines 2 and 3 of the function (and
             the light green arrow has now appeared on line 1).  Why is this?
             The answer is that function definition is not the same as function execution.  Lines 2
-            and 3 will not be executed until the function is called on line 6.  Line 1 defines the function and the name <c>square</c> is added to the
-            global variables, but that is all the <c>def</c> does at that point.  The body of the function will be executed later.  Continue to click
-            the forward button to see how the flow of control moves from the call, back up to the body of the function, and then finally back to line 7, after the function has returned its value and the value has been assigned to <c>squareResult</c>.
-        </p>
-        <!--Short variable names are more economical and sometimes make-->
-        <!--code easier to read:-->
-        <!--E = mc\ :sup:`2` would not be nearly so memorable if Einstein had-->
-        <!--used longer variable names!  If you do prefer short names,-->
-        <!--make sure you also have some comments to enlighten the reader-->
-        <!--about what the variables are used for.-->
-        <p>Finally, there is one more aspect of function return values that should be noted.  All Python functions return the value <c>None</c> unless there is an explicit return statement with
-            a value other than <c>None.</c>
-            Consider the following common mistake made by beginning Python
+            and 3 will not be executed until the function is called on line 6.  Line 1 defines the function and the name
+        <c>square</c>
+        is added to the
+            global variables, but that is all the
+        <c>def</c>
+        does at that point.  The body of the function will be executed later.  Continue to click
+            the forward button to see how the flow of control moves from the call, back up to the body of the function, and then finally back to line 7, after the function has returned its value and the value has been assigned to
+        <c>squareResult</c>
+        .
+    </p>
+    <!--Short variable names are more economical and sometimes make-->
+    <!--code easier to read:-->
+    <!--E = mc\ :sup:`2` would not be nearly so memorable if Einstein had-->
+    <!--used longer variable names!  If you do prefer short names,-->
+    <!--make sure you also have some comments to enlighten the reader-->
+    <!--about what the variables are used for.-->
+    <p>
+        Finally, there is one more aspect of function return values that should be noted.  All Python functions return the value
+        <c>None</c>
+        unless there is an explicit return statement with
+            a value other than
+        <c>None.</c>
+        Consider the following common mistake made by beginning Python
             programmers.  As you step through this example, pay very close attention to the return
             value in the local variables listing.  Then look at what is printed when the
-            function returns.</p>
-        <exercise runestone="ch04_clsquare_bad"/>
-        <p>The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
+            function returns.
+    </p>
+    <exercise runestone="ch04_clsquare_bad" />
+    <p>
+        The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
             where the call was made.  Since line 6 uses the return value as the right hand side of an assignment statement, the evaluation of the
-            function will be <c>None</c>.  In this case, <c>squareResult</c> will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.</p>
-        <p>
-            <strong>Check your understanding</strong>
-        </p>
+            function will be
+        <c>None</c>
+        .  In this case,
+        <c>squareResult</c>
+        will refer to that value after the assignment statement and therefore the result printed in line 7 is incorrect.  Typically, functions will return values that can be printed or processed in some other way by the caller.
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
-        <exercise xml:id="test_question5_2_1">
-            <statement>
+    <exercise xml:id="test_question5_2_1">
+        <statement>
 
-                <p>What is wrong with the following function definition:</p>
-                <program language="python"><input>
+            <p>What is wrong with the following function definition:</p>
+            <program language="python">
+                <input>
 def addEm(x, y, z):
     return x + y + z
     print('the answer is', x + y + z)
-</input></program>
+</input>
+            </program>
 
-            </statement>
-            <choices>
+        </statement>
+        <choices>
 
-                <choice>
-                    <statement>
-                        <p>You should never use a print statement in a function definition.</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>You should never use a print statement in a function definition.</p>
+                </statement>
+                <feedback>
                     Although you should not mistake print for return, you may include print statements inside your functions.
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice data-correct="yes">
-                    <statement>
-                        <p>You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.</p>
-                    </statement>
-                    <feedback>
+            <choice correct="yes">
+                <statement>
+                    <p>You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.</p>
+                </statement>
+                <feedback>
                     This is a very common mistake so be sure to watch out for it when you write your code!
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>You must calculate the value of x+y+z before you return it.</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>You must calculate the value of x+y+z before you return it.</p>
+                </statement>
+                <feedback>
                     Python will automatically calculate the value x+y+z and then return it in the statement as it is written
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>A function cannot return a number.</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>A function cannot return a number.</p>
+                </statement>
+                <feedback>
                     Functions can return any legal data, including (but not limited to) numbers, strings, turtles, etc.
                     </feedback>
-                </choice>
-            </choices>
+            </choice>
+        </choices>
 
-        </exercise>
+    </exercise>
 
-        <exercise xml:id="test_question5_2_2">
-            <statement>
+    <exercise xml:id="test_question5_2_2">
+        <statement>
 
-                <p>What will the following function return?</p>
-                <program language="python"><input>
+            <p>What will the following function return?</p>
+            <program language="python">
+                <input>
 def addEm(x, y, z):
     print(x + y + z)
-</input></program>
+</input>
+            </program>
 
-            </statement>
-            <choices>
+        </statement>
+        <choices>
 
-                <choice data-correct="yes">
-                    <statement>
-                        <p>None</p>
-                    </statement>
-                    <feedback>
+            <choice correct="yes">
+                <statement>
+                    <p>None</p>
+                </statement>
+                <feedback>
                     We have accidentally used print where we mean return.  Therefore, the function will return the value None by default.  This is a VERY COMMON mistake so watch out!  This mistake is also particularly difficult to find because when you run the function the output looks the same.  It is not until you try to assign its value to a variable that you can notice a difference.
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>The value of x + y + z</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>The value of x + y + z</p>
+                </statement>
+                <feedback>
                     Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
                     </feedback>
-                </choice>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>The string 'x + y + z'</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>The string 'x + y + z'</p>
+                </statement>
+                <feedback>
                     x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
                     </feedback>
-                </choice>
-            </choices>
+            </choice>
+        </choices>
 
-        </exercise>
-    </section>
-
+    </exercise>
+</section>

@@ -5,7 +5,7 @@
             widgets. These are described in the following table. They are often referred
             to as &#8220;container&#8221; widgets because in the widget hierarchy of a GUI program
             they are the parent widget of a group of related widgets.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -55,7 +55,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Widgets are always organized as a hierarchy, where the main
             application window is the root of the hierarchy. Typically, the child widgets
             of an application window are a combination of &#8220;frames&#8221;. The &#8220;frames&#8221; hold
@@ -64,7 +64,7 @@
             four types of widget &#8220;containers&#8221;. The &#8220;containers&#8221; in this example used a
             <c>grid</c> layout manager on a 2x2 grid.</p>
         <figure align="center" xml:id="id1">
-            <image source="images/GUIandEventDrivenProgramming/Figures/Grouping_examples.png"/>
+            <image source="GUIandEventDrivenProgramming/Figures/Grouping_examples.png"/>
             <caption>Examples of grouping widgets</caption>
         </figure>
         <p>For the <c>Frame</c> and <c>LabelFrame</c> groups, the frame is the &#8220;parent&#8221; of the

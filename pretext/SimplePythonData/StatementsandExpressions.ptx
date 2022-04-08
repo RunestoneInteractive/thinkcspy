@@ -1,16 +1,16 @@
 <section xml:id="statements-and-expressions">
         <title>Statements and Expressions</title>
 
-    <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="560"/>
-            <p>A <strong>statement</strong> is an instruction that the Python interpreter can execute. We
+    <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto"/>
+            <p>A <alert>statement</alert> is an instruction that the Python interpreter can execute. We
             have only seen the assignment statement so far.  Some other kinds of statements
             that we&#8217;ll see shortly are <c>while</c> statements, <c>for</c> statements, <c>if</c>
             statements,  and <c>import</c> statements.  (There are other kinds too!)</p>
         
         
-        <p xml:id="index-0">An <strong>expression</strong> is a combination of values, variables, operators, and calls
+        <p>An <term>expression</term> <idx>expression</idx> is a combination of values, variables, operators, and calls
             to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
-            <strong>evaluates</strong> the expression and displays the result.</p>
+            <alert>evaluates</alert> the expression and displays the result.</p>
 
 <listing xml:id="ch02_13">
     <caption/>
@@ -24,7 +24,7 @@ print(len("hello"))
         <p>In this example <c>len</c> is a built-in Python function that returns the number
             of characters in a string.  We&#8217;ve previously seen the <c>print</c> and the
             <c>type</c> functions, so this is our third example of a function!</p>
-        <p>The <emphasis>evaluation of an expression</emphasis> produces a value, which is why expressions
+        <p>The <em>evaluation of an expression</em> produces a value, which is why expressions
             can appear on the right hand side of assignment statements. A value all by
             itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.</p>
 

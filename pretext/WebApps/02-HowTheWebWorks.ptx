@@ -2,7 +2,7 @@
         <title>How the Web Works</title>
         <p>Before learning how to write a web application, you need to understand a bit about how
             web browsers work, and how web applications interact with users.</p>
-        <p>A <strong>web browser</strong>, at its core, is a fairly simple application. Basically, web browsers</p>
+        <p>A <alert>web browser</alert>, at its core, is a fairly simple application. Basically, web browsers</p>
         <p><ol label="1">
             <li>
                 <dl>
@@ -36,10 +36,10 @@
             <p><url href="https://docs.python.org/3/library/index.html" visual="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</url></p>
         </block_quote>
         <note>
-            <p>A <strong>URL</strong> (&#8220;Uniform Resource Locator&#8221;) is the address of a resource on the Web. It
-                has three sections: the <strong>protocol</strong> (ex. https:) the browser uses to request the resource,
-                the <strong>server</strong> where the document is located (ex.
-                <c>docs.python.org</c>), and the <strong>path</strong> to the requested resource on the server (ex.
+            <p>A <alert>URL</alert> (&#8220;Uniform Resource Locator&#8221;) is the address of a resource on the Web. It
+                has three sections: the <alert>protocol</alert> (ex. https:) the browser uses to request the resource,
+                the <alert>server</alert> where the document is located (ex.
+                <c>docs.python.org</c>), and the <alert>path</alert> to the requested resource on the server (ex.
                 <c>/3/library/index.html</c>).</p>
         </note>
         <p>When you click on this link, here&#8217;s what happens:</p>
@@ -58,10 +58,10 @@
             </li>
         </ol></p>
         <figure>
-            <image source="images/WebApps/Figures/webrequest.jpg"/>
+            <image source="WebApps/Figures/webrequest.jpg"/>
         </figure>
         <p>If you want to see the file transmitted by the web server to the browser, right-click in the browser window
-            and choose <strong>View Page Source</strong> (your browser&#8217;s option to view the source may be slightly different).
+            and choose <alert>View Page Source</alert> (your browser&#8217;s option to view the source may be slightly different).
             The browser shows you the file it downloaded from the web server.</p>
     </section>
 

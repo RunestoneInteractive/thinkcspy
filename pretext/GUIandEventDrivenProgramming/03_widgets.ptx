@@ -34,7 +34,7 @@ from tkinter import ttk
         <p>The following widgets are used for user input. In some cases you have a
             choice between the <c>tk</c> and <c>ttk</c> versions. In other cases you must
             use the <c>tk</c> version because the equivalent <c>ttk</c> versions don&#8217;t exist.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -139,15 +139,15 @@ from tkinter import ttk
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>The following figure shows examples of these widgets. You can download
             and run this python program, <url href="../_static/Programs/all_user_input_widgets.py" visual="../_static/Programs/all_user_input_widgets.py">all_user_input_widgets.py</url>, to interact with the widgets.</p>
         <figure align="center" xml:id="id1">
-            <image source="images/GUIandEventDrivenProgramming/Figures/All_user_input_widgets.png"/>
+            <image source="GUIandEventDrivenProgramming/Figures/All_user_input_widgets.png"/>
             <caption>Examples of user input widgets</caption>
         </figure>
         <p>The following <c>widgets</c> display information to a user, but have no user interaction:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -204,7 +204,7 @@ from tkinter import ttk
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>You do not need to memorize the above lists, but you should probably re-read
             the lists again so that you are familiar with what is possible in a
             TKinter GUI interface. (Note that the TKinter module is customizable, which

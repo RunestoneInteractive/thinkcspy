@@ -156,7 +156,7 @@ add_fruit(new_inventory, 'strawberries', 25)
                         <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look
                         something like this</p>
                     <block_quote>
-                        <tabular>
+                        <table><tabular>
                             
                                 
                                 
@@ -237,7 +237,7 @@ add_fruit(new_inventory, 'strawberries', 25)
                                     </row>
                                 
                             
-                        </tabular>
+                        </tabular></table>
                     </block_quote>
                     <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
                         in the activecode window simply print out the results rather than write them to a file.</p>
@@ -333,7 +333,7 @@ myTests().main()
     </program>
 </listing>
                     <p>Here&#8217;s a table of English to Pirate translations</p>
-                    <tabular>
+                    <table><tabular>
                         
                             
                             
@@ -494,7 +494,7 @@ myTests().main()
                                 </row>
                             
                         
-                    </tabular>
+                    </tabular></table>
                     <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
                         (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.</p>
                     <p>For example, the sentence &#8220;hello there students&#8221; should be translated to &#8220;avast there swabbies&#8221;.</p>

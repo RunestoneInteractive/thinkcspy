@@ -6,9 +6,9 @@
                 For this example, we will be using an IDE called PyCharm, but there are many
                 other options. A few of the IDEs you can use are listed below. IDE stands for
                 &#8220;Integrated Development Environment.&#8221; Most good IDEs will consist of a
-                <strong>source code editor</strong> that will let you write and manipulate the code, a
-                <strong>debugger</strong> to help the user identify and solve issues within the code, and
-                a <strong>compiler</strong> that translates your low-level code to high-level code or even
+                <alert>source code editor</alert> that will let you write and manipulate the code, a
+                <alert>debugger</alert> to help the user identify and solve issues within the code, and
+                a <alert>compiler</alert> that translates your low-level code to high-level code or even
                 binary to optimize the performance of your code.</p>
             <p><ul>
                 <li>
@@ -51,54 +51,54 @@
             <p>Each download may look different, but here is the general install proccess for
                 PyCharm:</p>
             <figure align="center" xml:id="id1">
-                <image source="images/Appendices/Figures/setup_page_01.JPG" alt="This is a screenshot of the opening page to the PyCharm IDE Setup manager."/>
+                <image source="Appendices/Figures/setup_page_01.JPG" alt="This is a screenshot of the opening page to the PyCharm IDE Setup manager."/>
                 <caption>Figure 1</caption>
             </figure>
             <p>Save your install in a path that best works for you. Here we will save it in the
                 default path.</p>
             <figure align="center" xml:id="id2">
-                <image source="images/Appendices/Figures/setup_page_02.JPG" alt="This is a screenshot of how to choose the destination folder for the PyCharm IDE Setup manager."/>
+                <image source="Appendices/Figures/setup_page_02.JPG" alt="This is a screenshot of how to choose the destination folder for the PyCharm IDE Setup manager."/>
                 <caption>Figure 2</caption>
             </figure>
             <p>Select the installments that word best for your computer. Here, the selection for
-                <strong>Add launchers dir to the PATH</strong> helps the computer to recognized automatically which
+                <alert>Add launchers dir to the PATH</alert> helps the computer to recognized automatically which
                 folder should be opened in PyCharm.</p>
             <figure align="center" xml:id="id3">
-                <image source="images/Appendices/Figures/setup_page_03.JPG" alt="This is a screenshot of the different installation options to choose from inside the Setup Manager."/>
+                <image source="Appendices/Figures/setup_page_03.JPG" alt="This is a screenshot of the different installation options to choose from inside the Setup Manager."/>
                 <caption>Figure 3</caption>
             </figure>
             <p>Only import settings settings to your IDE if you have set them up previously. For new
                 installs, not importing settings is most likely best.</p>
             <figure align="center" xml:id="id4">
-                <image source="images/Appendices/Figures/IDE_setup_05.JPG" alt="This is a screenshot of the Import PyCharm Settings page for the PyCharm Setup Manager."/>
+                <image source="Appendices/Figures/IDE_setup_05.JPG" alt="This is a screenshot of the Import PyCharm Settings page for the PyCharm Setup Manager."/>
                 <caption>Figure 4</caption>
             </figure>
             <p>Once you have everything up and running, your home screen should looks something similar
                 to this!</p>
             <figure align="center" xml:id="id5">
-                <image source="images/Appendices/Figures/IDE_setup_06.JPG" alt="This is a screenshot of the home page for the Pycharm IDE."/>
+                <image source="Appendices/Figures/IDE_setup_06.JPG" alt="This is a screenshot of the home page for the Pycharm IDE."/>
                 <caption>Figure 5</caption>
             </figure>
             <p>The last thing you need to do is to configure your interpreter that will be used in your
                 IDE. While some downloads will automatically configure this for you, PyCharm needs the
                 interpreter to be configured after opening your first repo. If you have a repo you would
-                like to clone, then press on <strong>New Project</strong> and then navigate to the options for
-                <strong>Base Interpreter</strong> and select the file path that your saved your Interpreter in with your
-                download. Here, clicking <strong>Make available to all projects</strong> will set the base options for all
+                like to clone, then press on <alert>New Project</alert> and then navigate to the options for
+                <alert>Base Interpreter</alert> and select the file path that your saved your Interpreter in with your
+                download. Here, clicking <alert>Make available to all projects</alert> will set the base options for all
                 new projects to use this Interpreter.</p>
             <figure align="center" xml:id="id6">
-                <image source="images/Appendices/Figures/IDE_setup_08.JPG" alt="This is a screenshot of page seen after clicking &quot;New Project&quot; on the homepage in the Pycharm IDE."/>
+                <image source="Appendices/Figures/IDE_setup_08.JPG" alt="This is a screenshot of page seen after clicking &quot;New Project&quot; on the homepage in the Pycharm IDE."/>
                 <caption>Figure 6</caption>
             </figure>
             <figure align="center" xml:id="id7">
-                <image source="images/Appendices/Figures/IDE_setup_09.JPG" alt="This is a screenshot of the initial settings page when loading a new project in the Pycharm IDE."/>
+                <image source="Appendices/Figures/IDE_setup_09.JPG" alt="This is a screenshot of the initial settings page when loading a new project in the Pycharm IDE."/>
                 <caption>Figure 7</caption>
             </figure>
             <p>If you already have a repo on your local computer and would like to set up the interpreter from
-                there, you can navigate to <strong>File</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Project &lt;project name&gt;</strong> -&gt;
-                <strong>Python Interpreter</strong></p>
+                there, you can navigate to <alert>File</alert> -&gt; <alert>Settings</alert> -&gt; <alert>Project &lt;project name&gt;</alert> -&gt;
+                <alert>Python Interpreter</alert></p>
             <figure align="center" xml:id="id8">
-                <image source="images/Appendices/Figures/using_IDE_15.JPG" alt="This is a screenshot of the setting page while already inside a project for the Pycharm IDE."/>
+                <image source="Appendices/Figures/using_IDE_15.JPG" alt="This is a screenshot of the setting page while already inside a project for the Pycharm IDE."/>
                 <caption>Figure 8</caption>
             </figure>
         </subsection>
@@ -110,7 +110,7 @@
                 and push your work, and so much more Playing around with it and figuring out new things is the
                 best part!</p>
             <figure align="center" xml:id="id9">
-                <image source="images/Appendices/Figures/using_IDE_10.PNG" alt="This is a screenshot of the context menu inside the Pycharm IDE."/>
+                <image source="Appendices/Figures/using_IDE_10.PNG" alt="This is a screenshot of the context menu inside the Pycharm IDE."/>
                 <caption>Figure 9</caption>
             </figure>
         </subsection>
@@ -125,7 +125,7 @@
                 will have mostly similar tools, like the debugging button.</p>
             <p>In PyCharm, your debugging tool will look like this:</p>
             <figure align="center" xml:id="id10">
-                <image source="images/Appendices/Figures/debug.PNG" alt="This is a screenshot of the debug button at the tope of the PyCharm IDE."/>
+                <image source="Appendices/Figures/debug.PNG" alt="This is a screenshot of the debug button at the tope of the PyCharm IDE."/>
                 <caption>Figure 10</caption>
             </figure>
             <p>For more information on PyCharm debugging, you can follow &#8216;this link
@@ -140,7 +140,7 @@
                 of your troubles, usually at the end of the errors list. Some code or descriptor is
                 given to help you fix the issue, but sometimes they are cryptic.</p>
             <figure align="center" xml:id="id11">
-                <image source="images/Appendices/Figures/script_vs_console.JPG" alt="This is a screenshot of the Console and scrip editor of the Pycharm IDE with a successful repo opened inside."/>
+                <image source="Appendices/Figures/script_vs_console.JPG" alt="This is a screenshot of the Console and scrip editor of the Pycharm IDE with a successful repo opened inside."/>
                 <caption>Figure 11</caption>
             </figure>
             <p>Remember that when coding, the console is different from the script. The console

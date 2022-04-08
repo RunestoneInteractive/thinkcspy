@@ -4,7 +4,7 @@
             in the previous lessons. We will develop a GUI Whack-a-mole
             game where a user tries to click on &#8220;moles&#8221; as they randomly pop up out of
             the &#8220;ground.&#8221;</p>
-        <p>This discussion will take you through an <emphasis>incremental development</emphasis> cycle
+        <p>This discussion will take you through an <em>incremental development</em> cycle
             that creates a program in well-defined stages. While you might read a
             finished computer program from &#8220;top to bottom,&#8221; that is not how it was
             developed. For a typical GUI program development, you are encouraged to go
@@ -31,7 +31,7 @@
                 <p>Incrementally implement the functionality needed for each callback function.</p>
             </li>
         </ol></p>
-        <p>When you develop code using <emphasis>incremental development</emphasis> your program should
+        <p>When you develop code using <em>incremental development</em> your program should
             always be executable. You continually add a few lines of code and then test
             them. If errors occur you almost always know were the errors came from!
             They came from the lines of code you just added.</p>
@@ -41,7 +41,7 @@
                 before you start coding. Draw a sketch of your initial design on paper
                 and consider how a user will interact with your program.</p>
             <figure align="center" xml:id="id1">
-                <image source="images/GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png"/>
+                <image source="GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png"/>
                 <caption>Initial design of a Whack-a-mole game</caption>
             </figure>
             <p>Step 2: Create the basic structure of your interface using appropriate <c>frame</c>
@@ -81,8 +81,8 @@ if __name__ == "__main__":
                 for each mole. The exact size of the &#8220;mole field&#8221; needs to be determined at
                 a future time, so initialize a CONSTANT that can be used to easily change it
                 later.  (<url href="../_static/Programs/whack_a_mole_v2.py" visual="../_static/Programs/whack_a_mole_v2.py">whack_a_mole_v2.py</url>)</p>
-            <image source="images/GUIandEventDrivenProgramming/Figures/mole.png"/>
-            <image source="images/GUIandEventDrivenProgramming/Figures/mole_cover.png"/>
+            <image source="GUIandEventDrivenProgramming/Figures/mole.png"/>
+            <image source="GUIandEventDrivenProgramming/Figures/mole_cover.png"/>
             <program language="python"><input>
 import tkinter as tk
 from tkinter import PhotoImage

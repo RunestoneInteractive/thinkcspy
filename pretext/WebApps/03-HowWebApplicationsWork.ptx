@@ -37,7 +37,7 @@
         <p>Anytime you&#8217;re browsing the web, and you notice that the URL of the page you&#8217;re viewing has a question
             mark (?), you can be fairly certain that the page was generated &#8220;on the fly&#8221; by a web application on
             a web server. By the way, the portion of the URL that comes after the ? is called the &#8220;query string,&#8221; and
-            contains input for the web application. Try changing the <strong>query string</strong> by substituting &#8220;Firefox&#8221; for &#8220;Microsoft&#8221;
+            contains input for the web application. Try changing the <alert>query string</alert> by substituting &#8220;Firefox&#8221; for &#8220;Microsoft&#8221;
             to see what I mean.</p>
         <p>In summary, a (server-side) web application is a program that is run by a web server to produce output
             in response to an incoming request from a web browser.</p>

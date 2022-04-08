@@ -1,15 +1,19 @@
 <section xml:id="semantic-errors">
     <title>Semantic Errors</title>
-    <p>The third type of error is the <strong>semantic error</strong>. If there is a semantic error
+    <p>
+        The third type of error is the
+        <alert>semantic error</alert>
+        . If there is a semantic error
             in your program, it will run successfully in the sense that the computer will
             not generate any error messages.  However, your program will not do the right thing. It will do
-            something else. Specifically, it will do what you told it to do.</p>
+            something else. Specifically, it will do what you told it to do.
+    </p>
     <p>The problem is that the program you wrote is not the program you wanted to
             write. The meaning of the program (its semantics) is wrong.  Identifying
             semantic errors can be tricky because it requires you to work backward by
             looking at the output of the program and trying to figure out what it is doing.</p>
     <p>
-        <strong>Check your understanding</strong>
+        <alert>Check your understanding</alert>
     </p>
 
     <exercise xml:id="question1_8_1">
@@ -38,7 +42,7 @@
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Forgetting to divide by 100 when printing a percentage amount.</p>
                 </statement>
@@ -58,7 +62,7 @@
         </statement>
         <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>The programmer.</p>
                 </statement>
@@ -97,4 +101,3 @@
 
     </exercise>
 </section>
-

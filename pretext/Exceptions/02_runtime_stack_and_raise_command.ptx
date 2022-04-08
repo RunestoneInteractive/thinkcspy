@@ -32,16 +32,16 @@ def D()
             and so on. It would be very helpful if function D could communicate directly
             with the main function (or functions A and B) without sending a special value
             through the intermediate calling functions. Well, that is exactly what an
-            <emphasis>exception</emphasis> does. An <emphasis>exception</emphasis> is a message to any function currently on the
+            <em>exception</em> does. An <em>exception</em> is a message to any function currently on the
             executing program&#8217;s &#8220;run-time-stack&#8221;. (The &#8220;run-time-stack&#8221; is what keeps track
             of the active function calls while a program is executing.)</p>
-        <p>In Python, your create an <emphasis>exception</emphasis> message using the <c>raise</c> command. The
+        <p>In Python, your create an <em>exception</em> message using the <c>raise</c> command. The
             simplest format for a <c>raise</c> command is the keyword <c>raise</c> followed by
             the name of an exception. For example:</p>
         <program language="Python"><input>
 raise ExceptionName
 </input></program>
-        <p>So what happens to an <emphasis>exception</emphasis> message after it is created? The normal
+        <p>So what happens to an <em>exception</em> message after it is created? The normal
             flow-of-control of a Python program is interrupted and Python starts looking
             for any code in its run-time-stack that is interested in dealing with the
             message. It always searches from its current location at the bottom of the

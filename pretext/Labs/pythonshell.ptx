@@ -22,7 +22,7 @@
                 the end of this topic that explains how to download and install Python on
                 Windows.  Here is an example of what the shell looks like once you have it
                 started up.</p>
-            <image source="images/Labs/Figures/python_shell.png"/>
+            <image source="Labs/Figures/python_shell.png"/>
             <p>To run the Python shell you will first need to start up the Terminal
                 application, on the Mac you can find this under Utilities in the Applications
                 folder, on most versions of Linux you can find it under the accessories menu.
@@ -35,7 +35,7 @@
                 shell.  Any Python expression can be entered into the shell and you will see
                 the result printed out for you right underneath.  Here are some examples
                 using the functions and expressions introduced in this chapter.</p>
-            <image source="images/Labs/Figures/shell_expressions.png"/>
+            <image source="Labs/Figures/shell_expressions.png"/>
             <p>It&#8217;s a good idea to get in the habit of using the shell.  Very often if you
                 have a question about how something works you can answer the question for
                 yourself by simply trying it in the shell.  If you need a really extensable
@@ -72,8 +72,8 @@ Hello World
                 small example above.  This example illustrates one very important difference
                 between entering expressions in the Python shell, and writing a Python
                 program.  The Python shell uses what we call a read eval print loop.  That
-                is, Python <emphasis>reads</emphasis> an expression from the command line,
-                then <emphasis>evaluates</emphasis> that expression, and finally <emphasis>prints</emphasis> the result.  In a
+                is, Python <em>reads</em> an expression from the command line,
+                then <em>evaluates</em> that expression, and finally <em>prints</em> the result.  In a
                 python program that you run using the Python interpreter,
                 you have to be explicit about what it is you want to print.  That is why in
                 the Python program we use the print function on both lines.</p>

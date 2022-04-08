@@ -12,7 +12,7 @@
                 <gi>
                     <title>key</title>
                     
-                        <p>A data item that is <emphasis>mapped to</emphasis> a value in a dictionary. Keys are used
+                        <p>A data item that is <em>mapped to</em> a value in a dictionary. Keys are used
                             to look up values in a dictionary.</p>
                     
                 </gi>

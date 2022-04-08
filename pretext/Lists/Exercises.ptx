@@ -605,7 +605,7 @@ test(replace(s, 'om', 'am'),
 
 test(replace(s, 'o', 'a'),
        'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')</pre>
-            <p><emphasis>Hint</emphasis>: use the <c>split</c> and <c>join</c> methods.</p>
+            <p><em>Hint</em>: use the <c>split</c> and <c>join</c> methods.</p>
         </QuestionNode>
         <QuestionNode xml:id="strings-ex-15" line="560" names="strings_ex_15" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'strings_ex_15', 'qnumber': '', 'question_label': '10.31.36'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst">
             <TabbedStuffNode divid="q15" line="562" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Lists/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Lists', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q15', 'divclass': 'alert alert-warning'}">

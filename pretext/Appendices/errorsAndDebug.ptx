@@ -1,4 +1,4 @@
-<section xml:id="debugging">
+<appendix xml:id="debugging">
         <title>Debugging</title>
         <p>Different kinds of errors can occur in a program, and it is useful to
             distinguish among them in order to track them down more quickly:</p>
@@ -26,7 +26,7 @@ syntax</c>.</p>
         <p>The first step in debugging is to figure out which kind of error you are
             dealing with. Although the following sections are organized by error type, some
             techniques are applicable in more than one situation.</p>
-        <subsection xml:id="syntax-errors">
+        <subsection xml:id="app-syntax-errors">
             <title>Syntax errors</title>
             <p>Syntax errors are usually easy to fix once you figure out what they are.
                 Unfortunately, the error messages are often not helpful. The most common
@@ -90,7 +90,7 @@ token</c>, neither of which is very informative.</p>
                 World!, and make sure you can get a known program to run.  Then gradually add
                 the pieces of the new program to the working one.</p>
         </subsection>
-        <subsection xml:id="runtime-errors">
+        <subsection xml:id="app-runtime-errors">
             <title>Runtime errors</title>
             <p>Once your program is syntactically correct, Python can import it and at least
                 start running it. What could possibly go wrong?</p>
@@ -206,7 +206,7 @@ while x &gt; 0 and y &lt; 0:
                 and a traceback.</p>
             <p>Put a breakpoint on the line causing the exception, and look around!</p>
             <p>The traceback identifies the function that is currently running, and then the
-                function that invoked it, and then the function that invoked <emphasis>that</emphasis>, and so on.
+                function that invoked it, and then the function that invoked <em>that</em>, and so on.
                 In other words, it traces the path of function invocations that got you to
                 where you are. It also includes the line number in your file where each of
                 these calls occurs.</p>
@@ -280,7 +280,7 @@ while x &gt; 0 and y &lt; 0:
                 so it is easier to understand.</p>
             <p>To simplify the program, there are several things you can do. First,
                 scale down the problem the program is working on. For example, if you
-                are sorting an array, sort a <emphasis>small</emphasis> array. If the program takes input
+                are sorting an array, sort a <em>small</em> array. If the program takes input
                 from the user, give it the simplest input that causes the problem.</p>
             <p>Second, clean up the program. Remove dead code and reorganize the
                 program to make it as easy to read as possible. For example, if you
@@ -304,7 +304,7 @@ while x &gt; 0 and y &lt; 0:
                 on a statement, then edit the breakpoint to say &#8220;only break if this
                 expression becomes true&#8221;.</p>
         </subsection>
-        <subsection xml:id="semantic-errors">
+        <subsection xml:id="app-semantic-errors">
             <title>Semantic errors</title>
             <p>In some ways, semantic errors are the hardest to debug, because the
                 compiler and the runtime system provide no information about what is
@@ -458,8 +458,8 @@ return count
                 </li>
             </ol></p>
             <p>Good instructors and helpers will also do something that should not
-                offend you: they won&#8217;t believe when you tell them <emphasis>&#8220;I&#8217;m sure all the input
-                    routines are working just fine, and that I&#8217;ve set up the data correctly!&#8221;</emphasis>.
+                offend you: they won&#8217;t believe when you tell them <em>&#8220;I&#8217;m sure all the input
+                    routines are working just fine, and that I&#8217;ve set up the data correctly!&#8221;</em>.
                 They will want to validate and check things for themselves.
                 After all, your program has a bug.
                 Your understanding and inspection of the code have not found it yet. So you
@@ -471,5 +471,5 @@ return count
             <p>Remember, the goal is not just to make the program work. The goal is to learn
                 how to make the program work.</p>
         </subsection>
-    </section>
+    </appendix>
 

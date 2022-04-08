@@ -19,7 +19,7 @@
                 <gi>
                     <title>dot notation</title>
                     
-                        <p>Use of the <strong>dot operator</strong>, <c>.</c>, to access functions inside a
+                        <p>Use of the <alert>dot operator</alert>, <c>.</c>, to access functions inside a
                             module, or to access methods and attributes of an object.</p>
                     
                 </gi>

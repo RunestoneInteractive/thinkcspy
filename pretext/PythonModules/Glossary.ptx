@@ -20,7 +20,7 @@
                     
                         <p>A file containing Python definitions and statements intended for use in
                             other Python programs. The contents of a module are made available to
-                            the other program by using the <emphasis>import</emphasis> statement.</p>
+                            the other program by using the <em>import</em> statement.</p>
                     
                 </gi>
                 <gi>

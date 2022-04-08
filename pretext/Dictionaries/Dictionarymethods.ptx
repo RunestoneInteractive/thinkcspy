@@ -1,93 +1,103 @@
 <section xml:id="dictionary-methods">
-        <title>Dictionary Methods</title>
-        <p>Dictionaries have a number of useful built-in methods.
+    <title>Dictionary Methods</title>
+    <p>
+        Dictionaries have a number of useful built-in methods.
             The following table provides a summary and more details can be found in the
-            <url href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict" visual="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">Python Documentation</url>.</p>
+        <url href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict" visual="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">Python Documentation</url>
+        .
+    </p>
+    <table>
         <tabular>
-            
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+
+
+            <row header="yes">
+                <cell>
                             Method
                         </cell>
-                        <cell>
+                <cell>
                             Parameters
                         </cell>
-                        <cell>
+                <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+            </row>
+
+
+            <row>
+                <cell>
                             keys
                         </cell>
-                        <cell>
+                <cell>
                             none
                         </cell>
-                        <cell>
+                <cell>
                             Returns a view of the keys in the dictionary
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             values
                         </cell>
-                        <cell>
+                <cell>
                             none
                         </cell>
-                        <cell>
+                <cell>
                             Returns a view of the values in the dictionary
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             items
                         </cell>
-                        <cell>
+                <cell>
                             none
                         </cell>
-                        <cell>
+                <cell>
                             Returns a view of the key-value pairs in the dictionary
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             get
                         </cell>
-                        <cell>
+                <cell>
                             key
                         </cell>
-                        <cell>
+                <cell>
                             Returns the value associated with key; None otherwise
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             get
                         </cell>
-                        <cell>
+                <cell>
                             key,alt
                         </cell>
-                        <cell>
+                <cell>
                             Returns the value associated with key; alt otherwise
                         </cell>
-                    </row>
-                
-            
-        </tabular>
-        <p>The <c>keys</c> method returns what Python 3 calls a <strong>view</strong> of its underlying keys.
-            We can iterate over the view or turn the view into a
-            list by using the <c>list</c> conversion function.</p>
+            </row>
 
-<listing xml:id="chp12_dict6">
-    <caption/>
-    <program xml:id="chp12_dict6_editor" interactive="activecode" language="python">
-        <input>
+
+        </tabular>
+    </table>
+    <p>
+        The
+        <c>keys</c>
+        method returns what Python 3 calls a
+        <term>view</term>
+        of its underlying keys.
+            We can iterate over the view or turn the view into a
+            list by using the
+        <c>list</c>
+        conversion function.
+    </p>
+
+    <listing xml:id="chp12_dict6">
+        <caption />
+        <program xml:id="chp12_dict6_editor" interactive="activecode" language="python">
+            <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for akey in inventory.keys():     # the order in which we get the keys is not defined
@@ -96,34 +106,52 @@ for akey in inventory.keys():     # the order in which we get the keys is not de
 ks = list(inventory.keys())
 print(ks)
         </input>
-    </program>
-</listing>
-        <p>It is so common to iterate over the keys in a dictionary that you can
-            omit the <c>keys</c> method call in the <c>for</c> loop &#8212; iterating over
-            a dictionary implicitly iterates over its keys.</p>
+        </program>
+    </listing>
+    <p>
+        It is so common to iterate over the keys in a dictionary that you can
+            omit the
+        <c>keys</c>
+        method call in the
+        <c>for</c>
+        loop &#8212; iterating over
+            a dictionary implicitly iterates over its keys.
+    </p>
 
-<listing xml:id="chp12_dict7">
-    <caption/>
-    <program xml:id="chp12_dict7_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp12_dict7">
+        <caption />
+        <program xml:id="chp12_dict7_editor" interactive="activecode" language="python">
+            <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for k in inventory:
    print("Got key", k)
         </input>
-    </program>
-</listing>
-        <p>As we saw earlier with strings and lists, dictionary methods use dot notation,
+        </program>
+    </listing>
+    <p>
+        As we saw earlier with strings and lists, dictionary methods use dot notation,
             which specifies the name of the method to the right of the dot and the name of
             the object on which to apply the method immediately to the left of the dot. The empty
-            parentheses in the case of <c>keys</c> indicate that this method takes no parameters.</p>
-        <p>The <c>values</c> and <c>items</c> methods are similar to <c>keys</c>. They return  view objects which can be turned
-            into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.</p>
+            parentheses in the case of
+        <c>keys</c>
+        indicate that this method takes no parameters.
+    </p>
+    <p>
+        The
+        <c>values</c>
+        and
+        <c>items</c>
+        methods are similar to
+        <c>keys</c>
+        . They return  view objects which can be turned
+            into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
+    </p>
 
-<listing xml:id="chp12_dict8">
-    <caption/>
-    <program xml:id="chp12_dict8_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp12_dict8">
+        <caption />
+        <program xml:id="chp12_dict8_editor" interactive="activecode" language="python">
+            <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(list(inventory.values()))
@@ -135,16 +163,22 @@ for (k,v) in inventory.items():
 for k in inventory:
     print("Got", k, "that maps to", inventory[k])
         </input>
-    </program>
-</listing>
-        <p>Note that tuples are often useful for getting both the key and the value at the same
+        </program>
+    </listing>
+    <p>Note that tuples are often useful for getting both the key and the value at the same
             time while you are looping.  The two loops do the same thing.</p>
-        <p>The <c>in</c> and <c>not in</c> operators can test if a key is in the dictionary:</p>
+    <p>
+        The
+        <c>in</c>
+        and
+        <c>not in</c>
+        operators can test if a key is in the dictionary:
+    </p>
 
-<listing xml:id="chp12_dict9">
-    <caption/>
-    <program xml:id="chp12_dict9_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp12_dict9">
+        <caption />
+        <program xml:id="chp12_dict9_editor" interactive="activecode" language="python">
+            <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 print('apples' in inventory)
 print('cherries' in inventory)
@@ -154,19 +188,29 @@ if 'bananas' in inventory:
 else:
     print("We have no bananas")
         </input>
-    </program>
-</listing>
-        <p>This operator can be very useful since looking up a non-existent key in a
+        </program>
+    </listing>
+    <p>This operator can be very useful since looking up a non-existent key in a
             dictionary causes a runtime error.</p>
-        <p>The <c>get</c> method allows us to access the value associated with a key, similar to the <c>[ ]</c> operator.
-            The important difference is that <c>get</c> will not cause a runtime error if the key is not present.  It
-            will instead return None.  There exists a variation of <c>get</c> that allows a second parameter that serves as an alternative return value
-            in the case where the key is not present.  This can be seen in the final example below.  In this case, since &#8220;cherries&#8221; is not a key, return 0 (instead of None).</p>
+    <p>
+        The
+        <c>get</c>
+        method allows us to access the value associated with a key, similar to the
+        <c>[ ]</c>
+        operator.
+            The important difference is that
+        <c>get</c>
+        will not cause a runtime error if the key is not present.  It
+            will instead return None.  There exists a variation of
+        <c>get</c>
+        that allows a second parameter that serves as an alternative return value
+            in the case where the key is not present.  This can be seen in the final example below.  In this case, since &#8220;cherries&#8221; is not a key, return 0 (instead of None).
+    </p>
 
-<listing xml:id="chp12_dict10">
-    <caption/>
-    <program xml:id="chp12_dict10_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp12_dict10">
+        <caption />
+        <program xml:id="chp12_dict10_editor" interactive="activecode" language="python">
+            <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(inventory.get("apples"))
@@ -174,36 +218,37 @@ print(inventory.get("cherries"))
 
 print(inventory.get("cherries", 0))
         </input>
-    </program>
-</listing>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+        </program>
+    </listing>
+    <note>
+        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-<listing xml:id="scratch_11_02">
-    <caption/>
-    <program xml:id="scratch_11_02_editor" interactive="activecode" language="python">
-        <input>
-
-
-        </input>
-    </program>
-</listing>
-        </note>
-        <p><strong>Check your understanding</strong></p>
+        <listing xml:id="scratch_11_02">
+            <caption />
+            <program xml:id="scratch_11_02_editor" interactive="activecode" language="python">
+                <input></input>
+            </program>
+        </listing>
+    </note>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question11_3_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 keylist = list(mydict.keys())
 keylist.sort()
 print(keylist[3])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -223,7 +268,7 @@ print(keylist[3])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>elephant</p>
                 </statement>
@@ -240,24 +285,26 @@ print(keylist[3])
                     keylist is a list of all the keys which is then sorted.  bear would be at index 0.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question11_3_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 answer = mydict.get("cat") // mydict.get("dog")
 print(answer)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>2</p>
                 </statement>
@@ -292,23 +339,25 @@ print(answer)
                     The integer division operator is being used on the values returned from the get method, not on the dictionary.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question11_3_3">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 print("dog" in mydict)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>True</p>
                 </statement>
@@ -325,21 +374,23 @@ print("dog" in mydict)
                     The in operator returns True if a key is in the dictionary, False otherwise.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question11_3_4">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 print(23 in mydict)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -350,7 +401,7 @@ print(23 in mydict)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>False</p>
                 </statement>
@@ -358,25 +409,27 @@ print(23 in mydict)
                     Yes, the in operator returns True if a key is in the dictionary, False otherwise.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question11_3_5">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 total = 0
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 for akey in mydict:
    if len(akey) &gt; 3:
       total = total + mydict[akey]
 print(total)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -387,7 +440,7 @@ print(total)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>43</p>
                 </statement>
@@ -413,8 +466,7 @@ print(total)
                     Not all the values are added together.  The if statement only chooses some of them.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

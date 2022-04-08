@@ -15,7 +15,7 @@
 n = n + 1
 </input></program>
                         <p><c>n</c> plays a very different role on each side of the <c>=</c>. On the
-                            right it is a <emphasis>value</emphasis> and makes up part of the <emphasis>expression</emphasis> which will
+                            right it is a <em>value</em> and makes up part of the <em>expression</em> which will
                             be evaluated by the Python interpreter before assigning it to the name
                             on the left.</p>
                     
@@ -30,7 +30,7 @@ n = n + 1
                 <gi>
                     <title>class</title>
                     
-                        <p>see <strong>data type</strong> below</p>
+                        <p>see <alert>data type</alert> below</p>
                     
                 </gi>
                 <gi>
@@ -72,9 +72,9 @@ n = n + 1
                 <gi>
                     <title>float</title>
                     
-                        <p>A Python data type which stores <emphasis>floating-point</emphasis> numbers.
-                            Floating-point numbers are stored internally in two parts: a <emphasis>base</emphasis> and
-                            an <emphasis>exponent</emphasis>. When printed in the standard format, they look like
+                        <p>A Python data type which stores <em>floating-point</em> numbers.
+                            Floating-point numbers are stored internally in two parts: a <em>base</em> and
+                            an <em>exponent</em>. When printed in the standard format, they look like
                             decimal numbers. Beware of rounding errors when you use <c>float</c>s,
                             and remember that they are only approximate values.</p>
                     
@@ -93,13 +93,13 @@ n = n + 1
                             until they are assigned values, they are initialized when they are
                             created.  In other programming languages this is not the case, and
                             variables can be created without being initialized, in which case they
-                            have either default or <emphasis>garbage</emphasis> values.</p>
+                            have either default or <em>garbage</em> values.</p>
                     
                 </gi>
                 <gi>
                     <title>int</title>
                     
-                        <p>A Python data type that holds positive and negative <strong>whole</strong> numbers.</p>
+                        <p>A Python data type that holds positive and negative <alert>whole</alert> numbers.</p>
                     
                 </gi>
                 <gi>
@@ -153,7 +153,7 @@ n = n + 1
                 <gi>
                     <title>reference diagram</title>
                     
-                        <p>A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also <strong>state snapshot</strong>.</p>
+                        <p>A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also <alert>state snapshot</alert>.</p>
                     
                 </gi>
                 <gi>
@@ -211,7 +211,7 @@ n = n + 1
                             sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins
                             with a letter.  In best programming practice, variable names should be
                             chosen so that they describe their use in the program, making the
-                            program <emphasis>self documenting</emphasis>.</p>
+                            program <em>self documenting</em>.</p>
                     
                 </gi>
             

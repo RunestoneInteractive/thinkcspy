@@ -7,12 +7,12 @@
             design things, assembling components into systems and evaluating tradeoffs
             among alternatives.  Like scientists, they observe the behavior of complex
             systems, form hypotheses, and test predictions.</p>
-        <p>The single most important skill for a computer scientist is <strong>problem
-                solving</strong>. Problem solving means the ability to formulate problems, think
+        <p>The single most important skill for a computer scientist is <alert>problem
+                solving</alert>. Problem solving means the ability to formulate problems, think
             creatively about solutions, and express a solution clearly and accurately. As
             it turns out, the process of learning to program is an excellent opportunity to
-            practice problem solving skills. That&#8217;s why this chapter is called, <emphasis>The Way of
-                the Program</emphasis>.</p>
+            practice problem solving skills. That&#8217;s why this chapter is called, <em>The Way of
+                the Program</em>.</p>
         <p>On one level, you will be learning to program, a useful skill by itself. On
             another level, you will use programming as a means to an end. As we go along,
             that end will become clearer.</p>

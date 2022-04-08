@@ -1,9 +1,9 @@
 <section xml:id="what-is-an-exception">
         <title>What is an exception?</title>
-        <p>An <emphasis>exception</emphasis> is a signal that a condition has occurred that can&#8217;t be easily
-            handled using the normal flow-of-control of a Python program. <emphasis>Exceptions</emphasis>
+        <p>An <em>exception</em> is a signal that a condition has occurred that can&#8217;t be easily
+            handled using the normal flow-of-control of a Python program. <em>Exceptions</em>
             are often defined as being &#8220;errors&#8221; but this is not always the case. All
-            errors in Python are dealt with using <emphasis>exceptions</emphasis>, but not all
-            <emphasis>exceptions</emphasis> are errors.</p>
+            errors in Python are dealt with using <em>exceptions</em>, but not all
+            <em>exceptions</em> are errors.</p>
     </section>
     

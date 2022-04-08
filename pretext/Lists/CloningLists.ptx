@@ -2,7 +2,7 @@
         <title>Cloning Lists</title>
         <p>If we want to modify a list and also keep a copy of the original, we need to be
             able to make a copy of the list itself, not just the reference. This process is
-            sometimes called <strong>cloning</strong>, to avoid the ambiguity of the word copy.</p>
+            sometimes called <alert>cloning</alert>, to avoid the ambiguity of the word copy.</p>
         <p>The easiest way to clone a list is to use the slice operator.</p>
         <p>Taking any slice of <c>a</c> creates a new list. In this case the slice happens to
             consist of the whole list.</p>

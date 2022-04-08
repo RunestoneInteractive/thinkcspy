@@ -4,7 +4,7 @@
             we say that an association exists between them. Often it is helpful to
             depict the associations between classes on a graphical diagram, so that
             developers working on the code can see at a glance how the classes are
-            related to each other. The <emphasis>Unified Modeling Language</emphasis> (UML) is a graphical
+            related to each other. The <em>Unified Modeling Language</em> (UML) is a graphical
             notation that provides a standard for depicting classes and their
             associations on various types of diagrams. It gives software engineers a
             way to record both their proposed designs, as well as the design of the
@@ -20,9 +20,9 @@
             The top section contains the class name; the middle section, the instance
             variables; and the bottom section, the methods. The following diagram shows
             the classes Point and LabeledPoint in their original inheritance relationship.</p>
-        <image source="images/Inheritance/Figures/uml_inherit1.png" alt="UML diagram showing class inheritance"/>
+        <image source="Inheritance/Figures/uml_inherit1.png" alt="UML diagram showing class inheritance"/>
         <p>To depict composition, UML uses a different type of association,
             as shown in this figure:</p>
-        <image source="images/Inheritance/Figures/uml_composition.png" alt="UML diagram showing composition"/>
+        <image source="Inheritance/Figures/uml_composition.png" alt="UML diagram showing composition"/>
     </section>
 

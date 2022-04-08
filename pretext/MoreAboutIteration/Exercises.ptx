@@ -76,7 +76,7 @@ def print_triangular_numbers(n):
 3       6
 4       10
 5       15</pre>
-            <p>(<emphasis>hint: use a web search to find out what a triangular number is.</emphasis>)</p>
+            <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
         </QuestionNode>
         <QuestionNode xml:id="moreiter-ex-3" line="88" names="moreiter_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_3', 'qnumber': '', 'question_label': '8.14.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">
             <TabbedStuffNode divid="q3" line="90" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
@@ -106,7 +106,7 @@ myTests().main()
     </program>
 </listing>
                     <p>Write a function, <c>is_prime</c>, that takes a single integer argument
-                        and returns <c>True</c> when the argument is a <emphasis>prime number</emphasis> and <c>False</c>
+                        and returns <c>True</c> when the argument is a <em>prime number</em> and <c>False</c>
                         otherwise.</p>
                 </TabNode>
                 <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
@@ -407,7 +407,7 @@ win.exitonclick()
             <pre>newR = (R &#215; 0.393 + G &#215; 0.769 + B &#215; 0.189)
 newG = (R &#215; 0.349 + G &#215; 0.686 + B &#215; 0.168)
 newB = (R &#215; 0.272 + G &#215; 0.534 + B &#215; 0.131)</pre>
-            <p>Write a function to convert an image to sepia tone. <emphasis>Hint:</emphasis>
+            <p>Write a function to convert an image to sepia tone. <em>Hint:</em>
                 Remember that rgb values must be integers between 0 and 255.</p>
         </QuestionNode>
         <QuestionNode xml:id="moreiter-ex-11" line="396" names="moreiter_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'MoreAboutIteration', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'moreiter_ex_11', 'qnumber': '', 'question_label': '8.14.26'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/MoreAboutIteration/Exercises.rst">

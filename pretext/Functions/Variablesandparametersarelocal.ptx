@@ -1,37 +1,66 @@
 <section xml:id="variables-and-parameters-are-local">
-        <title>Variables and Parameters are Local</title>
-        <p>An assignment statement in a function creates a <strong>local variable</strong> for the
+    <title>Variables and Parameters are Local</title>
+    <p>
+        An assignment statement in a function creates a
+        <alert>local variable</alert>
+        for the
             variable on the left hand side of the assignment operator. It is called local because this variable only
             exists inside the function and you cannot use it outside. For example,
-            consider again the <c>square</c> function:</p>
-<exercise runestone="bad_local"/>        <p>If you press the &#8216;last &gt;&gt;&#8217; button you will see an error message.
-            When we try to use <c>y</c> on line 6 (outside the function) Python looks for a global
-            variable named <c>y</c> but does not find one.  This results in the
-            error: <c>Name Error: 'y' is not defined.</c></p>
-        <p>The variable <c>y</c> only exists while the function is being executed &#8212;
-            we call this its <strong>lifetime</strong>.
+            consider again the
+        <c>square</c>
+        function:
+    </p>
+    <exercise runestone="bad_local" />
+    <p>
+        If you press the &#8216;last &gt;&gt;&#8217; button you will see an error message.
+            When we try to use
+        <c>y</c>
+        on line 6 (outside the function) Python looks for a global
+            variable named
+        <c>y</c>
+        but does not find one.  This results in the
+            error:
+        <c>Name Error: 'y' is not defined.</c>
+    </p>
+    <p>
+        The variable
+        <c>y</c>
+        only exists while the function is being executed &#8212;
+            we call this its
+        <alert>lifetime</alert>
+        .
             When the execution of the function terminates (returns),
             the local variables  are destroyed.  Codelens helps you  visualize this
             because the local variables disappear after the function returns.  Go back and step through the
             statements paying particular attention to the variables that are created when the function is called.
-            Note when they are subsequently destroyed as the function returns.</p>
-        <p>Formal parameters are also local and act like local variables.
-            For example, the lifetime of <c>x</c> begins when <c>square</c> is
+            Note when they are subsequently destroyed as the function returns.
+    </p>
+    <p>
+        Formal parameters are also local and act like local variables.
+            For example, the lifetime of
+        <c>x</c>
+        begins when
+        <c>square</c>
+        is
             called,
-            and its lifetime ends when the function completes its execution.</p>
-        <p>So it is not possible for a function to set some local variable to a
+            and its lifetime ends when the function completes its execution.
+    </p>
+    <p>So it is not possible for a function to set some local variable to a
             value, complete its execution, and then when it is called again next
             time, recover the local variable.  Each call of the function creates
             new local variables, and their lifetimes expire when the function returns
             to the caller.</p>
-        <p>On the other hand, it is legal for a function to access a global variable.  However, this is considered
-            <strong>bad form</strong> by nearly all programmers and should be avoided.  Look at the following,
-            nonsensical variation of the square function.</p>
+    <p>
+        On the other hand, it is legal for a function to access a global variable.  However, this is considered
+        <alert>bad form</alert>
+        by nearly all programmers and should be avoided.  Look at the following,
+            nonsensical variation of the square function.
+    </p>
 
-<listing xml:id="badsquare_1">
-    <caption/>
-    <program xml:id="badsquare_1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="badsquare_1">
+        <caption />
+        <program xml:id="badsquare_1_editor" interactive="activecode" language="python">
+            <input>
 def badsquare(x):
     y = x ** power
     return y
@@ -40,55 +69,99 @@ power = 2
 result = badsquare(10)
 print(result)
         </input>
-    </program>
-</listing>
-        
-        
-        <p xml:id="index-1">Although the <c>badsquare</c> function works, it is silly and poorly written.  We have done it here to illustrate
+        </program>
+    </listing>
+
+
+    <p>
+        Although the
+        <c>badsquare</c>
+        function works, it is silly and poorly written.  We have done it here to illustrate
             an important rule about how variables are looked up in Python.
             First, Python looks at the variables that are defined as local variables in
-            the function.  We call this the <strong>local scope</strong>.  If the variable name is not
+            the function.  We call this the
+        <alert>local scope</alert>
+        .  If the variable name is not
             found in the local scope, then Python looks at the global variables,
-            or <strong>global scope</strong>.  This is exactly the case illustrated in the code above.
-            <c>power</c> is not found locally in <c>badsquare</c> but it does exist globally.
+            or
+        <alert>global scope</alert>
+        .  This is exactly the case illustrated in the code above.
+        <c>power</c>
+        is not found locally in
+        <c>badsquare</c>
+        but it does exist globally.
             The appropriate way to write this function would be to pass power as a parameter.
-            For practice, you should rewrite the badsquare example to have a second parameter called power.</p>
-        <p>There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
+            For practice, you should rewrite the badsquare example to have a second parameter called power.
+    </p>
+    <p>There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
             change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
             codelens example:</p>
-<exercise runestone="cl_powerof_bad"/>        <p>Now step through the code.  What do you notice about the values of variable <c>power</c>
-            in the local scope compared to the variable <c>power</c> in the global scope?</p>
-        
-        
-        <p xml:id="index-2">The value of <c>power</c> in the local scope was different than the global scope.
-            That is because in this example <c>power</c> was used on the left hand side of the
-            assignment statement <c>power = p</c>.  When a variable name is used on the
+    <exercise runestone="cl_powerof_bad" />
+    <p>
+        Now step through the code.  What do you notice about the values of variable
+        <c>power</c>
+        in the local scope compared to the variable
+        <c>power</c>
+        in the global scope?
+    </p>
+
+
+    <p>
+        The value of
+        <c>power</c>
+        in the local scope was different than the global scope.
+            That is because in this example
+        <c>power</c>
+        was used on the left hand side of the
+            assignment statement
+        <c>power = p</c>
+        .  When a variable name is used on the
             left hand side of an assignment statement Python creates a local variable.
             When a local variable has the same name as a global variable we say that the
-            local shadows the global.  A <strong>shadow</strong> means that the global variable cannot
+            local shadows the global.  A
+        <alert>shadow</alert>
+        means that the global variable cannot
             be accessed by Python because the local variable will be found first. This is
             another good reason not to use global variables. As you can see,
             it makes your code confusing and difficult to
-            understand.</p>
-        <p>To cement all of these ideas even further lets look at one final example.
-            Inside the <c>square</c> function we are going to make an assignment to the
-            parameter <c>x</c>  There&#8217;s no good reason to do this other than to emphasize
-            the fact that the parameter <c>x</c> is a local variable.  If you step through
-            the example in codelens you will see that although <c>x</c> is 0 in the local
-            variables for <c>square</c>, the <c>x</c> in the global scope remains 2.  This is confusing
+            understand.
+    </p>
+    <p>
+        To cement all of these ideas even further lets look at one final example.
+            Inside the
+        <c>square</c>
+        function we are going to make an assignment to the
+            parameter
+        <c>x</c>
+        There&#8217;s no good reason to do this other than to emphasize
+            the fact that the parameter
+        <c>x</c>
+        is a local variable.  If you step through
+            the example in codelens you will see that although
+        <c>x</c>
+        is 0 in the local
+            variables for
+        <c>square</c>
+        , the
+        <c>x</c>
+        in the global scope remains 2.  This is confusing
             to many beginning programmers who think that an assignment to a
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
-            But this example demonstrates that that is clearly not how Python operates.</p>
-<exercise runestone="cl_change_parm"/>        <p><strong>Check your understanding</strong></p>
+            But this example demonstrates that that is clearly not how Python operates.
+    </p>
+    <exercise runestone="cl_change_parm" />
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question5_3_1">
         <statement>
 
-        <p>What is a variable&#8217;s scope?</p>
+            <p>What is a variable&#8217;s scope?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -99,7 +172,7 @@ print(result)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>The range of statements in the code where a variable can be accessed.</p>
                 </statement>
@@ -116,19 +189,19 @@ print(result)
                     The name of a variable is just an identifier or alias.  Scope concerns where the variable is "known".
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question5_3_2">
         <statement>
 
-        <p>What is a local variable?</p>
+            <p>What is a local variable?</p>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>A temporary variable that is only used inside a function</p>
                 </statement>
@@ -154,17 +227,17 @@ print(result)
                     Variables that are used outside a function are not local, but rather global variables.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question5_3_3">
         <statement>
 
-        <p>Can you use the same name for a local variable as a global variable?</p>
+            <p>Can you use the same name for a local variable as a global variable?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -175,7 +248,7 @@ print(result)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Yes, but it is considered bad form.</p>
                 </statement>
@@ -192,8 +265,7 @@ print(result)
                     Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

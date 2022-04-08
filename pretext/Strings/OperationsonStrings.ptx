@@ -1,39 +1,63 @@
 <section xml:id="operations-on-strings">
-        <title>Operations on Strings</title>
-        <p>In general, you cannot perform mathematical operations on strings, even if the
-            strings look like numbers. The following are illegal (assuming that <c>message</c>
-            has type string):</p>
-        <program language="python"><input>
+    <title>Operations on Strings</title>
+    <p>
+        In general, you cannot perform mathematical operations on strings, even if the
+            strings look like numbers. The following are illegal (assuming that
+        <c>message</c>
+        has type string):
+    </p>
+    <program language="python">
+        <input>
 message - 1
 "Hello" / 123
 message * "Hello"
 "15" + 2
-</input></program>
-        <p>Interestingly, the <c>+</c> operator does work with strings, but for strings, the
-            <c>+</c> operator represents <strong>concatenation</strong>, not addition.  Concatenation means
-            joining the two operands by linking them end-to-end. For example:</p>
+</input>
+    </program>
+    <p>
+        Interestingly, the
+        <c>+</c>
+        operator does work with strings, but for strings, the
+        <c>+</c>
+        operator represents
+        <alert>concatenation</alert>
+        , not addition.  Concatenation means
+            joining the two operands by linking them end-to-end. For example:
+    </p>
 
-<listing xml:id="ch08_add">
-    <caption/>
-    <program xml:id="ch08_add_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_add">
+        <caption />
+        <program xml:id="ch08_add_editor" interactive="activecode" language="python">
+            <input>
 fruit = "banana"
 bakedGood = " nut bread"
 print(fruit + bakedGood)
         </input>
-    </program>
-</listing>
-        <p>The output of this program is <c>banana nut bread</c>. The space before the word
-            <c>nut</c> is part of the string and is necessary to produce the space between
-            the concatenated strings.  Take out the space and run it again.</p>
-        <p>The <c>*</c> operator also works on strings.  It performs repetition. For example,
-            <c>'Fun'*3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the
-            other has to be an integer.</p>
+        </program>
+    </listing>
+    <p>
+        The output of this program is
+        <c>banana nut bread</c>
+        . The space before the word
+        <c>nut</c>
+        is part of the string and is necessary to produce the space between
+            the concatenated strings.  Take out the space and run it again.
+    </p>
+    <p>
+        The
+        <c>*</c>
+        operator also works on strings.  It performs repetition. For example,
+        <c>'Fun'*3</c>
+        is
+        <c>'FunFunFun'</c>
+        . One of the operands has to be a string and the
+            other has to be an integer.
+    </p>
 
-<listing xml:id="ch08_mult">
-    <caption/>
-    <program xml:id="ch08_mult_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_mult">
+        <caption />
+        <program xml:id="ch08_mult_editor" interactive="activecode" language="python">
+            <input>
 print("Go" * 6)
 
 name = "Packers"
@@ -43,28 +67,50 @@ print(name + "Go" * 3)
 
 print((name + "Go") * 3)
         </input>
-    </program>
-</listing>
-        <p>This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with
-            addition and multiplication. Just as <c>4*3</c> is equivalent to <c>4+4+4</c>, we
-            expect <c>"Go"*3</c> to be the same as <c>"Go"+"Go"+"Go"</c>, and it is.  Note also in the last
-            example that the order of operations for <c>*</c> and <c>+</c> is the same as it was for arithmetic.
+        </program>
+    </listing>
+    <p>
+        This interpretation of
+        <c>+</c>
+        and
+        <c>*</c>
+        makes sense by analogy with
+            addition and multiplication. Just as
+        <c>4*3</c>
+        is equivalent to
+        <c>4+4+4</c>
+        , we
+            expect
+        <c>"Go"*3</c>
+        to be the same as
+        <c>"Go"+"Go"+"Go"</c>
+        , and it is.  Note also in the last
+            example that the order of operations for
+        <c>*</c>
+        and
+        <c>+</c>
+        is the same as it was for arithmetic.
             The repetition is done before the concatenation.  If you want to cause the concatenation to be
-            done first, you will need to use parenthesis.</p>
-        <p><strong>Check your understanding</strong></p>
+            done first, you will need to use parenthesis.
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question8_1_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python"
 t = "rocks"
 print(s + t)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -84,7 +130,7 @@ print(s + t)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>pythonrocks</p>
                 </statement>
@@ -101,24 +147,26 @@ print(s + t)
                     The + operator has different meanings depending on the operands, in this case, two strings.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_1_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python"
 excl = "!"
 print(s+excl*3)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>python!!!</p>
                 </statement>
@@ -153,8 +201,7 @@ print(s+excl*3)
                     The + and * operator are defined for strings as well as numbers.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

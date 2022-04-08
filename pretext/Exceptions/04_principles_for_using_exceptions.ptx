@@ -1,7 +1,7 @@
 <section xml:id="principles-for-using-exceptions">
         <title>Principles for using Exceptions</title>
-        <p>There are many bad examples of <emphasis>exception</emphasis> use on the Internet. The purpose
-            of an <emphasis>exception</emphasis> is to modify the flow-of-control, not to catch simple errors.
+        <p>There are many bad examples of <em>exception</em> use on the Internet. The purpose
+            of an <em>exception</em> is to modify the flow-of-control, not to catch simple errors.
             If your <c>try: except:</c> block is in the same function that <c>raises</c> the
             exception, you are probably mis-using exceptions.</p>
         <topic>
@@ -10,14 +10,14 @@
                 use an exception!</p>
         </topic>
         <p>Example 1:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
                 
                     <row>
                         <cell>
-                            <strong>DON&#8217;T DO THIS</strong>:
+                            <alert>DON&#8217;T DO THIS</alert>:
                         </cell>
                         <cell>
                             When you can just as easily test for no
@@ -44,16 +44,16 @@ else:
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Example 2:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
                 
                     <row>
                         <cell>
-                            <strong>DON&#8217;T DO THIS</strong>:
+                            <alert>DON&#8217;T DO THIS</alert>:
                         </cell>
                         <cell>
                             When you can just as easily test for a
@@ -80,16 +80,16 @@ else:
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Example 3:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
                 
                     <row>
                         <cell>
-                            <strong>DON&#8217;T DO THIS</strong>:
+                            <alert>DON&#8217;T DO THIS</alert>:
                         </cell>
                         <cell>
                             When you can just as easily test
@@ -116,7 +116,7 @@ else:
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <topic>
             <title>Principle 2:</title>
             <p>If you call a function that potentially raises exceptions, and you can do

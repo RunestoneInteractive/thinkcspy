@@ -250,7 +250,7 @@ for addr in addrList:
                 <c>display()</c> method for Irish addresses is invoked. The second time through
                 the loop, the <c>display()</c> method in <c>USPostalAddress</c> is invoked. This
                 behavior&#8212;where the computer always executes the method that is
-                defined for the object being referenced&#8212;is called <emphasis>polymorphism</emphasis>.
+                defined for the object being referenced&#8212;is called <em>polymorphism</em>.
                 Python exhibits this behavior whether or not the objects in question
                 utilize inheritance, but languages like Java and C++, polymorphism is
                 available only through inheritance.</p>
@@ -281,9 +281,9 @@ for addr in addrList:
                 function for this purpose. <c>isinstance()</c> is designed for situations
                 where you want to access a field or invoke a method on an object,
                 but you want to do so only if the object provides the needed
-                functionality. Given an object <emphasis>obj</emphasis> and a class <emphasis>cls</emphasis>,
-                <c>isinstance(obj, cls)</c> returns True if <emphasis>obj</emphasis> is an instance of <emphasis>cls</emphasis>
-                (or a subclass of <emphasis>cls</emphasis>), and False if it is not. Here is how we might
+                functionality. Given an object <em>obj</em> and a class <em>cls</em>,
+                <c>isinstance(obj, cls)</c> returns True if <em>obj</em> is an instance of <em>cls</em>
+                (or a subclass of <em>cls</em>), and False if it is not. Here is how we might
                 use it in our loop:</p>
             <program language="python"><input>
 for addr in addrList:

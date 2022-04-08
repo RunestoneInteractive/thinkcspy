@@ -8,7 +8,7 @@
             following table summarizes what you probably learned very nicely.  If you
             didn&#8217;t, look at the table and then go back to the previous page and see if
             you can finish <c>drawTriangle</c> and <c>drawOctagon</c>.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -75,7 +75,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Looking at the table above you can really see that there is a pattern.  If
             you know the number of sides you want, the rest can be figured out from there.
             This leads us to the next problem solving stage of this exercise,

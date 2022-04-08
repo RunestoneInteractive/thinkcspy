@@ -36,7 +36,7 @@ print(newtonSqrt(1, 10))
 </listing>
         <admonition classes="admonition-modify-the-program">
             <title>Modify the program &#8230;</title>
-            <p>All three of the calls to <c>newtonSqrt</c> in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these calls, find the <strong>smallest</strong> value for the number of repetitions that will produce the <strong>correct</strong> result.</p>
+            <p>All three of the calls to <c>newtonSqrt</c> in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these calls, find the <alert>smallest</alert> value for the number of repetitions that will produce the <alert>correct</alert> result.</p>
         </admonition>
         <p>Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.</p>
         <p>In general, Newton&#8217;s algorithm will eventually reach a point where the new approximation is no better than the previous.  At that point, we could simply stop.

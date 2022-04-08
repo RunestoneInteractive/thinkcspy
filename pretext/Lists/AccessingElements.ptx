@@ -1,37 +1,45 @@
 <section xml:id="accessing-elements">
-        <title>Accessing Elements</title>
-        <p>The syntax for accessing the elements of a list is the same as the syntax for
-            accessing the characters of a string.  We use the index operator ( <c>[]</c> &#8211; not to
+    <title>Accessing Elements</title>
+    <p>
+        The syntax for accessing the elements of a list is the same as the syntax for
+            accessing the characters of a string.  We use the index operator (
+        <c>[]</c>
+        &#8211; not to
             be confused with an empty list). The expression inside the brackets specifies
             the index. Remember that the indices start at 0.  Any integer expression can be used
             as an index and as with strings, negative index values will locate items from the right instead
-            of from the left.</p>
+            of from the left.
+    </p>
 
-<listing xml:id="chp09_02">
-    <caption/>
-    <program xml:id="chp09_02_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_02">
+        <caption />
+        <program xml:id="chp09_02_editor" interactive="activecode" language="python">
+            <input>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
 print(numbers[9 - 8])
 print(numbers[-2])
 print(numbers[len(numbers) - 1])
         </input>
-    </program>
-</listing>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_3_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[5])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -42,7 +50,7 @@ print(alist[5])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>3.14</p>
                 </statement>
@@ -59,21 +67,23 @@ print(alist[5])
                     False is at index 6.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_3_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2].upper())
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -93,7 +103,7 @@ print(alist[2].upper())
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>CAT</p>
                 </statement>
@@ -101,21 +111,23 @@ print(alist[2].upper())
                     Yes, the string cat is upper cased to become CAT.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_3_3">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2][0])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -126,7 +138,7 @@ print(alist[2][0])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>c</p>
                 </statement>
@@ -152,8 +164,7 @@ print(alist[2][0])
                     Using more than one index is fine.  You read it from left to right.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

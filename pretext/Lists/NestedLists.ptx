@@ -1,16 +1,22 @@
 <section xml:id="nested-lists">
-        <title>Nested Lists</title>
-        <p>A nested list is a list that appears as an element in another list. In this
+    <title>Nested Lists</title>
+    <p>
+        A nested list is a list that appears as an element in another list. In this
             list, the element with index 3 is a nested list.
-            If we print(<c>nested[3]</c>), we get <c>[10, 20]</c>. To extract an element from the
+            If we print(
+        <c>nested[3]</c>
+        ), we get
+        <c>[10, 20]</c>
+        . To extract an element from the
             nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
             of interest.  It is also possible to combine those steps using bracket operators that evaluate from
-            left to right.</p>
+            left to right.
+    </p>
 
-<listing xml:id="chp09_nest">
-    <caption/>
-    <program xml:id="chp09_nest_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_nest">
+        <caption />
+        <program xml:id="chp09_nest_editor" interactive="activecode" language="python">
+            <input>
 nested = ["hello", 2.0, 5, [10, 20]]
 innerlist = nested[3]
 print(innerlist)
@@ -19,26 +25,30 @@ print(item)
 
 print(nested[3][1])
         </input>
-    </program>
-</listing>
-        
-        
-        <p xml:id="index-0"><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+
+
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_21_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [ [4, [True, False], 6, 8], [888, 999] ]
 if alist[0][1][0]:
    print(alist[1][0])
 else:
    print(alist[1][1])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -58,7 +68,7 @@ else:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>888</p>
                 </statement>
@@ -75,10 +85,9 @@ else:
                     alist[0][1][0] is True.  Take another look at the if statement.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        
-        
-    </section>
 
+
+</section>

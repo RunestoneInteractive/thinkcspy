@@ -1,7 +1,7 @@
 <section xml:id="sierpinski-triangle">
         <title>Sierpinski Triangle</title>
         <p>Another fractal that exhibits the property of self-similarity is the
-            Sierpinski triangle. An example is shown in <xref ref=""/>. The
+            Sierpinski triangle. An example is shown in <xref ref="fig-sierpinski"/>. The
             Sierpinski triangle illustrates a three-way recursive algorithm. The
             procedure for drawing a Sierpinski triangle by hand is simple. Start
             with a single large triangle. Divide this large triangle into four new
@@ -13,8 +13,8 @@
             sharp enough pencil. Before you continue reading, you may want to try
             drawing the Sierpinski triangle yourself, using the method described.</p>
         
-        <figure align="center" xml:id="id1 fig-sierpinski" names="fig_sierpinski">
-            <image source="images/IntroRecursion/Figures/sierpinski.png"/>
+        <figure align="center" xml:id="fig-sierpinski" names="fig_sierpinski">
+            <image source="IntroRecursion/Figures/sierpinski.png"/>
             <caption>Figure 3: The Sierpinski Triangle</caption>
         </figure>
         <p>Since we can continue to apply the algorithm indefinitely, what is the
@@ -89,15 +89,15 @@ main()
             Finally, it fills in the lower-right corner, working its way toward the
             smallest triangle in the lower right.</p>
         <p>Sometimes it is helpful to think of a recursive algorithm in terms of a
-            diagram of function calls. <xref ref=""/> shows that the recursive
+            diagram of function calls. <xref ref="fig-stcalltree"/> shows that the recursive
             calls are always made going to the left. The active functions are
             outlined in black, and the inactive function calls are in gray. The
-            farther you go toward the bottom of <xref ref=""/>, the smaller the
+            farther you go toward the bottom of <xref ref="fig-stcalltree"/>, the smaller the
             triangles. The function finishes drawing one level at a time; once it is
             finished with the bottom left it moves to the bottom middle, and so on.</p>
         
-        <figure align="center" xml:id="id2 fig-stcalltree" names="fig_stcalltree">
-            <image source="images/IntroRecursion/Figures/stCallTree.png"/>
+        <figure align="center" xml:id="fig-stcalltree" names="fig_stcalltree">
+            <image source="IntroRecursion/Figures/stCallTree.png"/>
             <caption>Figure 4: Building a Sierpinski Triangle</caption>
         </figure>
         <p>The <c>sierpinski</c> function relies heavily on the <c>getMid</c> function.

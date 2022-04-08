@@ -7,6 +7,6 @@
             convenient at times, and in some cases, functional programs are less efficient.</p>
         <p>In general, we recommend that you write pure functions whenever it is
             reasonable to do so and resort to modifiers only if there is a compelling
-            advantage. This approach might be called a <emphasis>functional programming style</emphasis>.</p>
+            advantage. This approach might be called a <em>functional programming style</em>.</p>
     </section>
 

@@ -1,6 +1,6 @@
 <section xml:id="pure-functions">
         <title>Pure Functions</title>
-        <p>A <strong>pure function</strong> does not produce side effects. It communicates with the
+        <p>A <alert>pure function</alert> does not produce side effects. It communicates with the
             calling program only through parameters (which it does not modify) and a return
             value. Here is the <c>doubleStuff</c> function from the previous section written as a pure function.
             To use the pure function version of <c>double_stuff</c> to modify <c>things</c>,

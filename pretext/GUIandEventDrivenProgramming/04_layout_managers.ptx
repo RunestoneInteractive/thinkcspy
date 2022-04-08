@@ -10,7 +10,7 @@
             for you. You just have to give some basic positioning information to a
             <c>layout manager</c> so it can calculate a position and a size for each widget.</p>
         <p>There are three <c>layout managers</c> in the <c>Tkinter</c> module:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -38,7 +38,7 @@
                             pack
                         </cell>
                         <cell>
-                            You specify the size and position of each widget <emphasis>relative to each other</emphasis>.
+                            You specify the size and position of each widget <em>relative to each other</em>.
                         </cell>
                     </row>
                     <row>
@@ -51,8 +51,8 @@
                     </row>
                 
             
-        </tabular>
-        <p>You should <strong>never</strong> mix and match these layout managers. Use only one of them
+        </tabular></table>
+        <p>You should <alert>never</alert> mix and match these layout managers. Use only one of them
             for the widget layout within a particular &#8220;parent widget&#8221;. (Widgets are organized
             in a hierarchy, which is explained in the next lesson.)</p>
     </section>

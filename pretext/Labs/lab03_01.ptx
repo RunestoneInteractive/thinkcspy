@@ -18,7 +18,7 @@ print(x)
 </listing>
             <p>The <c>randrange</c> function as called in the example above, generates a random
                 number from 1 to 9.
-                Even though we said 10 the randrange function works just like the <emphasis>range</emphasis>
+                Even though we said 10 the randrange function works just like the <em>range</em>
                 function when it comes to starting and stopping points.  Now if you run the
                 program over and over again you should see that each time you run it a
                 different number is generated.  Random numbers are the basis of all kinds of

@@ -231,7 +231,7 @@ class Rectangle:
 </listing>
             <p>Write a new method in the Rectangle class to test if a Point falls within
                 the rectangle.  For this exercise, assume that a rectangle at (0,0) with
-                width 10 and height 5 has <emphasis>open</emphasis> upper bounds on the width and height,
+                width 10 and height 5 has <em>open</em> upper bounds on the width and height,
                 i.e. it stretches in the x direction from [0 to 10), where 0 is included
                 but 10 is excluded, and from [0 to 5) in the y direction.  So
                 it does not contain the point (10, 2).  These tests should pass:</p>
@@ -316,11 +316,11 @@ class Rectangle:
     </program>
 </listing>
             <p>In games, we often put a rectangular &#8220;bounding box&#8221; around our sprites in
-                the game.  We can then do <emphasis>collision detection</emphasis> between, say, bombs and
+                the game.  We can then do <em>collision detection</em> between, say, bombs and
                 spaceships, by comparing whether their rectangles overlap anywhere.</p>
-            <p>Write a function to determine whether two rectangles collide. <emphasis>Hint:
+            <p>Write a function to determine whether two rectangles collide. <em>Hint:
                     this might be quite a tough exercise!  Think carefully about all the
-                    cases before you code.</emphasis></p>
+                    cases before you code.</em></p>
         </QuestionNode>
     </section>
 

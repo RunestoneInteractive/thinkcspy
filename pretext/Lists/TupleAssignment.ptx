@@ -1,6 +1,6 @@
 <section xml:id="tuple-assignment">
         <title>Tuple Assignment</title>
-        <p>Python has a very powerful <strong>tuple assignment</strong> feature that allows a tuple of variables
+        <p>Python has a very powerful <alert>tuple assignment</alert> feature that allows a tuple of variables
             on the left of an assignment to be assigned values from a tuple
             on the right of the assignment.</p>
         <program language="python"><input>

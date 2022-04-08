@@ -1,57 +1,77 @@
 <section xml:id="the-slice-operator">
-        <title>The Slice Operator</title>
-        <p>A substring of a string is called a <strong>slice</strong>. Selecting a slice is similar to
-            selecting a character:</p>
+    <title>The Slice Operator</title>
+    <p>
+        A substring of a string is called a
+        <alert>slice</alert>
+        . Selecting a slice is similar to
+            selecting a character:
+    </p>
 
-<listing xml:id="chp08_slice1">
-    <caption/>
-    <program xml:id="chp08_slice1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp08_slice1">
+        <caption />
+        <program xml:id="chp08_slice1_editor" interactive="activecode" language="python">
+            <input>
 singers = "Peter, Paul, and Mary"
 print(singers[0:5])
 print(singers[7:11])
 print(singers[17:21])
         </input>
-    </program>
-</listing>
-        <p>The <title_reference>slice</title_reference> operator <c>[n:m]</c> returns the part of the string from the n&#8217;th character
+        </program>
+    </listing>
+    <p>
+        The
+        <title_reference>slice</title_reference>
+        operator
+        <c>[n:m]</c>
+        returns the part of the string from the n&#8217;th character
             to the m&#8217;th character, including the first but excluding the last. In other words,  start with the character at index n and
             go up to but do not include the character at index m.
             This
-            behavior may seem counter-intuitive but if you recall the <c>range</c> function, it did not include its end
-            point either.</p>
-        <p>If you omit the first index (before the colon), the slice starts at the
+            behavior may seem counter-intuitive but if you recall the
+        <c>range</c>
+        function, it did not include its end
+            point either.
+    </p>
+    <p>If you omit the first index (before the colon), the slice starts at the
             beginning of the string. If you omit the second index, the slice goes to the
             end of the string.</p>
-        <p>There is no Index Out Of Range exception for a slice.
+    <p>There is no Index Out Of Range exception for a slice.
             A slice is forgiving and shifts any offending index to something legal.</p>
 
-<listing xml:id="chp08_slice2">
-    <caption/>
-    <program xml:id="chp08_slice2_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp08_slice2">
+        <caption />
+        <program xml:id="chp08_slice2_editor" interactive="activecode" language="python">
+            <input>
 fruit = "banana"
 print(fruit[:3])
 print(fruit[3:])
 print(fruit[3:-10])
 print(fruit[3:99])
         </input>
-    </program>
-</listing>
-        <p>What do you think <c>fruit[:]</c> means?</p>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        What do you think
+        <c>fruit[:]</c>
+        means?
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question8_5_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 print(s[3:8])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -71,7 +91,7 @@ print(s[3:8])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>hon r</p>
                 </statement>
@@ -88,23 +108,25 @@ print(s[3:8])
                     This is called slicing, not indexing.  It requires a start and an end.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_5_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 print(s[7:11] * 3)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>rockrockrock</p>
                 </statement>
@@ -139,21 +161,17 @@ print(s[7:11] * 3)
                     The slice will happen first, then the repetition.  So it is ok.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <note>
+        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-<listing xml:id="scratch_08_01">
-    <caption/>
-    <program xml:id="scratch_08_01_editor" interactive="activecode" language="python">
-        <input>
-
-
-        </input>
-    </program>
-</listing>
-        </note>
-    </section>
-
+        <listing xml:id="scratch_08_01">
+            <caption />
+            <program xml:id="scratch_08_01_editor" interactive="activecode" language="python">
+                <input></input>
+            </program>
+        </listing>
+    </note>
+</section>

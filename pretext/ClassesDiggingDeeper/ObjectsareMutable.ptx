@@ -3,10 +3,10 @@
         <p>We can change the state of an object by making an assignment to one of its instance variables.
             For example, we could change the numerator of the fraction by assigning a new
             value to <c>self.num</c>.  Likewise, we could do the same thing for <c>self.den</c>.</p>
-        <p>One place where this type of modification makes sense is when we place a fraction in <strong>lowest terms</strong>.  Lowest terms simply
+        <p>One place where this type of modification makes sense is when we place a fraction in <alert>lowest terms</alert>.  Lowest terms simply
             means that the numerator and denominator do not share any common factors.  For example, <c>12/16</c> is a fraction but it is
-            not in lowest terms since 2 can divide into both 12 and 16.  We call 2 a <strong>common divisor</strong>.  If we divide the numerator
-            and the denominator by a common divisor, we get an equivalent fraction.  If we divide by the <strong>greatest common divisor</strong>,
+            not in lowest terms since 2 can divide into both 12 and 16.  We call 2 a <alert>common divisor</alert>.  If we divide the numerator
+            and the denominator by a common divisor, we get an equivalent fraction.  If we divide by the <alert>greatest common divisor</alert>,
             we will get the lowest terms representation.  In this case 4 would be the greatest common divisor and the lowest terms
             representation would be 3/4.</p>
         <p>There is a very nice iterative method for computing the greatest common divisor of two integers.  Try to run the
@@ -75,9 +75,9 @@ print(myfraction)
 </listing>
         <p>There are two important things to note about this implementation.  First, the <c>gcd</c> function is not
             a method of the class.  It does not belong to <c>Fraction</c>.  Instead it is a function that is used by <c>Fraction</c>
-            to assist in a task that needs to be performed.  This type of function is often called a <strong>helper function</strong>.  Second,
+            to assist in a task that needs to be performed.  This type of function is often called a <alert>helper function</alert>.  Second,
             the <c>simplify</c> method does not return anything.  Its job is to modify the object itself.  This type of method is
-            known as a <strong>mutator</strong> method because it mutates or changes the internal state of the object.</p>
+            known as a <alert>mutator</alert> method because it mutates or changes the internal state of the object.</p>
         
         
     </section>

@@ -18,14 +18,14 @@
                 <gi>
                     <title>control flow</title>
                     
-                        <p>See <emphasis>flow of execution</emphasis> in the next chapter.</p>
+                        <p>See <em>flow of execution</em> in the next chapter.</p>
                     
                 </gi>
                 <gi>
                     <title>for loop</title>
                     
                         <p>A statement in Python for convenient repetition of statements in
-                            the <emphasis>body</emphasis> of the loop.</p>
+                            the <em>body</em> of the loop.</p>
                     
                 </gi>
                 <gi>
@@ -38,8 +38,8 @@
                 <gi>
                     <title>invoke</title>
                     
-                        <p>An object has methods.  We use the verb invoke to mean <emphasis>activate the
-                                method</emphasis>.  Invoking a method is done by putting parentheses after the
+                        <p>An object has methods.  We use the verb invoke to mean <em>activate the
+                                method</em>.  Invoking a method is done by putting parentheses after the
                             method name, with some possible arguments.  So  <c>wn.exitonclick()</c> is
                             an invocation of the <c>exitonclick</c> method.</p>
                     
@@ -47,7 +47,7 @@
                 <gi>
                     <title>iteration</title>
                     
-                        <p>A basic building block for algorithms (programs).  It allows steps to be repeated.  Sometimes called <emphasis>looping</emphasis>.</p>
+                        <p>A basic building block for algorithms (programs).  It allows steps to be repeated.  Sometimes called <em>looping</em>.</p>
                     
                 </gi>
                 <gi>
@@ -80,7 +80,7 @@
                     
                         <p>A file containing Python definitions and statements intended for use in
                             other Python programs. The contents of a module are made available to
-                            the other program by using the <emphasis>import</emphasis> statement.</p>
+                            the other program by using the <em>import</em> statement.</p>
                     
                 </gi>
                 <gi>

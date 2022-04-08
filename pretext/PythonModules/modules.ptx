@@ -1,17 +1,25 @@
 <section xml:id="modules-and-getting-help">
-        <title>Modules and Getting Help</title>
+    <title>Modules and Getting Help</title>
 
-    <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="560"/>
-            <p>A <strong>module</strong> is a file containing Python definitions and statements intended
+    <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto" />
+    <p>
+        A
+        <alert>module</alert>
+        is a file containing Python definitions and statements intended
             for use in other Python programs. There are many Python modules that come with
-            Python as part of the <strong>standard library</strong>. We have already used one of these quite extensively,
-            the <c>turtle</c> module.  Recall that once we import the module, we can use things
-            that are defined inside.</p>
+            Python as part of the
+        <alert>standard library</alert>
+        . We have already used one of these quite extensively,
+            the
+        <c>turtle</c>
+        module.  Recall that once we import the module, we can use things
+            that are defined inside.
+    </p>
 
-<listing xml:id="chmod_01">
-    <caption/>
-    <program xml:id="chmod_01_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chmod_01">
+        <caption />
+        <program xml:id="chmod_01_editor" interactive="activecode" language="python">
+            <input>
 import turtle            # allows us to use the turtles library
 
 wn = turtle.Screen()     # creates a graphics window
@@ -22,49 +30,70 @@ alex.left(90)            # turn by 90 degrees
 alex.forward(75)         # complete the second side of a rectangle
 wn.exitonclick()
         </input>
-    </program>
-</listing>
-        <p>Here we are using <c>Screen</c> and <c>Turtle</c>, both of which are defined inside the turtle module.</p>
-        <p>But what if no one had told us about turtle?  How would we know
+        </program>
+    </listing>
+    <p>
+        Here we are using
+        <c>Screen</c>
+        and
+        <c>Turtle</c>
+        , both of which are defined inside the turtle module.
+    </p>
+    <p>But what if no one had told us about turtle?  How would we know
             that it exists. How would we know what it can do for us? The answer is to ask for help and the best place to get
             help about the Python programming environment is to consult with the Python Documentation.</p>
-        <p>The  <url href="http://docs.python.org/py3k/" visual="http://docs.python.org/py3k/">Python Documentation</url> site for Python version 3 (the home page is shown below) is an extremely useful reference
+    <p>
+        The
+        <url href="http://docs.python.org/py3k/" visual="http://docs.python.org/py3k/">Python Documentation</url>
+        site for Python version 3 (the home page is shown below) is an extremely useful reference
             for all aspects of Python.
             The site contains
             a listing of all the standard modules that are available with Python
-            (see <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).
-            You will also see that there is a <url href="http://docs.python.org/py3k/reference/index.html" visual="http://docs.python.org/py3k/reference/index.html">Language Reference</url>
-            and a <url href="http://docs.python.org/py3k/tutorial/index.html" visual="http://docs.python.org/py3k/tutorial/index.html">Tutorial</url> (mostly aimed at people who are already familiar with another programming language), as well as
+            (see
+        <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>
+        ).
+            You will also see that there is a
+        <url href="http://docs.python.org/py3k/reference/index.html" visual="http://docs.python.org/py3k/reference/index.html">Language Reference</url>
+        and a
+        <url href="http://docs.python.org/py3k/tutorial/index.html" visual="http://docs.python.org/py3k/tutorial/index.html">Tutorial</url>
+        (mostly aimed at people who are already familiar with another programming language), as well as
             installation instructions, how-tos, and frequently asked questions.  We encourage you to become familiar with this site
-            and to use it often.</p>
-        <image source="images/PythonModules/Figures/pythondocmedium.png"/>
-        <p>If you have not done so already, take a look at the Global Module Index.  Here you will see an alphabetical listing of all
+            and to use it often.
+    </p>
+    <image source="PythonModules/Figures/pythondocmedium.png" />
+    <p>If you have not done so already, take a look at the Global Module Index.  Here you will see an alphabetical listing of all
             the modules that are available as part of the standard library.  Find the turtle module.</p>
-        <image source="images/PythonModules/Figures/moduleindexmedium.png"/>
-        <image source="images/PythonModules/Figures/turtlemodmedium.png"/>
-        <p>You can see that all the turtle functionality that we have talked about is there.  However, there is so much more.  Take some time to read through and familiarize yourself with some of the other things that turtles can do.</p>
-        <admonition classes="admonition-note-python-modules-and-limitations-with-activecode">
-            <title>Note: Python modules and limitations with activecode</title>
-            <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
+    <image source="PythonModules/Figures/moduleindexmedium.png" />
+    <image source="PythonModules/Figures/turtlemodmedium.png" />
+    <p>You can see that all the turtle functionality that we have talked about is there.  However, there is so much more.  Take some time to read through and familiarize yourself with some of the other things that turtles can do.</p>
+    <admonition classes="admonition-note-python-modules-and-limitations-with-activecode">
+        <title>Note: Python modules and limitations with activecode</title>
+        <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
                 We mentioned in the first chapter that programming is normally done using some type of development
                 environment and that the
                 activecode used here was strictly to help us learn.  It is not the way we write production programs.</p>
-            <p>To that end, it is necessary to mention that many of the  modules available in standard Python
-                will <strong>not</strong> work in the activecode environment.  In fact, only turtle, math, and random have been
+        <p>
+            To that end, it is necessary to mention that many of the  modules available in standard Python
+                will
+            <alert>not</alert>
+            work in the activecode environment.  In fact, only turtle, math, and random have been
                 completely ported at this point.  If you wish to explore any
-                additional modules, you will need to also explore using a more robust development environment.</p>
-        </admonition>
-        <p><strong>Check your understanding</strong></p>
+                additional modules, you will need to also explore using a more robust development environment.
+        </p>
+    </admonition>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="question4_1_1">
         <statement>
 
-        <p>In Python a module is:</p>
+            <p>In Python a module is:</p>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>A file containing Python definitions and statements intended for use in other Python programs.</p>
                 </statement>
@@ -99,19 +128,19 @@ wn.exitonclick()
                     Each module has its own documentation, but the module itself is more than just documentation.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="question4_1_2">
         <statement>
 
-        <p>To find out information on the standard modules available with Python you should:</p>
+            <p>To find out information on the standard modules available with Python you should:</p>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Go to the Python Documentation site.</p>
                 </statement>
@@ -146,17 +175,17 @@ wn.exitonclick()
                     This book only explains a portion of the modules available.  For a full listing you should look elsewhere.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="question4_1_3">
         <statement>
 
-        <p>True / False:  All standard Python modules will work in activecode.</p>
+            <p>True / False:  All standard Python modules will work in activecode.</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -167,7 +196,7 @@ wn.exitonclick()
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>False</p>
                 </statement>
@@ -175,8 +204,7 @@ wn.exitonclick()
                     Only turtle, math, and random have been ported to work in activecode at this time.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

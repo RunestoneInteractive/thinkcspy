@@ -1,65 +1,87 @@
 <section xml:id="length">
-        <title>Length</title>
-        <p>The <c>len</c> function, when applied to a string, returns the number of characters in a string.</p>
+    <title>Length</title>
+    <p>
+        The
+        <c>len</c>
+        function, when applied to a string, returns the number of characters in a string.
+    </p>
 
-<listing xml:id="chp08_len1">
-    <caption/>
-    <program xml:id="chp08_len1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp08_len1">
+        <caption />
+        <program xml:id="chp08_len1_editor" interactive="activecode" language="python">
+            <input>
 fruit = "Banana"
 print(len(fruit))
         </input>
-    </program>
-</listing>
-        <p>To get the last letter of a string, you might be tempted to try something like
+        </program>
+    </listing>
+    <p>To get the last letter of a string, you might be tempted to try something like
             this:</p>
 
-<listing xml:id="chp08_len2">
-    <caption/>
-    <program xml:id="chp08_len2_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp08_len2">
+        <caption />
+        <program xml:id="chp08_len2_editor" interactive="activecode" language="python">
+            <input>
 fruit = "Banana"
 sz = len(fruit)
 last = fruit[sz]       # ERROR!
 print(last)
         </input>
-    </program>
-</listing>
-        <p>That won&#8217;t work. It causes the runtime error
-            <c>IndexError: string index out of range</c>. The reason is that there is no
-            letter at index position 6 in <c>"Banana"</c>.
+        </program>
+    </listing>
+    <p>
+        That won&#8217;t work. It causes the runtime error
+        <c>IndexError: string index out of range</c>
+        . The reason is that there is no
+            letter at index position 6 in
+        <c>"Banana"</c>
+        .
             Since we started counting at zero, the six indexes are
             numbered 0 to 5. To get the last character, we have to subtract 1 from
-            the length.  Give it a try in the example above.</p>
+            the length.  Give it a try in the example above.
+    </p>
 
-<listing xml:id="ch08_len3">
-    <caption/>
-    <program xml:id="ch08_len3_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_len3">
+        <caption />
+        <program xml:id="ch08_len3_editor" interactive="activecode" language="python">
+            <input>
 fruit = "Banana"
 sz = len(fruit)
 lastch = fruit[sz-1]
 print(lastch)
         </input>
-    </program>
-</listing>
-        <p>Alternatively in Python, we can use <strong>negative indices</strong>, which count backward from the
-            end of the string. The expression <c>fruit[-1]</c> yields the last letter,
-            <c>fruit[-2]</c> yields the second to last, and so on.  Try it!
-            Most other languages do <emphasis>not</emphasis> allow the negative indices, but they are a handy feature of Python!</p>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        Alternatively in Python, we can use
+        <alert>negative indices</alert>
+        , which count backward from the
+            end of the string. The expression
+        <c>fruit[-1]</c>
+        yields the last letter,
+        <c>fruit[-2]</c>
+        yields the second to last, and so on.  Try it!
+            Most other languages do
+        <em>not</em>
+        allow the negative indices, but they are a handy feature of Python!
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question8_4_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 print(len(s))
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -70,7 +92,7 @@ print(len(s))
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>12</p>
                 </statement>
@@ -78,21 +100,23 @@ print(len(s))
                     Yes, there are 12 characters in the string.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_4_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 print(s[len(s)-5])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -103,7 +127,7 @@ print(s[len(s)-5])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>r</p>
                 </statement>
@@ -129,23 +153,25 @@ print(s[len(s)-5])
                     You subtract 5 before using the index operator so it will work.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_4_3">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 print(s[-3])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>c</p>
                 </statement>
@@ -180,8 +206,7 @@ print(s[-3])
                     Python does use negative indices to count backward from the end.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

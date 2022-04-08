@@ -1,58 +1,88 @@
 <section xml:id="other-uses-of-while">
-        <title>Other uses of <c>while</c></title>
-        <subsection xml:id="sentinel-values">
-            <title>Sentinel Values</title>
-            <p>Indefinite loops are much more common in the real world than definite loops.</p>
-            <p><ul>
+    <title>
+        Other uses of
+        <c>while</c>
+    </title>
+    <subsection xml:id="sentinel-values">
+        <title>Sentinel Values</title>
+        <p>Indefinite loops are much more common in the real world than definite loops.</p>
+        <p>
+            <ul>
                 <li>
                     <p>If you are selling tickets to an event, you don&#8217;t know in advance how
                         many tickets you will sell. You keep selling tickets as long as people come
                         to the door and there&#8217;s room in the hall.</p>
                 </li>
                 <li>
-                    <p>When the baggage crew unloads a plane, they don&#8217;t know in advance how many
+                    <p>
+                        When the baggage crew unloads a plane, they don&#8217;t know in advance how many
                         suitcases there are. They just keep unloading while there are bags left in the
-                        cargo hold. (Why <emphasis>your</emphasis> suitcase is always the last one is an entirely different problem.)</p>
+                        cargo hold. (Why
+                        <em>your</em>
+                        suitcase is always the last one is an entirely different problem.)
+                    </p>
                 </li>
                 <li>
                     <p>When you go through the checkout line at the grocery, the clerks don&#8217;t
                         know in advance how many items there are. They just keep ringing up items as
                         long as there are more on the conveyor belt.</p>
                 </li>
-            </ul></p>
-            <p>Let&#8217;s implement the last of these in Python, by asking the user for prices and
+            </ul>
+        </p>
+        <p>Let&#8217;s implement the last of these in Python, by asking the user for prices and
                 keeping a running total and count of items. When the last item is entered,
                 the program gives the grand total, number of items, and average price.
                 We&#8217;ll need these variables:</p>
-            <p><ul>
+        <p>
+            <ul>
                 <li>
-                    <p><c>total</c> - this will start at zero</p>
+                    <p>
+                        <c>total</c>
+                        - this will start at zero
+                    </p>
                 </li>
                 <li>
-                    <p><c>count</c> - the number of items, which also starts at zero</p>
+                    <p>
+                        <c>count</c>
+                        - the number of items, which also starts at zero
+                    </p>
                 </li>
                 <li>
-                    <p><c>moreItems</c> - a boolean that tells us whether more items are waiting; this starts as True</p>
+                    <p>
+                        <c>moreItems</c>
+                        - a boolean that tells us whether more items are waiting; this starts as True
+                    </p>
                 </li>
-            </ul></p>
-            <p>The pseudocode (code written half in English, half in Python) for the body of the loop
+            </ul>
+        </p>
+        <p>The pseudocode (code written half in English, half in Python) for the body of the loop
                 looks something like this:</p>
-            <pre>while moreItems
+        <pre>while moreItems
     ask for price
     add price to total
     add one to count</pre>
-            <p>This pseudocode has no option to set <c>moreItems</c> to <c>False</c>, so it would run forever.
+        <p>
+            This pseudocode has no option to set
+            <c>moreItems</c>
+            to
+            <c>False</c>
+            , so it would run forever.
                 In a grocery store, there&#8217;s a little
                 plastic bar that you put after your last item to separate your groceries from
                 those of the person behind you; that&#8217;s how the clerk knows you have no more items.
                 We don&#8217;t have a &#8220;little plastic bar&#8221; data type in Python, so we&#8217;ll do the next best thing: we
-                will use a <c>price</c> of zero to mean &#8220;this is my last item.&#8221; In this program,
-                zero is a <strong>sentinel value</strong>, a value used to signal the end of the loop. Here&#8217;s the code:</p>
+                will use a
+            <c>price</c>
+            of zero to mean &#8220;this is my last item.&#8221; In this program,
+                zero is a
+            <alert>sentinel value</alert>
+            , a value used to signal the end of the loop. Here&#8217;s the code:
+        </p>
 
-<listing xml:id="ch07_sentinel">
-    <caption/>
-    <program xml:id="ch07_sentinel_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="ch07_sentinel">
+            <caption />
+            <program xml:id="ch07_sentinel_editor" interactive="activecode" language="python">
+                <input>
 def checkout():
     total = 0
     count = 0
@@ -72,73 +102,103 @@ def checkout():
 
 checkout()
         </input>
-    </program>
-</listing>
-            <p>There are still a few problems with this program.</p>
-            <p><ul>
+            </program>
+        </listing>
+        <p>There are still a few problems with this program.</p>
+        <p>
+            <ul>
                 <li>
-                    <p>If you enter a negative number, it will be added to the total and count. Modify the code
-                        so that negative numbers give an error message instead (but don&#8217;t end the loop) Hint: <c>elif</c> is
-                        your friend.</p>
+                    <p>
+                        If you enter a negative number, it will be added to the total and count. Modify the code
+                        so that negative numbers give an error message instead (but don&#8217;t end the loop) Hint:
+                        <c>elif</c>
+                        is
+                        your friend.
+                    </p>
                 </li>
                 <li>
-                    <p>If you enter zero the first time you are asked for a price, the loop will end, and the program
-                        will try to divide by zero. Use an <c>if</c>/<c>else</c> statement outside the loop to avoid the
-                        division by zero and tell the user that you can&#8217;t compute an average without data.</p>
+                    <p>
+                        If you enter zero the first time you are asked for a price, the loop will end, and the program
+                        will try to divide by zero. Use an
+                        <c>if</c>
+                        /
+                        <c>else</c>
+                        statement outside the loop to avoid the
+                        division by zero and tell the user that you can&#8217;t compute an average without data.
+                    </p>
                 </li>
                 <li>
-                    <p>This program doesn&#8217;t display the amounts to two decimal places. In the next chapter you will
-                        see the <xref ref="../Strings/StringMethods#format-strings"/> that will do the trick.</p>
-                    <p><strong>Check your understanding</strong></p>
+                    <p>
+                        This program doesn&#8217;t display the amounts to two decimal places. In the next chapter you will
+                        see the
+                        <xref ref="../Strings/StringMethods#format-strings" />
+                        that will do the trick.
+                    </p>
+                    <p>
+                        <alert>Check your understanding</alert>
+                    </p>
 
-    <exercise xml:id="ch07_sentinel_2">
-        <statement>
+                    <exercise xml:id="ch07_sentinel_2">
+                        <statement>
 
-                    <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
+                            <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
 
-        </statement>
-<choices>
+                        </statement>
+                        <choices>
 
-            <choice data-correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
+                            <choice correct="yes">
+                                <statement>
+                                    <p>True</p>
+                                </statement>
+                                <feedback>
                     Keep in mind there are multiple ways to stop a while loop, such as a sentinal value.
                 </feedback>
-            </choice>
+                            </choice>
 
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
+                            <choice>
+                                <statement>
+                                    <p>False</p>
+                                </statement>
+                                <feedback>
                     While loops do not have a set number of times they will iterate, so they will continue until something breaks the loop. Keep this in mind while coding with while loops.
                 </feedback>
-            </choice>
-</choices>
+                            </choice>
+                        </choices>
 
-    </exercise>
+                    </exercise>
                 </li>
-            </ul></p>
-            
-            
-        </subsection>
-        <subsection xml:id="validating-input index-1">
-            <title>Validating Input</title>
-            <p>You can also use a <c>while</c> loop when you want to <strong>validate</strong> input;  when you want to make
+            </ul>
+        </p>
+
+
+    </subsection>
+    <subsection xml:id="validating-input">
+        <title>Validating Input</title>
+        <p>
+            You can also use a
+            <c>while</c>
+            loop when you want to
+            <alert>validate</alert>
+            input;  when you want to make
                 sure the user has entered valid input for a prompt. Let&#8217;s say you want a function
                 that asks a yes-or-no question. In this case, you want to make sure that the person using
                 your program enters either a Y for yes or N for no (in either upper or lower case).
-                Here is a program that uses a <c>while</c> loop to keep asking until it receives a valid answer.
+                Here is a program that uses a
+            <c>while</c>
+            loop to keep asking until it receives a valid answer.
                 As a preview of coming attractions, it uses
-                the <c>upper()</c> method which is described in <xref ref="../Strings/StringMethods#stringmethods"/> to convert a string to upper case.
-                When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
+                the
+            <c>upper()</c>
+            method which is described in
+            <xref ref="../Strings/StringMethods#stringmethods" />
+            to convert a string to upper case.
+                When you run the following code, try typing something other than Y or N to see how the code reacts:
+        </p>
 
-<listing xml:id="ch07_validation">
-    <caption/>
-    <program xml:id="ch07_validation_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="ch07_validation">
+            <caption />
+            <program xml:id="ch07_validation_editor" interactive="activecode" language="python">
+                <input>
 def get_yes_or_no(message):
     valid_input = False
     answer = input(message)
@@ -156,8 +216,7 @@ if response == 'Y':
 else:
     print('Too bad. If cooked right, they are quite tasty.')
         </input>
-    </program>
-</listing>
-        </subsection>
-    </section>
-
+            </program>
+        </listing>
+    </subsection>
+</section>

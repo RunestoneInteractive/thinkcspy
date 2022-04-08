@@ -9,7 +9,7 @@
         </block_quote>
         <p>Now, type in your query. When I type in &#8220;Microsoft&#8221; and click Search, here is what I see:</p>
         <figure>
-            <image source="images/WebApps/Figures/googlesearchresults.png"/>
+            <image source="WebApps/Figures/googlesearchresults.png"/>
         </figure>
         <p>Now, take a good look at the URL in the title bar &#8212; notice the query string? It&#8217;s a bit more complicated
             than the one I had you create by hand earlier. But you can probably pick out the &#8220;q=Microsoft&#8221; if you
@@ -17,7 +17,7 @@
             you typed into the form, packaged it up into a query string, and transmitted it to the Google web
             server. You see, when you fill out a form on a web page and click Submit, the browser uses the form
             data to construct a URL, and then sends a normal request to the web server.</p>
-        <p>Even if you&#8217;re a novice at writing <strong>HTML pages</strong>, it&#8217;s not hard to learn to create HTML forms. Take a look
+        <p>Even if you&#8217;re a novice at writing <alert>HTML pages</alert>, it&#8217;s not hard to learn to create HTML forms. Take a look
             at this simplified version of the Google home page:</p>
         <program language="html"><input>
 &lt;html&gt;
@@ -58,7 +58,7 @@
         <p>Try it out! Using Notepad, type in this example, and save it as googleform.html. Open it in your browser;
             you should see something like this:</p>
         <figure>
-            <image source="images/WebApps/Figures/googleform.png"/>
+            <image source="WebApps/Figures/googleform.png"/>
         </figure>
         <p>Fill out the form, and, if Google still works as it did when this chapter was written, you should see
             search results appear in your browser.</p>

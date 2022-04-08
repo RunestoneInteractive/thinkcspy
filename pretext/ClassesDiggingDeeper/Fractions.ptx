@@ -43,7 +43,7 @@ print(myfraction.getDen())
         <p>Note that the <c>__str__</c> method provides a &#8220;typical&#8221; looking fraction using a slash between the numerator and denominator.
             The figure below shows the state of <c>myfraction</c>.  We have also added a few simple accessor methods, <c>getNum</c> and <c>getDen</c>, that can return the
             state values for the fraction.</p>
-        <image source="images/ClassesDiggingDeeper/Figures/fractionpic1.png"/>
+        <image source="ClassesDiggingDeeper/Figures/fractionpic1.png"/>
         
         
     </section>

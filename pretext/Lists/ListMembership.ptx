@@ -1,34 +1,43 @@
 <section xml:id="list-membership">
-        <title>List Membership</title>
-        <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
-            used them previously with strings and they also work here.</p>
+    <title>List Membership</title>
+    <p>
+        <c>in</c>
+        and
+        <c>not in</c>
+        are boolean operators that test membership in a sequence. We
+            used them previously with strings and they also work here.
+    </p>
 
-<listing xml:id="chp09_4">
-    <caption/>
-    <program xml:id="chp09_4_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_4">
+        <caption />
+        <program xml:id="chp09_4_editor" interactive="activecode" language="python">
+            <input>
 fruit = ["apple", "orange", "banana", "cherry"]
 
 print("apple" in fruit)
 print("pear" in fruit)
         </input>
-    </program>
-</listing>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_4_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(3.14 in alist)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>True</p>
                 </statement>
@@ -45,21 +54,23 @@ print(3.14 in alist)
                     There are 7 items in the list, 3.14 is one of them.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_4_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(57 in alist)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -70,7 +81,7 @@ print(57 in alist)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>False</p>
                 </statement>
@@ -78,8 +89,7 @@ print(57 in alist)
                     Yes, 57 is not a top level item in alist.  It is in a sublist.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

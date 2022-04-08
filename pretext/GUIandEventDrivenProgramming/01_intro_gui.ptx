@@ -1,14 +1,14 @@
 <section xml:id="graphical-user-interfaces">
         <title>Graphical User Interfaces</title>
-        <p>A <strong>graphical user interface</strong> (GUI) allows a user
+        <p>A <alert>graphical user interface</alert> (GUI) allows a user
             to interact with a computer program using a pointing device that manipulates
             small pictures on a computer screen. The small pictures are called <c>icons</c> or
             <c>widgets</c>. Various types of pointing devices can be used, such as a mouse,
             a stylus pen, or a human finger on a touch screen.</p>
-        <p>We refer to programs that use a <strong>graphical user interface</strong> as &#8220;GUI programs.&#8221;
-            A GUI program is very different from a program that uses a <strong>command line interface</strong>
+        <p>We refer to programs that use a <alert>graphical user interface</alert> as &#8220;GUI programs.&#8221;
+            A GUI program is very different from a program that uses a <alert>command line interface</alert>
             which receives user input from typed characters on a keyboard.
-            Typically programs that use a <strong>command line interface</strong> perform a series of
+            Typically programs that use a <alert>command line interface</alert> perform a series of
             tasks in a predetermined order and then terminate.
             However, a GUI program
             creates the <c>icons</c> and <c>widgets</c> that are displayed to a user and then it
@@ -17,6 +17,6 @@
             This means a GUI program must keep track of the &#8220;state&#8221; of its processing
             and respond correctly to user commands that are given in any order the user
             chooses. This style of programming is called &#8220;event driven programming.&#8221;
-            In fact, by definition, all <emphasis>GUI programs</emphasis> are <emphasis>event-driven programs</emphasis>.</p>
+            In fact, by definition, all <em>GUI programs</em> are <em>event-driven programs</em>.</p>
     </section>
     

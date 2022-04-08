@@ -46,12 +46,12 @@
             respectively. Finally, we have reduced the problem to converting 7,
             which we can do easily since it satisfies the base case condition of
             <math>n &lt; base</math>, where <math>base = 10</math>. The series of operations
-            we have just performed is illustrated in <xref ref=""/>. Notice that
+            we have just performed is illustrated in <xref ref="fig-tostr"/>. Notice that
             the numbers we want to remember are in the remainder boxes along the
             right side of the diagram.</p>
         
-        <figure align="center" xml:id="id1 fig-tostr" names="fig_tostr">
-            <image source="images/IntroRecursion/Figures/toStr.png" alt="image"/>
+        <figure align="center" xml:id="fig-tostr" names="fig_tostr">
+            <image source="IntroRecursion/Figures/toStr.png" alt="image"/>
             <caption>Figure 3: Converting an Integer to a String in Base 10</caption>
         </figure>
         <p>The activecode below shows the Python code that implements the algorithm
@@ -81,11 +81,11 @@ print(toStr(1453,16))
         <p>Let&#8217;s trace the algorithm again; this time we will convert the number 10
             to its base 2 string representation (<c>"1010"</c>).</p>
         
-        <figure align="center" xml:id="id2 fig-tostr2" names="fig_tostr2">
-            <image source="images/IntroRecursion/Figures/toStrBase2.png" alt="image"/>
+        <figure align="center" xml:id="fig-tostr2" names="fig_tostr2">
+            <image source="IntroRecursion/Figures/toStrBase2.png" alt="image"/>
             <caption>Figure 4: Converting the Number 10 to its Base 2 String Representation</caption>
         </figure>
-        <p><xref ref=""/> shows that we get the results we are looking for,
+        <p><xref ref="fig-tostr2"/> shows that we get the results we are looking for,
             but it looks like the digits are in the wrong order. The algorithm works
             correctly because we make the recursive call first on line
             6, then we add the string representation of the remainder.

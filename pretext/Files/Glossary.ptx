@@ -42,8 +42,8 @@
                 <gi>
                     <title>absolute file path</title>
                     
-                        <p>The name of a file that includes a path to the file from the <emphasis>root</emphasis>
-                            directory of a file system. An <emphasis>absolute file path</emphasis> always starts
+                        <p>The name of a file that includes a path to the file from the <em>root</em>
+                            directory of a file system. An <em>absolute file path</em> always starts
                             with a <c>/</c>.</p>
                     
                 </gi>
@@ -51,7 +51,7 @@
                     <title>relative file path</title>
                     
                         <p>The name of a file that includes a path to the file from the current
-                            working directory of a program. An <emphasis>relative file path</emphasis> never starts
+                            working directory of a program. An <em>relative file path</em> never starts
                             with a <c>/</c>.</p>
                     
                 </gi>

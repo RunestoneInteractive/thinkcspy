@@ -1,12 +1,18 @@
 <section xml:id="concatenation-and-repetition">
-        <title>Concatenation and Repetition</title>
-        <p>Again, as with strings, the <c>+</c> operator concatenates lists.
-            Similarly, the <c>*</c> operator repeats the items in a list a given number of times.</p>
+    <title>Concatenation and Repetition</title>
+    <p>
+        Again, as with strings, the
+        <c>+</c>
+        operator concatenates lists.
+            Similarly, the
+        <c>*</c>
+        operator repeats the items in a list a given number of times.
+    </p>
 
-<listing xml:id="chp09_5">
-    <caption/>
-    <program xml:id="chp09_5_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_5">
+        <caption />
+        <program xml:id="chp09_5_editor" interactive="activecode" language="python">
+            <input>
 fruit = ["apple", "orange", "banana", "cherry"]
 print([1, 2] + [3, 4])
 print(fruit + [6, 7, 8, 9])
@@ -14,31 +20,52 @@ print(fruit + [6, 7, 8, 9])
 print([0] * 4)
 print([1, 2, ["hello", "goodbye"]] * 2)
         </input>
-    </program>
-</listing>
-        <p>It is important to see that these operators create new lists from the elements of the operand lists.  If you concatenate a list with 2 items and a list with 4 items, you will get a new list with 6 items (not a list with two sublists).  Similarly, repetition of a list of 2 items 4 times will give a list with 8 items.</p>
-        <p>One way for us to make this more clear is to run a part of this example in codelens.  As you step through the code, you will see the variables being created and the lists that they refer to.  Pay particular attention to the fact that when <c>newlist</c> is created by the statement <c>newlist = fruit + numlist</c>, it refers to a completely new list formed by making copies of the items from <c>fruit</c> and <c>numlist</c>.  You can see this very clearly in the codelens object diagram.  The objects are different.</p>
-<exercise runestone="chp09_concatid"/>        <p>In Python, every object has a unique identification tag.  Likewise, there is a built-in function that can be called on any object to return its unique id.  The function is appropriately called <c>id</c> and takes a single parameter, the object that you are interested in knowing about.  You can see in the example below that a real id is usually a very large integer value (corresponding to an address in memory).</p>
-        <program language="python"><input>
+        </program>
+    </listing>
+    <p>It is important to see that these operators create new lists from the elements of the operand lists.  If you concatenate a list with 2 items and a list with 4 items, you will get a new list with 6 items (not a list with two sublists).  Similarly, repetition of a list of 2 items 4 times will give a list with 8 items.</p>
+    <p>
+        One way for us to make this more clear is to run a part of this example in codelens.  As you step through the code, you will see the variables being created and the lists that they refer to.  Pay particular attention to the fact that when
+        <c>newlist</c>
+        is created by the statement
+        <c>newlist = fruit + numlist</c>
+        , it refers to a completely new list formed by making copies of the items from
+        <c>fruit</c>
+        and
+        <c>numlist</c>
+        .  You can see this very clearly in the codelens object diagram.  The objects are different.
+    </p>
+    <exercise runestone="chp09_concatid" />
+    <p>
+        In Python, every object has a unique identification tag.  Likewise, there is a built-in function that can be called on any object to return its unique id.  The function is appropriately called
+        <c>id</c>
+        and takes a single parameter, the object that you are interested in knowing about.  You can see in the example below that a real id is usually a very large integer value (corresponding to an address in memory).
+    </p>
+    <program language="python">
+        <input>
 &gt;&gt;&gt; alist = [4, 5, 6]
 &gt;&gt;&gt; id(alist)
 4300840544
 &gt;&gt;&gt;
-</input></program>
-        <p><strong>Check your understanding</strong></p>
+</input>
+    </program>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_5_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [1, 3, 5]
 blist = [2, 4, 6]
 print(alist + blist)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -58,7 +85,7 @@ print(alist + blist)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>[1, 3, 5, 2, 4, 6]</p>
                 </statement>
@@ -75,21 +102,23 @@ print(alist + blist)
                     Concatenation does not add the individual items.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_5_2">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [1, 3, 5]
 print(alist * 3)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -109,7 +138,7 @@ print(alist * 3)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>[1, 3, 5, 1, 3, 5, 1, 3, 5]</p>
                 </statement>
@@ -126,8 +155,7 @@ print(alist * 3)
                     Repetition does not multiply the individual items.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

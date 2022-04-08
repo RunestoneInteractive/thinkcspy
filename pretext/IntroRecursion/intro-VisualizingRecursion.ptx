@@ -23,12 +23,12 @@
             above that a fractal is something that looks the same at all different
             levels of magnification. If we translate this to trees and shrubs we
             might say that even a small twig has the same shape and characteristics
-            as a whole tree. Using this idea we could say that a <emphasis>tree</emphasis> is a trunk,
-            with a smaller <emphasis>tree</emphasis> going off to the right and another smaller <emphasis>tree</emphasis>
+            as a whole tree. Using this idea we could say that a <em>tree</em> is a trunk,
+            with a smaller <em>tree</em> going off to the right and another smaller <em>tree</em>
             going off to the left. If you think of this definition recursively it
             means that we will apply the recursive definition of a tree to both of
             the smaller left and right trees.</p>
-        <p>Let&#8217;s translate this idea to some Python code. <xref ref=""/>
+        <p>Let&#8217;s translate this idea to some Python code. <xref ref="lst-fractree"/>
             shows how we can use our turtle to generate a fractal tree. Let&#8217;s look at
             the code a bit more closely. You will see that on lines 5 and 7 we are
             making a recursive call. On line 5 we make the recursive call right
@@ -44,7 +44,7 @@
             <c>if</c> statement on line 2 as a check for the base case of <c>branchLen</c>
             getting too small.</p>
         
-        <p xml:id="lst-fractree" names="lst_fractree"><strong>Listing 1</strong></p>
+        <p xml:id="lst-fractree" names="lst_fractree"><alert>Listing 1</alert></p>
         <program language="python"><input>
 def tree(branchLen,t):
     if branchLen &gt; 5:
@@ -95,21 +95,21 @@ main()
 </listing>
         <p>Notice how each branch point on the tree corresponds to a recursive
             call, and notice how the tree is drawn to the right all the way down to
-            its shortest twig. You can see this in <xref ref=""/>. Now, notice
+            its shortest twig. You can see this in <xref ref="fig-tree1"/>. Now, notice
             how the program works its way back up the trunk until the entire right
             side of the tree is drawn. You can see the right half of the tree in
-            <xref ref=""/>. Then the left side of the tree is drawn, but not by
+            <xref ref="fig-tree2"/>. Then the left side of the tree is drawn, but not by
             going as far out to the left as possible. Rather, once again the entire
             right side of the left tree is drawn until we finally make our way out
             to the smallest twig on the left.</p>
         
-        <figure align="center" xml:id="id1 fig-tree1" names="fig_tree1">
-            <image source="images/IntroRecursion/Figures/tree1.png"/>
+        <figure align="center" xml:id="fig-tree1" names="fig_tree1">
+            <image source="IntroRecursion/Figures/tree1.png"/>
             <caption>Figure 1: The Beginning of a Fractal Tree</caption>
         </figure>
         
-        <figure align="center" xml:id="id2 fig-tree2" names="fig_tree2">
-            <image source="images/IntroRecursion/Figures/tree2.png"/>
+        <figure align="center" xml:id="fig-tree2" names="fig_tree2">
+            <image source="IntroRecursion/Figures/tree2.png"/>
             <caption>Figure 2: The First Half of the Tree</caption>
         </figure>
         <p>This simple tree program is just a starting point for you, and you will

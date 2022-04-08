@@ -12,7 +12,7 @@
                 at <url href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html" visual="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html">https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html</url> if you
                 want to modify <c>ttk</c> widgets.)</p>
         </sidebar>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -117,7 +117,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>You can treat a widget object as a dictionary and use the property names
             as keys to access and change the property values. For example, to change the
             background color and width of a widget whose object variable is named <c>sam</c>,

@@ -1,61 +1,90 @@
 <section xml:id="traversal-and-the-for-loop-by-item">
-        <title>Traversal and the <c>for</c> Loop: By Item</title>
-        <p>A lot of computations involve processing a collection one item at a time.  For strings this means
+    <title>
+        Traversal and the
+        <c>for</c>
+        Loop: By Item
+    </title>
+    <p>
+        A lot of computations involve processing a collection one item at a time.  For strings this means
             that we would like to process one character at a time.
             Often we start at the beginning, select each character in turn, do something
             to it, and continue until the end. This pattern of processing is called a
-            <strong>traversal</strong>.</p>
-        <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
+        <alert>traversal</alert>
+        .
+    </p>
+    <p>
+        We have previously seen that the
+        <c>for</c>
+        statement can iterate over the items of a sequence (a list of names in the case below).
+    </p>
 
-<listing xml:id="ch08_4">
-    <caption/>
-    <program xml:id="ch08_4_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_4">
+        <caption />
+        <program xml:id="ch08_4_editor" interactive="activecode" language="python">
+            <input>
 for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
     print(invitation)
         </input>
-    </program>
-</listing>
-        <p>Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the <c>range</c> function.</p>
+        </program>
+    </listing>
+    <p>
+        Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the
+        <c>range</c>
+        function.
+    </p>
 
-<listing xml:id="ch08_5">
-    <caption/>
-    <program xml:id="ch08_5_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_5">
+        <caption />
+        <program xml:id="ch08_5_editor" interactive="activecode" language="python">
+            <input>
 for avalue in range(10):
     print(avalue)
         </input>
-    </program>
-</listing>
-        <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
+        </program>
+    </listing>
+    <p>
+        Since a string is simply a sequence of characters, the
+        <c>for</c>
+        loop iterates over each character automatically.
+    </p>
 
-<listing xml:id="ch08_6">
-    <caption/>
-    <program xml:id="ch08_6_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch08_6">
+        <caption />
+        <program xml:id="ch08_6_editor" interactive="activecode" language="python">
+            <input>
 for achar in "Go Spot Go":
     print(achar)
         </input>
-    </program>
-</listing>
-        <p>The loop variable <c>achar</c> is automatically reassigned each character in the string &#8220;Go Spot Go&#8221;.
-            We will refer to this type of sequence iteration as <strong>iteration by item</strong>.
-            Note that it is only possible to process the characters one at a time from left to right.</p>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        The loop variable
+        <c>achar</c>
+        is automatically reassigned each character in the string &#8220;Go Spot Go&#8221;.
+            We will refer to this type of sequence iteration as
+        <alert>iteration by item</alert>
+        .
+            Note that it is only possible to process the characters one at a time from left to right.
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question8_8_1">
         <statement>
 
-        <p>How many times is the word HELLO printed by the following statements?</p>
-        <program language="python"><input>
+            <p>How many times is the word HELLO printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 for ch in s:
     print("HELLO")
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -75,7 +104,7 @@ for ch in s:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>12</p>
                 </statement>
@@ -92,22 +121,24 @@ for ch in s:
                     The for statement can iterate over a sequence item by item.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_8_2">
         <statement>
 
-        <p>How many times is the word HELLO printed by the following statements?</p>
-        <program language="python"><input>
+            <p>How many times is the word HELLO printed by the following statements?</p>
+            <program language="python">
+                <input>
 s = "python rocks"
 for ch in s[3:8]:
     print("HELLO")
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -118,7 +149,7 @@ for ch in s[3:8]:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>5</p>
                 </statement>
@@ -144,8 +175,7 @@ for ch in s[3:8]:
                     Slice returns a sequence.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

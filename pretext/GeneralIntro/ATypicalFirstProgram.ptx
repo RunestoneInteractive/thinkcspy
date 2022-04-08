@@ -1,38 +1,50 @@
 <section xml:id="a-typical-first-program">
-        <title>A Typical First Program</title>
-        <p>Traditionally, the first program written in a new language is called <emphasis>Hello,
-                World!</emphasis> because all it does is display the words, Hello, World!  In Python, the source code
-            looks like this.</p>
-        <program language="python"><input>
-print("Hello, World!")
-</input></program>
-        <p>This is an example of using the <strong>print function</strong>, which doesn&#8217;t actually
-            print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
-        <pre>Hello, World!</pre>
-        <p>Here is the example in activecode.  Give it a try!</p>
-
-<listing xml:id="ch01_2">
-    <caption/>
-    <program xml:id="ch01_2_editor" interactive="activecode" language="python">
+    <title>A Typical First Program</title>
+    <p>
+        Traditionally, the first program written in a new language is called
+        <em>Hello,
+                World!</em>
+        because all it does is display the words, Hello, World!  In Python, the source code
+            looks like this.
+    </p>
+    <program language="python">
         <input>
 print("Hello, World!")
-        </input>
+</input>
     </program>
-</listing>
-        <p>The quotation marks in the program mark the beginning and end of the value.
+    <p>
+        This is an example of using the
+        <alert>print function</alert>
+        , which doesn&#8217;t actually
+            print anything on paper. It displays a value on the screen. In this case, the result is the phrase:
+    </p>
+    <pre>Hello, World!</pre>
+    <p>Here is the example in activecode.  Give it a try!</p>
+
+    <listing xml:id="ch01_2">
+        <caption />
+        <program xml:id="ch01_2_editor" interactive="activecode" language="python">
+            <input>
+print("Hello, World!")
+        </input>
+        </program>
+    </listing>
+    <p>The quotation marks in the program mark the beginning and end of the value.
             They don&#8217;t appear in the result.</p>
-        <p>Some people judge the quality of a programming language by the simplicity of
+    <p>Some people judge the quality of a programming language by the simplicity of
             the Hello, World! program. By this standard, Python does about as well as
             possible.</p>
-        <p><strong>Check your understanding</strong></p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="question1_11_1">
         <statement>
 
-        <p>The print function:</p>
+            <p>The print function:</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -43,7 +55,7 @@ print("Hello, World!")
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>displays a value on the screen.</p>
                 </statement>
@@ -69,10 +81,9 @@ print("Hello, World!")
                     That would be a different function.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        
-        
-    </section>
 
+
+</section>

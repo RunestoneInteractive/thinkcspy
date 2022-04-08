@@ -1,4 +1,4 @@
-<section xml:id="image-processing-on-your-own image-processing-on-own">
+<section xml:id="image-processing-on-your-own">
         <title>Image Processing on Your Own</title>
         <p>If you want to try some image processing on your own, outside of the textbook you can do so using the cImage module. The easiest way to get this is to run the command <c>pip install cImage</c> from the command line.  You can also download <c>cImage.py</c> from <url href="https://github.com/bnmnetp/cImage" visual="https://github.com/bnmnetp/cImage">The github page</url> .   If you get the file from github, put <c>cImage.py</c> in the same folder as your program you can then do the following to be fully compatible with the code in this book.</p>
         <program language="python"><input>

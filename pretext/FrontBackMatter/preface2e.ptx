@@ -50,13 +50,13 @@
             <p>Free documents came to the rescue. Earlier in the year, Richard Stallman had
                 introduced me to Allen Downey. Both of us had written to Richard expressing an
                 interest in developing free educational materials. Allen had already written a
-                first-year computer science textbook, <emphasis>How to Think Like a Computer Scientist</emphasis>.
+                first-year computer science textbook, <em>How to Think Like a Computer Scientist</em>.
                 When I read this book, I knew immediately that I wanted to use it in my class.
                 It was the clearest and most helpful computer science text I had seen. It
                 emphasized the processes of thought involved in programming rather than the
                 features of a particular language. Reading it immediately made me a better
                 teacher.</p>
-            <p><emphasis>How to Think Like a Computer Scientist</emphasis> was not just an excellent book, but it
+            <p><em>How to Think Like a Computer Scientist</em> was not just an excellent book, but it
                 had been released under the GNU public license, which meant it could be used
                 freely and modified to meet the needs of its user.  Once I decided to use
                 Python, it occurred to me that I could translate Allen&#8217;s original Java version
@@ -88,7 +88,7 @@
         </subsection>
         <subsection xml:id="introducing-programming-with-python">
             <title>Introducing programming with Python</title>
-            <p>The process of translating and using <emphasis>How to Think Like a Computer Scientist</emphasis>
+            <p>The process of translating and using <em>How to Think Like a Computer Scientist</em>
                 for the past two years has confirmed Python&#8217;s suitability for teaching
                 beginning students. Python greatly simplifies programming examples and makes
                 important programming ideas easier to teach.</p>

@@ -1,29 +1,50 @@
 <section xml:id="dictionary-operations">
-        <title>Dictionary Operations</title>
-        <p>The <c>del</c> statement removes a key-value pair from a dictionary. For example,
+    <title>Dictionary Operations</title>
+    <p>
+        The
+        <c>del</c>
+        statement removes a key-value pair from a dictionary. For example,
             the following dictionary contains the names of various fruits and the number of
-            each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.</p>
-<exercise runestone="ch12_dict4"/>        <p>Dictionaries are also mutable.  As we&#8217;ve seen before with lists, this means that the dictionary can
+            each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.
+    </p>
+    <exercise runestone="ch12_dict4" />
+    <p>
+        Dictionaries are also mutable.  As we&#8217;ve seen before with lists, this means that the dictionary can
             be modified by referencing an association on the left hand side of the assignment statement.  In the previous
-            example, instead of deleting the entry for <c>pears</c>, we could have set the inventory to <c>0</c>.</p>
-<exercise runestone="ch12_dict4a"/>        <p>Similarily,
+            example, instead of deleting the entry for
+        <c>pears</c>
+        , we could have set the inventory to
+        <c>0</c>
+        .
+    </p>
+    <exercise runestone="ch12_dict4a" />
+    <p>Similarily,
             a new shipment of 200 bananas arriving could be handled like this.</p>
-<exercise runestone="ch12_dict5"/>        <p>Notice that there are now 512 bananas&#8212;the dictionary has been modified.  Note also that the <c>len</c> function also works on dictionaries.  It returns the number
-            of key-value pairs:</p>
-        <p><strong>Check your understanding</strong></p>
+    <exercise runestone="ch12_dict5" />
+    <p>
+        Notice that there are now 512 bananas&#8212;the dictionary has been modified.  Note also that the
+        <c>len</c>
+        function also works on dictionaries.  It returns the number
+            of key-value pairs:
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question11_2_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 mydict = {"cat":12, "dog":6, "elephant":23}
 mydict["mouse"] = mydict["cat"] + mydict["dog"]
 print(mydict["mouse"])
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -43,7 +64,7 @@ print(mydict["mouse"])
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>18</p>
                 </statement>
@@ -60,8 +81,7 @@ print(mydict["mouse"])
                     Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

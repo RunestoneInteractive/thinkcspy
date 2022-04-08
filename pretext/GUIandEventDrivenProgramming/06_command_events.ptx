@@ -19,12 +19,12 @@ my_button = tk.Button(application_window, text="Example")
 my_button['command'] = my_function
 </input></program>
         <p>Note that you are setting the <c>command</c> property of the widget to a
-            <emphasis>function reference</emphasis> &#8211; you are not calling the function! Therefore, do not
+            <em>function reference</em> &#8211; you are not calling the function! Therefore, do not
             put parentheses after the function name when you make the assignment.</p>
         <p>The following widgets define a <c>command</c> property which defines a function
             that is called from the application&#8217;s event loop whenever a specific, predefined
             event is performed by a user.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -76,10 +76,10 @@ my_button['command'] = my_function
                     </row>
                 
             
-        </tabular>
-        <p>The following widgets do <strong>not</strong> have a <c>command</c> property, but they use other
+        </tabular></table>
+        <p>The following widgets do <alert>not</alert> have a <c>command</c> property, but they use other
             properties to respond to user events:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -144,7 +144,7 @@ my_button['command'] = my_function
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Note that the <c>Label</c>, <c>Message</c>, and <c>Separator</c> widgets do not respond
             to user events and therefore have no associated event handlers.</p>
     </section>

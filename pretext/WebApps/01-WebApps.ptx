@@ -5,12 +5,12 @@
             both kinds in your travels on the World-Wide Web.</p>
         <p><ul>
             <li>
-                <p><strong>Client-side</strong> web applications are programs that are downloaded to a web browser and executed on
+                <p><alert>Client-side</alert> web applications are programs that are downloaded to a web browser and executed on
                     the user&#8217;s local machine. Client-side applications are typically written in JavaScript and embedded
                     in web pages.</p>
             </li>
             <li>
-                <p><strong>Server-side</strong> web applications are programs that run on web server computers, rather than on the
+                <p><alert>Server-side</alert> web applications are programs that run on web server computers, rather than on the
                     user&#8217;s local machine. Typically, a server-side web application displays a form with text boxes and
                     other data collection mechanisms. The user fills out the form, clicks a submit button, and the
                     browser sends the form to the web application on the server, which processes the request, and responds

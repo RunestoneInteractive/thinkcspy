@@ -1,17 +1,29 @@
 <section xml:id="the-3n-1-sequence">
-        <title>The 3n + 1 Sequence</title>
-        <p>As another example of indefinite iteration, let&#8217;s look at a sequence that has fascinated mathematicians for many years.
+    <title>The 3n + 1 Sequence</title>
+    <p>
+        As another example of indefinite iteration, let&#8217;s look at a sequence that has fascinated mathematicians for many years.
             The rule  for creating the sequence is to start from
-            some positive integer, call it <c>n</c>, and to generate
-            the next term of the sequence from <c>n</c>, either by halving <c>n</c>,
-            whenever <c>n</c> is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
-            terminates when <c>n</c> reaches 1.</p>
-        <p>This Python function captures that algorithm.  Try running this program several times supplying different values for n.</p>
+            some positive integer, call it
+        <c>n</c>
+        , and to generate
+            the next term of the sequence from
+        <c>n</c>
+        , either by halving
+        <c>n</c>
+        ,
+            whenever
+        <c>n</c>
+        is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
+            terminates when
+        <c>n</c>
+        reaches 1.
+    </p>
+    <p>This Python function captures that algorithm.  Try running this program several times supplying different values for n.</p>
 
-<listing xml:id="ch07_indef1">
-    <caption/>
-    <program xml:id="ch07_indef1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch07_indef1">
+        <caption />
+        <program xml:id="ch07_indef1_editor" interactive="activecode" language="python">
+            <input>
 def seq3np1(n):
     """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
     while n != 1:
@@ -24,67 +36,135 @@ def seq3np1(n):
 
 seq3np1(3)
         </input>
-    </program>
-</listing>
-        <p>The condition for this loop is <c>n != 1</c>.  The loop will continue running until
-            <c>n == 1</c> (which will make the condition false).</p>
-        <p>Each time through the loop, the program prints the value of <c>n</c> and then
-            checks whether it is even or odd using the remainder operator. If it is even, the value of <c>n</c> is divided
-            by 2 using integer division. If it is odd, the value is replaced by <c>n * 3 + 1</c>.
-            Try some other examples.</p>
-        <p>Since <c>n</c> sometimes increases and sometimes decreases, there is no obvious
-            proof that <c>n</c> will ever reach 1, or that the program terminates. For some
-            particular values of <c>n</c>, we can prove termination. For example, if the
-            starting value is a power of two, then the value of <c>n</c> will be even each
-            time through the loop until it reaches 1.</p>
-        <p>You might like to have some fun and see if you can find a small starting
+        </program>
+    </listing>
+    <p>
+        The condition for this loop is
+        <c>n != 1</c>
+        .  The loop will continue running until
+        <c>n == 1</c>
+        (which will make the condition false).
+    </p>
+    <p>
+        Each time through the loop, the program prints the value of
+        <c>n</c>
+        and then
+            checks whether it is even or odd using the remainder operator. If it is even, the value of
+        <c>n</c>
+        is divided
+            by 2 using integer division. If it is odd, the value is replaced by
+        <c>n * 3 + 1</c>
+        .
+            Try some other examples.
+    </p>
+    <p>
+        Since
+        <c>n</c>
+        sometimes increases and sometimes decreases, there is no obvious
+            proof that
+        <c>n</c>
+        will ever reach 1, or that the program terminates. For some
+            particular values of
+        <c>n</c>
+        , we can prove termination. For example, if the
+            starting value is a power of two, then the value of
+        <c>n</c>
+        will be even each
+            time through the loop until it reaches 1.
+    </p>
+    <p>You might like to have some fun and see if you can find a small starting
             number that needs more than a hundred steps before it terminates.</p>
-        <admonition classes="admonition-lab">
-            <title>Lab</title>
-            <p><ul>
+    <admonition classes="admonition-lab">
+        <title>Lab</title>
+        <p>
+            <ul>
                 <li>
-                    <p><url href="../Labs/sequencelab.html" visual="../Labs/sequencelab.html">Experimenting with the 3n+1 Sequence</url> In this guided lab exercise we will try to learn more about this sequence.</p>
+                    <p>
+                        <url href="../Labs/sequencelab.html" visual="../Labs/sequencelab.html">Experimenting with the 3n+1 Sequence</url>
+                        In this guided lab exercise we will try to learn more about this sequence.
+                    </p>
                 </li>
-            </ul></p>
-        </admonition>
-        <p>Particular values aside, the interesting question is whether we can prove that
-            this sequence terminates for <emphasis>all</emphasis> positive values of <c>n</c>. So far, no one has been able
-            to prove it <emphasis>or</emphasis> disprove it!</p>
-        <p>Think carefully about what would be needed for a proof or disproof of the hypothesis
-            <emphasis>&#8220;All positive integers will eventually converge to 1&#8221;</emphasis>.  With fast computers we have
+            </ul>
+        </p>
+    </admonition>
+    <p>
+        Particular values aside, the interesting question is whether we can prove that
+            this sequence terminates for
+        <em>all</em>
+        positive values of
+        <c>n</c>
+        . So far, no one has been able
+            to prove it
+        <em>or</em>
+        disprove it!
+    </p>
+    <p>
+        Think carefully about what would be needed for a proof or disproof of the hypothesis
+        <em>&#8220;All positive integers will eventually converge to 1&#8221;</em>
+        .  With fast computers we have
             been able to test every integer up to very large values, and so far, they all
             eventually end up at 1.  But this doesn&#8217;t mean that there might not be some
-            as-yet untested number which does not reduce to 1.</p>
-        <p>You&#8217;ll notice that if you don&#8217;t stop when you reach one, the sequence gets into
+            as-yet untested number which does not reduce to 1.
+    </p>
+    <p>You&#8217;ll notice that if you don&#8217;t stop when you reach one, the sequence gets into
             its own loop:  1, 4, 2, 1, 4, 2, 1, 4, and so on.  One possibility is that there might
             be other cycles that we just haven&#8217;t found.</p>
-        <admonition classes="admonition-choosing-between-for-and-while">
-            <title>Choosing between <c>for</c> and <c>while</c></title>
-            <p>Use a <c>for</c> loop if you know the maximum number of times that you&#8217;ll
+    <admonition classes="admonition-choosing-between-for-and-while">
+        <title>
+            Choosing between
+            <c>for</c>
+            and
+            <c>while</c>
+        </title>
+        <p>
+            Use a
+            <c>for</c>
+            loop if you know the maximum number of times that you&#8217;ll
                 need to execute the body.  For example, if you&#8217;re traversing a list of elements,
-                or can formulate a suitable call to <c>range</c>, then choose the <c>for</c> loop.</p>
-            <p>So any problem like &#8220;iterate this weather model run for 1000 cycles&#8221;, or &#8220;search this
-                list of words&#8221;, &#8220;check all integers up to 10000 to see which are prime&#8221; suggest that a <c>for</c> loop is best.</p>
-            <p>By contrast, if you are required to repeat some computation until some condition is
-                met, as we did in this 3n + 1 problem, you&#8217;ll need a <c>while</c> loop.</p>
-            <p>As we noted before, the first case is called <strong>definite iteration</strong> &#8212; we have some definite bounds for
-                what is needed.   The latter case is called <strong>indefinite iteration</strong> &#8212; we are not sure
-                how many iterations we&#8217;ll need &#8212; we cannot even establish an upper bound!</p>
-        </admonition>
-        <!--There are also some great visualization tools becoming available to help you-->
-        <!--trace and understand small fragments of Python code.  The one we recommend is at-->
-        <!--http://netserv.ict.ru.ac.za/python3_viz-->
-        
-        
-        <p xml:id="index-0"><strong>Check your understanding</strong></p>
+                or can formulate a suitable call to
+            <c>range</c>
+            , then choose the
+            <c>for</c>
+            loop.
+        </p>
+        <p>
+            So any problem like &#8220;iterate this weather model run for 1000 cycles&#8221;, or &#8220;search this
+                list of words&#8221;, &#8220;check all integers up to 10000 to see which are prime&#8221; suggest that a
+            <c>for</c>
+            loop is best.
+        </p>
+        <p>
+            By contrast, if you are required to repeat some computation until some condition is
+                met, as we did in this 3n + 1 problem, you&#8217;ll need a
+            <c>while</c>
+            loop.
+        </p>
+        <p>
+            As we noted before, the first case is called
+            <alert>definite iteration</alert>
+            &#8212; we have some definite bounds for
+                what is needed.   The latter case is called
+            <alert>indefinite iteration</alert>
+            &#8212; we are not sure
+                how many iterations we&#8217;ll need &#8212; we cannot even establish an upper bound!
+        </p>
+    </admonition>
+    <!--There are also some great visualization tools becoming available to help you-->
+    <!--trace and understand small fragments of Python code.  The one we recommend is at-->
+    <!--http://netserv.ict.ru.ac.za/python3_viz-->
+
+
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question7_4_1">
         <statement>
 
-        <p>Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?</p>
+            <p>Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -104,7 +184,7 @@ seq3np1(3)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>No one knows.</p>
                 </statement>
@@ -112,8 +192,7 @@ seq3np1(3)
                     That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

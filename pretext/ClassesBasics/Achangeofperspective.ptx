@@ -1,15 +1,15 @@
 <section xml:id="a-change-of-perspective">
         <title>A change of perspective</title>
         <p>Throughout the earlier chapters, we wrote functions and called them using a syntax such as <c>drawCircle(tess)</c>.  This suggests that the
-            function is the active agent. It says something like, <emphasis>&#8220;Hey, drawCircle!
-                Here&#8217;s a turtle object for you to use to draw with.&#8221;</emphasis></p>
+            function is the active agent. It says something like, <em>&#8220;Hey, drawCircle!
+                Here&#8217;s a turtle object for you to use to draw with.&#8221;</em></p>
         <p>In object-oriented programming, the objects are considered the active agents.
             For example, in our early introduction to turtles, we used
             an object-oriented style. We said <c>tess.forward(100)</c>, which
             asks the turtle to move itself forward by the given number of steps.
             An
-            invocation like <c>tess.circle()</c> says <emphasis>&#8220;Hey tess!
-                Please use your circle method!&#8221;</emphasis></p>
+            invocation like <c>tess.circle()</c> says <em>&#8220;Hey tess!
+                Please use your circle method!&#8221;</em></p>
         <p>This change in perspective is sometimes considered to be a more &#8220;polite&#8221; way to write programming instructions.  However, it may not initially
             be obvious that it is useful. It turns out that often times shifting responsibility from
             the functions onto the objects makes it possible to write more versatile

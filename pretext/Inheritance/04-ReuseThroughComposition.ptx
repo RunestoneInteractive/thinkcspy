@@ -1,6 +1,6 @@
 <section xml:id="reuse-through-composition">
         <title>Reuse Through Composition</title>
-        <p>Inheritance is not the only way to reuse code. <emphasis>Composition</emphasis> occurs when
+        <p>Inheritance is not the only way to reuse code. <em>Composition</em> occurs when
             an object stores a reference to one or more objects in one of its instance
             variables. The object is thus able to reuse code in the objects it
             embeds within itself.</p>

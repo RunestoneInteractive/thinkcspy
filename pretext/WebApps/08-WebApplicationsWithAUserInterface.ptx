@@ -55,7 +55,7 @@
             </li>
             <li>
                 <p>The form&#8217;s <c>action</c> attribute on Line 13 specifies that the form submission will be directed
-                    to the path <strong>/greet</strong>. Processing for this path is defined by the <c>greet()</c>
+                    to the path <alert>/greet</alert>. Processing for this path is defined by the <c>greet()</c>
                     function on lines 20-31.</p>
             </li>
             <li>

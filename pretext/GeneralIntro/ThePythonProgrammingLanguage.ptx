@@ -1,98 +1,164 @@
 <section xml:id="the-python-programming-language">
-        <title>The Python Programming Language</title>
-        <p>The programming language you will be learning is Python. Python is an example
-            of a <strong>high-level language</strong>; other high-level languages you might have heard
-            of are C++, PHP, and Java.</p>
-        <p>As you might infer from the name high-level language, there are also
-            <strong>low-level languages</strong>, sometimes referred to as machine languages or assembly
+    <title>The Python Programming Language</title>
+    <p>
+        The programming language you will be learning is Python. Python is an example
+            of a
+        <alert>high-level language</alert>
+        ; other high-level languages you might have heard
+            of are C++, PHP, and Java.
+    </p>
+    <p>
+        As you might infer from the name high-level language, there are also
+        <alert>low-level languages</alert>
+        , sometimes referred to as machine languages or assembly
             languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer.  Assembly language uses a slightly easier format to refer to the low level instructions.
             Loosely speaking, computers can only execute programs written in
             low-level languages.  To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in assembly language) have to be
             processed before they can run. This extra processing takes some time, which is
             a small disadvantage of high-level languages.
-            However, the advantages to high-level languages are enormous.</p>
-        <p>First, it is much easier to program in a
+            However, the advantages to high-level languages are enormous.
+    </p>
+    <p>
+        First, it is much easier to program in a
             high-level language. Programs written in a high-level language take less time
             to write, they are shorter and easier to read, and they are more likely to be
-            correct. Second, high-level languages are <strong>portable</strong>, meaning that they can
+            correct. Second, high-level languages are
+        <alert>portable</alert>
+        , meaning that they can
             run on different kinds of computers with few or no modifications. Low-level
             programs can run on only one kind of computer and have to be rewritten to run
-            on another.</p>
-        <p>Due to these advantages, almost all programs are written in high-level
+            on another.
+    </p>
+    <p>Due to these advantages, almost all programs are written in high-level
             languages. Low-level languages are used only for a few specialized
             applications.</p>
-        <p>Two kinds of programs process high-level languages into low-level languages:
-            <strong>interpreters</strong> and <strong>compilers</strong>. An interpreter reads a high-level program
+    <p>
+        Two kinds of programs process high-level languages into low-level languages:
+        <alert>interpreters</alert>
+        and
+        <alert>compilers</alert>
+        . An interpreter reads a high-level program
             and executes it, meaning that it does what the program says. It processes the
             program a little at a time, alternately reading lines and performing
-            computations.</p>
-        <image source="images/GeneralIntro/Figures/interpret.png" alt="Interpret illustration"/>
-        <p>A compiler reads the program and translates it completely before the program
-            starts running. In this case, the high-level program is called the <strong>source
-                code</strong>, and the translated program is called the <strong>object code</strong> or the
-            <strong>executable</strong>. Once a program is compiled, you can execute it repeatedly
-            without further translation.</p>
-        <image source="images/GeneralIntro/Figures/compile.png" alt="Compile illustration"/>
-        <p>Many modern languages use both processes. They are first compiled into a lower
-            level language, called <strong>byte code</strong>, and then interpreted by a program called
-            a <strong>virtual machine</strong>. Python uses both processes, but because of the way
-            programmers interact with it, it is usually considered an interpreted language.</p>
-        <p>There are two ways to use the Python interpreter: <emphasis>shell mode</emphasis> and <emphasis>program
-                mode</emphasis>. In shell mode, you type Python expressions into the <strong>Python shell</strong>,
-            and the interpreter immediately shows the result.  The example below shows the Python shell at work.</p>
-        <pre>$ python3
+            computations.
+    </p>
+    <image source="GeneralIntro/Figures/interpret.png" alt="Interpret illustration" />
+    <p>
+        A compiler reads the program and translates it completely before the program
+            starts running. In this case, the high-level program is called the
+        <alert>source
+                code</alert>
+        , and the translated program is called the
+        <alert>object code</alert>
+        or the
+        <alert>executable</alert>
+        . Once a program is compiled, you can execute it repeatedly
+            without further translation.
+    </p>
+    <image source="GeneralIntro/Figures/compile.png" alt="Compile illustration" />
+    <p>
+        Many modern languages use both processes. They are first compiled into a lower
+            level language, called
+        <alert>byte code</alert>
+        , and then interpreted by a program called
+            a
+        <alert>virtual machine</alert>
+        . Python uses both processes, but because of the way
+            programmers interact with it, it is usually considered an interpreted language.
+    </p>
+    <p>
+        There are two ways to use the Python interpreter:
+        <em>shell mode</em>
+        and
+        <em>program
+                mode</em>
+        . In shell mode, you type Python expressions into the
+        <alert>Python shell</alert>
+        ,
+            and the interpreter immediately shows the result.  The example below shows the Python shell at work.
+    </p>
+    <pre>$ python3
 Python 3.2 (r32:88445, Mar 25 2011, 19:28:28)
 [GCC 4.5.2] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; 2 + 3
 5
 &gt;&gt;&gt;</pre>
-        <p>The <c>&gt;&gt;&gt;</c> is called the <strong>Python prompt</strong>. The interpreter uses the prompt to
-            indicate that it is ready for instructions. We typed <c>2 + 3</c>.  The
-            interpreter evaluated our expression and replied <c>5</c>. On the next line
-            it gave a new prompt indicating that it is ready for more input.</p>
-        <p>Working directly in the interpreter is convenient for testing short bits of
+    <p>
+        The
+        <c>&gt;&gt;&gt;</c>
+        is called the
+        <alert>Python prompt</alert>
+        . The interpreter uses the prompt to
+            indicate that it is ready for instructions. We typed
+        <c>2 + 3</c>
+        .  The
+            interpreter evaluated our expression and replied
+        <c>5</c>
+        . On the next line
+            it gave a new prompt indicating that it is ready for more input.
+    </p>
+    <p>Working directly in the interpreter is convenient for testing short bits of
             code because you get immediate feedback. Think of it as scratch paper used to
             help you work out problems.</p>
-        <p>Alternatively, you can write an entire program by placing lines of Python instructions
+    <p>
+        Alternatively, you can write an entire program by placing lines of Python instructions
             in a file and then use the interpreter to
-            execute the contents of the file as a whole. Such a file is often referred to as <strong>source code</strong>.  For
-            example, we used a text editor to create a source code file named <c>firstprogram.py</c> with
-            the following contents:</p>
-        <program language="python"><input>
+            execute the contents of the file as a whole. Such a file is often referred to as
+        <alert>source code</alert>
+        .  For
+            example, we used a text editor to create a source code file named
+        <c>firstprogram.py</c>
+        with
+            the following contents:
+    </p>
+    <program language="python">
+        <input>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
-</input></program>
-        <p>By convention, files that contain Python programs have names that end with
-            <c>.py</c> .  Following this convention will help your operating system and other
-            programs identify a file as containing python code.</p>
-        <pre>$ python firstprogram.py
+        </input>
+    </program>
+    <p>
+        By convention, files that contain Python programs have names that end with
+        <c>.py</c>
+        .  Following this convention will help your operating system and other
+            programs identify a file as containing python code.
+    </p>
+    <pre>$ python firstprogram.py
 My first program adds two numbers, 2 and 3:
 5</pre>
-        <p>These examples show Python being run from a Unix command line. In other
+    <p>These examples show Python being run from a Unix command line. In other
             development environments, the details of executing programs may differ. Also,
             most programs are more interesting than this one.</p>
-        <admonition classes="admonition-want-to-learn-more-about-python">
-            <title>Want to learn more about Python?</title>
-            <p>If you would like to learn more about installing and using Python, here are some video links.
-                <url href="http://youtu.be/9EfGpN1Pnsg" visual="http://youtu.be/9EfGpN1Pnsg">Installing Python for Windows</url> shows you how to install the Python environment under
+    <admonition classes="admonition-want-to-learn-more-about-python">
+        <title>Want to learn more about Python?</title>
+        <p>
+            If you would like to learn more about installing and using Python, here are some video links.
+            <url href="http://youtu.be/9EfGpN1Pnsg" visual="http://youtu.be/9EfGpN1Pnsg">Installing Python for Windows</url>
+            shows you how to install the Python environment under
                 Windows Vista,
-                <url href="http://youtu.be/MEmEJCLLI2k" visual="http://youtu.be/MEmEJCLLI2k">Installing Python for Mac</url> shows you how to install under Mac OS/X, and
-                <url href="http://youtu.be/RLPYBxfAud4" visual="http://youtu.be/RLPYBxfAud4">Installing Python for Linux</url> shows you how to install from the Linux
+            <url href="http://youtu.be/MEmEJCLLI2k" visual="http://youtu.be/MEmEJCLLI2k">Installing Python for Mac</url>
+            shows you how to install under Mac OS/X, and
+            <url href="http://youtu.be/RLPYBxfAud4" visual="http://youtu.be/RLPYBxfAud4">Installing Python for Linux</url>
+            shows you how to install from the Linux
                 command line.
-                <url href="http://youtu.be/kXbpB5_ywDw" visual="http://youtu.be/kXbpB5_ywDw">Using Python</url> shows you some details about the Python shell and source code.</p>
-        </admonition>
-        <p><strong>Check your understanding</strong></p>
+            <url href="http://youtu.be/kXbpB5_ywDw" visual="http://youtu.be/kXbpB5_ywDw">Using Python</url>
+            shows you some details about the Python shell and source code.
+        </p>
+    </admonition>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="question1_2_1">
         <statement>
 
-        <p>Source code is another name for:</p>
+            <p>Source code is another name for:</p>
 
         </statement>
-<choices>
+        <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>the instructions in a program, stored in a file.</p>
                 </statement>
@@ -127,19 +193,19 @@ My first program adds two numbers, 2 and 3:
                     There is no such number that you must type in at the start of your program.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="question1_2_2">
         <statement>
 
-        <block_quote>
-            <p>What is the difference between a high-level programming language and a low-level programming language?</p>
-        </block_quote>
+            <block_quote>
+                <p>What is the difference between a high-level programming language and a low-level programming language?</p>
+            </block_quote>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -159,7 +225,7 @@ My first program adds two numbers, 2 and 3:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>It is high-level if the program must be processed before it can run, and low-level if the computer can execute it without additional processing.</p>
                 </statement>
@@ -176,17 +242,17 @@ My first program adds two numbers, 2 and 3:
                     While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="question1_2_3">
         <statement>
 
-        <p>Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.</p>
+            <p>Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -197,7 +263,7 @@ My first program adds two numbers, 2 and 3:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>1 = translating an entire book, 2 = translating a line at a time</p>
                 </statement>
@@ -223,8 +289,7 @@ My first program adds two numbers, 2 and 3:
                     Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

@@ -3,18 +3,18 @@
         <p>So far you have seen two types of sequential collections: strings, which are made up of
             characters; and lists, which are made up of elements of any type.  One of the
             differences we noted is that the elements of a list can be modified, but the
-            characters in a string cannot. In other words, strings are <strong>immutable</strong> and
-            lists are <strong>mutable</strong>.</p>
-        <p>A <strong>tuple</strong>, like a list, is a sequence of items of any type. Unlike lists,
+            characters in a string cannot. In other words, strings are <alert>immutable</alert> and
+            lists are <alert>mutable</alert>.</p>
+        <p>A <alert>tuple</alert>, like a list, is a sequence of items of any type. Unlike lists,
             however, tuples are immutable. Syntactically, a tuple is a comma-separated
             sequence of values.  Although it is not necessary, it is conventional to
             enclose tuples in parentheses:</p>
         <program language="python"><input>
 julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
 </input></program>
-        <p>Tuples are useful for representing what other languages often call <emphasis>records</emphasis> &#8212;
+        <p>Tuples are useful for representing what other languages often call <em>records</em> &#8212;
             some related information that belongs together, like your student record.  There is
-            no description of what each of these <emphasis>fields</emphasis> means, but we can guess.  A tuple
+            no description of what each of these <em>fields</em> means, but we can guess.  A tuple
             lets us &#8220;chunk&#8221; together related information and use it as a single thing.</p>
         <p>Tuples support the same sequence operations as strings and
             lists.

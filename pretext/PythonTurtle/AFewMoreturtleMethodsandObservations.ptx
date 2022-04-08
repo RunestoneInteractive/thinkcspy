@@ -10,10 +10,10 @@
                     (The on-screen animation will differ, though &#8212; you will be able to tell if
                     tess is turning clockwise or counter-clockwise!)</p>
                 <p>This suggests that we don&#8217;t need both a left and a right turn method &#8212; we
-                    could be minimalists, and just have one method.  There is also a <emphasis>backward</emphasis>
+                    could be minimalists, and just have one method.  There is also a <em>backward</em>
                     method.  (If you are very nerdy, you might enjoy saying
                     <c>alex.backward(-100)</c> to move alex forward!)</p>
-                <p>Part of <emphasis>thinking like a scientist</emphasis> is to understand more of the structure
+                <p>Part of <em>thinking like a scientist</em> is to understand more of the structure
                     and rich relationships in your field.  So reviewing a few basic facts about
                     geometry and number lines, like we&#8217;ve done here is a good start if we&#8217;re
                     going to play with turtles.</p>
@@ -82,17 +82,17 @@ wn.exitonclick()
             to show you the distances being used to move the turtle forward.  The actual use appears
             as part of the <c>for</c> loop.</p>
         <p>One more thing to be careful about.  All except one of the shapes you see on the screen here are
-            footprints created by <c>stamp</c>.  But the program still only has <emphasis>one</emphasis> turtle
+            footprints created by <c>stamp</c>.  But the program still only has <em>one</em> turtle
             instance &#8212; can you figure out which one is the real tess?  (Hint: if you&#8217;re
             not sure, write a new line of code after the <c>for</c> loop to change tess&#8217;
             color, or to put her pen down and draw a line, or to change her shape, etc.)</p>
         <p>
-            <strong>Mixed up program</strong>
+            <alert>Mixed up program</alert>
         </p>
         <exercise xml:id="rs3_10" indent="show" language="python">
             <statement>
                 <p>The following program uses the stamp method to create a circle of turtle shapes as shown to the left:</p>
-                <image source="images/PythonTurtle/Figures/TurtleCircle.png" width="150%"/>
+                <image source="PythonTurtle/Figures/TurtleCircle.png" width="100%"/>
                 <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to &#8220;turtle&#8221;, and pick up the pen.  Then the turtle should repeat the following ten times: go forward 50 pixels, leave a copy of the turtle at the current position, reverse for 50 pixels, and then turn right 36 degrees.  After the loop, set the window to close when the user clicks in it.</p>
                 <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
             </statement>
@@ -125,12 +125,12 @@ wn.exitonclick()
             </blocks>
         </exercise>
         <p>
-            <strong>Mixed up program</strong>
+            <alert>Mixed up program</alert>
         </p>
         <exercise xml:id="rs3_11" indent="show" language="python">
             <statement>
                 <p>The following program uses the stamp method to create a line of turtle shapes as shown to the left:</p>
-                <image source="images/PythonTurtle/Figures/Turtle3Stamp.png" width="150%"/>
+                <image source="PythonTurtle/Figures/Turtle3Stamp.png" width="100%"/>
                 <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to &#8220;turtle&#8221;, and pick up the pen.  Then the turtle should repeat the following three times: go forward 50 pixels and leave a copy of the turtle at the current position.  After the loop, set the window to close when the user clicks in it.</p>
                 <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
             </statement>

@@ -1,28 +1,50 @@
 <section xml:id="append-versus-concatenate">
-        <title>Append versus Concatenate</title>
-        <p>The <c>append</c> method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.</p>
-        <p>Consider the following example.  The original list has 3 integers.  We want to add the word &#8220;cat&#8221; to the end of the list.</p>
-<exercise runestone="appcon1"/>        <p>Here we have used <c>append</c> which simply modifies the list.  In order to use concatenation, we need to write an assignment statement that uses the accumulator pattern:</p>
-        <pre>origlist = origlist + ["cat"]</pre>
-        <p>Note that the word &#8220;cat&#8221; needs to be placed in a list since the concatenation operator needs two lists to do its work.</p>
-<exercise runestone="appcon2"/>        <p>It is also important to realize that with append, the original list is simply modified.
+    <title>Append versus Concatenate</title>
+    <p>
+        The
+        <c>append</c>
+        method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.
+    </p>
+    <p>Consider the following example.  The original list has 3 integers.  We want to add the word &#8220;cat&#8221; to the end of the list.</p>
+    <exercise runestone="appcon1" />
+    <p>
+        Here we have used
+        <c>append</c>
+        which simply modifies the list.  In order to use concatenation, we need to write an assignment statement that uses the accumulator pattern:
+    </p>
+    <pre>origlist = origlist + ["cat"]</pre>
+    <p>Note that the word &#8220;cat&#8221; needs to be placed in a list since the concatenation operator needs two lists to do its work.</p>
+    <exercise runestone="appcon2" />
+    <p>
+        It is also important to realize that with append, the original list is simply modified.
             On the other hand, with concatenation, an entirely new list is created.  This can be seen in the following codelens example where
-            <c>newlist</c> refers to a list which is a copy of the original list, <c>origlist</c>, with the new item &#8220;cat&#8221; added to the end.  <c>origlist</c> still contains the three values it did before the concatenation.  This is why the assignment operation is necessary as part of the
-            accumulator pattern.</p>
-<exercise runestone="appcon3"/>        <p><strong>Check you understanding</strong></p>
+        <c>newlist</c>
+        refers to a list which is a copy of the original list,
+        <c>origlist</c>
+        , with the new item &#8220;cat&#8221; added to the end.
+        <c>origlist</c>
+        still contains the three values it did before the concatenation.  This is why the assignment operation is necessary as part of the
+            accumulator pattern.
+    </p>
+    <exercise runestone="appcon3" />
+    <p>
+        <alert>Check you understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_15_1">
         <statement>
 
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+            <p>What is printed by the following statements?</p>
+            <program language="python">
+                <input>
 alist = [4, 2, 8, 6, 5]
 alist = alist + 999
 print(alist)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -33,7 +55,7 @@ print(alist)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Error, you cannot concatenate a list with an integer.</p>
                 </statement>
@@ -41,12 +63,9 @@ print(alist)
                     Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        
-        
-        
-        
-    </section>
 
+
+</section>

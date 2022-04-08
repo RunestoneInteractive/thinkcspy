@@ -60,7 +60,7 @@ for counter in range(howmany):
         </input>
     </program>
 </listing>
-                    <p>The <strong>Pythagorean Theorem</strong> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
+                    <p>The <alert>Pythagorean Theorem</alert> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
                 </TabNode>
                 <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonModules', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
@@ -94,7 +94,7 @@ print(hypotenuse)
         </input>
     </program>
 </listing>
-            <p>Search on the internet for a way to calculate an approximation for <strong>pi</strong>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
+            <p>Search on the internet for a way to calculate an approximation for <alert>pi</alert>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
         </QuestionNode>
     </section>
 

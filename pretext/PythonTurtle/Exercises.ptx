@@ -303,7 +303,7 @@ tess.forward(-100)
                         </program>
                     </listing>
                     <p>Write a program to draw a shape like this:</p>
-                    <image source="images/PythonTurtle/Figures/star.png"/>
+                    <image source="PythonTurtle/Figures/star.png"/>
                 </TabNode>
                 <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
@@ -339,7 +339,7 @@ for i in range(5):
                 </program>
             </listing>
             <p>Write a program to draw a face of a clock that looks something like this:</p>
-            <image source="images/PythonTurtle/Figures/tess_clock1.png"/>
+            <image source="PythonTurtle/Figures/tess_clock1.png"/>
         </QuestionNode>
         <QuestionNode xml:id="turtle-ex-11" line="293" names="turtle_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_11', 'qnumber': '', 'question_label': '4.11.25'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
             <TabbedStuffNode divid="q11" line="295" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">

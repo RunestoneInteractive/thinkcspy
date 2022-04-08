@@ -1,41 +1,70 @@
 <section xml:id="omitting-the-else-clause-unary-selection">
-        <title>Omitting the <title_reference>else</title_reference> Clause: Unary Selection</title>
+    <title>
+        Omitting the
+        <title_reference>else</title_reference>
+        Clause: Unary Selection
+    </title>
 
-    <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="560"/>
-            <sidebar>
-            <title>Flowchart of an <strong>if</strong> with no <strong>else</strong></title>
-            <image source="images/Selection/Figures/flowchart_if_only.png"/>
-        </sidebar>
-        <p>Another form of the <c>if</c> statement is one in which the <c>else</c> clause is omitted entirely.
-            This creates what is sometimes called <strong>unary selection</strong>.
-            In this case, when the condition evaluates to <c>True</c>, the statements are
-            executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
+    <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto" />
+    <sidebar>
+        <title>
+            Flowchart of an
+            <alert>if</alert>
+            with no
+            <alert>else</alert>
+        </title>
+        <image source="Selection/Figures/flowchart_if_only.png" />
+    </sidebar>
+    <p>
+        Another form of the
+        <c>if</c>
+        statement is one in which the
+        <c>else</c>
+        clause is omitted entirely.
+            This creates what is sometimes called
+        <alert>unary selection</alert>
+        .
+            In this case, when the condition evaluates to
+        <c>True</c>
+        , the statements are
+            executed.  Otherwise the flow of execution continues to the statement after the body of the
+        <c>if</c>
+        .
+    </p>
 
-<listing xml:id="ch05_unaryselection">
-    <caption/>
-    <program xml:id="ch05_unaryselection_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch05_unaryselection">
+        <caption />
+        <program xml:id="ch05_unaryselection_editor" interactive="activecode" language="python">
+            <input>
 x = 10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
         </input>
-    </program>
-</listing>
-        <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
-        <p><strong>Check your understanding</strong></p>
+        </program>
+    </listing>
+    <p>
+        What would be printed if the value of
+        <c>x</c>
+        is negative?  Try it.
+    </p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question6_5_1">
         <statement>
 
-        <p>What does the following code print?</p>
-        <program language="python"><input>
+            <p>What does the following code print?</p>
+            <program language="python">
+                <input>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
-</input></program>
-        <pre>a.
+</input>
+            </program>
+            <pre>a.
 This is always printed
 
 b.
@@ -46,7 +75,7 @@ c.
 The negative number -10 is not valid here</pre>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -57,7 +86,7 @@ The negative number -10 is not valid here</pre>
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Output b</p>
                 </statement>
@@ -83,15 +112,16 @@ The negative number -10 is not valid here</pre>
                     It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question6_5_2">
         <statement>
 
-        <p>Will the following code cause an error?</p>
-        <program language="python"><input>
+            <p>Will the following code cause an error?</p>
+            <program language="python">
+                <input>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
@@ -99,10 +129,11 @@ else:
     print(x, " is a positive number")
 else:
     print("This is always printed")
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -113,7 +144,7 @@ else:
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>Yes</p>
                 </statement>
@@ -121,8 +152,7 @@ else:
                     This will cause an error because the second else-block is not attached to a corresponding if-block.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

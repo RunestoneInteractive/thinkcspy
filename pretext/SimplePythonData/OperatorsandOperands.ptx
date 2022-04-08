@@ -1,9 +1,11 @@
 <section xml:id="operators-and-operands">
     <title>Operators and Operands</title>
     <p>
-        <strong>Operators</strong> are special tokens that represent computations like addition,
+        <alert>Operators</alert>
+        are special tokens that represent computations like addition,
             multiplication and division. The values the operator works on are called
-        <strong>operands</strong>.
+        <alert>operands</alert>
+        .
     </p>
     <p>The following are all legal Python expressions whose meaning is more or less
             clear:</p>
@@ -13,14 +15,26 @@ hour * 60 + minute
 minute / 60
 5 ** 2
 (5 + 9) * (15 - 7)</pre>
-    <p>The tokens <c>+</c>,        <c>-</c>, and <c>*</c>, and the use of parenthesis for grouping,
-            mean in Python what they mean in mathematics. The asterisk (<c>*</c>) is the
-            token for multiplication, and <c>**</c> is the token for exponentiation.
+    <p>
+        The tokens
+        <c>+</c>
+        ,
+        <c>-</c>
+        , and
+        <c>*</c>
+        , and the use of parenthesis for grouping,
+            mean in Python what they mean in mathematics. The asterisk (
+        <c>*</c>
+        ) is the
+            token for multiplication, and
+        <c>**</c>
+        is the token for exponentiation.
             Addition, subtraction, multiplication, and exponentiation all do what you
-            expect.</p>
+            expect.
+    </p>
 
     <listing xml:id="ch02_15">
-        <caption/>
+        <caption />
         <program xml:id="ch02_15_editor" interactive="activecode" language="python">
             <input>
 print(2 + 3)
@@ -33,14 +47,18 @@ print(3 ** 2)
     </listing>
 
 
-    <p xml:id="index-1">When a variable name appears in the place of an operand, it is replaced with
+    <p>
+        When a variable name appears in the place of an operand, it is replaced with
             the value that it refers to before the operation is performed.
             For example, what if we wanted to convert 645 minutes into hours.
-            In Python 3, division is denoted by the operator token <c>/</c> which always evaluates to a floating point
-            result.</p>
+            In Python 3, division is denoted by the operator token
+        <c>/</c>
+        which always evaluates to a floating point
+            result.
+    </p>
 
     <listing xml:id="ch02_16">
-        <caption/>
+        <caption />
         <program xml:id="ch02_16_editor" interactive="activecode" language="python">
             <input>
 minutes = 645
@@ -49,14 +67,23 @@ print(hours)
             </input>
         </program>
     </listing>
-    <p>What if, on the other hand, we had wanted to know how many <emphasis>whole</emphasis> hours there
+    <p>
+        What if, on the other hand, we had wanted to know how many
+        <em>whole</em>
+        hours there
             are and how many minutes remain.  To help answer this question, Python gives us a second flavor of
-            the division operator.  This version, called <strong>integer division</strong>, uses the token
-        <c>//</c>.  It always <emphasis>truncates</emphasis> its result down to the next smallest integer (to
-            the left on the number line).</p>
+            the division operator.  This version, called
+        <alert>integer division</alert>
+        , uses the token
+        <c>//</c>
+        .  It always
+        <em>truncates</em>
+        its result down to the next smallest integer (to
+            the left on the number line).
+    </p>
 
     <listing xml:id="ch02_17">
-        <caption/>
+        <caption />
         <program xml:id="ch02_17_editor" interactive="activecode" language="python">
             <input>
 print(7 / 4)
@@ -71,21 +98,40 @@ print(-6//4)
             </input>
         </program>
     </listing>
-    <p>Pay particular attention to the first two examples above.  Notice that the result of floating point division
-            is <c>1.75</c> but the result of the integer division is simply <c>1</c>.
+    <p>
+        Pay particular attention to the first two examples above.  Notice that the result of floating point division
+            is
+        <c>1.75</c>
+        but the result of the integer division is simply
+        <c>1</c>
+        .
             Take care that you choose the correct flavor of the division operator.  If
             you&#8217;re working with expressions where you need floating point values, use the
-            division operator <c>/</c>.  If you want an integer result, use <c>//</c>.
+            division operator
+        <c>/</c>
+        .  If you want an integer result, use
+        <c>//</c>
+        .
     </p>
 
 
-    <p xml:id="index-2">The <strong>modulus operator</strong>, sometimes also called the <strong>remainder operator</strong> or <strong>integer remainder operator</strong> works on integers (and integer expressions) and yields
+    <p>
+        The
+        <alert>modulus operator</alert>
+        , sometimes also called the
+        <alert>remainder operator</alert>
+        or
+        <alert>integer remainder operator</alert>
+        works on integers (and integer expressions) and yields
             the remainder when the first operand is divided by the second. In Python, the
-            modulus operator is a percent sign (<c>%</c>). The syntax is the same as for other
-            operators.</p>
+            modulus operator is a percent sign (
+        <c>%</c>
+        ). The syntax is the same as for other
+            operators.
+    </p>
 
     <listing xml:id="ch02_18">
-        <caption/>
+        <caption />
         <program xml:id="ch02_18_editor" interactive="activecode" language="python">
             <input>
 quotient = 7 // 3     # This is the integer division operator
@@ -96,19 +142,32 @@ print(remainder)
         </program>
     </listing>
     <p>In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.</p>
-    <p>The modulus operator turns out to be surprisingly useful. For example, you can
-            check whether one number is divisible by another&#8212;if <c>x % y</c> is zero, then
-        <c>x</c> is divisible by <c>y</c>.
+    <p>
+        The modulus operator turns out to be surprisingly useful. For example, you can
+            check whether one number is divisible by another&#8212;if
+        <c>x % y</c>
+        is zero, then
+        <c>x</c>
+        is divisible by
+        <c>y</c>
+        .
             Also, you can extract the right-most digit or digits from a number.  For
-            example, <c>x % 10</c> yields the right-most digit of <c>x</c> (in base 10).
-            Similarly <c>x % 100</c> yields the last two digits.</p>
+            example,
+        <c>x % 10</c>
+        yields the right-most digit of
+        <c>x</c>
+        (in base 10).
+            Similarly
+        <c>x % 100</c>
+        yields the last two digits.
+    </p>
     <p>Finally, returning to our time example, the remainder operator is extremely useful for doing conversions, say from seconds,
             to hours, minutes and seconds.
             If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
             compute the correct values.</p>
-    <exercise runestone="ch02_19_codelens"/>
+    <exercise runestone="ch02_19_codelens" />
     <p>
-        <strong>Check your understanding</strong>
+        <alert>Check your understanding</alert>
     </p>
 
     <exercise xml:id="test_question2_6_1">
@@ -124,7 +183,7 @@ print(18 / 4)
         </statement>
         <choices>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>4.5</p>
                 </statement>
@@ -194,7 +253,7 @@ print(18 // 4)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>4</p>
                 </statement>
@@ -255,7 +314,7 @@ print(18 % 4)
                 </feedback>
             </choice>
 
-            <choice data-correct="yes">
+            <choice correct="yes">
                 <statement>
                     <p>2</p>
                 </statement>
@@ -268,6 +327,4 @@ print(18 % 4)
     </exercise>
 
 
-
 </section>
-

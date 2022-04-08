@@ -21,7 +21,7 @@
                     <title>constructor</title>
                     
                         <p>Every class has a &#8220;factory&#8221;, called by the same name as the class, for
-                            making new instances.  If the class has an <emphasis>initializer method</emphasis>, this method
+                            making new instances.  If the class has an <em>initializer method</em>, this method
                             is used to get the attributes (i.e. the state) of the new object properly set up.</p>
                     
                 </gi>

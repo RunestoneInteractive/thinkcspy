@@ -1,6 +1,6 @@
 <section xml:id="summary-of-turtle-methods">
         <title>Summary of Turtle Methods</title>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -208,7 +208,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Once you are comfortable with the basics of turtle graphics you can read about even
             more options on the <url href="http://docs.python.org/dev/py3k/library/turtle.html" visual="http://docs.python.org/dev/py3k/library/turtle.html">Python Docs Website</url>.  Note that we
             will describe Python Docs in more detail in the next chapter.</p>

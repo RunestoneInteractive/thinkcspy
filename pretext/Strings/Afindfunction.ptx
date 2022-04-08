@@ -38,11 +38,11 @@ print(find("Compsci", "x"))
             in previous programs.  Here there are two parts to the condition.  We want to keep going if there
             are more characters to look through and we want to keep going if we have not found what we are
             looking for.  The variable <c>found</c> is a boolean variable that keeps track of whether we have found
-            the character we are searching for.  It is initialized to <emphasis>False</emphasis>.  If we find the character, we
-            reassign <c>found</c> to <emphasis>True</emphasis>.</p>
+            the character we are searching for.  It is initialized to <em>False</em>.  If we find the character, we
+            reassign <c>found</c> to <em>True</em>.</p>
         <p>The other part of the condition is the same as we used previously to traverse the characters of the
             string.  Since we have now combined these two parts with a logical <c>and</c>, it is necessary for them
-            both to be <emphasis>True</emphasis> to continue iterating.  If one part fails, the condition fails and the iteration stops.</p>
+            both to be <em>True</em> to continue iterating.  If one part fails, the condition fails and the iteration stops.</p>
         <p>When the iteration stops, we must ask a question to find out the individual condition that caused the termination,
             and then return the proper value.  This is a pattern for dealing with while loops with compound conditions.</p>
         <note>

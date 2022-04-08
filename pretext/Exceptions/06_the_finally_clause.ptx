@@ -43,8 +43,8 @@ show_poly()
         <p>In lines 20&#8211;22, <c>show_poly</c> is called three times. Each one creates a new
             window for its turtle, and draws a polygon with the number of sides input by
             the user. But what if the user enters a string that cannot be converted to
-            an <c>int</c>? What if they close the dialog? We&#8217;ll get an exception, <emphasis>but even though
-                we&#8217;ve had an exception, we still want to close the turtle&#8217;s window</emphasis>. Lines 17&#8211;18
+            an <c>int</c>? What if they close the dialog? We&#8217;ll get an exception, <em>but even though
+                we&#8217;ve had an exception, we still want to close the turtle&#8217;s window</em>. Lines 17&#8211;18
             does this for us. Whether we complete the statements in the <c>try</c> clause successfully
             or not, the <c>finally</c> block will always be executed.</p>
         <p>Notice that the exception is still unhandled &#8212; only an <c>except</c> clause can

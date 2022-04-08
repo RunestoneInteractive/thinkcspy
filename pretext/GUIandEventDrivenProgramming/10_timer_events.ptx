@@ -5,7 +5,7 @@
             functions. Nothing happens in a GUI program without an event. The application
             logic for some problems requires that specific events happen at some
             specific times. For this reason <c>tkinter</c> includes a feature to generate
-            events under software control. These are often refered to as <emphasis>timer events</emphasis>.</p>
+            events under software control. These are often refered to as <em>timer events</em>.</p>
         <p>Every widget has an <c>after</c> method that will generate an event at a
             specific time interval from the time it is called. The method takes at
             least 2 arguments: the amount of time (in milliseconds) to wait before

@@ -10,7 +10,7 @@
             reaches the end of the file. The <c>readlines</c> method returns the contents of
             the entire file as a list of strings, where each item in the list represents
             one line of the file. It is also possible to read the entire file into a
-            single string with <c>read</c>. <xref ref=""/> summarizes these methods
+            single string with <c>read</c>. <xref ref="filemethods2a"/> summarizes these methods
             and the following session shows them in action.</p>
         <p>Note that we need to reopen the file before each read so that we start from
             the beginning. Each file has a marker that denotes the current read position
@@ -45,7 +45,7 @@
 1880  -0.24
 &gt;&gt;&gt;</pre>
         
-        <tabular xml:id="filemethods2a">
+        <table xml:id="filemethods2a"><tabular>
             
                 
                 
@@ -53,13 +53,13 @@
                 
                     <row header="yes">
                         <cell>
-                            <strong>Method Name</strong>
+                            <alert>Method Name</alert>
                         </cell>
                         <cell>
-                            <strong>Use</strong>
+                            <alert>Use</alert>
                         </cell>
                         <cell>
-                            <strong>Explanation</strong>
+                            <alert>Explanation</alert>
                         </cell>
                     </row>
                 
@@ -125,7 +125,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Now let&#8217;s look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files but they do support the pattern we&#8217;ll show you here.</p>
 
 <listing xml:id="files_while">
@@ -145,7 +145,7 @@ infile.close()
 </listing>
         <p>There are several important things to notice in this code:</p>
         <p>On line 2 we have the statement <c>line = infile.readline()</c>.
-            We call this initial read the <strong>priming read</strong>.
+            We call this initial read the <alert>priming read</alert>.
             It is very important because the while condition needs to have a value for the <c>line</c> variable.</p>
         <p>The <c>readline</c> method will return the
             empty string if there is no more data in the file.

@@ -1,8 +1,8 @@
 <section xml:id="standard-exceptions">
         <title>Standard Exceptions</title>
-        <p>Most of the standard <emphasis>exceptions</emphasis> built into Python are listed below.
+        <p>Most of the standard <em>exceptions</em> built into Python are listed below.
             They are organized into related groups based on the types of issues they deal with.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -147,8 +147,8 @@
                     </row>
                 
             
-        </tabular>
-        <tabular>
+        </tabular></table>
+        <table><tabular>
             
                 
                 
@@ -201,8 +201,8 @@
                     </row>
                 
             
-        </tabular>
-        <tabular>
+        </tabular></table>
+        <table><tabular>
             
                 
                 
@@ -265,8 +265,8 @@
                     </row>
                 
             
-        </tabular>
-        <tabular>
+        </tabular></table>
+        <table><tabular>
             
                 
                 
@@ -354,7 +354,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>All exceptions are objects. The classes that define the objects are organized
             in a hierarchy, which is shown below. This is important because the parent
             class of a set of related exceptions will catch all exception messages for

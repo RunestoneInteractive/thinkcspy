@@ -3,16 +3,16 @@
         <p>This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.</p>
         <p>In 1968 Aristid Lindenmayer, a biologist, invented a formal system that
             provides a mathematical description of plant growth known as an
-            <strong>L-system</strong>.  L-systems were designed to model the growth of biological
+            <alert>L-system</alert>.  L-systems were designed to model the growth of biological
             systems.  You can think of L-systems as containing the instructions for how
             a single cell can grow into a complex organism.  L-systems can be used to
-            specify the <strong>rules</strong> for all kinds of interesting patterns.  In our case, we are going to use them to specify the rules for drawing pictures.</p>
+            specify the <alert>rules</alert> for all kinds of interesting patterns.  In our case, we are going to use them to specify the rules for drawing pictures.</p>
         <p>The rules of an L-system are really a set of instructions for transforming
             one string into a new string.  After a number of these string transformations
             are complete, the string contains a set of instructions.  Our plan is to let these instructions direct a turtle
             as it draws a picture.</p>
         <p>To begin, we will look at an example set of rules:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -43,7 +43,7 @@
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Each rule set contains an axiom which represents the starting point in the transformations that will follow.  The rules are of the form:</p>
         <pre>left hand side -&gt; right hand side</pre>
         <p>where the left hand side is a single symbol and the right hand side is a sequence of symbols.  You can think of both sides as being simple strings.
@@ -118,7 +118,7 @@ print(createLSystem(4, "A"))
             implement a different set of rules, you don&#8217;t need to re-write the entire
             program. All you need to do is re-write the applyRules function.</p>
         <p>Suppose you had the following rules:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -141,12 +141,12 @@ print(createLSystem(4, "A"))
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>What kind of a string would these rules create?  Modify the program above to
             implement the rule.</p>
         <p>Now let&#8217;s look at a real L-system that implements a famous drawing.  This
             L-system has just two rules:</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -169,9 +169,9 @@ print(createLSystem(4, "A"))
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>This L-system uses symbols that will have special meaning when we use them later with the turtle to draw a picture.</p>
-        <tabular>
+        <table><tabular>
             
                 
                 
@@ -210,7 +210,7 @@ print(createLSystem(4, "A"))
                     </row>
                 
             
-        </tabular>
+        </tabular></table>
         <p>Here is the <c>applyRules</c> function for this L-system.</p>
         <program language="python"><input>
 def applyRules(ch):

@@ -4,7 +4,7 @@
             and called from other functions we write.  This is one of the most important
             ways that computer scientists take a large problem and break it down into a
             group of smaller problems. This process of breaking a problem into smaller
-            subproblems is called <strong>functional decomposition</strong>.</p>
+            subproblems is called <alert>functional decomposition</alert>.</p>
         <p>Here&#8217;s a simple example of functional decomposition using two functions. The
             first function called <c>square</c> simply computes the square of a given number.
             The second function called <c>sum_of_squares</c> makes use of square to compute
@@ -21,7 +21,7 @@
             they are in fact, very different.</p>
         <p>Now we will look at another example that uses two functions.  This example illustrates an
             important computer science problem solving technique called
-            <strong>generalization</strong>.  Assume we want to write a
+            <alert>generalization</alert>.  Assume we want to write a
             function to draw a square.  The generalization step is to realize that a
             square is just a special kind of rectangle.</p>
         <p>To draw a rectangle we need to be able to call a function with different
@@ -44,7 +44,7 @@ def drawRectangle(t, w, h):
             The point is that the program doesn&#8217;t &#8220;understand&#8221; that you&#8217;re drawing a rectangle or that the
             parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful
             for humans.  They are not concepts that the program or the computer understands.</p>
-        <p><emphasis>Thinking like a computer scientist</emphasis> involves looking for patterns and
+        <p><em>Thinking like a computer scientist</em> involves looking for patterns and
             relationships.  In the code above, we&#8217;ve done that to some extent.  We did
             not just draw four sides. Instead, we spotted that we could draw the
             rectangle as two halves and used a loop to repeat that pattern twice.</p>
@@ -118,7 +118,7 @@ wn.exitonclick()
                 <p>Creating a new function gives you an opportunity to name a group of
                     statements. Functions can simplify a program by hiding a complex computation
                     behind a single command. The function (including its name) can capture your
-                    mental chunking, or <emphasis>abstraction</emphasis>, of the problem.</p>
+                    mental chunking, or <em>abstraction</em>, of the problem.</p>
             </li>
             <li>
                 <p>Creating a new function can make a program smaller by eliminating repetitive

@@ -21,7 +21,7 @@
                 <gi>
                     <title>for loop traversal (<c>for</c>)</title>
                     
-                        <p><emphasis>Traversing</emphasis> a string means accessing each character in the string, one
+                        <p><em>Traversing</em> a string means accessing each character in the string, one
                             at a time.  For example, the following for loop:</p>
                         <program language="python"><input>
 for ix in 'Example':
@@ -33,7 +33,7 @@ for ix in 'Example':
                 <gi>
                     <title>slicing (<c>[:]</c>)</title>
                     
-                        <p>A <emphasis>slice</emphasis> is a substring of a string. Example: <c>'bananas and
+                        <p>A <em>slice</em> is a substring of a string. Example: <c>'bananas and
 cream'[3:6]</c> evaluates to <c>ana</c> (so does <c>'bananas and
 cream'[1:4]</c>).</p>
                     
