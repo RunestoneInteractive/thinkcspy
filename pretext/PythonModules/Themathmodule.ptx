@@ -1,17 +1,34 @@
 <section xml:id="the-math-module">
-        <title>The <title_reference>math</title_reference> module</title>
-        <p>The <c>math</c> module contains the kinds of mathematical functions you would typically find on your
+    <title>
+        The
+        <title_reference>math</title_reference>
+        module
+    </title>
+    <p>
+        The
+        <c>math</c>
+        module contains the kinds of mathematical functions you would typically find on your
             calculator and some mathematical constants
-            like <title_reference>pi</title_reference> and <title_reference>e</title_reference>.
-            As we noted above, when we <c>import math</c>, we create a reference to a module object that contains these elements.</p>
-        <image source="PythonModules/Figures/mathmod.png"/>
-        <p>Here are some items from the math module in action.  If you want more information, you can check out the
-            <url href="http://docs.python.org/py3k/library/math.html#module-math" visual="http://docs.python.org/py3k/library/math.html#module-math">Math Module</url> Python Documentation.</p>
+            like
+        <title_reference>pi</title_reference>
+        and
+        <title_reference>e</title_reference>
+        .
+            As we noted above, when we
+        <c>import math</c>
+        , we create a reference to a module object that contains these elements.
+    </p>
+    <image source="PythonModules/Figures/mathmod.png" width="50%" />
+    <p>
+        Here are some items from the math module in action.  If you want more information, you can check out the
+        <url href="http://docs.python.org/py3k/library/math.html#module-math" visual="http://docs.python.org/py3k/library/math.html#module-math">Math Module</url>
+        Python Documentation.
+    </p>
 
-<listing xml:id="chmodule_02">
-    <caption/>
-    <program xml:id="chmodule_02_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chmodule_02">
+        <caption />
+        <program xml:id="chmodule_02_editor" interactive="activecode" language="python">
+            <input>
 import math
 
 print(math.pi)
@@ -21,32 +38,57 @@ print(math.sqrt(2.0))
 
 print(math.sin(math.radians(90)))   # sin of 90 degrees
         </input>
-    </program>
-</listing>
-        <!--Like almost all other programming languages, angles are expressed in *radians*-->
-        <!--rather than degrees.  There are two functions ``radians`` and ``degrees`` to-->
-        <!--convert between the two popular ways of measuring angles.-->
-        <p>Notice another difference between this module and our use of <c>turtle</c>.
-            In  <c>turtle</c> we create objects (either <c>Turtle</c> or <c>Screen</c>) and call methods on those objects.  Remember that
-            a turtle is a data object (recall <c>alex</c> and <c>tess</c>).  We need to create one in order to use it.  When we say
-            <c>alex = turtle.Turtle()</c>, we are calling the constructor for the Turtle class which returns a single turtle object.</p>
-        <p>Mathematical functions do not need to be constructed.  They simply
+        </program>
+    </listing>
+    <!--Like almost all other programming languages, angles are expressed in *radians*-->
+    <!--rather than degrees.  There are two functions ``radians`` and ``degrees`` to-->
+    <!--convert between the two popular ways of measuring angles.-->
+    <p>
+        Notice another difference between this module and our use of
+        <c>turtle</c>
+        .
+            In
+        <c>turtle</c>
+        we create objects (either
+        <c>Turtle</c>
+        or
+        <c>Screen</c>
+        ) and call methods on those objects.  Remember that
+            a turtle is a data object (recall
+        <c>alex</c>
+        and
+        <c>tess</c>
+        ).  We need to create one in order to use it.  When we say
+        <c>alex = turtle.Turtle()</c>
+        , we are calling the constructor for the Turtle class which returns a single turtle object.
+    </p>
+    <p>
+        Mathematical functions do not need to be constructed.  They simply
             perform a task.
-            They are all housed together in a module called <title_reference>math</title_reference>.  Once we have imported the math module, anything defined there
-            can be used in our program.  Notice that we always use the name of the module followed by a <title_reference>dot</title_reference> followed by the
-            specific item from the module (<c>math.sqrt</c>).  You can think of this as lastname.firstname where the lastname is the module
-            family and the firstname is the individual entry in the module.</p>
-        <p>If you have not done so already, take a look at the documentation
+            They are all housed together in a module called
+        <title_reference>math</title_reference>
+        .  Once we have imported the math module, anything defined there
+            can be used in our program.  Notice that we always use the name of the module followed by a
+        <title_reference>dot</title_reference>
+        followed by the
+            specific item from the module (
+        <c>math.sqrt</c>
+        ).  You can think of this as lastname.firstname where the lastname is the module
+            family and the firstname is the individual entry in the module.
+    </p>
+    <p>If you have not done so already, take a look at the documentation
             for the math module.</p>
-        <p><alert>Check your understanding</alert></p>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="question4_2_1">
         <statement>
 
-        <p>Which statement allows you to use the math module in your program?</p>
+            <p>Which statement allows you to use the math module in your program?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -83,8 +125,7 @@ print(math.sin(math.radians(90)))   # sin of 90 degrees
                     You cannot use a Python module without a statement at the top of your program that explicitly tells Python you want to use the module.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

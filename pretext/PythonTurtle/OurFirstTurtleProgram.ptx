@@ -456,7 +456,7 @@ alex.forward(75)
         <statement>
 
             <p>Which of the following code would produce the following image?</p>
-            <image source="_static/turtleTest1.png" alt="long line to north with shorter line to west on top" />
+            <image source="_static/turtleTest1.png" alt="long line to north with shorter line to west on top" width="50%" />
 
         </statement>
         <choices>

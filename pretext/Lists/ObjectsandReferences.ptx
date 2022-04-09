@@ -1,43 +1,81 @@
 <section xml:id="objects-and-references">
-        <title>Objects and References</title>
-        <p>If we execute these assignment statements,</p>
-        <program language="python"><input>
+    <title>Objects and References</title>
+    <p>If we execute these assignment statements,</p>
+    <program language="python">
+        <input>
 a = "banana"
 b = "banana"
-</input></program>
-        <p>we know that <c>a</c> and <c>b</c> will refer to a string with the letters
-            <c>"banana"</c>. But we don&#8217;t know yet whether they point to the <em>same</em> string.</p>
-        <p>There are two possible ways the Python interpreter could arrange its internal states:</p>
-        <image source="Lists/Figures/refdiag1.png" alt="List illustration"/>
-        <p>or</p>
-        <image source="Lists/Figures/refdiag2.png" alt="List illustration"/>
-        <p>In one case, <c>a</c> and <c>b</c> refer to two different string objects that have the same
+</input>
+    </program>
+    <p>
+        we know that
+        <c>a</c>
+        and
+        <c>b</c>
+        will refer to a string with the letters
+        <c>"banana"</c>
+        . But we don&#8217;t know yet whether they point to the
+        <em>same</em>
+        string.
+    </p>
+    <p>There are two possible ways the Python interpreter could arrange its internal states:</p>
+    <image source="Lists/Figures/refdiag1.png" alt="List illustration" width="50%" />
+    <p>or</p>
+    <image source="Lists/Figures/refdiag2.png" alt="List illustration" width="50%" />
+    <p>
+        In one case,
+        <c>a</c>
+        and
+        <c>b</c>
+        refer to two different string objects that have the same
             value. In the second case, they refer to the same object. Remember that an object is something a variable can
-            refer to.</p>
-        <p>We already know that objects can be identified using their unique identifier.  We can also test whether two names refer to the same object using the <em>is</em>
-            operator.  The <em>is</em> operator will return true if the two references are to the same object.  In other words, the references are the same.  Try our example from above.</p>
+            refer to.
+    </p>
+    <p>
+        We already know that objects can be identified using their unique identifier.  We can also test whether two names refer to the same object using the
+        <em>is</em>
+        operator.  The
+        <em>is</em>
+        operator will return true if the two references are to the same object.  In other words, the references are the same.  Try our example from above.
+    </p>
 
-<listing xml:id="chp09_is1">
-    <caption/>
-    <program xml:id="chp09_is1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_is1">
+        <caption />
+        <program xml:id="chp09_is1_editor" interactive="activecode" language="python">
+            <input>
 a = "banana"
 b = "banana"
 
 print(a is b)
         </input>
-    </program>
-</listing>
-        <p>The answer is <c>True</c>.  This tells us that both <c>a</c> and <c>b</c> refer to the same object, and that it
+        </program>
+    </listing>
+    <p>
+        The answer is
+        <c>True</c>
+        .  This tells us that both
+        <c>a</c>
+        and
+        <c>b</c>
+        refer to the same object, and that it
             is the second of the two reference diagrams that describes the relationship.
-            Since strings are <em>immutable</em>, Python can optimize resources by making two names
-            that refer to the same string literal value refer to the same object.</p>
-        <p>This is not the case with lists.  Consider the following example.  Here, <c>a</c> and <c>b</c> refer to two different lists, each of which happens to have the same element values.</p>
+            Since strings are
+        <em>immutable</em>
+        , Python can optimize resources by making two names
+            that refer to the same string literal value refer to the same object.
+    </p>
+    <p>
+        This is not the case with lists.  Consider the following example.  Here,
+        <c>a</c>
+        and
+        <c>b</c>
+        refer to two different lists, each of which happens to have the same element values.
+    </p>
 
-<listing xml:id="chp09_is2">
-    <caption/>
-    <program xml:id="chp09_is2_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp09_is2">
+        <caption />
+        <program xml:id="chp09_is2_editor" interactive="activecode" language="python">
+            <input>
 a = [81, 82, 83]
 b = [81, 82, 83]
 
@@ -45,12 +83,33 @@ print(a is b)
 
 print(a == b)
         </input>
-    </program>
-</listing>
-        <p>The reference diagram for this example looks like this:</p>
-        <image source="Lists/Figures/refdiag3.png" alt="Reference diagram for equal different lists"/>
-        <p><c>a</c> and <c>b</c> have the same value but do not refer to the same object.</p>
-        <p>There is one other important thing to notice about this reference diagram.  The variable <c>a</c> is a reference to a <alert>collection of references</alert>.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though <c>a</c> and <c>b</c> are two different lists (two different collections of references), the integer object <c>81</c> is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object for some commonly used small integers.</p>
-        <p>Here is the example in codelens.  Pay particular attention to the <title_reference>id</title_reference> values.</p>
-<exercise runestone="chp09_istrace"/>    </section>
-
+        </program>
+    </listing>
+    <p>The reference diagram for this example looks like this:</p>
+    <image source="Lists/Figures/refdiag3.png" alt="Reference diagram for equal different lists" width="50%" />
+    <p>
+        <c>a</c>
+        and
+        <c>b</c>
+        have the same value but do not refer to the same object.
+    </p>
+    <p>
+        There is one other important thing to notice about this reference diagram.  The variable
+        <c>a</c>
+        is a reference to a
+        <alert>collection of references</alert>
+        .  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though
+        <c>a</c>
+        and
+        <c>b</c>
+        are two different lists (two different collections of references), the integer object
+        <c>81</c>
+        is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object for some commonly used small integers.
+    </p>
+    <p>
+        Here is the example in codelens.  Pay particular attention to the
+        <title_reference>id</title_reference>
+        values.
+    </p>
+    <exercise runestone="chp09_istrace" />
+</section>

@@ -1,73 +1,154 @@
 <section xml:id="finding-a-file-on-your-disk">
-        <title>Finding a File on your Disk</title>
-        <p>Opening a file requires that you, as a programmer, and Python agree about the
+    <title>Finding a File on your Disk</title>
+    <p>
+        Opening a file requires that you, as a programmer, and Python agree about the
             location of the file on your disk.  The way that files are located on disk is
-            by their <alert>path</alert>  You can think of the filename as the short name for a file,
+            by their
+        <alert>path</alert>
+        You can think of the filename as the short name for a file,
             and the path as the full name.  For example on a Mac if you save the file
-            <c>hello.txt</c> in your home directory the path to that file is
-            <c>/Users/yourname/hello.txt</c>  On a Windows machine the path looks a bit different
+        <c>hello.txt</c>
+        in your home directory the path to that file is
+        <c>/Users/yourname/hello.txt</c>
+        On a Windows machine the path looks a bit different
             but the same principles are in use.  For example on windows the path might be
-            <c>C:\Users\yourname\My Documents\hello.txt</c></p>
-        <note>
-            <p><alert>The History of Path Separators</alert></p>
-            <p>Why is the path separator a <c>/</c> on Unix/Linux/MacOS systems and <c>\</c> on
+        <c>C:\Users\yourname\My Documents\hello.txt</c>
+    </p>
+    <note>
+        <p>
+            <alert>The History of Path Separators</alert>
+        </p>
+        <p>
+            Why is the path separator a
+            <c>/</c>
+            on Unix/Linux/MacOS systems and
+            <c>\</c>
+            on
                 Microsoft Windows systems? The concept of a hierarchy of folders
-                was first developed in Unix. On a Unix command line a <c classes="code">/</c> is used to
+                was first developed in Unix. On a Unix command line a
+            <c classes="code">/</c>
+            is used to
                 separate folder names in a file path and dashes are used to specify command line
-                options, e.g.,  <c>path/to/file/myfile -long -reverse</c>. On a
-                Windows system the <c>/</c> character is used for command line options, so the designers
-                of Windows decided to use the <c>\</c> for separating folder names in a file
-                path, e.g., <c>path\to\file\myfile /long /reverse</c>. Using a
-                <c>\</c> to separate folder names in a path is problematic because the <c>\</c>
-                character is also used as an escape character for special characters, such
-                as <c>\n</c> for a new line character. Bottom line, we will always use the <c>/</c>
-                character to separate folder names in a path, and even on Windows
-                system the file path will work just fine.</p>
-        </note>
-        
-        
-        <p xml:id="index-0">You can access files in sub-folders, also called directories, under your home directory
+                options, e.g.,
+            <c>path/to/file/myfile -long -reverse</c>
+            . On a
+                Windows system the
+            <c>/</c>
+            character is used for command line options, so the designers
+                of Windows decided to use the
+            <c>\</c>
+            for separating folder names in a file
+                path, e.g.,
+            <c>path\to\file\myfile /long /reverse</c>
+            . Using a
+            <c>\</c>
+            to separate folder names in a path is problematic because the
+            <c>\</c>
+            character is also used as an escape character for special characters, such
+                as
+            <c>\n</c>
+            for a new line character. Bottom line, we will always use the
+            <c>/</c>
+            character to separate folder names in a path, and even on Windows
+                system the file path will work just fine.
+        </p>
+    </note>
+
+
+    <p xml:id="index-0">
+        You can access files in sub-folders, also called directories, under your home directory
             by adding a slash and the name of the folder.  For example, if you had a file
-            called <c>hello.py</c> in a folder called <c>CS150</c> that is inside a folder called
-            <c>PyCharmProjects</c> under your home directory, then the full name for the file
-            <c>hello.py</c> is <c>/Users/yourname/PyCharmProjects/CS150/hello.py</c>.
-            This is called an <em>absolute file path</em>. An <em>absolute file path</em> typically
+            called
+        <c>hello.py</c>
+        in a folder called
+        <c>CS150</c>
+        that is inside a folder called
+        <c>PyCharmProjects</c>
+        under your home directory, then the full name for the file
+        <c>hello.py</c>
+        is
+        <c>/Users/yourname/PyCharmProjects/CS150/hello.py</c>
+        .
+            This is called an
+        <em>absolute file path</em>
+        . An
+        <em>absolute file path</em>
+        typically
             only works on a specific computer. Think about it for a second. What other
-            computer in the world is going to have an <em>absolute file path</em> that starts with
-            <c>/Users/yourname</c>?</p>
-        <p>If a file is not in the same folder as your python program, you need to tell
-            the computer how to reach it. A <em>relative file path</em> starts from the folder
+            computer in the world is going to have an
+        <em>absolute file path</em>
+        that starts with
+        <c>/Users/yourname</c>
+        ?
+    </p>
+    <p>
+        If a file is not in the same folder as your python program, you need to tell
+            the computer how to reach it. A
+        <em>relative file path</em>
+        starts from the folder
             that contains your python program and follows a computer&#8217;s file hierarchy. A
             file hierarchy contains folders which contains files and other sub-folders.
             Specifying a sub-folder is easy &#8211; you simply specify the sub-folder&#8217;s name.
-            To specify a <em>parent</em> folder you use the special <c>..</c> notation because every file
-            and folder has one unique parent. You can use the <c>..</c>
-            notation multiple times in a file path to move multiple levels up a file
+            To specify a
+        <em>parent</em>
+        folder you use the special
+        <c>..</c>
+        notation because every file
+            and folder has one unique parent. You can use the
+        <c>..</c>
+        notation multiple times in a file path to move multiple levels up a file
             hierarchy. Here is an example file hierarchy that contains multiple folders,
-            files, and sub-folders. Folders in the diagram are displayed in <alert>bold</alert> type.</p>
-        <image source="Files/Figures/ExampleFileHierarchy.png"/>
-        <p>Using the example file hierarchy above, the program, <c>myPythonProgram.py</c>
-            could access each of the data files using the following <em>relative file paths</em>:</p>
-        <p><ul>
+            files, and sub-folders. Folders in the diagram are displayed in
+        <alert>bold</alert>
+        type.
+    </p>
+    <image source="Files/Figures/ExampleFileHierarchy.png" width="50%" />
+    <p>
+        Using the example file hierarchy above, the program,
+        <c>myPythonProgram.py</c>
+        could access each of the data files using the following
+        <em>relative file paths</em>
+        :
+    </p>
+    <p>
+        <ul>
             <li>
-                <p><c>data1.txt</c></p>
+                <p>
+                    <c>data1.txt</c>
+                </p>
             </li>
             <li>
-                <p><c>../myData/data2.txt</c></p>
+                <p>
+                    <c>../myData/data2.txt</c>
+                </p>
             </li>
             <li>
-                <p><c>../myData/data3.txt</c></p>
+                <p>
+                    <c>../myData/data3.txt</c>
+                </p>
             </li>
             <li>
-                <p><c>../../otherFiles/extraData/data4.txt</c></p>
+                <p>
+                    <c>../../otherFiles/extraData/data4.txt</c>
+                </p>
             </li>
-        </ul></p>
-        <p>Here&#8217;s the important rule to remember: If your file and your Python program are
+        </ul>
+    </p>
+    <p>
+        Here&#8217;s the important rule to remember: If your file and your Python program are
             in the same directory you can simply use the filename like this:
-            <c>open('myfile.txt', 'r')</c>. If your file and your Python program are in
+        <c>open('myfile.txt', 'r')</c>
+        . If your file and your Python program are in
             different directories then you must refer to one or more directories,
-            either in a <em>relative file path</em> to the file
-            like this: <c>open('../myData/data3.txt', 'r')</c>, or in an <em>absolute file path</em> like
-            <c>open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')</c>.</p>
-    </section>
-
+            either in a
+        <em>relative file path</em>
+        to the file
+            like this:
+        <c>open('../myData/data3.txt', 'r')</c>
+        , or in an
+        <em>absolute file path</em>
+        like
+        <c>open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')</c>
+        .
+    </p>
+</section>

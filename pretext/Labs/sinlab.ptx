@@ -1,61 +1,83 @@
 <section xml:id="plotting-a-sine-wave">
-        <title>Plotting a sine Wave</title>
-        <p>Have you ever used a graphing calculator?  You can enter an equation, push a few buttons, and the calculator will draw a line.  In this exercise, we will use our turtle to plot a simple math function, the sine wave.</p>
-        <subsection xml:id="what-is-the-sine-function">
-            <title>What is the sine function?</title>
-            <p>The sine function, sometimes called the sine wave, is a smooth, repetitive oscillation that occurs often in many fields including mathematics, physics, and engineering.  A single repetition is shown below.  Note that the x axis is given in degrees.</p>
-            <image source="Labs/Figures/sinpic.png"/>
-            <p>For this lab, we will use the math library to generate the values that
+    <title>Plotting a sine Wave</title>
+    <p>Have you ever used a graphing calculator?  You can enter an equation, push a few buttons, and the calculator will draw a line.  In this exercise, we will use our turtle to plot a simple math function, the sine wave.</p>
+    <subsection xml:id="what-is-the-sine-function">
+        <title>What is the sine function?</title>
+        <p>The sine function, sometimes called the sine wave, is a smooth, repetitive oscillation that occurs often in many fields including mathematics, physics, and engineering.  A single repetition is shown below.  Note that the x axis is given in degrees.</p>
+        <image source="Labs/Figures/sinpic.png" width="50%" />
+        <p>
+            For this lab, we will use the math library to generate the values that
                 we need.
                 To help you understand the sine function, consider the following Python program.
-                As you can see, the <c>sin</c> function from the math library takes a single parameter.  This parameter must be a value
-                in &#8220;radians&#8221; (you may remember this from trigonometry class).  Since most of us are used to stating the size of an angle in &#8220;degrees&#8221;, the math module provides a function, <c>radians</c> that will convert from degrees to radians for us.</p>
+                As you can see, the
+            <c>sin</c>
+            function from the math library takes a single parameter.  This parameter must be a value
+                in &#8220;radians&#8221; (you may remember this from trigonometry class).  Since most of us are used to stating the size of an angle in &#8220;degrees&#8221;, the math module provides a function,
+            <c>radians</c>
+            that will convert from degrees to radians for us.
+        </p>
 
-<listing xml:id="sin1">
-    <caption/>
-    <program xml:id="sin1_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="sin1">
+            <caption />
+            <program xml:id="sin1_editor" interactive="activecode" language="python">
+                <input>
 import math
 
 y = math.sin(math.radians(90))
 print(y)
         </input>
-    </program>
-</listing>
-            <p>The program above shows us that the sine of 90 degrees is 1.  Note that the figure above agrees with that.  Try a few other values, like 0 degrees, 180 degrees, 38 degrees, and so on.  You should be able to match the results up with the picture shown above.</p>
-            <p>It might be even more interesting to iterate through a sequence of angles and see the value of the sine function
+            </program>
+        </listing>
+        <p>The program above shows us that the sine of 90 degrees is 1.  Note that the figure above agrees with that.  Try a few other values, like 0 degrees, 180 degrees, 38 degrees, and so on.  You should be able to match the results up with the picture shown above.</p>
+        <p>It might be even more interesting to iterate through a sequence of angles and see the value of the sine function
                 change.  Try it for angles between 0 and 180 degrees.  What do you notice about the results?</p>
 
-<listing xml:id="sin2">
-    <caption/>
-    <program xml:id="sin2_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="sin2">
+            <caption />
+            <program xml:id="sin2_editor" interactive="activecode" language="python">
+                <input>
 import math
 
 for angle in range(????):
     y = math.sin(math.radians(angle))
     print(y)
         </input>
-    </program>
-</listing>
-            <p>Now try it for some other boundary values, like 270 or 360.</p>
-        </subsection>
-        <subsection xml:id="making-the-plot">
-            <title>Making the Plot</title>
-            <p>In order to plot a smooth line, we will use the turtle&#8217;s <c>goto</c> method.  <c>goto</c> takes two parameters, <c>x</c> and <c>y</c>,
+            </program>
+        </listing>
+        <p>Now try it for some other boundary values, like 270 or 360.</p>
+    </subsection>
+    <subsection xml:id="making-the-plot">
+        <title>Making the Plot</title>
+        <p>
+            In order to plot a smooth line, we will use the turtle&#8217;s
+            <c>goto</c>
+            method.
+            <c>goto</c>
+            takes two parameters,
+            <c>x</c>
+            and
+            <c>y</c>
+            ,
                 and moves the turtle to that location.  If the tail is down, a line will be drawn from the previous location to the new
-                location.</p>
-            <program language="python"><input>
+                location.
+        </p>
+        <program language="python">
+            <input>
 fred.goto(50,60)
-</input></program>
-            <p>Recall that the default turtle screen starts with the turtle in the middle at position (0,0).  You can think of the screen as a piece of graph paper.  The x axis runs horizontally and the y axis runs vertically.  The point where they meet in the middle is (0,0).  Positions to the left of the center have an x value that is negative.  Positions that are below the center have a y value that is negative.</p>
-            <image source="Labs/Figures/graphpaper.jpg"/>
-            <p>Let&#8217;s try the <c>goto</c> method.  Experiment with the method to make sure you understand the coordinate system of the screen.  Try both positive and negative numbers.</p>
+</input>
+        </program>
+        <p>Recall that the default turtle screen starts with the turtle in the middle at position (0,0).  You can think of the screen as a piece of graph paper.  The x axis runs horizontally and the y axis runs vertically.  The point where they meet in the middle is (0,0).  Positions to the left of the center have an x value that is negative.  Positions that are below the center have a y value that is negative.</p>
+        <image source="Labs/Figures/graphpaper.jpg" width="50%" />
+        <p>
+            Let&#8217;s try the
+            <c>goto</c>
+            method.  Experiment with the method to make sure you understand the coordinate system of the screen.  Try both positive and negative numbers.
+        </p>
 
-<listing xml:id="sinlab1">
-    <caption/>
-    <program xml:id="sinlab1_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="sinlab1">
+            <caption />
+            <program xml:id="sinlab1_editor" interactive="activecode" language="python">
+                <input>
 import math
 import turtle
 
@@ -68,33 +90,37 @@ fred.goto(50,60)
 
 wn.exitonclick()
         </input>
-    </program>
-</listing>
-            <p>Now we can put the two previous programs together to complete our plot.  Here is our sequence of steps.</p>
-            <p><ol label="1">
+            </program>
+        </listing>
+        <p>Now we can put the two previous programs together to complete our plot.  Here is our sequence of steps.</p>
+        <p>
+            <ol label="1">
                 <li>
                     <p>Create and set up the turtle and the screen.</p>
                 </li>
                 <li>
                     <p>Iterate the angle from 0 to 360.</p>
                     <block_quote>
-                        <p><ul>
-                            <li>
-                                <p>Generate the sine value for each angle.</p>
-                            </li>
-                            <li>
-                                <p>Move the turtle to that position (leave a line behind).</p>
-                            </li>
-                        </ul></p>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>Generate the sine value for each angle.</p>
+                                </li>
+                                <li>
+                                    <p>Move the turtle to that position (leave a line behind).</p>
+                                </li>
+                            </ul>
+                        </p>
                     </block_quote>
                 </li>
-            </ol></p>
-            <p>Here is a partial program for you to complete.</p>
+            </ol>
+        </p>
+        <p>Here is a partial program for you to complete.</p>
 
-<listing xml:id="sinlab2">
-    <caption/>
-    <program xml:id="sinlab2_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="sinlab2">
+            <caption />
+            <program xml:id="sinlab2_editor" interactive="activecode" language="python">
+                <input>
 import math
 import turtle
 
@@ -107,19 +133,30 @@ fred = turtle.Turtle()
 
 wn.exitonclick()
         </input>
-    </program>
-</listing>
-        </subsection>
-        <subsection xml:id="making-the-plot-better">
-            <title>Making the Plot Better</title>
-            <p>You probably think that the program has errors since it does not draw the picture we expect.  Maybe you think it looks a bit like a line?  What do you think the problem is?  Here is a hint&#8230;go back and take a look at the values for the sine function as they were calculated and printed in the earlier example.</p>
-            <p>Now can you see the problem?  The value of <c>sin</c> always stays between -1 and 1.  This does not give our turtle much room to run.</p>
-            <p>In order to fix this problem, we need to redesign our &#8220;graph paper&#8221; so that the coordinates give us more room to plot the values of the sine function.  To do this, we will use a method of the <c>Screen</c> class called <c>setworldcoordinates</c>.
-                This method allows us to change the range of values on the x and y coordinate system for our turtle.  Take a look at the documentation for the turtle module to see how to use this method (<url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).  Once you have an understanding of the parameters required to use the method, choose an appropriate coordinate system and retry your solution.</p>
-            <admonition classes="admonition-now-try-this">
-                <title>Now try this&#8230;</title>
-                <p>Now that you can plot a sine function, how about trying a different function, such as cosine or log?</p>
-            </admonition>
-        </subsection>
-    </section>
-
+            </program>
+        </listing>
+    </subsection>
+    <subsection xml:id="making-the-plot-better">
+        <title>Making the Plot Better</title>
+        <p>You probably think that the program has errors since it does not draw the picture we expect.  Maybe you think it looks a bit like a line?  What do you think the problem is?  Here is a hint&#8230;go back and take a look at the values for the sine function as they were calculated and printed in the earlier example.</p>
+        <p>
+            Now can you see the problem?  The value of
+            <c>sin</c>
+            always stays between -1 and 1.  This does not give our turtle much room to run.
+        </p>
+        <p>
+            In order to fix this problem, we need to redesign our &#8220;graph paper&#8221; so that the coordinates give us more room to plot the values of the sine function.  To do this, we will use a method of the
+            <c>Screen</c>
+            class called
+            <c>setworldcoordinates</c>
+            .
+                This method allows us to change the range of values on the x and y coordinate system for our turtle.  Take a look at the documentation for the turtle module to see how to use this method (
+            <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>
+            ).  Once you have an understanding of the parameters required to use the method, choose an appropriate coordinate system and retry your solution.
+        </p>
+        <admonition classes="admonition-now-try-this">
+            <title>Now try this&#8230;</title>
+            <p>Now that you can plot a sine function, how about trying a different function, such as cosine or log?</p>
+        </admonition>
+    </subsection>
+</section>

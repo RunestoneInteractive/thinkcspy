@@ -1,32 +1,51 @@
 <section xml:id="chained-conditionals">
-        <title>Chained conditionals</title>
-        <p>Python provides an alternative way to write nested selection such as the one shown in the previous section.
-            This is sometimes referred to as a <alert>chained
-                conditional</alert>.</p>
-        <program language="python"><input>
+    <title>Chained conditionals</title>
+    <p>
+        Python provides an alternative way to write nested selection such as the one shown in the previous section.
+            This is sometimes referred to as a
+        <alert>chained
+                conditional</alert>
+        .
+    </p>
+    <program language="python">
+        <input>
 if x &lt; y:
     print("x is less than y")
 elif x &gt; y:
     print("x is greater than y")
 else:
     print("x and y must be equal")
-</input></program>
-        <p>The flow of control can be drawn in a different orientation but the resulting pattern is identical to the one shown above.</p>
-        <image source="Selection/Figures/flowchart_chained_conditional.png"/>
-        <p><c>elif</c> is an abbreviation of <c>else if</c>. Again, exactly one branch will be
-            executed. There is no limit of the number of <c>elif</c> statements but only a
-            single (and optional) final <c>else</c> statement is allowed and it must be the last
-            branch in the statement.</p>
-        <p>Each condition is checked in order. If the first is false, the next is checked,
+</input>
+    </program>
+    <p>The flow of control can be drawn in a different orientation but the resulting pattern is identical to the one shown above.</p>
+    <image source="Selection/Figures/flowchart_chained_conditional.png" width="50%" />
+    <p>
+        <c>elif</c>
+        is an abbreviation of
+        <c>else if</c>
+        . Again, exactly one branch will be
+            executed. There is no limit of the number of
+        <c>elif</c>
+        statements but only a
+            single (and optional) final
+        <c>else</c>
+        statement is allowed and it must be the last
+            branch in the statement.
+    </p>
+    <p>Each condition is checked in order. If the first is false, the next is checked,
             and so on. If one of them is true, the corresponding branch executes, and the
             statement ends. Even if more than one condition is true, only the first true
             branch executes.</p>
-        <p>Here is the same program using <c>elif</c>.</p>
+    <p>
+        Here is the same program using
+        <c>elif</c>
+        .
+    </p>
 
-<listing xml:id="sel4">
-    <caption/>
-    <program xml:id="sel4_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="sel4">
+        <caption />
+        <program xml:id="sel4_editor" interactive="activecode" language="python">
+            <input>
 x = 10
 y = 10
 
@@ -37,28 +56,28 @@ elif x &gt; y:
 else:
     print("x and y must be equal")
         </input>
-    </program>
-</listing>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+        </program>
+    </listing>
+    <note>
+        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-<listing xml:id="scratch_06_02">
-    <caption/>
-    <program xml:id="scratch_06_02_editor" interactive="activecode" language="python">
-        <input>
-
-
-        </input>
-    </program>
-</listing>
-        </note>
-        <p><alert>Check your understanding</alert></p>
+        <listing xml:id="scratch_06_02">
+            <caption />
+            <program xml:id="scratch_06_02_editor" interactive="activecode" language="python">
+                <input></input>
+            </program>
+        </listing>
+    </note>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question6_7_1">
         <statement>
 
-        <p>Which of I, II, and III below gives the same result as the following nested if?</p>
-        <program language="python"><input>
+            <p>Which of I, II, and III below gives the same result as the following nested if?</p>
+            <program language="python">
+                <input>
 # nested if-else statement
 x = -10
 if x &lt; 0:
@@ -68,8 +87,10 @@ else:
         print(x, " is a positive number")
     else:
         print(x, " is 0")
-</input></program>
-        <program language="python"><input>
+</input>
+            </program>
+            <program language="python">
+                <input>
 I.
 
 if x &lt; 0:
@@ -78,8 +99,10 @@ else x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input></program>
-        <program language="python"><input>
+</input>
+            </program>
+            <program language="python">
+                <input>
 II.
 
 if x &lt; 0:
@@ -88,8 +111,10 @@ elif x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input></program>
-        <program language="python"><input>
+</input>
+            </program>
+            <program language="python">
+                <input>
 III.
 
 if x &lt; 0:
@@ -98,10 +123,11 @@ if x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -147,25 +173,27 @@ else:
                     No, in I you can not have a Boolean expression after an else.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question6_7_2">
         <statement>
 
-        <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
-        <program language="python"><input>
+            <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
+            <program language="python">
+                <input>
 if x &lt; y and x &lt; z:
     print("a")
 elif y &lt; x and y &lt; z:
     print("b")
 else:
     print("c")
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -193,8 +221,7 @@ else:
                     Since the first two Boolean expressions are false the else will be executed.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

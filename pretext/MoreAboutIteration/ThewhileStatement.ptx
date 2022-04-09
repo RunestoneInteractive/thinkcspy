@@ -1,21 +1,53 @@
 <section xml:id="the-while-statement">
-        <title>The <c>while</c> Statement</title>
+    <title>
+        The
+        <c>while</c>
+        Statement
+    </title>
 
-    <video xml:id="whileloop" youtube="blTBEqybQmQ" width="560"/>
-            <p>There is another Python statement that can also be used to build an iteration.  It is called the <c>while</c> statement.
-            The <c>while</c> statement provides a much more general mechanism for iterating.  Similar to the <c>if</c> statement, it uses
-            a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to <c>True</c>.</p>
-        <p>The following figure shows the flow of control.</p>
-        <image source="MoreAboutIteration/Figures/while_flow.png"/>
-        <p>We can use the <c>while</c> loop to create any type of iteration we wish, including anything that we have previously done with a <c>for</c> loop.  For example, the program in the previous section could be rewritten using <c>while</c>.
-            Instead of relying on the <c>range</c> function to produce the numbers for our summation, we will need to produce them ourselves.  To to this, we will create a variable called <c>aNumber</c> and initialize it to 1, the first number in the summation.  Every iteration will add <c>aNumber</c> to the running total until all the values have been used.
-            In order to control the iteration, we must create a boolean expression that evaluates to <c>True</c> as long as we want to keep adding values to our running total.  In this case, as long as <c>aNumber</c> is less than or equal to the bound, we should keep going.</p>
-        <p>Here is a new version of the summation program that uses a while statement.</p>
+    <video xml:id="whileloop" youtube="blTBEqybQmQ" width="560" />
+    <p>
+        There is another Python statement that can also be used to build an iteration.  It is called the
+        <c>while</c>
+        statement.
+            The
+        <c>while</c>
+        statement provides a much more general mechanism for iterating.  Similar to the
+        <c>if</c>
+        statement, it uses
+            a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to
+        <c>True</c>
+        .
+    </p>
+    <p>The following figure shows the flow of control.</p>
+    <image source="MoreAboutIteration/Figures/while_flow.png" width="50%" />
+    <p>
+        We can use the
+        <c>while</c>
+        loop to create any type of iteration we wish, including anything that we have previously done with a
+        <c>for</c>
+        loop.  For example, the program in the previous section could be rewritten using
+        <c>while</c>
+        .
+            Instead of relying on the
+        <c>range</c>
+        function to produce the numbers for our summation, we will need to produce them ourselves.  To to this, we will create a variable called
+        <c>aNumber</c>
+        and initialize it to 1, the first number in the summation.  Every iteration will add
+        <c>aNumber</c>
+        to the running total until all the values have been used.
+            In order to control the iteration, we must create a boolean expression that evaluates to
+        <c>True</c>
+        as long as we want to keep adding values to our running total.  In this case, as long as
+        <c>aNumber</c>
+        is less than or equal to the bound, we should keep going.
+    </p>
+    <p>Here is a new version of the summation program that uses a while statement.</p>
 
-<listing xml:id="ch07_while1">
-    <caption/>
-    <program xml:id="ch07_while1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch07_while1">
+        <caption />
+        <program xml:id="ch07_while1_editor" interactive="activecode" language="python">
+            <input>
 def sumTo(aBound):
     """ Return the sum of 1+2+3 ... n """
 
@@ -30,85 +62,184 @@ print(sumTo(4))
 
 print(sumTo(1000))
         </input>
-    </program>
-</listing>
-        <p>You can almost read the <c>while</c> statement as if it were in natural language. It means,
-            while <c>aNumber</c> is less than or equal to <c>aBound</c>, continue executing the body of the loop. Within
-            the body, each time, update <c>theSum</c> using the accumulator pattern and increment <c>aNumber</c>. After the body of the loop, we go back up to the condition of the <c>while</c> and reevaluate it.  When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow of control continues to the <c>return</c> statement.</p>
-        <p>The same program in codelens will allow you to observe the flow of execution.</p>
-<exercise runestone="ch07_while2"/>        <p>More formally, here is the flow of execution for a <c>while</c> statement:</p>
-        <p><ol label="1">
+        </program>
+    </listing>
+    <p>
+        You can almost read the
+        <c>while</c>
+        statement as if it were in natural language. It means,
+            while
+        <c>aNumber</c>
+        is less than or equal to
+        <c>aBound</c>
+        , continue executing the body of the loop. Within
+            the body, each time, update
+        <c>theSum</c>
+        using the accumulator pattern and increment
+        <c>aNumber</c>
+        . After the body of the loop, we go back up to the condition of the
+        <c>while</c>
+        and reevaluate it.  When
+        <c>aNumber</c>
+        becomes greater than
+        <c>aBound</c>
+        , the condition fails and flow of control continues to the
+        <c>return</c>
+        statement.
+    </p>
+    <p>The same program in codelens will allow you to observe the flow of execution.</p>
+    <exercise runestone="ch07_while2" />
+    <p>
+        More formally, here is the flow of execution for a
+        <c>while</c>
+        statement:
+    </p>
+    <p>
+        <ol label="1">
             <li>
-                <p>Evaluate the condition, yielding <c>False</c> or <c>True</c>.</p>
+                <p>
+                    Evaluate the condition, yielding
+                    <c>False</c>
+                    or
+                    <c>True</c>
+                    .
+                </p>
             </li>
             <li>
-                <p>If the condition is <c>False</c>, exit the <c>while</c> statement and continue
-                    execution at the next statement.</p>
+                <p>
+                    If the condition is
+                    <c>False</c>
+                    , exit the
+                    <c>while</c>
+                    statement and continue
+                    execution at the next statement.
+                </p>
             </li>
             <li>
-                <p>If the condition is <c>True</c>, execute each of the statements in the body and
-                    then go back to step 1.</p>
+                <p>
+                    If the condition is
+                    <c>True</c>
+                    , execute each of the statements in the body and
+                    then go back to step 1.
+                </p>
             </li>
-        </ol></p>
-        <p>The body consists of all of the statements below the header with the same
+        </ol>
+    </p>
+    <p>The body consists of all of the statements below the header with the same
             indentation.</p>
-        <p>This type of flow is called a <alert>loop</alert> because the third step loops back around
-            to the top. Notice that if the condition is <c>False</c> the first time through the
-            loop, the statements inside the loop are never executed.</p>
-        <warning>
-            <p>Though Python&#8217;s <c>while</c> is very close to the English &#8220;while&#8221;,
+    <p>
+        This type of flow is called a
+        <alert>loop</alert>
+        because the third step loops back around
+            to the top. Notice that if the condition is
+        <c>False</c>
+        the first time through the
+            loop, the statements inside the loop are never executed.
+    </p>
+    <warning>
+        <p>
+            Though Python&#8217;s
+            <c>while</c>
+            is very close to the English &#8220;while&#8221;,
                 there is an important difference:  In English &#8220;while X, do Y&#8221;,
                 we usually assume that immediately after X becomes false, we stop
-                with Y.  In Python there is <em>not</em> an immediate stop:  After the
+                with Y.  In Python there is
+            <em>not</em>
+            an immediate stop:  After the
                 initial test, any following tests come only after the execution of
-                the <em>whole</em> body, even if the condition becomes false in the middle of the loop body.</p>
-        </warning>
-        <p>The body of the loop should change the value of one or more variables so that
-            eventually the condition becomes <c>False</c> and the loop terminates. Otherwise the
-            loop will repeat forever. This is called an <alert>infinite loop</alert>.
+                the
+            <em>whole</em>
+            body, even if the condition becomes false in the middle of the loop body.
+        </p>
+    </warning>
+    <p>
+        The body of the loop should change the value of one or more variables so that
+            eventually the condition becomes
+        <c>False</c>
+        and the loop terminates. Otherwise the
+            loop will repeat forever. This is called an
+        <alert>infinite loop</alert>
+        .
             An endless
             source of amusement for computer scientists is the observation that the
-            directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.</p>
-        <p>In the case shown above, we can prove that the loop terminates because we
-            know that the value of <c>aBound</c> is finite, and we can see that the value of <c>aNumber</c>
-            increments each time through the loop, so eventually it will have to exceed <c>aBound</c>. In
-            other cases, it is not so easy to tell.</p>
-        <note>
-            <p>Introduction of the while statement causes us to think about the types of iteration we have seen.  The <c>for</c> statement will always iterate through a sequence of values like the list of names for the party or the list of numbers created by <c>range</c>.  Since we know that it will iterate once for each value in the collection, it is often said that a <c>for</c> loop creates a
-                <alert>definite iteration</alert> because we definitely know how many times we are going to iterate.  On the other
-                hand, the <c>while</c> statement is dependent on a condition that needs to evaluate to <c>False</c> in order
+            directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.
+    </p>
+    <p>
+        In the case shown above, we can prove that the loop terminates because we
+            know that the value of
+        <c>aBound</c>
+        is finite, and we can see that the value of
+        <c>aNumber</c>
+        increments each time through the loop, so eventually it will have to exceed
+        <c>aBound</c>
+        . In
+            other cases, it is not so easy to tell.
+    </p>
+    <note>
+        <p>
+            Introduction of the while statement causes us to think about the types of iteration we have seen.  The
+            <c>for</c>
+            statement will always iterate through a sequence of values like the list of names for the party or the list of numbers created by
+            <c>range</c>
+            .  Since we know that it will iterate once for each value in the collection, it is often said that a
+            <c>for</c>
+            loop creates a
+            <alert>definite iteration</alert>
+            because we definitely know how many times we are going to iterate.  On the other
+                hand, the
+            <c>while</c>
+            statement is dependent on a condition that needs to evaluate to
+            <c>False</c>
+            in order
                 for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
-                call <alert>indefinite iteration</alert>.  Indefinite iteration simply means that we don&#8217;t know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)</p>
-        </note>
-        <p>What you will notice here is that the <c>while</c> loop is more work for
-            you &#8212; the programmer &#8212; than the equivalent <c>for</c> loop.  When using a <c>while</c>
-            loop you have to control the loop variable yourself.  You give it an initial value, test
+                call
+            <alert>indefinite iteration</alert>
+            .  Indefinite iteration simply means that we don&#8217;t know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)
+        </p>
+    </note>
+    <p>
+        What you will notice here is that the
+        <c>while</c>
+        loop is more work for
+            you &#8212; the programmer &#8212; than the equivalent
+        <c>for</c>
+        loop.  When using a
+        <c>while</c>
+        loop you have to control the loop variable yourself.  You give it an initial value, test
             for completion, and then make sure you change something in the body so that the loop
-            terminates.</p>
-        <p>So why have two kinds of loop if <c>for</c> looks easier?  The next section, <xref ref="RandomlyWalkingTurtles#randomly-walking-turtles"/>, shows an indefinite iteration where
-            we need the extra power that we get from the <c>while</c> loop.</p>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+            terminates.
+    </p>
+    <p>
+        So why have two kinds of loop if
+        <c>for</c>
+        looks easier?  The next section,
+        <xref ref="RandomlyWalkingTurtles#randomly-walking-turtles" />
+        , shows an indefinite iteration where
+            we need the extra power that we get from the
+        <c>while</c>
+        loop.
+    </p>
+    <note>
+        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-<listing xml:id="scratch_07_01">
-    <caption/>
-    <program xml:id="scratch_07_01_editor" interactive="activecode" language="python">
-        <input>
-
-
-        </input>
-    </program>
-</listing>
-        </note>
-        <p><alert>Check your understanding</alert></p>
+        <listing xml:id="scratch_07_01">
+            <caption />
+            <program xml:id="scratch_07_01_editor" interactive="activecode" language="python">
+                <input></input>
+            </program>
+        </listing>
+    </note>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question7_2_1">
         <statement>
 
-        <p>True or False: You can rewrite any for-loop as a while-loop.</p>
+            <p>True or False: You can rewrite any for-loop as a while-loop.</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -127,25 +258,27 @@ print(sumTo(1000))
                     Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question7_2_2">
         <statement>
 
-        <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
-        <program language="python"><input>
+            <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
+            <program language="python">
+                <input>
 n = 10
 answer = 1
 while n &gt; 0:
     answer = answer + n
     n = n + 1
 print(answer)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -182,15 +315,16 @@ print(answer)
                     The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
 
     <exercise xml:id="test_question7_2_3">
         <statement>
 
-        <p>What is printed by this code?</p>
-        <program language="python"><input>
+            <p>What is printed by this code?</p>
+            <program language="python">
+                <input>
 n = 1
 x = 2
 while n &lt; 5:
@@ -199,10 +333,11 @@ while n &lt; 5:
     n = n + 2
     x = x + n
 print(n, x)
-</input></program>
+</input>
+            </program>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -230,8 +365,7 @@ print(n, x)
                     After n becomes 5 and the test would be False, but the test does not actually come until after the end of the loop - only then stopping execution of the repetition of the loop.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-    </section>
-
+</section>

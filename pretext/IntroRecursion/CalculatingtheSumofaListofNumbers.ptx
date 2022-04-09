@@ -1,17 +1,24 @@
 <section xml:id="calculating-the-sum-of-a-list-of-numbers">
-        <title>Calculating the Sum of a List of Numbers</title>
-        <p>We will begin our investigation with a simple problem that you already
+    <title>Calculating the Sum of a List of Numbers</title>
+    <p>
+        We will begin our investigation with a simple problem that you already
             know how to solve without using recursion. Suppose that you want to
             calculate the sum of a list of numbers such as:
-            <math>[1, 3, 5, 7, 9]</math>. An iterative function that computes the sum
+        <math>[1, 3, 5, 7, 9]</math>
+        . An iterative function that computes the sum
             is shown below. The function uses an accumulator variable
-            (<c>theSum</c>) to compute a running total of all the numbers in the list
-            by starting with <math>0</math> and adding each number in the list.</p>
+            (
+        <c>theSum</c>
+        ) to compute a running total of all the numbers in the list
+            by starting with
+        <math>0</math>
+        and adding each number in the list.
+    </p>
 
-<listing xml:id="lst_itsum">
-    <caption>data-caption='Iterative Summation'</caption>
-    <program xml:id="lst_itsum_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="lst_itsum">
+        <caption>data-caption='Iterative Summation'</caption>
+        <program xml:id="lst_itsum_editor" interactive="activecode" language="python">
+            <input>
 def listsum(numList):
     theSum = 0
     for i in numList:
@@ -20,45 +27,68 @@ def listsum(numList):
 
 print(listsum([1,3,5,7,9]))
         </input>
-    </program>
-</listing>
-        <p>Pretend for a minute that you do not have <c>while</c> loops or <c>for</c>
-            loops. How would you compute the sum of a list of numbers? If you were a
+        </program>
+    </listing>
+    <p>
+        Pretend for a minute that you do not have
+        <c>while</c>
+        loops or
+        <c>for</c>
+        loops. How would you compute the sum of a list of numbers? If you were a
             mathematician you might start by recalling that addition is a function
             that is defined for two parameters, a pair of numbers. To redefine the
             problem from adding a list to adding pairs of numbers, we could rewrite
             the list as a fully parenthesized expression. Such an expression looks
-            like this:</p>
-        <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">((((1 + 3) + 5) + 7) + 9)
+            like this:
+    </p>
+    <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">((((1 + 3) + 5) + 7) + 9)
 
 </math_block>
-        <p>We can also parenthesize
+    <p>We can also parenthesize
             the expression the other way around,</p>
-        <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">(1 + (3 + (5 + (7 + 9))))</math_block>
-        <p>Notice that the innermost set of
-            parentheses, <math>(7 + 9)</math>, is a problem that we can solve without a
+    <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">(1 + (3 + (5 + (7 + 9))))</math_block>
+    <p>
+        Notice that the innermost set of
+            parentheses,
+        <math>(7 + 9)</math>
+        , is a problem that we can solve without a
             loop or any special constructs. In fact, we can use the following
-            sequence of simplifications to compute a final sum.</p>
-        <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">total = \  (1 + (3 + (5 + (7 + 9)))) \\
+            sequence of simplifications to compute a final sum.
+    </p>
+    <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">total = \  (1 + (3 + (5 + (7 + 9)))) \\
 total = \  (1 + (3 + (5 + 16))) \\
 total = \  (1 + (3 + 21)) \\
 total = \  (1 + 24) \\
 total = \  25</math_block>
-        <p>How can we take this idea and turn it into a Python program? First,
+    <p>
+        How can we take this idea and turn it into a Python program? First,
             let&#8217;s restate the sum problem in terms of Python lists. We might say the
-            the sum of the list <c>numList</c> is the sum of the first element of the
-            list (<c>numList[0]</c>), and the sum of the numbers in the rest of the
-            list (<c>numList[1:]</c>). To state it in a functional form:</p>
-        <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">  listSum(numList) = first(numList) + listSum(rest(numList))
+            the sum of the list
+        <c>numList</c>
+        is the sum of the first element of the
+            list (
+        <c>numList[0]</c>
+        ), and the sum of the numbers in the rest of the
+            list (
+        <c>numList[1:]</c>
+        ). To state it in a functional form:
+    </p>
+    <math_block docname="IntroRecursion/CalculatingtheSumofaListofNumbers" label="True" nowrap="False" number="True" xml:space="preserve">  listSum(numList) = first(numList) + listSum(rest(numList))
 \label{eqn:listsum}</math_block>
-        <p>In this equation <math>first(numList)</math> returns the first element of
-            the list and <math>rest(numList)</math> returns a list of everything but
-            the first element. This is easily expressed in Python.</p>
+    <p>
+        In this equation
+        <math>first(numList)</math>
+        returns the first element of
+            the list and
+        <math>rest(numList)</math>
+        returns a list of everything but
+            the first element. This is easily expressed in Python.
+    </p>
 
-<listing xml:id="lst_recsum">
-    <caption>data-caption='Recursive Summation'</caption>
-    <program xml:id="lst_recsum_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="lst_recsum">
+        <caption>data-caption='Recursive Summation'</caption>
+        <program xml:id="lst_recsum_editor" interactive="activecode" language="python">
+            <input>
 def listsum(numList):
    if len(numList) == 1:
         return numList[0]
@@ -67,34 +97,52 @@ def listsum(numList):
 
 print(listsum([1,3,5,7,9]))
         </input>
-    </program>
-</listing>
-        <p>There are a few key ideas in this listing to look at. First, on line 2 we are checking to see if the list is one element long. This
+        </program>
+    </listing>
+    <p>
+        There are a few key ideas in this listing to look at. First, on line 2 we are checking to see if the list is one element long. This
             check is crucial and is our escape clause from the function. The sum of
             a list of length 1 is trivial; it is just the number in the list.
             Second, on line 5 our function calls itself! This is the
-            reason that we call the <c>listsum</c> algorithm recursive. A recursive
-            function is a function that calls itself.</p>
-        <p><xref ref="fig-recsumin"/> shows the series of <alert>recursive calls</alert> that are
-            needed to sum the list <math>[1, 3, 5, 7, 9]</math>. You should think of
+            reason that we call the
+        <c>listsum</c>
+        algorithm recursive. A recursive
+            function is a function that calls itself.
+    </p>
+    <p>
+        <xref ref="fig-recsumin" />
+        shows the series of
+        <alert>recursive calls</alert>
+        that are
+            needed to sum the list
+        <math>[1, 3, 5, 7, 9]</math>
+        . You should think of
             this series of calls as a series of simplifications. Each time we make a
             recursive call we are solving a smaller problem, until we reach the
-            point where the problem cannot get any smaller.</p>
-        
-        <figure align="center" xml:id="fig-recsumin" names="fig_recsumin">
-            <image source="IntroRecursion/Figures/sumlistIn.png" alt="image"/>
-            <caption>Figure 1: Series of Recursive Calls Adding a List of Numbers</caption>
-        </figure>
-        <p>When we reach the point where the problem is as simple as it can get, we
-            begin to piece together the solutions of each of the small problems
-            until the initial problem is solved. <xref ref="fig-recsumout"/> shows the
-            additions that are performed as <c>listsum</c> works its way backward
-            through the series of calls. When <c>listsum</c> returns from the topmost
-            problem, we have the solution to the whole problem.</p>
-        
-        <figure align="center" xml:id="fig-recsumout" names="fig_recsumout">
-            <image source="IntroRecursion/Figures/sumlistOut.png" alt="image"/>
-            <caption>Figure2: Series of Recursive Returns from Adding a List of Numbers</caption>
-        </figure>
-    </section>
+            point where the problem cannot get any smaller.
+    </p>
 
+    <figure align="center" xml:id="fig-recsumin" names="fig_recsumin">
+        <image source="IntroRecursion/Figures/sumlistIn.png" alt="image" width="50%" />
+        <caption>Figure 1: Series of Recursive Calls Adding a List of Numbers</caption>
+    </figure>
+    <p>
+        When we reach the point where the problem is as simple as it can get, we
+            begin to piece together the solutions of each of the small problems
+            until the initial problem is solved.
+        <xref ref="fig-recsumout" />
+        shows the
+            additions that are performed as
+        <c>listsum</c>
+        works its way backward
+            through the series of calls. When
+        <c>listsum</c>
+        returns from the topmost
+            problem, we have the solution to the whole problem.
+    </p>
+
+    <figure align="center" xml:id="fig-recsumout" names="fig_recsumout">
+        <image source="IntroRecursion/Figures/sumlistOut.png" alt="image" width="50%" />
+        <caption>Figure2: Series of Recursive Returns from Adding a List of Numbers</caption>
+    </figure>
+</section>

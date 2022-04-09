@@ -1,14 +1,14 @@
 <section xml:id="the-accumulator-pattern-revisited">
-        <title>The Accumulator Pattern Revisited</title>
-        <p>Newton&#8217;s method to calculate square roots is an example of an algorithm that repeats as long as it can improve the result. It&#8217;s just a variation of our accumulator pattern. Many algorithms work this way and so require the use of indefinite iteration.</p>
-        <p>Here is another accumulator pattern program. It adds up the reciprocals of powers of two.</p>
-        <image source="MoreAboutIteration/Figures/sum2n.PNG"/>
-        <p>You may have studied this sequence in a math class and learned that the sum approaches but never reaches 2.0. That is true in theory. However, when we implement this summation in a program, we see something different.</p>
+    <title>The Accumulator Pattern Revisited</title>
+    <p>Newton&#8217;s method to calculate square roots is an example of an algorithm that repeats as long as it can improve the result. It&#8217;s just a variation of our accumulator pattern. Many algorithms work this way and so require the use of indefinite iteration.</p>
+    <p>Here is another accumulator pattern program. It adds up the reciprocals of powers of two.</p>
+    <image source="MoreAboutIteration/Figures/sum2n.PNG" width="50%" />
+    <p>You may have studied this sequence in a math class and learned that the sum approaches but never reaches 2.0. That is true in theory. However, when we implement this summation in a program, we see something different.</p>
 
-<listing xml:id="chp07_sum2n">
-    <caption/>
-    <program xml:id="chp07_sum2n_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="chp07_sum2n">
+        <caption />
+        <program xml:id="chp07_sum2n_editor" interactive="activecode" language="python">
+            <input>
 def sumTo():
     """ Return the sum of reciprocals of powers of 2 """
 
@@ -22,13 +22,20 @@ def sumTo():
 
 print(sumTo())
         </input>
-    </program>
-</listing>
-        <admonition classes="admonition-modify-the-program">
-            <title>Modify the program &#8230;</title>
-            <p>If the sum never reaches 2.0, the loop would never terminate. But the loop does stop! How many repetitions did it make before it stopped?</p>
-            <p>On line 9 (not indented), print the value of <c>aNumber</c> and you will see.</p>
-            <p>But <alert>why</alert> did it reach 2.0? Are those math teachers wrong?</p>
-        </admonition>
-    </section>
-
+        </program>
+    </listing>
+    <admonition classes="admonition-modify-the-program">
+        <title>Modify the program &#8230;</title>
+        <p>If the sum never reaches 2.0, the loop would never terminate. But the loop does stop! How many repetitions did it make before it stopped?</p>
+        <p>
+            On line 9 (not indented), print the value of
+            <c>aNumber</c>
+            and you will see.
+        </p>
+        <p>
+            But
+            <alert>why</alert>
+            did it reach 2.0? Are those math teachers wrong?
+        </p>
+    </admonition>
+</section>

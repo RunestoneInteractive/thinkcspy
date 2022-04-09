@@ -1,16 +1,32 @@
 <section xml:id="more-about-using-modules">
-        <title>More About Using Modules</title>
-        <p>Before we move on to exploring other modules, we should say a bit more about what modules are and how we
+    <title>More About Using Modules</title>
+    <p>Before we move on to exploring other modules, we should say a bit more about what modules are and how we
             typically use them.  One of the most important things to realize about modules is the fact that they are data objects, just
             like any other data in Python.  Module objects simply contain other Python elements.</p>
-        <p>The first thing we need to do when we wish to use a module is perform an <c>import</c>.  In the example above, the statement
-            <c>import turtle</c> creates a new name, <c>turtle</c>, and makes it refer to a <title_reference>module object</title_reference>.  This looks very much like
-            the reference diagrams we saw earlier for simple variables.</p>
-        <image source="PythonModules/Figures/modreference.png"/>
-        <p>In order to use something contained in a module, we use the <title_reference>dot</title_reference> notation, providing the module name and the specific item joined together with a &#8220;dot&#8221;.  For example, to use the <c>Turtle</c> class, we say <c>turtle.Turtle</c>.  You should read
-            this as: &#8220;In the module turtle, access the Python element called Turtle&#8221;.</p>
-        <p>We will now turn our attention to a few other modules that you might find useful.</p>
+    <p>
+        The first thing we need to do when we wish to use a module is perform an
+        <c>import</c>
+        .  In the example above, the statement
+        <c>import turtle</c>
+        creates a new name,
+        <c>turtle</c>
+        , and makes it refer to a
+        <title_reference>module object</title_reference>
+        .  This looks very much like
+            the reference diagrams we saw earlier for simple variables.
+    </p>
+    <image source="PythonModules/Figures/modreference.png" width="50%" />
+    <p>
+        In order to use something contained in a module, we use the
+        <title_reference>dot</title_reference>
+        notation, providing the module name and the specific item joined together with a &#8220;dot&#8221;.  For example, to use the
+        <c>Turtle</c>
+        class, we say
+        <c>turtle.Turtle</c>
+        .  You should read
+            this as: &#8220;In the module turtle, access the Python element called Turtle&#8221;.
+    </p>
+    <p>We will now turn our attention to a few other modules that you might find useful.</p>
 
-    <video xml:id="SGVgAV0v-Ww" youtube="SGVgAV0v-Ww" width="560"/>
-        </section>
-
+    <video xml:id="SGVgAV0v-Ww" youtube="SGVgAV0v-Ww" width="560" />
+</section>
