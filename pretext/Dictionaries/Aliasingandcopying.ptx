@@ -1,18 +1,14 @@
 <section xml:id="aliasing-and-copying">
-    <title>Aliasing and Copying</title>
-    <p>
-        Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever
+        <title>Aliasing and Copying</title>
+        <p>Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever
             two variables refer to the same dictionary object, changes to one affect the other.
-            For example,
-        <c>opposites</c>
-        is a dictionary that contains pairs
-            of opposites.
-    </p>
+            For example, <c>opposites</c> is a dictionary that contains pairs
+            of opposites.</p>
 
-    <listing xml:id="ch12_dict11">
-        <caption />
-        <program xml:id="ch12_dict11_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch12_dict11">
+    <caption/>
+    <program xml:id="ch12_dict11_editor" interactive="activecode" language="python">
+        <input>
 opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
 alias = opposites
 
@@ -21,49 +17,30 @@ print(alias is opposites)
 alias['right'] = 'left'
 print(opposites['right'])
         </input>
-        </program>
-    </listing>
-    <p>
-        As you can see from the
-        <c>is</c>
-        operator,
-        <c>alias</c>
-        and
-        <c>opposites</c>
-        refer to the same object.
-    </p>
-    <p>
-        If you want to modify a dictionary and keep a copy of the original, use the dictionary
-        <c>copy</c>
-        method.  Since
-        <em>acopy</em>
-        is a copy of the dictionary, changes to it will not effect the original.
-    </p>
-    <program language="python">
-        <input>
+    </program>
+</listing>
+        <p>As you can see from the <c>is</c> operator, <c>alias</c> and <c>opposites</c> refer to the same object.</p>
+        <p>If you want to modify a dictionary and keep a copy of the original, use the dictionary
+            <c>copy</c> method.  Since <em>acopy</em> is a copy of the dictionary, changes to it will not effect the original.</p>
+        <program language="python"><input>
 acopy = opposites.copy()
 acopy['right'] = 'left'    # does not change opposites
-</input>
-    </program>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+</input></program>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question11_4_1">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 yourdict = mydict
 yourdict["elephant"] = 999
 print(mydict["elephant"])
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -100,7 +77,8 @@ print(mydict["elephant"])
                     There is only one dictionary with only one key named elephant.  The dictionary has two different names, mydict and yourdict.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

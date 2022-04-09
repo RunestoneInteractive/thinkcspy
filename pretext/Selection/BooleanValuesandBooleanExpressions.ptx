@@ -1,76 +1,48 @@
 <section xml:id="boolean-values-and-boolean-expressions">
-    <title>Boolean Values and Boolean Expressions</title>
+        <title>Boolean Values and Boolean Expressions</title>
 
-    <video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto" />
-    <p>
-        The Python type for storing true and false values is called
-        <c>bool</c>
-        , named
-            after the British mathematician, George Boole. George Boole created
-        <em>Boolean
-                Algebra</em>
-        , which is the basis of all modern computer arithmetic.
-    </p>
-    <p>
-        There are only two
-        <alert>boolean values</alert>
-        .  They are
-        <c>True</c>
-        and
-        <c>False</c>
-        .  Capitalization
-            is important, since
-        <c>true</c>
-        and
-        <c>false</c>
-        are not boolean values (remember Python is case
-            sensitive).
-    </p>
+    <video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="560"/>
+            <p>The Python type for storing true and false values is called <c>bool</c>, named
+            after the British mathematician, George Boole. George Boole created <em>Boolean
+                Algebra</em>, which is the basis of all modern computer arithmetic.</p>
+        <p>There are only two <alert>boolean values</alert>.  They are <c>True</c> and <c>False</c>.  Capitalization
+            is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
+            sensitive).</p>
 
-    <listing xml:id="ch05_1">
-        <caption />
-        <program xml:id="ch05_1_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch05_1">
+    <caption/>
+    <program xml:id="ch05_1_editor" interactive="activecode" language="python">
+        <input>
 print(True)
 print(type(True))
 print(type(False))
         </input>
-        </program>
-    </listing>
-    <note>
-        <p>Boolean values are not strings!</p>
-        <p>
-            It is extremely important to realize that True and False are not strings.   They are not
-                surrounded by quotes.  They are the only two values in the data type
-            <c>bool</c>
-            .  Take a close look at the
-                types shown below.
-        </p>
-    </note>
+    </program>
+</listing>
+        <note>
+            <p>Boolean values are not strings!</p>
+            <p>It is extremely important to realize that True and False are not strings.   They are not
+                surrounded by quotes.  They are the only two values in the data type <c>bool</c>.  Take a close look at the
+                types shown below.</p>
+        </note>
 
-    <listing xml:id="ch05_1a">
-        <caption />
-        <program xml:id="ch05_1a_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch05_1a">
+    <caption/>
+    <program xml:id="ch05_1a_editor" interactive="activecode" language="python">
+        <input>
 print(type(True))
 print(type("True"))
         </input>
-        </program>
-    </listing>
-    <p>
-        A
-        <alert>boolean expression</alert>
-        is an expression that evaluates to a boolean value.
-            The equality operator,
-        <c>==</c>
-        , compares two values and produces a boolean value related to whether the
-            two values are equal to one another.
-    </p>
+    </program>
+</listing>
+        <p>A <alert>boolean expression</alert> is an expression that evaluates to a boolean value.
+            The equality operator, <c>==</c>, compares two values and produces a boolean value related to whether the
+            two values are equal to one another.</p>
 
-    <listing xml:id="ch05_2">
-        <caption />
-        <program xml:id="ch05_2_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch05_2">
+    <caption/>
+    <program xml:id="ch05_2_editor" interactive="activecode" language="python">
+        <input>
 print(5 == 5)
 
 print(5 == 6)
@@ -78,79 +50,41 @@ print(5 == 6)
 j = "hel"
 print(j + "lo" == "hello")
         </input>
-        </program>
-    </listing>
-    <p>
-        In the first statement, the two operands are equal, so the expression evaluates
-            to
-        <c>True</c>
-        .  In the second statement, 5 is not equal to 6, so we get
-        <c>False</c>
-        .
-    </p>
-    <p>
-        The
-        <c>==</c>
-        operator is one of six common
-        <alert>comparison operators</alert>
-        ; the others are:
-    </p>
-    <program language="python">
-        <input>
+    </program>
+</listing>
+        <p>In the first statement, the two operands are equal, so the expression evaluates
+            to <c>True</c>.  In the second statement, 5 is not equal to 6, so we get <c>False</c>.</p>
+        <p>The <c>==</c> operator is one of six common <alert>comparison operators</alert>; the others are:</p>
+        <program language="python"><input>
 x != y               # x is not equal to y
 x &gt; y                # x is greater than y
 x &lt; y                # x is less than y
 x &gt;= y               # x is greater than or equal to y
 x &lt;= y               # x is less than or equal to y
-</input>
-    </program>
-    <p>
-        Although these operations are probably familiar to you, the Python symbols are
+</input></program>
+        <p>Although these operations are probably familiar to you, the Python symbols are
             different from the mathematical symbols. A common error is to use a single
-            equal sign (
-        <c>=</c>
-        ) instead of a double equal sign (
-        <c>==</c>
-        ). Remember that
-        <c>=</c>
-        is an assignment operator and
-        <c>==</c>
-        is a comparison operator. Also, there is
-            no such thing as
-        <c>=&lt;</c>
-        or
-        <c>=&gt;</c>
-        .
-    </p>
-    <!--With reassignment it is especially important to distinguish between an-->
-    <!--assignment statement and a boolean expression that tests for equality.-->
-    <!--Because Python uses the equal token (``=``) for assignment,-->
-    <!--it is tempting to interpret a statement like-->
-    <!--``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token-->
-    <!--for the equality operator is ``==``.-->
-    <p>
-        Note too that an equality test is symmetric, but assignment is not. For example,
-            if
-        <c>a == 7</c>
-        then
-        <c>7 == a</c>
-        . But in Python, the statement
-        <c>a = 7</c>
-        is legal and
-        <c>7 = a</c>
-        is not. (Can you explain why?)
-    </p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            equal sign (<c>=</c>) instead of a double equal sign (<c>==</c>). Remember that <c>=</c>
+            is an assignment operator and <c>==</c> is a comparison operator. Also, there is
+            no such thing as <c>=&lt;</c> or <c>=&gt;</c>.</p>
+        <!--With reassignment it is especially important to distinguish between an-->
+        <!--assignment statement and a boolean expression that tests for equality.-->
+        <!--Because Python uses the equal token (``=``) for assignment,-->
+        <!--it is tempting to interpret a statement like-->
+        <!--``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token-->
+        <!--for the equality operator is ``==``.-->
+        <p>Note too that an equality test is symmetric, but assignment is not. For example,
+            if <c>a == 7</c> then <c>7 == a</c>. But in Python, the statement <c>a = 7</c>
+            is legal and <c>7 = a</c> is not. (Can you explain why?)</p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question6_1_1">
         <statement>
 
-            <p>Which of the following is a Boolean expression?  Select all that apply.</p>
+        <p>Which of the following is a Boolean expression?  Select all that apply.</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -196,7 +130,8 @@ x &lt;= y               # x is less than or equal to y
                     With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

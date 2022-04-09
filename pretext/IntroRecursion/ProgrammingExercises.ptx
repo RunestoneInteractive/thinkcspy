@@ -1,9 +1,12 @@
 <section xml:id="programming-exercises">
         <title>Programming Exercises</title>
-        <QuestionNode xml:id="recursion-ex-1" line="13" names="recursion_ex_1" runestone_options="{'number': 1, 'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_1', 'qnumber': '', 'question_label': '16.8.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+        
 
-<listing xml:id="ex_rec_1">
-    <caption/>
+<exercise xml:id="ex_rec_1">
+    <statement>
+            <p>Write a recursive function to compute the factorial of a number.</p>
+
+    </statement>
     <program xml:id="ex_rec_1_editor" interactive="activecode" language="python">
         <input>
 def computeFactorial(number):
@@ -27,13 +30,15 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>Write a recursive function to compute the factorial of a number.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-2" line="43" names="recursion_ex_2" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_2', 'qnumber': '', 'question_label': '16.8.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_2">
-    <caption/>
+<exercise xml:id="ex_rec_2">
+    <statement>
+            <p>Write a recursive function to reverse a list.</p>
+
+    </statement>
     <program xml:id="ex_rec_2_editor" interactive="activecode" language="python">
         <input>
 def reverseList(lst):
@@ -53,19 +58,12 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>Write a recursive function to reverse a list.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-3" line="68" names="recursion_ex_3" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_3', 'qnumber': '', 'question_label': '16.8.5'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_3">
-    <caption/>
-    <program xml:id="ex_rec_3_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+<exercise xml:id="ex_rec_3">
+    <statement>
             <p>Modify the recursive tree program using one or all of the following
                 ideas:</p>
             <p><ul>
@@ -91,112 +89,128 @@ myTests().main()
             </ul></p>
             <p>If you implement all of the above ideas you will have a very
                 realistic looking tree.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-4" line="95" names="recursion_ex_4" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_4', 'qnumber': '', 'question_label': '16.8.7'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
 
-<listing xml:id="ex_rec_4">
-    <caption/>
+    </statement>
+    <program xml:id="ex_rec_3_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</exercise>
+        
+        
+
+<exercise xml:id="ex_rec_4">
+    <statement>
+            <p>Find or invent an algorithm for drawing a fractal mountain. Hint: One
+                approach to this uses triangles again.</p>
+
+    </statement>
     <program xml:id="ex_rec_4_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Find or invent an algorithm for drawing a fractal mountain. Hint: One
-                approach to this uses triangles again.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-5" line="104" names="recursion_ex_5" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_5', 'qnumber': '', 'question_label': '16.8.9'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_5">
-    <caption/>
+<exercise xml:id="ex_rec_5">
+    <statement>
+            <p>Write a recursive function to compute the Fibonacci sequence. How
+                does the performance of the recursive function compare to that of an
+                iterative version?</p>
+
+    </statement>
     <program xml:id="ex_rec_5_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Write a recursive function to compute the Fibonacci sequence. How
-                does the performance of the recursive function compare to that of an
-                iterative version?</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-6" line="113" names="recursion_ex_6" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_6', 'qnumber': '', 'question_label': '16.8.11'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_6">
-    <caption/>
+<exercise xml:id="ex_rec_6">
+    <statement>
+            <p>Implement a solution to the Tower of Hanoi using three stacks to keep
+                track of the disks.</p>
+
+    </statement>
     <program xml:id="ex_rec_6_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Implement a solution to the Tower of Hanoi using three stacks to keep
-                track of the disks.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-7" line="121" names="recursion_ex_7" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_7', 'qnumber': '', 'question_label': '16.8.13'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_7">
-    <caption/>
+<exercise xml:id="ex_rec_7">
+    <statement>
+            <p>Using the turtle graphics module, write a recursive program to
+                display a Hilbert curve.</p>
+
+    </statement>
     <program xml:id="ex_rec_7_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Using the turtle graphics module, write a recursive program to
-                display a Hilbert curve.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-8" line="130" names="recursion_ex_8" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_8', 'qnumber': '', 'question_label': '16.8.15'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_8">
-    <caption/>
+<exercise xml:id="ex_rec_8">
+    <statement>
+            <p>Using the turtle graphics module, write a recursive program to
+                display a Koch snowflake.</p>
+
+    </statement>
     <program xml:id="ex_rec_8_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Using the turtle graphics module, write a recursive program to
-                display a Koch snowflake.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-9" line="139" names="recursion_ex_9" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_9', 'qnumber': '', 'question_label': '16.8.17'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_9">
-    <caption/>
+<exercise xml:id="ex_rec_9">
+    <statement>
+            <p>Write a program to solve the following problem: You have two jugs: a
+                4-gallon jug and a 3-gallon jug. Neither of the jugs have markings on
+                them. There is a pump that can be used to fill the jugs with water.
+                How can you get exactly two gallons of water in the 4-gallon jug?</p>
+
+    </statement>
     <program xml:id="ex_rec_9_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Write a program to solve the following problem: You have two jugs: a
-                4-gallon jug and a 3-gallon jug. Neither of the jugs have markings on
-                them. There is a pump that can be used to fill the jugs with water.
-                How can you get exactly two gallons of water in the 4-gallon jug?</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-10" line="149" names="recursion_ex_10" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_10', 'qnumber': '', 'question_label': '16.8.19'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_10">
-    <caption/>
+<exercise xml:id="ex_rec_10">
+    <statement>
+            <p>Generalize the problem above so that the parameters to your solution
+                include the sizes of each jug and the final amount of water to be
+                left in the larger jug.</p>
+
+    </statement>
     <program xml:id="ex_rec_10_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Generalize the problem above so that the parameters to your solution
-                include the sizes of each jug and the final amount of water to be
-                left in the larger jug.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-11" line="158" names="recursion_ex_11" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_11', 'qnumber': '', 'question_label': '16.8.21'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_11">
-    <caption/>
-    <program xml:id="ex_rec_11_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+<exercise xml:id="ex_rec_11">
+    <statement>
             <p>Write a program that solves the following problem: Three missionaries
                 and three cannibals come to a river and find a boat that holds two
                 people. Everyone must get across the river to continue on the
@@ -204,31 +218,35 @@ myTests().main()
                 either bank, the missionaries will be eaten. Find a series of
                 crossings that will get everyone safely to the other side of the
                 river.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-12" line="171" names="recursion_ex_12" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_12', 'qnumber': '', 'question_label': '16.8.23'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
 
-<listing xml:id="ex_rec_12">
-    <caption/>
+    </statement>
+    <program xml:id="ex_rec_11_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</exercise>
+        
+        
+
+<exercise xml:id="ex_rec_12">
+    <statement>
+            <p>Modify the Tower of Hanoi program using turtle graphics to animate
+                the movement of the disks. Hint: You can make multiple turtles and
+                have them shaped like rectangles.</p>
+
+    </statement>
     <program xml:id="ex_rec_12_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Modify the Tower of Hanoi program using turtle graphics to animate
-                the movement of the disks. Hint: You can make multiple turtles and
-                have them shaped like rectangles.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="recursion-ex-13" line="181" names="recursion_ex_13" runestone_options="{'subchapter': 'ProgrammingExercises', 'chapter': 'IntroRecursion', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'recursion_ex_13', 'qnumber': '', 'question_label': '16.8.25'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/IntroRecursion/ProgrammingExercises.rst">
+</exercise>
+        
+        
 
-<listing xml:id="ex_rec_13">
-    <caption/>
-    <program xml:id="ex_rec_13_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+<exercise xml:id="ex_rec_13">
+    <statement>
             <p>Pascal&#8217;s triangle is a number triangle with numbers arranged in
                 staggered rows such that</p>
             <math_block docname="IntroRecursion/ProgrammingExercises" label="True" nowrap="False" number="True" xml:space="preserve">a_{nr} = {n! \over{r! (n-r)!}}
@@ -246,6 +264,14 @@ myTests().main()
             <p>Write a program that prints out Pascal&#8217;s triangle. Your program
                 should accept a parameter that tells how many rows of the triangle to
                 print.</p>
-        </QuestionNode>
+
+    </statement>
+    <program xml:id="ex_rec_13_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</exercise>
+        
     </section>
 

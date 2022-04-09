@@ -1,4 +1,38 @@
 PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, but with messages:
+    *  PTX:ERROR: the @xml:id value "syntax-errors" should be unique, but appears 2 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "syntax-errors" (xml:id), "Syntax errors" (title)
+    *               located within: "syntax-errors" (xml:id), "Syntax errors" (title)
+    *  PTX:ERROR: the @xml:id value "runtime-errors" should be unique, but appears 2 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "runtime-errors" (xml:id), "Runtime Errors" (title)
+    *               located within: "runtime-errors" (xml:id), "Runtime errors" (title)
+    *  PTX:ERROR: the @xml:id value "semantic-errors" should be unique, but appears 2 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "semantic-errors" (xml:id), "Semantic Errors" (title)
+    *               located within: "semantic-errors" (xml:id), "Semantic errors" (title)
+    *  PTX:ERROR: the @xml:id value "index-0" should be unique, but appears 9 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *               located within: "index-0" (xml:id)
+    *  PTX:ERROR: the @xml:id value "index-1" should be unique, but appears 5 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "index-1" (xml:id)
+    *               located within: "index-1" (xml:id)
+    *               located within: "index-1" (xml:id)
+    *               located within: "index-1" (xml:id)
+    *               located within: "index-1" (xml:id)
+    *  PTX:ERROR: the @xml:id value "index-2" should be unique, but appears 2 times.
+           Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+    *               located within: "index-2" (xml:id)
+    *               located within: "index-2" (xml:id)
     *  PTX:ERROR: the @xml:id value "accessing-elements" should be unique, but appears 2 times.
            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
     *               located within: "accessing-elements" (xml:id)
@@ -9,6 +43,16 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *               located within: "id1" (xml:id)
     *               located within: "id1" (xml:id)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "reassignment" (xml:id), "Reassignment" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "know-your-error-messages" (xml:id), "Know Your Error Messages" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "unit-testing" (xml:id), "Unit Testing" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "the-accumulator-pattern" (xml:id), "The Accumulator Pattern" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "logical-operators" (xml:id), "Logical operators" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "boolean-functions" (xml:id), "Boolean Functions" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "dimensional-iteration-image-processing" (xml:id), "2-Dimensional Iteration: Image Processing" (title)
@@ -16,6 +60,8 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *               located within: "string-methods" (xml:id), "String Methods" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "the-accumulator-pattern-with-lists" (xml:id), "The Accumulator Pattern with Lists" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "exceptions-syntax" (xml:id), "Exceptions Syntax" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "tkinter-standard-dialog-boxes" (xml:id), "Tkinter Standard Dialog Boxes" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
@@ -28,34 +74,136 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *               located within: "case-study-structured-postal-addresses" (xml:id), "Case Study: Structured Postal Addresses" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "checking-assumptions-with-assert" (xml:id), "
-        Checking Assumptions With
-        assert
-    " (title)
+            Checking Assumptions With
+            assert
+        " (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "testing-functions" (xml:id), "Testing Functions" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "designing-testable-functions" (xml:id), "Designing Testable Functions" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
+    *               located within: "writing-unit-tests" (xml:id), "Writing Unit Tests" (title)
+    *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "test-first-development" (xml:id), "Test-First Development" (title)
     *  PTX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
     *               located within: "testing-with-pytest" (xml:id), "Testing with pytest" (title)
     *  PTX:DEPRECATE: (2016-07-31) @height attribute on <image> is no longer effective and will be ignored, except within a WeBWorK exercise (1 time)
-    *               located within: "exercises" (xml:id), "Exercises" (title)
+    *               located within: "functions_exercises" (xml:id), "Exercises" (title)
     *  --------------
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "codelensvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "codelensvid" (xml:id)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../SimplePythonData/Variables#variables] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "executing-python-in-this-book" (xml:id), "Executing Python in this Book" (title)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "typesnconvert" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "typesnconvert" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "assignvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "assignvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "expression_vid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "expression_vid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "inputvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "inputvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "precedencevid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "precedencevid" (xml:id)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../Appendices/PrecedenceTable#operator-summary] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "order-of-operations" (xml:id), "Order of Operations" (title)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "reassignmentvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "reassignmentvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "updatevid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "updatevid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "vid_turtleintro" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "vid_turtleintro" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_1" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_2" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_3" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_4" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_5" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_6" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_7" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "forloopvid" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "forloopvid" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_8" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_9" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "advrange" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "advrange" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_10" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_11" (xml:id)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [SummaryofTurtleMethods#turtle-methods] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "turtle-ex-11" (xml:id)
+    *               located within: "pythonturtle_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "vid_modules" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "vid_modules" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "SGVgAV0v-Ww" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "SGVgAV0v-Ww" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "function_intro" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "function_intro" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "function_accumulator_pattern" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "function_accumulator_pattern" (xml:id)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [ATurtleBarChart#bar-chart] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "exercises" (xml:id), "Exercises" (title)
+    *               located within: "ex_5_18" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "booleanexpressions" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "booleanexpressions" (xml:id)
     *  PTX:ERROR:   width (667) should be given as a percentage (such as "40%"), or as the string "auto"
     *               located within: "GoogleLogic" (xml:id)
     *  PTX:ERROR:   width (667) should be given as a percentage (such as "40%"), or as the string "auto"
     *               located within: "GoogleLogic" (xml:id)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../Appendices/PrecedenceTable#operator-summary] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "precedence-of-operators" (xml:id), "Precedence of Operators" (title)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "HriDtn-0Dcw" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "HriDtn-0Dcw" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "unaryselection" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "unaryselection" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "whileloop" (xml:id)
+    *  PTX:ERROR:   width (560) should be given as a percentage (such as "40%"), or as the string "auto"
+    *               located within: "whileloop" (xml:id)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [RandomlyWalkingTurtles#randomly-walking-turtles] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "the-while-statement" (xml:id), "
-        The
-        while
-        Statement
-    " (title)
+    *               located within: "the-while-statement" (xml:id), "The while Statement" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [../Strings/StringMethods#format-strings] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "sentinel-values" (xml:id), "Sentinel Values" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [../Strings/StringMethods#stringmethods] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
@@ -79,22 +227,44 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *  PTX:DEBUG: xref/@ref "lst-fractree" points to a "p" element.  (1) we made a mistake, and we need to add this element to a list of potential targets of a cross-reference, or (2) you made a mistake and really did not mean this particular construction, or (3) we need to have a discussion about the advisability of this element being a target.   (4) If you are trying to cross-reference a "p" element, perhaps using a "paragraphs" element is a good alternative.  If (1) or (3) could you please report me!
     *  PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "lst-fractree") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
     *               located within: "visualizing-recursion" (xml:id), "Visualizing Recursion" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [WritingUnitTests#writing-unit-tests] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [DesigningTestableFunctions#designing-testable-functions] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../SimplePythonData/Variables#variables] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "executing-python-in-this-book" (xml:id), "Executing Python in this Book" (title)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../Appendices/PrecedenceTable#operator-summary] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "order-of-operations" (xml:id), "Order of Operations" (title)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_1" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_2" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_3" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_4" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_5" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_6" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_7" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_8" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_9" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_10" (xml:id)
+    *  PTX:ERROR:   width (150%) must be in the interval [0%, 100%]
+    *               located within: "rsid_3_11" (xml:id)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [SummaryofTurtleMethods#turtle-methods] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "turtle-ex-11" (xml:id)
+    *               located within: "pythonturtle_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [SummaryofTurtleMethods#turtle-methods] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "pythonturtle_exercises" (xml:id), "Exercises" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [ATurtleBarChart#bar-chart] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "exercises" (xml:id), "Exercises" (title)
+    *               located within: "ex_5_18" (xml:id)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [ATurtleBarChart#bar-chart] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "exercises" (xml:id), "Exercises" (title)
+    *               located within: "ex_5_18" (xml:id)
+    *  PTX:ERROR:   a cross-reference ("xref") uses references [../Appendices/PrecedenceTable#operator-summary] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *               located within: "precedence-of-operators" (xml:id), "Precedence of Operators" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [RandomlyWalkingTurtles#randomly-walking-turtles] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "the-while-statement" (xml:id), "
-        The
-        while
-        Statement
-    " (title)
+    *               located within: "the-while-statement" (xml:id), "The while Statement" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [../Strings/StringMethods#format-strings] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "sentinel-values" (xml:id), "Sentinel Values" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [../Strings/StringMethods#format-strings] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
@@ -107,6 +277,68 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *               located within: "the-rgb-color-model" (xml:id), "The RGB Color Model" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [format-strings] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "string-methods" (xml:id), "String Methods" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "strings_exercises" (xml:id), "Exercises" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [../Functions/TheAccumulatorPattern#accumulator] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "the-accumulator-pattern-with-lists" (xml:id), "The Accumulator Pattern with Lists" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [intro-WorkingwithDataFiles#filemethods1a] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
@@ -122,15 +354,15 @@ PTX: Successful application of /Users/bmiller/src/pretext/xsl/pretext-html.xsl, 
     *  PTX:DEBUG: xref/@ref "lst-fractree" points to a "p" element.  (1) we made a mistake, and we need to add this element to a list of potential targets of a cross-reference, or (2) you made a mistake and really did not mean this particular construction, or (3) we need to have a discussion about the advisability of this element being a target.   (4) If you are trying to cross-reference a "p" element, perhaps using a "paragraphs" element is a good alternative.  If (1) or (3) could you please report me!
     *  PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "lst-fractree") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
     *               located within: "visualizing-recursion" (xml:id), "Visualizing Recursion" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [WritingUnitTests#writing-unit-tests] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
-    *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [DesigningTestableFunctions#designing-testable-functions] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
     *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [WritingUnitTests#writing-unit-tests] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [WritingUnitTests#writing-unit-tests] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+    *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
     *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
     *  PTX:ERROR:   a cross-reference ("xref") uses references [DesigningTestableFunctions#designing-testable-functions] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
     *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)
-    *  PTX:ERROR:   a cross-reference ("xref") uses references [DesigningTestableFunctions#designing-testable-functions] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+    *  PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
     *               located within: "unittesting_exercises" (xml:id), "Exercises" (title)

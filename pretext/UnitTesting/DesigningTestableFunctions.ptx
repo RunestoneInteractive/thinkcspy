@@ -1,28 +1,27 @@
 <section xml:id="designing-testable-functions">
-    <title>Designing Testable Functions</title>
-    <p>
-        Now that you know how to write unit tests using the
-        <c>assert</c>
-        statement, it&#8217;s important for you
+        <title>Designing Testable Functions</title>
+        <p>
+            Now that you know how to write unit tests using the
+            <c>assert</c>
+            statement, it&#8217;s important for you
             to understand how to write testable functions. Not all functions can be tested.
-    </p>
-    <p>Consider the following function:</p>
-    <pre>def add(x, y):
+        </p>
+        <p>Consider the following function:</p>
+        <pre>def add(x, y):
     """Adds two numbers and displays the sum"""
     print(x + y)</pre>
-    <p>How would you write an assert statement to check that this function works? Think about it a moment.
+        <p>How would you write an assert statement to check that this function works? Think about it a moment.
             Would this work?</p>
-    <pre>assert add(2, 3) == 5</pre>
-    <p>Answer: no. An assert statement cannot verify that what a function displays on the screen is correct.
+        <pre>assert add(2, 3) == 5</pre>
+        <p>Answer: no. An assert statement cannot verify that what a function displays on the screen is correct.
             It can only check that the contents of variables are correct. This function is not testable.</p>
-    <p>
-        A
-        <alert>testable function</alert>
-        is a function that produces a result that can be checked by an assert
+        <p>
+            A
+            <alert>testable function</alert>
+            is a function that produces a result that can be checked by an assert
             statement. Generally, it does so in one of three ways:
-    </p>
-    <p>
-        <ol label="1">
+        </p>
+        <p><ol label="1">
             <li>
                 <p>It returns its result</p>
             </li>
@@ -32,195 +31,193 @@
             <li>
                 <p>It modifies the state of an object passed as a parameter</p>
             </li>
-        </ol>
-    </p>
-    <p>Functions that display their output using print are not testable functions.</p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+        </ol></p>
+        <p>Functions that display their output using print are not testable functions.</p>
+        <p>
+            <alert>Check your understanding</alert>
+        </p>
 
-    <exercise xml:id="mc_testable_1">
-        <statement>
+        <exercise xml:id="mc_testable_1">
+            <statement>
 
-            <p>Is this a testable function?</p>
-            <pre>sum = 0
+                <p>Is this a testable function?</p>
+                <pre>sum = 0
 def add(x, y):
     global sum
     sum = x + y</pre>
 
-        </statement>
-        <choices>
+            </statement>
+            <choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>Yes.</p>
-                </statement>
-                <feedback>
+                <choice correct="yes">
+                    <statement>
+                        <p>Yes.</p>
+                    </statement>
+                    <feedback>
                     Correct. In a unit test, an assert statement could check the value of sum after a call to add.
-                    </feedback>
-            </choice>
+                </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>No.</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>No.</p>
+                    </statement>
+                    <feedback>
                     Incorrect. The function stores its result in a global variable, which can be checked by an assert statement.
-                    </feedback>
-            </choice>
-        </choices>
+                </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
-
-
-    <subsection xml:id="design-by-contract">
-        <title>Design by Contract</title>
-        <p>In addition to producing a result that can be checked by an assert statement, a testable function must have a clear
+        </exercise>
+        
+        
+        <subsection xml:id="design-by-contract">
+            <title>Design by Contract</title>
+            <p>In addition to producing a result that can be checked by an assert statement, a testable function must have a clear
                 specification. In order to write unit tests for a function, you must have a precise understanding of what the function
                 should do.</p>
-        <p>
-            A function specification describes what value the function produces, given its parameter values, and is
+            <p>
+                A function specification describes what value the function produces, given its parameter values, and is
                 generally expressed in the form of a docstring. For example, consider the
-            <c>sumnums</c>
-            function given earlier in this
+                <c>sumnums</c>
+                function given earlier in this
                 chapter:
-        </p>
-        <pre>def sumnums(lo, hi):
+            </p>
+            <pre>def sumnums(lo, hi):
     """returns the sum of the numbers in the range [lo..hi]
 
     Precondition: lo &lt;= hi
     """
     ...</pre>
-        <p>The docstring is this function&#8217;s specification. Given this specification, you might write a unit test
+            <p>The docstring is this function&#8217;s specification. Given this specification, you might write a unit test
                 that contains the following assert:</p>
-        <pre>assert sumnums(1, 3) == 6</pre>
-        <p>An alternate way to write the docstring is as follows:</p>
-        <pre>def sumnums(lo, hi):
+            <pre>assert sumnums(1, 3) == 6</pre>
+            <p>An alternate way to write the docstring is as follows:</p>
+            <pre>def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
     Precondition: lo &lt;= hi
     Postcondition: returns the sum of the numbers in the range [lo..hi]
     """
     ...</pre>
-        <p>This docstring contains three elements: a brief description; a precondition; and a postcondition. We&#8217;ve
+            <p>This docstring contains three elements: a brief description; a precondition; and a postcondition. We&#8217;ve
                 discussed the concept of a precondition earlier in this chapter. The postcondition is new.</p>
-        <admonition classes="admonition-postcondition">
-            <title>Postcondition</title>
+            <admonition classes="admonition-postcondition">
+                <title>Postcondition</title>
+                <p>
+                    A
+                    <alert>postcondition</alert>
+                    states the work the function completed by the function if the precondition is satisfied.
+                </p>
+            </admonition>
             <p>
-                A
-                <alert>postcondition</alert>
-                states the work the function completed by the function if the precondition is satisfied.
-            </p>
-        </admonition>
-        <p>
-            Functions that include a precondition and a postcondition in their docstring embody a software engineering idea called
-            <alert>design by contract</alert>
-            . The idea is that a function specification forms a contract between the function and the code
+                Functions that include a precondition and a postcondition in their docstring embody a software engineering idea called
+                <alert>design by contract</alert>
+                . The idea is that a function specification forms a contract between the function and the code
                 calling the function. If the code calling the function passes parameters that satisfy the function&#8217;s precondition, then
                 the function should be expected to produce what it says it will produce. If the parameters do not satisfy the function&#8217;s
                 precondition, then the function does not have to produce a valid result. In the design by contract approach, a testable
                 function is one where the function&#8217;s postcondition can be verified by an assert statement.
-        </p>
-        <p>In this example, you can think of the function&#8217;s docstring as promising to calling code: &#8220;If you give me two parameters,
+            </p>
+            <p>In this example, you can think of the function&#8217;s docstring as promising to calling code: &#8220;If you give me two parameters,
                 lo and hi, such that lo is less than or equal to hi, I promise to return the sum of the numbers in the range lo..hi,
                 inclusive.&#8221;</p>
-        <p>To write a precondition, think about the parameter values that the function is designed to handle, and write a boolean
+            <p>To write a precondition, think about the parameter values that the function is designed to handle, and write a boolean
                 expression that expresses what parameter values are valid. For example, consider a function that computes the average weight,
                 given a total weight and a number of items:</p>
-        <pre>def compute_average(total_weight: float, num_items: float) -&gt; float:
+            <pre>def compute_average(total_weight: float, num_items: float) -&gt; float:
     return total / num_items</pre>
-        <p>
-            This function will work if num_items is greater than zero, but will fail if num_items is zero. So, an appropriate precondition
+            <p>
+                This function will work if num_items is greater than zero, but will fail if num_items is zero. So, an appropriate precondition
                 would be
-            <c>num_items &gt; 0</c>
-            . A complete docstring would look like this:
-        </p>
-        <pre>def compute_average(total_weight: float, num_items: float) -&gt; float:
+                <c>num_items &gt; 0</c>
+                . A complete docstring would look like this:
+            </p>
+            <pre>def compute_average(total_weight: float, num_items: float) -&gt; float:
     """computes the average weight, given `total_weight` of items and `num_items`
 
     Precondition: num_items &gt; 0
     Postcondition: returns average item weight
     """</pre>
-        <p>Sometimes, your precondition will be expressed more loosely, using English. Consider this function which extracts the
+            <p>Sometimes, your precondition will be expressed more loosely, using English. Consider this function which extracts the
                 first word from a string containing text:</p>
-        <pre>def get_first_word(text: str) -&gt; str:
+            <pre>def get_first_word(text: str) -&gt; str:
     """extracts the first word from `text`"""
 
     space_loc = text.find(' ')
     return text[0:space_loc]</pre>
-        <p>This function will produce nonsense if the string doesn&#8217;t contain a space. So, an appropriate precondition might be
+            <p>This function will produce nonsense if the string doesn&#8217;t contain a space. So, an appropriate precondition might be
                 &#8220;text contains 2 or more words separated by spaces&#8221;. The docstring might be:</p>
-        <pre>def get_first_word(text: str) -&gt; str:
+            <pre>def get_first_word(text: str) -&gt; str:
     """extracts the first word from `text`
 
     Precondition: `text` contains 2 or more words separated by spaces
     Postcondition: returns the first word in `text`
     """</pre>
-        <p>
-            Following the design by contract idea and writing function specifications that include preconditions and postconditions
+            <p>
+                Following the design by contract idea and writing function specifications that include preconditions and postconditions
                 is an excellent way to design testable functions, because, as we&#8217;ll see in the next section, it makes it possible to
                 reason precisely about what the function should do when given various parameter values. Even if you don&#8217;t use
                 precondition and postcondition terminology in your docstrings, it helps to
-            <em>think</em>
-            in those terms.
-        </p>
-        <p>
-            <alert>Check your understanding</alert>
-        </p>
+                <em>think</em>
+                in those terms.
+            </p>
+            <p>
+                <alert>Check your understanding</alert>
+            </p>
 
-        <exercise xml:id="mc_testable_2">
-            <statement>
+            <exercise xml:id="mc_testable_2">
+                <statement>
 
-                <p>Consider the following function. What would an appropriate precondition be?</p>
-                <program language="python">
-                    <input>
+                    <p>Consider the following function. What would an appropriate precondition be?</p>
+                    <program language="python"><input>
 def getfirst(msg):
     """returns first character of msg"""
 
     return msg[0]
-</input>
-                </program>
+</input></program>
 
-            </statement>
-            <choices>
+                </statement>
+                <choices>
 
-                <choice>
-                    <statement>
-                        <p>len(msg) &lt;= 0</p>
-                    </statement>
-                    <feedback>
+                    <choice>
+                        <statement>
+                            <p>len(msg) &lt;= 0</p>
+                        </statement>
+                        <feedback>
                     Incorrect. The function would crash if this condition were true.
-                        </feedback>
-                </choice>
+                </feedback>
+                    </choice>
 
-                <choice correct="yes">
-                    <statement>
-                        <p>len(msg) &gt; 0</p>
-                    </statement>
-                    <feedback>
+                    <choice correct="yes">
+                        <statement>
+                            <p>len(msg) &gt; 0</p>
+                        </statement>
+                        <feedback>
                     Correct. The function cannot return the first character of an empty msg.
-                        </feedback>
-                </choice>
+                </feedback>
+                    </choice>
 
-                <choice>
-                    <statement>
-                        <p>msg == ""</p>
-                    </statement>
-                    <feedback>
+                    <choice>
+                        <statement>
+                            <p>msg == ""</p>
+                        </statement>
+                        <feedback>
                     Incorrect. The function would crash if this condition were true.
-                        </feedback>
-                </choice>
+                </feedback>
+                    </choice>
 
-                <choice>
-                    <statement>
-                        <p>none of these</p>
-                    </statement>
-                    <feedback>
+                    <choice>
+                        <statement>
+                            <p>none of these</p>
+                        </statement>
+                        <feedback>
                     Incorrect. Try again.
-                        </feedback>
-                </choice>
-            </choices>
+                </feedback>
+                    </choice>
+                </choices>
 
-        </exercise>
-    </subsection>
-</section>
+            </exercise>
+        </subsection>
+    </section>
+

@@ -1,156 +1,110 @@
 <section xml:id="reassignment">
-    <title>Reassignment</title>
-    <introduction>
-        <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto" />
-        <p>As we have mentioned previously, it is legal to make more than one assignment to the
+        <title>Reassignment</title>
+
+    <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="560"/>
+            <p>As we have mentioned previously, it is legal to make more than one assignment to the
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>
 
-        <listing xml:id="ch07_reassign1">
-            <caption />
-            <program xml:id="ch07_reassign1_editor" interactive="activecode" language="python">
-                <input>
+<listing xml:id="ch07_reassign1">
+    <caption/>
+    <program xml:id="ch07_reassign1_editor" interactive="activecode" language="python">
+        <input>
 bruce = 5
 print(bruce)
 bruce = 7
 print(bruce)
-                </input>
-            </program>
-        </listing>
-        <p>
-            The first time
-            <c>bruce</c>
-            is
+        </input>
+    </program>
+</listing>
+        <p>The first time <c>bruce</c> is
             printed, its value is 5, and the second time, its value is 7.  The assignment statement changes
-            the value (the object) that
-            <c>bruce</c>
-            refers to.
-        </p>
-        <p>
-            Here is what
-            <alert>reassignment</alert>
-            looks like in a reference diagram:
-        </p>
-        <image source="SimplePythonData/Figures/reassign1.png" alt="reassignment" />
-        <p>
-            It is important to note that in mathematics, a statement of equality is always true.  If
-            <c>a is equal to b</c>
-            now, then
-            <c>a will always equal to b</c>
-            . In Python, an assignment statement can make
+            the value (the object) that <c>bruce</c> refers to.</p>
+        <p>Here is what <alert>reassignment</alert> looks like in a reference diagram:</p>
+        <image source="SimplePythonData/Figures/reassign1.png" alt="reassignment"/>
+        <p>It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c>
+            now, then <c>a will always equal to b</c>. In Python, an assignment statement can make
             two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment,
-            they don&#8217;t have to stay that way:
-        </p>
+            they don&#8217;t have to stay that way:</p>
 
-        <listing xml:id="ch07_reassign2">
-            <caption />
-            <program xml:id="ch07_reassign2_editor" interactive="activecode" language="python">
-                <input>
+<listing xml:id="ch07_reassign2">
+    <caption/>
+    <program xml:id="ch07_reassign2_editor" interactive="activecode" language="python">
+        <input>
 a = 5
 b = a    # after executing this line, a and b are now equal
 print(a, b)
 a = 3    # after executing this line, a and b are no longer equal
 print(a, b)
-                </input>
-            </program>
-        </listing>
-        <p>
-            Line 4 changes the value of
-            <c>a</c>
-            but does not change the value of
-            <c>b</c>
-            , so they are no longer equal. We will have much more to say about equality in a later chapter.
-        </p>
-
-    </introduction>
-    <subsection xml:id="developing-your-mental-model-of-how-python-evaluates">
-        <title>Developing your mental model of How Python Evaluates</title>
-        <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
-        <exercise runestone="se_reassign" />
-        <p>
-            In the first statement
-            <title_reference>a = 5</title_reference>
-            the literal number 5 evaluates to 5, and is given the name
-            <title_reference>a</title_reference>
-            .  In the second statement, the variable
-            <title_reference>a</title_reference>
-            evaluates to 5 and so 5 now ends up with a second name
-            <title_reference>b</title_reference>
-            .
-        </p>
-        <note>
-            <p>
-                In some programming languages, a different
-                    symbol is used for assignment, such as
-                <c>&lt;-</c>
-                or
-                <c>:=</c>
-                .  The intent is
+        </input>
+    </program>
+</listing>
+        <p>Line 4 changes the value of <c>a</c> but does not change the value of
+            <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
+        <subsection xml:id="developing-your-mental-model-of-how-python-evaluates">
+            <title>Developing your mental model of How Python Evaluates</title>
+            <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
+<exercise runestone="se_reassign"/>            <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.</p>
+            <note>
+                <p>In some programming languages, a different
+                    symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is
                     that this will help to avoid confusion.  Python
-                    chose to use the tokens
-                <c>=</c>
-                for assignment, and
-                <c>==</c>
-                for equality.  This is a popular
-                    choice also found in languages like C, C++, Java, and C#.
-            </p>
-        </note>
-        <p>
-            <alert>Check your understanding</alert>
-        </p>
+                    chose to use the tokens <c>=</c> for assignment, and <c>==</c> for equality.  This is a popular
+                    choice also found in languages like C, C++, Java, and C#.</p>
+            </note>
+            <p><alert>Check your understanding</alert></p>
 
-        <exercise xml:id="test_question2_9_1">
-            <statement>
+    <exercise xml:id="test_question2_9_1">
+        <statement>
 
-                <p>After the following statements, what are the values of x and y?</p>
-                <program language="python">
-                    <input>
+            <p>After the following statements, what are the values of x and y?</p>
+            <program language="python"><input>
 x = 15
 y = x
 x = 22
-                    </input>
-                </program>
+</input></program>
 
-            </statement>
-            <choices>
+        </statement>
+<choices>
 
-                <choice>
-                    <statement>
-                        <p>x is 15 and y is 15</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>x is 15 and y is 15</p>
+                </statement>
+                <feedback>
                     Look at the last assignment statement which gives x a different value.
-                    </feedback>
-                </choice>
+                </feedback>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>x is 22 and y is 22</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>x is 22 and y is 22</p>
+                </statement>
+                <feedback>
                     No, x and y are two separate variables.  Just because x changes in the last assignment statement, it does not change the value that was copied into y in the second statement.
-                    </feedback>
-                </choice>
+                </feedback>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>x is 15 and y is 22</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>x is 15 and y is 22</p>
+                </statement>
+                <feedback>
                     Look at the last assignment statement, which reassigns x, and not y.
-                    </feedback>
-                </choice>
+                </feedback>
+            </choice>
 
-                <choice correct="yes">
-                    <statement>
-                        <p>x is 22 and y is 15</p>
-                    </statement>
-                    <feedback>
+            <choice correct="yes">
+                <statement>
+                    <p>x is 22 and y is 15</p>
+                </statement>
+                <feedback>
                     Yes, x has the value 22 and y the value 15.
-                    </feedback>
-                </choice>
-            </choices>
+                </feedback>
+            </choice>
+</choices>
 
-        </exercise>
-    </subsection>
-</section>
+    </exercise>
+        </subsection>
+    </section>
+

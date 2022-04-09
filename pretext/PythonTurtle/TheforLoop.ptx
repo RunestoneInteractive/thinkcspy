@@ -1,7 +1,7 @@
 <section xml:id="the-for-loop">
         <title>The <c>for</c> Loop</title>
 
-    <video xml:id="forloopvid" youtube="xGSfiZt5cdw" width="auto"/>
+    <video xml:id="forloopvid" youtube="xGSfiZt5cdw" width="560"/>
             <p>When we drew the square, it was quite tedious.  We had to move then turn, move
             then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
             or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.</p>

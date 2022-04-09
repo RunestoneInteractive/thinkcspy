@@ -1,19 +1,41 @@
 <section xml:id="flow-of-execution-of-the-for-loop">
-        <title>Flow of Execution of the for Loop</title>
-        <p>As a program executes, the interpreter always keeps track of which statement is
-            about to be executed.  We call this the <alert>control flow</alert>, or the <alert>flow of
-                execution</alert> of the program.  When humans execute programs, they often use their
+    <title>Flow of Execution of the for Loop</title>
+    <p>
+        As a program executes, the interpreter always keeps track of which statement is
+            about to be executed.  We call this the
+        <alert>control flow</alert>
+        , or the
+        <alert>flow of
+                execution</alert>
+        of the program.  When humans execute programs, they often use their
             finger to point to each statement in turn.  So you could think of control flow
-            as &#8220;Python&#8217;s moving finger&#8221;.</p>
-        <p>Control flow until now has been strictly top to bottom, one statement at a
-            time.  We call this type of control <alert>sequential</alert>.  In Python flow is sequential as long as
-            successive statements are indented the <em>same</em> amount.  The <c>for</c> statement
-            introduces indented sub-statements after the for-loop heading.</p>
-        <p>Flow of control is often easy to visualize and understand if we draw a flowchart.
-            This flowchart shows the exact steps and logic of how the <c>for</c> statement executes.</p>
-        <image source="PythonTurtle/Figures/new_flowchart_for.png" width="300px%"/>
-        <p>A codelens demonstration is a good way to help you visualize exactly how the flow of control
+            as &#8220;Python&#8217;s moving finger&#8221;.
+    </p>
+    <p>
+        Control flow until now has been strictly top to bottom, one statement at a
+            time.  We call this type of control
+        <alert>sequential</alert>
+        .  In Python flow is sequential as long as
+            successive statements are indented the
+        <em>same</em>
+        amount.  The
+        <c>for</c>
+        statement
+            introduces indented sub-statements after the for-loop heading.
+    </p>
+    <p>
+        Flow of control is often easy to visualize and understand if we draw a flowchart.
+            This flowchart shows the exact steps and logic of how the
+        <c>for</c>
+        statement executes.
+    </p>
+    <image source="PythonTurtle/Figures/new_flowchart_for.png" width="50%" />
+    <p>
+        A codelens demonstration is a good way to help you visualize exactly how the flow of control
             works with the for loop.  Try stepping forward and backward through the program by pressing
-            the buttons.  You can see the value of <c>name</c> change as the loop iterates through the list of friends.</p>
-<exercise runestone="vtest"/>    </section>
-
+            the buttons.  You can see the value of
+        <c>name</c>
+        change as the loop iterates through the list of friends.
+    </p>
+    <exercise runestone="vtest" />
+</section>

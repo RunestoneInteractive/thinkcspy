@@ -26,7 +26,7 @@
         </note>
         
         
-        <p>You can access files in sub-folders, also called directories, under your home directory
+        <p xml:id="index-0">You can access files in sub-folders, also called directories, under your home directory
             by adding a slash and the name of the folder.  For example, if you had a file
             called <c>hello.py</c> in a folder called <c>CS150</c> that is inside a folder called
             <c>PyCharmProjects</c> under your home directory, then the full name for the file

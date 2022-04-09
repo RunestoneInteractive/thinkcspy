@@ -1,34 +1,26 @@
 <section xml:id="syntax-errors">
-    <title>Syntax errors</title>
-    <p>
-        Python can only execute a program if the program is syntactically correct;
-            otherwise, the process fails and returns an error message.
-        <alert>Syntax</alert>
-        refers
+        <title>Syntax errors</title>
+        <p>Python can only execute a program if the program is syntactically correct;
+            otherwise, the process fails and returns an error message.  <alert>Syntax</alert> refers
             to the structure of a program and the rules about that structure. For example,
             in English, a sentence must begin with a capital letter and end with a period.
-            this sentence contains a
-        <alert>syntax error</alert>
-        . So does this one
-    </p>
-    <p>For most readers, a few syntax errors are not a significant problem, which is
+            this sentence contains a <alert>syntax error</alert>. So does this one</p>
+        <p>For most readers, a few syntax errors are not a significant problem, which is
             why we can read the poetry of e. e. cummings without problems.
             Python is not so forgiving. If there is a single syntax error anywhere in your
             program, Python will display an error message and quit.  You will not be able
             to complete the execution of your program. During the first few weeks of your programming career, you
             will probably spend a lot of time tracking down syntax errors. However, as you gain
             experience, you will make fewer errors and you will also be able to find your errors faster.</p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="question1_6_1">
         <statement>
 
-            <p>Which of the following is a syntax error?</p>
+        <p>Which of the following is a syntax error?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -56,17 +48,17 @@
                     This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="question1_6_2">
         <statement>
 
-            <p>Who or what typically finds syntax errors?</p>
+        <p>Who or what typically finds syntax errors?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -103,7 +95,8 @@
                     Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

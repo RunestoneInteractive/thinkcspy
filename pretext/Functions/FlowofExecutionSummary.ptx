@@ -1,14 +1,10 @@
 <section xml:id="flow-of-execution-summary">
-    <title>Flow of Execution Summary</title>
-    <p>
-        When you are working with functions it is really important to know the order
-            in which statements are executed. This is called the
-        <alert>flow of
-                execution</alert>
-        and we&#8217;ve already talked about it a number of times in this
-            chapter.
-    </p>
-    <p>Execution always begins at the first statement of the program.  Statements are
+        <title>Flow of Execution Summary</title>
+        <p>When you are working with functions it is really important to know the order
+            in which statements are executed. This is called the <alert>flow of
+                execution</alert> and we&#8217;ve already talked about it a number of times in this
+            chapter.</p>
+        <p>Execution always begins at the first statement of the program.  Statements are
             executed one at a time, in order, from top to bottom.
             Function definitions do not alter the flow of execution of the program, but
             remember that statements inside the function are not executed until the
@@ -17,31 +13,24 @@
             the next statement, the flow jumps to the first line of the called function,
             executes all the statements there, and then comes back to pick up where it left
             off.</p>
-    <p>That sounds simple enough, until you remember that one function can call
+        <p>That sounds simple enough, until you remember that one function can call
             another. While in the middle of one function, the program might have to execute
             the statements in another function. But while executing that new function, the
             program might have to execute yet another function!</p>
-    <p>Fortunately, Python is adept at keeping track of where it is, so each time a
+        <p>Fortunately, Python is adept at keeping track of where it is, so each time a
             function completes, the program picks up where it left off in the function that
             called it. When it gets to the end of the program, it terminates.</p>
-    <p>
-        What&#8217;s the moral of this sordid tale? When you read a program, don&#8217;t read from
-            top to bottom. Instead, follow the flow of execution.  This means that you will read the
-        <c>def</c>
-        statements as you
+        <p>What&#8217;s the moral of this sordid tale? When you read a program, don&#8217;t read from
+            top to bottom. Instead, follow the flow of execution.  This means that you will read the <c>def</c> statements as you
             are scanning from top to bottom, but you should skip the body of the function
-            until you reach a point where that function is called.
-    </p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            until you reach a point where that function is called.</p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question5_6_1">
         <statement>
 
-            <p>Consider the following Python code. Note that line numbers are included on the left.</p>
-            <program language="python">
-                <input>
+        <p>Consider the following Python code. Note that line numbers are included on the left.</p>
+        <program language="python"><input>
 def pow(b, p):
     y = b ** p
     return y
@@ -53,12 +42,11 @@ def square(x):
 n = 5
 result = square(n)
 print(result)
-</input>
-            </program>
-            <p>Which of the following best reflects the order in which these lines of code are processed in Python?</p>
+</input></program>
+        <p>Which of the following best reflects the order in which these lines of code are processed in Python?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -104,16 +92,15 @@ print(result)
                     Python starts at line 1, notices that it is a function definition and skips over all of the lines in the function definition until it finds a line that it no longer included in the function (line 5).  It then notices line 5 is also a function definition and again skips over the function body to line 9.  On line 10 it notices it has a function to execute, so it goes back and executes that function.  Notice that that function includes another function call. It returns from the function call and completes the assignment in line 6. Then it returns the result of line 7 and completes the assignment in line 10.  Finally, it will go to line 11 after the function square and the assignment are complete.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question5_6_2">
         <statement>
 
-            <p>Consider the following Python code. Note that line numbers are included on the left.</p>
-            <program language="python">
-                <input>
+        <p>Consider the following Python code. Note that line numbers are included on the left.</p>
+        <program language="python"><input>
 def pow(b, p):
     y = b ** p
     return y
@@ -125,12 +112,11 @@ def square(x):
 n = 5
 result = square(n)
 print(result)
-</input>
-            </program>
-            <p>What does this function print?</p>
+</input></program>
+        <p>What does this function print?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -167,7 +153,8 @@ print(result)
                     Notice that pow is called from within square with a base (b) of 5 and a power (p) of two.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

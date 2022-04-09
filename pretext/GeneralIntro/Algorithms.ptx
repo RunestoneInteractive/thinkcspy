@@ -1,30 +1,20 @@
 <section xml:id="algorithms">
-    <title>Algorithms</title>
-    <p>
-        If problem solving is a central part of computer science, then the solutions that you create through
+        <title>Algorithms</title>
+        <p>If problem solving is a central part of computer science, then the solutions that you create through
             the problem solving process are also important.  In computer science, we refer to these solutions
-            as
-        <alert>algorithms</alert>
-        .  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.
-    </p>
-    <p>
-        Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution.  Once we have such a solution, we can use our computer to automate the execution.  As noted
+            as <alert>algorithms</alert>.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
+        <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution.  Once we have such a solution, we can use our computer to automate the execution.  As noted
             above, programming is a skill that allows a computer scientist to take an algorithm and represent it in
-            a notation (a program) that can be followed by a computer.  These programs are written in
-        <alert>programming languages</alert>
-        .
-    </p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            a notation (a program) that can be followed by a computer.  These programs are written in <alert>programming languages</alert>.</p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="question1_1_1">
         <statement>
 
-            <p>What is the most important skill for a computer scientist?</p>
+        <p>What is the most important skill for a computer scientist?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -61,17 +51,17 @@
                     Computer science and math are similar in many ways and it helps to have a strong mathematical foundation, but you do not have to be good at math to be a good computer scientist.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="question1_1_2">
         <statement>
 
-            <p>An algorithm is:</p>
+        <p>An algorithm is:</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -108,7 +98,8 @@
                     Computer scientists sometimes use a special notation to illustrate or document an algorithm, but this is not the definition of an algorithm.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

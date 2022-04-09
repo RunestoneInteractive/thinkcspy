@@ -1,88 +1,57 @@
 <section xml:id="list-comprehensions">
-    <title>List Comprehensions</title>
-    <p>
-        The previous example creates a list from a sequence of values based on some selection criteria.  An easy way to do this type of processing in Python is to use a
-        <alert>list comprehension</alert>
-        .  List comprehensions are concise ways to create lists.  The general syntax is:
-    </p>
-    <pre>[&lt;expression&gt; for &lt;item&gt; in &lt;sequence&gt; if  &lt;condition&gt;]</pre>
-    <p>where the if clause is optional.  For example,</p>
+        <title>List Comprehensions</title>
+        <p>The previous example creates a list from a sequence of values based on some selection criteria.  An easy way to do this type of processing in Python is to use a <alert>list comprehension</alert>.  List comprehensions are concise ways to create lists.  The general syntax is:</p>
+        <pre>[&lt;expression&gt; for &lt;item&gt; in &lt;sequence&gt; if  &lt;condition&gt;]</pre>
+        <p>where the if clause is optional.  For example,</p>
 
-    <listing xml:id="listcomp1">
-        <caption />
-        <program xml:id="listcomp1_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="listcomp1">
+    <caption/>
+    <program xml:id="listcomp1_editor" interactive="activecode" language="python">
+        <input>
 mylist = [1,2,3,4,5]
 
 yourlist = [item ** 2 for item in mylist]
 
 print(yourlist)
         </input>
-        </program>
-    </listing>
-    <p>
-        The expression describes each element of the list that is being built.  The
-        <c>for</c>
-        clause iterates through each item in a sequence.  The items are filtered by the
-        <c>if</c>
-        clause if there is one.  In the example above, the
-        <c>for</c>
-        statement lets
-        <c>item</c>
-        take on all the values in the list
-        <c>mylist</c>
-        .  Each item is then squared before it is added to the list that is being built.  The result is a list of squares of the values in
-        <c>mylist</c>
-        .
-    </p>
-    <p>
-        To write the
-        <c>primes_upto</c>
-        function we will use the
-        <c>is_prime</c>
-        function to filter the sequence of integers coming from the
-        <c>range</c>
-        function.  In other words, for every integer from 2 up to but not including
-        <c>n</c>
-        , if the integer is prime, keep it in the list.
-    </p>
-    <program language="python">
-        <input>
+    </program>
+</listing>
+        <p>The expression describes each element of the list that is being built.  The <c>for</c> clause iterates through each item in a sequence.  The items are filtered by the <c>if</c> clause if there is one.  In the example above, the <c>for</c> statement lets <c>item</c> take on all the values in the list <c>mylist</c>.  Each item is then squared before it is added to the list that is being built.  The result is a list of squares of the values in <c>mylist</c>.</p>
+        <p>To write the <c>primes_upto</c> function we will use the <c>is_prime</c> function to filter the sequence of integers coming from the <c>range</c> function.  In other words, for every integer from 2 up to but not including <c>n</c>, if the integer is prime, keep it in the list.</p>
+        <program language="python"><input>
 def primes_upto(n):
     """ Return a list of all prime numbers less than n using a list comprehension. """
 
     result = [num for num in range(2,n) if is_prime(num)]
     return result
-</input>
-    </program>
-    <note>
-        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+</input></program>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-        <listing xml:id="scratch_09_06">
-            <caption />
-            <program xml:id="scratch_09_06_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </listing>
-    </note>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+<listing xml:id="scratch_09_06">
+    <caption/>
+    <program xml:id="scratch_09_06_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question9_20_1">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 alist = [4,2,8,6,5]
 blist = [num*2 for num in alist if num%2==1]
 print(blist)
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -119,9 +88,10 @@ print(blist)
                     Yes, 5 is the only odd number in alist.  It is doubled before being placed in blist.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
+        
+        
+    </section>
 
-
-</section>

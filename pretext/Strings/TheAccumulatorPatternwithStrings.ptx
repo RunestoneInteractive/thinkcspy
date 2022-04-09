@@ -1,19 +1,13 @@
 <section xml:id="the-accumulator-pattern-with-strings">
-    <title>The Accumulator Pattern with Strings</title>
-    <p>
-        Combining the
-        <c>in</c>
-        operator with string concatenation using
-        <c>+</c>
-        and the accumulator pattern, we can
-            write a function that removes all the vowels from a string.  The idea is to start with a string and iterate over each character, checking to see if the character is a vowel.  As we process the characters, we will build up a new string consisting of only the nonvowel characters.  To do this, we use the accumulator pattern.
-    </p>
-    <p>Remember that the accumulator pattern allows us to keep a &#8220;running total&#8221;.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
+        <title>The Accumulator Pattern with Strings</title>
+        <p>Combining the <c>in</c> operator with string concatenation using <c>+</c> and the accumulator pattern, we can
+            write a function that removes all the vowels from a string.  The idea is to start with a string and iterate over each character, checking to see if the character is a vowel.  As we process the characters, we will build up a new string consisting of only the nonvowel characters.  To do this, we use the accumulator pattern.</p>
+        <p>Remember that the accumulator pattern allows us to keep a &#8220;running total&#8221;.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
 
-    <listing xml:id="ch08_acc1">
-        <caption />
-        <program xml:id="ch08_acc1_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch08_acc1">
+    <caption/>
+    <program xml:id="ch08_acc1_editor" interactive="activecode" language="python">
+        <input>
 def removeVowels(s):
     vowels = "aeiouAEIOU"
     sWithoutVowels = ""
@@ -25,71 +19,40 @@ def removeVowels(s):
 print(removeVowels("compsci"))
 print(removeVowels("aAbEefIijOopUus"))
         </input>
-        </program>
-    </listing>
-    <p>
-        Line 5 uses the
-        <c>not in</c>
-        operator to check whether the current character is not in the string
-        <c>vowels</c>
-        . The alternative to using this operator would be to write a very large
-        <c>if</c>
-        statement that checks each of the individual vowel characters.  Note we would need to use logical
-        <c>and</c>
-        to be sure that the character is not any of the vowels.
-    </p>
-    <program language="python">
-        <input>
+    </program>
+</listing>
+        <p>Line 5 uses the <c>not in</c> operator to check whether the current character is not in the string <c>vowels</c>. The alternative to using this operator would be to write a very large <c>if</c> statement that checks each of the individual vowel characters.  Note we would need to use logical <c>and</c> to be sure that the character is not any of the vowels.</p>
+        <program language="python"><input>
 if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
    eachChar != 'o'  and eachChar != 'u'  and eachChar != 'A'  and
    eachChar != 'E'  and eachChar != 'I'  and eachChar != 'O'  and
    eachChar != 'U':
 
      sWithoutVowels = sWithoutVowels + eachChar
-</input>
-    </program>
-    <p>
-        Look carefully at line 6 in the above program (
-        <c>sWithoutVowels = sWithoutVowels + eachChar</c>
-        ).  We will do this for every character that is not a vowel.  This should look
+</input></program>
+        <p>Look carefully at line 6 in the above program (<c>sWithoutVowels = sWithoutVowels + eachChar</c>).  We will do this for every character that is not a vowel.  This should look
             very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to &#8220;accumulate&#8221; the final result.
-            In words it says that the new value of
-        <c>sWithoutVowels</c>
-        will be the old value of
-        <c>sWithoutVowels</c>
-        concatenated with
-            the value of
-        <c>eachChar</c>
-        .  We are building the result string character by character.
-    </p>
-    <p>
-        Take a close look also at the initialization of
-        <c>sWithoutVowels</c>
-        .  We start with an empty string and then begin adding
-            new characters to the end.
-    </p>
-    <p>Step through the function using codelens to see the accumulator variable grow.</p>
-    <exercise runestone="ch08_acc2" />
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            In words it says that the new value of <c>sWithoutVowels</c> will be the old value of <c>sWithoutVowels</c> concatenated with
+            the value of <c>eachChar</c>.  We are building the result string character by character.</p>
+        <p>Take a close look also at the initialization of <c>sWithoutVowels</c>.  We start with an empty string and then begin adding
+            new characters to the end.</p>
+        <p>Step through the function using codelens to see the accumulator variable grow.</p>
+<exercise runestone="ch08_acc2"/>        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question8_11_1">
         <statement>
 
-            <p>What is printed by the following statements:</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements:</p>
+        <program language="python"><input>
 s = "ball"
 r = ""
 for item in s:
     r = item.upper() + r
 print(r)
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -117,17 +80,21 @@ print(r)
                     Yes, the order is reversed due to the order of the concatenation.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-    <note>
-        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-        <listing xml:id="scratch_08_03">
-            <caption />
-            <program xml:id="scratch_08_03_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </listing>
-    </note>
-</section>
+<listing xml:id="scratch_08_03">
+    <caption/>
+    <program xml:id="scratch_08_03_editor" interactive="activecode" language="python">
+        <input>
+
+
+        </input>
+    </program>
+</listing>
+        </note>
+    </section>
+

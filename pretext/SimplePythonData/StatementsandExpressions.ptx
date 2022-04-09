@@ -1,14 +1,14 @@
 <section xml:id="statements-and-expressions">
         <title>Statements and Expressions</title>
 
-    <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto"/>
+    <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="560"/>
             <p>A <alert>statement</alert> is an instruction that the Python interpreter can execute. We
             have only seen the assignment statement so far.  Some other kinds of statements
             that we&#8217;ll see shortly are <c>while</c> statements, <c>for</c> statements, <c>if</c>
             statements,  and <c>import</c> statements.  (There are other kinds too!)</p>
         
         
-        <p>An <term>expression</term> <idx>expression</idx> is a combination of values, variables, operators, and calls
+        <p xml:id="index-0">An <alert>expression</alert> is a combination of values, variables, operators, and calls
             to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
             <alert>evaluates</alert> the expression and displays the result.</p>
 

@@ -1,17 +1,7 @@
-<section xml:id="selection_exercises">
+<exercises xml:id="selection_exercises">
         <title>Exercises</title>
-        <QuestionNode xml:id="selection-ex-1" line="13" names="selection_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_1', 'qnumber': '', 'question_label': '7.10.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-<listing xml:id="ex_6_1">
-    <caption/>
-    <program xml:id="ex_6_1_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+        
+            <exercise xml:id="ex_6_1"><statement>
                     <p>What do these expressions evaluate to?</p>
                     <p><ol label="1">
                         <li>
@@ -27,8 +17,15 @@
                             <p><c>not (3 &lt; 4)</c></p>
                         </li>
                     </ol></p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+    
+    
+    <program xml:id="ex_6_1_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
                     <p><ol label="1">
                         <li>
                             <p>True</p>
@@ -43,23 +40,12 @@
                             <p>False</p>
                         </li>
                     </ol></p>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="39" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_eb4a097382404ffe81300aac5744e3fe', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-2" line="44" names="selection_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_2', 'qnumber': '', 'question_label': '7.10.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
+                </solution></exercise>
+        
+        
 
-<listing xml:id="ex_6_2">
-    <caption/>
-    <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+<exercise xml:id="ex_6_2">
+    <statement>
             <p>Give the <alert>logical opposites</alert> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
             <p><ol label="1">
                 <li>
@@ -75,37 +61,17 @@
                     <p><c>a &gt;= 18  or  day != 3</c></p>
                 </li>
             </ol></p>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-3" line="56" names="selection_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_3', 'qnumber': '', 'question_label': '7.10.5'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q3" line="58" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-<listing xml:id="ex_6_3">
-    <caption/>
-    <program xml:id="ex_6_3_editor" interactive="activecode" language="python">
+    </statement>
+    <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
         <input>
-def getGrade(grade):
-      #your code here
 
-
-====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
-        self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
-        self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
-        self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
-        self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
-
-
-myTests().main()
         </input>
     </program>
-</listing>
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_3"><statement>
                     <p>Write a function which is given an exam mark, and it returns a string &#8212; the grade for that mark &#8212; according to this
                         scheme:</p>
                     <table><tabular>
@@ -169,12 +135,35 @@ myTests().main()
                     <p>The square and round brackets denote closed and open intervals.
                         A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
                     <p>Test your function by printing the mark and the grade for a number of different marks.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-<listing xml:id="q3_question">
-    <caption/>
-    <program xml:id="q3_question_editor" interactive="activecode" language="python">
+    
+    
+    <program xml:id="ex_6_3_editor" interactive="activecode" language="python">
+        <input>
+def getGrade(grade):
+      #your code here
+
+
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
+        self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
+        self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
+        self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
+        self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
+
+
+myTests().main()
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="q3_question_editor" language="python">
         <input>
 def grade(mark):
     if mark &gt;= 90:
@@ -195,50 +184,44 @@ mark = 83
 print( "Mark:", str(mark), "Grade:", grade(mark))
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="130" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_b9e6fd14629949e59da1a4ae827c0032', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-4" line="134" names="selection_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_4', 'qnumber': '', 'question_label': '7.10.8'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
 
-<listing xml:id="ex_6_4">
-    <caption/>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_6_4">
+    <statement>
+            <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
+                of 200 or more is filled with red, values between [100 and 200) are filled yellow,
+                and bars representing values less than 100 are filled green.</p>
+
+    </statement>
     <program xml:id="ex_6_4_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
-                of 200 or more is filled with red, values between [100 and 200) are filled yellow,
-                and bars representing values less than 100 are filled green.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-5" line="144" names="selection_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_5', 'qnumber': '', 'question_label': '7.10.10'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q5" line="146" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_5"><statement>
+                    <p>In the turtle bar chart program, what do you expect to happen if one or more
+                        of the data values in the list is negative?   Go back and try it out.  Change the
+                        program so that when it prints the text value for the negative bars, it puts
+                        the text above the base of the bar (on the 0 axis).</p>
 
-<listing xml:id="ex_6_5">
-    <caption/>
+    
+    
     <program xml:id="ex_6_5_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-                    <p>In the turtle bar chart program, what do you expect to happen if one or more
-                        of the data values in the list is negative?   Go back and try it out.  Change the
-                        program so that when it prints the text value for the negative bars, it puts
-                        the text above the base of the bar (on the 0 axis).</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
-
-<listing xml:id="answer_ex_6_5">
-    <caption/>
-    <program xml:id="answer_ex_6_5_editor" interactive="activecode" language="python">
+</statement><solution>
+    
+    <program xml:id="answer_ex_6_5_editor" language="python">
         <input>
 import turtle
 
@@ -287,18 +270,19 @@ for a in xs:
 wn.exitonclick()
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="214" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_0118bd02de23462bafdb51beb4c85e44', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-6" line="218" names="selection_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_6', 'qnumber': '', 'question_label': '7.10.13'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
 
-<listing xml:id="ex_6_6">
-    <caption/>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_6_6">
+    <statement>
+            <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
+                the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
+
+    </statement>
     <program xml:id="ex_6_6_editor" interactive="activecode" language="python">
         <input>
 
@@ -319,16 +303,16 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
-                the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-7" line="245" names="selection_ex_7" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_7', 'qnumber': '', 'question_label': '7.10.15'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q7" line="247" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q7', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_7"><statement>
+                    <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
+                        and returns <c>True</c> if the argument is an <alert>even number</alert> and <c>False</c> if
+                        it is <alert>odd</alert>.</p>
 
-<listing xml:id="ex_6_7">
-    <caption/>
+    
+    
     <program xml:id="ex_6_7_editor" interactive="activecode" language="python">
         <input>
 
@@ -349,16 +333,9 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-                    <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
-                        and returns <c>True</c> if the argument is an <alert>even number</alert> and <c>False</c> if
-                        it is <alert>odd</alert>.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
-
-<listing xml:id="q7_answer">
-    <caption/>
-    <program xml:id="q7_answer_editor" interactive="activecode" language="python">
+</statement><solution>
+    
+    <program xml:id="q7_answer_editor" language="python">
         <input>
 from test import testEqual
 
@@ -374,18 +351,19 @@ testEqual(is_even(1), False)
 testEqual(is_even(0), True)
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="297" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_7ae92646976d4953ac8a163f338b4358', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-8" line="302" names="selection_ex_8" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_8', 'qnumber': '', 'question_label': '7.10.18'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
 
-<listing xml:id="ex_6_8">
-    <caption/>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_6_8">
+    <statement>
+            <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
+                and <c>False</c> otherwise.</p>
+
+    </statement>
     <program xml:id="ex_6_8_editor" interactive="activecode" language="python">
         <input>
 
@@ -406,16 +384,15 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
-                and <c>False</c> otherwise.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-9" line="329" names="selection_ex_9" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_9', 'qnumber': '', 'question_label': '7.10.20'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q9" line="331" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q9', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_9"><statement>
+                    <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
+                        argument is an odd integer.</p>
 
-<listing xml:id="ex_6_9">
-    <caption/>
+    
+    
     <program xml:id="ex_6_9_editor" interactive="activecode" language="python">
         <input>
 
@@ -435,15 +412,9 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-                    <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
-                        argument is an odd integer.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
-
-<listing xml:id="q9_answer">
-    <caption/>
-    <program xml:id="q9_answer_editor" interactive="activecode" language="python">
+</statement><solution>
+    
+    <program xml:id="q9_answer_editor" language="python">
         <input>
 from test import testEqual
 
@@ -465,18 +436,29 @@ testEqual(is_odd(1), True)
 testEqual(is_odd(0), False)
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="386" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_9125792d0c264b65b4d9d72d25485ceb', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-10" line="391" names="selection_ex_10" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_10', 'qnumber': '', 'question_label': '7.10.23'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
 
-<listing xml:id="ex_6_10">
-    <caption/>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_6_10">
+    <statement>
+            <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
+                will determine whether the triangle is right-angled.  Assume that the third argument to the
+                function is always the longest side.  It will return <c>True</c> if the triangle
+                is right-angled, or <c>False</c> otherwise.</p>
+            <p>Hint: floating point arithmetic is not always exactly accurate,
+                so it is not safe to test floating point numbers for equality.
+                If a good programmer wants to know whether
+                <c>x</c> is equal or close enough to <c>y</c>, they would probably code it up as</p>
+            <program language="python"><input>
+if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
+    ...
+</input></program>
+
+    </statement>
     <program xml:id="ex_6_10_editor" interactive="activecode" language="python">
         <input>
 def is_rightangled(a, b, c):
@@ -497,26 +479,14 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
-                will determine whether the triangle is right-angled.  Assume that the third argument to the
-                function is always the longest side.  It will return <c>True</c> if the triangle
-                is right-angled, or <c>False</c> otherwise.</p>
-            <p>Hint: floating point arithmetic is not always exactly accurate,
-                so it is not safe to test floating point numbers for equality.
-                If a good programmer wants to know whether
-                <c>x</c> is equal or close enough to <c>y</c>, they would probably code it up as</p>
-            <program language="python"><input>
-if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
-    ...
-</input></program>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-11" line="431" names="selection_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_11', 'qnumber': '', 'question_label': '7.10.25'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q11" line="433" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_11"><statement>
+                    <p>Extend the above program so that the sides can be given to the function in any order.</p>
 
-<listing xml:id="ex_6_11">
-    <caption/>
+    
+    
     <program xml:id="ex_6_11_editor" interactive="activecode" language="python">
         <input>
 
@@ -539,14 +509,9 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-                    <p>Extend the above program so that the sides can be given to the function in any order.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
-
-<listing xml:id="q11_answer">
-    <caption/>
-    <program xml:id="q11_answer_editor" interactive="activecode" language="python">
+</statement><solution>
+    
+    <program xml:id="q11_answer_editor" language="python">
         <input>
 from test import testEqual
 
@@ -569,18 +534,22 @@ testEqual(is_rightangled(4.1, 8.2, 9.168), False)
 testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="490" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_b25992fa70fc4e7581d84315df38d796', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-12" line="495" names="selection_ex_12" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_12', 'qnumber': '', 'question_label': '7.10.28'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
 
-<listing xml:id="ex_6_12">
-    <caption/>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_6_12">
+    <statement>
+            <p>3 criteria must be taken into account to identify leap years:</p>
+            <p>The year is evenly divisible by 4;</p>
+            <p>If the year can be evenly divided by 100, it is NOT a leap year, unless;</p>
+            <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
+            <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
+
+    </statement>
     <program xml:id="ex_6_12_editor" interactive="activecode" language="python">
         <input>
 def isLeap(year):
@@ -602,25 +571,10 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</listing>
-            <p>3 criteria must be taken into account to identify leap years:</p>
-            <p>The year is evenly divisible by 4;</p>
-            <p>If the year can be evenly divided by 100, it is NOT a leap year, unless;</p>
-            <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
-            <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="selection-ex-13" line="530" names="selection_ex_13#." runestone_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'selection_ex_13#.', 'qnumber': '', 'question_label': '7.10.30'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-            <TabbedStuffNode divid="q13" line="532" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q13', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-<listing xml:id="ex_6_13">
-    <caption/>
-    <program xml:id="ex_6_13_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+</exercise>
+        
+        
+            <exercise xml:id="ex_6_13"><statement>
                     <p>Implement the calculator for the date of Easter.</p>
                     <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
                     <p>Ask the user to enter a year.
@@ -650,12 +604,17 @@ myTests().main()
                     <p>Special note: The algorithm can give a date in April.  Also, if the year is one of four special
                         years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
                     <p>Your program should print an error message if the user provides a date that is out of range.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-<listing xml:id="answer_ex_6_13">
-    <caption/>
-    <program xml:id="answer_ex_6_13_editor" interactive="activecode" language="python">
+    
+    
+    <program xml:id="ex_6_13_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="answer_ex_6_13_editor" language="python">
         <input>
 year = int(input("Please enter a year"))
 if year &gt;= 1900 and year &lt;= 2099:
@@ -677,13 +636,10 @@ else:
     print("ERROR...year out of range")
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="586" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_2dfd6acf1ca849c2853dad606d1ba255', 'subchapter': 'Exercises', 'chapter': 'Selection', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Selection/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-    </section>
+
+
+
+                </solution></exercise>
+        
+    </exercises>
 

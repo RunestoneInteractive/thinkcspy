@@ -1,27 +1,22 @@
 <section xml:id="test-first-development">
-    <title>Test-First Development</title>
-    <p>The idea of unit tests has been around a long time, and most people agree that writing unit tests is a good idea.
+        <title>Test-First Development</title>
+        <p>The idea of unit tests has been around a long time, and most people agree that writing unit tests is a good idea.
             However, when deadlines loom and time is at a premium, the unit tests often don&#8217;t get written. That&#8217;s a problem, because
             studies have shown that projects with good unit tests often are more robust, with fewer bugs, than projects that don&#8217;t
             have good unit tests.</p>
-    <p>
-        In a traditional development process, when a programmer needs to create a new function, he writes the function, and
+        <p>In a traditional development process, when a programmer needs to create a new function, he writes the function, and
             then, if he has time, writes a unit test for it. If he doesn&#8217;t have time, he doesn&#8217;t write the unit test: he tests the
             function in the context of the program being developed. One day, someone decided that it might be a good idea
-            to reverse the order: write the unit test
-        <em>first</em>
-        , and then write the function. That led to the idea of
-            Test-First Development.
-    </p>
-    <admonition classes="admonition-test-first-development">
-        <title>Test-First Development</title>
-        <p>Test-First Development is an approach to writing software that involves writing a unit test for a function before
+            to reverse the order: write the unit test <em>first</em>, and then write the function. That led to the idea of
+            Test-First Development.</p>
+        <admonition classes="admonition-test-first-development">
+            <title>Test-First Development</title>
+            <p>Test-First Development is an approach to writing software that involves writing a unit test for a function before
                 writing the function.</p>
-    </admonition>
-    <p>In this section, we&#8217;ll explore the idea of test-first development to see how it can help.</p>
-    <p>A programmer using Test-First Development writes a new function using the following steps:</p>
-    <p>
-        <ol label="1">
+        </admonition>
+        <p>In this section, we&#8217;ll explore the idea of test-first development to see how it can help.</p>
+        <p>A programmer using Test-First Development writes a new function using the following steps:</p>
+        <p><ol label="1">
             <li>
                 <p>First, create the function interface and docstring.</p>
             </li>
@@ -37,26 +32,21 @@
             <li>
                 <p>Run the unit test. If it fails, debug the function, and run the test again. Repeat until the test passes.</p>
             </li>
-        </ol>
-    </p>
-    <p>
-        As an example, suppose that we&#8217;re going to write our
-        <c>sumnums</c>
-        function using the Test-First methodology. We begin
-            by creating the interface and docstring:
-    </p>
-    <pre>def sumnums(lo, hi):
+        </ol></p>
+        <p>As an example, suppose that we&#8217;re going to write our <c>sumnums</c> function using the Test-First methodology. We begin
+            by creating the interface and docstring:</p>
+        <pre>def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
     Precondition: lo &lt;= hi
     Postcondition: returns the sum of the numbers in the range [lo..hi]
     """</pre>
-    <p>Next, we write the unit test for it:</p>
+        <p>Next, we write the unit test for it:</p>
 
-    <listing xml:id="ac_tfd_sumnums">
-        <caption />
-        <program xml:id="ac_tfd_sumnums_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ac_tfd_sumnums">
+    <caption/>
+    <program xml:id="ac_tfd_sumnums_editor" interactive="activecode" language="python">
+        <input>
 def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
@@ -68,19 +58,15 @@ assert sumnums(1, 3) == 6
 assert sumnums(1, 1) == 1
 print("All tests passed!")
         </input>
-        </program>
-    </listing>
-    <p>We run the unit test and it fails.</p>
-    <p>
-        Next, we implement the body of
-        <c>sumnums</c>
-        :
-    </p>
+    </program>
+</listing>
+        <p>We run the unit test and it fails.</p>
+        <p>Next, we implement the body of <c>sumnums</c>:</p>
 
-    <listing xml:id="ac_tfd_sumnums2">
-        <caption />
-        <program xml:id="ac_tfd_sumnums2_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ac_tfd_sumnums2">
+    <caption/>
+    <program xml:id="ac_tfd_sumnums2_editor" interactive="activecode" language="python">
+        <input>
 def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
@@ -96,39 +82,22 @@ assert sumnums(1, 3) == 6
 assert sumnums(1, 1) == 1
 print("All tests passed!")
         </input>
-        </program>
-    </listing>
-    <p>
-        Now, run the tests. The tests indicate an assertion error, which points to a bug in the function logic. Fix the bug,
-            and test again. (If you&#8217;re not sure what the bug is, try using
-        <alert>Show in CodeLens</alert>
-        and stepping through the code to help
-            you figure it out.)
-    </p>
-    <RevealNode line="96" runestone_options="{'showtitle': 'data-showtitle=&quot;Give me a tip&quot;', 'modal': None, 'modaltitle': &quot;Here's a tip!&quot;, 'subchapter': 'TestFirstDevelopment', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'rv_tfd_tip', 'hidetitle': 'data-hidetitle=&quot;Hide&quot;', 'instructoronly': '', 'is_dynamic': 'True'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/UnitTesting/TestFirstDevelopment.rst">
-        <p>
-            The range function generates numbers in the range
-            <c>lo</c>
-            ..
-            <c>hi - 1</c>
-            . Our function should include
-            <c>hi</c>
-            .
-                Try adjusting the
-            <c>hi</c>
-            parameter for range to
-            <c>hi + 1</c>
-            .
-        </p>
-    </RevealNode>
-    <p>Suppose we&#8217;re not creating a new function, but modifying an existing one. In Test-First Development,
+    </program>
+</listing>
+        <p>Now, run the tests. The tests indicate an assertion error, which points to a bug in the function logic. Fix the bug,
+            and test again. (If you&#8217;re not sure what the bug is, try using <alert>Show in CodeLens</alert> and stepping through the code to help
+            you figure it out.)</p>
+        <RevealNode line="96" runestone_options="{'showtitle': 'data-showtitle=&quot;Give me a tip&quot;', 'modal': None, 'modaltitle': &quot;Here's a tip!&quot;, 'subchapter': 'TestFirstDevelopment', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'rv_tfd_tip', 'hidetitle': 'data-hidetitle=&quot;Hide&quot;', 'instructoronly': '', 'is_dynamic': 'True'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/UnitTesting/TestFirstDevelopment.rst">
+            <p>The range function generates numbers in the range <c>lo</c> .. <c>hi - 1</c>. Our function should include <c>hi</c>.
+                Try adjusting the <c>hi</c> parameter for range to <c>hi + 1</c>.</p>
+        </RevealNode>
+        <p>Suppose we&#8217;re not creating a new function, but modifying an existing one. In Test-First Development,
             before making the modification to the function, we write a test for the new functionality. Then,
             we modify the function, and use the test to check that the modification worked.</p>
-    <subsection xml:id="benefits-of-test-first-development">
-        <title>Benefits of Test-First Development</title>
-        <p>There are several benefits to Test-First Development.</p>
-        <p>
-            <ol label="1">
+        <subsection xml:id="benefits-of-test-first-development">
+            <title>Benefits of Test-First Development</title>
+            <p>There are several benefits to Test-First Development.</p>
+            <p><ol label="1">
                 <li>
                     <p>It ensures that unit tests are written. This tends to lead to higher-quality, robust code, with fewer
                         bugs.</p>
@@ -163,41 +132,39 @@ print("All tests passed!")
                         comes every time a new test passes. Instead of spending hours of frustration debugging a new function in the context
                         of a complex program, with few visible results, the test-first progress leads to more visible and regular successes.</p>
                 </li>
-            </ol>
-        </p>
-        <p>I hope you&#8217;ll try out Test-First Development on your next assignment and experience some of these benefits
+            </ol></p>
+            <p>I hope you&#8217;ll try out Test-First Development on your next assignment and experience some of these benefits
                 for yourself!</p>
-        <p>
-            <alert>Check your understanding</alert>
-        </p>
+            <p><alert>Check your understanding</alert></p>
 
-        <exercise xml:id="mc_tfd_1">
-            <statement>
+    <exercise xml:id="mc_tfd_1">
+        <statement>
 
-                <p>Test-First Development often involves writing more code than traditional development.</p>
+            <p>Test-First Development often involves writing more code than traditional development.</p>
 
-            </statement>
-            <choices>
+        </statement>
+<choices>
 
-                <choice correct="yes">
-                    <statement>
-                        <p>True</p>
-                    </statement>
-                    <feedback>
+            <choice correct="yes">
+                <statement>
+                    <p>True</p>
+                </statement>
+                <feedback>
                     Correct. Test-First Development requires the developer to write unit tests. However, these tests come with significant benefits and can speed up overall development.
                 </feedback>
-                </choice>
+            </choice>
 
-                <choice>
-                    <statement>
-                        <p>False</p>
-                    </statement>
-                    <feedback>
+            <choice>
+                <statement>
+                    <p>False</p>
+                </statement>
+                <feedback>
                     Incorrect. Test-First Development requires the developer to write unit tests. However, these tests come with significant benefits and can speed up overall development.
                 </feedback>
-                </choice>
-            </choices>
+            </choice>
+</choices>
 
-        </exercise>
-    </subsection>
-</section>
+    </exercise>
+        </subsection>
+    </section>
+

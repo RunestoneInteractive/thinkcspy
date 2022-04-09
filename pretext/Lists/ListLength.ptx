@@ -1,43 +1,33 @@
 <section xml:id="list-length">
-    <title>List Length</title>
-    <p>
-        As with strings, the function
-        <c>len</c>
-        returns the length of a list (the number
+        <title>List Length</title>
+        <p>As with strings, the function <c>len</c> returns the length of a list (the number
             of items in the list).  However, since lists can have items which are themselves lists, it important to note
-            that
-        <c>len</c>
-        only returns the top-most length.  In other words, sublists are considered to be a single
-            item when counting the length of the list.
-    </p>
+            that <c>len</c> only returns the top-most length.  In other words, sublists are considered to be a single
+            item when counting the length of the list.</p>
 
-    <listing xml:id="chp09_01a">
-        <caption />
-        <program xml:id="chp09_01a_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="chp09_01a">
+    <caption/>
+    <program xml:id="chp09_01a_editor" interactive="activecode" language="python">
+        <input>
 alist =  ["hello", 2.0, 5, [10, 20]]
 print(len(alist))
 print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]))
         </input>
-        </program>
-    </listing>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+    </program>
+</listing>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question9_2_1">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 alist = [3, 67, "cat", 3.14, False]
 print(len(alist))
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -56,23 +46,21 @@ print(len(alist))
                     Yes, there are 5 items in this list.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_2_2">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(len(alist))
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -91,7 +79,8 @@ print(len(alist))
                     len returns the number of top level items in the list.  It does not count items in sublists.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

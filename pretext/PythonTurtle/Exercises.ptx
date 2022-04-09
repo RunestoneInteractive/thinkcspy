@@ -1,108 +1,79 @@
-<section xml:id="pythonturtle_exercises">
+<exercises xml:id="pythonturtle_exercises">
         <title>Exercises</title>
-        <QuestionNode xml:id="turtle-ex-1" line="14" names="turtle_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_1', 'qnumber': '', 'question_label': '4.11.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q1" line="17" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-                    <listing xml:id="ex_3_1">
-                        <caption/>
-                        <program xml:id="ex_3_1_editor" interactive="activecode" language="python">
-                            <input>
-
-                            </input>
-                        </program>
-                    </listing>
+        
+            <exercise xml:id="ex_3_1"><statement>
                     <p>Write a program that prints <c>We like Python's turtles!</c> 100 times.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-                    <listing xml:id="pt_q1_answer">
-                        <caption/>
-                        <program xml:id="pt_q1_answer_editor" interactive="activecode" language="python">
-                            <input>
+    
+    
+    <program xml:id="ex_3_1_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q1_answer_editor" language="python">
+        <input>
 for i in range(100):
     print("We like Python's turtles!")
-                            </input>
-                        </program>
-                    </listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="36" runestone_options="{'shortname': 'interactivepython', 'identifier': 'f858d02024e54ae1b6b50ed8c65a01e6', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-2" line="41" names="turtle_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_2', 'qnumber': '', 'question_label': '4.11.4'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+        </input>
+    </program>
 
-            <exercise xml:id="turtle_reflect">
-                <statement>
-                    <p>Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?</p>
 
-                </statement>
-            </exercise>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-3" line="47" names="turtle_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_3', 'qnumber': '', 'question_label': '4.11.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q3" line="49" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-                    <listing xml:id="ex_3_3">
-                        <caption/>
-                        <program xml:id="ex_3_3_editor" interactive="activecode" language="python">
-                            <input>
+                </solution></exercise>
+        
+        
 
-                            </input>
-                        </program>
-                    </listing>
+<exercise xml:id="turtle_reflect">
+    <statement>
+            <p>Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?</p>
+
+    </statement>
+</exercise> 
+        
+        
+            <exercise xml:id="ex_3_3"><statement>
                     <dl>
                         <li>
                             <title>Write a program that uses a for loop to print</title>
                             
                                 <line_block>
-                                    <line>
-                                        <c>One of the months of the year is January</c>
-                                    </line>
-                                    <line>
-                                        <c>One of the months of the year is February</c>
-                                    </line>
-                                    <line>
-                                        <c>One of the months of the year is March</c>
-                                    </line>
+                                    <line><c>One of the months of the year is January</c></line>
+                                    <line><c>One of the months of the year is February</c></line>
+                                    <line><c>One of the months of the year is March</c></line>
                                     <line>etc &#8230;</line>
                                 </line_block>
                             
                         </li>
                     </dl>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-                    <listing xml:id="pt_q3_answer">
-                        <caption/>
-                        <program xml:id="pt_q3_answer_editor" interactive="activecode" language="python">
-                            <input>
+    
+    
+    <program xml:id="ex_3_3_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q3_answer_editor" language="python">
+        <input>
 for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
     print("One of the months of the year is", amonth)
-                            </input>
-                        </program>
-                    </listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="73" runestone_options="{'shortname': 'interactivepython', 'identifier': 'b271442ee0864973a023c19f27aeb401', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-4" line="78" names="turtle_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_4', 'qnumber': '', 'question_label': '4.11.9'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+        </input>
+    </program>
 
-            <listing xml:id="ex_3_4">
-                <caption/>
-                <program xml:id="ex_3_4_editor" interactive="activecode" language="python">
-                    <input>
 
-                    </input>
-                </program>
-            </listing>
-            <p>Assume you have a list of numbers <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c>
-            </p>
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_3_4">
+    <statement>
+            <p>Assume you have a list of numbers <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c></p>
             <p><ol label="a">
                 <li>
                     <p>Write a loop that prints each of the numbers on a new line.</p>
@@ -111,19 +82,17 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
                     <p>Write a loop that prints each number and its square on a new line.</p>
                 </li>
             </ol></p>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-5" line="89" names="turtle_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_5', 'qnumber': '', 'question_label': '4.11.11'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q5" line="91" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-                    <listing xml:id="ex_3_5">
-                        <caption/>
-                        <program xml:id="ex_3_5_editor" interactive="activecode" language="python">
-                            <input>
+    </statement>
+    <program xml:id="ex_3_4_editor" interactive="activecode" language="python">
+        <input>
 
-                            </input>
-                        </program>
-                    </listing>
+        </input>
+    </program>
+</exercise>
+        
+        
+            <exercise xml:id="ex_3_5"><statement>
                     <p>Use <c>for</c> loops to make a turtle draw these regular polygons
                         (regular means all sides the same lengths, all angles the same):</p>
                     <p><ul>
@@ -140,8 +109,15 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
                             <p>An octagon (eight sides)</p>
                         </li>
                     </ul></p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+    
+    
+    <program xml:id="ex_3_5_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
                     <program language="python"><input>
 # draw an equilateral triangle
 import turtle
@@ -197,46 +173,38 @@ for i in range(8):
 
 wn.exitonclick()
 </input></program>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="170" runestone_options="{'shortname': 'interactivepython', 'identifier': 'f36e8bc742b89424e82f111ba2d1dd33f', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-6" line="174" names="turtle_ex_6" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_6', 'qnumber': '', 'question_label': '4.11.13'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+                </solution></exercise>
+        
+        
 
-            <listing xml:id="ex_3_6">
-                <caption/>
-                <program xml:id="ex_3_6_editor" interactive="activecode" language="python">
-                    <input>
-
-                    </input>
-                </program>
-            </listing>
+<exercise xml:id="ex_3_6">
+    <statement>
             <p>Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
                 regular polygon.  The program should draw the polygon and then fill it in.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-7" line="184" names="turtle_ex_7" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_7', 'qnumber': '', 'question_label': '4.11.15'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q7" line="186" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q7', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-                    <listing xml:id="ex_3_7">
-                        <caption/>
-                        <program xml:id="ex_3_7_editor" interactive="activecode" language="python">
-                            <input>
+    </statement>
+    <program xml:id="ex_3_6_editor" interactive="activecode" language="python">
+        <input>
 
-                            </input>
-                        </program>
-                    </listing>
+        </input>
+    </program>
+</exercise>
+        
+        
+            <exercise xml:id="ex_3_7"><statement>
                     <p>A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is <c>160, -43, 270, -97, -43, 200, -940, 17, -86</c>. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-                    <listing xml:id="pt_q7_answer">
-                        <caption/>
-                        <program xml:id="pt_q7_answer_editor" interactive="activecode" language="python">
-                            <input>
+    
+    
+    <program xml:id="ex_3_7_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q7_answer_editor" language="python">
+        <input>
 import turtle
 
 wn = turtle.Screen()
@@ -259,22 +227,23 @@ for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
 print("The pirate's final heading was", lovelace.heading())
 
 wn.exitonclick()
-                            </input>
-                        </program>
-                    </listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="226" runestone_options="{'shortname': 'interactivepython', 'identifier': 'a7e34946f59f348f2bfeb3f918eb57b7a', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-8" line="230" names="turtle_ex_8" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_8', 'qnumber': '', 'question_label': '4.11.18'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+        </input>
+    </program>
 
-            <listing xml:id="ex_3_8">
-                <caption/>
-                <program xml:id="ex_3_8_editor" interactive="activecode" language="python">
-                    <input>
+
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_3_8">
+    <statement>
+            <p>On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press <c>run</c>
+                and check your answer.</p>
+
+    </statement>
+    <program xml:id="ex_3_8_editor" interactive="activecode" language="python">
+        <input>
 import turtle
 wn = turtle.Screen()
 tess = turtle.Turtle()
@@ -284,33 +253,26 @@ tess.right(-90)
 tess.left(3600)
 tess.left(3645)
 tess.forward(-100)
-                    </input>
-                </program>
-            </listing>
-            <p>On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press <c>run</c>
-                and check your answer.</p>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-9" line="249" names="turtle_ex_9" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_9', 'qnumber': '', 'question_label': '4.11.20'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q9" line="251" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q9', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-                    <listing xml:id="ex_3_9">
-                        <caption/>
-                        <program xml:id="ex_3_9_editor" interactive="activecode" language="python">
-                            <input>
-
-                            </input>
-                        </program>
-                    </listing>
+        </input>
+    </program>
+</exercise>
+        
+        
+            <exercise xml:id="ex_3_9"><statement>
                     <p>Write a program to draw a shape like this:</p>
                     <image source="PythonTurtle/Figures/star.png"/>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-                    <listing xml:id="pt_q9_answer">
-                        <caption/>
-                        <program xml:id="pt_q9_answer_editor" interactive="activecode" language="python">
-                            <input>
+    
+    
+    <program xml:id="ex_3_9_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q9_answer_editor" language="python">
+        <input>
 import turtle
 
 turing = turtle.Turtle()
@@ -318,51 +280,44 @@ turing = turtle.Turtle()
 for i in range(5):
     turing.forward(110)
     turing.left(216)
-                            </input>
-                        </program>
-                    </listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="278" runestone_options="{'shortname': 'interactivepython', 'identifier': 'c611217310057488aab6a34d4b591e753', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-10" line="283" names="turtle_ex_10" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_10', 'qnumber': '', 'question_label': '4.11.23'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+        </input>
+    </program>
 
-            <listing xml:id="ex_3_10">
-                <caption/>
-                <program xml:id="ex_3_10_editor" interactive="activecode" language="python">
-                    <input>
 
-                    </input>
-                </program>
-            </listing>
+
+                </solution></exercise>
+        
+        
+
+<exercise xml:id="ex_3_10">
+    <statement>
             <p>Write a program to draw a face of a clock that looks something like this:</p>
             <image source="PythonTurtle/Figures/tess_clock1.png"/>
-        </QuestionNode>
-        <QuestionNode xml:id="turtle-ex-11" line="293" names="turtle_ex_11" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_11', 'qnumber': '', 'question_label': '4.11.25'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-            <TabbedStuffNode divid="q11" line="295" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q11', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-                    <listing xml:id="ex_3_11">
-                        <caption/>
-                        <program xml:id="ex_3_11_editor" interactive="activecode" language="python">
-                            <input>
+    </statement>
+    <program xml:id="ex_3_10_editor" interactive="activecode" language="python">
+        <input>
 
-                            </input>
-                        </program>
-                    </listing>
+        </input>
+    </program>
+</exercise>
+        
+        
+            <exercise xml:id="ex_3_11"><statement>
                     <p>Write a program to draw some kind of picture.  Be creative and experiment
-                        with the turtle methods provided in <xref ref="SummaryofTurtleMethods#turtle-methods"/>.
-                </p>
-            </TabNode>
-            <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                        with the turtle methods provided in <xref ref="SummaryofTurtleMethods#turtle-methods"/>.</p>
 
-                <listing xml:id="pt_q11_answer">
-                    <caption/>
-                    <program xml:id="pt_q11_answer_editor" interactive="activecode" language="python">
-                        <input>
+    
+    
+    <program xml:id="ex_3_11_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q11_answer_editor" language="python">
+        <input>
 import turtle
 
 tanenbaum = turtle.Turtle()
@@ -373,50 +328,44 @@ tanenbaum.speed(20)
 for i in range(350):
     tanenbaum.forward(i)
     tanenbaum.right(98)
-                        </input>
-                    </program>
-                </listing>
-            </TabNode>
-            <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                <DisqusNode line="324" runestone_options="{'shortname': 'interactivepython', 'identifier': 'e928a562a4f5c41f9892c9bfc4a1d5883', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                </DisqusNode>
-            </TabNode>
-        </TabbedStuffNode>
-    </QuestionNode>
-    <QuestionNode xml:id="turtle-ex-12" line="329" names="turtle_ex_12" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_12', 'qnumber': '', 'question_label': '4.11.28'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
+        </input>
+    </program>
 
-        <listing xml:id="ex_3_12">
-            <caption/>
-            <program xml:id="ex_3_12_editor" interactive="activecode" language="python">
-                <input>
 
-                </input>
-            </program>
-        </listing>
-        <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
-    </QuestionNode>
-    <QuestionNode xml:id="turtle-ex-13" line="337" names="turtle_ex_13" runestone_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'turtle_ex_13', 'qnumber': '', 'question_label': '4.11.30'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-        <TabbedStuffNode divid="q13" line="339" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q13', 'divclass': 'alert alert-warning'}">
-            <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
 
-                <listing xml:id="ex_3_13">
-                    <caption/>
-                    <program xml:id="ex_3_13_editor" interactive="activecode" language="python">
-                        <input>
+                </solution></exercise>
+        
+        
 
-                        </input>
-                    </program>
-                </listing>
-                <p>A sprite is a simple spider shaped thing with n legs coming out from a center
+<exercise xml:id="ex_3_12">
+    <statement>
+            <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
+
+    </statement>
+    <program xml:id="ex_3_12_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</exercise>
+        
+        
+            <exercise xml:id="ex_3_13"><statement>
+                    <p>A sprite is a simple spider shaped thing with n legs coming out from a center
                         point. The angle between each leg is 360 / n degrees.</p>
-                <p>Write a program to draw a sprite where the number of legs is provided by the user.</p>
-            </TabNode>
-            <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+                    <p>Write a program to draw a sprite where the number of legs is provided by the user.</p>
 
-                <listing xml:id="pt_q13_answer">
-                    <caption/>
-                    <program xml:id="pt_q13_answer_editor" interactive="activecode" language="python">
-                        <input>
+    
+    
+    <program xml:id="ex_3_13_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="pt_q13_answer_editor" language="python">
+        <input>
 import turtle
 
 wn = turtle.Screen()
@@ -441,15 +390,12 @@ for i in range(n):
 babbage.shape("circle")
 
 wn.exitonclick()
-                        </input>
-                    </program>
-                </listing>
-            </TabNode>
-            <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                <DisqusNode line="386" runestone_options="{'shortname': 'interactivepython', 'identifier': 'b65d7e616d2b548f592205dba699cc132', 'subchapter': 'Exercises', 'chapter': 'PythonTurtle', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/PythonTurtle/Exercises.rst">
-                </DisqusNode>
-            </TabNode>
-        </TabbedStuffNode>
-    </QuestionNode>
-</section>
+        </input>
+    </program>
+
+
+
+                </solution></exercise>
+        
+    </exercises>
 

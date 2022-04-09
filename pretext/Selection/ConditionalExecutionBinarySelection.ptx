@@ -1,26 +1,16 @@
 <section xml:id="conditional-execution-binary-selection">
-    <title>Conditional Execution: Binary Selection</title>
+        <title>Conditional Execution: Binary Selection</title>
 
-    <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto" />
-    <p>
-        In order to write useful programs, we almost always need the ability to check
-            conditions and change the behavior of the program accordingly.
-        <alert>Selection statements</alert>
-        , sometimes
-            also referred to as
-        <alert>conditional statements</alert>
-        , give us this ability. The simplest form of selection is the
-        <alert>if statement</alert>
-        .
-            This is sometimes referred to as
-        <alert>binary selection</alert>
-        since there are two possible paths of execution.
-    </p>
+    <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="560"/>
+            <p>In order to write useful programs, we almost always need the ability to check
+            conditions and change the behavior of the program accordingly. <alert>Selection statements</alert>, sometimes
+            also referred to as <alert>conditional statements</alert>, give us this ability. The simplest form of selection is the <alert>if statement</alert>.
+            This is sometimes referred to as <alert>binary selection</alert> since there are two possible paths of execution.</p>
 
-    <listing xml:id="ch05_4">
-        <caption />
-        <program xml:id="ch05_4_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="ch05_4">
+    <caption/>
+    <program xml:id="ch05_4_editor" interactive="activecode" language="python">
+        <input>
 x = 15
 
 if x % 2 == 0:
@@ -28,116 +18,55 @@ if x % 2 == 0:
 else:
     print(x, "is odd")
         </input>
-        </program>
-    </listing>
-    <p>
-        The syntax for an
-        <c>if</c>
-        statement looks like this:
-    </p>
-    <program language="python">
-        <input>
+    </program>
+</listing>
+        <p>The syntax for an <c>if</c> statement looks like this:</p>
+        <program language="python"><input>
 if BOOLEAN EXPRESSION:
     STATEMENTS_1        # executed if condition evaluates to True
 else:
     STATEMENTS_2        # executed if condition evaluates to False
-</input>
-    </program>
-    <p>
-        The boolean expression after the
-        <c>if</c>
-        statement is called the
-        <alert>condition</alert>
-        .
+</input></program>
+        <p>The boolean expression after the <c>if</c> statement is called the <alert>condition</alert>.
             If it is true, then the immediately following indented statements get executed. If not, then the statements
-            indented under the
-        <c>else</c>
-        clause get executed.
-    </p>
-    <sidebar>
-        <title>
-            Flowchart of a
-            <alert>if</alert>
-            statement with an
-            <alert>else</alert>
-        </title>
-        <image source="Selection/Figures/flowchart_if_else.png" />
-    </sidebar>
-    <p>
-        As with the function definition from the last chapter and other compound
-            statements like
-        <c>for</c>
-        , the
-        <c>if</c>
-        statement consists of a header line and a body. The header
-            line begins with the keyword
-        <c>if</c>
-        followed by a
-        <em>boolean expression</em>
-        and ends with
-            a colon (:).
-    </p>
-    <p>
-        The more indented statements that follow are called a
-        <alert>block</alert>
-        .
-    </p>
-    <p>
-        Each of the statements inside the first block of statements is executed in order if the boolean
-            expression evaluates to
-        <c>True</c>
-        . The entire first block of statements
-            is skipped if the boolean expression evaluates to
-        <c>False</c>
-        , and instead
-            all the statements under the
-        <c>else</c>
-        clause are executed.
-    </p>
-    <p>
-        There is no limit on the number of statements that can appear under the two clauses of an
-        <c>if</c>
-        statement, but there has to be at least one statement in each block.
-    </p>
-    <p>
-        Each compound statement includes a heading and all the following further-indented statements in
-            the block after the heading.  The
-        <c>if</c>
-        -
-        <c>else</c>
-        statement is an unusual compound statement because it
-            has more than one part at the same level of indentation as the
-        <c>if</c>
-        heading,
-            (the
-        <c>else</c>
-        clause, with its own indented block).
-    </p>
-    <admonition classes="admonition-lab">
-        <title>Lab</title>
-        <p>
-            <ul>
+            indented under the <c>else</c> clause get executed.</p>
+        <sidebar>
+            <title>Flowchart of a <alert>if</alert> statement with an <alert>else</alert></title>
+            <image source="Selection/Figures/flowchart_if_else.png"/>
+        </sidebar>
+        <p>As with the function definition from the last chapter and other compound
+            statements like <c>for</c>, the <c>if</c> statement consists of a header line and a body. The header
+            line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
+            a colon (:).</p>
+        <p>The more indented statements that follow are called a <alert>block</alert>.</p>
+        <p>Each of the statements inside the first block of statements is executed in order if the boolean
+            expression evaluates to <c>True</c>. The entire first block of statements
+            is skipped if the boolean expression evaluates to <c>False</c>, and instead
+            all the statements under the <c>else</c> clause are executed.</p>
+        <p>There is no limit on the number of statements that can appear under the two clauses of an
+            <c>if</c> statement, but there has to be at least one statement in each block.</p>
+        <p>Each compound statement includes a heading and all the following further-indented statements in
+            the block after the heading.  The <c>if</c> - <c>else</c> statement is an unusual compound statement because it
+            has more than one part at the same level of indentation as the <c>if</c> heading,
+            (the <c>else</c> clause, with its own indented block).</p>
+        <admonition classes="admonition-lab">
+            <title>Lab</title>
+            <p><ul>
                 <li>
-                    <p>
-                        <url href="../Labs/montepi.html" visual="../Labs/montepi.html">Approximating Pi with Simulation</url>
-                        In this guided lab exercise we will work
-                        through a problem solving exercise related to approximating the value of pi using random numbers.
-                    </p>
+                    <p><url href="../Labs/montepi.html" visual="../Labs/montepi.html">Approximating Pi with Simulation</url> In this guided lab exercise we will work
+                        through a problem solving exercise related to approximating the value of pi using random numbers.</p>
                 </li>
-            </ul>
-        </p>
-    </admonition>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            </ul></p>
+        </admonition>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question6_4_1">
         <statement>
 
-            <p>How many statements can appear in each block (the if and the else) in a conditional statement?</p>
+        <p>How many statements can appear in each block (the if and the else) in a conditional statement?</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -174,25 +103,23 @@ else:
                     The blocks may contain different numbers of statements.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question6_4_2">
         <statement>
 
-            <p>What does the following code print (choose from output a, b, c or nothing)?</p>
-            <program language="python">
-                <input>
+        <p>What does the following code print (choose from output a, b, c or nothing)?</p>
+        <program language="python"><input>
 if 4 + 5 == 10:
     print("TRUE")
 else:
     print("FALSE")
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -229,24 +156,22 @@ else:
                     Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question6_4_3">
         <statement>
 
-            <p>What does the following code print?</p>
-            <program language="python">
-                <input>
+        <p>What does the following code print?</p>
+        <program language="python"><input>
 if 4 + 5 == 10:
     print("TRUE")
 else:
     print("FALSE")
 print("TRUE")
-</input>
-            </program>
-            <pre>a. TRUE
+</input></program>
+        <pre>a. TRUE
 
 b.
    TRUE
@@ -261,7 +186,7 @@ d.
    TRUE</pre>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -298,7 +223,8 @@ d.
                     To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

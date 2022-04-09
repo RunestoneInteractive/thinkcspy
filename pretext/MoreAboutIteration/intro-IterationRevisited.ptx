@@ -4,7 +4,7 @@
         
         
         
-        <p>Computers are often used to automate repetitive tasks. Repeating identical or
+        <p xml:id="index-1">Computers are often used to automate repetitive tasks. Repeating identical or
             similar tasks without making errors is something that computers do well and
             people do poorly.</p>
         <p>Repeated execution of a sequence of statements is called <alert>iteration</alert>.  Because

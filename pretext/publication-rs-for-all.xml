@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--********************************************************************
 Copyright 2015 Robert A. Beezer
@@ -23,13 +23,14 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <publication>
 
     <source>
-        <directories external="Figures" generated="gen"/>
+        <directories external="Figures" generated="gen" />
     </source>
 
     <html>
-        <platform host="web"/>
+        <platform host="web" />
         <!-- knowled checkpoints interfere with ActiveCode problems -->
-        <knowl exercise-inline="no"/>
+        <knowl exercise-inline="no" />
     </html>
 
+    <stringparam key="debug.rs.services.file" value="/Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />
 </publication>

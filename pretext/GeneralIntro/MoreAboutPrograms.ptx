@@ -1,77 +1,63 @@
 <section xml:id="more-about-programs">
-    <title>More About Programs</title>
-    <p>
-        A
-        <alert>program</alert>
-        is a sequence of instructions that specifies how to perform a
+        <title>More About Programs</title>
+        <p>A <alert>program</alert> is a sequence of instructions that specifies how to perform a
             computation. The computation might be something as complex as rendering an html page in a web browser
             or encoding a video and streaming it across the network.  It can also be a
             symbolic computation, such as searching for and replacing text in a document or
-            (strangely enough) compiling a program.
-    </p>
-    <p>The details look different in different languages, but a few basic instructions
+            (strangely enough) compiling a program.</p>
+        <p>The details look different in different languages, but a few basic instructions
             appear in just about every language.</p>
-    <dl>
-        <li>
-            <title>input</title>
-
-            <p>Get data from the keyboard, a file, or some other device.</p>
-
-        </li>
-        <li>
-            <title>output</title>
-
-            <p>Display data on the screen or send data to a file or other device.</p>
-
-        </li>
-        <li>
-            <title>math and logic</title>
-
-            <p>
-                Perform basic mathematical operations like addition and multiplication
-                        and logical operations like
-                <c>and</c>
-                ,
-                <c>or</c>
-                , and
-                <c>not</c>
-                .
-            </p>
-
-        </li>
-        <li>
-            <title>conditional execution</title>
-
-            <p>Check for certain conditions and execute the appropriate sequence of
+        <dl>
+            <li>
+                <title>input</title>
+                
+                    <p>Get data from the keyboard, a file, or some other device.</p>
+                
+            </li>
+            <li>
+                <title>output</title>
+                
+                    <p>Display data on the screen or send data to a file or other device.</p>
+                
+            </li>
+            <li>
+                <title>math and logic</title>
+                
+                    <p>Perform basic mathematical operations like addition and multiplication
+                        and logical operations like <c>and</c>, <c>or</c>, and <c>not</c>.</p>
+                
+            </li>
+            <li>
+                <title>conditional execution</title>
+                
+                    <p>Check for certain conditions and execute the appropriate sequence of
                         statements.</p>
-
-        </li>
-        <li>
-            <title>repetition</title>
-
-            <p>Perform some action repeatedly, usually with some variation.</p>
-
-        </li>
-    </dl>
-    <p>Believe it or not, that&#8217;s pretty much all there is to it. Every program you&#8217;ve
+                
+            </li>
+            <li>
+                <title>repetition</title>
+                
+                    <p>Perform some action repeatedly, usually with some variation.</p>
+                
+            </li>
+        </dl>
+        <p>Believe it or not, that&#8217;s pretty much all there is to it. Every program you&#8217;ve
             ever used, no matter how complicated, is made up of instructions that look more
             or less like these. Thus, we can describe programming as the process of
             breaking a large, complex task into smaller and smaller subtasks until the
             subtasks are simple enough to be performed with sequences of these basic
             instructions.</p>
-    <!--That may be a little vague, but we will come back to this topic later when we-->
-    <!--talk about **algorithms**.-->
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+        <!--That may be a little vague, but we will come back to this topic later when we-->
+        <!--talk about **algorithms**.-->
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="question1_4_1">
         <statement>
 
-            <p>A program is:</p>
+        <p>A program is:</p>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -108,9 +94,10 @@
                     Programs often implement algorithms, but they are not the same thing.  An algorithm is a step by step list of instructions, but those instructions are not necessarily precise enough for a computer to follow.  A program must be written in a programming language that the computer knows how to interpret.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
+        
+        
+    </section>
 
-
-</section>

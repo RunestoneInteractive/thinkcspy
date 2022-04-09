@@ -1,17 +1,7 @@
-<section xml:id="dictionaries_exercises">
+<exercises xml:id="dictionaries_exercises">
         <title>Exercises</title>
-        <QuestionNode xml:id="dict-ex-1" line="13" names="dict_ex_1" runestone_options="{'number': 1, 'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'dict_ex_1', 'qnumber': '', 'question_label': '12.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-            <TabbedStuffNode divid="q1" line="16" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q1', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-<listing xml:id="ex_11_01">
-    <caption/>
-    <program xml:id="ex_11_01_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+        
+            <exercise xml:id="ex_11_01"><statement>
                     <p>Write a program that allows the user to enter a string.  It then prints a
                         table of the letters of the alphabet in alphabetical order which occur in
                         the string together with the number of times each letter occurs. Case should
@@ -34,12 +24,17 @@ t  5
 u  1
 w  2
 $</pre>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-<listing xml:id="de_q1_answer">
-    <caption/>
-    <program xml:id="de_q1_answer_editor" interactive="activecode" language="python">
+    
+    
+    <program xml:id="ex_11_01_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="de_q1_answer_editor" language="python">
         <input>
 x = input("Enter a sentence")
 
@@ -60,15 +55,12 @@ for char in sorted(keys):
     print(char, letter_count[char])
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="71" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_de4f21e35d3a41a4a3ac4ac888f78d1a', 'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="dict-ex-2" line="76" names="dict_ex_2" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'dict_ex_2', 'qnumber': '', 'question_label': '12.7.4'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
+
+
+
+                </solution></exercise>
+        
+        
             <block_quote>
                 <p>Give the Python interpreter&#8217;s response to each of the following from a
                     continuous interpreter session:</p>
@@ -136,19 +128,9 @@ add_fruit(new_inventory, 'strawberries', 25)
         </input>
     </program>
 </listing>
-        </QuestionNode>
-        <QuestionNode xml:id="dict-ex-3" line="142" names="dict_ex_3" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'dict_ex_3', 'qnumber': '', 'question_label': '12.7.6'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-            <TabbedStuffNode divid="q3" line="144" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q3', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-<listing xml:id="ex_11_02">
-    <caption/>
-    <program xml:id="ex_11_02_editor" interactive="activecode" language="python">
-        <input>
-
-        </input>
-    </program>
-</listing>
+        
+        
+            <exercise xml:id="ex_11_02"><statement>
                     <p>Write a program called <c>alice_words.py</c> that creates a text file named
                         <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
                         number of times each occurs, in the text version of <title_reference>Alice&#8217;s Adventures in Wonderland</title_reference>.
@@ -241,8 +223,15 @@ add_fruit(new_inventory, 'strawberries', 25)
                     </block_quote>
                     <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
                         in the activecode window simply print out the results rather than write them to a file.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
+
+    
+    
+    <program xml:id="ex_11_02_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</statement><solution>
                     <program language="python"><input>
 f = open('alice.txt', 'r')
 
@@ -279,59 +268,24 @@ for word in keys:
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
 </input></program>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="215" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_4f2d7860fc3143339c9c6a533c07b62d', 'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-        <QuestionNode xml:id="dict-ex-4" line="220" names="dict_ex_4" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'dict_ex_4', 'qnumber': '', 'question_label': '12.7.8'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
+                </solution></exercise>
+        
+        
 
-<listing xml:id="ex_11_03">
-    <caption/>
+<exercise xml:id="ex_11_03">
+    <statement>
+            <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
+
+    </statement>
     <program xml:id="ex_11_03_editor" interactive="activecode" language="python">
         <input>
 
         </input>
     </program>
-</listing>
-            <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
-        </QuestionNode>
-        <QuestionNode xml:id="dict-ex-5" line="227" names="dict_ex_5" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'dict_ex_5', 'qnumber': '', 'question_label': '12.7.10'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-            <TabbedStuffNode divid="q5" line="229" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst" tabbed_stuff_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'q5', 'divclass': 'alert alert-warning'}">
-                <TabNode tabname="Question" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Question'}">
-
-<listing xml:id="ex_11_04">
-    <caption/>
-    <program xml:id="ex_11_04_editor" interactive="activecode" language="python">
-        <input>
-def translator(english):
-
-  pirate = {}
-  pirate['sir'] = 'matey'
-  pirate['hotel'] = 'fleabag inn'
-  pirate['student'] = 'swabbie'
-  pirate['boy'] = 'matey'
-  pirate['restaurant'] = 'galley'
-  pirate['hello'] = 'avast'
-  pirate['students'] = 'swabbies'
-
-  # Complete the function
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(translator("hello there students"),'avast there swabbies','translator("hello there students") yields "avast there swabbies"')
-        self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
-
-myTests().main()
-        </input>
-    </program>
-</listing>
+</exercise>
+        
+        
+            <exercise xml:id="ex_11_04"><statement>
                     <p>Here&#8217;s a table of English to Pirate translations</p>
                     <table><tabular>
                         
@@ -498,12 +452,39 @@ myTests().main()
                     <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
                         (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.</p>
                     <p>For example, the sentence &#8220;hello there students&#8221; should be translated to &#8220;avast there swabbies&#8221;.</p>
-                </TabNode>
-                <TabNode tabname="Answer" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Answer'}">
 
-<listing xml:id="ch11_q5_answer">
-    <caption/>
-    <program xml:id="ch11_q5_answer_editor" interactive="activecode" language="python">
+    
+    
+    <program xml:id="ex_11_04_editor" interactive="activecode" language="python">
+        <input>
+def translator(english):
+
+  pirate = {}
+  pirate['sir'] = 'matey'
+  pirate['hotel'] = 'fleabag inn'
+  pirate['student'] = 'swabbie'
+  pirate['boy'] = 'matey'
+  pirate['restaurant'] = 'galley'
+  pirate['hello'] = 'avast'
+  pirate['students'] = 'swabbies'
+
+  # Complete the function
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(translator("hello there students"),'avast there swabbies','translator("hello there students") yields "avast there swabbies"')
+        self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
+
+myTests().main()
+        </input>
+    </program>
+</statement><solution>
+    
+    <program xml:id="ch11_q5_answer_editor" language="python">
         <input>
 def translator(sentence):
 
@@ -527,13 +508,10 @@ def translator(sentence):
   return " ".join(psentence)
         </input>
     </program>
-</listing>
-                </TabNode>
-                <TabNode tabname="Discussion" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Discussion'}">
-                    <DisqusNode line="319" runestone_options="{'shortname': 'interactivepython', 'identifier': 'disqus_dd296be40c8643999060129b6d8dc7ae', 'subchapter': 'Exercises', 'chapter': 'Dictionaries', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Dictionaries/Exercises.rst">
-                    </DisqusNode>
-                </TabNode>
-            </TabbedStuffNode>
-        </QuestionNode>
-    </section>
+
+
+
+                </solution></exercise>
+        
+    </exercises>
 

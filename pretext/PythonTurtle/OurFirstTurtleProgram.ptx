@@ -20,7 +20,7 @@ alex = turtle.Turtle()      # create a turtle named alex
 alex.forward(150)           # tell alex to move forward by 150 units
 alex.left(90)               # turn by 90 degrees
 alex.forward(75)            # complete the second side of a rectangle
-                </input>
+        </input>
         </program>
     </listing>
     <p>Here are a couple of things you&#8217;ll need to understand about this program.</p>
@@ -108,7 +108,7 @@ alex.forward(75)            # complete the second side of a rectangle
                 </statement>
                 <feedback>
                     Some turtle systems start with the turtle facing north, but not this one.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -117,7 +117,7 @@ alex.forward(75)            # complete the second side of a rectangle
                 </statement>
                 <feedback>
                     No, look at the first example with a turtle.  Which direction does the turtle move?
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice correct="yes">
@@ -126,7 +126,7 @@ alex.forward(75)            # complete the second side of a rectangle
                 </statement>
                 <feedback>
                     Yes, the turtle starts out facing east.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -135,7 +135,7 @@ alex.forward(75)            # complete the second side of a rectangle
                 </statement>
                 <feedback>
                     No, look at the first example with a turtle.  Which direction does the turtle move?
-                    </feedback>
+                </feedback>
             </choice>
         </choices>
 
@@ -143,10 +143,10 @@ alex.forward(75)            # complete the second side of a rectangle
     <p>
         <alert>Mixed up programs</alert>
     </p>
-    <exercise xml:id="rs3_1" indent="show" language="python">
+    <exercise xml:id="rsid_3_1" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital L as shown in the picture to the left of this text,</p>
-            <image source="PythonTurtle/Figures/TurtleL4.png" width="100%" />
+            <image source="PythonTurtle/Figures/TurtleL4.png" width="50%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -170,10 +170,10 @@ alex.forward(75)            # complete the second side of a rectangle
             </block>
         </blocks>
     </exercise>
-    <exercise xml:id="rs3_2" indent="show" language="python">
+    <exercise xml:id="rsid_3_2" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a checkmark as shown to the left:</p>
-            <image source="PythonTurtle/Figures/TurtleCheckmark4.png" width="100%" />
+            <image source="PythonTurtle/Figures/TurtleCheckmark4.png" width="50%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  Northeast is between north and east. Southeast is between south and east.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -201,10 +201,10 @@ alex.forward(75)            # complete the second side of a rectangle
             </block>
         </blocks>
     </exercise>
-    <exercise xml:id="rs3_3" indent="show" language="python">
+    <exercise xml:id="rsid_3_3" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a single line to the west as shown to the left,</p>
-            <image source="PythonTurtle/Figures/TurtleLineToWest.png" width="100%" />
+            <image source="PythonTurtle/Figures/TurtleLineToWest.png" width="50%" />
             <p>But the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -268,7 +268,7 @@ tess.left(120)
 tess.forward(50)
 
 wn.exitonclick()                # wait for a user click on the canvas
-                </input>
+        </input>
         </program>
     </listing>
     <p>
@@ -347,8 +347,8 @@ alex.forward(75)
                     <p>It creates a new turtle object that can be used for drawing.</p>
                 </statement>
                 <feedback>
-                    The 'alex = turtle.Turtle()'' is what actually creates the turtle object.
-                    </feedback>
+                    The line "alex = turtle.Turtle()" is what actually creates the turtle object.
+                </feedback>
             </choice>
 
             <choice correct="yes">
@@ -357,7 +357,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     This line imports the module called turtle, which has all the built in functions for drawing on the screen with the Turtle object.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -365,8 +365,8 @@ alex.forward(75)
                     <p>It makes the turtle draw half of a rectangle on the screen.</p>
                 </statement>
                 <feedback>
-                    This functionality is performed with the lines: 'alex.forward(150)', 'alex.left(90)', and 'alex.forward(75)'
-                    </feedback>
+                    This functionality is performed with the lines: "alex.forward(150)", "lex.left(90)", and "alex.forward(75)"
+                </feedback>
             </choice>
 
             <choice>
@@ -374,8 +374,8 @@ alex.forward(75)
                     <p>Nothing, it is unnecessary.</p>
                 </statement>
                 <feedback>
-                    If we leave it out, Python will give an error saying that it does not know about the name 'turtle' when it reaches the line 'wn = turtle.Screen()'
-                    </feedback>
+                    If we leave it out, Python will give an error saying that it does not know about the name "turtle" when it reaches the line "n = turtle.Screen()"
+                </feedback>
             </choice>
         </choices>
 
@@ -399,7 +399,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     We must specify the name of the module where Python can find the Turtle object.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -408,7 +408,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     The period separates the module name from the object name.  The parentheses at the end are what tell Python to invoke a new object.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice correct="yes">
@@ -417,7 +417,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     Yes, the Turtle type is defined in the module turtle.  Remember that Python is case sensitive and Turtle is different from turtle.
-                    </feedback>
+                </feedback>
             </choice>
         </choices>
 
@@ -437,7 +437,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     In this chapter you saw one named alex and one named tess, but any legal variable name is allowed.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -446,7 +446,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     A variable, including one referring to a Turtle object, can have whatever name you choose as long as it follows the naming conventions from Chapter 2.
-                    </feedback>
+                </feedback>
             </choice>
         </choices>
 
@@ -469,7 +469,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     This code would turn the turtle to the south before drawing
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -480,7 +480,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     This code would turn the turtle to the west before drawing
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -491,7 +491,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     This code would turn the turtle to the south before drawing
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice>
@@ -502,7 +502,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     This code is almost correct, but the short end would be facing east instead of west.
-                    </feedback>
+                </feedback>
             </choice>
 
             <choice correct="yes">
@@ -513,7 +513,7 @@ alex.forward(75)
                 </statement>
                 <feedback>
                     Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
-                    </feedback>
+                </feedback>
             </choice>
         </choices>
 
@@ -521,10 +521,10 @@ alex.forward(75)
     <p>
         <alert>Mixed up programs</alert>
     </p>
-    <exercise xml:id="rs3_4" indent="show" language="python">
+    <exercise xml:id="rsid_3_4" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital L in white on a blue background as shown to the left,</p>
-            <image source="PythonTurtle/Figures/BlueTurtleL.png" width="100%" />
+            <image source="PythonTurtle/Figures/BlueTurtleL.png" width="50%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up and create the turtle and set the pen size to 10.  The turtle should then turn to face south, draw a line that is 150 pixels long, turn to face east, and draw a line that is 75 pixels long.   Finally, set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -556,10 +556,10 @@ alex.forward(75)
             </block>
         </blocks>
     </exercise>
-    <exercise xml:id="rs3_5" indent="show" language="python">
+    <exercise xml:id="rsid_3_5" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital T in white on a green background as shown to the left,</p>
-            <image source="PythonTurtle/Figures/TurtleT.png" width="100%" />
+            <image source="PythonTurtle/Figures/TurtleT.png" width="50%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
