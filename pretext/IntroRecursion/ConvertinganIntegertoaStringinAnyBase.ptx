@@ -129,7 +129,7 @@ print(toStr(1453,16))
             the concatenation operation until after the recursive call has returned,
             we get the result in the proper order.
     </p>
-    <admonition classes="admonition-self-check">
+    <note>
         <title>Self Check</title>
         <p>Write a function that takes a string as a parameter and returns a new string that is the reverse of the old string.</p>
 
@@ -198,5 +198,5 @@ testEqual(isPal(removeWhite("madam i'm adam")),True)
         </input>
             </program>
         </listing>
-    </admonition>
+    </note>
 </section>

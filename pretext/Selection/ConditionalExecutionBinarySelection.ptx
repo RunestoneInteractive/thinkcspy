@@ -113,7 +113,7 @@ else:
         <c>else</c>
         clause, with its own indented block).
     </p>
-    <admonition classes="admonition-lab">
+    <note>
         <title>Lab</title>
         <p>
             <ul>
@@ -126,7 +126,7 @@ else:
                 </li>
             </ul>
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>

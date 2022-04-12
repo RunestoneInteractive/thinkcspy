@@ -56,7 +56,7 @@ print(x)
         <alert>bumping</alert>
         a variable, which means the same as incrementing it by 1.
     </p>
-    <admonition classes="admonition-advanced-topics">
+    <note>
         <title>Advanced Topics</title>
         <p>
             <ul>
@@ -81,7 +81,7 @@ print(x)
                 </li>
             </ul>
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>

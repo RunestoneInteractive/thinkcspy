@@ -1,36 +1,64 @@
 <section xml:id="functions_functions-can-call-other-functions">
-        <title>Functions can Call Other Functions</title>
-        <p>It is important to understand that each of the functions we write can be used
+    <title>Functions can Call Other Functions</title>
+    <p>
+        It is important to understand that each of the functions we write can be used
             and called from other functions we write.  This is one of the most important
             ways that computer scientists take a large problem and break it down into a
             group of smaller problems. This process of breaking a problem into smaller
-            subproblems is called <alert>functional decomposition</alert>.</p>
-        <p>Here&#8217;s a simple example of functional decomposition using two functions. The
-            first function called <c>square</c> simply computes the square of a given number.
-            The second function called <c>sum_of_squares</c> makes use of square to compute
-            the sum of three numbers that have been squared.</p>
-<exercise runestone="sumofsquares"/>        <p>Even though this is a pretty simple idea, in practice this example
+            subproblems is called
+        <alert>functional decomposition</alert>
+        .
+    </p>
+    <p>
+        Here&#8217;s a simple example of functional decomposition using two functions. The
+            first function called
+        <c>square</c>
+        simply computes the square of a given number.
+            The second function called
+        <c>sum_of_squares</c>
+        makes use of square to compute
+            the sum of three numbers that have been squared.
+    </p>
+    <exercise runestone="sumofsquares" />
+    <p>
+        Even though this is a pretty simple idea, in practice this example
             illustrates many very important Python concepts, including local and global
             variables along with parameter passing.  Note that when you step through this
             example, codelens bolds line 1 and line 5 as the functions are defined.  The
-            body of square is not executed until it is called from the <c>sum_of_squares</c>
-            function for the first time on line 6.  Also notice that when <c>square</c> is
-            called there are two groups of local variables, one for <c>square</c> and one
-            for <c>sum_of_squares</c>.  As you step through you will notice that <c>x</c>, and <c>y</c> are local variables in both functions and may even have
+            body of square is not executed until it is called from the
+        <c>sum_of_squares</c>
+        function for the first time on line 6.  Also notice that when
+        <c>square</c>
+        is
+            called there are two groups of local variables, one for
+        <c>square</c>
+        and one
+            for
+        <c>sum_of_squares</c>
+        .  As you step through you will notice that
+        <c>x</c>
+        , and
+        <c>y</c>
+        are local variables in both functions and may even have
             different values.  This illustrates that even though they are named the same,
-            they are in fact, very different.</p>
-        <p>Now we will look at another example that uses two functions.  This example illustrates an
+            they are in fact, very different.
+    </p>
+    <p>
+        Now we will look at another example that uses two functions.  This example illustrates an
             important computer science problem solving technique called
-            <alert>generalization</alert>.  Assume we want to write a
+        <alert>generalization</alert>
+        .  Assume we want to write a
             function to draw a square.  The generalization step is to realize that a
-            square is just a special kind of rectangle.</p>
-        <p>To draw a rectangle we need to be able to call a function with different
+            square is just a special kind of rectangle.
+    </p>
+    <p>To draw a rectangle we need to be able to call a function with different
             arguments for width and height.  Unlike the case of the square,
             we cannot repeat the same thing 4 times, because the four sides are not equal.
             However, it is the case that drawing the bottom and right sides are the
             same sequence as drawing the top and left sides.  So we eventually come up with
             this rather nice code that can draw a rectangle.</p>
-        <program language="python"><input>
+    <program language="python">
+        <input>
 def drawRectangle(t, w, h):
     """Get turtle t to draw a rectangle of width w and height h."""
     for i in range(2):
@@ -38,30 +66,36 @@ def drawRectangle(t, w, h):
         t.left(90)
         t.forward(h)
         t.left(90)
-</input></program>
-        <p>The parameter names are chosen as single letters for conciseness.
+</input>
+    </program>
+    <p>The parameter names are chosen as single letters for conciseness.
             In real programs, we will insist on better variable names than this.
             The point is that the program doesn&#8217;t &#8220;understand&#8221; that you&#8217;re drawing a rectangle or that the
             parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful
             for humans.  They are not concepts that the program or the computer understands.</p>
-        <p><em>Thinking like a computer scientist</em> involves looking for patterns and
+    <p>
+        <em>Thinking like a computer scientist</em>
+        involves looking for patterns and
             relationships.  In the code above, we&#8217;ve done that to some extent.  We did
             not just draw four sides. Instead, we spotted that we could draw the
-            rectangle as two halves and used a loop to repeat that pattern twice.</p>
-        <p>But now we might spot that a square is a special kind of rectangle.  A square
+            rectangle as two halves and used a loop to repeat that pattern twice.
+    </p>
+    <p>But now we might spot that a square is a special kind of rectangle.  A square
             simply uses the same value for both the height and the width.
             We already have a function that draws a rectangle, so we can use that to draw
             our square.</p>
-        <program language="python"><input>
+    <program language="python">
+        <input>
 def drawSquare(tx, sz):        # a new version of drawSquare
     drawRectangle(tx, sz, sz)
-</input></program>
-        <p>Here is the entire example with the necessary set up code.</p>
+</input>
+    </program>
+    <p>Here is the entire example with the necessary set up code.</p>
 
-<listing xml:id="ch04_3">
-    <caption/>
-    <program xml:id="ch04_3_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch04_3">
+        <caption />
+        <program xml:id="ch04_3_editor" interactive="activecode" language="python">
+            <input>
 import turtle
 
 def drawRectangle(t, w, h):
@@ -84,41 +118,80 @@ drawSquare(tess, 50)
 
 wn.exitonclick()
         </input>
-    </program>
-</listing>
-        <p>There are some points worth noting here:</p>
-        <p><ul>
+        </program>
+    </listing>
+    <p>There are some points worth noting here:</p>
+    <p>
+        <ul>
             <li>
                 <p>Functions can call other functions.</p>
             </li>
             <li>
-                <p>Rewriting <title_reference>drawSquare</title_reference> like this captures the relationship
-                    that we&#8217;ve spotted.</p>
+                <p>
+                    Rewriting
+                    <title_reference>drawSquare</title_reference>
+                    like this captures the relationship
+                    that we&#8217;ve spotted.
+                </p>
             </li>
             <li>
-                <p>A caller of this function might say <title_reference>drawSquare(tess, 50)</title_reference>.  The parameters
-                    of this function, <c>tx</c> and <c>sz</c>, are assigned the values of the tess object, and
-                    the integer 50 respectively.</p>
+                <p>
+                    A caller of this function might say
+                    <title_reference>drawSquare(tess, 50)</title_reference>
+                    .  The parameters
+                    of this function,
+                    <c>tx</c>
+                    and
+                    <c>sz</c>
+                    , are assigned the values of the tess object, and
+                    the integer 50 respectively.
+                </p>
             </li>
             <li>
-                <p>In the body of the function, <c>tz</c> and <c>sz</c> are just like any other variable.</p>
+                <p>
+                    In the body of the function,
+                    <c>tz</c>
+                    and
+                    <c>sz</c>
+                    are just like any other variable.
+                </p>
             </li>
             <li>
-                <p>When the call is made to <c>drawRectangle</c>, the values in variables <c>tx</c> and <c>sz</c>
+                <p>
+                    When the call is made to
+                    <c>drawRectangle</c>
+                    , the values in variables
+                    <c>tx</c>
+                    and
+                    <c>sz</c>
                     are fetched first, then the call happens.  So as we enter the top of
-                    function <title_reference>drawRectangle</title_reference>, its variable <c>t</c> is assigned the tess object, and <c>w</c> and
-                    <c>h</c> in that function are both given the value 50.</p>
+                    function
+                    <title_reference>drawRectangle</title_reference>
+                    , its variable
+                    <c>t</c>
+                    is assigned the tess object, and
+                    <c>w</c>
+                    and
+                    <c>h</c>
+                    in that function are both given the value 50.
+                </p>
             </li>
-        </ul></p>
-        <p>So far, it may not be clear why it is worth the trouble to create all of these
+        </ul>
+    </p>
+    <p>So far, it may not be clear why it is worth the trouble to create all of these
             new functions. Actually, there are a lot of reasons, but this example
             demonstrates two:</p>
-        <p><ol label="1">
+    <p>
+        <ol label="1">
             <li>
-                <p>Creating a new function gives you an opportunity to name a group of
+                <p>
+                    Creating a new function gives you an opportunity to name a group of
                     statements. Functions can simplify a program by hiding a complex computation
                     behind a single command. The function (including its name) can capture your
-                    mental chunking, or <em>abstraction</em>, of the problem.</p>
+                    mental chunking, or
+                    <em>abstraction</em>
+                    , of the problem.
+                </p>
             </li>
             <li>
                 <p>Creating a new function can make a program smaller by eliminating repetitive
@@ -128,15 +201,20 @@ wn.exitonclick()
                 <p>Sometimes you can write functions that allow you to solve a specific
                     problem using a more general solution.</p>
             </li>
-        </ol></p>
-        <admonition classes="admonition-lab">
-            <title>Lab</title>
-            <p><ul>
+        </ol>
+    </p>
+    <note>
+        <title>Lab</title>
+        <p>
+            <ul>
                 <li>
-                    <p><url href="../Labs/lab04_01.html" visual="../Labs/lab04_01.html">Drawing a Circle</url> In this guided lab exercise we will work
-                        through a simple problem solving exercise related to drawing a circle with the turtle.</p>
+                    <p>
+                        <url href="../Labs/lab04_01.html" visual="../Labs/lab04_01.html">Drawing a Circle</url>
+                        In this guided lab exercise we will work
+                        through a simple problem solving exercise related to drawing a circle with the turtle.
+                    </p>
                 </li>
-            </ul></p>
-        </admonition>
-    </section>
-
+            </ul>
+        </p>
+    </note>
+</section>

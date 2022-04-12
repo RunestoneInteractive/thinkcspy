@@ -217,7 +217,7 @@ print("The result of", toSquare, "squared is", squareResult)
         </input>
             </program>
         </listing>
-        <admonition classes="admonition-modify-the-program">
+        <note>
             <title>Modify the program &#8230;</title>
             <p>
                 Change the value of
@@ -271,6 +271,6 @@ print("The result of", toSquare, "squared is", squareResult)
                 <c>toSquare</c>
                 also.
             </p>
-        </admonition>
+        </note>
     </subsection>
 </section>

@@ -137,7 +137,7 @@ wn.exitonclick()
             ends &#8212; it depends on the indentation and the blank lines don&#8217;t count for
             this purpose!
     </p>
-    <admonition classes="admonition-docstrings">
+    <note>
         <title>docstrings</title>
         <p>
             If the first thing after the function header is a string (some tools insist that
@@ -158,7 +158,7 @@ wn.exitonclick()
         </p>
         <p>By convention, Python programmers use docstrings for the key documentation of
                 their functions.</p>
-    </admonition>
+    </note>
 
 
     <p>

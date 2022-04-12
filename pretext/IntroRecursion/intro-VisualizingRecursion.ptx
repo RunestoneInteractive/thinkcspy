@@ -143,7 +143,7 @@ main()
             notice that the tree does not look particularly realistic because nature
             is just not as symmetric as a computer program. Here are a few ideas for how to explore some
             interesting options to make your tree look more realistic.</p>
-    <admonition classes="admonition-self-check">
+    <note>
         <title>Self Check</title>
         <p>Modify the recursive tree program using one or all of the following
                 ideas:</p>
@@ -188,5 +188,5 @@ main()
                 <input></input>
             </program>
         </listing>
-    </admonition>
+    </note>
 </section>

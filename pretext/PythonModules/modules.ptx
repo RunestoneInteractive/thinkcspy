@@ -66,7 +66,7 @@ wn.exitonclick()
     <image source="PythonModules/Figures/moduleindexmedium.png" width="50%" />
     <image source="PythonModules/Figures/turtlemodmedium.png" width="50%" />
     <p>You can see that all the turtle functionality that we have talked about is there.  However, there is so much more.  Take some time to read through and familiarize yourself with some of the other things that turtles can do.</p>
-    <admonition classes="admonition-note-python-modules-and-limitations-with-activecode">
+    <note>
         <title>Note: Python modules and limitations with activecode</title>
         <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
                 We mentioned in the first chapter that programming is normally done using some type of development
@@ -80,7 +80,7 @@ wn.exitonclick()
                 completely ported at this point.  If you wish to explore any
                 additional modules, you will need to also explore using a more robust development environment.
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>

@@ -750,7 +750,7 @@ win.exitonclick()
         </p>
         <p>Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.</p>
         <p>Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows.  We still create a negative image, but you can see that the pixels update in a very different order.</p>
-        <admonition classes="admonition-other-pixel-manipulation">
+        <note>
             <title>Other pixel manipulation</title>
             <p>There are a number of different image processing algorithms that follow the same pattern as shown above.  Namely, take the original pixel, extract the red, green, and blue intensities, and then create a new pixel from them.  The new pixel is inserted into an empty image at the same location as the original.</p>
             <p>
@@ -767,7 +767,7 @@ win.exitonclick()
                 You can also do some complex arithmetic and create interesting effects, such as
                 <url href="http://en.wikipedia.org/wiki/Sepia_tone#Sepia_toning" visual="http://en.wikipedia.org/wiki/Sepia_tone#Sepia_toning">Sepia Tone</url>
             </p>
-        </admonition>
+        </note>
         <p>You have just passed a very important point in your study of Python programming.  Even though there is much more that we will do, you have learned all of the basic building blocks that are necessary to solve many interesting problems.  From an algorithm point of view, you can now implement selection and iteration.  You can also solve problems by breaking them down into smaller parts, writing functions for those parts, and then calling the functions to complete the implementation.
                 What remains is to focus on ways that we can better represent our problems in terms of the data that we manipulate.  We will now turn our attention to studying the main data collections provided by Python.</p>
         <p>

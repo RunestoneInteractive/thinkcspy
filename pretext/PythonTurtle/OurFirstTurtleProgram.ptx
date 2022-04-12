@@ -81,7 +81,7 @@ alex.forward(75)            # complete the second side of a rectangle
         <c>alex</c>
         .
     </p>
-    <admonition classes="admonition-complete-the-rectangle">
+    <note>
         <title>Complete the rectangle &#8230;</title>
         <p>
             Modify the program by adding the commands necessary to have
@@ -89,7 +89,7 @@ alex.forward(75)            # complete the second side of a rectangle
             complete the
                 rectangle.
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>
@@ -281,7 +281,7 @@ wn.exitonclick()                # wait for a user click on the canvas
     </p>
     <p>Each time we run this program, a new drawing window pops up, and will remain on the
             screen until we click on it.</p>
-    <admonition classes="admonition-extend-this-program">
+    <note>
         <title>Extend this program &#8230;</title>
         <p>
             <ol label="1">
@@ -318,7 +318,7 @@ wn.exitonclick()                # wait for a user click on the canvas
                 </li>
             </ol>
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>

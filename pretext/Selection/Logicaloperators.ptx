@@ -304,7 +304,7 @@ print(n % 2 == 0 or n % 3 == 0)
         ,
             which we will not be using.
     </p>
-    <admonition classes="admonition-warning">
+    <note>
         <title>WARNING!</title>
         <p>
             There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable
@@ -317,7 +317,7 @@ print(n % 2 == 0 or n % 3 == 0)
             <c>number == 5 or number == 6 or number == 7</c>
             .  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.
         </p>
-    </admonition>
+    </note>
     <p>
         <alert>Check your understanding</alert>
     </p>

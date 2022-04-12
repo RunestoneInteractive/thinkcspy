@@ -221,7 +221,7 @@ wn.exitonclick()
             </block>
         </blocks>
     </exercise>
-    <admonition classes="admonition-lab">
+    <note>
         <title>Lab</title>
         <p>
             <ul>
@@ -235,5 +235,5 @@ wn.exitonclick()
                 </li>
             </ul>
         </p>
-    </admonition>
+    </note>
 </section>

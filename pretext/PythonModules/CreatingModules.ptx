@@ -1,10 +1,25 @@
 <section xml:id="python_modules_creating-modules">
-        <title>Creating Modules</title>
-        <p>You&#8217;ve seen how to <em>use</em> modules like <c>random</c>, <c>math</c>, and <c>turtle</c>, but how would you <em>create</em> a module?</p>
-        <p>Every time you&#8217;ve written a Python script you&#8217;ve created a module!</p>
-        <p>A Python module is just a Python source code file.  Let&#8217;s consider the Python file shown below.</p>
-        <p><em>coffee_shop.py</em></p>
-        <program language="python"><input>
+    <title>Creating Modules</title>
+    <p>
+        You&#8217;ve seen how to
+        <em>use</em>
+        modules like
+        <c>random</c>
+        ,
+        <c>math</c>
+        , and
+        <c>turtle</c>
+        , but how would you
+        <em>create</em>
+        a module?
+    </p>
+    <p>Every time you&#8217;ve written a Python script you&#8217;ve created a module!</p>
+    <p>A Python module is just a Python source code file.  Let&#8217;s consider the Python file shown below.</p>
+    <p>
+        <em>coffee_shop.py</em>
+    </p>
+    <program language="python">
+        <input>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -14,16 +29,33 @@ important to implementing a coffee shop.
 shop_name = "Runestone Brew House"
 coffee_sizes = ["small", "medium", "large"]
 coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
-</input></program>
-        <p>This is a Python script named <c>coffee_shop.py</c> that contains three variables: <c>shop_name</c>, <c>coffee_sizes</c>, and <c>coffee_roasts</c>.  The <c>shop_name</c> is a string, <c>coffee_sizes</c> is a list containing strings, and <c>coffee_roasts</c> is also a list containing strings.</p>
+</input>
+    </program>
+    <p>
+        This is a Python script named
+        <c>coffee_shop.py</c>
+        that contains three variables:
+        <c>shop_name</c>
+        ,
+        <c>coffee_sizes</c>
+        , and
+        <c>coffee_roasts</c>
+        .  The
+        <c>shop_name</c>
+        is a string,
+        <c>coffee_sizes</c>
+        is a list containing strings, and
+        <c>coffee_roasts</c>
+        is also a list containing strings.
+    </p>
 
     <exercise xml:id="question4_5_1">
         <statement>
 
-        <p>A module is another name for:</p>
+            <p>A module is another name for:</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -60,34 +92,48 @@ coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
                     Modules may be small, but there is a more accurate answer.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>That&#8217;s so great!  We&#8217;ve got the basics of a coffee shop.  All you need is some roasted coffee and cups.  You&#8217;re good to go.</p>
-        <p>If you try to run that code though, it doesn&#8217;t do much that&#8217;s visible to a user&#8230;</p>
-        <p>How can we use the <c>coffee_shop</c> module?  We can import it and use it in other Python source code files.  Let&#8217;s consider the Python file shown below.</p>
-        <p><em>coffee_customer.py</em></p>
-        <program language="python"><input>
+    <p>That&#8217;s so great!  We&#8217;ve got the basics of a coffee shop.  All you need is some roasted coffee and cups.  You&#8217;re good to go.</p>
+    <p>If you try to run that code though, it doesn&#8217;t do much that&#8217;s visible to a user&#8230;</p>
+    <p>
+        How can we use the
+        <c>coffee_shop</c>
+        module?  We can import it and use it in other Python source code files.  Let&#8217;s consider the Python file shown below.
+    </p>
+    <p>
+        <em>coffee_customer.py</em>
+    </p>
+    <program language="python">
+        <input>
 import coffee_shop
 
 # Output the information we know from the module
 print("Welcome to", coffee_shop.shop_name)
 print("Available sizes:", coffee_shop.coffee_sizes)
 print("Available roasts:", coffee_shop.coffee_roasts)
-</input></program>
-        <p>This is a Python script named <c>coffee_customer.py</c> that imports our <c>coffee_shop</c> module, then prints out the information from that module.</p>
-        <admonition classes="admonition-note">
-            <title>Note</title>
-            <p>The module files must be in the same directory on your computer for Python to know how to import them automatically</p>
-        </admonition>
+</input>
+    </program>
+    <p>
+        This is a Python script named
+        <c>coffee_customer.py</c>
+        that imports our
+        <c>coffee_shop</c>
+        module, then prints out the information from that module.
+    </p>
+    <note>
+        <title>Note</title>
+        <p>The module files must be in the same directory on your computer for Python to know how to import them automatically</p>
+    </note>
 
     <exercise xml:id="question4_5_2">
         <statement>
 
-        <p>Create a module by:</p>
+            <p>Create a module by:</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -124,14 +170,29 @@ print("Available roasts:", coffee_shop.coffee_roasts)
                     Modules should include comment blocks at the top, but writing a comment block at the top of a file does not create a new module.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>We use <alert>dot notation</alert> to grab the <c>shop_name</c>, <c>coffee_sizes</c>, and <c>coffee_roasts</c> variables from the <c>coffee_shop</c> module.  Then we print them out as parts of nice messages.</p>
-        <p>Variables aren&#8217;t the only thing we can place in modules though&#8230;  We can put any valid Python code in them.</p>
-        <p>Let&#8217;s improve our coffee shop!</p>
-        <p><em>coffee_shop.py</em></p>
-        <program language="python"><input>
+    <p>
+        We use
+        <alert>dot notation</alert>
+        to grab the
+        <c>shop_name</c>
+        ,
+        <c>coffee_sizes</c>
+        , and
+        <c>coffee_roasts</c>
+        variables from the
+        <c>coffee_shop</c>
+        module.  Then we print them out as parts of nice messages.
+    </p>
+    <p>Variables aren&#8217;t the only thing we can place in modules though&#8230;  We can put any valid Python code in them.</p>
+    <p>Let&#8217;s improve our coffee shop!</p>
+    <p>
+        <em>coffee_shop.py</em>
+    </p>
+    <program language="python">
+        <input>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -150,20 +211,32 @@ def order_coffee(size, roast):
     :return: a message about the coffee order
     """
     return "Here's your {} coffee roasted {}".format(size, roast)
-</input></program>
-        <p>The old file contents are present, but now there&#8217;s also an <c>order_coffee</c> function that takes two arguments, <c>size</c> and <c>roast</c>.</p>
-        <p>Also - look at all the awesome comments in there!</p>
-        <admonition classes="admonition-module-comments">
-            <title>Module Comments</title>
-            <p>It is important to include header comments in your module that explain what the module does.</p>
-        </admonition>
-        <admonition classes="admonition-function-comments">
-            <title>Function Comments</title>
-            <p>Functions are the next chapter, but the comments used here demonstrate a common Python documentation style.</p>
-        </admonition>
-        <p>Ok - so we&#8217;ve got a function in our module now, let&#8217;s use it.</p>
-        <p><em>coffee_customer.py</em></p>
-        <program language="python"><input>
+</input>
+    </program>
+    <p>
+        The old file contents are present, but now there&#8217;s also an
+        <c>order_coffee</c>
+        function that takes two arguments,
+        <c>size</c>
+        and
+        <c>roast</c>
+        .
+    </p>
+    <p>Also - look at all the awesome comments in there!</p>
+    <note>
+        <title>Module Comments</title>
+        <p>It is important to include header comments in your module that explain what the module does.</p>
+    </note>
+    <note>
+        <title>Function Comments</title>
+        <p>Functions are the next chapter, but the comments used here demonstrate a common Python documentation style.</p>
+    </note>
+    <p>Ok - so we&#8217;ve got a function in our module now, let&#8217;s use it.</p>
+    <p>
+        <em>coffee_customer.py</em>
+    </p>
+    <program language="python">
+        <input>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -180,15 +253,16 @@ order_roast = input("What roast do you want? ")
 shop_says = coffee_shop.order_coffee(order_size, order_roast)
 # Print out whatever it gave back to us
 print(shop_says)
-</input></program>
+</input>
+    </program>
 
     <exercise xml:id="question4_5_3">
         <statement>
 
-        <p>What determines the name of our import?</p>
+            <p>What determines the name of our import?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -225,14 +299,37 @@ print(shop_says)
                     The filename of the module determines the name of the import.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>We added some lines to our <c>coffee_customer</c> script&#8230;  Now after printing data nicely, <c>coffee_customer</c> asks the user for a size and a roast.  These are the parameters required by our <c>order_coffee</c> function over in the <c>coffee_shop</c> module!</p>
-        <p>Call the <c>order_coffee</c> function with <alert>dot notation</alert>, just like retrieving variable values.  The function call is the line that says <c>shop_says = coffee_shop.order_coffee(order_size, order_roast)</c>.  The function returns something, so we save that off in <c>shop_says</c>.  The next line prints out whatever the shop said.</p>
-        <p>Coffee shops do more than just coffee!  Maybe you want some milk.  We need to add some functionality to our coffee shop.  Check it out below.</p>
-        <p><em>coffee_shop.py</em></p>
-        <program language="python"><input>
+    <p>
+        We added some lines to our
+        <c>coffee_customer</c>
+        script&#8230;  Now after printing data nicely,
+        <c>coffee_customer</c>
+        asks the user for a size and a roast.  These are the parameters required by our
+        <c>order_coffee</c>
+        function over in the
+        <c>coffee_shop</c>
+        module!
+    </p>
+    <p>
+        Call the
+        <c>order_coffee</c>
+        function with
+        <alert>dot notation</alert>
+        , just like retrieving variable values.  The function call is the line that says
+        <c>shop_says = coffee_shop.order_coffee(order_size, order_roast)</c>
+        .  The function returns something, so we save that off in
+        <c>shop_says</c>
+        .  The next line prints out whatever the shop said.
+    </p>
+    <p>Coffee shops do more than just coffee!  Maybe you want some milk.  We need to add some functionality to our coffee shop.  Check it out below.</p>
+    <p>
+        <em>coffee_shop.py</em>
+    </p>
+    <program language="python">
+        <input>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -259,11 +356,25 @@ def add_milk_please(fat_content):
     :return: a message about having added the milk
     """
     return "I've added the {}% milk".format(fat_content)
-</input></program>
-        <p>The new function is called <c>add_milk_please</c> and it takes one parameter - the <c>fat_content</c>.  It returns a string explaining what happened.</p>
-        <p>This is great.  But the function isn&#8217;t going to do anything by itself.  We have to call it.  Check out the update to our <c>coffee_customer</c> script below.</p>
-        <p><em>coffee_customer.py</em></p>
-        <program language="python"><input>
+</input>
+    </program>
+    <p>
+        The new function is called
+        <c>add_milk_please</c>
+        and it takes one parameter - the
+        <c>fat_content</c>
+        .  It returns a string explaining what happened.
+    </p>
+    <p>
+        This is great.  But the function isn&#8217;t going to do anything by itself.  We have to call it.  Check out the update to our
+        <c>coffee_customer</c>
+        script below.
+    </p>
+    <p>
+        <em>coffee_customer.py</em>
+    </p>
+    <program language="python">
+        <input>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -289,12 +400,22 @@ if "y" in add_milk_response.lower():
     shop_says = coffee_shop.add_milk_please(milk_fat)
     # Print out whatever it gave back to us
     print(shop_says)
-</input></program>
-        <p>That got fancy!  We were just ordering coffee but now the user can choose to add milk!  Selection is in a couple chapters, but if you read that code like english you&#8217;ll see what&#8217;s going on.</p>
-        <p>The call to <c>add_milk_please</c> happens right in there - it looks just like the other one: <c>shop_says = coffee_shop.add_milk_please(milk_fat)</c>.</p>
-        <p>Let&#8217;s wrap this coffee shop visit up.  But - you better leave a tip.  We&#8217;ll add another function to our coffee shop to enable that.</p>
-        <p><em>coffee_shop.py</em></p>
-        <program language="python"><input>
+</input>
+    </program>
+    <p>That got fancy!  We were just ordering coffee but now the user can choose to add milk!  Selection is in a couple chapters, but if you read that code like english you&#8217;ll see what&#8217;s going on.</p>
+    <p>
+        The call to
+        <c>add_milk_please</c>
+        happens right in there - it looks just like the other one:
+        <c>shop_says = coffee_shop.add_milk_please(milk_fat)</c>
+        .
+    </p>
+    <p>Let&#8217;s wrap this coffee shop visit up.  But - you better leave a tip.  We&#8217;ll add another function to our coffee shop to enable that.</p>
+    <p>
+        <em>coffee_shop.py</em>
+    </p>
+    <program language="python">
+        <input>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -331,11 +452,25 @@ def give_tip(tip_amount):
     print("Thank you so much!  We don't make a ton of money.")
 
     # Not having a "return" statement causes our function to return None
-</input></program>
-        <p>We added the <c>give_tip</c> function which takes one parameter, the <c>tip_amount</c>.  We don&#8217;t actually do anything with that parameter&#8230;  But if we were getting fancier with the coffee shop we might add it to the customer&#8217;s bill, we might print it out, or we might berate the customer for being too cheap&#8230;  Here we just go ahead and blurt out a thanks to the user!  Bein&#8217; friendly is important.</p>
-        <p>How do we call this from our <c>coffee_customer</c> script?</p>
-        <p><em>coffee_customer.py</em></p>
-        <program language="python"><input>
+</input>
+    </program>
+    <p>
+        We added the
+        <c>give_tip</c>
+        function which takes one parameter, the
+        <c>tip_amount</c>
+        .  We don&#8217;t actually do anything with that parameter&#8230;  But if we were getting fancier with the coffee shop we might add it to the customer&#8217;s bill, we might print it out, or we might berate the customer for being too cheap&#8230;  Here we just go ahead and blurt out a thanks to the user!  Bein&#8217; friendly is important.
+    </p>
+    <p>
+        How do we call this from our
+        <c>coffee_customer</c>
+        script?
+    </p>
+    <p>
+        <em>coffee_customer.py</em>
+    </p>
+    <program language="python">
+        <input>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -367,7 +502,7 @@ print("THAT'S GOOD COFFEE!  Very good.  Your brain is working again.")
 print("You better give a tip.")
 tip_amount = input("Tip amount? ")
 coffee_shop.give_tip(tip_amount)
-</input></program>
-        <p>Our function call is there on the last line.</p>
-    </section>
-
+</input>
+    </program>
+    <p>Our function call is there on the last line.</p>
+</section>
