@@ -23,7 +23,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <publication>
 
     <source>
-        <directories external="Figures" generated="gen" />
+        <directories external="Figures" generated="GenFigs" />
     </source>
 
     <html>
