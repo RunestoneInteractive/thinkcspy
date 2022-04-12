@@ -1,4 +1,4 @@
-<section xml:id="the-random-module">
+<section xml:id="python_modules_the-random-module">
         <title>The <title_reference>random</title_reference> module</title>
         <p>We often want to use <alert>random numbers</alert> in programs.  Here are a few typical uses:</p>
         <p><ul>
@@ -66,7 +66,7 @@ print(result)
 </listing>
         
         
-        <p xml:id="index-0">It is important to note that
+        <p xml:id="python_modules_index-0">It is important to note that
             random number generators are based on a <alert>deterministic</alert> algorithm &#8212; repeatable and predictable.
             So they&#8217;re called <alert>pseudo-random</alert> generators &#8212; they are not genuinely random.
             They start with a <em>seed</em> value. Each time you ask for another random number, you&#8217;ll get

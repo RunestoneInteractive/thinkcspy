@@ -1,4 +1,4 @@
-<section xml:id="list-type-conversion-function">
+<section xml:id="lists_list-type-conversion-function">
         <title><c>list</c> Type Conversion Function</title>
         <p>Python has a built-in type conversion function called
             <c>list</c> that tries to turn whatever you give it

@@ -1,4 +1,4 @@
-<section xml:id="functions-can-call-other-functions">
+<section xml:id="functions_functions-can-call-other-functions">
         <title>Functions can Call Other Functions</title>
         <p>It is important to understand that each of the functions we write can be used
             and called from other functions we write.  This is one of the most important

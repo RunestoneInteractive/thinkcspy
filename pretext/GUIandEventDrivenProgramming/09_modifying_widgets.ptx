@@ -1,4 +1,4 @@
-<section xml:id="common-widget-properties">
+<section xml:id="gu_iand_event_driven_programming_common-widget-properties">
         <title>Common Widget Properties</title>
         <p>Each widget has a set of properties that define its visual appearance on the
             computer screen and how it responds to user events. There is a set

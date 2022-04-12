@@ -1,4 +1,4 @@
-<section xml:id="list-membership">
+<section xml:id="lists_list-membership">
         <title>List Membership</title>
         <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
             used them previously with strings and they also work here.</p>

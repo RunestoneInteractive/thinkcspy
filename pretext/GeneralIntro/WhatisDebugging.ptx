@@ -1,4 +1,4 @@
-<section xml:id="what-is-debugging">
+<section xml:id="general_intro_what-is-debugging">
         <title>What is Debugging?</title>
         <p>Programming is a complex process.  Since it is done by human beings, errors may often occur.
             Programming errors are called <alert>bugs</alert> and the process

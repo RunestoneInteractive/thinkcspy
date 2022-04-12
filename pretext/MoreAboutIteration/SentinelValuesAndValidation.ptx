@@ -1,6 +1,6 @@
-<section xml:id="other-uses-of-while">
+<section xml:id="more_about_iteration_other-uses-of-while">
         <title>Other uses of <c>while</c></title>
-        <subsection xml:id="sentinel-values">
+        <subsection xml:id="more_about_iteration_sentinel-values">
             <title>Sentinel Values</title>
             <p>Indefinite loops are much more common in the real world than definite loops.</p>
             <p><ul>
@@ -88,7 +88,7 @@ checkout()
                 </li>
                 <li>
                     <p>This program doesn&#8217;t display the amounts to two decimal places. In the next chapter you will
-                        see the <xref ref="../Strings/StringMethods#format-strings"/> that will do the trick.</p>
+                        see the <xref ref="strings_string-methods"/> that will do the trick.</p>
                     <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="ch07_sentinel_2">
@@ -124,7 +124,7 @@ checkout()
             
             
         </subsection>
-        <subsection xml:id="validating-input">
+        <subsection xml:id="more_about_iteration_validating-input">
             <title>Validating Input</title>
             <p>You can also use a <c>while</c> loop when you want to <alert>validate</alert> input;  when you want to make
                 sure the user has entered valid input for a prompt. Let&#8217;s say you want a function
@@ -132,7 +132,7 @@ checkout()
                 your program enters either a Y for yes or N for no (in either upper or lower case).
                 Here is a program that uses a <c>while</c> loop to keep asking until it receives a valid answer.
                 As a preview of coming attractions, it uses
-                the <c>upper()</c> method which is described in <xref ref="../Strings/StringMethods#stringmethods"/> to convert a string to upper case.
+                the <c>upper()</c> method which is described in <xref ref="strings_string-methods"/> to convert a string to upper case.
                 When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
 
 <listing xml:id="ch07_validation">

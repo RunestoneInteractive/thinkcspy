@@ -1,4 +1,4 @@
-<section xml:id="web-applications">
+<section xml:id="web_apps_web-applications">
         <title>Web Applications</title>
         <p>In this chapter, you will learn how to create web applications in Python. There are two kinds of web
             applications &#8211; &#8220;client side&#8221; web applications and &#8220;server side&#8221; web applications. You&#8217;ve probably used

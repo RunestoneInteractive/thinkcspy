@@ -1,4 +1,4 @@
-<section xml:id="optional-parameters">
+<section xml:id="strings_optional-parameters">
         <title>Optional parameters</title>
         <p>To find the locations of the second or third occurrence of a character in a
             string, we can modify the <c>find</c> function, adding a third parameter for the

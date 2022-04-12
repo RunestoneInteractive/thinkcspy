@@ -1,4 +1,4 @@
-<section xml:id="lists">
+<section xml:id="lists_lists">
         <title>Lists</title>
         <p>A <alert>list</alert> is a sequential collection of Python data values, where each value is identified by an
             index. The values that make up a list are called its <alert>elements</alert>. Lists are

@@ -1,8 +1,8 @@
-<section xml:id="exceptions-syntax">
+<section xml:id="exceptions_exceptions-syntax">
         <title>Exceptions Syntax</title>
         <p>There are many variations on the code that catches exceptions. Here is a
             brief summary, but other code variations are possible.</p>
-        <subsection xml:id="catch-all-exceptions">
+        <subsection xml:id="exceptions_catch-all-exceptions">
             <title>Catch All Exceptions</title>
             <p>Catch all exceptions, regardless of their type. This will prevent
                 your program from crashing, but this type of exception handling is rarely useful
@@ -15,7 +15,7 @@ except:
   # If any exception was raised, then execute this code block.
 </input></program>
         </subsection>
-        <subsection xml:id="catch-a-specific-exception">
+        <subsection xml:id="exceptions_catch-a-specific-exception">
             <title>Catch A Specific Exception</title>
             <p>This is perhaps the most often used syntax. It catches one specific condition
                 and tries to re-cover from the condition.</p>
@@ -27,7 +27,7 @@ except ExceptionName:
   # If ExceptionName was raised, then execute this block.
 </input></program>
         </subsection>
-        <subsection xml:id="catch-multiple-specific-exceptions">
+        <subsection xml:id="exceptions_catch-multiple-specific-exceptions">
             <title>Catch Multiple Specific Exceptions</title>
             <program language="Python"><input>
 try:
@@ -41,7 +41,7 @@ else:
   # If there was no exception then execute this block.
 </input></program>
         </subsection>
-        <subsection xml:id="clean-up-after-exceptions">
+        <subsection xml:id="exceptions_clean-up-after-exceptions">
             <title>Clean-up After Exceptions</title>
             <p>If you have code that you want to be executed even if exceptions occur, you
                 can include a <c>finally</c> code block:</p>
@@ -54,7 +54,7 @@ finally:
   # This block of code will always execute, even if there are exceptions raised
 </input></program>
         </subsection>
-        <subsection xml:id="an-example-of-file-i-o">
+        <subsection xml:id="exceptions_an-example-of-file-i-o">
             <title>An Example of File I/O</title>
             <p>One place where you will always want to include exception handling is when
                 you read or write to a file. Here is a typical example of file processing.

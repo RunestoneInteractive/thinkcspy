@@ -1,6 +1,6 @@
-<section xml:id="turtle-racing-lab">
+<section xml:id="labs_turtle-racing-lab">
         <title>Turtle Racing Lab</title>
-        <subsection xml:id="random-numbers">
+        <subsection xml:id="labs_random-numbers">
             <title>Random Numbers</title>
             <p>Before we begin writing code for this lab, we need to introduce one more
                 Python module.  The <c>random</c> module allows us to generate random numbers.
@@ -25,7 +25,7 @@ print(x)
                 interesting programs we can write, and the <c>randrange</c> function is just one
                 of many functions available in the random module.</p>
         </subsection>
-        <subsection xml:id="turtle-races">
+        <subsection xml:id="labs_turtle-races">
             <title>Turtle Races</title>
             <p>In this lab we are going to work step by step through the problem of racing
                 turtles.  The idea is that we want to create two or more turtles and have

@@ -1,4 +1,4 @@
-<section xml:id="lists-are-mutable">
+<section xml:id="lists_lists-are-mutable">
         <title>Lists are Mutable</title>
         <p>Unlike strings, lists are <alert>mutable</alert>.  This means we can change an item in a list by accessing
             it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can

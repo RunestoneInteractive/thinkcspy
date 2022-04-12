@@ -1,4 +1,4 @@
-<section xml:id="contributor-list">
+<section xml:id="front_back_matter_contributor-list">
         <title>Contributor List</title>
         <p>To paraphrase the philosophy of the Free Software Foundation, this book is free
             like free speech, but not necessarily free like free pizza. It came about
@@ -24,7 +24,7 @@
             to contact us. The email address is <url href="mailto:jeff@elkner.net" visual="mailto:jeff@elkner.net">jeff@elkner.net</url>
             . Substantial changes made due to your suggestions will add you to the next
             version of the contributor list (unless you ask to be omitted). Thank you!</p>
-        <subsection xml:id="second-edition">
+        <subsection xml:id="front_back_matter_second-edition">
             <title>Second Edition</title>
             <p><ul>
                 <li>
@@ -87,7 +87,7 @@
                 </li>
             </ul></p>
         </subsection>
-        <subsection xml:id="first-edition">
+        <subsection xml:id="front_back_matter_first-edition">
             <title>First Edition</title>
             <p><ul>
                 <li>

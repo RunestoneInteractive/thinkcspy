@@ -1,4 +1,4 @@
-<section xml:id="semantic-errors">
+<section xml:id="general_intro_semantic-errors">
         <title>Semantic Errors</title>
         <p>The third type of error is the <alert>semantic error</alert>. If there is a semantic error
             in your program, it will run successfully in the sense that the computer will

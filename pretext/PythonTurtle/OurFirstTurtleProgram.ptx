@@ -1,4 +1,4 @@
-<section xml:id="our-first-turtle-program">
+<section xml:id="python_turtle_our-first-turtle-program">
     <title>Our First Turtle Program</title>
     <p>Let&#8217;s try a couple of lines of Python code to create a new turtle and
             start drawing a simple figure like a rectangle.
@@ -146,7 +146,7 @@ alex.forward(75)            # complete the second side of a rectangle
     <exercise xml:id="rsid_3_1" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital L as shown in the picture to the left of this text,</p>
-            <image source="PythonTurtle/Figures/TurtleL4.png" width="50%" />
+            <image source="PythonTurtle/Figures/TurtleL4.png" width="75%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -173,7 +173,7 @@ alex.forward(75)            # complete the second side of a rectangle
     <exercise xml:id="rsid_3_2" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a checkmark as shown to the left:</p>
-            <image source="PythonTurtle/Figures/TurtleCheckmark4.png" width="50%" />
+            <image source="PythonTurtle/Figures/TurtleCheckmark4.png" width="75%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  Northeast is between north and east. Southeast is between south and east.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -204,7 +204,7 @@ alex.forward(75)            # complete the second side of a rectangle
     <exercise xml:id="rsid_3_3" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a single line to the west as shown to the left,</p>
-            <image source="PythonTurtle/Figures/TurtleLineToWest.png" width="50%" />
+            <image source="PythonTurtle/Figures/TurtleLineToWest.png" width="75%" />
             <p>But the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -456,7 +456,7 @@ alex.forward(75)
         <statement>
 
             <p>Which of the following code would produce the following image?</p>
-            <image source="_static/turtleTest1.png" alt="long line to north with shorter line to west on top" width="50%" />
+            <image source="_static/turtleTest1.png" width="50%" alt="long line to north with shorter line to west on top" />
 
         </statement>
         <choices>
@@ -524,7 +524,7 @@ alex.forward(75)
     <exercise xml:id="rsid_3_4" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital L in white on a blue background as shown to the left,</p>
-            <image source="PythonTurtle/Figures/BlueTurtleL.png" width="50%" />
+            <image source="PythonTurtle/Figures/BlueTurtleL.png" width="75%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up and create the turtle and set the pen size to 10.  The turtle should then turn to face south, draw a line that is 150 pixels long, turn to face east, and draw a line that is 75 pixels long.   Finally, set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -559,7 +559,7 @@ alex.forward(75)
     <exercise xml:id="rsid_3_5" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital T in white on a green background as shown to the left,</p>
-            <image source="PythonTurtle/Figures/TurtleT.png" width="50%" />
+            <image source="PythonTurtle/Figures/TurtleT.png" width="75%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on

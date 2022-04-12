@@ -1,6 +1,6 @@
-<section xml:id="counting-letters">
+<section xml:id="labs_counting-letters">
         <title>Counting Letters</title>
-        <subsection xml:id="simple-solution-counting-a-single-letter">
+        <subsection xml:id="labs_simple-solution-counting-a-single-letter">
             <title>Simple Solution: Counting a Single Letter</title>
             <p>We have previously discussed the solution to the problem of counting the number of times a specific letter appears
                 in a string.  In the case below, that specific letter is &#8220;a&#8221;.</p>
@@ -27,7 +27,7 @@ def countA(text):
     return text.count("a")
 </input></program>
         </subsection>
-        <subsection xml:id="general-solution-counting-all-letters">
+        <subsection xml:id="labs_general-solution-counting-all-letters">
             <title>General Solution: Counting All Letters</title>
             <p>Now we will generalize the counting problem and consider how to count the number of times each letter appears in
                 a given string.  In order to do this we need to realize that writing a function that returns a single integer will no

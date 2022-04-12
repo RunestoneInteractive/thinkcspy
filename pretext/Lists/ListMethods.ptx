@@ -1,4 +1,4 @@
-<section xml:id="list-methods">
+<section xml:id="lists_list-methods">
         <title>List Methods</title>
         <p>The dot operator can also be used to access built-in methods of list objects.
             <c>append</c> is a list method which adds the argument passed to it to the end of

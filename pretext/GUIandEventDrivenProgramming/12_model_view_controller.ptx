@@ -1,4 +1,4 @@
-<section xml:id="managing-gui-program-complexity">
+<section xml:id="gu_iand_event_driven_programming_managing-gui-program-complexity">
         <title>Managing GUI Program Complexity</title>
         <p>As we explained in a previous lesson, GUI programs are best implemented as
             Python classes because it allows you to manage the scope of the variables
@@ -48,7 +48,7 @@ controller (input) --&gt; model (processing) --&gt; view (output)
             the same stages of development we used in the previous lesson are a good
             approach, but we will create a separate Python <c>class</c> for most of the
             stages. Let&#8217;s walk through the code development.</p>
-        <subsection xml:id="creating-the-view">
+        <subsection xml:id="gu_iand_event_driven_programming_creating-the-view">
             <title>Creating the <em>View</em></title>
             <p>Let&#8217;s create a Python <c>class</c> that builds the user interface for a
                 Whack-a-mole game. The emphasis for this code is the creation of the widgets
@@ -60,14 +60,14 @@ controller (input) --&gt; model (processing) --&gt; view (output)
 Code
 </input></program>
         </subsection>
-        <subsection xml:id="creating-the-model">
+        <subsection xml:id="gu_iand_event_driven_programming_creating-the-model">
             <title>Creating the <em>Model</em></title>
             <p>The <em>model</em> for this Whack-a-mole game is fairly simple. We need to keep
                 a counter for the number of user hits on moles that are visible, and a
                 counter for the number of times a user clicks on a mole that is not visible
                 (or just clicks on the left frame and not a mole widget.)</p>
         </subsection>
-        <subsection xml:id="creating-the-controller">
+        <subsection xml:id="gu_iand_event_driven_programming_creating-the-controller">
             <title>Creating the <em>Controller</em></title>
             <p>The <em>controller</em> receives user events and sends messages to the <em>controller</em>
                 to update the <em>model</em>&#8217;s state. For our Whack-a-mole game, we have the following

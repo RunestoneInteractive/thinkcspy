@@ -1,4 +1,4 @@
-<section xml:id="pillars-of-oop">
+<section xml:id="inheritance_pillars-of-oop">
         <title>Pillars of OOP</title>
         <p>Object-oriented programming involves four key ideas: encapsulation, information
             hiding, inheritance, and polymorphism. <alert>Encapsulation</alert> is the idea that

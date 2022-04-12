@@ -1,4 +1,4 @@
-<section xml:id="the-finally-clause-of-the-try-statement">
+<section xml:id="exceptions_the-finally-clause-of-the-try-statement">
         <title>The <c>finally</c> clause of the <c>try</c> statement</title>
         <p>A common programming pattern is to grab a resource of some kind &#8212; e.g. we
             create a window for turtles to draw on, or we dial up a connection to our

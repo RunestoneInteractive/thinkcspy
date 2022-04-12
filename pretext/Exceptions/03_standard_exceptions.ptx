@@ -1,4 +1,4 @@
-<section xml:id="standard-exceptions">
+<section xml:id="exceptions_standard-exceptions">
         <title>Standard Exceptions</title>
         <p>Most of the standard <em>exceptions</em> built into Python are listed below.
             They are organized into related groups based on the types of issues they deal with.</p>

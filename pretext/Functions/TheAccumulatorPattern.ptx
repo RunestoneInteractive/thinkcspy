@@ -1,30 +1,50 @@
-<section xml:id="the-accumulator-pattern">
-        <title>The Accumulator Pattern</title>
+<section xml:id="functions_the-accumulator-pattern">
+    <title>The Accumulator Pattern</title>
 
-    <video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="560"/>
-            <p>In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
+    <video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="auto" />
+    <p>In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
             in the function was simple: multiply the number by itself.
             In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead
             of multiplication.</p>
-        <p>If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of
+    <p>
+        If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of
             adding one number to itself.  The number of repetitions is where the second number comes into play.  For example, if we
             wanted to multiply three and five, we could think about it as adding three to itself five times.  Three plus three is six, plus three is nine, plus three is 12, and finally plus three is 15.  Generalizing this, if we want to implement
-            the idea of squaring a number, call it <title_reference>n</title_reference>, we would add <title_reference>n</title_reference> to itself <title_reference>n</title_reference> times.</p>
-        <p>Do this by hand first and try to isolate exactly what steps you take.  You&#8217;ll
+            the idea of squaring a number, call it
+        <title_reference>n</title_reference>
+        , we would add
+        <title_reference>n</title_reference>
+        to itself
+        <title_reference>n</title_reference>
+        times.
+    </p>
+    <p>
+        Do this by hand first and try to isolate exactly what steps you take.  You&#8217;ll
             find you need to keep some &#8220;running total&#8221; of the sum so far, either on a piece
             of paper, or in your head.  Remembering things from one step to the next is
             precisely why we have variables in a program.  This means that we will need some variable
-            to remember the &#8220;running total&#8221;.  It should be initialized with a value of zero.  Then, we need to <alert>update</alert> the &#8220;running total&#8221; the correct number of times.  For each repetition, we&#8217;ll want
-            to update the running total by adding the number to it.</p>
-        <p>In words we could say it this way.  To square the value of <title_reference>n</title_reference>, we will repeat the process of updating a running total <title_reference>n</title_reference> times.  To update the running total, we take the old value of the &#8220;running total&#8221; and add <title_reference>n</title_reference>.  That sum becomes the new
-            value of the &#8220;running total&#8221;.</p>
-        <p>Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed
+            to remember the &#8220;running total&#8221;.  It should be initialized with a value of zero.  Then, we need to
+        <alert>update</alert>
+        the &#8220;running total&#8221; the correct number of times.  For each repetition, we&#8217;ll want
+            to update the running total by adding the number to it.
+    </p>
+    <p>
+        In words we could say it this way.  To square the value of
+        <title_reference>n</title_reference>
+        , we will repeat the process of updating a running total
+        <title_reference>n</title_reference>
+        times.  To update the running total, we take the old value of the &#8220;running total&#8221; and add
+        <title_reference>n</title_reference>
+        .  That sum becomes the new
+            value of the &#8220;running total&#8221;.
+    </p>
+    <p>Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed
             is the details of how the squaring is done.  This is a great example of &#8220;black box&#8221; design.  We can change out the details inside of the box and still use the function exactly as we did before.</p>
 
-<listing xml:id="sq_accum1">
-    <caption/>
-    <program xml:id="sq_accum1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="sq_accum1">
+        <caption />
+        <program xml:id="sq_accum1_editor" interactive="activecode" language="python">
+            <input>
 def square(x):
     runningtotal = 0
     for counter in range(x):
@@ -36,121 +56,153 @@ toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
         </input>
-    </program>
-</listing>
-        <p>In the program above, notice that the variable <c>runningtotal</c> starts out with a value of 0.  Next, the iteration is performed <c>x</c> times.  Inside the for loop, the update occurs. <c>runningtotal</c> is reassigned a new value which is the old value plus the value of <c>x</c>.</p>
-        <p>This pattern of iterating the updating of a variable is commonly
-            referred to as the <alert>accumulator pattern</alert>.  We refer to the variable as the <alert>accumulator</alert>.  This pattern will come up over and over again.  Remember that the key
+        </program>
+    </listing>
+    <p>
+        In the program above, notice that the variable
+        <c>runningtotal</c>
+        starts out with a value of 0.  Next, the iteration is performed
+        <c>x</c>
+        times.  Inside the for loop, the update occurs.
+        <c>runningtotal</c>
+        is reassigned a new value which is the old value plus the value of
+        <c>x</c>
+        .
+    </p>
+    <p>
+        This pattern of iterating the updating of a variable is commonly
+            referred to as the
+        <alert>accumulator pattern</alert>
+        .  We refer to the variable as the
+        <alert>accumulator</alert>
+        .  This pattern will come up over and over again.  Remember that the key
             to making it work successfully is to be sure to initialize the variable before you start the iteration.
-            Once inside the iteration, it is required that you update the accumulator.</p>
-        <note>
-            <p>What would happen if we put the assignment <c>runningTotal = 0</c> inside
-                the for statement?  Not sure? Try it and find out.</p>
-        </note>
-        <p>Here is the same program in codelens.  Step through the function and watch the &#8220;running total&#8221; accumulate the result.</p>
-<exercise runestone="sq_accum3"/>        <subsection xml:id="the-general-accumulator-pattern">
-            <title>The General Accumulator Pattern</title>
-            <program language="python"><input>
+            Once inside the iteration, it is required that you update the accumulator.
+    </p>
+    <note>
+        <p>
+            What would happen if we put the assignment
+            <c>runningTotal = 0</c>
+            inside
+                the for statement?  Not sure? Try it and find out.
+        </p>
+    </note>
+    <p>Here is the same program in codelens.  Step through the function and watch the &#8220;running total&#8221; accumulate the result.</p>
+    <exercise runestone="sq_accum3" />
+    <subsection xml:id="functions_the-general-accumulator-pattern">
+        <title>The General Accumulator Pattern</title>
+        <program language="python">
+            <input>
 initialize the accumulator variable
 repeat:
     modify the accumulator variable
 
 # when the loop terminates the accumulator has the correct value
-</input></program>
-            <note>
-                <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+</input>
+        </program>
+        <note>
+            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
 
-<listing xml:id="scratch_05_04">
-    <caption/>
-    <program xml:id="scratch_05_04_editor" interactive="activecode" language="python">
-        <input>
+            <listing xml:id="scratch_05_04">
+                <caption />
+                <program xml:id="scratch_05_04_editor" interactive="activecode" language="python">
+                    <input></input>
+                </program>
+            </listing>
+        </note>
+        <p>
+            <alert>Check your understanding</alert>
+        </p>
 
+        <exercise xml:id="test_question5_4_1">
+            <statement>
 
-        </input>
-    </program>
-</listing>
-            </note>
-            <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question5_4_1">
-        <statement>
-
-            <p>Consider the following code:</p>
-            <program language="python"><input>
+                <p>Consider the following code:</p>
+                <program language="python">
+                    <input>
 def square(x):
     for counter in range(x):
         runningtotal = 0
         runningtotal = runningtotal + x
     return runningtotal
-</input></program>
-            <p>What happens if you put the initialization of runningtotal (the
+</input>
+                </program>
+                <p>What happens if you put the initialization of runningtotal (the
                 line runningtotal = 0) inside the for loop as the first
                 instruction in the loop?</p>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The square function will return x instead of x * x</p>
-                </statement>
-                <feedback>
+                <choice correct="yes">
+                    <statement>
+                        <p>The square function will return x instead of x * x</p>
+                    </statement>
+                    <feedback>
                     The variable runningtotal will be reset to 0 each time through the loop.   However because this assignment happens as the first instruction, the next instruction in the loop will set it back to x.   When the loop finishes, it will have the value x, which is what is returned.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>The square function will cause an error</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>The square function will cause an error</p>
+                    </statement>
+                    <feedback>
                     Assignment statements are perfectly legal inside loops and will not cause an error.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>The square function will work as expected and return x * x</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>The square function will work as expected and return x * x</p>
+                    </statement>
+                    <feedback>
                     By putting the statement that sets runningtotal to 0 inside the loop, that statement gets executed every time through the loop, instead of once before the loop begins.  The result is that runningtotal is 'cleared' (reset to 0) each time through the loop.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>The square function will return 0 instead of x * x</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>The square function will return 0 instead of x * x</p>
+                    </statement>
+                    <feedback>
                     The line runningtotal = 0 is the first line in the for loop, but immediately after this line, the line runningtotal = runningtotal + x will execute, giving runningtotal a non-zero value  (assuming x is non-zero).
                 </feedback>
-            </choice>
-</choices>
+                </choice>
+            </choices>
 
-    </exercise>
-<exercise xml:id="question5_4_1p" indent="show" language="python"><statement>
-            <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
-</statement>
-<blocks><block order="4">
-<cline>n = int(input('How many odd numbers would</cline>
-<cline>you like to add together?'))</cline>
-<cline>thesum = 0</cline>
-<cline>oddnumber = 1</cline>
-</block><block order="2">
-<cline>for counter in range(n):</cline>
-</block><block order="1">
-<cline>   thesum = thesum + oddnumber</cline>
-<cline>   oddnumber = oddnumber + 2</cline>
-</block><block order="3">
-<cline>print(thesum)</cline>
-</block></blocks></exercise>        </subsection>
-        <subsection xml:id="a-variation-on-the-accumulator-pattern">
-            <title>A Variation on the Accumulator Pattern</title>
+        </exercise>
+        <exercise xml:id="question5_4_1p" indent="show" language="python">
+            <statement>
+                <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
+            </statement>
+            <blocks>
+                <block order="4">
+                    <cline>n = int(input('How many odd numbers would</cline>
+                    <cline>you like to add together?'))</cline>
+                    <cline>thesum = 0</cline>
+                    <cline>oddnumber = 1</cline>
+                </block>
+                <block order="2">
+                    <cline>for counter in range(n):</cline>
+                </block>
+                <block order="1">
+                    <cline>   thesum = thesum + oddnumber</cline>
+                    <cline>   oddnumber = oddnumber + 2</cline>
+                </block>
+                <block order="3">
+                    <cline>print(thesum)</cline>
+                </block>
+            </blocks>
+        </exercise>
+    </subsection>
+    <subsection xml:id="functions_a-variation-on-the-accumulator-pattern">
+        <title>A Variation on the Accumulator Pattern</title>
 
-<listing xml:id="ch04_accum3">
-    <caption/>
-    <program xml:id="ch04_accum3_editor" interactive="activecode" language="python">
-        <input>
+        <listing xml:id="ch04_accum3">
+            <caption />
+            <program xml:id="ch04_accum3_editor" interactive="activecode" language="python">
+                <input>
 def square(x):
     '''raise x to the second power'''
     runningtotal = 0
@@ -163,19 +215,62 @@ toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
         </input>
-    </program>
-</listing>
-            <admonition classes="admonition-modify-the-program">
-                <title>Modify the program &#8230;</title>
-                <p>Change the value of <c>toSquare</c> in line 9 to <c>-10</c> and run.</p>
-                <p>We now see that our function has a semantic error. Remember when we first introduced the square function, unit testing and equivalence classes?</p>
-                <p>Change the value of <c>toSquare</c> in line 9 back to <c>10</c> and run.</p>
-                <p>What would happen if we change <c>runningtotal = runningtotal + x</c> to use <alert>multiplication</alert> instead of addition?  Make this change to the program and look at the output.</p>
-                <p>It is very important to properly initialize the accumulator variable. Do a web search on <c>additive identity</c> and <c>multiplicative identity</c>. <alert>Properly initialize the accumulator variable</alert> and run the program.</p>
-                <p>Now we get an answer other than 0. However, the answer is not the square of of <c>x</c>. It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of <c>x</c>? <alert>Change line 4 to repeat the correct number of times</alert>. Now the program should produce the correct result.</p>
-                <p>Change the value of <c>toSquare</c> in line 9 to <c>-10</c> and run. Now negative inputs also work!</p>
-                <p>Remember that the boundary between our equivalence classes is 0. Try that value for <c>toSquare</c> also.</p>
-            </admonition>
-        </subsection>
-    </section>
-
+            </program>
+        </listing>
+        <admonition classes="admonition-modify-the-program">
+            <title>Modify the program &#8230;</title>
+            <p>
+                Change the value of
+                <c>toSquare</c>
+                in line 9 to
+                <c>-10</c>
+                and run.
+            </p>
+            <p>We now see that our function has a semantic error. Remember when we first introduced the square function, unit testing and equivalence classes?</p>
+            <p>
+                Change the value of
+                <c>toSquare</c>
+                in line 9 back to
+                <c>10</c>
+                and run.
+            </p>
+            <p>
+                What would happen if we change
+                <c>runningtotal = runningtotal + x</c>
+                to use
+                <alert>multiplication</alert>
+                instead of addition?  Make this change to the program and look at the output.
+            </p>
+            <p>
+                It is very important to properly initialize the accumulator variable. Do a web search on
+                <c>additive identity</c>
+                and
+                <c>multiplicative identity</c>
+                .
+                <alert>Properly initialize the accumulator variable</alert>
+                and run the program.
+            </p>
+            <p>
+                Now we get an answer other than 0. However, the answer is not the square of of
+                <c>x</c>
+                . It is also important that the loop repeat the proper number of times. How many times do we need to execute line 5 to get the square of
+                <c>x</c>
+                ?
+                <alert>Change line 4 to repeat the correct number of times</alert>
+                . Now the program should produce the correct result.
+            </p>
+            <p>
+                Change the value of
+                <c>toSquare</c>
+                in line 9 to
+                <c>-10</c>
+                and run. Now negative inputs also work!
+            </p>
+            <p>
+                Remember that the boundary between our equivalence classes is 0. Try that value for
+                <c>toSquare</c>
+                also.
+            </p>
+        </admonition>
+    </subsection>
+</section>

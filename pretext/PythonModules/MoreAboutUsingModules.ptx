@@ -1,4 +1,4 @@
-<section xml:id="more-about-using-modules">
+<section xml:id="python_modules_more-about-using-modules">
     <title>More About Using Modules</title>
     <p>Before we move on to exploring other modules, we should say a bit more about what modules are and how we
             typically use them.  One of the most important things to realize about modules is the fact that they are data objects, just
@@ -28,5 +28,5 @@
     </p>
     <p>We will now turn our attention to a few other modules that you might find useful.</p>
 
-    <video xml:id="SGVgAV0v-Ww" youtube="SGVgAV0v-Ww" width="560" />
+    <video xml:id="SGVgAV0v-Ww" youtube="SGVgAV0v-Ww" width="auto" />
 </section>

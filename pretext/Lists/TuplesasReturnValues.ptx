@@ -1,4 +1,4 @@
-<section xml:id="tuples-as-return-values">
+<section xml:id="lists_tuples-as-return-values">
         <title>Tuples as Return Values</title>
         <p>Functions can return tuples as return values. This is very useful &#8212; we often want to
             know some batsman&#8217;s highest and lowest score, or we want to find the mean and the standard

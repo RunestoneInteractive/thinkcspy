@@ -1,4 +1,4 @@
-<section xml:id="reading-a-file">
+<section xml:id="files_reading-a-file">
         <title>Reading a File</title>
         <p>As an example, suppose we have a text file called <c>ccdata.txt</c> that contains
             the following data representing statistics about climate change. Although it

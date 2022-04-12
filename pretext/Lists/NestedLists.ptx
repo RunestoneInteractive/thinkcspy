@@ -1,4 +1,4 @@
-<section xml:id="nested-lists">
+<section xml:id="lists_nested-lists">
         <title>Nested Lists</title>
         <p>A nested list is a list that appears as an element in another list. In this
             list, the element with index 3 is a nested list.
@@ -23,7 +23,7 @@ print(nested[3][1])
 </listing>
         
         
-        <p xml:id="index-0"><alert>Check your understanding</alert></p>
+        <p xml:id="lists_index-0"><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question9_21_1">
         <statement>

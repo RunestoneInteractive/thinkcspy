@@ -1,4 +1,4 @@
-<section xml:id="using-a-main-function">
+<section xml:id="functions_using-a-main-function">
         <title>Using a Main Function</title>
         <p>Using functions is a good idea.  It helps us to modularize our code by breaking a program
             into logical parts where each part is responsible for a specific task.  For example, in one of our first programs there

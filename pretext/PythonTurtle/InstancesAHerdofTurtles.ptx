@@ -1,4 +1,4 @@
-<section xml:id="instances-a-herd-of-turtles">
+<section xml:id="python_turtle_instances-a-herd-of-turtles">
     <title>Instances &#8212; A Herd of Turtles</title>
     <p>
         Just like we can have many different integers in a program, we can have many
@@ -134,7 +134,7 @@ wn.exitonclick()
     <exercise xml:id="rsid_3_6" indent="show" language="python">
         <statement>
             <p>The following program has one turtle, &#8220;jamal&#8221;, draw a capital L in blue and then another, &#8220;tina&#8221;, draw a line to the west in orange as shown to the left:</p>
-            <image source="PythonTurtle/Figures/TwoTurtles1.png" width="50%" />
+            <image source="PythonTurtle/Figures/TwoTurtles1.png" width="75%" />
             <p>The program should do all set-up, have &#8220;jamal&#8221; draw the L, and then have &#8220;tina&#8221; draw the line.   Finally, it should set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on
@@ -173,7 +173,7 @@ wn.exitonclick()
     <exercise xml:id="rsid_3_7" indent="show" language="python">
         <statement>
             <p>The following program has one turtle, &#8220;jamal&#8221;, draw a line to the north in blue and then another, &#8220;tina&#8221;, draw a line to the east in orange as shown to the left:</p>
-            <image source="PythonTurtle/Figures/TwoTurtlesL.png" width="50%" />
+            <image source="PythonTurtle/Figures/TwoTurtlesL.png" width="75%" />
             <p>The program should import the turtle module, get the window to draw on, create the turtle &#8220;jamal&#8221;, have it draw a line to the north, then create the turtle &#8220;tina&#8221;, and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on

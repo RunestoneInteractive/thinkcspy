@@ -1,4 +1,4 @@
-<section xml:id="lessons-from-a-triangle">
+<section xml:id="labs_lessons-from-a-triangle">
         <title>Lessons from a Triangle</title>
         <p>OK, let&#8217;s look at what we have learned from writing a <c>drawTriangle</c> and
             <c>drawOctagon</c> function.  The first thing you had to figure out was that you

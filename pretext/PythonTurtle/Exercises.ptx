@@ -1,4 +1,4 @@
-<exercises xml:id="pythonturtle_exercises">
+<exercises xml:id="python_turtle_exercises">
     <title>Exercises</title>
 
     <exercise xml:id="ex_3_1">
@@ -329,7 +329,7 @@ for i in range(5):
             <p>
                 Write a program to draw some kind of picture.  Be creative and experiment
                         with the turtle methods provided in
-                <xref ref="SummaryofTurtleMethods#turtle-methods" />
+                <xref ref="python_turtle_summary-of-turtle-methods" />
                 .
             </p>
 

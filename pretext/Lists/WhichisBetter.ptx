@@ -1,4 +1,4 @@
-<section xml:id="which-is-better">
+<section xml:id="lists_which-is-better">
         <title>Which is Better?</title>
         <p>Anything that can be done with modifiers can also be done with pure functions.
             In fact, some programming languages only allow pure functions. There is some

@@ -1,4 +1,4 @@
-<section xml:id="algorithms-revisited">
+<section xml:id="more_about_iteration_algorithms-revisited">
         <title>Algorithms Revisited</title>
         <p>Newton&#8217;s method is an example of an <alert>algorithm</alert>: it is a mechanical process
             for solving a category of problems (in this case, computing square roots).</p>

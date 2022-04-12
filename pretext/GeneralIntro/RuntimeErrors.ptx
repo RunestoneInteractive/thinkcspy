@@ -1,4 +1,4 @@
-<section xml:id="runtime-errors">
+<section xml:id="general_intro_runtime-errors">
         <title>Runtime Errors</title>
         <p>The second type of error is a runtime error, so called because the error does
             not appear until you run the program. These errors are also called

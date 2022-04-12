@@ -1,4 +1,4 @@
-<section xml:id="objects-as-arguments-and-parameters">
+<section xml:id="classes_basics_objects-as-arguments-and-parameters">
         <title>Objects as Arguments and Parameters</title>
         <p>You can pass an object as an argument in the usual way.  We&#8217;ve already seen
             this in some of the turtle examples where we passed the turtle to

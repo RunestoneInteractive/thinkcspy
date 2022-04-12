@@ -1,4 +1,4 @@
-<section xml:id="what-is-recursion">
+<section xml:id="intro_recursion_what-is-recursion">
         <title>What Is Recursion?</title>
         <p><alert>Recursion</alert> is a method of solving problems that involves breaking a
             problem down into smaller and smaller subproblems until you get to a

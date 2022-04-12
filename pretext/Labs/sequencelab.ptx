@@ -1,4 +1,4 @@
-<section xml:id="experimenting-with-the-3n-1-sequence">
+<section xml:id="labs_experimenting-with-the-3n-1-sequence">
         <title>Experimenting With the 3n+1 Sequence</title>
         <p>In this lab we will try to gain a bit more information about the 3n+1 sequence.  We will start with the code from the chapter and make modifications.  Here is the function so far.</p>
 

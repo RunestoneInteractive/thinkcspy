@@ -1,4 +1,4 @@
-<section xml:id="converting-an-object-to-a-string">
+<section xml:id="classes_basics_converting-an-object-to-a-string">
         <title>Converting an Object to a String</title>
         <p>When we&#8217;re working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
             Consider the example below.</p>

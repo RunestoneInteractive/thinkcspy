@@ -1,4 +1,4 @@
-<section xml:id="extending">
+<section xml:id="inheritance_extending">
         <title>Extending</title>
         <p>If you compare the code in the __init__ methods of <c>Point</c> and <c>LabeledPoint</c>, you can
             see that there is some duplication&#8211;the initialization of x and y. We can

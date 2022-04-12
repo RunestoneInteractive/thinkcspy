@@ -1,11 +1,11 @@
-<section xml:id="omitting-the-else-clause-unary-selection">
+<section xml:id="selection_omitting-the-else-clause-unary-selection">
     <title>
         Omitting the
         <title_reference>else</title_reference>
         Clause: Unary Selection
     </title>
 
-    <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="560" />
+    <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto" />
     <sidebar>
         <title>
             Flowchart of an

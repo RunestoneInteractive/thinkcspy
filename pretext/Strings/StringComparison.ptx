@@ -1,4 +1,4 @@
-<section xml:id="string-comparison">
+<section xml:id="strings_string-comparison">
         <title>String Comparison</title>
         <p>The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
             expression using the equality operator.</p>

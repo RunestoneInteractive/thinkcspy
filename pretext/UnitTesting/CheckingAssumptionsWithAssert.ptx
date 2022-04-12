@@ -1,4 +1,4 @@
-<section xml:id="checking-assumptions-with-assert">
+<section xml:id="unit_testing_checking-assumptions-with-assert">
         <title>
             Checking Assumptions With
             <c>assert</c>
@@ -76,7 +76,7 @@ print(sumnums(3, 1))
             and when it detects them, somehow report that it was called incorrectly.</p>
         
         
-        <subsection xml:id="designing-defensive-functions">
+        <subsection xml:id="unit_testing_designing-defensive-functions">
             <title>Designing Defensive Functions</title>
             <p>A defensive function is a function that checks its parameters to see if they are valid, and responds in an appropriate
                 way if they are invalid. That raises the question: what should a defensive function do if it receives invalid values?
@@ -135,7 +135,7 @@ print(sumnums(3, 1))
             
             
         </subsection>
-        <subsection xml:id="the-assert-statement">
+        <subsection xml:id="unit_testing_the-assert-statement">
             <title>
                 The
                 <c>assert</c>
@@ -253,7 +253,7 @@ print(sumnums(3, 1))
                 </p>
             </admonition>
         </subsection>
-        <subsection xml:id="more-on-assert-and-preconditions">
+        <subsection xml:id="unit_testing_more-on-assert-and-preconditions">
             <title>
                 More on
                 <c>assert</c>

@@ -1,4 +1,4 @@
-<section xml:id="a-find-function">
+<section xml:id="strings_a-find-function">
         <title>A <c>find</c> function</title>
         <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
 

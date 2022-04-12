@@ -1,4 +1,4 @@
-<section xml:id="list-deletion">
+<section xml:id="lists_list-deletion">
         <title>List Deletion</title>
         <p>Using slices to delete list elements can be awkward and therefore error-prone.
             Python provides an alternative that is more readable.

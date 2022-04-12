@@ -1,4 +1,4 @@
-<section xml:id="the-design-of-gui-programs">
+<section xml:id="gu_iand_event_driven_programming_the-design-of-gui-programs">
         <title>The Design of GUI Programs</title>
         <p>For very simple GUI programs, no special program design is needed, as
             demonstrated in the previous &#8220;Hello World&#8221; example programs. However, any

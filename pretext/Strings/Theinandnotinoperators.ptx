@@ -1,4 +1,4 @@
-<section xml:id="the-in-and-not-in-operators">
+<section xml:id="strings_the-in-and-not-in-operators">
         <title>The <c>in</c> and <c>not in</c> operators</title>
         <p>The <c>in</c> operator tests if one string is a substring of another:</p>
 

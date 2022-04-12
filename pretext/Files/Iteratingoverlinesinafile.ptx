@@ -1,4 +1,4 @@
-<section xml:id="iterating-over-lines-in-a-file">
+<section xml:id="files_iterating-over-lines-in-a-file">
         <title>Iterating over lines in a file</title>
         <p>Recall the contents of the ccdata.txt file.</p>
         <table><tabular>

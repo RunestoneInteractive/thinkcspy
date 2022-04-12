@@ -1,4 +1,4 @@
-<section xml:id="values-and-data-types">
+<section xml:id="simple_python_data_values-and-data-types">
         <title>Values and Data Types</title>
         <p>A <alert>value</alert> is one of the fundamental things &#8212; like a word or a number &#8212;
             that a program manipulates. The values we have seen so far are <c>5</c> (the

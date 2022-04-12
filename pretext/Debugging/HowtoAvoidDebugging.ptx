@@ -1,4 +1,4 @@
-<section xml:id="how-to-avoid-debugging">
+<section xml:id="debugging_how-to-avoid-debugging">
         <title>How to Avoid Debugging</title>
         <p>Perhaps the most important lesson in debugging is that it is <alert>largely avoidable</alert> &#8211; if you work carefully.</p>
         <p><ol label="1">
@@ -129,7 +129,7 @@ print(final_time_int)
 </listing>
         
         
-        <p xml:id="index-0">Now, that&#8217;s a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for <c>current_time</c> and 5 for <c>wait_time</c> then 13 is correct.  But if you entered 17 (5 pm) for <c>current_time</c> and 9 for <c>wait_time</c> then the result of 26 is not correct.</p>
+        <p xml:id="debugging_index-0">Now, that&#8217;s a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for <c>current_time</c> and 5 for <c>wait_time</c> then 13 is correct.  But if you entered 17 (5 pm) for <c>current_time</c> and 9 for <c>wait_time</c> then the result of 26 is not correct.</p>
         <p>This illustrates an important aspect of <alert>testing</alert>: it is important to test your code on a range of inputs.  It is especially important to test your code on <alert>boundary conditions</alert>.  For this particular problem, you should test your program with <c>current_time</c> of 0, 23, and some values in between.  You should test your <c>wait_time</c> for 0, and some larger values.  What about negative numbers?  Negative numbers don&#8217;t make sense, and since we don&#8217;t really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.</p>
         <p>So to account for those numbers that are bigger than 23, we need one final step: using the modulus operator.</p>
 

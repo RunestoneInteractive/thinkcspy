@@ -1,4 +1,4 @@
-<section xml:id="length">
+<section xml:id="strings_length">
         <title>Length</title>
         <p>The <c>len</c> function, when applied to a string, returns the number of characters in a string.</p>
 

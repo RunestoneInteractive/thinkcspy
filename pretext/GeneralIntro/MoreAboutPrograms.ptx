@@ -1,4 +1,4 @@
-<section xml:id="more-about-programs">
+<section xml:id="general_intro_more-about-programs">
         <title>More About Programs</title>
         <p>A <alert>program</alert> is a sequence of instructions that specifies how to perform a
             computation. The computation might be something as complex as rendering an html page in a web browser

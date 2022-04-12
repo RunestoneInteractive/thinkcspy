@@ -1,4 +1,4 @@
-<section xml:id="low-level-event-processing">
+<section xml:id="gu_iand_event_driven_programming_low-level-event-processing">
         <title>Low-Level Event Processing</title>
         <p>In the previous lessons you learned how to associate simple user actions with
             the most common user events, such as clicking on a button. For

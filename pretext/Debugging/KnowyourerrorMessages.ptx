@@ -1,4 +1,4 @@
-<section xml:id="know-your-error-messages">
+<section xml:id="debugging_know-your-error-messages">
         <title>Know Your Error Messages</title>
         <p>Many problems in your program will lead to an error message.  For example as I was writing and testing this chapter of the book I wrote the following version of the example program in the previous section.</p>
         <program language="python"><input>
@@ -252,7 +252,7 @@ print(final_time_int)
                 <p>Finally we will look at ways to help uncover the root cause of these messages.</p>
             </li>
         </ul></p>
-        <subsection xml:id="parseerror">
+        <subsection xml:id="debugging_parseerror">
             <title>ParseError</title>
             <p>Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don&#8217;t use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can&#8217;t figure out what you are trying to say.</p>
             <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
@@ -350,7 +350,7 @@ print(final_time_int)
                 to the string 10, and commented out the input statement.  And now the program works!  So you conclude that the problem must have something to do with the input function.
             </p>
         </subsection>
-        <subsection xml:id="typeerror">
+        <subsection xml:id="debugging_typeerror">
             <title>TypeError</title>
             <p>TypeErrors occur when you you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.</p>
             <p>Here&#8217;s an example of a type error created by a Polish learner.  See if you can find and fix the error.</p>
@@ -419,7 +419,7 @@ print ('godzina teraz', a)
                 You will see that at least we have confirmed that x is of type string.  Now you need to start to work backward through the program.  You need to ask yourself, where is x used in the program?  x is used on lines 2, 3, and of course 5 and 6 (where we are getting an error).  So maybe you move the print statement to be after line 2 and again after 3.  Line 3 is where you expect the value of x to be changed to an integer.  Could line 4 be mysteriously changing x back to a string?  Not very likely.  So the value and type of x is just what you would expect it to be after line 2, but not after line 3.  This helps you isolate the problem to line 3.  In fact if you employ one of our earlier techniques of commenting out line 3 you will see that this has no impact on the error, and is a big clue that line 3 as it is currently written is useless.
             </p>
         </subsection>
-        <subsection xml:id="nameerror">
+        <subsection xml:id="debugging_nameerror">
             <title>NameError</title>
             <p>Name errors almost always mean that you have used a variable before it has a value.  Often NameErrors are simply caused by typos in your code.  They can be hard to spot if you don&#8217;t have a good eye for catching spelling mistakes.  Other times you may simply mis-remember the name of a variable or even a function you want to call.    You have seen one example of a NameError at the beginning of this section.  Here is another one.  See if you can get this program to run successfully:</p>
 
@@ -571,7 +571,7 @@ print(alarm_time)
             <!--alarm_time = present_time + set_hrs-->
             <!--print(alarm_time)-->
         </subsection>
-        <subsection xml:id="valueerror">
+        <subsection xml:id="debugging_valueerror">
             <title>ValueError</title>
             <p>Value errors occur when you pass a parameter to a function and the function is expecting a certain limitations on the values, and the value passed is not compatible.  We can illustrate that with this particular program in two different ways.</p>
 

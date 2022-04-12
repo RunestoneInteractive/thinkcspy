@@ -1,4 +1,4 @@
-<section xml:id="widget-groupings">
+<section xml:id="gu_iand_event_driven_programming_widget-groupings">
     <title>Widget Groupings</title>
     <p>You will design a more user friendly interface if you group and organize
             your widgets in a coherent design. Tkinter has four basic ways to group
@@ -68,7 +68,7 @@
         <c>grid</c>
         layout manager on a 2x2 grid.
     </p>
-    <figure align="center" xml:id="id1">
+    <figure align="center" xml:id="fig-grouping-examples">
         <image source="GUIandEventDrivenProgramming/Figures/Grouping_examples.png" width="50%" />
         <caption>Examples of grouping widgets</caption>
     </figure>

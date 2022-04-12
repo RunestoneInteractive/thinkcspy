@@ -1,24 +1,19 @@
-<section xml:id="how-the-web-works">
-    <title>How the Web Works</title>
-    <p>Before learning how to write a web application, you need to understand a bit about how
+<section xml:id="web_apps_how-the-web-works">
+        <title>How the Web Works</title>
+        <p>Before learning how to write a web application, you need to understand a bit about how
             web browsers work, and how web applications interact with users.</p>
-    <p>
-        A
-        <alert>web browser</alert>
-        , at its core, is a fairly simple application. Basically, web browsers
-    </p>
-    <p>
-        <ol label="1">
+        <p>A <alert>web browser</alert>, at its core, is a fairly simple application. Basically, web browsers</p>
+        <p><ol label="1">
             <li>
                 <dl>
                     <li>
                         <title>Request files from web servers.</title>
-
-                        <p>The World-Wide Web is composed of thousands of web servers connected to the Internet. Each web
+                        
+                            <p>The World-Wide Web is composed of thousands of web servers connected to the Internet. Each web
                                 server contains lots of different kinds of files that web browsers can request: HTML pages, image
                                 files, audio files, and other resources. When you click a link on a web page, the web browser sends a
                                 request to the web server, which transmits the requested file back to the browser.</p>
-
+                        
                     </li>
                 </dl>
             </li>
@@ -26,45 +21,29 @@
                 <dl>
                     <li>
                         <title>Process the downloaded files appropriately.</title>
-
-                        <p>Once the web browser has downloaded the requested file, it needs to do something with it. Web
+                        
+                            <p>Once the web browser has downloaded the requested file, it needs to do something with it. Web
                                 browsers know how to render an HTML document, show images, play audio files, and so on. If the
                                 web browser doesn&#8217;t know what to do with a file, it usually prompts the user to save the file, so the
                                 user can do something with it.</p>
-
+                        
                     </li>
                 </dl>
             </li>
-        </ol>
-    </p>
-    <p>Let&#8217;s take a specific example. Use your browser to access the following URL:</p>
-    <block_quote>
-        <p>
-            <url href="https://docs.python.org/3/library/index.html" visual="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</url>
-        </p>
-    </block_quote>
-    <note>
-        <p>
-            A
-            <alert>URL</alert>
-            (&#8220;Uniform Resource Locator&#8221;) is the address of a resource on the Web. It
-                has three sections: the
-            <alert>protocol</alert>
-            (ex. https:) the browser uses to request the resource,
-                the
-            <alert>server</alert>
-            where the document is located (ex.
-            <c>docs.python.org</c>
-            ), and the
-            <alert>path</alert>
-            to the requested resource on the server (ex.
-            <c>/3/library/index.html</c>
-            ).
-        </p>
-    </note>
-    <p>When you click on this link, here&#8217;s what happens:</p>
-    <p>
-        <ol label="1">
+        </ol></p>
+        <p>Let&#8217;s take a specific example. Use your browser to access the following URL:</p>
+        <block_quote>
+            <p><url href="https://docs.python.org/3/library/index.html" visual="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</url></p>
+        </block_quote>
+        <note>
+            <p>A <alert>URL</alert> (&#8220;Uniform Resource Locator&#8221;) is the address of a resource on the Web. It
+                has three sections: the <alert>protocol</alert> (ex. https:) the browser uses to request the resource,
+                the <alert>server</alert> where the document is located (ex.
+                <c>docs.python.org</c>), and the <alert>path</alert> to the requested resource on the server (ex.
+                <c>/3/library/index.html</c>).</p>
+        </note>
+        <p>When you click on this link, here&#8217;s what happens:</p>
+        <p><ol label="1">
             <li>
                 <p>The browser opens a network connection to the web server named docs.python.org</p>
             </li>
@@ -77,16 +56,12 @@
             <li>
                 <p>The browser renders the HTML document</p>
             </li>
-        </ol>
-    </p>
-    <figure>
-        <image source="WebApps/Figures/webrequest.jpg" width="50%" />
-    </figure>
-    <p>
-        If you want to see the file transmitted by the web server to the browser, right-click in the browser window
-            and choose
-        <alert>View Page Source</alert>
-        (your browser&#8217;s option to view the source may be slightly different).
-            The browser shows you the file it downloaded from the web server.
-    </p>
-</section>
+        </ol></p>
+        <figure>
+            <image source="WebApps/Figures/webrequest.jpg" width="50%"/>
+        </figure>
+        <p>If you want to see the file transmitted by the web server to the browser, right-click in the browser window
+            and choose <alert>View Page Source</alert> (your browser&#8217;s option to view the source may be slightly different).
+            The browser shows you the file it downloaded from the web server.</p>
+    </section>
+

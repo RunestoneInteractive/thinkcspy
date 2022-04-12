@@ -1,4 +1,4 @@
-<section xml:id="runetime-stack-and-raise-command">
+<section xml:id="exceptions_runetime-stack-and-raise-command">
         <title>Runetime Stack and <c>raise</c> command</title>
         <p>There are cases where the sequential flow-of-control does
             not work well. An example will best explain this.</p>

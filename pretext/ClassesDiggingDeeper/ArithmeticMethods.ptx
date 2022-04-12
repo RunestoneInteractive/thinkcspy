@@ -1,4 +1,4 @@
-<section xml:id="arithmetic-methods">
+<section xml:id="classes_digging_deeper_arithmetic-methods">
         <title>Arithmetic Methods</title>
         <p>We will conclude this chapter by adding a few more methods to our <c>Fraction</c> class.  In particular, we will implement
             arithmetic.  To begin, consider what it means to add two fractions together.

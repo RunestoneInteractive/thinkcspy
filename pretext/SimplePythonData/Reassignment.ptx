@@ -1,7 +1,7 @@
-<section xml:id="reassignment">
+<section xml:id="simple_python_data_reassignment">
     <title>Reassignment</title>
 
-    <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="560" />
+    <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto" />
     <p>As we have mentioned previously, it is legal to make more than one assignment to the
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>
@@ -31,7 +31,7 @@ print(bruce)
         <alert>reassignment</alert>
         looks like in a reference diagram:
     </p>
-    <image source="SimplePythonData/Figures/reassign1.png" alt="reassignment" width="50%" />
+    <image source="SimplePythonData/Figures/reassign1.png" width="50%" alt="reassignment" />
     <p>
         It is important to note that in mathematics, a statement of equality is always true.  If
         <c>a is equal to b</c>
@@ -61,7 +61,7 @@ print(a, b)
         <c>b</c>
         , so they are no longer equal. We will have much more to say about equality in a later chapter.
     </p>
-    <subsection xml:id="developing-your-mental-model-of-how-python-evaluates">
+    <subsection xml:id="simple_python_data_developing-your-mental-model-of-how-python-evaluates">
         <title>Developing your mental model of How Python Evaluates</title>
         <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
         <exercise runestone="se_reassign" />

@@ -1,4 +1,4 @@
-<section xml:id="operators-and-operands">
+<section xml:id="simple_python_data_operators-and-operands">
         <title>Operators and Operands</title>
         <p><alert>Operators</alert> are special tokens that represent computations like addition,
             multiplication and division. The values the operator works on are called
@@ -31,7 +31,7 @@ print(3 ** 2)
 </listing>
         
         
-        <p xml:id="index-1">When a variable name appears in the place of an operand, it is replaced with
+        <p xml:id="simple_python_data_index-1">When a variable name appears in the place of an operand, it is replaced with
             the value that it refers to before the operation is performed.
             For example, what if we wanted to convert 645 minutes into hours.
             In Python 3, division is denoted by the operator token <c>/</c> which always evaluates to a floating point
@@ -76,7 +76,7 @@ print(-6//4)
             division operator <c>/</c>.  If you want an integer result, use <c>//</c>.</p>
         
         
-        <p xml:id="index-2">The <alert>modulus operator</alert>, sometimes also called the <alert>remainder operator</alert> or <alert>integer remainder operator</alert> works on integers (and integer expressions) and yields
+        <p xml:id="simple_python_data_index-2">The <alert>modulus operator</alert>, sometimes also called the <alert>remainder operator</alert> or <alert>integer remainder operator</alert> works on integers (and integer expressions) and yields
             the remainder when the first operand is divided by the second. In Python, the
             modulus operator is a percent sign (<c>%</c>). The syntax is the same as for other
             operators.</p>

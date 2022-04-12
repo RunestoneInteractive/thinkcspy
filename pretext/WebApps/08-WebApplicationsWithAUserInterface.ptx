@@ -1,4 +1,4 @@
-<section xml:id="web-applications-with-a-user-interface">
+<section xml:id="web_apps_web-applications-with-a-user-interface">
         <title>Web Applications With a User Interface</title>
         <p>This section builds on the material in the preceding sections to present a web
             application that prompts the user to provide input, performs some processing,

@@ -1,4 +1,4 @@
-<section xml:id="newton-s-method">
+<section xml:id="more_about_iteration_newton-s-method">
         <title>Newton&#8217;s Method</title>
         <p>Loops are often used in programs that compute numerical results by starting
             with an approximate answer and iteratively improving it.</p>

@@ -1,62 +1,43 @@
-<section xml:id="aliasing">
-    <title>Aliasing</title>
-    <p>Since variables refer to objects, if we assign one variable to another, both
+<section xml:id="lists_aliasing">
+        <title>Aliasing</title>
+        <p>Since variables refer to objects, if we assign one variable to another, both
             variables refer to the same object:</p>
 
-    <listing xml:id="listalias1">
-        <caption />
-        <program xml:id="listalias1_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="listalias1">
+    <caption/>
+    <program xml:id="listalias1_editor" interactive="activecode" language="python">
+        <input>
 a = [81, 82, 83]
 b = a
 print(a is b)
         </input>
-        </program>
-    </listing>
-    <p>In this case, the reference diagram looks like this:</p>
-    <image source="Lists/Figures/refdiag4.png" alt="State snapshot for multiple references (aliases) to a list" width="50%" />
-    <p>
-        Because the same list has two different names,
-        <c>a</c>
-        and
-        <c>b</c>
-        , we say that it
-            is
-        <alert>aliased</alert>
-        . Changes made with one alias affect the other.  In the codelens example below, you can see that
-        <c>a</c>
-        and
-        <c>b</c>
-        refer
-            to the same list after executing the assignment statement
-        <c>b = a</c>
-        .
-    </p>
-    <exercise runestone="chp09_is3" />
-    <p>Although this behavior can be useful, it is sometimes unexpected or
+    </program>
+</listing>
+        <p>In this case, the reference diagram looks like this:</p>
+        <image source="Lists/Figures/refdiag4.png" width="50%" alt="State snapshot for multiple references (aliases) to a list"/>
+        <p>Because the same list has two different names, <c>a</c> and <c>b</c>, we say that it
+            is <alert>aliased</alert>. Changes made with one alias affect the other.  In the codelens example below, you can see that <c>a</c> and <c>b</c> refer
+            to the same list after executing the assignment statement <c>b = a</c>.</p>
+<exercise runestone="chp09_is3"/>        <p>Although this behavior can be useful, it is sometimes unexpected or
             undesirable. In general, it is safer to avoid aliasing when you are working
             with mutable objects. Of course, for immutable objects, there&#8217;s no problem.
             That&#8217;s why Python is free to alias strings and integers when it sees an opportunity to
             economize.</p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question9_10_1">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 alist = [4, 2, 8, 6, 5]
 blist = alist
 blist[3] = 999
 print(alist)
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -75,33 +56,25 @@ print(alist)
                     Yes, since alist and blist both reference the same list, changes to one also change the other.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question9_10_2">
         <statement>
 
-            <block_quote>
-                <p>Consider the following lists:</p>
-                <program language="python">
-                    <input>
+        <block_quote>
+            <p>Consider the following lists:</p>
+            <program language="python"><input>
 list1=[1,100,1000]
 list2=[1,100,1000]
 list3=list1
-</input>
-                </program>
-                <p>
-                    Which statements will output
-                    <alert>True</alert>
-                    ? (Select
-                    <alert>all</alert>
-                    that apply).
-                </p>
-            </block_quote>
+</input></program>
+            <p>Which statements will output <alert>True</alert>? (Select <alert>all</alert> that apply).</p>
+        </block_quote>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -147,7 +120,8 @@ list3=list1
                     list2 and list3 have the same value
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

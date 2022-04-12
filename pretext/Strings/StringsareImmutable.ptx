@@ -1,4 +1,4 @@
-<section xml:id="strings-are-immutable">
+<section xml:id="strings_strings-are-immutable">
         <title>Strings are Immutable</title>
         <p>One final thing that makes strings different from some other Python collection types is that
             you are not allowed to modify the individual characters in the collection.  It is tempting to use the <c>[]</c> operator on the left side of an assignment,

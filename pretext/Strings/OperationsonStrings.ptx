@@ -1,4 +1,4 @@
-<section xml:id="operations-on-strings">
+<section xml:id="strings_operations-on-strings">
         <title>Operations on Strings</title>
         <p>In general, you cannot perform mathematical operations on strings, even if the
             strings look like numbers. The following are illegal (assuming that <c>message</c>

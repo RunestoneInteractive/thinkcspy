@@ -1,4 +1,4 @@
-<section xml:id="test-first-development">
+<section xml:id="unit_testing_test-first-development">
         <title>Test-First Development</title>
         <p>The idea of unit tests has been around a long time, and most people agree that writing unit tests is a good idea.
             However, when deadlines loom and time is at a premium, the unit tests often don&#8217;t get written. That&#8217;s a problem, because
@@ -94,7 +94,7 @@ print("All tests passed!")
         <p>Suppose we&#8217;re not creating a new function, but modifying an existing one. In Test-First Development,
             before making the modification to the function, we write a test for the new functionality. Then,
             we modify the function, and use the test to check that the modification worked.</p>
-        <subsection xml:id="benefits-of-test-first-development">
+        <subsection xml:id="unit_testing_benefits-of-test-first-development">
             <title>Benefits of Test-First Development</title>
             <p>There are several benefits to Test-First Development.</p>
             <p><ol label="1">

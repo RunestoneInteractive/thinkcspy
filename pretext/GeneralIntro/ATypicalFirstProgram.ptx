@@ -1,4 +1,4 @@
-<section xml:id="a-typical-first-program">
+<section xml:id="general_intro_a-typical-first-program">
         <title>A Typical First Program</title>
         <p>Traditionally, the first program written in a new language is called <em>Hello,
                 World!</em> because all it does is display the words, Hello, World!  In Python, the source code

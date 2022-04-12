@@ -1,4 +1,4 @@
-<section xml:id="functions-that-return-values">
+<section xml:id="functions_functions-that-return-values">
     <title>Functions that Return Values</title>
     <p>Most functions require arguments, values that control how the function does its
             job. For example, if you want to find the absolute value of a number, you have
@@ -80,7 +80,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
     </p>
 
 
-    <p xml:id="index-1">
+    <p>
         So an important difference between these functions and one like
         <c>drawSquare</c>
         is that

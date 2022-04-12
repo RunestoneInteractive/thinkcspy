@@ -1,4 +1,4 @@
-<section xml:id="lists-and-for-loops">
+<section xml:id="lists_lists-and-for-loops">
         <title>Lists and <c>for</c> loops</title>
         <p>It is also possible to perform <alert>list traversal</alert> using iteration by item as well as iteration by index.</p>
 

@@ -1,4 +1,4 @@
-<section xml:id="testing-with-pytest">
+<section xml:id="unit_testing_testing-with-pytest">
         <title>Testing with pytest</title>
         <p>Writing automated unit tests is very helpful in reducing the effort needed to build software. However, the simple
             approach described so far is inadequate to help programmers realize the full benefits of unit testing. In this section,
@@ -105,7 +105,7 @@ if success:
             <c>test_itworks</c>
             and try running the test again.
         </p>
-        <subsection xml:id="organizing-pytest-functions">
+        <subsection xml:id="unit_testing_organizing-pytest-functions">
             <title>Organizing pytest Functions</title>
             <p>The example above uses a single pytest function, with both asserts in the same pytest function. The
                 disadvantage of that approach is that the first failing assert prevents the rest of the asserts from
@@ -130,7 +130,7 @@ def test_round6_rounds_down():
             <p>If you use good pytest function names, when a pytest function has an assertion failure, you can
                 easily tell what the problem was.</p>
         </subsection>
-        <subsection xml:id="using-pytest">
+        <subsection xml:id="unit_testing_using-pytest">
             <title>Using pytest</title>
             <p>
                 To use pytest, you must first install it using the
@@ -159,7 +159,7 @@ def test_round6_rounds_down():
             </p>
             <pre>pytest myround.py</pre>
         </subsection>
-        <subsection xml:id="understanding-pytest-failure-reports">
+        <subsection xml:id="unit_testing_understanding-pytest-failure-reports">
             <title>Understanding pytest Failure Reports</title>
             <p>When you run the pytest command and an assertion fails, you see a report like this:</p>
             <pre>=============================== FAILURES ================================
@@ -206,7 +206,7 @@ E        +  where 9 = round6(8.5)</pre>
                 </li>
             </ol></p>
         </subsection>
-        <subsection xml:id="integrated-unit-testing-with-pytest">
+        <subsection xml:id="unit_testing_integrated-unit-testing-with-pytest">
             <title>Integrated Unit Testing with pytest</title>
             <p>When you use the pytest framework, you can include pytest test functions in your main program, along with the rest of
                 your program code. This allows you to keep your tests together with the functions that they test, and you can run either

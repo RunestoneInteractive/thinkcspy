@@ -1,18 +1,18 @@
 <exercises xml:id="functions_exercises">
-    <title>Exercises</title>
-
-    <exercise xml:id="ex_5_1">
-        <statement>
-            <p>Use the drawsquare function we wrote in this chapter in a program to draw
+        <title>Exercises</title>
+        
+            <exercise xml:id="ex_5_1"><statement>
+                            <p>Use the drawsquare function we wrote in this chapter in a program to draw
                         the image shown below.
                         Assume each side is 20 units.
                         (Hint: notice that the turtle has already moved away from the ending point of the last
                         square when the program ends.)</p>
-            <image source="Functions/Figures/five_squares.png" width="50%" />
+                            <image source="Functions/Figures/five_squares.png" width="50%"/>
 
-
-            <program xml:id="ex_5_1_editor" interactive="activecode" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_1_editor" interactive="activecode" language="python">
+                            <input>
 
 import turtle
 
@@ -33,12 +33,11 @@ drawSquare(alex,20)
 
 wn.exitonclick()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q1_answer_editor" language="python">
-                <input>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q1_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawSquare(t, sz):
@@ -62,48 +61,48 @@ for i in range(5):
 
 wn.exitonclick()
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_2">
-        <statement>
-            <p>Write a program to draw this. Assume the innermost square is 20 units per side,
+            <exercise xml:id="ex_5_2">
+                <statement>
+                    <p>Write a program to draw this. Assume the innermost square is 20 units per side,
                 and each successive square is 20 units bigger, per side, than the one inside it.</p>
-            <image source="Functions/Figures/nested_squares.png" width="50%" />
+                    <image source="Functions/Figures/nested_squares.png" width="50%"/>
 
-        </statement>
-        <program xml:id="ex_5_2_editor" interactive="activecode" language="python">
-            <input />
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_3">
-        <statement>
-            <p>
-                Write a non-fruitful function
-                <c>drawPoly(someturtle, somesides, somesize)</c>
-                which makes a turtle
+                </statement>
+                <program xml:id="ex_5_2_editor" interactive="activecode" language="python">
+                    <input/>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_3"><statement>
+                            <p>
+                                Write a non-fruitful function
+                                <c>drawPoly(someturtle, somesides, somesize)</c>
+                                which makes a turtle
                         draw a regular polygon.
                         When called with
-                <c>drawPoly(tess, 8, 50)</c>
-                , it will draw a shape like this:
-            </p>
-            <image source="Functions/Figures/regularpolygon.png" width="50%" />
+                                <c>drawPoly(tess, 8, 50)</c>
+                                , it will draw a shape like this:
+                            </p>
+                            <image source="Functions/Figures/regularpolygon.png" width="50%"/>
 
-
-            <program xml:id="ex_5_3_editor" interactive="activecode" language="python">
-                <input />
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q3_answer_editor" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_3_editor" interactive="activecode" language="python">
+                            <input/>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q3_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawPoly(t, num_sides, side_length):
@@ -120,39 +119,39 @@ tess.pensize(3)
 
 drawPoly(tess, 8, 50)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
+            <exercise xml:id="ex_5_4">
+                <statement>
+                    <p>Draw this pretty pattern.</p>
+                    <image source="Functions/Figures/tess08.png" width="50%"/>
 
+                </statement>
+                <program xml:id="ex_5_4_editor" interactive="activecode" language="python">
+                    <input/>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_5"><statement>
+                            <p>The two spirals in this picture differ only by the turn angle.  Draw both.</p>
+                            <image source="Functions/Figures/tess_spirals.png" width="50%" height="240"/>
 
-    <exercise xml:id="ex_5_4">
-        <statement>
-            <p>Draw this pretty pattern.</p>
-            <image source="Functions/Figures/tess08.png" width="50%" />
-
-        </statement>
-        <program xml:id="ex_5_4_editor" interactive="activecode" language="python">
-            <input />
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_5">
-        <statement>
-            <p>The two spirals in this picture differ only by the turn angle.  Draw both.</p>
-            <image source="Functions/Figures/tess_spirals.png" height="240" width="50%" />
-
-
-            <program xml:id="ex_5_5_editor" interactive="activecode" language="python">
-                <input />
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q5_answer_editor" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_5_editor" interactive="activecode" language="python">
+                            <input/>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q5_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawSpiral(t, angle):
@@ -189,50 +188,51 @@ guido.pendown()
 
 drawSpiral(guido, 89)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_6">
-        <statement>
-            <p>
-                Write a non-fruitful function
-                <c>drawEquitriangle(someturtle, somesize)</c>
-                which calls
-                <c>drawPoly</c>
-                from the
+            <exercise xml:id="ex_5_6">
+                <statement>
+                    <p>
+                        Write a non-fruitful function
+                        <c>drawEquitriangle(someturtle, somesize)</c>
+                        which calls
+                        <c>drawPoly</c>
+                        from the
                 previous question to have its turtle draw a equilateral triangle.
-            </p>
+                    </p>
 
-        </statement>
-        <program xml:id="ex_5_6_editor" interactive="activecode" language="python">
-            <input />
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_7">
-        <statement>
-            <p>
-                Write a fruitful function
-                <c>sumTo(n)</c>
-                that returns the sum of all integer numbers up to and
+                </statement>
+                <program xml:id="ex_5_6_editor" interactive="activecode" language="python">
+                    <input/>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_7"><statement>
+                            <p>
+                                Write a fruitful function
+                                <c>sumTo(n)</c>
+                                that returns the sum of all integer numbers up to and
                         including
-                <title_reference>n</title_reference>
-                .   So
-                <c>sumTo(10)</c>
-                would be
-                <c>1+2+3...+10</c>
-                which would return the value 55.  Use the
+                                <title_reference>n</title_reference>
+                                .   So
+                                <c>sumTo(10)</c>
+                                would be
+                                <c>1+2+3...+10</c>
+                                which would return the value 55.  Use the
                         equation  (n * (n + 1)) / 2.
-            </p>
+                            </p>
 
-
-            <program xml:id="ex_5_7_editor" interactive="activecode" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_7_editor" interactive="activecode" language="python">
+                            <input>
 
 def sumTo(n):
     # your code here
@@ -250,12 +250,11 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q7_answer_editor" language="python">
-                <input>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q7_answer_editor" language="python">
+                            <input>
 from test import testEqual
 
 def sumTo(n):
@@ -270,26 +269,27 @@ print("The sum from 1 to 10 is",t)
 t = sumTo(5)
 print("The sum from 1 to 5 is",t)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
+            <exercise xml:id="ex_5_8">
+                <statement>
+                    <p>
+                        Write a function
+                        <title_reference>areaOfCircle(r)</title_reference>
+                        which returns the area of a circle of radius
+                        <title_reference>r</title_reference>
+                        .  Make sure you use the math module in your solution.
+                    </p>
 
-
-    <exercise xml:id="ex_5_8">
-        <statement>
-            <p>
-                Write a function
-                <title_reference>areaOfCircle(r)</title_reference>
-                which returns the area of a circle of radius
-                <title_reference>r</title_reference>
-                .  Make sure you use the math module in your solution.
-            </p>
-
-        </statement>
-        <program xml:id="ex_5_8_editor" interactive="activecode" language="python">
-            <input>
+                </statement>
+                <program xml:id="ex_5_8_editor" interactive="activecode" language="python">
+                    <input>
 
 def areaOfCircle(r):
     # your code here
@@ -308,24 +308,23 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-        </program>
-    </exercise>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_9"><statement>
+                            <p>Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.</p>
+                            <image source="Functions/Figures/star.png" width="50%"/>
 
-
-    <exercise xml:id="ex_5_9">
-        <statement>
-            <p>Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.</p>
-            <image source="Functions/Figures/star.png" width="50%" />
-
-
-            <program xml:id="ex_5_9_editor" interactive="activecode" language="python">
-                <input />
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q9_answer_editor" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_9_editor" interactive="activecode" language="python">
+                            <input/>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q9_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawFivePointStar(t):
@@ -336,42 +335,42 @@ def drawFivePointStar(t):
 wolfram = turtle.Turtle()
 drawFivePointStar(wolfram)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_10">
-        <statement>
-            <p>Extend your program above.  Draw five stars, but between each, pick up the pen,
+            <exercise xml:id="ex_5_10">
+                <statement>
+                    <p>Extend your program above.  Draw five stars, but between each, pick up the pen,
                 move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
                 You&#8217;ll get something like this (note that you will need to move to the left before drawing your first star in order to fit everything in the window):</p>
-            <image source="Functions/Figures/five_stars.png" width="50%" />
-            <p>What would it look like if you didn&#8217;t pick up the pen?</p>
+                    <image source="Functions/Figures/five_stars.png" width="50%"/>
+                    <p>What would it look like if you didn&#8217;t pick up the pen?</p>
 
-        </statement>
-        <program xml:id="ex_5_10_editor" interactive="activecode" language="python">
-            <input />
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_11">
-        <statement>
-            <p>Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
+                </statement>
+                <program xml:id="ex_5_10_editor" interactive="activecode" language="python">
+                    <input/>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_11"><statement>
+                            <p>Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
                         equal to 3).</p>
 
-
-            <program xml:id="ex_5_11_editor" interactive="activecode" language="python">
-                <input />
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q11_answer_editor" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_11_editor" interactive="activecode" language="python">
+                            <input/>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q11_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawStar(t, n):
@@ -382,40 +381,41 @@ def drawStar(t, n):
 stroustrup = turtle.Turtle()
 drawStar(stroustrup, 7)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_12">
-        <statement>
-            <p>Write a function called drawSprite that will draw a sprite.  The function will need parameters for
+            <exercise xml:id="ex_5_12">
+                <statement>
+                    <p>Write a function called drawSprite that will draw a sprite.  The function will need parameters for
                 the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
                 with 15 legs of length 120.</p>
 
-        </statement>
-        <program xml:id="ex_5_12_editor" interactive="activecode" language="python">
-            <input />
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_13">
-        <statement>
-            <p>
-                Rewrite the function
-                <c>sumTo(n)</c>
-                that returns the sum of all integer numbers up to and
+                </statement>
+                <program xml:id="ex_5_12_editor" interactive="activecode" language="python">
+                    <input/>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_13"><statement>
+                            <p>
+                                Rewrite the function
+                                <c>sumTo(n)</c>
+                                that returns the sum of all integer numbers up to and
                         including
-                <title_reference>n</title_reference>
-                .   This time use the accumulator pattern.
-            </p>
+                                <title_reference>n</title_reference>
+                                .   This time use the accumulator pattern.
+                            </p>
 
-
-            <program xml:id="ex_5_13_editor" interactive="activecode" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_13_editor" interactive="activecode" language="python">
+                            <input>
 
 def sumTo(n):
     # your code here
@@ -432,12 +432,11 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q13_answer_editor" language="python">
-                <input>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q13_answer_editor" language="python">
+                            <input>
 def sumTo(n):
     sum = 0
     for i in range(1,n+1):
@@ -452,27 +451,28 @@ print("The sum from 1 to 10 is",t)
 t = sumTo(5)
 print("The sum from 1 to 5 is",t)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_14">
-        <statement>
-            <p>
-                Write a function called
-                <c>mySqrt</c>
-                that will approximate the square root of a number, call it n, by using
+            <exercise xml:id="ex_5_14">
+                <statement>
+                    <p>
+                        Write a function called
+                        <c>mySqrt</c>
+                        that will approximate the square root of a number, call it n, by using
                 Newton&#8217;s algorithm.
                 Newton&#8217;s approach is an iterative guessing algorithm where the initial guess is n/2 and each subsequent guess
                 is computed using   the formula:  newguess = (1/2) * (oldguess + (n/oldguess)).
-            </p>
+                    </p>
 
-        </statement>
-        <program xml:id="ex_5_14_editor" interactive="activecode" language="python">
-            <input>
+                </statement>
+                <program xml:id="ex_5_14_editor" interactive="activecode" language="python">
+                    <input>
 
 def mySqrt(n):
     # your code here
@@ -489,23 +489,24 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-        </program>
-    </exercise>
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_15"><statement>
+                            <p>
+                                Write a function called
+                                <c>myPi</c>
+                                that will return an approximation of PI (3.14159&#8230;).  Use the
+                                <url href="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80" visual="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80">Leibniz</url>
+                                
+                                approximation.
+                            </p>
 
-
-    <exercise xml:id="ex_5_15">
-        <statement>
-            <p>
-                Write a function called
-                <c>myPi</c>
-                that will return an approximation of PI (3.14159&#8230;).  Use the
-                <url href="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80" visual="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80">Leibniz</url>
-                approximation.
-            </p>
-
-
-            <program xml:id="ex_5_15_editor" interactive="activecode" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_15_editor" interactive="activecode" language="python">
+                            <input>
 
  def myPi(iters):
      # Calculate an approximation of PI using the Leibniz
@@ -513,12 +514,11 @@ myTests().main()
 
      # your code here
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q15_answer_editor" language="python">
-                <input>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q15_answer_editor" language="python">
+                            <input>
 def myPi(iters):
     ''' Calculate an approximation of PI using the Leibniz
     approximation with iters number of iterations '''
@@ -536,26 +536,28 @@ def myPi(iters):
 pi_approx = myPi(10000)
 print(pi_approx)
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
+            <exercise xml:id="ex_5_16">
+                <statement>
+                    <p>
+                        Write a function called
+                        <title_reference>myPi</title_reference>
+                        that will return an approximation of PI (3.14159&#8230;).  Use the
+                        <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
+                        
+                        approximation.
+                    </p>
 
-
-    <exercise xml:id="ex_5_16">
-        <statement>
-            <p>
-                Write a function called
-                <title_reference>myPi</title_reference>
-                that will return an approximation of PI (3.14159&#8230;).  Use the
-                <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
-                approximation.
-            </p>
-
-        </statement>
-        <program xml:id="ex_5_16_editor" interactive="activecode" language="python">
-            <input>
+                </statement>
+                <program xml:id="ex_5_16_editor" interactive="activecode" language="python">
+                    <input>
 
 def myPi(iters):
     # Calculate an approximation of PI using the Madhava
@@ -563,31 +565,30 @@ def myPi(iters):
 
     #your code here
         </input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_17">
-        <statement>
-            <p>
-                Write a function called
-                <title_reference>fancySquare</title_reference>
-                that will draw a square with fancy corners (sprites on the corners).  You should
+                </program>
+            </exercise>
+        
+        
+            <exercise xml:id="ex_5_17"><statement>
+                            <p>
+                                Write a function called
+                                <title_reference>fancySquare</title_reference>
+                                that will draw a square with fancy corners (sprites on the corners).  You should
                         implement and use the
-                <title_reference>drawSprite</title_reference>
-                function from above.  For an even more interesting look, how about adding small
+                                <title_reference>drawSprite</title_reference>
+                                function from above.  For an even more interesting look, how about adding small
                         triangles to the ends of the sprite legs.
-            </p>
+                            </p>
 
-
-            <program xml:id="ex_5_17_editor" interactive="activecode" language="python">
-                <input />
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="func_q17_answer_editor" language="python">
-                <input>
+                        
+                        
+                        <program xml:id="ex_5_17_editor" interactive="activecode" language="python">
+                            <input/>
+                        </program>
+                    </statement><solution>
+                        
+                        <program xml:id="func_q17_answer_editor" language="python">
+                            <input>
 import turtle
 
 def drawSprite(t, numlegs, leglength):
@@ -611,33 +612,34 @@ drawFancySquare(alex, 100, 10, 15)
 
 wn.exitonclick()
         </input>
-            </program>
+                        </program>
+                    
 
+                    
+                </solution></exercise>
+        
+        
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_5_18">
-        <statement>
-            <p>
-                There was a whole program in
-                <xref ref="ATurtleBarChart#bar-chart" />
-                to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
+            <exercise xml:id="ex_5_18">
+                <statement>
+                    <p>
+                        There was a whole program in
+                        <xref ref="functions_a-turtle-bar-chart"/>
+                        to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
                 The current version of the
-                <c>drawBar</c>
-                function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to
-                <c>drawBar</c>
-                for the distance to move up.  For the
-                <c>barChart</c>
-                function make that parameter be some small fraction of
-                <c>maxheight+border</c>
-                .  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
-            </p>
+                        <c>drawBar</c>
+                        function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to
+                        <c>drawBar</c>
+                        for the distance to move up.  For the
+                        <c>barChart</c>
+                        function make that parameter be some small fraction of
+                        <c>maxheight+border</c>
+                        .  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.
+                    </p>
 
-        </statement>
-        <program xml:id="ex_5_18_editor" interactive="activecode" language="python">
-            <input>
+                </statement>
+                <program xml:id="ex_5_18_editor" interactive="activecode" language="python">
+                    <input>
 
 import turtle
 
@@ -677,7 +679,8 @@ for a in xs:
 
 wn.exitonclick()
         </input>
-        </program>
-    </exercise>
+                </program>
+            </exercise>
+        
+    </exercises>
 
-</exercises>

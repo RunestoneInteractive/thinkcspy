@@ -1,4 +1,4 @@
-<section xml:id="traversal-and-the-while-loop">
+<section xml:id="strings_traversal-and-the-while-loop">
         <title>Traversal and the <c>while</c> Loop</title>
         <p>The <c>while</c> loop can also control the
             generation of the index values.  Remember that the programmer is responsible for setting up the initial

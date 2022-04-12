@@ -1,4 +1,4 @@
-<section xml:id="aliasing-and-copying">
+<section xml:id="dictionaries_aliasing-and-copying">
         <title>Aliasing and Copying</title>
         <p>Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever
             two variables refer to the same dictionary object, changes to one affect the other.

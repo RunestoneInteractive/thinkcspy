@@ -1,4 +1,4 @@
-<section xml:id="adding-other-methods-to-our-class">
+<section xml:id="classes_basics_adding-other-methods-to-our-class">
         <title>Adding Other Methods to our Class</title>
         <p>The key advantage of using a class like <c>Point</c> rather than something like a simple
             tuple <c>(7, 6)</c> now becomes apparent.  We can add methods to

@@ -1,4 +1,4 @@
-<section xml:id="timer-events">
+<section xml:id="gu_iand_event_driven_programming_timer-events">
         <title>Timer Events</title>
         <p>GUI programs run an &#8220;event loop&#8221; that continuously receive events from the
             operating system and &#8220;dispatches&#8221; those events to appropriate callback
@@ -19,7 +19,7 @@ def a_callback_function():
 my_button = tk.Button(application_window, text="Example")
 my_button.after(1000, a_callback_function)
 </input></program>
-        <subsection xml:id="animations-and-repeated-tasks">
+        <subsection xml:id="gu_iand_event_driven_programming_animations-and-repeated-tasks">
             <title>Animations and Repeated Tasks</title>
             <p>If you want a specific task to be repeated on a regular interval, then
                 the callback function that performs the task should create a new timer event
@@ -42,7 +42,7 @@ my_button.after(33, animate)
                 for repeating a task, especially if a single execution of the task takes
                 a considerable amount of CPU time.</p>
         </subsection>
-        <subsection xml:id="canceling-timer-events">
+        <subsection xml:id="gu_iand_event_driven_programming_canceling-timer-events">
             <title>Canceling Timer Events</title>
             <p>In some cases you may need to cancel a timer event to prevent it from
                 executing. This is straightforward using the <c>after_cancel</c> method.
@@ -62,7 +62,7 @@ timer_object = my_button.after(1000, do_something)
 my_button.after_cancel(timer_object)
 </input></program>
         </subsection>
-        <subsection xml:id="multiple-parameters-to-timer-callbacks">
+        <subsection xml:id="gu_iand_event_driven_programming_multiple-parameters-to-timer-callbacks">
             <title>Multiple Parameters to Timer Callbacks</title>
             <p>Timer callback function can have zero or more arguments passed to them when
                 they are called. You specify the arguments when you create the event. This

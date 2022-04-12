@@ -1,4 +1,4 @@
-<section xml:id="dictionaries">
+<section xml:id="dictionaries_dictionaries">
         <title>Dictionaries</title>
         <p>All of the compound data types we have studied in detail so far &#8212; strings,
             lists, and tuples &#8212; are sequential collections.  This means that the items in the collection are

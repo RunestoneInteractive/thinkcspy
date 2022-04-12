@@ -1,4 +1,4 @@
-<section xml:id="drawing-a-circle">
+<section xml:id="labs_drawing-a-circle">
         <title>Drawing a Circle</title>
         <p>In this lesson we are going to develop a function that uses a turtle to draw
             a circle.  As we develop this function we will investigate several problem

@@ -1,4 +1,4 @@
-<section xml:id="tuple-assignment">
+<section xml:id="lists_tuple-assignment">
         <title>Tuple Assignment</title>
         <p>Python has a very powerful <alert>tuple assignment</alert> feature that allows a tuple of variables
             on the left of an assignment to be assigned values from a tuple

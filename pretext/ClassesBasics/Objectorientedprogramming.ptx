@@ -1,4 +1,4 @@
-<section xml:id="object-oriented-programming">
+<section xml:id="classes_basics_object-oriented-programming">
         <title>Object-oriented programming</title>
         <p>Python is an <alert>object-oriented programming language</alert>.  That means it
             provides features that support <url href="http://en.wikipedia.org/wiki/Object-oriented_programming" visual="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</url> (<alert>OOP</alert>).</p>

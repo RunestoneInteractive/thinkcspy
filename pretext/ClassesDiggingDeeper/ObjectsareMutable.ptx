@@ -1,4 +1,4 @@
-<section xml:id="objects-are-mutable">
+<section xml:id="classes_digging_deeper_objects-are-mutable">
         <title>Objects are Mutable</title>
         <p>We can change the state of an object by making an assignment to one of its instance variables.
             For example, we could change the numerator of the fraction by assigning a new

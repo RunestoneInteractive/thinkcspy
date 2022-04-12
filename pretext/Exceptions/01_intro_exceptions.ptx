@@ -1,4 +1,4 @@
-<section xml:id="what-is-an-exception">
+<section xml:id="exceptions_what-is-an-exception">
         <title>What is an exception?</title>
         <p>An <em>exception</em> is a signal that a condition has occurred that can&#8217;t be easily
             handled using the normal flow-of-control of a Python program. <em>Exceptions</em>

@@ -1,18 +1,41 @@
-<section xml:id="writing-text-files">
-        <title>Writing Text Files</title>
-        <p>One of the most commonly performed data processing tasks is to read data from a file, manipulate it in some way, and then write the resulting data out to a new data file to be used for other purposes later.  To accomplish this, the <c>open</c> function discussed above can also be used to create a new file prepared for writing.  Note in <xref ref="intro-WorkingwithDataFiles#filemethods1a"/> above that the only difference between opening a file for writing and  opening a file for reading is the use of the <c>'w'</c> flag instead of the <c>'r'</c> flag as the second parameter.  When we open a file for writing, a new, empty file with that name is created and made ready to accept our data. As before, the function returns a reference to the new file object.</p>
-        <p><xref ref="AlternativeFileReadingMethods#filemethods2a"/> above shows one additional file method that we have not used thus far.  The <c>write</c> method allows us to add data to a text file.  Recall that text files contain sequences of characters.  We usually think of these character sequences as being the lines of the file where each line ends with the newline <c>\n</c> character.  Be very careful to notice that the <c>write</c> method takes one parameter, a string.  When invoked, the characters of the string will be added to the end of the file.  This means that it is the programmers job to include the newline characters as part of the string if desired.</p>
-        <p>As an example, consider the <c>ccdata.txt</c> file once again.  Assume that we have been asked to provide
+<section xml:id="files_writing-text-files">
+    <title>Writing Text Files</title>
+    <p>
+        One of the most commonly performed data processing tasks is to read data from a file, manipulate it in some way, and then write the resulting data out to a new data file to be used for other purposes later.  To accomplish this, the
+        <c>open</c>
+        function discussed above can also be used to create a new file prepared for writing.  Note in
+        <xref ref="files_working-with-data-files" />
+        above that the only difference between opening a file for writing and  opening a file for reading is the use of the
+        <c>'w'</c>
+        flag instead of the
+        <c>'r'</c>
+        flag as the second parameter.  When we open a file for writing, a new, empty file with that name is created and made ready to accept our data. As before, the function returns a reference to the new file object.
+    </p>
+    <p>
+        <xref ref="files_alternative-file-reading-methods" />
+        above shows one additional file method that we have not used thus far.  The
+        <c>write</c>
+        method allows us to add data to a text file.  Recall that text files contain sequences of characters.  We usually think of these character sequences as being the lines of the file where each line ends with the newline
+        <c>\n</c>
+        character.  Be very careful to notice that the
+        <c>write</c>
+        method takes one parameter, a string.  When invoked, the characters of the string will be added to the end of the file.  This means that it is the programmers job to include the newline characters as part of the string if desired.
+    </p>
+    <p>
+        As an example, consider the
+        <c>ccdata.txt</c>
+        file once again.  Assume that we have been asked to provide
             a file consisting of only the global emission and the year of this climate change. In addition, the year
-            should come first followed by the global emmision, separated by space.</p>
-        <p>To construct this file, we will approach the problem using a similar algorithm as above.  After opening the file, we will iterate through the
+            should come first followed by the global emmision, separated by space.
+    </p>
+    <p>To construct this file, we will approach the problem using a similar algorithm as above.  After opening the file, we will iterate through the
             lines, break each line into its parts, choose the parts that we need, and then output them.  Eventually, the output will be written to a file.</p>
-        <p>The program below solves part of the problem. Notice that it reads the data and creates a string consisting of the year of the climate change followed by the global emission. In this example, we simply print the lines as they are created.</p>
+    <p>The program below solves part of the problem. Notice that it reads the data and creates a string consisting of the year of the climate change followed by the global emission. In this example, we simply print the lines as they are created.</p>
 
-<listing xml:id="python_cc_example_1">
-    <caption/>
-    <program xml:id="python_cc_example_1_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="python_cc_example_1">
+        <caption />
+        <program xml:id="python_cc_example_1_editor" interactive="activecode" language="python">
+            <input>
 infile = open("ccdata.txt", "r")
 aline = infile.readline()
 print("Year\tEmmision\n")
@@ -24,16 +47,34 @@ while aline:
 
 infile.close()
         </input>
-    </program>
-</listing>
-        <p>When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the <c>open</c> function, <c>outfile = open("emissiondata.txt",'w')</c>, using the <c>'w'</c> flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.</p>
-        <p>Once the file has been created, we just need to call the <c>write</c> method passing the string that we wish to add to the file.  In this case, the string is already being printed so we will just change the <c>print</c> into a call to the <c>write</c> method.  However, there is one additional part of the data line that we need to include.  The newline character needs to be concatenated  to the end of the line.  The entire line now becomes <c>outfile.write(dataline + '\n')</c>.  We also need to close the file when we are done.</p>
-        <p>The complete program is shown below.</p>
+        </program>
+    </listing>
+    <p>
+        When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the
+        <c>open</c>
+        function,
+        <c>outfile = open("emissiondata.txt",'w')</c>
+        , using the
+        <c>'w'</c>
+        flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.
+    </p>
+    <p>
+        Once the file has been created, we just need to call the
+        <c>write</c>
+        method passing the string that we wish to add to the file.  In this case, the string is already being printed so we will just change the
+        <c>print</c>
+        into a call to the
+        <c>write</c>
+        method.  However, there is one additional part of the data line that we need to include.  The newline character needs to be concatenated  to the end of the line.  The entire line now becomes
+        <c>outfile.write(dataline + '\n')</c>
+        .  We also need to close the file when we are done.
+    </p>
+    <p>The complete program is shown below.</p>
 
-<listing xml:id="python_cc_example_2">
-    <caption/>
-    <program xml:id="python_cc_example_2_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="python_cc_example_2">
+        <caption />
+        <program xml:id="python_cc_example_2_editor" interactive="activecode" language="python">
+            <input>
 infile = open("ccdata.txt", "r")
 outfile = open("emissiondata.txt", "w")
 
@@ -48,7 +89,6 @@ while aline:
 infile.close()
 outfile.close()
         </input>
-    </program>
-</listing>
-    </section>
-
+        </program>
+    </listing>
+</section>

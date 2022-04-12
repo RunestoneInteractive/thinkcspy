@@ -1,57 +1,105 @@
-<section xml:id="the-for-loop">
-        <title>The <c>for</c> Loop</title>
+<section xml:id="python_turtle_the-for-loop">
+    <title>
+        The
+        <c>for</c>
+        Loop
+    </title>
 
-    <video xml:id="forloopvid" youtube="xGSfiZt5cdw" width="560"/>
-            <p>When we drew the square, it was quite tedious.  We had to move then turn, move
+    <video xml:id="forloopvid" youtube="xGSfiZt5cdw" width="auto" />
+    <p>When we drew the square, it was quite tedious.  We had to move then turn, move
             then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
             or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.</p>
-        <p>A basic building block of all programs is to be able to repeat some code
-            over and over again.  In computer science, we refer to this repetitive idea as <alert>iteration</alert>.  In this section, we will explore some mechanisms for basic iteration.</p>
-        <p>In Python, the <alert>for</alert> statement allows us to write programs that implement iteration.   As a simple example, let&#8217;s say we have some friends, and
+    <p>
+        A basic building block of all programs is to be able to repeat some code
+            over and over again.  In computer science, we refer to this repetitive idea as
+        <alert>iteration</alert>
+        .  In this section, we will explore some mechanisms for basic iteration.
+    </p>
+    <p>
+        In Python, the
+        <alert>for</alert>
+        statement allows us to write programs that implement iteration.   As a simple example, let&#8217;s say we have some friends, and
             we&#8217;d like to send them each an email inviting them to our party.  We
             don&#8217;t quite know how to send email yet, so for the moment we&#8217;ll just print a
-            message for each friend.</p>
+            message for each friend.
+    </p>
 
-<listing xml:id="ch03_4">
-    <caption/>
-    <program xml:id="ch03_4_editor" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="ch03_4">
+        <caption />
+        <program xml:id="ch03_4_editor" interactive="activecode" language="python">
+            <input>
 for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     print("Hi", name, "Please come to my party on Saturday!")
         </input>
-    </program>
-</listing>
-        <p>Take a look at the output produced when you press the <c>run</c> button.  There is one line printed for each friend.  Here&#8217;s how it works:</p>
-        <p><ul>
+        </program>
+    </listing>
+    <p>
+        Take a look at the output produced when you press the
+        <c>run</c>
+        button.  There is one line printed for each friend.  Here&#8217;s how it works:
+    </p>
+    <p>
+        <ul>
             <li>
-                <p><alert>name</alert> in this <c>for</c> statement is called the <alert>loop variable</alert>.</p>
+                <p>
+                    <alert>name</alert>
+                    in this
+                    <c>for</c>
+                    statement is called the
+                    <alert>loop variable</alert>
+                    .
+                </p>
             </li>
             <li>
-                <p>The list of names in the square brackets is called a Python <alert>list</alert>.
+                <p>
+                    The list of names in the square brackets is called a Python
+                    <alert>list</alert>
+                    .
                     Lists are very useful.  We will have much
-                    more to say about them later.</p>
+                    more to say about them later.
+                </p>
             </li>
             <li>
-                <p>Line 2  is the <alert>loop body</alert>.  The loop body is always
+                <p>
+                    Line 2  is the
+                    <alert>loop body</alert>
+                    .  The loop body is always
                     indented. The indentation determines exactly what statements are &#8220;in the
-                    loop&#8221;.  The loop body is performed one time for each name in the list.</p>
+                    loop&#8221;.  The loop body is performed one time for each name in the list.
+                </p>
             </li>
             <li>
-                <p>On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if
+                <p>
+                    On each
+                    <em>iteration</em>
+                    or
+                    <em>pass</em>
+                    of the loop, a check is done to see if
                     there are still more items to be processed.  If there are none left (this is
-                    called the <alert>terminating condition</alert> of the loop), the loop has finished.
-                    Program execution continues at the next statement after the loop body.</p>
+                    called the
+                    <alert>terminating condition</alert>
+                    of the loop), the loop has finished.
+                    Program execution continues at the next statement after the loop body.
+                </p>
             </li>
             <li>
-                <p>If there are items still to be processed, the loop variable is updated to
+                <p>
+                    If there are items still to be processed, the loop variable is updated to
                     refer to the next item in the list.  This means, in this case, that the loop
-                    body is executed here 7 times, and each time <c>name</c> will refer to a different
-                    friend.</p>
+                    body is executed here 7 times, and each time
+                    <c>name</c>
+                    will refer to a different
+                    friend.
+                </p>
             </li>
             <li>
-                <p>At the end of each execution of the body of the loop, Python returns
-                    to the <c>for</c> statement, to see if there are more items to be handled.</p>
+                <p>
+                    At the end of each execution of the body of the loop, Python returns
+                    to the
+                    <c>for</c>
+                    statement, to see if there are more items to be handled.
+                </p>
             </li>
-        </ul></p>
-    </section>
-
+        </ul>
+    </p>
+</section>

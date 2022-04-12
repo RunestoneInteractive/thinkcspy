@@ -1,4 +1,4 @@
-<section xml:id="character-classification">
+<section xml:id="strings_character-classification">
         <title>Character classification</title>
         <p>It is often helpful to examine a character and test whether it is upper- or
             lowercase, or whether it is a character or a digit. The <c>string</c> module

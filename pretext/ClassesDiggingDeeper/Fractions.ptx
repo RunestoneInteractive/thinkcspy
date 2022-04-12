@@ -1,28 +1,21 @@
-<section xml:id="fractions">
-    <title>Fractions</title>
-    <p>We have all had to work with fractions when we were younger.  Or, perhaps you do a lot of cooking and have to
+<section xml:id="classes_digging_deeper_fractions">
+        <title>Fractions</title>
+        <p>We have all had to work with fractions when we were younger.  Or, perhaps you do a lot of cooking and have to
             manage measurements for ingredients.  In any case, fractions are something that we are familiar with.
             In this chapter we will develop a class to represent a fraction including some of the most common methods that we
             would like fractions to be able to do.</p>
-    <p>A fraction is most commonly thought of as two integers, one over the other, with a line separating them.  The number
+        <p>A fraction is most commonly thought of as two integers, one over the other, with a line separating them.  The number
             on the top is called the numerator and the number on the bottom is called the denominator.  Sometimes people use a slash
             for the line and sometimes they use a straight line.  The fact is that it really does not matter so long as you know which
             is the numerator and which is the denominator.</p>
-    <p>
-        To design our class, we simply need to use the analysis above to realize that the
-        <title_reference>state</title_reference>
-        of a fraction object can be
-            completely described by representing two integers.  We can begin by implementing the
-        <c>Fraction</c>
-        class and the
-        <c>__init__</c>
-        method which will allow the user to provide a numerator and a denominator for the fraction being created.
-    </p>
+        <p>To design our class, we simply need to use the analysis above to realize that the <title_reference>state</title_reference> of a fraction object can be
+            completely described by representing two integers.  We can begin by implementing the <c>Fraction</c> class and the <c>__init__</c>
+            method which will allow the user to provide a numerator and a denominator for the fraction being created.</p>
 
-    <listing xml:id="fractions_init">
-        <caption />
-        <program xml:id="fractions_init_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="fractions_init">
+    <caption/>
+    <program xml:id="fractions_init_editor" interactive="activecode" language="python">
+        <input>
 class Fraction:
 
     def __init__(self, top, bottom):
@@ -45,22 +38,13 @@ print(myfraction)
 print(myfraction.getNum())
 print(myfraction.getDen())
         </input>
-        </program>
-    </listing>
-    <p>
-        Note that the
-        <c>__str__</c>
-        method provides a &#8220;typical&#8221; looking fraction using a slash between the numerator and denominator.
-            The figure below shows the state of
-        <c>myfraction</c>
-        .  We have also added a few simple accessor methods,
-        <c>getNum</c>
-        and
-        <c>getDen</c>
-        , that can return the
-            state values for the fraction.
-    </p>
-    <image source="ClassesDiggingDeeper/Figures/fractionpic1.png" width="50%" />
+    </program>
+</listing>
+        <p>Note that the <c>__str__</c> method provides a &#8220;typical&#8221; looking fraction using a slash between the numerator and denominator.
+            The figure below shows the state of <c>myfraction</c>.  We have also added a few simple accessor methods, <c>getNum</c> and <c>getDen</c>, that can return the
+            state values for the fraction.</p>
+        <image source="ClassesDiggingDeeper/Figures/fractionpic1.png" width="50%"/>
+        
+        
+    </section>
 
-
-</section>

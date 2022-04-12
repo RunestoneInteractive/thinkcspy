@@ -1,4 +1,4 @@
-<section xml:id="how-web-applications-work">
+<section xml:id="web_apps_how-web-applications-work">
         <title>How Web Applications Work</title>
         <p>Most of the time, when your browser requests a file from a web server, the server simply transmits the
             contents of the file back to the browser. But sometimes, the &#8220;file&#8221; your browser requests isn&#8217;t really a file

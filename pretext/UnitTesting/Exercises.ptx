@@ -1,4 +1,4 @@
-<exercises xml:id="unittesting_exercises">
+<exercises xml:id="unit_testing_exercises">
         <title>Exercises</title>
         <p><ol label="1">
             <li>
@@ -63,7 +63,7 @@ myTests().main()
         </input>
     </program>
 </statement><TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
-                        <p>If you&#8217;re not sure how to get started with this one, review <xref ref="WritingUnitTests#writing-unit-tests"/>.</p>
+                        <p>If you&#8217;re not sure how to get started with this one, review <xref ref="unit_testing_writing-unit-tests"/>.</p>
                     </TabNode><solution>
                         <pre>assert reverse('abc') == 'cba'
 assert reverse('b') == 'b'
@@ -106,7 +106,7 @@ myTests().main()
         </input>
     </program>
 </statement><TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
-                        <p>Review <xref ref="DesigningTestableFunctions#designing-testable-functions"/>.</p>
+                        <p>Review <xref ref="unit_testing_designing-testable-functions"/>.</p>
                     </TabNode><solution>
                         <pre>def stripletters(msg):
     result = ''

@@ -1,4 +1,4 @@
-<section xml:id="letter-count-histogram">
+<section xml:id="labs_letter-count-histogram">
         <title>Letter Count Histogram</title>
         <p>The previous lab wrote a function to return a dictionary of letter counts.  In an earlier chapter, we wrote a turtle
             program that could draw a histogram.</p>

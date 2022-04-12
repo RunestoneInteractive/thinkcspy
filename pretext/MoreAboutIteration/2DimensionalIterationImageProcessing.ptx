@@ -1,4 +1,4 @@
-<section xml:id="dimensional-iteration-image-processing">
+<section xml:id="more_about_iteration_dimensional-iteration-image-processing">
     <title>2-Dimensional Iteration: Image Processing</title>
     <p>Two dimensional tables have both rows and columns.  You have probably seen many tables like this if you have used a
             spreadsheet program.  Another object that is organized in rows and columns is a digital image.  In this section we will
@@ -21,7 +21,7 @@
         .
     </p>
     <image source="MoreAboutIteration/Figures/image.png" width="50%" />
-    <subsection xml:id="the-rgb-color-model">
+    <subsection xml:id="more_about_iteration_the-rgb-color-model">
         <title>The RGB Color Model</title>
         <p>
             Each pixel of the image will represent a single color.  The specific color depends on a formula that mixes various amounts
@@ -171,7 +171,7 @@
                 a module called
             <alert>image</alert>
             , provided in ActiveCode.  See
-            <xref ref="ImageProcessingonYourOwn#image-processing-on-own" />
+            <xref ref="more_about_iteration_image-processing-on-your-own" />
             for ways to deal with images in standard Python. The image module defines two classes:
             <c>Image</c>
             and
@@ -365,7 +365,7 @@ print(p.getGreen(), p.getBlue())
 
         </exercise>
     </subsection>
-    <subsection xml:id="image-objects">
+    <subsection xml:id="more_about_iteration_image-objects">
         <title>Image Objects</title>
         <p>
             To access the pixels in a real image, we need to first create an
@@ -566,7 +566,7 @@ print(p.getRed(), p.getGreen(), p.getBlue())
 
         </exercise>
     </subsection>
-    <subsection xml:id="image-processing-and-nested-iteration">
+    <subsection xml:id="more_about_iteration_image-processing-and-nested-iteration">
         <title>Image Processing and Nested Iteration</title>
         <p>
             <alert>Image processing</alert>

@@ -1,24 +1,10 @@
-<section xml:id="improving-our-constructor">
-    <title>Improving our Constructor</title>
-    <p>
-        Our constructor so far can only create points at location
-        <c>(0,0)</c>
-        .  To create a point at position (7, 6) requires that we
-            provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we&#8217;ve seen before) to provide the specific information.
-    </p>
-    <p>
-        We can make our class constructor more general by putting extra parameters into
-            the
-        <c>__init__</c>
-        method, as shown in this codelens example.
-    </p>
-    <exercise runestone="chp13_improveconstructor" />
-    <p>
-        Now when we create new points, we supply the x and y coordinates as parameters.  When the point is created, the values of
-        <c>initX</c>
-        and
-        <c>initY</c>
-        are assigned to the state of the object.
-    </p>
-    <image source="ClassesBasics/Figures/objectpic5.png" alt="Simple object has state and methods" width="50%" />
-</section>
+<section xml:id="classes_basics_improving-our-constructor">
+        <title>Improving our Constructor</title>
+        <p>Our constructor so far can only create points at location <c>(0,0)</c>.  To create a point at position (7, 6) requires that we
+            provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we&#8217;ve seen before) to provide the specific information.</p>
+        <p>We can make our class constructor more general by putting extra parameters into
+            the <c>__init__</c> method, as shown in this codelens example.</p>
+<exercise runestone="chp13_improveconstructor"/>        <p>Now when we create new points, we supply the x and y coordinates as parameters.  When the point is created, the values of <c>initX</c> and <c>initY</c> are assigned to the state of the object.</p>
+        <image source="ClassesBasics/Figures/objectpic5.png" width="50%" alt="Simple object has state and methods"/>
+    </section>
+

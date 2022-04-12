@@ -1,7 +1,7 @@
-<section xml:id="functions">
+<section xml:id="functions_functions">
     <title>Functions</title>
 
-    <video xml:id="function_intro" youtube="4wKtB57J5J4" width="560" />
+    <video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto" />
     <p>
         In Python, a
         <alert>function</alert>
@@ -12,7 +12,7 @@
     </p>
 
 
-    <p xml:id="index-0">
+    <p xml:id="functions_index-0">
         The syntax for a
         <alert>function definition</alert>
         is:
@@ -161,7 +161,7 @@ wn.exitonclick()
     </admonition>
 
 
-    <p xml:id="index-1">
+    <p>
         Defining a new function does not make the function run. To do that we need a
         <alert>function call</alert>
         .  This is also known as a

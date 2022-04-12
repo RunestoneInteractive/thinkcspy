@@ -1,4 +1,4 @@
-<section xml:id="strings-and-lists">
+<section xml:id="lists_strings-and-lists">
         <title>Strings and Lists</title>
         <p>Two of the most useful methods on strings involve lists of
             strings. The <c>split</c> method

@@ -1,7 +1,7 @@
-<section xml:id="conditional-execution-binary-selection">
+<section xml:id="selection_conditional-execution-binary-selection">
     <title>Conditional Execution: Binary Selection</title>
 
-    <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="560" />
+    <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto" />
     <p>
         In order to write useful programs, we almost always need the ability to check
             conditions and change the behavior of the program accordingly.

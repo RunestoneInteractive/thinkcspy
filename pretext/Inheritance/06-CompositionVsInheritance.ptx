@@ -1,4 +1,4 @@
-<section xml:id="composition-vs-inheritance">
+<section xml:id="inheritance_composition-vs-inheritance">
         <title>Composition vs. Inheritance</title>
         <p>Now you have seen two ways for a class to reuse code in another class. So,
             is one better than the other? When do you use inheritance, and when is

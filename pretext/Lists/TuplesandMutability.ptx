@@ -1,4 +1,4 @@
-<section xml:id="tuples-and-mutability">
+<section xml:id="lists_tuples-and-mutability">
         <title>Tuples and Mutability</title>
         <p>So far you have seen two types of sequential collections: strings, which are made up of
             characters; and lists, which are made up of elements of any type.  One of the

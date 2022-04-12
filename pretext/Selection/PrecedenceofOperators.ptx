@@ -1,129 +1,139 @@
-<section xml:id="precedence-of-operators">
-        <title>Precedence of Operators</title>
-        <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y-6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.</p>
-        <p>The following table summarizes the precedence discussed so far from highest to lowest.
-            See <xref ref="../Appendices/PrecedenceTable#operator-summary"/> for <em>all</em> the operators introduced in this book.</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+<section xml:id="selection_precedence-of-operators">
+    <title>Precedence of Operators</title>
+    <p>
+        We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression
+        <c>x*5 &gt;= 10 and y-6 &lt;= 20</c>
+        will be evaluated so as to first perform the arithmetic and then check the relationships.  The
+        <c>and</c>
+        will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.
+    </p>
+    <p>
+        The following table summarizes the precedence discussed so far from highest to lowest.
+            See
+        <xref ref="appendices_operator-precedence-table" />
+        for
+        <em>all</em>
+        the operators introduced in this book.
+    </p>
+    <table>
+        <tabular>
+
+
+            <row header="yes">
+                <cell>
                             Level
                         </cell>
-                        <cell>
+                <cell>
                             Category
                         </cell>
-                        <cell>
+                <cell>
                             Operators
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+            </row>
+
+
+            <row>
+                <cell>
                             7(high)
                         </cell>
-                        <cell>
+                <cell>
                             exponent
                         </cell>
-                        <cell>
+                <cell>
                             **
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             6
                         </cell>
-                        <cell>
+                <cell>
                             multiplication
                         </cell>
-                        <cell>
+                <cell>
                             *,/,//,%
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             5
                         </cell>
-                        <cell>
+                <cell>
                             addition
                         </cell>
-                        <cell>
+                <cell>
                             +,-
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             4
                         </cell>
-                        <cell>
+                <cell>
                             relational
                         </cell>
-                        <cell>
+                <cell>
                             ==,!=,&lt;=,&gt;=,&gt;,&lt;
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             3
                         </cell>
-                        <cell>
+                <cell>
                             logical
                         </cell>
-                        <cell>
+                <cell>
                             not
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             2
                         </cell>
-                        <cell>
+                <cell>
                             logical
                         </cell>
-                        <cell>
+                <cell>
                             and
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+            </row>
+            <row>
+                <cell>
                             1(low)
                         </cell>
-                        <cell>
+                <cell>
                             logical
                         </cell>
-                        <cell>
+                <cell>
                             or
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_06_01">
-    <caption/>
-    <program xml:id="scratch_06_01_editor" interactive="activecode" language="python">
-        <input>
+            </row>
 
 
-        </input>
-    </program>
-</listing>
-        </note>
-        <p><alert>Check your understanding</alert></p>
+        </tabular>
+    </table>
+    <note>
+        <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+
+        <listing xml:id="scratch_06_01">
+            <caption />
+            <program xml:id="scratch_06_01_editor" interactive="activecode" language="python">
+                <input></input>
+            </program>
+        </listing>
+    </note>
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question6_3_1">
         <statement>
 
-        <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
+            <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -160,11 +170,10 @@
                     This grouping assumes that "and" has a higher precedence than ==, which is not true.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>Here is an animation for the above expression:</p>
-<exercise runestone="se_tq631"/>        
-        
-    </section>
+    <p>Here is an animation for the above expression:</p>
+    <exercise runestone="se_tq631" />
 
+</section>

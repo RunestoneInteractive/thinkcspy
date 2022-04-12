@@ -1,4 +1,4 @@
-<section xml:id="concatenation-and-repetition">
+<section xml:id="lists_concatenation-and-repetition">
         <title>Concatenation and Repetition</title>
         <p>Again, as with strings, the <c>+</c> operator concatenates lists.
             Similarly, the <c>*</c> operator repeats the items in a list a given number of times.</p>

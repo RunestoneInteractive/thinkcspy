@@ -1,10 +1,15 @@
-<section xml:id="the-three-laws-of-recursion">
-        <title>The Three Laws of Recursion</title>
-        <p>Like the robots of Asimov, all recursive algorithms must obey three
+<section xml:id="intro_recursion_the-three-laws-of-recursion">
+    <title>The Three Laws of Recursion</title>
+    <p>Like the robots of Asimov, all recursive algorithms must obey three
             important laws:</p>
-        <p><ol label="1">
+    <p>
+        <ol label="1">
             <li>
-                <p>A recursive algorithm must have a <alert>base case</alert>.</p>
+                <p>
+                    A recursive algorithm must have a
+                    <alert>base case</alert>
+                    .
+                </p>
             </li>
             <li>
                 <p>A recursive algorithm must change its state and move toward the base
@@ -13,21 +18,34 @@
             <li>
                 <p>A recursive algorithm must call itself, recursively.</p>
             </li>
-        </ol></p>
-        <p>Let&#8217;s look at each one of these laws in more detail and see how it was
-            used in the <c>listsum</c> algorithm. First, a base case is the condition
+        </ol>
+    </p>
+    <p>
+        Let&#8217;s look at each one of these laws in more detail and see how it was
+            used in the
+        <c>listsum</c>
+        algorithm. First, a base case is the condition
             that allows the algorithm to stop recursing. A base case is typically a
-            problem that is small enough to solve directly. In the <c>listsum</c>
-            algorithm the base case is a list of length 1.</p>
-        <p>To obey the second law, we must arrange for a change of state that moves
+            problem that is small enough to solve directly. In the
+        <c>listsum</c>
+        algorithm the base case is a list of length 1.
+    </p>
+    <p>
+        To obey the second law, we must arrange for a change of state that moves
             the algorithm toward the base case. A change of state means that some
             data that the algorithm is using is modified. Usually the data that
-            represents our problem gets smaller in some way. In the <c>listsum</c>
-            algorithm our primary data structure is a list, so we must focus our
+            represents our problem gets smaller in some way. In the
+        <c>listsum</c>
+        algorithm our primary data structure is a list, so we must focus our
             state-changing efforts on the list. Since the base case is a list of
             length 1, a natural progression toward the base case is to shorten the
-            list. This is exactly what happens on line 5 of <xref ref="CalculatingtheSumofaListofNumbers#lst-recsum"/> when we call <c>listsum</c> with a shorter list.</p>
-        <p>The final law is that the algorithm must call itself. This is the very
+            list. This is exactly what happens on line 5 of
+        <xref ref="intro_recursion_calculating-the-sum-of-a-list-of-numbers" />
+        when we call
+        <c>listsum</c>
+        with a shorter list.
+    </p>
+    <p>The final law is that the algorithm must call itself. This is the very
             definition of recursion. Recursion is a confusing concept to many
             beginning programmers. As a novice programmer, you have learned that
             functions are good because you can take a large problem and break it up
@@ -38,105 +56,104 @@
             But the logic is not circular at all; the logic of recursion is an
             elegant expression of solving a problem by breaking it down into a
             smaller and easier problems.</p>
-        <p>In the remainder of this chapter we will look at more examples of
+    <p>In the remainder of this chapter we will look at more examples of
             recursion. In each case we will focus on designing a solution to a
             problem by using the three laws of recursion.</p>
-        <admonition classes="admonition-self-check">
-            <title>Self Check</title>
+    <admonition classes="admonition-self-check">
+        <title>Self Check</title>
 
-    <exercise xml:id="question_recsimp_1">
-        <statement>
+        <exercise xml:id="question_recsimp_1">
+            <statement>
 
-            <p>How many recursive calls are made when computing the sum of the list [2,4,6,8,10]?</p>
+                <p>How many recursive calls are made when computing the sum of the list [2,4,6,8,10]?</p>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>6</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>6</p>
+                    </statement>
+                    <feedback>
                     There are only five numbers on the list, the number of recursive calls will not be greater than the size of the list.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>5</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>5</p>
+                    </statement>
+                    <feedback>
                     The initial call to listsum is not a recursive call.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>4</p>
-                </statement>
-                <feedback>
+                <choice correct="yes">
+                    <statement>
+                        <p>4</p>
+                    </statement>
+                    <feedback>
                     the first recursive call passes the list [4,6,8,10], the second [6,8,10] and so on until [10].
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>3</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>3</p>
+                    </statement>
+                    <feedback>
                     This would not be enough calls to cover all the numbers on the list
                 </feedback>
-            </choice>
-</choices>
+                </choice>
+            </choices>
 
-    </exercise>
+        </exercise>
 
-    <exercise xml:id="question_recsimp_2">
-        <statement>
+        <exercise xml:id="question_recsimp_2">
+            <statement>
 
-            <p>Suppose you are going to write a recusive function to calculate the factorial of a number.  fact(n) returns n * n-1 * n-2 * &#8230; * 1, and the factorial of zero is definded to be 1.  What would be the most appropriate base case?</p>
+                <p>Suppose you are going to write a recusive function to calculate the factorial of a number.  fact(n) returns n * n-1 * n-2 * &#8230; * 1, and the factorial of zero is definded to be 1.  What would be the most appropriate base case?</p>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>n == 0</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>n == 0</p>
+                    </statement>
+                    <feedback>
                     Although this would work there are better and slightly more efficient choices. since fact(1) and fact(0) are the same.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>n == 1</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>n == 1</p>
+                    </statement>
+                    <feedback>
                     A good choice, but what happens if you call fact(0)?
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>n &gt;= 0</p>
-                </statement>
-                <feedback>
+                <choice>
+                    <statement>
+                        <p>n &gt;= 0</p>
+                    </statement>
+                    <feedback>
                     This basecase would be true for all numbers greater than zero so fact of any positive number would be 1.
                 </feedback>
-            </choice>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>n &lt;= 1</p>
-                </statement>
-                <feedback>
+                <choice correct="yes">
+                    <statement>
+                        <p>n &lt;= 1</p>
+                    </statement>
+                    <feedback>
                     Good, this is the most efficient, and even keeps your program from crashing if you try to compute the factorial of a negative number.
                 </feedback>
-            </choice>
-</choices>
+                </choice>
+            </choices>
 
-    </exercise>
-        </admonition>
-    </section>
-
+        </exercise>
+    </admonition>
+</section>

@@ -1,4 +1,4 @@
-<section xml:id="layout-mangers">
+<section xml:id="gu_iand_event_driven_programming_layout-mangers">
         <title>Layout Mangers</title>
         <p>A widget will not be visible in a window until you assign it a size and location
             within it&#8217;s parent widget. Assigning a specific size and location to every widget

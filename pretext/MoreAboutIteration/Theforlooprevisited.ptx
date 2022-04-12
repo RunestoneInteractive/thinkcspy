@@ -1,4 +1,4 @@
-<section xml:id="the-for-loop-revisited">
+<section xml:id="more_about_iteration_the-for-loop-revisited">
         <title>The <c>for</c> loop revisited</title>
         <p>Recall that the <c>for</c> loop processes each item in a list.  Each item in
             turn is (re-)assigned to the loop variable, and the body of the loop is executed.

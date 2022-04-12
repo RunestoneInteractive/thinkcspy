@@ -1,4 +1,4 @@
-<section xml:id="a-programming-example">
+<section xml:id="gu_iand_event_driven_programming_a-programming-example">
     <title>A Programming Example</title>
     <p>Let&#8217;s develop a non-trivial GUI program to demonstrate the material presented
             in the previous lessons. We will develop a GUI Whack-a-mole
@@ -45,12 +45,12 @@
             them. If errors occur you almost always know were the errors came from!
             They came from the lines of code you just added.
     </p>
-    <subsection xml:id="a-whack-a-mole-game">
+    <subsection xml:id="gu_iand_event_driven_programming_a-whack-a-mole-game">
         <title>A Whack-a-mole Game</title>
         <p>Step 1: Make sure you have a reasonable GUI design and implementation plan
                 before you start coding. Draw a sketch of your initial design on paper
                 and consider how a user will interact with your program.</p>
-        <figure align="center" xml:id="id1">
+        <figure align="center" xml:id="fig-whack-a-molel-design">
             <image source="GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png" width="50%" />
             <caption>Initial design of a Whack-a-mole game</caption>
         </figure>
@@ -603,7 +603,7 @@ if __name__ == "__main__":
 </input>
         </program>
     </subsection>
-    <subsection xml:id="summary">
+    <subsection xml:id="gu_iand_event_driven_programming_summary">
         <title>Summary</title>
         <p>We developed a complete GUI application in 5 well-designed stages. Hopefully
                 you see the value in incremental software development.</p>

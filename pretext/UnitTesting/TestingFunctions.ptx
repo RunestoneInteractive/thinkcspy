@@ -1,4 +1,4 @@
-<section xml:id="testing-functions">
+<section xml:id="unit_testing_testing-functions">
         <title>Testing Functions</title>
         <p>Melinda is writing a program that does some mathematical calculations. At the moment, she is working on adding some
             functionality to her program that requires rounding numbers to the nearest integer. She would normally use the built-in
@@ -74,7 +74,7 @@ Test Case 3:       3.7               4</pre>
             complex, writing a unit test would probably have helped reduce the overall effort. And, using some tricks I&#8217;ll show you
             in the next sections, you can reduce the amount of effort required to write and run the unit test, making the case for
             writing unit tests even more compelling.</p>
-        <subsection xml:id="automated-unit-tests">
+        <subsection xml:id="unit_testing_automated-unit-tests">
             <title>Automated Unit Tests</title>
             <p>The unit test program above is a manual unit test. A <alert>manual unit test</alert> gets input from the user, invokes the code
                 under test, providing the input supplied by the user, and displays the result. (In our example, <c>round6</c> is the code
@@ -123,7 +123,7 @@ else:
                 results. Clearly, once you have the test written, you can dramatically speed up your edit-test-debug cycle. The downside,
                 of course, is that the unit test program itself takes more time to develop.</p>
         </subsection>
-        <subsection xml:id="automated-unit-tests-with-assert">
+        <subsection xml:id="unit_testing_automated-unit-tests-with-assert">
             <title>Automated Unit Tests with <c>assert</c></title>
             <p>To help reduce the amount of effort required to develop an automated unit test, let&#8217;s bring the <c>assert</c> statement into
                 play. We can replace each <c>if</c> statement in the program above with an assert, as in the program below:</p>
@@ -159,7 +159,7 @@ print("All tests passed!")</pre>
                 having to write much code. Unit test programs are essentially &#8220;throw-away&#8221; programs that are used only during
                 development, and it&#8217;s important that they can be developed quickly and easily.</p>
         </subsection>
-        <subsection xml:id="unit-tests-can-have-bugs">
+        <subsection xml:id="unit_testing_unit-tests-can-have-bugs">
             <title>Unit Tests can have bugs</title>
             <p>Unit tests, like the functions they test, can have bugs. So, when you run a unit test and it fails with an assert error,
                 one of the first questions you need to ask yourself is: &#8220;Is the unit test correct?&#8221; If the unit test is incorrect, then

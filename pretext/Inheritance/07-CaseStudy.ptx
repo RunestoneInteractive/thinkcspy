@@ -1,4 +1,4 @@
-<section xml:id="case-study-structured-postal-addresses">
+<section xml:id="inheritance_case-study-structured-postal-addresses">
         <title>Case Study: Structured Postal Addresses</title>
         <p>Postal addresses are interesting things. Every country has its own format
             for postal addresses, and sometimes one country can have multiple address
@@ -48,7 +48,7 @@
             it ought to be possible to address mail to Abe Jones, A65 F4E2, IRELAND.
             On second thought, perhaps that is not such a great idea. Can you imagine
             the practical concerns with such a scheme?)</p>
-        <subsection xml:id="storing-postal-addresses">
+        <subsection xml:id="inheritance_storing-postal-addresses">
             <title>Storing Postal Addresses</title>
             <p>Suppose we want to write a contact management application. Among other things, the application
                 stores names and addresses. What would be the best way to design a class that holds the
@@ -112,7 +112,7 @@ for addr in addrList:
         addr.display()
 </input></program>
         </subsection>
-        <subsection xml:id="storing-international-addresses">
+        <subsection xml:id="inheritance_storing-international-addresses">
             <title>Storing International Addresses</title>
             <p>But now we have another problem. Our StructuredAddress works fine for U.S. addresses,
                 but not for those of other countries. Suppose we want to handle Irish and Italian
@@ -143,7 +143,7 @@ def display(self):
                 create additional instance variables for those elements in our StructuredAddress class.
                 However, you can probably see that approach will quickly become unwieldy.</p>
         </subsection>
-        <subsection xml:id="inheritance-applied">
+        <subsection xml:id="inheritance_inheritance-applied">
             <title>Inheritance Applied</title>
             <p>Let&#8217;s apply inheritance to the problem of managing structured postal addresses.
                 We will define a base class that contains the attributes in common to all
@@ -214,7 +214,7 @@ class USPostalAddress(BasePostalAddress):
     </program>
 </listing>
         </subsection>
-        <subsection xml:id="a-list-of-addresses">
+        <subsection xml:id="inheritance_a-list-of-addresses">
             <title>A List of Addresses</title>
             <p>Now, let&#8217;s construct a list containing both US and Irish addresses,
                 and display them using a loop:</p>
@@ -255,7 +255,7 @@ for addr in addrList:
                 utilize inheritance, but languages like Java and C++, polymorphism is
                 available only through inheritance.</p>
         </subsection>
-        <subsection xml:id="using-isinstance">
+        <subsection xml:id="inheritance_using-isinstance">
             <title>Using isinstance</title>
             <p>Let&#8217;s try something else with our list of addresses. Suppose
                 we wanted to display all addresses with a given city.

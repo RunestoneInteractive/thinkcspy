@@ -1,4 +1,4 @@
-<section xml:id="the-slice-operator">
+<section xml:id="strings_the-slice-operator">
         <title>The Slice Operator</title>
         <p>A substring of a string is called a <alert>slice</alert>. Selecting a slice is similar to
             selecting a character:</p>

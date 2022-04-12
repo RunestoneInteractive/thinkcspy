@@ -1,4 +1,4 @@
-<section xml:id="converting-an-integer-to-a-string-in-any-base">
+<section xml:id="intro_recursion_converting-an-integer-to-a-string-in-any-base">
     <title>Converting an Integer to a String in Any Base</title>
     <p>
         Suppose you want to convert an integer to a string in some base between
@@ -73,7 +73,7 @@
     </p>
 
     <figure align="center" xml:id="fig-tostr" names="fig_tostr">
-        <image source="IntroRecursion/Figures/toStr.png" alt="image" width="50%" />
+        <image source="IntroRecursion/Figures/toStr.png" width="50%" alt="image" />
         <caption>Figure 3: Converting an Integer to a String in Base 10</caption>
     </figure>
     <p>The activecode below shows the Python code that implements the algorithm
@@ -112,7 +112,7 @@ print(toStr(1453,16))
     </p>
 
     <figure align="center" xml:id="fig-tostr2" names="fig_tostr2">
-        <image source="IntroRecursion/Figures/toStrBase2.png" alt="image" width="50%" />
+        <image source="IntroRecursion/Figures/toStrBase2.png" width="50%" alt="image" />
         <caption>Figure 4: Converting the Number 10 to its Base 2 String Representation</caption>
     </figure>
     <p>

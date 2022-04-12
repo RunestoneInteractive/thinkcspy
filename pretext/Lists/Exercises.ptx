@@ -1,8 +1,20 @@
 <exercises xml:id="lists_exercises">
     <title>Exercises</title>
 
-    <exercise xml:id="empty3">
-        <statement />
+    <exercise>
+        <statement>
+            <p>
+                Draw a reference diagram for
+                <cd>a</cd>
+                and
+                <cd>b</cd>
+                before and after the third line of
+                    the following python code is executed:
+            </p>
+            <pre force="False" highlight_args="{}" language="python" linenos="False" xml:space="preserve">a = [1, 2, 3]
+b = a[:]
+b[0] = 5</pre>
+        </statement>
         <solution>
             <p>
                 Your diagram should show two variables referring to two different lists.
@@ -407,8 +419,16 @@ def countWords(lst):
     </exercise>
 
 
-    <exercise xml:id="empty4">
-        <statement />
+    <exercise xml:id="ex_9_10">
+        <statement>Sum all the elements in a list up to but not including the first even number.
+
+        </statement>
+        <program xml:id="ex_9_10_editor" interactive="activecode" language="python">
+            <input>
+# your code here
+        </input>
+        </program>
+
         <solution>
 
             <program xml:id="lst_q11_answer_editor" language="python">

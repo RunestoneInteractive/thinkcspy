@@ -1,4 +1,4 @@
-<section xml:id="list-slices">
+<section xml:id="lists_list-slices">
         <title>List Slices</title>
         <p>The slice operation we saw with strings also work on lists.  Remember that the first index is the starting point for the slice and the second number is one index past the end of the slice (up to but not including that element).  Recall also
             that if you omit the first index (before the colon), the slice starts at the

@@ -1,4 +1,4 @@
-<section xml:id="turtles-and-strings-and-l-systems">
+<section xml:id="strings_turtles-and-strings-and-l-systems">
         <title>Turtles and Strings and L-Systems</title>
         <p>This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.</p>
         <p>In 1968 Aristid Lindenmayer, a biologist, invented a formal system that

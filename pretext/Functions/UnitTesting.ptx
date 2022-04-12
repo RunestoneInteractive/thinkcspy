@@ -1,4 +1,4 @@
-<section xml:id="unit-testing">
+<section xml:id="functions_unit-testing">
         <title>Unit Testing</title>
         <p>A <alert>test case</alert> expresses requirements for a program, in a way that can be checked automatically. Specifically, a test
             asserts something about the state of the program at a particular point in its execution. A <alert>unit test</alert> is an automatic
@@ -105,7 +105,7 @@ assert type(9.0//5) == int
 </choices>
 
     </exercise>
-        <subsection xml:id="assert-with-for-loops">
+        <subsection xml:id="functions_assert-with-for-loops">
             <title><c>assert</c> with <c>for</c> loops</title>
             <p>Why would you ever want to write a line of code that can never compute anything useful for you, but sometimes causes
                 a runtime error? For all the reasons we described above about the value of automated tests. You want a test that
@@ -138,7 +138,7 @@ for item in lst2:
     </program>
 </listing>
         </subsection>
-        <subsection xml:id="return-value-tests">
+        <subsection xml:id="functions_return-value-tests">
             <title>Return Value Tests</title>
             <p>Testing whether a function returns the correct value is the easiest test case to define. You simply check whether the
                 result of invoking the function on a particular input produces the particular output that you expect. Take a look at

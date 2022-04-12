@@ -1,4 +1,4 @@
-<section xml:id="accessing-elements">
+<section xml:id="lists_accessing-elements">
         <title>Accessing Elements</title>
         <p>The syntax for accessing the elements of a list is the same as the syntax for
             accessing the characters of a string.  We use the index operator ( <c>[]</c> &#8211; not to

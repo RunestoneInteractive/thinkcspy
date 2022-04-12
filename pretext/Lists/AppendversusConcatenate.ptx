@@ -1,4 +1,4 @@
-<section xml:id="append-versus-concatenate">
+<section xml:id="lists_append-versus-concatenate">
         <title>Append versus Concatenate</title>
         <p>The <c>append</c> method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.</p>
         <p>Consider the following example.  The original list has 3 integers.  We want to add the word &#8220;cat&#8221; to the end of the list.</p>

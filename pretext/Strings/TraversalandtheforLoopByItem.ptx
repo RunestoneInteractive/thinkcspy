@@ -1,4 +1,4 @@
-<section xml:id="traversal-and-the-for-loop-by-item">
+<section xml:id="strings_traversal-and-the-for-loop-by-item">
         <title>Traversal and the <c>for</c> Loop: By Item</title>
         <p>A lot of computations involve processing a collection one item at a time.  For strings this means
             that we would like to process one character at a time.

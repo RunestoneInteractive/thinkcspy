@@ -1,4 +1,4 @@
-<section xml:id="pure-functions">
+<section xml:id="lists_pure-functions">
         <title>Pure Functions</title>
         <p>A <alert>pure function</alert> does not produce side effects. It communicates with the
             calling program only through parameters (which it does not modify) and a return

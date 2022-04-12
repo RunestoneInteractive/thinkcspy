@@ -1,21 +1,17 @@
-<section xml:id="index-operator-working-with-the-characters-of-a-string">
-    <title>Index Operator: Working with the Characters of a String</title>
-    <p>
-        The
-        <alert>indexing operator</alert>
-        (Python uses square brackets to enclose the index)
+<section xml:id="strings_index-operator-working-with-the-characters-of-a-string">
+        <title>Index Operator: Working with the Characters of a String</title>
+        <p>The <alert>indexing operator</alert> (Python uses square brackets to enclose the index)
             selects a single character from a string.  The characters are accessed by their position or
-            index value.  For example, in the string shown below, the 14 characters are indexed left to right from postion 0 to position 13.
-    </p>
-    <image source="Strings/Figures/indexvalues.png" alt="index values" width="50%" />
-    <p>It is also the case that the positions are named from right to left using negative numbers where -1 is the rightmost
+            index value.  For example, in the string shown below, the 14 characters are indexed left to right from postion 0 to position 13.</p>
+        <image source="Strings/Figures/indexvalues.png" width="50%" alt="index values"/>
+        <p>It is also the case that the positions are named from right to left using negative numbers where -1 is the rightmost
             index and so on.
             Note that the character at index 6 (or -8) is the blank character.</p>
 
-    <listing xml:id="chp08_index1">
-        <caption />
-        <program xml:id="chp08_index1_editor" interactive="activecode" language="python">
-            <input>
+<listing xml:id="chp08_index1">
+    <caption/>
+    <program xml:id="chp08_index1_editor" interactive="activecode" language="python">
+        <input>
 school = "Luther College"
 m = school[2]
 print(m)
@@ -23,65 +19,34 @@ print(m)
 lastchar = school[-1]
 print(lastchar)
         </input>
-        </program>
-    </listing>
-    <p>
-        The expression
-        <c>school[2]</c>
-        selects the character at index 2 from
-        <c>school</c>
-        , and creates a new
-            string containing just this one character. The variable
-        <c>m</c>
-        refers to the result.
-    </p>
-    <p>
-        Remember that computer scientists often start counting
-            from zero. The letter at index zero of
-        <c>"Luther College"</c>
-        is
-        <c>L</c>
-        .  So at
-            position
-        <c>[2]</c>
-        we have the letter
-        <c>t</c>
-        .
-    </p>
-    <p>If you want the zero-eth letter of a string, you just put 0, or any expression
+    </program>
+</listing>
+        <p>The expression <c>school[2]</c> selects the character at index 2 from <c>school</c>, and creates a new
+            string containing just this one character. The variable <c>m</c> refers to the result.</p>
+        <p>Remember that computer scientists often start counting
+            from zero. The letter at index zero of <c>"Luther College"</c> is <c>L</c>.  So at
+            position <c>[2]</c> we have the letter <c>t</c>.</p>
+        <p>If you want the zero-eth letter of a string, you just put 0, or any expression
             with the value 0, in the brackets.  Give it a try.</p>
-    <p>
-        The expression in brackets is called an
-        <alert>index</alert>
-        . An index specifies a member
+        <p>The expression in brackets is called an <alert>index</alert>. An index specifies a member
             of an ordered collection.  In this case the collection of characters in the string. The index
-        <em>indicates</em>
-        which character you want. It can be any integer
-            expression so long as it evaluates to a valid index value.
-    </p>
-    <p>
-        Note that indexing returns a
-        <em>string</em>
-        &#8212; Python has no special type for a single character.
-            It is just a string of length 1.
-    </p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
+            <em>indicates</em> which character you want. It can be any integer
+            expression so long as it evaluates to a valid index value.</p>
+        <p>Note that indexing returns a <em>string</em> &#8212; Python has no special type for a single character.
+            It is just a string of length 1.</p>
+        <p><alert>Check your understanding</alert></p>
 
     <exercise xml:id="test_question8_2_1">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 s = "python rocks"
 print(s[3])
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice>
                 <statement>
@@ -118,23 +83,21 @@ print(s[3])
                     [ ] is the index operator
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
 
     <exercise xml:id="test_question8_2_2">
         <statement>
 
-            <p>What is printed by the following statements?</p>
-            <program language="python">
-                <input>
+        <p>What is printed by the following statements?</p>
+        <program language="python"><input>
 s = "python rocks"
 print(s[2] + s[-5])
-</input>
-            </program>
+</input></program>
 
         </statement>
-        <choices>
+<choices>
 
             <choice correct="yes">
                 <statement>
@@ -171,7 +134,8 @@ print(s[2] + s[-5])
                     [ ] operator returns a string that can be concatenated with another string.
                 </feedback>
             </choice>
-        </choices>
+</choices>
 
     </exercise>
-</section>
+    </section>
+

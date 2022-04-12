@@ -1,4 +1,4 @@
-<section xml:id="flow-of-execution-summary">
+<section xml:id="functions_flow-of-execution-summary">
         <title>Flow of Execution Summary</title>
         <p>When you are working with functions it is really important to know the order
             in which statements are executed. This is called the <alert>flow of

@@ -1,27 +1,45 @@
-<section xml:id="list-values">
-        <title>List Values</title>
-        <p>There are several ways to create a new list.  The simplest is to enclose the
-            elements in square brackets ( <c>[</c> and <c>]</c>).</p>
-        <program language="python"><input>
+<section xml:id="lists_list-values">
+    <title>List Values</title>
+    <p>
+        There are several ways to create a new list.  The simplest is to enclose the
+            elements in square brackets (
+        <c>[</c>
+        and
+        <c>]</c>
+        ).
+    </p>
+    <program language="python">
+        <input>
 [10, 20, 30, 40]
 ["spam", "bungee", "swallow"]
-</input></program>
-        <p>The first example is a list of four integers. The second is a list of three
+</input>
+    </program>
+    <p>The first example is a list of four integers. The second is a list of three
             strings. As we said above, the elements of a list don&#8217;t have to be the same type.  The following
             list contains a string, a float, an integer, and
             another list.</p>
-        <program language="python"><input>
-["hello", 2.0, 5, [10, 20]]
-</input></program>
-        <p>A list within another list is said to be <alert>nested</alert> and the inner list is often called a <alert>sublist</alert>.
-            Finally, there is a special list that contains no elements. It is called the
-            empty list and is denoted <c>[]</c>.</p>
-        <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions.</p>
-
-<listing xml:id="chp09_01">
-    <caption/>
-    <program xml:id="chp09_01_editor" interactive="activecode" language="python">
+    <program language="python">
         <input>
+["hello", 2.0, 5, [10, 20]]
+</input>
+    </program>
+    <p>
+        A list within another list is said to be
+        <alert>nested</alert>
+        and the inner list is often called a
+        <alert>sublist</alert>
+        .
+            Finally, there is a special list that contains no elements. It is called the
+            empty list and is denoted
+        <c>[]</c>
+        .
+    </p>
+    <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions.</p>
+
+    <listing xml:id="chp09_01">
+        <caption />
+        <program xml:id="chp09_01_editor" interactive="activecode" language="python">
+            <input>
 vocabulary = ["iteration", "selection", "control"]
 numbers = [17, 123]
 empty = []
@@ -32,18 +50,20 @@ print(mixedlist)
 newlist = [ numbers, vocabulary ]
 print(newlist)
         </input>
-    </program>
-</listing>
-        
-        <p xml:id="accessing-elements" names="accessing-elements"><alert>Check your understanding</alert></p>
+        </program>
+    </listing>
+
+    <p>
+        <alert>Check your understanding</alert>
+    </p>
 
     <exercise xml:id="test_question9_1_1">
         <statement>
 
-        <p>A list can contain only integer items.</p>
+            <p>A list can contain only integer items.</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -62,10 +82,9 @@ print(newlist)
                     Lists are heterogeneous, meaning they can have different types of data.
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        
-        
-    </section>
 
+
+</section>

@@ -1,7 +1,7 @@
-<section xml:id="modules-and-getting-help">
+<section xml:id="python_modules_modules-and-getting-help">
     <title>Modules and Getting Help</title>
 
-    <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="560" />
+    <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto" />
     <p>
         A
         <alert>module</alert>

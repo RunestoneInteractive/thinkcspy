@@ -1,4 +1,4 @@
-<section xml:id="preface-to-the-first-and-second-editions">
+<section xml:id="front_back_matter_preface-to-the-first-and-second-editions">
         <title>Preface to the First and Second Editions</title>
         <p>by Jeffrey Elkner</p>
         <p>This book owes its existence to the collaboration made possible by the Internet
@@ -9,7 +9,7 @@
         <p>We think this book is a testament to the benefits and future possibilities of
             this kind of collaboration, the framework for which has been put in place by
             Richard Stallman and the Free Software Foundation.</p>
-        <subsection xml:id="how-and-why-i-came-to-use-python">
+        <subsection xml:id="front_back_matter_how-and-why-i-came-to-use-python">
             <title>How and why I came to use Python</title>
             <p>In 1999, the College Board&#8217;s Advanced Placement (AP) Computer Science exam was
                 given in C++ for the first time. As in many high schools throughout the
@@ -42,7 +42,7 @@
                 a time in C++, and this accomplishment, combined with Matt&#8217;s positive
                 assessment of Python, suggested that Python was the solution I was looking for.</p>
         </subsection>
-        <subsection xml:id="finding-a-textbook">
+        <subsection xml:id="front_back_matter_finding-a-textbook">
             <title>Finding a textbook</title>
             <p>Having decided to use Python in both of my introductory computer science
                 classes the following year, the most pressing problem was the lack of an
@@ -86,7 +86,7 @@
                 working with some of my most advanced students as a master teacher, guiding
                 them beyond where I could take them.</p>
         </subsection>
-        <subsection xml:id="introducing-programming-with-python">
+        <subsection xml:id="front_back_matter_introducing-programming-with-python">
             <title>Introducing programming with Python</title>
             <p>The process of translating and using <em>How to Think Like a Computer Scientist</em>
                 for the past two years has confirmed Python&#8217;s suitability for teaching
@@ -164,7 +164,7 @@ print "Hello, World!"
                 meaningful programs and with the positive attitude toward the experience of
                 programming that this engenders.</p>
         </subsection>
-        <subsection xml:id="building-a-community">
+        <subsection xml:id="front_back_matter_building-a-community">
             <title>Building a community</title>
             <p>I have received email from all over the globe from people using this book to
                 learn or to teach programming. A user community has begun to emerge, and many

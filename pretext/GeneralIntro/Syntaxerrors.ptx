@@ -1,4 +1,4 @@
-<section xml:id="syntax-errors">
+<section xml:id="general_intro_syntax-errors">
         <title>Syntax errors</title>
         <p>Python can only execute a program if the program is syntactically correct;
             otherwise, the process fails and returns an error message.  <alert>Syntax</alert> refers

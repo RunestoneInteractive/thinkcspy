@@ -1,4 +1,4 @@
-<section xml:id="comments">
+<section xml:id="general_intro_comments">
         <title>Comments</title>
         <p>As programs get bigger and more complicated, they get more difficult to read.
             Formal languages are dense, and it is often difficult to look at a piece of

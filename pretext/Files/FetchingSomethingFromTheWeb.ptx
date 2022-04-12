@@ -1,4 +1,4 @@
-<section xml:id="fetching-something-from-the-web">
+<section xml:id="files_fetching-something-from-the-web">
         <title>Fetching Something From The Web</title>
         <p>The Python libraries are pretty messy in places. But here is a very simple example that copies
             the contents at some web URL to a local file. We will need to get a few things right before this works:</p>

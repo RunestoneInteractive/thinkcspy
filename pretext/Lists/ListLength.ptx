@@ -1,4 +1,4 @@
-<section xml:id="list-length">
+<section xml:id="lists_list-length">
         <title>List Length</title>
         <p>As with strings, the function <c>len</c> returns the length of a list (the number
             of items in the list).  However, since lists can have items which are themselves lists, it important to note

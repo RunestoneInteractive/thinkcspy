@@ -1,4 +1,4 @@
-<section xml:id="principles-for-using-exceptions">
+<section xml:id="exceptions_principles-for-using-exceptions">
         <title>Principles for using Exceptions</title>
         <p>There are many bad examples of <em>exception</em> use on the Internet. The purpose
             of an <em>exception</em> is to modify the flow-of-control, not to catch simple errors.

@@ -1,4 +1,4 @@
-<section xml:id="a-change-of-perspective">
+<section xml:id="classes_basics_a-change-of-perspective">
         <title>A change of perspective</title>
         <p>Throughout the earlier chapters, we wrote functions and called them using a syntax such as <c>drawCircle(tess)</c>.  This suggests that the
             function is the active agent. It says something like, <em>&#8220;Hey, drawCircle!

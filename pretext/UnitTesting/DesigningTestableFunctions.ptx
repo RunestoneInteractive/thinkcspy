@@ -1,4 +1,4 @@
-<section xml:id="designing-testable-functions">
+<section xml:id="unit_testing_designing-testable-functions">
         <title>Designing Testable Functions</title>
         <p>
             Now that you know how to write unit tests using the
@@ -71,7 +71,7 @@ def add(x, y):
         </exercise>
         
         
-        <subsection xml:id="design-by-contract">
+        <subsection xml:id="unit_testing_design-by-contract">
             <title>Design by Contract</title>
             <p>In addition to producing a result that can be checked by an assert statement, a testable function must have a clear
                 specification. In order to write unit tests for a function, you must have a precise understanding of what the function

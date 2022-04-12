@@ -1,4 +1,4 @@
-<section xml:id="visualizing-recursion">
+<section xml:id="intro_recursion_visualizing-recursion">
     <title>Visualizing Recursion</title>
     <p>Some problems are easy to
             solve using recursion; however, it can still be difficult to find a
@@ -60,11 +60,12 @@
         getting too small.
     </p>
 
-    <p xml:id="lst-fractree" names="lst_fractree">
+    <p xml:id="intro_recursion_lst-fractree" names="lst_fractree">
         <alert>Listing 1</alert>
     </p>
-    <program language="python">
-        <input>
+    <listing xml:id="lst-fractree">
+        <program language="python">
+            <input>
 def tree(branchLen,t):
     if branchLen &gt; 5:
         t.forward(branchLen)
@@ -75,7 +76,8 @@ def tree(branchLen,t):
         t.right(20)
         t.backward(branchLen)
 </input>
-    </program>
+        </program>
+    </listing>
     <p>The complete program for this tree example is shown below.  Before you run
             the code think about how you expect to see the tree take shape. Look at
             the recursive calls and think about how this tree will unfold. Will it

@@ -1,11 +1,11 @@
-<section xml:id="the-while-statement">
+<section xml:id="more_about_iteration_the-while-statement">
     <title>
         The
         <c>while</c>
         Statement
     </title>
 
-    <video xml:id="whileloop" youtube="blTBEqybQmQ" width="560" />
+    <video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto" />
     <p>
         There is another Python statement that can also be used to build an iteration.  It is called the
         <c>while</c>
@@ -213,7 +213,7 @@ print(sumTo(1000))
         So why have two kinds of loop if
         <c>for</c>
         looks easier?  The next section,
-        <xref ref="RandomlyWalkingTurtles#randomly-walking-turtles" />
+        <xref ref="more_about_iteration_randomly-walking-turtles" />
         , shows an indefinite iteration where
             we need the extra power that we get from the
         <c>while</c>

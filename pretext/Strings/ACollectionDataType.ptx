@@ -1,4 +1,4 @@
-<section xml:id="a-collection-data-type">
+<section xml:id="strings_a-collection-data-type">
         <title>A Collection Data Type</title>
         <p>So far we have seen built-in types like: <c>int</c>, <c>float</c>,
             <c>bool</c>, <c>str</c> and we&#8217;ve seen lists.

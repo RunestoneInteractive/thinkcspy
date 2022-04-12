@@ -1,7 +1,7 @@
-<section xml:id="variables">
+<section xml:id="simple_python_data_variables">
     <title>Variables</title>
 
-    <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="560" />
+    <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto" />
     <p>
         One of the most powerful features of a programming language is the ability to
             manipulate
@@ -72,7 +72,7 @@ pi = 3.14159
             particular instant in time.  (Think of it as the variable&#8217;s state of mind).
             This diagram shows the result of executing the assignment statements shown above.
     </p>
-    <image source="SimplePythonData/Figures/refdiagram1.png" alt="Reference Diagram" width="50%" />
+    <image source="SimplePythonData/Figures/refdiagram1.png" width="50%" alt="Reference Diagram" />
     <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>

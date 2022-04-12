@@ -1,4 +1,4 @@
-<section xml:id="command-events">
+<section xml:id="gu_iand_event_driven_programming_command-events">
         <title>Command Events</title>
         <p>When a user clicks on certain types of widgets, like a button, you typically
             want a specific action to be performed.

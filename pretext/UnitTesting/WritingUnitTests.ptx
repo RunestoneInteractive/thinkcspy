@@ -1,4 +1,4 @@
-<section xml:id="writing-unit-tests">
+<section xml:id="unit_testing_writing-unit-tests">
         <title>Writing Unit Tests</title>
         <p>Once you have designed a testable function, with a clear docstring specification, writing unit tests
             is not difficult. In this section, you&#8217;ll learn how to do just that.</p>
@@ -66,7 +66,7 @@ assert sumnums(1, 1) == 1</pre>
         <p>This version will produce correct results if the precondition is satisfied. Like the original function, it produces
             incorrect results if the precondition is violated &#8212; but unlike the original function, the values produced if the
             precondition is violated are not necessarily 0.</p>
-        <subsection xml:id="specification-based-testing">
+        <subsection xml:id="unit_testing_specification-based-testing">
             <title>Specification-Based Testing</title>
             <p>A key idea to remember when writing a unit test is that your test must always respect the function&#8217;s preconditions. The
                 docstring states what the function should do, with the assumption that parameter values meet the preconditions. It does

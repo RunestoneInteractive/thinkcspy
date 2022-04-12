@@ -1,4 +1,4 @@
-<section xml:id="variable-names-and-keywords">
+<section xml:id="simple_python_data_variable-names-and-keywords">
         <title>Variable Names and Keywords</title>
         <p><alert>Variable names</alert> can be arbitrarily long. They can contain both letters and
             digits, but they have to begin with a letter or an underscore. Although it is

@@ -1,4 +1,4 @@
-<section xml:id="with-statements">
+<section xml:id="files_with-statements">
         <title>With Statements</title>
         <note>
             <p>This section is a bit of an advanced topic and can be easily skipped.  But with statements are becoming very common and it doesn&#8217;t hurt to know about them in case you run into one in the wild.</p>

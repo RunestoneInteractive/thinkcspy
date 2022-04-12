@@ -1,4 +1,4 @@
-<section xml:id="functions-that-produce-lists">
+<section xml:id="lists_functions-that-produce-lists">
         <title>Functions that Produce Lists</title>
         <p>The pure version of <c>doubleStuff</c> above made use of an
             important <alert>pattern</alert> for your toolbox. Whenever you need to

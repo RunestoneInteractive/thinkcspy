@@ -1,4 +1,4 @@
-<section xml:id="gui-widgets">
+<section xml:id="gu_iand_event_driven_programming_gui-widgets">
     <title>GUI Widgets</title>
     <p>
         As we discussed in the introduction, a GUI program allows a user
@@ -194,7 +194,7 @@ from tkinter import ttk
         <url href="../_static/Programs/all_user_input_widgets.py" visual="../_static/Programs/all_user_input_widgets.py">all_user_input_widgets.py</url>
         , to interact with the widgets.
     </p>
-    <figure align="center" xml:id="id1">
+    <figure align="center" xml:id="fig-all-user-input-widgets">
         <image source="GUIandEventDrivenProgramming/Figures/All_user_input_widgets.png" width="50%" />
         <caption>Examples of user input widgets</caption>
     </figure>

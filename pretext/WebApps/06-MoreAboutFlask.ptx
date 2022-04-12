@@ -1,4 +1,4 @@
-<section xml:id="more-about-flask">
+<section xml:id="web_apps_more-about-flask">
         <title>More About Flask</title>
         <p>When you executed the flaskhello.py program in the previous section and used a web
             browser to access it with the url <url href="http://localhost:5000/" visual="http://localhost:5000/">http://localhost:5000/</url>, in addition to seeing a
@@ -121,7 +121,7 @@
             example, the user could enter the URL <url href="http://localhost:5000/time" visual="http://localhost:5000/time">http://localhost:5000/time</url> directly into the
             browser to bypass the greeting page and get directly to the page showing the time.</p>
         <p>The example above used the format() method to build an HTML string. For more information
-            on format(), see <xref ref="../Strings/StringMethods#format-strings"/>.</p>
+            on format(), see <xref ref="strings_string-methods"/>.</p>
         <p>Also, notice how the example above defines separate HELLO_HTML and TIME_HTML variables to hold the HTML. This helps
             reduce cluttering the handler functions with HTML code, and separating the Python logic from the HTML also improves the
             overall readability and maintainability of the code.</p>

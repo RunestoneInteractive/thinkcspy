@@ -1,4 +1,4 @@
-<section xml:id="dictionary-operations">
+<section xml:id="dictionaries_dictionary-operations">
         <title>Dictionary Operations</title>
         <p>The <c>del</c> statement removes a key-value pair from a dictionary. For example,
             the following dictionary contains the names of various fruits and the number of

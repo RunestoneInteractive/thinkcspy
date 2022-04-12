@@ -1,4 +1,4 @@
-<section xml:id="boolean-functions">
+<section xml:id="selection_boolean-functions">
         <title>Boolean Functions</title>
         <p>
             We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
@@ -176,7 +176,7 @@ return x + y &lt; z
             </choices>
 
         </exercise>
-        <subsection xml:id="more-unit-testing">
+        <subsection xml:id="selection_more-unit-testing">
             <title>More Unit Testing</title>
             <p>
                 When we write unit tests, we should also consider
