@@ -146,7 +146,7 @@ alex.forward(75)            # complete the second side of a rectangle
     <exercise xml:id="rsid_3_1" indent="show" language="python">
         <statement>
             <p>The following program uses a turtle to draw a capital L as shown in the picture to the left of this text,</p>
-            <image source="PythonTurtle/Figures/TurtleL4.png" width="75%" />
+            <image source="PythonTurtle/Figures/TurtleL4.png" width="25%" />
             <p>But the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.</p>
             <p>
                 Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on

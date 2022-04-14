@@ -199,11 +199,7 @@ My first program adds two numbers, 2 and 3:
 
     <exercise xml:id="question1_2_2">
         <statement>
-
-            <block_quote>
-                <p>What is the difference between a high-level programming language and a low-level programming language?</p>
-            </block_quote>
-
+            <p>What is the difference between a high-level programming language and a low-level programming language?</p>
         </statement>
         <choices>
 

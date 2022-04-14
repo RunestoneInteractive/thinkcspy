@@ -1,7 +1,40 @@
 <exercises xml:id="strings_exercises">
     <title>Exercises</title>
     <exercise xml:id="fixme1">
-        <statement />
+        <statement>
+            <p>What is the result of evaluating each of the following Python expressions?</p>
+            <p>
+                <ol label="a">
+                    <li>
+                        <c>'Python'[1]</c>
+                    </li>
+                    <li>
+                        <c>“Strings are sequences of characters.”[5]</c>
+                    </li>
+                    <li>
+                        <c>len(“wonderful”)</c>
+                    </li>
+                    <li>
+                        <c>'Mystery'[:4]</c>
+                    </li>
+                    <li>
+                        <c>'p' in 'Pineapple'</c>
+                    </li>
+                    <li>
+                        <c>'apple' in 'Pineapple'</c>
+                    </li>
+                    <li>
+                        <c>'pear' not in 'Pineapple'</c>
+                    </li>
+                    <li>
+                        <c>'apple' &gt; 'pineapple'</c>
+                    </li>
+                    <li>
+                        <c>'pineapple' &lt; 'Peach'</c>
+                    </li>
+                </ol>
+            </p>
+        </statement>
         <solution>
             <p>
                 <ol label="a">

@@ -1,145 +1,152 @@
 <section xml:id="exceptions_principles-for-using-exceptions">
-        <title>Principles for using Exceptions</title>
-        <p>There are many bad examples of <em>exception</em> use on the Internet. The purpose
-            of an <em>exception</em> is to modify the flow-of-control, not to catch simple errors.
-            If your <c>try: except:</c> block is in the same function that <c>raises</c> the
-            exception, you are probably mis-using exceptions.</p>
-        <topic>
-            <title>Principle 1:</title>
-            <p>If a condition can be handled using the normal flow-of-control, don&#8217;t
+  <title>Principles for using Exceptions</title>
+  <p>
+    There are many bad examples of
+    <em>exception</em>
+    use on the Internet. The purpose
+            of an
+    <em>exception</em>
+    is to modify the flow-of-control, not to catch simple errors.
+            If your
+    <c>try: except:</c>
+    block is in the same function that
+    <c>raises</c>
+    the
+            exception, you are probably mis-using exceptions.
+  </p>
+  <subsection>
+    <title>Principle 1:</title>
+    <p>If a condition can be handled using the normal flow-of-control, don&#8217;t
                 use an exception!</p>
-        </topic>
-        <p>Example 1:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
-                            <alert>DON&#8217;T DO THIS</alert>:
-                        </cell>
-                        <cell>
-                            When you can just as easily test for no
-                                items in the list doing this:
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <program language="Python"><input>
-try:
-  average = sum(a_list) / len(a_list)
-except ZeroDivisionError:
-  average = 0
-</input></program>
-                        </cell>
-                        <cell>
-                            <program language="Python"><input>
-if len(a_list) &gt; 0:
-  average = sum(a_list) / len(a_list)
-else:
-  average = 0
-</input></program>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Example 2:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
-                            <alert>DON&#8217;T DO THIS</alert>:
-                        </cell>
-                        <cell>
-                            When you can just as easily test for a
-                                valid index doing this:
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <program language="Python"><input>
+
+    <example>
+      <title>Example 1</title>
+
+      <p>This example illustrates blah blah blah.</p>
+
+      <sbsgroup>
+        <sidebyside>
+          <p>DON'T DO THIS</p>
+          <p>When you can just as easily test for no items in the list doing this:</p>
+        </sidebyside>
+        <sidebyside>
+          <program language="Python">
+            <input>
+                      try:
+                        average = sum(a_list) / len(a_list)
+                      except ZeroDivisionError:
+                        average = 0
+                      </input>
+          </program>
+          <program language="Python">
+            <input>
+                      if len(a_list) &gt; 0:
+                        average = sum(a_list) / len(a_list)
+                      else:
+                        average = 0
+                      </input>
+          </program>
+        </sidebyside>
+      </sbsgroup>
+    </example>
+
+
+    <example>
+      <title>Example 2</title>
+      <sbsgroup>
+        <sidebyside>
+          <p>DON'T DO THIS</p>
+          <p>When you can just as easily test for a valid index doing this:</p>
+        </sidebyside>
+        <sidebyside>
+          <program language="Python">
+            <input>
 try:
   value = my_list[index]
 except IndexError:
   value = -1
-</input></program>
-                        </cell>
-                        <cell>
-                            <program language="Python"><input>
+</input>
+          </program>
+          <program language="Python">
+            <input>
 if 0 &lt;= index &lt; len(my_list):
   value = my_list[index]
 else:
   value = -1
-</input></program>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Example 3:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
-                            <alert>DON&#8217;T DO THIS</alert>:
-                        </cell>
-                        <cell>
-                            When you can just as easily test
-                                to see if the key is valid doing this:
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <program language="Python"><input>
+</input>
+          </program>
+        </sidebyside>
+      </sbsgroup>
+    </example>
+
+    <example>
+      <title>Example 3:</title>
+      <sbsgroup>
+        <sidebyside>
+          <p>DONT DO THIS</p>
+          <p>When you can just as easily test to see if the key is valid doing this:
+    </p>
+        </sidebyside>
+        <sidebyside>
+          <program language="Python">
+            <input>
 try:
   value = my_dictionary[key]
 except KeyError:
   value = -1
-</input></program>
-                        </cell>
-                        <cell>
-                            <program language="Python"><input>
+</input>
+          </program>
+          <program language="Python">
+            <input>
 if key in my_dictionary.keys():
   value = my_dictionary[key]
 else:
   value = -1
-</input></program>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <topic>
-            <title>Principle 2:</title>
-            <p>If you call a function that potentially raises exceptions, and you can do
+</input>
+          </program>
+
+        </sidebyside>
+      </sbsgroup>
+    </example>
+
+    <exploration>
+      <title>Reveal</title>
+      <p>Another try at something to reveal</p>
+    </exploration>
+  </subsection>
+  <subsection>
+    <title>Principle 2:</title>
+    <p>
+      If you call a function that potentially raises exceptions, and you can do
                 something appropriate to deal with the exception, then surround the code
-                that contains the function call with a <c>try: except:</c> block.</p>
-        </topic>
-        <p>Example: Suppose you have a function that reads a file to set the state of
+                that contains the function call with a
+      <c>try: except:</c>
+      block.
+    </p>
+
+    <p>Example: Suppose you have a function that reads a file to set the state of
             an application when it starts up. You should catch any errors related to
             reading the file and set the state of the application to default values if
             they can&#8217;t be set from the file.</p>
-        <program language="Python"><input>
+
+    <program xml:id="example_exc_1bnm" language="python" interactive="activecode">
+      <input>
 try:
   load_state('previous_state.txt')
 except OSError:
   set_state_to_defaults()
-</input></program>
-        <topic>
-            <title>Principle 3:</title>
-            <p>If you call a function that potentially raises exceptions, and you can&#8217;t do
+</input>
+    </program>
+
+
+  </subsection>
+
+  <subsection>
+    <title>Principle 3:</title>
+    <p>If you call a function that potentially raises exceptions, and you can&#8217;t do
                 anything meaningful about the conditions that are raised, then don&#8217;t
                 catch the exception message(s).</p>
-        </topic>
-        
-        
-    </section>
+  </subsection>
 
+
+</section>
