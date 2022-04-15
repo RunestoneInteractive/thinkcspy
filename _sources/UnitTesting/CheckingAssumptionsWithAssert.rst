@@ -239,7 +239,7 @@ to help streamline the diagnostic work.
    An ``assert`` statement displays output if the condition is True.
 
 .. mchoice:: mc_assert_2
-   :answer_a: assert len(msg) <= 0
+   :answer_a: assert len(msg) &lt;= 0
    :answer_b: assert len(msg) > 0
    :answer_c: assert msg[0]
    :answer_d: none of these

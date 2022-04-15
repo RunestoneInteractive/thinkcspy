@@ -247,7 +247,7 @@ sense, just remember: in order for pytest to work correctly, any code that is pa
             def grade(score):
                 global illegal, testA, testB, testF
 
-                if score > 100 or score < 0:
+                if score > 100 or score &lt; 0:
                     illegal = True
                     return ''
                 elif score >= 90:

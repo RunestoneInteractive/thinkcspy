@@ -95,7 +95,7 @@ four basic commands we need to send to the *model*:
 
 * A user clicked on something on the left frame.
 * The user wants to start a new game. (The user clicked on the "Start" button.)
-* The user wants to stop playing a game. (The user clicked on the "Stop button.)
+* The user wants to stop playing a game. (The user clicked on the "Stop" button.)
 * The user wants to quit the application. (The user clicked on the "Quit" button.)
 
 The *controller** needs to recognize these events and send them to appropriate

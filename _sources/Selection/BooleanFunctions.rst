@@ -107,7 +107,7 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
    :answer_b: No
    :correct: a
    :feedback_a: It is perfectly valid to return the result of evaluating a Boolean expression.
-   :feedback_b: x +y < z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
+   :feedback_b: x +y &lt; z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
 
    Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?
 

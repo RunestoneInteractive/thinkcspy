@@ -118,11 +118,6 @@ debugging
 easier.  These temporary variables are examples of **local variables**, pursued further
 in the next section.
 
-.. The line `toInvest = float(input("How much do you want to invest?"))`
-..  also shows yet another example
-..  of *composition* --- we can call a function like `float`, and its arguments
- .. can be the results of other function calls (like `input`) that we've called along the way.
-
 Notice something important here. The name of the variable we pass as an
 argument --- ``toSquare`` --- has nothing to do with the name of the formal parameter
 --- ``x``.  It is as if  ``x = toSquare`` is executed when ``square`` is called.

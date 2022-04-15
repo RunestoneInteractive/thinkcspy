@@ -51,8 +51,8 @@ rules for its mathematical operators that mathematics does.
 
 .. (The
 ..   acronym PEDMAS could mislead you to thinking that division has higher
-..   precedence than multiplication, and addition is done ahead of subtraction -
-..   don't be misled.  Subtraction and addition are at the same precedence, and
+..   precedence than multiplication, and addition is done ahead of subtraction.
+..   Don't be misled.  Subtraction and addition are at the same precedence, and
 ..   the left-to-right rule applies.)
 
 .. note::

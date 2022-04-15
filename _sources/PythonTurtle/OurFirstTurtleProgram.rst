@@ -218,10 +218,10 @@ screen until we click on it.
    :answer_c: It makes the turtle draw half of a rectangle on the screen.
    :answer_d: Nothing, it is unnecessary.
    :correct: b
-   :feedback_a: The line &quotalex = turtle.Turtle()&quot is what actually creates the turtle object.
+   :feedback_a: The line &quot;alex = turtle.Turtle()&quot; is what actually creates the turtle object.
    :feedback_b: This line imports the module called turtle, which has all the built in functions for drawing on the screen with the Turtle object.
-   :feedback_c: This functionality is performed with the lines: &quotalex.forward(150)&quot, &quotlex.left(90)&quot, and &quotalex.forward(75)&quot
-   :feedback_d: If we leave it out, Python will give an error saying that it does not know about the name &quotturtle&quot when it reaches the line &quotwn = turtle.Screen()&quot
+   :feedback_c: This functionality is performed with the lines: &quot;alex.forward(150)&quot;, &quot;lex.left(90)&quot;, and &quot;alex.forward(75)&quot;
+   :feedback_d: If we leave it out, Python will give an error saying that it does not know about the name &quot;turtle&quot; when it reaches the line &quot;wn = turtle.Screen()&quot;
 
    Consider the following code:
 
@@ -260,11 +260,11 @@ screen until we click on it.
 
 .. mchoice:: test_question3_1_4
    :practice: T
-   :answer_a: <img src="../_static/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
-   :answer_b: <img src="../_static/test1Alt2.png" alt="left turn of 180 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
-   :answer_c: <img src="../_static/test1Alt3.png" alt="left turn of 270 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
-   :answer_d: <img src="../_static/test1Alt4v2.png" alt="right turn of 270 degrees before drawing, draw a line 150 pixels long, turn right 90, and draw a line 75 pixels long">
-   :answer_e: <img src="../_static/test1correct.png" alt="left turn of 90 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
+   :answer_a: <img src="../_static/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
+   :answer_b: <img src="../_static/test1Alt2.png" alt="left turn of 180 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
+   :answer_c: <img src="../_static/test1Alt3.png" alt="left turn of 270 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">/
+   :answer_d: <img src="../_static/test1Alt4v2.png" alt="right turn of 270 degrees before drawing, draw a line 150 pixels long, turn right 90, and draw a line 75 pixels long"/>
+   :answer_e: <img src="../_static/test1correct.png" alt="left turn of 90 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
    :correct: e
    :feedback_a: This code would turn the turtle to the south before drawing
    :feedback_b: This code would turn the turtle to the west before drawing

@@ -161,7 +161,7 @@ precondition and postcondition terminology in your docstrings, it helps to *thin
 **Check your understanding**
 
 .. mchoice:: mc_testable_2
-   :answer_a: len(msg) <= 0
+   :answer_a: len(msg) &lt;= 0
    :answer_b: len(msg) > 0
    :answer_c: msg == ""
    :answer_d: none of these
