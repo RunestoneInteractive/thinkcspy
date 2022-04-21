@@ -1,57 +1,63 @@
-<section xml:id="gu_iand_event_driven_programming_timer-events">
-        <title>Timer Events</title>
-        <p>GUI programs run an &#8220;event loop&#8221; that continuously receive events from the
-            operating system and &#8220;dispatches&#8221; those events to appropriate callback
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_timer-events">
+  <title>Timer Events</title>
+  <p>GUI programs run an <q>event loop</q> that continuously receive events from the
+            operating system and <q>dispatches</q> those events to appropriate callback
             functions. Nothing happens in a GUI program without an event. The application
             logic for some problems requires that specific events happen at some
             specific times. For this reason <c>tkinter</c> includes a feature to generate
             events under software control. These are often refered to as <em>timer events</em>.</p>
-        <p>Every widget has an <c>after</c> method that will generate an event at a
+  <p>Every widget has an <c>after</c> method that will generate an event at a
             specific time interval from the time it is called. The method takes at
             least 2 arguments: the amount of time (in milliseconds) to wait before
             generating the event, and the callback function to call after the time
             has elapsed. In the example below, the function <c>a_callback_function</c>
             will be called one second (1000 milliseconds) after the timer-event was created.</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 def a_callback_function():
     print("a_callback_function was called.")
 
 my_button = tk.Button(application_window, text="Example")
 my_button.after(1000, a_callback_function)
-</input></program>
-        <subsection xml:id="gu_iand_event_driven_programming_animations-and-repeated-tasks">
-            <title>Animations and Repeated Tasks</title>
-            <p>If you want a specific task to be repeated on a regular interval, then
+</input>
+  </program>
+  <subsection xml:id="gu-iand-event-driven-programming_animations-and-repeated-tasks">
+    <title>Animations and Repeated Tasks</title>
+    <p>If you want a specific task to be repeated on a regular interval, then
                 the callback function that performs the task should create a new timer event
                 each time it is called. The following example creates a callback function
                 that is called 30 times per second. (Note that 1/30th of a second is 0.033
                 seconds, or 33 milliseconds.)</p>
-            <program language="python"><input>
+    <program language="python">
+      <input>
 def animate():
     # Draw something
     my_button.after(33, animate)
 
 my_button = tk.Button(application_window, text="Example")
 my_button.after(33, animate)
-</input></program>
-            <p>A widget can have more than one timer event active at any time. In fact there
+</input>
+    </program>
+    <p>A widget can have more than one timer event active at any time. In fact there
                 is no limit to the number of timer events you can create.</p>
-            <p>Note that you should never use a loop to repeat a task in a GUI program. If
+    <p>Note that you should never use a loop to repeat a task in a GUI program. If
                 you use a loop, the event-loop will be prevented from execution and no
                 events will be processed while the loop is running. Always use a timer event
                 for repeating a task, especially if a single execution of the task takes
                 a considerable amount of CPU time.</p>
-        </subsection>
-        <subsection xml:id="gu_iand_event_driven_programming_canceling-timer-events">
-            <title>Canceling Timer Events</title>
-            <p>In some cases you may need to cancel a timer event to prevent it from
+  </subsection>
+  <subsection xml:id="gu-iand-event-driven-programming_canceling-timer-events">
+    <title>Canceling Timer Events</title>
+    <p>In some cases you may need to cancel a timer event to prevent it from
                 executing. This is straightforward using the <c>after_cancel</c> method.
                 Remember that a widget can have multiple active timers, so the
                 <c>after_cancel</c> method requires one parameter which specifies which timer
                 event to cancel. If you need to cancel an event, you must capture
                 the return value from the call to <c>after</c> when you created the event. Here
                 is an example:</p>
-            <program language="python"><input>
+    <program language="python">
+      <input>
 def do_something():
   # Some processing
 
@@ -60,17 +66,19 @@ timer_object = my_button.after(1000, do_something)
 ...
 
 my_button.after_cancel(timer_object)
-</input></program>
-        </subsection>
-        <subsection xml:id="gu_iand_event_driven_programming_multiple-parameters-to-timer-callbacks">
-            <title>Multiple Parameters to Timer Callbacks</title>
-            <p>Timer callback function can have zero or more arguments passed to them when
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="gu-iand-event-driven-programming_multiple-parameters-to-timer-callbacks">
+    <title>Multiple Parameters to Timer Callbacks</title>
+    <p>Timer callback function can have zero or more arguments passed to them when
                 they are called. You specify the arguments when you create the event. This
                 makes timer callback functions extremely flexible. Below is an example
                 of three different callback functions, each of which receives a different
                 number of arguments. You must specify the correct number of arguments for
                 the callback function when you create the timer event.</p>
-            <program language="python"><input>
+    <program language="python">
+      <input>
 def task1():
   # Do some processing
 
@@ -85,9 +93,7 @@ my_button.after(1000, task1)
 my_button.after(2000, task2, 3)     # 3 gets passed to the parameter alpha
 my_button.after(5000, task3, a, b)  # a gets passed to the parameter beta
                                     # b gets passed to the parameter gamma
-</input></program>
-            
-            
-        </subsection>
-    </section>
-
+</input>
+    </program>
+  </subsection>
+</section>

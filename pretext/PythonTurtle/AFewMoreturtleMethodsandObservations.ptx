@@ -1,110 +1,70 @@
-<section xml:id="python_turtle_a-few-more-turtle-methods-and-observations">
-    <title>A Few More turtle Methods and Observations</title>
-    <p>Here are a few more things that you might find useful as you write programs that use turtles.</p>
-    <p>
-        <ul>
-            <li>
-                <p>
-                    Turtle methods can use negative angles or distances.  So
-                    <c>tess.forward(-100)</c>
-                    will move tess backwards, and
-                    <c>tess.left(-30)</c>
-                    turns her to the right.
+<?xml version="1.0"?>
+<section xml:id="python-turtle_a-few-more-turtle-methods-and-observations">
+  <title>A Few More turtle Methods and Observations</title>
+  <p>Here are a few more things that you might find useful as you write programs that use turtles.</p>
+  <p>
+    <ul>
+      <li>
+        <p>Turtle methods can use negative angles or distances.  So <c>tess.forward(-100)</c>
+                    will move tess backwards, and <c>tess.left(-30)</c> turns her to the right.
                     Additionally, because there are 360 degrees in a circle, turning 30 to the
                     left will leave you facing in the same direction as turning 330 to the right!
-                    (The on-screen animation will differ, though &#8212; you will be able to tell if
-                    tess is turning clockwise or counter-clockwise!)
-                </p>
-                <p>
-                    This suggests that we don&#8217;t need both a left and a right turn method &#8212; we
-                    could be minimalists, and just have one method.  There is also a
-                    <em>backward</em>
+                    (The on-screen animation will differ, though &#x2014; you will be able to tell if
+                    tess is turning clockwise or counter-clockwise!)</p>
+        <p>This suggests that we don't need both a left and a right turn method &#x2014; we
+                    could be minimalists, and just have one method.  There is also a <em>backward</em>
                     method.  (If you are very nerdy, you might enjoy saying
-                    <c>alex.backward(-100)</c>
-                    to move alex forward!)
-                </p>
-                <p>
-                    Part of
-                    <em>thinking like a scientist</em>
-                    is to understand more of the structure
+                    <c>alex.backward(-100)</c> to move alex forward!)</p>
+        <p>Part of <em>thinking like a scientist</em> is to understand more of the structure
                     and rich relationships in your field.  So reviewing a few basic facts about
-                    geometry and number lines, like we&#8217;ve done here is a good start if we&#8217;re
-                    going to play with turtles.
-                </p>
-            </li>
-            <li>
-                <p>
-                    A turtle&#8217;s pen can be picked up or put down.  This allows us to move a turtle
-                    to a different place without drawing a line.   The methods are
-                    <c>up</c>
-                    and
-                    <c>down</c>
-                    .  Note that the methods
-                    <c>penup</c>
-                    and
-                    <c>pendown</c>
-                    do the
-                    same thing.
-                </p>
-                <program language="python">
-                    <input>
+                    geometry and number lines, like we've done here is a good start if we're
+                    going to play with turtles.</p>
+      </li>
+      <li>
+        <p>A turtle's pen can be picked up or put down.  This allows us to move a turtle
+                    to a different place without drawing a line.   The methods are <c>up</c> and <c>down</c>.  Note that the methods <c>penup</c> and <c>pendown</c> do the
+                    same thing.</p>
+        <program language="python">
+          <input>
 alex.up()
 alex.forward(100)     # this moves alex, but no line is drawn
 alex.down()
 </input>
-                </program>
-            </li>
-            <li>
-                <p>
-                    Every turtle can have its own shape.  The ones available &#8220;out of the box&#8221;
-                    are
-                    <c>arrow</c>
-                    ,
-                    <c>blank</c>
-                    ,
-                    <c>circle</c>
-                    ,
-                    <c>classic</c>
-                    ,
-                    <c>square</c>
-                    ,
-                    <c>triangle</c>
-                    ,
-                    <c>turtle</c>
-                    .
-                </p>
-                <program language="python">
-                    <input>
+        </program>
+      </li>
+      <li>
+        <p>Every turtle can have its own shape.  The ones available <q>out of the box</q>
+                    are <c>arrow</c>, <c>blank</c>, <c>circle</c>, <c>classic</c>, <c>square</c>, <c>triangle</c>,
+                    <c>turtle</c>.</p>
+        <program language="python">
+          <input>
 ...
 alex.shape("turtle")
 ...
 </input>
-                </program>
-            </li>
-            <li>
-                <p>You can speed up or slow down the turtle&#8217;s animation speed. (Animation
+        </program>
+      </li>
+      <li>
+        <p>You can speed up or slow down the turtle's animation speed. (Animation
                     controls how quickly the turtle turns and moves forward).  Speed settings can
                     be set between 1 (slowest) to 10 (fastest).  But if you set the speed to 0,
-                    it has a special meaning &#8212; turn off animation and go as fast as possible.</p>
-                <program language="python">
-                    <input>
+                    it has a special meaning &#x2014; turn off animation and go as fast as possible.</p>
+        <program language="python">
+          <input>
 alex.speed(10)
 </input>
-                </program>
-            </li>
-            <li>
-                <p>A turtle can &#8220;stamp&#8221; its footprint onto the canvas, and this will remain
+        </program>
+      </li>
+      <li>
+        <p>A turtle can <q>stamp</q> its footprint onto the canvas, and this will remain
                     after the turtle has moved somewhere else.  Stamping works even when the pen
                     is up.</p>
-            </li>
-        </ul>
-    </p>
-    <p>Let&#8217;s do an example that shows off some of these new features.</p>
-
-    <listing xml:id="ch03_7">
-        <caption />
-        <program xml:id="ch03_7_editor" interactive="activecode" language="python">
-            <input>
+      </li>
+    </ul>
+  </p>
+  <p>Let's do an example that shows off some of these new features.</p>
+  <program xml:id="ch03_7" interactive="activecode" language="python">
+    <input>
 import turtle
 wn = turtle.Screen()
 wn.bgcolor("lightgreen")
@@ -121,119 +81,101 @@ for size in range(5, 60, 2):    # start with size = 5 and grow by 2
 
 wn.exitonclick()
         </input>
-        </program>
-    </listing>
-    <p>
-        The list of integers printed above for
-        <c>list(range(5,60,2))</c>
-        is only displayed
+  </program>
+  <p>The list of integers printed above for <c>list(range(5,60,2))</c> is only displayed
             to show you the distances being used to move the turtle forward.  The actual use appears
-            as part of the
-        <c>for</c>
-        loop.
-    </p>
+            as part of the <c>for</c> loop.</p>
+  <p>One more thing to be careful about.  All except one of the shapes you see on the screen here are
+            footprints created by <c>stamp</c>.  But the program still only has <em>one</em> turtle
+            instance &#x2014; can you figure out which one is the real tess?  (Hint: if you're
+            not sure, write a new line of code after the <c>for</c> loop to change tess'
+            color, or to put her pen down and draw a line, or to change her shape, etc.)</p>
+  <p>
+    <term>Mixed up program</term>
+  </p>
+  <exercise xml:id="rsid_3_10" indent="show" language="python">
+    <statement>
+      <p>The following program uses the stamp method to create a circle of turtle shapes as shown to the left:</p>
+      <image source="PythonTurtle/Figures/TurtleCircle.png" width="75%"/>
+      <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to <q>turtle</q>, and pick up the pen.  Then the turtle should repeat the following ten times: go forward 50 pixels, leave a copy of the turtle at the current position, reverse for 50 pixels, and then turn right 36 degrees.  After the loop, set the window to close when the user clicks in it.</p>
+      <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>import turtle</cline>
+        <cline>wn = turtle.Screen()</cline>
+        <cline>jose = turtle.Turtle()</cline>
+        <cline>jose.shape("turtle")</cline>
+        <cline>jose.penup()</cline>
+      </block>
+      <block order="5">
+        <cline>for size in range(10):</cline>
+      </block>
+      <block order="4">
+        <cline>  jose.forward(50)</cline>
+      </block>
+      <block order="6">
+        <cline>  jose.stamp()</cline>
+      </block>
+      <block order="2">
+        <cline>  jose.forward(-50)</cline>
+      </block>
+      <block order="7">
+        <cline>  jose.right(36)</cline>
+      </block>
+      <block order="1">
+        <cline>wn.exitonclick()</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <p>
+    <term>Mixed up program</term>
+  </p>
+  <exercise xml:id="rsid_3_11" indent="show" language="python">
+    <statement>
+      <p>The following program uses the stamp method to create a line of turtle shapes as shown to the left:</p>
+      <image source="PythonTurtle/Figures/Turtle3Stamp.png" width="75%"/>
+      <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to <q>turtle</q>, and pick up the pen.  Then the turtle should repeat the following three times: go forward 50 pixels and leave a copy of the turtle at the current position.  After the loop, set the window to close when the user clicks in it.</p>
+      <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>import turtle</cline>
+        <cline>wn = turtle.Screen()</cline>
+      </block>
+      <block order="5">
+        <cline>nikea = turtle.Turtle()</cline>
+      </block>
+      <block order="2">
+        <cline>nikea.shape("turtle")</cline>
+      </block>
+      <block order="7">
+        <cline>nikea.penup()</cline>
+      </block>
+      <block order="8">
+        <cline>for size in range(3):</cline>
+      </block>
+      <block order="4">
+        <cline>  nikea.forward(50)</cline>
+      </block>
+      <block order="1">
+        <cline>  nikea.stamp()</cline>
+      </block>
+      <block order="3">
+        <cline>wn.exitonclick()</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <note>
+    <title>Lab</title>
     <p>
-        One more thing to be careful about.  All except one of the shapes you see on the screen here are
-            footprints created by
-        <c>stamp</c>
-        .  But the program still only has
-        <em>one</em>
-        turtle
-            instance &#8212; can you figure out which one is the real tess?  (Hint: if you&#8217;re
-            not sure, write a new line of code after the
-        <c>for</c>
-        loop to change tess&#8217;
-            color, or to put her pen down and draw a line, or to change her shape, etc.)
-    </p>
-    <p>
-        <alert>Mixed up program</alert>
-    </p>
-    <exercise xml:id="rsid_3_10" indent="show" language="python">
-        <statement>
-            <p>The following program uses the stamp method to create a circle of turtle shapes as shown to the left:</p>
-            <image source="PythonTurtle/Figures/TurtleCircle.png" width="75%" />
-            <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to &#8220;turtle&#8221;, and pick up the pen.  Then the turtle should repeat the following ten times: go forward 50 pixels, leave a copy of the turtle at the current position, reverse for 50 pixels, and then turn right 36 degrees.  After the loop, set the window to close when the user clicks in it.</p>
-            <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
-        </statement>
-        <blocks>
-            <block order="3">
-                <cline>import turtle</cline>
-                <cline>wn = turtle.Screen()</cline>
-                <cline>jose = turtle.Turtle()</cline>
-                <cline>jose.shape("turtle")</cline>
-                <cline>jose.penup()</cline>
-            </block>
-            <block order="5">
-                <cline>for size in range(10):</cline>
-            </block>
-            <block order="4">
-                <cline>  jose.forward(50)</cline>
-            </block>
-            <block order="6">
-                <cline>  jose.stamp()</cline>
-            </block>
-            <block order="2">
-                <cline>  jose.forward(-50)</cline>
-            </block>
-            <block order="7">
-                <cline>  jose.right(36)</cline>
-            </block>
-            <block order="1">
-                <cline>wn.exitonclick()</cline>
-            </block>
-        </blocks>
-    </exercise>
-    <p>
-        <alert>Mixed up program</alert>
-    </p>
-    <exercise xml:id="rsid_3_11" indent="show" language="python">
-        <statement>
-            <p>The following program uses the stamp method to create a line of turtle shapes as shown to the left:</p>
-            <image source="PythonTurtle/Figures/Turtle3Stamp.png" width="75%" />
-            <p>But the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the shape to &#8220;turtle&#8221;, and pick up the pen.  Then the turtle should repeat the following three times: go forward 50 pixels and leave a copy of the turtle at the current position.  After the loop, set the window to close when the user clicks in it.</p>
-            <p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on &lt;i&gt;Check Me&lt;/i&gt; to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>
-        </statement>
-        <blocks>
-            <block order="6">
-                <cline>import turtle</cline>
-                <cline>wn = turtle.Screen()</cline>
-            </block>
-            <block order="5">
-                <cline>nikea = turtle.Turtle()</cline>
-            </block>
-            <block order="2">
-                <cline>nikea.shape("turtle")</cline>
-            </block>
-            <block order="7">
-                <cline>nikea.penup()</cline>
-            </block>
-            <block order="8">
-                <cline>for size in range(3):</cline>
-            </block>
-            <block order="4">
-                <cline>  nikea.forward(50)</cline>
-            </block>
-            <block order="1">
-                <cline>  nikea.stamp()</cline>
-            </block>
-            <block order="3">
-                <cline>wn.exitonclick()</cline>
-            </block>
-        </blocks>
-    </exercise>
-    <note>
-        <title>Lab</title>
-        <p>
-            <ul>
-                <li>
-                    <p>
-                        <url href="../Labs/lab03_01.html" visual="../Labs/lab03_01.html">Turtle Race</url>
-                        In this guided lab exercise we will work
+      <ul>
+        <li>
+          <p><url href="../Labs/lab03_01.html" visual="../Labs/lab03_01.html">Turtle Race</url> In this guided lab exercise we will work
                         through a simple problem solving exercise related to having some turtles
-                        race.
-                    </p>
-                </li>
-            </ul>
-        </p>
-    </note>
+                        race.</p>
+        </li>
+      </ul>
+    </p>
+  </note>
 </section>

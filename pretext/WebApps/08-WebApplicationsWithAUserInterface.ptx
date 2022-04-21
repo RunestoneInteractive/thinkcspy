@@ -1,9 +1,11 @@
-<section xml:id="web_apps_web-applications-with-a-user-interface">
-        <title>Web Applications With a User Interface</title>
-        <p>This section builds on the material in the preceding sections to present a web
+<?xml version="1.0"?>
+<section xml:id="web-apps_web-applications-with-a-user-interface">
+  <title>Web Applications With a User Interface</title>
+  <p>This section builds on the material in the preceding sections to present a web
             application that prompts the user to provide input, performs some processing,
             and displays results.</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
  from flask import Flask, request
 
  app = Flask(__name__)
@@ -45,23 +47,25 @@
  if __name__ == "__main__":
      # Launch the Flask dev server
      app.run(host="localhost", debug=True)
-</input></program>
-        <p>The program is organized as follows:</p>
-        <p><ul>
-            <li>
-                <p>Lines 6-8 define the <c>home()</c> function, which defines the starting page for
-                    the application. It displays a form that prompts for the user&#8217;s
+</input>
+  </program>
+  <p>The program is organized as follows:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Lines 6-8 define the <c>home()</c> function, which defines the starting page for
+                    the application. It displays a form that prompts for the user's
                     name and favorite food.</p>
-            </li>
-            <li>
-                <p>The form&#8217;s <c>action</c> attribute on Line 13 specifies that the form submission will be directed
-                    to the path <alert>/greet</alert>. Processing for this path is defined by the <c>greet()</c>
+      </li>
+      <li>
+        <p>The form's <c>action</c> attribute on Line 13 specifies that the form submission will be directed
+                    to the path <term>/greet</term>. Processing for this path is defined by the <c>greet()</c>
                     function on lines 20-31.</p>
-            </li>
-            <li>
-                <p>Lines 22-29 extract the information submitted on the form and compute a
+      </li>
+      <li>
+        <p>Lines 22-29 extract the information submitted on the form and compute a
                     response message.</p>
-            </li>
-        </ul></p>
-    </section>
-
+      </li>
+    </ul>
+  </p>
+</section>

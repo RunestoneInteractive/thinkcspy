@@ -29,7 +29,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <html>
         <platform host="web" />
         <!-- knowled checkpoints interfere with ActiveCode problems -->
-        <knowl exercise-inline="no" example="no" project="yes" />
+        <knowl exercise-inline="no" example="no" listing="yes" />
     </html>
 
     <stringparam key="debug.rs.services.file" value="/Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />

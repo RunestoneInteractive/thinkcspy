@@ -1,220 +1,164 @@
-<section xml:id="simple_python_data_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>assignment statement</title>
-                    
-                        <p>A statement that assigns a value to a name (variable). To the left of
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>assignment statement</title>
+      <p>A statement that assigns a value to a name (variable). To the left of
                             the assignment operator, <c>=</c>, is a name. To the right of the
                             assignment token is an expression which is evaluated by the Python
                             interpreter and then assigned to the name. The difference between the
                             left and right hand sides of the assignment statement is often
                             confusing to new programmers. In the following assignment:</p>
-                        <program language="python"><input>
+      <program language="python">
+        <input>
 n = n + 1
-</input></program>
-                        <p><c>n</c> plays a very different role on each side of the <c>=</c>. On the
+</input>
+      </program>
+      <p><c>n</c> plays a very different role on each side of the <c>=</c>. On the
                             right it is a <em>value</em> and makes up part of the <em>expression</em> which will
                             be evaluated by the Python interpreter before assigning it to the name
                             on the left.</p>
-                    
-                </gi>
-                <gi>
-                    <title>assignment token</title>
-                    
-                        <p><c>=</c> is Python&#8217;s assignment token, which should not be confused
+    </gi>
+    <gi>
+      <title>assignment token</title>
+      <p><c>=</c> is Python's assignment token, which should not be confused
                             with the mathematical comparison operator using the same symbol.</p>
-                    
-                </gi>
-                <gi>
-                    <title>class</title>
-                    
-                        <p>see <alert>data type</alert> below</p>
-                    
-                </gi>
-                <gi>
-                    <title>comment</title>
-                    
-                        <p>Information in a program that is meant for other programmers (or anyone
+    </gi>
+    <gi>
+      <title>class</title>
+      <p>see <term>data type</term> below</p>
+    </gi>
+    <gi>
+      <title>comment</title>
+      <p>Information in a program that is meant for other programmers (or anyone
                             reading the source code) and has no effect on the execution of the
                             program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>data type</title>
-                    
-                        <p>A set of values. The type of a value determines how it can be used in
+    </gi>
+    <gi>
+      <title>data type</title>
+      <p>A set of values. The type of a value determines how it can be used in
                             expressions. So far, the types you have seen are integers (<c>int</c>),
                             floating-point numbers (<c>float</c>), and strings (<c>str</c>).</p>
-                    
-                </gi>
-                <gi>
-                    <title>decrement</title>
-                    
-                        <p>Decrease by 1.</p>
-                    
-                </gi>
-                <gi>
-                    <title>evaluate</title>
-                    
-                        <p>To simplify an expression by performing the operations in order to
+    </gi>
+    <gi>
+      <title>decrement</title>
+      <p>Decrease by 1.</p>
+    </gi>
+    <gi>
+      <title>evaluate</title>
+      <p>To simplify an expression by performing the operations in order to
                             yield a single value.</p>
-                    
-                </gi>
-                <gi>
-                    <title>expression</title>
-                    
-                        <p>A combination of operators and operands (variables and values) that represents a
+    </gi>
+    <gi>
+      <title>expression</title>
+      <p>A combination of operators and operands (variables and values) that represents a
                             single result value.  Expressions are evaluated to give that result.</p>
-                    
-                </gi>
-                <gi>
-                    <title>float</title>
-                    
-                        <p>A Python data type which stores <em>floating-point</em> numbers.
+    </gi>
+    <gi>
+      <title>float</title>
+      <p>A Python data type which stores <em>floating-point</em> numbers.
                             Floating-point numbers are stored internally in two parts: a <em>base</em> and
                             an <em>exponent</em>. When printed in the standard format, they look like
                             decimal numbers. Beware of rounding errors when you use <c>float</c>s,
                             and remember that they are only approximate values.</p>
-                    
-                </gi>
-                <gi>
-                    <title>increment</title>
-                    
-                        <p>Both as a noun and as a verb, increment means to increase by 1.</p>
-                    
-                </gi>
-                <gi>
-                    <title>initialization (of a variable)</title>
-                    
-                        <p>To initialize a variable is to give it an initial value.
-                            Since in Python variables don&#8217;t exist
+    </gi>
+    <gi>
+      <title>increment</title>
+      <p>Both as a noun and as a verb, increment means to increase by 1.</p>
+    </gi>
+    <gi>
+      <title>initialization (of a variable)</title>
+      <p>To initialize a variable is to give it an initial value.
+                            Since in Python variables don't exist
                             until they are assigned values, they are initialized when they are
                             created.  In other programming languages this is not the case, and
                             variables can be created without being initialized, in which case they
                             have either default or <em>garbage</em> values.</p>
-                    
-                </gi>
-                <gi>
-                    <title>int</title>
-                    
-                        <p>A Python data type that holds positive and negative <alert>whole</alert> numbers.</p>
-                    
-                </gi>
-                <gi>
-                    <title>integer division</title>
-                    
-                        <p>An operation that divides one integer by another and yields an integer.
+    </gi>
+    <gi>
+      <title>int</title>
+      <p>A Python data type that holds positive and negative <term>whole</term> numbers.</p>
+    </gi>
+    <gi>
+      <title>integer division</title>
+      <p>An operation that divides one integer by another and yields an integer.
                             Integer division yields only the whole number of times that the
                             numerator is divisible by the denominator and discards any remainder.</p>
-                    
-                </gi>
-                <gi>
-                    <title>keyword</title>
-                    
-                        <p>A reserved word that is used by the compiler to parse program; you
+    </gi>
+    <gi>
+      <title>keyword</title>
+      <p>A reserved word that is used by the compiler to parse program; you
                             cannot use keywords like <c>if</c>, <c>def</c>, and <c>while</c> as variable
                             names.</p>
-                    
-                </gi>
-                <gi>
-                    <title>modulus operator</title>
-                    
-                        <p>Also called remainder operator or integer remainder operator.  Gives the remainder after performing integer division.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object</title>
-                    
-                        <p>Also known as a data object (or data value).  The fundamental things that programs are designed to
+    </gi>
+    <gi>
+      <title>modulus operator</title>
+      <p>Also called remainder operator or integer remainder operator.  Gives the remainder after performing integer division.</p>
+    </gi>
+    <gi>
+      <title>object</title>
+      <p>Also known as a data object (or data value).  The fundamental things that programs are designed to
                             manipulate (or that programmers ask to do things for them).</p>
-                    
-                </gi>
-                <gi>
-                    <title>operand</title>
-                    
-                        <p>One of the values on which an operator operates.</p>
-                    
-                </gi>
-                <gi>
-                    <title>operator</title>
-                    
-                        <p>A special symbol that represents a simple computation like addition,
+    </gi>
+    <gi>
+      <title>operand</title>
+      <p>One of the values on which an operator operates.</p>
+    </gi>
+    <gi>
+      <title>operator</title>
+      <p>A special symbol that represents a simple computation like addition,
                             multiplication, or string concatenation.</p>
-                    
-                </gi>
-                <gi>
-                    <title>prompt string</title>
-                    
-                        <p>Used during interactive input to provide the user with hints as to what type of value to enter.</p>
-                    
-                </gi>
-                <gi>
-                    <title>reference diagram</title>
-                    
-                        <p>A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also <alert>state snapshot</alert>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>rules of precedence</title>
-                    
-                        <p>The set of rules governing the order in which expressions involving
+    </gi>
+    <gi>
+      <title>prompt string</title>
+      <p>Used during interactive input to provide the user with hints as to what type of value to enter.</p>
+    </gi>
+    <gi>
+      <title>reference diagram</title>
+      <p>A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also <term>state snapshot</term>.</p>
+    </gi>
+    <gi>
+      <title>rules of precedence</title>
+      <p>The set of rules governing the order in which expressions involving
                             multiple operators and operands are evaluated.</p>
-                    
-                </gi>
-                <gi>
-                    <title>state snapshot</title>
-                    
-                        <p>A graphical representation of a set of variables and the values to
-                            which they refer, taken at a particular instant during the program&#8217;s
+    </gi>
+    <gi>
+      <title>state snapshot</title>
+      <p>A graphical representation of a set of variables and the values to
+                            which they refer, taken at a particular instant during the program's
                             execution.</p>
-                    
-                </gi>
-                <gi>
-                    <title>statement</title>
-                    
-                        <p>An instruction that the Python interpreter can execute.  So far we have
+    </gi>
+    <gi>
+      <title>statement</title>
+      <p>An instruction that the Python interpreter can execute.  So far we have
                             only seen the assignment statement, but we will soon meet the
                             <c>import</c> statement and the <c>for</c> statement.</p>
-                    
-                </gi>
-                <gi>
-                    <title>str</title>
-                    
-                        <p>A Python data type that holds a string of characters.</p>
-                    
-                </gi>
-                <gi>
-                    <title>type conversion function</title>
-                    
-                        <p>A function that can convert a data value from one type to another.</p>
-                    
-                </gi>
-                <gi>
-                    <title>value</title>
-                    
-                        <p>A number or string (or other things to be named later) that can be
+    </gi>
+    <gi>
+      <title>str</title>
+      <p>A Python data type that holds a string of characters.</p>
+    </gi>
+    <gi>
+      <title>type conversion function</title>
+      <p>A function that can convert a data value from one type to another.</p>
+    </gi>
+    <gi>
+      <title>value</title>
+      <p>A number or string (or other things to be named later) that can be
                             stored in a variable or computed in an expression.</p>
-                    
-                </gi>
-                <gi>
-                    <title>variable</title>
-                    
-                        <p>A name that refers to a value.</p>
-                    
-                </gi>
-                <gi>
-                    <title>variable name</title>
-                    
-                        <p>A name given to a variable. Variable names in Python consist of a
+    </gi>
+    <gi>
+      <title>variable</title>
+      <p>A name that refers to a value.</p>
+    </gi>
+    <gi>
+      <title>variable name</title>
+      <p>A name given to a variable. Variable names in Python consist of a
                             sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins
                             with a letter.  In best programming practice, variable names should be
                             chosen so that they describe their use in the program, making the
                             program <em>self documenting</em>.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

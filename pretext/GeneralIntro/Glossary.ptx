@@ -1,217 +1,153 @@
-<section xml:id="general_intro_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>activecode</title>
-                    
-                        <p>A unique interpreter environment that allows Python to be executed from within a web browser.</p>
-                    
-                </gi>
-                <gi>
-                    <title>algorithm</title>
-                    
-                        <p>A general step by step process for solving a problem.</p>
-                    
-                </gi>
-                <gi>
-                    <title>bug</title>
-                    
-                        <p>An error in a program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>byte code</title>
-                    
-                        <p>An intermediate language between source code and object code. Many
+<?xml version="1.0"?>
+<section xml:id="general-intro_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>activecode</title>
+      <p>A unique interpreter environment that allows Python to be executed from within a web browser.</p>
+    </gi>
+    <gi>
+      <title>algorithm</title>
+      <p>A general step by step process for solving a problem.</p>
+    </gi>
+    <gi>
+      <title>bug</title>
+      <p>An error in a program.</p>
+    </gi>
+    <gi>
+      <title>byte code</title>
+      <p>An intermediate language between source code and object code. Many
                             modern languages first compile source code into byte code and then
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>codelens</title>
-                    
-                        <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
-                    
-                </gi>
-                <gi>
-                    <title>comment</title>
-                    
-                        <p>Information in a program that is meant for other programmers (or anyone
+    </gi>
+    <gi>
+      <title>codelens</title>
+      <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
+    </gi>
+    <gi>
+      <title>comment</title>
+      <p>Information in a program that is meant for other programmers (or anyone
                             reading the source code) and has no effect on the execution of the
                             program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>compile</title>
-                    
-                        <p>To translate a program written in a high-level language into a
+    </gi>
+    <gi>
+      <title>compile</title>
+      <p>To translate a program written in a high-level language into a
                             low-level language all at once, in preparation for later execution.</p>
-                    
-                </gi>
-                <gi>
-                    <title>debugging</title>
-                    
-                        <p>The process of finding and removing any of the three kinds of
+    </gi>
+    <gi>
+      <title>debugging</title>
+      <p>The process of finding and removing any of the three kinds of
                             programming errors.</p>
-                    
-                </gi>
-                <gi>
-                    <title>exception</title>
-                    
-                        <p>Another name for a runtime error.</p>
-                    
-                </gi>
-                <gi>
-                    <title>executable</title>
-                    
-                        <p>Another name for object code that is ready to be executed.</p>
-                    
-                </gi>
-                <gi>
-                    <title>formal language</title>
-                    
-                        <p>Any one of the languages that people have designed for specific
+    </gi>
+    <gi>
+      <title>exception</title>
+      <p>Another name for a runtime error.</p>
+    </gi>
+    <gi>
+      <title>executable</title>
+      <p>Another name for object code that is ready to be executed.</p>
+    </gi>
+    <gi>
+      <title>formal language</title>
+      <p>Any one of the languages that people have designed for specific
                             purposes, such as representing mathematical ideas or computer programs;
                             all programming languages are formal languages.</p>
-                    
-                </gi>
-                <gi>
-                    <title>high-level language</title>
-                    
-                        <p>A programming language like Python that is designed to be easy for
+    </gi>
+    <gi>
+      <title>high-level language</title>
+      <p>A programming language like Python that is designed to be easy for
                             humans to read and write.</p>
-                    
-                </gi>
-                <gi>
-                    <title>interpret</title>
-                    
-                        <p>To execute a program in a high-level language by translating it one
+    </gi>
+    <gi>
+      <title>interpret</title>
+      <p>To execute a program in a high-level language by translating it one
                             line at a time.</p>
-                    
-                </gi>
-                <gi>
-                    <title>low-level language</title>
-                    
-                        <p>A programming language that is designed to be easy for a computer to
+    </gi>
+    <gi>
+      <title>low-level language</title>
+      <p>A programming language that is designed to be easy for a computer to
                             execute; also called machine language or assembly language.</p>
-                    
-                </gi>
-                <gi>
-                    <title>natural language</title>
-                    
-                        <p>Any one of the languages that people speak that evolved naturally.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object code</title>
-                    
-                        <p>The output of the compiler after it translates the program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>parse</title>
-                    
-                        <p>To examine a program and analyze the syntactic structure.</p>
-                    
-                </gi>
-                <gi>
-                    <title>portability</title>
-                    
-                        <p>A property of a program that can run on more than one kind of computer.</p>
-                    
-                </gi>
-                <gi>
-                    <title>print function</title>
-                    
-                        <p>A function used in a program or script that causes the Python
+    </gi>
+    <gi>
+      <title>natural language</title>
+      <p>Any one of the languages that people speak that evolved naturally.</p>
+    </gi>
+    <gi>
+      <title>object code</title>
+      <p>The output of the compiler after it translates the program.</p>
+    </gi>
+    <gi>
+      <title>parse</title>
+      <p>To examine a program and analyze the syntactic structure.</p>
+    </gi>
+    <gi>
+      <title>portability</title>
+      <p>A property of a program that can run on more than one kind of computer.</p>
+    </gi>
+    <gi>
+      <title>print function</title>
+      <p>A function used in a program or script that causes the Python
                             interpreter to display a value on its output device.</p>
-                    
-                </gi>
-                <gi>
-                    <title>problem solving</title>
-                    
-                        <p>The process of formulating a problem, finding a solution, and
+    </gi>
+    <gi>
+      <title>problem solving</title>
+      <p>The process of formulating a problem, finding a solution, and
                             expressing the solution.</p>
-                    
-                </gi>
-                <gi>
-                    <title>program</title>
-                    
-                        <p>A sequence of instructions that specifies to a computer actions and
+    </gi>
+    <gi>
+      <title>program</title>
+      <p>A sequence of instructions that specifies to a computer actions and
                             computations to be performed.</p>
-                    
-                </gi>
-                <gi>
-                    <title>programming language</title>
-                    
-                        <p>A formal notation for representing solutions.</p>
-                    
-                </gi>
-                <gi>
-                    <title>Python shell</title>
-                    
-                        <p>An interactive user interface to the Python interpreter. The user of a
+    </gi>
+    <gi>
+      <title>programming language</title>
+      <p>A formal notation for representing solutions.</p>
+    </gi>
+    <gi>
+      <title>Python shell</title>
+      <p>An interactive user interface to the Python interpreter. The user of a
                             Python shell types commands at the prompt (&gt;&gt;&gt;), and presses the return
                             key to send these commands immediately to the interpreter for
                             processing.</p>
-                    
-                </gi>
-                <gi>
-                    <title>runtime error</title>
-                    
-                        <p>An error that does not occur until the program has started to execute
+    </gi>
+    <gi>
+      <title>runtime error</title>
+      <p>An error that does not occur until the program has started to execute
                             but that prevents the program from continuing.</p>
-                    
-                </gi>
-                <gi>
-                    <title>semantic error</title>
-                    
-                        <p>An error in a program that makes it do something other than what the
+    </gi>
+    <gi>
+      <title>semantic error</title>
+      <p>An error in a program that makes it do something other than what the
                             programmer intended.</p>
-                    
-                </gi>
-                <gi>
-                    <title>semantics</title>
-                    
-                        <p>The meaning of a program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>shell mode</title>
-                    
-                        <p>A style of using Python where we type expressions at the command
+    </gi>
+    <gi>
+      <title>semantics</title>
+      <p>The meaning of a program.</p>
+    </gi>
+    <gi>
+      <title>shell mode</title>
+      <p>A style of using Python where we type expressions at the command
                             prompt, and the results are shown immediately.  Contrast with
-                            <alert>source code</alert>, and see the entry under <alert>Python shell</alert>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>source code</title>
-                    
-                        <p>A program, stored in a file, in a high-level language before being compiled or interpreted.</p>
-                    
-                </gi>
-                <gi>
-                    <title>syntax</title>
-                    
-                        <p>The structure of a program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>syntax error</title>
-                    
-                        <p>An error in a program that makes it impossible to parse &#8212; and
+                            <term>source code</term>, and see the entry under <term>Python shell</term>.</p>
+    </gi>
+    <gi>
+      <title>source code</title>
+      <p>A program, stored in a file, in a high-level language before being compiled or interpreted.</p>
+    </gi>
+    <gi>
+      <title>syntax</title>
+      <p>The structure of a program.</p>
+    </gi>
+    <gi>
+      <title>syntax error</title>
+      <p>An error in a program that makes it impossible to parse &#x2014; and
                             therefore impossible to interpret.</p>
-                    
-                </gi>
-                <gi>
-                    <title>token</title>
-                    
-                        <p>One of the basic elements of the syntactic structure of a program,
+    </gi>
+    <gi>
+      <title>token</title>
+      <p>One of the basic elements of the syntactic structure of a program,
                             analogous to a word in a natural language.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

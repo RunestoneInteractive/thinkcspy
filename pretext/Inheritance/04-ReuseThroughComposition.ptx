@@ -1,15 +1,13 @@
+<?xml version="1.0"?>
 <section xml:id="inheritance_reuse-through-composition">
-        <title>Reuse Through Composition</title>
-        <p>Inheritance is not the only way to reuse code. <em>Composition</em> occurs when
+  <title>Reuse Through Composition</title>
+  <p>Inheritance is not the only way to reuse code. <em>Composition</em> occurs when
             an object stores a reference to one or more objects in one of its instance
             variables. The object is thus able to reuse code in the objects it
             embeds within itself.</p>
-        <p>For example, our LabeledPoint example could have been implemented as follows:</p>
-
-<listing xml:id="pt_composition_1">
-    <caption/>
-    <program xml:id="pt_composition_1_editor" interactive="activecode" language="python">
-        <input>
+  <p>For example, our LabeledPoint example could have been implemented as follows:</p>
+  <program xml:id="pt_composition_1" interactive="activecode" language="python">
+    <input>
 class Point:
 
     def __init__(self, initX, initY):
@@ -38,16 +36,14 @@ p = LabeledPoint(7,6,"Here")
 print(p)
 print(p.distanceFromOrigin())
         </input>
-    </program>
-</listing>
-        <p>The first thing to notice about this version of LabeledPoint
+  </program>
+  <p>The first thing to notice about this version of LabeledPoint
             does not inherit from Point. Instead, its constructor
             instantiates a Point and stores a reference to it in its <c>point</c>
             instance variable so that it can be used by the other methods.</p>
-        <p>Next, notice how the <c>distanceFromOrigin()</c> method reuses the code in
-            <c>Point` by invoking it. We say that ``LabeledPoint</c>&#8217;s <c>distanceFromOrigin()</c>
-            delegates its implementation to <c>Point</c>&#8217;s implementation.</p>
-        <p>Finally, notice how the <c>__str__()</c> method also reuses the code in
+  <p>Next, notice how the <c>distanceFromOrigin()</c> method reuses the code in
+            <c>Point` by invoking it. We say that ``LabeledPoint</c>'s <c>distanceFromOrigin()</c>
+            delegates its implementation to <c>Point</c>'s implementation.</p>
+  <p>Finally, notice how the <c>__str__()</c> method also reuses the code in
             <c>Point</c> by calling <c>str(self.point)</c>.</p>
-    </section>
-
+</section>

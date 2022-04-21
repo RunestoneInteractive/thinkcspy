@@ -1,104 +1,71 @@
-<section xml:id="gu_iand_event_driven_programming_widget-groupings">
-    <title>Widget Groupings</title>
-    <p>You will design a more user friendly interface if you group and organize
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_widget-groupings">
+  <title>Widget Groupings</title>
+  <p>You will design a more user friendly interface if you group and organize
             your widgets in a coherent design. Tkinter has four basic ways to group
             widgets. These are described in the following table. They are often referred
-            to as &#8220;container&#8221; widgets because in the widget hierarchy of a GUI program
+            to as <q>container</q> widgets because in the widget hierarchy of a GUI program
             they are the parent widget of a group of related widgets.</p>
-    <table>
-        <tabular>
-
-
-            <row header="yes">
-                <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Widget
                         </cell>
-                <cell>
+        <cell>
                             Purpose
                         </cell>
-            </row>
-
-
-            <row>
-                <cell>
-                    <c>tk.Frame</c>
-                    ,
-                    <c>ttk.Frame</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell><c>tk.Frame</c>, <c>ttk.Frame</c></cell>
+        <cell>
                             Create a container for a set of widgets to be displayed as a unit.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.LabelFrame</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.LabelFrame</c>
+        </cell>
+        <cell>
                             Group a number of related widgets using a border and a title.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.PanedWindow</c>
-                </cell>
-                <cell>
-                            Group one or more widgets into &#8220;panes&#8221;, where the &#8220;panes&#8221;
+      </row>
+      <row>
+        <cell>
+          <c>tk.PanedWindow</c>
+        </cell>
+        <cell>
+                            Group one or more widgets into <q>panes</q>, where the <q>panes</q>
                                 can be re-sized by the user by dragging separator lines.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Notebook</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Notebook</c>
+        </cell>
+        <cell>
                             A tabbed set of frames, only one of which is visible at any given time.
                         </cell>
-            </row>
-
-
-        </tabular>
-    </table>
-    <p>
-        Widgets are always organized as a hierarchy, where the main
+      </row>
+    </tabular>
+  </table>
+  <p>Widgets are always organized as a hierarchy, where the main
             application window is the root of the hierarchy. Typically, the child widgets
-            of an application window are a combination of &#8220;frames&#8221;. The &#8220;frames&#8221; hold
-            other widgets. A &#8220;frame&#8221; will not be visible until it is assigned a size
+            of an application window are a combination of <q>frames</q>. The <q>frames</q> hold
+            other widgets. A <q>frame</q> will not be visible until it is assigned a size
             and location using a layout manager. The image below shows examples of the
-            four types of widget &#8220;containers&#8221;. The &#8220;containers&#8221; in this example used a
-        <c>grid</c>
-        layout manager on a 2x2 grid.
-    </p>
-    <figure align="center" xml:id="fig-grouping-examples">
-        <image source="GUIandEventDrivenProgramming/Figures/Grouping_examples.png" width="50%" />
-        <caption>Examples of grouping widgets</caption>
-    </figure>
-    <p>
-        For the
-        <c>Frame</c>
-        and
-        <c>LabelFrame</c>
-        groups, the frame is the &#8220;parent&#8221; of the
+            four types of widget <q>containers</q>. The <q>containers</q> in this example used a
+            <c>grid</c> layout manager on a 2x2 grid.</p>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Examples of grouping widgets</caption>
+    <image source="GUIandEventDrivenProgramming/Figures/Grouping_examples.png" width="50%"/>
+  </figure>
+  <p>For the <c>Frame</c> and <c>LabelFrame</c> groups, the frame is the <q>parent</q> of the
             widgets displayed inside the frame. That is, when the buttons were created,
-            the frame was the first parameter to the
-        <c>tk.Button()</c>
-        function.
-    </p>
-    <p>
-        For the
-        <c>PanedWindow</c>
-        and
-        <c>Notebook</c>
-        groups, you use an
-        <c>.add(widget)</c>
-        function to add your widgets to the group. You are still creating a hierarchy
-            of widgets, but the syntax is different.
-    </p>
-    <p>
-        You can download and run this example program,
-        <url href="../_static/Programs/all_frame_widgets.py" visual="../_static/Programs/all_frame_widgets.py">all_frame_widgets.py</url>
-        that allows you to interact
-            with the four types of &#8220;contaners.&#8221;
-    </p>
-
-
+            the frame was the first parameter to the <c>tk.Button()</c> function.</p>
+  <p>For the <c>PanedWindow</c> and <c>Notebook</c> groups, you use an <c>.add(widget)</c>
+            function to add your widgets to the group. You are still creating a hierarchy
+            of widgets, but the syntax is different.</p>
+  <p>You can download and run this example program, <url href="../_static/Programs/all_frame_widgets.py" visual="../_static/Programs/all_frame_widgets.py">all_frame_widgets.py</url> that allows you to interact
+            with the four types of <q>contaners.</q></p>
 </section>

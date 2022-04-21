@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Inheritance</title>
-        <xi:include href='./01-PillarsOfOop.ptx' />
-        <xi:include href='./02-IntroToInheritance.ptx' />
-        <xi:include href='./03-Extending.ptx' />
-        <xi:include href='./04-ReuseThroughComposition.ptx' />
-        <xi:include href='./05-ClassDiagrams.ptx' />
-        <xi:include href='./06-CompositionVsInheritance.ptx' />
-        <xi:include href='./07-CaseStudy.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+4<title>Inheritance</title>
+4<xi:include href="./01-PillarsOfOop.ptx"/>
+4<xi:include href="./02-IntroToInheritance.ptx"/>
+4<xi:include href="./03-Extending.ptx"/>
+4<xi:include href="./04-ReuseThroughComposition.ptx"/>
+4<xi:include href="./05-ClassDiagrams.ptx"/>
+4<xi:include href="./06-CompositionVsInheritance.ptx"/>
+4<xi:include href="./07-CaseStudy.ptx"/>
+</chapter>

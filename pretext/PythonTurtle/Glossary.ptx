@@ -1,130 +1,94 @@
-<section xml:id="python_turtle_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>attribute</title>
-                    
-                        <p>Some state or value that belongs to a particular object.  For example,
+<?xml version="1.0"?>
+<section xml:id="python-turtle_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>attribute</title>
+      <p>Some state or value that belongs to a particular object.  For example,
                             tess has a color.</p>
-                    
-                </gi>
-                <gi>
-                    <title>canvas</title>
-                    
-                        <p>A surface within a window where drawing takes place.</p>
-                    
-                </gi>
-                <gi>
-                    <title>control flow</title>
-                    
-                        <p>See <em>flow of execution</em> in the next chapter.</p>
-                    
-                </gi>
-                <gi>
-                    <title>for loop</title>
-                    
-                        <p>A statement in Python for convenient repetition of statements in
+    </gi>
+    <gi>
+      <title>canvas</title>
+      <p>A surface within a window where drawing takes place.</p>
+    </gi>
+    <gi>
+      <title>control flow</title>
+      <p>See <em>flow of execution</em> in the next chapter.</p>
+    </gi>
+    <gi>
+      <title>for loop</title>
+      <p>A statement in Python for convenient repetition of statements in
                             the <em>body</em> of the loop.</p>
-                    
-                </gi>
-                <gi>
-                    <title>instance</title>
-                    
-                        <p>An object that belongs to a class.  <title_reference>tess</title_reference> and <title_reference>alex</title_reference> are different
+    </gi>
+    <gi>
+      <title>instance</title>
+      <p>An object that belongs to a class.  <title_reference>tess</title_reference> and <title_reference>alex</title_reference> are different
                             instances of the class <title_reference>Turtle</title_reference></p>
-                    
-                </gi>
-                <gi>
-                    <title>invoke</title>
-                    
-                        <p>An object has methods.  We use the verb invoke to mean <em>activate the
+    </gi>
+    <gi>
+      <title>invoke</title>
+      <p>An object has methods.  We use the verb invoke to mean <em>activate the
                                 method</em>.  Invoking a method is done by putting parentheses after the
                             method name, with some possible arguments.  So  <c>wn.exitonclick()</c> is
                             an invocation of the <c>exitonclick</c> method.</p>
-                    
-                </gi>
-                <gi>
-                    <title>iteration</title>
-                    
-                        <p>A basic building block for algorithms (programs).  It allows steps to be repeated.  Sometimes called <em>looping</em>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>loop body</title>
-                    
-                        <p>Any number of statements nested inside a loop. The nesting is indicated
+    </gi>
+    <gi>
+      <title>iteration</title>
+      <p>A basic building block for algorithms (programs).  It allows steps to be repeated.  Sometimes called <em>looping</em>.</p>
+    </gi>
+    <gi>
+      <title>loop body</title>
+      <p>Any number of statements nested inside a loop. The nesting is indicated
                             by the fact that the statements are indented under the for loop
                             statement.</p>
-                    
-                </gi>
-                <gi>
-                    <title>loop variable</title>
-                    
-                        <p>A variable used as part of a for loop. It is assigned a different value
+    </gi>
+    <gi>
+      <title>loop variable</title>
+      <p>A variable used as part of a for loop. It is assigned a different value
                             on each iteration of the loop, and is used as part of the terminating
                             condition of the loop,
                             when it can no longer get a further value.</p>
-                    
-                </gi>
-                <gi>
-                    <title>method</title>
-                    
-                        <p>A function that is attached to an object.  Invoking or activating the
+    </gi>
+    <gi>
+      <title>method</title>
+      <p>A function that is attached to an object.  Invoking or activating the
                             method causes the object to respond in some way, e.g. <c>forward</c> is
                             the method when we say <c>tess.forward(100)</c>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>module</title>
-                    
-                        <p>A file containing Python definitions and statements intended for use in
+    </gi>
+    <gi>
+      <title>module</title>
+      <p>A file containing Python definitions and statements intended for use in
                             other Python programs. The contents of a module are made available to
                             the other program by using the <em>import</em> statement.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object</title>
-                    
-                        <p>A &#8220;thing&#8221; to which a variable can refer.  This could be a screen window,
+    </gi>
+    <gi>
+      <title>object</title>
+      <p>A <q>thing</q> to which a variable can refer.  This could be a screen window,
                             or one of the turtles you have created.</p>
-                    
-                </gi>
-                <gi>
-                    <title>range</title>
-                    
-                        <p>A built-in function in Python for generating sequences of integers.  It
+    </gi>
+    <gi>
+      <title>range</title>
+      <p>A built-in function in Python for generating sequences of integers.  It
                             is especially useful when we need to write a for loop that executes a
                             fixed number of times.</p>
-                    
-                </gi>
-                <gi>
-                    <title>sequential</title>
-                    
-                        <p>The default behavior of a program.  Step by step processing of algorithm.</p>
-                    
-                </gi>
-                <gi>
-                    <title>state</title>
-                    
-                        <p>The collection of attribute values that a specific data object maintains.</p>
-                    
-                </gi>
-                <gi>
-                    <title>terminating condition</title>
-                    
-                        <p>A condition that occurs which causes a loop to stop repeating its body.
+    </gi>
+    <gi>
+      <title>sequential</title>
+      <p>The default behavior of a program.  Step by step processing of algorithm.</p>
+    </gi>
+    <gi>
+      <title>state</title>
+      <p>The collection of attribute values that a specific data object maintains.</p>
+    </gi>
+    <gi>
+      <title>terminating condition</title>
+      <p>A condition that occurs which causes a loop to stop repeating its body.
                             In the <c>for</c> loops we saw in this chapter, the terminating condition
                             has been when there are no more elements to assign to the loop variable.</p>
-                    
-                </gi>
-                <gi>
-                    <title>turtle</title>
-                    
-                        <p>A data object used to create pictures (known as turtle graphics).</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+    <gi>
+      <title>turtle</title>
+      <p>A data object used to create pictures (known as turtle graphics).</p>
+    </gi>
+  </glossary>
+</section>

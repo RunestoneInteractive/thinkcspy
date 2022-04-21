@@ -1,15 +1,13 @@
+<?xml version="1.0"?>
 <section xml:id="lists_pure-functions">
-        <title>Pure Functions</title>
-        <p>A <alert>pure function</alert> does not produce side effects. It communicates with the
+  <title>Pure Functions</title>
+  <p>A <term>pure function</term> does not produce side effects. It communicates with the
             calling program only through parameters (which it does not modify) and a return
             value. Here is the <c>doubleStuff</c> function from the previous section written as a pure function.
             To use the pure function version of <c>double_stuff</c> to modify <c>things</c>,
             you would assign the return value back to <c>things</c>.</p>
-
-<listing xml:id="ch09_mod2">
-    <caption/>
-    <program xml:id="ch09_mod2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch09_mod2" interactive="activecode" language="python">
+    <input>
 def doubleStuff(a_list):
     """ Return a new list in which contains doubles of the elements in a_list. """
     new_list = []
@@ -23,8 +21,7 @@ print(things)
 things = doubleStuff(things)
 print(things)
         </input>
-    </program>
-</listing>
-        <p>Once again, codelens helps us to see the actual references and objects as they are passed and returned.</p>
-<exercise runestone="ch09_mod3"/>    </section>
-
+  </program>
+  <p>Once again, codelens helps us to see the actual references and objects as they are passed and returned.</p>
+  <exercise runestone="ch09_mod3"/>
+</section>

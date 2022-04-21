@@ -1,34 +1,32 @@
+<?xml version="1.0"?>
 <section xml:id="lists_the-return-of-l-systems">
-        <title>The Return of L-Systems</title>
-        <p>Let&#8217;s return to the L-systems we introduced in the previous chapter and
+  <title>The Return of L-Systems</title>
+  <p>Let's return to the L-systems we introduced in the previous chapter and
             introduce a very interesting new feature that requires the use of lists.</p>
-        <p>Suppose we have the following grammar:</p>
-        <pre>X
+  <p>Suppose we have the following grammar:</p>
+  <pre>X
 X --&gt; F[-X]+X
 F --&gt; FF</pre>
-        <p>This L-system looks very similar to the old L-system except that we&#8217;ve added
-            one change.  We&#8217;ve added the characters &#8216;[&#8217; and &#8216;]&#8217;.  The meaning of these
-            characters adds a very interesting new dimension to our L-Systems.  The &#8216;[&#8217;
+  <p>This L-system looks very similar to the old L-system except that we've added
+            one change.  We've added the characters &#x2018;[' and &#x2018;]'.  The meaning of these
+            characters adds a very interesting new dimension to our L-Systems.  The &#x2018;['
             character indicates that we want to save the state of our turtle,
             namely its position and its heading so that we can come back to this position
-            later.  The &#8216;]&#8217; tells the turtle to warp to the most recently saved position.
+            later.  The &#x2018;]' tells the turtle to warp to the most recently saved position.
             The way that we will accomplish this is to use lists.  We can save the
             heading and position of the turtle as a list of 3 elements.  <c>[heading x
 y]</c>  The first index position in the list holds the heading,
             the second index position in the list holds the x coordinate,
             and the third index position holds the y coordinate.</p>
-        <p>Now, if we create an empty list and every time we see a &#8216;[&#8217; we append the
+  <p>Now, if we create an empty list and every time we see a &#x2018;[' we append the
             list that contains <c>[heading, x, y]</c> we create a history of saved places
             the turtle has been where the most recently saved location will always be at
-            the end of the list.  When we find a &#8216;]&#8217; in the string we use the pop
+            the end of the list.  When we find a &#x2018;]' in the string we use the pop
             function to remove the the most recently appended information.</p>
-        <p>Let&#8217;s modify our <c>drawLsystem</c> function to begin to implement this new
+  <p>Let's modify our <c>drawLsystem</c> function to begin to implement this new
             behavior.</p>
-
-<listing xml:id="list_lsys1">
-    <caption/>
-    <program xml:id="list_lsys1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="list_lsys1" interactive="activecode" language="python">
+    <input>
 import turtle
 
 def drawLsystem(aTurtle, instructions, angle, distance):
@@ -54,19 +52,15 @@ t = turtle.Turtle()
 inst = "FF[-F[-X]+X]+F[-X]+X"
 drawLsystem(t, inst, 60, 20)
         </input>
-    </program>
-</listing>
-        <p>When we run this example we can see that the picture is not very interesting,
+  </program>
+  <p>When we run this example we can see that the picture is not very interesting,
             but notice what gets printed out, and how the saved information about the
             turtle gets added and removed from the end of the list.  In the next example
-            we&#8217;ll make use of the information from the list to save and restore the
-            turtle&#8217;s position and heading when needed.  We&#8217;ll use a longer example here
+            we'll make use of the information from the list to save and restore the
+            turtle's position and heading when needed.  We'll use a longer example here
             so you get an idea of what the kind of drawing the L-System can really make.</p>
-
-<listing xml:id="list_lsys2">
-    <caption/>
-    <program xml:id="list_lsys2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="list_lsys2" interactive="activecode" language="python">
+    <input>
 import turtle
 
 def drawLsystem(aTurtle, instructions, angle, distance):
@@ -94,12 +88,10 @@ t.setposition(0, -200)
 t.left(90)
 drawLsystem(t, inst, 30, 2)
         </input>
-    </program>
-</listing>
-        <p>Rather than use the <c>inst</c> string supplied here, use the code from the string
+  </program>
+  <p>Rather than use the <c>inst</c> string supplied here, use the code from the string
             chapter, and write your own applyRules function to implement this L-system.
             This example only uses 6 expansions.  Try it out with a larger number of
             expansions.  You may also want to try this example with different values for
             the angle and distance parameters.</p>
-    </section>
-
+</section>

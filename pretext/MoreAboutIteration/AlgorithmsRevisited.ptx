@@ -1,43 +1,39 @@
-<section xml:id="more_about_iteration_algorithms-revisited">
-        <title>Algorithms Revisited</title>
-        <p>Newton&#8217;s method is an example of an <alert>algorithm</alert>: it is a mechanical process
+<?xml version="1.0"?>
+<section xml:id="more-about-iteration_algorithms-revisited">
+  <title>Algorithms Revisited</title>
+  <p>Newton's method is an example of an <term>algorithm</term>: it is a mechanical process
             for solving a category of problems (in this case, computing square roots).</p>
-        <p>It is not easy to define an algorithm. It might help to start with something
+  <p>It is not easy to define an algorithm. It might help to start with something
             that is not an algorithm. When you learned to multiply single-digit numbers,
             you probably memorized the multiplication table.  In effect, you memorized 100
             specific solutions. That kind of knowledge is not algorithmic.</p>
-        <p>But if you were lazy, you probably cheated by learning a few tricks.  For
+  <p>But if you were lazy, you probably cheated by learning a few tricks.  For
             example, to find the product of n and 9, you can write n - 1 as the first digit
             and 10 - n as the second digit. This trick is a general solution for
-            multiplying any single-digit number by 9. That&#8217;s an algorithm!</p>
-        <p>Similarly, the techniques you learned for addition with carrying, subtraction
+            multiplying any single-digit number by 9. That's an algorithm!</p>
+  <p>Similarly, the techniques you learned for addition with carrying, subtraction
             with borrowing, and long division are all algorithms. One of the
             characteristics of algorithms is that they do not require any intelligence to
             carry out. They are mechanical processes in which each step follows from the
             last according to a simple set of rules.</p>
-        <p>On the other hand, understanding that hard problems can be solved by step-by-step
+  <p>On the other hand, understanding that hard problems can be solved by step-by-step
             algorithmic processess is one of the major simplifying breakthroughs that has
             had enormous benefits.  So while the execution of the algorithm
             may be boring and may require no intelligence, algorithmic or computational
             thinking is having a vast impact.  It is the process of designing algorithms that is interesting,
             intellectually challenging, and a central part of what we call programming.</p>
-        <p>Some of the things that people do naturally, without difficulty or conscious
+  <p>Some of the things that people do naturally, without difficulty or conscious
             thought, are the hardest to express algorithmically.  Understanding natural
             language is a good example. We all do it, but so far no one has been able to
             explain <em>how</em> we do it, at least not in the form of a step-by-step mechanical
             algorithm.</p>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_07_03">
-    <caption/>
-    <program xml:id="scratch_07_03_editor" interactive="activecode" language="python">
-        <input>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_07_03" interactive="activecode" language="python">
+      <input>
 
 
         </input>
     </program>
-</listing>
-        </note>
-    </section>
-
+  </note>
+</section>

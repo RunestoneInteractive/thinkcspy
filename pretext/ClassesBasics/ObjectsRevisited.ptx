@@ -1,11 +1,11 @@
-<section xml:id="classes_basics_objects-revisited">
-        <title>Objects Revisited</title>
-        <p>In Python, every value is actually an object. Whether it be a turtle, a list, or even an integer, they are all objects.  Programs manipulate those objects either by performing
+<?xml version="1.0"?>
+<section xml:id="classes-basics_objects-revisited">
+  <title>Objects Revisited</title>
+  <p>In Python, every value is actually an object. Whether it be a turtle, a list, or even an integer, they are all objects.  Programs manipulate those objects either by performing
             computation with them or by asking them to perform methods.  To be more specific, we say that an object has
-            a <alert>state</alert> and a collection of <alert>methods</alert> that it can perform.  The state of an object represents those things
+            a <term>state</term> and a collection of <term>methods</term> that it can perform.  The state of an object represents those things
             that the object knows about itself.  For example, as we have seen with turtle objects, each turtle has a state consisting
-            of the turtle&#8217;s position, its color, its heading and so on.  Each turtle also has the ability to go forward, backward, or turn right or left.  Individual turtles are different in that even though they are
+            of the turtle's position, its color, its heading and so on.  Each turtle also has the ability to go forward, backward, or turn right or left.  Individual turtles are different in that even though they are
             all turtles, they differ in the specific values of the individual state attributes (maybe they are in a different location or have a different heading).</p>
-        <image source="ClassesBasics/Figures/objectpic1.png" width="50%" alt="Simple object has state and methods"/>
-    </section>
-
+  <image source="ClassesBasics/Figures/objectpic1.png" width="50%" alt="Simple object has state and methods"/>
+</section>

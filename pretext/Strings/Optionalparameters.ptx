@@ -1,13 +1,11 @@
+<?xml version="1.0"?>
 <section xml:id="strings_optional-parameters">
-        <title>Optional parameters</title>
-        <p>To find the locations of the second or third occurrence of a character in a
+  <title>Optional parameters</title>
+  <p>To find the locations of the second or third occurrence of a character in a
             string, we can modify the <c>find</c> function, adding a third parameter for the
             starting position in the search string:</p>
-
-<listing xml:id="ch08_fun4">
-    <caption/>
-    <program xml:id="ch08_fun4_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch08_fun4" interactive="activecode" language="python">
+    <input>
 def find2(astring, achar, start):
     """
     Find and return the index of achar in astring.
@@ -27,19 +25,15 @@ def find2(astring, achar, start):
 
 print(find2('banana', 'a', 2))
         </input>
-    </program>
-</listing>
-        <p>The call <c>find2('banana', 'a', 2)</c> now returns <c>3</c>, the index of the first
-            occurrence of &#8216;a&#8217; in &#8216;banana&#8217; after index 2. What does
+  </program>
+  <p>The call <c>find2('banana', 'a', 2)</c> now returns <c>3</c>, the index of the first
+            occurrence of &#x2018;a' in &#x2018;banana' after index 2. What does
             <c>find2('banana', 'n', 3)</c> return? If you said, 4, there is a good chance you
             understand how <c>find2</c> works.  Try it.</p>
-        <p>Better still, we can combine <c>find</c> and <c>find2</c> using an
-            <alert>optional parameter</alert>.</p>
-
-<listing xml:id="chp08_fun5">
-    <caption/>
-    <program xml:id="chp08_fun5_editor" interactive="activecode" language="python">
-        <input>
+  <p>Better still, we can combine <c>find</c> and <c>find2</c> using an
+            <term>optional parameter</term>.</p>
+  <program xml:id="chp08_fun5" interactive="activecode" language="python">
+    <input>
 def find3(astring, achar, start=0):
     """
     Find and return the index of achar in astring.
@@ -59,18 +53,14 @@ def find3(astring, achar, start=0):
 
 print(find3('banana', 'a', 2))
         </input>
-    </program>
-</listing>
-        <p>The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just
+  </program>
+  <p>The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just
             like <c>find2</c>, while in the call <c>find3('banana', 'a')</c>, <c>start</c> will be
-            set to the <alert>default value</alert> of <c>0</c>.</p>
-        <p>Adding another optional parameter to <c>find</c> makes it search from a starting
+            set to the <term>default value</term> of <c>0</c>.</p>
+  <p>Adding another optional parameter to <c>find</c> makes it search from a starting
             position, up to but not including the end position.</p>
-
-<listing xml:id="chp08_fun6">
-    <caption/>
-    <program xml:id="chp08_fun6_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp08_fun6" interactive="activecode" language="python">
+    <input>
 def find4(astring, achar, start=0, end=None):
     """
     Find and return the index of achar in astring.
@@ -99,13 +89,11 @@ print(find4(ss, 's', 8))
 print(find4(ss, 's', 8, 13))
 print(find4(ss, '.'))
         </input>
-    </program>
-</listing>
-        <p>The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the
+  </program>
+  <p>The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the
             caller does not supply any argument.  In the body of the function we test what <c>end</c> is
             and if the caller did not supply any argument, we reassign <c>end</c> to be the length of the string.
-            If the caller has supplied an argument for <c>end</c>, however, the caller&#8217;s value will be used in the loop.</p>
-        <p>The semantics of <c>start</c> and <c>end</c> in this function are precisely the same as they are in
+            If the caller has supplied an argument for <c>end</c>, however, the caller's value will be used in the loop.</p>
+  <p>The semantics of <c>start</c> and <c>end</c> in this function are precisely the same as they are in
             the <c>range</c> function.</p>
-    </section>
-
+</section>

@@ -1,159 +1,137 @@
+<?xml version="1.0"?>
 <section xml:id="strings_the-slice-operator">
-        <title>The Slice Operator</title>
-        <p>A substring of a string is called a <alert>slice</alert>. Selecting a slice is similar to
+  <title>The Slice Operator</title>
+  <p>A substring of a string is called a <term>slice</term>. Selecting a slice is similar to
             selecting a character:</p>
-
-<listing xml:id="chp08_slice1">
-    <caption/>
-    <program xml:id="chp08_slice1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp08_slice1" interactive="activecode" language="python">
+    <input>
 singers = "Peter, Paul, and Mary"
 print(singers[0:5])
 print(singers[7:11])
 print(singers[17:21])
         </input>
-    </program>
-</listing>
-        <p>The <title_reference>slice</title_reference> operator <c>[n:m]</c> returns the part of the string from the n&#8217;th character
-            to the m&#8217;th character, including the first but excluding the last. In other words,  start with the character at index n and
+  </program>
+  <p>The <title_reference>slice</title_reference> operator <c>[n:m]</c> returns the part of the string from the n'th character
+            to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
             go up to but do not include the character at index m.
             This
             behavior may seem counter-intuitive but if you recall the <c>range</c> function, it did not include its end
             point either.</p>
-        <p>If you omit the first index (before the colon), the slice starts at the
+  <p>If you omit the first index (before the colon), the slice starts at the
             beginning of the string. If you omit the second index, the slice goes to the
             end of the string.</p>
-        <p>There is no Index Out Of Range exception for a slice.
+  <p>There is no Index Out Of Range exception for a slice.
             A slice is forgiving and shifts any offending index to something legal.</p>
-
-<listing xml:id="chp08_slice2">
-    <caption/>
-    <program xml:id="chp08_slice2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp08_slice2" interactive="activecode" language="python">
+    <input>
 fruit = "banana"
 print(fruit[:3])
 print(fruit[3:])
 print(fruit[3:-10])
 print(fruit[3:99])
         </input>
-    </program>
-</listing>
-        <p>What do you think <c>fruit[:]</c> means?</p>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question8_5_1">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+  </program>
+  <p>What do you think <c>fruit[:]</c> means?</p>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question8_5_1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 s = "python rocks"
 print(s[3:8])
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>python</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>python</p>
-                </statement>
-                <feedback>
+        <feedback>
                     That would be s[0:6].
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>rocks</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>rocks</p>
+        </statement>
+        <feedback>
                     That would be s[7:].
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>hon r</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>hon r</p>
+        </statement>
+        <feedback>
                     Yes, start with the character at index 3 and go up to but not include the character at index 8.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Error, you cannot have two numbers inside the [ ].</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot have two numbers inside the [ ].</p>
+        </statement>
+        <feedback>
                     This is called slicing, not indexing.  It requires a start and an end.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question8_5_2">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question8_5_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 s = "python rocks"
 print(s[7:11] * 3)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>rockrockrock</p>
         </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>rockrockrock</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Yes, rock starts at 7 and goes through 10.  Repeat it 3 times.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>rock rock rock</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>rock rock rock</p>
+        </statement>
+        <feedback>
                     Repetition does not add a space.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>rocksrocksrocks</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>rocksrocksrocks</p>
+        </statement>
+        <feedback>
                     Slicing will not include the character at index 11.  Just up to it (10 in this case).
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Error, you cannot use repetition with slicing.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot use repetition with slicing.</p>
+        </statement>
+        <feedback>
                     The slice will happen first, then the repetition.  So it is ok.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_08_01">
-    <caption/>
-    <program xml:id="scratch_08_01_editor" interactive="activecode" language="python">
-        <input>
+      </choice>
+    </choices>
+  </exercise>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_08_01" interactive="activecode" language="python">
+      <input>
 
 
         </input>
     </program>
-</listing>
-        </note>
-    </section>
-
+  </note>
+</section>

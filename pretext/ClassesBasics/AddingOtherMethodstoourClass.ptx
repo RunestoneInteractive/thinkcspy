@@ -1,23 +1,21 @@
-<section xml:id="classes_basics_adding-other-methods-to-our-class">
-        <title>Adding Other Methods to our Class</title>
-        <p>The key advantage of using a class like <c>Point</c> rather than something like a simple
+<?xml version="1.0"?>
+<section xml:id="classes-basics_adding-other-methods-to-our-class">
+  <title>Adding Other Methods to our Class</title>
+  <p>The key advantage of using a class like <c>Point</c> rather than something like a simple
             tuple <c>(7, 6)</c> now becomes apparent.  We can add methods to
             the <c>Point</c> class that are sensible operations for points.  Had we chosen to use a simple
             tuple to represent the point, we would not have this capability.
             Creating a class like <c>Point</c> brings an exceptional
-            amount of &#8220;organizational power&#8221; to our programs, and to our thinking.
+            amount of <q>organizational power</q> to our programs, and to our thinking.
             We can group together the sensible operations, and the kinds of data
             they apply to, and each instance of the class can have its own state.</p>
-        <p>A <alert>method</alert> behaves like a function but it is invoked on a specific
+  <p>A <term>method</term> behaves like a function but it is invoked on a specific
             instance.  For example, with a turtle named <c>tess</c>,  <c>tess.right(90)</c> asks the <c>tess</c> object to perform its
             <c>right</c> method and turn 90 degrees.   Methods are accessed using dot notation.</p>
-        <p>Let&#8217;s add two simple methods to allow a point to give us information about its state.  The <c>getX</c> method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
+  <p>Let's add two simple methods to allow a point to give us information about its state.  The <c>getX</c> method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
             to write functions that return values.  One thing to notice is that even though the <c>getX</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.</p>
-
-<listing xml:id="chp13_classes4">
-    <caption/>
-    <program xml:id="chp13_classes4_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp13_classes4" interactive="activecode" language="python">
+    <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -37,17 +35,13 @@ p = Point(7, 6)
 print(p.getX())
 print(p.getY())
         </input>
-    </program>
-</listing>
-        <p>Note that the <c>getX</c> method simply returns the value of <c>self.x</c> from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of <c>x</c>.  Likewise, the <c>getY</c> method looks the same.</p>
-        <p>Let&#8217;s add another method, <c>distanceFromOrigin</c>, to see better how methods
+  </program>
+  <p>Note that the <c>getX</c> method simply returns the value of <c>self.x</c> from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of <c>x</c>.  Likewise, the <c>getY</c> method looks the same.</p>
+  <p>Let's add another method, <c>distanceFromOrigin</c>, to see better how methods
             work.  This method will again not need any additional information to do its work.
             It will perform a more complex task.</p>
-
-<listing xml:id="chp13_classes5">
-    <caption/>
-    <program xml:id="chp13_classes5_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp13_classes5" interactive="activecode" language="python">
+    <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -69,10 +63,8 @@ class Point:
 p = Point(7, 6)
 print(p.distanceFromOrigin())
         </input>
-    </program>
-</listing>
-        <p>Notice that the caller of <c>distanceFromOrigin</c> does not explicitly
+  </program>
+  <p>Notice that the caller of <c>distanceFromOrigin</c> does not explicitly
             supply an argument to match the <c>self</c> parameter.  This is true of all method calls. The definition will always
             have one additional parameter as compared to the invocation.</p>
-    </section>
-
+</section>

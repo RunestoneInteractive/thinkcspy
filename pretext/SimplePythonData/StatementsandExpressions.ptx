@@ -1,76 +1,37 @@
-<section xml:id="simple_python_data_statements-and-expressions">
-    <title>Statements and Expressions</title>
-
-    <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto" />
-    <p>
-        A
-        <alert>statement</alert>
-        is an instruction that the Python interpreter can execute. We
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_statements-and-expressions">
+  <title>Statements and Expressions</title>
+  <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto"/>
+  <p>A <term>statement</term> is an instruction that the Python interpreter can execute. We
             have only seen the assignment statement so far.  Some other kinds of statements
-            that we&#8217;ll see shortly are
-        <c>while</c>
-        statements,
-        <c>for</c>
-        statements,
-        <c>if</c>
-        statements,  and
-        <c>import</c>
-        statements.  (There are other kinds too!)
-    </p>
-
-
-    <p xml:id="simple_python_data_index-0">
-        An
-        <alert>expression</alert>
-        is a combination of values, variables, operators, and calls
-            to functions. Expressions need to be evaluated.  If you ask Python to
-        <c>print</c>
-        an expression, the interpreter
-        <alert>evaluates</alert>
-        the expression and displays the result.
-    </p>
-
-    <listing xml:id="ch02_13">
-        <caption />
-        <program xml:id="ch02_13_editor" interactive="activecode" language="python">
-            <input>
+            that we'll see shortly are <c>while</c> statements, <c>for</c> statements, <c>if</c>
+            statements,  and <c>import</c> statements.  (There are other kinds too!)</p>
+  <p xml:id="simple-python-data_index-0">An <term>expression</term> is a combination of values, variables, operators, and calls
+            to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
+            <term>evaluates</term> the expression and displays the result.</p>
+  <program xml:id="ch02_13" interactive="activecode" language="python">
+    <input>
 print(1 + 1)
 print(len("hello"))
         </input>
-        </program>
-    </listing>
-    <p>
-        In this example
-        <c>len</c>
-        is a built-in Python function that returns the number
-            of characters in a string.  We&#8217;ve previously seen the
-        <c>print</c>
-        and the
-        <c>type</c>
-        functions, so this is our third example of a function!
-    </p>
-    <p>
-        The
-        <em>evaluation of an expression</em>
-        produces a value, which is why expressions
+  </program>
+  <p>In this example <c>len</c> is a built-in Python function that returns the number
+            of characters in a string.  We've previously seen the <c>print</c> and the
+            <c>type</c> functions, so this is our third example of a function!</p>
+  <p>The <em>evaluation of an expression</em> produces a value, which is why expressions
             can appear on the right hand side of assignment statements. A value all by
-            itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.
-    </p>
-
-    <listing xml:id="ch02_14">
-        <caption />
-        <program xml:id="ch02_14_editor" interactive="activecode" language="python">
-            <input>
+            itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.</p>
+  <program xml:id="ch02_14" interactive="activecode" language="python">
+    <input>
 y = 3.14
 x = len("hello")
 print(x)
 print(y)
         </input>
-        </program>
-    </listing>
-    <p>If we take a look at this same example in the Python shell, we will see one of the distinct differences between statements and expressions.</p>
-    <program language="python">
-        <input>
+  </program>
+  <p>If we take a look at this same example in the Python shell, we will see one of the distinct differences between statements and expressions.</p>
+  <program language="python">
+    <input>
 &gt;&gt;&gt; y = 3.14
 &gt;&gt;&gt; x = len("hello")
 &gt;&gt;&gt; print(x)
@@ -81,24 +42,8 @@ print(y)
 3.14
 &gt;&gt;&gt;
 </input>
-    </program>
-    <p>
-        Note that when we enter the assignment statement,
-        <c>y = 3.14</c>
-        , only the prompt is returned.  There is no value.  This
-            is due to the fact that statements, such as the assignment statement, do not return a value.  They are simply executed.
-    </p>
-    <p>
-        On the other hand, the result of executing the assignment statement is the creation of a reference from a variable,
-        <c>y</c>
-        , to a value,
-        <c>3.14</c>
-        .  When we execute the print function working on
-        <c>y</c>
-        , we see the value that y is referring to.  In fact, evaluating
-        <c>y</c>
-        by itself results in the same response.
-    </p>
-
-
+  </program>
+  <p>Note that when we enter the assignment statement, <c>y = 3.14</c>, only the prompt is returned.  There is no value.  This
+            is due to the fact that statements, such as the assignment statement, do not return a value.  They are simply executed.</p>
+  <p>On the other hand, the result of executing the assignment statement is the creation of a reference from a variable, <c>y</c>, to a value, <c>3.14</c>.  When we execute the print function working on <c>y</c>, we see the value that y is referring to.  In fact, evaluating <c>y</c> by itself results in the same response.</p>
 </section>

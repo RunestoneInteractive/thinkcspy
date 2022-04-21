@@ -1,57 +1,41 @@
-<section xml:id="gu_iand_event_driven_programming_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>icon</title>
-                    
-                        <p>A small picture that represents some functionality in a computer
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>icon</title>
+      <p>A small picture that represents some functionality in a computer
                             program. A user clicks on an icon to cause an action to be performed
                             by a program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>widget</title>
-                    
-                        <p>A visual element of a graphical user interface that allows a user to
+    </gi>
+    <gi>
+      <title>widget</title>
+      <p>A visual element of a graphical user interface that allows a user to
                             give commands to an executing program. Example widgets include a
                             <c>command button</c>, a <c>slider bar</c>, or a <c>list box</c>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>graphical user interface</title>
-                    
-                        <p>A user interacts with a computer program by pointing, clicking, and
+    </gi>
+    <gi>
+      <title>graphical user interface</title>
+      <p>A user interacts with a computer program by pointing, clicking, and
                             dragging icons and widgets in a window on a computer screen.</p>
-                    
-                </gi>
-                <gi>
-                    <title>GUI</title>
-                    
-                        <p>An abbreviation for a &#8220;graphical user interface.&#8221;</p>
-                    
-                </gi>
-                <gi>
-                    <title>event-driven programming</title>
-                    
-                        <p>A program that only executes tasks when a user specially requests a task.</p>
-                    
-                </gi>
-                <gi>
-                    <title>event loop</title>
-                    
-                        <p>A built-in function of a GUI toolkit that &#8220;listens&#8221; for operating
+    </gi>
+    <gi>
+      <title>GUI</title>
+      <p>An abbreviation for a <q>graphical user interface.</q></p>
+    </gi>
+    <gi>
+      <title>event-driven programming</title>
+      <p>A program that only executes tasks when a user specially requests a task.</p>
+    </gi>
+    <gi>
+      <title>event loop</title>
+      <p>A built-in function of a GUI toolkit that <q>listens</q> for operating
                             system events and then calls an appropriate event-handler for each event.</p>
-                    
-                </gi>
-                <gi>
-                    <title>event-handler</title>
-                    
-                        <p>A function that processes an event. These functions are also called
+    </gi>
+    <gi>
+      <title>event-handler</title>
+      <p>A function that processes an event. These functions are also called
                             <c>callback functions</c>.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

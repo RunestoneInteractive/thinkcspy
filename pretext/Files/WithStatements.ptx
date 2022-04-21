@@ -1,30 +1,26 @@
+<?xml version="1.0"?>
 <section xml:id="files_with-statements">
-        <title>With Statements</title>
-        <note>
-            <p>This section is a bit of an advanced topic and can be easily skipped.  But with statements are becoming very common and it doesn&#8217;t hurt to know about them in case you run into one in the wild.</p>
-        </note>
-        <p>Now that you have seen and practiced a bit with opening and closing files, there is another mechanism that Python provides for us that cleans up the often forgotten close.  Forgetting to close a file does not necessarily cause a runtime error in the kinds of programs you typically write in an introductory CS course.  However if you are writing a program that may run for days or weeks at a time that does a lot of file reading and writing you may run into trouble.</p>
-        <p>In version 2.5 Python introduced the concept of a context manager.  The context manager automates the process of doing common operations at the start of some task, as well as automating certain operations at the end of some task.  In the context of reading and writing a file, the normal operation is to open the file and assign it to a variable.  At the end of working with a file the common operation is to make sure that file is closed.</p>
-        <p>The Python with statement makes using context managers easy.  The general form of a with statement is:</p>
-        <pre>with &lt;create some object that understands context&gt; as &lt;some name&gt;:
+  <title>With Statements</title>
+  <note>
+    <p>This section is a bit of an advanced topic and can be easily skipped.  But with statements are becoming very common and it doesn't hurt to know about them in case you run into one in the wild.</p>
+  </note>
+  <p>Now that you have seen and practiced a bit with opening and closing files, there is another mechanism that Python provides for us that cleans up the often forgotten close.  Forgetting to close a file does not necessarily cause a runtime error in the kinds of programs you typically write in an introductory CS course.  However if you are writing a program that may run for days or weeks at a time that does a lot of file reading and writing you may run into trouble.</p>
+  <p>In version 2.5 Python introduced the concept of a context manager.  The context manager automates the process of doing common operations at the start of some task, as well as automating certain operations at the end of some task.  In the context of reading and writing a file, the normal operation is to open the file and assign it to a variable.  At the end of working with a file the common operation is to make sure that file is closed.</p>
+  <p>The Python with statement makes using context managers easy.  The general form of a with statement is:</p>
+  <pre>with &lt;create some object that understands context&gt; as &lt;some name&gt;:
     do some stuff with the object
     ...</pre>
-        <p>When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.</p>
-        <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
+  <p>When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.</p>
+  <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
         </DataFileNode>
-
-<listing xml:id="with_ex1">
-    <caption/>
-    <program xml:id="with_ex1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="with_ex1" interactive="activecode" language="python">
+    <input>
 with open('mydata.txt') as md:
     print(md)
     for line in md:
         print(line)
 print(md)
         </input>
-    </program>
-</listing>
-        <p>The first line of the <title_reference>with</title_reference> statement opens the file and assigns it to <title_reference>md</title_reference>  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
-    </section>
-
+  </program>
+  <p>The first line of the <title_reference>with</title_reference> statement opens the file and assigns it to <title_reference>md</title_reference>  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+</section>

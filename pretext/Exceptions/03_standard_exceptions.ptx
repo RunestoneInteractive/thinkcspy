@@ -1,367 +1,345 @@
+<?xml version="1.0"?>
 <section xml:id="exceptions_standard-exceptions">
-        <title>Standard Exceptions</title>
-        <p>Most of the standard <em>exceptions</em> built into Python are listed below.
+  <title>Standard Exceptions</title>
+  <p>Most of the standard <em>exceptions</em> built into Python are listed below.
             They are organized into related groups based on the types of issues they deal with.</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Language Exceptions
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             StandardError
                         </cell>
-                        <cell>
+        <cell>
                             Base class for all built-in exceptions except
                                 StopIteration and SystemExit.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             ImportError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an import statement fails.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             SyntaxError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when there is an error in Python syntax.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             IndentationError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when indentation is not specified properly.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             NameError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an identifier is not found in the local
                                 or global namespace.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             UnboundLocalError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when trying to access a local variable in a
                                 function or method but no value has been assigned to it.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             TypeError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an operation or function is attempted that
                                 is invalid for the specified data type.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             LookupError
                         </cell>
-                        <cell>
+        <cell>
                             Base class for all lookup errors.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             IndexError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an index is not found in a sequence.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             KeyError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the specified key is not found in the dictionary.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             ValueError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the built-in function for a data type has
                                 the valid type of arguments, but the arguments have
                                 invalid values specified.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             RuntimeError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when a generated error does not fall into any category.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             MemoryError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when a operation runs out of memory.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             RecursionError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the maximum recursion depth has been exceeded.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             SystemError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the interpreter finds an internal problem,
                                 but when this error is encountered the Python interpreter
                                 does not exit.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+      </row>
+    </tabular>
+  </table>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Math Exceptions
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             ArithmeticError
                         </cell>
-                        <cell>
+        <cell>
                             Base class for all errors that occur for numeric calculation.
-                                You know a math error occurred, but you don&#8217;t know the
+                                You know a math error occurred, but you don't know the
                                 specific error.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             OverflowError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when a calculation exceeds maximum limit for a
                                 numeric type.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             FloatingPointError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when a floating point calculation fails.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             ZeroDivisonError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when division or modulo by zero takes place for
                                 all numeric types.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+      </row>
+    </tabular>
+  </table>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             I/O Exceptions
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             FileNotFoundError
                         </cell>
-                        <cell>
-                            Raised when a file or directory is requested but doesn&#8217;t exist.
+        <cell>
+                            Raised when a file or directory is requested but doesn't exist.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             IOError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an input/ output operation fails, such as
                                 the print statement or the open() function when trying
                                 to open a file that does not exist. Also raised for
                                 operating system-related errors.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             PermissionError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when trying to run an operation without the
                                 adequate access rights.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             EOFError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when there is no input from either the raw_input()
                                 or input() function and the end of file is reached.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             KeyboardInterrupt
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the user interrupts program execution,
                                 usually by pressing Ctrl+c.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+      </row>
+    </tabular>
+  </table>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Other Exceptions
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             Exception
                         </cell>
-                        <cell>
+        <cell>
                             Base class for all exceptions. This catches most
                                 exception messages.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             StopIteration
                         </cell>
-                        <cell>
+        <cell>
                             Raised when the next() method of an iterator
                                 does not point to any object.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             AssertionError
                         </cell>
-                        <cell>
+        <cell>
                             Raised in case of failure of the Assert statement.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             SystemExit
                         </cell>
-                        <cell>
+        <cell>
                             Raised when Python interpreter is quit by using the
                                 sys.exit() function. If not handled in the code, it
                                 causes the interpreter to exit.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             OSError
                         </cell>
-                        <cell>
+        <cell>
                             Raises for operating system related errors.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             EnvironmentError
                         </cell>
-                        <cell>
+        <cell>
                             Base class for all exceptions that occur outside the
                                 Python environment.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             AttributeError
                         </cell>
-                        <cell>
+        <cell>
                             Raised in case of failure of an attribute reference
                                 or assignment.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             NotImplementedError
                         </cell>
-                        <cell>
+        <cell>
                             Raised when an abstract method that needs to be
                                 implemented in an inherited class is not actually implemented.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>All exceptions are objects. The classes that define the objects are organized
+      </row>
+    </tabular>
+  </table>
+  <p>All exceptions are objects. The classes that define the objects are organized
             in a hierarchy, which is shown below. This is important because the parent
             class of a set of related exceptions will catch all exception messages for
             itself and its child exceptions. For example, an <c>ArithmeticError</c>
             exception will catch itself and all <c>FloatingPointError</c>, <c>OverflowError</c>,
             and <c>ZeroDivisionError</c> exceptions.</p>
-        <program language="Python"><input>
+  <program language="Python">
+    <input>
 BaseException
  +-- SystemExit
  +-- KeyboardInterrupt
@@ -425,8 +403,6 @@ BaseException
            +-- UnicodeWarning
            +-- BytesWarning
            +-- ResourceWarning
-</input></program>
-        
-        
-    </section>
-
+</input>
+  </program>
+</section>

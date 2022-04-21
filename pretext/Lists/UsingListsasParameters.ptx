@@ -1,18 +1,16 @@
+<?xml version="1.0"?>
 <section xml:id="lists_using-lists-as-parameters">
-        <title>Using Lists as Parameters</title>
-        <p>Functions which take lists as arguments and change them during execution are
-            called <alert>modifiers</alert> and the changes they make are called <alert>side effects</alert>.
+  <title>Using Lists as Parameters</title>
+  <p>Functions which take lists as arguments and change them during execution are
+            called <term>modifiers</term> and the changes they make are called <term>side effects</term>.
             Passing a list as an argument actually passes a reference to the list, not a
             copy of the list. Since lists are mutable, changes made to the
             elements referenced by the parameter change
             the same list that the argument is referencing.
             For example, the function below takes a list as an
             argument and multiplies each element in the list by 2:</p>
-
-<listing xml:id="chp09_parm1">
-    <caption/>
-    <program xml:id="chp09_parm1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp09_parm1" interactive="activecode" language="python">
+    <input>
 def doubleStuff(aList):
     """ Overwrite each element in aList with double its value. """
     for position in range(len(aList)):
@@ -23,17 +21,13 @@ print(things)
 doubleStuff(things)
 print(things)
         </input>
-    </program>
-</listing>
-        <p>The parameter <c>aList</c> and the variable <c>things</c> are aliases for the
+  </program>
+  <p>The parameter <c>aList</c> and the variable <c>things</c> are aliases for the
             same object.</p>
-        <image source="Lists/Figures/references4.png" width="50%" alt="State snapshot for multiple references to a list as a parameter"/>
-        <p>Since the list object is shared by two references, there is only one copy.
+  <image source="Lists/Figures/references4.png" width="50%" alt="State snapshot for multiple references to a list as a parameter"/>
+  <p>Since the list object is shared by two references, there is only one copy.
             If a function modifies the elements of a list parameter, the caller sees the change since the change
             is occurring to the original.</p>
-        <p>This can be easily seen in codelens.  Note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
-<exercise runestone="chp09_parm1_trace"/>        
-        
-        
-    </section>
-
+  <p>This can be easily seen in codelens.  Note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
+  <exercise runestone="chp09_parm1_trace"/>
+</section>

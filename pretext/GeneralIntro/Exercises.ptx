@@ -1,5 +1,5 @@
-<exercises xml:id="general_intro_exercises">
-        <title>Exercises</title>
-        <p>There are not currently any exercises for this chapter.  It is included here as a subchapter for consistency with other chapters.</p>
-    </exercises>
-
+<?xml version="1.0"?>
+<exercises xml:id="general-intro_exercises">
+  <title>Exercises</title>
+  <p>There are not currently any exercises for this chapter.  It is included here as a subchapter for consistency with other chapters.</p>
+</exercises>

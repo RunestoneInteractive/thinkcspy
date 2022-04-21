@@ -1,5 +1,5 @@
+<?xml version="1.0"?>
 <exercises xml:id="exceptions_exercises">
-        <title>Exercises</title>
-        <p>Write a function named <c>readposint</c> that uses the <c>input</c> dialog to prompt the user for a positive integer and then checks the input to confirm that it meets the requirements. It should be able to handle inputs that cannot be converted to <c>int</c>, as well as negative <c>int</c>, and edge cases (e.g. when the user closes the dialog, or does not enter anything at all.)</p>
-    </exercises>
-
+  <title>Exercises</title>
+  <p>Write a function named <c>readposint</c> that uses the <c>input</c> dialog to prompt the user for a positive integer and then checks the input to confirm that it meets the requirements. It should be able to handle inputs that cannot be converted to <c>int</c>, as well as negative <c>int</c>, and edge cases (e.g. when the user closes the dialog, or does not enter anything at all.)</p>
+</exercises>

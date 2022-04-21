@@ -1,272 +1,192 @@
-<section xml:id="gu_iand_event_driven_programming_gui-widgets">
-    <title>GUI Widgets</title>
-    <p>
-        As we discussed in the introduction, a GUI program allows a user
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_gui-widgets">
+  <title>GUI Widgets</title>
+  <p>As we discussed in the introduction, a GUI program allows a user
             to interact with a computer program using a pointing device that manipulates
-            small pictures called
-        <c>icons</c>
-        or
-        <c>widgets</c>
-        . The first task of a GUI
-            program is to create the widgets needed for a program&#8217;s interface. Each widget
+            small pictures called <c>icons</c> or <c>widgets</c>. The first task of a GUI
+            program is to create the widgets needed for a program's interface. Each widget
             is designed for specific purposes and your program will be more
-            user friendly if you use each widget according to its intended purpose.
-    </p>
-    <p>
-        Widgets are basically images on a computer screen and they have a
-            &#8220;look-and-feel&#8221; depending on the details of how the image is drawn.
-            The &#8220;look-and-feel&#8221; of a widget is typically controlled by the operating system.
+            user friendly if you use each widget according to its intended purpose.</p>
+  <p>Widgets are basically images on a computer screen and they have a
+            <q>look-and-feel</q> depending on the details of how the image is drawn.
+            The <q>look-and-feel</q> of a widget is typically controlled by the operating system.
             For example, GUI programs on a Macintosh computer typically look different from
-            programs on a Microsoft Windows computer. The
-        <c>tkinter</c>
-        module implements
-            two versions of widgets: one is &#8220;generic,&#8221; which makes widgets look the same
+            programs on a Microsoft Windows computer. The <c>tkinter</c> module implements
+            two versions of widgets: one is <q>generic,</q> which makes widgets look the same
             regardless of what computer your program is running on, and the other
-            implements widgets that emulate a computer&#8217;s &#8220;look-and-feel&#8221;.
-            How you import the
-        <c>tkinter</c>
-        module determines which widgets are defined.
+            implements widgets that emulate a computer's <q>look-and-feel</q>.
+            How you import the <c>tkinter</c> module determines which widgets are defined.
             Using the import statements shown below, the standard convention uses the
-            name
-        <c>tk</c>
-        to access the &#8220;generic&#8221; widgets and the name
-        <c>ttk</c>
-        to access
-            the stylized, &#8220;look-and-feel&#8221; widgets. You always need to import the
-        <c>tk</c>
-        functionality because that allows you to create an application
-            window. You can import the
-        <c>ttk</c>
-        functionality if you want &#8220;look-and-feel&#8221;
-            widgets. You can inter-mix the
-        <c>tk</c>
-        and
-        <c>ttk</c>
-        widgets in an interface
-            if you so choose.
-    </p>
-    <program language="python">
-        <input>
+            name <c>tk</c> to access the <q>generic</q> widgets and the name <c>ttk</c> to access
+            the stylized, <q>look-and-feel</q> widgets. You always need to import the
+            <c>tk</c> functionality because that allows you to create an application
+            window. You can import the <c>ttk</c> functionality if you want <q>look-and-feel</q>
+            widgets. You can inter-mix the <c>tk</c> and <c>ttk</c> widgets in an interface
+            if you so choose.</p>
+  <program language="python">
+    <input>
 # To use the "generic" widgets
 import tkinter as tk
 
 # To use the stylized, "look-and-feel" widgets
 from tkinter import ttk
 </input>
-    </program>
-    <p>
-        The following two charts list the standard, pre-defined widgets in the
-        <c>tkinter</c>
-        module.
-    </p>
-    <p>
-        The following widgets are used for user input. In some cases you have a
-            choice between the
-        <c>tk</c>
-        and
-        <c>ttk</c>
-        versions. In other cases you must
-            use the
-        <c>tk</c>
-        version because the equivalent
-        <c>ttk</c>
-        versions don&#8217;t exist.
-    </p>
-    <table>
-        <tabular>
-
-
-            <row header="yes">
-                <cell>
+  </program>
+  <p>The following two charts list the standard, pre-defined widgets in the
+            <c>tkinter</c> module.</p>
+  <p>The following widgets are used for user input. In some cases you have a
+            choice between the <c>tk</c> and <c>ttk</c> versions. In other cases you must
+            use the <c>tk</c> version because the equivalent <c>ttk</c> versions don't exist.</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Widget
                         </cell>
-                <cell>
+        <cell>
                             Purpose
                         </cell>
-            </row>
-
-
-            <row>
-                <cell>
-                    <c>tk.Button</c>
-                    ,
-                    <c>ttk.Button</c>
-                </cell>
-                <cell>
-                            Execute a specific task; a &#8220;do this now&#8221; command.
+      </row>
+      <row>
+        <cell><c>tk.Button</c>, <c>ttk.Button</c></cell>
+        <cell>
+                            Execute a specific task; a <q>do this now</q> command.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Menu</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>tk.Menu</c>
+        </cell>
+        <cell>
                             Implements toplevel, pulldown, and popup menus.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Menubutton</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Menubutton</c>
+        </cell>
+        <cell>
                             Displays popup or pulldown menu items when activated.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.OptionMenu</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>tk.OptionMenu</c>
+        </cell>
+        <cell>
                             Creates a popup menu, and a button to display it.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Entry</c>
-                    ,
-                    <c>ttk.Entry</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell><c>tk.Entry</c>, <c>ttk.Entry</c></cell>
+        <cell>
                             Enter one line of text.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Text</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>tk.Text</c>
+        </cell>
+        <cell>
                             Display and edit formatted text, possibly with multiple lines.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Checkbutton</c>
-                    ,
-                    <c>ttk.Checkbutton</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell><c>tk.Checkbutton</c>, <c>ttk.Checkbutton</c></cell>
+        <cell>
                             Set on-off, True-False selections.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Radiobutton</c>
-                    ,
-                    <c>ttk.Radiobutton</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell><c>tk.Radiobutton</c>, <c>ttk.Radiobutton</c></cell>
+        <cell>
                             Allow one-of-many selections.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Listbox</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>tk.Listbox</c>
+        </cell>
+        <cell>
                             Choose one or more alternatives from a list.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Combobox</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Combobox</c>
+        </cell>
+        <cell>
                             Combines a text field with a pop-down list of values.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Scale</c>
-                    ,
-                    <c>ttk.Scale</c>
-                </cell>
-                <cell>
-                            Select a numerical value by moving a &#8220;slider&#8221; along a scale.
+      </row>
+      <row>
+        <cell><c>tk.Scale</c>, <c>ttk.Scale</c></cell>
+        <cell>
+                            Select a numerical value by moving a <q>slider</q> along a scale.
                         </cell>
-            </row>
-
-
-        </tabular>
-    </table>
-    <p>
-        The following figure shows examples of these widgets. You can download
-            and run this python program,
-        <url href="../_static/Programs/all_user_input_widgets.py" visual="../_static/Programs/all_user_input_widgets.py">all_user_input_widgets.py</url>
-        , to interact with the widgets.
-    </p>
-    <figure align="center" xml:id="fig-all-user-input-widgets">
-        <image source="GUIandEventDrivenProgramming/Figures/All_user_input_widgets.png" width="50%" />
-        <caption>Examples of user input widgets</caption>
-    </figure>
-    <p>
-        The following
-        <c>widgets</c>
-        display information to a user, but have no user interaction:
-    </p>
-    <table>
-        <tabular>
-
-
-            <row header="yes">
-                <cell>
+      </row>
+    </tabular>
+  </table>
+  <p>The following figure shows examples of these widgets. You can download
+            and run this python program, <url href="../_static/Programs/all_user_input_widgets.py" visual="../_static/Programs/all_user_input_widgets.py">all_user_input_widgets.py</url>, to interact with the widgets.</p>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Examples of user input widgets</caption>
+    <image source="GUIandEventDrivenProgramming/Figures/All_user_input_widgets.png" width="50%"/>
+  </figure>
+  <p>The following <c>widgets</c> display information to a user, but have no user interaction:</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Widget
                         </cell>
-                <cell>
+        <cell>
                             Purpose
                         </cell>
-            </row>
-
-
-            <row>
-                <cell>
-                    <c>tk.Label</c>
-                    ,
-                    <c>ttk.Label</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell><c>tk.Label</c>, <c>ttk.Label</c></cell>
+        <cell>
                             Display static text or an image.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>tk.Message</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>tk.Message</c>
+        </cell>
+        <cell>
                             Display static multi-line text.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Separator</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Separator</c>
+        </cell>
+        <cell>
                             Displays a horizontal or vertical separator bar.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Progressbar</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Progressbar</c>
+        </cell>
+        <cell>
                             Shows the status of a long-running operation.
                         </cell>
-            </row>
-            <row>
-                <cell>
-                    <c>ttk.Treeview</c>
-                </cell>
-                <cell>
+      </row>
+      <row>
+        <cell>
+          <c>ttk.Treeview</c>
+        </cell>
+        <cell>
                             Displays a hierarchical collection of items.
                         </cell>
-            </row>
-
-
-        </tabular>
-    </table>
-    <p>You do not need to memorize the above lists, but you should probably re-read
+      </row>
+    </tabular>
+  </table>
+  <p>You do not need to memorize the above lists, but you should probably re-read
             the lists again so that you are familiar with what is possible in a
             TKinter GUI interface. (Note that the TKinter module is customizable, which
             means that you can create your own widgets, but that is beyond what we will
             study in these lessons.)</p>
 </section>
-    

@@ -1,82 +1,60 @@
-<section xml:id="classes_basics_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>attribute</title>
-                    
-                        <p>One of the named data items that makes up an instance.</p>
-                    
-                </gi>
-                <gi>
-                    <title>class</title>
-                    
-                        <p>A class can be thought of as a
+<?xml version="1.0"?>
+<section xml:id="classes-basics_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>attribute</title>
+      <p>One of the named data items that makes up an instance.</p>
+    </gi>
+    <gi>
+      <title>class</title>
+      <p>A class can be thought of as a
                             template for the objects that are instances of it.
                             It defines a data type.
                             A class can be provided by the Python system or be user-defined.</p>
-                    
-                </gi>
-                <gi>
-                    <title>constructor</title>
-                    
-                        <p>Every class has a &#8220;factory&#8221;, called by the same name as the class, for
+    </gi>
+    <gi>
+      <title>constructor</title>
+      <p>Every class has a <q>factory</q>, called by the same name as the class, for
                             making new instances.  If the class has an <em>initializer method</em>, this method
                             is used to get the attributes (i.e. the state) of the new object properly set up.</p>
-                    
-                </gi>
-                <gi>
-                    <title>initializer method</title>
-                    
-                        <p>A special method in Python (called <c>__init__</c>)
-                            that is invoked automatically to set a newly-created object&#8217;s
+    </gi>
+    <gi>
+      <title>initializer method</title>
+      <p>A special method in Python (called <c>__init__</c>)
+                            that is invoked automatically to set a newly-created object's
                             attributes to their initial (factory-default) state.</p>
-                    
-                </gi>
-                <gi>
-                    <title>instance</title>
-                    
-                        <p>An object whose type is of some class.  Instance and object are used
+    </gi>
+    <gi>
+      <title>instance</title>
+      <p>An object whose type is of some class.  Instance and object are used
                             interchangeably.</p>
-                    
-                </gi>
-                <gi>
-                    <title>instantiate</title>
-                    
-                        <p>To create an instance of a class, and to run its initializer.</p>
-                    
-                </gi>
-                <gi>
-                    <title>method</title>
-                    
-                        <p>A function that is defined inside a class definition and is invoked on
+    </gi>
+    <gi>
+      <title>instantiate</title>
+      <p>To create an instance of a class, and to run its initializer.</p>
+    </gi>
+    <gi>
+      <title>method</title>
+      <p>A function that is defined inside a class definition and is invoked on
                             instances of that class.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object</title>
-                    
-                        <p>A compound form of data that is often used to model a thing or concept in
+    </gi>
+    <gi>
+      <title>object</title>
+      <p>A compound form of data that is often used to model a thing or concept in
                             the real world.  It bundles together the data and the operations that
                             are relevant for that thing or concept. It has the type of its defining class.
                             Instance and object are used interchangeably.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object-oriented programming</title>
-                    
-                        <p>A powerful style of programming in which data and the operations
+    </gi>
+    <gi>
+      <title>object-oriented programming</title>
+      <p>A powerful style of programming in which data and the operations
                             that manipulate it are organized into classes and methods.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object-oriented language</title>
-                    
-                        <p>A language that provides features, such as user-defined classes and
+    </gi>
+    <gi>
+      <title>object-oriented language</title>
+      <p>A language that provides features, such as user-defined classes and
                             inheritance, that facilitate object-oriented programming.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

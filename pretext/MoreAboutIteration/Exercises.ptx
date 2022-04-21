@@ -1,21 +1,19 @@
-<exercises xml:id="more_about_iteration_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="ex_7_7"><statement>
-                    <p>Add a print statement to Newton&#8217;s <c>sqrt</c> function that
+<?xml version="1.0"?>
+<exercises xml:id="more-about-iteration_exercises">
+  <title>Exercises</title>
+  <exercise xml:id="ex_7_7">
+    <statement>
+      <p>Add a print statement to Newton's <c>sqrt</c> function that
                         prints out <c>better</c> each time it is calculated. Call your modified
                         function with 25 as an argument and record the results.</p>
-
-    
-    
-    <program xml:id="ex_7_7_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_7_editor">
+      <input>
 def newtonSqrt(n):
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q1_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q1_answer" language="python">
         <input>
 def newtonSqrt(n):
     approx = 0.5 * n
@@ -29,29 +27,23 @@ def newtonSqrt(n):
 
 print("Final approx:", newtonSqrt(25))
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_8">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_8">
     <statement>
-            <p>Write a function <c>print_triangular_numbers(n)</c> that prints out the first
+      <p>Write a function <c>print_triangular_numbers(n)</c> that prints out the first
                 n triangular numbers. A call to <c>print_triangular_numbers(5)</c> would
                 produce the following output:</p>
-            <pre>1       1
+      <pre>1       1
 2       3
 3       6
 4       10
 5       15</pre>
-            <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
-
+      <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
     </statement>
     <program xml:id="ex_7_8_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
 
 Write a function ``print_triangular_numbers(n)`` that prints out the first
@@ -70,18 +62,15 @@ def print_triangular_numbers(n):
     # your code here
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_9"><statement>
-                    <p>Write a function, <c>is_prime</c>, that takes a single integer argument
+  </exercise>
+  <exercise xml:id="ex_7_9">
+    <statement>
+      <p>Write a function, <c>is_prime</c>, that takes a single integer argument
                         and returns <c>True</c> when the argument is a <em>prime number</em> and <c>False</c>
                         otherwise.</p>
-
-    
-    
-    <program xml:id="ex_7_9_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_9_editor">
+      <input>
 
 def is_prime(n):
     # your code here
@@ -100,9 +89,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q3_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q3_answer" language="python">
         <input>
 def is_prime(n):
     for i in range(2, n):
@@ -115,42 +103,32 @@ print(is_prime(7))
 print(is_prime(251))
 print(is_prime(20))
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_14">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_14">
     <statement>
-            <p>Modify the walking turtle program so that rather than a 90 degree left or right turn the
+      <p>Modify the walking turtle program so that rather than a 90 degree left or right turn the
                 angle of the turn is determined randomly at each step.</p>
-
     </statement>
     <program xml:id="ex_7_14_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_13"><statement>
-                    <p>Modify the turtle walk program so that you have two turtles each with a
+  </exercise>
+  <exercise xml:id="ex_7_13">
+    <statement>
+      <p>Modify the turtle walk program so that you have two turtles each with a
                         random starting location.  Keep the turtles moving until one of them leaves the screen.</p>
-
-    
-    
-    <program xml:id="ex_7_13_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_13_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q5_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q5_answer" language="python">
         <input>
 import random
 import turtle
@@ -217,45 +195,35 @@ while isInScreen(wn, t1) and isInScreen(wn, t2):
 
 wn.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_12">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_12">
     <statement>
-            <p>Modify the previous turtle walk program so that the turtle turns around
+      <p>Modify the previous turtle walk program so that the turtle turns around
                 when it hits the wall or when one turtle collides with another turtle
                 (when the positions of the two turtles are closer than some small number).</p>
-
     </statement>
     <program xml:id="ex_7_12_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_15"><statement>
-                    <p>Write a function to remove all the red from an image.</p>
-                    <raw format="html" xml:space="preserve">&lt;img src="../_static/LutherBellPic.jpg" id="luther.jpg"&gt;
+  </exercise>
+  <exercise xml:id="ex_7_15">
+    <statement>
+      <p>Write a function to remove all the red from an image.</p>
+      <raw format="html" xml:space="preserve">&lt;img src="../_static/LutherBellPic.jpg" id="luther.jpg"&gt;
 &lt;h4 style="text-align: left;"&gt;For this and the following exercises, use the
 luther.jpg photo.&lt;/h4&gt;</raw>
-
-    
-    
-    <program xml:id="ex_7_15_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_15_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q7_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q7_answer" language="python">
         <input>
 import image
 
@@ -278,40 +246,30 @@ for col in range(img.getWidth()):
 newimg.draw(win)
 win.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_16">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_16">
     <statement>
-            <p>Write a function to convert the image to grayscale.</p>
-
+      <p>Write a function to convert the image to grayscale.</p>
     </statement>
     <program xml:id="ex_7_16_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_17"><statement>
-                    <p>Write a function to convert an image to black and white.</p>
-
-    
-    
-    <program xml:id="ex_7_17_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_7_17">
+    <statement>
+      <p>Write a function to convert an image to black and white.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_17_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q9_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q9_answer" language="python">
         <input>
 import image
 
@@ -354,46 +312,36 @@ bw_img.draw(win)
 
 win.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_18">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_18">
     <statement>
-            <p>Sepia Tone images are those brownish colored images that may remind you of
+      <p>Sepia Tone images are those brownish colored images that may remind you of
                 times past.  The formula for creating a sepia tone is as follows:</p>
-            <pre>newR = (R &#215; 0.393 + G &#215; 0.769 + B &#215; 0.189)
-newG = (R &#215; 0.349 + G &#215; 0.686 + B &#215; 0.168)
-newB = (R &#215; 0.272 + G &#215; 0.534 + B &#215; 0.131)</pre>
-            <p>Write a function to convert an image to sepia tone. <em>Hint:</em>
+      <pre>newR = (R &#xD7; 0.393 + G &#xD7; 0.769 + B &#xD7; 0.189)
+newG = (R &#xD7; 0.349 + G &#xD7; 0.686 + B &#xD7; 0.168)
+newB = (R &#xD7; 0.272 + G &#xD7; 0.534 + B &#xD7; 0.131)</pre>
+      <p>Write a function to convert an image to sepia tone. <em>Hint:</em>
                 Remember that rgb values must be integers between 0 and 255.</p>
-
     </statement>
     <program xml:id="ex_7_18_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_19"><statement>
-                    <p>Write a function to uniformly enlarge an image by a factor of 2 (double the size).</p>
-
-    
-    
-    <program xml:id="ex_7_19_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_7_19">
+    <statement>
+      <p>Write a function to uniformly enlarge an image by a factor of 2 (double the size).</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_19_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="answer_7_11_editor" language="python">
+    <solution>
+      <program xml:id="answer_7_11" language="python">
         <input>
 import image
 
@@ -421,47 +369,37 @@ bigimg.draw(win)
 
 win.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_20">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_20">
     <statement>
-            <p>After you have scaled an image too much it looks blocky.  One way of
+      <p>After you have scaled an image too much it looks blocky.  One way of
                 reducing the blockiness of the image is to replace each pixel with the
                 average values of the pixels around it.  This has the effect of smoothing
                 out the changes in color.  Write a function that takes an image as a
                 parameter and smooths the image.  Your function should return a new image
                 that is the same as the old but smoothed.</p>
-
     </statement>
     <program xml:id="ex_7_20_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_21"><statement>
-                    <p>Write a general pixel mapper function that will take an image and a pixel mapping function as
+  </exercise>
+  <exercise xml:id="ex_7_21">
+    <statement>
+      <p>Write a general pixel mapper function that will take an image and a pixel mapping function as
                         parameters.  The pixel mapping function should perform a manipulation on a single pixel and return
                         a new pixel.</p>
-
-    
-    
-    <program xml:id="ex_7_21_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_21_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q13_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q13_answer" language="python">
         <input>
 import image
 
@@ -492,43 +430,33 @@ newim.draw(win)
 
 win.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_7_22">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_22">
     <statement>
-            <p>When you scan in images using a scanner they may have lots of noise due to
+      <p>When you scan in images using a scanner they may have lots of noise due to
                 dust particles on the image itself or the scanner itself,
                 or the images may even be damaged.  One way of eliminating this noise is
                 to replace each pixel by the median value of the pixels surrounding it.</p>
-
     </statement>
     <program xml:id="ex_7_22_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_7_23"><statement>
-                    <p>Research the Sobel edge detection algorithm and implement it.</p>
-
-    
-    
-    <program xml:id="ex_7_23_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_7_23">
+    <statement>
+      <p>Research the Sobel edge detection algorithm and implement it.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_7_23_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="miter_q15_answer_editor" language="python">
+    <solution>
+      <program xml:id="miter_q15_answer" language="python">
         <input>
 import image
 import math
@@ -635,11 +563,7 @@ for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1
 newimg.draw(win)
 win.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-    </exercises>
-
+      </program>
+    </solution>
+  </exercise>
+</exercises>

@@ -1,118 +1,84 @@
-<section xml:id="more_about_iteration_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>algorithm</title>
-                    
-                        <p>A step-by-step process for solving a category of problems.</p>
-                    
-                </gi>
-                <gi>
-                    <title>body</title>
-                    
-                        <p>The indented statements after a heading ending in a colon,
+<?xml version="1.0"?>
+<section xml:id="more-about-iteration_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>algorithm</title>
+      <p>A step-by-step process for solving a category of problems.</p>
+    </gi>
+    <gi>
+      <title>body</title>
+      <p>The indented statements after a heading ending in a colon,
                             for instance after a for-loop heading.</p>
-                    
-                </gi>
-                <gi>
-                    <title>counter</title>
-                    
-                        <p>A variable used to count something, usually initialized to zero and
+    </gi>
+    <gi>
+      <title>counter</title>
+      <p>A variable used to count something, usually initialized to zero and
                             incremented in the body of a loop.</p>
-                    
-                </gi>
-                <gi>
-                    <title>cursor</title>
-                    
-                        <p>An invisible marker that keeps track of where the next character will
+    </gi>
+    <gi>
+      <title>cursor</title>
+      <p>An invisible marker that keeps track of where the next character will
                             be printed.</p>
-                    
-                </gi>
-                <gi>
-                    <title>definite iteration</title>
-                    
-                        <p>A loop where we have an upper bound on the number of times the
+    </gi>
+    <gi>
+      <title>definite iteration</title>
+      <p>A loop where we have an upper bound on the number of times the
                             body will be executed.  Definite iteration is usually best coded
                             as a <c>for</c> loop.</p>
-                    
-                </gi>
-                <gi>
-                    <title>escape sequence</title>
-                    
-                        <p>An escape character, \, followed by one or more printable characters
+    </gi>
+    <gi>
+      <title>escape sequence</title>
+      <p>An escape character, \, followed by one or more printable characters
                             used to designate a nonprintable character.</p>
-                    
-                </gi>
-                <gi>
-                    <title>generalize</title>
-                    
-                        <p>To replace something unnecessarily specific (like a constant value)
+    </gi>
+    <gi>
+      <title>generalize</title>
+      <p>To replace something unnecessarily specific (like a constant value)
                             with something appropriately general (like a variable or parameter).
                             Generalization makes code more versatile, more likely to be reused, and
                             sometimes even easier to write.</p>
-                    
-                </gi>
-                <gi>
-                    <title>infinite loop</title>
-                    
-                        <p>A loop in which the terminating condition is never satisfied.</p>
-                    
-                </gi>
-                <gi>
-                    <title>indefinite iteration</title>
-                    
-                        <p>A loop where we just need to keep going until some condition is met.
+    </gi>
+    <gi>
+      <title>infinite loop</title>
+      <p>A loop in which the terminating condition is never satisfied.</p>
+    </gi>
+    <gi>
+      <title>indefinite iteration</title>
+      <p>A loop where we just need to keep going until some condition is met.
                             A <c>while</c> statement is used for this case.</p>
-                    
-                </gi>
-                <gi>
-                    <title>iteration</title>
-                    
-                        <p>Repeated execution of a set of programming statements.</p>
-                    
-                </gi>
-                <gi>
-                    <title>loop</title>
-                    
-                        <p>A statement or group of statements that execute repeatedly until a
+    </gi>
+    <gi>
+      <title>iteration</title>
+      <p>Repeated execution of a set of programming statements.</p>
+    </gi>
+    <gi>
+      <title>loop</title>
+      <p>A statement or group of statements that execute repeatedly until a
                             terminating condition is satisfied.</p>
-                    
-                </gi>
-                <gi>
-                    <title>loop variable</title>
-                    
-                        <p>A variable used as part of the terminating condition of a loop.</p>
-                    
-                </gi>
-                <gi>
-                    <title>nested loop</title>
-                    
-                        <p>A loop inside the body of another loop.</p>
-                    
-                </gi>
-                <gi>
-                    <title>newline</title>
-                    
-                        <p>A special character that causes the cursor to move to the beginning of
+    </gi>
+    <gi>
+      <title>loop variable</title>
+      <p>A variable used as part of the terminating condition of a loop.</p>
+    </gi>
+    <gi>
+      <title>nested loop</title>
+      <p>A loop inside the body of another loop.</p>
+    </gi>
+    <gi>
+      <title>newline</title>
+      <p>A special character that causes the cursor to move to the beginning of
                             the next line.</p>
-                    
-                </gi>
-                <gi>
-                    <title>reassignment</title>
-                    
-                        <p>Making more than one assignment to the same variable during the
+    </gi>
+    <gi>
+      <title>reassignment</title>
+      <p>Making more than one assignment to the same variable during the
                             execution of a program.</p>
-                    
-                </gi>
-                <gi>
-                    <title>tab</title>
-                    
-                        <p>A special character that causes the cursor to move to the next tab stop
+    </gi>
+    <gi>
+      <title>tab</title>
+      <p>A special character that causes the cursor to move to the next tab stop
                             on the current line.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

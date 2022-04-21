@@ -1,22 +1,20 @@
-<exercises xml:id="classes_digging_deeper_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="classes_deeper_q1"><statement>
-                    <p>We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
+<?xml version="1.0"?>
+<exercises xml:id="classes-digging-deeper_exercises">
+  <title>Exercises</title>
+  <exercise xml:id="classes_deeper_q1">
+    <statement>
+      <p>We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
                         Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
                         and height 5, we would do the following:</p>
-                    <pre>r = Rectangle(Point(4, 5), 6, 5)</pre>
-
-    
-    
-    <program xml:id="classes_deeper_q1_editor" interactive="activecode" language="python">
-        <input>
+      <pre>r = Rectangle(Point(4, 5), 6, 5)</pre>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="classes_deeper_q1_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_cl2_answer1_editor" language="python">
+    <solution>
+      <program xml:id="ch_cl2_answer1" language="python">
         <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -49,42 +47,32 @@ loc = Point(4, 5)
 r = Rectangle(loc, 6, 5)
 print(r)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ch_cl2_q2">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ch_cl2_q2">
     <statement>
-            <p>Add the following accessor methods to the Rectangle class: <c>getWidth</c>, <c>getHeight</c>, <c>__str__</c>.</p>
-
+      <p>Add the following accessor methods to the Rectangle class: <c>getWidth</c>, <c>getHeight</c>, <c>__str__</c>.</p>
     </statement>
     <program xml:id="ch_cl2_q2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ch_cl2_q3"><statement>
-                    <p>Add a method <c>area</c> to the Rectangle class that returns the area of any instance:</p>
-                    <pre>r = Rectangle(Point(0, 0), 10, 5)
+  </exercise>
+  <exercise xml:id="ch_cl2_q3">
+    <statement>
+      <p>Add a method <c>area</c> to the Rectangle class that returns the area of any instance:</p>
+      <pre>r = Rectangle(Point(0, 0), 10, 5)
 test(r.area(), 50)</pre>
-
-    
-    
-    <program xml:id="ch_cl2_q3_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ch_cl2_q3_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_cl2_q3answer_editor" language="python">
+    <solution>
+      <program xml:id="ch_cl2_q3answer" language="python">
         <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -116,50 +104,40 @@ class Rectangle:
     def area(self):
         return self.width * self.height
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ch_cl2_q4">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ch_cl2_q4">
     <statement>
-            <p>Write a <c>perimeter</c> method in the Rectangle class so that we can find
+      <p>Write a <c>perimeter</c> method in the Rectangle class so that we can find
                 the perimeter of any rectangle instance:</p>
-            <pre>r = Rectangle(Point(0, 0), 10, 5)
+      <pre>r = Rectangle(Point(0, 0), 10, 5)
 test(r.perimeter(), 30)</pre>
-
     </statement>
     <program xml:id="ch_cl2_q4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ch_cl2_q5"><statement>
-                    <p>Write a <c>transpose</c> method in the Rectangle class that swaps the width
+  </exercise>
+  <exercise xml:id="ch_cl2_q5">
+    <statement>
+      <p>Write a <c>transpose</c> method in the Rectangle class that swaps the width
                         and the height of any rectangle instance:</p>
-                    <pre>r = Rectangle(Point(100, 50), 10, 5)
+      <pre>r = Rectangle(Point(100, 50), 10, 5)
 test(r.width, 10)
 test(r.height, 5)
 r.transpose()
 test(r.width, 5)
 test(r.height, 10)</pre>
-
-    
-    
-    <program xml:id="ch_cl2_q5_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ch_cl2_q5_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_cl2_q5answer_editor" language="python">
+    <solution>
+      <program xml:id="ch_cl2_q5answer" language="python">
         <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -193,53 +171,43 @@ class Rectangle:
         self.width = self.height
         self.height = temp
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ch_cl2_q6">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ch_cl2_q6">
     <statement>
-            <p>Write a new method in the Rectangle class to test if a Point falls within
+      <p>Write a new method in the Rectangle class to test if a Point falls within
                 the rectangle.  For this exercise, assume that a rectangle at (0,0) with
                 width 10 and height 5 has <em>open</em> upper bounds on the width and height,
                 i.e. it stretches in the x direction from [0 to 10), where 0 is included
                 but 10 is excluded, and from [0 to 5) in the y direction.  So
                 it does not contain the point (10, 2).  These tests should pass:</p>
-            <pre>r = Rectangle(Point(0, 0), 10, 5)
+      <pre>r = Rectangle(Point(0, 0), 10, 5)
 test(r.contains(Point(0, 0)), True)
 test(r.contains(Point(3, 3)), True)
 test(r.contains(Point(3, 7)), False)
 test(r.contains(Point(3, 5)), False)
 test(r.contains(Point(3, 4.99999)), True)
 test(r.contains(Point(-3, -3)), False)</pre>
-
     </statement>
     <program xml:id="ch_cl2_q6_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ch_cl2_q7"><statement>
-                    <p>Write a new method called <c>diagonal</c> that will return the length of the diagonal that runs
+  </exercise>
+  <exercise xml:id="ch_cl2_q7">
+    <statement>
+      <p>Write a new method called <c>diagonal</c> that will return the length of the diagonal that runs
                         from the lower left corner to the opposite corner.</p>
-
-    
-    
-    <program xml:id="ch_cl2_q7_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ch_cl2_q7_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_cl2_answer7_editor" language="python">
+    <solution>
+      <program xml:id="ch_cl2_answer7" language="python">
         <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -273,30 +241,22 @@ class Rectangle:
         d = (self.width**2 + self.height**2) ** 0.5
         return d
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ch_cl2_q8">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ch_cl2_q8">
     <statement>
-            <p>In games, we often put a rectangular &#8220;bounding box&#8221; around our sprites in
+      <p>In games, we often put a rectangular <q>bounding box</q> around our sprites in
                 the game.  We can then do <em>collision detection</em> between, say, bombs and
                 spaceships, by comparing whether their rectangles overlap anywhere.</p>
-            <p>Write a function to determine whether two rectangles collide. <em>Hint:
+      <p>Write a function to determine whether two rectangles collide. <em>Hint:
                     this might be quite a tough exercise!  Think carefully about all the
                     cases before you code.</em></p>
-
     </statement>
     <program xml:id="ch_cl2_q8_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-    </exercises>
-
+  </exercise>
+</exercises>

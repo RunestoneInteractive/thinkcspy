@@ -1,71 +1,59 @@
-<section xml:id="gu_iand_event_driven_programming_a-programming-example">
-    <title>A Programming Example</title>
-    <p>Let&#8217;s develop a non-trivial GUI program to demonstrate the material presented
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_a-programming-example">
+  <title>A Programming Example</title>
+  <p>Let's develop a non-trivial GUI program to demonstrate the material presented
             in the previous lessons. We will develop a GUI Whack-a-mole
-            game where a user tries to click on &#8220;moles&#8221; as they randomly pop up out of
-            the &#8220;ground.&#8221;</p>
-    <p>
-        This discussion will take you through an
-        <em>incremental development</em>
-        cycle
+            game where a user tries to click on <q>moles</q> as they randomly pop up out of
+            the <q>ground.</q></p>
+  <p>This discussion will take you through an <em>incremental development</em> cycle
             that creates a program in well-defined stages. While you might read a
-            finished computer program from &#8220;top to bottom,&#8221; that is not how it was
+            finished computer program from <q>top to bottom,</q> that is not how it was
             developed. For a typical GUI program development, you are encouraged to go
-            through these stages:
-    </p>
-    <p>
-        <ol label="1">
-            <li>
-                <p>Using scratch paper, physically draw a rough sketch of your user interface.</p>
-            </li>
-            <li>
-                <p>Create the basic structure of your program and create the major frames that
-                    will hold the widgets needed for your program&#8217;s interface. Give the frames
+            through these stages:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Using scratch paper, physically draw a rough sketch of your user interface.</p>
+      </li>
+      <li>
+        <p>Create the basic structure of your program and create the major frames that
+                    will hold the widgets needed for your program's interface. Give the frames
                     an initial size and color so that you can visually see them, given that
                     there are no widgets inside of them to determine their size.</p>
-            </li>
-            <li>
-                <p>Incrementally add all of the widgets you need for your program and size and
+      </li>
+      <li>
+        <p>Incrementally add all of the widgets you need for your program and size and
                     position them appropriately.</p>
-            </li>
-            <li>
-                <p>Create your callback functions, stub them out, and assign them to appropriate
+      </li>
+      <li>
+        <p>Create your callback functions, stub them out, and assign them to appropriate
                     events. Verify that the events are executing the correct functions.</p>
-            </li>
-            <li>
-                <p>Incrementally implement the functionality needed for each callback function.</p>
-            </li>
-        </ol>
-    </p>
-    <p>
-        When you develop code using
-        <em>incremental development</em>
-        your program should
+      </li>
+      <li>
+        <p>Incrementally implement the functionality needed for each callback function.</p>
+      </li>
+    </ol>
+  </p>
+  <p>When you develop code using <em>incremental development</em> your program should
             always be executable. You continually add a few lines of code and then test
             them. If errors occur you almost always know were the errors came from!
-            They came from the lines of code you just added.
-    </p>
-    <subsection xml:id="gu_iand_event_driven_programming_a-whack-a-mole-game">
-        <title>A Whack-a-mole Game</title>
-        <p>Step 1: Make sure you have a reasonable GUI design and implementation plan
+            They came from the lines of code you just added.</p>
+  <subsection xml:id="gu-iand-event-driven-programming_a-whack-a-mole-game">
+    <title>A Whack-a-mole Game</title>
+    <p>Step 1: Make sure you have a reasonable GUI design and implementation plan
                 before you start coding. Draw a sketch of your initial design on paper
                 and consider how a user will interact with your program.</p>
-        <figure align="center" xml:id="fig-whack-a-molel-design">
-            <image source="GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png" width="50%" />
-            <caption>Initial design of a Whack-a-mole game</caption>
-        </figure>
-        <p>
-            Step 2: Create the basic structure of your interface using appropriate
-            <c>frame</c>
-            widgets. You will need to give a size to the frames because they will contain
+    <figure align="center" xml:id="id1">
+      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Initial design of a Whack-a-mole game</caption>
+      <image source="GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png" width="50%"/>
+    </figure>
+    <p>Step 2: Create the basic structure of your interface using appropriate <c>frame</c>
+                widgets. You will need to give a size to the frames because they will contain
                 no widgets, which is how a frame typically gets its size. It is also suggested
                 that you give each frame a unique color so it is easy to see the area of the
-                window it covers. Here is a basic start for our whack-a-mole game (
-            <url href="../_static/Programs/whack_a_mole_v1.py" visual="../_static/Programs/whack_a_mole_v1.py">whack_a_mole_v1.py</url>
-            ):
-        </p>
-        <program language="python">
-            <input>
+                window it covers. Here is a basic start for our whack-a-mole game (<url href="../_static/Programs/whack_a_mole_v1.py" visual="../_static/Programs/whack_a_mole_v1.py">whack_a_mole_v1.py</url>):</p>
+    <program language="python">
+      <input>
 def main():
     # Create the entire GUI program
     program = WhackAMole()
@@ -91,21 +79,17 @@ class WhackAMole:
 if __name__ == "__main__":
     main()
 </input>
-        </program>
-        <p>
-            Step 3: Incrementally add appropriate widgets to each frame. Don&#8217;t attempt
+    </program>
+    <p>Step 3: Incrementally add appropriate widgets to each frame. Don't attempt
                 to add all the widgets at once. The initial design conceptualized the moles
                 as buttons, so a grid of buttons was added to the left frame, one button
-                for each mole. The exact size of the &#8220;mole field&#8221; needs to be determined at
+                for each mole. The exact size of the <q>mole field</q> needs to be determined at
                 a future time, so initialize a CONSTANT that can be used to easily change it
-                later.  (
-            <url href="../_static/Programs/whack_a_mole_v2.py" visual="../_static/Programs/whack_a_mole_v2.py">whack_a_mole_v2.py</url>
-            )
-        </p>
-        <image source="GUIandEventDrivenProgramming/Figures/mole.png" width="50%" />
-        <image source="GUIandEventDrivenProgramming/Figures/mole_cover.png" width="50%" />
-        <program language="python">
-            <input>
+                later.  (<url href="../_static/Programs/whack_a_mole_v2.py" visual="../_static/Programs/whack_a_mole_v2.py">whack_a_mole_v2.py</url>)</p>
+    <image source="GUIandEventDrivenProgramming/Figures/mole.png" width="50%"/>
+    <image source="GUIandEventDrivenProgramming/Figures/mole_cover.png" width="50%"/>
+    <program language="python">
+      <input>
 import tkinter as tk
 from tkinter import PhotoImage
 
@@ -153,16 +137,12 @@ class WhackAMole:
 if __name__ == "__main__":
     main()
 </input>
-        </program>
-        <p>
-            Continue to add appropriate widgets for the right frame. The final result is
+    </program>
+    <p>Continue to add appropriate widgets for the right frame. The final result is
                 shown below, but recognize that it was developed little by little.
-                (
-            <url href="../_static/Programs/whack_a_mole_v3.py" visual="../_static/Programs/whack_a_mole_v3.py">whack_a_mole_v3.py</url>
-            )
-        </p>
-        <program language="python">
-            <input>
+                (<url href="../_static/Programs/whack_a_mole_v3.py" visual="../_static/Programs/whack_a_mole_v3.py">whack_a_mole_v3.py</url>)</p>
+    <program language="python">
+      <input>
 import tkinter as tk
 from tkinter import PhotoImage
 
@@ -250,18 +230,14 @@ class WhackAMole:
 if __name__ == "__main__":
     main()
 </input>
-        </program>
-        <p>
-            Step 4: Create a callback function for each event that will cause something
+    </program>
+    <p>Step 4: Create a callback function for each event that will cause something
                 to happen in your program. Stub these functions out with a single print
                 statement in each one. Bind an event to each callback function. Now test
                 your program and make sure each event causes the correct print-line in
-                the Python console. (
-            <url href="../_static/Programs/whack_a_mole_v4.py" visual="../_static/Programs/whack_a_mole_v4.py">whack_a_mole_v4.py</url>
-            )
-        </p>
-        <program language="python">
-            <input>
+                the Python console. (<url href="../_static/Programs/whack_a_mole_v4.py" visual="../_static/Programs/whack_a_mole_v4.py">whack_a_mole_v4.py</url>)</p>
+    <program language="python">
+      <input>
 import tkinter as tk
 from tkinter import PhotoImage
 
@@ -369,34 +345,26 @@ class WhackAMole():
 if __name__ == "__main__":
     main()
 </input>
-        </program>
-        <p>
-            Step 5: Add appropriate functionality to the callback functions. This is
+    </program>
+    <p>Step 5: Add appropriate functionality to the callback functions. This is
                 where the functional logic of your particular application resides. In the
                 case of our whack-a-mole game, we need to be able to count the number of
                 times a user clicks on a mole when it is visible. And we need the moles to
                 appear and disappear at random intervals. Originally each mole was a
                 button widget, but the border around each button was distracting, so
                 they were changed to label widgets. Two images were used to represent a mole:
-                one image is a solid color that matches the frame&#8217;s background, and the
+                one image is a solid color that matches the frame's background, and the
                 other image is a picture of a mole. By replacing the image used for each
                 label we can make the moles visible or invisible. A label normally does
-                not have an associated callback, so we
-            <c>bind</c>
-            a left mouse click
-                event,
-            <c>"&lt;ButtonPress-1&gt;"</c>
-            to each label. We can determine whether
-                the mouse click is a &#8220;hit&#8221; or a &#8220;miss&#8221; by examining the label under the
+                not have an associated callback, so we <c>bind</c> a left mouse click
+                event, <c>"&lt;ButtonPress-1&gt;"</c> to each label. We can determine whether
+                the mouse click is a <q>hit</q> or a <q>miss</q> by examining the label under the
                 click to see which image is currently set to the label. We use timer
                 events to change the image on each label.
                 Also notice the use of a messagebox to protect the program from accidental
-                quitting. The end result is shown below. (
-            <url href="../_static/Programs/whack_a_mole_v5.py" visual="../_static/Programs/whack_a_mole_v5.py">whack_a_mole_v5.py</url>
-            )
-        </p>
-        <program language="python">
-            <input>
+                quitting. The end result is shown below. (<url href="../_static/Programs/whack_a_mole_v5.py" visual="../_static/Programs/whack_a_mole_v5.py">whack_a_mole_v5.py</url>)</p>
+    <program language="python">
+      <input>
 import tkinter as tk
 from tkinter import PhotoImage
 from tkinter import messagebox
@@ -601,16 +569,14 @@ class WhackAMole:
 if __name__ == "__main__":
     main()
 </input>
-        </program>
-    </subsection>
-    <subsection xml:id="gu_iand_event_driven_programming_summary">
-        <title>Summary</title>
-        <p>We developed a complete GUI application in 5 well-designed stages. Hopefully
+    </program>
+  </subsection>
+  <subsection xml:id="gu-iand-event-driven-programming_summary">
+    <title>Summary</title>
+    <p>We developed a complete GUI application in 5 well-designed stages. Hopefully
                 you see the value in incremental software development.</p>
-        <p>However, the end result is not necessarily easy to understand or modify for
+    <p>However, the end result is not necessarily easy to understand or modify for
                 future enhancements. The next lesson will introduce a scheme for breaking
                 complete software into more managable pieces.</p>
-
-
-    </subsection>
+  </subsection>
 </section>

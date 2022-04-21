@@ -1,83 +1,79 @@
+<?xml version="1.0"?>
 <section xml:id="strings_turtles-and-strings-and-l-systems">
-        <title>Turtles and Strings and L-Systems</title>
-        <p>This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.</p>
-        <p>In 1968 Aristid Lindenmayer, a biologist, invented a formal system that
+  <title>Turtles and Strings and L-Systems</title>
+  <p>This section describes a much more interested example of string iteration and the accumulator pattern.  Even though it seems like we are doing something that is much more complex, the basic processing is the same as was shown in the previous sections.</p>
+  <p>In 1968 Aristid Lindenmayer, a biologist, invented a formal system that
             provides a mathematical description of plant growth known as an
-            <alert>L-system</alert>.  L-systems were designed to model the growth of biological
+            <term>L-system</term>.  L-systems were designed to model the growth of biological
             systems.  You can think of L-systems as containing the instructions for how
             a single cell can grow into a complex organism.  L-systems can be used to
-            specify the <alert>rules</alert> for all kinds of interesting patterns.  In our case, we are going to use them to specify the rules for drawing pictures.</p>
-        <p>The rules of an L-system are really a set of instructions for transforming
+            specify the <term>rules</term> for all kinds of interesting patterns.  In our case, we are going to use them to specify the rules for drawing pictures.</p>
+  <p>The rules of an L-system are really a set of instructions for transforming
             one string into a new string.  After a number of these string transformations
             are complete, the string contains a set of instructions.  Our plan is to let these instructions direct a turtle
             as it draws a picture.</p>
-        <p>To begin, we will look at an example set of rules:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
+  <p>To begin, we will look at an example set of rules:</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
                             A
                         </cell>
-                        <cell>
+        <cell>
                             Axiom
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             A -&gt; B
                         </cell>
-                        <cell>
+        <cell>
                             Rule 1 Change A to B
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             B -&gt; AB
                         </cell>
-                        <cell>
+        <cell>
                             Rule 2 Change B to AB
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Each rule set contains an axiom which represents the starting point in the transformations that will follow.  The rules are of the form:</p>
-        <pre>left hand side -&gt; right hand side</pre>
-        <p>where the left hand side is a single symbol and the right hand side is a sequence of symbols.  You can think of both sides as being simple strings.
+      </row>
+    </tabular>
+  </table>
+  <p>Each rule set contains an axiom which represents the starting point in the transformations that will follow.  The rules are of the form:</p>
+  <pre>left hand side -&gt; right hand side</pre>
+  <p>where the left hand side is a single symbol and the right hand side is a sequence of symbols.  You can think of both sides as being simple strings.
             The way the rules are used is to replace occurrences of the left hand side with the corresponding right hand side.</p>
-        <p>Now let&#8217;s look at these simple rules in action, starting with the string A:</p>
-        <pre>A
+  <p>Now let's look at these simple rules in action, starting with the string A:</p>
+  <pre>A
 B      Apply Rule 1  (A is replaced by B)
 AB     Apply Rule 2  (B is replaced by AB)
 BAB    Apply Rule 1 to A then Rule 2 to B
 ABBAB  Apply Rule 2 to B, Rule 1 to A, and Rule 2 to B</pre>
-        <p>Notice that each line represents a new transformation for entire string.  Each character that matches a left-hand side of a rule in the original has been replaced by the corresponding right-hand side of that same rule.  After doing the replacement for
+  <p>Notice that each line represents a new transformation for entire string.  Each character that matches a left-hand side of a rule in the original has been replaced by the corresponding right-hand side of that same rule.  After doing the replacement for
             each character in the original, we have one transformation.</p>
-        <p>So how would we encode these rules in a Python program?  There are a couple
+  <p>So how would we encode these rules in a Python program?  There are a couple
             of very important things to note here:</p>
-        <p><ol label="1">
-            <li>
-                <p>Rules are very much like if statements.</p>
-            </li>
-            <li>
-                <p>We are going to start with a string and iterate over each of its characters.</p>
-            </li>
-            <li>
-                <p>As we apply the rules to one string we leave that string alone and create
+  <p>
+    <ol label="1">
+      <li>
+        <p>Rules are very much like if statements.</p>
+      </li>
+      <li>
+        <p>We are going to start with a string and iterate over each of its characters.</p>
+      </li>
+      <li>
+        <p>As we apply the rules to one string we leave that string alone and create
                     a brand new string using the accumulator pattern.  When we are all done with the original we replace it
                     with the new string.</p>
-            </li>
-        </ol></p>
-        <p>Let&#8217;s look at a simple Python program that implements the example set of rules described
+      </li>
+    </ol>
+  </p>
+  <p>Let's look at a simple Python program that implements the example set of rules described
             above.</p>
-
-<listing xml:id="string_lsys1">
-    <caption/>
-    <program xml:id="string_lsys1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="string_lsys1" interactive="activecode" language="python">
+    <input>
 def applyRules(lhch):
     rhstr = ""
     if lhch == 'A':
@@ -109,110 +105,98 @@ def createLSystem(numIters,axiom):
 
 print(createLSystem(4, "A"))
         </input>
-    </program>
-</listing>
-        <p>Try running the example above with different values for the <c>numIters</c>
+  </program>
+  <p>Try running the example above with different values for the <c>numIters</c>
             parameter.  You should see that for values 1, 2, 3, and 4, the strings generated follow the
             example above exactly.</p>
-        <p>One of the nice things about the program above is that if you want to
-            implement a different set of rules, you don&#8217;t need to re-write the entire
+  <p>One of the nice things about the program above is that if you want to
+            implement a different set of rules, you don't need to re-write the entire
             program. All you need to do is re-write the applyRules function.</p>
-        <p>Suppose you had the following rules:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
+  <p>Suppose you had the following rules:</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
                             A
                         </cell>
-                        <cell>
+        <cell>
                             Axiom
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             A -&gt; BAB
                         </cell>
-                        <cell>
+        <cell>
                             Rule 1 Change A to BAB
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>What kind of a string would these rules create?  Modify the program above to
+      </row>
+    </tabular>
+  </table>
+  <p>What kind of a string would these rules create?  Modify the program above to
             implement the rule.</p>
-        <p>Now let&#8217;s look at a real L-system that implements a famous drawing.  This
+  <p>Now let's look at a real L-system that implements a famous drawing.  This
             L-system has just two rules:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
+  <table>
+    <tabular>
+      <row>
+        <cell>
                             F
                         </cell>
-                        <cell>
+        <cell>
                             Axiom
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             F -&gt; F-F++F-F
                         </cell>
-                        <cell>
+        <cell>
                             Rule 1
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>This L-system uses symbols that will have special meaning when we use them later with the turtle to draw a picture.</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
+      </row>
+    </tabular>
+  </table>
+  <p>This L-system uses symbols that will have special meaning when we use them later with the turtle to draw a picture.</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
                             F
                         </cell>
-                        <cell>
+        <cell>
                             Go forward by some number of units
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             B
                         </cell>
-                        <cell>
+        <cell>
                             Go backward by some number of units
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             -
                         </cell>
-                        <cell>
+        <cell>
                             Turn left by some degrees
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             +
                         </cell>
-                        <cell>
+        <cell>
                             Turn right by some degrees
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Here is the <c>applyRules</c> function for this L-system.</p>
-        <program language="python"><input>
+      </row>
+    </tabular>
+  </table>
+  <p>Here is the <c>applyRules</c> function for this L-system.</p>
+  <program language="python">
+    <input>
 def applyRules(ch):
     newstr = ""
     if ch == 'F':
@@ -221,33 +205,37 @@ def applyRules(ch):
         newstr = ch    # no rules apply so keep the character
 
     return newstr
-</input></program>
-        <p>Pretty simple so far.  As you can imagine this string will get pretty long
+</input>
+  </program>
+  <p>Pretty simple so far.  As you can imagine this string will get pretty long
             with a few applications of the rules.  You might try to expand the string a
             couple of times on your own just to see.</p>
-        <p>The last step is to take the final string and turn it into a picture.  Let&#8217;s
+  <p>The last step is to take the final string and turn it into a picture.  Let's
             assume that we are always going to go forward or backward by 5 units.  In
-            addition we will also assume that when the turtle turns left or right we&#8217;ll
+            addition we will also assume that when the turtle turns left or right we'll
             turn by 60 degrees.  Now look at the string <c>F-F++F-F</c>.  You might try to
             use the explanation above to show the resulting picture that this simple string represents.  At this point its not a very exciting
             drawing, but once we expand it a few times it will get a lot more interesting.</p>
-        <p>To create a Python function to draw a string we will write a function called
+  <p>To create a Python function to draw a string we will write a function called
             <c>drawLsystem</c>  The function will take four parameters:</p>
-        <p><ul>
-            <li>
-                <p>A turtle to do the drawing</p>
-            </li>
-            <li>
-                <p>An expanded string that contains the results of expanding the rules above.</p>
-            </li>
-            <li>
-                <p>An angle to turn</p>
-            </li>
-            <li>
-                <p>A distance to move forward or backward</p>
-            </li>
-        </ul></p>
-        <program language="python"><input>
+  <p>
+    <ul>
+      <li>
+        <p>A turtle to do the drawing</p>
+      </li>
+      <li>
+        <p>An expanded string that contains the results of expanding the rules above.</p>
+      </li>
+      <li>
+        <p>An angle to turn</p>
+      </li>
+      <li>
+        <p>A distance to move forward or backward</p>
+      </li>
+    </ul>
+  </p>
+  <program language="python">
+    <input>
 def drawLsystem(aTurtle,instructions,angle,distance):
     for cmd in instructions:
         if cmd == 'F':
@@ -258,14 +246,12 @@ def drawLsystem(aTurtle,instructions,angle,distance):
             aTurtle.right(angle)
         elif cmd == '-':
             aTurtle.left(angle)
-</input></program>
-        <p>Here is the complete program in activecode.  The <c>main</c> function first creates the
+</input>
+  </program>
+  <p>Here is the complete program in activecode.  The <c>main</c> function first creates the
             L-system string and then it creates a turtle and passes it and the string to the drawing function.</p>
-
-<listing xml:id="strings_lys2">
-    <caption/>
-    <program xml:id="strings_lys2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="strings_lys2" interactive="activecode" language="python">
+    <input>
 import turtle
 
 def createLSystem(numIters,axiom):
@@ -320,10 +306,6 @@ def main():
 
 main()
         </input>
-    </program>
-</listing>
-        <p>Feel free to try some different angles and segment lengths to see how the drawing changes.</p>
-        
-        
-    </section>
-
+  </program>
+  <p>Feel free to try some different angles and segment lengths to see how the drawing changes.</p>
+</section>

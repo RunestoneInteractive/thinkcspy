@@ -1,2 +1,0 @@
-<string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "/Users/bmiller/Runestone/books/thinkcspy/pretext/GeneralIntro/.ptx"
-./GeneralIntro/toctree.ptx:19:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /Users/bmiller/Runestone/books/thinkcspy/pretext/GeneralIntro/.ptx, and no fallback was found

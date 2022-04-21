@@ -1,45 +1,25 @@
+<?xml version="1.0"?>
 <exercises xml:id="lists_exercises">
-    <title>Exercises</title>
-
-    <exercise>
-        <statement>
-            <p>
-                Draw a reference diagram for
-                <cd>a</cd>
-                and
-                <cd>b</cd>
-                before and after the third line of
-                    the following python code is executed:
-            </p>
-            <pre force="False" highlight_args="{}" language="python" linenos="False" xml:space="preserve">a = [1, 2, 3]
-b = a[:]
-b[0] = 5</pre>
-        </statement>
-        <solution>
-            <p>
-                Your diagram should show two variables referring to two different lists.
-                <c>a</c>
-                refers to the original list with 1,2, and 3.
-                <c>b</c>
-                refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
-            </p>
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_2">
-        <statement>
-            <p>
-                Create a list called
-                <c>myList</c>
-                with the following six items: 76, 92.3, &#8220;hello&#8221;, True, 4, 76.
+  <title>Exercises</title>
+  <exercise>
+    <statement/>
+    <program interactive="" language=""/>
+    <solution>
+                    Your diagram should show two variables referring to two different lists.  a refers to the original list with 1,2, and 3.
+                        b refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
+                
+                    <p>Your diagram should show two variables referring to two different lists.  <c>a</c> refers to the original list with 1,2, and 3.
+                        <c>b</c> refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.</p>
+                </solution>
+  </exercise>
+  <exercise xml:id="ex_9_2">
+    <statement>
+      <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, <q>hello</q>, True, 4, 76.
                         Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
-                        use the append method to append the item to the list, and the last three statements should use concatenation.
-            </p>
-
-
-            <program xml:id="ex_9_2_editor" interactive="activecode" language="python">
-                <input>
+                        use the append method to append the item to the list, and the last three statements should use concatenation.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_2_editor">
+      <input>
 
 myList = []
 
@@ -56,12 +36,10 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="ex_9_2_answer_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="ex_9_2_answer" language="python">
+        <input>
 myList = []
 myList.append(76)
 myList.append(92.3)
@@ -71,61 +49,48 @@ myList = myList + [4]
 myList = myList + [76]
 print(myList)
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_3">
-        <statement>
-            <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
-            <p>
-                <ol label="a">
-                    <li>
-                        <p>Append &#8220;apple&#8221; and 76 to the list.</p>
-                    </li>
-                    <li>
-                        <p>Insert the value &#8220;cat&#8221; at position 3.</p>
-                    </li>
-                    <li>
-                        <p>Insert the value 99 at the start of the list.</p>
-                    </li>
-                    <li>
-                        <p>Find the index of &#8220;hello&#8221;.</p>
-                    </li>
-                    <li>
-                        <p>Count the number of 76s in the list.</p>
-                    </li>
-                    <li>
-                        <p>Remove the first occurrence of 76 from the list.</p>
-                    </li>
-                    <li>
-                        <p>
-                            Remove True from the list using
-                            <c>pop</c>
-                            and
-                            <c>index</c>
-                            .
-                        </p>
-                    </li>
-                </ol>
-            </p>
-
-
-            <program xml:id="ex_9_3_editor" interactive="activecode" language="python">
-                <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_3">
+    <statement>
+      <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
+      <p>
+        <ol label="a">
+          <li>
+            <p>Append <q>apple</q> and 76 to the list.</p>
+          </li>
+          <li>
+            <p>Insert the value <q>cat</q> at position 3.</p>
+          </li>
+          <li>
+            <p>Insert the value 99 at the start of the list.</p>
+          </li>
+          <li>
+            <p>Find the index of <q>hello</q>.</p>
+          </li>
+          <li>
+            <p>Count the number of 76s in the list.</p>
+          </li>
+          <li>
+            <p>Remove the first occurrence of 76 from the list.</p>
+          </li>
+          <li>
+            <p>Remove True from the list using <c>pop</c> and <c>index</c>.</p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_3_editor">
+      <input>
 myList = [76, 92.3, 'hello', True, 4, 76]
 
 # Your code here
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="ex_9_3_answer_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="ex_9_3_answer" language="python">
+        <input>
 myList = [76, 92.3, 'hello', True, 4, 76]
 
 myList.append("apple")         # a
@@ -140,24 +105,15 @@ myList.pop(myList.index(True)) # g
 
 print (myList)
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_4">
-        <statement>
-            <p>
-                Write a function called
-                <c>average</c>
-                that takes a list of numbers as a parameter and returns the average of the numbers.
-            </p>
-
-
-            <program xml:id="ex_9_4_editor" interactive="activecode" language="python">
-                <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_4">
+    <statement>
+      <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_4_editor">
+      <input>
 def average(numlist):
     # Complete the function definition
 
@@ -172,12 +128,10 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="ex_9_4_solution_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="ex_9_4_solution" language="python">
+        <input>
 def average(numlist):
 
     total = 0
@@ -186,26 +140,15 @@ def average(numlist):
 
     return total / len(numlist)
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_5">
-        <statement>
-            <p>
-                Write a Python function named
-                <c>max</c>
-                that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named
-                <c>max</c>
-                but pretend you cannot use it.)
-            </p>
-
-
-            <program xml:id="ex_9_5_editor" interactive="activecode" language="python">
-                <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_5">
+    <statement>
+      <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named <c>max</c> but pretend you cannot use it.)</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_5_editor">
+      <input>
 def max(lst):
     # Complete the function
 
@@ -220,12 +163,10 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="lst_q5_answer_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="lst_q5_answer" language="python">
+        <input>
 def max(lst):
     max = 0
     for e in lst:
@@ -233,29 +174,17 @@ def max(lst):
             max = e
     return max
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_7_11">
-        <statement>
-            <p>
-                Write a function
-                <c>sum_of_squares(xs)</c>
-                that computes the sum
-                of the squares of the numbers in the list
-                <c>xs</c>
-                .  For example,
-                <c>sum_of_squares([2, 3, 4])</c>
-                should return 4+9+16 which is 29:
-            </p>
-
-        </statement>
-        <program xml:id="ex_7_11_editor" interactive="activecode" language="python">
-            <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_7_11">
+    <statement>
+      <p>Write a function <c>sum_of_squares(xs)</c> that computes the sum
+                of the squares of the numbers in the list <c>xs</c>.  For example,
+                <c>sum_of_squares([2, 3, 4])</c> should return 4+9+16 which is 29:</p>
+    </statement>
+    <program xml:id="ex_7_11_editor" interactive="activecode" language="python">
+      <input>
 def sum_of_squares(xs):
     # your code here
 
@@ -271,17 +200,14 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_6">
-        <statement>
-            <p>Write a function to count how many odd numbers are in a list.</p>
-
-
-            <program xml:id="ex_9_6_editor" interactive="activecode" language="python">
-                <input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_9_6">
+    <statement>
+      <p>Write a function to count how many odd numbers are in a list.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_6_editor">
+      <input>
 def countOdd(lst):
     # your code here
 
@@ -298,12 +224,10 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="lst_q7_answer_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="lst_q7_answer" language="python">
+        <input>
 import random
 
 def countOdd(lst):
@@ -320,20 +244,15 @@ for i in range(100):
 
 print(countOdd(lst))
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_7">
-        <statement>
-            <p>Sum up all the even numbers in a list.</p>
-
-        </statement>
-        <program xml:id="ex_9_7_editor" interactive="activecode" language="python">
-            <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_7">
+    <statement>
+      <p>Sum up all the even numbers in a list.</p>
+    </statement>
+    <program xml:id="ex_9_7_editor" interactive="activecode" language="python">
+      <input>
 def sumEven(lst):
     # your code here
 
@@ -350,17 +269,14 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_8">
-        <statement>
-            <p>Sum up all the negative numbers in a list.</p>
-
-
-            <program xml:id="ex_9_8_editor" interactive="activecode" language="python">
-                <input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_9_8">
+    <statement>
+      <p>Sum up all the negative numbers in a list.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_8_editor">
+      <input>
 def sumNegatives(lst):
     # your code here
 
@@ -377,12 +293,10 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="lst_q9_answer_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="lst_q9_answer" language="python">
+        <input>
 import random
 
 def sumNegative(lst):
@@ -398,41 +312,26 @@ for i in range(100):
 
 print(sumNegative(lst))
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_9">
-        <statement>
-            <p>Count how many words in a list have length 5.</p>
-
-        </statement>
-        <program xml:id="ex_9_9_editor" interactive="activecode" language="python">
-            <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_9">
+    <statement>
+      <p>Count how many words in a list have length 5.</p>
+    </statement>
+    <program xml:id="ex_9_9_editor" interactive="activecode" language="python">
+      <input>
 def countWords(lst):
     # your code here
         </input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_10">
-        <statement>Sum all the elements in a list up to but not including the first even number.
-
-        </statement>
-        <program xml:id="ex_9_10_editor" interactive="activecode" language="python">
-            <input>
-# your code here
-        </input>
-        </program>
-
-        <solution>
-
-            <program xml:id="lst_q11_answer_editor" language="python">
-                <input>
+    </program>
+  </exercise>
+  <exercise>
+    <statement/>
+    <program interactive="" language=""/>
+    <solution>
+      <program xml:id="lst_q11_answer" language="python">
+        <input>
 import random
 
 def sum(lst):
@@ -449,59 +348,51 @@ for i in range(100):
 
 print(sum(lst))
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_11">
-        <statement>
-            <p>Count how many words occur in a list up to and including the first occurrence of the word &#8220;sam&#8221;.</p>
-
-        </statement>
-        <program xml:id="ex_9_11_editor" interactive="activecode" language="python">
-            <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_11">
+    <statement>
+      <p>Count how many words occur in a list up to and including the first occurrence of the word <q>sam</q>.</p>
+    </statement>
+    <program xml:id="ex_9_11_editor" interactive="activecode" language="python">
+      <input>
 def count(lst):
     # your code here
         </input>
-        </program>
-    </exercise>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_9_12">
+    <statement>
+      <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
+      <p>
+        <ol label="a">
+          <li>
+            <p>count</p>
+          </li>
+          <li>
+            <p>in</p>
+          </li>
+          <li>
+            <p>reverse</p>
+          </li>
+          <li>
+            <p>index</p>
+          </li>
+          <li>
+            <p>insert</p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_12_editor">
+      <input>
 
-
-    <exercise xml:id="ex_9_12">
-        <statement>
-            <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
-            <p>
-                <ol label="a">
-                    <li>
-                        <p>count</p>
-                    </li>
-                    <li>
-                        <p>in</p>
-                    </li>
-                    <li>
-                        <p>reverse</p>
-                    </li>
-                    <li>
-                        <p>index</p>
-                    </li>
-                    <li>
-                        <p>insert</p>
-                    </li>
-                </ol>
-            </p>
-
-
-            <program xml:id="ex_9_12_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="lst_q13_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="lst_q13_answer" language="python">
+        <input>
 def count(obj, lst):
     count = 0
     for e in lst:
@@ -542,27 +433,14 @@ print(reverse(lst))
 print(index(2, lst))
 print(insert('cat', 4, lst))
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_13">
-        <statement>
-            <p>
-                Write a function
-                <c>replace(s, old, new)</c>
-                that replaces all occurences of
-                <c>old</c>
-                with
-                <c>new</c>
-                in a string
-                <c>s</c>
-                :
-            </p>
-            <pre>test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_13">
+    <statement>
+      <p>Write a function <c>replace(s, old, new)</c> that replaces all occurences of
+                <c>old</c> with <c>new</c> in a string <c>s</c>:</p>
+      <pre>test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
 
 s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
 test(replace(s, 'om', 'am'),
@@ -570,18 +448,10 @@ test(replace(s, 'om', 'am'),
 
 test(replace(s, 'o', 'a'),
        'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')</pre>
-            <p>
-                <em>Hint</em>
-                : use the
-                <c>split</c>
-                and
-                <c>join</c>
-                methods.
-            </p>
-
-        </statement>
-        <program xml:id="ex_9_13_editor" interactive="activecode" language="python">
-            <input>
+      <p><em>Hint</em>: use the <c>split</c> and <c>join</c> methods.</p>
+    </statement>
+    <program xml:id="ex_9_13_editor" interactive="activecode" language="python">
+      <input>
 def replace(s, old, new):
     # your code here
 
@@ -597,28 +467,25 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_14">
-        <statement>
-            <p>Here are the rules for an L-system that creates something that resembles
+    </program>
+  </exercise>
+  <exercise xml:id="ex_9_14">
+    <statement>
+      <p>Here are the rules for an L-system that creates something that resembles
                         a common garden herb.  Implement the following rules and try it.  Use an
                         angle of 25.7 degrees.</p>
-            <pre>H
+      <pre>H
 H --&gt; HFX[+H][-H]
 X --&gt; X[-FFF][+FFF]FX</pre>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_14_editor">
+      <input>
 
-
-            <program xml:id="ex_9_14_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="lst_q15_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="lst_q15_answer" language="python">
+        <input>
 import turtle
 
 def createLSystem(numIters, axiom):
@@ -683,37 +550,27 @@ def main():
 
 main()
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_16">
-        <statement>
-            <p>Here is another L-System.  Use an Angle of 25.</p>
-            <pre>F
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_9_16">
+    <statement>
+      <p>Here is another L-System.  Use an Angle of 25.</p>
+      <pre>F
 F --&gt; F[-F]F[+F]F</pre>
+    </statement>
+    <program xml:id="ex_9_16_editor" interactive="activecode" language="python">
+      <input>
 
-        </statement>
-        <program xml:id="ex_9_16_editor" interactive="activecode" language="python">
-            <input></input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_9_17">
-        <statement>
-            <p>
-                Create a list named
-                <c>randlist</c>
-                containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).
-            </p>
-
-
-            <program xml:id="ex_9_17_editor" interactive="activecode" language="python">
-                <input>
+        </input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_9_17">
+    <statement>
+      <p>Create a list named <c>randlist</c> containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_9_17_editor">
+      <input>
 
 ====
 from unittest.gui import TestCaseGui
@@ -725,22 +582,17 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="ac_ex_9_17_editor" language="python">
-                <input>
+    </program>
+    <solution>
+      <program xml:id="ac_ex_9_17" language="python">
+        <input>
 import random
 
 randlist = []
 for i in range(100):
     randlist.append(random.randint(0, 1000))
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
+      </program>
+    </solution>
+  </exercise>
 </exercises>

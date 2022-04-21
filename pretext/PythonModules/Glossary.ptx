@@ -1,53 +1,37 @@
-<section xml:id="python_modules_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>deterministic</title>
-                    
-                        <p>A process that is repeatable and predictable.</p>
-                    
-                </gi>
-                <gi>
-                    <title>documentation</title>
-                    
-                        <p>A place where you can go to get detailed information about aspects of your
+<?xml version="1.0"?>
+<section xml:id="python-modules_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>deterministic</title>
+      <p>A process that is repeatable and predictable.</p>
+    </gi>
+    <gi>
+      <title>documentation</title>
+      <p>A place where you can go to get detailed information about aspects of your
                             programming language.</p>
-                    
-                </gi>
-                <gi>
-                    <title>module</title>
-                    
-                        <p>A file containing Python definitions and statements intended for use in
+    </gi>
+    <gi>
+      <title>module</title>
+      <p>A file containing Python definitions and statements intended for use in
                             other Python programs. The contents of a module are made available to
                             the other program by using the <em>import</em> statement.</p>
-                    
-                </gi>
-                <gi>
-                    <title>pseudo-random number</title>
-                    
-                        <p>A number that is not genuinely random but is instead created algorithmically.</p>
-                    
-                </gi>
-                <gi>
-                    <title>random number</title>
-                    
-                        <p>A number that is generated in such a way as to exhibit statistical randomness.</p>
-                    
-                </gi>
-                <gi>
-                    <title>random number generator</title>
-                    
-                        <p>A function that will provide you with random numbers, usually between 0 and 1.</p>
-                    
-                </gi>
-                <gi>
-                    <title>standard library</title>
-                    
-                        <p>A collection of modules that are part of the normal installation of Python.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+    <gi>
+      <title>pseudo-random number</title>
+      <p>A number that is not genuinely random but is instead created algorithmically.</p>
+    </gi>
+    <gi>
+      <title>random number</title>
+      <p>A number that is generated in such a way as to exhibit statistical randomness.</p>
+    </gi>
+    <gi>
+      <title>random number generator</title>
+      <p>A function that will provide you with random numbers, usually between 0 and 1.</p>
+    </gi>
+    <gi>
+      <title>standard library</title>
+      <p>A collection of modules that are part of the normal installation of Python.</p>
+    </gi>
+  </glossary>
+</section>

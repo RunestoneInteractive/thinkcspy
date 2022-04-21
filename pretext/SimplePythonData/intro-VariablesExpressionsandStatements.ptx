@@ -1,9 +1,8 @@
-<section xml:id="simple_python_data_variables-expressions-and-statements">
-        <title>Variables, Expressions and Statements</title>
-
-
-        <video xml:id="typesnconvert" youtube="vNfCfowr-pQ" width="auto" />
-        <p>In order to get started learning any programming language there are a number of
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_variables-expressions-and-statements">
+  <title>Variables, Expressions and Statements</title>
+  <video xml:id="typesnconvert" youtube="vNfCfowr-pQ" width="auto"/>
+  <p>In order to get started learning any programming language there are a number of
             concepts and ideas that are necessary.
             The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental
             building blocks of Python.</p>

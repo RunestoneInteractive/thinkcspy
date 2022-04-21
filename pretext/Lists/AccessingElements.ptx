@@ -1,159 +1,141 @@
+<?xml version="1.0"?>
 <section xml:id="lists_accessing-elements">
-        <title>Accessing Elements</title>
-        <p>The syntax for accessing the elements of a list is the same as the syntax for
-            accessing the characters of a string.  We use the index operator ( <c>[]</c> &#8211; not to
+  <title>Accessing Elements</title>
+  <p>The syntax for accessing the elements of a list is the same as the syntax for
+            accessing the characters of a string.  We use the index operator ( <c>[]</c> &#x2013; not to
             be confused with an empty list). The expression inside the brackets specifies
             the index. Remember that the indices start at 0.  Any integer expression can be used
             as an index and as with strings, negative index values will locate items from the right instead
             of from the left.</p>
-
-<listing xml:id="chp09_02">
-    <caption/>
-    <program xml:id="chp09_02_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp09_02" interactive="activecode" language="python">
+    <input>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
 print(numbers[9 - 8])
 print(numbers[-2])
 print(numbers[len(numbers) - 1])
         </input>
-    </program>
-</listing>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question9_3_1">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+  </program>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question9_3_1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[5])
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[ ]</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>[ ]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     The empty list is at index 4.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>3.14</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>3.14</p>
+        </statement>
+        <feedback>
                     Yes, 3.14 is at index 5 since we start counting at 0 and sublists count as one item.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
                     False is at index 6.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question9_3_2">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question9_3_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2].upper())
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Error, you cannot use the upper method on a list.</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>Error, you cannot use the upper method on a list.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     alist[2] is the string cat so the upper method is legal
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>2</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
                     2 is the index.  We want the item at that index.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>CAT</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>CAT</p>
+        </statement>
+        <feedback>
                     Yes, the string cat is upper cased to become CAT.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question9_3_3">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question9_3_3">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2][0])
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>56</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>56</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Indexes start with 0, not 1.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>c</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>c</p>
+        </statement>
+        <feedback>
                     Yes, the first character of the string at index 2 is c
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>cat</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>cat</p>
+        </statement>
+        <feedback>
                     cat is the item at index 2 but then we index into it further.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Error, you cannot have two index values unless you are using slicing.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot have two index values unless you are using slicing.</p>
+        </statement>
+        <feedback>
                     Using more than one index is fine.  You read it from left to right.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
-
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,76 +1,67 @@
+<?xml version="1.0"?>
 <section xml:id="files_iterating-over-lines-in-a-file">
-        <title>Iterating over lines in a file</title>
-        <p>Recall the contents of the ccdata.txt file.</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                    <row>
-                        <cell>
-                            <alert>Year</alert>
-                        </cell>
-                        <cell>
-                            <alert>Global Average Temp. (Celcius)</alert>
-                        </cell>
-                        <cell>
-                            <alert>Global Emmisions C02 (Giga-tons)</alert>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <DataFileNode line="24" runestone_options="{'subchapter': 'Iteratingoverlinesinafile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata1.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.4.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Iteratingoverlinesinafile.rst">
+  <title>Iterating over lines in a file</title>
+  <p>Recall the contents of the ccdata.txt file.</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
+          <term>Year</term>
+        </cell>
+        <cell>
+          <term>Global Average Temp. (Celcius)</term>
+        </cell>
+        <cell>
+          <term>Global Emmisions C02 (Giga-tons)</term>
+        </cell>
+      </row>
+    </tabular>
+  </table>
+  <DataFileNode line="24" runestone_options="{'subchapter': 'Iteratingoverlinesinafile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata1.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.4.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Iteratingoverlinesinafile.rst">
         </DataFileNode>
-        <p>We will now use this file as input in a program that will do some data
-            processing. In the program, we will <alert>read</alert> each line of the file and
+  <p>We will now use this file as input in a program that will do some data
+            processing. In the program, we will <term>read</term> each line of the file and
             print it with some additional text. Because text files are sequences of
             lines of text, we can use the <em>for</em> loop to iterate through each line of
             the file.</p>
-        <p>A <alert>line</alert> of a file is defined to be a sequence of characters up to and
-            including a special character called the <alert>newline</alert> character. If you
+  <p>A <term>line</term> of a file is defined to be a sequence of characters up to and
+            including a special character called the <term>newline</term> character. If you
             evaluate a string that contains a newline character you will see the
             character represented as <c>\n</c>. If you print a string that contains a
             newline you will not see the <c>\n</c>, you will just see its effects. When
             you are typing a Python program and you press the enter or return key on
             your keyboard, the editor inserts a newline character into your text at
             that point.</p>
-        <p>As the <em>for</em> loop iterates through each line of the file the loop
+  <p>As the <em>for</em> loop iterates through each line of the file the loop
             variable will contain the current line of the file as a string of
             characters. The general pattern for processing each line of a text file
             is as follows:</p>
-        <pre>for line in myFile:
+  <pre>for line in myFile:
     statement1
     statement2
     ...</pre>
-        <p>To process all of our climate change data, we will use a <em>for</em> loop to iterate over the lines of the file. Using
+  <p>To process all of our climate change data, we will use a <em>for</em> loop to iterate over the lines of the file. Using
             the <c>split</c> method, we can break each line into a list containing all the fields of interest about climate
             change. We can then take the values corresponding to year, global average temperature, and global emmisions to
             construct a simple sentence.</p>
-
-<listing xml:id="files_for">
-    <caption/>
-    <program xml:id="files_for_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="files_for" interactive="activecode" language="python">
+    <input>
 ccfile = open("ccdata.txt", "r")
 
 for aline in ccfile:
     values = aline.split()
-    print('In', values[0], 'the average temp. was', values[1], '&#176;C and CO2 emmisions were', values[2], 'gigatons.')
+    print('In', values[0], 'the average temp. was', values[1], '&#xB0;C and CO2 emmisions were', values[2], 'gigatons.')
 
 ccfile.close()
         </input>
-    </program>
-</listing>
-        <note>
-            <p>You can obtain a line from the keyboard with the <c>input</c> function, and you can process lines of a file.
-                However &#8220;line&#8221; is used differently:  With <c>input</c> Python reads through the newline you enter from the keyboard,
+  </program>
+  <note>
+    <p>You can obtain a line from the keyboard with the <c>input</c> function, and you can process lines of a file.
+                However <q>line</q> is used differently:  With <c>input</c> Python reads through the newline you enter from the keyboard,
                 but the newline (<c>'\n'</c>) is <em>not</em> included in the line returned by <c>input</c>. It is dropped.
                 When a line is taken from a file, the terminating newline <em>is</em> included as the last character (unless you
                 are reading the final line of a file that happens to not have a newline at the end).</p>
-        </note>
-        <p>In the climate change example it is irrelevant whether the final line has a newline character at the end or not,
+  </note>
+  <p>In the climate change example it is irrelevant whether the final line has a newline character at the end or not,
             since it would be stripped off by the <c>split</c> method call.</p>
-    </section>
-
+</section>

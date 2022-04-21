@@ -1,25 +1,23 @@
+<?xml version="1.0"?>
 <exercises xml:id="files_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="ex_6_1_files"><statement>
-                    <p>The following sample file called <c>studentdata.txt</c> contains one line for each student in an imaginary class.  The
-                        student&#8217;s name is the first thing on each line, followed by some exam scores.
+  <title>Exercises</title>
+  <exercise xml:id="ex_6_1_files">
+    <statement>
+      <p>The following sample file called <c>studentdata.txt</c> contains one line for each student in an imaginary class.  The
+                        student's name is the first thing on each line, followed by some exam scores.
                         The number of scores might be different for each student.</p>
-                    <DataFileNode line="28" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'studentdata.txt', 'qnumber': '', 'cols': 36, 'rows': 20, 'filecontent': 'joe 10 15 20 30 40\nbill 23 16 19 22\nsue 8 22 17 14 32 17 24 21 2 9 11 17\ngrace 12 28 21 45 26 10\njohn 14 32 25 16 89\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
+      <DataFileNode line="28" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'studentdata.txt', 'qnumber': '', 'cols': 36, 'rows': 20, 'filecontent': 'joe 10 15 20 30 40\nbill 23 16 19 22\nsue 8 22 17 14 32 17 24 21 2 9 11 17\ngrace 12 28 21 45 26 10\njohn 14 32 25 16 89\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
                     </DataFileNode>
-                    <p>Using the text file <c>studentdata.txt</c> write a program that prints out the names of
+      <p>Using the text file <c>studentdata.txt</c> write a program that prints out the names of
                         students that have more than six quiz scores.</p>
-
-    
-    
-    <program xml:id="ex_6_1_files_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_1_files_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_files_q1answer_editor" language="python">
+    <solution>
+      <program xml:id="ch_files_q1answer" language="python">
         <input>
 f = open("studentdata.txt", "r")
 
@@ -30,42 +28,32 @@ for aline in f:
 
 f.close()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_10_2">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_10_2">
     <statement>
-            <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the average grade
-                for each student, and print out the student&#8217;s name along with their average grade.</p>
-
+      <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the average grade
+                for each student, and print out the student's name along with their average grade.</p>
     </statement>
     <program xml:id="ex_10_2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_3_files"><statement>
-                    <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the minimum and
+  </exercise>
+  <exercise xml:id="ex_6_3_files">
+    <statement>
+      <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the minimum and
                         maximum score for each student.  Print out their name as well.</p>
-
-    
-    
-    <program xml:id="ex_6_3_files_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_3_files_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_files_q3answer_editor" language="python">
+    <solution>
+      <program xml:id="ch_files_q3answer" language="python">
         <input>
 f = open("studentdata.txt", "r")
 
@@ -78,59 +66,53 @@ for aline in f:
 
 f.close()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_10_4">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_10_4">
     <statement>
-            <p>Here is a file called <c>labdata.txt</c> that contains some sample data from a lab experiment.</p>
-            <DataFileNode line="130" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'labdata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '44 71\n79 37\n78 24\n41 76\n19 12\n19 32\n28 36\n22 58\n89 92\n91 6\n53 7\n27 80\n14 34\n8 81\n80 19\n46 72\n83 96\n88 18\n96 48\n77 67\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.12'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
+      <p>Here is a file called <c>labdata.txt</c> that contains some sample data from a lab experiment.</p>
+      <DataFileNode line="130" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'labdata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '44 71\n79 37\n78 24\n41 76\n19 12\n19 32\n28 36\n22 58\n89 92\n91 6\n53 7\n27 80\n14 34\n8 81\n80 19\n46 72\n83 96\n88 18\n96 48\n77 67\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.12'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
             </DataFileNode>
-            <p>Interpret the data file <c>labdata.txt</c> such that each line contains a an x,y coordinate pair.
+      <p>Interpret the data file <c>labdata.txt</c> such that each line contains a an x,y coordinate pair.
                 Write a function called <c>plotRegression</c> that reads the data from this file
                 and uses a turtle to plot those points and a best fit line according to the following
                 formulas:</p>
-            <p><math>y = \bar{y} + m(x - \bar{x})</math></p>
-            <p><math>m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}</math></p>
-            <p>where <math>\bar{x}</math> is the mean of the x-values, <math>\bar{y}</math> is the mean of the y-
+      <p>
+        <math>y = \bar{y} + m(x - \bar{x})</math>
+      </p>
+      <p>
+        <math>m = \frac{\sum{x_iy_i - n\bar{x}\bar{y}}}{\sum{x_i^2}-n\bar{x}^2}</math>
+      </p>
+      <p>where <math>\bar{x}</math> is the mean of the x-values, <math>\bar{y}</math> is the mean of the y-
                 values and <math>n</math> is the number of points.  If you are not familiar with the
                 mathematical <math>\sum</math> it is the sum operation.  For example <math>\sum{x_i}</math>
                 means to add up all the x values.</p>
-            <p>Your program should analyze the points and correctly scale the window using
+      <p>Your program should analyze the points and correctly scale the window using
                 <c>setworldcoordinates</c> so that that each point can be plotted.  Then you should
                 draw the best fit line, in a different color, through the points.</p>
-
     </statement>
     <program xml:id="ex_10_4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_10_5"><statement>
-                    <p>At the bottom of this page is a very long file called <c>mystery.txt</c> The lines of this
+  </exercise>
+  <exercise xml:id="ex_10_5">
+    <statement>
+      <p>At the bottom of this page is a very long file called <c>mystery.txt</c> The lines of this
                         file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions
                         for a turtle to lift up or put down its tail.  The pairs of numbers are some x,y coordinates.
                         Write a program that reads the file <c>mystery.txt</c> and uses the turtle to draw the picture
                         described by the commands and the set of points.</p>
-
-    
-    
-    <program xml:id="ex_10_5_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_10_5_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch_files_q5answer_editor" language="python">
+    <solution>
+      <program xml:id="ch_files_q5answer" language="python">
         <input>
 import turtle
 
@@ -154,14 +136,10 @@ for aline in f:
 f.close()
 wn.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        <p>Here is the <c>mystery.txt</c> file:</p>
-        <DataFileNode line="232" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mystery.txt', 'qnumber': '', 'cols': 9, 'rows': 20, 'filecontent': 'UP\n-218 185\nDOWN\n-240 189\n-246 188\n-248 183\n-246 178\n-244 175\n-240 170\n-235 166\n-229 163\n-220 158\n-208 156\n-203 153\n-194 148\n-187 141\n-179 133\n-171 119\n-166 106\n-163 87\n-161 66\n-162 52\n-164 44\n-167 28\n-171 6\n-172 -15\n-171 -30\n-165 -46\n-156 -60\n-152 -67\n-152 -68\nUP\n-134 -61\nDOWN\n-145 -66\n-152 -78\n-152 -94\n-157 -109\n-157 -118\n-151 -128\n-146 -135\n-146 -136\nUP\n-97 -134\nDOWN\n-98 -138\n-97 -143\n-96 -157\n-96 -169\n-98 -183\n-104 -194\n-110 -203\n-114 -211\n-117 -220\n-120 -233\n-122 -243\n-123 -247\n-157 -248\n-157 -240\n-154 -234\n-154 -230\n-153 -229\n-149 -226\n-146 -223\n-145 -219\n-143 -214\n-142 -210\n-141 -203\n-139 -199\n-136 -192\n-132 -184\n-130 -179\n-132 -171\n-133 -162\n-134 -153\n-138 -145\n-143 -137\n-143 -132\n-142 -124\n-138 -112\n-134 -104\n-132 -102\nUP\n-97 -155\nDOWN\n-92 -151\n-91 -147\n-89 -142\n-89 -135\n-90 -129\n-90 -128\nUP\n-94 -170\nDOWN\n-83 -171\n-68 -174\n-47 -177\n-30 -172\n-15 -171\n-11 -170\nUP\n12 -96\nDOWN\n9 -109\n9 -127\n7 -140\n5 -157\n9 -164\n22 -176\n37 -204\n40 -209\n49 -220\n55 -229\n57 -235\n57 -238\n50 -239\n49 -241\n51 -248\n53 -249\n63 -245\n70 -243\n57 -249\n62 -250\n71 -250\n75 -250\n81 -250\n86 -248\n86 -242\n84 -232\n85 -226\n81 -221\n77 -211\n73 -205\n67 -196\n62 -187\n58 -180\n51 -171\n47 -164\n46 -153\n50 -141\n53 -130\n54 -124\n57 -112\n56 -102\n55 -98\nUP\n48 -164\nDOWN\n54 -158\n60 -146\n64 -136\n64 -131\nUP\n5 -152\nDOWN\n1 -150\n-4 -145\n-8 -138\n-14 -128\n-19 -119\n-17 -124\nUP\n21 -177\nDOWN\n14 -176\n7 -174\n-6 -174\n-14 -170\n-19 -166\n-20 -164\nUP\n-8 -173\nDOWN\n-8 -180\n-5 -189\n-4 -201\n-2 -211\n-1 -220\n-2 -231\n-5 -238\n-8 -241\n-9 -244\n-7 -249\n6 -247\n9 -248\n16 -247\n21 -246\n24 -241\n27 -234\n27 -226\n27 -219\n27 -209\n27 -202\n28 -193\n28 -188\n28 -184\nUP\n-60 -177\nDOWN\n-59 -186\n-57 -199\n-56 -211\n-59 -225\n-61 -233\n-65 -243\n-66 -245\n-73 -246\n-81 -246\n-84 -246\n-91 -245\n-91 -244\n-88 -231\n-87 -225\n-85 -218\n-85 -211\n-85 -203\n-85 -193\n-88 -185\n-89 -180\n-91 -175\n-92 -172\n-93 -170\nUP\n-154 -93\nDOWN\n-157 -87\n-162 -74\n-168 -66\n-172 -57\n-175 -49\n-178 -38\n-178 -26\n-178 -12\n-177 4\n-175 17\n-172 27\n-168 36\n-161 48\n-161 50\nUP\n-217 178\nDOWN\n-217 178\n-217 177\n-215 176\n-214 175\n-220 177\n-223 178\n-223 178\n-222 178\nUP\n-248 185\nDOWN\n-245 184\n-240 182\n-237 181\n-234 179\n-231 177\n-229 176\n-228 175\n-226 174\n-224 173\n-223 173\n-220 172\n-217 172\n-216 171\n-214 170\n-214 169\nUP\n-218 186\nDOWN\n-195 173\n-183 165\n-175 159\n-164 151\n-158 145\n-152 139\n-145 128\n-143 122\n-139 112\n-138 105\n-134 95\n-131 88\n-129 78\n-126 67\n-125 62\n-125 54\n-124 44\n-125 38\n-126 30\n-125 27\n-125 8\n-126 5\n-125 -9\n-122 -15\n-115 -25\n-109 -32\n-103 -39\n-95 -42\n-84 -45\n-72 -47\n-56 -48\n-41 -47\n-31 -46\n-18 -45\n-1 -44\n9 -43\n34 -45\n50 -52\n67 -61\n83 -68\n95 -80\n112 -97\n142 -115\n180 -132\n200 -146\n227 -159\n259 -175\n289 -185\n317 -189\n349 -190\n375 -191\n385 -192\n382 -196\n366 -199\n352 -204\n343 -204\n330 -205\n315 -209\n296 -212\n276 -214\n252 -208\n237 -202\n218 -197\n202 -193\n184 -187\n164 -179\n147 -173\n128 -168\n116 -164\n102 -160\n88 -158\n78 -159\n69 -162\n57 -164\n56 -165\n51 -165\nUP\n68 -144\nDOWN\n83 -143\n96 -141\n109 -139\n119 -146\n141 -150\n161 -155\n181 -163\n195 -169\n208 -179\n223 -187\n241 -191\n247 -193\n249 -194\nUP\n-6 -141\nDOWN\n-15 -146\n-29 -150\n-42 -154\n-51 -153\n-60 -152\n-60 -152\nUP\n-90 -134\nDOWN\n-85 -131\n-79 -128\n-78 -123\n-80 -115\n-82 -106\n-80 -101\n-76 -101\nUP\n-81 -132\nDOWN\n-76 -130\n-71 -126\n-72 -124\nUP\n43 -118\nDOWN\n44 -125\n47 -135\n41 -156\n37 -160\n40 -166\n47 -171\n47 -171\nUP\n-106 -153\nDOWN\n-107 -167\n-106 -178\n-109 -192\n-114 -198\n-116 -201\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.16'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
+      </program>
+    </solution>
+  </exercise>
+  <p>Here is the <c>mystery.txt</c> file:</p>
+  <DataFileNode line="232" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mystery.txt', 'qnumber': '', 'cols': 9, 'rows': 20, 'filecontent': 'UP\n-218 185\nDOWN\n-240 189\n-246 188\n-248 183\n-246 178\n-244 175\n-240 170\n-235 166\n-229 163\n-220 158\n-208 156\n-203 153\n-194 148\n-187 141\n-179 133\n-171 119\n-166 106\n-163 87\n-161 66\n-162 52\n-164 44\n-167 28\n-171 6\n-172 -15\n-171 -30\n-165 -46\n-156 -60\n-152 -67\n-152 -68\nUP\n-134 -61\nDOWN\n-145 -66\n-152 -78\n-152 -94\n-157 -109\n-157 -118\n-151 -128\n-146 -135\n-146 -136\nUP\n-97 -134\nDOWN\n-98 -138\n-97 -143\n-96 -157\n-96 -169\n-98 -183\n-104 -194\n-110 -203\n-114 -211\n-117 -220\n-120 -233\n-122 -243\n-123 -247\n-157 -248\n-157 -240\n-154 -234\n-154 -230\n-153 -229\n-149 -226\n-146 -223\n-145 -219\n-143 -214\n-142 -210\n-141 -203\n-139 -199\n-136 -192\n-132 -184\n-130 -179\n-132 -171\n-133 -162\n-134 -153\n-138 -145\n-143 -137\n-143 -132\n-142 -124\n-138 -112\n-134 -104\n-132 -102\nUP\n-97 -155\nDOWN\n-92 -151\n-91 -147\n-89 -142\n-89 -135\n-90 -129\n-90 -128\nUP\n-94 -170\nDOWN\n-83 -171\n-68 -174\n-47 -177\n-30 -172\n-15 -171\n-11 -170\nUP\n12 -96\nDOWN\n9 -109\n9 -127\n7 -140\n5 -157\n9 -164\n22 -176\n37 -204\n40 -209\n49 -220\n55 -229\n57 -235\n57 -238\n50 -239\n49 -241\n51 -248\n53 -249\n63 -245\n70 -243\n57 -249\n62 -250\n71 -250\n75 -250\n81 -250\n86 -248\n86 -242\n84 -232\n85 -226\n81 -221\n77 -211\n73 -205\n67 -196\n62 -187\n58 -180\n51 -171\n47 -164\n46 -153\n50 -141\n53 -130\n54 -124\n57 -112\n56 -102\n55 -98\nUP\n48 -164\nDOWN\n54 -158\n60 -146\n64 -136\n64 -131\nUP\n5 -152\nDOWN\n1 -150\n-4 -145\n-8 -138\n-14 -128\n-19 -119\n-17 -124\nUP\n21 -177\nDOWN\n14 -176\n7 -174\n-6 -174\n-14 -170\n-19 -166\n-20 -164\nUP\n-8 -173\nDOWN\n-8 -180\n-5 -189\n-4 -201\n-2 -211\n-1 -220\n-2 -231\n-5 -238\n-8 -241\n-9 -244\n-7 -249\n6 -247\n9 -248\n16 -247\n21 -246\n24 -241\n27 -234\n27 -226\n27 -219\n27 -209\n27 -202\n28 -193\n28 -188\n28 -184\nUP\n-60 -177\nDOWN\n-59 -186\n-57 -199\n-56 -211\n-59 -225\n-61 -233\n-65 -243\n-66 -245\n-73 -246\n-81 -246\n-84 -246\n-91 -245\n-91 -244\n-88 -231\n-87 -225\n-85 -218\n-85 -211\n-85 -203\n-85 -193\n-88 -185\n-89 -180\n-91 -175\n-92 -172\n-93 -170\nUP\n-154 -93\nDOWN\n-157 -87\n-162 -74\n-168 -66\n-172 -57\n-175 -49\n-178 -38\n-178 -26\n-178 -12\n-177 4\n-175 17\n-172 27\n-168 36\n-161 48\n-161 50\nUP\n-217 178\nDOWN\n-217 178\n-217 177\n-215 176\n-214 175\n-220 177\n-223 178\n-223 178\n-222 178\nUP\n-248 185\nDOWN\n-245 184\n-240 182\n-237 181\n-234 179\n-231 177\n-229 176\n-228 175\n-226 174\n-224 173\n-223 173\n-220 172\n-217 172\n-216 171\n-214 170\n-214 169\nUP\n-218 186\nDOWN\n-195 173\n-183 165\n-175 159\n-164 151\n-158 145\n-152 139\n-145 128\n-143 122\n-139 112\n-138 105\n-134 95\n-131 88\n-129 78\n-126 67\n-125 62\n-125 54\n-124 44\n-125 38\n-126 30\n-125 27\n-125 8\n-126 5\n-125 -9\n-122 -15\n-115 -25\n-109 -32\n-103 -39\n-95 -42\n-84 -45\n-72 -47\n-56 -48\n-41 -47\n-31 -46\n-18 -45\n-1 -44\n9 -43\n34 -45\n50 -52\n67 -61\n83 -68\n95 -80\n112 -97\n142 -115\n180 -132\n200 -146\n227 -159\n259 -175\n289 -185\n317 -189\n349 -190\n375 -191\n385 -192\n382 -196\n366 -199\n352 -204\n343 -204\n330 -205\n315 -209\n296 -212\n276 -214\n252 -208\n237 -202\n218 -197\n202 -193\n184 -187\n164 -179\n147 -173\n128 -168\n116 -164\n102 -160\n88 -158\n78 -159\n69 -162\n57 -164\n56 -165\n51 -165\nUP\n68 -144\nDOWN\n83 -143\n96 -141\n109 -139\n119 -146\n141 -150\n161 -155\n181 -163\n195 -169\n208 -179\n223 -187\n241 -191\n247 -193\n249 -194\nUP\n-6 -141\nDOWN\n-15 -146\n-29 -150\n-42 -154\n-51 -153\n-60 -152\n-60 -152\nUP\n-90 -134\nDOWN\n-85 -131\n-79 -128\n-78 -123\n-80 -115\n-82 -106\n-80 -101\n-76 -101\nUP\n-81 -132\nDOWN\n-76 -130\n-71 -126\n-72 -124\nUP\n43 -118\nDOWN\n44 -125\n47 -135\n41 -156\n37 -160\n40 -166\n47 -171\n47 -171\nUP\n-106 -153\nDOWN\n-107 -167\n-106 -178\n-109 -192\n-114 -198\n-116 -201\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.16'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
         </DataFileNode>
-    </exercises>
-
+</exercises>

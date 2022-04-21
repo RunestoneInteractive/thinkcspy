@@ -1,23 +1,25 @@
-<section xml:id="web_apps_web-applications">
-        <title>Web Applications</title>
-        <p>In this chapter, you will learn how to create web applications in Python. There are two kinds of web
-            applications &#8211; &#8220;client side&#8221; web applications and &#8220;server side&#8221; web applications. You&#8217;ve probably used
+<?xml version="1.0"?>
+<section xml:id="web-apps_web-applications">
+  <title>Web Applications</title>
+  <p>In this chapter, you will learn how to create web applications in Python. There are two kinds of web
+            applications &#x2013; <q>client side</q> web applications and <q>server side</q> web applications. You've probably used
             both kinds in your travels on the World-Wide Web.</p>
-        <p><ul>
-            <li>
-                <p><alert>Client-side</alert> web applications are programs that are downloaded to a web browser and executed on
-                    the user&#8217;s local machine. Client-side applications are typically written in JavaScript and embedded
+  <p>
+    <ul>
+      <li>
+        <p><term>Client-side</term> web applications are programs that are downloaded to a web browser and executed on
+                    the user's local machine. Client-side applications are typically written in JavaScript and embedded
                     in web pages.</p>
-            </li>
-            <li>
-                <p><alert>Server-side</alert> web applications are programs that run on web server computers, rather than on the
-                    user&#8217;s local machine. Typically, a server-side web application displays a form with text boxes and
+      </li>
+      <li>
+        <p><term>Server-side</term> web applications are programs that run on web server computers, rather than on the
+                    user's local machine. Typically, a server-side web application displays a form with text boxes and
                     other data collection mechanisms. The user fills out the form, clicks a submit button, and the
                     browser sends the form to the web application on the server, which processes the request, and responds
-                    with another web page. If you&#8217;ve ever shopped online, you&#8217;ve used a server-side web application.</p>
-            </li>
-        </ul></p>
-        <p>In this chapter, you will learn to build server-side web applications, which I will refer to simply as &#8220;web
-            applications.&#8221;</p>
-    </section>
-
+                    with another web page. If you've ever shopped online, you've used a server-side web application.</p>
+      </li>
+    </ul>
+  </p>
+  <p>In this chapter, you will learn to build server-side web applications, which I will refer to simply as <q>web
+            applications.</q></p>
+</section>

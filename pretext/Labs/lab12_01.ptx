@@ -1,14 +1,12 @@
+<?xml version="1.0"?>
 <section xml:id="labs_counting-letters">
-        <title>Counting Letters</title>
-        <subsection xml:id="labs_simple-solution-counting-a-single-letter">
-            <title>Simple Solution: Counting a Single Letter</title>
-            <p>We have previously discussed the solution to the problem of counting the number of times a specific letter appears
-                in a string.  In the case below, that specific letter is &#8220;a&#8221;.</p>
-
-<listing xml:id="chp12_single">
-    <caption/>
-    <program xml:id="chp12_single_editor" interactive="activecode" language="python">
-        <input>
+  <title>Counting Letters</title>
+  <subsection xml:id="labs_simple-solution-counting-a-single-letter">
+    <title>Simple Solution: Counting a Single Letter</title>
+    <p>We have previously discussed the solution to the problem of counting the number of times a specific letter appears
+                in a string.  In the case below, that specific letter is <q>a</q>.</p>
+    <program xml:id="chp12_single" interactive="activecode" language="python">
+      <input>
 def countA(text):
     count = 0
     for c in text:
@@ -19,44 +17,50 @@ def countA(text):
 print(countA("banana"))
         </input>
     </program>
-</listing>
-            <p>Of course, we could also solve this problem by using the <c>count</c> method provided for strings.</p>
-            <program language="python"><input>
+    <p>Of course, we could also solve this problem by using the <c>count</c> method provided for strings.</p>
+    <program language="python">
+      <input>
 def countA(text):
 
     return text.count("a")
-</input></program>
-        </subsection>
-        <subsection xml:id="labs_general-solution-counting-all-letters">
-            <title>General Solution: Counting All Letters</title>
-            <p>Now we will generalize the counting problem and consider how to count the number of times each letter appears in
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="labs_general-solution-counting-all-letters">
+    <title>General Solution: Counting All Letters</title>
+    <p>Now we will generalize the counting problem and consider how to count the number of times each letter appears in
                 a given string.  In order to do this we need to realize that writing a function that returns a single integer will no
                 longer work.  Instead we will need to return some kind of collection that holds the counts for each character.</p>
-            <p>Although there may be many possible ways to do this, we suggest a dictionary where the keys of the dictionary will be
+    <p>Although there may be many possible ways to do this, we suggest a dictionary where the keys of the dictionary will be
                 the letters in the string and the associated values for each key will be the number of times that the letter
                 appeared.</p>
-            <p>What about a letter that does not appear in the string?  It will never be placed in the dictionary.  By assumption, any
+    <p>What about a letter that does not appear in the string?  It will never be placed in the dictionary.  By assumption, any
                 key that is not in the dictionary has a count of 0.</p>
-            <p>If we call the function <c>countAll</c>, then a call to <c>countAll</c> would return the dictionary.  For example,</p>
-            <program language="python"><input>
+    <p>If we call the function <c>countAll</c>, then a call to <c>countAll</c> would return the dictionary.  For example,</p>
+    <program language="python">
+      <input>
 print(countAll("banana"))
-</input></program>
-            <p>would return the dictionary</p>
-            <program language="python"><input>
+</input>
+    </program>
+    <p>would return the dictionary</p>
+    <program language="python">
+      <input>
 {"a":3, "b":1, "n":2}
-</input></program>
-            <p>Here is a start to the development of the function.</p>
-            <p><ol label="1">
-                <li>
-                    <p>Define the function to require one parameter, the string.</p>
-                </li>
-                <li>
-                    <p>Create an empty dictionary of counts.</p>
-                </li>
-                <li>
-                    <p>Iterate through the characters of the string, one character at a time.</p>
-                </li>
-            </ol></p>
-        </subsection>
-    </section>
-
+</input>
+    </program>
+    <p>Here is a start to the development of the function.</p>
+    <p>
+      <ol label="1">
+        <li>
+          <p>Define the function to require one parameter, the string.</p>
+        </li>
+        <li>
+          <p>Create an empty dictionary of counts.</p>
+        </li>
+        <li>
+          <p>Iterate through the characters of the string, one character at a time.</p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+</section>

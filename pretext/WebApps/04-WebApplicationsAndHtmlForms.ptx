@@ -1,25 +1,29 @@
-<section xml:id="web_apps_web-applications-and-html-forms">
-        <title>Web Applications and HTML Forms</title>
-        <p>Perhaps you&#8217;re thinking, &#8220;I don&#8217;t usually perform searches by typing in URL&#8217;s &#8212; I fill out a search form.&#8221;
-            True &#8212; if web applications forced users to interact with them by entering query strings, the World-Wide
+<?xml version="1.0"?>
+<section xml:id="web-apps_web-applications-and-html-forms">
+  <title>Web Applications and HTML Forms</title>
+  <p>Perhaps you're thinking, <q>I don't usually perform searches by typing in URL's &#x2014; I fill out a search form.</q>
+            True &#x2014; if web applications forced users to interact with them by entering query strings, the World-Wide
             Web would be a much less popular place.</p>
-        <p>Let&#8217;s explore the relationship between forms and query strings a bit. Bring up the Google home page (I&#8217;ll wait):</p>
-        <block_quote>
-            <p><url href="https://google.com" visual="https://google.com">https://google.com</url></p>
-        </block_quote>
-        <p>Now, type in your query. When I type in &#8220;Microsoft&#8221; and click Search, here is what I see:</p>
-        <figure>
-            <image source="WebApps/Figures/googlesearchresults.png" width="50%"/>
-        </figure>
-        <p>Now, take a good look at the URL in the title bar &#8212; notice the query string? It&#8217;s a bit more complicated
-            than the one I had you create by hand earlier. But you can probably pick out the &#8220;q=Microsoft&#8221; if you
+  <p>Let's explore the relationship between forms and query strings a bit. Bring up the Google home page (I'll wait):</p>
+  <blockquote>
+    <p>
+      <url href="https://google.com" visual="https://google.com">https://google.com</url>
+    </p>
+  </blockquote>
+  <p>Now, type in your query. When I type in <q>Microsoft</q> and click Search, here is what I see:</p>
+  <figure align="">
+    <image source="WebApps/Figures/googlesearchresults.png" width="50%"/>
+  </figure>
+  <p>Now, take a good look at the URL in the title bar &#x2014; notice the query string? It's a bit more complicated
+            than the one I had you create by hand earlier. But you can probably pick out the <q>q=Microsoft</q> if you
             look closely. How did all of that get there? Well, when you clicked Search, the browser took the information
             you typed into the form, packaged it up into a query string, and transmitted it to the Google web
             server. You see, when you fill out a form on a web page and click Submit, the browser uses the form
             data to construct a URL, and then sends a normal request to the web server.</p>
-        <p>Even if you&#8217;re a novice at writing <alert>HTML pages</alert>, it&#8217;s not hard to learn to create HTML forms. Take a look
+  <p>Even if you're a novice at writing <term>HTML pages</term>, it's not hard to learn to create HTML forms. Take a look
             at this simplified version of the Google home page:</p>
-        <program language="html"><input>
+  <program language="html">
+    <input>
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Google&lt;/title&gt;
@@ -34,35 +38,37 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</input></program>
-        <p>Focus on the region of this example in between the &lt;form&gt; tags. Here&#8217;s a quick overview of this part
+</input>
+  </program>
+  <p>Focus on the region of this example in between the &lt;form&gt; tags. Here's a quick overview of this part
             of the page:</p>
-        <p><ul>
-            <li>
-                <p>The form is the region of the page in between the &lt;form&gt; and &lt;/form&gt; tags.</p>
-            </li>
-            <li>
-                <p>The form can contain a mixture of text, regular HTML formatting tags, and form &lt;input&gt; tags</p>
-            </li>
-            <li>
-                <p>Each <c>&lt;input&gt;</c> tag has a <c>type</c> and a <c>name</c> attribute. The <c>type</c> attribute specifies what kind of input area
-                    it is (&#8220;text&#8221; for a text box, &#8220;submit&#8221; for submit button, etc.). The <c>name</c> attribute specifies a name for
+  <p>
+    <ul>
+      <li>
+        <p>The form is the region of the page in between the &lt;form&gt; and &lt;/form&gt; tags.</p>
+      </li>
+      <li>
+        <p>The form can contain a mixture of text, regular HTML formatting tags, and form &lt;input&gt; tags</p>
+      </li>
+      <li>
+        <p>Each <c>&lt;input&gt;</c> tag has a <c>type</c> and a <c>name</c> attribute. The <c>type</c> attribute specifies what kind of input area
+                    it is (<q>text</q> for a text box, <q>submit</q> for submit button, etc.). The <c>name</c> attribute specifies a name for
                     the input area.</p>
-            </li>
-            <li>
-                <p>When the user fills out the form and clicks the submit button, the browser constructs a URL by taking
-                    the form&#8217;s <c>action</c> attribute (<url href="https://google.com/search" visual="https://google.com/search">https://google.com/search</url>), appending a ?, and constructing the
+      </li>
+      <li>
+        <p>When the user fills out the form and clicks the submit button, the browser constructs a URL by taking
+                    the form's <c>action</c> attribute (<url href="https://google.com/search" visual="https://google.com/search">https://google.com/search</url>), appending a ?, and constructing the
                     query string using the names of the form input areas, together with the data entered by the user.</p>
-            </li>
-        </ul></p>
-        <p>Try it out! Using Notepad, type in this example, and save it as googleform.html. Open it in your browser;
+      </li>
+    </ul>
+  </p>
+  <p>Try it out! Using Notepad, type in this example, and save it as googleform.html. Open it in your browser;
             you should see something like this:</p>
-        <figure>
-            <image source="WebApps/Figures/googleform.png" width="50%"/>
-        </figure>
-        <p>Fill out the form, and, if Google still works as it did when this chapter was written, you should see
+  <figure align="">
+    <image source="WebApps/Figures/googleform.png" width="50%"/>
+  </figure>
+  <p>Fill out the form, and, if Google still works as it did when this chapter was written, you should see
             search results appear in your browser.</p>
-        <p>For more information about creating HTML forms, you might take a look at the excellent
+  <p>For more information about creating HTML forms, you might take a look at the excellent
             <url href="https://www.w3schools.com/html/html_forms.asp" visual="https://www.w3schools.com/html/html_forms.asp">tutorial at w3schools.com</url>.</p>
-    </section>
-
+</section>

@@ -1,19 +1,17 @@
-<exercises xml:id="python_modules_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="ex_mod_1"><statement>
-                    <p>Use a <c>for</c> statement to print 10 random numbers.</p>
-
-    
-    
-    <program xml:id="ex_mod_1_editor" interactive="activecode" language="python">
-        <input>
+<?xml version="1.0"?>
+<exercises xml:id="python-modules_exercises">
+  <title>Exercises</title>
+  <exercise xml:id="ex_mod_1">
+    <statement>
+      <p>Use a <c>for</c> statement to print 10 random numbers.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_mod_1_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="mod_q1_answer_editor" language="python">
+    <solution>
+      <program xml:id="mod_q1_answer" language="python">
         <input>
 import random
 
@@ -22,40 +20,30 @@ for counter in range(howmany):
     arandom = random.random()
     print(arandom)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_mod_2">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_mod_2">
     <statement>
-            <p>Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.</p>
-
+      <p>Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.</p>
     </statement>
     <program xml:id="ex_mod_2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_mod_3"><statement>
-                    <p>The <alert>Pythagorean Theorem</alert> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
-
-    
-    
-    <program xml:id="ex_mod_3_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_mod_3">
+    <statement>
+      <p>The <term>Pythagorean Theorem</term> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_mod_3_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="mod_q3_answer_editor" language="python">
+    <solution>
+      <program xml:id="mod_q3_answer" language="python">
         <input>
 import math
 
@@ -64,25 +52,17 @@ side2 = 4
 hypotenuse = math.hypot(side1,side2)
 print(hypotenuse)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_mod_4">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_mod_4">
     <statement>
-            <p>Search on the internet for a way to calculate an approximation for <alert>pi</alert>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
-
+      <p>Search on the internet for a way to calculate an approximation for <term>pi</term>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
     </statement>
     <program xml:id="ex_mod_4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-    </exercises>
-
+  </exercise>
+</exercises>

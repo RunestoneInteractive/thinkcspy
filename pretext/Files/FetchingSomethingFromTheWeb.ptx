@@ -1,24 +1,24 @@
+<?xml version="1.0"?>
 <section xml:id="files_fetching-something-from-the-web">
-        <title>Fetching Something From The Web</title>
-        <p>The Python libraries are pretty messy in places. But here is a very simple example that copies
+  <title>Fetching Something From The Web</title>
+  <p>The Python libraries are pretty messy in places. But here is a very simple example that copies
             the contents at some web URL to a local file. We will need to get a few things right before this works:</p>
-        <p><ul>
-            <li>
-                <p>The resource we&#8217;re trying to fetch must exist! Check this using a browser.</p>
-            </li>
-            <li>
-                <p>We&#8217;ll need permission to write to the destination filename, and the file will be created in the &#8220;current directory&#8221; - i.e. the same folder that the Python program is saved in.</p>
-            </li>
-            <li>
-                <p>If we are behind a proxy server that requires authentication, (as some students are), this may require some more special handling to work around our proxy. Use a local resource for the purpose of this demonstration!</p>
-            </li>
-        </ul></p>
-        <p>We will try to retrieve the content of the HTML of this page as in the following code.</p>
-
-<listing xml:id="ch11_1">
-    <caption/>
-    <program xml:id="ch11_1_editor" interactive="activecode" language="python">
-        <input>
+  <p>
+    <ul>
+      <li>
+        <p>The resource we're trying to fetch must exist! Check this using a browser.</p>
+      </li>
+      <li>
+        <p>We'll need permission to write to the destination filename, and the file will be created in the <q>current directory</q> - i.e. the same folder that the Python program is saved in.</p>
+      </li>
+      <li>
+        <p>If we are behind a proxy server that requires authentication, (as some students are), this may require some more special handling to work around our proxy. Use a local resource for the purpose of this demonstration!</p>
+      </li>
+    </ul>
+  </p>
+  <p>We will try to retrieve the content of the HTML of this page as in the following code.</p>
+  <program xml:id="ch11_1" interactive="activecode" language="python">
+    <input>
 import urllib.request
 
 def retrieve_page(url):
@@ -31,7 +31,5 @@ def retrieve_page(url):
 the_text = retrieve_page("https://runestone.academy/runestone/books/published/thinkcspy/Files/FetchingSomethingFromTheWeb.html")
 print(the_text)
         </input>
-    </program>
-</listing>
-    </section>
-
+  </program>
+</section>

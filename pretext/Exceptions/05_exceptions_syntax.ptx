@@ -1,35 +1,41 @@
+<?xml version="1.0"?>
 <section xml:id="exceptions_exceptions-syntax">
-        <title>Exceptions Syntax</title>
-        <p>There are many variations on the code that catches exceptions. Here is a
+  <title>Exceptions Syntax</title>
+  <p>There are many variations on the code that catches exceptions. Here is a
             brief summary, but other code variations are possible.</p>
-        <subsection xml:id="exceptions_catch-all-exceptions">
-            <title>Catch All Exceptions</title>
-            <p>Catch all exceptions, regardless of their type. This will prevent
+  <subsection xml:id="exceptions_catch-all-exceptions">
+    <title>Catch All Exceptions</title>
+    <p>Catch all exceptions, regardless of their type. This will prevent
                 your program from crashing, but this type of exception handling is rarely useful
-                because you can&#8217;t do anything meaningful to recover from the abnormal condition.</p>
-            <program language="Python"><input>
+                because you can't do anything meaningful to recover from the abnormal condition.</p>
+    <program language="Python">
+      <input>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
 except:
   # If any exception was raised, then execute this code block.
-</input></program>
-        </subsection>
-        <subsection xml:id="exceptions_catch-a-specific-exception">
-            <title>Catch A Specific Exception</title>
-            <p>This is perhaps the most often used syntax. It catches one specific condition
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="exceptions_catch-a-specific-exception">
+    <title>Catch A Specific Exception</title>
+    <p>This is perhaps the most often used syntax. It catches one specific condition
                 and tries to re-cover from the condition.</p>
-            <program language="Python"><input>
+    <program language="Python">
+      <input>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
 except ExceptionName:
   # If ExceptionName was raised, then execute this block.
-</input></program>
-        </subsection>
-        <subsection xml:id="exceptions_catch-multiple-specific-exceptions">
-            <title>Catch Multiple Specific Exceptions</title>
-            <program language="Python"><input>
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="exceptions_catch-multiple-specific-exceptions">
+    <title>Catch Multiple Specific Exceptions</title>
+    <program language="Python">
+      <input>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
@@ -39,31 +45,35 @@ except Exception_two:
   # If Exception_two was raised, then execute this block.
 else:
   # If there was no exception then execute this block.
-</input></program>
-        </subsection>
-        <subsection xml:id="exceptions_clean-up-after-exceptions">
-            <title>Clean-up After Exceptions</title>
-            <p>If you have code that you want to be executed even if exceptions occur, you
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="exceptions_clean-up-after-exceptions">
+    <title>Clean-up After Exceptions</title>
+    <p>If you have code that you want to be executed even if exceptions occur, you
                 can include a <c>finally</c> code block:</p>
-            <program language="Python"><input>
+    <program language="Python">
+      <input>
 try:
   # Your normal code goes here.
   # Your code might include function calls which might raise exceptions.
   # If an exception is raised, some of these statements might not be executed.
 finally:
   # This block of code will always execute, even if there are exceptions raised
-</input></program>
-        </subsection>
-        <subsection xml:id="exceptions_an-example-of-file-i-o">
-            <title>An Example of File I/O</title>
-            <p>One place where you will always want to include exception handling is when
+</input>
+    </program>
+  </subsection>
+  <subsection xml:id="exceptions_an-example-of-file-i-o">
+    <title>An Example of File I/O</title>
+    <p>One place where you will always want to include exception handling is when
                 you read or write to a file. Here is a typical example of file processing.
                 Note that the outer <c>try: except:</c> block takes care of a missing file or
-                the fact that the existing file can&#8217;t be opened for writing. The inner
+                the fact that the existing file can't be opened for writing. The inner
                 <c>try: except:</c> block  protects against output errors, such as trying to
                 write to a device that is full. The <c>finally</c> code guarantees that the
                 file is closed properly, even if there are errors during writing.</p>
-            <program language="Python"><input>
+    <program language="Python">
+      <input>
 try:
    f = open("my_file.txt", "w")
    try:
@@ -72,9 +82,7 @@ try:
       f.close()
 except IOError:
    print "Error: my_file.txt does not exist or it can't be opened for output."
-</input></program>
-            
-            
-        </subsection>
-    </section>
-
+</input>
+    </program>
+  </subsection>
+</section>

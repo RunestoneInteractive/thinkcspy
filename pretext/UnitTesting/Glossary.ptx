@@ -1,48 +1,34 @@
-<section xml:id="unit_testing_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>assert statement</title>
-                    
-                        <p>A statement that verifies that a boolean condition is true.</p>
-                    
-                </gi>
-                <gi>
-                    <title>design by contract</title>
-                    
-                        <p>An approach to designing functions that specifies function behavior using
+<?xml version="1.0"?>
+<section xml:id="unit-testing_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>assert statement</title>
+      <p>A statement that verifies that a boolean condition is true.</p>
+    </gi>
+    <gi>
+      <title>design by contract</title>
+      <p>An approach to designing functions that specifies function behavior using
                             preconditions and postconditions.</p>
-                    
-                </gi>
-                <gi>
-                    <title>postcondition</title>
-                    
-                        <p>Part of a function specification that states the work the function completed by the function if the precondition is
+    </gi>
+    <gi>
+      <title>postcondition</title>
+      <p>Part of a function specification that states the work the function completed by the function if the precondition is
                             satisfied.</p>
-                    
-                </gi>
-                <gi>
-                    <title>precondition</title>
-                    
-                        <p>A boolean condition that the caller of a function must ensure is true
+    </gi>
+    <gi>
+      <title>precondition</title>
+      <p>A boolean condition that the caller of a function must ensure is true
                             in order for the function to produce correct results</p>
-                    
-                </gi>
-                <gi>
-                    <title>specification-based tests</title>
-                    
-                        <p>tests that are designed based only on the information in the function specification, without considering any of
+    </gi>
+    <gi>
+      <title>specification-based tests</title>
+      <p>tests that are designed based only on the information in the function specification, without considering any of
                             the details in the function implementation.</p>
-                    
-                </gi>
-                <gi>
-                    <title>unit test</title>
-                    
-                        <p>Code that tests a function to determine if it works properly</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+    <gi>
+      <title>unit test</title>
+      <p>Code that tests a function to determine if it works properly</p>
+    </gi>
+  </glossary>
+</section>

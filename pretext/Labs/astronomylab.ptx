@@ -1,12 +1,10 @@
+<?xml version="1.0"?>
 <section xml:id="labs_astronomy-animation">
-        <title>Astronomy Animation</title>
-        <subsection xml:id="labs_object-oriented-programming">
-            <title>Object-oriented programming</title>
-
-<listing xml:id="astlab_ast1">
-    <caption/>
-    <program xml:id="astlab_ast1_editor" interactive="activecode" language="python">
-        <input>
+  <title>Astronomy Animation</title>
+  <subsection xml:id="labs_object-oriented-programming">
+    <title>Object-oriented programming</title>
+    <program xml:id="astlab_ast1" interactive="activecode" language="python">
+      <input>
 import turtle
 import math
 
@@ -213,7 +211,5 @@ def createSSandAnimate():
 createSSandAnimate()
         </input>
     </program>
-</listing>
-        </subsection>
-    </section>
-
+  </subsection>
+</section>

@@ -1,145 +1,154 @@
+<?xml version="1.0"?>
 <exercises xml:id="selection_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="ex_6_1"><statement>
-                    <p>What do these expressions evaluate to?</p>
-                    <p><ol label="1">
-                        <li>
-                            <p><c>3 == 3</c></p>
-                        </li>
-                        <li>
-                            <p><c>3 != 3</c></p>
-                        </li>
-                        <li>
-                            <p><c>3 &gt;= 4</c></p>
-                        </li>
-                        <li>
-                            <p><c>not (3 &lt; 4)</c></p>
-                        </li>
-                    </ol></p>
-
-    
-    
-    <program xml:id="ex_6_1_editor" interactive="activecode" language="python">
-        <input>
+  <title>Exercises</title>
+  <exercise xml:id="ex_6_1">
+    <statement>
+      <p>What do these expressions evaluate to?</p>
+      <p>
+        <ol label="1">
+          <li>
+            <p>
+              <c>3 == 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>3 != 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>3 &gt;= 4</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>not (3 &lt; 4)</c>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_1_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-                    <p><ol label="1">
-                        <li>
-                            <p>True</p>
-                        </li>
-                        <li>
-                            <p>False</p>
-                        </li>
-                        <li>
-                            <p>False</p>
-                        </li>
-                        <li>
-                            <p>False</p>
-                        </li>
-                    </ol></p>
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_2">
+    <solution>
+                    
+                        
+                            True
+                        
+                        
+                            False
+                        
+                        
+                            False
+                        
+                        
+                            False
+                        
+                    
+                
+                    <p><ol label="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
+                </solution>
+  </exercise>
+  <exercise xml:id="ex_6_2">
     <statement>
-            <p>Give the <alert>logical opposites</alert> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
-            <p><ol label="1">
-                <li>
-                    <p><c>a &gt; b</c></p>
-                </li>
-                <li>
-                    <p><c>a &gt;= b</c></p>
-                </li>
-                <li>
-                    <p><c>a &gt;= 18  and  day == 3</c></p>
-                </li>
-                <li>
-                    <p><c>a &gt;= 18  or  day != 3</c></p>
-                </li>
-            </ol></p>
-
+      <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
+      <p>
+        <ol label="1">
+          <li>
+            <p>
+              <c>a &gt; b</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= b</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= 18  and  day == 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= 18  or  day != 3</c>
+            </p>
+          </li>
+        </ol>
+      </p>
     </statement>
     <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_3"><statement>
-                    <p>Write a function which is given an exam mark, and it returns a string &#8212; the grade for that mark &#8212; according to this
+  </exercise>
+  <exercise xml:id="ex_6_3">
+    <statement>
+      <p>Write a function which is given an exam mark, and it returns a string &#x2014; the grade for that mark &#x2014; according to this
                         scheme:</p>
-                    <table><tabular>
-                        
-                            
-                            
-                            
-                                <row header="yes">
-                                    <cell>
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell>
                                         Mark
                                     </cell>
-                                    <cell>
+            <cell>
                                         Grade
                                     </cell>
-                                </row>
-                            
-                            
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         &gt;= 90
                                     </cell>
-                                    <cell>
+            <cell>
                                         A
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         [80-90)
                                     </cell>
-                                    <cell>
+            <cell>
                                         B
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         [70-80)
                                     </cell>
-                                    <cell>
+            <cell>
                                         C
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         [60-70)
                                     </cell>
-                                    <cell>
+            <cell>
                                         D
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         &lt; 60
                                     </cell>
-                                    <cell>
+            <cell>
                                         F
                                     </cell>
-                                </row>
-                            
-                        
-                    </tabular></table>
-                    <p>The square and round brackets denote closed and open intervals.
+          </row>
+        </tabular>
+      </table>
+      <p>The square and round brackets denote closed and open intervals.
                         A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
-                    <p>Test your function by printing the mark and the grade for a number of different marks.</p>
-
-    
-    
-    <program xml:id="ex_6_3_editor" interactive="activecode" language="python">
-        <input>
+      <p>Test your function by printing the mark and the grade for a number of different marks.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_3_editor">
+      <input>
 def getGrade(grade):
       #your code here
 
@@ -161,9 +170,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="q3_question_editor" language="python">
+    <solution>
+      <program xml:id="q3_question" language="python">
         <input>
 def grade(mark):
     if mark &gt;= 90:
@@ -183,45 +191,35 @@ def grade(mark):
 mark = 83
 print( "Mark:", str(mark), "Grade:", grade(mark))
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_4">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_6_4">
     <statement>
-            <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
+      <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
                 of 200 or more is filled with red, values between [100 and 200) are filled yellow,
                 and bars representing values less than 100 are filled green.</p>
-
     </statement>
     <program xml:id="ex_6_4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_5"><statement>
-                    <p>In the turtle bar chart program, what do you expect to happen if one or more
+  </exercise>
+  <exercise xml:id="ex_6_5">
+    <statement>
+      <p>In the turtle bar chart program, what do you expect to happen if one or more
                         of the data values in the list is negative?   Go back and try it out.  Change the
                         program so that when it prints the text value for the negative bars, it puts
                         the text above the base of the bar (on the 0 axis).</p>
-
-    
-    
-    <program xml:id="ex_6_5_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_5_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="answer_ex_6_5_editor" language="python">
+    <solution>
+      <program xml:id="answer_ex_6_5" language="python">
         <input>
 import turtle
 
@@ -269,22 +267,16 @@ for a in xs:
 
 wn.exitonclick()
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_6">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_6_6">
     <statement>
-            <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
+      <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
                 the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
-
     </statement>
     <program xml:id="ex_6_6_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
 def findHypot(a,b):
     # your code here
@@ -303,18 +295,15 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_7"><statement>
-                    <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
-                        and returns <c>True</c> if the argument is an <alert>even number</alert> and <c>False</c> if
-                        it is <alert>odd</alert>.</p>
-
-    
-    
-    <program xml:id="ex_6_7_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_6_7">
+    <statement>
+      <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
+                        and returns <c>True</c> if the argument is an <term>even number</term> and <c>False</c> if
+                        it is <term>odd</term>.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_7_editor">
+      <input>
 
 def is_even(n):
     # your code here
@@ -333,9 +322,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="q7_answer_editor" language="python">
+    <solution>
+      <program xml:id="q7_answer" language="python">
         <input>
 from test import testEqual
 
@@ -350,22 +338,16 @@ testEqual(is_even(5), False)
 testEqual(is_even(1), False)
 testEqual(is_even(0), True)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_8">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_6_8">
     <statement>
-            <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
+      <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
                 and <c>False</c> otherwise.</p>
-
     </statement>
     <program xml:id="ex_6_8_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
 def is_odd(n):
     # your code here
@@ -384,17 +366,14 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_9"><statement>
-                    <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
+  </exercise>
+  <exercise xml:id="ex_6_9">
+    <statement>
+      <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
                         argument is an odd integer.</p>
-
-    
-    
-    <program xml:id="ex_6_9_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_9_editor">
+      <input>
 
 def is_odd(n):
     # your code here
@@ -412,9 +391,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="q9_answer_editor" language="python">
+    <solution>
+      <program xml:id="q9_answer" language="python">
         <input>
 from test import testEqual
 
@@ -435,32 +413,28 @@ testEqual(is_odd(5), True)
 testEqual(is_odd(1), True)
 testEqual(is_odd(0), False)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_10">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_6_10">
     <statement>
-            <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
+      <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
                 will determine whether the triangle is right-angled.  Assume that the third argument to the
                 function is always the longest side.  It will return <c>True</c> if the triangle
                 is right-angled, or <c>False</c> otherwise.</p>
-            <p>Hint: floating point arithmetic is not always exactly accurate,
+      <p>Hint: floating point arithmetic is not always exactly accurate,
                 so it is not safe to test floating point numbers for equality.
                 If a good programmer wants to know whether
                 <c>x</c> is equal or close enough to <c>y</c>, they would probably code it up as</p>
-            <program language="python"><input>
+      <program language="python">
+        <input>
 if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
     ...
-</input></program>
-
+</input>
+      </program>
     </statement>
     <program xml:id="ex_6_10_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def is_rightangled(a, b, c):
     # your code here
 
@@ -479,16 +453,13 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_11"><statement>
-                    <p>Extend the above program so that the sides can be given to the function in any order.</p>
-
-    
-    
-    <program xml:id="ex_6_11_editor" interactive="activecode" language="python">
-        <input>
+  </exercise>
+  <exercise xml:id="ex_6_11">
+    <statement>
+      <p>Extend the above program so that the sides can be given to the function in any order.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_11_editor">
+      <input>
 
 def is_rightangled(a, b, c):
     # your code here
@@ -509,9 +480,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="q11_answer_editor" language="python">
+    <solution>
+      <program xml:id="q11_answer" language="python">
         <input>
 from test import testEqual
 
@@ -533,25 +503,19 @@ testEqual(is_rightangled(4.1, 8.2, 9.16787), True)
 testEqual(is_rightangled(4.1, 8.2, 9.168), False)
 testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_6_12">
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_6_12">
     <statement>
-            <p>3 criteria must be taken into account to identify leap years:</p>
-            <p>The year is evenly divisible by 4;</p>
-            <p>If the year can be evenly divided by 100, it is NOT a leap year, unless;</p>
-            <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
-            <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
-
+      <p>3 criteria must be taken into account to identify leap years:</p>
+      <p>The year is evenly divisible by 4;</p>
+      <p>If the year can be evenly divided by 100, it is NOT a leap year, unless;</p>
+      <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
+      <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
     </statement>
     <program xml:id="ex_6_12_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def isLeap(year):
     # your code here
 
@@ -571,50 +535,48 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_6_13"><statement>
-                    <p>Implement the calculator for the date of Easter.</p>
-                    <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
-                    <p>Ask the user to enter a year.
+  </exercise>
+  <exercise xml:id="ex_6_13">
+    <statement>
+      <p>Implement the calculator for the date of Easter.</p>
+      <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
+      <p>Ask the user to enter a year.
                         Compute the following:</p>
-                    <block_quote>
-                        <p><ol label="1">
-                            <li>
-                                <p>a = year % 19</p>
-                            </li>
-                            <li>
-                                <p>b = year % 4</p>
-                            </li>
-                            <li>
-                                <p>c = year % 7</p>
-                            </li>
-                            <li>
-                                <p>d = (19 * a + 24) % 30</p>
-                            </li>
-                            <li>
-                                <p>e = (2 * b + 4 * c + 6 * d + 5) % 7</p>
-                            </li>
-                            <li>
-                                <p>dateofeaster = 22 + d + e</p>
-                            </li>
-                        </ol></p>
-                    </block_quote>
-                    <p>Special note: The algorithm can give a date in April.  Also, if the year is one of four special
+      <blockquote>
+        <p>
+          <ol label="1">
+            <li>
+              <p>a = year % 19</p>
+            </li>
+            <li>
+              <p>b = year % 4</p>
+            </li>
+            <li>
+              <p>c = year % 7</p>
+            </li>
+            <li>
+              <p>d = (19 * a + 24) % 30</p>
+            </li>
+            <li>
+              <p>e = (2 * b + 4 * c + 6 * d + 5) % 7</p>
+            </li>
+            <li>
+              <p>dateofeaster = 22 + d + e</p>
+            </li>
+          </ol>
+        </p>
+      </blockquote>
+      <p>Special note: The algorithm can give a date in April.  Also, if the year is one of four special
                         years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
-                    <p>Your program should print an error message if the user provides a date that is out of range.</p>
-
-    
-    
-    <program xml:id="ex_6_13_editor" interactive="activecode" language="python">
-        <input>
+      <p>Your program should print an error message if the user provides a date that is out of range.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_6_13_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="answer_ex_6_13_editor" language="python">
+    <solution>
+      <program xml:id="answer_ex_6_13" language="python">
         <input>
 year = int(input("Please enter a year"))
 if year &gt;= 1900 and year &lt;= 2099:
@@ -635,11 +597,7 @@ if year &gt;= 1900 and year &lt;= 2099:
 else:
     print("ERROR...year out of range")
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-    </exercises>
-
+      </program>
+    </solution>
+  </exercise>
+</exercises>

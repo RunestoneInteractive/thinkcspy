@@ -1,14 +1,12 @@
+<?xml version="1.0"?>
 <section xml:id="strings_traversal-and-the-while-loop">
-        <title>Traversal and the <c>while</c> Loop</title>
-        <p>The <c>while</c> loop can also control the
+  <title>Traversal and the <c>while</c> Loop</title>
+  <p>The <c>while</c> loop can also control the
             generation of the index values.  Remember that the programmer is responsible for setting up the initial
             condition, making sure that the condition is correct, and making sure that something changes inside the
             body to guarantee that the condition will eventually fail.</p>
-
-<listing xml:id="ch08_7c">
-    <caption/>
-    <program xml:id="ch08_7c_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch08_7c" interactive="activecode" language="python">
+    <input>
 fruit = "apple"
 
 position = 0
@@ -16,73 +14,63 @@ while position &lt; len(fruit):
     print(fruit[position])
     position = position + 1
         </input>
-    </program>
-</listing>
-        <p>The loop condition is <c>position &lt; len(fruit)</c>, so when <c>position</c> is equal to the
+  </program>
+  <p>The loop condition is <c>position &lt; len(fruit)</c>, so when <c>position</c> is equal to the
             length of the string, the condition is false, and the body of the loop is not
             executed. The last character accessed is the one with the index
             <c>len(fruit)-1</c>, which is the last character in the string.</p>
-        <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
-<exercise runestone="ch08_7c1"/>        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question8_10_1">
-        <statement>
-
-        <p>How many times is the letter o printed by the following statements?</p>
-        <program language="python"><input>
+  <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
+  <exercise runestone="ch08_7c1"/>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question8_10_1">
+    <statement>
+      <p>How many times is the letter o printed by the following statements?</p>
+      <program language="python">
+        <input>
 s = "python rocks"
 idx = 1
 while idx &lt; len(s):
     print(s[idx])
     idx = idx + 2
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>0</p>
         </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>0</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Yes, idx goes through the odd numbers starting at 1.  o is at position 4 and 8.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>1</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>1</p>
+        </statement>
+        <feedback>
                     o is at positions 4 and 8.  idx starts at 1, not 0.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>2</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
                     There are 2 o characters but idx does not take on the correct index values.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_08_02">
-    <caption/>
-    <program xml:id="scratch_08_02_editor" interactive="activecode" language="python">
-        <input>
+      </choice>
+    </choices>
+  </exercise>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_08_02" interactive="activecode" language="python">
+      <input>
 
 
         </input>
     </program>
-</listing>
-        </note>
-        
-        
-    </section>
-
+  </note>
+</section>

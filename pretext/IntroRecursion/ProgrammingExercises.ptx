@@ -1,14 +1,12 @@
-<section xml:id="intro_recursion_programming-exercises">
-        <title>Programming Exercises</title>
-        
-
-<exercise xml:id="ex_rec_1">
+<?xml version="1.0"?>
+<section xml:id="intro-recursion_programming-exercises">
+  <title>Programming Exercises</title>
+  <exercise xml:id="ex_rec_1">
     <statement>
-            <p>Write a recursive function to compute the factorial of a number.</p>
-
+      <p>Write a recursive function to compute the factorial of a number.</p>
     </statement>
     <program xml:id="ex_rec_1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def computeFactorial(number):
     #your code here
 
@@ -30,17 +28,13 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_2">
+  </exercise>
+  <exercise xml:id="ex_rec_2">
     <statement>
-            <p>Write a recursive function to reverse a list.</p>
-
+      <p>Write a recursive function to reverse a list.</p>
     </statement>
     <program xml:id="ex_rec_2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def reverseList(lst):
     #your code here
 
@@ -58,220 +52,176 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_3">
+  </exercise>
+  <exercise xml:id="ex_rec_3">
     <statement>
-            <p>Modify the recursive tree program using one or all of the following
+      <p>Modify the recursive tree program using one or all of the following
                 ideas:</p>
-            <p><ul>
-                <li>
-                    <p>Modify the thickness of the branches so that as the <c>branchLen</c>
+      <p>
+        <ul>
+          <li>
+            <p>Modify the thickness of the branches so that as the <c>branchLen</c>
                         gets smaller, the line gets thinner.</p>
-                </li>
-                <li>
-                    <p>Modify the color of the branches so that as the <c>branchLen</c> gets
+          </li>
+          <li>
+            <p>Modify the color of the branches so that as the <c>branchLen</c> gets
                         very short it is colored like a leaf.</p>
-                </li>
-                <li>
-                    <p>Modify the angle used in turning the turtle so that at each branch
+          </li>
+          <li>
+            <p>Modify the angle used in turning the turtle so that at each branch
                         point the angle is selected at random in some range. For example
                         choose the angle between 15 and 45 degrees. Play around to see
                         what looks good.</p>
-                </li>
-                <li>
-                    <p>Modify the <c>branchLen</c> recursively so that instead of always
+          </li>
+          <li>
+            <p>Modify the <c>branchLen</c> recursively so that instead of always
                         subtracting the same amount you subtract a random amount in some
                         range.</p>
-                </li>
-            </ul></p>
-            <p>If you implement all of the above ideas you will have a very
+          </li>
+        </ul>
+      </p>
+      <p>If you implement all of the above ideas you will have a very
                 realistic looking tree.</p>
-
     </statement>
     <program xml:id="ex_rec_3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_4">
+  </exercise>
+  <exercise xml:id="ex_rec_4">
     <statement>
-            <p>Find or invent an algorithm for drawing a fractal mountain. Hint: One
+      <p>Find or invent an algorithm for drawing a fractal mountain. Hint: One
                 approach to this uses triangles again.</p>
-
     </statement>
     <program xml:id="ex_rec_4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_5">
+  </exercise>
+  <exercise xml:id="ex_rec_5">
     <statement>
-            <p>Write a recursive function to compute the Fibonacci sequence. How
+      <p>Write a recursive function to compute the Fibonacci sequence. How
                 does the performance of the recursive function compare to that of an
                 iterative version?</p>
-
     </statement>
     <program xml:id="ex_rec_5_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_6">
+  </exercise>
+  <exercise xml:id="ex_rec_6">
     <statement>
-            <p>Implement a solution to the Tower of Hanoi using three stacks to keep
+      <p>Implement a solution to the Tower of Hanoi using three stacks to keep
                 track of the disks.</p>
-
     </statement>
     <program xml:id="ex_rec_6_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_7">
+  </exercise>
+  <exercise xml:id="ex_rec_7">
     <statement>
-            <p>Using the turtle graphics module, write a recursive program to
+      <p>Using the turtle graphics module, write a recursive program to
                 display a Hilbert curve.</p>
-
     </statement>
     <program xml:id="ex_rec_7_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_8">
+  </exercise>
+  <exercise xml:id="ex_rec_8">
     <statement>
-            <p>Using the turtle graphics module, write a recursive program to
+      <p>Using the turtle graphics module, write a recursive program to
                 display a Koch snowflake.</p>
-
     </statement>
     <program xml:id="ex_rec_8_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_9">
+  </exercise>
+  <exercise xml:id="ex_rec_9">
     <statement>
-            <p>Write a program to solve the following problem: You have two jugs: a
+      <p>Write a program to solve the following problem: You have two jugs: a
                 4-gallon jug and a 3-gallon jug. Neither of the jugs have markings on
                 them. There is a pump that can be used to fill the jugs with water.
                 How can you get exactly two gallons of water in the 4-gallon jug?</p>
-
     </statement>
     <program xml:id="ex_rec_9_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_10">
+  </exercise>
+  <exercise xml:id="ex_rec_10">
     <statement>
-            <p>Generalize the problem above so that the parameters to your solution
+      <p>Generalize the problem above so that the parameters to your solution
                 include the sizes of each jug and the final amount of water to be
                 left in the larger jug.</p>
-
     </statement>
     <program xml:id="ex_rec_10_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_11">
+  </exercise>
+  <exercise xml:id="ex_rec_11">
     <statement>
-            <p>Write a program that solves the following problem: Three missionaries
+      <p>Write a program that solves the following problem: Three missionaries
                 and three cannibals come to a river and find a boat that holds two
                 people. Everyone must get across the river to continue on the
                 journey. However, if the cannibals ever outnumber the missionaries on
                 either bank, the missionaries will be eaten. Find a series of
                 crossings that will get everyone safely to the other side of the
                 river.</p>
-
     </statement>
     <program xml:id="ex_rec_11_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_12">
+  </exercise>
+  <exercise xml:id="ex_rec_12">
     <statement>
-            <p>Modify the Tower of Hanoi program using turtle graphics to animate
+      <p>Modify the Tower of Hanoi program using turtle graphics to animate
                 the movement of the disks. Hint: You can make multiple turtles and
                 have them shaped like rectangles.</p>
-
     </statement>
     <program xml:id="ex_rec_12_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-
-<exercise xml:id="ex_rec_13">
+  </exercise>
+  <exercise xml:id="ex_rec_13">
     <statement>
-            <p>Pascal&#8217;s triangle is a number triangle with numbers arranged in
+      <p>Pascal's triangle is a number triangle with numbers arranged in
                 staggered rows such that</p>
-            <math_block docname="IntroRecursion/ProgrammingExercises" label="True" nowrap="False" number="True" xml:space="preserve">a_{nr} = {n! \over{r! (n-r)!}}
+      <math_block docname="IntroRecursion/ProgrammingExercises" label="True" nowrap="False" number="True" xml:space="preserve">a_{nr} = {n! \over{r! (n-r)!}}
 
 </math_block>
-            <p>This equation is the equation for a binomial coefficient. You can
-                build Pascal&#8217;s triangle by adding the two numbers that are diagonally
-                above a number in the triangle. An example of Pascal&#8217;s triangle is
+      <p>This equation is the equation for a binomial coefficient. You can
+                build Pascal's triangle by adding the two numbers that are diagonally
+                above a number in the triangle. An example of Pascal's triangle is
                 shown below.</p>
-            <pre>        1
+      <pre>        1
       1   1
     1   2   1
   1   3   3   1
 1   4   6   4   1</pre>
-            <p>Write a program that prints out Pascal&#8217;s triangle. Your program
+      <p>Write a program that prints out Pascal's triangle. Your program
                 should accept a parameter that tells how many rows of the triangle to
                 print.</p>
-
     </statement>
     <program xml:id="ex_rec_13_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-    </section>
-
+  </exercise>
+</section>

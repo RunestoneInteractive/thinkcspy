@@ -1,139 +1,159 @@
-<exercises xml:id="python_turtle_exercises">
-    <title>Exercises</title>
+<?xml version="1.0"?>
+<exercises xml:id="python-turtle_exercises">
+  <title>Exercises</title>
+  <exercise xml:id="ex_3_1">
+    <statement>
+      <p>Write a program that prints <c>We like Python's turtles!</c> 100 times.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_1_editor">
+      <input>
 
-    <exercise xml:id="ex_3_1">
-        <statement>
-            <p>
-                Write a program that prints
-                <c>We like Python's turtles!</c>
-                100 times.
-            </p>
-
-
-            <program xml:id="ex_3_1_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q1_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q1_answer" language="python">
+        <input>
 for i in range(100):
     print("We like Python's turtles!")
         </input>
-            </program>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="turtle_reflect">
+    <statement>
+      <p>Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?</p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_3_3">
+    <statement>
+      <dl>
+        <li>
+          <title>Write a program that uses a for loop to print</title>
+          <line_block>
+            <line>
+              <c>One of the months of the year is January</c>
+            </line>
+            <line>
+              <c>One of the months of the year is February</c>
+            </line>
+            <line>
+              <c>One of the months of the year is March</c>
+            </line>
+            <line>etc &#x2026;</line>
+          </line_block>
+        </li>
+      </dl>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_3_editor">
+      <input>
 
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="turtle_reflect">
-        <statement>
-            <p>Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?</p>
-
-        </statement>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_3">
-        <statement>
-            <dl>
-                <li>
-                    <title>Write a program that uses a for loop to print</title>
-
-                    <line_block>
-                        <line>
-                            <c>One of the months of the year is January</c>
-                        </line>
-                        <line>
-                            <c>One of the months of the year is February</c>
-                        </line>
-                        <line>
-                            <c>One of the months of the year is March</c>
-                        </line>
-                        <line>etc &#8230;</line>
-                    </line_block>
-
-                </li>
-            </dl>
-
-
-            <program xml:id="ex_3_3_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q3_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q3_answer" language="python">
+        <input>
 for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
     print("One of the months of the year is", amonth)
         </input>
-            </program>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_3_4">
+    <statement>
+      <p>Assume you have a list of numbers <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c></p>
+      <p>
+        <ol label="a">
+          <li>
+            <p>Write a loop that prints each of the numbers on a new line.</p>
+          </li>
+          <li>
+            <p>Write a loop that prints each number and its square on a new line.</p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program xml:id="ex_3_4_editor" interactive="activecode" language="python">
+      <input>
 
+        </input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_3_5">
+    <statement>
+      <p>Use <c>for</c> loops to make a turtle draw these regular polygons
+                        (regular means all sides the same lengths, all angles the same):</p>
+      <p>
+        <ul>
+          <li>
+            <p>An equilateral triangle</p>
+          </li>
+          <li>
+            <p>A square</p>
+          </li>
+          <li>
+            <p>A hexagon (six sides)</p>
+          </li>
+          <li>
+            <p>An octagon (eight sides)</p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_5_editor">
+      <input>
 
-        </solution>
-    </exercise>
+        </input>
+    </program>
+    <solution>
+                    # draw an equilateral triangle
+import turtle
 
+wn = turtle.Screen()
+norvig = turtle.Turtle()
 
-    <exercise xml:id="ex_3_4">
-        <statement>
-            <p>
-                Assume you have a list of numbers
-                <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c>
-            </p>
-            <p>
-                <ol label="a">
-                    <li>
-                        <p>Write a loop that prints each of the numbers on a new line.</p>
-                    </li>
-                    <li>
-                        <p>Write a loop that prints each number and its square on a new line.</p>
-                    </li>
-                </ol>
-            </p>
+for i in range(3):
+    norvig.forward(100)
 
-        </statement>
-        <program xml:id="ex_3_4_editor" interactive="activecode" language="python">
-            <input></input>
-        </program>
-    </exercise>
+    # the angle of each vertice of a regular polygon
+    # is 360 divided by the number of sides
+    norvig.left(360/3)
 
+wn.exitonclick()
+                    # draw a square
+import turtle
 
-    <exercise xml:id="ex_3_5">
-        <statement>
-            <p>
-                Use
-                <c>for</c>
-                loops to make a turtle draw these regular polygons
-                        (regular means all sides the same lengths, all angles the same):
-            </p>
-            <p>
-                <ul>
-                    <li>
-                        <p>An equilateral triangle</p>
-                    </li>
-                    <li>
-                        <p>A square</p>
-                    </li>
-                    <li>
-                        <p>A hexagon (six sides)</p>
-                    </li>
-                    <li>
-                        <p>An octagon (eight sides)</p>
-                    </li>
-                </ul>
-            </p>
+wn = turtle.Screen()
+kurzweil = turtle.Turtle()
 
+for i in range(4):
+    kurzweil.forward(100)
+    kurzweil.left(360/4)
 
-            <program xml:id="ex_3_5_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-            <program language="python">
-                <input>
+wn.exitonclick()
+                    # draw a hexagon
+import turtle
+
+wn = turtle.Screen()
+dijkstra = turtle.Turtle()
+
+for i in range(6):
+    dijkstra.forward(100)
+    dijkstra.left(360/6)
+
+wn.exitonclick()
+                    # draw an octogon
+import turtle
+
+wn = turtle.Screen()
+knuth = turtle.Turtle()
+
+for i in range(8):
+    knuth.forward(75)
+    knuth.left(360/8)
+
+wn.exitonclick()
+                
+                    <program language="python"><input>
 # draw an equilateral triangle
 import turtle
 
@@ -148,10 +168,8 @@ for i in range(3):
     norvig.left(360/3)
 
 wn.exitonclick()
-</input>
-            </program>
-            <program language="python">
-                <input>
+</input></program>
+                    <program language="python"><input>
 # draw a square
 import turtle
 
@@ -163,10 +181,8 @@ for i in range(4):
     kurzweil.left(360/4)
 
 wn.exitonclick()
-</input>
-            </program>
-            <program language="python">
-                <input>
+</input></program>
+                    <program language="python"><input>
 # draw a hexagon
 import turtle
 
@@ -178,10 +194,8 @@ for i in range(6):
     dijkstra.left(360/6)
 
 wn.exitonclick()
-</input>
-            </program>
-            <program language="python">
-                <input>
+</input></program>
+                    <program language="python"><input>
 # draw an octogon
 import turtle
 
@@ -193,41 +207,32 @@ for i in range(8):
     knuth.left(360/8)
 
 wn.exitonclick()
-</input>
-            </program>
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_6">
-        <statement>
-            <p>Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
+</input></program>
+                </solution>
+  </exercise>
+  <exercise xml:id="ex_3_6">
+    <statement>
+      <p>Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
                 regular polygon.  The program should draw the polygon and then fill it in.</p>
+    </statement>
+    <program xml:id="ex_3_6_editor" interactive="activecode" language="python">
+      <input>
 
-        </statement>
-        <program xml:id="ex_3_6_editor" interactive="activecode" language="python">
-            <input></input>
-        </program>
-    </exercise>
+        </input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_3_7">
+    <statement>
+      <p>A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is <c>160, -43, 270, -97, -43, 200, -940, 17, -86</c>. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_7_editor">
+      <input>
 
-
-    <exercise xml:id="ex_3_7">
-        <statement>
-            <p>
-                A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is
-                <c>160, -43, 270, -97, -43, 200, -940, 17, -86</c>
-                . (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.
-            </p>
-
-
-            <program xml:id="ex_3_7_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q7_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q7_answer" language="python">
+        <input>
 import turtle
 
 wn = turtle.Screen()
@@ -251,24 +256,16 @@ print("The pirate's final heading was", lovelace.heading())
 
 wn.exitonclick()
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_8">
-        <statement>
-            <p>
-                On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press
-                <c>run</c>
-                and check your answer.
-            </p>
-
-        </statement>
-        <program xml:id="ex_3_8_editor" interactive="activecode" language="python">
-            <input>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_3_8">
+    <statement>
+      <p>On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press <c>run</c>
+                and check your answer.</p>
+    </statement>
+    <program xml:id="ex_3_8_editor" interactive="activecode" language="python">
+      <input>
 import turtle
 wn = turtle.Screen()
 tess = turtle.Turtle()
@@ -279,24 +276,21 @@ tess.left(3600)
 tess.left(3645)
 tess.forward(-100)
         </input>
-        </program>
-    </exercise>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_3_9">
+    <statement>
+      <p>Write a program to draw a shape like this:</p>
+      <image source="PythonTurtle/Figures/star.png" width="50%"/>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_9_editor">
+      <input>
 
-
-    <exercise xml:id="ex_3_9">
-        <statement>
-            <p>Write a program to draw a shape like this:</p>
-            <image source="PythonTurtle/Figures/star.png" width="50%" />
-
-
-            <program xml:id="ex_3_9_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q9_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q9_answer" language="python">
+        <input>
 import turtle
 
 turing = turtle.Turtle()
@@ -305,43 +299,33 @@ for i in range(5):
     turing.forward(110)
     turing.left(216)
         </input>
-            </program>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_3_10">
+    <statement>
+      <p>Write a program to draw a face of a clock that looks something like this:</p>
+      <image source="PythonTurtle/Figures/tess_clock1.png" width="50%"/>
+    </statement>
+    <program xml:id="ex_3_10_editor" interactive="activecode" language="python">
+      <input>
 
+        </input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_3_11">
+    <statement>
+      <p>Write a program to draw some kind of picture.  Be creative and experiment
+                        with the turtle methods provided in <xref ref="python-turtle_summaryof-turtle-methods"/>.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_11_editor">
+      <input>
 
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_10">
-        <statement>
-            <p>Write a program to draw a face of a clock that looks something like this:</p>
-            <image source="PythonTurtle/Figures/tess_clock1.png" width="50%" />
-
-        </statement>
-        <program xml:id="ex_3_10_editor" interactive="activecode" language="python">
-            <input></input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_11">
-        <statement>
-            <p>
-                Write a program to draw some kind of picture.  Be creative and experiment
-                        with the turtle methods provided in
-                <xref ref="python_turtle_summary-of-turtle-methods" />
-                .
-            </p>
-
-
-            <program xml:id="ex_3_11_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q11_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q11_answer" language="python">
+        <input>
 import turtle
 
 tanenbaum = turtle.Turtle()
@@ -353,39 +337,33 @@ for i in range(350):
     tanenbaum.forward(i)
     tanenbaum.right(98)
         </input>
-            </program>
+      </program>
+    </solution>
+  </exercise>
+  <exercise xml:id="ex_3_12">
+    <statement>
+      <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
+    </statement>
+    <program xml:id="ex_3_12_editor" interactive="activecode" language="python">
+      <input>
 
-
-        </solution>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_12">
-        <statement>
-            <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
-
-        </statement>
-        <program xml:id="ex_3_12_editor" interactive="activecode" language="python">
-            <input></input>
-        </program>
-    </exercise>
-
-
-    <exercise xml:id="ex_3_13">
-        <statement>
-            <p>A sprite is a simple spider shaped thing with n legs coming out from a center
+        </input>
+    </program>
+  </exercise>
+  <exercise xml:id="ex_3_13">
+    <statement>
+      <p>A sprite is a simple spider shaped thing with n legs coming out from a center
                         point. The angle between each leg is 360 / n degrees.</p>
-            <p>Write a program to draw a sprite where the number of legs is provided by the user.</p>
+      <p>Write a program to draw a sprite where the number of legs is provided by the user.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_3_13_editor">
+      <input>
 
-
-            <program xml:id="ex_3_13_editor" interactive="activecode" language="python">
-                <input></input>
-            </program>
-        </statement>
-        <solution>
-
-            <program xml:id="pt_q13_answer_editor" language="python">
-                <input>
+        </input>
+    </program>
+    <solution>
+      <program xml:id="pt_q13_answer" language="python">
+        <input>
 import turtle
 
 wn = turtle.Screen()
@@ -411,10 +389,7 @@ babbage.shape("circle")
 
 wn.exitonclick()
         </input>
-            </program>
-
-
-        </solution>
-    </exercise>
-
+      </program>
+    </solution>
+  </exercise>
 </exercises>

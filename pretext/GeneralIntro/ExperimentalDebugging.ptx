@@ -1,78 +1,70 @@
-<section xml:id="general_intro_experimental-debugging">
-        <title>Experimental Debugging</title>
-        <p>One of the most important skills you will acquire is debugging.  Although it
+<?xml version="1.0"?>
+<section xml:id="general-intro_experimental-debugging">
+  <title>Experimental Debugging</title>
+  <p>One of the most important skills you will acquire is debugging.  Although it
             can be frustrating, debugging is one of the most intellectually rich,
             challenging, and interesting parts of programming.</p>
-        <p>In some ways, debugging is like detective work. You are confronted with clues,
+  <p>In some ways, debugging is like detective work. You are confronted with clues,
             and you have to infer the processes and events that led to the results you see.</p>
-        <p>Debugging is also like an experimental science. Once you have an idea what is
+  <p>Debugging is also like an experimental science. Once you have an idea what is
             going wrong, you modify your program and try again. If your hypothesis was
             correct, then you can predict the result of the modification, and you take a
             step closer to a working program. If your hypothesis was wrong, you have to
             come up with a new one. As Sherlock Holmes pointed out, When you have
             eliminated the impossible, whatever remains, however improbable, must be the
             truth. (A. Conan Doyle, <em>The Sign of Four</em>)</p>
-        <p>For some people, programming and debugging are the same thing. That is,
+  <p>For some people, programming and debugging are the same thing. That is,
             programming is the process of gradually debugging a program until it does what
             you want. The idea is that you should start with a program that does
             <em>something</em> and make small modifications, debugging them as you go, so that you
             always have a working program.</p>
-        <p>For example, Linux is an operating system kernel that contains millions of
+  <p>For example, Linux is an operating system kernel that contains millions of
             lines of code, but it started out as a simple program Linus Torvalds used to
-            explore the Intel 80386 chip. According to Larry Greenfield, one of Linus&#8217;s
+            explore the Intel 80386 chip. According to Larry Greenfield, one of Linus's
             earlier projects was a program that would switch between displaying AAAA and
-            BBBB. This later evolved to Linux (<em>The Linux Users&#8217; Guide</em> Beta Version 1).</p>
-        <p>Later chapters will make more suggestions about debugging and other programming
+            BBBB. This later evolved to Linux (<em>The Linux Users' Guide</em> Beta Version 1).</p>
+  <p>Later chapters will make more suggestions about debugging and other programming
             practices.</p>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="question1_9_1">
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="question1_9_1">
+    <statement>
+      <p>The difference between programming and debugging is:</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
         <statement>
-
-        <p>The difference between programming and debugging is:</p>
-
+          <p>programming is the process of writing and gradually debugging a program until it does what you want.</p>
         </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>programming is the process of writing and gradually debugging a program until it does what you want.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Programming is the writing of the source code and debugging is the process of finding and correcting all the errors within the program until it is correct.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>programming is creative and debugging is routine.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>programming is creative and debugging is routine.</p>
+        </statement>
+        <feedback>
                     Programming can be creative, but it also follows a process and debugging can involve creativity in how you find the errors.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>programming is fun and debugging is work.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>programming is fun and debugging is work.</p>
+        </statement>
+        <feedback>
                     Some people think that debugging is actually more fun than programming (they usually become good software testers).  Debugging is much like solving puzzles, which some people think is fun!
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>there is no difference between them.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>there is no difference between them.</p>
+        </statement>
+        <feedback>
                     You cannot debug without first having a program, meaning that someone had to do the programming first.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        
-        
-    </section>
-
+      </choice>
+    </choices>
+  </exercise>
+</section>

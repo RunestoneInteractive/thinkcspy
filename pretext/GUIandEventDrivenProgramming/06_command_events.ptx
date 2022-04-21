@@ -1,13 +1,15 @@
-<section xml:id="gu_iand_event_driven_programming_command-events">
-        <title>Command Events</title>
-        <p>When a user clicks on certain types of widgets, like a button, you typically
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_command-events">
+  <title>Command Events</title>
+  <p>When a user clicks on certain types of widgets, like a button, you typically
             want a specific action to be performed.
             This is accomplished by setting the <c>command</c> attribute of a widget to a
             specific <c>event handler</c> function. This can be any function that receives
             no arguments as parameters. You can set the <c>event handler</c> function using
-            a &#8220;named parameter&#8221; when you create the widget, or set the widget&#8217;s <c>command</c>
+            a <q>named parameter</q> when you create the widget, or set the widget's <c>command</c>
             attribute using a dictionary lookup. For example:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 def my_function():
   print("my_function was called.")
 
@@ -17,135 +19,122 @@ my_button = tk.Button(application_window, text="Example", command=my_function)
 
 my_button = tk.Button(application_window, text="Example")
 my_button['command'] = my_function
-</input></program>
-        <p>Note that you are setting the <c>command</c> property of the widget to a
-            <em>function reference</em> &#8211; you are not calling the function! Therefore, do not
+</input>
+  </program>
+  <p>Note that you are setting the <c>command</c> property of the widget to a
+            <em>function reference</em> &#x2013; you are not calling the function! Therefore, do not
             put parentheses after the function name when you make the assignment.</p>
-        <p>The following widgets define a <c>command</c> property which defines a function
-            that is called from the application&#8217;s event loop whenever a specific, predefined
+  <p>The following widgets define a <c>command</c> property which defines a function
+            that is called from the application's event loop whenever a specific, predefined
             event is performed by a user.</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Widget
                         </cell>
-                        <cell>
+        <cell>
                             The user event that causes the <c>command</c> function to be executed:
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <c>Button</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Button</c>
+        </cell>
+        <cell>
                             The user places their pointing device cursor over the button and
                                 presses and releases the left mouse button. The function is
                                 actually called on the button release.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Checkbutton</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Checkbutton</c>
+        </cell>
+        <cell>
                             If the state of the check box changes, the function is called.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Radiobutton</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Radiobutton</c>
+        </cell>
+        <cell>
                             If the state of the radio box changes, the function is called.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Scale</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Scale</c>
+        </cell>
+        <cell>
                             The function is called if the slider moves. The function is passed
                                 one argument, the new scale value.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>The following widgets do <alert>not</alert> have a <c>command</c> property, but they use other
+      </row>
+    </tabular>
+  </table>
+  <p>The following widgets do <term>not</term> have a <c>command</c> property, but they use other
             properties to respond to user events:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Widget
                         </cell>
-                        <cell>
+        <cell>
                             Property
                         </cell>
-                        <cell>
+        <cell>
                             User events:
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <c>Menu</c>
-                        </cell>
-                        <cell>
-                            <c>postcommand</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Menu</c>
+        </cell>
+        <cell>
+          <c>postcommand</c>
+        </cell>
+        <cell>
                             Every time someone brings up this menu.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Combobox</c>
-                        </cell>
-                        <cell>
-                            <c>postcommand</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>Combobox</c>
+        </cell>
+        <cell>
+          <c>postcommand</c>
+        </cell>
+        <cell>
                             When the user clicks on the down-arrow.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Combobox</c>
+      </row>
+      <row>
+        <cell>
+          <c>Combobox</c>
+        </cell>
+        <cell>
+          <c>validatecommand</c>
+        </cell>
+        <cell>
+                            Dynamically validate the widget's text content.
                         </cell>
-                        <cell>
-                            <c>validatecommand</c>
+      </row>
+      <row>
+        <cell>
+          <c>Entry</c>
+        </cell>
+        <cell>
+          <c>validatecommand</c>
+        </cell>
+        <cell>
+                            Dynamically validate the widget's text content.
                         </cell>
-                        <cell>
-                            Dynamically validate the widget&#8217;s text content.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>Entry</c>
-                        </cell>
-                        <cell>
-                            <c>validatecommand</c>
-                        </cell>
-                        <cell>
-                            Dynamically validate the widget&#8217;s text content.
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Note that the <c>Label</c>, <c>Message</c>, and <c>Separator</c> widgets do not respond
+      </row>
+    </tabular>
+  </table>
+  <p>Note that the <c>Label</c>, <c>Message</c>, and <c>Separator</c> widgets do not respond
             to user events and therefore have no associated event handlers.</p>
-    </section>
-    
+</section>

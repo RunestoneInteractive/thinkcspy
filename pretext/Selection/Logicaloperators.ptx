@@ -1,578 +1,444 @@
+<?xml version="1.0"?>
 <section xml:id="selection_logical-operators">
-    <title>Logical operators</title>
-    <p>
-        There are three
-        <alert>logical operators</alert>
-        :
-        <c>and</c>
-        ,
-        <c>or</c>
-        , and
-        <c>not</c>
-        . The
+  <title>Logical operators</title>
+  <p>There are three <term>logical operators</term>: <c>and</c>, <c>or</c>, and <c>not</c>. The
             semantics (meaning) of these operators is similar to their meaning in English.
-            For example,
-        <c>x &gt; 0 and x &lt; 10</c>
-        is true only if
-        <c>x</c>
-        is greater than 0
-        <em>and</em>
-        at the same time, x is less than 10.  How would you describe this in words?  You would say that
-            x is between 0 and 10, not including the endpoints.
-    </p>
-    <p>
-        <c>n % 2 == 0 or n % 3 == 0</c>
-        is true if
-        <em>either</em>
-        of the conditions is true,
-            that is, if the number is divisible by 2
-        <em>or</em>
-        divisible by 3.  In this case, one, or the other, or
-            both of the parts has to be true for the result to be true.
-    </p>
-    <p>
-        Finally, the
-        <c>not</c>
-        operator negates a boolean expression, so
-        <c>not  x &gt; y</c>
-        is true if
-        <c>x &gt; y</c>
-        is false, that is, if
-        <c>x</c>
-        is less than or equal to
-        <c>y</c>
-        .
-    </p>
-
-    <listing xml:id="chp05_3">
-        <caption />
-        <program xml:id="chp05_3_editor" interactive="activecode" language="python">
-            <input>
+            For example, <c>x &gt; 0 and x &lt; 10</c> is true only if <c>x</c> is greater than 0 <em>and</em>
+            at the same time, x is less than 10.  How would you describe this in words?  You would say that
+            x is between 0 and 10, not including the endpoints.</p>
+  <p><c>n % 2 == 0 or n % 3 == 0</c> is true if <em>either</em> of the conditions is true,
+            that is, if the number is divisible by 2 <em>or</em> divisible by 3.  In this case, one, or the other, or
+            both of the parts has to be true for the result to be true.</p>
+  <p>Finally, the <c>not</c> operator negates a boolean expression, so <c>not  x &gt; y</c>
+            is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to
+            <c>y</c>.</p>
+  <program xml:id="chp05_3" interactive="activecode" language="python">
+    <input>
 x = 5
 print(x &gt; 0 and x &lt; 10)
 
 n = 25
 print(n % 2 == 0 or n % 3 == 0)
         </input>
-        </program>
-    </listing>
-    <p>
-        When trying to show how logical operators work, computer scientists and mathematicians alike will use
-        <alert>truth tables</alert>
-        . A truth table is a small table that lists all possible inputs on its left columns and
+  </program>
+  <p>When trying to show how logical operators work, computer scientists and mathematicians alike will use
+            <term>truth tables</term>. A truth table is a small table that lists all possible inputs on its left columns and
             then will display the output of its particular logical operator in the right column. Take the logical
-            operator
-        <c>and</c>
-        for example:
-    </p>
-    <table>
-        <tabular>
-
-
-            <row header="yes">
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-            </row>
-
-
-            <row>
-                <cell>
-                    <alert>a</alert>
-                </cell>
-                <cell>
-                    <alert>b</alert>
-                </cell>
-                <cell>
-                    <alert>a</alert>
-                    <c>and</c>
-                    <alert>b</alert>
-                </cell>
-            </row>
-            <row>
-                <cell>
+            operator <c>and</c> for example:</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+      </row>
+      <row>
+        <cell>
+          <term>a</term>
+        </cell>
+        <cell>
+          <term>b</term>
+        </cell>
+        <cell>
+          <term>a</term>
+          <c>and</c>
+          <term>b</term>
+        </cell>
+      </row>
+      <row>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-            </row>
-
-
-        </tabular>
-    </table>
-    <p>
-        The
-        <em>T</em>
-        in the table stands for
-        <c>True</c>
-        while the
-        <em>F</em>
-        stands for
-        <c>False</c>
-        . Notice that when
-        <alert>a</alert>
-        and
-        <alert>b</alert>
-        are both
-        <c>True</c>
-        , the logcial operator
-        <c>and</c>
-        outputs
-        <c>True</c>
-        . This is exactly how
-            we normally use &#8220;and&#8221; in everyday conversation. Here are the rest of the operators:
-    </p>
-    <table>
-        <tabular>
-
-
-            <row header="yes">
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-            </row>
-
-
-            <row>
-                <cell>
-                    <alert>a</alert>
-                </cell>
-                <cell>
-                    <alert>b</alert>
-                </cell>
-                <cell>
-                    <alert>a</alert>
-                    <c>and</c>
-                    <alert>b</alert>
-                </cell>
-                <cell>
-                    <alert>a</alert>
-                    <c>or</c>
-                    <alert>b</alert>
-                </cell>
-                <cell>
-                    <c>not</c>
-                    <alert>a</alert>
-                </cell>
-                <cell>
-                    <c>not</c>
-                    <alert>b</alert>
-                </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+    </tabular>
+  </table>
+  <p>The <em>T</em> in the table stands for <c>True</c> while the <em>F</em> stands for <c>False</c>. Notice that when <term>a</term> and <term>b</term>
+            are both <c>True</c>, the logcial operator <c>and</c> outputs <c>True</c>. This is exactly how
+            we normally use <q>and</q> in everyday conversation. Here are the rest of the operators:</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+        <cell>
+                        </cell>
+      </row>
+      <row>
+        <cell>
+          <term>a</term>
+        </cell>
+        <cell>
+          <term>b</term>
+        </cell>
+        <cell>
+          <term>a</term>
+          <c>and</c>
+          <term>b</term>
+        </cell>
+        <cell>
+          <term>a</term>
+          <c>or</c>
+          <term>b</term>
+        </cell>
+        <cell>
+          <c>not</c>
+          <term>a</term>
+        </cell>
+        <cell>
+          <c>not</c>
+          <term>b</term>
+        </cell>
+      </row>
+      <row>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-            </row>
-            <row>
-                <cell>
+      </row>
+      <row>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             F
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-                <cell>
+        <cell>
                             T
                         </cell>
-            </row>
-
-
-        </tabular>
-    </table>
-    <p>Also, Google has provided this short video showing different logical operators:</p>
-
-    <video xml:id="GoogleLogic" youtube="57dPVbnRouU" width="auto" />
-    <p>
-        In the video, each letter is representative of a logical operater and only shows its color when the
-            corresponding
-        <alert>x</alert>
-        or
-        <alert>y</alert>
-        is showing in the second
-        <alert>G</alert>
-        . If you take a look at xor, you will notice
-            it is only colorful when either
-        <alert>x</alert>
-        or
-        <alert>y</alert>
-        is showing, but not both. This is called
-        <c>exclusive or</c>
-        ,
-            which we will not be using.
-    </p>
-    <note>
-        <title>WARNING!</title>
-        <p>
-            There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable
-            <c>number</c>
-            and we want to check to see if its value is 5,6, or 7.  In words we might say: &#8220;number equal to 5 or 6 or 7&#8221;.  However, if we translate this into Python,
-            <c>number == 5 or 6 or 7</c>
-            , it will not be correct.  The
-            <c>or</c>
-            operator must join the results of three equality checks.  The correct way to write this is
-            <c>number == 5 or number == 6 or number == 7</c>
-            .  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.
-        </p>
-    </note>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
-
-    <exercise xml:id="test_question6_2_1">
+      </row>
+    </tabular>
+  </table>
+  <p>Also, Google has provided this short video showing different logical operators:</p>
+  <video xml:id="GoogleLogic" youtube="57dPVbnRouU" width="667"/>
+  <p>In the video, each letter is representative of a logical operater and only shows its color when the
+            corresponding <term>x</term> or <term>y</term> is showing in the second <term>G</term>. If you take a look at xor, you will notice
+            it is only colorful when either <term>x</term> or <term>y</term> is showing, but not both. This is called <c>exclusive or</c>,
+            which we will not be using.</p>
+  <note>
+    <title>WARNING!</title>
+    <p>There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <c>number</c> and we want to check to see if its value is 5,6, or 7.  In words we might say: <q>number equal to 5 or 6 or 7</q>.  However, if we translate this into Python, <c>number == 5 or 6 or 7</c>, it will not be correct.  The <c>or</c> operator must join the results of three equality checks.  The correct way to write this is <c>number == 5 or number == 6 or number == 7</c>.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.</p>
+  </note>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question6_2_1">
+    <statement>
+      <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-            <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
-
+          <p>x &gt; 0 and &lt; 5</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>x &gt; 0 and &lt; 5</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Each comparison must be between exactly two values.  In this case the right-hand expression &lt; 5 lacks a value on its left.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>x &gt; 0 or x &lt; 5</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>x &gt; 0 or x &lt; 5</p>
+        </statement>
+        <feedback>
                     Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be True.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>x &gt; 0 and x &lt; 5</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>x &gt; 0 and x &lt; 5</p>
+        </statement>
+        <feedback>
                     Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write 0 &lt; x &lt; 5.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question6_2_2">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question6_2_2">
+    <statement>
+      <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
+            If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-            <p>Say you are registering for next semester&#8217;s classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it&#8217;s a race between time and luck.
-            If you end up registering on time for choice A, but you don&#8217;t get your choice B, which logical operators would be true?</p>
-
+          <p>A and B</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>A and B</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Both A and B need to be True in order for this to be True.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>A or B</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>A or B</p>
+        </statement>
+        <feedback>
                     Either A or B need to be True in order for this to be True.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>not A</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>not A</p>
+        </statement>
+        <feedback>
                     A needs to be False in order for this to be True.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>not B</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>not B</p>
+        </statement>
+        <feedback>
                     B needs to be False in order for this to be True.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-    <subsection xml:id="selection_logical-opposites">
-        <title>Logical Opposites</title>
-        <p>
-            Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can
-            <em>not</em>
-            get the driving licence when we are less than 17.
-        </p>
-        <table>
-            <tabular>
-
-
-                <row header="yes">
-                    <cell>
+      </choice>
+    </choices>
+  </exercise>
+  <subsection xml:id="selection_logical-opposites">
+    <title>Logical Opposites</title>
+    <p>Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can <em>not</em> get the driving licence when we are less than 17.</p>
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell>
                                 Operator
                             </cell>
-                    <cell>
+          <cell>
                                 Definiton
                             </cell>
-                    <cell>
+          <cell>
                                 Logical Opposites
                             </cell>
-                </row>
-
-
-                <row>
-                    <cell>
-                        <alert>==</alert>
-                    </cell>
-                    <cell>
+        </row>
+        <row>
+          <cell>
+            <term>==</term>
+          </cell>
+          <cell>
                                 Equals to
                             </cell>
-                    <cell>
-                        <alert>!=</alert>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <alert>!=</alert>
-                    </cell>
-                    <cell>
+          <cell>
+            <term>!=</term>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>!=</term>
+          </cell>
+          <cell>
                                 Not Equals to
                             </cell>
-                    <cell>
-                        <alert>==</alert>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <alert>&lt;</alert>
-                    </cell>
-                    <cell>
+          <cell>
+            <term>==</term>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>&lt;</term>
+          </cell>
+          <cell>
                                 Less than
                             </cell>
-                    <cell>
-                        <alert>&gt;=</alert>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <alert>&lt;=</alert>
-                    </cell>
-                    <cell>
+          <cell>
+            <term>&gt;=</term>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>&lt;=</term>
+          </cell>
+          <cell>
                                 Less Than or Equal to
                             </cell>
-                    <cell>
-                        <alert>&gt;</alert>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <alert>&gt;</alert>
-                    </cell>
-                    <cell>
+          <cell>
+            <term>&gt;</term>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>&gt;</term>
+          </cell>
+          <cell>
                                 Greater Than
                             </cell>
-                    <cell>
-                        <alert>&lt;=</alert>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <alert>&gt;=</alert>
-                    </cell>
-                    <cell>
+          <cell>
+            <term>&lt;=</term>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>&gt;=</term>
+          </cell>
+          <cell>
                                 Greater Than or Equal to
                             </cell>
-                    <cell>
-                        <alert>&lt;</alert>
-                    </cell>
-                </row>
-
-
-            </tabular>
-        </table>
-        <p>
-            Understanding these logical opposites allows us to sometimes get rid of
-            <c>not</c>
-            operators.
-            <c>not</c>
-            operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.
-        </p>
-        <p>For example, if we wrote this Python:</p>
-        <program language="python">
-            <input>
+          <cell>
+            <term>&lt;</term>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <p>Understanding these logical opposites allows us to sometimes get rid of <c>not</c> operators. <c>not</c> operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.</p>
+    <p>For example, if we wrote this Python:</p>
+    <program language="python">
+      <input>
 if not (age &gt;= 17):
    print("Hey, you're too young to get a driving licence!")
 </input>
-        </program>
-        <p>it would probably be clearer to use the simplification laws, and to write instead:</p>
-        <program language="python">
-            <input>
+    </program>
+    <p>it would probably be clearer to use the simplification laws, and to write instead:</p>
+    <program language="python">
+      <input>
 if age &lt; 17:
    print("Hey, you're too young to get a driving licence!")
 </input>
-        </program>
-        <p>Two powerful simplification laws (called de Morgan&#8217;s laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
-        <program language="python">
-            <input>
+    </program>
+    <p>Two powerful simplification laws (called de Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
+    <program language="python">
+      <input>
 not (x and y)  ==  (not x) or (not y)
 not (x or y)   ==  (not x) and (not y)
 </input>
-        </program>
-        <p>For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:</p>
-        <program language="python">
-            <input>
+    </program>
+    <p>For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:</p>
+    <program language="python">
+      <input>
 if not ((phone_charge &gt;= 0.50) and (phone_storage &gt;= .15)):
    print("You cannot restart your phone. Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
 </input>
-        </program>
-        <p>Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:</p>
-        <program language="python">
-            <input>
+    </program>
+    <p>Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:</p>
+    <program language="python">
+      <input>
 if (phone_charge &lt; 0.50) or (phone_storage &lt; .15):
    print("You cannot restart your phone. Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
 </input>
-        </program>
-        <p>
-            We could also get rid of the
-            <c>not</c>
-            by swapping around the
-            <c>then</c>
-            and
-            <c>else</c>
-            parts of the conditional. So here is a third version, also equivalent:
-        </p>
-        <program language="python">
-            <input>
+    </program>
+    <p>We could also get rid of the <c>not</c> by swapping around the <c>then</c> and <c>else</c> parts of the conditional. So here is a third version, also equivalent:</p>
+    <program language="python">
+      <input>
 if (phone_charge &gt;= 0.50) and (phone_storage &gt;= .15):
    print("Updating now...Several restarts may be required.")
 else:
    print("You cannot restart your phone. Battery too low or not enough free space.")
 </input>
-        </program>
-        <p>This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.</p>
-        <p>
-            As our programming skills develop we&#8217;ll find we have more than one way to solve any problem. So good programs are
-            <em>designed</em>
-            . We make choices that favour clarity, simplicity, and elegance. The job title
-            <em>software architect</em>
-            says a lot about what we do &#8212; we are
-            <em>architects</em>
-            who engineer our products to balance beauty, functionality, simplicity and clarity in our creations.
-        </p>
-    </subsection>
+    </program>
+    <p>This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.</p>
+    <p>As our programming skills develop we'll find we have more than one way to solve any problem. So good programs are <em>designed</em>. We make choices that favour clarity, simplicity, and elegance. The job title <em>software architect</em> says a lot about what we do &#x2014; we are <em>architects</em> who engineer our products to balance beauty, functionality, simplicity and clarity in our creations.</p>
+  </subsection>
 </section>

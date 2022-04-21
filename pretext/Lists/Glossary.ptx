@@ -1,120 +1,86 @@
+<?xml version="1.0"?>
 <section xml:id="lists_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>aliases</title>
-                    
-                        <p>Multiple variables that contain references to the same object.</p>
-                    
-                </gi>
-                <gi>
-                    <title>clone</title>
-                    
-                        <p>To create a new object that has the same value as an existing object.
-                            Copying a reference to an object creates an alias but doesn&#8217;t clone the
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>aliases</title>
+      <p>Multiple variables that contain references to the same object.</p>
+    </gi>
+    <gi>
+      <title>clone</title>
+      <p>To create a new object that has the same value as an existing object.
+                            Copying a reference to an object creates an alias but doesn't clone the
                             object.</p>
-                    
-                </gi>
-                <gi>
-                    <title>delimiter</title>
-                    
-                        <p>A character or string used to indicate where a string should be split.</p>
-                    
-                </gi>
-                <gi>
-                    <title>element</title>
-                    
-                        <p>One of the values in a list (or other sequence). The bracket operator
+    </gi>
+    <gi>
+      <title>delimiter</title>
+      <p>A character or string used to indicate where a string should be split.</p>
+    </gi>
+    <gi>
+      <title>element</title>
+      <p>One of the values in a list (or other sequence). The bracket operator
                             selects elements of a list.</p>
-                    
-                </gi>
-                <gi>
-                    <title>index</title>
-                    
-                        <p>An integer variable or value that indicates an element of a list.</p>
-                    
-                </gi>
-                <gi>
-                    <title>list</title>
-                    
-                        <p>A collection of objects, where each object is identified by an index.
+    </gi>
+    <gi>
+      <title>index</title>
+      <p>An integer variable or value that indicates an element of a list.</p>
+    </gi>
+    <gi>
+      <title>list</title>
+      <p>A collection of objects, where each object is identified by an index.
                             Like other types <c>str</c>, <c>int</c>, <c>float</c>, etc. there is also a
                             <c>list</c> type-converter function that tries to turn its argument into a
                             list.</p>
-                    
-                </gi>
-                <gi>
-                    <title>list traversal</title>
-                    
-                        <p>The sequential accessing of each element in a list.</p>
-                    
-                </gi>
-                <gi>
-                    <title>modifier</title>
-                    
-                        <p>A function which changes its arguments inside the function body. Only
+    </gi>
+    <gi>
+      <title>list traversal</title>
+      <p>The sequential accessing of each element in a list.</p>
+    </gi>
+    <gi>
+      <title>modifier</title>
+      <p>A function which changes its arguments inside the function body. Only
                             mutable types can be changed by modifiers.</p>
-                    
-                </gi>
-                <gi>
-                    <title>mutable data type</title>
-                    
-                        <p>A data type in which the elements can be modified. All mutable types
+    </gi>
+    <gi>
+      <title>mutable data type</title>
+      <p>A data type in which the elements can be modified. All mutable types
                             are compound types. Lists are mutable data types; strings are not.</p>
-                    
-                </gi>
-                <gi>
-                    <title>nested list</title>
-                    
-                        <p>A list that is an element of another list.</p>
-                    
-                </gi>
-                <gi>
-                    <title>object</title>
-                    
-                        <p>A thing to which a variable can refer.</p>
-                    
-                </gi>
-                <gi>
-                    <title>pattern</title>
-                    
-                        <p>A sequence of statements, or a style of coding something that has
+    </gi>
+    <gi>
+      <title>nested list</title>
+      <p>A list that is an element of another list.</p>
+    </gi>
+    <gi>
+      <title>object</title>
+      <p>A thing to which a variable can refer.</p>
+    </gi>
+    <gi>
+      <title>pattern</title>
+      <p>A sequence of statements, or a style of coding something that has
                             general applicability in a number of different situations.  Part of
                             becoming a mature Computer Scientist is to learn and establish the
                             patterns and algorithms that form your toolkit.  Patterns often
-                            correspond to your &#8220;mental chunking&#8221;.</p>
-                    
-                </gi>
-                <gi>
-                    <title>pure function</title>
-                    
-                        <p>A function which has no side effects. Pure functions only make changes
+                            correspond to your <q>mental chunking</q>.</p>
+    </gi>
+    <gi>
+      <title>pure function</title>
+      <p>A function which has no side effects. Pure functions only make changes
                             to the calling program through their return values.</p>
-                    
-                </gi>
-                <gi>
-                    <title>sequence</title>
-                    
-                        <p>Any of the data types that consist of an ordered collection of elements, with
+    </gi>
+    <gi>
+      <title>sequence</title>
+      <p>Any of the data types that consist of an ordered collection of elements, with
                             each element identified by an index.</p>
-                    
-                </gi>
-                <gi>
-                    <title>side effect</title>
-                    
-                        <p>A change in the state of a program made by calling a function that is
+    </gi>
+    <gi>
+      <title>side effect</title>
+      <p>A change in the state of a program made by calling a function that is
                             not a result of reading the return value from the function. Side
                             effects can only be produced by modifiers.</p>
-                    
-                </gi>
-                <gi>
-                    <title>tuple</title>
-                    
-                        <p>A sequential collection of items, similar to a list.  Any python object can be an element of a tuple.  However, unlike a list, tuples are immutable.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+    <gi>
+      <title>tuple</title>
+      <p>A sequential collection of items, similar to a list.  Any python object can be an element of a tuple.  However, unlike a list, tuples are immutable.</p>
+    </gi>
+  </glossary>
+</section>

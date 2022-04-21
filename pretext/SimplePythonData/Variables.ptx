@@ -1,86 +1,45 @@
-<section xml:id="simple_python_data_variables">
-    <title>Variables</title>
-
-    <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto" />
-    <p>
-        One of the most powerful features of a programming language is the ability to
-            manipulate
-        <alert>variables</alert>
-        . A variable is a name that refers to a value.
-    </p>
-    <p>
-        <alert>Assignment statements</alert>
-        create new variables and also give them values to refer to.
-    </p>
-    <program language="python">
-        <input>
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_variables">
+  <title>Variables</title>
+  <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>
+  <p>One of the most powerful features of a programming language is the ability to
+            manipulate <term>variables</term>. A variable is a name that refers to a value.</p>
+  <p><term>Assignment statements</term> create new variables and also give them values to refer to.</p>
+  <program language="python">
+    <input>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
 </input>
-    </program>
-    <p>
-        This example makes three assignments. The first assigns the string value
-        <c>"What's up, Doc?"</c>
-        to a new variable named
-        <c>message</c>
-        . The second gives the
-            integer
-        <c>17</c>
-        to
-        <c>n</c>
-        , and the third assigns the floating-point number
-        <c>3.14159</c>
-        to a variable called
-        <c>pi</c>
-        .
-    </p>
-    <p>
-        The
-        <alert>assignment token</alert>
-        ,
-        <c>=</c>
-        , should not be confused with
-        <em>equality</em>
-        (we will see later that equality uses the
-        <c>==</c>
-        token).  The assignment statement links a
-        <em>name</em>
-        , on the left hand
-            side of the operator, with a
-        <em>value</em>
-        , on the right hand side.  This is why you
-            will get an error if you enter:
-    </p>
-    <program language="python">
-        <input>
+  </program>
+  <p>This example makes three assignments. The first assigns the string value
+            <c>"What's up, Doc?"</c> to a new variable named <c>message</c>. The second gives the
+            integer <c>17</c> to <c>n</c>, and the third assigns the floating-point number
+            <c>3.14159</c> to a variable called <c>pi</c>.</p>
+  <p>The <term>assignment token</term>, <c>=</c>, should not be confused with <em>equality</em> (we will see later that equality uses the
+            <c>==</c> token).  The assignment statement links a <em>name</em>, on the left hand
+            side of the operator, with a <em>value</em>, on the right hand side.  This is why you
+            will get an error if you enter:</p>
+  <program language="python">
+    <input>
 17 = n
 </input>
-    </program>
-    <tip>
-        <p>When reading or writing code, say to yourself &#8220;n is assigned 17&#8221; or &#8220;n gets
-                the value 17&#8221; or &#8220;n is a reference to the object 17&#8221; or &#8220;n refers to the object 17&#8221;.  Don&#8217;t say &#8220;n equals 17&#8221;.</p>
-    </tip>
-    <p>
-        A common way to represent variables on paper is to write the name with an arrow
-            pointing to the variable&#8217;s value. This kind of figure, known as a
-        <alert>reference diagram</alert>
-        , is often called a
-        <alert>state
-                snapshot</alert>
-        because it shows what state each of the variables is in at a
-            particular instant in time.  (Think of it as the variable&#8217;s state of mind).
-            This diagram shows the result of executing the assignment statements shown above.
-    </p>
-    <image source="SimplePythonData/Figures/refdiagram1.png" width="50%" alt="Reference Diagram" />
-    <p>If you ask Python to evaluate a variable, it will produce the value
+  </program>
+  <tip>
+    <p>When reading or writing code, say to yourself <q>n is assigned 17</q> or <q>n gets
+                the value 17</q> or <q>n is a reference to the object 17</q> or <q>n refers to the object 17</q>.  Don't say <q>n equals 17</q>.</p>
+  </tip>
+  <p>A common way to represent variables on paper is to write the name with an arrow
+            pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state
+                snapshot</term> because it shows what state each of the variables is in at a
+            particular instant in time.  (Think of it as the variable's state of mind).
+            This diagram shows the result of executing the assignment statements shown above.</p>
+  <image source="SimplePythonData/Figures/refdiagram1.png" width="50%" alt="Reference Diagram"/>
+  <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
-
-    <listing xml:id="ch02_9">
-        <caption />
-        <program xml:id="ch02_9_editor" interactive="activecode" language="python">
-            <input>
+  <program xml:id="ch02_9" interactive="activecode" language="python">
+    <input>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
@@ -89,21 +48,17 @@ print(message)
 print(n)
 print(pi)
         </input>
-        </program>
-    </listing>
-    <p>In each case the result is the value of the variable.
+  </program>
+  <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-    <exercise runestone="ch02_9_cl" />
-    <p>Now, as you step through the statements, you can see
+  <exercise runestone="ch02_9_cl"/>
+  <p>Now, as you step through the statements, you can see
             the variables and the values they reference as those references are
             created.</p>
-    <p>Variables also have
+  <p>Variables also have
             types; again, we can ask the interpreter what they are.</p>
-
-    <listing xml:id="ch02_10">
-        <caption />
-        <program xml:id="ch02_10_editor" interactive="activecode" language="python">
-            <input>
+  <program xml:id="ch02_10" interactive="activecode" language="python">
+    <input>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
@@ -112,95 +67,72 @@ print(type(message))
 print(type(n))
 print(type(pi))
         </input>
-        </program>
-    </listing>
-    <p>The type of a variable is the type of the object it currently refers to.</p>
-    <p>
-        We use variables in a program to &#8220;remember&#8221; things, like the current score at
-            the football game.  But variables are
-        <em>variable</em>
-        . This means they can change
+  </program>
+  <p>The type of a variable is the type of the object it currently refers to.</p>
+  <p>We use variables in a program to <q>remember</q> things, like the current score at
+            the football game.  But variables are <em>variable</em>. This means they can change
             over time, just like the scoreboard at a football game.  You can assign a value
-            to a variable, and later assign a different value to the same variable.
-    </p>
-    <note>
-        <p>
-            This is different from math. In math, if you give
-            <title_reference>x</title_reference>
-            the value 3, it
+            to a variable, and later assign a different value to the same variable.</p>
+  <note>
+    <p>This is different from math. In math, if you give <title_reference>x</title_reference> the value 3, it
                 cannot change to refer to a different value half-way through your
-                calculations!
-        </p>
-    </note>
-    <p>
-        To see this, read and then run the following program.
-            You&#8217;ll notice we change the value of
-        <title_reference>day</title_reference>
-        three times, and on the third
-            assignment we even give it a value that is of a different type.
-    </p>
-    <exercise runestone="ch02_11" />
-    <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep
+                calculations!</p>
+  </note>
+  <p>To see this, read and then run the following program.
+            You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
+            assignment we even give it a value that is of a different type.</p>
+  <exercise runestone="ch02_11"/>
+  <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep
             track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update
             or change the variable so that it will always reflect the correct value.</p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
-
-    <exercise xml:id="test_question2_3_2">
-        <statement>
-
-            <p>What is printed when the following statements execute?</p>
-            <program language="python">
-                <input>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question2_3_2">
+    <statement>
+      <p>What is printed when the following statements execute?</p>
+      <program language="python">
+        <input>
 day = "Thursday"
 day = 32.5
 day = 19
 print(day)
 </input>
-            </program>
-
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Nothing is printed. A runtime error occurs.</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>Nothing is printed. A runtime error occurs.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     It is legal to change the type of data that a variable holds in Python.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Thursday</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Thursday</p>
+        </statement>
+        <feedback>
                     This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>32.5</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>32.5</p>
+        </statement>
+        <feedback>
                     This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>19</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>19</p>
+        </statement>
+        <feedback>
                     The variable day will contain the last value assigned to it when it is printed.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-
+      </choice>
+    </choices>
+  </exercise>
 </section>

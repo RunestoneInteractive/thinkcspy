@@ -1,19 +1,15 @@
+<?xml version="1.0"?>
 <section xml:id="lists_list-type-conversion-function">
-        <title><c>list</c> Type Conversion Function</title>
-        <p>Python has a built-in type conversion function called
+  <title><c>list</c> Type Conversion Function</title>
+  <p>Python has a built-in type conversion function called
             <c>list</c> that tries to turn whatever you give it
             into a list.  For example, try the following:</p>
-
-<listing xml:id="ch09_list1">
-    <caption/>
-    <program xml:id="ch09_list1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch09_list1" interactive="activecode" language="python">
+    <input>
 xs = list("Crunchy Frog")
 print(xs)
         </input>
-    </program>
-</listing>
-        <p>The string &#8220;Crunchy Frog&#8221; is turned into a list by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the <c>list</c> conversion function on any argument that is not a sequence.</p>
-        <p>It is also important to point out that the <c>list</c> conversion function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the <c>split</c> method.  Whereas <c>split</c> will break a string into a list of &#8220;words&#8221;, <c>list</c> will always break it into a list of characters.</p>
-    </section>
-
+  </program>
+  <p>The string <q>Crunchy Frog</q> is turned into a list by taking each character in the string and placing it in a list.  In general, any sequence can be turned into a list using this function.  The result will be a list containing the elements in the original sequence.  It is not legal to use the <c>list</c> conversion function on any argument that is not a sequence.</p>
+  <p>It is also important to point out that the <c>list</c> conversion function will place each element of the original sequence in the new list.  When working with strings, this is very different than the result of the <c>split</c> method.  Whereas <c>split</c> will break a string into a list of <q>words</q>, <c>list</c> will always break it into a list of characters.</p>
+</section>

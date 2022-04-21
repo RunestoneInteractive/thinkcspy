@@ -1,98 +1,85 @@
-<section xml:id="general_intro_semantic-errors">
-        <title>Semantic Errors</title>
-        <p>The third type of error is the <alert>semantic error</alert>. If there is a semantic error
+<?xml version="1.0"?>
+<section xml:id="general-intro_semantic-errors">
+  <title>Semantic Errors</title>
+  <p>The third type of error is the <term>semantic error</term>. If there is a semantic error
             in your program, it will run successfully in the sense that the computer will
             not generate any error messages.  However, your program will not do the right thing. It will do
             something else. Specifically, it will do what you told it to do.</p>
-        <p>The problem is that the program you wrote is not the program you wanted to
+  <p>The problem is that the program you wrote is not the program you wanted to
             write. The meaning of the program (its semantics) is wrong.  Identifying
             semantic errors can be tricky because it requires you to work backward by
             looking at the output of the program and trying to figure out what it is doing.</p>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="question1_8_1">
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="question1_8_1">
+    <statement>
+      <p>Which of the following is a semantic error?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-        <p>Which of the following is a semantic error?</p>
-
+          <p>Attempting to divide by 0.</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>Attempting to divide by 0.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     A semantic error is an error in logic. In this case the program does not produce the correct output because the problem is not solved correctly. This would be considered a run-time error.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Forgetting a colon at the end of a statement where one is required.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Forgetting a colon at the end of a statement where one is required.</p>
+        </statement>
+        <feedback>
                     A semantic error is an error in logic. In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>Forgetting to divide by 100 when printing a percentage amount.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Forgetting to divide by 100 when printing a percentage amount.</p>
+        </statement>
+        <feedback>
                     This will produce the wrong answer because the programmer implemented the solution incorrectly.  This is a semantic error.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="question1_8_2">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="question1_8_2">
+    <statement>
+      <p>Who or what typically finds semantic errors?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
         <statement>
-
-        <p>Who or what typically finds semantic errors?</p>
-
+          <p>The programmer.</p>
         </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>The programmer.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     You must fully understand the problem so the you can tell if your program properly solves it.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The compiler / interpreter.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The compiler / interpreter.</p>
+        </statement>
+        <feedback>
                     The compiler and / or interpreter will only do what you instruct it to do. It does not understand what the problem is that you want to solve.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The computer.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The computer.</p>
+        </statement>
+        <feedback>
                     The computer does not understand your problem. It just executes the instructions that it is given.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The teacher / instructor.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The teacher / instructor.</p>
+        </statement>
+        <feedback>
                     Your teacher and instructor may be able to find most of your semantic errors, but only because they have experience solving problems.  However it is your responsibility to understand the problem so you can develop a correct solution.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
-
+      </choice>
+    </choices>
+  </exercise>
+</section>

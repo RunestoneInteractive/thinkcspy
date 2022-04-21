@@ -1,71 +1,51 @@
+<?xml version="1.0"?>
 <section xml:id="functions_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>chatterbox function</title>
-                    
-                        <p>A function which interacts with the user (using <c>input</c> or <c>print</c>) when
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>chatterbox function</title>
+      <p>A function which interacts with the user (using <c>input</c> or <c>print</c>) when
                             it should not. Silent functions that just convert their input arguments into
                             their output results are usually the most useful ones.</p>
-                    
-                </gi>
-                <gi>
-                    <title>composition (of functions)</title>
-                    
-                        <p>Calling one function from within the body of another, or using the
+    </gi>
+    <gi>
+      <title>composition (of functions)</title>
+      <p>Calling one function from within the body of another, or using the
                             return value of one function as an argument to the call of another.</p>
-                    
-                </gi>
-                <gi>
-                    <title>dead code</title>
-                    
-                        <p>Part of a program that can never be executed, often because it appears
+    </gi>
+    <gi>
+      <title>dead code</title>
+      <p>Part of a program that can never be executed, often because it appears
                             after a <c>return</c> statement.</p>
-                    
-                </gi>
-                <gi>
-                    <title>fruitful function</title>
-                    
-                        <p>A function that yields a return value instead of <c>None</c>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>incremental development</title>
-                    
-                        <p>A program development plan intended to simplify debugging by adding and
+    </gi>
+    <gi>
+      <title>fruitful function</title>
+      <p>A function that yields a return value instead of <c>None</c>.</p>
+    </gi>
+    <gi>
+      <title>incremental development</title>
+      <p>A program development plan intended to simplify debugging by adding and
                             testing only a small amount of code at a time.</p>
-                    
-                </gi>
-                <gi>
-                    <title>None</title>
-                    
-                        <p>A special Python value. One use in Python is that it is returned
+    </gi>
+    <gi>
+      <title>None</title>
+      <p>A special Python value. One use in Python is that it is returned
                             by functions that do not execute a return statement with a return argument.</p>
-                    
-                </gi>
-                <gi>
-                    <title>return value</title>
-                    
-                        <p>The value provided as the result of a function call.</p>
-                    
-                </gi>
-                <gi>
-                    <title>scaffolding</title>
-                    
-                        <p>Code that is used during program development to assist with development
+    </gi>
+    <gi>
+      <title>return value</title>
+      <p>The value provided as the result of a function call.</p>
+    </gi>
+    <gi>
+      <title>scaffolding</title>
+      <p>Code that is used during program development to assist with development
                             and debugging. The unit test code that we added in this chapter are
                             examples of scaffolding.</p>
-                    
-                </gi>
-                <gi>
-                    <title>temporary variable</title>
-                    
-                        <p>A variable used to store an intermediate value in a complex
+    </gi>
+    <gi>
+      <title>temporary variable</title>
+      <p>A variable used to store an intermediate value in a complex
                             calculation.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

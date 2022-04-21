@@ -1,63 +1,51 @@
+<?xml version="1.0"?>
 <section xml:id="strings_summary">
-        <title>Summary</title>
-        <p>This chapter introduced a lot of new ideas.  The following summary
+  <title>Summary</title>
+  <p>This chapter introduced a lot of new ideas.  The following summary
             may prove helpful in remembering what you learned.</p>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>indexing (<c>[]</c>)</title>
-                    
-                        <p>Access a single character in a string using its position (starting from
+  <glossary sorted="False">
+    <gi>
+      <title>indexing (<c>[]</c>)</title>
+      <p>Access a single character in a string using its position (starting from
                             0).  Example: <c>'This'[2]</c> evaluates to <c>'i'</c>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>length function (<c>len</c>)</title>
-                    
-                        <p>Returns the number of characters in a string.  Example:
+    </gi>
+    <gi>
+      <title>length function (<c>len</c>)</title>
+      <p>Returns the number of characters in a string.  Example:
                             <c>len('happy')</c> evaluates to <c>5</c>.</p>
-                    
-                </gi>
-                <gi>
-                    <title>for loop traversal (<c>for</c>)</title>
-                    
-                        <p><em>Traversing</em> a string means accessing each character in the string, one
+    </gi>
+    <gi>
+      <title>for loop traversal (<c>for</c>)</title>
+      <p><em>Traversing</em> a string means accessing each character in the string, one
                             at a time.  For example, the following for loop:</p>
-                        <program language="python"><input>
+      <program language="python">
+        <input>
 for ix in 'Example':
     ...
-</input></program>
-                        <p>executes the body of the loop 7 times with different values of <title_reference>ix</title_reference> each time.</p>
-                    
-                </gi>
-                <gi>
-                    <title>slicing (<c>[:]</c>)</title>
-                    
-                        <p>A <em>slice</em> is a substring of a string. Example: <c>'bananas and
+</input>
+      </program>
+      <p>executes the body of the loop 7 times with different values of <title_reference>ix</title_reference> each time.</p>
+    </gi>
+    <gi>
+      <title>slicing (<c>[:]</c>)</title>
+      <p>A <em>slice</em> is a substring of a string. Example: <c>'bananas and
 cream'[3:6]</c> evaluates to <c>ana</c> (so does <c>'bananas and
 cream'[1:4]</c>).</p>
-                    
-                </gi>
-                <gi>
-                    <title>string comparison (<c>&gt;, &lt;, &gt;=, &lt;=, ==, !=</c>)</title>
-                    
-                        <p>The six common comparision operators work with strings, evaluating according to
+    </gi>
+    <gi>
+      <title>string comparison (<c>&gt;, &lt;, &gt;=, &lt;=, ==, !=</c>)</title>
+      <p>The six common comparision operators work with strings, evaluating according to
                             <url href="http://en.wikipedia.org/wiki/Lexicographic_order" visual="http://en.wikipedia.org/wiki/Lexicographic_order">lexigraphical order</url>.  Examples:
                             <c>'apple' &lt; 'banana'</c> evaluates to <c>True</c>.  <c>'Zeta' &lt; 'Appricot'</c>
                             evaluates to <c>False</c>.  <c>'Zebra' &lt;= 'aardvark'</c> evaluates to
                             <c>True</c> because all upper case letters precede lower case letters.</p>
-                    
-                </gi>
-                <gi>
-                    <title>in and not in operator (<c>in</c>, <c>not in</c>)</title>
-                    
-                        <p>The <c>in</c> operator tests whether one string is contained
+    </gi>
+    <gi>
+      <title>in and not in operator (<c>in</c>, <c>not in</c>)</title>
+      <p>The <c>in</c> operator tests whether one string is contained
                             inside another string.  Examples: <c>'heck' in "I'll be checking for
 you."</c> evaluates to <c>True</c>.  <c>'cheese' in "I'll be checking for
 you."</c> evaluates to <c>False</c>.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+    </gi>
+  </glossary>
+</section>

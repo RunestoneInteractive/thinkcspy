@@ -1,217 +1,153 @@
-<section xml:id="simple_python_data_order-of-operations">
-    <title>Order of Operations</title>
-
-    <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto" />
-    <p>
-        When more than one operator appears in an expression, the order of evaluation
-            depends on the
-        <alert>rules of precedence</alert>
-        . Python follows the same precedence
-            rules for its mathematical operators that mathematics does.
-    </p>
-    <!--The acronym PEMDAS-->
-    <!--is a useful way to remember the order of operations:-->
-    <p>
-        <ol label="1">
-            <li>
-                <p>
-                    Parentheses have the highest precedence and can be used to force an
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_order-of-operations">
+  <title>Order of Operations</title>
+  <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto"/>
+  <p>When more than one operator appears in an expression, the order of evaluation
+            depends on the <term>rules of precedence</term>. Python follows the same precedence
+            rules for its mathematical operators that mathematics does.</p>
+  <!--The acronym PEMDAS-->
+  <!--is a useful way to remember the order of operations:-->
+  <p>
+    <ol label="1">
+      <li>
+        <p>Parentheses have the highest precedence and can be used to force an
                     expression to evaluate in the order you want. Since expressions in
-                    parentheses are evaluated first,
-                    <c>2 * (3-1)</c>
-                    is 4, and
-                    <c>(1+1)**(5-2)</c>
-                    is
+                    parentheses are evaluated first, <c>2 * (3-1)</c> is 4, and <c>(1+1)**(5-2)</c> is
                     8. You can also use parentheses to make an expression easier to read, as in
-                    <c>(minute * 100) / 60</c>
-                    , even though it doesn&#8217;t change the result.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Exponentiation has the next highest precedence, so
-                    <c>2**1+1</c>
-                    is 3 and
-                    not 4, and
-                    <c>3*1**3</c>
-                    is 3 and not 27.  Can you explain why?
-                </p>
-            </li>
-            <li>
-                <p>
-                    Multiplication and both division operators have the same
+                    <c>(minute * 100) / 60</c>, even though it doesn't change the result.</p>
+      </li>
+      <li>
+        <p>Exponentiation has the next highest precedence, so <c>2**1+1</c> is 3 and
+                    not 4, and <c>3*1**3</c> is 3 and not 27.  Can you explain why?</p>
+      </li>
+      <li>
+        <p>Multiplication and both division operators have the same
                     precedence, which is higher than addition and subtraction, which
-                    also have the same precedence. So
-                    <c>2*3-1</c>
-                    yields 5 rather than 4, and
-                    <c>5-2*2</c>
-                    is 1, not 6.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Operators with the
-                    <em>same</em>
-                    precedence (except for
-                    <c>**</c>
-                    ) are
-                    evaluated from left-to-right. In algebra we say they are
-                    <em>left-associative</em>
-                    .
-                    So in the expression
-                    <c>6-3+2</c>
-                    , the subtraction happens first, yielding 3.
+                    also have the same precedence. So <c>2*3-1</c> yields 5 rather than 4, and
+                    <c>5-2*2</c> is 1, not 6.</p>
+      </li>
+      <li>
+        <p>Operators with the <em>same</em> precedence (except for <c>**</c>) are
+                    evaluated from left-to-right. In algebra we say they are <em>left-associative</em>.
+                    So in the expression <c>6-3+2</c>, the subtraction happens first, yielding 3.
                     We then add 2 to get the result 5. If the operations had been evaluated from
-                    right to left, the result would have been
-                    <c>6-(3+2)</c>
-                    , which is 1.
-                </p>
-            </li>
-        </ol>
-    </p>
-    <!--(The-->
-    <!--acronym PEDMAS could mislead you to thinking that division has higher-->
-    <!--precedence than multiplication, and addition is done ahead of subtraction so-->
-    <!--don't be misled.  Subtraction and addition are at the same precedence, and-->
-    <!--the left-to-right rule applies.)-->
-    <note>
-        <p>
-            An exception to the left-to-right
-                left-associative rule is the exponentiation operator
-            <title_reference>**</title_reference>
-            . A useful hint
+                    right to left, the result would have been <c>6-(3+2)</c>, which is 1.</p>
+      </li>
+    </ol>
+  </p>
+  <!--(The-->
+  <!--acronym PEDMAS could mislead you to thinking that division has higher-->
+  <!--precedence than multiplication, and addition is done ahead of subtraction.-->
+  <!--Don't be misled.  Subtraction and addition are at the same precedence, and-->
+  <!--the left-to-right rule applies.)-->
+  <note>
+    <p>An exception to the left-to-right
+                left-associative rule is the exponentiation operator <title_reference>**</title_reference>. A useful hint
                 is to always use parentheses to force exactly the order you want when
-                exponentiation is involved:
-        </p>
-
-        <listing xml:id="ch02_23">
-            <caption />
-            <program xml:id="ch02_23_editor" interactive="activecode" language="python">
-                <input>
+                exponentiation is involved:</p>
+    <program xml:id="ch02_23" interactive="activecode" language="python">
+      <input>
 print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
 print((2 ** 3) ** 2)   # use parentheses to force the order you want!
         </input>
-            </program>
-        </listing>
-    </note>
-    <!--The immediate mode command prompt of Python is great for exploring and-->
-    <!--experimenting with expressions like this.-->
-    <p>
-        See
-        <xref ref="appendices_operator-precedence-table" />
-        for
-        <em>all</em>
-        the operators introduced in this book.
-            You will also see many upcoming non-mathematical Python operators.
-    </p>
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
-
-    <exercise xml:id="test_question2_8_1">
-        <statement>
-
-            <p>What is the value of the following expression:</p>
-            <program language="python">
-                <input>
+    </program>
+  </note>
+  <!--The immediate mode command prompt of Python is great for exploring and-->
+  <!--experimenting with expressions like this.-->
+  <p>See <xref ref="appendices_precedence-table"/> for <em>all</em> the operators introduced in this book.
+            You will also see many upcoming non-mathematical Python operators.</p>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question2_8_1">
+    <statement>
+      <p>What is the value of the following expression:</p>
+      <program language="python">
+        <input>
 16 - 2 * 5 // 3 + 1
 </input>
-            </program>
-
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>14</p>
         </statement>
-        <choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>14</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>24</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>24</p>
+        </statement>
+        <feedback>
                     Remember that * has precedence over -.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>3</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
                     Remember that // has precedence over -.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>13.667</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>13.667</p>
+        </statement>
+        <feedback>
                     Remember that // does integer division.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question2_8_2">
-        <statement>
-
-            <p>What is the value of the following expression:</p>
-            <program language="python">
-                <input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question2_8_2">
+    <statement>
+      <p>What is the value of the following expression:</p>
+      <program language="python">
+        <input>
 2 ** 2 ** 3 * 3
 </input>
-            </program>
-
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>768</p>
         </statement>
-        <choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>768</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>128</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>128</p>
+        </statement>
+        <feedback>
                     Exponentiation (**) is processed right to left, so take 2 ** 3 first.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>12</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>12</p>
+        </statement>
+        <feedback>
                     There are two exponentiations.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>256</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>256</p>
+        </statement>
+        <feedback>
                     Remember to multiply by 3.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-    <p>Here are animations for the above expressions:</p>
-    <exercise runestone="se_tq281" />
-    <exercise runestone="se_tq282" />
+      </choice>
+    </choices>
+  </exercise>
+  <p>Here are animations for the above expressions:</p>
+  <exercise runestone="se_tq281"/>
+  <exercise runestone="se_tq282"/>
 </section>

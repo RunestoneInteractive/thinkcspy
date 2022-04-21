@@ -1,16 +1,14 @@
-<section xml:id="classes_basics_objects-as-arguments-and-parameters">
-        <title>Objects as Arguments and Parameters</title>
-        <p>You can pass an object as an argument in the usual way.  We&#8217;ve already seen
+<?xml version="1.0"?>
+<section xml:id="classes-basics_objects-as-arguments-and-parameters">
+  <title>Objects as Arguments and Parameters</title>
+  <p>You can pass an object as an argument in the usual way.  We've already seen
             this in some of the turtle examples where we passed the turtle to
             some function like <c>drawRectangle</c> so that the function could
             control and use whatever turtle instance we passed to it.</p>
-        <p>Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  The job of this function is to figure out the
+  <p>Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  The job of this function is to figure out the
             distance between two points.</p>
-
-<listing xml:id="chp13_classes6">
-    <caption/>
-    <program xml:id="chp13_classes6_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp13_classes6" interactive="activecode" language="python">
+    <input>
 import math
 
 class Point:
@@ -41,9 +39,7 @@ p = Point(4, 3)
 q = Point(0, 0)
 print(distance(p, q))
         </input>
-    </program>
-</listing>
-        <p><c>distance</c> takes two points and returns the distance between them.  Note that <c>distance</c> is <alert>not</alert> a method of the Point class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we
+  </program>
+  <p><c>distance</c> takes two points and returns the distance between them.  Note that <c>distance</c> is <term>not</term> a method of the Point class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we
             can know that <c>distance</c> is not a method of Point is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>distance</c> using the dot notation.</p>
-    </section>
-
+</section>

@@ -1,13 +1,11 @@
+<?xml version="1.0"?>
 <section xml:id="lists_lists-are-mutable">
-        <title>Lists are Mutable</title>
-        <p>Unlike strings, lists are <alert>mutable</alert>.  This means we can change an item in a list by accessing
+  <title>Lists are Mutable</title>
+  <p>Unlike strings, lists are <term>mutable</term>.  This means we can change an item in a list by accessing
             it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
             update one of the list items.</p>
-
-<listing xml:id="ch09_7">
-    <caption/>
-    <program xml:id="ch09_7_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch09_7" interactive="activecode" language="python">
+    <input>
 fruit = ["banana", "apple", "cherry"]
 print(fruit)
 
@@ -15,96 +13,78 @@ fruit[0] = "pear"
 fruit[-1] = "orange"
 print(fruit)
         </input>
-    </program>
-</listing>
-        <p>An
-            assignment to an element of a list is called <alert>item assignment</alert>. Item
+  </program>
+  <p>An
+            assignment to an element of a list is called <term>item assignment</term>. Item
             assignment does not work for strings.  Recall that strings are immutable.</p>
-        <p>Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.</p>
-<exercise runestone="item_assign"/>        <p>By combining assignment with the slice operator we can update several elements at once.</p>
-
-<listing xml:id="ch09_8">
-    <caption/>
-    <program xml:id="ch09_8_editor" interactive="activecode" language="python">
-        <input>
+  <p>Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.</p>
+  <exercise runestone="item_assign"/>
+  <p>By combining assignment with the slice operator we can update several elements at once.</p>
+  <program xml:id="ch09_8" interactive="activecode" language="python">
+    <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = ['x', 'y']
 print(alist)
         </input>
-    </program>
-</listing>
-        <p>We can also remove elements from a list by assigning the empty list to them.</p>
-
-<listing xml:id="ch09_9">
-    <caption/>
-    <program xml:id="ch09_9_editor" interactive="activecode" language="python">
-        <input>
+  </program>
+  <p>We can also remove elements from a list by assigning the empty list to them.</p>
+  <program xml:id="ch09_9" interactive="activecode" language="python">
+    <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = []
 print(alist)
         </input>
-    </program>
-</listing>
-        <p>We can even insert elements into a list by squeezing them into an empty slice at the
+  </program>
+  <p>We can even insert elements into a list by squeezing them into an empty slice at the
             desired location.</p>
-
-<listing xml:id="ch09_10">
-    <caption/>
-    <program xml:id="ch09_10_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch09_10" interactive="activecode" language="python">
+    <input>
 alist = ['a', 'd', 'f']
 alist[1:1] = ['b', 'c']
 print(alist)
 alist[4:4] = ['e']
 print(alist)
         </input>
-    </program>
-</listing>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question9_7_1">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+  </program>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question9_7_1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [4, 2, 8, 6, 5]
 alist[2] = True
 print(alist)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[4, 2, True, 8, 6, 5]</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>[4, 2, True, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Item assignment does not insert the new item into the list.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>[4, 2, True, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>[4, 2, True, 6, 5]</p>
+        </statement>
+        <feedback>
                     Yes, the value True is placed in the list at index 2.  It replaces 8.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Error, it is illegal to assign</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, it is illegal to assign</p>
+        </statement>
+        <feedback>
                     Item assignment is allowed with lists.  Lists are mutable.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        
-        
-    </section>
-
+      </choice>
+    </choices>
+  </exercise>
+</section>

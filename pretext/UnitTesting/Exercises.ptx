@@ -1,25 +1,26 @@
-<exercises xml:id="unit_testing_exercises">
-        <title>Exercises</title>
-        <p><ol label="1">
-            <li>
-                <exercise xml:id="ac_ut_reverse"><statement>
-                        <p>A function named <c>reverse</c> takes a string argument, reverses it, and returns the result:</p>
-                        <pre>def reverse(astring):
+<?xml version="1.0"?>
+<exercises xml:id="unit-testing_exercises">
+  <title>Exercises</title>
+  <p>
+    <ol label="1">
+      <li>
+        <exercise xml:id="ac_ut_reverse">
+          <statement>
+            <p>A function named <c>reverse</c> takes a string argument, reverses it, and returns the result:</p>
+            <pre>def reverse(astring):
     """Returns the reverse of `astring`"""</pre>
-                        <p>Complete the assert statements in the ActiveCode editor below to create a unit test for <c>reverse</c>.
-                            Your asserts should check that <c>reverse</c> works properly for the following test cases (&#8220;Input&#8221;
-                            refers to the value passed as a parameter, and &#8220;Expected Output&#8221; is the result returned from
+            <p>Complete the assert statements in the ActiveCode editor below to create a unit test for <c>reverse</c>.
+                            Your asserts should check that <c>reverse</c> works properly for the following test cases (<q>Input</q>
+                            refers to the value passed as a parameter, and <q>Expected Output</q> is the result returned from
                             <c>reverse</c>):</p>
-                        <pre>             Input    Expected Output
+            <pre>             Input    Expected Output
              -------- ---------------
 Test Case 1: 'abc'    'cba'
 Test Case 2: 'b'      'b'
 Test Case 3: ''       ''</pre>
-
-    
-    
-    <program xml:id="ac_ut_reverse_editor" interactive="activecode" language="python">
-        <input>
+          </statement>
+          <program interactive="activecode" language="python" xml:id="ac_ut_reverse_editor">
+            <input>
 def test_reverse():
     # Complete the assert statements below
 
@@ -61,25 +62,30 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</statement><TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
-                        <p>If you&#8217;re not sure how to get started with this one, review <xref ref="unit_testing_writing-unit-tests"/>.</p>
-                    </TabNode><solution>
+          </program>
+          <hint>
+            <p>If you're not sure how to get started with this one, review <xref ref="unit-testing_writing-unit-tests"/>.</p>
+          </hint>
+          <solution>
+                        assert reverse('abc') == 'cba'
+assert reverse('b') == 'b'
+assert reverse('') == ''
+                    
                         <pre>assert reverse('abc') == 'cba'
 assert reverse('b') == 'b'
 assert reverse('') == ''</pre>
-                    </solution></exercise>
-            </li>
-            <li>
-                <exercise xml:id="ac_ut_testable"><statement>
-                        <p>A function named <c>stripletters</c> takes a string argument, removes all letters from it, and
+                    </solution>
+        </exercise>
+      </li>
+      <li>
+        <exercise xml:id="ac_ut_testable">
+          <statement>
+            <p>A function named <c>stripletters</c> takes a string argument, removes all letters from it, and
                             displays the result (see below). However, this function is not testable.</p>
-                        <p>Modify the function so that it can be tested with the assert statements that follow.</p>
-
-    
-    
-    <program xml:id="ac_ut_testable_editor" interactive="activecode" language="python">
-        <input>
+            <p>Modify the function so that it can be tested with the assert statements that follow.</p>
+          </statement>
+          <program interactive="activecode" language="python" xml:id="ac_ut_testable_editor">
+            <input>
 
 def stripletters(msg):
     result = ''
@@ -104,10 +110,19 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</statement><TabNode tabname="Tip" tabnode_options="{'subchapter': 'Exercises', 'chapter': 'UnitTesting', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'tabname': 'Tip'}">
-                        <p>Review <xref ref="unit_testing_designing-testable-functions"/>.</p>
-                    </TabNode><solution>
+          </program>
+          <hint>
+            <p>Review <xref ref="unit-testing_designing-testable-functions"/>.</p>
+          </hint>
+          <solution>
+                        def stripletters(msg):
+    result = ''
+    for ch in msg:
+        if not ch.isalpha():
+            result += ch
+
+    return result
+                    
                         <pre>def stripletters(msg):
     result = ''
     for ch in msg:
@@ -115,8 +130,9 @@ myTests().main()
             result += ch
 
     return result</pre>
-                    </solution></exercise>
-            </li>
-        </ol></p>
-    </exercises>
-
+                    </solution>
+        </exercise>
+      </li>
+    </ol>
+  </p>
+</exercises>

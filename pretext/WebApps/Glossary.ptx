@@ -1,62 +1,42 @@
-<section xml:id="web_apps_glossary">
-        <title>Glossary</title>
-        <glossary sorted="False">
-            
-                <gi>
-                    <title>Client-side web applications</title>
-                    
-                        <p>programs that are downloaded to a web browser and executed on the user&#8217;s local machine. Client-side applications are typically written in JavaScript and embedded in web pages.</p>
-                    
-                </gi>
-                <gi>
-                    <title>Server-side web applications</title>
-                    
-                        <p>programs that run on web server computers, rather than on the user&#8217;s local machine. Typically, a server-side web application displays a form with text boxes and other data collection mechanisms. The user fills out the form, clicks a submit button, and the browser sends the form to the web application on the server, which processes the request, and responds with another web page.</p>
-                    
-                </gi>
-                <gi>
-                    <title>web browser</title>
-                    
-                        <p>an application software for accessing the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the user&#8217;s device.</p>
-                    
-                </gi>
-                <gi>
-                    <title>URL (Uniform Resource Locator)</title>
-                    
-                        <p>the address of a web page.</p>
-                    
-                </gi>
-                <gi>
-                    <title>protocol</title>
-                    
-                        <p>a system of rules that allows two or more entities of a communications system to transmit information. The protocol defines the rules, syntax, semantics and synchronization of communication and possible error recovery methods.</p>
-                    
-                </gi>
-                <gi>
-                    <title>server</title>
-                    
-                        <p>a computer or computer program which manages access to a centralized resource or service in a network.</p>
-                    
-                </gi>
-                <gi>
-                    <title>query string</title>
-                    
-                        <p>the part of a URL that assigns values to specified parameters, such as a search query in Google</p>
-                    
-                </gi>
-                <gi>
-                    <title>HTML(Hypertext Markup Language) pages:</title>
-                    
-                        <p>the standard markup language for documents designed to be displayed in a web browser. It tells the web browser that the user sees how it should look and what information should be on the page.</p>
-                    
-                </gi>
-                <gi>
-                    <title>IP address</title>
-                    
-                        <p>a special address indicating the request came from the browser on the same computer that the Flask server is running on.</p>
-                    
-                </gi>
-            
-        </glossary>
-    </section>
-
+<?xml version="1.0"?>
+<section xml:id="web-apps_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>Client-side web applications</title>
+      <p>programs that are downloaded to a web browser and executed on the user's local machine. Client-side applications are typically written in JavaScript and embedded in web pages.</p>
+    </gi>
+    <gi>
+      <title>Server-side web applications</title>
+      <p>programs that run on web server computers, rather than on the user's local machine. Typically, a server-side web application displays a form with text boxes and other data collection mechanisms. The user fills out the form, clicks a submit button, and the browser sends the form to the web application on the server, which processes the request, and responds with another web page.</p>
+    </gi>
+    <gi>
+      <title>web browser</title>
+      <p>an application software for accessing the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the user's device.</p>
+    </gi>
+    <gi>
+      <title>URL (Uniform Resource Locator)</title>
+      <p>the address of a web page.</p>
+    </gi>
+    <gi>
+      <title>protocol</title>
+      <p>a system of rules that allows two or more entities of a communications system to transmit information. The protocol defines the rules, syntax, semantics and synchronization of communication and possible error recovery methods.</p>
+    </gi>
+    <gi>
+      <title>server</title>
+      <p>a computer or computer program which manages access to a centralized resource or service in a network.</p>
+    </gi>
+    <gi>
+      <title>query string</title>
+      <p>the part of a URL that assigns values to specified parameters, such as a search query in Google</p>
+    </gi>
+    <gi>
+      <title>HTML(Hypertext Markup Language) pages:</title>
+      <p>the standard markup language for documents designed to be displayed in a web browser. It tells the web browser that the user sees how it should look and what information should be on the page.</p>
+    </gi>
+    <gi>
+      <title>IP address</title>
+      <p>a special address indicating the request came from the browser on the same computer that the Flask server is running on.</p>
+    </gi>
+  </glossary>
+</section>

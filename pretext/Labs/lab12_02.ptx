@@ -1,32 +1,30 @@
+<?xml version="1.0"?>
 <section xml:id="labs_letter-count-histogram">
-        <title>Letter Count Histogram</title>
-        <p>The previous lab wrote a function to return a dictionary of letter counts.  In an earlier chapter, we wrote a turtle
+  <title>Letter Count Histogram</title>
+  <p>The previous lab wrote a function to return a dictionary of letter counts.  In an earlier chapter, we wrote a turtle
             program that could draw a histogram.</p>
-        <p>Combine these two ideas together to create a function that will take a string and create a histogram of the number of
+  <p>Combine these two ideas together to create a function that will take a string and create a histogram of the number of
             times each letter occurs.  Make sure it is in alphabetical order from left to right.</p>
-        <p><ol label="1">
-            <li>
-                <p>Count the number of times each letter occurs.  Keep the count in a dictionary.</p>
-            </li>
-            <li>
-                <p>Get the keys from the dictionary, convert them to a list, and sort them.</p>
-            </li>
-            <li>
-                <p>Iterate through the keys, in alphabetical order, getting the associated value (count).</p>
-            </li>
-            <li>
-                <p>Make a histogram bar for each.</p>
-            </li>
-        </ol></p>
-
-<listing xml:id="histlab">
-    <caption/>
-    <program xml:id="histlab_editor" interactive="activecode" language="python">
-        <input>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Count the number of times each letter occurs.  Keep the count in a dictionary.</p>
+      </li>
+      <li>
+        <p>Get the keys from the dictionary, convert them to a list, and sort them.</p>
+      </li>
+      <li>
+        <p>Iterate through the keys, in alphabetical order, getting the associated value (count).</p>
+      </li>
+      <li>
+        <p>Make a histogram bar for each.</p>
+      </li>
+    </ol>
+  </p>
+  <program xml:id="histlab" interactive="activecode" language="python">
+    <input>
 
 
         </input>
-    </program>
-</listing>
-    </section>
-
+  </program>
+</section>

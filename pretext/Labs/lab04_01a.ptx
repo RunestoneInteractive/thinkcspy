@@ -1,97 +1,87 @@
+<?xml version="1.0"?>
 <section xml:id="labs_lessons-from-a-triangle">
-        <title>Lessons from a Triangle</title>
-        <p>OK, let&#8217;s look at what we have learned from writing a <c>drawTriangle</c> and
+  <title>Lessons from a Triangle</title>
+  <p>OK, let's look at what we have learned from writing a <c>drawTriangle</c> and
             <c>drawOctagon</c> function.  The first thing you had to figure out was that you
             needed to modify the parameter to the <c>range</c> function based on the number
             of sides in the polygon.  The next thing, and this may have been the most
             challenging part for you was to figure out how much to turn each time.  The
             following table summarizes what you probably learned very nicely.  If you
-            didn&#8217;t, look at the table and then go back to the previous page and see if
+            didn't, look at the table and then go back to the previous page and see if
             you can finish <c>drawTriangle</c> and <c>drawOctagon</c>.</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Shape
                         </cell>
-                        <cell>
+        <cell>
                             Sides
                         </cell>
-                        <cell>
+        <cell>
                             range()
                         </cell>
-                        <cell>
+        <cell>
                             Angle
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             Triangle
                         </cell>
-                        <cell>
+        <cell>
                             3
                         </cell>
-                        <cell>
+        <cell>
                             3
                         </cell>
-                        <cell>
+        <cell>
                             360/3 = 120
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             Square
                         </cell>
-                        <cell>
+        <cell>
                             4
                         </cell>
-                        <cell>
+        <cell>
                             4
                         </cell>
-                        <cell>
+        <cell>
                             360/4 = 90
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             Octagon
                         </cell>
-                        <cell>
+        <cell>
                             8
                         </cell>
-                        <cell>
+        <cell>
                             8
                         </cell>
-                        <cell>
+        <cell>
                             360/8 = 45
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Looking at the table above you can really see that there is a pattern.  If
+      </row>
+    </tabular>
+  </table>
+  <p>Looking at the table above you can really see that there is a pattern.  If
             you know the number of sides you want, the rest can be figured out from there.
             This leads us to the next problem solving stage of this exercise,
             generalization.  Why write a separate function for every kind of polygon when
             you can just write a single function that can be used to draw many different
             polygons?</p>
-        <p>Our new function <c>drawPolygon</c> will have three parameters,
+  <p>Our new function <c>drawPolygon</c> will have three parameters,
             a turtle and the length of the side just like we have in the previous
             functions, but now we will add an additional parameter: numSides.</p>
-        <p>Here&#8217;s the starting point for the drawPolygon function,
+  <p>Here's the starting point for the drawPolygon function,
             see if you can fill in the details on your own.</p>
-
-<listing xml:id="lab0401a">
-    <caption/>
-    <program xml:id="lab0401a_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="lab0401a" interactive="activecode" language="python">
+    <input>
 import turtle
 
 def drawPolygon(t, sideLength, numSides):
@@ -105,7 +95,5 @@ drawPolygon(geo,30,10)  # draw a decagon
 
 wn.exitonclick()
         </input>
-    </program>
-</listing>
-    </section>
-    
+  </program>
+</section>

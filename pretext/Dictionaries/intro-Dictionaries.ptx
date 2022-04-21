@@ -1,127 +1,116 @@
+<?xml version="1.0"?>
 <section xml:id="dictionaries_dictionaries">
-        <title>Dictionaries</title>
-        <p>All of the compound data types we have studied in detail so far &#8212; strings,
-            lists, and tuples &#8212; are sequential collections.  This means that the items in the collection are
+  <title>Dictionaries</title>
+  <p>All of the compound data types we have studied in detail so far &#x2014; strings,
+            lists, and tuples &#x2014; are sequential collections.  This means that the items in the collection are
             ordered from left to right and they use integers as indices to access
             the values they contain.</p>
-        <p><alert>Dictionaries</alert> are a different kind of collection. They are Python&#8217;s
-            built-in <alert>mapping type</alert>. A map is an unordered, associative collection.  The association, or mapping,
-            is from a <alert>key</alert>, which can be any immutable type,
-            to a <alert>value</alert>, which can be any Python data object.</p>
-        <p>As an example, we will create a dictionary to translate English words into
+  <p><term>Dictionaries</term> are a different kind of collection. They are Python's
+            built-in <term>mapping type</term>. A map is an unordered, associative collection.  The association, or mapping,
+            is from a <term>key</term>, which can be any immutable type,
+            to a <term>value</term>, which can be any Python data object.</p>
+  <p>As an example, we will create a dictionary to translate English words into
             Spanish. For this dictionary, the keys are strings and the values will also be strings.</p>
-        <p>One way to create a dictionary is to start with the empty dictionary and add
-            <alert>key-value pairs</alert>. The empty dictionary is denoted <c>{}</c></p>
-<exercise runestone="chp12_dict1"/>        <p>The first assignment creates an empty dictionary named <c>eng2sp</c>.  The other
+  <p>One way to create a dictionary is to start with the empty dictionary and add
+            <term>key-value pairs</term>. The empty dictionary is denoted <c>{}</c></p>
+  <exercise runestone="chp12_dict1"/>
+  <p>The first assignment creates an empty dictionary named <c>eng2sp</c>.  The other
             assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key.
             We can print the current
             value of the dictionary in the usual way.
             The key-value pairs of the dictionary are separated by commas. Each pair
             contains a key and a value separated by a colon.</p>
-        <p>The order of the pairs may not be what you expected. Python uses complex
+  <p>The order of the pairs may not be what you expected. Python uses complex
             algorithms, designed for very fast access, to determine where the
             key-value pairs are stored in a dictionary.
             For our purposes we can think of this ordering as unpredictable.</p>
-        <p>Another way to create a dictionary is to provide a list of key-value pairs
+  <p>Another way to create a dictionary is to provide a list of key-value pairs
             using the same syntax as the previous output.</p>
-<exercise runestone="chp12_dict2"/>        <p>It doesn&#8217;t matter what order we write the pairs. The values in a dictionary are
+  <exercise runestone="chp12_dict2"/>
+  <p>It doesn't matter what order we write the pairs. The values in a dictionary are
             accessed with keys, not with indices, so there is no need to care about
             ordering.</p>
-        <p>Here is how we use a key to look up the corresponding value.</p>
-<exercise runestone="chp12_dict3"/>        <p>The key <c>'two'</c> yields the value <c>'dos'</c>.</p>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_11_01">
-    <caption/>
-    <program xml:id="scratch_11_01_editor" interactive="activecode" language="python">
-        <input>
+  <p>Here is how we use a key to look up the corresponding value.</p>
+  <exercise runestone="chp12_dict3"/>
+  <p>The key <c>'two'</c> yields the value <c>'dos'</c>.</p>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_11_01" interactive="activecode" language="python">
+      <input>
 
 
         </input>
     </program>
-</listing>
-        </note>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question11_1_1">
+  </note>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question11_1_1">
+    <statement>
+      <p>A dictionary is an unordered collection of key-value pairs.</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-        <p>A dictionary is an unordered collection of key-value pairs.</p>
-
+          <p>False</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>False</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Dictionaries associate keys with values but there is no assumed order for the entries.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>True</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
                     Yes, dictionaries are associative collections meaning that they store key-value pairs.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question11_1_2">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question11_1_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 mydict = {"cat":12, "dog":6, "elephant":23}
 print(mydict["dog"])
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>12</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>12</p>
-                </statement>
-                <feedback>
+        <feedback>
                     12 is associated with the key cat.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>6</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>6</p>
+        </statement>
+        <feedback>
                     Yes, 6 is associated with the key dog.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>23</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>23</p>
+        </statement>
+        <feedback>
                     23 is associated with the key elephant.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Error, you cannot use the index operator with a dictionary.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot use the index operator with a dictionary.</p>
+        </statement>
+        <feedback>
                     The [ ] operator, when used with a dictionary, will look up a value based on its key.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
-
+      </choice>
+    </choices>
+  </exercise>
+</section>

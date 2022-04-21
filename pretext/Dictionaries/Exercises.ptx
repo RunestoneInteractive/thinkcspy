@@ -1,12 +1,13 @@
+<?xml version="1.0"?>
 <exercises xml:id="dictionaries_exercises">
-        <title>Exercises</title>
-        
-            <exercise xml:id="ex_11_01"><statement>
-                    <p>Write a program that allows the user to enter a string.  It then prints a
+  <title>Exercises</title>
+  <exercise xml:id="ex_11_01">
+    <statement>
+      <p>Write a program that allows the user to enter a string.  It then prints a
                         table of the letters of the alphabet in alphabetical order which occur in
                         the string together with the number of times each letter occurs. Case should
                         be ignored. A sample run of the program might look this this:</p>
-                    <pre>Please enter a sentence: ThiS is String with Upper and lower case Letters.
+      <pre>Please enter a sentence: ThiS is String with Upper and lower case Letters.
 a  2
 c  1
 d  1
@@ -24,17 +25,14 @@ t  5
 u  1
 w  2
 $</pre>
-
-    
-    
-    <program xml:id="ex_11_01_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_01_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="de_q1_answer_editor" language="python">
+    <solution>
+      <program xml:id="de_q1_answer" language="python">
         <input>
 x = input("Enter a sentence")
 
@@ -54,67 +52,76 @@ keys = letter_count.keys()
 for char in sorted(keys):
     print(char, letter_count[char])
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-        
-            <block_quote>
-                <p>Give the Python interpreter&#8217;s response to each of the following from a
+      </program>
+    </solution>
+  </exercise>
+  <blockquote>
+    <p>Give the Python interpreter's response to each of the following from a
                     continuous interpreter session:</p>
-                <p><ol label="a">
-                    <li>
-                        <program language="python"><input>
+    <p>
+      <ol label="a">
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; d = {'apples': 15, 'bananas': 35, 'grapes': 12}
 &gt;&gt;&gt; d['banana']
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; d['oranges'] = 20
 &gt;&gt;&gt; len(d)
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; 'grapes' in d
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; d['pears']
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; d.get('pears', 0)
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; fruits = d.keys()
 &gt;&gt;&gt; fruits.sort()
 &gt;&gt;&gt; print(fruits)
-</input></program>
-                    </li>
-                    <li>
-                        <program language="python"><input>
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
 &gt;&gt;&gt; del d['apples']
 &gt;&gt;&gt; 'apples' in d
-</input></program>
-                    </li>
-                </ol></p>
-            </block_quote>
-            <p>Be sure you understand why you get each result. Then apply what you
+</input>
+          </program>
+        </li>
+      </ol>
+    </p>
+  </blockquote>
+  <p>Be sure you understand why you get each result. Then apply what you
                 have learned to fill in the body of the function below, and add code for
                 the tests indicated:</p>
-
-<listing xml:id="q2_dict_answer">
-    <caption/>
-    <program xml:id="q2_dict_answer_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="q2_dict_answer" interactive="activecode" language="python">
+    <input>
 def add_fruit(inventory, fruit, quantity=0):
      pass
 
@@ -126,112 +133,137 @@ add_fruit(new_inventory, 'strawberries', 10)
 add_fruit(new_inventory, 'strawberries', 25)
 #  test that new_inventory['strawberries'] is now 35)
         </input>
-    </program>
-</listing>
-        
-        
-            <exercise xml:id="ex_11_02"><statement>
-                    <p>Write a program called <c>alice_words.py</c> that creates a text file named
+  </program>
+  <exercise xml:id="ex_11_02">
+    <statement>
+      <p>Write a program called <c>alice_words.py</c> that creates a text file named
                         <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
-                        number of times each occurs, in the text version of <title_reference>Alice&#8217;s Adventures in Wonderland</title_reference>.
+                        number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>.
                         (You can obtain a free plain text version of the book, along with many others, from
                         <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look
                         something like this</p>
-                    <block_quote>
-                        <table><tabular>
-                            
-                                
-                                
-                                
-                                    <row header="yes">
-                                        <cell>
+      <blockquote>
+        <table>
+          <tabular>
+            <row header="yes">
+              <cell>
                                             Word
                                         </cell>
-                                        <cell>
+              <cell>
                                             Count
                                         </cell>
-                                    </row>
-                                
-                                
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             a
                                         </cell>
-                                        <cell>
+              <cell>
                                             631
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             a-piece
                                         </cell>
-                                        <cell>
+              <cell>
                                             1
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             abide
                                         </cell>
-                                        <cell>
+              <cell>
                                             1
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             able
                                         </cell>
-                                        <cell>
+              <cell>
                                             1
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             about
                                         </cell>
-                                        <cell>
+              <cell>
                                             94
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             above
                                         </cell>
-                                        <cell>
+              <cell>
                                             3
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             absence
                                         </cell>
-                                        <cell>
+              <cell>
                                             1
                                         </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
+            </row>
+            <row>
+              <cell>
                                             absurd
                                         </cell>
-                                        <cell>
+              <cell>
                                             2
                                         </cell>
-                                    </row>
-                                
-                            
-                        </tabular></table>
-                    </block_quote>
-                    <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
+            </row>
+          </tabular>
+        </table>
+      </blockquote>
+      <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
                         in the activecode window simply print out the results rather than write them to a file.</p>
-
-    
-    
-    <program xml:id="ex_11_02_editor" interactive="activecode" language="python">
-        <input>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_02_editor">
+      <input>
 
         </input>
     </program>
-</statement><solution>
+    <solution>
+                    f = open('alice.txt', 'r')
+
+count = {}
+
+for line in f:
+    for word in line.split():
+
+        # remove punctuation
+        word = word.replace('_', '').replace('"', '').replace(',', '').replace('.', '')
+        word = word.replace('-', '').replace('?', '').replace('!', '').replace("'", "")
+        word = word.replace('(', '').replace(')', '').replace(':', '').replace('[', '')
+        word = word.replace(']', '').replace(';', '')
+
+        # ignore case
+        word = word.lower()
+
+        # ignore numbers
+        if word.isalpha():
+            if word in count:
+                count[word] = count[word] + 1
+            else:
+                count[word] = 1
+
+keys = count.keys()
+keys.sort()
+
+# save the word count analysis to a file
+out = open('alice_words.txt', 'w')
+
+for word in keys:
+    out.write(word + " " + str(count[word]))
+    out.write('\n')
+
+print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
+                
                     <program language="python"><input>
 f = open('alice.txt', 'r')
 
@@ -268,195 +300,183 @@ for word in keys:
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
 </input></program>
-                </solution></exercise>
-        
-        
-
-<exercise xml:id="ex_11_03">
+                </solution>
+  </exercise>
+  <exercise xml:id="ex_11_03">
     <statement>
-            <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
-
+      <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
     </statement>
     <program xml:id="ex_11_03_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-        
-        
-            <exercise xml:id="ex_11_04"><statement>
-                    <p>Here&#8217;s a table of English to Pirate translations</p>
-                    <table><tabular>
-                        
-                            
-                            
-                            
-                                <row header="yes">
-                                    <cell>
+  </exercise>
+  <exercise xml:id="ex_11_04">
+    <statement>
+      <p>Here's a table of English to Pirate translations</p>
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell>
                                         English
                                     </cell>
-                                    <cell>
+            <cell>
                                         Pirate
                                     </cell>
-                                </row>
-                            
-                            
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         sir
                                     </cell>
-                                    <cell>
+            <cell>
                                         matey
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         hotel
                                     </cell>
-                                    <cell>
+            <cell>
                                         fleabag inn
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         student
                                     </cell>
-                                    <cell>
+            <cell>
                                         swabbie
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         boy
                                     </cell>
-                                    <cell>
+            <cell>
                                         matey
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         madam
                                     </cell>
-                                    <cell>
+            <cell>
                                         proud beauty
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         professor
                                     </cell>
-                                    <cell>
+            <cell>
                                         foul blaggart
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         restaurant
                                     </cell>
-                                    <cell>
+            <cell>
                                         galley
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         your
                                     </cell>
-                                    <cell>
+            <cell>
                                         yer
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         excuse
                                     </cell>
-                                    <cell>
+            <cell>
                                         arr
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         students
                                     </cell>
-                                    <cell>
+            <cell>
                                         swabbies
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         are
                                     </cell>
-                                    <cell>
+            <cell>
                                         be
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         lawyer
                                     </cell>
-                                    <cell>
+            <cell>
                                         foul blaggart
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         the
                                     </cell>
-                                    <cell>
-                                        th&#8217;
+            <cell>
+                                        th'
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         restroom
                                     </cell>
-                                    <cell>
+            <cell>
                                         head
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         my
                                     </cell>
-                                    <cell>
+            <cell>
                                         me
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         hello
                                     </cell>
-                                    <cell>
+            <cell>
                                         avast
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         is
                                     </cell>
-                                    <cell>
+            <cell>
                                         be
                                     </cell>
-                                </row>
-                                <row>
-                                    <cell>
+          </row>
+          <row>
+            <cell>
                                         man
                                     </cell>
-                                    <cell>
+            <cell>
                                         matey
                                     </cell>
-                                </row>
-                            
-                        
-                    </tabular></table>
-                    <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
+          </row>
+        </tabular>
+      </table>
+      <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
                         (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.</p>
-                    <p>For example, the sentence &#8220;hello there students&#8221; should be translated to &#8220;avast there swabbies&#8221;.</p>
-
-    
-    
-    <program xml:id="ex_11_04_editor" interactive="activecode" language="python">
-        <input>
+      <p>For example, the sentence <q>hello there students</q> should be translated to <q>avast there swabbies</q>.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_04_editor">
+      <input>
 def translator(english):
 
   pirate = {}
@@ -482,9 +502,8 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</statement><solution>
-    
-    <program xml:id="ch11_q5_answer_editor" language="python">
+    <solution>
+      <program xml:id="ch11_q5_answer" language="python">
         <input>
 def translator(sentence):
 
@@ -507,11 +526,7 @@ def translator(sentence):
 
   return " ".join(psentence)
         </input>
-    </program>
-
-
-
-                </solution></exercise>
-        
-    </exercises>
-
+      </program>
+    </solution>
+  </exercise>
+</exercises>

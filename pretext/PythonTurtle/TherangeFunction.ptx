@@ -1,11 +1,11 @@
-<section xml:id="python_turtle_the-range-function">
-    <title>The range Function</title>
-
-    <video xml:id="advrange" youtube="YK8QlIT3__M" width="auto" />
-    <p>In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
+<?xml version="1.0"?>
+<section xml:id="python-turtle_the-range-function">
+  <title>The range Function</title>
+  <video xml:id="advrange" youtube="YK8QlIT3__M" width="auto"/>
+  <p>In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
             to happen four times.  We said that we could have used any four values.  In fact, we even used four colors.</p>
-    <program language="python">
-        <input>
+  <program language="python">
+    <input>
 import turtle            # set up alex
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -16,373 +16,273 @@ for i in [0, 1, 2, 3]:   # repeat four times
 
 wn.exitonclick()
 </input>
-    </program>
-    <p>
-        It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-            want to write simple
-        <c>for loop</c>
-        controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
+  </program>
+  <p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
+            want to write simple <c>for loop</c> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
             In fact, these lists are so popular that Python gives us special built-in
-        <c>range</c>
-        objects
+            <c>range</c> objects
             that can deliver a sequence of values to
-            the
-        <c>for</c>
-        loop.  When called with one parameter, the sequence provided by
-        <c>range</c>
-        always starts with 0.  If you ask for
-        <c>range(4)</c>
-        , then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise,
-        <c>range(10)</c>
-        provides 10 values, 0 through 9.
-    </p>
-    <program language="python">
-        <input>
+            the <c>for</c> loop.  When called with one parameter, the sequence provided by <c>range</c> always starts with 0.  If you ask for <c>range(4)</c>, then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise, <c>range(10)</c> provides 10 values, 0 through 9.</p>
+  <program language="python">
+    <input>
 for i in range(4):
     # Executes the body with i = 0, then 1, then 2, then 3
 for x in range(10):
     # sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </input>
-    </program>
-    <note>
-        <p>Computer scientists like to count from 0!</p>
-    </note>
-    <p>So to repeat something four times, a good Python programmer would do this:</p>
-    <program language="python">
-        <input>
+  </program>
+  <note>
+    <p>Computer scientists like to count from 0!</p>
+  </note>
+  <p>So to repeat something four times, a good Python programmer would do this:</p>
+  <program language="python">
+    <input>
 for i in range(4):
     alex.forward(50)
     alex.left(90)
 </input>
-    </program>
-    <p>
-        The
-        <url href="http://docs.python.org/py3k/library/functions.html?highlight=range#range" visual="http://docs.python.org/py3k/library/functions.html?highlight=range#range">range</url>
-        function is actually a very powerful function
+  </program>
+  <p>The <url href="http://docs.python.org/py3k/library/functions.html?highlight=range#range" visual="http://docs.python.org/py3k/library/functions.html?highlight=range#range">range</url> function is actually a very powerful function
             when it comes to
             creating sequences of integers.  It can take one, two, or three parameters.  We have seen
-            the simplest case of one parameter such as
-        <c>range(4)</c>
-        which creates
-        <c>[0, 1, 2, 3]</c>
-        .
-            But what if we really want to have the sequence
-        <c>[1, 2, 3, 4]</c>
-        ?
-            We can do this by using a two parameter version of
-        <c>range</c>
-        where the first parameter is the starting point and the second parameter is the ending point.  The evaluation of
-        <c>range(1,5)</c>
-        produces the desired sequence.  What happened to the 5?
+            the simplest case of one parameter such as <c>range(4)</c> which creates <c>[0, 1, 2, 3]</c>.
+            But what if we really want to have the sequence <c>[1, 2, 3, 4]</c>?
+            We can do this by using a two parameter version of <c>range</c> where the first parameter is the starting point and the second parameter is the ending point.  The evaluation of <c>range(1,5)</c> produces the desired sequence.  What happened to the 5?
             In this case we interpret the parameters of the range function to mean
             range(start,beyondLast), where beyondLast means an index past the last index we want.  In the 2-parameter version
-            of range, that is the last index included + 1.
-    </p>
-    <note>
-        <p>
-            Why in the world would range not just work like range(start,
+            of range, that is the last index included + 1.</p>
+  <note>
+    <p>Why in the world would range not just work like range(start,
                 stop)?  Think about it like this.  Because computer scientists like to
-                start counting at 0 instead of 1,
-            <c>range(N)</c>
-            produces a sequence of
+                start counting at 0 instead of 1, <c>range(N)</c> produces a sequence of
                 things that is N long, but the consequence of this is that the final
                 number of the sequence is N-1.  In the case of start,
                 stop it helps to simply think that the sequence begins with start and
-                continues as long as the number is less than stop.
-        </p>
-    </note>
-    <note>
-        <p>
-            The range function is
-            <em>lazy</em>
-            :  It produces the next element only when needed.
-                With a regular Python 3 interpreter, printing a range does
-            <em>not</em>
-            calculate all the elements.
+                continues as long as the number is less than stop.</p>
+  </note>
+  <note>
+    <p>The range function is <em>lazy</em>:  It produces the next element only when needed.
+                With a regular Python 3 interpreter, printing a range does <em>not</em> calculate all the elements.
                 To immediately calculate all the elements in a range,
-                wrap the range in a list, like
-            <c>list(range(4))</c>
-            .
+                wrap the range in a list, like <c>list(range(4))</c>.
                 Activecode is not designed to work on very long sequences, and it may allow you to be
-                sloppy, avoiding the list function, and
-            <em>see</em>
-            the elements in the range with
-            <c>print(range(4))</c>
-            .
-        </p>
-    </note>
-    <p>Here are two examples for you to run.  Try them and then add another line below to create a sequence starting
+                sloppy, avoiding the list function, and <em>see</em> the elements in the range with <c>print(range(4))</c>.</p>
+  </note>
+  <p>Here are two examples for you to run.  Try them and then add another line below to create a sequence starting
             at 10 and going up to 20 (including 20).</p>
-
-    <listing xml:id="ch03_5">
-        <caption />
-        <program xml:id="ch03_5_editor" interactive="activecode" language="python">
-            <input>
+  <program xml:id="ch03_5" interactive="activecode" language="python">
+    <input>
 print(list(range(4)))
 print(list(range(1, 5)))
         </input>
-        </program>
-    </listing>
-    <p>
-        Codelens will help us to further understand the way range works.  In this case, the variable
-        <c>i</c>
-        will take on values
-            produced by the
-        <c>range</c>
-        function.
-    </p>
-    <exercise runestone="rangeme" />
-    <p>
-        Finally, suppose we want to have a sequence of even numbers.
+  </program>
+  <p>Codelens will help us to further understand the way range works.  In this case, the variable <c>i</c> will take on values
+            produced by the <c>range</c> function.</p>
+  <exercise runestone="rangeme"/>
+  <p>Finally, suppose we want to have a sequence of even numbers.
             How would we do that?  Easy, we add another parameter, a step,
             that tells range what to count by.  For even numbers we want to start at 0
-            and count by 2&#8217;s.  So if we wanted the first 10 even numbers we would use
-        <c>range(0,19,2)</c>
-        .  The most general form of the range is
-        <c>range(start, beyondLast, step)</c>
-        .  You can also create a sequence of numbers that
-            starts big and gets smaller by using a negative value for the step parameter.
-    </p>
-
-    <listing xml:id="ch03_6">
-        <caption />
-        <program xml:id="ch03_6_editor" interactive="activecode" language="python">
-            <input>
+            and count by 2's.  So if we wanted the first 10 even numbers we would use
+            <c>range(0,19,2)</c>.  The most general form of the range is
+            <c>range(start, beyondLast, step)</c>.  You can also create a sequence of numbers that
+            starts big and gets smaller by using a negative value for the step parameter.</p>
+  <program xml:id="ch03_6" interactive="activecode" language="python">
+    <input>
 print(list(range(0, 19, 2)))
 print(list(range(0, 20, 2)))
 print(list(range(10, 0, -1)))
         </input>
-        </program>
-    </listing>
-    <p>Try it in codelens.  Do you see why the first two statements produce the same result?</p>
-    <exercise runestone="rangeme2" />
-    <p>
-        <alert>Check your understanding</alert>
-    </p>
-
-    <exercise xml:id="test_question3_5_1">
+  </program>
+  <p>Try it in codelens.  Do you see why the first two statements produce the same result?</p>
+  <exercise runestone="rangeme2"/>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question3_5_1">
+    <statement>
+      <p>In the command range(3, 10, 2), what does the second argument (10) specify?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
         <statement>
-
-            <p>In the command range(3, 10, 2), what does the second argument (10) specify?</p>
-
+          <p>Range should generate a sequence that stops before 10 (including 9).</p>
         </statement>
-        <choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>Range should generate a sequence that stops before 10 (including 9).</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Range will generate the sequence 3, 5, 7, 9.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Range should generate a sequence that starts at 10 (including 10).</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Range should generate a sequence that starts at 10 (including 10).</p>
+        </statement>
+        <feedback>
                     The first argument (3) tells range what number to start at.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Range should generate a sequence starting at 3 that stops at 10 (including 10).</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Range should generate a sequence starting at 3 that stops at 10 (including 10).</p>
+        </statement>
+        <feedback>
                     Range will always stop at the number in the sequence before (not including) the specified limit for the sequence.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>Range should generate a sequence using every 10th number between the start and the stopping number.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Range should generate a sequence using every 10th number between the start and the stopping number.</p>
+        </statement>
+        <feedback>
                     The third argument (2) tells range how many numbers to skip between each element in the sequence.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question3_5_2">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question3_5_2">
+    <statement>
+      <p>What command correctly generates the sequence 2, 5, 8?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-            <p>What command correctly generates the sequence 2, 5, 8?</p>
-
+          <p>range(2, 5, 8)</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>range(2, 5, 8)</p>
-                </statement>
-                <feedback>
+        <feedback>
                     This command generates the sequence with just the number 2 because the first parameter (2) tells range where to start, the second number tells range where to end (before 5) and the third number tells range how many numbers to skip between elements (8).  Since 10 &gt;= 5, there is only one number in this sequence.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(2, 8, 3)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>range(2, 8, 3)</p>
+        </statement>
+        <feedback>
                     This command generates the sequence 2, 5 because 8 is not less than 8 (the specified number past the end).
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>range(2, 10, 3)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>range(2, 10, 3)</p>
+        </statement>
+        <feedback>
                     The first number is the starting point, the second is past the last allowed, and the third is the amount to increment by.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(8, 1, -3)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>range(8, 1, -3)</p>
+        </statement>
+        <feedback>
                     This command generates the sequence 8, 5, 2 because it starts at 8, ends before 1, and skips to every third number going down.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question3_5_3">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question3_5_3">
+    <statement>
+      <p>What happens if you give range only one argument?  For example: range(4)</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
         <statement>
-
-            <p>What happens if you give range only one argument?  For example: range(4)</p>
-
+          <p>It will generate a sequence starting at 0, with every number included up to but not including the argument it was passed.</p>
         </statement>
-        <choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>It will generate a sequence starting at 0, with every number included up to but not including the argument it was passed.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Yes, if you only give one number to range it starts with 0 and ends before the number specified incrementing by 1.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>It will generate a sequence starting at 1, with every number up to but not including the argument it was passed.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It will generate a sequence starting at 1, with every number up to but not including the argument it was passed.</p>
+        </statement>
+        <feedback>
                     Range with one parameter starts at 0.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>It will generate a sequence starting at 1, with every number including the argument it was passed.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It will generate a sequence starting at 1, with every number including the argument it was passed.</p>
+        </statement>
+        <feedback>
                     Range with one parameter starts at 0, and never includes the argument it was passed.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>It will cause an error: range always takes exactly 3 arguments.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It will cause an error: range always takes exactly 3 arguments.</p>
+        </statement>
+        <feedback>
                     If range is passed only one argument, it interprets that argument as one past the end of the list.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question3_5_4">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question3_5_4">
+    <statement>
+      <p>Which range function call will produce the sequence 20, 15, 10, 5?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-            <p>Which range function call will produce the sequence 20, 15, 10, 5?</p>
-
+          <p>range(5, 25, 5)</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>range(5, 25, 5)</p>
-                </statement>
-                <feedback>
+        <feedback>
                     The step 5 is positive, while the given sequence is decreasing.  This answer creates the reversed, increasing sequence.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>range(20, 3, -5)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>range(20, 3, -5)</p>
+        </statement>
+        <feedback>
                     Yes: If we take steps of -5, not worrying about the ending, we get 20, 15, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(20, 5, 4)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>range(20, 5, 4)</p>
+        </statement>
+        <feedback>
                     The step 5 is positive so the sequence would need to increase from 20 toward 4.  That does not make sense and the sequence would be empty.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(20, 5, -5)</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>range(20, 5, -5)</p>
+        </statement>
+        <feedback>
                     the sequence can never include the second parameter (5).  The second parameter must always be past the end of the range sequence.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question3_5_5">
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question3_5_5">
+    <statement>
+      <p>What could the second parameter (12) in range(2, 12, 4) be replaced with and generate exactly the same sequence?</p>
+    </statement>
+    <choices>
+      <choice>
         <statement>
-
-            <p>What could the second parameter (12) in range(2, 12, 4) be replaced with and generate exactly the same sequence?</p>
-
+          <p>No other value would give the same sequence.</p>
         </statement>
-        <choices>
-
-            <choice>
-                <statement>
-                    <p>No other value would give the same sequence.</p>
-                </statement>
-                <feedback>
+        <feedback>
                     The sequence produced has steps of 4: 2, 6, 10.  The next would be 14, but it is not before the limit 12.  There are other limit choices past 10, but not past 14.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The only other choice is 14.</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The only other choice is 14.</p>
+        </statement>
+        <feedback>
                     14 would work:  It is also past 10, and not past 14, but there are other integers with the same properties.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>11, 13, or 14</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>11, 13, or 14</p>
+        </statement>
+        <feedback>
                     Yes, any integer past 10, and not past the next step at 14 would work.
                 </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
+      </choice>
+    </choices>
+  </exercise>
 </section>

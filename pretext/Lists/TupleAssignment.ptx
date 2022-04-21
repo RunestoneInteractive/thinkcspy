@@ -1,35 +1,43 @@
+<?xml version="1.0"?>
 <section xml:id="lists_tuple-assignment">
-        <title>Tuple Assignment</title>
-        <p>Python has a very powerful <alert>tuple assignment</alert> feature that allows a tuple of variables
+  <title>Tuple Assignment</title>
+  <p>Python has a very powerful <term>tuple assignment</term> feature that allows a tuple of variables
             on the left of an assignment to be assigned values from a tuple
             on the right of the assignment.</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 (name, surname, birth_year, movie, movie_year, profession, birth_place) = julia
-</input></program>
-        <p>This does the equivalent of seven assignment statements, all on one easy line.
+</input>
+  </program>
+  <p>This does the equivalent of seven assignment statements, all on one easy line.
             One requirement is that the number of variables on the left must match the number
             of elements in the tuple.</p>
-        <p>Once in a while, it is useful to swap the values of two variables.  With
+  <p>Once in a while, it is useful to swap the values of two variables.  With
             conventional assignment statements, we have to use a temporary variable. For
             example, to swap <c>a</c> and <c>b</c>:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 temp = a
 a = b
 b = temp
-</input></program>
-        <p>Tuple assignment solves this problem neatly:</p>
-        <program language="python"><input>
+</input>
+  </program>
+  <p>Tuple assignment solves this problem neatly:</p>
+  <program language="python">
+    <input>
 (a, b) = (b, a)
-</input></program>
-        <p>The left side is a tuple of variables; the right side is a tuple of values.
+</input>
+  </program>
+  <p>The left side is a tuple of variables; the right side is a tuple of values.
             Each value is assigned to its respective variable. All the expressions on the
             right side are evaluated before any of the assignments. This feature makes
             tuple assignment quite versatile.</p>
-        <p>Naturally, the number of variables on the left and the number of values on the
+  <p>Naturally, the number of variables on the left and the number of values on the
             right have to be the same.</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 &gt;&gt;&gt; (a, b, c, d) = (1, 2, 3)
 ValueError: need more than 3 values to unpack
-</input></program>
-    </section>
-
+</input>
+  </program>
+</section>

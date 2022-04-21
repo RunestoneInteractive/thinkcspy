@@ -1,6 +1,6 @@
+<?xml version="1.0"?>
 <section xml:id="strings_strings-revisited">
-        <title>Strings Revisited</title>
-        <p>Throughout the first chapters of this book we have used strings to represent words or phrases that we
+  <title>Strings Revisited</title>
+  <p>Throughout the first chapters of this book we have used strings to represent words or phrases that we
             wanted to print out.  Our definition was simple:  a string is simply some characters inside quotes.  In this chapter we explore strings in much more detail.</p>
-    </section>
-
+</section>

@@ -1,59 +1,53 @@
-<section xml:id="gu_iand_event_driven_programming_layout-mangers">
-        <title>Layout Mangers</title>
-        <p>A widget will not be visible in a window until you assign it a size and location
-            within it&#8217;s parent widget. Assigning a specific size and location to every widget
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_layout-mangers">
+  <title>Layout Mangers</title>
+  <p>A widget will not be visible in a window until you assign it a size and location
+            within it's parent widget. Assigning a specific size and location to every widget
             is tedious and error-prone. In addition, the desired behaviour for most GUI
             interfaces is that the widgets resize and relocate in reasonable ways if
-            their parent window is re-sized. Trust me, you don&#8217;t what to write code to
+            their parent window is re-sized. Trust me, you don't what to write code to
             resize and relocate widgets every time you develop a GUI program! Therefore,
             <c>layout managers</c> are included in the Tkinter module to do this work
             for you. You just have to give some basic positioning information to a
             <c>layout manager</c> so it can calculate a position and a size for each widget.</p>
-        <p>There are three <c>layout managers</c> in the <c>Tkinter</c> module:</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <p>There are three <c>layout managers</c> in the <c>Tkinter</c> module:</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Layout Manager
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             place
                         </cell>
-                        <cell>
+        <cell>
                             You specify the exact size and position of each widget.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             pack
                         </cell>
-                        <cell>
+        <cell>
                             You specify the size and position of each widget <em>relative to each other</em>.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             grid
                         </cell>
-                        <cell>
+        <cell>
                             You place widgets in a cell of a 2-dimensional table defined by rows and columns.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>You should <alert>never</alert> mix and match these layout managers. Use only one of them
-            for the widget layout within a particular &#8220;parent widget&#8221;. (Widgets are organized
+      </row>
+    </tabular>
+  </table>
+  <p>You should <term>never</term> mix and match these layout managers. Use only one of them
+            for the widget layout within a particular <q>parent widget</q>. (Widgets are organized
             in a hierarchy, which is explained in the next lesson.)</p>
-    </section>
-    
+</section>

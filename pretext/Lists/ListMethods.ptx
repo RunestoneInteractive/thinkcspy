@@ -1,14 +1,12 @@
+<?xml version="1.0"?>
 <section xml:id="lists_list-methods">
-        <title>List Methods</title>
-        <p>The dot operator can also be used to access built-in methods of list objects.
+  <title>List Methods</title>
+  <p>The dot operator can also be used to access built-in methods of list objects.
             <c>append</c> is a list method which adds the argument passed to it to the end of
             the list. Continuing with this example, we show several other list methods.  Many of them are
             easy to understand.</p>
-
-<listing xml:id="chp09_meth1">
-    <caption/>
-    <program xml:id="chp09_meth1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp09_meth1" interactive="activecode" language="python">
+    <input>
 mylist = []
 mylist.append(5)
 mylist.append(27)
@@ -36,178 +34,166 @@ lastitem = mylist.pop()     # Removes and returns the last item of the list
 print(lastitem)
 print(mylist)
         </input>
-    </program>
-</listing>
-        <p>There are two ways to use the <c>pop</c> method.  The first, with no parameter, will remove and return the
+  </program>
+  <p>There are two ways to use the <c>pop</c> method.  The first, with no parameter, will remove and return the
             last item of the list.  If you provide a parameter for the position, <c>pop</c> will remove and return the
             item at that position.  Either way the list is changed.</p>
-        <p>The following table provides a summary of the list methods shown above.  The column labeled
+  <p>The following table provides a summary of the list methods shown above.  The column labeled
             <title_reference>result</title_reference> gives an explanation as to what the return value is as it relates to the new value of the list.  The word
-            <alert>mutator</alert> means that the list is changed by the method but nothing is returned (actually <c>None</c> is returned).  A <alert>hybrid</alert> method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
+            <term>mutator</term> means that the list is changed by the method but nothing is returned (actually <c>None</c> is returned).  A <term>hybrid</term> method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
             is unchanged by the method.</p>
-        <p>Be sure
+  <p>Be sure
             to experiment with these methods to gain a better understanding of what they do.</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Method
                         </cell>
-                        <cell>
+        <cell>
                             Parameters
                         </cell>
-                        <cell>
+        <cell>
                             Result
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             append
                         </cell>
-                        <cell>
+        <cell>
                             item
                         </cell>
-                        <cell>
+        <cell>
                             mutator
                         </cell>
-                        <cell>
+        <cell>
                             Adds a new item to the end of a list
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             insert
                         </cell>
-                        <cell>
+        <cell>
                             position, item
                         </cell>
-                        <cell>
+        <cell>
                             mutator
                         </cell>
-                        <cell>
+        <cell>
                             Inserts a new item at the position given
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             pop
                         </cell>
-                        <cell>
+        <cell>
                             none
                         </cell>
-                        <cell>
+        <cell>
                             hybrid
                         </cell>
-                        <cell>
+        <cell>
                             Removes and returns the last item
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             pop
                         </cell>
-                        <cell>
+        <cell>
                             position
                         </cell>
-                        <cell>
+        <cell>
                             hybrid
                         </cell>
-                        <cell>
+        <cell>
                             Removes and returns the item at position
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             sort
                         </cell>
-                        <cell>
+        <cell>
                             none
                         </cell>
-                        <cell>
+        <cell>
                             mutator
                         </cell>
-                        <cell>
+        <cell>
                             Modifies a list to be sorted
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             reverse
                         </cell>
-                        <cell>
+        <cell>
                             none
                         </cell>
-                        <cell>
+        <cell>
                             mutator
                         </cell>
-                        <cell>
+        <cell>
                             Modifies a list to be in reverse order
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             index
                         </cell>
-                        <cell>
+        <cell>
                             item
                         </cell>
-                        <cell>
+        <cell>
                             return idx
                         </cell>
-                        <cell>
+        <cell>
                             Returns the position of first occurrence of item
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             count
                         </cell>
-                        <cell>
+        <cell>
                             item
                         </cell>
-                        <cell>
+        <cell>
                             return ct
                         </cell>
-                        <cell>
+        <cell>
                             Returns the number of occurrences of item
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
+      </row>
+      <row>
+        <cell>
                             remove
                         </cell>
-                        <cell>
+        <cell>
                             item
                         </cell>
-                        <cell>
+        <cell>
                             mutator
                         </cell>
-                        <cell>
+        <cell>
                             Removes the first occurrence of item
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Details for these and others
+      </row>
+    </tabular>
+  </table>
+  <p>Details for these and others
             can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.</p>
-        <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
+  <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
             and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).</p>
-
-<listing xml:id="chp09_meth2">
-    <caption/>
-    <program xml:id="chp09_meth2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp09_meth2" interactive="activecode" language="python">
+    <input>
 mylist = []
 mylist.append(5)
 mylist.append(27)
@@ -218,205 +204,180 @@ print(mylist)
 mylist = mylist.sort()   #probably an error
 print(mylist)
         </input>
-    </program>
-</listing>
-        <p><alert>Check your understanding</alert></p>
-
-    <exercise xml:id="test_question9_13_1">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+  </program>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise xml:id="test_question9_13_1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [4, 2, 8, 6, 5]
 alist.append(True)
 alist.append(False)
 print(alist)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[4, 2, 8, 6, 5, False, True]</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>[4, 2, 8, 6, 5, False, True]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     True was added first, then False was added last.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>[4, 2, 8, 6, 5, True, False]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>[4, 2, 8, 6, 5, True, False]</p>
+        </statement>
+        <feedback>
                     Yes, each item is added to the end of the list.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>[True, False, 4, 2, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[True, False, 4, 2, 8, 6, 5]</p>
+        </statement>
+        <feedback>
                     append adds at the end, not the beginning.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question9_13_2">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question9_13_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [4, 2, 8, 6, 5]
 alist.insert(2, True)
 alist.insert(0, False)
 print(alist)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>[False, 4, 2, True, 8, 6, 5]</p>
         </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>[False, 4, 2, True, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     Yes, first True was added at index 2, then False was added at index 0.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>[4, False, True, 2, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[4, False, True, 2, 8, 6, 5]</p>
+        </statement>
+        <feedback>
                     insert will place items at the index position specified and move everything down to the right.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>[False, 2, True, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[False, 2, True, 6, 5]</p>
+        </statement>
+        <feedback>
                     insert does not remove anything or replace anything.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question9_13_3">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question9_13_3">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [4, 2, 8, 6, 5]
 temp = alist.pop(2)
 temp = alist.pop()
 print(alist)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[4, 8, 6]</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>[4, 8, 6]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     pop(2) removes the item at index 2, not the 2 itself.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>[2, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[2, 6, 5]</p>
+        </statement>
+        <feedback>
                     pop() removes the last item, not the first.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>[4, 2, 6]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>[4, 2, 6]</p>
+        </statement>
+        <feedback>
                     Yes, first the 8 was removed, then the last item, which was 5.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise xml:id="test_question9_13_4">
-        <statement>
-
-        <p>What is printed by the following statements?</p>
-        <program language="python"><input>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise xml:id="test_question9_13_4">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
 alist = [4, 2, 8, 6, 5]
 alist = alist.pop(0)
 print(alist)
-</input></program>
-
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[2, 8, 6, 5]</p>
         </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>[2, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+        <feedback>
                     alist is now the value that was returned from pop(0).
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>[4, 2, 8, 6, 5]</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[4, 2, 8, 6, 5]</p>
+        </statement>
+        <feedback>
                     pop(0) changes the list by removing the first item.
                 </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>4</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback>
                     Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
                 </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>None</p>
-                </statement>
-                <feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>None</p>
+        </statement>
+        <feedback>
                     pop(0) returns the first item in the list so alist has now been changed.
                 </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        <note>
-            <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-
-<listing xml:id="scratch_09_03">
-    <caption/>
-    <program xml:id="scratch_09_03_editor" interactive="activecode" language="python">
-        <input>
+      </choice>
+    </choices>
+  </exercise>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_09_03" interactive="activecode" language="python">
+      <input>
 
 
         </input>
     </program>
-</listing>
-        </note>
-    </section>
-
+  </note>
+</section>

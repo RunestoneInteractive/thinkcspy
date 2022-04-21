@@ -1,14 +1,14 @@
+<?xml version="1.0"?>
 <section xml:id="inheritance_pillars-of-oop">
-        <title>Pillars of OOP</title>
-        <p>Object-oriented programming involves four key ideas: encapsulation, information
-            hiding, inheritance, and polymorphism. <alert>Encapsulation</alert> is the idea that
+  <title>Pillars of OOP</title>
+  <p>Object-oriented programming involves four key ideas: encapsulation, information
+            hiding, inheritance, and polymorphism. <term>Encapsulation</term> is the idea that
             a class can package some data together with the methods that manipulate the
             data. This is a powerful capability, and the chief idea that distinguishes OOP
-            from structured programming. <alert>Information Hiding</alert> promotes quality
+            from structured programming. <term>Information Hiding</term> promotes quality
             code by allowing objects to protect their state against direct manipulation by
             code using the object. Python, like many languages, provides mechanisms
             to achieve information hiding, but we do not cover them in this book.
-            <alert>Inheritance</alert> and <alert>polymorphism</alert> are mechanisms that help to enable
+            <term>Inheritance</term> and <term>polymorphism</term> are mechanisms that help to enable
             code reuse and contract-based programming, and are the subject of this chapter.</p>
-    </section>
-
+</section>

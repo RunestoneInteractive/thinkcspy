@@ -1,42 +1,44 @@
+<?xml version="1.0"?>
 <section xml:id="lists_tuples-and-mutability">
-        <title>Tuples and Mutability</title>
-        <p>So far you have seen two types of sequential collections: strings, which are made up of
+  <title>Tuples and Mutability</title>
+  <p>So far you have seen two types of sequential collections: strings, which are made up of
             characters; and lists, which are made up of elements of any type.  One of the
             differences we noted is that the elements of a list can be modified, but the
-            characters in a string cannot. In other words, strings are <alert>immutable</alert> and
-            lists are <alert>mutable</alert>.</p>
-        <p>A <alert>tuple</alert>, like a list, is a sequence of items of any type. Unlike lists,
+            characters in a string cannot. In other words, strings are <term>immutable</term> and
+            lists are <term>mutable</term>.</p>
+  <p>A <term>tuple</term>, like a list, is a sequence of items of any type. Unlike lists,
             however, tuples are immutable. Syntactically, a tuple is a comma-separated
             sequence of values.  Although it is not necessary, it is conventional to
             enclose tuples in parentheses:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
-</input></program>
-        <p>Tuples are useful for representing what other languages often call <em>records</em> &#8212;
+</input>
+  </program>
+  <p>Tuples are useful for representing what other languages often call <em>records</em> &#x2014;
             some related information that belongs together, like your student record.  There is
             no description of what each of these <em>fields</em> means, but we can guess.  A tuple
-            lets us &#8220;chunk&#8221; together related information and use it as a single thing.</p>
-        <p>Tuples support the same sequence operations as strings and
+            lets us <q>chunk</q> together related information and use it as a single thing.</p>
+  <p>Tuples support the same sequence operations as strings and
             lists.
             For example, the index operator selects an element from a tuple.
             A tuple can be the sequence in a for-loop.</p>
-        <p>As with strings, if we try to use item assignment to modify one of the elements of the
+  <p>As with strings, if we try to use item assignment to modify one of the elements of the
             tuple, we get an error.</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 julia[0] = 'X'
 TypeError: 'tuple' object does not support item assignment
-</input></program>
-        <p>Of course, even if we can&#8217;t modify the elements of a tuple, we can make a variable
+</input>
+  </program>
+  <p>Of course, even if we can't modify the elements of a tuple, we can make a variable
             reference a new tuple holding different information.  To construct the new tuple,
             it is convenient that we can slice parts of the old tuple and join up the
             bits to make the new tuple.  So <c>julia</c> has a new recent film, and we might want
             to change her tuple.  We can easily slice off the parts we want and concatenate them with
             the new tuple.</p>
-
-<listing xml:id="ch09_tuple1">
-    <caption/>
-    <program xml:id="ch09_tuple1_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="ch09_tuple1" interactive="activecode" language="python">
+    <input>
 julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
 print(julia[2])
 print(julia[2:6])
@@ -49,23 +51,17 @@ for field in julia:
 julia = julia[:3] + ("Eat Pray Love", 2010) + julia[5:]
 print(julia)
         </input>
-    </program>
-</listing>
-        <p>To create a tuple with a single element (but you&#8217;re probably not likely
+  </program>
+  <p>To create a tuple with a single element (but you're probably not likely
             to do that too often), we have to include the final comma, because without
             the final comma, Python treats the <c>(5)</c> below as an integer in parentheses:</p>
-
-<listing xml:id="chp09_tuple2">
-    <caption/>
-    <program xml:id="chp09_tuple2_editor" interactive="activecode" language="python">
-        <input>
+  <program xml:id="chp09_tuple2" interactive="activecode" language="python">
+    <input>
 tup = (5,)
 print(type(tup))
 
 x = (5)
 print(type(x))
         </input>
-    </program>
-</listing>
-    </section>
-
+  </program>
+</section>

@@ -1,131 +1,127 @@
-<section xml:id="gu_iand_event_driven_programming_common-widget-properties">
-        <title>Common Widget Properties</title>
-        <p>Each widget has a set of properties that define its visual appearance on the
+<?xml version="1.0"?>
+<section xml:id="gu-iand-event-driven-programming_common-widget-properties">
+  <title>Common Widget Properties</title>
+  <p>Each widget has a set of properties that define its visual appearance on the
             computer screen and how it responds to user events. There is a set
             of properties that all <c>tk</c> widgets have in common. Some of these are shown in
             the following table.</p>
-        <sidebar>
-            <title><c>ttk</c> Attributes</title>
-            <p>Remember that <c>ttk</c> widgets match the &#8220;look and feel&#8221;
+  <sidebar>
+    <title><c>ttk</c> Attributes</title>
+    <p>Remember that <c>ttk</c> widgets match the <q>look and feel</q>
                 of the computer that is running your program, so there are limited attributes
                 you can change for <c>ttk</c> widgets. See the <c>ttk</c> <c>style</c> attribute information
                 at <url href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html" visual="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html">https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-style-layer.html</url> if you
                 want to modify <c>ttk</c> widgets.)</p>
-        </sidebar>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
+  </sidebar>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
                             Common Widget Properties
                         </cell>
-                        <cell>
+        <cell>
                             Description
                         </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <c>bg</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>bg</c>
+        </cell>
+        <cell>
                             Background color.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>fg</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>fg</c>
+        </cell>
+        <cell>
                             Foreground color.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>width</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>width</c>
+        </cell>
+        <cell>
                             Width in pixels
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>height</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>height</c>
+        </cell>
+        <cell>
                             Height in pixels
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>borderwidth</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>borderwidth</c>
+        </cell>
+        <cell>
                             The size of the border in pixels.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>text</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>text</c>
+        </cell>
+        <cell>
                             Text displayed on the widget.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>font</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>font</c>
+        </cell>
+        <cell>
                             The font used for text on the widget.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>cursor</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>cursor</c>
+        </cell>
+        <cell>
                             The shape of the cursor when the cursor is over the widget.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>activeforeground</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>activeforeground</c>
+        </cell>
+        <cell>
                             The color of the text when the widget is activated.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>activebackground</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>activebackground</c>
+        </cell>
+        <cell>
                             The color of the background when the widget is activated.
                         </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <c>image</c>
-                        </cell>
-                        <cell>
+      </row>
+      <row>
+        <cell>
+          <c>image</c>
+        </cell>
+        <cell>
                             An image to be displayed on the widget.
                         </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>You can treat a widget object as a dictionary and use the property names
+      </row>
+    </tabular>
+  </table>
+  <p>You can treat a widget object as a dictionary and use the property names
             as keys to access and change the property values. For example, to change the
             background color and width of a widget whose object variable is named <c>sam</c>,
             you could do this:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 sam = tk.Button(application_window, text="Sam's Button")
 sam['bg'] = 'red'
 sam['width'] = 60  # pixels
-</input></program>
-    </section>
-    
+</input>
+  </program>
+</section>

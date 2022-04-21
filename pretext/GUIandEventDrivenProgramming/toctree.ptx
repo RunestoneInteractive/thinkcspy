@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>GUI and Event Driven Programming</title>
-        <xi:include href='./01_intro_gui.ptx' />
-        <xi:include href='./02_standard_dialog_boxes.ptx' />
-        <xi:include href='./03_widgets.ptx' />
-        <xi:include href='./04_layout_managers.ptx' />
-        <xi:include href='./05_widget_grouping.ptx' />
-        <xi:include href='./06_command_events.ptx' />
-        <xi:include href='./07_event_binding.ptx' />
-        <xi:include href='./08_gui_program_structure.ptx' />
-        <xi:include href='./09_modifying_widgets.ptx' />
-        <xi:include href='./10_timer_events.ptx' />
-        <xi:include href='./11_gui_program_example.ptx' />
-        <xi:include href='./12_model_view_controller.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./Glossary.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+4<title>GUI and Event Driven Programming</title>
+4<xi:include href="./01_intro_gui.ptx"/>
+4<xi:include href="./02_standard_dialog_boxes.ptx"/>
+4<xi:include href="./03_widgets.ptx"/>
+4<xi:include href="./04_layout_managers.ptx"/>
+4<xi:include href="./05_widget_grouping.ptx"/>
+4<xi:include href="./06_command_events.ptx"/>
+4<xi:include href="./07_event_binding.ptx"/>
+4<xi:include href="./08_gui_program_structure.ptx"/>
+4<xi:include href="./09_modifying_widgets.ptx"/>
+4<xi:include href="./10_timer_events.ptx"/>
+4<xi:include href="./11_gui_program_example.ptx"/>
+4<xi:include href="./12_model_view_controller.ptx"/>
+4<xi:include href="./Exercises.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
+</chapter>

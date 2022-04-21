@@ -1,29 +1,31 @@
+<?xml version="1.0"?>
 <section xml:id="functions_composition">
-        <title>Composition</title>
-        <p>As we have already seen, you can call one function from within another.
-            This ability to build functions by using other functions is called <alert>composition</alert>.</p>
-        <p>As an example, we&#8217;ll write a function that takes two points, the center of the
+  <title>Composition</title>
+  <p>As we have already seen, you can call one function from within another.
+            This ability to build functions by using other functions is called <term>composition</term>.</p>
+  <p>As an example, we'll write a function that takes two points, the center of the
             circle and a point on the perimeter, and computes the area of the circle.</p>
-        <p>Assume that the center point is stored in the variables <c>xc</c> and <c>yc</c>, and
+  <p>Assume that the center point is stored in the variables <c>xc</c> and <c>yc</c>, and
             the perimeter point is in <c>xp</c> and <c>yp</c>. The first step is to find the
             radius of the circle, which is the distance between the two points.
-            Fortunately, we&#8217;ve just written a function, <c>distance</c>, that does just that,
+            Fortunately, we've just written a function, <c>distance</c>, that does just that,
             so now all we have to do is use it:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 radius = distance(xc, yc, xp, yp)
-</input></program>
-        <p>The second step is to find the area of a circle with that radius and return it.
+</input>
+  </program>
+  <p>The second step is to find the area of a circle with that radius and return it.
             Again we will use one of our earlier functions:</p>
-        <program language="python"><input>
+  <program language="python">
+    <input>
 result = area(radius)
 return result
-</input></program>
-        <p>Wrapping that up in a function, we get:</p>
-
-<listing xml:id="ch06_newarea">
-    <caption/>
-    <program xml:id="ch06_newarea_editor" interactive="activecode" language="python">
-        <input>
+</input>
+  </program>
+  <p>Wrapping that up in a function, we get:</p>
+  <program xml:id="ch06_newarea" interactive="activecode" language="python">
+    <input>
 def distance(x1, y1, x2, y2):
         dx = x2 - x1
         dy = y2 - y1
@@ -42,15 +44,15 @@ def area2(xc, yc, xp, yp):
 
 print(area2(0,0,1,1))
         </input>
-    </program>
-</listing>
-        <p>We called this function <c>area2</c> to distinguish it from the <c>area</c> function
+  </program>
+  <p>We called this function <c>area2</c> to distinguish it from the <c>area</c> function
             defined earlier. There can only be one function with a given name within a
             module.</p>
-        <p>Note that we could have written the composition without storing the intermediate results.</p>
-        <program language="python"><input>
+  <p>Note that we could have written the composition without storing the intermediate results.</p>
+  <program language="python">
+    <input>
 def area2(xc, yc, xp, yp):
     return area(distance(xc, yc, xp, yp))
-</input></program>
-    </section>
-
+</input>
+  </program>
+</section>
