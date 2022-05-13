@@ -9,8 +9,6 @@
 Exercises
 ---------
 
-#.
-
     .. tabbed:: tab_ut_reverse
 
         .. tab:: Question 
@@ -90,7 +88,6 @@ Exercises
                 assert reverse('b') == 'b'
                 assert reverse('') == ''
                 
-#.
 
     .. tabbed:: tab_ut_testable
 

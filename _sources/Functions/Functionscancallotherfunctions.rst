@@ -138,15 +138,15 @@ Here is the entire example with the necessary set up code.
 There are some points worth noting here:
 
 * Functions can call other functions.
-* Rewriting `drawSquare` like this captures the relationship
+* Rewriting ``drawSquare`` like this captures the relationship
   that we've spotted.
-* A caller of this function might say `drawSquare(tess, 50)`.  The parameters
+* A caller of this function might say ``drawSquare(tess, 50)``.  The parameters
   of this function, ``tx`` and ``sz``, are assigned the values of the tess object, and
   the integer 50 respectively.
 * In the body of the function, ``tz`` and ``sz`` are just like any other variable.
 * When the call is made to ``drawRectangle``, the values in variables ``tx`` and ``sz``
   are fetched first, then the call happens.  So as we enter the top of
-  function `drawRectangle`, its variable ``t`` is assigned the tess object, and ``w`` and
+  function ``drawRectangle``, its variable ``t`` is assigned the tess object, and ``w`` and
   ``h`` in that function are both given the value 50.
 
 

@@ -10,7 +10,7 @@
 Exercises
 ---------
 
-#.
+
 
     .. tabbed:: q1
 
@@ -47,7 +47,7 @@ Exercises
                 :identifier: disqus_dc2457710a924d9283b12f42a31d2b27
 
 
-#. 
+
     
     .. actex:: ex_8_2
     
@@ -101,7 +101,7 @@ Exercises
 
 
 
-#.
+
 
     .. tabbed:: q3
 
@@ -176,14 +176,14 @@ Exercises
                 :identifier: disqus_bf88b1c4616d43f289c798b56a43b01c
 
 
-#. 
+
 
    .. actex:: ex_8_4
       
       Print out a neatly formatted multiplication table, up to 12 x 12.
       ~~~~
 
-#.
+
 
     .. tabbed:: q5
 
@@ -233,7 +233,7 @@ Exercises
                 :identifier: disqus_bfd6f74a183c4682b29c72c4411200fb
 
 
-#. 
+
 
    .. actex:: ex_8_5
       :practice: T
@@ -261,7 +261,7 @@ Exercises
 
       myTests().main()
 
-#.
+
 
     .. tabbed:: q7
 
@@ -323,7 +323,7 @@ Exercises
                 :identifier: disqus_70b7ac515456497c952a2de5caa27ab9
 
 
-#. 
+
 
    .. actex:: ex_8_7
       :practice: T
@@ -353,7 +353,7 @@ Exercises
 
 
 
-#.
+
 
     .. tabbed:: q9
 
@@ -453,7 +453,7 @@ Exercises
       myTests().main()
 
 
-#.
+
 
     .. tabbed:: q11
 
@@ -514,7 +514,7 @@ Exercises
                 :identifier: disqus_2f2772134b604a6498748138542d312d
 
 
-#. 
+
 
    .. actex:: ex_8_11
       :practice: T
@@ -544,7 +544,7 @@ Exercises
       myTests().main()
 
 
-#.
+
 
     .. tabbed:: q13
 
@@ -629,7 +629,7 @@ Exercises
                 :identifier: disqus_ab823200fac64461a9e88f53b75f5795
 
 
-#. 
+
    .. actex:: ex_8_13
       :nocodelens:
 
@@ -640,7 +640,7 @@ Exercises
           Y -> -FX-Y
       ~~~~
 
-#.
+
 
     .. tabbed:: q15
 
@@ -722,7 +722,7 @@ Exercises
                 :identifier: disqus_9b2dfba083a64d5c894f873af2e93a1b
 
 
-#. 
+
    .. actex:: ex_8_15
       :nocodelens:
 
@@ -733,7 +733,7 @@ Exercises
           Y -> -FX+YFYF++YF+FX--FX-Y
       ~~~~
 
-#.
+
 
     .. tabbed:: q17
 
@@ -821,7 +821,7 @@ Exercises
                 :identifier: disqus_912a5f19d3964dc2af7a067dcd832c7e
 
 
-#. 
+
    .. actex:: ex_8_17
 
       Write a function that implements a substitution cipher.  In a substitution
@@ -832,7 +832,7 @@ Exercises
       return a string that is the encrypted version of the message.
       ~~~~
 
-#.
+
 
     .. tabbed:: q19
 
@@ -888,7 +888,7 @@ Exercises
                 :identifier: disqus_d7d1ca00bfff4e7bacf886386fb3302e
 
 
-#. 
+
 
    .. actex:: ex_8_19
       :practice: T
@@ -918,7 +918,7 @@ Exercises
       myTests().main()
 
 
-#.
+
 
     .. tabbed:: q21
 
@@ -970,7 +970,7 @@ Exercises
                 :identifier: disqus_49e1151bb7864a3287a6b6ae1c84db16
 
 
-#. 
+
 
    ..   actex:: ex_8_22
         :timelimit: 60

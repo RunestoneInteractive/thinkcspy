@@ -23,9 +23,27 @@ Getting Started
 
 We have tried to make it as easy as possible for you to build and use this book.  
 
-1. You can see and read this book online at `interactivepython.org <http://interactivepython.org/runestone/static/thinkcspy/index.html>`_
+You can see and read this book online at `runestone.academy <http://runestone.academy/ns/books/published/thinkcspy/index.html?mode=browsing>`_
 
-2.  You can build it and host it yourself in just a few simple steps:
+.. important:: The restructuredText version of this book is deprecated!
+
+Building with PreTeXt
+---------------------
+
+1. Create a virtual environment
+2. pip install pretextbook
+3. To build run: pretext build --input pretext/thinkcspy.ptx --output output --format html --publication pretext/publication-rs-for-all.xml
+4. pretext view html
+
+Note: The pretext sources are in the pretext folder, we will keep the _sources folder until we are 100% sure that the book has been converted correctly and as thoroughly as possible.
+
+
+Building with runestone
+-----------------------
+As mentioned above this method is deprecated, but will still work.  
+Any updates to this book should be made in PreTeXt NOT RST.
+
+You can build it and host it yourself in just a few simple steps:
 
     1.  ``pip install -r requirements.txt``  -- Should install everything you need
     2.  ``runestone build`` -- will build the html and put it in ``./build/thinkcspy``

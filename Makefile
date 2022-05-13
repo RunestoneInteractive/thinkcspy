@@ -1,7 +1,14 @@
 export BOOKDIR=$(HOME)/Runestone/books/thinkcspy
 export COMPDIR=$(HOME)/Runestone/RunestoneComponents
+export RSURI = https://runestone.academy/cdn/runestone/
 
 .PHONY: pretext html pdf
+
+help:
+	@echo "Unless you are converting RST to PTX you you should use this Makefile!!!!"
+	@echo "Use pip to install pretextbook"
+	@echo "To build run: pretext build --input pretext/thinkcspy.ptx --output output --format html --publication pretext/publication-rs-for-all.xml"
+	@echo "Then: pretext view html"
 
 # This target converts the RST to Generic XML
 xml:
@@ -11,17 +18,17 @@ xml:
 # working ptx as possible.
 pretext:
 	python ~/Runestone/Runestone2PreTeXt/xml2ptx.py
-#	python ~/Runestone/Runestone2PreTeXt/fixFileNames.py
 	python ~/Runestone/Runestone2PreTeXt/fixIds.py
+	python ~/Runestone/Runestone2PreTeXt/fix_xrefs.py
+	python ~/Runestone/Runestone2PreTeXt/reformatPtx.py	
 
 # Convert the ptx to html and make sure that the latest Javascript/css bundles are in place
 html:
-	python $(COMPDIR)/scripts/dist2xml.py test
-	python ~/src/pretext/pretext/pretext -c all -f html -p $(BOOKDIR)/pretext/publication-rs-for-all.xml -x debug.rs.services.file /Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml -d $(BOOKDIR)/beta $(BOOKDIR)/pretext/thinkcspy.ptx 
+	python $(COMPDIR)/scripts/dist2xml.py test $(https://runestone.academy/cdn/runestone/)
+#	python ~/src/pretext/pretext/pretext -c all -f html -p $(BOOKDIR)/pretext/publication-rs-for-all.xml -x debug.rs.services.file /Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml -d $(BOOKDIR)/beta $(BOOKDIR)/pretext/thinkcspy.ptx 
+	python ~/src/pretext/pretext/pretext -c all -f html -p $(BOOKDIR)/pretext/publication-rs-for-all.xml  -d $(BOOKDIR)/beta $(BOOKDIR)/pretext/thinkcspy.ptx 
 	rsync -avz $(COMPDIR)/runestone/dist/ $(BOOKDIR)/beta/_static/test/
 
 pdf:
 	python ~/src/pretext/pretext/pretext -c all -f pdf -p $(BOOKDIR)/pretext/publication-rs-for-all.xml -x debug.rs.services.file /Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml -d $(BOOKDIR)/pdf $(BOOKDIR)/pretext/thinkcspy.ptx 
 
-foo:
-	python foo.py

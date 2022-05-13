@@ -175,30 +175,30 @@ to pass even if you rework the function implementation.
             assert grade(85) == 'B'
             assert grade(69) == 'F'
             
-        .. reveal:: ac_grade_unittest_aux_reveal
-            :instructoronly:
+        .. .. reveal:: ac_grade_unittest_aux_reveal
+        ..     :instructoronly:
 
-            .. actex:: ac_grade_unittest_aux
+        ..     .. actex:: ac_grade_unittest_aux
 
-                testA = False
-                testB = False
-                testF = False
-                illegal = False
+        ..         testA = False
+        ..         testB = False
+        ..         testF = False
+        ..         illegal = False
 
-                def grade(score):
-                    global illegal, testA, testB, testF
+        ..         def grade(score):
+        ..             global illegal, testA, testB, testF
 
-                    if score > 100 or score < 0:
-                        illegal = True
-                        return ''
-                    elif score >= 90:
-                        testA = True
-                        return 'A'
-                    elif score >= 80:
-                        testB = True
-                        return 'B'
-                    else:
-                        testF = True
-                        return 'F'
+        ..             if score > 100 or score < 0:
+        ..                 illegal = True
+        ..                 return ''
+        ..             elif score >= 90:
+        ..                 testA = True
+        ..                 return 'A'
+        ..             elif score >= 80:
+        ..                 testB = True
+        ..                 return 'B'
+        ..             else:
+        ..                 testF = True
+        ..                 return 'F'
 
 
