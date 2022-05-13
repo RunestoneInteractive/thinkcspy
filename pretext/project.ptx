@@ -5,47 +5,47 @@
     (default location).
 -->
 <project>
-4<targets>
-44<target name="html">
-444<format>html</format>
-444<source>thinkcspy.ptx</source>
-444<publication>publication/publication.ptx</publication>
-444<output-dir>output/html</output-dir>
-44</target>
-44<target name="latex">
-444<format>latex</format>
-444<source>thinkcspy.ptx</source>
-444<publication>publication/publication.ptx</publication>
-444<output-dir>output/latex</output-dir>
-44</target>
-44<target name="pdf" pdf-method="pdflatex">
-444<format>pdf</format>
-444<source>thinkcspy.ptx</source>
-444<publication>publication/publication.ptx</publication>
-444<output-dir>output/pdf</output-dir>
-44</target>
-44<target name="subset">
-444<format>html</format>
-444<source>thinkcspy.ptx</source>
-444<publication>publication/publication.ptx</publication>
-444<output-dir>output/subset</output-dir>
-444<stringparam key="debug.skip-knowls" value="yes"/>
-444<!-- edit this to change the section/chapter/etc. to build -->
-444<xmlid-root>ch-first</xmlid-root>
-44</target>
-4</targets>
-4<executables>
-44<latex>latex</latex>
-44<pdflatex>pdflatex</pdflatex>
-44<xelatex>xelatex</xelatex>
-44<pdfsvg>pdf2svg</pdfsvg>
-44<asy>asy</asy>
-44<sage>sage</sage>
-44<pdfpng>convert</pdfpng>
-44<pdfeps>pdftops</pdfeps>
-44<pdfcrop>pdf-crop-margins</pdfcrop>
-44<pageres>pageres</pageres>
-44<node>node</node>
-44<liblouis>file2brl</liblouis>
-4</executables>
+ <targets>
+  <target name="html">
+   <format>html</format>
+   <source>thinkcspy.ptx</source>
+   <publication>publication/publication.ptx</publication>
+   <output-dir>output/html</output-dir>
+  </target>
+  <target name="latex">
+   <format>latex</format>
+   <source>thinkcspy.ptx</source>
+   <publication>publication/publication.ptx</publication>
+   <output-dir>output/latex</output-dir>
+  </target>
+  <target name="pdf" pdf-method="pdflatex">
+   <format>pdf</format>
+   <source>thinkcspy.ptx</source>
+   <publication>publication/publication.ptx</publication>
+   <output-dir>output/pdf</output-dir>
+  </target>
+  <target name="subset">
+   <format>html</format>
+   <source>thinkcspy.ptx</source>
+   <publication>publication/publication.ptx</publication>
+   <output-dir>output/subset</output-dir>
+   <stringparam key="debug.skip-knowls" value="yes"/>
+   <!-- edit this to change the section/chapter/etc. to build -->
+   <xmlid-root>ch-first</xmlid-root>
+  </target>
+ </targets>
+ <executables>
+  <latex>latex</latex>
+  <pdflatex>pdflatex</pdflatex>
+  <xelatex>xelatex</xelatex>
+  <pdfsvg>pdf2svg</pdfsvg>
+  <asy>asy</asy>
+  <sage>sage</sage>
+  <pdfpng>convert</pdfpng>
+  <pdfeps>pdftops</pdfeps>
+  <pdfcrop>pdf-crop-margins</pdfcrop>
+  <pageres>pageres</pageres>
+  <node>node</node>
+  <liblouis>file2brl</liblouis>
+ </executables>
 </project>
