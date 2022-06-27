@@ -45,7 +45,7 @@ for x in range(13):        # generate values for columns
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question7_7_1">
+  <exercise label="test_question7_7_1">
     <statement>
       <p>What is the difference between a tab (<c>'\t'</c>) and a sequence of spaces?</p>
     </statement>

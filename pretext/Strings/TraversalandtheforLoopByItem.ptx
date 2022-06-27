@@ -34,7 +34,7 @@ for achar in "Go Spot Go":
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_8_1">
+  <exercise label="test_question8_8_1">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
@@ -80,7 +80,7 @@ for ch in s:
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_8_2">
+  <exercise label="test_question8_8_2">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">

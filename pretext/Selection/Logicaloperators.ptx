@@ -234,7 +234,7 @@ print(n % 2 == 0 or n % 3 == 0)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_2_1">
+  <exercise label="test_question6_2_1">
     <statement>
       <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
     </statement>
@@ -265,7 +265,7 @@ print(n % 2 == 0 or n % 3 == 0)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_2_2">
+  <exercise label="test_question6_2_2">
     <statement>
       <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
             If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>

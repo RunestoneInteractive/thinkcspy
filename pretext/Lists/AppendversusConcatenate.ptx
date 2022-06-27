@@ -16,7 +16,7 @@
   <p>
     <term>Check you understanding</term>
   </p>
-  <exercise xml:id="test_question9_15_1">
+  <exercise label="test_question9_15_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

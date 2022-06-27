@@ -11,7 +11,7 @@ bruce = 5
 print(bruce)
 bruce = 7
 print(bruce)
-        </input>
+    </input>
   </program>
   <p>The first time <c>bruce</c> is
             printed, its value is 5, and the second time, its value is 7.  The assignment statement changes
@@ -29,15 +29,16 @@ b = a    # after executing this line, a and b are now equal
 print(a, b)
 a = 3    # after executing this line, a and b are no longer equal
 print(a, b)
-        </input>
+    </input>
   </program>
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
-            <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
+    <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
   <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
     <title>Developing your mental model of How Python Evaluates</title>
     <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
     <exercise runestone="se_reassign"/>
-    <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.</p>
+    <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.
+    </p>
     <note>
       <p>In some programming languages, a different
                     symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is
@@ -48,7 +49,7 @@ print(a, b)
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="test_question2_9_1">
+    <exercise label="test_question2_9_1">
       <statement>
         <p>After the following statements, what are the values of x and y?</p>
         <program language="python">
@@ -56,7 +57,7 @@ print(a, b)
 x = 15
 y = x
 x = 22
-</input>
+          </input>
         </program>
       </statement>
       <choices>
@@ -66,7 +67,7 @@ x = 22
           </statement>
           <feedback>
                     Look at the last assignment statement which gives x a different value.
-                </feedback>
+          </feedback>
         </choice>
         <choice>
           <statement>
@@ -74,7 +75,7 @@ x = 22
           </statement>
           <feedback>
                     No, x and y are two separate variables.  Just because x changes in the last assignment statement, it does not change the value that was copied into y in the second statement.
-                </feedback>
+          </feedback>
         </choice>
         <choice>
           <statement>
@@ -82,7 +83,7 @@ x = 22
           </statement>
           <feedback>
                     Look at the last assignment statement, which reassigns x, and not y.
-                </feedback>
+          </feedback>
         </choice>
         <choice correct="yes">
           <statement>
@@ -90,7 +91,7 @@ x = 22
           </statement>
           <feedback>
                     Yes, x has the value 22 and y the value 15.
-                </feedback>
+          </feedback>
         </choice>
       </choices>
     </exercise>

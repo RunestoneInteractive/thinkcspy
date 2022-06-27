@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="intro-recursion_programming-exercises">
   <title>Programming Exercises</title>
-  <exercise xml:id="ex_rec_1">
+  <exercise label="ex_rec_1">
     <statement>
       <p>Write a recursive function to compute the factorial of a number.</p>
     </statement>
@@ -29,7 +29,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_2">
+  <exercise label="ex_rec_2">
     <statement>
       <p>Write a recursive function to reverse a list.</p>
     </statement>
@@ -53,7 +53,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_3">
+  <exercise label="ex_rec_3">
     <statement>
       <p>Modify the recursive tree program using one or all of the following
                 ideas:</p>
@@ -89,7 +89,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_4">
+  <exercise label="ex_rec_4">
     <statement>
       <p>Find or invent an algorithm for drawing a fractal mountain. Hint: One
                 approach to this uses triangles again.</p>
@@ -100,7 +100,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_5">
+  <exercise label="ex_rec_5">
     <statement>
       <p>Write a recursive function to compute the Fibonacci sequence. How
                 does the performance of the recursive function compare to that of an
@@ -112,7 +112,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_6">
+  <exercise label="ex_rec_6">
     <statement>
       <p>Implement a solution to the Tower of Hanoi using three stacks to keep
                 track of the disks.</p>
@@ -123,7 +123,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_7">
+  <exercise label="ex_rec_7">
     <statement>
       <p>Using the turtle graphics module, write a recursive program to
                 display a Hilbert curve.</p>
@@ -134,7 +134,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_8">
+  <exercise label="ex_rec_8">
     <statement>
       <p>Using the turtle graphics module, write a recursive program to
                 display a Koch snowflake.</p>
@@ -145,7 +145,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_9">
+  <exercise label="ex_rec_9">
     <statement>
       <p>Write a program to solve the following problem: You have two jugs: a
                 4-gallon jug and a 3-gallon jug. Neither of the jugs have markings on
@@ -158,7 +158,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_10">
+  <exercise label="ex_rec_10">
     <statement>
       <p>Generalize the problem above so that the parameters to your solution
                 include the sizes of each jug and the final amount of water to be
@@ -170,7 +170,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_11">
+  <exercise label="ex_rec_11">
     <statement>
       <p>Write a program that solves the following problem: Three missionaries
                 and three cannibals come to a river and find a boat that holds two
@@ -186,7 +186,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_12">
+  <exercise label="ex_rec_12">
     <statement>
       <p>Modify the Tower of Hanoi program using turtle graphics to animate
                 the movement of the disks. Hint: You can make multiple turtles and
@@ -198,7 +198,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_rec_13">
+  <exercise label="ex_rec_13">
     <statement>
       <p>Pascal's triangle is a number triangle with numbers arranged in
                 staggered rows such that</p>

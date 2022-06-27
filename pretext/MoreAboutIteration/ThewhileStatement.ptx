@@ -98,7 +98,7 @@ print(sumTo(1000))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question7_2_1">
+  <exercise label="test_question7_2_1">
     <statement>
       <p>True or False: You can rewrite any for-loop as a while-loop.</p>
     </statement>
@@ -121,7 +121,7 @@ print(sumTo(1000))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question7_2_2">
+  <exercise label="test_question7_2_2">
     <statement>
       <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
       <program language="python">
@@ -170,7 +170,7 @@ print(answer)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question7_2_3">
+  <exercise label="test_question7_2_3">
     <statement>
       <p>What is printed by this code?</p>
       <program language="python">

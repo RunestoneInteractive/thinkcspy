@@ -14,7 +14,7 @@ print("pear" in fruit)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question9_4_1">
+  <exercise label="test_question9_4_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -43,7 +43,7 @@ print(3.14 in alist)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question9_4_2">
+  <exercise label="test_question9_4_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

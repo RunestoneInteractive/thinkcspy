@@ -52,7 +52,7 @@ assert type(9.0//5) == int
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="assertch6_3_1">
+  <exercise label="assertch6_3_1">
     <statement>
       <p>When <c>assert x==y</c> is executed and x and y have the same values, what will happen?</p>
     </statement>
@@ -146,7 +146,7 @@ assert square(3) == 9
                 principle, a function might work properly on all the inputs that are tested in the test cases, but still not work
                 properly on some other inputs. That's where the art of defining test cases comes in: you try to find specific inputs that
                 are representative of all the important kinds of inputs that might ever be passed to the function.</p>
-    <exercise xml:id="question19_1_3">
+    <exercise label="question19_1_3">
       <statement>
         <p>For the hangman game, this &#x2018;blanked' function takes a word and some letters that have been guessed, and returns a version
                 of the word with _ for all the letters that haven't been guessed. Which of the following is the correct way to write

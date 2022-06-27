@@ -96,7 +96,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question1_10_1">
+  <exercise label="question1_10_1">
     <statement>
       <p>The differences between natural and formal languages include:</p>
     </statement>
@@ -135,7 +135,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question1_10_2">
+  <exercise label="question1_10_2">
     <statement>
       <p>True or False:  Reading a program is like reading other kinds of text.</p>
     </statement>

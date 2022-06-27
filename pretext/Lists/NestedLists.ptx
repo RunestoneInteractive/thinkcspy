@@ -21,7 +21,7 @@ print(nested[3][1])
   <p xml:id="lists_index-0">
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question9_21_1">
+  <exercise label="test_question9_21_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -53,7 +53,7 @@ wn.exitonclick()
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question4_1_1">
+  <exercise label="question4_1_1">
     <statement>
       <p>In Python a module is:</p>
     </statement>
@@ -92,7 +92,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question4_1_2">
+  <exercise label="question4_1_2">
     <statement>
       <p>To find out information on the standard modules available with Python you should:</p>
     </statement>
@@ -131,7 +131,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question4_1_3">
+  <exercise label="question4_1_3">
     <statement>
       <p>True / False:  All standard Python modules will work in activecode.</p>
     </statement>

@@ -38,7 +38,7 @@ print(math.sin(math.radians(90)))   # sin of 90 degrees
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question4_2_1">
+  <exercise label="question4_2_1">
     <statement>
       <p>Which statement allows you to use the math module in your program?</p>
     </statement>

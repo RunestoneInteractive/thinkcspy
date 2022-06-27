@@ -253,7 +253,7 @@ print(food.index("e"))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_3_1">
+  <exercise label="test_question8_3_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -290,7 +290,7 @@ print(s.count("o") + s.count("p"))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_3_2">
+  <exercise label="test_question8_3_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -436,7 +436,7 @@ print(letter.format("Paris", "Whitney", "Hilton"))
 print(letter.format("Bill", "Henry", "Gates"))
         </input>
     </program>
-    <exercise xml:id="test_question8_3_3">
+    <exercise label="test_question8_3_3">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -482,7 +482,7 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="test_question8_3_4">
+    <exercise label="test_question8_3_4">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">

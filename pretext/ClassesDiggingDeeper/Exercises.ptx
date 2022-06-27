@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="classes-digging-deeper_exercises">
   <title>Exercises</title>
-  <exercise xml:id="classes_deeper_q1">
+  <exercise label="classes_deeper_q1">
     <statement>
       <p>We can represent a rectangle by knowing three things: the location of its lower left corner, its width, and its height.
                         Create a class definition for a Rectangle class using this idea.  To create a Rectangle object at location (4,5) with width 6
@@ -50,7 +50,7 @@ print(r)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ch_cl2_q2">
+  <exercise label="ch_cl2_q2">
     <statement>
       <p>Add the following accessor methods to the Rectangle class: <c>getWidth</c>, <c>getHeight</c>, <c>__str__</c>.</p>
     </statement>
@@ -60,7 +60,7 @@ print(r)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ch_cl2_q3">
+  <exercise label="ch_cl2_q3">
     <statement>
       <p>Add a method <c>area</c> to the Rectangle class that returns the area of any instance:</p>
       <pre>r = Rectangle(Point(0, 0), 10, 5)
@@ -107,7 +107,7 @@ class Rectangle:
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ch_cl2_q4">
+  <exercise label="ch_cl2_q4">
     <statement>
       <p>Write a <c>perimeter</c> method in the Rectangle class so that we can find
                 the perimeter of any rectangle instance:</p>
@@ -120,7 +120,7 @@ test(r.perimeter(), 30)</pre>
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ch_cl2_q5">
+  <exercise label="ch_cl2_q5">
     <statement>
       <p>Write a <c>transpose</c> method in the Rectangle class that swaps the width
                         and the height of any rectangle instance:</p>
@@ -174,7 +174,7 @@ class Rectangle:
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ch_cl2_q6">
+  <exercise label="ch_cl2_q6">
     <statement>
       <p>Write a new method in the Rectangle class to test if a Point falls within
                 the rectangle.  For this exercise, assume that a rectangle at (0,0) with
@@ -196,7 +196,7 @@ test(r.contains(Point(-3, -3)), False)</pre>
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ch_cl2_q7">
+  <exercise label="ch_cl2_q7">
     <statement>
       <p>Write a new method called <c>diagonal</c> that will return the length of the diagonal that runs
                         from the lower left corner to the opposite corner.</p>
@@ -244,7 +244,7 @@ class Rectangle:
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ch_cl2_q8">
+  <exercise label="ch_cl2_q8">
     <statement>
       <p>In games, we often put a rectangular <q>bounding box</q> around our sprites in
                 the game.  We can then do <em>collision detection</em> between, say, bombs and

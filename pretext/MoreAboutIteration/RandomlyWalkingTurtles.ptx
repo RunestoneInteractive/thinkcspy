@@ -175,7 +175,7 @@ wn.exitonclick()
   <p xml:id="more-about-iteration_index-0">
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question7_3_1">
+  <exercise label="test_question7_3_1">
     <statement>
       <p>Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.</p>
     </statement>
@@ -206,7 +206,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question7_3_2">
+  <exercise label="test_question7_3_2">
     <statement>
       <p>In the random walk program in this section, what does the isInScreen function do?</p>
     </statement>

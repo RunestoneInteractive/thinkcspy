@@ -79,7 +79,7 @@ print(result)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question5_3_1">
+  <exercise label="test_question5_3_1">
     <statement>
       <p>What is a variable's scope?</p>
     </statement>
@@ -110,7 +110,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_3_2">
+  <exercise label="test_question5_3_2">
     <statement>
       <p>What is a local variable?</p>
     </statement>
@@ -141,7 +141,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_3_3">
+  <exercise label="test_question5_3_3">
     <statement>
       <p>Can you use the same name for a local variable as a global variable?</p>
     </statement>

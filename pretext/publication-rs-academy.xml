@@ -23,13 +23,13 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <publication>
 
     <source>
-        <directories external="ext" generated="gen"/>
+        <directories external="Figures" generated="GenFigs"/>
     </source>
 
     <html>
         <platform host="runestone"/>
         <!-- knowled checkpoints interfere with ActiveCode problems -->
-        <knowl exercise-inline="no"/>
+        <knowl exercise-inline="no" example="no" listing="yes"/>
     </html>
 
 </publication>

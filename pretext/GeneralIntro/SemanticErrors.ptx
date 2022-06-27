@@ -12,7 +12,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question1_8_1">
+  <exercise label="question1_8_1">
     <statement>
       <p>Which of the following is a semantic error?</p>
     </statement>
@@ -43,7 +43,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question1_8_2">
+  <exercise label="question1_8_2">
     <statement>
       <p>Who or what typically finds semantic errors?</p>
     </statement>

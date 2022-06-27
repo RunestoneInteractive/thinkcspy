@@ -68,7 +68,7 @@ repeat:
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="test_question5_4_1">
+    <exercise label="test_question5_4_1">
       <statement>
         <p>Consider the following code:</p>
         <program language="python">
@@ -119,7 +119,7 @@ def square(x):
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="question5_4_1p" indent="show" language="python">
+    <exercise label="question5_4_1p" indent="show" language="python">
       <statement>
         <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
       </statement>

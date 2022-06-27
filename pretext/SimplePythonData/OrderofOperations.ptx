@@ -59,7 +59,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_8_1">
+  <exercise label="test_question2_8_1">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
@@ -103,7 +103,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question2_8_2">
+  <exercise label="test_question2_8_2">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">

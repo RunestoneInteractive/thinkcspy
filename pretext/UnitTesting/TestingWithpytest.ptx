@@ -189,7 +189,7 @@ if __name__ == '__main__':
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="ac_grade_pytest">
+    <exercise label="ac_grade_pytest">
       <statement>
         <p>Write a pytest unit test function named <c>test_grade</c> to test a function
                         with the following specification. Your asserts should

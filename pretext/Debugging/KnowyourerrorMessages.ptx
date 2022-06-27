@@ -34,7 +34,7 @@ print(final_time_int)
                 Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners,
                 including the wording chosen to describe errors.</p>
   </note>
-  <exercise xml:id="db_qex32">
+  <exercise label="db_qex32">
     <statement>
       <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
     </statement>

@@ -127,7 +127,7 @@ print(3.4, "hello", 45)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_1_1">
+  <exercise label="test_question2_1_1">
     <statement>
       <p>How can you determine the type of a variable?</p>
     </statement>
@@ -166,7 +166,7 @@ print(3.4, "hello", 45)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question2_1_2">
+  <exercise label="test_question2_1_2">
     <statement>
       <p>What is the data type of &#x2018;this is what kind of data'?</p>
     </statement>

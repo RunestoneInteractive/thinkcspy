@@ -129,7 +129,7 @@ print("The result of", toSquare, "squared is", result)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question5_2_1">
+  <exercise label="test_question5_2_1">
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
@@ -175,7 +175,7 @@ def addEm(x, y, z):
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_2_2">
+  <exercise label="test_question5_2_2">
     <statement>
       <p>What will the following function return?</p>
       <program language="python">

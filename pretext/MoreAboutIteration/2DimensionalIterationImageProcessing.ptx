@@ -256,7 +256,7 @@ print(p.getGreen(), p.getBlue())
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="test_question7_8_1_1">
+    <exercise label="test_question7_8_1_1">
       <statement>
         <p>If you have a pixel whose RGB value is (50, 0, 0), what color will this pixel appear to be?</p>
       </statement>
@@ -413,7 +413,7 @@ print(p.getRed(), p.getGreen(), p.getBlue())
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="test_question7_8_2_1">
+    <exercise label="test_question7_8_2_1">
       <statement>
         <p>Using the previous ActiveCode example, select the answer that is closest to the RGB values of the pixel at row 100, column 30?  The values may be off by one or two due to differences in browsers.</p>
       </statement>
@@ -558,7 +558,7 @@ win.exitonclick()
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="test_question7_8_3_1">
+    <exercise label="test_question7_8_3_1">
       <statement>
         <p>What will the following nested for-loop print?  (Note, if you are having trouble with this question, review CodeLens 3).</p>
         <program language="python">
@@ -636,7 +636,7 @@ d.
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="test_question7_8_3_2">
+    <exercise label="test_question7_8_3_2">
       <statement>
         <p>What would the image produced from ActiveCode box 16 look like if you replaced the lines:</p>
         <program language="python">

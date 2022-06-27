@@ -60,7 +60,7 @@ assert sumnums(1, 1) == 1</pre>
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="mc_designtests_1">
+    <exercise label="mc_designtests_1">
       <statement>
         <p>Consider the following function. Indicate which of the asserts would be
                 appropriate for a unit test.</p>
@@ -114,7 +114,7 @@ def repeat(s: str, num: int) -&gt; str:
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="ac_grade_unittest">
+    <exercise label="ac_grade_unittest">
       <statement>
         <p>Write assert statements below to test a function
                         with the following specification. Your asserts should

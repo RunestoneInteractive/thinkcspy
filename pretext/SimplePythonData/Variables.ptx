@@ -88,7 +88,7 @@ print(type(pi))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_3_2">
+  <exercise label="test_question2_3_2">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">

@@ -108,7 +108,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_3_1">
+  <exercise label="test_question6_3_1">
     <statement>
       <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
     </statement>

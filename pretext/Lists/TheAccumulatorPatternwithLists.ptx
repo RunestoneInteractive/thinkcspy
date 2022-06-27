@@ -108,7 +108,7 @@ print("The scores are " + result)
     <p>The output of the program has some undesirable formatting problems: there is a trailing comma instead
                 of a period, and there are no spaces between the items. The next activity lets you work to
                 correct those problems.</p>
-    <exercise xml:id="ac7_10_5a">
+    <exercise label="ac7_10_5a">
       <statement>
         <p>Let's work to improve the formatting of the sentence produced by the program above.
                         Revise the following code so that it outputs the sentence:</p>
@@ -164,7 +164,7 @@ print("The scores are " + result)
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="question7_10_1">
+    <exercise label="question7_10_1">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -213,7 +213,7 @@ print(x)
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="question7_10_2">
+    <exercise label="question7_10_2">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -262,7 +262,7 @@ print(min_value)
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="ac7_10_7">
+    <exercise label="ac7_10_7">
       <statement>
         <p><term>Challenge</term> For each word in <c>words</c>, add &#x2018;d' to the end of the word if the word ends in <q>e</q> to make it past tense. Otherwise, add &#x2018;ed' to make it past tense. Save these past tense words to a list called <c>past_tense</c>.</p>
       </statement>

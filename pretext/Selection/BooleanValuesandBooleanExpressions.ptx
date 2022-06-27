@@ -69,7 +69,7 @@ x &lt;= y               # x is less than or equal to y
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_1_1">
+  <exercise label="test_question6_1_1">
     <statement>
       <p>Which of the following is a Boolean expression?  Select all that apply.</p>
     </statement>

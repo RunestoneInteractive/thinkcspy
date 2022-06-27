@@ -33,7 +33,7 @@ print(sumTo(1000))
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise xml:id="mc07_8_2">
+  <exercise label="mc07_8_2">
     <statement>
       <p>The following code contains an nested loop.  How many times will the phrase <term><q>We made it here!</q></term> be printed on the console?</p>
       <program language="python">
