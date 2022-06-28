@@ -38,7 +38,7 @@ print(p.distanceFromOrigin())
         </input>
   </program>
   <p>The first thing to notice about this version of LabeledPoint
-            does not inherit from Point. Instead, its constructor
+            is that it does not inherit from Point. Instead, its constructor
             instantiates a Point and stores a reference to it in its <c>point</c>
             instance variable so that it can be used by the other methods.</p>
   <p>Next, notice how the <c>distanceFromOrigin()</c> method reuses the code in
