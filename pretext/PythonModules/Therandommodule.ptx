@@ -72,7 +72,7 @@ print(result)
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/sinlab.html" visual="../Labs/sinlab.html">Sine Wave</url> In this guided lab exercise we will have the turtle plot a sine wave.</p>
+          <p><url href="https://runestone.academy/ns/books/published/thinkcspy/Labs/sinlab.html?mode=browsing" visual="../Labs/sinlab.html">Sine Wave</url> In this guided lab exercise we will have the turtle plot a sine wave.</p>
         </li>
       </ul>
     </p>
