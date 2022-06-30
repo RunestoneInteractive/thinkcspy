@@ -67,9 +67,6 @@ myTests().main()
             <p>If you're not sure how to get started with this one, review <xref ref="unit-testing_writing-unit-tests"/>.</p>
           </hint>
           <solution>
-                        assert reverse('abc') == 'cba'
-assert reverse('b') == 'b'
-assert reverse('') == ''
                     
                         <pre>assert reverse('abc') == 'cba'
 assert reverse('b') == 'b'
@@ -115,13 +112,6 @@ myTests().main()
             <p>Review <xref ref="unit-testing_designing-testable-functions"/>.</p>
           </hint>
           <solution>
-                        def stripletters(msg):
-    result = ''
-    for ch in msg:
-        if not ch.isalpha():
-            result += ch
-
-    return result
                     
                         <pre>def stripletters(msg):
     result = ''
