@@ -316,7 +316,7 @@ for i in range(5):
   <exercise label="ex_3_11">
     <statement>
       <p>Write a program to draw some kind of picture.  Be creative and experiment
-                        with the turtle methods provided in <xref ref="python-turtle_summaryof-turtle-methods"/>.</p>
+                        with the turtle methods provided in <xref ref="python-turtle_summary-of-turtle-methods"/>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_11_editor">
       <input>
