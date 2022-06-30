@@ -207,7 +207,7 @@ print(tt)
                             substitutions
                         </cell>
         <cell>
-                            Involved! See <xref ref="strings_format-strings"/>, below
+                            Involved! See <xref ref="strings_string-format-method"/>, below
                         </cell>
       </row>
     </tabular>
