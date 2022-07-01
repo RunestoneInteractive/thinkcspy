@@ -20,7 +20,7 @@
             <em>python+flask</em>, and a variable named <c>go</c> whose value is <em>Submit</em>.</p>
   <p>Flask applications can access query variables using a dictionary named
             <c>request.args</c> (dictionaries are discussed in detail in
-            <xref ref="dictionaries_intro--dictionaries"/>).
+            <xref ref="dictionaries_dictionaries"/>).
             When a browser sends a request to a Flask application that contains
             a query string, the data in the query string is placed in the <c>request.args</c>
             dictionary, where it can be retrieved by the application. For example, in the Bing search
