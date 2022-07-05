@@ -1,2 +1,1 @@
-runestone>=4.0.0
-psycopg2-binary
+pretextbook >= 0.8.0

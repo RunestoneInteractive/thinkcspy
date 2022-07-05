@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_formal-and-natural-languages">
   <title>Formal and Natural Languages</title>
-  <p><term>Natural languages</term> are the languages that people speak, such as English,
+  <p>
+    <term>Natural languages</term> are the languages that people speak, such as English,
             Spanish, and French. They were not designed by people (although people try to
             impose some order on them); they evolved naturally.</p>
-  <p><term>Formal languages</term> are languages that are designed by people for specific
+  <p>
+    <term>Formal languages</term> are languages that are designed by people for specific
             applications. For example, the notation that mathematicians use is a formal
             language that is particularly good at denoting relationships among numbers and
             symbols. Chemists use a formal language to represent the chemical structure of
@@ -19,8 +21,9 @@
             Tokens are the basic elements of the language, such as words, numbers, and
             chemical elements. One of the problems with <c>3=+6$</c> is that <c>$</c> is not a
             legal token in mathematics (at least as far as we know). Similarly,
-            <subscript>2</subscript>Zz is not legal because there is no element with the abbreviation
-            <c>Zz</c>.</p>
+    <subscript>2</subscript>Zz is not legal because there is no element with the abbreviation
+    <c>Zz</c>.
+  </p>
   <p>The second type of syntax rule pertains to the <term>structure</term> of a statement&#x2014;
             that is, the way the tokens are arranged. The statement <c>3=+6$</c> is
             structurally illegal because you can't place a plus sign immediately after an
@@ -28,7 +31,8 @@
             element name, not before.</p>
   <p>When you read a sentence in English or a statement in a formal language, you
             have to figure out what the structure of the sentence is (although in a natural
-            language you do this subconsciously). This process is called <term>parsing</term>.</p>
+            language you do this subconsciously). This process is called <term>parsing</term>.
+  </p>
   <p>For example, when you hear the sentence, <q>The other shoe fell</q>, you understand
             that the other shoe is the subject and fell is the verb.  Once you have parsed
             a sentence, you can figure out what it means, or the <term>semantics</term> of the sentence.
@@ -107,7 +111,7 @@
         </statement>
         <feedback>
                     Actually both languages can be parsed (determining the structure of the sentence), but formal languages can be parsed more easily in software.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -115,7 +119,7 @@
         </statement>
         <feedback>
                     All of these can be present in natural languages, but cannot exist in formal languages.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -123,7 +127,7 @@
         </statement>
         <feedback>
                     There are several differences between the two but they are also similar.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -131,7 +135,7 @@
         </statement>
         <feedback>
                     These are the similarities between the two.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -146,7 +150,7 @@
         </statement>
         <feedback>
                     It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -154,7 +158,7 @@
         </statement>
         <feedback>
                     It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

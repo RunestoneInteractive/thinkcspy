@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_variable-names-and-keywords">
   <title>Variable Names and Keywords</title>
-  <p><term>Variable names</term> can be arbitrarily long. They can contain both letters and
+  <p>
+    <term>Variable names</term> can be arbitrarily long. They can contain both letters and
             digits, but they have to begin with a letter or an underscore. Although it is
             legal to use uppercase letters, by convention we don't. If you do, remember
             that case matters. <c>Bruce</c> and <c>bruce</c> are different variables.</p>
@@ -18,9 +19,11 @@
   <pre>76trombones = "big parade"
 more$ = 1000000
 class = "Computer Science 101"</pre>
-  <p><c>76trombones</c> is illegal because it does not begin with a letter.  <c>more$</c>
+  <p>
+    <c>76trombones</c> is illegal because it does not begin with a letter.  <c>more$</c>
             is illegal because it contains an illegal character, the dollar sign. But
-            what's wrong with <c>class</c>?</p>
+            what's wrong with <c>class</c>?
+  </p>
   <p>It turns out that <c>class</c> is one of the Python <term>keywords</term>. Keywords define
             the language's syntax rules and structure, and they cannot be used as variable
             names.
@@ -31,120 +34,120 @@ class = "Computer Science 101"</pre>
       <row>
         <cell>
                             and
-                        </cell>
+        </cell>
         <cell>
                             as
-                        </cell>
+        </cell>
         <cell>
                             assert
-                        </cell>
+        </cell>
         <cell>
                             break
-                        </cell>
+        </cell>
         <cell>
                             class
-                        </cell>
+        </cell>
         <cell>
                             continue
-                        </cell>
+        </cell>
       </row>
       <row>
         <cell>
                             def
-                        </cell>
+        </cell>
         <cell>
                             del
-                        </cell>
+        </cell>
         <cell>
                             elif
-                        </cell>
+        </cell>
         <cell>
                             else
-                        </cell>
+        </cell>
         <cell>
                             except
-                        </cell>
+        </cell>
         <cell>
                             exec
-                        </cell>
+        </cell>
       </row>
       <row>
         <cell>
                             finally
-                        </cell>
+        </cell>
         <cell>
                             for
-                        </cell>
+        </cell>
         <cell>
                             from
-                        </cell>
+        </cell>
         <cell>
                             global
-                        </cell>
+        </cell>
         <cell>
                             if
-                        </cell>
+        </cell>
         <cell>
                             import
-                        </cell>
+        </cell>
       </row>
       <row>
         <cell>
                             in
-                        </cell>
+        </cell>
         <cell>
                             is
-                        </cell>
+        </cell>
         <cell>
                             lambda
-                        </cell>
+        </cell>
         <cell>
                             nonlocal
-                        </cell>
+        </cell>
         <cell>
                             not
-                        </cell>
+        </cell>
         <cell>
                             or
-                        </cell>
+        </cell>
       </row>
       <row>
         <cell>
                             pass
-                        </cell>
+        </cell>
         <cell>
                             raise
-                        </cell>
+        </cell>
         <cell>
                             return
-                        </cell>
+        </cell>
         <cell>
                             try
-                        </cell>
+        </cell>
         <cell>
                             while
-                        </cell>
+        </cell>
         <cell>
                             with
-                        </cell>
+        </cell>
       </row>
       <row>
         <cell>
                             yield
-                        </cell>
+        </cell>
         <cell>
                             True
-                        </cell>
+        </cell>
         <cell>
                             False
-                        </cell>
+        </cell>
         <cell>
                             None
-                        </cell>
+        </cell>
         <cell>
-                        </cell>
+        </cell>
         <cell>
-                        </cell>
+        </cell>
       </row>
     </tabular>
   </table>
@@ -155,10 +158,10 @@ class = "Computer Science 101"</pre>
             remember, what the variable is used for.</p>
   <warning>
     <p>Beginners sometimes confuse <q>meaningful to the human readers</q> with
-                <q>meaningful to the computer</q>.  So they'll wrongly think that because
+      <q>meaningful to the computer</q>.  So they'll wrongly think that because
                 they've called some variable <c>average</c> or <c>pi</c>, it will somehow
                 automagically calculate an average, or automagically associate the variable
-                <c>pi</c> with the value 3.14159.  No! The computer doesn't attach semantic
+      <c>pi</c> with the value 3.14159.  No! The computer doesn't attach semantic
                 meaning to your variable names.</p>
     <p>So you'll find some instructors who deliberately don't choose meaningful
                 names when they teach beginners &#x2014; not because they don't think it is a
@@ -181,7 +184,7 @@ class = "Computer Science 101"</pre>
         </statement>
         <feedback>
                     -  The + character is not allowed in variable names.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -189,7 +192,7 @@ class = "Computer Science 101"</pre>
         </statement>
         <feedback>
                     -  The + character is not allowed in variable names (everything else in this name is fine).
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

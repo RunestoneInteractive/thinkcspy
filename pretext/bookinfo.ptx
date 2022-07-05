@@ -34,7 +34,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Prefix to enhance Sage notebook contents -->
     <initialism>SB</initialism>
-
+    <blurb shelf="introcs">The original open source intro to computer science textbook.  Great for students of all ages.</blurb>
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
     <!-- \notdivide replaces \notmid to avoid conflict with tikz - TWJ 5/6/2010 -->
     <!-- Added operator \gf  - TWJ 2/26/2013 -->
