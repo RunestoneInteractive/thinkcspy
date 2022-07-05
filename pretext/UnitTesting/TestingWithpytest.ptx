@@ -249,11 +249,6 @@ myTests().main()
         </input>
       </program>
       <solution>
-                    The following is a suggested pytest unit test.
-                    def test_grade():
-    assert grade(92) == 'A'
-    assert grade(85) == 'B'
-    assert grade(69) == 'F'
                 
                     <p>The following is a suggested pytest unit test.</p>
                     <pre>def test_grade():
