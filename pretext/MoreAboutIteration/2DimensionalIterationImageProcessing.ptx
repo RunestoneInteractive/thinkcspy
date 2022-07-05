@@ -140,7 +140,7 @@
       </table>
     </blockquote>
     <p>In order to manipulate an image, we need to be able to access individual pixels.  This capability is provided by
-                a module called <term>image</term>, provided in ActiveCode.  See <xref ref="more-about-iteration_image-processingon-your-own"/> for ways to deal with images in standard Python. The image module defines two classes: <c>Image</c> and <c>Pixel</c>.</p>
+                a module called <term>image</term>, provided in ActiveCode.  See <xref ref="more-about-iteration_image-processing-on-your-own"/> for ways to deal with images in standard Python. The image module defines two classes: <c>Image</c> and <c>Pixel</c>.</p>
     <p>Each Pixel object has three attributes: the red intensity, the green intensity, and the blue intensity.  A pixel provides three methods
                 that allow us to ask for the intensity values.  They are called <c>getRed</c>, <c>getGreen</c>, and <c>getBlue</c>.  In addition, we can ask a
                 pixel to change an intensity value using its <c>setRed</c>, <c>setGreen</c>, and <c>setBlue</c> methods.</p>
