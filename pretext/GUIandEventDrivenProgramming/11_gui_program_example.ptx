@@ -43,7 +43,7 @@
     <p>Step 1: Make sure you have a reasonable GUI design and implementation plan
                 before you start coding. Draw a sketch of your initial design on paper
                 and consider how a user will interact with your program.</p>
-    <figure align="center" xml:id="id1">
+    <figure align="center" xml:id="id-1">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Initial design of a Whack-a-mole game</caption>
       <image source="GUIandEventDrivenProgramming/Figures/Whack_a_mole_design.png" width="50%"/>
     </figure>

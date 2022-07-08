@@ -40,7 +40,7 @@ result = badsquare(10)
 print(result)
         </input>
   </program>
-  <p xml:id="functions_index-1">Although the <c>badsquare</c> function works, it is silly and poorly written.  We have done it here to illustrate
+  <p xml:id="functions-index-1">Although the <c>badsquare</c> function works, it is silly and poorly written.  We have done it here to illustrate
             an important rule about how variables are looked up in Python.
             First, Python looks at the variables that are defined as local variables in
             the function.  We call this the <term>local scope</term>.  If the variable name is not
