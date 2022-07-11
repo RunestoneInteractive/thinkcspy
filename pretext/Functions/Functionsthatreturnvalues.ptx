@@ -43,7 +43,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             125, and 1.  Note that <c>max</c> also works on lists of values.</p>
   <p>Furthermore, functions like <c>range</c>, <c>int</c>, <c>abs</c> all return values that
             can be used to build more complex expressions.</p>
-  <p xml:id="functions_index-1">So an important difference between these functions and one like <c>drawSquare</c> is that
+  <p xml:id="functions_index_1">So an important difference between these functions and one like <c>drawSquare</c> is that
             <c>drawSquare</c> was not executed because we wanted it to compute a value &#x2014; on the contrary,
             we wrote <c>drawSquare</c> because we wanted it to execute a sequence of steps that caused
             the turtle to draw a specific shape.</p>

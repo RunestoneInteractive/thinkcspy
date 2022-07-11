@@ -172,7 +172,7 @@ wn.exitonclick()
             that if you ever need to write a similar program, you can reuse this function
             with confidence the next time you need it.  Breaking up this
             program into a couple of parts is another example of functional decomposition.</p>
-  <p xml:id="more-about-iteration_index-0">
+  <p xml:id="more-about-iteration-index-0">
     <term>Check your understanding</term>
   </p>
   <exercise label="test_question7_3_1">
