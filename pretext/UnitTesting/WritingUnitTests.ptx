@@ -162,52 +162,30 @@ assert grade(92) == 'A'
 assert grade(85) == 'B'
 assert grade(69) == 'F'
         </input></program>
-                    .. reveal:: ac_grade_unittest_aux_reveal
-                    :instructoronly:
-                    .. actex:: ac_grade_unittest_aux
+                    
+                  <commentary>
+                    ac_grade_unittest_aux_reveal
+                    instructoronly
+                    actex:: ac_grade_unittest_aux
                     testA = False
                     testB = False
                     testF = False
                     illegal = False
                     def grade(score):
                     global illegal, testA, testB, testF
-                    if score &gt; 100 or score &lt; 0:
+                    if score > 100 or score < 0:
                     illegal = True
                     return ''
-                    elif score &gt;= 90:
+                    elif score >= 90:
                     testA = True
                     return 'A'
-                    elif score &gt;= 80:
+                    elif score >= 80:
                     testB = True
                     return 'B'
                     else:
                     testF = True
                     return 'F'
-                
-                    <p>The following asserts are just some of several that could have been used.</p>
-
-    
-                    <!--.. reveal:: ac_grade_unittest_aux_reveal-->
-                    <!--:instructoronly:-->
-                    <!--.. actex:: ac_grade_unittest_aux-->
-                    <!--testA = False-->
-                    <!--testB = False-->
-                    <!--testF = False-->
-                    <!--illegal = False-->
-                    <!--def grade(score):-->
-                    <!--global illegal, testA, testB, testF-->
-                    <!--if score > 100 or score < 0:-->
-                    <!--illegal = True-->
-                    <!--return ''-->
-                    <!--elif score >= 90:-->
-                    <!--testA = True-->
-                    <!--return 'A'-->
-                    <!--elif score >= 80:-->
-                    <!--testB = True-->
-                    <!--return 'B'-->
-                    <!--else:-->
-                    <!--testF = True-->
-                    <!--return 'F'-->
+                    </commentary>
                 </solution>
     </exercise>
   </subsection>
