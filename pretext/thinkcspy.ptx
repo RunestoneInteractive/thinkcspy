@@ -5,6 +5,12 @@
     <book xml:id="thinkcspy" permid="tcs">
         <title>How to Think Like a Computer Scientist</title>
         <subtitle>The PreTeXt Interactive Edition</subtitle>
+        <frontmatter>
+        <titlepage>
+        </titlepage>
+        <xi:include href="./FrontBackMatter/preface2e.ptx"/>
+        <xi:include href="./FrontBackMatter/prefaceinteractive.ptx"/>
+        </frontmatter>
         <xi:include href="./GeneralIntro/toctree.ptx"/>
         <xi:include href="./SimplePythonData/toctree.ptx"/>
         <xi:include href="./Debugging/toctree.ptx"/>
