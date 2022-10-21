@@ -21,6 +21,9 @@ import os
 from runestone import runestone_static_dirs, runestone_extensions, setup
 import pkg_resources
 
+setup.custom_js_files = [
+    "https://media.ethicalads.io/media/client/ethicalads.min.js"
+    ]
 
 # -- General configuration -----------------------------------------------------
 
