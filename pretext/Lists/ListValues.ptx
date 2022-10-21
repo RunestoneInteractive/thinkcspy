@@ -35,10 +35,10 @@ newlist = [ numbers, vocabulary ]
 print(newlist)
         </input>
   </program>
-  <p xml:id="lists_accessing-elements" names="accessing-elements">
+  <p xml:id="lists_accessing_elements" names="accessing-elements">
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question9_1_1">
+  <exercise label="test_question9_1_1">
     <statement>
       <p>A list can contain only integer items.</p>
     </statement>

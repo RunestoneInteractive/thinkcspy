@@ -31,7 +31,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="mc_testable_1">
+  <exercise label="mc_testable_1">
     <statement>
       <p>Is this a testable function?</p>
       <pre>sum = 0
@@ -133,7 +133,7 @@ def add(x, y):
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="mc_testable_2">
+    <exercise label="mc_testable_2">
       <statement>
         <p>Consider the following function. What would an appropriate precondition be?</p>
         <program language="python">

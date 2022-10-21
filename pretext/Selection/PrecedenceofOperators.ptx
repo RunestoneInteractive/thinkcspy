@@ -3,7 +3,7 @@
   <title>Precedence of Operators</title>
   <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y-6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.</p>
   <p>The following table summarizes the precedence discussed so far from highest to lowest.
-            See <xref ref="appendices_precedence-table"/> for <em>all</em> the operators introduced in this book.</p>
+            See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.</p>
   <table>
     <tabular>
       <row header="yes">
@@ -108,7 +108,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_3_1">
+  <exercise label="test_question6_3_1">
     <statement>
       <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
     </statement>

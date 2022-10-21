@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="selection_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ex_6_1">
+  <exercise label="ex_6_1">
     <statement>
       <p>What do these expressions evaluate to?</p>
       <p>
@@ -53,7 +53,7 @@
                     <p><ol label="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
                 </solution>
   </exercise>
-  <exercise xml:id="ex_6_2">
+  <exercise label="ex_6_2">
     <statement>
       <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
       <p>
@@ -87,7 +87,7 @@
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_3">
+  <exercise label="ex_6_3">
     <statement>
       <p>Write a function which is given an exam mark, and it returns a string &#x2014; the grade for that mark &#x2014; according to this
                         scheme:</p>
@@ -194,7 +194,7 @@ print( "Mark:", str(mark), "Grade:", grade(mark))
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_6_4">
+  <exercise label="ex_6_4">
     <statement>
       <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
                 of 200 or more is filled with red, values between [100 and 200) are filled yellow,
@@ -206,7 +206,7 @@ print( "Mark:", str(mark), "Grade:", grade(mark))
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_5">
+  <exercise label="ex_6_5">
     <statement>
       <p>In the turtle bar chart program, what do you expect to happen if one or more
                         of the data values in the list is negative?   Go back and try it out.  Change the
@@ -270,7 +270,7 @@ wn.exitonclick()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_6_6">
+  <exercise label="ex_6_6">
     <statement>
       <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
                 the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
@@ -296,7 +296,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_7">
+  <exercise label="ex_6_7">
     <statement>
       <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
                         and returns <c>True</c> if the argument is an <term>even number</term> and <c>False</c> if
@@ -341,7 +341,7 @@ testEqual(is_even(0), True)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_6_8">
+  <exercise label="ex_6_8">
     <statement>
       <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
                 and <c>False</c> otherwise.</p>
@@ -367,7 +367,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_9">
+  <exercise label="ex_6_9">
     <statement>
       <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
                         argument is an odd integer.</p>
@@ -416,7 +416,7 @@ testEqual(is_odd(0), False)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_6_10">
+  <exercise label="ex_6_10">
     <statement>
       <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
                 will determine whether the triangle is right-angled.  Assume that the third argument to the
@@ -454,7 +454,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_11">
+  <exercise label="ex_6_11">
     <statement>
       <p>Extend the above program so that the sides can be given to the function in any order.</p>
     </statement>
@@ -506,7 +506,7 @@ testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_6_12">
+  <exercise label="ex_6_12">
     <statement>
       <p>3 criteria must be taken into account to identify leap years:</p>
       <p>The year is evenly divisible by 4;</p>
@@ -536,7 +536,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_13">
+  <exercise label="ex_6_13">
     <statement>
       <p>Implement the calculator for the date of Easter.</p>
       <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>

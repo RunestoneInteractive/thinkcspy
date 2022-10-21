@@ -188,7 +188,7 @@ print(sumnums(3, 1))</pre>
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="mc_assert_1">
+    <exercise label="mc_assert_1">
       <statement>
         <p>An <c>assert</c> statement displays output if the condition is True.</p>
       </statement>
@@ -211,7 +211,7 @@ print(sumnums(3, 1))</pre>
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="mc_assert_2">
+    <exercise label="mc_assert_2">
       <statement>
         <p>Consider the following function. Which assert should be added to check its
                 precondition?</p>

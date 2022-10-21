@@ -21,7 +21,7 @@ coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
 </input>
   </program>
   <p>This is a Python script named <c>coffee_shop.py</c> that contains three variables: <c>shop_name</c>, <c>coffee_sizes</c>, and <c>coffee_roasts</c>.  The <c>shop_name</c> is a string, <c>coffee_sizes</c> is a list containing strings, and <c>coffee_roasts</c> is also a list containing strings.</p>
-  <exercise xml:id="question4_5_1">
+  <exercise label="question4_5_1">
     <statement>
       <p>A module is another name for:</p>
     </statement>
@@ -81,7 +81,7 @@ print("Available roasts:", coffee_shop.coffee_roasts)
     <title>Note</title>
     <p>The module files must be in the same directory on your computer for Python to know how to import them automatically</p>
   </note>
-  <exercise xml:id="question4_5_2">
+  <exercise label="question4_5_2">
     <statement>
       <p>Create a module by:</p>
     </statement>
@@ -182,7 +182,7 @@ shop_says = coffee_shop.order_coffee(order_size, order_roast)
 print(shop_says)
 </input>
   </program>
-  <exercise xml:id="question4_5_3">
+  <exercise label="question4_5_3">
     <statement>
       <p>What determines the name of our import?</p>
     </statement>

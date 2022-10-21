@@ -93,7 +93,7 @@ wn.exitonclick()
   <p>
     <term>Mixed up program</term>
   </p>
-  <exercise xml:id="rsid_3_10" indent="show" language="python">
+  <exercise label="rsid_3_10" indent="show" language="python">
     <statement>
       <p>The following program uses the stamp method to create a circle of turtle shapes as shown to the left:</p>
       <image source="PythonTurtle/Figures/TurtleCircle.png" width="75%"/>
@@ -131,7 +131,7 @@ wn.exitonclick()
   <p>
     <term>Mixed up program</term>
   </p>
-  <exercise xml:id="rsid_3_11" indent="show" language="python">
+  <exercise label="rsid_3_11" indent="show" language="python">
     <statement>
       <p>The following program uses the stamp method to create a line of turtle shapes as shown to the left:</p>
       <image source="PythonTurtle/Figures/Turtle3Stamp.png" width="75%"/>

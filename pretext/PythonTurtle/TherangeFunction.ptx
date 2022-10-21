@@ -98,7 +98,7 @@ print(list(range(10, 0, -1)))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question3_5_1">
+  <exercise label="test_question3_5_1">
     <statement>
       <p>In the command range(3, 10, 2), what does the second argument (10) specify?</p>
     </statement>
@@ -137,7 +137,7 @@ print(list(range(10, 0, -1)))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_5_2">
+  <exercise label="test_question3_5_2">
     <statement>
       <p>What command correctly generates the sequence 2, 5, 8?</p>
     </statement>
@@ -176,7 +176,7 @@ print(list(range(10, 0, -1)))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_5_3">
+  <exercise label="test_question3_5_3">
     <statement>
       <p>What happens if you give range only one argument?  For example: range(4)</p>
     </statement>
@@ -215,7 +215,7 @@ print(list(range(10, 0, -1)))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_5_4">
+  <exercise label="test_question3_5_4">
     <statement>
       <p>Which range function call will produce the sequence 20, 15, 10, 5?</p>
     </statement>
@@ -254,7 +254,7 @@ print(list(range(10, 0, -1)))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_5_5">
+  <exercise label="test_question3_5_5">
     <statement>
       <p>What could the second parameter (12) in range(2, 12, 4) be replaced with and generate exactly the same sequence?</p>
     </statement>

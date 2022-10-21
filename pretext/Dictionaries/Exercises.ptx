@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="dictionaries_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ex_11_01">
+  <exercise label="ex_11_01">
     <statement>
       <p>Write a program that allows the user to enter a string.  It then prints a
                         table of the letters of the alphabet in alphabetical order which occur in
@@ -134,7 +134,7 @@ add_fruit(new_inventory, 'strawberries', 25)
 #  test that new_inventory['strawberries'] is now 35)
         </input>
   </program>
-  <exercise xml:id="ex_11_02">
+  <exercise label="ex_11_02">
     <statement>
       <p>Write a program called <c>alice_words.py</c> that creates a text file named
                         <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
@@ -302,7 +302,7 @@ print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
 </input></program>
                 </solution>
   </exercise>
-  <exercise xml:id="ex_11_03">
+  <exercise label="ex_11_03">
     <statement>
       <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
     </statement>
@@ -312,7 +312,7 @@ print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_11_04">
+  <exercise label="ex_11_04">
     <statement>
       <p>Here's a table of English to Pirate translations</p>
       <table>

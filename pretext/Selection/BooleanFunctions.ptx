@@ -62,7 +62,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_8_1">
+  <exercise label="test_question6_8_1">
     <statement>
       <p>What is a Boolean function?</p>
     </statement>
@@ -93,7 +93,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_8_2">
+  <exercise label="test_question6_8_2">
     <statement>
       <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
       <program language="python">

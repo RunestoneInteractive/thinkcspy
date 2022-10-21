@@ -29,7 +29,7 @@
             algorithm our primary data structure is a list, so we must focus our
             state-changing efforts on the list. Since the base case is a list of
             length 1, a natural progression toward the base case is to shorten the
-            list. This is exactly what happens on line 5 of <xref ref="intro-recursion_calculatingthe-sumofa-listof-numbers"/> when we call <c>listsum</c> with a shorter list.</p>
+            list. This is exactly what happens on line 5 of the ActiveCode in <xref ref="intro-recursion_calculating-the-sum-of-a-list-of-numbers"/> when we call <c>listsum</c> with a shorter list.</p>
   <p>The final law is that the algorithm must call itself. This is the very
             definition of recursion. Recursion is a confusing concept to many
             beginning programmers. As a novice programmer, you have learned that
@@ -46,7 +46,7 @@
             problem by using the three laws of recursion.</p>
   <note>
     <title>Self Check</title>
-    <exercise xml:id="question_recsimp_1">
+    <exercise label="question_recsimp_1">
       <statement>
         <p>How many recursive calls are made when computing the sum of the list [2,4,6,8,10]?</p>
       </statement>
@@ -85,7 +85,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="question_recsimp_2">
+    <exercise label="question_recsimp_2">
       <statement>
         <p>Suppose you are going to write a recusive function to calculate the factorial of a number.  fact(n) returns n * n-1 * n-2 * &#x2026; * 1, and the factorial of zero is definded to be 1.  What would be the most appropriate base case?</p>
       </statement>

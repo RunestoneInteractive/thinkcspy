@@ -45,7 +45,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question11_1_1">
+  <exercise label="test_question11_1_1">
     <statement>
       <p>A dictionary is an unordered collection of key-value pairs.</p>
     </statement>
@@ -68,7 +68,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question11_1_2">
+  <exercise label="test_question11_1_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

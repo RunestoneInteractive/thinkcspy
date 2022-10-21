@@ -58,7 +58,7 @@ print(2 + 3)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question1_3_1">
+  <exercise label="question1_3_1">
     <statement>
       <p>The activecode interpreter allows you to (select all that apply):</p>
     </statement>
@@ -97,7 +97,7 @@ print(2 + 3)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question1_3_2">
+  <exercise label="question1_3_2">
     <statement>
       <p>Codelens allows you to (select all that apply):</p>
     </statement>

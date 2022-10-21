@@ -22,7 +22,7 @@ print("This is always printed")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_5_1">
+  <exercise label="test_question6_5_1">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -78,7 +78,7 @@ The negative number -10 is not valid here</pre>
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_5_2">
+  <exercise label="test_question6_5_2">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">

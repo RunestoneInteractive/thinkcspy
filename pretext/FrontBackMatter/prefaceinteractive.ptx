@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="front-back-matter_preface-to-the-interactive-edition">
+<preface xml:id="front-back-matter_preface-to-the-interactive-edition">
   <title>Preface to the Interactive Edition</title>
   <p>by Brad Miller and David Ranum</p>
   <p>There are many books available if you want to learn to program in Python.  In
@@ -22,4 +22,4 @@
             different options for covering the material.  Our hope is that you will find
             that your understanding will be enhanced because you are able to experience
             it in more than just one way.</p>
-</section>
+</preface>

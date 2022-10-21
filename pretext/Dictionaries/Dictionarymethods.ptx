@@ -162,7 +162,7 @@ print(inventory.get("cherries", 0))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question11_3_1">
+  <exercise label="test_question11_3_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -209,7 +209,7 @@ print(keylist[3])
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question11_3_2">
+  <exercise label="test_question11_3_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -255,7 +255,7 @@ print(answer)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question11_3_3">
+  <exercise label="test_question11_3_3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -284,7 +284,7 @@ print("dog" in mydict)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question11_3_4">
+  <exercise label="test_question11_3_4">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -313,7 +313,7 @@ print(23 in mydict)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question11_3_5">
+  <exercise label="test_question11_3_5">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

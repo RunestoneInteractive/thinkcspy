@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="functions_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ex_5_1">
+  <exercise label="ex_5_1">
     <statement>
       <p>Use the drawsquare function we wrote in this chapter in a program to draw
                         the image shown below.
@@ -62,7 +62,7 @@ wn.exitonclick()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_2">
+  <exercise label="ex_5_2">
     <statement>
       <p>Write a program to draw this. Assume the innermost square is 20 units per side,
                 and each successive square is 20 units bigger, per side, than the one inside it.</p>
@@ -74,7 +74,7 @@ wn.exitonclick()
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_3">
+  <exercise label="ex_5_3">
     <statement>
       <p>Write a non-fruitful function <c>drawPoly(someturtle, somesides, somesize)</c> which makes a turtle
                         draw a regular polygon.
@@ -108,7 +108,7 @@ drawPoly(tess, 8, 50)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_4">
+  <exercise label="ex_5_4">
     <statement>
       <p>Draw this pretty pattern.</p>
       <image source="Functions/Figures/tess08.png" width="50%"/>
@@ -119,7 +119,7 @@ drawPoly(tess, 8, 50)
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_5">
+  <exercise label="ex_5_5">
     <statement>
       <p>The two spirals in this picture differ only by the turn angle.  Draw both.</p>
       <image source="Functions/Figures/tess_spirals.png" width="50%" height="240"/>
@@ -171,7 +171,7 @@ drawSpiral(guido, 89)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_6">
+  <exercise label="ex_5_6">
     <statement>
       <p>Write a non-fruitful function <c>drawEquitriangle(someturtle, somesize)</c> which calls <c>drawPoly</c> from the
                 previous question to have its turtle draw a equilateral triangle.</p>
@@ -182,7 +182,7 @@ drawSpiral(guido, 89)
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_7">
+  <exercise label="ex_5_7">
     <statement>
       <p>Write a fruitful function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
                         including <title_reference>n</title_reference>.   So <c>sumTo(10)</c> would be <c>1+2+3...+10</c> which would return the value 55.  Use the
@@ -226,7 +226,7 @@ print("The sum from 1 to 5 is",t)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_8">
+  <exercise label="ex_5_8">
     <statement>
       <p>Write a function <title_reference>areaOfCircle(r)</title_reference> which returns the area of a circle of radius <title_reference>r</title_reference>.  Make sure you use the math module in your solution.</p>
     </statement>
@@ -250,7 +250,7 @@ myTests().main()
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_9">
+  <exercise label="ex_5_9">
     <statement>
       <p>Write a non-fruitful function to draw a five pointed star, where the length of each side is 100 units.</p>
       <image source="Functions/Figures/star.png" width="50%"/>
@@ -276,7 +276,7 @@ drawFivePointStar(wolfram)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_10">
+  <exercise label="ex_5_10">
     <statement>
       <p>Extend your program above.  Draw five stars, but between each, pick up the pen,
                 move forward by 350 units, turn right by 144, put the pen down, and draw the next star.
@@ -290,7 +290,7 @@ drawFivePointStar(wolfram)
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_11">
+  <exercise label="ex_5_11">
     <statement>
       <p>Extend the star function to draw an n pointed star.  (Hint: n must be an odd number greater or
                         equal to 3).</p>
@@ -316,7 +316,7 @@ drawStar(stroustrup, 7)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_12">
+  <exercise label="ex_5_12">
     <statement>
       <p>Write a function called drawSprite that will draw a sprite.  The function will need parameters for
                 the turtle, the number of legs, and the length of the legs.  Invoke the function to create a sprite
@@ -328,7 +328,7 @@ drawStar(stroustrup, 7)
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_13">
+  <exercise label="ex_5_13">
     <statement>
       <p>Rewrite the function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
                         including <title_reference>n</title_reference>.   This time use the accumulator pattern.</p>
@@ -370,7 +370,7 @@ print("The sum from 1 to 5 is",t)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_14">
+  <exercise label="ex_5_14">
     <statement>
       <p>Write a function called <c>mySqrt</c> that will approximate the square root of a number, call it n, by using
                 Newton's algorithm.
@@ -395,7 +395,7 @@ myTests().main()
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_15">
+  <exercise label="ex_5_15">
     <statement>
       <p>Write a function called <c>myPi</c> that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80" visual="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80">Leibniz</url>
                                  approximation.</p>
@@ -433,7 +433,7 @@ print(pi_approx)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_16">
+  <exercise label="ex_5_16">
     <statement>
       <p>Write a function called <title_reference>myPi</title_reference> that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
                          approximation.</p>
@@ -449,7 +449,7 @@ def myPi(iters):
                     </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_5_17">
+  <exercise label="ex_5_17">
     <statement>
       <p>Write a function called <title_reference>fancySquare</title_reference> that will draw a square with fancy corners (sprites on the corners).  You should
                         implement and use the <title_reference>drawSprite</title_reference> function from above.  For an even more interesting look, how about adding small
@@ -489,7 +489,7 @@ wn.exitonclick()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_5_18">
+  <exercise label="ex_5_18">
     <statement>
       <p>There was a whole program in <xref ref="functions_a-turtle-bar-chart"/> to create a bar chart with specific data.  Creating a bar chart is a useful idea in general.  Write a non-fruitful function called barChart, that takes the numeric list of data as a parameter, and draws the bar chart.  Write a full program calling this function.
                 The current version of the <c>drawBar</c> function unfortuately draws the top of the bar through the bottom of the label.  A nice elaboration is to make the label appear completely above the top line.  To keep the spacing consistent you might pass an extra parameter to <c>drawBar</c> for the distance to move up.  For the <c>barChart</c> function make that parameter be some small fraction of <c>maxheight+border</c>.  The fill action makes this modification particularly tricky:  You will want to move past the top of the bar and write before or after drawing and filling the bar.</p>

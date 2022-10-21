@@ -80,7 +80,7 @@ wn.exitonclick()
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question3_2_1">
+  <exercise label="test_question3_2_1">
     <statement>
       <p>True or False: You can only have one active turtle at a time.  If you create a second one, you will no longer be able to access or use the first.</p>
     </statement>
@@ -106,7 +106,7 @@ wn.exitonclick()
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise xml:id="rsid_3_6" indent="show" language="python">
+  <exercise label="rsid_3_6" indent="show" language="python">
     <statement>
       <p>The following program has one turtle, <q>jamal</q>, draw a capital L in blue and then another, <q>tina</q>, draw a line to the west in orange as shown to the left:</p>
       <image source="PythonTurtle/Figures/TwoTurtles1.png" width="75%"/>
@@ -141,7 +141,7 @@ wn.exitonclick()
       </block>
     </blocks>
   </exercise>
-  <exercise xml:id="rsid_3_7" indent="show" language="python">
+  <exercise label="rsid_3_7" indent="show" language="python">
     <statement>
       <p>The following program has one turtle, <q>jamal</q>, draw a line to the north in blue and then another, <q>tina</q>, draw a line to the east in orange as shown to the left:</p>
       <image source="PythonTurtle/Figures/TwoTurtlesL.png" width="75%"/>

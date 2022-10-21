@@ -72,7 +72,7 @@ print(ord(" "))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_6_1">
+  <exercise label="test_question8_6_1">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
@@ -100,7 +100,7 @@ print(ord(" "))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_6_2">
+  <exercise label="test_question8_6_2">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
@@ -136,7 +136,7 @@ print(ord(" "))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_6_3">
+  <exercise label="test_question8_6_3">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">

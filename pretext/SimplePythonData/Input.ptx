@@ -49,7 +49,7 @@ print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_7_1">
+  <exercise label="test_question2_7_1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -95,6 +95,36 @@ print ( type(n) )
       </choice>
     </choices>
   </exercise>
-  <exercise runestone="ca_id_ints"/>
-  <exercise runestone="ca_id_str"/>
+  <exercise label="test_question2_7_2">
+
+    <statement>
+      <p>Click on all of the variables of type `int` in the code below</p>
+    </statement>
+    <areas>
+    <cline><area correct="no">seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
+    <p></p>
+    <cline><area>hours</area> = int(<area correct="no">seconds</area>) // 3600</cline>
+    <cline><area>total_secs</area> = int(<area correct="no">seconds</area>)</cline>
+    <cline><area>secs_still_remaining</area> = <area>total_secs</area> % 3600</cline>
+    <cline>print(<area>secs_still_remaining</area>)</cline>
+
+
+    </areas>
+  </exercise>
+  <exercise label="test_question2_7_3">
+
+    <statement>
+      <p>Click on all of the variables of type `str` in the code below</p>
+    </statement>
+    <areas>
+    <cline><area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
+    <p></p>
+    <cline><area correct ="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
+    <cline><area correxct="no">total_secs</area> = int(<area>seconds</area>)</cline>
+    <cline><area correct="no">secs_still_remaining</area> = <area correct="no">total_secs</area> % 3600</cline>
+    <cline>print(<area correct ="no">secs_still_remaining</area>)</cline>
+
+
+    </areas>
+  </exercise>
 </section>

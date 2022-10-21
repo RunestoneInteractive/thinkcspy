@@ -2,7 +2,7 @@ export BOOKDIR=$(HOME)/Runestone/books/thinkcspy
 export COMPDIR=$(HOME)/Runestone/RunestoneComponents
 export RSURI = https://runestone.academy/cdn/runestone/
 
-.PHONY: pretext html pdf
+.PHONY: pretext html pdf runestone
 
 help:
 	@echo "Unless you are converting RST to PTX you you should use this Makefile!!!!"
@@ -32,3 +32,8 @@ html:
 pdf:
 	python ~/src/pretext/pretext/pretext -c all -f pdf -p $(BOOKDIR)/pretext/publication-rs-for-all.xml -x debug.rs.services.file /Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml -d $(BOOKDIR)/pdf $(BOOKDIR)/pretext/thinkcspy.ptx 
 
+runestone:
+	python ~/src/pretext/pretext/pretext -c all -f html -p $(BOOKDIR)/pretext/publication-rs-academy.xml  -d $(BOOKDIR)/runestone $(BOOKDIR)/pretext/thinkcspy.ptx 
+	
+profile:
+	python -m cProfile -s cumulative  ~/src/pretext/pretext/pretext -c all -f html -p $(BOOKDIR)/pretext/publication-rs-for-all.xml  -d $(BOOKDIR)/beta $(BOOKDIR)/pretext/thinkcspy.ptx 

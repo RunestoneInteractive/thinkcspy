@@ -36,7 +36,7 @@ def primes_upto(n):
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question9_20_1">
+  <exercise label="test_question9_20_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

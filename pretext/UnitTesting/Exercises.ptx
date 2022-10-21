@@ -4,7 +4,7 @@
   <p>
     <ol label="1">
       <li>
-        <exercise xml:id="ac_ut_reverse">
+        <exercise label="ac_ut_reverse">
           <statement>
             <p>A function named <c>reverse</c> takes a string argument, reverses it, and returns the result:</p>
             <pre>def reverse(astring):
@@ -67,9 +67,6 @@ myTests().main()
             <p>If you're not sure how to get started with this one, review <xref ref="unit-testing_writing-unit-tests"/>.</p>
           </hint>
           <solution>
-                        assert reverse('abc') == 'cba'
-assert reverse('b') == 'b'
-assert reverse('') == ''
                     
                         <pre>assert reverse('abc') == 'cba'
 assert reverse('b') == 'b'
@@ -78,7 +75,7 @@ assert reverse('') == ''</pre>
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ac_ut_testable">
+        <exercise label="ac_ut_testable">
           <statement>
             <p>A function named <c>stripletters</c> takes a string argument, removes all letters from it, and
                             displays the result (see below). However, this function is not testable.</p>
@@ -115,13 +112,6 @@ myTests().main()
             <p>Review <xref ref="unit-testing_designing-testable-functions"/>.</p>
           </hint>
           <solution>
-                        def stripletters(msg):
-    result = ''
-    for ch in msg:
-        if not ch.isalpha():
-            result += ch
-
-    return result
                     
                         <pre>def stripletters(msg):
     result = ''

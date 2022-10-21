@@ -24,7 +24,7 @@ while position &lt; len(fruit):
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_10_1">
+  <exercise label="test_question8_10_1">
     <statement>
       <p>How many times is the letter o printed by the following statements?</p>
       <program language="python">

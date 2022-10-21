@@ -180,7 +180,7 @@ wn.exitonclick()
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question5_1_1">
+  <exercise label="test_question5_1_1">
     <statement>
       <p>What is a function in Python?</p>
     </statement>
@@ -219,7 +219,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_2">
+  <exercise label="test_question5_1_2">
     <statement>
       <p>What is one main purpose of a function?</p>
     </statement>
@@ -258,7 +258,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_3">
+  <exercise label="test_question5_1_3">
     <statement>
       <p>Which of the following is a valid function header (first line of a function definition)?</p>
     </statement>
@@ -297,7 +297,7 @@ wn.exitonclick()
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_4">
+  <exercise label="test_question5_1_4">
     <statement>
       <p>What is the name of the following function?</p>
       <program language="python">
@@ -345,7 +345,7 @@ def drawSquare(t, sz):
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_5">
+  <exercise label="test_question5_1_5">
     <statement>
       <p>What are the parameters of the following function?</p>
       <program language="python">
@@ -393,7 +393,7 @@ def drawSquare(t, sz):
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_6">
+  <exercise label="test_question5_1_6">
     <statement>
       <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?  Assume we already have a turtle named alex.</p>
       <program language="python">
@@ -449,7 +449,7 @@ def drawSquare(t, sz):
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question5_1_7">
+  <exercise label="test_question5_1_7">
     <statement>
       <p>True or false: A function can be called several times by placing a function call in the body of a loop.</p>
     </statement>

@@ -94,7 +94,7 @@ checkout()
           <p>
             <term>Check your understanding</term>
           </p>
-          <exercise xml:id="ch07_sentinel_2">
+          <exercise label="ch07_sentinel_2">
             <statement>
               <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
             </statement>

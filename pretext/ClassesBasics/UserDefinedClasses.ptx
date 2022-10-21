@@ -125,7 +125,7 @@ alex = Turtle()
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise xml:id="chp17_objects">
+  <exercise label="chp17_objects">
     <statement>
       <p>What is the the output of the following print code?</p>
       <program language="python">

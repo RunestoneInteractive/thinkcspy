@@ -49,7 +49,7 @@ print((name + "Go") * 3)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_1_1">
+  <exercise label="test_question8_1_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -95,7 +95,7 @@ print(s + t)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_1_2">
+  <exercise label="test_question8_1_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

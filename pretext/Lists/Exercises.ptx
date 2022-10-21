@@ -12,7 +12,7 @@
                         <c>b</c> refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.</p>
                 </solution>
   </exercise>
-  <exercise xml:id="ex_9_2">
+  <exercise label="ex_9_2">
     <statement>
       <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, <q>hello</q>, True, 4, 76.
                         Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
@@ -52,7 +52,7 @@ print(myList)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_3">
+  <exercise label="ex_9_3">
     <statement>
       <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
       <p>
@@ -108,7 +108,7 @@ print (myList)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_4">
+  <exercise label="ex_9_4">
     <statement>
       <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
     </statement>
@@ -143,7 +143,7 @@ def average(numlist):
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_5">
+  <exercise label="ex_9_5">
     <statement>
       <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named <c>max</c> but pretend you cannot use it.)</p>
     </statement>
@@ -177,7 +177,7 @@ def max(lst):
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_7_11">
+  <exercise label="ex_7_11">
     <statement>
       <p>Write a function <c>sum_of_squares(xs)</c> that computes the sum
                 of the squares of the numbers in the list <c>xs</c>.  For example,
@@ -202,7 +202,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_9_6">
+  <exercise label="ex_9_6">
     <statement>
       <p>Write a function to count how many odd numbers are in a list.</p>
     </statement>
@@ -247,7 +247,7 @@ print(countOdd(lst))
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_7">
+  <exercise label="ex_9_7">
     <statement>
       <p>Sum up all the even numbers in a list.</p>
     </statement>
@@ -271,7 +271,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_9_8">
+  <exercise label="ex_9_8">
     <statement>
       <p>Sum up all the negative numbers in a list.</p>
     </statement>
@@ -315,7 +315,7 @@ print(sumNegative(lst))
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_9">
+  <exercise label="ex_9_9">
     <statement>
       <p>Count how many words in a list have length 5.</p>
     </statement>
@@ -351,7 +351,7 @@ print(sum(lst))
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_11">
+  <exercise label="ex_9_11">
     <statement>
       <p>Count how many words occur in a list up to and including the first occurrence of the word <q>sam</q>.</p>
     </statement>
@@ -362,7 +362,7 @@ def count(lst):
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_9_12">
+  <exercise label="ex_9_12">
     <statement>
       <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
       <p>
@@ -436,7 +436,7 @@ print(insert('cat', 4, lst))
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_13">
+  <exercise label="ex_9_13">
     <statement>
       <p>Write a function <c>replace(s, old, new)</c> that replaces all occurences of
                 <c>old</c> with <c>new</c> in a string <c>s</c>:</p>
@@ -469,7 +469,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_9_14">
+  <exercise label="ex_9_14">
     <statement>
       <p>Here are the rules for an L-system that creates something that resembles
                         a common garden herb.  Implement the following rules and try it.  Use an
@@ -553,7 +553,7 @@ main()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_9_16">
+  <exercise label="ex_9_16">
     <statement>
       <p>Here is another L-System.  Use an Angle of 25.</p>
       <pre>F
@@ -565,7 +565,7 @@ F --&gt; F[-F]F[+F]F</pre>
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_9_17">
+  <exercise label="ex_9_17">
     <statement>
       <p>Create a list named <c>randlist</c> containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).</p>
     </statement>

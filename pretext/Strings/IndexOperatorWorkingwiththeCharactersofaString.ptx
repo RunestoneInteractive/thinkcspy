@@ -34,7 +34,7 @@ print(lastchar)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_2_1">
+  <exercise label="test_question8_2_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -79,7 +79,7 @@ print(s[3])
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_2_2">
+  <exercise label="test_question8_2_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

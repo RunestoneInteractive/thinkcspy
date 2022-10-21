@@ -28,7 +28,7 @@ print(greeting)            # same as it was
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_7_1">
+  <exercise label="test_question8_7_1">
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">

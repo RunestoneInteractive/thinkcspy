@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="simple-python-data_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ch02_ex1">
+  <exercise label="ch02_ex1">
     <statement>
       <p>Evaluate the following numerical expressions in your head, then use
                         the active code window to check your results:</p>
@@ -120,7 +120,7 @@ print(5 ** 2)
                     <p><ol label="1"><li><p><c>5 ** 2  = 25</c></p></li><li><p><c>9 * 5 = 45</c></p></li><li><p><c>15 / 12 = 1.25</c></p></li><li><p><c>12 / 15 = 0.8</c></p></li><li><p><c>15 // 12 = 1</c></p></li><li><p><c>12 // 15 = 0</c></p></li><li><p><c>5 % 2 = 1</c></p></li><li><p><c>9 % 5 = 4</c></p></li><li><p><c>15 % 12 = 3</c></p></li><li><p><c>12 % 15 = 12</c></p></li><li><p><c>6 % 6 = 0</c></p></li><li><p><c>0 % 7 = 0</c></p></li></ol></p>
                 </solution>
   </exercise>
-  <exercise xml:id="ex_2_2">
+  <exercise label="ex_2_2">
     <statement>
       <p>What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.</p>
     </statement>
@@ -130,7 +130,7 @@ print(5 ** 2)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_2_3">
+  <exercise label="ex_2_3">
     <statement>
       <p>Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
                         If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
@@ -163,7 +163,7 @@ print(timeofday)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_2_4">
+  <exercise label="ex_2_4">
     <statement>
       <p>It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
                 leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6)
@@ -178,7 +178,7 @@ print(timeofday)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_2_5">
+  <exercise label="ex_2_5">
     <statement>
       <p>Take the sentence: <em>All work and no play makes Jack a dull boy.</em>
                         Store each word in a separate variable, then print out the sentence on
@@ -210,7 +210,7 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_2_6">
+  <exercise label="ex_2_6">
     <statement>
       <p>Add parenthesis to the expression <c>6 * 1 - 2</c> to change its value
                 from 4 to -6.</p>
@@ -221,7 +221,7 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_2_7">
+  <exercise label="ex_2_7">
     <statement>
       <p>The formula for computing the final amount if one is earning
                         compound interest is given on Wikipedia as</p>
@@ -255,7 +255,7 @@ print ("The final amount after", t, "years is", final)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_2_8">
+  <exercise label="ex_2_8">
     <statement>
       <p>Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
                 back to the user with the answer.</p>
@@ -266,7 +266,7 @@ print ("The final amount after", t, "years is", final)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_2_9">
+  <exercise label="ex_2_9">
     <statement>
       <p>Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
                         Print a nice message with the answer.</p>
@@ -291,7 +291,7 @@ print("The area of the rectangle is", area)
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_2_10">
+  <exercise label="ex_2_10">
     <statement>
       <p>Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
                 gallons used.  Print a nice message with the answer.</p>
@@ -302,7 +302,7 @@ print("The area of the rectangle is", area)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_2_11">
+  <exercise label="ex_2_11">
     <statement>
       <p>Write a program that will convert degrees celsius to degrees fahrenheit.</p>
     </statement>
@@ -326,7 +326,7 @@ print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_2_12">
+  <exercise label="ex_2_12">
     <statement>
       <p>Write a program that will convert degrees fahrenheit to degrees celsius.</p>
     </statement>

@@ -222,7 +222,7 @@ print(n % 2 == 0 or n % 3 == 0)
     </tabular>
   </table>
   <p>Also, Google has provided this short video showing different logical operators:</p>
-  <video xml:id="GoogleLogic" youtube="57dPVbnRouU" width="667"/>
+  <video xml:id="GoogleLogic" youtube="57dPVbnRouU" width="auto"/>
   <p>In the video, each letter is representative of a logical operater and only shows its color when the
             corresponding <term>x</term> or <term>y</term> is showing in the second <term>G</term>. If you take a look at xor, you will notice
             it is only colorful when either <term>x</term> or <term>y</term> is showing, but not both. This is called <c>exclusive or</c>,
@@ -234,7 +234,7 @@ print(n % 2 == 0 or n % 3 == 0)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_2_1">
+  <exercise label="test_question6_2_1">
     <statement>
       <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
     </statement>
@@ -265,7 +265,7 @@ print(n % 2 == 0 or n % 3 == 0)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_2_2">
+  <exercise label="test_question6_2_2">
     <statement>
       <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
             If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>

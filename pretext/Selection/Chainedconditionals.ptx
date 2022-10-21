@@ -50,7 +50,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_7_1">
+  <exercise label="test_question6_7_1">
     <statement>
       <p>Which of I, II, and III below gives the same result as the following nested if?</p>
       <program language="python">
@@ -146,7 +146,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_7_2">
+  <exercise label="test_question6_7_2">
     <statement>
       <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
       <program language="python">

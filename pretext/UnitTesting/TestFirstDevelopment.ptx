@@ -135,7 +135,7 @@ print("All tests passed!")
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="mc_tfd_1">
+    <exercise label="mc_tfd_1">
       <statement>
         <p>Test-First Development often involves writing more code than traditional development.</p>
       </statement>

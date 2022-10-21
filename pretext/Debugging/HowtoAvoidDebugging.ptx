@@ -66,7 +66,7 @@ print(final_time)
         </input>
   </program>
   <p>Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.</p>
-  <exercise xml:id="db_q_ex3_1">
+  <exercise label="db_q_ex3_1">
     <statement>
       <p>Which of the following best describes what is wrong with the  previous example?</p>
     </statement>

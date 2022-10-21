@@ -48,7 +48,7 @@ alex.forward(75)            # complete the second side of a rectangle
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question3_1_0">
+  <exercise label="test_question3_1_0">
     <statement>
       <p>Which direction does the Turtle face when it is created?</p>
     </statement>
@@ -90,7 +90,7 @@ alex.forward(75)            # complete the second side of a rectangle
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise xml:id="rsid_3_1" indent="show" language="python">
+  <exercise label="rsid_3_1" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital L as shown in the picture to the left of this text,</p>
       <image source="PythonTurtle/Figures/TurtleL4.png" width="75%"/>
@@ -113,7 +113,7 @@ alex.forward(75)            # complete the second side of a rectangle
       </block>
     </blocks>
   </exercise>
-  <exercise xml:id="rsid_3_2" indent="show" language="python">
+  <exercise label="rsid_3_2" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a checkmark as shown to the left:</p>
       <image source="PythonTurtle/Figures/TurtleCheckmark4.png" width="75%"/>
@@ -140,7 +140,7 @@ alex.forward(75)            # complete the second side of a rectangle
       </block>
     </blocks>
   </exercise>
-  <exercise xml:id="rsid_3_3" indent="show" language="python">
+  <exercise label="rsid_3_3" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a single line to the west as shown to the left,</p>
       <image source="PythonTurtle/Figures/TurtleLineToWest.png" width="75%"/>
@@ -221,7 +221,7 @@ wn.exitonclick()                # wait for a user click on the canvas
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question3_1_1">
+  <exercise label="test_question3_1_1">
     <statement>
       <p>Consider the following code:</p>
       <program language="python">
@@ -271,7 +271,7 @@ alex.forward(75)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_1_2">
+  <exercise label="test_question3_1_2">
     <statement>
       <p>Why do we type <c>turtle.Turtle()</c> to get a new Turtle object?</p>
     </statement>
@@ -302,7 +302,7 @@ alex.forward(75)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_1_3">
+  <exercise label="test_question3_1_3">
     <statement>
       <p>True or False: A Turtle object can have any name that follows the naming rules from Chapter 2.</p>
     </statement>
@@ -325,7 +325,7 @@ alex.forward(75)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question3_1_4">
+  <exercise label="test_question3_1_4">
     <statement>
       <p>Which of the following code would produce the following image?</p>
       <image source="_static/turtleTest1.png" width="50%" alt="long line to north with shorter line to west on top"/>
@@ -386,7 +386,7 @@ alex.forward(75)
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise xml:id="rsid_3_4" indent="show" language="python">
+  <exercise label="rsid_3_4" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital L in white on a blue background as shown to the left,</p>
       <image source="PythonTurtle/Figures/BlueTurtleL.png" width="75%"/>
@@ -417,7 +417,7 @@ alex.forward(75)
       </block>
     </blocks>
   </exercise>
-  <exercise xml:id="rsid_3_5" indent="show" language="python">
+  <exercise label="rsid_3_5" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital T in white on a green background as shown to the left,</p>
       <image source="PythonTurtle/Figures/TurtleT.png" width="75%"/>

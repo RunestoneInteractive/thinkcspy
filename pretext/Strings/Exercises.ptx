@@ -43,7 +43,7 @@
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_2">
+        <exercise label="ex_8_2">
           <statement>
             <p>In Robert McCloskey's
                     book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
@@ -98,7 +98,7 @@ myTests().main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_3">
+        <exercise label="ex_8_3">
           <statement>
             <p>Assign to a variable in your program a triple-quoted string that contains
                             your favorite paragraph of text - perhaps a poem, a speech, instructions
@@ -162,7 +162,7 @@ count(p)
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_4">
+        <exercise label="ex_8_4">
           <statement>
             <p>Print out a neatly formatted multiplication table, up to 12 x 12.</p>
           </statement>
@@ -174,7 +174,7 @@ count(p)
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_7_10">
+        <exercise label="ex_7_10">
           <statement>
             <p>Write a function that will return the number of digits in an integer.</p>
           </statement>
@@ -215,7 +215,7 @@ print(numDigits(1))
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_5">
+        <exercise label="ex_8_5">
           <statement>
             <p>Write a function that reverses its string argument.</p>
           </statement>
@@ -271,7 +271,7 @@ testEqual(mirror('a'), 'aa')
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_7">
+        <exercise label="ex_8_7">
           <statement>
             <p>Write a function that removes all occurrences of a given letter from a string.</p>
           </statement>
@@ -300,7 +300,7 @@ myTests().main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_8">
+        <exercise label="ex_8_8">
           <statement>
             <p>Write a function that recognizes palindromes. (Hint: use your <c>reverse</c> function to make this easy!).</p>
           </statement>
@@ -387,7 +387,7 @@ myTests().main()
         </program>
       </li>
       <li>
-        <exercise xml:id="ex_8_10">
+        <exercise label="ex_8_10">
           <statement>
             <p>Write a function that removes the first occurrence of a string from another string.</p>
           </statement>
@@ -436,7 +436,7 @@ testEqual(remove('egg', 'bicycle'), 'bicycle')
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_11">
+        <exercise label="ex_8_11">
           <statement>
             <p>Write a function that removes all occurrences of a string from another string.</p>
           </statement>
@@ -467,7 +467,7 @@ myTests().main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_12">
+        <exercise label="ex_8_12">
           <statement>
             <p>Here is another interesting L-System called a Hilbert curve.  Use 90 degrees:</p>
             <pre>L
@@ -543,7 +543,7 @@ main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_13">
+        <exercise label="ex_8_13">
           <statement>
             <p>Here is a dragon curve.  Use 90 degrees.:</p>
             <pre>FX
@@ -558,7 +558,7 @@ Y -&gt; -FX-Y</pre>
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_14">
+        <exercise label="ex_8_14">
           <statement>
             <p>Here is something called an arrowhead curve.  Use 60 degrees.:</p>
             <pre>YF
@@ -631,7 +631,7 @@ main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_15">
+        <exercise label="ex_8_15">
           <statement>
             <p>Try the Peano-Gosper curve.  Use 60 degrees.:</p>
             <pre>FX
@@ -646,7 +646,7 @@ Y -&gt; -FX+YFYF++YF+FX--FX-Y</pre>
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_16">
+        <exercise label="ex_8_16">
           <statement>
             <blockquote>
               <p>The Sierpinski Triangle.  Use 60 degrees.:</p>
@@ -727,7 +727,7 @@ main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_17">
+        <exercise label="ex_8_17">
           <statement>
             <p>Write a function that implements a substitution cipher.  In a substitution
                     cipher one letter is substituted for another to garble the message.  For
@@ -744,7 +744,7 @@ main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_18">
+        <exercise label="ex_8_18">
           <statement>
             <p>Write a function that decrypts the message from the previous exercise.  It
                             should also take two parameters.  The encrypted message,
@@ -795,7 +795,7 @@ print(decrypted)
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_19">
+        <exercise label="ex_8_19">
           <statement>
             <p>Write a function called  <c>remove_dups</c> that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
                     there will never be a duplicate letter added to the new string.</p>
@@ -826,7 +826,7 @@ myTests().main()
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_20">
+        <exercise label="ex_8_20">
           <statement>
             <p>Write a function called <c>rot13</c> that uses the Caesar cipher to encrypt a message.
                             The Caesar cipher works like a substitution cipher but each character is replaced
@@ -872,7 +872,7 @@ print(rot13(rot13('since rot thirteen is symmetric you should see this message')
         </exercise>
       </li>
       <li>
-        <exercise xml:id="ex_8_22">
+        <exercise label="ex_8_22">
           <statement>
             <p>Modify this code so it prints each subtotal, the total cost, and average price
                     to exactly two decimal places.</p>

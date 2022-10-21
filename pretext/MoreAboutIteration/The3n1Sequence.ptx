@@ -76,7 +76,7 @@ seq3np1(3)
   <p xml:id="more-about-iteration_index-0">
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question7_4_1">
+  <exercise label="test_question7_4_1">
     <statement>
       <p>Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?</p>
     </statement>

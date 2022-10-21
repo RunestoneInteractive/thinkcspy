@@ -66,9 +66,9 @@ Here's an example of how it works:
                     except Exception as e:
                         self.assertEqual(item + " failed", item + " passed", item + " failed: " + str(e))
 
-    pyTests().main() 
+    pyTests().main()
 
-    
+
 .. test:
 
     success = True
@@ -82,15 +82,15 @@ Here's an example of how it works:
 
     if success:
         print("All tests passed!")
-        
+
 This code example defines two functions: the function to be tested, ``round6``, and a function named ``test_round6``
 that contains unit test code. When using the pytest approach, you write your unit test as a function whose name must
 start with the prefix ``test_``. Inside the function, you write normal assert statements to test the desired function.
 Notice that you do not write a line to *call* the unit test function. Instead, when you launch pytest to run the unit
-tests, pytest scans your script and executes only the functions with the prefix ``test_``. 
+tests, pytest scans your script and executes only the functions with the prefix ``test_``.
 
 This ActiveCode environment simulates pytest by scanning for and executing functions with a ``test_`` prefix when you
-click **Run**. Go ahead and try it - rename the test_round6 function to ``test_itworks`` and try running the test again. 
+click **Run**. Go ahead and try it - rename the test_round6 function to ``test_itworks`` and try running the test again.
 
 Organizing pytest Functions
 ---------------------------
@@ -121,11 +121,11 @@ Using pytest
 ------------
 
 To use pytest, you must first install it using the **pip** command. Open your computer's command line window
-(not the Python interpreter) and enter the following command to install: 
+(not the Python interpreter) and enter the following command to install:
 
 * Windows::
 
-    pip install pytest 
+    pip install pytest
 
 * Mac/Linux::
 
@@ -151,7 +151,7 @@ When you run the pytest command and an assertion fails, you see a report like th
     >       assert round6(8.5) == 8
     E       assert 9 == 8
     E        +  where 9 = round6(8.5)
-                                                                            
+
     myround.py:8: AssertionError
 
 Let's take a closer look at this report to understand what it's telling you.
@@ -168,7 +168,7 @@ Let's take a closer look at this report to understand what it's telling you.
        E        +  where 9 = round6(8.5)
 
    This indicates that the call to ``round6(8.5)`` returned the value 9, instead of the value 8.
-   The value ``9`` is the actual result of the function. Knowing the value actually produced by 
+   The value ``9`` is the actual result of the function. Knowing the value actually produced by
    the function can help you to troubleshoot the bug and correct the problem.
 
 Integrated Unit Testing with pytest
@@ -176,7 +176,7 @@ Integrated Unit Testing with pytest
 
 When you use the pytest framework, you can include pytest test functions in your main program, along with the rest of
 your program code. This allows you to keep your tests together with the functions that they test, and you can run either
-your program (using the python command) or the unit tests (using the pytest command). 
+your program (using the python command) or the unit tests (using the pytest command).
 
 Take a look at this example that shows a function (``round6``, containing a bug), together with a
 unit test function (``test_round6``), and a main program that uses ``round6``:
@@ -234,7 +234,7 @@ sense, just remember: in order for pytest to work correctly, any code that is pa
                     """
             ~~~~
             # Write a pytest unit test function named ``test_grade``
-            
+
 
             ====
             from unittest.gui import TestCaseGui
@@ -247,7 +247,7 @@ sense, just remember: in order for pytest to work correctly, any code that is pa
             def grade(score):
                 global illegal, testA, testB, testF
 
-                if score > 100 or score &lt; 0:
+                if score > 100 or score < 0:
                     illegal = True
                     return ''
                 elif score >= 90:
@@ -276,13 +276,13 @@ sense, just remember: in order for pytest to work correctly, any code that is pa
 
         The following is a suggested pytest unit test.
 
-        .. sourcecode:: 
-            
+        .. sourcecode::
+
             def test_grade():
                 assert grade(92) == 'A'
                 assert grade(85) == 'B'
                 assert grade(69) == 'F'
 
-                
+
 
 

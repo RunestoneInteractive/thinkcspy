@@ -163,7 +163,7 @@ print("All tests passed!")</pre>
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise xml:id="mc_testfunc_1">
+    <exercise label="mc_testfunc_1">
       <statement>
         <p>Rewrite the following 3 lines of code with a single assert:</p>
         <pre>result = engage_thruster(22)
@@ -205,7 +205,7 @@ if result != 'OK':
         </choice>
       </choices>
     </exercise>
-    <exercise xml:id="mc_testfunc_2">
+    <exercise label="mc_testfunc_2">
       <statement>
         <p>Consider the following function which is supposed to return the first character of its argument:</p>
         <pre>def get_first(msg):

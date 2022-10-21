@@ -44,7 +44,7 @@ print(type(str(123.45)))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_2_1">
+  <exercise label="test_question2_2_1">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">

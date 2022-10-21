@@ -39,7 +39,7 @@ print(lastch)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_4_1">
+  <exercise label="test_question8_4_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -68,7 +68,7 @@ print(len(s))
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_4_2">
+  <exercise label="test_question8_4_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -113,7 +113,7 @@ print(s[len(s)-5])
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_4_3">
+  <exercise label="test_question8_4_3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -25,10 +25,10 @@ pi = 3.14159
 17 = n
 </input>
   </program>
-  <tip>
+  <note>
     <p>When reading or writing code, say to yourself <q>n is assigned 17</q> or <q>n gets
                 the value 17</q> or <q>n is a reference to the object 17</q> or <q>n refers to the object 17</q>.  Don't say <q>n equals 17</q>.</p>
-  </tip>
+  </note>
   <p>A common way to represent variables on paper is to write the name with an arrow
             pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state
                 snapshot</term> because it shows what state each of the variables is in at a
@@ -88,7 +88,7 @@ print(type(pi))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_3_2">
+  <exercise label="test_question2_3_2">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">

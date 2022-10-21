@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="python-turtle_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ex_3_1">
+  <exercise label="ex_3_1">
     <statement>
       <p>Write a program that prints <c>We like Python's turtles!</c> 100 times.</p>
     </statement>
@@ -19,12 +19,12 @@ for i in range(100):
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="turtle_reflect">
+  <exercise label="turtle_reflect">
     <statement>
       <p>Turtle objects have methods and attributes. For example, a turtle has a position and when you move the turtle forward, the position changes.  Think about the other methods shown in the summary above.  Which attibutes, if any, does each method relate to?  Does the method change the attribute?</p>
     </statement>
   </exercise>
-  <exercise xml:id="ex_3_3">
+  <exercise label="ex_3_3">
     <statement>
       <dl>
         <li>
@@ -58,7 +58,7 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_3_4">
+  <exercise label="ex_3_4">
     <statement>
       <p>Assume you have a list of numbers <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c></p>
       <p>
@@ -78,7 +78,7 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_3_5">
+  <exercise label="ex_3_5">
     <statement>
       <p>Use <c>for</c> loops to make a turtle draw these regular polygons
                         (regular means all sides the same lengths, all angles the same):</p>
@@ -210,7 +210,7 @@ wn.exitonclick()
 </input></program>
                 </solution>
   </exercise>
-  <exercise xml:id="ex_3_6">
+  <exercise label="ex_3_6">
     <statement>
       <p>Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a
                 regular polygon.  The program should draw the polygon and then fill it in.</p>
@@ -221,7 +221,7 @@ wn.exitonclick()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_3_7">
+  <exercise label="ex_3_7">
     <statement>
       <p>A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is <c>160, -43, 270, -97, -43, 200, -940, 17, -86</c>. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.</p>
     </statement>
@@ -259,7 +259,7 @@ wn.exitonclick()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_3_8">
+  <exercise label="ex_3_8">
     <statement>
       <p>On a piece of scratch paper, trace the following program and show the drawing.  When you are done, press <c>run</c>
                 and check your answer.</p>
@@ -278,7 +278,7 @@ tess.forward(-100)
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_3_9">
+  <exercise label="ex_3_9">
     <statement>
       <p>Write a program to draw a shape like this:</p>
       <image source="PythonTurtle/Figures/star.png" width="50%"/>
@@ -302,7 +302,7 @@ for i in range(5):
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_3_10">
+  <exercise label="ex_3_10">
     <statement>
       <p>Write a program to draw a face of a clock that looks something like this:</p>
       <image source="PythonTurtle/Figures/tess_clock1.png" width="50%"/>
@@ -313,10 +313,10 @@ for i in range(5):
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_3_11">
+  <exercise label="ex_3_11">
     <statement>
       <p>Write a program to draw some kind of picture.  Be creative and experiment
-                        with the turtle methods provided in <xref ref="python-turtle_summaryof-turtle-methods"/>.</p>
+                        with the turtle methods provided in <xref ref="python-turtle_summary-of-turtle-methods"/>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_11_editor">
       <input>
@@ -340,7 +340,7 @@ for i in range(350):
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_3_12">
+  <exercise label="ex_3_12">
     <statement>
       <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
     </statement>
@@ -350,7 +350,7 @@ for i in range(350):
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_3_13">
+  <exercise label="ex_3_13">
     <statement>
       <p>A sprite is a simple spider shaped thing with n legs coming out from a center
                         point. The angle between each leg is 360 / n degrees.</p>

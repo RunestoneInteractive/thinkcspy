@@ -32,10 +32,17 @@ Building with PreTeXt
 
 1. Create a virtual environment
 2. pip install pretextbook
-3. To build run: pretext build --input pretext/thinkcspy.ptx --output output --format html --publication pretext/publication-rs-for-all.xml
+3. To build run: pretext build web
 4. pretext view html
 
 Note: The pretext sources are in the pretext folder, we will keep the _sources folder until we are 100% sure that the book has been converted correctly and as thoroughly as possible.
+
+Building for Production on a Runestone Server
+---------------------------------------------
+
+1. clone this repo to `httlacs` instead of `thinkcspy`
+2. Run `rsmanage addcourse` and add `httlacs` as course name and base course name
+3. Run `rsmanage build --ptx httlacs`
 
 
 Building with runestone

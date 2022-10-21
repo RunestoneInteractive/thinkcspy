@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="files_exercises">
   <title>Exercises</title>
-  <exercise xml:id="ex_6_1_files">
+  <exercise label="ex_6_1_files">
     <statement>
       <p>The following sample file called <c>studentdata.txt</c> contains one line for each student in an imaginary class.  The
                         student's name is the first thing on each line, followed by some exam scores.
@@ -31,7 +31,7 @@ f.close()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_10_2">
+  <exercise label="ex_10_2">
     <statement>
       <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the average grade
                 for each student, and print out the student's name along with their average grade.</p>
@@ -42,7 +42,7 @@ f.close()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_6_3_files">
+  <exercise label="ex_6_3_files">
     <statement>
       <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the minimum and
                         maximum score for each student.  Print out their name as well.</p>
@@ -69,7 +69,7 @@ f.close()
       </program>
     </solution>
   </exercise>
-  <exercise xml:id="ex_10_4">
+  <exercise label="ex_10_4">
     <statement>
       <p>Here is a file called <c>labdata.txt</c> that contains some sample data from a lab experiment.</p>
       <DataFileNode line="130" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'labdata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '44 71\n79 37\n78 24\n41 76\n19 12\n19 32\n28 36\n22 58\n89 92\n91 6\n53 7\n27 80\n14 34\n8 81\n80 19\n46 72\n83 96\n88 18\n96 48\n77 67\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.12'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
@@ -98,7 +98,7 @@ f.close()
         </input>
     </program>
   </exercise>
-  <exercise xml:id="ex_10_5">
+  <exercise label="ex_10_5">
     <statement>
       <p>At the bottom of this page is a very long file called <c>mystery.txt</c> The lines of this
                         file contain either the word UP or DOWN or a pair of numbers.  UP and DOWN are instructions

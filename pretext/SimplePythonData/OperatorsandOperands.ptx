@@ -88,7 +88,7 @@ print(remainder)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_6_1">
+  <exercise label="test_question2_6_1">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -132,7 +132,7 @@ print(18 / 4)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question2_6_2">
+  <exercise label="test_question2_6_2">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -176,7 +176,7 @@ print(18 // 4)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question2_6_3">
+  <exercise label="test_question2_6_3">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">

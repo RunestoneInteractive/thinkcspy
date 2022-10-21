@@ -45,7 +45,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_6_1">
+  <exercise label="test_question6_6_1">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">

@@ -54,12 +54,12 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
   </note>
   <!--The immediate mode command prompt of Python is great for exploring and-->
   <!--experimenting with expressions like this.-->
-  <p>See <xref ref="appendices_precedence-table"/> for <em>all</em> the operators introduced in this book.
+  <p>See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.
             You will also see many upcoming non-mathematical Python operators.</p>
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question2_8_1">
+  <exercise label="test_question2_8_1">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
@@ -103,7 +103,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question2_8_2">
+  <exercise label="test_question2_8_2">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">

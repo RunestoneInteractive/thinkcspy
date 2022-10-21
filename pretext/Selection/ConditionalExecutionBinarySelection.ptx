@@ -61,7 +61,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question6_4_1">
+  <exercise label="test_question6_4_1">
     <statement>
       <p>How many statements can appear in each block (the if and the else) in a conditional statement?</p>
     </statement>
@@ -100,7 +100,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_4_2">
+  <exercise label="test_question6_4_2">
     <statement>
       <p>What does the following code print (choose from output a, b, c or nothing)?</p>
       <program language="python">
@@ -147,7 +147,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question6_4_3">
+  <exercise label="test_question6_4_3">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">

@@ -56,7 +56,7 @@
             and location using a layout manager. The image below shows examples of the
             four types of widget <q>containers</q>. The <q>containers</q> in this example used a
             <c>grid</c> layout manager on a 2x2 grid.</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="id_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Examples of grouping widgets</caption>
     <image source="GUIandEventDrivenProgramming/Figures/Grouping_examples.png" width="50%"/>
   </figure>

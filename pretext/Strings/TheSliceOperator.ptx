@@ -35,7 +35,7 @@ print(fruit[3:99])
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question8_5_1">
+  <exercise label="test_question8_5_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -80,7 +80,7 @@ print(s[3:8])
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question8_5_2">
+  <exercise label="test_question8_5_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

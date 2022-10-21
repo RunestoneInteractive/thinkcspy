@@ -28,7 +28,7 @@ print([1, 2, ["hello", "goodbye"]] * 2)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="test_question9_5_1">
+  <exercise label="test_question9_5_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -74,7 +74,7 @@ print(alist + blist)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="test_question9_5_2">
+  <exercise label="test_question9_5_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

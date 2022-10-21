@@ -80,7 +80,7 @@ print(result)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise xml:id="question4_4_1">
+  <exercise label="question4_4_1">
     <statement>
       <p>Which of the following is the correct way to reference the value pi within the math module.   Assume you have already imported the math module.</p>
     </statement>
@@ -119,7 +119,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question4_4_2">
+  <exercise label="question4_4_2">
     <statement>
       <p>Which module would you most likely use if you were writing a function to simulate rolling dice?</p>
     </statement>
@@ -158,7 +158,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question4_4_3">
+  <exercise label="question4_4_3">
     <statement>
       <p>The correct code to generate a random number between 1 and 100 (inclusive) is:</p>
     </statement>
@@ -197,7 +197,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise xml:id="question4_4_4">
+  <exercise label="question4_4_4">
     <statement>
       <p>One reason that lotteries don't use computers to generate random numbers is:</p>
     </statement>
