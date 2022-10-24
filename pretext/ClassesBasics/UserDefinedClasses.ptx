@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="classes-basics_user-defined-classes">
   <title>User Defined Classes</title>
-  <p>We've already seen classes like <c>str</c>, <c>int</c>, <c>float</c> and <c>Turtle</c>.  These were defined by Python and
+  <p>We've already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and
             made available for us to use.  However, in many cases when we are solving problems we need to create data objects
             that are related to the problem we are trying to solve.  We need to create our own classes.</p>
   <p>As an example, consider the concept of a mathematical point. In two dimensions, a point is two
             numbers (coordinates) that are treated collectively as a single object.
             Points are often written in parentheses with a comma
             separating the coordinates. For example, <c>(0, 0)</c> represents the origin, and
-            <c>(x, y)</c> represents the point <c>x</c> units to the right and <c>y</c> units up
+    <c>(x, y)</c> represents the point <c>x</c> units to the right and <c>y</c> units up
             from the origin.  This <c>(x,y)</c> is the state of the point.</p>
   <p>Thinking about our diagram above, we could draw a <c>point</c> object as shown here.</p>
   <image source="ClassesBasics/Figures/objectpic2.png" width="50%" alt="A point has an x and a y"/>
@@ -31,7 +31,7 @@ class Point:
         """ Create a new point at the origin """
         self.x = 0
         self.y = 0
-</input>
+    </input>
   </program>
   <p>Class definitions can appear anywhere in a program, but they are usually near
             the beginning (after the <c>import</c> statements). The syntax rules for a class
@@ -63,7 +63,7 @@ p = Point()         # Instantiate an object of type Point
 q = Point()         # and make a second point
 
 print("Nothing seems to have happened with the points")
-        </input>
+    </input>
   </program>
   <p>During the initialization of the objects, we created two
             attributes called <title_reference>x</title_reference> and <title_reference>y</title_reference> for each, and gave them both the value 0.</p>
@@ -77,7 +77,22 @@ print("Nothing seems to have happened with the points")
             having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don't see any other result.</p>
   <image source="ClassesBasics/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
   <p>You can see this for yourself, via codelens:</p>
-  <exercise runestone="chp13_points"/>
+  <program xml:id="chp13_points" interactive="codelens" language="python">
+    <input>
+class Point:
+    """ Point class for representing and manipulating x,y coordinates. """
+
+    def __init__(self):
+        """ Create a new point at the origin """
+        self.x = 0
+        self.y = 0
+
+p = Point()         # Instantiate an object of type Point
+q = Point()         # and make a second point
+
+print("Nothing seems to have happened with the points")
+    </input>
+  </program>
   <p>The following program adds a few print statements. You can see that the output suggests that each one is a <c>Point object</c>.
             However, notice that the <c>is</c> operator returns <c>False</c> meaning that they are different objects (we will have more to say about this in a later chapter).</p>
   <program xml:id="chp13_classes2" interactive="activecode" language="python">
@@ -97,7 +112,7 @@ print(p)
 print(q)
 
 print(p is q)
-        </input>
+    </input>
   </program>
   <p>This should look familiar &#x2014; we've used classes before to create
             more than one object:</p>
@@ -107,7 +122,7 @@ from turtle import Turtle
 
 tess = Turtle()     # Instantiate objects of type Turtle
 alex = Turtle()
-</input>
+    </input>
   </program>
   <p>The variables <c>p</c> and <c>q</c> are assigned references to two new <c>Point</c> objects.
             A function like <c>Turtle</c> or <c>Point</c> that creates a new object instance
@@ -121,7 +136,8 @@ alex = Turtle()
             production line, its initialization method is executed to
             get the object properly set up with its factory default settings.</p>
   <p>The combined process of <q>make me a new object</q> and <q>get its settings initialized
-            to the factory default settings</q> is called <term>instantiation</term>.</p>
+            to the factory default settings</q> is called <term>instantiation</term>.
+  </p>
   <p>
     <term>Check Your Understanding</term>
   </p>
@@ -142,7 +158,7 @@ x = BMW is Tesla
 y = type(BMW)==type(Tesla)
 
 print(x, y)
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -152,7 +168,7 @@ print(x, y)
         </statement>
         <feedback>
                     Look closely at how the objects are instantiated.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -160,7 +176,7 @@ print(x, y)
         </statement>
         <feedback>
                     Look closely at how the objects are instantiated and the types of the objects.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -168,7 +184,7 @@ print(x, y)
         </statement>
         <feedback>
                     Correct, the BMW object is not the Tesla object but they are of the same type.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -176,7 +192,7 @@ print(x, y)
         </statement>
         <feedback>
                     Look closer at types of the objects.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

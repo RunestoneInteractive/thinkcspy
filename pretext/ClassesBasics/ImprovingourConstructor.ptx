@@ -5,7 +5,19 @@
             provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we've seen before) to provide the specific information.</p>
   <p>We can make our class constructor more general by putting extra parameters into
             the <c>__init__</c> method, as shown in this codelens example.</p>
-  <exercise runestone="chp13_improveconstructor"/>
+  <program xml:id="chp13_improveconstructor" interactive="codelens" language="python">
+    <input>
+          class Point:
+              """ Point class for representing and manipulating x,y coordinates. """
+          
+              def __init__(self, initX, initY):
+                  """ Create a new point at the given coordinates. """
+                  self.x = initX
+                  self.y = initY
+          
+          p = Point(7, 6)
+    </input>
+  </program>
   <p>Now when we create new points, we supply the x and y coordinates as parameters.  When the point is created, the values of <c>initX</c> and <c>initY</c> are assigned to the state of the object.</p>
   <image source="ClassesBasics/Figures/objectpic5.png" width="50%" alt="Simple object has state and methods"/>
 </section>

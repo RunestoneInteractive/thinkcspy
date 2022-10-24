@@ -11,7 +11,7 @@
     <input>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
-        </input>
+    </input>
   </program>
   <p>Take a look at the activecode interpreter in action.</p>
   <p>What you see depends on whether you are <em>logged in</em> or not!
@@ -32,7 +32,7 @@ print(2 + 3)
             Press <em>Run</em> to see the new results.</p>
   <p>As the name suggests, <em>Save &amp; Run</em> also <em>saves</em> your latest version of the code,
             and you can recover it even in later sessions when <em>logged in</em>. If <em>not</em> logged in,
-            <em>Run</em> saves versions <em>only until your browser leaves the current web page</em>,
+    <em>Run</em> saves versions <em>only until your browser leaves the current web page</em>,
             and then you lose all modifications.</p>
   <p>After you have run your code the first time,
             a <em>Load History</em> button that was beside the <em>Run</em> button turns into a slider.
@@ -45,14 +45,21 @@ print(2 + 3)
             of a unique visualization tool.  This tool, known as <term>codelens</term>,
             allows you to control the step by step execution of a program.
             It also lets you see the values of
-            all variables (introduced in <xref ref="simple-python-data_variables"/>) as they are created and modified.
+            all variables (introduced in <xref ref="simple-python-data_variables"/>
+) as they are created and modified.
             The following example shows codelens in action on the same program as we saw above.
             Note that in activecode, the source code executes
             from beginning to end and you can see the final result.
             In codelens you can see and control the step by step progress.
             Note that the red arrow always points to the next line of code that is going to be executed.
             The light green arrow points to the line that was just executed.</p>
-  <exercise runestone="firstexample"/>
+  <program xml:id="firstexample" interactive="codelens" language="python">
+    <input>
+          print("My first program adds two numbers, 2 and 3:")
+          print(2 + 3)
+    </input>
+  </program>
+
   <p>The examples in this book use a mixture of the standard Python  interpreter, source code, activecode, and codelens.  You
             will be able to tell which is which by looking for either the Python prompt in the case of a shell mode program, the <em>run</em> button for the activecode, or the <em>forward/backward</em> buttons for codelens.</p>
   <p>
@@ -69,7 +76,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     You can (and should) save the contents of the activecode window.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -77,7 +84,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     You are not limited to running the examples that are already there.  Try   adding to them and creating your own.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -85,7 +92,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -93,7 +100,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -108,7 +115,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -116,7 +123,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     By using codelens, you can control the execution of a program step by step.  You can even go backwards!
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -124,7 +131,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     Codelens works only for the pre-programmed examples.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -132,7 +139,7 @@ print(2 + 3)
         </statement>
         <feedback>
                     By stepping forward through the Python code in codelens, you are executing the Python program.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

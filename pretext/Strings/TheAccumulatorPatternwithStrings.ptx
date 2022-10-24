@@ -16,7 +16,7 @@ def removeVowels(s):
 
 print(removeVowels("compsci"))
 print(removeVowels("aAbEefIijOopUus"))
-        </input>
+    </input>
   </program>
   <p>Line 5 uses the <c>not in</c> operator to check whether the current character is not in the string <c>vowels</c>. The alternative to using this operator would be to write a very large <c>if</c> statement that checks each of the individual vowel characters.  Note we would need to use logical <c>and</c> to be sure that the character is not any of the vowels.</p>
   <program language="python">
@@ -27,7 +27,7 @@ if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
    eachChar != 'U':
 
      sWithoutVowels = sWithoutVowels + eachChar
-</input>
+    </input>
   </program>
   <p>Look carefully at line 6 in the above program (<c>sWithoutVowels = sWithoutVowels + eachChar</c>).  We will do this for every character that is not a vowel.  This should look
             very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to <q>accumulate</q> the final result.
@@ -36,7 +36,19 @@ if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
   <p>Take a close look also at the initialization of <c>sWithoutVowels</c>.  We start with an empty string and then begin adding
             new characters to the end.</p>
   <p>Step through the function using codelens to see the accumulator variable grow.</p>
-  <exercise runestone="ch08_acc2"/>
+  <program xml:id="ch08_acc2" interactive="codelens" language="python">
+    <input>
+def removeVowels(s):
+    vowels = "aeiouAEIOU"
+    sWithoutVowels = ""
+    for eachChar in s:
+        if eachChar not in vowels:
+            sWithoutVowels = sWithoutVowels + eachChar
+    return sWithoutVowels
+
+print(removeVowels("compsci"))
+    </input>
+  </program>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -50,7 +62,7 @@ r = ""
 for item in s:
     r = item.upper() + r
 print(r)
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -60,7 +72,7 @@ print(r)
         </statement>
         <feedback>
                     Each item is converted to upper case before concatenation.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -68,7 +80,7 @@ print(r)
         </statement>
         <feedback>
                     Each character is converted to upper case but the order is wrong.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -76,7 +88,7 @@ print(r)
         </statement>
         <feedback>
                     Yes, the order is reversed due to the order of the concatenation.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -86,7 +98,7 @@ print(r)
       <input>
 
 
-        </input>
+      </input>
     </program>
   </note>
 </section>

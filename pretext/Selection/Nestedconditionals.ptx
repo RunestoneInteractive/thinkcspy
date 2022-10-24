@@ -12,7 +12,7 @@ else:
         print("x is greater than y")
     else:
         print("x and y must be equal")
-</input>
+    </input>
   </program>
   <p>The outer conditional contains two branches.
             The second branch (the else from the outer) contains another <c>if</c> statement, which
@@ -33,7 +33,7 @@ else:
         print("x is greater than y")
     else:
         print("x and y must be equal")
-        </input>
+    </input>
   </program>
   <note>
     <p>In some programming languages, matching the if and the else is a problem.  However, in Python this is not the case.
@@ -41,7 +41,20 @@ else:
                 belongs to which if.</p>
   </note>
   <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
-  <exercise runestone="sel1"/>
+  <program xml:id="sel1" interactive="codelens" language="python">
+    <input>
+x = 10
+y = 10
+
+if x &lt; y:
+    print("x is less than y")
+else:
+    if x > y:
+        print("x is greater than y")
+    else:
+        print("x and y must be equal")
+    </input>
+  </program>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -58,7 +71,7 @@ else:
         print(x, " is a positive number")
     else:
         print(x," is 0")
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -68,7 +81,7 @@ else:
         </statement>
         <feedback>
                     This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -76,7 +89,7 @@ else:
         </statement>
         <feedback>
                     This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

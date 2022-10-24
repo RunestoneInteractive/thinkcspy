@@ -5,7 +5,8 @@
             about to be executed.  We call this the <term>control flow</term>, or the <term>flow of
                 execution</term> of the program.  When humans execute programs, they often use their
             finger to point to each statement in turn.  So you could think of control flow
-            as <q>Python's moving finger</q>.</p>
+            as <q>Python's moving finger</q>.
+  </p>
   <p>Control flow until now has been strictly top to bottom, one statement at a
             time.  We call this type of control <term>sequential</term>.  In Python flow is sequential as long as
             successive statements are indented the <em>same</em> amount.  The <c>for</c> statement
@@ -16,5 +17,10 @@
   <p>A codelens demonstration is a good way to help you visualize exactly how the flow of control
             works with the for loop.  Try stepping forward and backward through the program by pressing
             the buttons.  You can see the value of <c>name</c> change as the loop iterates through the list of friends.</p>
-  <exercise runestone="vtest"/>
+  <program xml:id="vtest" interactive="codelens" language="python">
+    <input>
+          for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+              print("Hi ", name, "  Please come to my party on Saturday!")
+    </input>
+  </program>
 </section>

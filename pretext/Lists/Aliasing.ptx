@@ -8,14 +8,30 @@
 a = [81, 82, 83]
 b = a
 print(a is b)
-        </input>
+    </input>
   </program>
   <p>In this case, the reference diagram looks like this:</p>
   <image source="Lists/Figures/refdiag4.png" width="50%" alt="State snapshot for multiple references (aliases) to a list"/>
   <p>Because the same list has two different names, <c>a</c> and <c>b</c>, we say that it
             is <term>aliased</term>. Changes made with one alias affect the other.  In the codelens example below, you can see that <c>a</c> and <c>b</c> refer
-            to the same list after executing the assignment statement <c>b = a</c>.</p>
-  <exercise runestone="chp09_is3"/>
+            to the same list after executing the assignment statement <c>b = a</c>.
+  </p>
+  <program xml:id="chp09_is3" interactive="codelens" language="python">
+    <input>
+          a = [81, 82, 83]
+          b = [81, 82, 83]
+          
+          print(a == b)
+          print(a is b)
+          
+          b = a
+          print(a == b)
+          print(a is b)
+          
+          b[0] = 5
+          print(a)
+    </input>
+  </program>
   <p>Although this behavior can be useful, it is sometimes unexpected or
             undesirable. In general, it is safer to avoid aliasing when you are working
             with mutable objects. Of course, for immutable objects, there's no problem.
@@ -33,7 +49,7 @@ alist = [4, 2, 8, 6, 5]
 blist = alist
 blist[3] = 999
 print(alist)
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -43,7 +59,7 @@ print(alist)
         </statement>
         <feedback>
                     blist is not a copy of alist, it is a reference to the list alist refers to.
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -51,7 +67,7 @@ print(alist)
         </statement>
         <feedback>
                     Yes, since alist and blist both reference the same list, changes to one also change the other.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -61,10 +77,8 @@ print(alist)
         <p>Consider the following lists:</p>
         <program language="python">
           <input>
-list1=[1,100,1000]
-list2=[1,100,1000]
-list3=list1
-</input>
+list1=[1,100,1000] list2=[1,100,1000] list3=list1
+          </input>
         </program>
         <p>Which statements will output <term>True</term>? (Select <term>all</term> that apply).</p>
       </blockquote>
@@ -76,7 +90,7 @@ list3=list1
         </statement>
         <feedback>
                     list1 and list2 have the same value
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -84,7 +98,7 @@ list3=list1
         </statement>
         <feedback>
                     list1 and list2 have the same value but do not refer to the same object
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -92,7 +106,7 @@ list3=list1
         </statement>
         <feedback>
                     list3 is assigned to list1, so they refer to the same object
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -100,7 +114,7 @@ list3=list1
         </statement>
         <feedback>
                     list2 and list3 do not refer to the same object.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -108,7 +122,7 @@ list3=list1
         </statement>
         <feedback>
                     list2 and list3 have the same value
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

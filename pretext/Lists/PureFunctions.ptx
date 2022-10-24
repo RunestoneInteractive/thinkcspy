@@ -5,7 +5,8 @@
             calling program only through parameters (which it does not modify) and a return
             value. Here is the <c>doubleStuff</c> function from the previous section written as a pure function.
             To use the pure function version of <c>double_stuff</c> to modify <c>things</c>,
-            you would assign the return value back to <c>things</c>.</p>
+            you would assign the return value back to <c>things</c>.
+  </p>
   <program xml:id="ch09_mod2" interactive="activecode" language="python">
     <input>
 def doubleStuff(a_list):
@@ -20,8 +21,21 @@ things = [2, 5, 9]
 print(things)
 things = doubleStuff(things)
 print(things)
-        </input>
+    </input>
   </program>
   <p>Once again, codelens helps us to see the actual references and objects as they are passed and returned.</p>
-  <exercise runestone="ch09_mod3"/>
+  <program xml:id="ch09_mod3" interactive="codelens" language="python">
+    <input>
+def doubleStuff(a_list):
+    """ Return a new list in which contains doubles of the elements in a_list. """
+    new_list = []
+    for value in a_list:
+        new_elem = 2 * value
+        new_list.append(new_elem)
+    return new_list
+
+things = [2, 5, 9]
+things = doubleStuff(things)
+    </input>
+  </program>
 </section>

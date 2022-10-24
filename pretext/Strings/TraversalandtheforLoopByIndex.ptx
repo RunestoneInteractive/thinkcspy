@@ -5,7 +5,14 @@
             These positions can be used together with the indexing operator to access the individual
             characters in the string.</p>
   <p>Consider the following codelens example.</p>
-  <exercise runestone="ch08_7"/>
+  <program xml:id="ch08_7" interactive="codelens" language="python">
+    <input>
+fruit = "apple"
+for idx in range(5):
+    currentChar = fruit[idx]
+    print(currentChar)
+    </input>
+  </program>
   <p>The index positions in <q>apple</q> are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by <c>range(5)</c>.  The first time through the for loop, <c>idx</c> will be 0 and the <q>a</q> will be printed.  Then, <c>idx</c> will be reassigned to 1 and <q>p</q> will be displayed.  This will repeat for all the range values up to but not including 5.  Since <q>e</q> has index 4, this will be exactly right to show all
             of the characters.</p>
   <p>In order to make the iteration more general, we can use the <c>len</c> function to provide the bound for <c>range</c>.  This is a very common pattern for traversing any sequence by position.        Make sure you understand why the range function behaves
@@ -15,12 +22,18 @@
 fruit = "apple"
 for idx in range(len(fruit)):
     print(fruit[idx])
-        </input>
+    </input>
   </program>
   <p>You may also note that iteration by position allows the programmer to control the direction of the
             traversal by changing the sequence of index values.  Recall that we can create ranges that count down as
             well as up so the following code will print the characters from right to left.</p>
-  <exercise runestone="ch08_8"/>
+  <program xml:id="ch08_8" interactive="codelens" language="python">
+    <input>
+          fruit = "apple"
+          for idx in range(len(fruit)-1, -1, -1):
+              print(fruit[idx])
+    </input>
+  </program>
   <p>Trace the values of <c>idx</c> and satisfy yourself that they are correct.  In particular, note the start and end of the range.</p>
   <p>
     <term>Check your understanding</term>
@@ -34,7 +47,7 @@ s = "python rocks"
 for idx in range(len(s)):
     if idx % 2 == 0:
         print(s[idx])
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -44,7 +57,7 @@ for idx in range(len(s)):
         </statement>
         <feedback>
                     The for loop visits each index but the selection only prints some of them.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -52,7 +65,7 @@ for idx in range(len(s)):
         </statement>
         <feedback>
                     o is at positions 4 and 8
-                </feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -60,7 +73,7 @@ for idx in range(len(s)):
         </statement>
         <feedback>
                     Yes, it will print all the characters in even index positions and the o character appears both times in an even location.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -68,7 +81,7 @@ for idx in range(len(s)):
         </statement>
         <feedback>
                     The for statement can have any statements inside, including if as well as for.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

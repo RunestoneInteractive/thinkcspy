@@ -5,12 +5,32 @@
             and called from other functions we write.  This is one of the most important
             ways that computer scientists take a large problem and break it down into a
             group of smaller problems. This process of breaking a problem into smaller
-            subproblems is called <term>functional decomposition</term>.</p>
+            subproblems is called <term>functional decomposition</term>.
+  </p>
   <p>Here's a simple example of functional decomposition using two functions. The
             first function called <c>square</c> simply computes the square of a given number.
             The second function called <c>sum_of_squares</c> makes use of square to compute
             the sum of three numbers that have been squared.</p>
-  <exercise runestone="sumofsquares"/>
+  <program xml:id="sumofsquares" interactive="codelens" language="python">
+    <input>
+          def square(x):
+              y = x * x
+              return y
+          
+          def sum_of_squares(x, y, z):
+              a = square(x)
+              b = square(y)
+              c = square(z)
+          
+              return a + b + c
+          
+          a = -5
+          b = 2
+          c = 10
+          result = sum_of_squares(a, b, c)
+          print(result)
+    </input>
+  </program>
   <p>Even though this is a pretty simple idea, in practice this example
             illustrates many very important Python concepts, including local and global
             variables along with parameter passing.  Note that when you step through this
@@ -23,7 +43,7 @@
             they are in fact, very different.</p>
   <p>Now we will look at another example that uses two functions.  This example illustrates an
             important computer science problem solving technique called
-            <term>generalization</term>.  Assume we want to write a
+    <term>generalization</term>.  Assume we want to write a
             function to draw a square.  The generalization step is to realize that a
             square is just a special kind of rectangle.</p>
   <p>To draw a rectangle we need to be able to call a function with different
@@ -41,14 +61,15 @@ def drawRectangle(t, w, h):
         t.left(90)
         t.forward(h)
         t.left(90)
-</input>
+    </input>
   </program>
   <p>The parameter names are chosen as single letters for conciseness.
             In real programs, we will insist on better variable names than this.
             The point is that the program doesn't <q>understand</q> that you're drawing a rectangle or that the
             parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful
             for humans.  They are not concepts that the program or the computer understands.</p>
-  <p><em>Thinking like a computer scientist</em> involves looking for patterns and
+  <p>
+    <em>Thinking like a computer scientist</em> involves looking for patterns and
             relationships.  In the code above, we've done that to some extent.  We did
             not just draw four sides. Instead, we spotted that we could draw the
             rectangle as two halves and used a loop to repeat that pattern twice.</p>
@@ -60,7 +81,7 @@ def drawRectangle(t, w, h):
     <input>
 def drawSquare(tx, sz):        # a new version of drawSquare
     drawRectangle(tx, sz, sz)
-</input>
+    </input>
   </program>
   <p>Here is the entire example with the necessary set up code.</p>
   <program xml:id="ch04_3" interactive="activecode" language="python">
@@ -86,7 +107,7 @@ tess = turtle.Turtle()           # create tess
 drawSquare(tess, 50)
 
 wn.exitonclick()
-        </input>
+    </input>
   </program>
   <p>There are some points worth noting here:</p>
   <p>
@@ -110,7 +131,7 @@ wn.exitonclick()
         <p>When the call is made to <c>drawRectangle</c>, the values in variables <c>tx</c> and <c>sz</c>
                     are fetched first, then the call happens.  So as we enter the top of
                     function <title_reference>drawRectangle</title_reference>, its variable <c>t</c> is assigned the tess object, and <c>w</c> and
-                    <c>h</c> in that function are both given the value 50.</p>
+          <c>h</c> in that function are both given the value 50.</p>
       </li>
     </ul>
   </p>
@@ -140,7 +161,8 @@ wn.exitonclick()
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/lab04_01.html" visual="../Labs/lab04_01.html">Drawing a Circle</url> In this guided lab exercise we will work
+          <p>
+            <url href="../Labs/lab04_01.html" visual="../Labs/lab04_01.html">Drawing a Circle</url> In this guided lab exercise we will work
                         through a simple problem solving exercise related to drawing a circle with the turtle.</p>
         </li>
       </ul>
