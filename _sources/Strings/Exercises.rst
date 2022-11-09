@@ -48,37 +48,37 @@ Exercises
 
 
 
-    
+
 .. actex:: ex_8_2
 
     In Robert McCloskey's
     book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
-    Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order. 
+    Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
 
     .. sourcecode:: python
-    
-        prefixes = "JKLMNOPQ" 
+
+        prefixes = "JKLMNOPQ"
         suffix = "ack"
 
         for p in prefixes:
             print(p + suffix)
-            
+
     Of course, that's not quite right because Ouack and Quack are misspelled.
-    Can you fix it? 
+    Can you fix it?
     ~~~~
 
-    prefixes = "JKLMNOPQ" 
+    prefixes = "JKLMNOPQ"
     suffix = "ack"
 
     for p in prefixes:
         print(p + suffix)
-    
+
     # Fix the loop to get the correct output.
 
     ====
 
     from unittest.gui import TestCaseGui
-    
+
     class myTests(TestCaseGui):
         def testOne(self):
 
@@ -120,8 +120,8 @@ Exercises
             def count(p):
                 # your code here
 
-            ====         
-        
+            ====
+
             from unittest.gui import TestCaseGui
 
             class myTests(TestCaseGui):
@@ -179,7 +179,7 @@ Exercises
 
 
 .. actex:: ex_8_4
-    
+
     Print out a neatly formatted multiplication table, up to 12 x 12.
     ~~~~
     # your code here
@@ -241,7 +241,7 @@ Exercises
     :practice: T
     :autograde: unittest
     :nocodelens:
-    
+
     Write a function that reverses its string argument.
     ~~~~
     def reverse(astring):
@@ -253,10 +253,10 @@ Exercises
 
     class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(reverse("happy"),"yppah","Tested reverse on input of 'happy'")
-        self.assertEqual(reverse("Python"),"nohtyP","Tested reverse on input of 'Python'")
-        self.assertEqual(reverse(""),"","Tested reverse on input of ''")
+        def testOne(self):
+            self.assertEqual(reverse("happy"),"yppah","Tested reverse on input of 'happy'")
+            self.assertEqual(reverse("Python"),"nohtyP","Tested reverse on input of 'Python'")
+            self.assertEqual(reverse(""),"","Tested reverse on input of ''")
 
 
 
@@ -269,7 +269,7 @@ Exercises
 
     .. tab:: Question
 
-        Write a function that mirrors its string argument, 
+        Write a function that mirrors its string argument,
         generating a string containing the original string and the string backwards.
 
         .. actex:: ex_8_6
@@ -344,10 +344,10 @@ Exercises
 
     class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(remove_letter("a","apple"),"pple","Tested remove_letter on inputs of 'a' and 'apple'")
-        self.assertEqual(remove_letter("a","banana"),"bnn","Tested remove_letter on inputs of 'a' and 'banana'")
-        self.assertEqual(remove_letter("z","banana"),"banana","Tested remove_letter on inputs of 'z' and 'banana'")
+        def testOne(self):
+            self.assertEqual(remove_letter("a","apple"),"pple","Tested remove_letter on inputs of 'a' and 'apple'")
+            self.assertEqual(remove_letter("a","banana"),"bnn","Tested remove_letter on inputs of 'a' and 'banana'")
+            self.assertEqual(remove_letter("z","banana"),"banana","Tested remove_letter on inputs of 'z' and 'banana'")
 
 
 
@@ -535,11 +535,11 @@ Exercises
 
     class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(remove_all("an","banana"),"ba","Tested remove_all on inputs of 'an' and 'banana'")
-        self.assertEqual(remove_all("cyc","bicycle"),"bile","Tested remove_all on inputs of 'cyc' and 'bicycle'")
-        self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
-        self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
+        def testOne(self):
+            self.assertEqual(remove_all("an","banana"),"ba","Tested remove_all on inputs of 'an' and 'banana'")
+            self.assertEqual(remove_all("cyc","bicycle"),"bile","Tested remove_all on inputs of 'cyc' and 'bicycle'")
+            self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
+            self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
 
 
 
@@ -911,12 +911,12 @@ Exercises
 
     class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(remove_dups("pooh"),"poh","Tested remove_dups on string 'pooh'")
-        self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
-        self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
-        self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
-        self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
+        def testOne(self):
+            self.assertEqual(remove_dups("pooh"),"poh","Tested remove_dups on string 'pooh'")
+            self.assertEqual(remove_dups("mississippi"),"misp","Tested remove_dups on string 'mississippi'")
+            self.assertEqual(remove_dups("potato"),"pota","Tested remove_dups on string 'potato'")
+            self.assertEqual(remove_dups("bookkeeper"),"bokepr","Tested remove_dups on string 'bookkeeper'")
+            self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
 
     myTests().main()
 
@@ -977,8 +977,8 @@ Exercises
 
 ..   actex:: ex_8_22
     :timelimit: 60
-    
-    Modify this code so it prints each subtotal, the total cost, and average price 
+
+    Modify this code so it prints each subtotal, the total cost, and average price
     to exactly two decimal places.
     ~~~~
     def checkout():
