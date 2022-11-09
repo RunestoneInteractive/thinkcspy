@@ -206,11 +206,11 @@ Exercises
 
             class myTests(TestCaseGui):
 
-            def testOne(self):
-                self.assertEqual(numDigits(2),1,"Tested numDigits on input of 2")
-                self.assertEqual(numDigits(55),2,"Tested numDigits on input of 55")
-                self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
-                self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
+                def testOne(self):
+                    self.assertEqual(numDigits(2),1,"Tested numDigits on input of 2")
+                    self.assertEqual(numDigits(55),2,"Tested numDigits on input of 55")
+                    self.assertEqual(numDigits(1352),4,"Tested numDigits on input of 1352")
+                    self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
 
             myTests().main()
 
