@@ -1,5 +1,59 @@
 <?xml version="1.0"?>
 <exercises xml:id="general-intro_exercises">
   <title>Exercises</title>
-  <p>There are not currently any exercises for this chapter.  It is included here as a subchapter for consistency with other chapters.</p>
+  <exercise>
+      <statement>
+        <p>
+            This exercise will let you practice displaying information.  Write a program that prints following:
+        </p>
+        <ul>
+            <li>Your name.</li>
+            <li>Your favorite color.</li>
+            <li>Your favorite word, in double quotes.</li>
+            <li>Your favorite poem, at least three lines long (If your favorite poem is longer than ten lines, give only the first three to ten lines.)</li>
+            <li>The author of the poem. The name should be indented four spaces and preceded by a hyphen and a space. If you don't know who wrote the poem, use “Anonymous” as the author.</li>
+        </ul>
+
+        <p>Use complete sentences and blank lines for readability.  To print a blank line, use:</p>
+        <program language="python">
+            <input>
+                print()
+            </input>
+        </program>
+        
+        <p>The parentheses are required, even though there is nothing between them. If you don't believe me, leave them out and see what the output looks like!</p>
+
+        <p>Here is what the output of a possible solution looks like:</p>
+
+        <console><output>
+My name is Juana Fulano.
+My favorite color is purple.
+My favorite word is "giraffe".
+
+My favorite poem:
+
+Greet the dawn,
+Rise with the sun.
+Rejoice in the sunset
+When day is done.
+    - Anonymous
+    </output></console>
+</statement>
+    <program interactive="activecode" language="python" xml:id="ch01_ex1_editor">
+      <input>
+
+      </input>
+    </program>
+    
+    <hint>
+    <p>You can use either single quotes or double quotes to enclose a string in Python.
+        That lets you do something like this:
+    </p>
+    <program language="python">
+        <input>
+            print('He said "Hello!" to me.')
+        </input>
+    </program>
+    </hint>
+</exercise>
 </exercises>
