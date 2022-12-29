@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="gu-iand-event-driven-programming_timer-events">
   <title>Timer Events</title>
+  <introduction>
   <p>GUI programs run an <q>event loop</q> that continuously receive events from the
             operating system and <q>dispatches</q> those events to appropriate callback
             functions. Nothing happens in a GUI program without an event. The application
@@ -22,6 +23,7 @@ my_button = tk.Button(application_window, text="Example")
 my_button.after(1000, a_callback_function)
 </input>
   </program>
+</introduction>
   <subsection xml:id="gu-iand-event-driven-programming_animations-and-repeated-tasks">
     <title>Animations and Repeated Tasks</title>
     <p>If you want a specific task to be repeated on a regular interval, then

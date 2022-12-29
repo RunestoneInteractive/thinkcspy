@@ -29,7 +29,7 @@
             going off to the left. If you think of this definition recursively it
             means that we will apply the recursive definition of a tree to both of
             the smaller left and right trees.</p>
-  <p>Let's translate this idea to some Python code. The <xref ref="intro-recursion_lst-fractree"/>
+  <p>Let's translate this idea to some Python code. <xref ref="intro-recursion_lst-fractree" text="title"/>
             below shows how we can use our turtle to generate a fractal tree. Let's look at
             the code a bit more closely. You will see that on lines 5 and 7 we are
             making a recursive call. On line 5 we make the recursive call right
@@ -44,10 +44,9 @@
             trees get smaller and smaller. You should also recognize the initial
         <c>if</c> statement on line 2 as a check for the base case of <c>branchLen</c>
             getting too small.</p>
-  <p xml:id="intro-recursion_lst-fractree" names="lst_fractree">
-    <term>Listing 1</term>
-  </p>
-  <program language="python">
+          <paragraphs xml:id="intro-recursion_lst-fractree" names="lst_fractree">
+            <title>Listing 1</title>
+  <program language="python" >
     <input>
 def tree(branchLen,t):
     if branchLen &gt; 5:
@@ -60,12 +59,16 @@ def tree(branchLen,t):
         t.backward(branchLen)
 </input>
   </program>
+</paragraphs>
+
   <p>The complete program for this tree example is shown below.  Before you run
             the code think about how you expect to see the tree take shape. Look at
             the recursive calls and think about how this tree will unfold. Will it
             be drawn symmetrically with the right and left halves of the tree taking
             shape simultaneously? Will it be drawn right side first then left side?</p>
-  <program xml:id="lst_complete_tree" interactive="activecode" language="python">
+<paragraphs xml:id="lst_complete_tree">
+  <title>Complete Tree Example Program</title>
+  <program interactive="activecode" language="python">
     <input>
 import turtle
 
@@ -93,6 +96,7 @@ def main():
 main()
         </input>
   </program>
+</paragraphs>
   <p>Notice how each branch point on the tree corresponds to a recursive
             call, and notice how the tree is drawn to the right all the way down to
             its shortest twig. You can see this in <xref ref="fig-tree1"/>. Now, notice

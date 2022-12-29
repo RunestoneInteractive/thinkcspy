@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="functions_unit-testing">
   <title>Unit Testing</title>
+  <introduction>
   <p>A <term>test case</term> expresses requirements for a program, in a way that can be checked automatically. Specifically, a test
             asserts something about the state of the program at a particular point in its execution. A <term>unit test</term> is an automatic
             procedure used to validate that individual units of code are working properly. A function is one form of a unit.
@@ -99,6 +100,7 @@ assert type(9.0//5) == int
       </choice>
     </choices>
   </exercise>
+</introduction>
   <subsection xml:id="functions_assert-with-for-loops">
     <title><c>assert</c> with <c>for</c> loops</title>
     <p>Why would you ever want to write a line of code that can never compute anything useful for you, but sometimes causes

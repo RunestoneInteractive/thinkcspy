@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="debugging_know-your-error-messages">
   <title>Know Your Error Messages</title>
+  <introduction>
   <p>Many problems in your program will lead to an error message.  For example as I was writing and testing this chapter of the book I wrote the following version of the example program in the previous section.</p>
   <program language="python">
     <input>
@@ -227,10 +228,11 @@ print(final_time_int)
       </li>
     </ul>
   </p>
+  </introduction>
   <subsection xml:id="debugging_parseerror">
     <title>ParseError</title>
     <p>Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.</p>
-    <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
+    <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Parentheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
     <p>Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.</p>
     <exercise>
       <statement/>

@@ -122,7 +122,7 @@ drawPoly(tess, 8, 50)
   <exercise label="ex_5_5">
     <statement>
       <p>The two spirals in this picture differ only by the turn angle.  Draw both.</p>
-      <image source="Functions/Figures/tess_spirals.png" width="50%" height="240"/>
+      <image source="Functions/Figures/tess_spirals.png" width="50%"/>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_5_editor">
       <input>
