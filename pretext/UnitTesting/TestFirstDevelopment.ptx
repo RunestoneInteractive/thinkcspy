@@ -18,7 +18,7 @@
   <p>In this section, we'll explore the idea of test-first development to see how it can help.</p>
   <p>A programmer using Test-First Development writes a new function using the following steps:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>First, create the function interface and docstring.</p>
       </li>
@@ -93,7 +93,7 @@ print("All tests passed!")
     <title>Benefits of Test-First Development</title>
     <p>There are several benefits to Test-First Development.</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>It ensures that unit tests are written. This tends to lead to higher-quality, robust code, with fewer
                         bugs.</p>

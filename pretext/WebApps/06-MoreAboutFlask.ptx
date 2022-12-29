@@ -104,7 +104,7 @@
   </program>
   <p>Here's how it works:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>To begin, the user enters the URL <url href="http://localhost:5000" visual="http://localhost:5000">http://localhost:5000</url>, and the browser sends
                     the request to the application. The Flask server matches that path <q>/</q> to the

@@ -137,7 +137,7 @@ E        +  where 9 = round6(8.5)
 myround.py:8: AssertionError</pre>
     <p>Let's take a closer look at this report to understand what it's telling you.</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>First, notice the line with the <c>&gt;</c> symbol:</p>
           <pre>&gt;       assert round6(8.5) == 8</pre>

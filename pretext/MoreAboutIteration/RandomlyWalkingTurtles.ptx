@@ -5,7 +5,7 @@
             randomly inside the screen.  When we run the program we want the turtle and
             program to behave in the following way:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>The turtle begins in the center of the screen.</p>
       </li>

@@ -56,7 +56,7 @@ print(myList)
     <statement>
       <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
       <p>
-        <ol label="a">
+        <ol marker="a">
           <li>
             <p>Append <q>apple</q> and 76 to the list.</p>
           </li>
@@ -366,7 +366,7 @@ def count(lst):
     <statement>
       <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
       <p>
-        <ol label="a">
+        <ol marker="a">
           <li>
             <p>count</p>
           </li>

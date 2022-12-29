@@ -15,7 +15,7 @@
             this happen?</p>
   <p>Well, your browser did what it always does when you type in a URL:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>The browser opened a network connection to the web server named google.com</p>
       </li>

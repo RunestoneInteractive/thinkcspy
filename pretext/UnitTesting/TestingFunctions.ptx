@@ -15,7 +15,7 @@
             spot the bug?).</p>
   <p>Now she needs to test the new code. There are two basic approaches Melinda could take to do her testing:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Put the function into the program, modify the program to call the function at the appropriate point, then run the program.</p>
       </li>
@@ -79,7 +79,7 @@ Test Case 3:       3.7               4</pre>
                 under test, providing the input supplied by the user, and displays the result. (In our example, <c>round6</c> is the code
                 under test.) Manual unit tests are helpful, but they can be improved in two ways:</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>We can embed the test input directly within the unit test code, so the person running the test doesn't have to
                         come up with the test input or take the time to enter it.</p>

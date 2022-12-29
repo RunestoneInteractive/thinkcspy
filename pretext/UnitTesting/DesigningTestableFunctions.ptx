@@ -15,7 +15,7 @@
   <p>A <term>testable function</term> is a function that produces a result that can be checked by an assert
             statement. Generally, it does so in one of three ways:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>It returns its result</p>
       </li>

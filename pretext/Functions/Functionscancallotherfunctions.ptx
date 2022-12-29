@@ -139,7 +139,7 @@ wn.exitonclick()
             new functions. Actually, there are a lot of reasons, but this example
             demonstrates two:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Creating a new function gives you an opportunity to name a group of
                     statements. Functions can simplify a program by hiding a complex computation

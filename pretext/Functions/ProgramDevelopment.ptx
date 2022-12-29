@@ -131,7 +131,7 @@ test.testEqual(distance(0,0, 1,1), 1.41)
             to chunk music &#x2014; from indvidual notes to chords, bars, phrases, and so on.</p>
   <p>The key aspects of the process are:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Make sure you know what you are trying to accomplish. Then you can write appropriate unit tests.</p>
       </li>

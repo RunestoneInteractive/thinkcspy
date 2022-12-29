@@ -349,7 +349,7 @@ print(time_when_alarm_go_off)
     </hint>
     <p><term>Finding Clues</term>  With name errors one of the best things you can do is use the editor, or browser search function.  Quite often if you search for the exact word in the error message one of two things will happen:</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>The word you are searching for will appear only once in your code, it's also likely that it will be on the right hand side of an assignment statement, or as a parameter to a function.  That should confirm for you that you have a typo somewhere.  If the name in question <term>is</term> what you thought it should be then you probably have a typo on the left hand side of an assignment statement on a line before your error message occurs.  Start looking backward at your assignment statements.  In some cases it's really nice to leave all the highlighted strings from the search function visible as they will help you very quickly find a line where you might have expected your variable to be highlighted.</p>
         </li>
@@ -390,7 +390,7 @@ print(alarm_time)
         <title>Solution</title>
         <p>In this example the error message is about <c>set_time</c> not defined on line 3.  In this case the undefined name is not used in an assignment statement, but is used as a parameter (incorrectly) to a function call.   A search on <c>set_time</c> reveals that in fact it is only used once in the program.  Did the author mean <c>set_alarm</c>?  If we make that assumption we immediately get another error <c>NameError: name 'alarm_time' is not defined on line: 3</c>.  The variable <c>alarm_time</c> is defined on line 4, but that does not help us on line 3.  Furthermore we now have to ask the question is this function call <c>int(present_time, set_alarm, alarm_time)</c> even the correct use of the <c>int</c> function?  The answer to that is a resounding no.  Let's list all of the things wrong with line 3:</p>
         <p>
-          <ol label="1">
+          <ol marker="1">
             <li>
               <p><c>set_time</c> is not defined and never used, the author probably meant <c>set_alarm</c>.</p>
             </li>

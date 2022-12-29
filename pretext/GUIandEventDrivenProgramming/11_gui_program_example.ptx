@@ -11,7 +11,7 @@
             developed. For a typical GUI program development, you are encouraged to go
             through these stages:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Using scratch paper, physically draw a rough sketch of your user interface.</p>
       </li>

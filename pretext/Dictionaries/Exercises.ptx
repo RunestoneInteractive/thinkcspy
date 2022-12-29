@@ -59,7 +59,7 @@ for char in sorted(keys):
     <p>Give the Python interpreter's response to each of the following from a
                     continuous interpreter session:</p>
     <p>
-      <ol label="a">
+      <ol marker="a">
         <li>
           <program language="python">
             <input>

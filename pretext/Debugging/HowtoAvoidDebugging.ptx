@@ -3,7 +3,7 @@
   <title>How to Avoid Debugging</title>
   <p>Perhaps the most important lesson in debugging is that it is <term>largely avoidable</term> &#x2013; if you work carefully.</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p><term>Understand the Problem</term>  You must have a firm grasp on <term>what</term> you are trying to accomplish but not
                     necessarily <term>how</term> to do it. You do not need to understand the entire problem. But you must understand
