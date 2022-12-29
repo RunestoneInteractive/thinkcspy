@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_testing-with-pytest">
   <title>Testing with pytest</title>
+  <introduction>
   <p>Writing automated unit tests is very helpful in reducing the effort needed to build software. However, the simple
             approach described so far is inadequate to help programmers realize the full benefits of unit testing. In this section,
             we introduce a unit test framework which addresses some practical issues that crop up when you try to apply
@@ -81,6 +82,7 @@ if success:
             tests, pytest scans your script and executes only the functions with the prefix <c>test_</c>.</p>
   <p>This ActiveCode environment simulates pytest by scanning for and executing functions with a <c>test_</c> prefix when you
             click <term>Run</term>. Go ahead and try it - rename the test_round6 function to <c>test_itworks</c> and try running the test again.</p>
+        </introduction>
   <subsection xml:id="unit-testing_organizing-pytest-functions">
     <title>Organizing pytest Functions</title>
     <p>The example above uses a single pytest function, with both asserts in the same pytest function. The
@@ -137,7 +139,7 @@ E        +  where 9 = round6(8.5)
 myround.py:8: AssertionError</pre>
     <p>Let's take a closer look at this report to understand what it's telling you.</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>First, notice the line with the <c>&gt;</c> symbol:</p>
           <pre>&gt;       assert round6(8.5) == 8</pre>

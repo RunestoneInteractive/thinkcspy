@@ -5,7 +5,7 @@
     <statement>
       <p>What do these expressions evaluate to?</p>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>
               <c>3 == 3</c>
@@ -50,14 +50,14 @@
                         
                     
                 
-                    <p><ol label="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
+                    <p><ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
                 </solution>
   </exercise>
   <exercise label="ex_6_2">
     <statement>
       <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>
               <c>a &gt; b</c>
@@ -544,7 +544,7 @@ myTests().main()
                         Compute the following:</p>
       <blockquote>
         <p>
-          <ol label="1">
+          <ol marker="1">
             <li>
               <p>a = year % 19</p>
             </li>

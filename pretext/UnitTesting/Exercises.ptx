@@ -2,7 +2,7 @@
 <exercises xml:id="unit-testing_exercises">
   <title>Exercises</title>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <exercise label="ac_ut_reverse">
           <statement>

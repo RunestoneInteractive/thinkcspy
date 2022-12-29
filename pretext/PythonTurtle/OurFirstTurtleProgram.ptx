@@ -195,7 +195,7 @@ wn.exitonclick()                # wait for a user click on the canvas
   <note>
     <title>Extend this program &#x2026;</title>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>Modify this program so that before it creates the window, it prompts
                         the user to enter the desired background color. It should store the

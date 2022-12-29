@@ -8,7 +8,7 @@
   <!--The acronym PEMDAS-->
   <!--is a useful way to remember the order of operations:-->
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Parentheses have the highest precedence and can be used to force an
                     expression to evaluate in the order you want. Since expressions in

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_test-first-development">
   <title>Test-First Development</title>
+  <introduction>
   <p>The idea of unit tests has been around a long time, and most people agree that writing unit tests is a good idea.
             However, when deadlines loom and time is at a premium, the unit tests often don't get written. That's a problem, because
             studies have shown that projects with good unit tests often are more robust, with fewer bugs, than projects that don't
@@ -18,7 +19,7 @@
   <p>In this section, we'll explore the idea of test-first development to see how it can help.</p>
   <p>A programmer using Test-First Development writes a new function using the following steps:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>First, create the function interface and docstring.</p>
       </li>
@@ -89,11 +90,12 @@ print("All tests passed!")
   <p>Suppose we're not creating a new function, but modifying an existing one. In Test-First Development,
             before making the modification to the function, we write a test for the new functionality. Then,
             we modify the function, and use the test to check that the modification worked.</p>
+        </introduction>
   <subsection xml:id="unit-testing_benefits-of-test-first-development">
     <title>Benefits of Test-First Development</title>
     <p>There are several benefits to Test-First Development.</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>It ensures that unit tests are written. This tends to lead to higher-quality, robust code, with fewer
                         bugs.</p>

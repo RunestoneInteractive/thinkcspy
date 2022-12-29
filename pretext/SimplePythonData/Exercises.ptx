@@ -6,7 +6,7 @@
       <p>Evaluate the following numerical expressions in your head, then use
                         the active code window to check your results:</p>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>
               <c>5 ** 2</c>
@@ -117,7 +117,7 @@ print(5 ** 2)
                         
                     
                 
-                    <p><ol label="1"><li><p><c>5 ** 2  = 25</c></p></li><li><p><c>9 * 5 = 45</c></p></li><li><p><c>15 / 12 = 1.25</c></p></li><li><p><c>12 / 15 = 0.8</c></p></li><li><p><c>15 // 12 = 1</c></p></li><li><p><c>12 // 15 = 0</c></p></li><li><p><c>5 % 2 = 1</c></p></li><li><p><c>9 % 5 = 4</c></p></li><li><p><c>15 % 12 = 3</c></p></li><li><p><c>12 % 15 = 12</c></p></li><li><p><c>6 % 6 = 0</c></p></li><li><p><c>0 % 7 = 0</c></p></li></ol></p>
+                    <p><ol marker="1"><li><p><c>5 ** 2  = 25</c></p></li><li><p><c>9 * 5 = 45</c></p></li><li><p><c>15 / 12 = 1.25</c></p></li><li><p><c>12 / 15 = 0.8</c></p></li><li><p><c>15 // 12 = 1</c></p></li><li><p><c>12 // 15 = 0</c></p></li><li><p><c>5 % 2 = 1</c></p></li><li><p><c>9 % 5 = 4</c></p></li><li><p><c>15 % 12 = 3</c></p></li><li><p><c>12 % 15 = 12</c></p></li><li><p><c>6 % 6 = 0</c></p></li><li><p><c>0 % 7 = 0</c></p></li></ol></p>
                 </solution>
   </exercise>
   <exercise label="ex_2_2">

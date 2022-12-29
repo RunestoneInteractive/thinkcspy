@@ -23,7 +23,7 @@ def name( parameters ):
             several <term>compound statements</term> we will see, all of which have the same
             pattern:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>A header line which begins with a keyword and ends with a colon.</p>
       </li>

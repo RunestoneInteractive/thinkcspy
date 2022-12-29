@@ -62,7 +62,7 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
     <statement>
       <p>Assume you have a list of numbers <c>12, 10, 32, 3, 66, 17, 42, 99, 20</c></p>
       <p>
-        <ol label="a">
+        <ol marker="a">
           <li>
             <p>Write a loop that prints each of the numbers on a new line.</p>
           </li>

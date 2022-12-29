@@ -56,7 +56,7 @@ ABBAB  Apply Rule 2 to B, Rule 1 to A, and Rule 2 to B</pre>
   <p>So how would we encode these rules in a Python program?  There are a couple
             of very important things to note here:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Rules are very much like if statements.</p>
       </li>

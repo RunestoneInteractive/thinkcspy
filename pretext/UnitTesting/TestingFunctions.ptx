@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_testing-functions">
   <title>Testing Functions</title>
+  <introduction>
   <p>Melinda is writing a program that does some mathematical calculations. At the moment, she is working on adding some
             functionality to her program that requires rounding numbers to the nearest integer. She would normally use the built-in
             Python function <c>round</c> to do the job, but her program has a special requirement that numbers should be rounded up if
@@ -15,7 +16,7 @@
             spot the bug?).</p>
   <p>Now she needs to test the new code. There are two basic approaches Melinda could take to do her testing:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Put the function into the program, modify the program to call the function at the appropriate point, then run the program.</p>
       </li>
@@ -73,13 +74,14 @@ Test Case 3:       3.7               4</pre>
             complex, writing a unit test would probably have helped reduce the overall effort. And, using some tricks I'll show you
             in the next sections, you can reduce the amount of effort required to write and run the unit test, making the case for
             writing unit tests even more compelling.</p>
+        </introduction>
   <subsection xml:id="unit-testing_automated-unit-tests">
     <title>Automated Unit Tests</title>
     <p>The unit test program above is a manual unit test. A <term>manual unit test</term> gets input from the user, invokes the code
                 under test, providing the input supplied by the user, and displays the result. (In our example, <c>round6</c> is the code
                 under test.) Manual unit tests are helpful, but they can be improved in two ways:</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>We can embed the test input directly within the unit test code, so the person running the test doesn't have to
                         come up with the test input or take the time to enter it.</p>

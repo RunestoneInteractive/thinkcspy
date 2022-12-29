@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_designing-testable-functions">
   <title>Designing Testable Functions</title>
+  <introduction>
   <p>Now that you know how to write unit tests using the <c>assert</c> statement, it's important for you
             to understand how to write testable functions. Not all functions can be tested.</p>
   <p>Consider the following function:</p>
@@ -15,7 +16,7 @@
   <p>A <term>testable function</term> is a function that produces a result that can be checked by an assert
             statement. Generally, it does so in one of three ways:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>It returns its result</p>
       </li>
@@ -58,6 +59,7 @@ def add(x, y):
       </choice>
     </choices>
   </exercise>
+</introduction>
   <subsection xml:id="unit-testing_design-by-contract">
     <title>Design by Contract</title>
     <p>In addition to producing a result that can be checked by an assert statement, a testable function must have a clear

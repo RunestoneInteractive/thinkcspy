@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="gu-iand-event-driven-programming_managing-gui-program-complexity">
   <title>Managing GUI Program Complexity</title>
+  <introduction>
   <p>As we explained in a previous lesson, GUI programs are best implemented as
             Python classes because it allows you to manage the scope of the variables
             in your GUI interface and callback functions. However, as GUI programs
@@ -55,6 +56,7 @@ controller (input) --&gt; model (processing) --&gt; view (output)
             the same stages of development we used in the previous lesson are a good
             approach, but we will create a separate Python <c>class</c> for most of the
             stages. Let's walk through the code development.</p>
+  </introduction>
   <subsection xml:id="gu-iand-event-driven-programming_creating-the-view">
     <title>Creating the <em>View</em></title>
     <p>Let's create a Python <c>class</c> that builds the user interface for a

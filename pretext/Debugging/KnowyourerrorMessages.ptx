@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="debugging_know-your-error-messages">
   <title>Know Your Error Messages</title>
+  <introduction>
   <p>Many problems in your program will lead to an error message.  For example as I was writing and testing this chapter of the book I wrote the following version of the example program in the previous section.</p>
   <program language="python">
     <input>
@@ -227,10 +228,11 @@ print(final_time_int)
       </li>
     </ul>
   </p>
+  </introduction>
   <subsection xml:id="debugging_parseerror">
     <title>ParseError</title>
     <p>Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.</p>
-    <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Paretheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
+    <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate parameters to functions.  Parentheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
     <p>Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.</p>
     <exercise>
       <statement/>
@@ -349,7 +351,7 @@ print(time_when_alarm_go_off)
     </hint>
     <p><term>Finding Clues</term>  With name errors one of the best things you can do is use the editor, or browser search function.  Quite often if you search for the exact word in the error message one of two things will happen:</p>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>The word you are searching for will appear only once in your code, it's also likely that it will be on the right hand side of an assignment statement, or as a parameter to a function.  That should confirm for you that you have a typo somewhere.  If the name in question <term>is</term> what you thought it should be then you probably have a typo on the left hand side of an assignment statement on a line before your error message occurs.  Start looking backward at your assignment statements.  In some cases it's really nice to leave all the highlighted strings from the search function visible as they will help you very quickly find a line where you might have expected your variable to be highlighted.</p>
         </li>
@@ -390,7 +392,7 @@ print(alarm_time)
         <title>Solution</title>
         <p>In this example the error message is about <c>set_time</c> not defined on line 3.  In this case the undefined name is not used in an assignment statement, but is used as a parameter (incorrectly) to a function call.   A search on <c>set_time</c> reveals that in fact it is only used once in the program.  Did the author mean <c>set_alarm</c>?  If we make that assumption we immediately get another error <c>NameError: name 'alarm_time' is not defined on line: 3</c>.  The variable <c>alarm_time</c> is defined on line 4, but that does not help us on line 3.  Furthermore we now have to ask the question is this function call <c>int(present_time, set_alarm, alarm_time)</c> even the correct use of the <c>int</c> function?  The answer to that is a resounding no.  Let's list all of the things wrong with line 3:</p>
         <p>
-          <ol label="1">
+          <ol marker="1">
             <li>
               <p><c>set_time</c> is not defined and never used, the author probably meant <c>set_alarm</c>.</p>
             </li>

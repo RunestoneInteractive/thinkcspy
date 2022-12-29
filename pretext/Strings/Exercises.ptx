@@ -2,7 +2,7 @@
 <exercises xml:id="strings_exercises">
   <title>Exercises</title>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <exercise>
           <statement/>
@@ -38,7 +38,7 @@
                             
                         
                     
-                        <p><ol label="a"><li><p>&#x2018;Python'[1] = &#x2018;y'</p></li><li><p>&#x2018;Strings are sequences of characters.'[5] = &#x2018;g'</p></li><li><p>len(&#x2018;wonderful') = 9</p></li><li><p>&#x2018;Mystery'[:4] = &#x2018;Myst'</p></li><li><p>&#x2018;p' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;pear' not in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' &gt; &#x2018;pineapple' = False</p></li><li><p>&#x2018;pineapple' &lt; &#x2018;Peach' = False</p></li></ol></p>
+                        <p><ol marker="a"><li><p>&#x2018;Python'[1] = &#x2018;y'</p></li><li><p>&#x2018;Strings are sequences of characters.'[5] = &#x2018;g'</p></li><li><p>len(&#x2018;wonderful') = 9</p></li><li><p>&#x2018;Mystery'[:4] = &#x2018;Myst'</p></li><li><p>&#x2018;p' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;pear' not in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' &gt; &#x2018;pineapple' = False</p></li><li><p>&#x2018;pineapple' &lt; &#x2018;Peach' = False</p></li></ol></p>
                     </solution>
         </exercise>
       </li>

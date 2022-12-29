@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_checking-assumptions-with-assert">
   <title>Checking Assumptions With <c>assert</c></title>
+  <introduction>
   <p>Many functions work correctly only for certain parameter values, and produce invalid results (or crash) if given others.
             Consider the following function, which computes the sum of the numbers in a range specified by its parameters:</p>
   <program xml:id="ac_sumnums_1" interactive="activecode" language="python">
@@ -41,6 +42,7 @@ print(sumnums(3, 1))
             That's not the function's fault: it's the caller's fault for passing parameters to the function that the function is not
             designed to handle correctly. However, it might be a good idea if we designed the function to check for invalid values,
             and when it detects them, somehow report that it was called incorrectly.</p>
+        </introduction>
   <subsection xml:id="unit-testing_designing-defensive-functions">
     <title>Designing Defensive Functions</title>
     <p>A defensive function is a function that checks its parameters to see if they are valid, and responds in an appropriate

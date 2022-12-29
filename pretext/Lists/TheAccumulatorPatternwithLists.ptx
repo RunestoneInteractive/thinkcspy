@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="lists_the-accumulator-pattern-with-lists">
   <title>The Accumulator Pattern with Lists</title>
+  <introduction>
   <p>Remember the <xref ref="functions_the-accumulator-pattern"/>? Many algorithms involving lists make use of
             this pattern to process the items in a list and compute a result. In this section, we'll
             explore the use of the accumulator pattern with lists.</p>
@@ -51,6 +52,7 @@ print(num_vowels)
   <p>We can also use <c>==</c> to execute a similar operation. Here, we'll check to see if the character we are iterating over is
             an <q>o</q>. If it is an <q>o</q> then we will update our counter.</p>
   <image source="Lists/Figures/accum_o.gif" width="50%" alt="a gif that shows code to check that &quot;o&quot; is in the phrase &quot;onomatopoeia&quot;."/>
+</introduction>
   <subsection xml:id="lists_accumulating-the-max-value">
     <title>Accumulating the Max Value</title>
     <p>We can also use the accumulation pattern with conditionals to find the maximum or minimum value. Instead of

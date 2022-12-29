@@ -5,7 +5,7 @@
             web browsers work, and how web applications interact with users.</p>
   <p>A <term>web browser</term>, at its core, is a fairly simple application. Basically, web browsers</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <dl>
           <li>
@@ -45,7 +45,7 @@
   </note>
   <p>When you click on this link, here's what happens:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>The browser opens a network connection to the web server named docs.python.org</p>
       </li>
