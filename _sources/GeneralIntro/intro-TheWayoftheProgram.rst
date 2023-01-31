@@ -10,8 +10,6 @@
 The Way of the Program
 ======================
 
-Test Section
-
 The goal of this book is to be really awesome, and if there's time after that I guess we can also teach you to think like a computer scientist. This
 way of thinking combines some of the best features of mathematics, engineering,
 and natural science. Like mathematicians, computer scientists use formal
