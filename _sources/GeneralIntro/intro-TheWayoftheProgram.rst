@@ -10,7 +10,7 @@
 The Way of the Program
 ======================
 
-The goal of this book is to be really awesome, and if there's time after that I guess we can also teach you to think like a computer scientist. This
+The goal of this book is to teach you to think like a computer scientist. This
 way of thinking combines some of the best features of mathematics, engineering,
 and natural science. Like mathematicians, computer scientists use formal
 languages to denote ideas (specifically computations). Like engineers, they
