@@ -55,23 +55,23 @@ Table of Contents
    GeneralIntro/toctree.rst
    SimplePythonData/toctree.rst
    Debugging/toctree.rst
+   Strings/toctree.rst
+   Lists/toctree.rst
+   Selection/toctree.rst
+   MoreAboutIteration/toctree.rst
    PythonTurtle/toctree.rst
    PythonModules/toctree.rst
    Functions/toctree.rst
-   Selection/toctree.rst
-   MoreAboutIteration/toctree.rst
-   Strings/toctree.rst
-   Lists/toctree.rst
    Files/toctree.rst
-   Dictionaries/toctree.rst
    Exceptions/toctree.rst
-   WebApps/toctree.rst
-   GUIandEventDrivenProgramming/toctree.rst
    IntroRecursion/toctree.rst
    ClassesBasics/toctree.rst
    ClassesDiggingDeeper/toctree.rst
    Inheritance/toctree.rst
    UnitTesting/toctree.rst
+   Dictionaries/toctree.rst
+   WebApps/toctree.rst
+   GUIandEventDrivenProgramming/toctree.rst
 
 Labs
 ::::
