@@ -9,18 +9,19 @@ Lists
    ListValues.rst
    ListLength.rst
    AccessingElements.rst
-   ListMembership.rst
    ConcatenationandRepetition.rst
    ListSlices.rst
    ListsareMutable.rst
    ListDeletion.rst
+   ListMethods.rst
+   StringsandLists.rst
+   AppendversusConcatenate.rst
+   ListMembership.rst
    ObjectsandReferences.rst
    Aliasing.rst
    CloningLists.rst
    RepetitionandReferences.rst
-   ListMethods.rst
    TheReturnofLSystems.rst
-   AppendversusConcatenate.rst
    Listsandforloops.rst
    TheAccumulatorPatternwithLists.rst
    UsingListsasParameters.rst
@@ -29,7 +30,6 @@ Lists
    FunctionsthatProduceLists.rst
    ListComprehensions.rst
    NestedLists.rst
-   StringsandLists.rst
    listTypeConversionFunction.rst
    TuplesandMutability.rst
    TupleAssignment.rst

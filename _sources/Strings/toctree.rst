@@ -12,8 +12,8 @@ Strings
    StringMethods.rst
    Length.rst
    TheSliceOperator.rst
-   StringComparison.rst
    StringsareImmutable.rst
+   StringComparison.rst
    TraversalandtheforLoopByItem.rst
    TraversalandtheforLoopByIndex.rst
    TraversalandthewhileLoop.rst

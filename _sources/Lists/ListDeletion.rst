@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: list-9-
+   :prefix: list-8-
    :start: 1
 
 .. index:: del; a list portion

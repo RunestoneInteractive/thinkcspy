@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: strings-9-
+   :prefix: strings-8-
    :start: 1
 
 .. index:: mutable, immutable

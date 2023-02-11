@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: list-8-
+   :prefix: list-7-
    :start: 1
 
 Lists are Mutable

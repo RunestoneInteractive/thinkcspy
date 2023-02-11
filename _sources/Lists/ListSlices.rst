@@ -8,7 +8,7 @@
     License".
 
 .. qnum::
-   :prefix: list-7-
+   :prefix: list-6-
    :start: 1
 
 .. index::

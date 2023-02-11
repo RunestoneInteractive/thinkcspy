@@ -16,13 +16,11 @@
 String Methods
 --------------
 
-We previously saw that each turtle instance has its own attributes and
-a number of methods that can be applied to the instance.  For example,
-we wrote ``tess.right(90)`` when we wanted the turtle object ``tess`` to perform the ``right`` method to turn
-to the right 90 degrees.  The "dot notation" is the way we connect the name of an object to the name of a method
-it can perform.
+We previously used a few functions like ``print()`` and ``input()``.  A **method** is a function that is attached to a specific Python object. 
+To access this function, we write the object, then a dot ``.``, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
+it can perform. For example, we can write ``ss.upper()`` when we wanted the string ``ss`` to perform the ``upper()`` method to create an upper-case version of itself.
 
-Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.
+Remember that Strings are objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.
 
 .. activecode:: chp08_upper
 
@@ -157,7 +155,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 .. _Format-Strings:
 
-String Format Method
+F-Strings
 ~~~~~~~~~~~~~~~~~~~~~
 
 In grade school quizzes a common convention is to use fill-in-the blanks. For instance,
@@ -168,26 +166,25 @@ In grade school quizzes a common convention is to use fill-in-the blanks. For in
 and you can fill in the name of the person greeted, and combine
 given text with a chosen insertion. *We use this as an analogy:*
 Python has a similar
-construction, better called fill-in-the-braces. The string method ``format``,  makes
+construction, called a formatted string or an **f-string**. An f-string makes
 substitutions into places in a string
 enclosed in braces. Run this code:
 
 .. activecode:: ch08_methods3
 
     person = input('Your name: ')
-    greeting = 'Hello {}!'.format(person)
+    greeting = f'Hello {person}!'
     print(greeting)
 
 
 There are several new ideas here!
 
-The string for the ``format`` method has a special form, with braces embedded.
-Such a string is called a *format string*.  Places where
-braces are embedded are replaced by the value of an expression
-taken from the parameter list for the ``format`` method. There are many
+The string has been formatted in a new way. We have included an ``f`` before the starting quotation mark.
+Such a string is called an *f-string*.  Places where
+braces are embedded are replaced by the value of the expression inside the braces. There are many
 variations on the syntax between the braces. In this case we use
 the syntax where the first (and only) location in the string with
-braces has a substitution made from the first (and only) parameter.
+braces has the variable ``person``. When this code is evaluated, the value of the person variable is placed in the string in this location.
 
 In the code above, this new string is assigned to the identifier
 ``greeting``, and then the string is printed.
@@ -201,7 +198,7 @@ version:
 .. activecode:: ch08_methods4
 
     person = input('Enter your name: ')
-    print('Hello {}!'.format(person))
+    print(f'Hello {person}!')
 
 There can be multiple substitutions, with data of any type.
 Next we use floats.  Try original price $2.50  with a 7% discount:
@@ -211,34 +208,28 @@ Next we use floats.  Try original price $2.50  with a 7% discount:
     origPrice = float(input('Enter the original price: $'))
     discount = float(input('Enter discount percentage: '))
     newPrice = (1 - discount/100)*origPrice
-    calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+    calculation = f'${origPrice} discounted by {discount}% is ${newPrice}.'
     print(calculation)
-
-The parameters are inserted into the braces in order.
 
 If you used the data suggested, this result is not satisfying.
 Prices should appear with exactly two places beyond the decimal point,
 but that is not the default way to display floats.
 
-Format strings can give further information inside the braces
+F-strings can give further information inside the braces
 showing how to specially format data.
 In particular floats can be shown with a specific number of decimal places.
-For two decimal places, put ``:.2f`` inside the braces for the monetary values:
+For two decimal places, put ``:.2f`` inside the braces but after the variable name for the monetary values:
 
 .. activecode:: ch08_methods6
 
     origPrice = float(input('Enter the original price: $'))
     discount = float(input('Enter discount percentage: '))
     newPrice = (1 - discount/100)*origPrice
-    calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
+    calculation = f'${origPrice:.2f} discounted by {discount}% is ${newPrice:.2f}.'
     print(calculation)
 
 The 2 in the format modifier can be replaced by another integer to round to that
 specified number of digits.
-
-This kind of format string depends directly on the order of the
-parameters to the format method. There are other approaches that we will
-skip here, explicitly numbering substitutions and taking substitutions from a dictionary.
 
 A technical point: Since braces have special meaning in a format
 string, there must be a special rule if you want braces to actually
@@ -251,40 +242,22 @@ formatted string::
 
     a = 5
     b = 9
-    setStr =  'The set is {​{ {},{} }​}.'.format(a, b)
+    setStr =  f'The set is {​{ {a},{b} }​}.'
     print(setStr)
 
 Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
 printing doubled braces, but standard Python prints ``{5, 9}``.
 
-You can have multiple placeholders indexing the same argument, or perhaps even have extra 
-arguments that are not referenced at all:
-
-.. activecode:: ch08_formatspecification
-
-    letter = """
-    Dear {0} {2}.
-     {0}, I have an interesting money-making proposition for you!
-     If you deposit $10 million into my bank account, I can
-     double your money ...
-    """
-
-    print(letter.format("Paris", "Whitney", "Hilton"))
-    print(letter.format("Bill", "Henry", "Gates"))
-
-
-
-
 .. mchoice:: test_question8_3_3
    :practice: T
    :answer_a: Nothing - it causes an error
-   :answer_b: sum of {} and {} is {}; product: {}. 2 6 8 12
+   :answer_b: sum of {} and {} is {}; product: {}.
    :answer_c: sum of 2 and 6 is 8; product: 12.
    :answer_d: sum of {2} and {6} is {8}; product: {12}.
    :correct: c
-   :feedback_a: It is legal format syntax:  put the data in place of the braces.
-   :feedback_b: Put the data into the format string; not after it.
-   :feedback_c: Yes, correct substitutions!
+   :feedback_a: It is legal format syntax.
+   :feedback_b: Put the value of each expression in place of the braces.
+   :feedback_c: Yes, correct!
    :feedback_d: Close:  REPLACE the braces.
 
 
@@ -294,7 +267,7 @@ arguments that are not referenced at all:
 
        x = 2
        y = 6
-       print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
+       print(f'sum of {x} and {y} is {x+y}; product: {x*y}.')
 
 
 .. mchoice:: test_question8_3_4
@@ -313,6 +286,6 @@ arguments that are not referenced at all:
    .. code-block:: python
 
        v = 2.34567
-       print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+       print(f'{v:.1f} {v:.2f} {v:.7f}')
 
 

@@ -32,9 +32,6 @@ selecting a character:
 The `slice` operator ``[n:m]`` returns the part of the string from the n'th character
 to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
 go up to but do not include the character at index m.
-This
-behavior may seem counter-intuitive but if you recall the ``range`` function, it did not include its end
-point either.
 
 If you omit the first index (before the colon), the slice starts at the
 beginning of the string. If you omit the second index, the slice goes to the
