@@ -21,7 +21,7 @@ Other uses of ``while``
 Sentinel Values
 ~~~~~~~~~~~~~~~~~~~
 
-Indefinite loops are much more common in the real world than definite loops.
+The indefinite loops provided by the ``while`` statement are common in the real world.
 
 * If you are selling tickets to an event, you don't know in advance how
   many tickets you will sell. You keep selling tickets as long as people come
@@ -61,24 +61,21 @@ zero is a **sentinel value**, a value used to signal the end of the loop. Here's
 .. activecode:: ch07_sentinel
     :timelimit: 60000
 
-    def checkout():
-        total = 0
-        count = 0
-        moreItems = True
-        while moreItems:
-            price = float(input('Enter price of item (0 when done): '))
-            if price != 0:
-                count = count + 1
-                total = total + price
-                print('Subtotal: $', total)
-            else:
-                moreItems = False
-        average = total / count
-        print('Total items:', count)
-        print('Total $', total)
-        print('Average price per item: $', average)
-
-    checkout()
+	total = 0
+	count = 0
+	moreItems = True
+	while moreItems:
+		price = float(input('Enter price of item (0 when done): '))
+		if price != 0:
+			count = count + 1
+			total = total + price
+			print('Subtotal: $', total)
+		else:
+			moreItems = False
+	average = total / count
+	print('Total items:', count)
+	print('Total $', total)
+	print('Average price per item: $', average)
 
 There are still a few problems with this program.
 
@@ -123,18 +120,15 @@ When you run the following code, try typing something other than Y or N to see h
 .. activecode:: ch07_validation
     :timelimit: 60000
 
-    def get_yes_or_no(message):
-        valid_input = False
-        answer = input(message)
-        while not valid_input:
-            answer = answer.upper() # convert to upper case
-            if answer == 'Y' or answer == 'N':
-                valid_input = True
-            else:
-                answer = input('Please enter Y for yes or N for no. \n' + message)
-        return answer
+	valid_input = False
+	response = input('Do you like lima beans? Y)es or N)o: ')
+	while not valid_input:
+		response = response.upper() # convert to upper case
+		if response == 'Y' or response == 'N':
+			valid_input = True
+		else:
+			response = input('Please enter Y for yes or N for no. \n' + message)
 
-    response = get_yes_or_no('Do you like lima beans? Y)es or N)o: ')
     if response == 'Y':
         print('Great! They are very healthy.')
     else:

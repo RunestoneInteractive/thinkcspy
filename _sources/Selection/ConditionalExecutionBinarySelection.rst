@@ -56,14 +56,22 @@ indented under the ``else`` clause get executed.
 
    .. image:: Figures/flowchart_if_else.png
 
+As a program executes, the interpreter always keeps track of which statement is
+about to be executed.  We call this the **control flow**, or the **flow of
+execution** of the program.  When humans execute programs, they often use their
+finger to point to each statement in turn.  So you could think of control flow
+as "Python's moving finger".
 
+Control flow until now has been strictly top to bottom, one statement at a
+time.  We call this type of control **sequential**.  In Python flow is sequential as long as
+successive statements are indented the *same* amount.  The ``if`` statement 
+introduces indented sub-statements after the if heading.
 
-As with the function definition from the last chapter and other compound
-statements like ``for``, the ``if`` statement consists of a header line and a body. The header
+Each ``if`` statement consists of a header line and a body. The header
 line begins with the keyword ``if`` followed by a *boolean expression* and ends with
 a colon (:).
 
-The more indented statements that follow are called a **block**.
+The more indented statements that follow are called a **block** or sometimes a **body**.
 
 Each of the statements inside the first block of statements is executed in order if the boolean
 expression evaluates to ``True``. The entire first block of statements

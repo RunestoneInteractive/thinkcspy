@@ -11,7 +11,7 @@
    :prefix: iter-1-
    :start: 1
 
-Iteration Revisited
+Iteration
 ===================
 
 .. index:: iteration, assignment, assignment statement, reassignment
@@ -26,10 +26,8 @@ people do poorly.
 
 Repeated execution of a sequence of statements is called **iteration**.  Because
 iteration is so common, Python provides several language features to make it
-easier. We've already seen the ``for`` statement in a previous chapter.  This is a very common
-form of iteration in Python. In this chapter
-we are going to look at the ``while`` statement --- another way to have your
-program do iteration.
+easier. In this chapter we are going to look at two common forms of iteration: the ``while`` statement
+and the ``for`` statement. 
 
 
 .. index:: for loop

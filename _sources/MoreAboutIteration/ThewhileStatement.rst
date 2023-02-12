@@ -20,75 +20,37 @@ The ``while`` Statement
     :width: 560
     :align: left
 
-There is another Python statement that can also be used to build an iteration.  It is called the ``while`` statement.
-The ``while`` statement provides a much more general mechanism for iterating.  Similar to the ``if`` statement, it uses
-a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to ``True``.
+A basic building block of all programs is to be able to repeat some code
+over and over again.  In computer science, we refer to this repetitive idea as **iteration**.  In this section, we will explore some mechanisms for basic iteration.
 
-The following figure shows the flow of control.
+Let's look at our first Python statement that can be used to build an iteration.  It is called the ``while`` statement. When used with other code it can be used to 
+repeat code in a **while loop**. Similar to the ``if`` statement, it uses
+a boolean expression to control the flow of execution.  The body of while (code indented one space in) will be repeated as long as the controlling boolean 
+expression evaluates to ``True``.
 
-.. image:: Figures/while_flow.png
-
-We can use the ``while`` loop to create any type of iteration we wish, including anything that we have previously done with a ``for`` loop.  For example, the program in the previous section could be rewritten using ``while``.
-Instead of relying on the ``range`` function to produce the numbers for our summation, we will need to produce them ourselves.  To to this, we will create a variable called ``aNumber`` and initialize it to 1, the first number in the summation.  Every iteration will add ``aNumber`` to the running total until all the values have been used.
-In order to control the iteration, we must create a boolean expression that evaluates to ``True`` as long as we want to keep adding values to our running total.  In this case, as long as ``aNumber`` is less than or equal to the bound, we should keep going.
-
-
-
-Here is a new version of the summation program that uses a while statement.
-
+Here is a simple example that counts down from 10 to 0.
 .. activecode:: ch07_while1
 
-    def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
+	count = 10
+	while count > 0:
+		print(count)
+		count = count - 1
+	print("Blastoff!")
 
-        theSum  = 0
-        aNumber = 1
-        while aNumber <= aBound:
-            theSum = theSum + aNumber
-            aNumber = aNumber + 1
-        return theSum
+* **count** is a normal variable here, but since it is governing the ``while`` loop it is also called the **loop variable**.
+* Line 2 here is the *loop condition**. It must always be a boolean expression that will evaluate to ``False`` or ``True``.
+* Lines 3 and 4 are the **loop body**.  The loop body is always
+  indented. The indentation determines exactly what statements are "in the
+  loop".  The loop body is run each time the loop is repeated.
+* On each *iteration* or *pass* of the loop, a check is done to see if
+  the loop condition is True (if ``count`` is greater than zero).  If it is not (this is
+  called the **terminating condition** of the loop), the loop has finished.
+  Program execution continues at the next statement after the loop body.
+* If ``count`` is greater than zero, the loop body is executed again.
+* At the end of each execution of the body of the loop, Python returns
+  to the ``while`` statement, to see if the loop should repeat.
 
-    print(sumTo(4))
-
-    print(sumTo(1000))
-
-
-
-You can almost read the ``while`` statement as if it were in natural language. It means,
-while ``aNumber`` is less than or equal to ``aBound``, continue executing the body of the loop. Within
-the body, each time, update ``theSum`` using the accumulator pattern and increment ``aNumber``. After the body of the loop, we go back up to the condition of the ``while`` and reevaluate it.  When ``aNumber`` becomes greater than ``aBound``, the condition fails and flow of control continues to the ``return`` statement.
-
-The same program in codelens will allow you to observe the flow of execution.
-
-.. codelens:: ch07_while2
-
-    def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
-
-        theSum  = 0
-        aNumber = 1
-        while aNumber <= aBound:
-            theSum = theSum + aNumber
-            aNumber = aNumber + 1
-        return theSum
-
-    print(sumTo(4))
-
-
-
-More formally, here is the flow of execution for a ``while`` statement:
-
-#. Evaluate the condition, yielding ``False`` or ``True``.
-#. If the condition is ``False``, exit the ``while`` statement and continue
-   execution at the next statement.
-#. If the condition is ``True``, execute each of the statements in the body and
-   then go back to step 1.
-
-The body consists of all of the statements below the header with the same
-indentation.
-
-This type of flow is called a **loop** because the third step loops back around
-to the top. Notice that if the condition is ``False`` the first time through the
+Notice that if the condition is ``False`` the first time through the
 loop, the statements inside the loop are never executed.
 
 .. warning::
@@ -102,9 +64,52 @@ loop, the statements inside the loop are never executed.
 The body of the loop should change the value of one or more variables so that
 eventually the condition becomes ``False`` and the loop terminates. Otherwise the
 loop will repeat forever. This is called an **infinite loop**.
-An endless
-source of amusement for computer scientists is the observation that the
+An endless source of amusement for computer scientists is the observation that the
 directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.
+
+We can use the ``while`` loop to create any type of iteration we wish, making more general-purpose than the ``for`` loop we'll learn next week.  
+For example, let us consider a program that adds all numbers from ``1`` to ``n``. To do this, we will create a variable called ``aNumber`` and initialize it to 
+1, the first number in the summation.  Every iteration will add ``aNumber`` to the running total until all the values have been used.
+In order to control the iteration, we must create a boolean expression that evaluates to ``True`` as long as we want to keep adding values to our 
+running total.  In this case, as long as ``aNumber`` is less than or equal to the bound, we should keep going.
+
+Here is the summation program that uses a while statement.
+
+.. activecode:: ch07_while2
+
+	""" Return the sum of 1+2+3 ... n """
+	
+	aBound = int(input("Please give a number n: "))
+	theSum  = 0
+	aNumber = 1
+	while aNumber <= aBound:
+		theSum = theSum + aNumber
+		aNumber = aNumber + 1
+	print(theSum)
+
+
+
+You can almost read the ``while`` statement as if it were in natural language. It means,
+while ``aNumber`` is less than or equal to ``aBound``, continue executing the body of the loop. Within
+the body, each time, update ``theSum`` and increment ``aNumber``. After the body of the loop, we go 
+back up to the condition of the ``while`` and reevaluate it.  When ``aNumber`` becomes greater 
+than ``aBound``, the condition fails and flow of control continues to the ``print`` statement.
+
+The same program in codelens will allow you to observe the flow of execution.
+
+.. codelens:: ch07_while3
+
+    """ Return the sum of 1+2+3 ... n """
+	
+	aBound = int(input("Please give a number n: "))
+	theSum  = 0
+	aNumber = 1
+	while aNumber <= aBound:
+		theSum = theSum + aNumber
+		aNumber = aNumber + 1
+	print(theSum)
+
+
 
 In the case shown above, we can prove that the loop terminates because we
 know that the value of ``aBound`` is finite, and we can see that the value of ``aNumber``
@@ -113,40 +118,9 @@ other cases, it is not so easy to tell.
 
 .. note::
 
-	Introduction of the while statement causes us to think about the types of iteration we have seen.  The ``for`` statement will always iterate through a sequence of values like the list of names for the party or the list of numbers created by ``range``.  Since we know that it will iterate once for each value in the collection, it is often said that a ``for`` loop creates a
-	**definite iteration** because we definitely know how many times we are going to iterate.  On the other
-	hand, the ``while`` statement is dependent on a condition that needs to evaluate to ``False`` in order
-	for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
-	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)
-
-What you will notice here is that the ``while`` loop is more work for
-you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while``
-loop you have to control the loop variable yourself.  You give it an initial value, test
-for completion, and then make sure you change something in the body so that the loop
-terminates.
-
-So why have two kinds of loop if ``for`` looks easier?  The next section, :ref:`randomly-walking-turtles`, shows an indefinite iteration where
-we need the extra power that we get from the ``while`` loop.
-
-
-.. note::
-
    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
 
    .. activecode:: scratch_07_01
-
-
-**Check your understanding**
-
-.. mchoice:: test_question7_2_1
-   :practice: T
-   :answer_a: True
-   :answer_b: False
-   :correct: a
-   :feedback_a: Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
-   :feedback_b: Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
-
-   True or False: You can rewrite any for-loop as a while-loop.
 
 .. mchoice:: test_question7_2_2
    :practice: T

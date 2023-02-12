@@ -1,18 +1,21 @@
-More About Iteration
+Iteration
 ::::::::::::::::::::
 
 .. toctree::
-   :caption: More About Iteration
+   :caption: Iteration
    :maxdepth: 2
 
-   intro-IterationRevisited.rst
-   Theforlooprevisited.rst
+   intro-Iteration.rst
    ThewhileStatement.rst
-   RandomlyWalkingTurtles.rst
+   FlowofExecutionofthewhileLoop.rst
    The3n1Sequence.rst
+   SentinelValuesAndValidation.rst
+   
+   TheforLoop.rst
+   TherangeFunction.rst
    NewtonsMethod.rst
    accumulatorRevisited.rst
-   SentinelValuesAndValidation.rst
+   
    AlgorithmsRevisited.rst
    SimpleTables.rst
    2DimensionalIterationImageProcessing.rst

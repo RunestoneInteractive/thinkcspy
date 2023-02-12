@@ -21,21 +21,20 @@ the next term of the sequence from ``n``, either by halving ``n``,
 whenever ``n`` is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
 terminates when ``n`` reaches 1.
 
-This Python function captures that algorithm.  Try running this program several times supplying different values for n.
+This Python code captures that algorithm.  Try running this program several times supplying different values for n.
 
 .. activecode:: ch07_indef1
 
-    def seq3np1(n):
-        """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
-        while n != 1:
-            print(n)
-            if n % 2 == 0:        # n is even
-                n = n // 2
-            else:                 # n is odd
-                n = n * 3 + 1
-        print(n)                  # the last print is 1
-
-    seq3np1(3)
+	n = 3
+	
+	""" Print the 3n+1 sequence from n, terminating when it reaches 1."""
+	while n != 1:
+		print(n)
+		if n % 2 == 0:        # n is even
+			n = n // 2
+		else:                 # n is odd
+			n = n * 3 + 1
+	print(n)                  # the last print is 1
 
 
 
@@ -56,12 +55,6 @@ time through the loop until it reaches 1.
 
 You might like to have some fun and see if you can find a small starting
 number that needs more than a hundred steps before it terminates.
-
-
-.. admonition:: Lab
-
-    * `Experimenting with the 3n+1 Sequence <../Labs/sequencelab.html>`_ In this guided lab exercise we will try to learn more about this sequence.
-
 
 Particular values aside, the interesting question is whether we can prove that
 this sequence terminates for *all* positive values of ``n``. So far, no one has been able
