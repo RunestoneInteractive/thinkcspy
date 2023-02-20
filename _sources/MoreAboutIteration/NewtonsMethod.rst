@@ -38,22 +38,22 @@ value whose square root will be approximated.  The second is the number of times
 calculation yielding a better result.
 
 .. activecode:: chp07_newtonsdef
-
-    def newtonSqrt(n, howmany):
-        approx = 0.5 * n
-        for i in range(howmany):
-            betterapprox = 0.5 * (approx + n/approx)
-            approx = betterapprox
-        return betterapprox
-
-    print(newtonSqrt(100, 10))
-    print(newtonSqrt(4, 10))
-    print(newtonSqrt(1, 10))
+	
+	n = 100
+	howmany = 10
+	
+	approx = 0.5 * n
+	for i in range(howmany):
+		betterapprox = 0.5 * (approx + n/approx)
+		approx = betterapprox
+	prin(betterapprox)
 
 
 .. admonition:: Modify the program ...
 
-   All three of the calls to ``newtonSqrt`` in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these calls, find the **smallest** value for the number of repetitions that will produce the **correct** result.
+   The values used in the previous example produce the correct square root for 100.  However, were 10 iterations required to get the correct answer? 
+   Experiment with different values for the number of repetitions (howmany on line 2). Find the **smallest** value for the number of 
+   repetitions that will produce the **correct** result.
 
 Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.
 
@@ -66,15 +66,13 @@ uses a ``while`` condition to execute until the approximation is no longer chang
 
 .. codelens:: chp07_newtonswhile
 
-    def newtonSqrt(n):
-        approx = 0.5 * n
-        better = 0.5 * (approx + n/approx)
-        while better != approx:
-            approx = better
-            better = 0.5 * (approx + n/approx)
-        return approx
-
-    print(newtonSqrt(10))
+    n = 10
+	approx = 0.5 * n
+	better = 0.5 * (approx + n/approx)
+	while better != approx:
+		approx = better
+		better = 0.5 * (approx + n/approx)
+	print(approx)
 
 .. note::
 

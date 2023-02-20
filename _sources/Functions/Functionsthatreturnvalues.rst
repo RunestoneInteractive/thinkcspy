@@ -32,9 +32,7 @@ the absolute value:
 In this example, the arguments to the ``abs`` function are 5 and -5.
 
 
-Some functions take more than one argument. For example the math module contains a function
-called
-``pow`` which takes two arguments, the base and the exponent.
+Some functions take more than one argument. For example the range function that we saw with ``for`` loops.
 
 .. Inside the function,
 .. the values that are passed get assigned to variables called **parameters**.
@@ -42,14 +40,9 @@ called
 .. activecode:: ch04_5
     :nocanvas:
 
-    import math
-    print(math.pow(2, 3))
+    print(list(range(4, 8)))
 
-    print(math.pow(7, 4))
-
-.. note::
-
-     Of course, we have already seen that raising a base to an exponent can be done with the ** operator.
+    print(list(range(1, 10)))
 
 Another built-in function that takes more than one argument is ``max``.
 
@@ -65,17 +58,17 @@ return the maximum value sent. The arguments can be either simple values or
 expressions. In the last example, 503 is returned, since it is larger than 33,
 125, and 1.  Note that ``max`` also works on lists of values.
 
-Furthermore, functions like ``range``, ``int``, ``abs`` all return values that
+Furthermore, functions like ``int``, ``abs`` all return values that
 can be used to build more complex expressions.
 
 .. index:: fruitful function
    variable; global
    global variable
 
-So an important difference between these functions and one like ``drawSquare`` is that
-``drawSquare`` was not executed because we wanted it to compute a value --- on the contrary,
-we wrote ``drawSquare`` because we wanted it to execute a sequence of steps that caused
-the turtle to draw a specific shape.
+So an important difference between these functions and one like ``printRange`` is that
+``printRange`` was not executed because we wanted it to compute a value --- on the contrary,
+we wrote ``printRange`` because we wanted it to execute a sequence of steps that caused
+the list's range to print.
 
 Functions that return values are sometimes called **fruitful functions**.
 In many other languages, a chunk that doesn't return a value is called a **procedure**,

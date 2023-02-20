@@ -7,7 +7,6 @@ Functions
 
    functions.rst
    Functionsthatreturnvalues.rst
-   UnitTesting.rst
    Variablesandparametersarelocal.rst
    TheAccumulatorPattern.rst
    Functionscancallotherfunctions.rst
@@ -15,6 +14,6 @@ Functions
    mainfunction.rst
    ProgramDevelopment.rst
    Composition.rst
-   ATurtleBarChart.rst
+   UnitTesting.rst
    Glossary.rst
    Exercises.rst

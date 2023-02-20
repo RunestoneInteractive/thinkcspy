@@ -14,7 +14,7 @@
 The 3n + 1 Sequence
 -------------------
 
-As another example of indefinite iteration, let's look at a sequence that has fascinated mathematicians for many years.
+As another example of iteration with ``while``, let's look at a sequence that has fascinated mathematicians for many years.
 The rule  for creating the sequence is to start from
 some positive integer, call it ``n``, and to generate
 the next term of the sequence from ``n``, either by halving ``n``,
@@ -69,24 +69,6 @@ as-yet untested number which does not reduce to 1.
 You'll notice that if you don't stop when you reach one, the sequence gets into
 its own loop:  1, 4, 2, 1, 4, 2, 1, 4, and so on.  One possibility is that there might
 be other cycles that we just haven't found.
-
-.. admonition:: Choosing between ``for`` and ``while``
-
-   Use a ``for`` loop if you know the maximum number of times that you'll
-   need to execute the body.  For example, if you're traversing a list of elements,
-   or can formulate a suitable call to ``range``, then choose the ``for`` loop.
-
-   So any problem like "iterate this weather model run for 1000 cycles", or "search this
-   list of words", "check all integers up to 10000 to see which are prime" suggest that a ``for`` loop is best.
-
-   By contrast, if you are required to repeat some computation until some condition is
-   met, as we did in this 3n + 1 problem, you'll need a ``while`` loop.
-
-   As we noted before, the first case is called **definite iteration** --- we have some definite bounds for
-   what is needed.   The latter case is called **indefinite iteration** --- we are not sure
-   how many iterations we'll need --- we cannot even establish an upper bound!
-
-
 
 .. There are also some great visualization tools becoming available to help you
 .. trace and understand small fragments of Python code.  The one we recommend is at

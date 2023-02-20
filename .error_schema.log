@@ -1,0 +1,2 @@
+file:/C:/Users/Rob/Documents/GitHub/thinkcspy/pretext/thinkcspy.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
+file:/C:/Users/Rob/Documents/GitHub/thinkcspy/pretext/thinkcspy.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include

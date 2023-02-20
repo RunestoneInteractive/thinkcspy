@@ -29,6 +29,7 @@ a boolean expression to control the flow of execution.  The body of while (code 
 expression evaluates to ``True``.
 
 Here is a simple example that counts down from 10 to 0.
+
 .. activecode:: ch07_while1
 
 	count = 10
@@ -38,7 +39,7 @@ Here is a simple example that counts down from 10 to 0.
 	print("Blastoff!")
 
 * **count** is a normal variable here, but since it is governing the ``while`` loop it is also called the **loop variable**.
-* Line 2 here is the *loop condition**. It must always be a boolean expression that will evaluate to ``False`` or ``True``.
+* Line 2 here is the **loop condition**. It must always be a boolean expression that will evaluate to ``False`` or ``True``.
 * Lines 3 and 4 are the **loop body**.  The loop body is always
   indented. The indentation determines exactly what statements are "in the
   loop".  The loop body is run each time the loop is repeated.
@@ -78,7 +79,6 @@ Here is the summation program that uses a while statement.
 .. activecode:: ch07_while2
 
 	""" Return the sum of 1+2+3 ... n """
-	
 	aBound = int(input("Please give a number n: "))
 	theSum  = 0
 	aNumber = 1
@@ -99,15 +99,14 @@ The same program in codelens will allow you to observe the flow of execution.
 
 .. codelens:: ch07_while3
 
-    """ Return the sum of 1+2+3 ... n """
-	
-	aBound = int(input("Please give a number n: "))
-	theSum  = 0
-	aNumber = 1
-	while aNumber <= aBound:
-		theSum = theSum + aNumber
-		aNumber = aNumber + 1
-	print(theSum)
+""" Return the sum of 1+2+3 ... n """
+aBound = int(input("Please give a number n: "))
+theSum  = 0
+aNumber = 1
+while aNumber <= aBound:
+	theSum = theSum + aNumber
+	aNumber = aNumber + 1
+print(theSum)
 
 
 

@@ -59,9 +59,8 @@ Table of Contents
    Selection/toctree.rst
    Debugging/toctree.rst
    MoreAboutIteration/toctree.rst
-   PythonTurtle/toctree.rst
-   PythonModules/toctree.rst
    Functions/toctree.rst
+   PythonModules/toctree.rst
    Files/toctree.rst
    Exceptions/toctree.rst
    IntroRecursion/toctree.rst
@@ -72,6 +71,7 @@ Table of Contents
    Dictionaries/toctree.rst
    WebApps/toctree.rst
    GUIandEventDrivenProgramming/toctree.rst
+   PythonTurtle/toctree.rst
 
 Labs
 ::::

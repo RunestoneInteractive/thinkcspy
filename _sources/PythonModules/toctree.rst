@@ -7,7 +7,6 @@ Python Modules
 
    modules.rst
    MoreAboutUsingModules.rst
-   Themathmodule.rst
    Therandommodule.rst
    CreatingModules.rst
    Glossary.rst

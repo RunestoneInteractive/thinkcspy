@@ -55,7 +55,7 @@ pattern:
    indented the same amount -- *4 spaces is the Python standard* -- from
    the header line.
 
-We've already seen the ``for`` loop which follows this pattern.
+We've already seen the ``while`` and ``for`` loops which follow this pattern.
 
 In a function definition, the keyword in the header is ``def``, which is
 followed by the name of the function and some *parameters* enclosed in
@@ -72,37 +72,27 @@ The figure below shows this relationship.  A function needs certain information 
 
 This type of diagram is often called a **black-box diagram** because it only states the requirements from the perspective of the user.  The user must know the name of the function and what arguments need to be passed.  The details of how the function works are hidden inside the "black-box".
 
-Suppose we're working with turtles and a common operation we need is to draw
-squares.  It would make sense if we did not have to duplicate all the steps each time we want to make a square.   "Draw a square" can be thought of as an *abstraction* of a number of smaller steps.  We will need to provide two pieces of information for the function to do its work: a turtle to do the drawing and a size for the side of the square.  We could represent this using the following black-box diagram.
-
-.. image:: Figures/turtleproc.png
+Suppose we're working with lists of numeric data and a common operation we need is to find the size of the range of numbers in a list.
+It would make sense if we did not have to duplicate all the steps each time we want to find the size of the range.   "printRange" can be thought of as an 
+*abstraction* of a number of smaller steps.  We will need to provide one piece of information for the function to do its work: the list we need the range of.
 
 Here is a program containing a function to capture this idea.  Give it a try.
 
 .. activecode:: ch04_1
     :nocodelens:
 
-    import turtle
-
-    def drawSquare(t, sz):
-        """Make turtle t draw a square of with side sz."""
-
-        for i in range(4):
-            t.forward(sz)
-            t.left(90)
+    def printRange(lst):
+        """Prints the size of the range of lst."""
+        smallest = min(lst)
+		largest = max(lst)
+        print(largest - smallest)
 
 
-    wn = turtle.Screen()              # Set up the window and its attributes
-    wn.bgcolor("lightgreen")
+    my_list1 = [1, 2, 3, 4, 5, 6]
+	printRange(my_list1)
 
-    alex = turtle.Turtle()            # create alex
-    drawSquare(alex, 50)             # Call the function to draw the square passing the actual turtle and the actual side size
-
-    wn.exitonclick()
-
-This function is named ``drawSquare``.  It has two parameters --- one to tell
-the function which turtle to move around and the other to tell it the size
-of the square we want drawn.  In the function definition they are called ``t`` and ``sz`` respectively.   Make sure you know where the body of the function
+This function is named ``printRange``.  It has one parameter --- a variable storing a list of numbers.  In the function definition this parameter is called 
+``lst``.   Make sure you know where the body of the function
 ends --- it depends on the indentation and the blank lines don't count for
 this purpose!
 
@@ -129,9 +119,8 @@ Defining a new function does not make the function run. To do that we need a
 ``print``, ``range`` and ``int``. Function calls contain the name of the function to be
 executed followed by a list of values in parentheses, called *arguments*, which are assigned
 to the parameters in the function definition.
-So in the second to the last line of
-the program, we call the function, and pass ``alex`` as the turtle to be manipulated,
-and 50 as the size of the square we want.
+So in the last line of
+the program, we call the function, and pass ``my_list1`` as the list to be analyzed.
 
 .. The parameters being sent to the function, sometimes referred to as the **actual parameters** or **arguments**,
 .. represent the specific data items that the function will use when it is executing.
@@ -142,67 +131,24 @@ and 50 as the size of the square we want.
 
 Once we've defined a function, we can call it as often as we like and its
 statements will be executed each time we call it.  In this case, we could use it to get
-one of our turtles to draw a square and then we can move the turtle and have it draw a different square in a
-different location.  Note that we lift the tail so that when ``alex`` moves there is no trace.  We put the tail
-back down before drawing the next square.  Make sure you can identify both invocations of the ``drawSquare`` function.
+the size of the range of multiple lists. Make sure you can identify all three invocations of the ``printRange`` function.
 
-.. activecode:: ch04_1a
+.. activecode:: ch04_1
     :nocodelens:
 
-    import turtle
-
-    def drawSquare(t, sz):
-        """Make turtle t draw a square of with side sz."""
-
-        for i in range(4):
-            t.forward(sz)
-            t.left(90)
+    def printRange(lst):
+        """Prints the size of the range of lst."""
+        smallest = min(lst)
+		largest = max(lst)
+        print(largest - smallest)
 
 
-    wn = turtle.Screen()          # Set up the window and its attributes
-    wn.bgcolor("lightgreen")
+    my_list1 = [1, 2, 3, 4, 5, 6]
+	my_list2 = [2, 6, 9, 16, 42, 100, 2, 5]
+	printRange(my_list1)
+	printRange(my_list2)
+	printRange([5, 10, 1000, 2])
 
-    alex = turtle.Turtle()        # create alex
-    drawSquare(alex, 50)          # Call the function to draw the square
-
-    alex.penup()
-    alex.goto(100,100)
-    alex.pendown()
-
-    drawSquare(alex,75)           # Draw another square
-
-    wn.exitonclick()
-
-In the next example, we've changed the ``drawSquare``
-function a little and we get ``tess`` to draw 15 squares with some variations.  Once the function has
-been defined, we can call it as many times as we like with whatever actual parameters we like.
-
-.. activecode:: ch04_2
-    :nocodelens:
-
-    import turtle
-
-    def drawMulticolorSquare(t, sz):
-        """Make turtle t draw a multi-colour square of sz."""
-        for i in ['red','purple','hotpink','blue']:
-            t.color(i)
-            t.forward(sz)
-            t.left(90)
-
-    wn = turtle.Screen()             # Set up the window and its attributes
-    wn.bgcolor("lightgreen")
-
-    tess = turtle.Turtle()           # create tess and set some attributes
-    tess.pensize(3)
-
-    size = 20                        # size of the smallest square
-    for i in range(15):
-        drawMulticolorSquare(tess, size)
-        size = size + 10             # increase the size for next time
-        tess.forward(10)             # move tess along a little
-        tess.right(18)               # and give her some extra turn
-
-    wn.exitonclick()
 
 .. warning::
 
@@ -210,8 +156,8 @@ been defined, we can call it as many times as we like with whatever actual param
    the parentheses ``( )`` after the function name are *required*.  This
    can lead to a difficult bug:  A function name without the
    parenthesis is a legal expression *referring* to the function; for example,
-   ``print`` and ``alex.penup``, but they do
-   not *call* the associated functions.
+   ``print``, but it does
+   not *call* the associated function. Try it below if you want to see.
 
 .. note::
 
@@ -267,10 +213,10 @@ been defined, we can call it as many times as we like with whatever actual param
 
 .. mchoice:: test_question5_1_4
    :practice: T
-   :answer_a: def drawSquare(t, sz)
-   :answer_b: drawSquare
-   :answer_c: drawSquare(t, sz)
-   :answer_d: Make turtle t draw a square with side sz.
+   :answer_a: def printSquare(size)
+   :answer_b: printSquare
+   :answer_c: printSquare(size)
+   :answer_d: Print a square of asterices with side size.
    :correct: b
    :feedback_a: This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
    :feedback_b: Yes, the name of the function is given after the keyword def and before the list of parameters.
@@ -281,61 +227,58 @@ been defined, we can call it as many times as we like with whatever actual param
 
    .. code-block:: python
 
-     def drawSquare(t, sz):
-         """Make turtle t draw a square of with side sz."""
-         for i in range(4):
-             t.forward(sz)
-             t.left(90)
+     def printSquare(size):
+         """Print a square of asterices with side size."""
+         for i in range(size):
+             print("*"*size)
 
 
 
 .. mchoice:: test_question5_1_5
    :practice: T
    :answer_a: i
-   :answer_b: t
-   :answer_c: t, sz
-   :answer_d: t, sz, i
+   :answer_b: size, i
+   :answer_c: size
+   :answer_d: "*"*size
    :correct: c
    :feedback_a: i is a variable used inside of the function, but not a parameter, which is passed in to the function.
-   :feedback_b: t is only one of the parameters to this function.
-   :feedback_c: Yes, the function specifies two parameters: t and sz.
-   :feedback_d: the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
+   :feedback_b: i is a variable used inside of the function, but not a parameter, which is passed in to the function.
+   :feedback_c: Yes, the function specifies one parameter: size.
+   :feedback_d: This is an argument provided to the call to print().
 
    What are the parameters of the following function?
 
    .. code-block:: python
 
-     def drawSquare(t, sz):
-         """Make turtle t draw a square of with side sz."""
-         for i in range(4):
-             t.forward(sz)
-             t.left(90)
+     def printSquare(size):
+         """Print a square of asterices with side size."""
+         for i in range(size):
+             print("*"*size)
 
 
 
 .. mchoice:: test_question5_1_6
    :practice: T
-   :answer_a: def drawSquare(t, sz)
-   :answer_b: drawSquare
-   :answer_c: drawSquare(10)
-   :answer_d: drawSquare(alex, 10):
-   :answer_e: drawSquare(alex, 10)
+   :answer_a: def printSquare(size)
+   :answer_b: printSquare
+   :answer_c: printSquare(10)
+   :answer_d: printSquare(my_size):
+   :answer_e: printSquare(size):
    :correct: e
-   :feedback_a: No, t and sz are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.
+   :feedback_a: No, size is the name of the formal parameter to this function.  When the function is called, it requires an actual value to be passed in.
    :feedback_b: A function call always requires parentheses after the name of the function.
-   :feedback_c: This function takes two parameters (arguments)
-   :feedback_d: A colon is only required in a function definition.  It will cause an error with a function call.
-   :feedback_e: Since alex was already previously defined and 10 is a value, we have passed in two correct values for this function.
+   :feedback_c: Yes, this would work
+   :feedback_d: Yes, this would work since my_size is already defined.
+   :feedback_e: A colon is only required in a function definition.  It will cause an error with a function call.
 
-   Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?  Assume we already have a turtle named alex.
+   Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)? Assume we already have a variable named my_size.
 
    .. code-block:: python
 
-     def drawSquare(t, sz):
-         """Make turtle t draw a square of with side sz."""
-         for i in range(4):
-             t.forward(sz)
-             t.left(90)
+     def printSquare(size):
+         """Print a square of asterices with side size."""
+         for i in range(size):
+             print("*"*size)
 
 
 

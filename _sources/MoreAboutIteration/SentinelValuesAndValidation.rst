@@ -60,7 +60,7 @@ zero is a **sentinel value**, a value used to signal the end of the loop. Here's
 
 .. activecode:: ch07_sentinel
     :timelimit: 60000
-
+	
 	total = 0
 	count = 0
 	moreItems = True
@@ -119,7 +119,7 @@ When you run the following code, try typing something other than Y or N to see h
 
 .. activecode:: ch07_validation
     :timelimit: 60000
-
+	
 	valid_input = False
 	response = input('Do you like lima beans? Y)es or N)o: ')
 	while not valid_input:
@@ -128,8 +128,8 @@ When you run the following code, try typing something other than Y or N to see h
 			valid_input = True
 		else:
 			response = input('Please enter Y for yes or N for no. \n' + message)
-
-    if response == 'Y':
-        print('Great! They are very healthy.')
-    else:
-        print('Too bad. If cooked right, they are quite tasty.')
+	
+	if response == 'Y':
+		print('Great! They are very healthy.')
+	else:
+		print('Too bad. If cooked right, they are quite tasty.')

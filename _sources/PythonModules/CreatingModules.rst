@@ -7,7 +7,7 @@
 Creating Modules
 ----------------
 
-You've seen how to *use* modules like ``random``, ``math``, and ``turtle``, but how would you *create* a module?
+You've seen how to *use* modules like ``random`` and ``math``, but how would you *create* a module?
 
 Every time you've written a Python script you've created a module!
 
@@ -119,10 +119,6 @@ Also - look at all the awesome comments in there!
 .. admonition::  Module Comments
 
     It is important to include header comments in your module that explain what the module does.
-
-.. admonition::  Function Comments
-
-    Functions are the next chapter, but the comments used here demonstrate a common Python documentation style.
 
 Ok - so we've got a function in our module now, let's use it.
 

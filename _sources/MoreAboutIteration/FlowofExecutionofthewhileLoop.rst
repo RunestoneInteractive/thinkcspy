@@ -16,21 +16,12 @@
 
 
 Flow of Execution of the while Loop
----------------------------------
+-----------------------------------
 
-As a program executes, the interpreter always keeps track of which statement is
-about to be executed.  We call this the **control flow**, or the **flow of
-execution** of the program.  When humans execute programs, they often use their
-finger to point to each statement in turn.  So you could think of control flow
-as "Python's moving finger".
+As before with ``if``, loops allow us as programmers to manipulate the control flow of a Python program.
+We can now possibly skip a portion of code, or choose to repeat it an indefinite number of times.
 
-Control flow until now has been strictly top to bottom, one statement at a
-time.  We call this type of control **sequential**.  In Python flow is sequential as long as
-successive statements are indented the *same* amount.  The ``while`` statement 
-introduces indented sub-statements after the while-loop heading.
-
-Flow of control is often easy to visualize and understand if we draw a flowchart.
-This flowchart shows the exact steps and logic of how the ``while`` statement executes.
+The flowchart below provides the general sequence of steps that govern execution of a while loop.
 
 .. image:: Figures/while_flow.png
       :width: 300px
@@ -43,10 +34,10 @@ the buttons.  You can see the value of ``count`` change as the loop iterates thr
 
 .. codelens:: vtest
 
-    count = 10
-	while count > 0:
-		print(count)
-		count = count - 1
-	print("Blastoff!")
+count = 10
+while count > 0:
+	print(count)
+	count = count - 1
+print("Blastoff!")
 
 

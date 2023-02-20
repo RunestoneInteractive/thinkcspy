@@ -17,11 +17,6 @@
 The ``for`` Loop
 ----------------
 
-.. youtube:: xGSfiZt5cdw
-    :divid: forloopvid
-    :height: 315
-    :width: 560
-    :align: left
 
 The ``while`` statement is a general-purpose tool for iteration, and is necessary for any instance of iteration where we don't know how many repetitions will be needed.
 However, if we do know how many are needed, there is a more efficient method: the ``for`` statement.
@@ -68,6 +63,18 @@ Take a look at the output produced when you press the ``run`` button.  There is 
 	call **indefinite iteration**.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition 
 	controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)
 
+.. admonition:: Choosing between ``for`` and ``while``
+
+   Use a ``for`` loop if you know the maximum number of times that you'll
+   need to execute the body.  For example, if you're traversing a list of elements,
+   or can formulate a suitable call to ``range``, then choose the ``for`` loop.
+
+   So any problem like "iterate this weather model run for 1000 cycles", or "search this
+   list of words", "check all integers up to 10000 to see which are prime" suggest that a ``for`` loop is best.
+
+   By contrast, if you are required to repeat some computation until some condition is
+   met, as we did in this 3n + 1 problem, you'll need a ``while`` loop.
+
 What you will notice here is that the ``while`` loop is more work for
 you --- the programmer --- than the equivalent ``for`` loop.  When using a ``while``
 loop you have to control the loop variable yourself.  You give it an initial value, test
@@ -81,7 +88,7 @@ terminates.
    :answer_a: True
    :answer_b: False
    :correct: a
-   :feedback_a: Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
+   :feedback_a: The syntax for a for-loop can make it easier and more appealing, but a while loop is just as powerful as a for-loop and often more flexible.
    :feedback_b: Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
 
    True or False: You can rewrite any for-loop as a while-loop.

@@ -17,11 +17,11 @@ Lists
    StringsandLists.rst
    AppendversusConcatenate.rst
    ListMembership.rst
+   NestedLists.rst
    ObjectsandReferences.rst
    Aliasing.rst
    CloningLists.rst
    RepetitionandReferences.rst
-   TheReturnofLSystems.rst
    Listsandforloops.rst
    TheAccumulatorPatternwithLists.rst
    UsingListsasParameters.rst
@@ -29,7 +29,6 @@ Lists
    WhichisBetter.rst
    FunctionsthatProduceLists.rst
    ListComprehensions.rst
-   NestedLists.rst
    listTypeConversionFunction.rst
    TuplesandMutability.rst
    TupleAssignment.rst

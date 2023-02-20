@@ -62,94 +62,6 @@ for ``sum_of_squares``.  As you step through you will notice that ``x``, and ``y
 different values.  This illustrates that even though they are named the same,
 they are in fact, very different.
 
-Now we will look at another example that uses two functions.  This example illustrates an
-important computer science problem solving technique called
-**generalization**.  Assume we want to write a
-function to draw a square.  The generalization step is to realize that a
-square is just a special kind of rectangle.
-
-To draw a rectangle we need to be able to call a function with different
-arguments for width and height.  Unlike the case of the square,
-we cannot repeat the same thing 4 times, because the four sides are not equal.
-However, it is the case that drawing the bottom and right sides are the
-same sequence as drawing the top and left sides.  So we eventually come up with
-this rather nice code that can draw a rectangle.
-
-.. code-block:: python
-
-    def drawRectangle(t, w, h):
-        """Get turtle t to draw a rectangle of width w and height h."""
-        for i in range(2):
-            t.forward(w)
-            t.left(90)
-            t.forward(h)
-            t.left(90)
-
-The parameter names are chosen as single letters for conciseness.
-In real programs, we will insist on better variable names than this.
-The point is that the program doesn't "understand" that you're drawing a rectangle or that the
-parameters represent the width and the height.  Concepts like rectangle, width, and height are meaningful
-for humans.  They are not concepts that the program or the computer understands.
-
-*Thinking like a computer scientist* involves looking for patterns and
-relationships.  In the code above, we've done that to some extent.  We did
-not just draw four sides. Instead, we spotted that we could draw the
-rectangle as two halves and used a loop to repeat that pattern twice.
-
-But now we might spot that a square is a special kind of rectangle.  A square
-simply uses the same value for both the height and the width.
-We already have a function that draws a rectangle, so we can use that to draw
-our square.
-
-.. code-block:: python
-
-    def drawSquare(tx, sz):        # a new version of drawSquare
-        drawRectangle(tx, sz, sz)
-
-Here is the entire example with the necessary set up code.
-
-.. activecode:: ch04_3
-    :nocodelens:
-
-    import turtle
-
-    def drawRectangle(t, w, h):
-        """Get turtle t to draw a rectangle of width w and height h."""
-        for i in range(2):
-            t.forward(w)
-            t.left(90)
-            t.forward(h)
-            t.left(90)
-
-    def drawSquare(tx, sz):        # a new version of drawSquare
-        drawRectangle(tx, sz, sz)
-
-    wn = turtle.Screen()             # Set up the window
-    wn.bgcolor("lightgreen")
-
-    tess = turtle.Turtle()           # create tess
-
-    drawSquare(tess, 50)
-
-    wn.exitonclick()
-
-
-
-There are some points worth noting here:
-
-* Functions can call other functions.
-* Rewriting ``drawSquare`` like this captures the relationship
-  that we've spotted.
-* A caller of this function might say ``drawSquare(tess, 50)``.  The parameters
-  of this function, ``tx`` and ``sz``, are assigned the values of the tess object, and
-  the integer 50 respectively.
-* In the body of the function, ``tz`` and ``sz`` are just like any other variable.
-* When the call is made to ``drawRectangle``, the values in variables ``tx`` and ``sz``
-  are fetched first, then the call happens.  So as we enter the top of
-  function ``drawRectangle``, its variable ``t`` is assigned the tess object, and ``w`` and
-  ``h`` in that function are both given the value 50.
-
-
 So far, it may not be clear why it is worth the trouble to create all of these
 new functions. Actually, there are a lot of reasons, but this example
 demonstrates two:
@@ -162,11 +74,4 @@ demonstrates two:
    code.
 #. Sometimes you can write functions that allow you to solve a specific
    problem using a more general solution.
-
-
-.. admonition:: Lab
-
-    * `Drawing a Circle <../Labs/lab04_01.html>`_ In this guided lab exercise we will work
-      through a simple problem solving exercise related to drawing a circle with the turtle.
-
 
