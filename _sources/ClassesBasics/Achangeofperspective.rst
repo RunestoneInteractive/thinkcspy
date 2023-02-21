@@ -10,21 +10,12 @@
 A change of perspective
 -----------------------
 
-Throughout the earlier chapters, we wrote functions and called them using a syntax such as ``drawCircle(tess)``.  This suggests that the
-function is the active agent. It says something like, *"Hey, drawCircle!  
-Here's a turtle object for you to use to draw with."*
+Throughout the earlier chapters, we wrote functions and called them using a syntax such as ``printRange(lst)``.  This suggests that the
+function is the active agent. It says something like, *"Hey, printRange!  
+Here's a list for you to use to print with."*
 
-In object-oriented programming, the objects are considered the active agents. 
-For example, in our early introduction to turtles, we used
-an object-oriented style. We said ``tess.forward(100)``, which 
-asks the turtle to move itself forward by the given number of steps.
-An
-invocation like ``tess.circle()`` says *"Hey tess!
-Please use your circle method!"*
-
-
-
-This change in perspective is sometimes considered to be a more "polite" way to write programming instructions.  However, it may not initially
+In object-oriented programming, the objects are considered the active agents. This change in perspective is sometimes considered to be a more "polite" way 
+to write programming instructions.  However, it may not initially
 be obvious that it is useful. It turns out that often times shifting responsibility from 
 the functions onto the objects makes it possible to write more versatile 
 functions and makes it easier to maintain and reuse code.  

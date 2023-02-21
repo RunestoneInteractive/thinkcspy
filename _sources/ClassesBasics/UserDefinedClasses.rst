@@ -14,7 +14,7 @@
 User Defined Classes
 --------------------
 
-We've already seen classes like ``str``, ``int``, ``float`` and ``Turtle``.  These were defined by Python and
+We've already seen classes like ``str``, ``int``, and ``float``.  These were defined by Python and
 made available for us to use.  However, in many cases when we are solving problems we need to create data objects
 that are related to the problem we are trying to solve.  We need to create our own classes.
 

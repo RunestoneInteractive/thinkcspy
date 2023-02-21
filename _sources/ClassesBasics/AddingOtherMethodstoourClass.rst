@@ -20,8 +20,8 @@ We can group together the sensible operations, and the kinds of data
 they apply to, and each instance of the class can have its own state.       
           
 A **method** behaves like a function but it is invoked on a specific
-instance.  For example, with a turtle named ``tess``,  ``tess.right(90)`` asks the ``tess`` object to perform its
-``right`` method and turn 90 degrees.   Methods are accessed using dot notation.  
+instance.  For example, with a list named ``lst``,  ``lst.append(90)`` asks the ``lst`` object to perform its
+``append`` method and add the integer 90 to the end of the list.   Methods are accessed using dot notation.  
 
 Let's add two simple methods to allow a point to give us information about its state.  The ``getX`` method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
 to write functions that return values.  One thing to notice is that even though the ``getX`` method does not need any other parameter information to do its work, there is still one formal parameter, ``self``.  As we stated earlier, all methods defined in a class that operate on objects of that class will have ``self`` as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.

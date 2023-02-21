@@ -9,8 +9,6 @@ Recursion
    CalculatingtheSumofaListofNumbers.rst
    TheThreeLawsofRecursion.rst
    ConvertinganIntegertoaStringinAnyBase.rst
-   intro-VisualizingRecursion.rst
-   SierpinskiTriangle.rst
    Glossary.rst
    ProgrammingExercises.rst
    Exercises.rst

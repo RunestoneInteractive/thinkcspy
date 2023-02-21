@@ -62,9 +62,9 @@ Table of Contents
    Functions/toctree.rst
    PythonModules/toctree.rst
    Files/toctree.rst
-   Exceptions/toctree.rst
    IntroRecursion/toctree.rst
    ClassesBasics/toctree.rst
+   Exceptions/toctree.rst
    ClassesDiggingDeeper/toctree.rst
    Inheritance/toctree.rst
    UnitTesting/toctree.rst

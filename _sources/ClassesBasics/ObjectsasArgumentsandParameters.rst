@@ -10,13 +10,8 @@
 Objects as Arguments and Parameters
 -------------------------------------
 
-You can pass an object as an argument in the usual way.  We've already seen
-this in some of the turtle examples where we passed the turtle to
-some function like ``drawRectangle`` so that the function could 
-control and use whatever turtle instance we passed to it.
-
-Here is a simple function called ``distance`` involving our new ``Point`` objects.  The job of this function is to figure out the 
-distance between two points.
+You can pass an object as an argument in the usual way. Here is a simple function called ``distance`` involving our new ``Point`` objects.  
+The job of this function is to figure out the distance between two points.
  
 .. activecode:: chp13_classes6
 

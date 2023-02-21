@@ -45,9 +45,9 @@ but the same principles are in use.  For example on windows the path might be
 
 You can access files in sub-folders, also called directories, under your home directory
 by adding a slash and the name of the folder.  For example, if you had a file
-called ``hello.py`` in a folder called ``CS150`` that is inside a folder called
-``PyCharmProjects`` under your home directory, then the full name for the file
-``hello.py`` is ``/Users/yourname/PyCharmProjects/CS150/hello.py``.
+called ``hello.py`` in a folder called ``CS128`` that is inside a folder called
+``VSCodeProjects`` under your home directory, then the full name for the file
+``hello.py`` is ``/Users/yourname/VSCodeProjects/CS128/hello.py``.
 This is called an *absolute file path*. An *absolute file path* typically
 only works on a specific computer. Think about it for a second. What other
 computer in the world is going to have an *absolute file path* that starts with
