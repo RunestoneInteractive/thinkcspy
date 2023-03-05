@@ -15,9 +15,9 @@ General Introduction
    RuntimeErrors.rst
    SemanticErrors.rst
    ExperimentalDebugging.rst
-   FormalandNaturalLanguages.rst
    ATypicalFirstProgram.rst
    Comments.rst
+   FormalandNaturalLanguages.rst
    Glossary.rst
    Exercises.rst
    

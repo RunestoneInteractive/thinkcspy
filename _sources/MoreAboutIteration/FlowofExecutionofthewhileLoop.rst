@@ -34,10 +34,10 @@ the buttons.  You can see the value of ``count`` change as the loop iterates thr
 
 .. codelens:: vtest
 
-count = 10
-while count > 0:
-	print(count)
-	count = count - 1
-print("Blastoff!")
+	count = 10
+	while count > 0:
+		print(count)
+		count = count - 1
+	print("Blastoff!")
 
 

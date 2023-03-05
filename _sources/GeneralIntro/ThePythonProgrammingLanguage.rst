@@ -58,11 +58,6 @@ without further translation.
 .. image:: Figures/compile.png
    :alt: Compile illustration
 
-Many modern languages use both processes. They are first compiled into a lower
-level language, called **byte code**, and then interpreted by a program called
-a **virtual machine**. Python uses both processes, but because of the way
-programmers interact with it, it is usually considered an interpreted language.
-
 There are two ways to use the Python interpreter: *shell mode* and *program
 mode*. In shell mode, you type Python expressions into the **Python shell**,
 and the interpreter immediately shows the result.  The example below shows the Python shell at work.
@@ -111,16 +106,6 @@ programs identify a file as containing python code.
 These examples show Python being run from a Unix command line. In other
 development environments, the details of executing programs may differ. Also,
 most programs are more interesting than this one.
-
-.. admonition:: Want to learn more about Python?
-
-	If you would like to learn more about installing and using Python, here are some video links.
-	`Installing Python for Windows <http://youtu.be/9EfGpN1Pnsg>`__ shows you how to install the Python environment under
-	Windows Vista,
-	`Installing Python for Mac <http://youtu.be/MEmEJCLLI2k>`__ shows you how to install under Mac OS/X, and
-	`Installing Python for Linux <http://youtu.be/RLPYBxfAud4>`__ shows you how to install from the Linux
-	command line.
-	`Using Python <http://youtu.be/kXbpB5_ywDw>`__ shows you some details about the Python shell and source code.
 
 **Check your understanding**
 
