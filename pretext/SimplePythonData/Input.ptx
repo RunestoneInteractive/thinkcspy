@@ -6,11 +6,12 @@
             do is allow the user to enter any value they wish for the number of seconds.  The program could then print the
             proper result for that starting value.</p>
   <p>In order to do this, we need a way to get <term>input</term> from the user.  Luckily, in Python
-            there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.</p>
+            there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.
+  </p>
   <program language="python">
     <input>
 n = input("Please enter your name: ")
-</input>
+    </input>
   </program>
   <p>The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt is
             shown.
@@ -22,10 +23,10 @@ n = input("Please enter your name: ")
     <input>
 n = input("Please enter your name: ")
 print("Hello", n)
-        </input>
+    </input>
   </program>
   <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
-            <c>"17"</c>.  It would be your job, as the programmer, to convert that string into
+    <c>"17"</c>.  It would be your job, as the programmer, to convert that string into
             an int or a float, using the <c>int</c> or <c>float</c> converter functions we saw
             earlier.</p>
   <p>To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then
@@ -42,7 +43,7 @@ minutes =  secs_still_remaining // 60
 secs_finally_remaining = secs_still_remaining  % 60
 
 print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
-        </input>
+    </input>
   </program>
   <p>The variable <c>str_seconds</c> will refer to the string that is entered by the user. As we said above, even though this string may be <c>7684</c>, it is still a string and not a number.  To convert it to an integer, we use the <c>int</c> function.
             The result is referred to by <c>total_secs</c>.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.</p>
@@ -57,7 +58,7 @@ print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 n = input("Please enter your age: ")
 # user types in 18
 print ( type(n) )
-</input>
+        </input>
       </program>
     </statement>
     <choices>
@@ -67,7 +68,7 @@ print ( type(n) )
         </statement>
         <feedback>
                     All input from users is read in as a string.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -75,7 +76,7 @@ print ( type(n) )
         </statement>
         <feedback>
                     Even though the user typed in an integer, it does not come into the program as an integer.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -83,7 +84,7 @@ print ( type(n) )
         </statement>
         <feedback>
                     18 is the value of what the user typed, not the type of the data.
-                </feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
@@ -91,7 +92,7 @@ print ( type(n) )
         </statement>
         <feedback>
                     18 is the value of what the user typed, not the type of the data.
-                </feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -101,12 +102,18 @@ print ( type(n) )
       <p>Click on all of the variables of type `int` in the code below</p>
     </statement>
     <areas>
-    <cline><area correct="no">seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
-    <p></p>
-    <cline><area>hours</area> = int(<area correct="no">seconds</area>) // 3600</cline>
-    <cline><area>total_secs</area> = int(<area correct="no">seconds</area>)</cline>
-    <cline><area>secs_still_remaining</area> = <area>total_secs</area> % 3600</cline>
-    <cline>print(<area>secs_still_remaining</area>)</cline>
+      <cline>
+        <area correct="no">seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
+      <p></p>
+      <cline>
+        <area>hours</area> = int(<area correct="no">seconds</area>) // 3600</cline>
+      <cline>
+        <area>total_secs</area> = int(<area correct="no">seconds</area>)
+      </cline>
+      <cline>
+        <area>secs_still_remaining</area> =        <area>total_secs</area> % 3600</cline>
+      <cline>print(<area>secs_still_remaining</area>)
+      </cline>
 
 
     </areas>
@@ -117,12 +124,18 @@ print ( type(n) )
       <p>Click on all of the variables of type `str` in the code below</p>
     </statement>
     <areas>
-    <cline><area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
-    <p></p>
-    <cline><area correct ="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
-    <cline><area correxct="no">total_secs</area> = int(<area>seconds</area>)</cline>
-    <cline><area correct="no">secs_still_remaining</area> = <area correct="no">total_secs</area> % 3600</cline>
-    <cline>print(<area correct ="no">secs_still_remaining</area>)</cline>
+      <cline>
+        <area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
+      <p></p>
+      <cline>
+        <area correct ="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
+      <cline>
+        <area correct="no">total_secs</area> = int(<area>seconds</area>)
+      </cline>
+      <cline>
+        <area correct="no">secs_still_remaining</area> =        <area correct="no">total_secs</area> % 3600</cline>
+      <cline>print(<area correct ="no">secs_still_remaining</area>)
+      </cline>
 
 
     </areas>
