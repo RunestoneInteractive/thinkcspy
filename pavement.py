@@ -21,7 +21,7 @@ except ImportError:
 
 
 ######## CHANGE THIS ##########
-project_name = "thinkcspy"
+project_name = "mines_csstem"
 ###############################
 
 master_url = None
@@ -48,7 +48,7 @@ options(
         doctrees=doctrees,
         template_args={
             "course_id": project_name,
-            "course_title": "How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist",
+            "course_title": "Computer\\ Science\\ for\\ STEM",
             "login_required": "false",
             "appname": master_app,
             "loglevel": 10,
@@ -89,7 +89,7 @@ from runestone import build
 
 template_args = {
     "course_id": project_name,
-    "course_title": "How\\ to\\ Think\\ like\\ a\\ Computer\\ Scientist",
+    "course_title": "Computer\\ Science\\ for\\ STEM",
     "login_required": "false",
     "appname": master_app,
     "loglevel": 10,
