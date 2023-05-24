@@ -11,9 +11,9 @@
 4<xi:include href="./RuntimeErrors.ptx"/>
 4<xi:include href="./SemanticErrors.ptx"/>
 4<xi:include href="./ExperimentalDebugging.ptx"/>
-4<xi:include href="./FormalandNaturalLanguages.ptx"/>
 4<xi:include href="./ATypicalFirstProgram.ptx"/>
 4<xi:include href="./Comments.ptx"/>
+4<xi:include href="./FormalandNaturalLanguages.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./Exercises.ptx"/>
 </chapter>

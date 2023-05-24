@@ -2,21 +2,8 @@
 <section xml:id="python-turtle_the-range-function">
   <title>The range Function</title>
   <video xml:id="advrange" youtube="YK8QlIT3__M" width="auto"/>
-  <p>In our simple example from the last section (shown again below), we used a list of four integers to cause the iteration
-            to happen four times.  We said that we could have used any four values.  In fact, we even used four colors.</p>
-  <program language="python">
-    <input>
-import turtle            # set up alex
-wn = turtle.Screen()
-alex = turtle.Turtle()
-
-for i in [0, 1, 2, 3]:   # repeat four times
-    alex.forward(50)
-    alex.left(90)
-
-wn.exitonclick()
-    </input>
-  </program>
+  <p>In our first example of a while loop, we counted down from 10 to 0. If we were to consider doing this with a for loop, we would need to construct our own series of numbers
+ to loop through them.</p>
   <p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
             want to write simple <c>for loop</c> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
             In fact, these lists are so popular that Python gives us special built-in
@@ -37,9 +24,8 @@ for x in range(10):
   <p>So to repeat something four times, a good Python programmer would do this:</p>
   <program language="python">
     <input>
-for i in range(4):
-    alex.forward(50)
-    alex.left(90)
+    for i in range(10):
+      #do something
     </input>
   </program>
   <p>The <url href="http://docs.python.org/py3k/library/functions.html?highlight=range#range" visual="http://docs.python.org/py3k/library/functions.html?highlight=range#range">range</url> function is actually a very powerful function

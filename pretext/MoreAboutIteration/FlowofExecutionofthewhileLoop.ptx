@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<section xml:id="python-turtle_flow-of-execution-of-the-while-loop">
+  <title>Flow of Execution of the while Loop</title>
+  <p>As before with ``if``, loops allow us as programmers to manipulate the control flow of a Python program.
+            We can now possibly skip a portion of code, or choose to repeat it an indefinite number of times.</p>
+  <p>The flowchart below provides the general sequence of steps that govern execution of a while loop.</p>
+  <image source="Figures/while_flow.png" width="300px%"/>
+  <p>A codelens demonstration is a good way to help you visualize exactly how the flow of control
+            works with the while loop.  Try stepping forward and backward through the program by pressing
+            the buttons.  You can see the value of <c>count</c> change as the loop iterates through the values from 10 to 0.</p>
+  <program xml:id="vtest" interactive="codelens" language="python">
+    <input>
+          count = 10
+          while count > 0:
+            print(count)
+            count = count - 1
+          print("Blastoff!")
+    </input>
+  </program>
+</section>

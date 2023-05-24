@@ -34,10 +34,6 @@
             <term>executable</term>. Once a program is compiled, you can execute it repeatedly
             without further translation.</p>
   <image source="GeneralIntro/Figures/compile.png" width="50%" alt="Compile illustration"/>
-  <p>Many modern languages use both processes. They are first compiled into a lower
-            level language, called <term>byte code</term>, and then interpreted by a program called
-            a <term>virtual machine</term>. Python uses both processes, but because of the way
-            programmers interact with it, it is usually considered an interpreted language.</p>
   <p>There are two ways to use the Python interpreter: <em>shell mode</em> and <em>program
                 mode</em>. In shell mode, you type Python expressions into the <term>Python shell</term>,
             and the interpreter immediately shows the result.  The example below shows the Python shell at work.</p>
@@ -75,16 +71,6 @@ My first program adds two numbers, 2 and 3:
   <p>These examples show Python being run from a Unix command line. In other
             development environments, the details of executing programs may differ. Also,
             most programs are more interesting than this one.</p>
-  <note>
-    <title>Want to learn more about Python?</title>
-    <p>If you would like to learn more about installing and using Python, here are some video links.
-                <url href="http://youtu.be/9EfGpN1Pnsg" visual="http://youtu.be/9EfGpN1Pnsg">Installing Python for Windows</url> shows you how to install the Python environment under
-                Windows Vista,
-                <url href="http://youtu.be/MEmEJCLLI2k" visual="http://youtu.be/MEmEJCLLI2k">Installing Python for Mac</url> shows you how to install under Mac OS/X, and
-                <url href="http://youtu.be/RLPYBxfAud4" visual="http://youtu.be/RLPYBxfAud4">Installing Python for Linux</url> shows you how to install from the Linux
-                command line.
-                <url href="http://youtu.be/kXbpB5_ywDw" visual="http://youtu.be/kXbpB5_ywDw">Using Python</url> shows you some details about the Python shell and source code.</p>
-  </note>
   <p>
     <term>Check your understanding</term>
   </p>
