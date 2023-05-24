@@ -146,45 +146,4 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_7_2">
-    <statement>
-      <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
-      <program language="python">
-        <input>
-if x &lt; y and x &lt; z:
-    print("a")
-elif y &lt; x and y &lt; z:
-    print("b")
-else:
-    print("c")
-</input>
-      </program>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>a</p>
-        </statement>
-        <feedback>
-                    While the value in x is less than the value in y (3 is less than 5) it is not less than the value in z (3 is not less than 2).
-                </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>b</p>
-        </statement>
-        <feedback>
-                    The value in y is not less than the value in x (5 is not less than 3).
-                </feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>c</p>
-        </statement>
-        <feedback>
-                    Since the first two Boolean expressions are false the else will be executed.
-                </feedback>
-      </choice>
-    </choices>
-  </exercise>
 </section>

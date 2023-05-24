@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="strings_a-collection-data-type">
   <title>A Collection Data Type</title>
-  <p>So far we have seen built-in types like: <c>int</c>, <c>float</c>,
-            <c>bool</c>, <c>str</c> and we've seen lists.
-            <c>int</c>, <c>float</c>, and
-            <c>bool</c> are considered to be simple or primitive data types because their values are not composed
+
+  <p>So far we have seen built-in types like: <c>int</c>, <c>float</c>, and <c>str</c>.</p>
+  <p><c>int</c> and <c>float</c> are considered to be simple or primitive data types because their values are not composed
             of any smaller parts.  They cannot be broken down.
-            On the other hand, strings and lists are different from the others because they
+            On the other hand, strings (and lists that we will talk about next chapter) are different from the others because they
             are made up of smaller pieces.  In the case of strings, they are made up of smaller
             strings each containing one <term>character</term>.</p>
   <p>Types that are comprised of smaller pieces are called <term>collection data types</term>.
@@ -14,5 +13,6 @@
             single entity (the whole), or we may want to access its parts. This ambiguity is useful.</p>
   <p>Strings can be defined as sequential collections of characters.  This means that the individual characters
             that make up the string are assumed to be in a particular order from left to right.</p>
-  <p>A string that contains no characters, often referred to as the <term>empty string</term>, is still considered to be a string.  It is simply a sequence of zero characters and is represented by &#x2018;' or <q/> (two single or two double quotes with nothing in between).</p>
+  <p>A string that contains no characters, often referred to as the <term>empty string</term>, is still considered to be a string.</p>
+  <p>It is simply a sequence of zero characters and is represented by &#x2018;' or <q/> (two single or two double quotes with nothing in between).</p>
 </section>

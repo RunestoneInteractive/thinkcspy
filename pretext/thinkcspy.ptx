@@ -13,24 +13,24 @@
         </frontmatter>
         <xi:include href="./GeneralIntro/toctree.ptx"/>
         <xi:include href="./SimplePythonData/toctree.ptx"/>
+        <xi:include href="./Strings/toctree.ptx"/>
+        <xi:include href="./Lists/toctree.ptx"/>
+        <xi:include href="./Selection/toctree.ptx"/>
         <xi:include href="./Debugging/toctree.ptx"/>
+        <xi:include href="./MoreAboutIteration/toctree.ptx"/>
         <xi:include href="./PythonTurtle/toctree.ptx"/>
         <xi:include href="./PythonModules/toctree.ptx"/>
         <xi:include href="./Functions/toctree.ptx"/>
-        <xi:include href="./Selection/toctree.ptx"/>
-        <xi:include href="./MoreAboutIteration/toctree.ptx"/>
-        <xi:include href="./Strings/toctree.ptx"/>
-        <xi:include href="./Lists/toctree.ptx"/>
         <xi:include href="./Files/toctree.ptx"/>
-        <xi:include href="./Dictionaries/toctree.ptx"/>
         <xi:include href="./Exceptions/toctree.ptx"/>
-        <xi:include href="./WebApps/toctree.ptx"/>
-        <xi:include href="./GUIandEventDrivenProgramming/toctree.ptx"/>
         <xi:include href="./IntroRecursion/toctree.ptx"/>
         <xi:include href="./ClassesBasics/toctree.ptx"/>
         <xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>
         <xi:include href="./Inheritance/toctree.ptx"/>
         <xi:include href="./UnitTesting/toctree.ptx"/>
+        <xi:include href="./Dictionaries/toctree.ptx"/>
+        <xi:include href="./WebApps/toctree.ptx"/>
+        <xi:include href="./GUIandEventDrivenProgramming/toctree.ptx"/>
         <backmatter>
             <xi:include href="./Appendices/PrecedenceTable.ptx"/>
             <!-- <xi:include href="./Appendices/errorsAndDebug.ptx"/> -->

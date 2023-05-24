@@ -2,12 +2,10 @@
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
   <introduction>
-  <p>We previously saw that each turtle instance has its own attributes and
-            a number of methods that can be applied to the instance.  For example,
-            we wrote <c>tess.right(90)</c> when we wanted the turtle object <c>tess</c> to perform the <c>right</c> method to turn
-            to the right 90 degrees.  The <q>dot notation</q> is the way we connect the name of an object to the name of a method
-            it can perform.</p>
-  <p>Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.</p>
+  <p>We previously used a few functions like <c>print()</c> and <c>input()</c>.  A <b>method</b> is a function that is attached to a specific Python object. 
+    To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
+    it can perform. For example, we can write <c>ss.upper()</c> when we wanted the string <c>ss</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
+  <p>Remember that Strings are objects. Each string instance has its own attributes and methods. The most important attribute of the string is the collection of characters. There are a wide variety of methods. Try the following program.</p>
   <program xml:id="chp08_upper" interactive="activecode" language="python">
     <input>
 ss = "Hello, World"
@@ -338,7 +336,7 @@ print(s[1] * s.index("n"))
   </exercise>
 </introduction>
   <subsection xml:id="strings_string-format-method">
-    <title>String Format Method</title>
+    <title>F-Strings</title>
     <p>In grade school quizzes a common convention is to use fill-in-the blanks. For instance,</p>
     <blockquote>
       <p>Hello _____!</p>
@@ -346,24 +344,23 @@ print(s[1] * s.index("n"))
     <p>and you can fill in the name of the person greeted, and combine
                 given text with a chosen insertion. <em>We use this as an analogy:</em>
                 Python has a similar
-                construction, better called fill-in-the-braces. The string method <c>format</c>,  makes
+                construction, called a formatted string or an <b>f-string</b>. An f-string makes
                 substitutions into places in a string
                 enclosed in braces. Run this code:</p>
     <program xml:id="ch08_methods3" interactive="activecode" language="python">
       <input>
 person = input('Your name: ')
-greeting = 'Hello {}!'.format(person)
+greeting = f'Hello {person}!'
 print(greeting)
         </input>
     </program>
     <p>There are several new ideas here!</p>
-    <p>The string for the <c>format</c> method has a special form, with braces embedded.
-                Such a string is called a <em>format string</em>.  Places where
-                braces are embedded are replaced by the value of an expression
-                taken from the parameter list for the <c>format</c> method. There are many
+    <p>The string has been formatted in a new way. We have included an <c>f</c> before the starting quotation mark.
+                Such a string is called an <i>f-string</i>.  Places where
+                braces are embedded are replaced by the value of the expression inside the braces. There are many
                 variations on the syntax between the braces. In this case we use
                 the syntax where the first (and only) location in the string with
-                braces has a substitution made from the first (and only) parameter.</p>
+                braces has the variable <c>person</c>. When this code is evaluated, the value of the person variable is placed in the string in this location.</p>
     <p>In the code above, this new string is assigned to the identifier
                 <c>greeting</c>, and then the string is printed.</p>
     <p>The identifier
@@ -374,7 +371,7 @@ print(greeting)
     <program xml:id="ch08_methods4" interactive="activecode" language="python">
       <input>
 person = input('Enter your name: ')
-print('Hello {}!'.format(person))
+print(f'Hello {person}!')
         </input>
     </program>
     <p>There can be multiple substitutions, with data of any type.
@@ -384,32 +381,28 @@ print('Hello {}!'.format(person))
 origPrice = float(input('Enter the original price: $'))
 discount = float(input('Enter discount percentage: '))
 newPrice = (1 - discount/100)*origPrice
-calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+calculation = f'${origPrice} discounted by {discount}% is ${newPrice}.'
 print(calculation)
         </input>
     </program>
-    <p>The parameters are inserted into the braces in order.</p>
     <p>If you used the data suggested, this result is not satisfying.
                 Prices should appear with exactly two places beyond the decimal point,
                 but that is not the default way to display floats.</p>
-    <p>Format strings can give further information inside the braces
+    <p>F-strings can give further information inside the braces
                 showing how to specially format data.
                 In particular floats can be shown with a specific number of decimal places.
-                For two decimal places, put <c>:.2f</c> inside the braces for the monetary values:</p>
+                For two decimal places, put <c>:.2f</c> inside the braces but after the variable name for the monetary values:</p>
     <program xml:id="ch08_methods6" interactive="activecode" language="python">
       <input>
 origPrice = float(input('Enter the original price: $'))
 discount = float(input('Enter discount percentage: '))
 newPrice = (1 - discount/100)*origPrice
-calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
+calculation = f'${origPrice:.2f} discounted by {discount}% is ${newPrice:.2f}.'
 print(calculation)
         </input>
     </program>
     <p>The 2 in the format modifier can be replaced by another integer to round to that
                 specified number of digits.</p>
-    <p>This kind of format string depends directly on the order of the
-                parameters to the format method. There are other approaches that we will
-                skip here, explicitly numbering substitutions and taking substitutions from a dictionary.</p>
     <p>A technical point: Since braces have special meaning in a format
                 string, there must be a special rule if you want braces to actually
                 be included in the final <em>formatted</em> string. The rule is to double
@@ -419,25 +412,10 @@ print(calculation)
                 formatted string:</p>
     <pre>a = 5
 b = 9
-setStr =  'The set is {&#x200B;{ {},{} }&#x200B;}.'.format(a, b)
+setStr = f'The set is {​{ {a},{b} }​}.'
 print(setStr)</pre>
     <p>Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
                 printing doubled braces, but standard Python prints <c>{5, 9}</c>.</p>
-    <p>You can have multiple placeholders indexing the same argument, or perhaps even have extra
-                arguments that are not referenced at all:</p>
-    <program xml:id="ch08_formatspecification" interactive="activecode" language="python">
-      <input>
-letter = """
-Dear {0} {2}.
- {0}, I have an interesting money-making proposition for you!
- If you deposit $10 million into my bank account, I can
- double your money ...
-"""
-
-print(letter.format("Paris", "Whitney", "Hilton"))
-print(letter.format("Bill", "Henry", "Gates"))
-        </input>
-    </program>
     <exercise label="test_question8_3_3">
       <statement>
         <p>What is printed by the following statements?</p>
@@ -445,7 +423,7 @@ print(letter.format("Bill", "Henry", "Gates"))
           <input>
 x = 2
 y = 6
-print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
+print(f'sum of {x} and {y} is {x+y}; product: {x*y}.')
 </input>
         </program>
       </statement>
@@ -455,15 +433,15 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
             <p>Nothing - it causes an error</p>
           </statement>
           <feedback>
-                    It is legal format syntax:  put the data in place of the braces.
+                    It is legal format syntax.
                 </feedback>
         </choice>
         <choice>
           <statement>
-            <p>sum of {} and {} is {}; product: {}. 2 6 8 12</p>
+            <p>sum of {} and {} is {}; product: {}.</p>
           </statement>
           <feedback>
-                    Put the data into the format string; not after it.
+                    Put the value of each expression in place of the braces.
                 </feedback>
         </choice>
         <choice correct="yes">
@@ -471,7 +449,7 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
             <p>sum of 2 and 6 is 8; product: 12.</p>
           </statement>
           <feedback>
-                    Yes, correct substitutions!
+                    Yes, correct!
                 </feedback>
         </choice>
         <choice>
@@ -490,7 +468,7 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
         <program language="python">
           <input>
 v = 2.34567
-print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+print(f'{v:.1f} {v:.2f} {v:.7f}')
 </input>
         </program>
       </statement>
