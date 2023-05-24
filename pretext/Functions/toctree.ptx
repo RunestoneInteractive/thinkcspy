@@ -3,7 +3,6 @@
 4<title>Functions</title>
 4<xi:include href="./functions.ptx"/>
 4<xi:include href="./Functionsthatreturnvalues.ptx"/>
-4<xi:include href="./UnitTesting.ptx"/>
 4<xi:include href="./Variablesandparametersarelocal.ptx"/>
 4<xi:include href="./TheAccumulatorPattern.ptx"/>
 4<xi:include href="./Functionscancallotherfunctions.ptx"/>
@@ -11,7 +10,7 @@
 4<xi:include href="./mainfunction.ptx"/>
 4<xi:include href="./ProgramDevelopment.ptx"/>
 4<xi:include href="./Composition.ptx"/>
-4<xi:include href="./ATurtleBarChart.ptx"/>
+4<xi:include href="./UnitTesting.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./Exercises.ptx"/>
 </chapter>

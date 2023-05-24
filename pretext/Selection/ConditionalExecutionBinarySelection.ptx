@@ -37,6 +37,24 @@ else:
             line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
             a colon (:).</p>
   <p>The more indented statements that follow are called a <term>block</term>.</p>
+
+  <p>As a program executes, the interpreter always keeps track of which statement is
+    about to be executed.  We call this the <b>control flow</b>, or the <b>flow of
+    execution</b> of the program.  When humans execute programs, they often use their
+    finger to point to each statement in turn.  So you could think of control flow
+    as "Python's moving finger".</p>
+
+  <p>Control flow until now has been strictly top to bottom, one statement at a
+    time.  We call this type of control <term>sequential</term>.  In Python flow is sequential as long as
+    successive statements are indented the <em>same</em> amount.  The <c>if</c> statement 
+    introduces indented sub-statements after the if heading.</p>
+
+  <p>Each <c>if</c> statement consists of a header line and a body. The header
+    line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
+      a colon (:).</p>
+
+  <p> The more indented statements that follow are called a <b>block</b> or sometimes a <b>body</b>.</p>
+
   <p>Each of the statements inside the first block of statements is executed in order if the boolean
             expression evaluates to <c>True</c>. The entire first block of statements
             is skipped if the boolean expression evaluates to <c>False</c>, and instead

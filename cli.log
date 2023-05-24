@@ -1,7 +1,0 @@
-INFO    : PreTeXt project found in `C:\Users\Rob\Documents\GitHub\thinkcspy`.
-WARNING : Project's CLI version could not be detected from `requirements.txt`.
-WARNING : Try `pretext init --refresh` to produce a compatible file.
-INFO    : 
-CRITICAL: There is not a target named "html" for this project.ptx manifest.
-INFO    : However, the targets with names ['web', 'runestone', 'subset'] have "html" as their format.  Try to view one of those instead or edit your project.ptx manifest.
-CRITICAL: Exiting.

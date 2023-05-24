@@ -3,7 +3,6 @@
 4<title>Python Modules</title>
 4<xi:include href="./modules.ptx"/>
 4<xi:include href="./MoreAboutUsingModules.ptx"/>
-4<xi:include href="./Themathmodule.ptx"/>
 4<xi:include href="./Therandommodule.ptx"/>
 4<xi:include href="./CreatingModules.ptx"/>
 4<xi:include href="./Glossary.ptx"/>

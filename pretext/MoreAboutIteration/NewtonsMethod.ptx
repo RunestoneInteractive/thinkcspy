@@ -21,21 +21,21 @@ better =  1/2 * (approx + n/approx)
             calculation yielding a better result.</p>
   <program xml:id="chp07_newtonsdef" interactive="activecode" language="python">
     <input>
-def newtonSqrt(n, howmany):
-    approx = 0.5 * n
-    for i in range(howmany):
-        betterapprox = 0.5 * (approx + n/approx)
-        approx = betterapprox
-    return betterapprox
+	n = 100
+ 	howmany = 10
 
-print(newtonSqrt(100, 10))
-print(newtonSqrt(4, 10))
-print(newtonSqrt(1, 10))
+ 	approx = 0.5 * n
+ 	for i in range(howmany):
+ 		betterapprox = 0.5 * (approx + n/approx)
+ 		approx = betterapprox
+ 	prin(betterapprox)
     </input>
   </program>
   <note>
     <title>Modify the program &#x2026;</title>
-    <p>All three of the calls to <c>newtonSqrt</c> in the previous example produce the correct square root for the first parameter.  However, were 10 iterations required to get the correct answer? Experiment with different values for the number of repetitions (the 10 on lines 8, 9, and 10). For each of these calls, find the <term>smallest</term> value for the number of repetitions that will produce the <term>correct</term> result.</p>
+    <p>The values used in the previous example produce the correct square root for 100.  However, were 10 iterations required to get the correct answer? 
+      Experiment with different values for the number of repetitions (howmany on line 2). Find the <b>smallest</b> value for the number of 
+      repetitions that will produce the <b>correct</b> result.</p>
   </note>
   <p>Repeating more than the required number of times is a waste of computing resources. So definite iteration is not a good solution to this problem.</p>
   <p>In general, Newton's algorithm will eventually reach a point where the new approximation is no better than the previous.  At that point, we could simply stop.
@@ -45,15 +45,13 @@ print(newtonSqrt(1, 10))
             uses a <c>while</c> condition to execute until the approximation is no longer changing.  Each time through the loop we compute a <q>better</q> approximation using the formula described earlier.  As long as the <q>better</q> is different, we try again.  Step through the program and watch the approximations get closer and closer.</p>
   <program xml:id="chp07_newtonswhile" interactive="codelens" language="python">
     <input>
-          def newtonSqrt(n):
-              approx = 0.5 * n
-              better = 0.5 * (approx + n/approx)
-              while better != approx:
-                  approx = better
-                  better = 0.5 * (approx + n/approx)
-              return approx
-          
-          print(newtonSqrt(10))
+n = 10
+approx = 0.5 * n
+better = 0.5 * (approx + n/approx)
+while better != approx:
+  approx = better
+  better = 0.5 * (approx + n/approx)
+print(approx)
     </input>
   </program>
   <note>

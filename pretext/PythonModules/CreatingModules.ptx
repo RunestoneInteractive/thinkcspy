@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_creating-modules">
   <title>Creating Modules</title>
-  <p>You've seen how to <em>use</em> modules like <c>random</c>, <c>math</c>, and <c>turtle</c>, but how would you <em>create</em> a module?</p>
+  <p>You've seen how to <em>use</em> modules like <c>random</c> and <c>math</c>, but how would you <em>create</em> a module?</p>
   <p>Every time you've written a Python script you've created a module!</p>
   <p>A Python module is just a Python source code file.  Let's consider the Python file shown below.</p>
   <p>
@@ -153,10 +153,6 @@ def order_coffee(size, roast):
   <note>
     <title>Module Comments</title>
     <p>It is important to include header comments in your module that explain what the module does.</p>
-  </note>
-  <note>
-    <title>Function Comments</title>
-    <p>Functions are the next chapter, but the comments used here demonstrate a common Python documentation style.</p>
   </note>
   <p>Ok - so we've got a function in our module now, let's use it.</p>
   <p>

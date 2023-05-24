@@ -1,27 +1,26 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_the-3n-1-sequence">
   <title>The 3n + 1 Sequence</title>
-  <p>As another example of indefinite iteration, let's look at a sequence that has fascinated mathematicians for many years.
+  <p>As another example of iteration with <c>while</c>, let's look at a sequence that has fascinated mathematicians for many years.
             The rule  for creating the sequence is to start from
             some positive integer, call it <c>n</c>, and to generate
             the next term of the sequence from <c>n</c>, either by halving <c>n</c>,
             whenever <c>n</c> is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
             terminates when <c>n</c> reaches 1.</p>
-  <p>This Python function captures that algorithm.  Try running this program several times supplying different values for n.</p>
+  <p>This Python code captures that algorithm.  Try running this program several times supplying different values for n.</p>
   <program xml:id="ch07_indef1" interactive="activecode" language="python">
     <input>
-def seq3np1(n):
-    """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
-    while n != 1:
+      n = 3
+
+      """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
+      while n != 1:
         print(n)
         if n % 2 == 0:        # n is even
-            n = n // 2
+          n = n // 2
         else:                 # n is odd
-            n = n * 3 + 1
-    print(n)                  # the last print is 1
-
-seq3np1(3)
-        </input>
+          n = n * 3 + 1
+      print(n)                  # the last print is 1
+    </input>
   </program>
   <p>The condition for this loop is <c>n != 1</c>.  The loop will continue running until
             <c>n == 1</c> (which will make the condition false).</p>
@@ -36,16 +35,7 @@ seq3np1(3)
             time through the loop until it reaches 1.</p>
   <p>You might like to have some fun and see if you can find a small starting
             number that needs more than a hundred steps before it terminates.</p>
-  <note>
-    <title>Lab</title>
-    <p>
-      <ul>
-        <li>
-          <p><url href="../Labs/sequencelab.html" visual="../Labs/sequencelab.html">Experimenting with the 3n+1 Sequence</url> In this guided lab exercise we will try to learn more about this sequence.</p>
-        </li>
-      </ul>
-    </p>
-  </note>
+
   <p>Particular values aside, the interesting question is whether we can prove that
             this sequence terminates for <em>all</em> positive values of <c>n</c>. So far, no one has been able
             to prove it <em>or</em> disprove it!</p>

@@ -34,7 +34,7 @@ def name( parameters ):
       </li>
     </ol>
   </p>
-  <p>We've already seen the <c>for</c> loop which follows this pattern.</p>
+  <p>We've already seen the <c>while</c> and <c>for</c> loops which follow this pattern.</p>
   <p>In a function definition, the keyword in the header is <c>def</c>, which is
             followed by the name of the function and some <em>parameters</em> enclosed in
             parentheses. The parameter list may be empty, or it may contain any number of
@@ -45,34 +45,24 @@ def name( parameters ):
   <p>The figure below shows this relationship.  A function needs certain information to do its work.  These values, often called <term>arguments</term> or <term>actual parameters</term>, are passed to the function by the user.</p>
   <image source="Functions/Figures/blackboxproc.png" width="50%"/>
   <p>This type of diagram is often called a <term>black-box diagram</term> because it only states the requirements from the perspective of the user.  The user must know the name of the function and what arguments need to be passed.  The details of how the function works are hidden inside the <q>black-box</q>.</p>
-  <p>Suppose we're working with turtles and a common operation we need is to draw
-            squares.  It would make sense if we did not have to duplicate all the steps each time we want to make a square.   <q>Draw a square</q> can be thought of as an <em>abstraction</em> of a number of smaller steps.  We will need to provide two pieces of information for the function to do its work: a turtle to do the drawing and a size for the side of the square.  We could represent this using the following black-box diagram.</p>
-  <image source="Functions/Figures/turtleproc.png" width="50%"/>
+  <p>Suppose we're working with lists of numeric data and a common operation we need is to find the size of the range of numbers in a list.
+    It would make sense if we did not have to duplicate all the steps each time we want to find the size of the range.   "printRange" can be thought of as an 
+    <em>abstraction</em> of a number of smaller steps.  We will need to provide one piece of information for the function to do its work: the list we need the range of.</p>
   <p>Here is a program containing a function to capture this idea.  Give it a try.</p>
   <program xml:id="ch04_1" interactive="activecode" language="python">
     <input>
-import turtle
+      def printRange(lst):
+        """Prints the size of the range of lst."""
+        smallest = min(lst)
+        largest = max(lst)
+        print(largest - smallest)
 
-def drawSquare(t, sz):
-    """Make turtle t draw a square of with side sz."""
-
-    for i in range(4):
-        t.forward(sz)
-        t.left(90)
-
-
-wn = turtle.Screen()              # Set up the window and its attributes
-wn.bgcolor("lightgreen")
-
-alex = turtle.Turtle()            # create alex
-drawSquare(alex, 50)             # Call the function to draw the square passing the actual turtle and the actual side size
-
-wn.exitonclick()
-        </input>
+      my_list1 = [1, 2, 3, 4, 5, 6]
+ 	    printRange(my_list1)
+    </input>
   </program>
-  <p>This function is named <c>drawSquare</c>.  It has two parameters &#x2014; one to tell
-            the function which turtle to move around and the other to tell it the size
-            of the square we want drawn.  In the function definition they are called <c>t</c> and <c>sz</c> respectively.   Make sure you know where the body of the function
+  <p>This function is named <c>printRange</c>.  It has one parameter --- a variable storing a list of numbers.  In the function definition this parameter is called 
+ <c>lst</c>.   Make sure you know where the body of the function
             ends &#x2014; it depends on the indentation and the blank lines don't count for
             this purpose!</p>
   <note>
@@ -93,71 +83,24 @@ wn.exitonclick()
             <c>print</c>, <c>range</c> and <c>int</c>. Function calls contain the name of the function to be
             executed followed by a list of values in parentheses, called <em>arguments</em>, which are assigned
             to the parameters in the function definition.
-            So in the second to the last line of
-            the program, we call the function, and pass <c>alex</c> as the turtle to be manipulated,
-            and 50 as the size of the square we want.</p>
-  <!--The parameters being sent to the function, sometimes referred to as the **actual parameters** or **arguments**,-->
-  <!--represent the specific data items that the function will use when it is executing.-->
+            So in the last line of
+            the program, we call the function, and pass <c>my_list1</c> as the list to be analyzed.</p>
   <p>Once we've defined a function, we can call it as often as we like and its
             statements will be executed each time we call it.  In this case, we could use it to get
-            one of our turtles to draw a square and then we can move the turtle and have it draw a different square in a
-            different location.  Note that we lift the tail so that when <c>alex</c> moves there is no trace.  We put the tail
-            back down before drawing the next square.  Make sure you can identify both invocations of the <c>drawSquare</c> function.</p>
+            the size of the range of multiple lists. Make sure you can identify all three invocations of the <c>printRange</c> function.</p>
   <program xml:id="ch04_1a" interactive="activecode" language="python">
     <input>
-import turtle
+def printRange(lst):
+  """Prints the size of the range of lst."""
+  smallest = min(lst)
+  largest = max(lst)
+  print(largest - smallest)
 
-def drawSquare(t, sz):
-    """Make turtle t draw a square of with side sz."""
-
-    for i in range(4):
-        t.forward(sz)
-        t.left(90)
-
-
-wn = turtle.Screen()          # Set up the window and its attributes
-wn.bgcolor("lightgreen")
-
-alex = turtle.Turtle()        # create alex
-drawSquare(alex, 50)          # Call the function to draw the square
-
-alex.penup()
-alex.goto(100,100)
-alex.pendown()
-
-drawSquare(alex,75)           # Draw another square
-
-wn.exitonclick()
-        </input>
-  </program>
-  <p>In the next example, we've changed the <c>drawSquare</c>
-            function a little and we get <c>tess</c> to draw 15 squares with some variations.  Once the function has
-            been defined, we can call it as many times as we like with whatever actual parameters we like.</p>
-  <program xml:id="ch04_2" interactive="activecode" language="python">
-    <input>
-import turtle
-
-def drawMulticolorSquare(t, sz):
-    """Make turtle t draw a multi-colour square of sz."""
-    for i in ['red','purple','hotpink','blue']:
-        t.color(i)
-        t.forward(sz)
-        t.left(90)
-
-wn = turtle.Screen()             # Set up the window and its attributes
-wn.bgcolor("lightgreen")
-
-tess = turtle.Turtle()           # create tess and set some attributes
-tess.pensize(3)
-
-size = 20                        # size of the smallest square
-for i in range(15):
-    drawMulticolorSquare(tess, size)
-    size = size + 10             # increase the size for next time
-    tess.forward(10)             # move tess along a little
-    tess.right(18)               # and give her some extra turn
-
-wn.exitonclick()
+my_list1 = [1, 2, 3, 4, 5, 6]
+my_list2 = [2, 6, 9, 16, 42, 100, 2, 5]
+printRange(my_list1)
+printRange(my_list2)
+printRange([5, 10, 1000, 2])
         </input>
   </program>
   <warning>
@@ -165,8 +108,8 @@ wn.exitonclick()
                 the parentheses <c>( )</c> after the function name are <em>required</em>.  This
                 can lead to a difficult bug:  A function name without the
                 parenthesis is a legal expression <em>referring</em> to the function; for example,
-                <c>print</c> and <c>alex.penup</c>, but they do
-                not <em>call</em> the associated functions.</p>
+                <c>print</c>, but it does
+    not <em>call</em> the associated function. Try it below if you want to see.</p>
   </warning>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
@@ -302,18 +245,17 @@ wn.exitonclick()
       <p>What is the name of the following function?</p>
       <program language="python">
         <input>
-def drawSquare(t, sz):
-    """Make turtle t draw a square of with side sz."""
-    for i in range(4):
-        t.forward(sz)
-        t.left(90)
-</input>
+def printSquare(size):
+    """Print a square of asterices with side size."""
+    for i in range(size):
+        print("*"*size)
+        </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>def drawSquare(t, sz)</p>
+          <p>def printSquare(size)</p>
         </statement>
         <feedback>
                     This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
@@ -321,7 +263,7 @@ def drawSquare(t, sz):
       </choice>
       <choice correct="yes">
         <statement>
-          <p>drawSquare</p>
+          <p>printSquare</p>
         </statement>
         <feedback>
                     Yes, the name of the function is given after the keyword def and before the list of parameters.
@@ -329,7 +271,7 @@ def drawSquare(t, sz):
       </choice>
       <choice>
         <statement>
-          <p>drawSquare(t, sz)</p>
+          <p>printSquare(size)</p>
         </statement>
         <feedback>
                     This includes the function name and its parameters
@@ -337,7 +279,7 @@ def drawSquare(t, sz):
       </choice>
       <choice>
         <statement>
-          <p>Make turtle t draw a square with side sz.</p>
+          <p>Print a square of asterices with side size.</p>
         </statement>
         <feedback>
                     This is a comment stating what the function does.
@@ -350,11 +292,10 @@ def drawSquare(t, sz):
       <p>What are the parameters of the following function?</p>
       <program language="python">
         <input>
-def drawSquare(t, sz):
-    """Make turtle t draw a square of with side sz."""
-    for i in range(4):
-        t.forward(sz)
-        t.left(90)
+def printSquare(size):
+    """Print a square of asterices with side size."""
+    for i in range(size):
+        print("*"*size)
 </input>
       </program>
     </statement>
@@ -369,55 +310,54 @@ def drawSquare(t, sz):
       </choice>
       <choice>
         <statement>
-          <p>t</p>
+          <p>size, i</p>
         </statement>
         <feedback>
-                    t is only one of the parameters to this function.
+                    i is a variable used inside of the function, but not a parameter, which is passed in to the function.
                 </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>t, sz</p>
+          <p>size</p>
         </statement>
         <feedback>
-                    Yes, the function specifies two parameters: t and sz.
+                    Yes, the function specifies one parameter: size.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>t, sz, i</p>
+          <p>"*"*size</p>
         </statement>
         <feedback>
-                    the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
+                    This is an argument provided to the call to print().
                 </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="test_question5_1_6">
     <statement>
-      <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?  Assume we already have a turtle named alex.</p>
+      <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)? Assume we already have a variable named my_size.</p>
       <program language="python">
         <input>
-def drawSquare(t, sz):
-    """Make turtle t draw a square of with side sz."""
-    for i in range(4):
-        t.forward(sz)
-        t.left(90)
+def printSquare(size):
+  """Print a square of asterices with side size."""
+  for i in range(size):
+      print("*"*size)
 </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>def drawSquare(t, sz)</p>
+          <p>def printSquare(size)</p>
         </statement>
         <feedback>
-                    No, t and sz are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.
+                    No, size is the name of the formal parameter to this function. When the function is called, it requires an actual value to be passed in.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>drawSquare</p>
+          <p>printSquare</p>
         </statement>
         <feedback>
                     A function call always requires parentheses after the name of the function.
@@ -425,26 +365,26 @@ def drawSquare(t, sz):
       </choice>
       <choice>
         <statement>
-          <p>drawSquare(10)</p>
+          <p>printSquare(10)</p>
         </statement>
         <feedback>
-                    This function takes two parameters (arguments)
+                    Yes, this would work
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>drawSquare(alex, 10):</p>
+          <p>printSquare(my_size):</p>
         </statement>
         <feedback>
-                    A colon is only required in a function definition.  It will cause an error with a function call.
+                    Yes, this would work since my_size is already defined.
                 </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>drawSquare(alex, 10)</p>
+          <p>printSquare(size):</p>
         </statement>
         <feedback>
-                    Since alex was already previously defined and 10 is a value, we have passed in two correct values for this function.
+                    A colon is only required in a function definition. It will cause an error with a function call.
                 </feedback>
       </choice>
     </choices>

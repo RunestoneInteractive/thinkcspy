@@ -13,11 +13,11 @@
 4<xi:include href="./StringsandLists.ptx"/>
 4<xi:include href="./AppendversusConcatenate.ptx"/>
 4<xi:include href="./ListMembership.ptx"/>
+4<xi:include href="./NestedLists.ptx"/>
 4<xi:include href="./ObjectsandReferences.ptx"/>
 4<xi:include href="./Aliasing.ptx"/>
 4<xi:include href="./CloningLists.ptx"/>
 4<xi:include href="./RepetitionandReferences.ptx"/>
-4<xi:include href="./TheReturnofLSystems.ptx"/>
 4<xi:include href="./Listsandforloops.ptx"/>
 4<xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
 4<xi:include href="./UsingListsasParameters.ptx"/>
@@ -25,7 +25,6 @@
 4<xi:include href="./WhichisBetter.ptx"/>
 4<xi:include href="./FunctionsthatProduceLists.ptx"/>
 4<xi:include href="./ListComprehensions.ptx"/>
-4<xi:include href="./NestedLists.ptx"/>
 4<xi:include href="./listTypeConversionFunction.ptx"/>
 4<xi:include href="./TuplesandMutability.ptx"/>
 4<xi:include href="./TupleAssignment.ptx"/>
