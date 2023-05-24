@@ -3,7 +3,7 @@
     <xi:include href="./bookinfo.ptx"/>
 
     <book xml:id="thinkcspy" permid="tcs">
-        <title>How to Think Like a Computer Scientist</title>
+        <title>Computer Science for STEM</title>
         <subtitle>The PreTeXt Interactive Edition</subtitle>
         <frontmatter>
         <titlepage>
