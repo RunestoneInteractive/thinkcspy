@@ -1,12 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="classes-basics_objects-as-arguments-and-parameters">
   <title>Objects as Arguments and Parameters</title>
-  <p>You can pass an object as an argument in the usual way.  We've already seen
-            this in some of the turtle examples where we passed the turtle to
-            some function like <c>drawRectangle</c> so that the function could
-            control and use whatever turtle instance we passed to it.</p>
-  <p>Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  The job of this function is to figure out the
-            distance between two points.</p>
+  <p>You can pass an object as an argument in the usual way. Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  
+        The job of this function is to figure out the distance between two points.</p>
   <program xml:id="chp13_classes6" interactive="activecode" language="python">
     <input>
 import math

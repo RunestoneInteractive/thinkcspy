@@ -5,8 +5,6 @@
 4<xi:include href="./CalculatingtheSumofaListofNumbers.ptx"/>
 4<xi:include href="./TheThreeLawsofRecursion.ptx"/>
 4<xi:include href="./ConvertinganIntegertoaStringinAnyBase.ptx"/>
-4<xi:include href="./intro-VisualizingRecursion.ptx"/>
-4<xi:include href="./SierpinskiTriangle.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./ProgrammingExercises.ptx"/>
 4<xi:include href="./Exercises.ptx"/>

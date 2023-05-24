@@ -30,9 +30,9 @@
   </note>
   <p xml:id="files_index-0">You can access files in sub-folders, also called directories, under your home directory
             by adding a slash and the name of the folder.  For example, if you had a file
-            called <c>hello.py</c> in a folder called <c>CS150</c> that is inside a folder called
-    <c>PyCharmProjects</c> under your home directory, then the full name for the file
-    <c>hello.py</c> is <c>/Users/yourname/PyCharmProjects/CS150/hello.py</c>.
+            called <c>hello.py</c> in a folder called <c>CS128</c> that is inside a folder called
+    <c>VSCodeProjects</c> under your home directory, then the full name for the file
+    <c>hello.py</c> is <c>/Users/yourname/VSCodeProjects/CS128/hello.py</c>.
             This is called an <em>absolute file path</em>. An <em>absolute file path</em> typically
             only works on a specific computer. Think about it for a second. What other
             computer in the world is going to have an <em>absolute file path</em> that starts with

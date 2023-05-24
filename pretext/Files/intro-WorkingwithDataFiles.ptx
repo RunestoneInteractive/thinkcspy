@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="files_working-with-data-files">
   <title>Working with Data Files</title>
-  <p>So far, the data we have used in this book have all been either coded right into the program, or have been entered by the user.  In real life data reside in files.  For example the images we worked with in the image processing unit ultimately live in files on your hard drive.  Web pages, and word processing documents, and music are other examples of data that live in files.  In this short chapter we will introduce the Python concepts necessary to use data from files in our programs.</p>
+  <p>So far, the data we have used in this book have all been either coded right into the program, or have been entered by the user.  In real life data reside in files.</p>  
+  <p>For example, web pages, word processing documents, and all data that live in files.  In this short chapter we will introduce the Python concepts necessary to use data from files in our programs.</p>
   <p>For our purposes, we will assume that our data files are text files&#x2013;that is, files filled with characters. The Python programs that you write are stored as text files.  We can create these files in any of a number of ways. For example, we could use a text editor to type in and save the data.  We could also download the data from a website and then save it in a file. Regardless of how the file is created, Python will allow us to manipulate the contents.</p>
   <p>In Python, we must <term>open</term> files before we can use them and <term>close</term> them when we are done with them. As you might expect, once a file is opened it becomes a Python object just like all other data. <xref ref="files_files_filemethods1a"/> shows the functions and methods that can be used to open and close files.</p>
   <table xml:id="files_files_filemethods1a">

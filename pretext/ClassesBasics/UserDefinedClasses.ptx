@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="classes-basics_user-defined-classes">
   <title>User Defined Classes</title>
-  <p>We've already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and
+  <p>We've already seen classes like <c>str</c>, <c>int</c>, and <c>float</c>. These were defined by Python and
             made available for us to use.  However, in many cases when we are solving problems we need to create data objects
             that are related to the problem we are trying to solve.  We need to create our own classes.</p>
   <p>As an example, consider the concept of a mathematical point. In two dimensions, a point is two
