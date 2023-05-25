@@ -363,7 +363,7 @@ def printSquare(size):
                     A function call always requires parentheses after the name of the function.
                 </feedback>
       </choice>
-      <choice>
+      <choice correct="yes">
         <statement>
           <p>printSquare(10)</p>
         </statement>
@@ -371,7 +371,7 @@ def printSquare(size):
                     Yes, this would work
                 </feedback>
       </choice>
-      <choice>
+      <choice correct="yes">
         <statement>
           <p>printSquare(my_size):</p>
         </statement>
@@ -379,7 +379,7 @@ def printSquare(size):
                     Yes, this would work since my_size is already defined.
                 </feedback>
       </choice>
-      <choice correct="yes">
+      <choice>
         <statement>
           <p>printSquare(size):</p>
         </statement>
