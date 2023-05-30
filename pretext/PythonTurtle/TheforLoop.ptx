@@ -11,7 +11,7 @@
             we'd like to send them each an email inviting them to our party.  We
             don't quite know how to send email yet, so for the moment we'll just print a
             message for each friend.</p>
-  <program xml:id="ch03_4" interactive="activecode" language="python">
+  <program xml:id="ch03_4_5" interactive="activecode" language="python">
     <input>
 for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     print("Hi", name, "Please come to my party on Saturday!")

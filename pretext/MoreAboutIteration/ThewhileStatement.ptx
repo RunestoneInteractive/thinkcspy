@@ -14,8 +14,8 @@
     <input>
       count = 10
       while count > 0:
-        print(count)
-        count = count - 1
+          print(count)
+          count = count - 1
       print("Blastoff!")
     </input>
   </program>
@@ -80,9 +80,9 @@
       aBound = int(input("Please give a number n: "))
       theSum  = 0
       aNumber = 1
-      while aNumber <= aBound:
-        theSum = theSum + aNumber
-        aNumber = aNumber + 1
+      while aNumber &lt;= aBound:
+          theSum = theSum + aNumber
+          aNumber = aNumber + 1
       print(theSum)
     </input>
   </program>
@@ -99,9 +99,9 @@
       aBound = int(input("Please give a number n: "))
       theSum  = 0
       aNumber = 1
-      while aNumber <= aBound:
-        theSum = theSum + aNumber
-        aNumber = aNumber + 1
+      while aNumber &lt;= aBound:
+          theSum = theSum + aNumber
+          aNumber = aNumber + 1
       print(theSum)
     </input>
   </program>

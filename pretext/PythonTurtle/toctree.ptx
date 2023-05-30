@@ -7,7 +7,7 @@
 4<xi:include href="./TheforLoop.ptx"/>
 4<xi:include href="./FlowofExecutionoftheforLoop.ptx"/>
 4<xi:include href="./IterationSimplifiesourTurtleProgram.ptx"/>
-4<xi:include href="./TherangeFunction.ptx"/>
+<!-- 4<xi:include href="./TherangeFunction.ptx"/> -->
 4<xi:include href="./AFewMoreturtleMethodsandObservations.ptx"/>
 4<xi:include href="./SummaryofTurtleMethods.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
