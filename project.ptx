@@ -16,7 +16,7 @@
       <format>html</format>
       <source>pretext/thinkcspy.ptx</source>
       <publication>pretext/publication-rs-academy.xml</publication>
-      <output-dir>published/httlacs</output-dir>
+      <output-dir>published/mines_csstem</output-dir>
     </target>
     <target name="latex">
       <format>latex</format>
