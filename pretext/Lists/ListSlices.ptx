@@ -54,4 +54,85 @@ print(alist[4:])
       </choice>
     </choices>
   </exercise>
+
+  <note>
+  </note>
+  <p>Slice also takes a third value, the <term>step</term> size.
+    We can also specify -1 as the step term to slice with the values in reverse.</p>
+
+  <exercise label="test_question9_6_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+print(alist[1:5:2])
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[3, 'cat']</p>
+        </statement>
+        <feedback>
+            Your indices are wrong. Remember that lists start at 0.
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>[67, [56, 57, 'dog']]</p>
+        </statement>
+        <feedback>
+          Nice job!
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[67, 'cat', [56, 57, 'dog'], []]</p>
+        </statement>
+        <feedback>
+          Take note of the third value - the step size.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="test_question9_6_3">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+print(alist[::-1])
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>[False, 3.14, [], [56, 57, 'dog'], 'cat', 67, 3]</p>
+        </statement>
+        <feedback>
+          Correct! Everything is sliced backwards in this case.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>[3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]</p>
+        </statement>
+        <feedback>
+          This is the original list!
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False, 3.14, []</p>
+        </statement>
+        <feedback>
+          This operation is done on all of the items in the list, not just the first few.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
 </section>
