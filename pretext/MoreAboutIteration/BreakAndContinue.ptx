@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<section xml:id="more-about-iteration_continue-break">
+  <title><c>break</c> and <c>continue</c></title>
+
+  <p>In loops, we sometimes want to traverse <em>until</em> we reach a certain value.
+    We could make some sort of loop condition with a boolean that is toggled as True once we
+    reach that value, but there's an easier way: the <term>break</term> statement.</p>
+
+  <p>When a <c>break</c> statement is reached, the loop immediately ends and proceeds with the code after the loop.
+    <c>break</c> is only a valid statement inside of loops, such as the following:</p>
+  
+  <program xml:id="ch07_break" interactive="activecode" language="python">
+    <input>
+for i in range(0, 10):
+    if i == 5:
+        break
+    print(i)
+    </input>
+  </program>
+
+  <p>The <term>continue</term> statement is another keyword that we can use in loops.
+    When a <c>continue</c> statement is reached, the current iteration is stopped (similar to break),
+    however, the loop will <em>continue</em> running for all iterations after the current one.</p>
+
+  <program xml:id="ch07_continue" interactive="activecode" language="python">
+    <input>
+for i in range(0, 10):
+    if i == 5:
+        continue
+    print(i)
+    </input>
+  </program>
+
+  <note>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
+  Neither loop reaches <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</note>
+</section>
