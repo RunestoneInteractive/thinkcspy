@@ -7,5 +7,5 @@
   <p>Repeated execution of a sequence of statements is called <term>iteration</term>.  Because
             iteration is so common, Python provides several language features to make it
             easier. easier. In this chapter we are going to look at two common forms of iteration: the <c>while</c> statement
-            and the <c>for</c>` statement.</p>
+            and the <c>for</c> statement.</p>
 </section>
