@@ -16,7 +16,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_6_1">
+  <exercise label="question1_7_1">
     <statement>
       <p>Which of the following is a syntax error?</p>
     </statement>
@@ -47,7 +47,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_6_2">
+  <exercise label="question1_7_2">
     <statement>
       <p>Who or what typically finds syntax errors?</p>
     </statement>

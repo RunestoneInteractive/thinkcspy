@@ -74,7 +74,7 @@ My first program adds two numbers, 2 and 3:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_2_1">
+  <exercise label="question1_3_1">
     <statement>
       <p>Source code is another name for:</p>
     </statement>
@@ -113,7 +113,7 @@ My first program adds two numbers, 2 and 3:
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_2_2">
+  <exercise label="question1_3_2">
     <statement>
       <blockquote>
         <p>What is the difference between a high-level programming language and a low-level programming language?</p>
@@ -154,7 +154,7 @@ My first program adds two numbers, 2 and 3:
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_2_3">
+  <exercise label="question1_3_3">
     <statement>
       <p>Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.</p>
     </statement>
