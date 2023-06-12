@@ -101,7 +101,7 @@ The same program in codelens will allow you to observe the flow of execution.
 .. codelens:: ch07_while3
 
 	""" Return the sum of 1+2+3 ... n """
-	aBound = int(input("Please give a number n: "))
+	aBound = 10
 	theSum  = 0
 	aNumber = 1
 	while aNumber <= aBound:
