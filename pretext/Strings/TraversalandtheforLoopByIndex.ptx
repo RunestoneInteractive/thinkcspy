@@ -5,7 +5,7 @@
             These positions can be used together with the indexing operator to access the individual
             characters in the string.</p>
   <p>Consider the following codelens example.</p>
-  <program xml:id="ch08_7" interactive="codelens" language="python">
+  <program xml:id="ch08_7" interactive="activecode" language="python">
     <input>
 fruit = "apple"
 for idx in range(5):
@@ -27,7 +27,7 @@ for idx in range(len(fruit)):
   <p>You may also note that iteration by position allows the programmer to control the direction of the
             traversal by changing the sequence of index values.  Recall that we can create ranges that count down as
             well as up so the following code will print the characters from right to left.</p>
-  <program xml:id="ch08_8" interactive="codelens" language="python">
+  <program xml:id="ch08_8" interactive="activecode" language="python">
     <input>
           fruit = "apple"
           for idx in range(len(fruit)-1, -1, -1):
