@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<section xml:id="strings_f-strings">
+  <title>F-Strings</title>
+  <introduction>
+	<p>In grade school quizzes a common convention is to use fill-in-the blanks. For instance,</p>
+    <blockquote>
+      <p>Hello _____!</p>
+    </blockquote>
+    <p>and you can fill in the name of the person greeted, and combine
+                given text with a chosen insertion. <em>We use this as an analogy:</em>
+                Python has a similar
+                construction, called a formatted string or an <b>f-string</b>. An f-string makes
+                substitutions into places in a string
+                enclosed in braces. Run this code:</p>
+  </introduction>
+    
+    <program xml:id="ch08_methods3" interactive="activecode" language="python">
+      <input>
+person = input('Your name: ')
+greeting = f'Hello {person}!'
+print(greeting)
+        </input>
+    </program>
+    <p>There are several new ideas here!</p>
+    <p>The string has been formatted in a new way. We have included an <c>f</c> before the starting quotation mark.
+                Such a string is called an <i>f-string</i>.  Places where
+                braces are embedded are replaced by the value of the expression inside the braces. There are many
+                variations on the syntax between the braces. In this case we use
+                the syntax where the first (and only) location in the string with
+                braces has the variable <c>person</c>. When this code is evaluated, the value of the person variable is placed in the string in this location.</p>
+    <p>In the code above, this new string is assigned to the identifier
+                <c>greeting</c>, and then the string is printed.</p>
+    <p>The identifier
+                <c>greeting</c> was introduced to break the operations into a clearer
+                sequence of steps. However, since the value of <c>greeting</c> is only
+                referenced once, it can be eliminated with the more concise
+                version:</p>
+    <program xml:id="ch08_methods4" interactive="activecode" language="python">
+      <input>
+person = input('Enter your name: ')
+print(f'Hello {person}!')
+        </input>
+    </program>
+    <p>There can be multiple substitutions, with data of any type.
+                Next we use floats.  Try original price $2.50  with a 7% discount:</p>
+    <program xml:id="ch08_methods5" interactive="activecode" language="python">
+      <input>
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = f'${origPrice} discounted by {discount}% is ${newPrice}.'
+print(calculation)
+        </input>
+    </program>
+    <p>If you used the data suggested, this result is not satisfying.
+                Prices should appear with exactly two places beyond the decimal point,
+                but that is not the default way to display floats.</p>
+    <p>F-strings can give further information inside the braces
+                showing how to specially format data.
+                In particular, floats can be shown with a specific number of decimal places.
+                For two decimal places, put <c>:.2f</c> inside the braces but after the variable name for the monetary values:</p>
+    <program xml:id="ch08_methods6" interactive="activecode" language="python">
+      <input>
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = f'${origPrice:.2f} discounted by {discount}% is ${newPrice:.2f}.'
+print(calculation)
+        </input>
+    </program>
+    <p>The 2 in the format modifier can be replaced by another integer to round to that
+                specified number of digits.</p>
+    <p>A technical point: Since braces have special meaning in a format
+                string, there must be a special rule if you want braces to actually
+                be included in the final <em>formatted</em> string. The rule is to double
+                the braces: <c>{ {</c> and <c>}}</c>. For example mathematical set
+                notation uses braces. The initial and final doubled
+                braces in the format string below generate literal braces in the
+                formatted string:</p>
+    <pre>a = 5
+b = 9
+setStr = f'The set is {​{ {a},{b} }​}.'
+print(setStr)</pre>
+    <p>Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
+                printing doubled braces, but standard Python prints <c>{5, 9}</c>.</p>
+    <exercise label="test_question8_3_3">
+      <statement>
+        <p>What is printed by the following statements?</p>
+        <program language="python">
+          <input>
+x = 2
+y = 6
+print(f'sum of {x} and {y} is {x+y}; product: {x*y}.')
+</input>
+        </program>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>Nothing - it causes an error</p>
+          </statement>
+          <feedback>
+                    It is legal format syntax.
+                </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>sum of {} and {} is {}; product: {}.</p>
+          </statement>
+          <feedback>
+                    Put the value of each expression in place of the braces.
+                </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>sum of 2 and 6 is 8; product: 12.</p>
+          </statement>
+          <feedback>
+                    Yes, correct!
+                </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>sum of {2} and {6} is {8}; product: {12}.</p>
+          </statement>
+          <feedback>
+                    Close:  REPLACE the braces.
+                </feedback>
+        </choice>
+      </choices>
+    </exercise>
+    <exercise label="test_question8_3_4">
+      <statement>
+        <p>What is printed by the following statements?</p>
+        <program language="python">
+          <input>
+v = 2.34567
+print(f'{v:.1f} {v:.2f} {v:.7f}')
+</input>
+        </program>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>2.34567 2.34567 2.34567</p>
+          </statement>
+          <feedback>
+                    The numbers before the f in the braces give the number of digits to display after the decimal point.
+                </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>2.3 2.34 2.34567</p>
+          </statement>
+          <feedback>
+                    Close, but round to the number of digits and display the full number of digits specified.
+                </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>2.3 2.35 2.3456700</p>
+          </statement>
+          <feedback>
+                    Yes, correct number of digits with rounding!
+                </feedback>
+        </choice>
+      </choices>
+    </exercise>
+</section>

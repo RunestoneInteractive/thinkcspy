@@ -21,14 +21,14 @@ better =  1/2 * (approx + n/approx)
             calculation yielding a better result.</p>
   <program xml:id="chp07_newtonsdef" interactive="activecode" language="python">
     <input>
-	n = 100
- 	howmany = 10
+n = 100
+howmany = 10
 
- 	approx = 0.5 * n
- 	for i in range(howmany):
- 		betterapprox = 0.5 * (approx + n/approx)
- 		approx = betterapprox
- 	prin(betterapprox)
+approx = 0.5 * n
+for i in range(howmany):
+	betterapprox = 0.5 * (approx + n/approx)
+	approx = betterapprox
+prin(betterapprox)
     </input>
   </program>
   <note>

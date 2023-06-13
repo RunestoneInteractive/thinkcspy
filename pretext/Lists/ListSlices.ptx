@@ -57,10 +57,10 @@ print(alist[4:])
 
   <note>
   </note>
-  <p>Slice also takes a third value, the <term>step</term> size.
-    This specifies the rate at which we increment (if the step size is positive)
-    or the rate at which we decrement (if the step size is negative).
-    We can also specify -1 as the step term to slice with the values in reverse.</p>
+  <p>Slices also take an optional third value, the <term>step</term> size.
+    This specifies the rate at which the slice region increments (if the step size is positive)
+    or the rate at which it decrements (if the step size is negative).
+    It is also possible to specify -1 as the step term to slice with the values in reverse.</p>
 
   <exercise label="test_question9_6_2">
     <statement>

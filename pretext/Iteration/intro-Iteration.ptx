@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_iteration-revisited">
-  <title>Iteration Revisited</title>
+  <title>Iteration Introduction</title>
   <p xml:id="more-about-iteration_index-1">Computers are often used to automate repetitive tasks. Repeating identical or
             similar tasks without making errors is something that computers do well and
             people do poorly.</p>
   <p>Repeated execution of a sequence of statements is called <term>iteration</term>.  Because
             iteration is so common, Python provides several language features to make it
-            easier. easier. In this chapter we are going to look at two common forms of iteration: the <c>while</c> statement
+            easier. In this chapter we are going to look at two common forms of iteration: the <c>while</c> statement
             and the <c>for</c> statement.</p>
 </section>

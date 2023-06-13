@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="strings_traversal-and-the-for-loop-by-index">
-  <title>Traversal and the <c>for</c> Loop: By Index</title>
+  <title>Traversing strings with the <c>for</c> Loop: By Index</title>
   <p>It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.  The <c>for</c> loop can then be used to iterate over these positions.
             These positions can be used together with the indexing operator to access the individual
             characters in the string.</p>

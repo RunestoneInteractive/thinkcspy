@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="python-turtle_the-range-function">
   <title>The range Function</title>
-  <video xml:id="advrange" youtube="YK8QlIT3__M" width="auto"/>
-  <p>In our first example of a while loop, we counted down from 10 to 0. If we were to consider doing this with a for loop, we would need to construct our own series of numbers
+  <!--<video xml:id="advrange" youtube="YK8QlIT3__M" width="auto"/>-->
+  <p>In our first example of a while loop, we counted down from 10 to 0. If we were to consider doing this with a <c>for</c> loop, we would need to construct our own series of numbers
  to loop through them.</p>
   <p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-            want to write simple <c>for loop</c> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
+            want to write simple for loop controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
             In fact, these lists are so popular that Python gives us special built-in
     <c>range</c> objects
             that can deliver a sequence of values to
@@ -24,7 +24,7 @@ for x in range(10):
   <p>So to repeat something four times, a good Python programmer would do this:</p>
   <program language="python">
     <input>
-    for i in range(10):
+    for i in range(4):
       #do something
     </input>
   </program>
@@ -50,7 +50,7 @@ for x in range(10):
     <p>The range function is <em>lazy</em>:  It produces the next element only when needed.
                 With a regular Python 3 interpreter, printing a range does <em>not</em> calculate all the elements.
                 To immediately calculate all the elements in a range,
-                wrap the range in a list, like <c>list(range(4))</c>.
+                convert the range object to a list, like <c>list(range(4))</c>.
                 Activecode is not designed to work on very long sequences, and it may allow you to be
                 sloppy, avoiding the list function, and <em>see</em> the elements in the range with <c>print(range(4))</c>.
     </p>

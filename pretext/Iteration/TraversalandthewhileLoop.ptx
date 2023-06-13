@@ -2,7 +2,7 @@
 <section xml:id="strings_traversal-and-the-while-loop">
   <title>Traversal and the <c>while</c> Loop</title>
   <p>The <c>while</c> loop can also control the
-            generation of the index values.  Remember that the programmer is responsible for setting up the initial
+            generation of index values used to navigate strings or lists.  The programmer is responsible for setting up the initial
             condition, making sure that the condition is correct, and making sure that something changes inside the
             body to guarantee that the condition will eventually fail.</p>
   <program xml:id="ch08_7c" interactive="activecode" language="python">

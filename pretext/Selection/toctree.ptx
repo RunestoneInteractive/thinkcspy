@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Selection</title>
+4<title>Branching</title>
 4<xi:include href="./BooleanValuesandBooleanExpressions.ptx"/>
 4<xi:include href="./ConditionalExecutionBinarySelection.ptx"/>
 4<xi:include href="./OmittingtheelseClauseUnarySelection.ptx"/>
 4<xi:include href="./Nestedconditionals.ptx"/>
 4<xi:include href="./Chainedconditionals.ptx"/>
+4<xi:include href="./Theinandnotinoperators.ptx"/>
+4<xi:include href="./ListMembership.ptx"/>
+4<xi:include href="./StringComparison.ptx"/>
 4<xi:include href="./Logicaloperators.ptx"/>
 4<xi:include href="./PrecedenceofOperators.ptx"/>
-4<xi:include href="./BooleanFunctions.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./Exercises.ptx"/>
 </chapter>

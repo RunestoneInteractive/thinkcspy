@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="lists_lists-and-for-loops">
-  <title>Lists and <c>for</c> loops</title>
+  <title>Traversing lists with the <c>for</c> loop</title>
   <p>It is also possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
   <program xml:id="chp09_03a" interactive="activecode" language="python">
     <input>

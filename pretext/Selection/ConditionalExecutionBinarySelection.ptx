@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="selection_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
-  <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto"/>
+  <!--<video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto"/>-->
   <p>In order to write useful programs, we almost always need the ability to check
-            conditions and change the behavior of the program accordingly. <term>Selection statements</term>, sometimes
-            also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>.
+            conditions and change the behavior of the program accordingly. <term>Branching statements</term>, sometimes
+            also referred to as <term>conditional statements</term> or <term>Selection statements</term>, give us this ability. The simplest form of branching is the <term>if statement</term>.
             This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
   <program xml:id="ch05_4" interactive="activecode" language="python">
     <input>
@@ -32,11 +32,10 @@ else:
     <title>Flowchart of a <term>if</term> statement with an <term>else</term></title>
     <image source="Selection/Figures/flowchart_if_else.png" width="50%"/>
   </sidebar>
-  <p>As with the function definition from the last chapter and other compound
-            statements like <c>for</c>, the <c>if</c> statement consists of a header line and a body. The header
+  <p>The <c>if</c> statement consists of a header line and a body. The header
             line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
             a colon (:).</p>
-  <p>The more indented statements that follow are called a <term>block</term>.</p>
+  <p>The more indented statements that follow are called a <term>block</term>. We will see this construction repeated several times in the future.</p>
 
   <p>As a program executes, the interpreter always keeps track of which statement is
     about to be executed.  We call this the <b>control flow</b>, or the <b>flow of
@@ -45,17 +44,17 @@ else:
     as "Python's moving finger".</p>
 
   <p>Control flow until now has been strictly top to bottom, one statement at a
-    time.  We call this type of control <term>sequential</term>.  In Python flow is sequential as long as
+    time.  We call this type of control <term>sequential</term>.  In Python, flow is sequential as long as
     successive statements are indented the <em>same</em> amount.  The <c>if</c> statement 
     introduces indented sub-statements after the if heading.</p>
 
-  <p>Each <c>if</c> statement consists of a header line and a body. The header
+  <!--<p>Each <c>if</c> statement consists of a header line and a body. The header
     line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
       a colon (:).</p>
 
-  <p> The more indented statements that follow are called a <b>block</b> or sometimes a <b>body</b>.</p>
+  <p> The more indented statements that follow are called a <b>block</b> or sometimes a <b>body</b>.</p>-->
 
-  <p>Each of the statements inside the first block of statements is executed in order if the boolean
+  <p>Back to the example, each of the statements inside the first block of statements is executed in order if the boolean
             expression evaluates to <c>True</c>. The entire first block of statements
             is skipped if the boolean expression evaluates to <c>False</c>, and instead
             all the statements under the <c>else</c> clause are executed.</p>
@@ -65,7 +64,7 @@ else:
             the block after the heading.  The <c>if</c> - <c>else</c> statement is an unusual compound statement because it
             has more than one part at the same level of indentation as the <c>if</c> heading,
             (the <c>else</c> clause, with its own indented block).</p>
-  <note>
+  <!--<note>
     <title>Lab</title>
     <p>
       <ul>
@@ -75,7 +74,7 @@ else:
         </li>
       </ul>
     </p>
-  </note>
+  </note>-->
   <p>
     <term>Check your understanding</term>
   </p>

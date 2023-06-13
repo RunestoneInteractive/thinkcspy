@@ -3,7 +3,7 @@
   <title>Other uses of <c>while</c></title>
   <subsection xml:id="more-about-iteration_sentinel-values">
     <title>Sentinel Values</title>
-    <p>The indefinite loops provided by the ``while`` statement are common in the real world.</p>
+    <p>The indefinite loops provided by the <c>while</c> statement are common in the real world.</p>
     <p>
       <ul>
         <li>
@@ -86,8 +86,8 @@
                         division by zero and tell the user that you can't compute an average without data.</p>
         </li>
         <li>
-          <p>This program doesn't display the amounts to two decimal places. In the next chapter you will
-                        see the <xref ref="strings_string-methods"/> that will do the trick.</p>
+          <p>This program doesn't display the amounts to two decimal places. Thankfully, you already know how to fix this issue.
+			Recall how you learned to format floats to a specific number of decimal points in <xref ref="strings_f-strings"/>.</p>
           <p>
             <term>Check your understanding</term>
           </p>
@@ -125,7 +125,7 @@
                 that asks a yes-or-no question. In this case, you want to make sure that the person using
                 your program enters either a Y for yes or N for no (in either upper or lower case).
                 Here is a program that uses a <c>while</c> loop to keep asking until it receives a valid answer.
-                As a preview of coming attractions, it uses
+                Note that it uses
                 the <c>upper()</c> method which is described in <xref ref="strings_string-methods"/> to convert a string to upper case.
                 When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
     <program xml:id="ch07_validation" interactive="activecode" language="python">

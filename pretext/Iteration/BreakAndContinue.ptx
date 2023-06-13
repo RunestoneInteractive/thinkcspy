@@ -3,7 +3,7 @@
   <title><c>break</c> and <c>continue</c></title>
 
   <p>In loops, we sometimes want to traverse <em>until</em> we reach a certain value.
-    We could make some sort of loop condition with a boolean that is toggled as True once we
+    We could make a loop condition with a boolean that is toggled as True once we
     reach that value, but there's an easier way: the <term>break</term> statement.</p>
 
   <p>When a <c>break</c> statement is reached, the loop immediately ends and proceeds with the code after the loop.
@@ -11,10 +11,12 @@
   
   <program xml:id="ch07_break" interactive="activecode" language="python">
     <input>
-for i in range(0, 10):
+i = 0
+while i &lt; 10:
     if i == 5:
         break
     print(i)
+	i += 1
     </input>
   </program>
 
@@ -24,13 +26,15 @@ for i in range(0, 10):
 
   <program xml:id="ch07_continue" interactive="activecode" language="python">
     <input>
-for i in range(0, 10):
+i = 0
+while i &lt; 10:
     if i == 5:
         continue
     print(i)
+	i += 1
     </input>
   </program>
 
   <note>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
-  Neither loop reaches <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</note>
+  Neither loop prints <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</note>
 </section>

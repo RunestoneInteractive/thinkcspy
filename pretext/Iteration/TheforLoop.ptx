@@ -2,7 +2,7 @@
 <section xml:id="more-about-iteration_the-for-loop">
   <title>The <c>for</c> loop</title>
   <p>The <c>while</c> statement is a general-purpose tool for iteration, and is necessary for any instance of iteration where we don't know how many repetitions will be needed.
-However, if we do know how many are needed, there is a more efficient method: the <c>for</c> statement.</p>
+However, if we do know how many are needed, there is a more efficient approach: the <c>for</c> statement.</p>
   <p>As a simple example, let's say we have some friends, and
 we'd like to send them each an email inviting them to our party.  We
 don't quite know how to send email yet, so for the moment we'll just print a
@@ -15,12 +15,13 @@ message for each friend.</p>
   </program>
   <p>Take a look at the output produced when you press the <c>run</c> button.  There is one line printed for each friend.  Here's how it works:</p>
   <ul>
-    <li><b>name</b> in this <c>for</c> statement is the <b>loop variable</b>.</li>
-    <li>The list of names in the square brackets is a regular list. Later we'll see that other types besides lists can be put in this spot.</li>
-    <li>Line 2  is the <b>loop body</b>.  Like with while, the loop body is always indented. The loop body is performed one time for each name in the list.</li>
+    <li><c>name</c> is the <term>loop variable</term> in this case.</li>
+    <li>Frustratingly, <c>in</c> here is not the same as the keyword used to check for membership. This just a necessary part of every <c>for</c> loop construction and not an operator.</li>
+	<li>The list of names in the square brackets is a regular list. Later we'll see that other types besides lists can be put in this spot.</li>
+    <li>Line 2  is the <term>loop body</term>.  Like with while, the loop body is always indented. The loop body is performed one time for each name in the list.</li>
     <li>On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if
       there are still more items to be processed.  If there are none left (this is
-      called the <b>terminating condition</b> of the loop), the loop has finished.
+      called the <term>terminating condition</term> of the loop), the loop has finished.
       Program execution continues at the next statement after the loop body.</li>
     <li>If there are items still to be processed, the loop variable is updated to
       refer to the next item in the list.  This means, in this case, that the loop
@@ -34,10 +35,10 @@ message for each friend.</p>
     <p>Introduction of the for statement causes us to think about the types of iteration we have seen.  The <c>for</c> statement will always iterate through a sequence of 
       values like the list of names for the party.</p>
     <p>Since we know that it will iterate once for each value in the collection, it is often said that a <c>for</c> loop creates a
-      <b>definite iteration</b> because we definitely know how many times we are going to iterate.  On the other
+      <term>definite iteration</term> because we definitely know how many times we are going to iterate.  On the other
       hand, the <c>while</c> statement is dependent on a condition that needs to evaluate to <c>False</c> in order
       for the loop to terminate.  Since we do not necessarily know when this will happen, it creates what we
-      call <b>indefinite iteration</b>.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition 
+      call <term>indefinite iteration</term>.  Indefinite iteration simply means that we don't know how many times we will repeat but eventually the condition 
       controlling the iteration will fail and the iteration will stop. (Unless we have an infinite loop which is of course a problem.)</p>
   </note>
 
@@ -49,7 +50,7 @@ message for each friend.</p>
     <p>So any problem like "iterate this weather model run for 1000 cycles", or "search this
    list of words", "check all integers up to 10000 to see which are prime" suggest that a <c>for</c> loop is best.</p>
     <p>By contrast, if you are required to repeat some computation until some condition is
-   met, as we did in this 3n + 1 problem, you'll need a <c>while</c> loop.</p>
+   met, as we did in the 3n + 1 problem last week, you'll need a <c>while</c> loop.</p>
   </note>
 
   <p>What you will notice here is that the <c>while</c> loop is more work for
@@ -58,7 +59,7 @@ loop you have to control the loop variable yourself.  You give it an initial val
 for completion, and then make sure you change something in the body so that the loop
 terminates.</p>
 
-  <title><b>Check your understanding</b></title>
+  <b>Check your understanding</b>
 
   <exercise label="mc07_8_2">
     <statement>

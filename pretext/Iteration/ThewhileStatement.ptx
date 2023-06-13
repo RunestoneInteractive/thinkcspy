@@ -1,12 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_the-while-statement">
   <title>The <c>while</c> Statement</title>
-  <video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto"/>
-  <p>A basic building block of all programs is to be able to repeat some code
-    over and over again.  In computer science, we refer to this repetitive idea as <b>iteration</b>.  In this section, we will explore some mechanisms for basic iteration.</p>
-  <p>The following figure shows the flow of control.</p>
+  <!--<video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto"/>-->
   <p>Let's look at our first Python statement that can be used to build an iteration.  It is called the <c>while</c> statement. When used with other code it can be used to 
-    repeat code in a <b>while loop</b>. Similar to the <c>if</c> statement, it uses
+    repeat code in a <term>while loop</term>. Similar to the <c>if</c> statement, it uses
     a boolean expression to control the flow of execution.  The body of while (code indented one space in) will be repeated as long as the controlling boolean 
     expression evaluates to <c>True</c>.</p>
   <p>Here is a simple example that counts down from 10 to 0.</p>
@@ -22,20 +19,20 @@
 
   <p>
     <li>
-      <p><b>count</b> is a normal variable here, but since it is governing the <c>while</c> loop it is also called the <b>loop variable</b>.</p>
+      <p><b>count</b> is a normal variable here, but since it is governing the <c>while</c> loop it is also called the <term>loop variable</term>.</p>
     </li>
     <li>
-      <p>Line 2 here is the <b>loop condition</b>. It must always be a boolean expression that will evaluate to <c>False</c> or <c>True</c>.</p>
+      <p>Line 2 here is the <term>loop condition</term>. It must always be a boolean expression that will evaluate to <c>False</c> or <c>True</c>.</p>
     </li>
     <li>
-      <p>Lines 3 and 4 are the <b>loop body</b>.  The loop body is always
+      <p>Lines 3 and 4 are the <term>loop body</term>.  The loop body is always
   indented. The indentation determines exactly what statements are "in the
   loop".  The loop body is run each time the loop is repeated.</p>      
     </li>
     <li>
       <p>On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if
   the loop condition is True (if <c>count</c> is greater than zero).  If it is not (this is
-  called the <b>terminating condition</b> of the loop), the loop has finished.
+  called the <term>terminating condition</term> of the loop), the loop has finished.
   Program execution continues at the next statement after the loop body.</p>      
     </li>
     <li>
@@ -66,7 +63,7 @@
             source of amusement for computer scientists is the observation that the
             directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.</p>
 
-  <p>We can use the <c>while</c> loop to create any type of iteration we wish, making more general-purpose than the <c>for</c> loop we'll learn next week.  
+  <p>We can use the <c>while</c> loop to create any type of iteration we wish, making it more general-purpose than the <c>for</c> loop we'll learn next week.  
   For example, let us consider a program that adds all numbers from <c>1</c> to <c>n</c>. To do this, we will create a variable called <c>aNumber</c> and initialize it to 
   1, the first number in the summation.  Every iteration will add <c>aNumber</c> to the running total until all the values have been used.
   In order to control the iteration, we must create a boolean expression that evaluates to <c>True</c> as long as we want to keep adding values to our 

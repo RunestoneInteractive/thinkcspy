@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 4<title>Iteration</title>
-4<xi:include href="./intro-IterationRevisited.ptx"/>
+4<xi:include href="./intro-Iteration.ptx"/>
 4<xi:include href="./ThewhileStatement.ptx"/>
 4<xi:include href="./FlowofExecutionofthewhileLoop.ptx"/>
-4<xi:include href="./The3n1Sequence.ptx"/>
+4<xi:include href="./BreakAndContinue.ptx"/>
+4<xi:include href="./TraversalandthewhileLoop.ptx"/>
 4<xi:include href="./SentinelValuesAndValidation.ptx"/>
+4<xi:include href="./The3n1Sequence.ptx"/>
 4<xi:include href="./TheforLoop.ptx"/>
 4<xi:include href="./TherangeFunction.ptx"/>
-4<xi:include href="./NewtonsMethod.ptx"/>
-4<xi:include href="./accumulatorRevisited.ptx"/>
-4<xi:include href="./AlgorithmsRevisited.ptx"/>
-4<xi:include href="./BreakAndContinue.ptx"/>
+4<xi:include href="./Listsandforloops.ptx"/>
+4<xi:include href="./TraversalandtheforLoopByItem.ptx"/>
+4<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./Exercises.ptx"/>
 </chapter>

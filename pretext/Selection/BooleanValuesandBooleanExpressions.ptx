@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="selection_boolean-values-and-boolean-expressions">
   <title>Boolean Values and Boolean Expressions</title>
-  <video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto"/>
+  <!--<video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto"/>-->
   <p>The Python type for storing true and false values is called <c>bool</c>, named
             after the British mathematician, George Boole. George Boole created <em>Boolean
                 Algebra</em>, which is the basis of all modern computer arithmetic.</p>
