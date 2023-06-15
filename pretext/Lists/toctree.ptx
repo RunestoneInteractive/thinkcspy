@@ -7,6 +7,7 @@
 4<xi:include href="./AccessingElements.ptx"/>
 4<xi:include href="./ConcatenationandRepetition.ptx"/>
 4<xi:include href="./ListSlices.ptx"/>
+4<xi:include href="./CloningLists.ptx"/>
 4<xi:include href="./ListsareMutable.ptx"/>
 4<xi:include href="./ListDeletion.ptx"/>
 4<xi:include href="./ListMethods.ptx"/>
@@ -14,5 +15,4 @@
 4<xi:include href="./AppendversusConcatenate.ptx"/>
 4<xi:include href="./listTypeConversionFunction.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
 </chapter>

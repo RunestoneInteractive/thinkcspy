@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<section xml:id="complex-logic_nested-list-traversal">
+  <title>Nested List Traversal</title>
+  <p>Nested lists can be traversed the say way as other lists. However, the code to do so can easily get complicated and confusing. In this section let us 
+  examine several example programs that perform this task.</p>
+  
+  <p>The following program concerns a list of lists of names. In some cases, we may want to take nested list data and "un-nest" it. To do this, we need to 
+  iterate through the outer list, and then construct another loop to iterate through each name in each sublist. In this program's case, we are simply printing each 
+  name as we encounter it.</p>
+  <program xml:id="chp10_nested_example_1" interactive="activecode" language="python">
+    <input>
+names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
+for sublist in names:
+	for name in sublist:
+		print(name)
+        </input>
+  </program>
+  <p>Nested lists can also be navigated by index rather than by value. This complicates the code somewhat, but gives us more flexibility for what can be done to each item.
+  In this example program, we visit each name and turn it lowercase.</p>
+  <program xml:id="chp10_nested_example_2" interactive="activecode" language="python">
+    <input>
+names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
+for sublist_index in range(len(names)):
+	for name_index in range(len(names[sublist_index])):
+		names[sublist_index][name_index] = names[sublist_index][name_index].lower()
+print(names)
+        </input>
+  </program>
+  <p>Note that in the above program it is very important that we use <c>len(names[sublist_index])</c> in the second range call. Because the nested lists in this example 
+  do not have the same length, we have to check the length of each sublist when setting up our nested for loop bounds. If we do not do this carefully, then we can easily
+  miss data or get an out of bounds exception. Consider a different, erroneous example:</p>
+  <program xml:id="chp10_nested_example_3" interactive="activecode" language="python">
+    <input>
+names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
+for sublist_index in range(len(names)):
+	for name_index in range(len(names[0])):
+		names[sublist_index][name_index] = names[sublist_index][name_index].lower()
+print(names)
+        </input>
+  </program>
+  <p>Nested lists can be used in many different contexts, but one more common use is to model 2D grids of data. Here is one last example that treats nested lists as a 2D coordinate plane
+  and finds the location of a single value in that plane. Note this example reverses the y axis, so y values increase as you travel downward. This is to match the indexing on the lists, 
+  though we could model this as a more familiar coordinate system with some small changes.</p>
+  <program xml:id="chp10_nested_example_4" interactive="activecode" language="python">
+    <input>
+coord = [['_', '_', '_', '_'],
+		 ['_', '_', 'p', '_'],
+		 ['_', '_', '_', '_'],
+		 ['_', '_', '_', '_']]
+for y in range(len(names)):
+	for x in range(len(coord[y])):
+		if coord[y][x] == 'p':
+			print(f'p is as coordinates (x={x}, y={y})')
+        </input>
+  </program>
+  <p xml:id="complex-logic_index-0">
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="test_question9_21_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+alist = [ [4, [True, False], 6, 8], [888, 999] ]
+for a in alist:
+	for b in range(1, len(a)):
+		if type(a[b]) == type(a[b-1]):
+			print(a[b], end=" ")
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>8 999</p>
+        </statement>
+        <feedback>
+                    Yes, you are correct.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>4 6 8 888 999</p>
+        </statement>
+        <feedback>
+                    You are correct that the code will treat the list with boolean value differently, but you are missing other aspects. Look again at the bounds of the inner loop.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>4 True False 6 8 888 999</p>
+        </statement>
+        <feedback>
+                    This would be the output for a full traversal of the data. However, this code cannot fully traverse the data since it has three levels of nesting and the code only reaches two levels.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>4 [True, False] 6 8 888 999</p>
+        </statement>
+        <feedback>
+                    This would be the correct output if the code traversed two levels of nesting and printed everything. However, the if statement is also doing something here.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

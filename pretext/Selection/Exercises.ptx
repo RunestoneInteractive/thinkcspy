@@ -89,7 +89,7 @@
   </exercise>
   <exercise label="ex_6_3">
     <statement>
-      <p>Write a function which is given an exam mark, and it returns a string &#x2014; the grade for that mark &#x2014; according to this
+      <p>Write code that takes an exam mark and prints a string &#x2014; the grade for that mark &#x2014; according to this
                         scheme:</p>
       <table>
         <tabular>
@@ -145,135 +145,13 @@
       </table>
       <p>The square and round brackets denote closed and open intervals.
                         A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
-      <p>Test your function by printing the mark and the grade for a number of different marks.</p>
+      <p>Test your code by printing the mark and the grade for a number of different marks.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_3_editor">
-      <input>
-def getGrade(grade):
-      #your code here
-
-
-====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(getGrade(95),'A','Tested getGrade on input of 95')
-        self.assertEqual(getGrade(85),'B','Tested getGrade on input of 85')
-        self.assertEqual(getGrade(65),'D','Tested getGrade on input of 65')
-        self.assertEqual(getGrade(79.99999),'C','Tested getGrade on input of 79.9999')
-        self.assertEqual(getGrade(80),'B','Tested getGrade on input of 80')
-
-
-myTests().main()
-        </input>
-    </program>
-    <solution>
-      <program xml:id="q3_question" language="python">
-        <input>
-def grade(mark):
-    if mark &gt;= 90:
-        return "A"
-    else:
-        if mark &gt;= 80:
-            return "B"
-        else:
-            if mark &gt;= 70:
-                return "C"
-            else:
-                if mark &gt;= 60:
-                    return "D"
-                else:
-                    return "F"
-
-mark = 83
-print( "Mark:", str(mark), "Grade:", grade(mark))
-        </input>
-      </program>
-    </solution>
-  </exercise>
-  <exercise label="ex_6_4">
-    <statement>
-      <p>Modify the turtle bar chart program from the previous chapter so that the bar for any value
-                of 200 or more is filled with red, values between [100 and 200) are filled yellow,
-                and bars representing values less than 100 are filled green.</p>
-    </statement>
-    <program xml:id="ex_6_4_editor" interactive="activecode" language="python">
-      <input>
-
-        </input>
-    </program>
-  </exercise>
-  <exercise label="ex_6_5">
-    <statement>
-      <p>In the turtle bar chart program, what do you expect to happen if one or more
-                        of the data values in the list is negative?   Go back and try it out.  Change the
-                        program so that when it prints the text value for the negative bars, it puts
-                        the text above the base of the bar (on the 0 axis).</p>
-    </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_5_editor">
-      <input>
-
-        </input>
-    </program>
-    <solution>
-      <program xml:id="answer_ex_6_5" language="python">
-        <input>
-import turtle
-
-def drawBar(t, height):
-    """ Get turtle t to draw one bar, of height. """
-    t.begin_fill()               # start filling this shape
-    if height &lt; 0:
-        t.write(str(height))
-    t.left(90)
-    t.forward(height)
-    if height &gt;= 0:
-        t.write(str(height))
-    t.right(90)
-    t.forward(40)
-    t.right(90)
-    t.forward(height)
-    t.left(90)
-    t.end_fill()                 # stop filling this shape
-
-
-
-xs = [48, -50, 200, 240, 160, 260, 220]  # here is the data
-maxheight = max(xs)
-minheight = min(xs)
-numbars = len(xs)
-border = 10
-
-tess = turtle.Turtle()           # create tess and set some attributes
-tess.color("blue")
-tess.fillcolor("red")
-tess.pensize(3)
-
-wn = turtle.Screen()             # Set up the window and its attributes
-wn.bgcolor("lightgreen")
-if minheight &gt; 0:
-    lly = 0
-else:
-    lly = minheight - border
-
-wn.setworldcoordinates(0-border, lly, 40*numbars+border, maxheight+border)
-
-
-for a in xs:
-    drawBar(tess, a)
-
-wn.exitonclick()
-        </input>
-      </program>
-    </solution>
   </exercise>
   <exercise label="ex_6_6">
     <statement>
-      <p>Write a function <c>findHypot</c>.  The function will be given the length of two sides of a right-angled triangle and it should return
-                the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
+      <p>Write code that will calculate the length of the hypotenuse function will be given the length of two sides of a right-angled triangle and it should return
+                the .  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
     </statement>
     <program xml:id="ex_6_6_editor" interactive="activecode" language="python">
       <input>
@@ -298,48 +176,13 @@ myTests().main()
   </exercise>
   <exercise label="ex_6_7">
     <statement>
-      <p>Write a function called <c>is_even(n)</c> that takes an integer as an argument
-                        and returns <c>True</c> if the argument is an <term>even number</term> and <c>False</c> if
+      <p>Write code that takes an integer and prints <c>True</c> if the integer is an <term>even number</term> and <c>False</c> if
                         it is <term>odd</term>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_7_editor">
-      <input>
-
-def is_even(n):
-    # your code here
-
-====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-     def testOne(self):
-         self.assertEqual(is_even(10),True,"Tested is_even on input of 10")
-         self.assertEqual(is_even(5),False,"Tested is_even on input of 5")
-         self.assertEqual(is_even(1),False,"Tested is_even on input of 1")
-         self.assertEqual(is_even(0),True,"Tested is_even on input of 0")
-
-myTests().main()
+      <input># your code here
         </input>
     </program>
-    <solution>
-      <program xml:id="q7_answer" language="python">
-        <input>
-from test import testEqual
-
-def is_even(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
-
-testEqual(is_even(10), True)
-testEqual(is_even(5), False)
-testEqual(is_even(1), False)
-testEqual(is_even(0), True)
-        </input>
-      </program>
-    </solution>
   </exercise>
   <exercise label="ex_6_8">
     <statement>

@@ -2,18 +2,15 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 4<title>Complex Logic</title>
 4<xi:include href="./intro_ComplexLogic.ptx"/>
+4<xi:include href="./NestedLists.ptx"/>
+4<xi:include href="./NestedList_Navigation.ptx"/>
+
+4<xi:include href="./Afindfunction.ptx"/>
 
 4<xi:include href="./TheAccumulatorPatternwithStrings.ptx"/>
-4<xi:include href="./Loopingandcounting.ptx"/>
-4<xi:include href="./Afindfunction.ptx"/>
-4<xi:include href="./Optionalparameters.ptx"/>
-
-4<xi:include href="./NestedLists.ptx"/>
-4<xi:include href="./ObjectsandReferences.ptx"/>
-4<xi:include href="./Aliasing.ptx"/>
-4<xi:include href="./CloningLists.ptx"/>
-4<xi:include href="./RepetitionandReferences.ptx"/>
 4<xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
+
+4<xi:include href="./ObjectsandReferences.ptx"/>
 4<xi:include href="./UsingListsasParameters.ptx"/>
 4<xi:include href="./PureFunctions.ptx"/>
 4<xi:include href="./WhichisBetter.ptx"/>

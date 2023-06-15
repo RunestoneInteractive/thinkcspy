@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_modules-and-getting-help">
   <title>Modules and Getting Help</title>
-  <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto"/>
+  <!--<video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto"/>-->
   <p>A <term>module</term> is a file containing Python definitions and statements intended
             for use in other Python programs. There are many Python modules that come with
             Python as part of the <term>standard library</term>. We have already used one of these briefly,

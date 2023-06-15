@@ -2,7 +2,7 @@
 <section xml:id="functions_the-accumulator-pattern">
   <title>The Accumulator Pattern</title>
   <introduction>
-  <video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="auto"/>
+  <!--<video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="auto"/>-->
   <p>In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
             in the function was simple: multiply the number by itself.
             In this section we will reimplement the square function and use a different algorithm, one that relies on addition instead
@@ -136,7 +136,7 @@ def square(x):
         </choice>
       </choices>
     </exercise>
-    <exercise label="question5_4_1p" indent="show" language="python">
+    <!--<exercise label="question5_4_1p" indent="show" language="python">
       <statement>
         <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
       </statement>
@@ -158,7 +158,7 @@ def square(x):
           <cline>print(thesum)</cline>
         </block>
       </blocks>
-    </exercise>
+    </exercise>-->
   </subsection>
   <subsection xml:id="functions_a-variation-on-the-accumulator-pattern">
     <title>A Variation on the Accumulator Pattern</title>

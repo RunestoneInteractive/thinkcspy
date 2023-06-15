@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="functions_functions">
   <title>Functions</title>
-  <video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto"/>
+  <!--<video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto"/>-->
   <p>In Python, a <term>function</term> is a named sequence of statements
             that belong together.  Their primary purpose is to help us
             organize programs into chunks that match how we think about

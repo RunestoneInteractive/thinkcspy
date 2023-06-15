@@ -22,7 +22,9 @@
       </li>
     </ul>
   </p>
-  <p>One way to implement unit tests in Python is with <c>assert</c>.</p>
+  <p>You have been following this pattern in the class so far, even if it is unconsciously. The test cases we give for each assessment can be thought of as unit tests. 
+  We give these to you when the assessment is assigned because it is so helpful to have while you are writing code.</p>
+  <p>One way to implement unit tests in Python, the same way our test cases do it, is with <c>assert</c>.</p>
   <p>
     <ul>
       <li>

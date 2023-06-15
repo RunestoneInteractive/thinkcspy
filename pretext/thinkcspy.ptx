@@ -20,11 +20,11 @@
         <xi:include href="./Iteration/toctree.ptx"/>
         <xi:include href="./Functions/toctree.ptx"/>
         <xi:include href="./PythonModules/toctree.ptx"/>
-        <xi:include href="./Files/toctree.ptx"/>
 		<xi:include href="./ComplexLogic/toctree.ptx"/>
+        <xi:include href="./Files/toctree.ptx"/>
         <xi:include href="./IntroRecursion/toctree.ptx"/>
         <xi:include href="./ClassesBasics/toctree.ptx"/>
-        <xi:include href="./Exceptions/toctree.ptx"/>
+        <!--<xi:include href="./Exceptions/toctree.ptx"/>-->
         <xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>
 		<xi:include href="./AdditionalTopics/toctree.ptx"/>
         <!--<xi:include href="./Inheritance/toctree.ptx"/>-->

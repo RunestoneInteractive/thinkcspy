@@ -27,6 +27,26 @@
       <title>write</title>
       <p>Will add characters to the end of a file that has been opened for writing.</p>
     </gi>
+	<gi>
+      <title>csv</title>
+      <p>An optional Python module that provides useful functions for interacting with data in the <term>Comma Separated Value</term> format.</p>
+    </gi>
+	<gi>
+      <title>Comma Separated Value</title>
+      <p>A format that text files can have. Promises that the file contains alphanumeric values separate by single commas and organized into one row of data per line.</p>
+    </gi>
+	<gi>
+      <title>reader</title>
+      <p>A function part of the csv module that creates an object for traversing csv file data.</p>
+    </gi>
+	<gi>
+      <title>writerow</title>
+      <p>A function part of the csv module that takes a list of data, formats it in the appropriate csv format, and writes it to a data file.</p>
+    </gi>
+	<gi>
+      <title>writerows</title>
+      <p>A function part of the csv module. Similar to writerow, but can write multiple rows of data at once if given a list of lists.</p>
+    </gi>
     <gi>
       <title>absolute file path</title>
       <p>The name of a file that includes a path to the file from the <em>root</em>

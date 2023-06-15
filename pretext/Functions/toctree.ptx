@@ -6,12 +6,11 @@
 4<xi:include href="./Variablesandparametersarelocal.ptx"/>
 4<xi:include href="./TheAccumulatorPattern.ptx"/>
 4<xi:include href="./Functionscancallotherfunctions.ptx"/>
-4<xi:include href="./FlowofExecutionSummary.ptx"/>
-4<xi:include href="./BooleanFunctions.ptx"/>
-4<xi:include href="./mainfunction.ptx"/>
-4<xi:include href="./ProgramDevelopment.ptx"/>
 4<xi:include href="./Composition.ptx"/>
+4<xi:include href="./FlowofExecutionSummary.ptx"/>
+4<xi:include href="./mainfunction.ptx"/>
 4<xi:include href="./UnitTesting.ptx"/>
+4<xi:include href="./BooleanFunctions.ptx"/>
+4<xi:include href="./ProgramDevelopment.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
 </chapter>

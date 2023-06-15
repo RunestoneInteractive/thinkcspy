@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<section xml:id="files_reading-csv">
+  <title>Reading Files as <c>csv</c></title>
+  <p>The climate change data file we have used as an example in this chapter has a more specific designation than just a <c>.txt</c> file. Because the file 
+  consists of a series of values separated by commas, it can also be referred to as a <term>Comma Separate Value</term> file, or a <c>.csv</c>. Note that csv 
+  files are still just text files, but knowing it is also a csv tells us something valuable about the structure of the data it contains. This makes it 
+  easier to parse and interact with that data.</p>
+  <!--<DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.csv', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850,-0.37,2.24E-7\n1860,-0.34,3.94E-7\n1870,-0.28,6.6E-7\n1880,-0.24,1.1\n1890,-0.42,1.72\n1900,-0.2,2.38\n1910,-0.49,3.34\n1920,-0.25,4.01\n1930,-0.14,4.53\n1940,0.01,5.5\n1950,-0.17,6.63\n1960,-0.05,10.5\n1970,-0.03,16\n1980,0.09,20.3\n1990,0.3,22.6\n2000,0.29,24.9\n2010,0.56,32.7\n2019,0.74,33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
+        </DataFileNode>-->
+  <p>To interact with text files as csv's, we need to import the Python <c>csv</c> module and use it to create <c>reader</c> or <c>writer</c> objects.
+  This section focuses on reading csv, so we should use a reader. The reason we are interested in doing this is because the reader will automatically detect and remove
+  the commas separating values for us. Essentially, the reader will split the data up into lists for us. This makes it simpler to navigate and interact with the data in the file.</p>
+  <p>Let's see an example of this working.</p>
+  <program xml:id="files_csv_read" interactive="activecode" language="python">
+    <input>
+import csv
+with open("ccdata.csv", "r") as file:
+	csv_reader = csv.reader(file, delimiter=',')
+	for line in csv_reader:
+		print(line)
+		print(line[0]) # just years
+        </input>
+  </program>
+  
+  <p>Note that the value assigned to for loop <c>line</c> variable is a list rather than a single string like we would get with a standard file object. This allows us to acces column 
+  data quickly with a single index value.</p>
+  
+  <p>The following table describes the two csv functions you are most likely to want to use.</p>
+  <table xml:id="files_csvmethods">
+    <tabular>
+      <row header="yes">
+        <cell>
+          <term>Method Name</term>
+        </cell>
+        <cell>
+          <term>Use</term>
+        </cell>
+        <cell>
+          <term>Explanation</term>
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <c>reader</c>
+        </cell>
+        <cell>
+          <c>csv.reader(file_object)</c>
+        </cell>
+        <cell>
+                            Creates a csv reader object that automatically splits lines of data but can be looped through like a regular file object.
+                        </cell>
+      </row>
+      <row>
+        <cell>
+          <c>writer</c>
+        </cell>
+        <cell>
+          <c>csv.writer(file_object)</c>
+        </cell>
+        <cell>
+                            Creates a csv writer object that takes lists of strings and writes them to the provided file in the correct csv format.
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+</section>
