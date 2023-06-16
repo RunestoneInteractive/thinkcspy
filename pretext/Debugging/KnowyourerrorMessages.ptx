@@ -17,7 +17,7 @@ print(final_time_int)
   </program>
   <p>Can you see what is wrong, just by looking at the code?  Maybe, maybe not.  Our brain tends to see what we think is there, so sometimes it is very hard to find the problem just by looking at the code.  Especially when it is our own code and we are sure that we have done everything right!</p>
   <p>Let's try the program again, but this time in an activecode:</p>
-  <program xml:id="db_ex3_5" interactive="activecode" language="python">
+  <program xml:id="ch6_sec4_p1" interactive="activecode" language="python">
     <input>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
@@ -35,7 +35,7 @@ print(final_time_int)
                 Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners,
                 including the wording chosen to describe errors.</p>
   </note>
-  <exercise label="db_qex32">
+  <exercise label="ch6_sec4_q1">
     <statement>
       <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
     </statement>
@@ -296,7 +296,7 @@ print(final_time_int)
     <title>TypeError</title>
     <p>TypeErrors occur when you you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.</p>
     <p>Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.</p>
-    <program xml:id="db_ex3_8" interactive="activecode" language="python">
+    <program xml:id="ch6_sec4_p2" interactive="activecode" language="python">
       <input>
 a = input('wpisz godzine')
 x = input('wpisz liczbe godzin')
@@ -332,7 +332,7 @@ print ('godzina teraz', a)
   <subsection xml:id="debugging_nameerror">
     <title>NameError</title>
     <p>Name errors almost always mean that you have used a variable before it has a value.  Often NameErrors are simply caused by typos in your code.  They can be hard to spot if you don't have a good eye for catching spelling mistakes.  Other times you may simply mis-remember the name of a variable or even a function you want to call.    You have seen one example of a NameError at the beginning of this section.  Here is another one.  See if you can get this program to run successfully:</p>
-    <program xml:id="db_ex3_9" interactive="activecode" language="python">
+    <program xml:id="ch6_sec4_p3" interactive="activecode" language="python">
       <input>
 str_time = input("What time is it now?")
 str_wait_time = input("What is the number of nours to wait?")
@@ -361,7 +361,7 @@ print(time_when_alarm_go_off)
       </ol>
     </p>
     <p>Here is another one for you to try:</p>
-    <program xml:id="db_ex3_10" interactive="activecode" language="python">
+    <program xml:id="ch6_sec4_p4" interactive="activecode" language="python">
       <input>
 n = input("What time is it now (in hours)?")
 n = imt(n)
@@ -378,7 +378,7 @@ print("The time is now", q)
       </note>
     </hint>
     <p>And one last bit of code to fix.</p>
-    <program xml:id="db_ex3_11" interactive="activecode" language="python">
+    <program xml:id="ch6_sec4_p5" interactive="activecode" language="python">
       <input>
 present_time = input("Enter the present timein hours:")
 set_alarm = input("Set the hours for alarm:")
@@ -422,7 +422,7 @@ print(alarm_time)
   <subsection xml:id="debugging_valueerror">
     <title>ValueError</title>
     <p>Value errors occur when you pass a parameter to a function and the function is expecting a certain limitations on the values, and the value passed is not compatible.  We can illustrate that with this particular program in two different ways.</p>
-    <program xml:id="db_ex3_12" interactive="activecode" language="python">
+    <program xml:id="ch6_sec4_p6" interactive="activecode" language="python">
       <input>
 current_time_str = input("What is the current time (in hours 0-23)?")
 current_time_int = int(current_time_str)

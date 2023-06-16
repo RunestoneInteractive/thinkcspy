@@ -11,7 +11,7 @@
             uppercase letters. <c>string.punctuation</c> comprises all the characters considered
             to be punctuation. Run the following:</p>
   <blockquote>
-    <program xml:id="string_class_1" interactive="activecode" language="python">
+    <program xml:id="ch3_sec10_p1" interactive="activecode" language="python">
       <input>
 import string
 print(string.ascii_lowercase)
@@ -24,7 +24,7 @@ print(string.punctuation)
   <p>For more information consult the <c>string</c> module documentaiton (see <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).</p>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_08_04" interactive="activecode" language="python">
+    <program xml:id="scratch_04" interactive="activecode" language="python">
       <input>
 
 

@@ -12,7 +12,7 @@
   <p>To design our class, we simply need to use the analysis above to realize that the <title_reference>state</title_reference> of a fraction object can be
             completely described by representing two integers.  We can begin by implementing the <c>Fraction</c> class and the <c>__init__</c>
             method which will allow the user to provide a numerator and a denominator for the fraction being created.</p>
-  <program xml:id="fractions_init" interactive="activecode" language="python">
+  <program xml:id="ch14_sec1_p1" interactive="activecode" language="python">
     <input>
 class Fraction:
 

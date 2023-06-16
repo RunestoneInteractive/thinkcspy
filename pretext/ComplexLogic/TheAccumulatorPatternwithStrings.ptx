@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<section xml:id="strings_the-accumulator-pattern-with-strings">
+<section xml:id="complex-logic_the-accumulator-pattern-with-strings">
   <title>The Accumulator Pattern with Strings</title>
   <p>Combining the <c>in</c> operator with string concatenation using <c>+</c> and the accumulator pattern, we can
             write a function that removes all the vowels from a string.  The idea is to start with a string and iterate over each character, checking to see if the character is a vowel.  As we process the characters, we will build up a new string consisting of only the nonvowel characters.  To do this, we use the accumulator pattern.</p>
   <p>Remember that the accumulator pattern allows us to keep a <q>running total</q>.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
-  <program xml:id="ch08_acc1" interactive="activecode" language="python">
+  <program xml:id="ch10_sec6_p1" interactive="activecode" language="python">
     <input>
 def removeVowels(s):
     vowels = "aeiouAEIOU"
@@ -36,7 +36,7 @@ if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
   <p>Take a close look also at the initialization of <c>sWithoutVowels</c>.  We start with an empty string and then begin adding
             new characters to the end.</p>
   <p>Step through the function using codelens to see the accumulator variable grow.</p>
-  <program xml:id="ch08_acc2" interactive="codelens" language="python">
+  <program xml:id="ch10_sec6_c1" interactive="codelens" language="python">
     <input>
 def removeVowels(s):
     vowels = "aeiouAEIOU"
@@ -52,7 +52,7 @@ print(removeVowels("compsci"))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_11_1">
+  <exercise label="ch10_sec6_q1">
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">
@@ -94,7 +94,7 @@ print(r)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_08_03" interactive="activecode" language="python">
+    <program xml:id="scratch_14_1" interactive="activecode" language="python">
       <input>
 
 

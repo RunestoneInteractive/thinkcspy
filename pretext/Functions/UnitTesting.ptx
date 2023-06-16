@@ -39,7 +39,7 @@
     </ul>
   </p>
   <p>Take a look at the way assert is used in the following code.</p>
-  <program xml:id="ch04_ut2" interactive="activecode" language="python">
+  <program xml:id="ch8_sec9_p1" interactive="activecode" language="python">
     <input>
 assert type(9//5) == int
 assert type(9.0//5) == int
@@ -55,7 +55,7 @@ assert type(9.0//5) == int
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="assertch6_3_1">
+  <exercise label="ch8_sec9_q1">
     <statement>
       <p>When <c>assert x==y</c> is executed and x and y have the same values, what will happen?</p>
     </statement>
@@ -118,7 +118,7 @@ assert type(9.0//5) == int
     <p>In the code below, <c>lst</c> is bound to a list object. In python, not all the elements of a list have to be of the
                 same type. We can check that they all have the same type and get an error if they are not. Notice that with <c>lst2</c>,
                 one of the assertions fails.</p>
-    <program xml:id="ch04_ut3" interactive="activecode" language="python">
+    <program xml:id="ch8_sec9_p2" interactive="activecode" language="python">
       <input>
 lst = ['a', 'b', 'c']
 first_type = type(lst[0])
@@ -137,7 +137,7 @@ for item in lst2:
     <p>Testing whether a function returns the correct value is the easiest test case to define. You simply check whether the
                 result of invoking the function on a particular input produces the particular output that you expect. Take a look at
                 the following code.</p>
-    <program xml:id="ch04_ut1" interactive="activecode" language="python">
+    <program xml:id="ch8_sec9_p3" interactive="activecode" language="python">
       <input>
 def square(x):
 #raise x to the second power
@@ -150,7 +150,7 @@ assert square(3) == 9
                 principle, a function might work properly on all the inputs that are tested in the test cases, but still not work
                 properly on some other inputs. That's where the art of defining test cases comes in: you try to find specific inputs that
                 are representative of all the important kinds of inputs that might ever be passed to the function.</p>
-    <exercise label="question19_1_3">
+    <exercise label="ch8_sec9_q2">
       <statement>
         <p>For the hangman game, this &#x2018;blanked' function takes a word and some letters that have been guessed, and returns a version
                 of the word with _ for all the letters that haven't been guessed. Which of the following is the correct way to write

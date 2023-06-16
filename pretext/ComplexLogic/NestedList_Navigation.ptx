@@ -7,7 +7,7 @@
   <p>The following program concerns a list of lists of names. In some cases, we may want to take nested list data and "un-nest" it. To do this, we need to 
   iterate through the outer list, and then construct another loop to iterate through each name in each sublist. In this program's case, we are simply printing each 
   name as we encounter it.</p>
-  <program xml:id="chp10_nested_example_1" interactive="activecode" language="python">
+  <program xml:id="ch10_sec3_p1" interactive="activecode" language="python">
     <input>
 names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
 for sublist in names:
@@ -17,7 +17,7 @@ for sublist in names:
   </program>
   <p>Nested lists can also be navigated by index rather than by value. This complicates the code somewhat, but gives us more flexibility for what can be done to each item.
   In this example program, we visit each name and turn it lowercase.</p>
-  <program xml:id="chp10_nested_example_2" interactive="activecode" language="python">
+  <program xml:id="ch10_sec3_p2" interactive="activecode" language="python">
     <input>
 names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
 for sublist_index in range(len(names)):
@@ -29,7 +29,7 @@ print(names)
   <p>Note that in the above program it is very important that we use <c>len(names[sublist_index])</c> in the second range call. Because the nested lists in this example 
   do not have the same length, we have to check the length of each sublist when setting up our nested for loop bounds. If we do not do this carefully, then we can easily
   miss data or get an out of bounds exception. Consider a different, erroneous example:</p>
-  <program xml:id="chp10_nested_example_3" interactive="activecode" language="python">
+  <program xml:id="ch10_sec3_p3" interactive="activecode" language="python">
     <input>
 names = [["Thomas", "Abraham", "George"], ["Theodore", "Grover", "William"], ["Franklin", "Dwight", "John", "Harry"], ["George", "Bill"]]
 for sublist_index in range(len(names)):
@@ -41,7 +41,7 @@ print(names)
   <p>Nested lists can be used in many different contexts, but one more common use is to model 2D grids of data. Here is one last example that treats nested lists as a 2D coordinate plane
   and finds the location of a single value in that plane. Note this example reverses the y axis, so y values increase as you travel downward. This is to match the indexing on the lists, 
   though we could model this as a more familiar coordinate system with some small changes.</p>
-  <program xml:id="chp10_nested_example_4" interactive="activecode" language="python">
+  <program xml:id="ch10_sec3_p4" interactive="activecode" language="python">
     <input>
 coord = [['_', '_', '_', '_'],
 		 ['_', '_', 'p', '_'],
@@ -53,10 +53,10 @@ for y in range(len(names)):
 			print(f'p is as coordinates (x={x}, y={y})')
         </input>
   </program>
-  <p xml:id="complex-logic_index-0">
+  <p xml:id="complex-logic_index-1">
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_21_2">
+  <exercise label="ch10_sec3_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

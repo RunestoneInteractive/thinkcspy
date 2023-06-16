@@ -3,7 +3,7 @@
   <title>The Slice Operator</title>
   <p>A substring of a string is called a <term>slice</term>. Selecting a slice is similar to
             selecting a character:</p>
-  <program xml:id="chp08_slice1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec7_p1" interactive="activecode" language="python">
     <input>
 singers = "Peter, Paul, and Mary"
 print(singers[0:5])
@@ -19,7 +19,7 @@ print(singers[17:21])
             end of the string.</p>
   <p>There is no Index Out Of Range exception for a slice.
             A slice is forgiving and shifts any offending index to something legal.</p>
-  <program xml:id="chp08_slice2" interactive="activecode" language="python">
+  <program xml:id="ch3_sec7_p2" interactive="activecode" language="python">
     <input>
 fruit = "banana"
 print(fruit[:3])
@@ -32,7 +32,7 @@ print(fruit[3:99])
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_5_1">
+  <exercise label="ch3_sec7_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -77,7 +77,7 @@ print(s[3:8])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_5_2">
+  <exercise label="ch3_sec7_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -124,7 +124,7 @@ print(s[7:11] * 3)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_08_01" interactive="activecode" language="python">
+    <program xml:id="scratch_03" interactive="activecode" language="python">
       <input>
 
 

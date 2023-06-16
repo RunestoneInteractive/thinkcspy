@@ -29,7 +29,7 @@ print("The result of", toSquare, "squared is", squareResult)
  piece <c>main</c>.</p>
 
   <p>The following activecode shows this idea.  In line 11 we have defined a new function called <c>main</c> that doesn't need any parameters.  The five lines of main processing are now placed inside this function.  Finally, in order to execute that main processing code, we need to invoke the <c>main</c> function (line 20).  When you push run, you will see that the program works the same as it did before.</p>
-  <program xml:id="ch04_1main" interactive="activecode" language="python">
+  <program xml:id="ch8_sec8_p1" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -56,7 +56,7 @@ main()                           # Invoke the main function
   <p>Before the Python interpreter executes your program, it defines a few special variables.  One of those variables is called <c>__name__</c> and it is automatically set to the string value <c>"__main__"</c> when the program is being executed by itself in a standalone fashion.  On the other hand, if the program is being imported by another program, then the <c>__name__</c> variable is set to the name of that module.  This means that we can know whether the program is being run by itself or whether it is being used by another program and based on that observation, we may or may not choose to execute some of the code that we have written.</p>
   <p>For example, assume that we have written a collection of functions to do some simple math.  We can include a <c>main</c> function to invoke these math functions.  It is much more likely, however, that these functions will be imported by another program for some other purpose.  In that case, we would not want to execute our main function.</p>
   <p>The activecode below defines two simple functions and a main.</p>
-  <program xml:id="ch04_adv" interactive="activecode" language="python">
+  <program xml:id="ch8_sec8_p2" interactive="activecode" language="python">
     <input>
 def squareit(n):
     return n * n

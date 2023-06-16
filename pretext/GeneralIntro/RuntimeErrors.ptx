@@ -10,7 +10,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_8_1">
+  <exercise label="ch1_sec8_q1">
     <statement>
       <p>Which of the following is a run-time error?</p>
     </statement>
@@ -41,7 +41,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_8_2">
+  <exercise label="ch1_sec8_q2">
     <statement>
       <p>Who or what typically finds runtime errors?</p>
     </statement>

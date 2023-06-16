@@ -5,7 +5,7 @@
             <c>append</c> is a list method which adds the argument passed to it to the end of
             the list. Continuing with this example, we show several other list methods.  Many of them are
             easy to understand.</p>
-  <program xml:id="chp09_meth1" interactive="activecode" language="python">
+  <program xml:id="ch4_sec10_p1" interactive="activecode" language="python">
     <input>
 mylist = []
 mylist.append(5)
@@ -192,7 +192,7 @@ print(mylist)
             can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.</p>
   <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
             and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).</p>
-  <program xml:id="chp09_meth2" interactive="activecode" language="python">
+  <program xml:id="ch4_sec10_p2" interactive="activecode" language="python">
     <input>
 mylist = []
 mylist.append(5)
@@ -208,7 +208,7 @@ print(mylist)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_13_1">
+  <exercise label="ch4_sec10_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -247,7 +247,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_13_2">
+  <exercise label="ch4_sec10_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -286,7 +286,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_13_3">
+  <exercise label="ch4_sec10_q3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -325,7 +325,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_13_4">
+  <exercise label="ch4_sec10_q4">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -373,7 +373,7 @@ print(alist)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_09_03" interactive="activecode" language="python">
+    <program xml:id="scratch_06" interactive="activecode" language="python">
       <input>
 
 

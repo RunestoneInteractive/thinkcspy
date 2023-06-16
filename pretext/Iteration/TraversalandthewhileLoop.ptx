@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<section xml:id="strings_traversal-and-the-while-loop">
+<section xml:id="iteration_traversal-and-the-while-loop">
   <title>Traversal and the <c>while</c> Loop</title>
   <p>The <c>while</c> loop can also control the
             generation of index values used to navigate strings or lists.  The programmer is responsible for setting up the initial
             condition, making sure that the condition is correct, and making sure that something changes inside the
             body to guarantee that the condition will eventually fail.</p>
-  <program xml:id="ch08_7c" interactive="activecode" language="python">
+  <program xml:id="ch7_sec5_p1" interactive="activecode" language="python">
     <input>
 fruit = "apple"
 
@@ -20,7 +20,7 @@ while position &lt; len(fruit):
             executed. The last character accessed is the one with the index
     <c>len(fruit)-1</c>, which is the last character in the string.</p>
   <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
-  <program xml:id="ch08_7c1" interactive="codelens" language="python">
+  <program xml:id="ch7_sec5_c1" interactive="codelens" language="python">
     <input>
 fruit = "apple"
 
@@ -33,7 +33,7 @@ while position &lt; len(fruit):
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_10_1">
+  <exercise label="ch7_sec5_q1">
     <statement>
       <p>How many times is the letter o printed by the following statements?</p>
       <program language="python">
@@ -75,7 +75,7 @@ while idx &lt; len(s):
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_08_02" interactive="activecode" language="python">
+    <program xml:id="scratch_10" interactive="activecode" language="python">
       <input>
 
 

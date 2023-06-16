@@ -6,7 +6,7 @@
             conditions and change the behavior of the program accordingly. <term>Branching statements</term>, sometimes
             also referred to as <term>conditional statements</term> or <term>Selection statements</term>, give us this ability. The simplest form of branching is the <term>if statement</term>.
             This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
-  <program xml:id="ch05_4" interactive="activecode" language="python">
+  <program xml:id="ch5_sec2_p1" interactive="activecode" language="python">
     <input>
 x = 15
 
@@ -78,7 +78,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_4_1">
+  <exercise label="ch5_sec2_q1">
     <statement>
       <p>How many statements can appear in each block (the if and the else) in a conditional statement?</p>
     </statement>
@@ -117,7 +117,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_4_2">
+  <exercise label="ch5_sec2_q2">
     <statement>
       <p>What does the following code print (choose from output a, b, c or nothing)?</p>
       <program language="python">
@@ -164,7 +164,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_4_3">
+  <exercise label="ch5_sec2_q3">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">

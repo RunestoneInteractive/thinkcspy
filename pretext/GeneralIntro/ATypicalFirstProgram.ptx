@@ -13,7 +13,7 @@ print("Hello, World!")
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
   <p>Here is the example in activecode.  Give it a try!</p>
-  <program xml:id="ch01_2" interactive="activecode" language="python">
+  <program xml:id="ch1_sec11_p1" interactive="activecode" language="python">
     <input>
 print("Hello, World!")
         </input>
@@ -26,7 +26,7 @@ print("Hello, World!")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_11_1">
+  <exercise label="ch1_sec11_q1">
     <statement>
       <p>The print function:</p>
     </statement>

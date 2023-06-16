@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<section xml:id="strings_string-comparison">
+<section xml:id="selection_string-comparison">
   <title>String Comparison</title>
   <p>The comparison operators also work on strings. To see if two strings are equal you simply write a boolean
             expression using the equality operator.</p>
-  <program xml:id="ch08_comp1" interactive="activecode" language="python">
+  <program xml:id="ch5_sec8_p1" interactive="activecode" language="python">
     <input>
 word = "banana"
 if word == "banana":
@@ -16,7 +16,7 @@ else:
             <url href="http://en.wikipedia.org/wiki/Lexicographic_order" visual="http://en.wikipedia.org/wiki/Lexicographic_order">lexicographical order</url>.
             This is similar to the alphabetical order you would use with a dictionary,
             except that all the uppercase letters come before all the lowercase letters.</p>
-  <program xml:id="ch08_comp2" interactive="activecode" language="python">
+  <program xml:id="ch5_sec8_p2" interactive="activecode" language="python">
     <input>
 word = "zebra"
 
@@ -31,7 +31,7 @@ else:
   <p>It is probably clear to you that the word <title_reference>apple</title_reference> would be less than (come before) the word <c>banana</c>.
             After all, <title_reference>a</title_reference> is before <title_reference>b</title_reference> in the alphabet.  But what if we consider the words <c>apple</c> and <c>Apple</c>?
             Are they the same?</p>
-  <program xml:id="chp08_ord1" interactive="activecode" language="python">
+  <program xml:id="ch5_sec8_p3" interactive="activecode" language="python">
     <input>
 print("apple" &lt; "banana")
 
@@ -42,7 +42,7 @@ print("apple" &lt; "Apple")
   <p>It turns out, as you recall from our discussion of variable names, that uppercase and lowercase letters are considered to be different from one another.  The way the computer knows they are different is that
             each character is assigned a unique integer value.  <q>A</q> is 65, <q>B</q> is 66, and <q>5</q> is 53.  The way you can
             find out the so-called <term>ordinal value</term> for a given character is to use a character function called <c>ord</c>.</p>
-  <program xml:id="ch08_ord2" interactive="activecode" language="python">
+  <program xml:id="ch5_sec8_p4" interactive="activecode" language="python">
     <input>
 print(ord("A"))
 print(ord("B"))
@@ -56,7 +56,7 @@ print("apple" &gt; "Apple")
   <p>Humans commonly ignore capitalization when comparing two words.  However, computers do not.  A common way to address this issue is to convert strings to a standard
             format, such as all lowercase, before performing the comparison.</p>
   <p>There is also a similar function called <c>chr</c> that converts integers into their character equivalent.</p>
-  <program xml:id="ch08_ord3" interactive="activecode" language="python">
+  <program xml:id="ch5_sec8_p5" interactive="activecode" language="python">
     <input>
 print(chr(65))
 print(chr(66))
@@ -72,7 +72,7 @@ print(ord(" "))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_6_1">
+  <exercise label="ch5_sec8_q1">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
@@ -100,7 +100,7 @@ print(ord(" "))
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_6_2">
+  <exercise label="ch5_sec8_q2">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
@@ -136,7 +136,7 @@ print(ord(" "))
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_6_3">
+  <exercise label="ch5_sec8_q3">
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">

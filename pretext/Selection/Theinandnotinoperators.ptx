@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="strings_the-in-and-not-in-operators">
+<section xml:id="selection_the-in-and-not-in-operators">
   <title>The <c>in</c> and <c>not in</c> operators</title>
   <p>The <c>in</c> operator tests if one string is a substring of another:</p>
-  <program xml:id="chp8_in1" interactive="activecode" language="python">
+  <program xml:id="ch5_sec6_p1" interactive="activecode" language="python">
     <input>
 print('p' in 'apple')
 print('i' in 'apple')
@@ -13,7 +13,7 @@ print('pa' in 'apple')
   <p>Note that a string is a substring of itself, and the empty string is a
             substring of any other string. (Also note that computer scientists
             like to think about these edge cases quite carefully!)</p>
-  <program xml:id="chp8_in2" interactive="activecode" language="python">
+  <program xml:id="ch5_sec6_p2" interactive="activecode" language="python">
     <input>
 print('a' in 'a')
 print('apple' in 'apple')
@@ -22,7 +22,7 @@ print('' in 'apple')
         </input>
   </program>
   <p>The <c>not in</c> operator returns the logical opposite result of <c>in</c>.</p>
-  <program xml:id="chp8_in3" interactive="activecode" language="python">
+  <program xml:id="ch5_sec6_p3" interactive="activecode" language="python">
     <input>
 print('x' not in 'apple')
         </input>

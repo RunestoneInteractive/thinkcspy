@@ -23,7 +23,7 @@ def add(self,otherfraction):
 </input>
   </program>
   <p>You can try the addition method and then modify the fractions and retry.</p>
-  <program xml:id="fractions_add1" interactive="activecode" language="python">
+  <program xml:id="ch14_sec4_p1" interactive="activecode" language="python">
     <input>
 def gcd(m, n):
     while m % n != 0:
@@ -94,7 +94,7 @@ print(f3)
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_cl_02" interactive="activecode" language="python">
+    <program xml:id="scratch_16" interactive="activecode" language="python">
       <input>
 
 

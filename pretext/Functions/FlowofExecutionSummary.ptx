@@ -28,7 +28,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_6_1">
+  <exercise label="ch8_sec7_q1">
     <statement>
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">
@@ -91,7 +91,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_6_2">
+  <exercise label="ch8_sec7_q2">
     <statement>
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">

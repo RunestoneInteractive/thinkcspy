@@ -3,7 +3,7 @@
   <title>Objects as Arguments and Parameters</title>
   <p>You can pass an object as an argument in the usual way. Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  
         The job of this function is to figure out the distance between two points.</p>
-  <program xml:id="chp13_classes6" interactive="activecode" language="python">
+  <program xml:id="ch13_sec7_p1" interactive="activecode" language="python">
     <input>
 import math
 

@@ -14,7 +14,7 @@
             <c>append</c> method and add the integer 90 to the end of the list.   Methods are accessed using dot notation.</p>  
   <p>Let's add two simple methods to allow a point to give us information about its state.  The <c>getX</c> method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
             to write functions that return values.  One thing to notice is that even though the <c>getX</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.</p>
-  <program xml:id="chp13_classes4" interactive="activecode" language="python">
+  <program xml:id="ch13_sec6_p1" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -40,7 +40,7 @@ print(p.getY())
   <p>Let's add another method, <c>distanceFromOrigin</c>, to see better how methods
             work.  This method will again not need any additional information to do its work.
             It will perform a more complex task.</p>
-  <program xml:id="chp13_classes5" interactive="activecode" language="python">
+  <program xml:id="ch13_sec6_p2" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """

@@ -10,7 +10,7 @@
             reader - it is completely ignored by the interpreter.
             In Python, the <title_reference>#</title_reference> token starts a comment.  The rest of the line is ignored.
             Here is a new version of <em>Hello, World!</em>.</p>
-  <program xml:id="ch01_3" interactive="activecode" language="python">
+  <program xml:id="ch1_sec12_p1" interactive="activecode" language="python">
     <input>
 #---------------------------------------------------
 # This demo program shows off how elegant Python is!
@@ -28,7 +28,7 @@ print("Hello, World!")     # Isn't this easy!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_12_1">
+  <exercise label="ch1_sec12_q1">
     <statement>
       <p>What are comments for?</p>
     </statement>

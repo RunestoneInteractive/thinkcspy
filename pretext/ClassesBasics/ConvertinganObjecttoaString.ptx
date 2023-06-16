@@ -3,7 +3,7 @@
   <title>Converting an Object to a String</title>
   <p>When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
             Consider the example below.</p>
-  <program xml:id="chp13_classesstr1" interactive="activecode" language="python">
+  <program xml:id="ch13_sec8_p1" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -35,7 +35,7 @@ print(p)
   <p>The <c>__str__</c> method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what a <c>Point</c> should look like when it gets printed.  In this case, we
             have decided that the string representation will include the values of x and y as well as some identifying text.  It
             is required that the <c>__str__</c> method create and <em>return</em> a string.</p>
-  <program xml:id="chp13_classesstr2" interactive="activecode" language="python">
+  <program xml:id="ch13_sec8_p2" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """

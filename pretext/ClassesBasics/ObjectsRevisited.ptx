@@ -7,5 +7,5 @@
           that the object knows about itself.  For example, each list has a state consisting
           of the items it contains, a length and so on.  Each list also has the ability to add, delete, and sort the items inside of it.  Individual lists are different in 
           that even though they are all lists, they differ in the specific values of the individual state attributes (maybe they have different items inside them).</p>
-  <image source="ClassesBasics/Figures/objectpic1.png" width="50%" alt="Simple object has state and methods"/>
+  <!--<image source="ClassesBasics/Figures/objectpic1.png" width="50%" alt="Simple object has state and methods"/>-->
 </section>

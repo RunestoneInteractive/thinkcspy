@@ -44,7 +44,7 @@
             the <c>split</c> method, we can break each line into a list containing all the fields of interest about climate
             change. We can then take the values corresponding to year, global average temperature, and global emmisions to
             construct a simple sentence.</p>
-  <program xml:id="files_for" interactive="activecode" language="python">
+  <program xml:id="ch11_sec4_p1" interactive="activecode" language="python">
     <input>
 ccfile = open("ccdata.txt", "r")
 

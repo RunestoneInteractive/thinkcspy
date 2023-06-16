@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="strings_a-find-function">
+<section xml:id="complex-logic_a-find-function">
   <title>A <c>find</c> function</title>
   <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
-  <program xml:id="ch08_run3" interactive="activecode" language="python">
+  <program xml:id="ch10_sec4_p1" interactive="activecode" language="python">
     <input>
 def find(astring, achar):
     """

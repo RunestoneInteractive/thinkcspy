@@ -43,7 +43,7 @@
   </note>
   <p>Ok, let's look at an example.  Let's solve the problem posed in question 3 at the end of the Simple Python Data chapter.  Ask the user for the time now (in hours 0 - 23), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off. For example, if <c>current_time</c> is 8 and <c>wait_time</c> is 5, <c>final_time</c> should be 13 (1 pm).</p>
   <p>So, where to start?  The problem requires two pieces of input from the user, so let's start there and make sure we can get the data we need.</p>
-  <program xml:id="db_ex3_1" interactive="activecode" language="python">
+  <program xml:id="ch6_sec2_p1" interactive="activecode" language="python">
     <input>
 current_time = input("what is the current time (in hours)?")
 wait_time = input("How many hours do you want to wait")
@@ -53,7 +53,7 @@ print(wait_time)
         </input>
   </program>
   <p>So far so good.  Now let's take the next step.  We need to figure out what the time will be after waiting <c>wait_time</c> number of hours.  A reasonable solution is to simply add <c>wait_time</c> to <c>current_time</c> and print out the result.  So lets try that.</p>
-  <program xml:id="db_ex3_2" interactive="activecode" language="python">
+  <program xml:id="ch6_sec2_p2" interactive="activecode" language="python">
     <input>
 current_time = input("What is the current time (in hours 0 - 23)?")
 wait_time = input("How many hours do you want to wait")
@@ -66,7 +66,7 @@ print(final_time)
         </input>
   </program>
   <p>Hmm, when you run this example you see that something unexpected has happened. You would not realize this was an error unless you first knew what the program was supposed to do.</p>
-  <exercise label="db_q_ex3_1">
+  <exercise label="ch6_sec2_q1">
     <statement>
       <p>Which of the following best describes what is wrong with the  previous example?</p>
     </statement>
@@ -99,7 +99,7 @@ print(final_time)
   </exercise>
   <p>This error was probably pretty simple to spot, because we printed out the value of <c>final_time</c> and it is easy to see that the numbers were just concatenated together rather than added.</p>
   <p>So what do we do about the problem?  We will need to convert both <c>current_time</c> and <c>wait_time</c> to <c>int</c>.  At this stage of your programming development, it can be a good idea to include the type of the variable in the variable name itself.  So let's look at another iteration of the program that does that, and the conversion to integer.</p>
-  <program xml:id="db_ex3_3" interactive="activecode" language="python">
+  <program xml:id="ch6_sec2_p3" interactive="activecode" language="python">
     <input>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
@@ -114,7 +114,7 @@ print(final_time_int)
   <p xml:id="debugging_index-0">Now, that's a lot better, and in fact depending on the hours you chose, it may be exactly right.  If you entered 8 for <c>current_time</c> and 5 for <c>wait_time</c> then 13 is correct.  But if you entered 17 (5 pm) for <c>current_time</c> and 9 for <c>wait_time</c> then the result of 26 is not correct.</p>
   <p>This illustrates an important aspect of <term>testing</term>: it is important to test your code on a range of inputs.  It is especially important to test your code on <term>boundary conditions</term>.  For this particular problem, you should test your program with <c>current_time</c> of 0, 23, and some values in between.  You should test your <c>wait_time</c> for 0, and some larger values.  What about negative numbers?  Negative numbers don't make sense, and since we don't really have the tools to deal with telling the user when something is wrong we will not worry about that just yet.</p>
   <p>So to account for those numbers that are bigger than 23, we need one final step: using the modulus operator.</p>
-  <program xml:id="db_ex3_4" interactive="activecode" language="python">
+  <program xml:id="ch6_sec2_p4" interactive="activecode" language="python">
     <input>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")

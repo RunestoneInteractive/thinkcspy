@@ -5,7 +5,7 @@
             strings. The <c>split</c> method
             breaks a string into a list of words.  By
             default, any number of whitespace characters is considered a word boundary.</p>
-  <program xml:id="ch09_split1" interactive="activecode" language="python">
+  <program xml:id="ch4_sec11_p1" interactive="activecode" language="python">
     <input>
 song = "The rain in Spain..."
 wds = song.split()
@@ -15,7 +15,7 @@ print(wds)
   <p>An optional argument called a <term>delimiter</term> can be used to specify which
             characters to use as word boundaries. The following example uses the string
             <c>ai</c> as the delimiter:</p>
-  <program xml:id="ch09_split2" interactive="activecode" language="python">
+  <program xml:id="ch4_sec11_p2" interactive="activecode" language="python">
     <input>
 song = "The rain in Spain..."
 wds = song.split('ai')
@@ -26,7 +26,7 @@ print(wds)
   <p>The inverse of the <c>split</c> method is <c>join</c>.  You choose a
             desired <term>separator</term> string, (often called the <em>glue</em>)
             and join the list with the glue between each of the elements.</p>
-  <program xml:id="ch09_join" interactive="activecode" language="python">
+  <program xml:id="ch4_sec11_p3" interactive="activecode" language="python">
     <input>
 wds = ["red", "blue", "green"]
 glue = ';'
@@ -43,7 +43,7 @@ print("".join(wds))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_22_1">
+  <exercise label="ch4_sec11_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

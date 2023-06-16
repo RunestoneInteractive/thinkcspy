@@ -5,7 +5,7 @@
             variable on the left hand side of the assignment operator. It is called local because this variable only
             exists inside the function and you cannot use it outside. For example,
             consider again the <c>square</c> function:</p>
-  <program xml:id="bad_local" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c1" interactive="codelens" language="python">
     <input>
           def square(x):
               y = x * x
@@ -39,7 +39,7 @@
   <p>On the other hand, it is legal for a function to access a global variable.  However, this is considered
     <term>bad form</term> by nearly all programmers and should be avoided.  Look at the following,
             nonsensical variation of the square function.</p>
-  <program xml:id="badsquare_1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec3_p1" interactive="activecode" language="python">
     <input>
 def badsquare(x):
     y = x ** power
@@ -62,7 +62,7 @@ print(result)
   <p>There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
             change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
             codelens example:</p>
-  <program xml:id="cl_powerof_bad" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c2" interactive="codelens" language="python">
     <input>
           def powerof(x, p):
               power = p   # Another dumb mistake
@@ -96,7 +96,7 @@ print(result)
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
             But this example demonstrates that that is clearly not how Python operates.</p>
-  <program xml:id="cl_change_parm" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c3" interactive="codelens" language="python">
     <input>
           def square(x):
               y = x * x
@@ -111,7 +111,7 @@ print(result)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_3_1">
+  <exercise label="ch8_sec3_q1">
     <statement>
       <p>What is a variable's scope?</p>
     </statement>
@@ -142,7 +142,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_3_2">
+  <exercise label="ch8_sec3_q2">
     <statement>
       <p>What is a local variable?</p>
     </statement>
@@ -173,7 +173,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_3_3">
+  <exercise label="ch8_sec3_q3">
     <statement>
       <p>Can you use the same name for a local variable as a global variable?</p>
     </statement>

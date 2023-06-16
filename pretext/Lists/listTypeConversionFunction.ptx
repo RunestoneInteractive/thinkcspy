@@ -4,7 +4,7 @@
   <p>Python has a built-in type conversion function called
             <c>list</c> that tries to turn whatever you give it
             into a list.  For example, try the following:</p>
-  <program xml:id="ch09_list1" interactive="activecode" language="python">
+  <program xml:id="ch4_sec13_p1" interactive="activecode" language="python">
     <input>
 xs = list("Crunchy Frog")
 print(xs)

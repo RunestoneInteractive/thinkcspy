@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="lists_nested-lists">
+<section xml:id="complex-logic_nested-lists">
   <title>Nested Lists</title>
   <p>A nested list is a list that appears as an element in another list. In this
             list, the element with index 3 is a nested list.
@@ -7,7 +7,7 @@
             nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
             of interest.  It is also possible to combine those steps using bracket operators that evaluate from
             left to right.</p>
-  <program xml:id="chp09_nest" interactive="activecode" language="python">
+  <program xml:id="ch10_sec2_p1" interactive="activecode" language="python">
     <input>
 nested = ["hello", 2.0, 5, [10, 20]]
 innerlist = nested[3]
@@ -18,10 +18,10 @@ print(item)
 print(nested[3][1])
         </input>
   </program>
-  <p xml:id="lists_index-0">
+  <p xml:id="complex-logic_index-0">
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_21_1">
+  <exercise label="ch10_sec2_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

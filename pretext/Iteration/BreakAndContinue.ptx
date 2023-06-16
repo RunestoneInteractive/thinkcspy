@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_continue-break">
+<section xml:id="iteration_continue-break">
   <title><c>break</c> and <c>continue</c></title>
 
   <p>In loops, we sometimes want to traverse <em>until</em> we reach a certain value.
@@ -9,7 +9,7 @@
   <p>When a <c>break</c> statement is reached, the loop immediately ends and proceeds with the code after the loop.
     <c>break</c> is only a valid statement inside of loops, such as the following:</p>
   
-  <program xml:id="ch07_break" interactive="activecode" language="python">
+  <program xml:id="ch7_sec4_p1" interactive="activecode" language="python">
     <input>
 i = 0
 while i &lt; 10:
@@ -24,7 +24,7 @@ while i &lt; 10:
     When a <c>continue</c> statement is reached, the current iteration is stopped (similar to break),
     however, the loop will <em>continue</em> running for all iterations after the current one.</p>
 
-  <program xml:id="ch07_continue" interactive="activecode" language="python">
+  <program xml:id="ch7_sec4_p2" interactive="activecode" language="python">
     <input>
 i = 0
 while i &lt; 10:

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_variables">
   <title>Variables</title>
-  <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>
+  <!--<video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>-->
   <p>One of the most powerful features of a programming language is the ability to
             manipulate <term>variables</term>. A variable is a name that refers to a value.</p>
   <p>
@@ -41,7 +41,7 @@ pi = 3.14159
   <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
-  <program xml:id="ch02_9" interactive="activecode" language="python">
+  <program xml:id="ch2_sec4_p1" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
 n = 17
@@ -54,7 +54,7 @@ print(pi)
   </program>
   <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-  <program xml:id="ch02_9_cl" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_c1" interactive="codelens" language="python">
     <input>
           message = "What's up, Doc?"
           n = 17
@@ -70,7 +70,7 @@ print(pi)
             created.</p>
   <p>Variables also have
             types; again, we can ask the interpreter what they are.</p>
-  <program xml:id="ch02_10" interactive="activecode" language="python">
+  <program xml:id="ch2_sec4_p2" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
 n = 17
@@ -94,7 +94,7 @@ print(type(pi))
   <p>To see this, read and then run the following program.
             You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
-  <program xml:id="ch02_11" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_p3" interactive="codelens" language="python">
     <input>
           day = "Thursday"
           print(day)
@@ -110,7 +110,7 @@ print(type(pi))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_3_2">
+  <exercise label="ch2_sec4_q1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">

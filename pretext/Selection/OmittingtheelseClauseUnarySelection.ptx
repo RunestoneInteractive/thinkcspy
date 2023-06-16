@@ -10,7 +10,7 @@
             This creates what is sometimes called <term>unary selection</term>.
             In this case, when the condition evaluates to <c>True</c>, the statements are
             executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
-  <program xml:id="ch05_unaryselection" interactive="activecode" language="python">
+  <program xml:id="ch5_sec3_p1" interactive="activecode" language="python">
     <input>
 x = 10
 if x &lt; 0:
@@ -22,7 +22,7 @@ print("This is always printed")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_5_1">
+  <exercise label="ch5_sec3_q1">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -78,7 +78,7 @@ The negative number -10 is not valid here</pre>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_5_2">
+  <exercise label="ch5_sec3_q2">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">

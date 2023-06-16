@@ -13,7 +13,7 @@
             because they are enclosed in quotation marks.</p>
   <p>If you are not sure what class a value falls into, Python has a function called
             <term>type</term> which can tell you.</p>
-  <program xml:id="ch02_1" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p1" interactive="activecode" language="python">
     <input>
 print(type("Hello, World!"))
 print(type(17))
@@ -46,7 +46,7 @@ Type "help", "copyright", "credits" or "license" for more information.
             <em>floating-point</em>.  At this stage, you can treat the words <em>class</em> and <em>type</em>
             interchangeably.  We'll come back to a deeper understanding of what a class
             is in later chapters.</p>
-  <program xml:id="ch02_2" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p2" interactive="activecode" language="python">
     <input>
 print(type(17))
 print(type(3.2))
@@ -54,7 +54,7 @@ print(type(3.2))
   </program>
   <p>What about values like <c>"17"</c> and <c>"3.2"</c>? They look like numbers, but they
             are in quotation marks like strings.</p>
-  <program xml:id="ch02_3" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p3" interactive="activecode" language="python">
     <input>
 print(type("17"))
 print(type("3.2"))
@@ -63,7 +63,7 @@ print(type("3.2"))
   <p>They're strings!</p>
   <p>Strings in Python can be enclosed in either single quotes (<c>'</c>) or double
             quotes (<c>"</c> - the double quote character), or three of the same separate quote characters (<c>'''</c> or <c>"""</c>).</p>
-  <program xml:id="ch02_4" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p4" interactive="activecode" language="python">
     <input>
 print(type('This is a string.') )
 print(type("And so is this.") )
@@ -76,13 +76,13 @@ beard"</c>, and single quoted strings can have double quotes inside them, as in
             <c>'The knights who say "Ni!"'</c>.
             Strings enclosed with three occurrences of either quote symbol are called
             triple quoted strings.  They can contain either single or double quotes:</p>
-  <program xml:id="ch02_5" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p5" interactive="activecode" language="python">
     <input>
 print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
         </input>
   </program>
   <p>Triple quoted strings can even span multiple lines:</p>
-  <program xml:id="ch02_6" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p6" interactive="activecode" language="python">
     <input>
 print("""This message will span
 several lines
@@ -93,7 +93,7 @@ of the text.""")
             three-of-a-kind quotes to surround your strings.  Once it has parsed the text of
             your program or command, the way it stores the value is identical in all cases,
             and the surrounding quotes are not part of the value.</p>
-  <program xml:id="ch02_7" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p7" interactive="activecode" language="python">
     <input>
 print('This is a string.')
 print("""And so is this.""")
@@ -105,7 +105,7 @@ print("""And so is this.""")
   <p>When you type a large integer, you might be tempted to use commas between
             groups of three digits, as in <c>42,000</c>. This is not a legal integer in
             Python, but it does mean something else, which is legal:</p>
-  <program xml:id="ch02_8" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p8" interactive="activecode" language="python">
     <input>
 print(42000)
 print(42,000)
@@ -114,7 +114,7 @@ print(42,000)
   <p>Well, that's not what we expected at all! Because of the comma, Python chose to
             treat this as a <em>pair</em> of values.     In fact, the print function can print any number of values as long
             as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.</p>
-  <program xml:id="ch02_8a" interactive="activecode" language="python">
+  <program xml:id="ch2_sec2_p9" interactive="activecode" language="python">
     <input>
 print(42, 17, 56, 34, 11, 4.35, 32)
 print(3.4, "hello", 45)
@@ -127,7 +127,7 @@ print(3.4, "hello", 45)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_1_1">
+  <exercise label="ch2_sec2_q1">
     <statement>
       <p>How can you determine the type of a variable?</p>
     </statement>
@@ -166,7 +166,7 @@ print(3.4, "hello", 45)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question2_1_2">
+  <exercise label="ch2_sec2_q2">
     <statement>
       <p>What is the data type of &#x2018;this is what kind of data'?</p>
     </statement>

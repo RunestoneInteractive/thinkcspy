@@ -5,7 +5,7 @@
             job. For example, if you want to find the absolute value of a number, you have
             to indicate what the number is. Python has a built-in function for computing
             the absolute value:</p>
-  <program xml:id="ch04_4" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p1" interactive="activecode" language="python">
     <input>
 print(abs(5))
 
@@ -14,7 +14,7 @@ print(abs(-5))
   </program>
   <p>In this example, the arguments to the <c>abs</c> function are 5 and -5.</p>
   <p>Some functions take more than one argument. For example the range function that we saw with <c>for</c> loops.</p>
-  <program xml:id="ch04_5" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p2" interactive="activecode" language="python">
     <input>
      print(list(range(4, 8)))
      print(list(range(1, 10)))
@@ -25,7 +25,7 @@ print(abs(-5))
   </note>
   <p>Another built-in function that takes more than one argument is <c>max</c>.
   </p>
-  <program xml:id="ch04_6" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p3" interactive="activecode" language="python">
     <input>
 print(max(7, 11))
 print(max(4, 1, 17, 2, 12))
@@ -55,7 +55,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             as a parameter and return the result of squaring that number.  Here is the
             black-box diagram with the Python code following.</p>
   <image source="Functions/Figures/squarefun.png" width="50%"/>
-  <program xml:id="ch04_square" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p4" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -93,7 +93,7 @@ print("The result of", toSquare, "squared is", result)
                 we will see later where it makes sense to have a return statement even when other statements
                 follow, and the further statements are <em>not</em> executed.</p>
   </note>
-  <program xml:id="ch04_clsquare" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c1" interactive="codelens" language="python">
     <input>
 def square(x):
     y = x * x
@@ -130,7 +130,7 @@ print("The result of", toSquare, "squared is", squareResult)
             programmers.  As you step through this example, pay very close attention to the return
             value in the local variables listing.  Then look at what is printed when the
             function returns.</p>
-  <program xml:id="ch04_clsquare_bad" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c2" interactive="codelens" language="python">
     <input>
           def square(x):
               y = x * x
@@ -148,7 +148,7 @@ print("The result of", toSquare, "squared is", squareResult)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_2_1">
+  <exercise label="ch8_sec2_q1">
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
@@ -194,7 +194,7 @@ def addEm(x, y, z):
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_2_2">
+  <exercise label="ch8_sec2_q2">
     <statement>
       <p>What will the following function return?</p>
       <program language="python">

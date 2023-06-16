@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<section xml:id="selection_boolean-functions">
+<section xml:id="functions_boolean-functions">
   <title>Boolean Functions</title>
   <introduction>
   <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
             expression evaluation can be returned by a function (using the <c>return</c> statement),
             functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
-  <program xml:id="ch06_boolfun1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec10_p1" interactive="activecode" language="python">
     <input>
 def isDivisible(x, y):
     if x % y == 0:
@@ -47,7 +47,7 @@ else:
     <c>not isDivisible(x, y)</c>). The following example shows the <c>isDivisible</c> function at work.  Notice how
             descriptive the code is when we move the testing details into a boolean function.  Try it
             with a few other actual parameters to see what is printed.</p>
-  <program xml:id="ch06_boolfun2" interactive="activecode" language="python">
+  <program xml:id="ch8_sec10_p2" interactive="activecode" language="python">
     <input>
 def isDivisible(x, y):
     return x % y == 0
@@ -60,7 +60,7 @@ else:
   </program>
   <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
             the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
-  <program xml:id="ch06_boolcodelens" interactive="codelens" language="python">
+  <program xml:id="ch8_sec10_c1" interactive="codelens" language="python">
     <input>
           def isDivisible(x, y):
               return x % y == 0
@@ -74,7 +74,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_8_1">
+  <exercise label="ch8_sec10_q1">
     <statement>
       <p>What is a Boolean function?</p>
     </statement>
@@ -105,7 +105,7 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_8_2">
+  <exercise label="ch8_sec10_q2">
     <statement>
       <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
       <program language="python">
@@ -134,12 +134,12 @@ return x + y &lt; z
     </choices>
   </exercise>
 </introduction>
-  <subsection xml:id="selection_more-unit-testing">
+  <subsection xml:id="functions_more-unit-testing">
     <title>More Unit Testing</title>
     <p>When we write unit tests, we should also consider <term>output equivalence classes</term> that result in significantly different results.</p>
     <p>The <c>isDivisible</c> function can return either <c>True</c> or <c>False</c>. These two different outputs give us two equivalence classes. We then choose inputs that should give each of the different results. <term>It is important to have at least one test for each output equivalence class.</term>
     </p>
-    <program xml:id="ch06_boolfun3" interactive="activecode" language="python">
+    <program xml:id="ch8_sec10_p3" interactive="activecode" language="python">
       <input>
 def isDivisible(x, y):
     '''is x evenly divisible by y?'''
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     </note>
     <note>
       <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-      <program xml:id="scratch_06_03" interactive="activecode" language="python">
+      <program xml:id="scratch_13" interactive="activecode" language="python">
         <input>
 
 

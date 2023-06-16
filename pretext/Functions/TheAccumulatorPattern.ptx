@@ -22,7 +22,7 @@
   </p>
   <p>Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed
             is the details of how the squaring is done.  This is a great example of <q>black box</q> design.  We can change out the details inside of the box and still use the function exactly as we did before.</p>
-  <program xml:id="sq_accum1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec4_p1" interactive="activecode" language="python">
     <input>
 def square(x):
     runningtotal = 0
@@ -47,7 +47,7 @@ print("The result of", toSquare, "squared is", squareResult)
                 the for statement?  Not sure? Try it and find out.</p>
   </note>
   <p>Here is the same program in codelens.  Step through the function and watch the <q>running total</q> accumulate the result.</p>
-  <program xml:id="sq_accum3" interactive="codelens" language="python">
+  <program xml:id="ch8_sec4_c1" interactive="codelens" language="python">
     <input>
 def square(x):
     runningtotal = 0
@@ -75,7 +75,7 @@ repeat:
     </program>
     <note>
       <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-      <program xml:id="scratch_05_04" interactive="activecode" language="python">
+      <program xml:id="scratch_12" interactive="activecode" language="python">
         <input>
 
 
@@ -85,7 +85,7 @@ repeat:
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="test_question5_4_1">
+    <exercise label="ch8_sec4_q1">
       <statement>
         <p>Consider the following code:</p>
         <program language="python">
@@ -162,7 +162,7 @@ def square(x):
   </subsection>
   <subsection xml:id="functions_a-variation-on-the-accumulator-pattern">
     <title>A Variation on the Accumulator Pattern</title>
-    <program xml:id="ch04_accum3" interactive="activecode" language="python">
+    <program xml:id="ch8_sec4_p2" interactive="activecode" language="python">
       <input>
 def square(x):
     '''raise x to the second power'''

@@ -8,7 +8,7 @@
             is shown below. The function uses an accumulator variable
             (<c>theSum</c>) to compute a running total of all the numbers in the list
             by starting with <math>0</math> and adding each number in the list.</p>
-  <program xml:id="lst_itsum" interactive="activecode" language="python">
+  <program xml:id="ch12_sec2_p1" interactive="activecode" language="python">
     <input>
 def listsum(numList):
     theSum = 0
@@ -51,7 +51,7 @@ total = \  25</math_block>
   <p>In this equation <math>first(numList)</math> returns the first element of
             the list and <math>rest(numList)</math> returns a list of everything but
             the first element. This is easily expressed in Python.</p>
-  <program xml:id="lst_recsum" interactive="activecode" language="python">
+  <program xml:id="ch12_sec2_p2" interactive="activecode" language="python">
     <input>
 def listsum(numList):
    if len(numList) == 1:

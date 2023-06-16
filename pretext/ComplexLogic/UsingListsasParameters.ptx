@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="lists_using-lists-as-parameters">
+<section xml:id="complex-logic_using-lists-as-parameters">
   <title>Using Lists as Parameters</title>
   <p>Functions which take lists as arguments and change them during execution are
             called <term>modifiers</term> and the changes they make are called <term>side effects</term>.
@@ -9,7 +9,7 @@
             the same list that the argument is referencing.
             For example, the function below takes a list as an
             argument and multiplies each element in the list by 2:</p>
-  <program xml:id="chp09_parm1" interactive="activecode" language="python">
+  <program xml:id="ch10_sec8_p1" interactive="activecode" language="python">
     <input>
 def doubleStuff(aList):
     """ Overwrite each element in aList with double its value. """
@@ -29,7 +29,7 @@ print(things)
             If a function modifies the elements of a list parameter, the caller sees the change since the change
             is occurring to the original.</p>
   <p>This can be easily seen in codelens.  Note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
-  <program xml:id="chp09_parm1_trace" interactive="codelens" language="python">
+  <program xml:id="ch10_sec8_c1" interactive="codelens" language="python">
     <input>
 def doubleStuff(aList):
     """ Overwrite each element in aList with double its value. """

@@ -8,7 +8,7 @@
   <p>It is also the case that the positions are named from right to left using negative numbers where -1 is the rightmost
             index and so on.
             Note that the character at index 6 (or -8) is the blank character.</p>
-  <program xml:id="chp08_index1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec4_p1" interactive="activecode" language="python">
     <input>
 school = "Luther College"
 m = school[2]
@@ -34,7 +34,7 @@ print(lastchar)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_2_1">
+  <exercise label="ch3_sec4_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -79,7 +79,7 @@ print(s[3])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_2_2">
+  <exercise label="ch3_sec4_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

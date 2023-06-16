@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<section xml:id="lists_list-membership">
+<section xml:id="selection_list-membership">
   <title>List Membership</title>
   <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
             used them previously with strings and they also work here.</p>
-  <program xml:id="chp09_4" interactive="activecode" language="python">
+  <program xml:id="ch5_sec7_p1" interactive="activecode" language="python">
     <input>
 fruit = ["apple", "orange", "banana", "cherry"]
 
@@ -14,7 +14,7 @@ print("pear" in fruit)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_4_1">
+  <exercise label="ch5_sec7_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -43,7 +43,7 @@ print(3.14 in alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_4_2">
+  <exercise label="ch5_sec7_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

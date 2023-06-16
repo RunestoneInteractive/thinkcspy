@@ -14,7 +14,7 @@
       <p>Returns the number of characters in a string.  Example:
                             <c>len('happy')</c> evaluates to <c>5</c>.</p>
     </gi>
-    <gi>
+    <!--<gi>
       <title>for loop traversal (<c>for</c>)</title>
       <p><em>Traversing</em> a string means accessing each character in the string, one
                             at a time.  For example, the following for loop:</p>
@@ -25,14 +25,14 @@ for ix in 'Example':
 </input>
       </program>
       <p>executes the body of the loop 7 times with different values of <title_reference>ix</title_reference> each time.</p>
-    </gi>
+    </gi>-->
     <gi>
       <title>slicing (<c>[:]</c>)</title>
       <p>A <em>slice</em> is a substring of a string. Example: <c>'bananas and
 cream'[3:6]</c> evaluates to <c>ana</c> (so does <c>'bananas and
 cream'[1:4]</c>).</p>
     </gi>
-    <gi>
+    <!--<gi>
       <title>string comparison (<c>&gt;, &lt;, &gt;=, &lt;=, ==, !=</c>)</title>
       <p>The six common comparision operators work with strings, evaluating according to
                             <url href="http://en.wikipedia.org/wiki/Lexicographic_order" visual="http://en.wikipedia.org/wiki/Lexicographic_order">lexigraphical order</url>.  Examples:
@@ -46,6 +46,6 @@ cream'[1:4]</c>).</p>
                             inside another string.  Examples: <c>'heck' in "I'll be checking for
 you."</c> evaluates to <c>True</c>.  <c>'cheese' in "I'll be checking for
 you."</c> evaluates to <c>False</c>.</p>
-    </gi>
+    </gi>-->
   </glossary>
 </section>

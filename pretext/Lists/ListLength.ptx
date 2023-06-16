@@ -5,7 +5,7 @@
             of items in the list).  However, since lists can have items which are themselves lists, it important to note
             that <c>len</c> only returns the top-most length.  In other words, sublists are considered to be a single
             item when counting the length of the list.</p>
-  <program xml:id="chp09_01a" interactive="activecode" language="python">
+  <program xml:id="ch4_sec3_p1" interactive="activecode" language="python">
     <input>
 alist =  ["hello", 2.0, 5, [10, 20]]
 print(len(alist))
@@ -15,7 +15,7 @@ print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_2_1">
+  <exercise label="ch4_sec3_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -44,7 +44,7 @@ print(len(alist))
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_2_2">
+  <exercise label="ch4_sec3_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -80,5 +80,10 @@
       <p>A special character that causes the cursor to move to the next tab stop
                             on the current line.</p>
     </gi>
+	<gi>
+      <title>traverse</title>
+      <p>To iterate through the elements of a collection, performing a similar
+                            operation on each.</p>
+    </gi>
   </glossary>
 </section>

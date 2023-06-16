@@ -24,7 +24,7 @@ return result
 </input>
   </program>
   <p>Wrapping that up in a function, we get:</p>
-  <program xml:id="ch06_newarea" interactive="activecode" language="python">
+  <program xml:id="ch8_sec6_p1" interactive="activecode" language="python">
     <input>
 def distance(x1, y1, x2, y2):
         dx = x2 - x1

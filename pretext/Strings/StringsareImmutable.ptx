@@ -4,7 +4,7 @@
   <p>One final thing that makes strings different from some other Python collection types is that
             you are not allowed to modify the individual characters in the collection.  It is tempting to use the <c>[]</c> operator on the left side of an assignment,
             with the intention of changing a character in a string.  For example, in the following code, we would like to change the first letter of <c>greeting</c>.</p>
-  <program xml:id="cg08_imm1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec9_p1" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
 greeting[0] = 'J'            # ERROR!
@@ -15,7 +15,7 @@ print(greeting)
             runtime error <c>TypeError: 'str' object does not support item assignment</c>.</p>
   <p>Strings are <term>immutable</term>, which means you cannot change an existing string. The
             best you can do is create a new string that is a variation on the original.</p>
-  <program xml:id="ch08_imm2" interactive="activecode" language="python">
+  <program xml:id="ch3_sec9_p2" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
 newGreeting = 'J' + greeting[1:]
@@ -28,7 +28,7 @@ print(greeting)            # same as it was
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_7_1">
+  <exercise label="ch3_sec9_q1">
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">

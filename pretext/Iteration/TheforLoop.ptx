@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_the-for-loop">
+<section xml:id="iteration_the-for-loop">
   <title>The <c>for</c> loop</title>
   <p>The <c>while</c> statement is a general-purpose tool for iteration, and is necessary for any instance of iteration where we don't know how many repetitions will be needed.
 However, if we do know how many are needed, there is a more efficient approach: the <c>for</c> statement.</p>
@@ -7,7 +7,7 @@ However, if we do know how many are needed, there is a more efficient approach: 
 we'd like to send them each an email inviting them to our party.  We
 don't quite know how to send email yet, so for the moment we'll just print a
 message for each friend.</p>
-  <program xml:id="ch03_4" interactive="activecode" language="python">
+  <program xml:id="ch7_sec8_p1" interactive="activecode" language="python">
     <input>
       for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
           print(f"Hi {name}! Please come to my party on Saturday!")
@@ -61,7 +61,7 @@ terminates.</p>
 
   <b>Check your understanding</b>
 
-  <exercise label="mc07_8_2">
+  <exercise label="ch7_sec8_q1">
     <statement>
       <p>True or False: You can rewrite any for-loop as a while-loop.</p>
     </statement>

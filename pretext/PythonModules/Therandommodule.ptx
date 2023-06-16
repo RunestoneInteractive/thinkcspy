@@ -24,7 +24,7 @@
   </p>
   <p>Python provides a module <c>random</c> that helps with tasks like this.  You can
             take a look at it in the documentation.  Here are the key things we can do with it.</p>
-  <program xml:id="chmodule_rand" interactive="activecode" language="python">
+  <program xml:id="ch9_sec3_p1" interactive="activecode" language="python">
     <input>
 import random
 
@@ -50,7 +50,7 @@ print(diceThrow)
             the range [0.0, 5.0).  Once more, these are uniformly distributed numbers &#x2014; numbers
             close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
             If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.</p>
-  <program xml:id="chmodule_rand2" interactive="activecode" language="python">
+  <program xml:id="ch9_sec3_p2" interactive="activecode" language="python">
     <input>
 import random
 
@@ -67,7 +67,7 @@ print(result)
             of the attributes of the generator) will be updated.  The good news is that each time you run your program, the seed value
             is likely to be different meaning that even though the random numbers are being created algorithmically, you will likely
             get random behavior each time you execute.</p>
-  <note>
+  <!--<note>
     <title>Lab</title>
     <p>
       <ul>
@@ -76,11 +76,11 @@ print(result)
         </li>
       </ul>
     </p>
-  </note>
+  </note>-->
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question4_4_1">
+  <exercise label="ch9_sec3_q1">
     <statement>
       <p>Which of the following is the correct way to reference the value pi within the math module.   Assume you have already imported the math module.</p>
     </statement>
@@ -119,7 +119,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_2">
+  <exercise label="ch9_sec3_q2">
     <statement>
       <p>Which module would you most likely use if you were writing a function to simulate rolling dice?</p>
     </statement>
@@ -158,7 +158,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_3">
+  <exercise label="ch9_sec3_q3">
     <statement>
       <p>The correct code to generate a random number between 1 and 100 (inclusive) is:</p>
     </statement>
@@ -197,7 +197,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_4">
+  <exercise label="ch9_sec3_q4">
     <statement>
       <p>One reason that lotteries don't use computers to generate random numbers is:</p>
     </statement>
@@ -238,7 +238,7 @@ print(result)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_04" interactive="activecode" language="python">
+    <program xml:id="scratch_14" interactive="activecode" language="python">
       <input>
 
 

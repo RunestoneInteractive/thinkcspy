@@ -29,7 +29,7 @@ def distance(x1, y1, x2, y2):
             returns zero. But it is syntactically correct, and it will run, which means
             that we can test it before we make it more complicated.</p>
   <p>We import the test module to enable us to write a unit test for the function.</p>
-  <program xml:id="ch06_distance1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec11_p1" interactive="activecode" language="python">
     <input>
 import test
 def distance(x1, y1, x2, y2):
@@ -83,7 +83,7 @@ def distance(x1, y1, x2, y2):
             should be 25).</p>
   <p>Finally, using the fractional exponent <c>0.5</c> to find the square root,
             we compute and return the result.</p>
-  <program xml:id="ch06_distancefinal" interactive="activecode" language="python">
+  <program xml:id="ch8_sec11_p2" interactive="activecode" language="python">
     <input>
 import test
 def distance(x1, y1, x2, y2):

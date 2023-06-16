@@ -7,7 +7,7 @@
   <p>First, you can write, modify, and execute programs using a unique <term>activecode</term> interpreter that allows you to execute Python code right
             in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
             environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
-  <program xml:id="ch01_1" interactive="activecode" language="python">
+  <program xml:id="ch1_sec4_p1" interactive="activecode" language="python">
     <input>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
@@ -53,7 +53,7 @@ print(2 + 3)
             In codelens you can see and control the step by step progress.
             Note that the red arrow always points to the next line of code that is going to be executed.
             The light green arrow points to the line that was just executed.</p>
-  <program xml:id="firstexample" interactive="codelens" language="python">
+  <program xml:id="ch1_sec4_c1" interactive="codelens" language="python">
     <input>
           print("My first program adds two numbers, 2 and 3:")
           print(2 + 3)
@@ -65,7 +65,7 @@ print(2 + 3)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_4_1">
+  <exercise label="ch1_sec4_q1">
     <statement>
       <p>The activecode interpreter allows you to (select all that apply):</p>
     </statement>
@@ -104,7 +104,7 @@ print(2 + 3)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_4_2">
+  <exercise label="ch1_sec4_q2">
     <statement>
       <p>Codelens allows you to (select all that apply):</p>
     </statement>

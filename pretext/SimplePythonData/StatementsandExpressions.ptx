@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_statements-and-expressions">
   <title>Statements and Expressions</title>
-  <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto"/>
+  <!--<video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto"/>-->
   <p>A <term>statement</term> is an instruction that the Python interpreter can execute. We
             have only seen the assignment statement so far.  Some other kinds of statements
             that we'll see shortly are <c>while</c> statements, <c>for</c> statements, <c>if</c>
@@ -9,7 +9,7 @@
   <p xml:id="simple-python-data_index-0">An <term>expression</term> is a combination of values, variables, operators, and calls
             to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
             <term>evaluates</term> the expression and displays the result.</p>
-  <program xml:id="ch02_13" interactive="activecode" language="python">
+  <program xml:id="ch2_sec6_p1" interactive="activecode" language="python">
     <input>
 print(1 + 1)
 print(len("hello"))
@@ -21,7 +21,7 @@ print(len("hello"))
   <p>The <em>evaluation of an expression</em> produces a value, which is why expressions
             can appear on the right hand side of assignment statements. A value all by
             itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.</p>
-  <program xml:id="ch02_14" interactive="activecode" language="python">
+  <program xml:id="ch2_sec6_p2" interactive="activecode" language="python">
     <input>
 y = 3.14
 x = len("hello")

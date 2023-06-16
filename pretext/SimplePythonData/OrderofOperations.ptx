@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_order-of-operations">
   <title>Order of Operations</title>
-  <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto"/>
+  <!--<video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto"/>-->
   <p>When more than one operator appears in an expression, the order of evaluation
             depends on the <term>rules of precedence</term>. Python follows the same precedence
             rules for its mathematical operators that mathematics does.</p>
@@ -45,7 +45,7 @@
                 left-associative rule is the exponentiation operator <title_reference>**</title_reference>. A useful hint
                 is to always use parentheses to force exactly the order you want when
                 exponentiation is involved:</p>
-    <program xml:id="ch02_23" interactive="activecode" language="python">
+    <program xml:id="ch2_sec9_p1" interactive="activecode" language="python">
       <input>
 print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
 print((2 ** 3) ** 2)   # use parentheses to force the order you want!
@@ -59,7 +59,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_8_1">
+  <exercise label="ch2_sec9_q1">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
@@ -103,7 +103,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question2_8_2">
+  <exercise label="ch2_sec9_q2">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">

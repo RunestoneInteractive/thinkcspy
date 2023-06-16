@@ -10,7 +10,7 @@
   <p>When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.</p>
   <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
         </DataFileNode>
-  <program xml:id="with_ex1" interactive="activecode" language="python">
+  <program xml:id="ch11_sec7_p1" interactive="activecode" language="python">
     <input>
 with open('mydata.txt') as md:
     print(md)

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_the-3n-1-sequence">
+<section xml:id="iteration_the-3n-1-sequence">
   <title>The 3n + 1 Sequence</title>
   <p>As another example of iteration with <c>while</c>, let's look at a sequence that has fascinated mathematicians for many years.
             The rule  for creating the sequence is to start from
@@ -8,7 +8,7 @@
             whenever <c>n</c> is even, or else by multiplying it by three and adding 1 when it is odd.  The sequence
             terminates when <c>n</c> reaches 1.</p>
   <p>This Python code captures that algorithm.  Try running this program several times supplying different values for n.</p>
-  <program xml:id="ch07_indef1" interactive="activecode" language="python">
+  <program xml:id="ch7_sec7_p1" interactive="activecode" language="python">
     <input>
       n = 3
 
@@ -63,10 +63,10 @@
   <!--There are also some great visualization tools becoming available to help you-->
   <!--trace and understand small fragments of Python code.  The one we recommend is at-->
   <!--http://netserv.ict.ru.ac.za/python3_viz-->
-  <p xml:id="more-about-iteration_index-0">
+  <p xml:id="iteration_index-0">
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question7_4_1">
+  <exercise label="ch7_sec7_q1">
     <statement>
       <p>Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?</p>
     </statement>

@@ -11,7 +11,7 @@
   This section focuses on reading csv, so we should use a reader. The reason we are interested in doing this is because the reader will automatically detect and remove
   the commas separating values for us. Essentially, the reader will split the data up into lists for us. This makes it simpler to navigate and interact with the data in the file.</p>
   <p>Let's see an example of this working.</p>
-  <program xml:id="files_csv_read" interactive="activecode" language="python">
+  <program xml:id="ch11_sec8_p1" interactive="activecode" language="python">
     <input>
 import csv
 with open("ccdata.csv", "r") as file:

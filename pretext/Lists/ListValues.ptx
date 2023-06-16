@@ -22,7 +22,7 @@
             Finally, there is a special list that contains no elements. It is called the
             empty list and is denoted <c>[]</c>.</p>
   <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions.</p>
-  <program xml:id="chp09_01" interactive="activecode" language="python">
+  <program xml:id="ch4_sec2_p1" interactive="activecode" language="python">
     <input>
 vocabulary = ["iteration", "selection", "control"]
 numbers = [17, 123]
@@ -38,7 +38,7 @@ print(newlist)
   <p xml:id="lists_accessing_elements" names="accessing-elements">
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_1_1">
+  <exercise label="ch4_sec2_q1">
     <statement>
       <p>A list can contain only integer items.</p>
     </statement>

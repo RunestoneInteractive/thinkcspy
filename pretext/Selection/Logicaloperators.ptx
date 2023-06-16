@@ -13,7 +13,7 @@
   <p>Finally, the <c>not</c> operator negates a boolean expression, so <c>not  x &gt; y</c>
             is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to
             <c>y</c>.</p>
-  <program xml:id="chp05_3" interactive="activecode" language="python">
+  <program xml:id="ch5_sec9_p1" interactive="activecode" language="python">
     <input>
 x = 5
 print(x &gt; 0 and x &lt; 10)
@@ -222,12 +222,12 @@ print(n % 2 == 0 or n % 3 == 0)
       </row>
     </tabular>
   </table>
-  <p>Also, Google has provided this short video showing different logical operators:</p>
+  <!--<p>Also, Google has provided this short video showing different logical operators:</p>
   <video xml:id="GoogleLogic" youtube="57dPVbnRouU" width="auto"/>
   <p>In the video, each letter is representative of a logical operater and only shows its color when the
             corresponding <term>x</term> or <term>y</term> is showing in the second <term>G</term>. If you take a look at xor, you will notice
             it is only colorful when either <term>x</term> or <term>y</term> is showing, but not both. This is called <c>exclusive or</c>,
-            which we will not be using.</p>
+            which we will not be using.</p>-->
   <note>
     <title>WARNING!</title>
     <p>There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <c>number</c> and we want to check to see if its value is 5,6, or 7.  In words we might say: <q>number equal to 5 or 6 or 7</q>.  However, if we translate this into Python, <c>number == 5 or 6 or 7</c>, it will not be correct.  The <c>or</c> operator must join the results of three equality checks.  The correct way to write this is <c>number == 5 or number == 6 or number == 7</c>.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.</p>
@@ -235,7 +235,7 @@ print(n % 2 == 0 or n % 3 == 0)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_2_1">
+  <exercise label="ch5_sec9_q1">
     <statement>
       <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
     </statement>
@@ -266,7 +266,7 @@ print(n % 2 == 0 or n % 3 == 0)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_2_2">
+  <exercise label="ch5_sec9_q2">
     <statement>
       <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
             If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>

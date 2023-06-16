@@ -6,7 +6,7 @@
     To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
     it can perform. For example, we can write <c>ss.upper()</c> when we wanted the string <c>ss</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
   <p>Remember that Strings are objects. Each string instance has its own attributes and methods. The most important attribute of the string is the collection of characters. There are a wide variety of methods. Try the following program.</p>
-  <program xml:id="chp08_upper" interactive="activecode" language="python">
+  <program xml:id="ch3_sec5_p1" interactive="activecode" language="python">
     <input>
 ss = "Hello, World"
 print(ss.upper())
@@ -203,7 +203,7 @@ print(tt)
   <p>You should experiment with these
             methods so that you understand what they do.  Note once again that the methods that return strings do not
             change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.</p>
-  <program xml:id="ch08_methods1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec5_p2" interactive="activecode" language="python">
     <input>
 ss = "    Hello, World    "
 
@@ -218,7 +218,7 @@ news = ss.replace("o", "***")
 print(news)
         </input>
   </program>
-  <program xml:id="ch08_methods2" interactive="activecode" language="python">
+  <program xml:id="ch3_sec5_p3" interactive="activecode" language="python">
     <input>
 food = "banana bread"
 print(food.capitalize())
@@ -241,7 +241,7 @@ print(food.index("e"))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_3_1">
+  <exercise label="ch3_sec5_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -278,7 +278,7 @@ print(s.count("o") + s.count("p"))
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_3_2">
+  <exercise label="ch3_sec5_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

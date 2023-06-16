@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="strings_traversal-and-the-for-loop-by-item">
+<section xml:id="iteration_traversal-and-the-for-loop-by-item">
   <title>Traversing strings with the <c>for</c> Loop: By Item</title>
   <p>A lot of computations involve processing a collection one item at a time.  For strings this means
             that we would like to process one character at a time.
@@ -7,7 +7,7 @@
             to it, and continue until the end. This pattern of processing is called a
             <term>traversal</term>.</p>
   <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
-  <program xml:id="ch08_4" interactive="activecode" language="python">
+  <program xml:id="ch7_sec11_p1" interactive="activecode" language="python">
     <input>
 for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
@@ -15,14 +15,14 @@ for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
         </input>
   </program>
   <p>Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the <c>range</c> function.</p>
-  <program xml:id="ch08_5" interactive="activecode" language="python">
+  <program xml:id="ch7_sec11_p2" interactive="activecode" language="python">
     <input>
 for avalue in range(10):
     print(avalue)
         </input>
   </program>
   <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
-  <program xml:id="ch08_6" interactive="activecode" language="python">
+  <program xml:id="ch7_sec11_p3" interactive="activecode" language="python">
     <input>
 for achar in "Go Spot Go":
     print(achar)
@@ -34,7 +34,7 @@ for achar in "Go Spot Go":
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_8_1">
+  <exercise label="ch7_sec11_q1">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
@@ -80,7 +80,7 @@ for ch in s:
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_8_2">
+  <exercise label="ch7_sec11_q2">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">

@@ -4,7 +4,7 @@
   <p>We already introduced the <c>csv</c> module in the previous section. Let's examine some examples using a <c>csv.writer</c> object.</p>
   <p>Like the reader object, the <c>csv.writer</c> function takes a opened file object. Once set up, the csv file can be written to with <c>writerow</c>. 
   Make note that writerow does not need an explicit newline character <c>\n</c> to know when to end a line of text. This sets it apart for the the regular <c>file.write()</c> function.</p>
-  <program xml:id="files_csv_write_1" interactive="activecode" language="python">
+  <program xml:id="ch11_sec9_p1" interactive="activecode" language="python">
     <input>
 import csv
 data = [["Column_1_Name","Column_2_Name","Column_3_Name"],
@@ -27,7 +27,7 @@ with open("new_file.csv", "w", newline='') as file:
   
   <p>There is one other writer method you may find useful, which is <c>writerows</c>. This allows you to write multiple rows of data at the same time. When applied to the previous 
   example, it saves us from having to set up a loop.</p>
-  <program xml:id="files_csv_write_2" interactive="activecode" language="python">
+  <program xml:id="ch11_sec9_p2" interactive="activecode" language="python">
     <input>
 import csv
 

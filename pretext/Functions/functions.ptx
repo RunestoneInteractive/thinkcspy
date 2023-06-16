@@ -49,7 +49,7 @@ def name( parameters ):
     It would make sense if we did not have to duplicate all the steps each time we want to find the size of the range.   "printRange" can be thought of as an 
     <em>abstraction</em> of a number of smaller steps.  We will need to provide one piece of information for the function to do its work: the list we need the range of.</p>
   <p>Here is a program containing a function to capture this idea.  Give it a try.</p>
-  <program xml:id="ch04_1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec1_p1" interactive="activecode" language="python">
     <input>
       def printRange(lst):
         """Prints the size of the range of lst."""
@@ -88,7 +88,7 @@ def name( parameters ):
   <p>Once we've defined a function, we can call it as often as we like and its
             statements will be executed each time we call it.  In this case, we could use it to get
             the size of the range of multiple lists. Make sure you can identify all three invocations of the <c>printRange</c> function.</p>
-  <program xml:id="ch04_1a" interactive="activecode" language="python">
+  <program xml:id="ch8_sec1_p2" interactive="activecode" language="python">
     <input>
 def printRange(lst):
   """Prints the size of the range of lst."""
@@ -113,7 +113,7 @@ printRange([5, 10, 1000, 2])
   </warning>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_05_01" interactive="activecode" language="python">
+    <program xml:id="scratch_11" interactive="activecode" language="python">
       <input>
 
 
@@ -123,7 +123,7 @@ printRange([5, 10, 1000, 2])
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_1_1">
+  <exercise label="ch8_sec1_q1">
     <statement>
       <p>What is a function in Python?</p>
     </statement>
@@ -162,7 +162,7 @@ printRange([5, 10, 1000, 2])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_2">
+  <exercise label="ch8_sec1_q2">
     <statement>
       <p>What is one main purpose of a function?</p>
     </statement>
@@ -201,7 +201,7 @@ printRange([5, 10, 1000, 2])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_3">
+  <exercise label="ch8_sec1_q3">
     <statement>
       <p>Which of the following is a valid function header (first line of a function definition)?</p>
     </statement>
@@ -240,7 +240,7 @@ printRange([5, 10, 1000, 2])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_4">
+  <exercise label="ch8_sec1_q4">
     <statement>
       <p>What is the name of the following function?</p>
       <program language="python">
@@ -287,7 +287,7 @@ def printSquare(size):
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_5">
+  <exercise label="ch8_sec1_q5">
     <statement>
       <p>What are the parameters of the following function?</p>
       <program language="python">
@@ -334,7 +334,7 @@ def printSquare(size):
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_6">
+  <exercise label="ch8_sec1_q6">
     <statement>
       <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)? Assume we already have a variable named my_size.</p>
       <program language="python">
@@ -389,7 +389,7 @@ def printSquare(size):
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_1_7">
+  <exercise label="ch8_sec1_q7">
     <statement>
       <p>True or false: A function can be called several times by placing a function call in the body of a loop.</p>
     </statement>

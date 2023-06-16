@@ -2,7 +2,7 @@
 <section xml:id="strings_length">
   <title>Length</title>
   <p>The <c>len</c> function, when applied to a string, returns the number of characters in a string.</p>
-  <program xml:id="chp08_len1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec6_p1" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 print(len(fruit))
@@ -10,7 +10,7 @@ print(len(fruit))
   </program>
   <p>To get the last letter of a string, you might be tempted to try something like
             this:</p>
-  <program xml:id="chp08_len2" interactive="activecode" language="python">
+  <program xml:id="ch3_sec6_p2" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 sz = len(fruit)
@@ -24,7 +24,7 @@ print(last)
             Since we started counting at zero, the six indexes are
             numbered 0 to 5. To get the last character, we have to subtract 1 from
             the length.  Give it a try in the example above.</p>
-  <program xml:id="ch08_len3" interactive="activecode" language="python">
+  <program xml:id="ch3_sec6_p3" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 sz = len(fruit)
@@ -39,7 +39,7 @@ print(lastch)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_4_1">
+  <exercise label="ch3_sec6_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -68,7 +68,7 @@ print(len(s))
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_4_2">
+  <exercise label="ch3_sec6_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -113,7 +113,7 @@ print(s[len(s)-5])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_4_3">
+  <exercise label="ch3_sec6_q3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_the-while-statement">
+<section xml:id="iteration_the-while-statement">
   <title>The <c>while</c> Statement</title>
   <!--<video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto"/>-->
   <p>Let's look at our first Python statement that can be used to build an iteration.  It is called the <c>while</c> statement. When used with other code it can be used to 
@@ -7,7 +7,7 @@
     a boolean expression to control the flow of execution.  The body of while (code indented one space in) will be repeated as long as the controlling boolean 
     expression evaluates to <c>True</c>.</p>
   <p>Here is a simple example that counts down from 10 to 0.</p>
-  <program xml:id="ch07_while1" interactive="activecode" language="python">
+  <program xml:id="ch7_sec2_p1" interactive="activecode" language="python">
     <input>
       count = 10
       while count > 0:
@@ -71,7 +71,7 @@
 
   <p>Here is the summation program that uses a while statement.</p>
 
-  <program xml:id="ch07_while2" interactive="activecode" language="python">
+  <program xml:id="ch7_sec2_p2" interactive="activecode" language="python">
     <input>
       """ Return the sum of 1+2+3 ... n """
       aBound = int(input("Please give a number n: "))
@@ -90,7 +90,7 @@
   
   <p>The same program in codelens will allow you to observe the flow of execution.</p>
   
-  <program xml:id="ch07_while3" interactive="codelens" language="python">
+  <program xml:id="ch7_sec2_p3" interactive="codelens" language="python">
     <input>
       """ Return the sum of 1+2+3 ... n """
       aBound = int(input("Please give a number n: "))
@@ -110,7 +110,7 @@
 
 <note>
   <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-  <program xml:id="scratch_07_01" interactive="activecode" language="python">
+  <program xml:id="scratch_09" interactive="activecode" language="python">
     <input>
 
 
@@ -120,7 +120,7 @@
 <p>
   <term>Check your understanding</term>
 </p>
-<exercise label="test_question7_2_1">
+<exercise label="ch7_sec2_q1">
   <statement>
     <p>True or False: You can rewrite any for-loop as a while-loop.</p>
   </statement>
@@ -143,7 +143,7 @@
     </choice>
   </choices>
 </exercise>
-<exercise label="test_question7_2_2">
+<exercise label="ch7_sec2_q2">
   <statement>
     <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
     <program language="python">
@@ -192,7 +192,7 @@ print(answer)
     </choice>
   </choices>
 </exercise>
-<exercise label="test_question7_2_3">
+<exercise label="ch7_sec2_q3">
   <statement>
     <p>What is printed by this code?</p>
     <program language="python">

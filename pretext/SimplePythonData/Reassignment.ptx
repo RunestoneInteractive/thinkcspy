@@ -2,11 +2,11 @@
 <section xml:id="simple-python-data_reassignment">
   <title>Reassignment</title>
   <introduction>
-  <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto"/>
+  <!--<video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto"/>-->
   <p>As we have mentioned previously, it is legal to make more than one assignment to the
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>
-  <program xml:id="ch07_reassign1" interactive="activecode" language="python">
+  <program xml:id="ch2_sec10_p1" interactive="activecode" language="python">
     <input>
 bruce = 5
 print(bruce)
@@ -23,7 +23,7 @@ print(bruce)
             now, then <c>a will always equal to b</c>. In Python, an assignment statement can make
             two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment,
             they don't have to stay that way:</p>
-  <program xml:id="ch07_reassign2" interactive="activecode" language="python">
+  <program xml:id="ch2_sec10_p2" interactive="activecode" language="python">
     <input>
 a = 5
 b = a    # after executing this line, a and b are now equal
@@ -51,7 +51,7 @@ print(a, b)
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="test_question2_9_1">
+    <exercise label="ch2_sec10_q1">
       <statement>
         <p>After the following statements, what are the values of x and y?</p>
         <program language="python">

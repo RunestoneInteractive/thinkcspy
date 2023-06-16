@@ -8,7 +8,7 @@
   <p>There are only two <term>boolean values</term>.  They are <c>True</c> and <c>False</c>.  Capitalization
             is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
             sensitive).</p>
-  <program xml:id="ch05_1" interactive="activecode" language="python">
+  <program xml:id="ch5_sec1_p1" interactive="activecode" language="python">
     <input>
 print(True)
 print(type(True))
@@ -21,7 +21,7 @@ print(type(False))
                 surrounded by quotes.  They are the only two values in the data type <c>bool</c>.  Take a close look at the
                 types shown below.</p>
   </note>
-  <program xml:id="ch05_1a" interactive="activecode" language="python">
+  <program xml:id="ch5_sec1_p2" interactive="activecode" language="python">
     <input>
 print(type(True))
 print(type("True"))
@@ -30,7 +30,7 @@ print(type("True"))
   <p>A <term>boolean expression</term> is an expression that evaluates to a boolean value.
             The equality operator, <c>==</c>, compares two values and produces a boolean value related to whether the
             two values are equal to one another.</p>
-  <program xml:id="ch05_2" interactive="activecode" language="python">
+  <program xml:id="ch5_sec1_p3" interactive="activecode" language="python">
     <input>
 print(5 == 5)
 
@@ -69,7 +69,7 @@ x &lt;= y               # x is less than or equal to y
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_1_1">
+  <exercise label="ch5_sec1_q1">
     <statement>
       <p>Which of the following is a Boolean expression?  Select all that apply.</p>
     </statement>

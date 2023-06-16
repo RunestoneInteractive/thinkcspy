@@ -11,7 +11,7 @@
             first function called <c>square</c> simply computes the square of a given number.
             The second function called <c>sum_of_squares</c> makes use of square to compute
             the sum of three numbers that have been squared.</p>
-  <program xml:id="sumofsquares" interactive="codelens" language="python">
+  <program xml:id="ch8_sec5_p1" interactive="codelens" language="python">
     <input>
           def square(x):
               y = x * x

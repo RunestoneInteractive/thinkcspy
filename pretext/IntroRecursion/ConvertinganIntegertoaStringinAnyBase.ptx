@@ -58,7 +58,7 @@
   </figure>
   <p>The activecode below shows the Python code that implements the algorithm
             outlined above for any base between 2 and 16.</p>
-  <program xml:id="lst_rectostr" interactive="activecode" language="python">
+  <program xml:id="ch12_sec4_p1" interactive="activecode" language="python">
     <input>
 def toStr(n,base):
    convertString = "0123456789ABCDEF"
@@ -93,7 +93,7 @@ print(toStr(1453,16))
   <note>
     <title>Self Check</title>
     <p>Write a function that takes a string as a parameter and returns a new string that is the reverse of the old string.</p>
-    <program xml:id="recursion_sc_1" interactive="activecode" language="python">
+    <program xml:id="ch12_sec4_p2" interactive="activecode" language="python">
       <input>
 from test import testEqual
 def reverse(s):
@@ -134,7 +134,7 @@ testEqual(reverse(""),"")
         </li>
       </ul>
     </p>
-    <program xml:id="recursion_sc_2" interactive="activecode" language="python">
+    <program xml:id="ch12_sec4_p3" interactive="activecode" language="python">
       <input>
 from test import testEqual
 def removeWhite(s):

@@ -13,7 +13,7 @@
   <p>We've already seen the <c>is</c> operator in the chapter on lists, where we
             talked about aliases.
             It allows us to find out if two references refer to the same object.</p>
-  <program xml:id="fractions_is" interactive="activecode" language="python">
+  <program xml:id="ch14_sec3_p1" interactive="activecode" language="python">
     <input>
 class Fraction:
 
@@ -53,7 +53,7 @@ def sameRational(f1, f2):
 </input>
   </program>
   <p>This type of equality is known as <term>deep equality</term> since it compares the values <q>deep</q> in the object, not just the reference to the object.</p>
-  <program xml:id="fractions_eq1" interactive="activecode" language="python">
+  <program xml:id="ch14_sec3_p2" interactive="activecode" language="python">
     <input>
 def sameRational(f1, f2):
     return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()

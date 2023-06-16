@@ -25,7 +25,7 @@ else:
             statement ends. Even if more than one condition is true, only the first true
             branch executes.</p>
   <p>Here is the same program using <c>elif</c>.</p>
-  <program xml:id="sel4" interactive="activecode" language="python">
+  <program xml:id="ch5_sec5_p1" interactive="activecode" language="python">
     <input>
 x = 10
 y = 10
@@ -40,7 +40,7 @@ else:
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_06_02" interactive="activecode" language="python">
+    <program xml:id="scratch_07" interactive="activecode" language="python">
       <input>
 
 
@@ -50,7 +50,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_7_1">
+  <exercise label="ch5_sec5_q1">
     <statement>
       <p>Which of I, II, and III below gives the same result as the following nested if?</p>
       <program language="python">

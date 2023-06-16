@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_input">
   <title>Input</title>
-  <video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>
+  <!--<video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>-->
   <p>The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general.  One thing we could
             do is allow the user to enter any value they wish for the number of seconds.  The program could then print the
             proper result for that starting value.</p>
@@ -18,7 +18,7 @@ n = input("Please enter your name: ")
             happens the text that has been entered is returned from the <title_reference>input</title_reference> function,
             and in this case assigned to the variable <title_reference>n</title_reference>.  Make sure you run this example a number
             of times and try some different names in the input box that appears.</p>
-  <program xml:id="inputfun" interactive="activecode" language="python">
+  <program xml:id="ch2_sec8_p1" interactive="activecode" language="python">
     <input>
 n = input("Please enter your name: ")
 print("Hello", n)
@@ -31,7 +31,7 @@ print("Hello", n)
   <p>To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then
             we will convert that string to an integer.  From there the process is the same as before.  To complete the example, we will
             print some appropriate output.</p>
-  <program xml:id="int_secs" interactive="activecode" language="python">
+  <program xml:id="ch2_sec8_p2" interactive="activecode" language="python">
     <input>
 str_seconds = input("Please enter the number of seconds you wish to convert")
 total_secs = int(str_seconds)
@@ -49,7 +49,7 @@ print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_7_1">
+  <exercise label="ch2_sec8_q1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -95,7 +95,7 @@ print ( type(n) )
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question2_7_2">
+  <exercise label="ch2_sec8_q2">
 
     <statement>
       <p>Click on all of the variables of type `int` in the code below</p>
@@ -111,7 +111,7 @@ print ( type(n) )
 
     </areas>
   </exercise>
-  <exercise label="test_question2_7_3">
+  <exercise label="ch2_sec8_q3">
 
     <statement>
       <p>Click on all of the variables of type `str` in the code below</p>

@@ -10,7 +10,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_1_1">
+  <exercise label="ch1_sec2_q1">
     <statement>
       <p>What is the most important skill for a computer scientist?</p>
     </statement>
@@ -49,7 +49,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_1_2">
+  <exercise label="ch1_sec2_q2">
     <statement>
       <p>An algorithm is:</p>
     </statement>

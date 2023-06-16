@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="lists_lists-and-for-loops">
+<section xml:id="iteration_lists-and-for-loops">
   <title>Traversing lists with the <c>for</c> loop</title>
-  <p>It is also possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
-  <program xml:id="chp09_03a" interactive="activecode" language="python">
+  <p>It is possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
+  <program xml:id="ch7_sec10_p1" interactive="activecode" language="python">
     <input>
 fruits = ["apple", "orange", "banana", "cherry"]
 
@@ -13,7 +13,7 @@ for afruit in fruits:     # by item
   <p>It almost reads like natural language: For (every) fruit in (the list of) fruits,
             print (the name of the) fruit.</p>
   <p>We can also use the indices to access the items in an iterative fashion.</p>
-  <program xml:id="chp09_03b" interactive="activecode" language="python">
+  <program xml:id="ch7_sec10_p2" interactive="activecode" language="python">
     <input>
 fruits = ["apple", "orange", "banana", "cherry"]
 
@@ -25,7 +25,7 @@ for position in range(len(fruits)):     # by index
             list, printing the <c>position</c>-eth element. Note that we used <c>len</c> as the upper bound on the range
             so that we can iterate correctly no matter how many items are in the list.</p>
   <p>Any sequence expression can be used in a <c>for</c> loop.  For example, the <c>range</c> function returns a sequence of integers.</p>
-  <program xml:id="chp09_for3" interactive="activecode" language="python">
+  <program xml:id="ch7_sec10_p3" interactive="activecode" language="python">
     <input>
 for number in range(20):
     if number % 3 == 0:
@@ -36,7 +36,7 @@ for number in range(20):
   <p>Since lists are mutable, it is often desirable to traverse a list, modifying
             each of its elements as you go. The following code squares all the numbers from <c>1</c> to
             <c>5</c> using iteration by position.</p>
-  <program xml:id="chp09_for4" interactive="activecode" language="python">
+  <program xml:id="ch7_sec10_p4" interactive="activecode" language="python">
     <input>
 numbers = [1, 2, 3, 4, 5]
 print(numbers)
@@ -53,7 +53,7 @@ print(numbers)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_16_1">
+  <exercise label="ch7_sec10_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_other-uses-of-while">
+<section xml:id="iteration_other-uses-of-while">
   <title>Other uses of <c>while</c></title>
-  <subsection xml:id="more-about-iteration_sentinel-values">
+  <subsection xml:id="iteration_sentinel-values">
     <title>Sentinel Values</title>
     <p>The indefinite loops provided by the <c>while</c> statement are common in the real world.</p>
     <p>
@@ -53,7 +53,7 @@
                 We don't have a <q>little plastic bar</q> data type in Python, so we'll do the next best thing: we
                 will use a <c>price</c> of zero to mean <q>this is my last item.</q> In this program,
                 zero is a <term>sentinel value</term>, a value used to signal the end of the loop. Here's the code:</p>
-    <program xml:id="ch07_sentinel" interactive="activecode" language="python">
+    <program xml:id="ch7_sec6_p1" interactive="activecode" language="python">
       <input>
         total = 0
         count = 0
@@ -91,7 +91,7 @@
           <p>
             <term>Check your understanding</term>
           </p>
-          <exercise label="ch07_sentinel_2">
+          <exercise label="ch7_sec6_q1">
             <statement>
               <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
             </statement>
@@ -118,7 +118,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="more-about-iteration_validating-input">
+  <subsection xml:id="iteration_validating-input">
     <title>Validating Input</title>
     <p>You can also use a <c>while</c> loop when you want to <term>validate</term> input;  when you want to make
                 sure the user has entered valid input for a prompt. Let's say you want a function
@@ -128,7 +128,7 @@
                 Note that it uses
                 the <c>upper()</c> method which is described in <xref ref="strings_string-methods"/> to convert a string to upper case.
                 When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
-    <program xml:id="ch07_validation" interactive="activecode" language="python">
+    <program xml:id="ch7_sec6_p2" interactive="activecode" language="python">
       <input>
         valid_input = False
         response = input('Do you like lima beans? Y)es or N)o: ')

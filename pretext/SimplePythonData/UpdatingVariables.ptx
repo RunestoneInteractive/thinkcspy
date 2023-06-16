@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_updating-variables">
   <title>Updating Variables</title>
-  <video xml:id="updatevid" youtube="Px1c-3GP-5o" width="auto"/>
+  <!--<video xml:id="updatevid" youtube="Px1c-3GP-5o" width="auto"/>-->
   <p>One of the most common forms of reassignment is an <term>update</term> where the new
             value of the variable depends on the old.  For example,</p>
   <program language="python">
@@ -16,7 +16,7 @@ x = x + 1
             resulting object.  The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment
             statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>
-  <program xml:id="ch07_update1" interactive="activecode" language="python">
+  <program xml:id="ch2_sec11_p1" interactive="activecode" language="python">
     <input>
 x = 6        # initialize x
 print(x)
@@ -55,7 +55,7 @@ print(x)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_10_1">
+  <exercise label="ch2_sec11_q1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -101,7 +101,7 @@ print(x)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question2_10_2">
+  <exercise label="ch2_sec11_q2">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -149,7 +149,7 @@ print(x)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question2_10_3" indent="show" language="python">
+  <exercise label="ch2_sec11_q3" indent="show" language="python">
     <statement>
       <p>Construct the code that will result in the value 134 being printed.</p>
     </statement>

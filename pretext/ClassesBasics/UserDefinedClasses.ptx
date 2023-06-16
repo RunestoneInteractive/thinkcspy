@@ -49,7 +49,7 @@ class Point:
             other name, but nobody ever does!) is automatically set to reference
             the newly-created object that needs to be initialized.</p>
   <p>So let's use our new Point class now.</p>
-  <program xml:id="chp13_classes1" interactive="activecode" language="python">
+  <program xml:id="ch13_sec4_p1" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -77,7 +77,7 @@ print("Nothing seems to have happened with the points")
             having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don't see any other result.</p>
   <image source="ClassesBasics/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
   <p>You can see this for yourself, via codelens:</p>
-  <program xml:id="chp13_points" interactive="codelens" language="python">
+  <program xml:id="ch13_sec4_c1" interactive="codelens" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -95,7 +95,7 @@ print("Nothing seems to have happened with the points")
   </program>
   <p>The following program adds a few print statements. You can see that the output suggests that each one is a <c>Point object</c>.
             However, notice that the <c>is</c> operator returns <c>False</c> meaning that they are different objects (we will have more to say about this in a later chapter).</p>
-  <program xml:id="chp13_classes2" interactive="activecode" language="python">
+  <program xml:id="ch13_sec4_p2" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -114,7 +114,7 @@ print(q)
 print(p is q)
     </input>
   </program>
-  <p>This should look familiar &#x2014; we've used classes before to create
+  <!--<p>This should look familiar &#x2014; we've used classes before to create
             more than one object:</p>
   <program language="python">
     <input>
@@ -123,7 +123,7 @@ from turtle import Turtle
 tess = Turtle()     # Instantiate objects of type Turtle
 alex = Turtle()
     </input>
-  </program>
+  </program>-->
   <p>The variables <c>p</c> and <c>q</c> are assigned references to two new <c>Point</c> objects.
             A function like <c>Turtle</c> or <c>Point</c> that creates a new object instance
             is called a <term>constructor</term>.  Every class automatically uses the name of the class as the name of the constructor function.
@@ -141,7 +141,7 @@ alex = Turtle()
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise label="chp17_objects">
+  <exercise label="ch13_sec4_q1">
     <statement>
       <p>What is the the output of the following print code?</p>
       <program language="python">

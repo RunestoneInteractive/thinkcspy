@@ -7,7 +7,7 @@
             the index. Remember that the indices start at 0.  Any integer expression can be used
             as an index and as with strings, negative index values will locate items from the right instead
             of from the left.</p>
-  <program xml:id="chp09_02" interactive="activecode" language="python">
+  <program xml:id="ch4_sec4_p1" interactive="activecode" language="python">
     <input>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
@@ -19,7 +19,7 @@ print(numbers[len(numbers) - 1])
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_3_1">
+  <exercise label="ch4_sec4_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -56,7 +56,7 @@ print(alist[5])
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_3_2">
+  <exercise label="ch4_sec4_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -93,7 +93,7 @@ print(alist[2].upper())
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_3_3">
+  <exercise label="ch4_sec4_q3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

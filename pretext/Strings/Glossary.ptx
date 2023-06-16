@@ -40,11 +40,6 @@
                             using the slice operator (<c>sequence[start:stop]</c>).</p>
     </gi>
     <gi>
-      <title>traverse</title>
-      <p>To iterate through the elements of a collection, performing a similar
-                            operation on each.</p>
-    </gi>
-    <gi>
       <title>whitespace</title>
       <p>Any of the characters that move the cursor without printing visible
                             characters. The constant <c>string.whitespace</c> contains all the

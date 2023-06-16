@@ -7,7 +7,7 @@
             Python as part of the <term>standard library</term>. We have already used one of these briefly,
             the <c>math</c> module.  Recall that once we import the module, we can use things
             that are defined inside.</p>
-  <program xml:id="chmod_01" interactive="activecode" language="python">
+  <program xml:id="ch9_sec1_p1" interactive="activecode" language="python">
     <input>
 import math            # allows us to use the math library
 
@@ -51,7 +51,7 @@ print(math.sqrt(100))         # prints the square root of 100
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question4_1_1">
+  <exercise label="ch9_sec1_q1">
     <statement>
       <p>In Python a module is:</p>
     </statement>
@@ -90,7 +90,7 @@ print(math.sqrt(100))         # prints the square root of 100
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_1_2">
+  <exercise label="ch9_sec1_q2">
     <statement>
       <p>To find out information on the standard modules available with Python you should:</p>
     </statement>
@@ -129,7 +129,7 @@ print(math.sqrt(100))         # prints the square root of 100
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_1_3">
+  <exercise label="ch9_sec1_q3">
     <statement>
       <p>True / False:  All standard Python modules will work in activecode.</p>
     </statement>
