@@ -18,16 +18,22 @@
       <publication>pretext/publication-rs-academy.xml</publication>
       <output-dir>published/httlacs</output-dir>
     </target>
+    <target name="epub">
+      <format>epub</format>
+      <source>pretext/thinkcspy.ptx</source>
+      <publication>pretext/publication-pub.xml</publication>
+      <output-dir>published/epub</output-dir>
+    </target>
     <target name="latex">
       <format>latex</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
+      <source>pretext/thinkcspy.ptx</source>
+      <publication>pretext/publication-rs-for-all.xml</publication>
       <output-dir>output/latex</output-dir>
     </target>
-    <target name="pdf" pdf-method="pdflatex">
+    <target name="pdf" pdf-method="xelatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
+      <source>pretext/thinkcspy.ptx</source>
+      <publication>pretext/publication-rs-for-all.xml</publication>
       <output-dir>output/pdf</output-dir>
     </target>
     <target name="subset">

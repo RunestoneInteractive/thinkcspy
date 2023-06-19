@@ -45,8 +45,20 @@ Building for Production on a Runestone Server
 3. Run `rsmanage build --ptx httlacs`
 
 
+Building a PDF
+--------------
+
+1. clone this repo
+2. install pretext with ``pip install pretext``
+3. run ``pretext build --generate ALL pdf`` This will generate the needed assets and then try to build the pdf.  You generally only need to include the ``--generate ALL`` the first time you build the pdf.  After that you can just run ``pretext build pdf``
+
+Note -- As of June 2023, the pdf build is not working.  It builds the first few pages and then there is a latex error.  We would love some help fixing this.  For that it may be helpful to use the latex target and then manually run latex on the resulting latex source in the output/latex folder.
+
+
+
 Building with runestone
 -----------------------
+
 As mentioned above this method is deprecated, but will still work.  
 Any updates to this book should be made in PreTeXt NOT RST.
 
