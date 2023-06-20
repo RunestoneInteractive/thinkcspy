@@ -85,25 +85,25 @@ seq3np1(3)
         <statement>
           <p>Yes.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The 3n+1 sequence has not been proven to terminate for all values of n.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>No.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It has not been disproven that the 3n+1 sequence will terminate for all values of n.  In other words, there might be some value for n such that this sequence does not terminate. We just have not found it yet.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>No one knows.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

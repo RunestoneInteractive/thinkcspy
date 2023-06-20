@@ -57,33 +57,33 @@ alex.forward(75)            # complete the second side of a rectangle
         <statement>
           <p>North</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Some turtle systems start with the turtle facing north, but not this one.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>South</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, look at the first example with a turtle.  Which direction does the turtle move?
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>East</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the turtle starts out facing east.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>West</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, look at the first example with a turtle.  Which direction does the turtle move?
-                    </feedback>
+                    </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -241,33 +241,33 @@ alex.forward(75)
         <statement>
           <p>It creates a new turtle object that can be used for drawing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The line "alex = turtle.Turtle()" is what actually creates the turtle object.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>It defines the module turtle which will allow you to create a Turtle object and draw with it.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This line imports the module called turtle, which has all the built in functions for drawing on the screen with the Turtle object.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It makes the turtle draw half of a rectangle on the screen.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This functionality is performed with the lines: "alex.forward(150)", "lex.left(90)", and "alex.forward(75)"
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing, it is unnecessary.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     If we leave it out, Python will give an error saying that it does not know about the name "turtle" when it reaches the line "wn = turtle.Screen()"
-                    </feedback>
+                    </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -280,25 +280,25 @@ alex.forward(75)
         <statement>
           <p>This is simply for clarity.  It would also work to just type "Turtle()" instead of "turtle.Turtle()".</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     We must specify the name of the module where Python can find the Turtle object.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The period (.) is what tells Python that we want to invoke a new object.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The period separates the module name from the object name.  The parentheses at the end are what tell Python to invoke a new object.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>The first "turtle" (before the period) tells Python that we are referring to the turtle module, which is where the object "Turtle" is found.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the Turtle type is defined in the module turtle.  Remember that Python is case sensitive and Turtle is different from turtle.
-                    </feedback>
+                    </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -311,17 +311,17 @@ alex.forward(75)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     In this chapter you saw one named alex and one named tess, but any legal variable name is allowed.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A variable, including one referring to a Turtle object, can have whatever name you choose as long as it follows the naming conventions from Chapter 2.
-                    </feedback>
+                    </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -337,9 +337,9 @@ alex.forward(75)
             <img src="../_static/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
           </p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This code would turn the turtle to the south before drawing
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
@@ -347,9 +347,9 @@ alex.forward(75)
             <img src="../_static/test1Alt2.png" alt="left turn of 180 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
           </p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This code would turn the turtle to the west before drawing
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
@@ -357,9 +357,9 @@ alex.forward(75)
             <img src="../_static/test1Alt3.png" alt="left turn of 270 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
           </p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This code would turn the turtle to the south before drawing
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice>
         <statement>
@@ -367,9 +367,9 @@ alex.forward(75)
             <img src="../_static/test1Alt4v2.png" alt="right turn of 270 degrees before drawing, draw a line 150 pixels long, turn right 90, and draw a line 75 pixels long"/>
           </p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This code is almost correct, but the short end would be facing east instead of west.
-                    </feedback>
+                    </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
@@ -377,9 +377,9 @@ alex.forward(75)
             <img src="../_static/test1correct.png" alt="left turn of 90 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long"/>
           </p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
-                    </feedback>
+                    </p></feedback>
       </choice>
     </choices>
   </exercise>

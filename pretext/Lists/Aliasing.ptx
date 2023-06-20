@@ -57,17 +57,17 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     blist is not a copy of alist, it is a reference to the list alist refers to.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 8, 999, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, since alist and blist both reference the same list, changes to one also change the other.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -88,41 +88,41 @@ list1=[1,100,1000] list2=[1,100,1000] list3=list1
         <statement>
           <p>print(list1 == list2)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     list1 and list2 have the same value
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>print(list1 is list2)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     list1 and list2 have the same value but do not refer to the same object
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>print(list1 is list3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     list3 is assigned to list1, so they refer to the same object
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>print(list2 is not list3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     list2 and list3 do not refer to the same object.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>print(list2 != list3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     list2 and list3 have the same value
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

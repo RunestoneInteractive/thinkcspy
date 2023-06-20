@@ -79,17 +79,17 @@ else:
         <statement>
           <p>No</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Yes</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

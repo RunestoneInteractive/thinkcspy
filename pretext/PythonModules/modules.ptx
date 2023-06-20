@@ -62,33 +62,33 @@ wn.exitonclick()
         <statement>
           <p>A file containing Python definitions and statements intended for use in other Python programs.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A module can be reused in different programs.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A separate block of code within a program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While a module is separate block of code, it is separate from a program.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>One line of code in a program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The call to a feature within a module may be one line of code, but modules are usually multiple lines of code separate from the program
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A file that contains documentation about functions in Python.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each module has its own documentation, but the module itself is more than just documentation.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -101,33 +101,33 @@ wn.exitonclick()
         <statement>
           <p>Go to the Python Documentation site.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The site contains a listing of all the standard modules that are available with Python.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Look at the import statements of the program you are working with or writing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The import statements only tell you what modules are currently being used in the program, not how to use them or what they contain.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Ask the professor</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While the professor knows a subset of the modules available in Python, chances are the professor will have to look up the available modules just like you would.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Look in this textbook.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This book only explains a portion of the modules available.  For a full listing you should look elsewhere.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -140,17 +140,17 @@ wn.exitonclick()
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Only turtle, math, and random have been ported to work in activecode at this time.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Only turtle, math, and random have been ported to work in activecode at this time.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -57,33 +57,33 @@ print(2 + 3)
           <statement>
             <p>Python</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, Python is a great language to learn, whether you are a beginner or an experienced programmer.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>Java</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Java is a good object oriented language but it has some details that make it hard for the beginner.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>C</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     C is an imperative programming language that has been around for a long time, but it is not the one that we use.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>ML</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     No, ML is a functional programming language.  You can use Python to write functional programs as well.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -98,33 +98,33 @@ print(2 + 3)
           <statement>
             <p>red</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Red is a definitely on of the colors.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>yellow</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, yellow is correct.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>black</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Remember the acronym...ROY G BIV.  B stands for blue.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>green</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, green is one of the colors.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

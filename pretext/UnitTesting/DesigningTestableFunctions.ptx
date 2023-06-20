@@ -45,17 +45,17 @@ def add(x, y):
         <statement>
           <p>Yes.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Correct. In a unit test, an assert statement could check the value of sum after a call to add.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>No.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Incorrect. The function stores its result in a global variable, which can be checked by an assert statement.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -152,33 +152,33 @@ def getfirst(msg):
           <statement>
             <p>len(msg) &lt;= 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The function would crash if this condition were true.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>len(msg) &gt; 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct. The function cannot return the first character of an empty msg.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>msg == ""</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The function would crash if this condition were true.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>none of these</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Try again.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

@@ -89,33 +89,33 @@ assert sumnums(1, 1) == 1</pre>
           <statement>
             <p>assert repeat('*', 0) == ''</p>
           </statement>
-          <feedback>
+          <feedback><p>
             Correct. The specification indicates that the function should produce an empty string.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert repeat('*', -1) == ''</p>
           </statement>
-          <feedback>
+          <feedback><p>
             Incorrect. The parameter -1 violates the precondition, and such a test is inappropriate, even though the function would return an empty string in this case.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>assert repeat('-', 5) == '-----'</p>
           </statement>
-          <feedback>
+          <feedback><p>
             Correct. The parameters satisfy the precondition and the value '-----' is appropriate given the postcondition.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert repeat('*', 5) == '***'</p>
           </statement>
-          <feedback>
+          <feedback><p>
             Incorrect. The string '***' does not conform to the postcondition.
-          </feedback>
+          </p></feedback>
         </choice>
       </choices>
     </exercise>

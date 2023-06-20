@@ -89,17 +89,17 @@ wn.exitonclick()
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  To convince yourself this is true, try interleaving the instructions for alex and tess in ActiveCode box 3.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  If you are not totally convinced, try interleaving the instructions for alex and tess in ActiveCode box 3.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

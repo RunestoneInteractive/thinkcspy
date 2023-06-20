@@ -62,41 +62,41 @@ assert type(9.0//5) == int
         <statement>
           <p>A runtime error will occur</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The expression ``x==y`` evaluates to ``True``
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A message is printed out saying that the test failed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The expression ``x==y`` evaluates to ``True``
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>x will get the value that y currently has</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     ``x==y`` is a Boolean expression, not an assignment statement
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Nothing will happen</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The expression ``x==y`` evaluates to ``True``
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A message is printed out saying that the test passed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     When an assertion test passes, no message is printed.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -159,25 +159,25 @@ assert square(3) == 9
           <statement>
             <p>assert blanked('under', 'du', 'u_d__') == True</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     blanked only takes two inputs; this provides three inputs to the blanked function
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert blanked('under', 'u_d__') == 'du'</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     The second argument to the blanked function should be the letters that have been guessed, not the blanked version of the word
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>assert blanked('under', 'du') == 'u_d__'</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     This checks whether the value returned from the blanked function is 'u_d__'.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

@@ -109,33 +109,33 @@
         <statement>
           <p>natural languages can be parsed while formal languages cannot.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Actually both languages can be parsed (determining the structure of the sentence), but formal languages can be parsed more easily in software.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>ambiguity, redundancy, and literalness.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     All of these can be present in natural languages, but cannot exist in formal languages.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>there are no differences between natural and formal languages.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are several differences between the two but they are also similar.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>tokens, structure, syntax, and semantics.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     These are the similarities between the two.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -148,17 +148,17 @@
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

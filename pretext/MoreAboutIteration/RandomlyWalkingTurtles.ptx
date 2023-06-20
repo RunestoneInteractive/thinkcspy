@@ -184,25 +184,25 @@ wn.exitonclick()
         <statement>
           <p>a for-loop or a while-loop</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so either a for-loop or a while-loop will work.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>only a for-loop</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     As you learned in section 7.2, a while-loop can always be used for anything a for-loop can be used for.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>only a while-loop</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so this is an example of definite iteration.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -215,33 +215,33 @@ wn.exitonclick()
         <statement>
           <p>Returns True if the turtle is still on the screen and False if the turtle is no longer on the screen.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The isInScreen function computes the boolean test of whether the turtle is still in the window.  It makes the condition of the while loop in the main part of the code simpler.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Uses a while loop to move the turtle randomly until it goes off the screen.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The isInScreen function does not contain a while-loop.  That loop is outside the isInScreen function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Turns the turtle right or left at random and moves the turtle forward 50.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The isInScreen function does not move the turtle.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Calculates and returns the position of the turtle in the window.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While the isInScreen function does use the size of the window and position of the turtle, it does not return the turtle position.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

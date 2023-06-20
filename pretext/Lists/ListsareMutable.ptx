@@ -72,25 +72,25 @@ print(alist)
         <statement>
           <p>[4, 2, True, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Item assignment does not insert the new item into the list.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, True, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the value True is placed in the list at index 2.  It replaces 8.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, it is illegal to assign</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Item assignment is allowed with lists.  Lists are mutable.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

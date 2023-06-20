@@ -45,33 +45,33 @@ print(mydict["elephant"])
         <statement>
           <p>23</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     mydict and yourdict are both names for the same dictionary.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>None</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The dictionary is mutable so changes can be made to the keys and values.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>999</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, since yourdict is an alias for mydict, the value for the key elephant has been changed.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, there are two different keys named elephant.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There is only one dictionary with only one key named elephant.  The dictionary has two different names, mydict and yourdict.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

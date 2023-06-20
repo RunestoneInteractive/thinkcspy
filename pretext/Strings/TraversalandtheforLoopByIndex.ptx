@@ -55,33 +55,33 @@ for idx in range(len(s)):
         <statement>
           <p>0</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The for loop visits each index but the selection only prints some of them.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>1</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     o is at positions 4 and 8
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, it will print all the characters in even index positions and the o character appears both times in an even location.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, the for statement cannot have an if inside.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The for statement can have any statements inside, including if as well as for.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -75,25 +75,25 @@ print(final_time)
         <statement>
           <p>Python is stupid and does not know how to add properly.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, Python is probabaly not broken.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>There is nothing wrong here.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, try adding the two numbers together yourself, you will definitely get a different result.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Python is doing string concatenation, not integer addition.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes!  Remember that input returns a string.  Now we will need to convert the string to an integer
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

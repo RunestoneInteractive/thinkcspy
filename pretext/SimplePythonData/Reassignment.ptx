@@ -67,33 +67,33 @@ x = 22
           <statement>
             <p>x is 15 and y is 15</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Look at the last assignment statement which gives x a different value.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>x is 22 and y is 22</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     No, x and y are two separate variables.  Just because x changes in the last assignment statement, it does not change the value that was copied into y in the second statement.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>x is 15 and y is 22</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Look at the last assignment statement, which reassigns x, and not y.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>x is 22 and y is 15</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, x has the value 22 and y the value 15.
-          </feedback>
+          </p></feedback>
         </choice>
       </choices>
     </exercise>

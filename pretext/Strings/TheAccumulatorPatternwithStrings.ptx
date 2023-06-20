@@ -70,25 +70,25 @@ print(r)
         <statement>
           <p>Ball</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each item is converted to upper case before concatenation.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>BALL</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each character is converted to upper case but the order is wrong.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>LLAB</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the order is reversed due to the order of the concatenation.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -127,33 +127,33 @@ print(day)
         <statement>
           <p>Nothing is printed. A runtime error occurs.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It is legal to change the type of data that a variable holds in Python.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Thursday</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>32.5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>19</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The variable day will contain the last value assigned to it when it is printed.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

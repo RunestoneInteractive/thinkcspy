@@ -51,25 +51,25 @@ while idx &lt; len(s):
         <statement>
           <p>0</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, idx goes through the odd numbers starting at 1.  o is at position 4 and 8.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>1</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     o is at positions 4 and 8.  idx starts at 1, not 0.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are 2 o characters but idx does not take on the correct index values.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

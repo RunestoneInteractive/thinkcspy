@@ -113,33 +113,33 @@ print(18 / 4)
         <statement>
           <p>4.5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The / operator does exact division and returns a floating point result.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The / operator does exact division and returns a floating point result.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The / operator does exact division and returns a floating point result.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The / operator does exact division and returns a floating point result.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -157,33 +157,33 @@ print(18 // 4)
         <statement>
           <p>4.25</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     - The // operator does integer division and returns an integer result
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     - The // operator does integer division and returns an integer result, but it truncates the result of the division.  It does not round.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     - The // operator does integer division and returns the truncated integer result.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     - The // operator does integer division and returns the result of the division on an integer (not the remainder).
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -201,33 +201,33 @@ print(18 % 4)
         <statement>
           <p>4.25</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The % operator returns the remainder after division.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The % operator returns the remainder after division.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The % operator returns the remainder after division.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The % operator returns the remainder after division.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

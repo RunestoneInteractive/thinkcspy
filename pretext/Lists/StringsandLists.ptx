@@ -62,33 +62,33 @@ print(init)
         <statement>
           <p>Poe</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Three characters but not the right ones.  namelist is the list of names.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>EdgarAllanPoe</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Too many characters in this case.  There should be a single letter from each name.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>EAP</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, split creates a list of the three names.  The for loop iterates through the names and creates a string from the first characters.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>William Shakespeare</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     That does not make any sense.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

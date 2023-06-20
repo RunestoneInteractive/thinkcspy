@@ -30,17 +30,17 @@ print(len(alist))
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     len returns the actual number of items in the list, not the maximum index value.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, there are 5 items in this list.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -59,17 +59,17 @@ print(len(alist))
         <statement>
           <p>7</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, there are 7 items in this list even though two of them happen to also be lists.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     len returns the number of top level items in the list.  It does not count items in sublists.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

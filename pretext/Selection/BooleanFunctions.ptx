@@ -83,25 +83,25 @@ else:
         <statement>
           <p>A function that returns True or False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A Boolean function is just like any other function, but it always returns True or False.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A function that takes True or False as an argument</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A Boolean function may take any number of arguments (including 0, though that is rare), of any type.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The same as a Boolean expression</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A Boolean expression is a statement that evaluates to True or False, e.g. 5+3==8.  A function is a series of expressions grouped together with a name that are only executed when you call the function.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -119,17 +119,17 @@ return x + y &lt; z
         <statement>
           <p>Yes</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It is perfectly valid to return the result of evaluating a Boolean expression.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>No</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     x +y &lt; z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

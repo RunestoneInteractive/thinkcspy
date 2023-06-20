@@ -65,33 +65,33 @@ print(s + t)
         <statement>
           <p>python rocks</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Concatenation does not automatically add a space.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>python</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The expression s+t is evaluated first, then the resulting string is printed.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>pythonrocks</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the two strings are glued end to end.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot add two strings together.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The + operator has different meanings depending on the operands, in this case, two strings.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -111,33 +111,33 @@ print(s+excl*3)
         <statement>
           <p>python!!!</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, repetition has precedence over concatenation
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>python!python!python!</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Repetition is done first.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>pythonpythonpython!</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The repetition operator is working on the excl variable.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot perform concatenation and repetition at the same time.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The + and * operator are defined for strings as well as numbers.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

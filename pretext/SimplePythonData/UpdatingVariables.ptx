@@ -71,33 +71,33 @@ print(x)
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The value of x changes in the second statement.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>-1</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     In the second statement, substitute the current value of x before subtracting 1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>11</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, this statement sets the value of x equal to the current value minus 1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing.  An error occurs because x can never be equal to x - 1.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -119,33 +119,33 @@ print(x)
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The value of x changes in the second statement.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>9</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each statement changes the value of x, so 9 is not the final result.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>15</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, starting with 12, subtract 3, than add 5, and finally add 1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing.  An error occurs because x cannot be used that many times in assignment statements.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

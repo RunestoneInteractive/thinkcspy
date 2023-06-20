@@ -77,25 +77,25 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 999, 5, 4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     print(alist) not print(blist)
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, 2, 8, 999, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     blist is changed, not alist.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, alist was unchanged by the assignment statement. blist was a copy of the references in alist.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -116,33 +116,33 @@ print(blist)
         <statement>
           <p>[4, 2, 8, 999, 5, 4, 2, 8, 999, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     [alist] * 2 creates a list containing alist repeated 2 times
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[[4, 2, 8, 999, 5], [4, 2, 8, 999, 5]]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, blist contains two references, both to alist.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     print(blist)
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[[4, 2, 8, 999, 5], [4, 2, 8, 6, 5]]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     blist contains two references, both to alist so changes to alist appear both times.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

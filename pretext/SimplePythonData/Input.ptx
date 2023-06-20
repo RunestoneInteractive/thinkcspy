@@ -66,33 +66,33 @@ print ( type(n) )
         <statement>
           <p>&lt;class 'str'&gt;</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     All input from users is read in as a string.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>&lt;class 'int'&gt;</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Even though the user typed in an integer, it does not come into the program as an integer.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>&lt;class 18&gt;</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     18 is the value of what the user typed, not the type of the data.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>18</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     18 is the value of what the user typed, not the type of the data.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

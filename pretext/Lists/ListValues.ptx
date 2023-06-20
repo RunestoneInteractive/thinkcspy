@@ -47,17 +47,17 @@ print(newlist)
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, unlike strings, lists can consist of any type of Python data.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Lists are heterogeneous, meaning they can have different types of data.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

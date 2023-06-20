@@ -124,17 +124,17 @@ print(sumTo(4))
       <statement>
         <p>True</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice>
       <statement>
         <p>False</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
-      </feedback>
+      </p></feedback>
     </choice>
   </choices>
 </exercise>
@@ -157,33 +157,33 @@ print(answer)
       <statement>
         <p>n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice>
       <statement>
         <p>answer starts at 1 and is incremented by n each time, so it will always be positive</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     While it is true that answer will always be positive, answer is not considered in the loop condition.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice>
       <statement>
         <p>You cannot compare n to 0 in while loop.  You must compare it to another variable.</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     It is perfectly valid to compare n to 0.  Though indirectly, this is what causes the infinite loop.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice>
       <statement>
         <p>In the while loop body, we must set n to False, and this code does not do that.</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
-      </feedback>
+      </p></feedback>
     </choice>
   </choices>
 </exercise>
@@ -208,25 +208,25 @@ print(n, x)
       <statement>
         <p>4 7</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     Setting a variable so the loop condition would be false in the middle of the loop body does not keep the variable from actually being set.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice>
       <statement>
         <p>5 7</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     Setting a variable so the loop condition would be false in the middle of the loop body does not stop execution of statements in the rest of the loop body.
-      </feedback>
+      </p></feedback>
     </choice>
     <choice correct="yes">
       <statement>
         <p>7 15</p>
       </statement>
-      <feedback>
+      <feedback><p>
                     After n becomes 5 and the test would be False, but the test does not actually come until after the end of the loop - only then stopping execution of the repetition of the loop.
-      </feedback>
+      </p></feedback>
     </choice>
   </choices>
 </exercise>

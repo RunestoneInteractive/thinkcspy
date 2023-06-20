@@ -117,33 +117,33 @@
         <statement>
           <p>((5*3) &gt; 10) and ((4+6) == 11)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, * and + have higher precedence, followed by &gt; and ==, and then the keyword "and"
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>(5*(3 &gt; 10)) and (4 + (6 == 11))</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Arithmetic operators (*, +) have higher precedence than comparison operators (&gt;, ==)
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>((((5*3) &gt; 10) and 4)+6) == 11</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This grouping assumes Python simply evaluates from left to right, which is incorrect.  It follows the precedence listed in the table in this section.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>((5*3) &gt; (10 and (4+6))) == 11</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This grouping assumes that "and" has a higher precedence than ==, which is not true.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

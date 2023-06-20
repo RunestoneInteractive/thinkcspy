@@ -177,33 +177,33 @@ if result != 'OK':
           <statement>
             <p>assert result != 'OK'</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The assert should call the engage_thruster function. Try again.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert engage_thruster(22) == result</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The assert should not assume the presence of a variable named result.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert engage_thruster(22) != 'OK'</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. This assert calls the engage_thruster function with the correct parameter, but interprets the result differently from the if statement provided.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>assert engage_thruster(22) == 'OK'</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct! This assert checks that the result of invoking engage_thruster(22) is the value 'OK'.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -221,33 +221,33 @@ if result != 'OK':
           <statement>
             <p>Unit test</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The assertion correctly checks that get_first should return the first character in 'Bells', 'B'.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>Tested function</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct. The function code returns the second character of the parameter, not the first.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>Both are in error</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The assertion correctly checks that get_first should return the first character in 'Bells', 'B'.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>Both are correct</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. The function code returns the second character of the parameter, not the first.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

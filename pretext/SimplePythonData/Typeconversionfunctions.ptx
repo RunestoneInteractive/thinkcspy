@@ -58,33 +58,33 @@ print( int(53.785) )
         <statement>
           <p>Nothing is printed. It generates a runtime error.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The statement is valid Python code.  It calls the int function on 53.785 and then prints the value that is returned.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>53</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The int function truncates all values after the decimal and prints the integer value.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>54</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     When converting to an integer, the int function does not round.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>53.785</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The int function removes the fractional part of 53.785 and returns an integer, which is then printed.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

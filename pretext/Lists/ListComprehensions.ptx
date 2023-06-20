@@ -52,33 +52,33 @@ print(blist)
         <statement>
           <p>[4,2,8,6,5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Items from alist are doubled before being placed in blist.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[8,4,16,12,10]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Not all the items in alist are to be included in blist.  Look at the if clause.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>10</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The result needs to be a list.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[10].</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 5 is the only odd number in alist.  It is doubled before being placed in blist.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

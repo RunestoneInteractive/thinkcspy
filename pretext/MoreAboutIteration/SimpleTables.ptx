@@ -54,33 +54,33 @@ for x in range(13):        # generate values for columns
         <statement>
           <p>A tab will line up items in a second column, regardless of how many characters were in the first column, while spaces will not.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Assuming the size of the first column is less than the size of the tab width.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>There is no difference</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Tabs and spaces will sometimes make output appear visually different.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A tab is wider than a sequence of spaces</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A tab has a pre-defined width that is equal to a given number of spaces.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>You must use tabs for creating tables.  You cannot use spaces.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You may use spaces to create tables.  The columns might look jagged, or they might not, depending on the width of the items in each column.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

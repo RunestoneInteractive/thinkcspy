@@ -53,41 +53,41 @@ printnums(5, 3)
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is how many times the inner loop will print for each iteration of the outer loop.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Keep in mind that the inner loop is part of the body of the outer loop.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>15</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The inner loop will print a total of 15 times; however the outer loop is also printing the same phrase.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>18</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Correct! The nested loop will be run 3 times, making a total of 18.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>20</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Pay attention to the order of x and y
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

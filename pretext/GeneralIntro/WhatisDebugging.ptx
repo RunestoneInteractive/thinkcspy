@@ -21,33 +21,33 @@
         <statement>
           <p>tracking down programming errors and correcting them.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>removing all the bugs from your house.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Maybe, but that is not what we are talking about in this context.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>finding all the bugs in the program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>fixing the bugs in the program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

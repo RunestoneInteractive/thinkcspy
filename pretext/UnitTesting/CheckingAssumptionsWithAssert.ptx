@@ -199,17 +199,17 @@ print(sumnums(3, 1))</pre>
           <statement>
             <p>True</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Output is displayed only if the condition is False.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>False</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct. Output is displayed only if the condition is False.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -234,33 +234,33 @@ def getfirst(msg):
           <statement>
             <p>assert len(msg) &lt;= 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Use the precondition as the condition for the assert.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>assert len(msg) &gt; 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct. Use the precondition as the condition for the assert.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>assert msg[0]</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Use the precondition as the condition for the assert.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>none of these</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Use the precondition as the condition for the assert.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
