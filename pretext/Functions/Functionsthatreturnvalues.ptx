@@ -170,33 +170,33 @@ def addEm(x, y, z):
         <statement>
           <p>You should never use a print statement in a function definition.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Although you should not mistake print for return, you may include print statements inside your functions.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is a very common mistake so be sure to watch out for it when you write your code!
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>You must calculate the value of x+y+z before you return it.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python will automatically calculate the value x+y+z and then return it in the statement as it is written
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A function cannot return a number.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Functions can return any legal data, including (but not limited to) numbers, strings, turtles, etc.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -215,25 +215,25 @@ def addEm(x, y, z):
         <statement>
           <p>None</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     We have accidentally used print where we mean return.  Therefore, the function will return the value None by default.  This is a VERY COMMON mistake so watch out!  This mistake is also particularly difficult to find because when you run the function the output looks the same.  It is not until you try to assign its value to a variable that you can notice a difference.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The value of x + y + z</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The string 'x + y + z'</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

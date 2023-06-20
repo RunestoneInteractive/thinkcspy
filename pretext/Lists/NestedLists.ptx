@@ -39,33 +39,33 @@ else:
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     6 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     8 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>888</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, alist[0][1][0] is True and alist[1] is the second list, the first item is 888.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>999</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     alist[0][1][0] is True.  Take another look at the if statement.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

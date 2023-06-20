@@ -78,41 +78,41 @@ x &lt;= y               # x is less than or equal to y
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     True and False are both Boolean literals.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>3 == 4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The comparison between two numbers via == results in either True or False (in this case False),  both Boolean values.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>3 + 4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     3 + 4 evaluates to 7, which is a number, not a Boolean value.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>3 + 4 == 7</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     3 + 4 evaluates to 7.  7 == 7 then evaluates to True, which is a Boolean value.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>"False"</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

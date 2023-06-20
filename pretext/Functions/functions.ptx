@@ -189,33 +189,33 @@ wn.exitonclick()
         <statement>
           <p>A named sequence of statements.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, a function is a named sequence of statements.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Any sequence of statements.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While functions contain sequences of statements, not all sequences of statements are considered functions.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A mathematical expression that calculates a value.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values.  Consider, for example, the turtle functions in this section.   They made the turtle draw a specific shape, rather than calculating a value.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>A statement of the form x = 5 + 4.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This statement is called an assignment statement.  It assigns the value on the right (9), to the name on the left (x).
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -228,33 +228,33 @@ wn.exitonclick()
         <statement>
           <p>To improve the speed of execution</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Functions have little effect on how fast the program runs.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>To help the programmer organize programs into chunks that match how they think about the solution to the problem.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While functions are not required, they help the programmer better think about the solution by organizing pieces of the solution into logical chunks that can be reused.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>All Python programs must be written using functions</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     In the first several chapters, you have seen many examples of Python programs written without the use of functions.  While writing and using functions is desirable and essential for good programming style as your programs get longer, it is not required.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>To calculate values.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Not all functions calculate values.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -267,33 +267,33 @@ wn.exitonclick()
         <statement>
           <p>def drawCircle(t):</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A function may take zero or more parameters.  It does not have to have two.  In this case the size of the circle might be specified in the body of the function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>def drawCircle:</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A function needs to specify its parameters in its header.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>drawCircle(t, sz):</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A function definition needs to include the keyword def.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>def drawCircle(t, sz)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A function definition header must end in a colon (:).
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -315,33 +315,33 @@ def drawSquare(t, sz):
         <statement>
           <p>def drawSquare(t, sz)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>drawSquare</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the name of the function is given after the keyword def and before the list of parameters.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>drawSquare(t, sz)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This includes the function name and its parameters
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Make turtle t draw a square with side sz.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is a comment stating what the function does.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -363,33 +363,33 @@ def drawSquare(t, sz):
         <statement>
           <p>i</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     i is a variable used inside of the function, but not a parameter, which is passed in to the function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>t</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     t is only one of the parameters to this function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>t, sz</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the function specifies two parameters: t and sz.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>t, sz, i</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -411,41 +411,41 @@ def drawSquare(t, sz):
         <statement>
           <p>def drawSquare(t, sz)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, t and sz are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>drawSquare</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A function call always requires parentheses after the name of the function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>drawSquare(10)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This function takes two parameters (arguments)
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>drawSquare(alex, 10):</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A colon is only required in a function definition.  It will cause an error with a function call.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>drawSquare(alex, 10)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Since alex was already previously defined and 10 is a value, we have passed in two correct values for this function.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -458,17 +458,17 @@ def drawSquare(t, sz):
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, you can call a function multiple times by putting the call in a loop.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

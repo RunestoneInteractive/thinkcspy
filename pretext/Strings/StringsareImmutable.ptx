@@ -44,25 +44,25 @@ print(s)
         <statement>
           <p>Ball</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Assignment is not allowed with strings.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Call</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Assignment is not allowed with strings.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Error</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, strings are immutable.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -34,25 +34,25 @@ print(alist[5])
         <statement>
           <p>[ ]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The empty list is at index 4.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>3.14</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 3.14 is at index 5 since we start counting at 0 and sublists count as one item.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     False is at index 6.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -71,25 +71,25 @@ print(alist[2].upper())
         <statement>
           <p>Error, you cannot use the upper method on a list.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     alist[2] is the string cat so the upper method is legal
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     2 is the index.  We want the item at that index.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>CAT</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the string cat is upper cased to become CAT.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -108,33 +108,33 @@ print(alist[2][0])
         <statement>
           <p>56</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Indexes start with 0, not 1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the first character of the string at index 2 is c
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>cat</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     cat is the item at index 2 but then we index into it further.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot have two index values unless you are using slicing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Using more than one index is fine.  You read it from left to right.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

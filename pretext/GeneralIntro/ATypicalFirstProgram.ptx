@@ -35,33 +35,33 @@ print("Hello, World!")
         <statement>
           <p>sends information to the printer to be printed on paper.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Within the Python programming language, the print function has nothing to do with the printer.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>displays a value on the screen.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the print function is used to display the value of the thing being printed.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>tells the computer to put the information in print, rather than cursive, format.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The format of the information is called its font and has nothing to do with the print function.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>tells the computer to speak the information.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     That would be a different function.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -25,25 +25,25 @@
         <statement>
           <p>Attempting to divide by 0.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A syntax error is an error in the structure of the python code that can be detected before the program is executed.   Python cannot usually tell if you are trying to divide by 0 until it is executing your program (e.g., you might be asking the user for a value and then dividing by that value - you cannot know what value the user will enter before you run the program).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Forgetting a colon at the end of a statement where one is required.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is a problem with the formal structure of the program.  Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Forgetting to divide by 100 when printing a percentage amount.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -56,33 +56,33 @@
         <statement>
           <p>The programmer.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Programmers rarely find all the syntax errors, there is a computer program that will do it for us.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>The compiler / interpreter.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The compiler and / or interpreter is a computer program that determines if your program is written in a way that can be translated into machine language for execution.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The computer.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The teacher / instructor.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

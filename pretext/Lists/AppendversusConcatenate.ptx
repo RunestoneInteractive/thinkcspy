@@ -50,17 +50,17 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 6, 5, 999]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You cannot concatenate a list with an integer.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Error, you cannot concatenate a list with an integer.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

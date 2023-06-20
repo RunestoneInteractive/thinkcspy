@@ -182,17 +182,17 @@ class = "Computer Science 101"</pre>
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     -  The + character is not allowed in variable names.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     -  The + character is not allowed in variable names (everything else in this name is fine).
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

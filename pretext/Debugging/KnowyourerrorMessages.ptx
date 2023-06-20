@@ -44,25 +44,25 @@ print(final_time_int)
           <statement>
             <p>You cannot use a variable on both the left and right hand sides of an assignment statement.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     No, You can, as long as all the variables on the right hand side already have values.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>wait_time_int does not have a value so it cannot be used on the right hand side.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes.  Variables must already have values in order to be used on the right hand side.
-          </feedback>
+          </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>This is not really an error, Python is broken.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     No, No, No!
-          </feedback>
+          </p></feedback>
         </choice>
       </choices>
     </exercise>

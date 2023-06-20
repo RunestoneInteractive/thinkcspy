@@ -136,33 +136,33 @@ print(3.4, "hello", 45)
         <statement>
           <p>Print out the value and determine the data type based on the value printed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You may be able to determine the data type based on the printed value, but it may also be  deceptive, like when a string prints, there are no quotes around it.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Use the type function.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The type function will tell you the class the value belongs to.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Use it in a known equation and print the result.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Only numeric values can be used in equations.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Look at the declaration of the variable.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     In Python variables are not declared.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -175,33 +175,33 @@ print(3.4, "hello", 45)
         <statement>
           <p>Character</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It is not a single character.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Integer</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The data is not numeric.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Float</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The value is not numeric with a decimal point.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>String</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Strings can be enclosed in single quotes.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

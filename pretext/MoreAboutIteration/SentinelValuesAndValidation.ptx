@@ -103,17 +103,17 @@ checkout()
                 <statement>
                   <p>True</p>
                 </statement>
-                <feedback>
+                <feedback><p>
                     Keep in mind there are multiple ways to stop a while loop, such as a sentinal value.
-                </feedback>
+                </p></feedback>
               </choice>
               <choice>
                 <statement>
                   <p>False</p>
                 </statement>
-                <feedback>
+                <feedback><p>
                     While loops do not have a set number of times they will iterate, so they will continue until something breaks the loop. Keep this in mind while coding with while loops.
-                </feedback>
+                </p></feedback>
               </choice>
             </choices>
           </exercise>

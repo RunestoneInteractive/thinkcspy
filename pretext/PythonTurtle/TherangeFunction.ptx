@@ -118,33 +118,33 @@ for i in range(0, 20, 2):
         <statement>
           <p>Range should generate a sequence that stops before 10 (including 9).</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Range will generate the sequence 3, 5, 7, 9.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Range should generate a sequence that starts at 10 (including 10).</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The first argument (3) tells range what number to start at.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Range should generate a sequence starting at 3 that stops at 10 (including 10).</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Range will always stop at the number in the sequence before (not including) the specified limit for the sequence.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Range should generate a sequence using every 10th number between the start and the stopping number.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The third argument (2) tells range how many numbers to skip between each element in the sequence.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -157,33 +157,33 @@ for i in range(0, 20, 2):
         <statement>
           <p>range(2, 5, 8)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This command generates the sequence with just the number 2 because the first parameter (2) tells range where to start, the second number tells range where to end (before 5) and the third number tells range how many numbers to skip between elements (8).  Since 10 &gt;= 5, there is only one number in this sequence.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>range(2, 8, 3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This command generates the sequence 2, 5 because 8 is not less than 8 (the specified number past the end).
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>range(2, 10, 3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The first number is the starting point, the second is past the last allowed, and the third is the amount to increment by.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>range(8, 1, -3)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This command generates the sequence 8, 5, 2 because it starts at 8, ends before 1, and skips to every third number going down.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -196,33 +196,33 @@ for i in range(0, 20, 2):
         <statement>
           <p>It will generate a sequence starting at 0, with every number included up to but not including the argument it was passed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, if you only give one number to range it starts with 0 and ends before the number specified incrementing by 1.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It will generate a sequence starting at 1, with every number up to but not including the argument it was passed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Range with one parameter starts at 0.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It will generate a sequence starting at 1, with every number including the argument it was passed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Range with one parameter starts at 0, and never includes the argument it was passed.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It will cause an error: range always takes exactly 3 arguments.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     If range is passed only one argument, it interprets that argument as one past the end of the list.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -235,33 +235,33 @@ for i in range(0, 20, 2):
         <statement>
           <p>range(5, 25, 5)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The step 5 is positive, while the given sequence is decreasing.  This answer creates the reversed, increasing sequence.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>range(20, 3, -5)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes: If we take steps of -5, not worrying about the ending, we get 20, 15, 10, 5, 0, .... The limit 3 is past the 5, so the range sequence stops with the 5.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>range(20, 5, 4)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The step 5 is positive so the sequence would need to increase from 20 toward 4.  That does not make sense and the sequence would be empty.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>range(20, 5, -5)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     the sequence can never include the second parameter (5).  The second parameter must always be past the end of the range sequence.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -274,25 +274,25 @@ for i in range(0, 20, 2):
         <statement>
           <p>No other value would give the same sequence.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The sequence produced has steps of 4: 2, 6, 10.  The next would be 14, but it is not before the limit 12.  There are other limit choices past 10, but not past 14.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The only other choice is 14.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     14 would work:  It is also past 10, and not past 14, but there are other integers with the same properties.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>11, 13, or 14</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, any integer past 10, and not past the next step at 14 would work.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

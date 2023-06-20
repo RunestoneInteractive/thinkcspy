@@ -271,33 +271,33 @@ print(p.getGreen(), p.getBlue())
         <statement>
           <p>Dark red</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because all three values are close to 0, the color will be dark.  But because the red value is higher than the other two, the color will appear red.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Light red</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The closer the values are to 0, the darker the color will appear.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Dark green</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The first value in RGB is the red value.  The second is the green.  This color has no green in it.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Light green</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The first value in RGB is the red value.  The second is the green.  This color has no green in it.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -429,33 +429,33 @@ print(p.getRed(), p.getGreen(), p.getBlue())
         <statement>
           <p>149 132 122</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     These are the values for the pixel at row 30, column 100.  Get the values for row 100 and column 30 with p = img.getPixel(100, 30).
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>183 179 170</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the RGB values are 183 179 170 at row 100 and column 30.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>165 161 158</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     These are the values from the original example (row 45, column 55). Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>201 104 115</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     These are simply made-up values that may or may not appear in the image.  Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -622,33 +622,33 @@ d.
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     i will start with a value of 0 and then j will iterate from 0 to 1.  Next, i will be 1 and j will iterate from 0 to 1.  Finally, i will be 2 and j will iterate from 0 to 1.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The inner for-loop controls the second digit (j).  The inner for-loop must complete before the outer for-loop advances.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The inner for-loop controls the second digit (j).  Notice that the inner for-loop is over the list [0, 1].
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output d</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The outer for-loop runs 3 times (0, 1, 2) and the inner for-loop runs twice for each time the outer for-loop runs, so this code prints exactly 6 lines.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -676,33 +676,33 @@ newblue = 0
         <statement>
           <p>It would look like a red-washed version of the bell image</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because we are removing the green and the blue values, but keeping the variation of the red the same, you will get the same image, but it will look like it has been bathed in red.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It would be a solid red rectangle the same size as the original image</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because the red value varies from pixel to pixel, this will not look like a solid red rectangle.  For it to look like a solid red rectangle each pixel would have to have exactly the same red value.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It would look the same as the original image</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     If you remove the blue and green values from the pixels, the image will look different, even though there does not appear to be any blue or green in the original image (remember that other colors are made of combinations of red, green and blue).
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It would look the same as the negative image in the example code</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because we have changed the value of the pixels from what they were in the original ActiveCode box code, the image will not be the same.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

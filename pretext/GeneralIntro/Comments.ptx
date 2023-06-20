@@ -37,33 +37,33 @@ print("Hello, World!")     # Isn't this easy!
         <statement>
           <p>To tell the computer what you mean in your program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Comments are ignored by the computer.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>For the people who are reading your code to know, in natural language, what the program is doing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The computer ignores comments.  It's for the humans that will "consume" your program.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing, they are extraneous information that is not needed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Comments can provide much needed information for anyone reading the program.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing in a short program.  They are only needed for really large programs.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Even small programs benefit from comments.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -48,33 +48,33 @@ The negative number -10 is not valid here</pre>
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because -10 is less than 0, Python will execute the body of the if-statement here.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python executes the body of the if-block as well as the statement that follows the if-block.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It will cause an error because every if must have an else clause.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -98,17 +98,17 @@ else:
         <statement>
           <p>No</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Yes</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will cause an error because the second else-block is not attached to a corresponding if-block.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -54,17 +54,17 @@ print(len(s))
         <statement>
           <p>11</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The blank counts as a character.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, there are 12 characters in the string.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -83,33 +83,33 @@ print(s[len(s)-5])
         <statement>
           <p>o</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Take a look at the index calculation again, len(s)-5.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>r</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, len(s) is 12 and 12-5 is 7.  Use 7 as index and remember to start counting with 0.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>s</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     s is at index 11
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, len(s) is 12 and there is no index 12.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You subtract 5 before using the index operator so it will work.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -128,33 +128,33 @@ print(s[-3])
         <statement>
           <p>c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 3 characters from the end.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>k</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Count backward 3 characters.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>s</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     When expressed with a negative index the last character s is at index -1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, negative indices are illegal.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python does use negative indices to count backward from the end.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

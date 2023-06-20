@@ -21,25 +21,25 @@
         <statement>
           <p>Attempting to divide by 0.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A semantic error is an error in logic. In this case the program does not produce the correct output because the problem is not solved correctly. This would be considered a run-time error.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Forgetting a colon at the end of a statement where one is required.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A semantic error is an error in logic. In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Forgetting to divide by 100 when printing a percentage amount.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will produce the wrong answer because the programmer implemented the solution incorrectly.  This is a semantic error.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -52,33 +52,33 @@
         <statement>
           <p>The programmer.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You must fully understand the problem so the you can tell if your program properly solves it.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The compiler / interpreter.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The compiler and / or interpreter will only do what you instruct it to do. It does not understand what the problem is that you want to solve.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The computer.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The computer does not understand your problem. It just executes the instructions that it is given.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The teacher / instructor.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Your teacher and instructor may be able to find most of your semantic errors, but only because they have experience solving problems.  However it is your responsibility to understand the problem so you can develop a correct solution.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

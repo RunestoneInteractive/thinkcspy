@@ -50,33 +50,33 @@ print(s[3:8])
         <statement>
           <p>python</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     That would be s[0:6].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>rocks</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     That would be s[7:].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>hon r</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, start with the character at index 3 and go up to but not include the character at index 8.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot have two numbers inside the [ ].</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is called slicing, not indexing.  It requires a start and an end.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -95,33 +95,33 @@ print(s[7:11] * 3)
         <statement>
           <p>rockrockrock</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, rock starts at 7 and goes through 10.  Repeat it 3 times.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>rock rock rock</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Repetition does not add a space.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>rocksrocksrocks</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Slicing will not include the character at index 11.  Just up to it (10 in this case).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use repetition with slicing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The slice will happen first, then the repetition.  So it is ok.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

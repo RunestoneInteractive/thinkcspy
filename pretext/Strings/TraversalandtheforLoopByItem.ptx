@@ -50,33 +50,33 @@ for ch in s:
         <statement>
           <p>10</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Iteration by item will process once for each item in the sequence.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>11</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The blank is part of the sequence.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, there are 12 characters, including the blank.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, the for statement needs to use the range function.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The for statement can iterate over a sequence item by item.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -96,33 +96,33 @@ for ch in s[3:8]:
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Slice returns a sequence that can be iterated over.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, The blank is part of the sequence returned by slice
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Check the result of s[3:8].  It does not include the item at index 8.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, the for statement cannot use slice.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Slice returns a sequence.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

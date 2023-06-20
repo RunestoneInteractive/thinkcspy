@@ -185,33 +185,33 @@ print(x)
           <statement>
             <p>2</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Though only two of the letters in the list are found, we count them each time they appear.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>5</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, we add to x each time we come across a letter in the list.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Check again what the conditional is evaluating. The value of i will be a character in the string s, so what will happen in the if statement?
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>There is an error in the code so it cannot run.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     There are no errors in this code.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -234,33 +234,33 @@ print(min_value)
           <statement>
             <p>10</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Not quite. What is the conditional checking?
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>1</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     min_value was set to a number that was smaller than any of the numbers in the list, so it was never updated in the for loop.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, min_value was set to a number that was smaller than any of the numbers in the list, so it was never updated in the for loop.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>There is an error in the code so it cannot run.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     The code does not have an error that would prevent it from running.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

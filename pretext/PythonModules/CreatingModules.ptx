@@ -30,33 +30,33 @@ coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
         <statement>
           <p>the code inside a function</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The code inside a function is called a function body.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>a file containing Python code</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python modules are just Python source code files.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the comments before a function</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The comments just before a function are the function documentation.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>a small block of Python code</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Modules may be small, but there is a more accurate answer.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -90,33 +90,33 @@ print("Available roasts:", coffee_shop.coffee_roasts)
         <statement>
           <p>writing a new function or class</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You may write a function or class inside a module, but this alone does not create one.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>placing an import statement at the top of a file</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Import statements permit you to use other modules, but they do not create one.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>placing code in a Python file in the same directory as your other source code</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Modules are Python source code files.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>creating a comment block at the beginning of a file</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Modules should include comment blocks at the top, but writing a comment block at the top of a file does not create a new module.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -191,33 +191,33 @@ print(shop_says)
         <statement>
           <p>the first variable name in the module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This does not determine module name, and not all modules export variables.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>a comment early in the module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This does not determine module name, and comments are not mandatory components of modules.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>it's called whatever we name it in the "import" statement</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The import statement uses the module name to lookup the correct module, and an import statement is not used to create the module.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>the filename of the module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The filename of the module determines the name of the import.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

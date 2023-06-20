@@ -73,33 +73,33 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
         <statement>
           <p>14</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>24</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember that * has precedence over -.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>3</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember that // has precedence over -.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>13.667</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember that // does integer division.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -117,33 +117,33 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
         <statement>
           <p>768</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>128</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Exponentiation (**) is processed right to left, so take 2 ** 3 first.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are two exponentiations.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>256</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Remember to multiply by 3.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

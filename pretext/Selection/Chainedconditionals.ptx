@@ -108,41 +108,41 @@ else:
         <statement>
           <p>I only</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You can not use a Boolean expression after an else.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>II only</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, II will give the same result.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>III only</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, III will not give the same result.  The first if statement will be true, but the second will be false, so the else part will execute.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>II and III</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, Although II is correct III will not give the same result.  Try it.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>I, II, and III</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     No, in I you can not have a Boolean expression after an else.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -165,25 +165,25 @@ else:
         <statement>
           <p>a</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While the value in x is less than the value in y (3 is less than 5) it is not less than the value in z (3 is not less than 2).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>b</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The value in y is not less than the value in x (5 is not less than 3).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Since the first two Boolean expressions are false the else will be executed.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

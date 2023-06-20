@@ -89,33 +89,33 @@ print(result)
         <statement>
           <p>math.pi</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     To invoke or reference something contained in a module you use the dot (.) notation.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>math(pi)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is the syntax for calling a function, not referencing an item in a module.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>pi.math</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The module name must come first when accessing values and functions with a module.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>math-&gt;pi</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The -&gt; notation is not used in Python.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -128,33 +128,33 @@ print(result)
         <statement>
           <p>the math module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While you might want to use the math module for other numerical computations in your program, it does not contain functions that are likely to help you simulate a dice roll.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>the random module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You would likely call the function random.randrange.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the turtle module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The turtle module, while producing interesting graphics, is unlikely to help you here.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the game module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python does not have a game module.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -167,33 +167,33 @@ print(result)
         <statement>
           <p>prob = random.randrange(1, 101)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will generate a number between 1 and 101, but does not include 101.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(1, 100)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will generate a number between 1 and 100, but does not include 100.  The highest value generated will be 99.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 101)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will generate a number between 0 and 100.  The lowest value generated is 0.  The highest value generated will be 100.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 100)</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This will generate a number between 0 and 100, but does not include 100.  The lowest value generated is 0 and the highest value generated will be 99.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -206,33 +206,33 @@ print(result)
         <statement>
           <p>There is no computer on the stage for the drawing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     They could easily put one there.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Because computers don't really generate random numbers, they generate pseudo-random numbers.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Computers generate random numbers using a deterministic algorithm.  This means that if anyone ever found out the algorithm they could accurately predict the next value to be generated and would always win the lottery.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>They would just generate the same numbers over and over again.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This might happen if the same seed value was used over and over again, but they could make sure this was not the case.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The computer can't tell what values were already selected, so it might generate all 5's instead of 5 unique numbers.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While a programmer would need to ensure the computer did not select the same number more than once, it is easy to ensure this.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

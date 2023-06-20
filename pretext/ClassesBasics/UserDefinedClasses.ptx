@@ -166,33 +166,33 @@ print(x, y)
         <statement>
           <p>True True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Look closely at how the objects are instantiated.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>True False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Look closely at how the objects are instantiated and the types of the objects.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Correct, the BMW object is not the Tesla object but they are of the same type.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Look closer at types of the objects.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -77,17 +77,17 @@ print(value)
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Dictionaries associate keys with values but there is no assumed order for the entries.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, dictionaries are associative collections meaning that they store key-value pairs.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -106,33 +106,33 @@ print(mydict["dog"])
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     12 is associated with the key cat.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 6 is associated with the key dog.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>23</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     23 is associated with the key elephant.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the index operator with a dictionary.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The [ ] operator, when used with a dictionary, will look up a value based on its key.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

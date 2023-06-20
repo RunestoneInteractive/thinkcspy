@@ -55,33 +55,33 @@
           <statement>
             <p>6</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     There are only five numbers on the list, the number of recursive calls will not be greater than the size of the list.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>5</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     The initial call to listsum is not a recursive call.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>4</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     the first recursive call passes the list [4,6,8,10], the second [6,8,10] and so on until [10].
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>3</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     This would not be enough calls to cover all the numbers on the list
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -94,33 +94,33 @@
           <statement>
             <p>n == 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Although this would work there are better and slightly more efficient choices. since fact(1) and fact(0) are the same.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>n == 1</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     A good choice, but what happens if you call fact(0)?
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>n &gt;= 0</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     This basecase would be true for all numbers greater than zero so fact of any positive number would be 1.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>n &lt;= 1</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Good, this is the most efficient, and even keeps your program from crashing if you try to compute the factorial of a negative number.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

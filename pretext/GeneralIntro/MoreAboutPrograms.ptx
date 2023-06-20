@@ -52,33 +52,33 @@
         <statement>
           <p>a sequence of instructions that specifies how to perform a computation.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     It is just step-by-step instructions that the computer can understand and execute.  Programs often implement algorithms, but note that algorithms are typically less precise than programs and do not have to be written in a programming language.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>something you follow along at a play or concert.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     True, but not in this context.  We mean a program as related to a computer.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>a computation, even a symbolic computation.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     A program can perform a computation, but by itself it is not one.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the same thing as an algorithm.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Programs often implement algorithms, but they are not the same thing.  An algorithm is a step by step list of instructions, but those instructions are not necessarily precise enough for a computer to follow.  A program must be written in a programming language that the computer knows how to interpret.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

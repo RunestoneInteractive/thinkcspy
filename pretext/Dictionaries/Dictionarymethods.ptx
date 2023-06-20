@@ -179,33 +179,33 @@ print(keylist[3])
         <statement>
           <p>cat</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     keylist is a list of all the keys which is then sorted.  cat would be at index 1.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>dog</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     keylist is a list of all the keys which is then sorted.  dog would be at index 2.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>elephant</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the list of keys is sorted and the item at index 3 is printed.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>bear</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     keylist is a list of all the keys which is then sorted.  bear would be at index 0.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -225,33 +225,33 @@ print(answer)
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     get returns the value associated with a given key so this divides 12 by 6.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>0.5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     12 is divided by 6, not the other way around.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>bear</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Take another look at the example for get above.  get returns the value associated with a given key.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, divide is not a valid operation on dictionaries.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The integer division operator is being used on the values returned from the get method, not on the dictionary.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -270,17 +270,17 @@ print("dog" in mydict)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, dog is a key in the dictionary.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The in operator returns True if a key is in the dictionary, False otherwise.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -299,17 +299,17 @@ print(23 in mydict)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     23 is a value in the dictionary, not a key.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the in operator returns True if a key is in the dictionary, False otherwise.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -332,33 +332,33 @@ print(total)
         <statement>
           <p>18</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Add the values that have keys greater than 3, not equal to 3.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>43</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the for statement iterates over the keys.  It adds the values of the keys that have length greater than 3.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>0</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is the accumulator pattern.  total starts at 0 but then changes as the iteration proceeds.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>61</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Not all the values are added together.  The if statement only chooses some of them.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

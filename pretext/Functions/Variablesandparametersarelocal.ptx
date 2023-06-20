@@ -120,25 +120,25 @@ print(result)
         <statement>
           <p>Its value</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Value is the contents of the variable.  Scope concerns where the variable is "known".
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>The range of statements in the code where a variable can be accessed.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The range in which a variable can be accessed is it's scope. For example if a variable is defined in a function, then the scope of the variable is that function.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Its name</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The name of a variable is just an identifier or alias.  Scope concerns where the variable is "known".
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -151,25 +151,25 @@ print(result)
         <statement>
           <p>A temporary variable that is only used inside a function</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, a local variable is a temporary variable that is only known (only exists) in the function it is defined in.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The same as a parameter</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While parameters may be considered local variables, functions may also define and use additional local variables.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Another name for any variable</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Variables that are used outside a function are not local, but rather global variables.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -182,25 +182,25 @@ print(result)
         <statement>
           <p>Yes, and there is no reason not to.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While there is no problem as far as Python is concerned, it is generally considered bad style because of the potential for the programmer to get confused.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Yes, but it is considered bad form.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     it is generally considered bad style because of the potential for the programmer to get confused.  If you must use global variables (also generally bad form) make sure they have unique names.
-        </feedback>
+        </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>No, it will cause an error.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
-        </feedback>
+        </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -49,33 +49,33 @@ print(s[3])
         <statement>
           <p>t</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Index locations do not start with 1, they start with 0.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>h</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, index locations start with 0.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     s[-3] would return c, counting from right to left.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the [ ] operator with a string.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     [ ] is the index operator
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -94,33 +94,33 @@ print(s[2] + s[-5])
         <statement>
           <p>tr</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, indexing operator has precedence over concatenation.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>ps</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     p is at location 0, not 2.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>nn</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     n is at location 5, not 2.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the [ ] operator with the + operator.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     [ ] operator returns a string that can be concatenated with another string.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

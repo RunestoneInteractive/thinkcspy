@@ -32,25 +32,25 @@ print(alist[4:])
         <statement>
           <p>[ [ ], 3.14, False]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, the slice starts at index 4 and goes up to and including the last item.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[ [ ], 3.14]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     By leaving out the upper bound on the slice, we go up to and including the last item.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[ [56, 57, "dog"], [ ], 3.14, False]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Index values start at 0.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

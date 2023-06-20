@@ -225,25 +225,25 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 6, 5, False, True]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     True was added first, then False was added last.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 8, 6, 5, True, False]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, each item is added to the end of the list.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[True, False, 4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     append adds at the end, not the beginning.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -264,25 +264,25 @@ print(alist)
         <statement>
           <p>[False, 4, 2, True, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, first True was added at index 2, then False was added at index 0.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, False, True, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     insert will place items at the index position specified and move everything down to the right.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[False, 2, True, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     insert does not remove anything or replace anything.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -303,25 +303,25 @@ print(alist)
         <statement>
           <p>[4, 8, 6]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     pop(2) removes the item at index 2, not the 2 itself.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[2, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     pop() removes the last item, not the first.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 6]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, first the 8 was removed, then the last item, which was 5.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -341,33 +341,33 @@ print(alist)
         <statement>
           <p>[2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     alist is now the value that was returned from pop(0).
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     pop(0) changes the list by removing the first item.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>None</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     pop(0) returns the first item in the list so alist has now been changed.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

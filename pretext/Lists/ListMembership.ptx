@@ -29,17 +29,17 @@ print(3.14 in alist)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 3.14 is an item in the list alist.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are 7 items in the list, 3.14 is one of them.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -58,17 +58,17 @@ print(57 in alist)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     in returns True for top level items only.  57 is in a sublist.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, 57 is not a top level item in alist.  It is in a sublist.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

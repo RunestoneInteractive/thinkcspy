@@ -149,33 +149,33 @@ for number in [5, 4, 3, 2, 1, 0]:
         <statement>
           <p>1</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The loop body prints one line, but the body will execute exactly one time for each element in the list [5, 4, 3, 2, 1, 0].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Although the biggest number in the list is 5, there are actually 6 elements in the list.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The loop body will execute (and print one line) for each of the 6 elements in the list [5, 4, 3, 2, 1, 0].
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>10</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The loop body will not execute more times than the number of elements in the list.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -188,25 +188,25 @@ for number in [5, 4, 3, 2, 1, 0]:
         <statement>
           <p>They are indented to the same degree from the loop header.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The loop body can have any number of lines, all indented from the loop header.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>There is always exactly one line in the loop body.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The loop body may have more than one line.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>The loop body ends with a semi-colon (;) which is not shown in the code above.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python does not need semi-colons in its syntax, but relies mainly on indentation.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -225,33 +225,33 @@ for number in [5, 4, 3, 2, 1, 0]:
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, Python will process the items from left to right so the first time the value of number is 5 and the second time it is 4.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python gives number the value of items in the list, one at a time, in order.  number gets a new value each time the loop repeats.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>1</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -272,25 +272,25 @@ for aColor in ["yellow", "red", "green", "blue"]:
         <statement>
           <p>Draw a square using the same color for each side.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The question is not asking you to describe the outcome of the entire loop, the question is asking you about the outcome of a **single iteration** of the loop.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Draw a square using a different color for each side.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Notice that aColor is never actually used inside the loop.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Draw one side of a square.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The body of the loop only draws one side of the square.  It will be  repeated once for each item in the list.  However, the color of the turtle never changes.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

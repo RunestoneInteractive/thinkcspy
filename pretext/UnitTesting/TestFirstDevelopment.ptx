@@ -146,17 +146,17 @@ print("All tests passed!")
           <statement>
             <p>True</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Correct. Test-First Development requires the developer to write unit tests. However, these tests come with significant benefits and can speed up overall development.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>False</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Incorrect. Test-First Development requires the developer to write unit tests. However, these tests come with significant benefits and can speed up overall development.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>

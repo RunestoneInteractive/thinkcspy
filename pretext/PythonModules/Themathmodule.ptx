@@ -47,33 +47,33 @@ print(math.sin(math.radians(90)))   # sin of 90 degrees
         <statement>
           <p>import math</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The module must be imported before you can use anything declared inside the module.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>include math</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The correct term is not include, but you are close.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>use math</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You will be using parts of the module, but that is not the right term.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>You don't need a statement.  You can always use the math module</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     You cannot use a Python module without a statement at the top of your program that explicitly tells Python you want to use the module.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

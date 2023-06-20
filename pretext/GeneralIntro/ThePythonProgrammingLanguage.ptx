@@ -97,33 +97,33 @@ My first program adds two numbers, 2 and 3:
         <statement>
           <p>the instructions in a program, stored in a file.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The file that contains the instructions written in the high level language is called the source code file.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the language that you are programming in (e.g., Python).</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This language is simply called the programming language, or simply the language.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the environment/tool in which you are programming.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The environment may be called the IDE, or integrated development environment, though not always.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>the number (or "code") that you must input at the top of each program to tell the computer how to execute your program.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There is no such number that you must type in at the start of your program.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -138,33 +138,33 @@ My first program adds two numbers, 2 and 3:
         <statement>
           <p>It is high-level if you are standing and low-level if you are sitting.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     In this case high and low have nothing to do with altitude.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It is high-level if you are programming for a computer and low-level if you are programming for a phone or mobile device.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     High and low have nothing to do with the type of device you are programming for.  Instead, look at what it takes to run the program written in the language.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>It is high-level if the program must be processed before it can run, and low-level if the computer can execute it without additional processing.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python is a high level language but must be interpreted into machine code (binary) before it can be executed.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>It is high-level if it easy to program in and is very short; it is low-level if it is really hard to program in and the programs are really long.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -177,33 +177,33 @@ My first program adds two numbers, 2 and 3:
         <statement>
           <p>1 = a process, 2 = a function</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Compiling is a software process, and running the interpreter is invoking a function, but how is a process different than a function?
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>1 = translating an entire book, 2 = translating a line at a time</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Compilers take the entire source code and produce object code or the executable and interpreters execute the code line by line.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>1 = software, 2 = hardware</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Both compilers and interpreters are software.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>1 = object code, 2 = byte code</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

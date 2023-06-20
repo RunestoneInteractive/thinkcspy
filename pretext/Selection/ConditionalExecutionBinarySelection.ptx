@@ -70,33 +70,33 @@ else:
         <statement>
           <p>Just one.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each block may also contain more than one.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Zero or more.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Each block must contain at least one statement.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>One or more.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, a block must contain at least one statement and can have many statements.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>One or more, and each must contain the same number.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     The blocks may contain different numbers of statements.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -117,33 +117,33 @@ else:
         <statement>
           <p>TRUE</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     TRUE is printed by the if-block, which only executes if the conditional (in this case, 4+5 == 10) is true.  In this case 5+4 is not equal to 10.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>FALSE</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Since 4+5==10 evaluates to False, Python will skip over the if block and execute the statement in the else block.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>TRUE on one line and FALSE on the next</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Nothing will be printed</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -178,33 +178,33 @@ d.
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Although TRUE is printed after the if-else statement completes, both blocks within the if-else statement print something too.  In this case, Python would have had to have skipped both blocks in the if-else statement, which it never would do.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Because there is a TRUE printed after the if-else statement ends, Python will always print TRUE as the last statement.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Output d</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>

@@ -269,25 +269,25 @@ print(s.count("o") + s.count("p"))
         <statement>
           <p>0</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are definitely o and p characters.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     There are 2 o characters but what about p?
-                </feedback>
+                </p></feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>3</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, add the number of o characters and the number of p characters.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -306,33 +306,33 @@ print(s[1] * s.index("n"))
         <statement>
           <p>yyyyy</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.  Repetition is done last.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>55555</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     Close.  5 is not repeated, it is the number of times to repeat.
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>n</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This expression uses the index of n
-                </feedback>
+                </p></feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot combine all those things together.</p>
         </statement>
-        <feedback>
+        <feedback><p>
                     This is fine, the repetition operator used the result of indexing and the index method.
-                </feedback>
+                </p></feedback>
       </choice>
     </choices>
   </exercise>
@@ -454,33 +454,33 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
           <statement>
             <p>Nothing - it causes an error</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     It is legal format syntax:  put the data in place of the braces.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>sum of {} and {} is {}; product: {}. 2 6 8 12</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Put the data into the format string; not after it.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>sum of 2 and 6 is 8; product: 12.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, correct substitutions!
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>sum of {2} and {6} is {8}; product: {12}.</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Close:  REPLACE the braces.
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
@@ -499,25 +499,25 @@ print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
           <statement>
             <p>2.34567 2.34567 2.34567</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     The numbers before the f in the braces give the number of digits to display after the decimal point.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice>
           <statement>
             <p>2.3 2.34 2.34567</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Close, but round to the number of digits and display the full number of digits specified.
-                </feedback>
+                </p></feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>2.3 2.35 2.3456700</p>
           </statement>
-          <feedback>
+          <feedback><p>
                     Yes, correct number of digits with rounding!
-                </feedback>
+                </p></feedback>
         </choice>
       </choices>
     </exercise>
