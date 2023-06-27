@@ -13,11 +13,11 @@
     <input>
 i = 0
 while i &lt; 10:
-    if i == 5:
-        break
-    print(i)
-	i += 1
-    </input>
+  if i == 5:
+    break
+  print(i)
+  i += 1
+</input>
   </program>
 
   <p>The <term>continue</term> statement is another keyword that we can use in loops.
@@ -28,11 +28,11 @@ while i &lt; 10:
     <input>
 i = 0
 while i &lt; 10:
-    if i == 5:
-        continue
-    print(i)
-	i += 1
-    </input>
+  if i == 5:
+    continue
+  print(i)
+  i += 1
+</input>
   </program>
 
   <note>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
