@@ -120,7 +120,7 @@ print ( type(n) )
     <cline><area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
     <p></p>
     <cline><area correct ="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
-    <cline><area correxct="no">total_secs</area> = int(<area>seconds</area>)</cline>
+    <cline><area correct="no">total_secs</area> = int(<area>seconds</area>)</cline>
     <cline><area correct="no">secs_still_remaining</area> = <area correct="no">total_secs</area> % 3600</cline>
     <cline>print(<area correct ="no">secs_still_remaining</area>)</cline>
 
