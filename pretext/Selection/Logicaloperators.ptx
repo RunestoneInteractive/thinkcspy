@@ -320,7 +320,7 @@ print(n % 2 == 0 or n % 3 == 0)
                                 Definiton
                             </cell>
           <cell>
-                                Logical Opposites
+                                Logical Opposite
                             </cell>
         </row>
         <row>
