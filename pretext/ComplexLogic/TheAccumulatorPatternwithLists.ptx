@@ -2,7 +2,7 @@
 <section xml:id="complex-logic_the-accumulator-pattern-with-lists">
   <title>The Accumulator Pattern with Lists</title>
   <introduction>
-  <p>Remember the <xref ref="functions_the-accumulator-pattern"/>. Many algorithms involving lists make use of
+  <p>Remember the <xref ref="functions_the-accumulator-pattern"/>? Many algorithms involving lists make use of
             this pattern to process the items in a list and compute a result. In this section, we'll
             explore the use of the accumulator pattern with lists.</p>
   <p>Let's take the problem of adding up all of the items in a list. The following program
