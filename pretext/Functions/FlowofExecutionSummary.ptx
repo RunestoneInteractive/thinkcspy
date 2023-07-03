@@ -33,17 +33,17 @@
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">
         <input>
-def pow(b, p):
-    y = b ** p
-    return y
-
-def square(x):
-    a = pow(x, 2)
-    return a
-
-n = 5
-result = square(n)
-print(result)
+def pow(b, p):     #1
+    y = b ** p     #2
+    return y       #3
+#4
+def square(x):     #5
+    a = pow(x, 2)  #6
+    return a       #7
+#8
+n = 5              #9
+result = square(n) #10
+print(result)      #11
 </input>
       </program>
       <p>Which of the following best reflects the order in which these lines of code are processed in Python?</p>
