@@ -47,7 +47,7 @@ coord = [['_', '_', '_', '_'],
 		 ['_', '_', 'p', '_'],
 		 ['_', '_', '_', '_'],
 		 ['_', '_', '_', '_']]
-for y in range(len(names)):
+for y in range(len(coord)):
 	for x in range(len(coord[y])):
 		if coord[y][x] == 'p':
 			print(f'p is as coordinates (x={x}, y={y})')
