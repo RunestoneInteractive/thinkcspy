@@ -139,7 +139,7 @@ print(math.sqrt(100))         # prints the square root of 100
           <p>True</p>
         </statement>
         <feedback>
-                    Only turtle, math, and random have been ported to work in activecode at this time.
+                    Only math, and random have been ported to work in activecode at this time.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -147,7 +147,7 @@ print(math.sqrt(100))         # prints the square root of 100
           <p>False</p>
         </statement>
         <feedback>
-                    Only turtle, math, and random have been ported to work in activecode at this time.
+                    Only math, and random have been ported to work in activecode at this time.
                 </feedback>
       </choice>
     </choices>
