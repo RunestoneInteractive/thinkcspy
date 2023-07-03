@@ -16,7 +16,7 @@ squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
 </input>
   </program>
-  <p>If you look closely at the structure of this program, we first define the function <c>square</c>.  At this point, we could have defined as many functions as were needed.  Finally, there are five statements that set up the window, create the turtle, perform the function invocation, and wait for a user click to terminate the program.</p>
+  <p>If you look closely at the structure of this program, we first define the function <c>square</c>.  At this point, we could have defined as many functions as were needed. </p>
 
   <p>The final three statements perform the main processing that the program will do.  Notice that much of the detail has been pushed inside the <c>square</c> function.  
  However, there are still these three lines of code that are needed to get things done.</p>
