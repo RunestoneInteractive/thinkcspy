@@ -3,232 +3,232 @@
   <title>Know Your Error Messages</title>
   <introduction xml:id="debugging_know-your-error-messages-introduction">
 	  <p>Many problems in your program will lead to an error message.  For example as I was writing and testing this chapter of the book I wrote the following version of the example program in the previous section.</p>
-	  <program language="python">
-		<input>
-	current_time_str = input("What is the current time (in hours 0-23)?")
-	wait_time_str = input("How many hours do you want to wait")
-
-	current_time_int = int(current_time_str)
-	wait_time_int = int(wait_time_int)
-
-	final_time_int = current_time_int + wait_time_int
-	print(final_time_int)
-	</input>
-	  </program>
-	  <p>Can you see what is wrong, just by looking at the code?  Maybe, maybe not.  Our brain tends to see what we think is there, so sometimes it is very hard to find the problem just by looking at the code.  Especially when it is our own code and we are sure that we have done everything right!</p>
-	  <p>Let's try the program again, but this time in an activecode:</p>
-	  <program xml:id="ch6_sec4_p1" interactive="activecode" language="python">
-		<input>
-	current_time_str = input("What is the current time (in hours 0-23)?")
-	wait_time_str = input("How many hours do you want to wait")
-
-	current_time_int = int(current_time_str)
-	wait_time_int = int(wait_time_int)
-
-	final_time_int = current_time_int + wait_time_int
-	print(final_time_int)
-			</input>
-	  </program>
-	  <p>Aha!  Now we have an error message that might be useful.  The name error tells us that  <c>wait_time_int</c> is not defined.  It also tells us that the error is on line 5.  That's <term>really</term> useful information.  Now look at line five and you will see that <c>wait_time_int</c> is used on both the left and the right hand side of the assignment statement.</p>
-	  <note>
-		<p>The error descriptions you see in activecode may be different (and more understandable!) than in a regular
-					Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners,
-					including the wording chosen to describe errors.</p>
-	  </note>
-	  <exercise label="ch6_sec4_q1">
-		<statement>
-		  <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
-		</statement>
-		<choices>
-		  <choice>
-			<statement>
-			  <p>You cannot use a variable on both the left and right hand sides of an assignment statement.</p>
-			</statement>
-			<feedback>
-						No, You can, as long as all the variables on the right hand side already have values.
-					</feedback>
-		  </choice>
-		  <choice correct="yes">
-			<statement>
-			  <p>wait_time_int does not have a value so it cannot be used on the right hand side.</p>
-			</statement>
-			<feedback>
-						Yes.  Variables must already have values in order to be used on the right hand side.
-					</feedback>
-		  </choice>
-		  <choice>
-			<statement>
-			  <p>This is not really an error, Python is broken.</p>
-			</statement>
-			<feedback>
-						No, No, No!
-					</feedback>
-		  </choice>
-		</choices>
-	  </exercise>
-	  <p>In writing and using this book over the last few years we have collected a lot of statistics about the programs in this book.  Here are some statistics about error messages for the exercise we have been looking at.</p>
-	  <table>
-		<tabular>
-		  <row header="yes">
-			<cell>
-								Message
-							</cell>
-			<cell>
-								Number
-							</cell>
-			<cell>
-								Percent
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								ParseError:
-							</cell>
-			<cell>
-								4999
-							</cell>
-			<cell>
-								54.74%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								TypeError:
-							</cell>
-			<cell>
-								1305
-							</cell>
-			<cell>
-								14.29%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								NameError:
-							</cell>
-			<cell>
-								1009
-							</cell>
-			<cell>
-								11.05%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								ValueError:
-							</cell>
-			<cell>
-								893
-							</cell>
-			<cell>
-								9.78%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								URIError:
-							</cell>
-			<cell>
-								334
-							</cell>
-			<cell>
-								3.66%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								TokenError:
-							</cell>
-			<cell>
-								244
-							</cell>
-			<cell>
-								2.67%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								SyntaxError:
-							</cell>
-			<cell>
-								227
-							</cell>
-			<cell>
-								2.49%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								TimeLimitError:
-							</cell>
-			<cell>
-								44
-							</cell>
-			<cell>
-								0.48%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								IndentationError:
-							</cell>
-			<cell>
-								28
-							</cell>
-			<cell>
-								0.31%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								AttributeError:
-							</cell>
-			<cell>
-								27
-							</cell>
-			<cell>
-								0.30%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								ImportError:
-							</cell>
-			<cell>
-								16
-							</cell>
-			<cell>
-								0.18%
-							</cell>
-		  </row>
-		  <row>
-			<cell>
-								IndexError:
-							</cell>
-			<cell>
-								6
-							</cell>
-			<cell>
-								0.07%
-							</cell>
-		  </row>
-		</tabular>
-	  </table>
-	  <p>Nearly 90% of the error messages encountered for this  problem are ParseError, TypeError, NameError, or ValueError.  We will look at these errors in three stages:</p>
-	  <p>
-		<ul>
-		  <li>
-			<p>First we will define what these four error messages mean.</p>
-		  </li>
-		  <li>
-			<p>Then, we will look at some examples that cause these errors to occur.</p>
-		  </li>
-		  <li>
-			<p>Finally we will look at ways to help uncover the root cause of these messages.</p>
-		  </li>
-		</ul>
-	  </p>
   </introduction>
+  <program language="python">
+	<input>
+current_time_str = input("What is the current time (in hours 0-23)?")
+wait_time_str = input("How many hours do you want to wait")
+
+current_time_int = int(current_time_str)
+wait_time_int = int(wait_time_int)
+
+final_time_int = current_time_int + wait_time_int
+print(final_time_int)
+</input>
+  </program>
+  <p>Can you see what is wrong, just by looking at the code?  Maybe, maybe not.  Our brain tends to see what we think is there, so sometimes it is very hard to find the problem just by looking at the code.  Especially when it is our own code and we are sure that we have done everything right!</p>
+  <p>Let's try the program again, but this time in an activecode:</p>
+  <program xml:id="ch6_sec4_p1" interactive="activecode" language="python">
+	<input>
+current_time_str = input("What is the current time (in hours 0-23)?")
+wait_time_str = input("How many hours do you want to wait")
+
+current_time_int = int(current_time_str)
+wait_time_int = int(wait_time_int)
+
+final_time_int = current_time_int + wait_time_int
+print(final_time_int)
+		</input>
+  </program>
+  <p>Aha!  Now we have an error message that might be useful.  The name error tells us that  <c>wait_time_int</c> is not defined.  It also tells us that the error is on line 5.  That's <term>really</term> useful information.  Now look at line five and you will see that <c>wait_time_int</c> is used on both the left and the right hand side of the assignment statement.</p>
+  <note>
+	<p>The error descriptions you see in activecode may be different (and more understandable!) than in a regular
+				Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners,
+				including the wording chosen to describe errors.</p>
+  </note>
+  <exercise label="ch6_sec4_q1">
+	<statement>
+	  <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
+	</statement>
+	<choices>
+	  <choice>
+		<statement>
+		  <p>You cannot use a variable on both the left and right hand sides of an assignment statement.</p>
+		</statement>
+		<feedback>
+					No, You can, as long as all the variables on the right hand side already have values.
+				</feedback>
+	  </choice>
+	  <choice correct="yes">
+		<statement>
+		  <p>wait_time_int does not have a value so it cannot be used on the right hand side.</p>
+		</statement>
+		<feedback>
+					Yes.  Variables must already have values in order to be used on the right hand side.
+				</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>This is not really an error, Python is broken.</p>
+		</statement>
+		<feedback>
+					No, No, No!
+				</feedback>
+	  </choice>
+	</choices>
+  </exercise>
+  <p>In writing and using this book over the last few years we have collected a lot of statistics about the programs in this book.  Here are some statistics about error messages for the exercise we have been looking at.</p>
+  <table>
+	<tabular>
+	  <row header="yes">
+		<cell>
+							Message
+						</cell>
+		<cell>
+							Number
+						</cell>
+		<cell>
+							Percent
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							ParseError:
+						</cell>
+		<cell>
+							4999
+						</cell>
+		<cell>
+							54.74%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							TypeError:
+						</cell>
+		<cell>
+							1305
+						</cell>
+		<cell>
+							14.29%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							NameError:
+						</cell>
+		<cell>
+							1009
+						</cell>
+		<cell>
+							11.05%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							ValueError:
+						</cell>
+		<cell>
+							893
+						</cell>
+		<cell>
+							9.78%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							URIError:
+						</cell>
+		<cell>
+							334
+						</cell>
+		<cell>
+							3.66%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							TokenError:
+						</cell>
+		<cell>
+							244
+						</cell>
+		<cell>
+							2.67%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							SyntaxError:
+						</cell>
+		<cell>
+							227
+						</cell>
+		<cell>
+							2.49%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							TimeLimitError:
+						</cell>
+		<cell>
+							44
+						</cell>
+		<cell>
+							0.48%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							IndentationError:
+						</cell>
+		<cell>
+							28
+						</cell>
+		<cell>
+							0.31%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							AttributeError:
+						</cell>
+		<cell>
+							27
+						</cell>
+		<cell>
+							0.30%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							ImportError:
+						</cell>
+		<cell>
+							16
+						</cell>
+		<cell>
+							0.18%
+						</cell>
+	  </row>
+	  <row>
+		<cell>
+							IndexError:
+						</cell>
+		<cell>
+							6
+						</cell>
+		<cell>
+							0.07%
+						</cell>
+	  </row>
+	</tabular>
+  </table>
+  <p>Nearly 90% of the error messages encountered for this  problem are ParseError, TypeError, NameError, or ValueError.  We will look at these errors in three stages:</p>
+  <p>
+	<ul>
+	  <li>
+		<p>First we will define what these four error messages mean.</p>
+	  </li>
+	  <li>
+		<p>Then, we will look at some examples that cause these errors to occur.</p>
+	  </li>
+	  <li>
+		<p>Finally we will look at ways to help uncover the root cause of these messages.</p>
+	  </li>
+	</ul>
+  </p>
   <subsection xml:id="debugging_parseerror">
     <title>ParseError</title>
     <p>Parse errors happen when you make an error in the syntax of your program.  Syntax errors are like making grammatical errors in writing.  If you don't use periods and commas in your writing then you are making it hard for other readers to figure out what you are trying to say.  Similarly Python has certain grammatical rules that must be followed or else Python can't figure out what you are trying to say.</p>
