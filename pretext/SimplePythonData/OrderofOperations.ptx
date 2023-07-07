@@ -65,7 +65,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
       <program language="python">
         <input>
 16 - 2 * 5 // 3 + 1
-</input>
+		</input>
       </program>
     </statement>
     <choices>

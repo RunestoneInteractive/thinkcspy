@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
-  <introduction>
   <p>We previously used a few functions like <c>print()</c> and <c>input()</c>.  A <b>method</b> is a function that is attached to a specific Python object. 
     To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
     it can perform. For example, we can write <c>ss.upper()</c> when we wanted the string <c>ss</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
@@ -323,5 +322,4 @@ print(s[1] * s.index("n"))
       </choice>
     </choices>
   </exercise>
-</introduction>
 </section>

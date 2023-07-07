@@ -1,139 +1,139 @@
 <?xml version="1.0"?>
 <section xml:id="functions_boolean-functions">
   <title>Boolean Functions</title>
-  <introduction>
-  <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
-            expression evaluation can be returned by a function (using the <c>return</c> statement),
-            functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
-  <program xml:id="ch8_sec10_p1" interactive="activecode" language="python">
-    <input>
-def isDivisible(x, y):
-    if x % y == 0:
-        result = True
-    else:
-        result = False
+  <introduction xml:id="functions_boolean-functions-introduction">
+	  <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
+				expression evaluation can be returned by a function (using the <c>return</c> statement),
+				functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
+	  <program xml:id="ch8_sec10_p1" interactive="activecode" language="python">
+		<input>
+	def isDivisible(x, y):
+		if x % y == 0:
+			result = True
+		else:
+			result = False
 
-    return result
+		return result
 
-print(isDivisible(10, 5))
-    </input>
-  </program>
-  <p>The name of this function is <c>isDivisible</c>. It is common to give <term>boolean
-                functions</term> names that sound like yes/no questions.  <c>isDivisible</c> returns
-            either <c>True</c> or <c>False</c> to indicate whether the <c>x</c> is or is not
-            divisible by <c>y</c>.
-  </p>
-  <p>We can make the function more concise by taking advantage of the fact that the
-            condition of the <c>if</c> statement is itself a boolean expression. We can return
-            it directly, avoiding the <c>if</c> statement altogether:</p>
-  <program language="python">
-    <input>
-def isDivisible(x, y):
-    return x % y == 0
-    </input>
-  </program>
-  <p>Boolean functions are often used in conditional statements:</p>
-  <program language="python">
-    <input>
-if isDivisible(x, y):
-    ... # do something ...
-else:
-    ... # do something else ...
-    </input>
-  </program>
-  <p>It might be tempting to write something like
-    <c>if isDivisible(x, y) == True:</c>
-            but the extra comparison is redundant.  You only need an <c>==</c> expression if you are comparing some other type than boolean. (<c>isDivisible(x, y) == False</c> can also be made more concise as
-    <c>not isDivisible(x, y)</c>). The following example shows the <c>isDivisible</c> function at work.  Notice how
-            descriptive the code is when we move the testing details into a boolean function.  Try it
-            with a few other actual parameters to see what is printed.</p>
-  <program xml:id="ch8_sec10_p2" interactive="activecode" language="python">
-    <input>
-def isDivisible(x, y):
-    return x % y == 0
+	print(isDivisible(10, 5))
+		</input>
+	  </program>
+	  <p>The name of this function is <c>isDivisible</c>. It is common to give <term>boolean
+					functions</term> names that sound like yes/no questions.  <c>isDivisible</c> returns
+				either <c>True</c> or <c>False</c> to indicate whether the <c>x</c> is or is not
+				divisible by <c>y</c>.
+	  </p>
+	  <p>We can make the function more concise by taking advantage of the fact that the
+				condition of the <c>if</c> statement is itself a boolean expression. We can return
+				it directly, avoiding the <c>if</c> statement altogether:</p>
+	  <program language="python">
+		<input>
+	def isDivisible(x, y):
+		return x % y == 0
+		</input>
+	  </program>
+	  <p>Boolean functions are often used in conditional statements:</p>
+	  <program language="python">
+		<input>
+	if isDivisible(x, y):
+		... # do something ...
+	else:
+		... # do something else ...
+		</input>
+	  </program>
+	  <p>It might be tempting to write something like
+		<c>if isDivisible(x, y) == True:</c>
+				but the extra comparison is redundant.  You only need an <c>==</c> expression if you are comparing some other type than boolean. (<c>isDivisible(x, y) == False</c> can also be made more concise as
+		<c>not isDivisible(x, y)</c>). The following example shows the <c>isDivisible</c> function at work.  Notice how
+				descriptive the code is when we move the testing details into a boolean function.  Try it
+				with a few other actual parameters to see what is printed.</p>
+	  <program xml:id="ch8_sec10_p2" interactive="activecode" language="python">
+		<input>
+	def isDivisible(x, y):
+		return x % y == 0
 
-if isDivisible(10, 5):
-    print("That works")
-else:
-    print("Those values are no good")
-    </input>
-  </program>
-  <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
-            the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
-  <program xml:id="ch8_sec10_c1" interactive="codelens" language="python">
-    <input>
-          def isDivisible(x, y):
-              return x % y == 0
-          
-          if isDivisible(10, 5):
-              print("That works")
-          else:
-              print("Those values are no good")
-    </input>
-  </program>
-  <p>
-    <term>Check your understanding</term>
-  </p>
-  <exercise label="ch8_sec10_q1">
-    <statement>
-      <p>What is a Boolean function?</p>
-    </statement>
-    <choices>
-      <choice correct="yes">
-        <statement>
-          <p>A function that returns True or False</p>
-        </statement>
-        <feedback>
-                    A Boolean function is just like any other function, but it always returns True or False.
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>A function that takes True or False as an argument</p>
-        </statement>
-        <feedback>
-                    A Boolean function may take any number of arguments (including 0, though that is rare), of any type.
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>The same as a Boolean expression</p>
-        </statement>
-        <feedback>
-                    A Boolean expression is a statement that evaluates to True or False, e.g. 5+3==8.  A function is a series of expressions grouped together with a name that are only executed when you call the function.
-        </feedback>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="ch8_sec10_q2">
-    <statement>
-      <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
-      <program language="python">
-        <input>
-return x + y &lt; z
-        </input>
-      </program>
-    </statement>
-    <choices>
-      <choice correct="yes">
-        <statement>
-          <p>Yes</p>
-        </statement>
-        <feedback>
-                    It is perfectly valid to return the result of evaluating a Boolean expression.
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>No</p>
-        </statement>
-        <feedback>
-                    x +y &lt; z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
-        </feedback>
-      </choice>
-    </choices>
-  </exercise>
-</introduction>
+	if isDivisible(10, 5):
+		print("That works")
+	else:
+		print("Those values are no good")
+		</input>
+	  </program>
+	  <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
+				the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
+	  <program xml:id="ch8_sec10_c1" interactive="codelens" language="python">
+		<input>
+			  def isDivisible(x, y):
+				  return x % y == 0
+			  
+			  if isDivisible(10, 5):
+				  print("That works")
+			  else:
+				  print("Those values are no good")
+		</input>
+	  </program>
+	  <p>
+		<term>Check your understanding</term>
+	  </p>
+	  <exercise label="ch8_sec10_q1">
+		<statement>
+		  <p>What is a Boolean function?</p>
+		</statement>
+		<choices>
+		  <choice correct="yes">
+			<statement>
+			  <p>A function that returns True or False</p>
+			</statement>
+			<feedback>
+						A Boolean function is just like any other function, but it always returns True or False.
+			</feedback>
+		  </choice>
+		  <choice>
+			<statement>
+			  <p>A function that takes True or False as an argument</p>
+			</statement>
+			<feedback>
+						A Boolean function may take any number of arguments (including 0, though that is rare), of any type.
+			</feedback>
+		  </choice>
+		  <choice>
+			<statement>
+			  <p>The same as a Boolean expression</p>
+			</statement>
+			<feedback>
+						A Boolean expression is a statement that evaluates to True or False, e.g. 5+3==8.  A function is a series of expressions grouped together with a name that are only executed when you call the function.
+			</feedback>
+		  </choice>
+		</choices>
+	  </exercise>
+	  <exercise label="ch8_sec10_q2">
+		<statement>
+		  <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
+		  <program language="python">
+			<input>
+	return x + y &lt; z
+			</input>
+		  </program>
+		</statement>
+		<choices>
+		  <choice correct="yes">
+			<statement>
+			  <p>Yes</p>
+			</statement>
+			<feedback>
+						It is perfectly valid to return the result of evaluating a Boolean expression.
+			</feedback>
+		  </choice>
+		  <choice>
+			<statement>
+			  <p>No</p>
+			</statement>
+			<feedback>
+						x +y &lt; z is a valid Boolean expression, which will evaluate to True or False.  It is perfectly legal to return True or False from a function, and to have the statement to be evaluated in the same line as the return keyword.
+			</feedback>
+		  </choice>
+		</choices>
+	  </exercise>
+  </introduction>
   <subsection xml:id="functions_more-unit-testing">
     <title>More Unit Testing</title>
     <p>When we write unit tests, we should also consider <term>output equivalence classes</term> that result in significantly different results.</p>
@@ -153,14 +153,12 @@ if __name__ == "__main__":
       <title>Extend the program &#x2026;</title>
       <p>Starting on line 7, write two unit tests (that should pass), one for each output equivalence class.</p>
     </note>
-    <note>
-      <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-      <program xml:id="scratch_13" interactive="activecode" language="python">
-        <input>
+	<p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+	<program xml:id="scratch_13" interactive="activecode" language="python">
+	<input>
 
 
-        </input>
-      </program>
-    </note>
+	</input>
+	</program>
   </subsection>
 </section>

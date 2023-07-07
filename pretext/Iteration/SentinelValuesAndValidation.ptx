@@ -88,35 +88,35 @@
         <li>
           <p>This program doesn't display the amounts to two decimal places. Thankfully, you already know how to fix this issue.
 			Recall how you learned to format floats to a specific number of decimal points in <xref ref="strings_f-strings"/>.</p>
-          <p>
-            <term>Check your understanding</term>
-          </p>
-          <exercise label="ch7_sec6_q1">
-            <statement>
-              <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
-            </statement>
-            <choices>
-              <choice correct="yes">
-                <statement>
-                  <p>True</p>
-                </statement>
-                <feedback>
-                    Keep in mind there are multiple ways to stop a while loop, such as a sentinal value.
-                </feedback>
-              </choice>
-              <choice>
-                <statement>
-                  <p>False</p>
-                </statement>
-                <feedback>
-                    While loops do not have a set number of times they will iterate, so they will continue until something breaks the loop. Keep this in mind while coding with while loops.
-                </feedback>
-              </choice>
-            </choices>
-          </exercise>
         </li>
       </ul>
     </p>
+	<p>
+		<term>Check your understanding</term>
+	</p>
+	<exercise label="ch7_sec6_q1">
+		<statement>
+		  <p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p>
+		</statement>
+		<choices>
+		  <choice correct="yes">
+			<statement>
+			  <p>True</p>
+			</statement>
+			<feedback>
+				Keep in mind there are multiple ways to stop a while loop, such as a sentinal value.
+			</feedback>
+		  </choice>
+		  <choice>
+			<statement>
+			  <p>False</p>
+			</statement>
+			<feedback>
+				While loops do not have a set number of times they will iterate, so they will continue until something breaks the loop. Keep this in mind while coding with while loops.
+			</feedback>
+		  </choice>
+		</choices>
+	</exercise>
   </subsection>
   <subsection xml:id="iteration_validating-input">
     <title>Validating Input</title>
