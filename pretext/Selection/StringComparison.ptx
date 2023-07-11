@@ -40,7 +40,7 @@ print("apple" &lt; "Apple")
         </input>
   </program>
   <p>It turns out, as you recall from our discussion of variable names, that uppercase and lowercase letters are considered to be different from one another.  The way the computer knows they are different is that
-            each character is assigned a unique integer value.  <q>A</q> is 65, <q>B</q> is 66, and <q>5</q> is 53.  The way you can
+            each character is assigned a unique integer value which is called character encoding, as you may recall from Character Classification section. For instance,  <q>A</q> is 65, <q>B</q> is 66, <q>a</q> is 97, <q>b</q> is 98 and <q>5</q> is 53.  The way you can
             find out the so-called <term>ordinal value</term> for a given character is to use a character function called <c>ord</c>.</p>
   <program xml:id="ch5_sec8_p4" interactive="activecode" language="python">
     <input>
