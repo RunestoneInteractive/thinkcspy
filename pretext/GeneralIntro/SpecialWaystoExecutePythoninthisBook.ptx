@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_executing-python-in-this-book">
   <title>Executing Python in this Book</title>
-  <video xml:id="codelensvid" youtube="LZ7H1X8ar9E" width="auto"/>
+
   <p>This book provides two special ways to execute Python programs.  Both techniques are designed to assist you as you
             learn the Python programming language.  They will help you increase your understanding of how Python programs work.</p>
   <p>First, you can write, modify, and execute programs using a unique <term>activecode</term> interpreter that allows you to execute Python code right
