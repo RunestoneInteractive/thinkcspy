@@ -11,6 +11,5 @@
 4<xi:include href="./fStrings.ptx"/>
 4<xi:include href="./StringsareImmutable.ptx"/>
 4<xi:include href="./Characterclassification.ptx"/>
-4<xi:include href="./Summary.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 </chapter>
