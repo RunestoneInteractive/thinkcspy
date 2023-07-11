@@ -22,7 +22,17 @@ print(string.punctuation)
     </program>
   </blockquote>
   <p>For more information consult the <c>string</c> module documentation (see <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).</p>
-  <note>
+<note>
+<term>More About ASCII</term>
+<p>ASCII is abbreviated from American Standard Code for Information Interchange. As computers store data in numeric values, for each character (words, punctuations, etc) a specific number is assigned to represent it. This process is called character encoding. In order to exchange informations between different computers, a set of standards were needed, from which ASCII was born. </p>
+<p>ASCII contains 128 characters, where each character is assigned with a specific number. For instance uppercase alphabet starts from A = 65, while lowercase alphabet starts from a = 97 and continues as b=98, c=99, so on. Due to its limited size, this standard is replaced by Unicode which contains thousands of characters, however still useful to understand and work on encoding. </p>
+
+</note>
+
+
+
+
+<note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_04" interactive="activecode" language="python">
       <input>
