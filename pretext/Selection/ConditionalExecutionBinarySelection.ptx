@@ -35,7 +35,7 @@ else:
   <p>The <c>if</c> statement consists of a header line and a body. The header
             line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
             a colon (:).</p>
-  <p>The more indented statements that follow are called a <term>block</term>. We will see this construction repeated several times in the future.</p>
+  <p>The more indented statements that follow are called a <term>block</term>. We will see this construction repeated several times in the future. Indent is <term>4 spaces</term> in Python and must be same for each line. In your Python interpreter, you can easily indent lines using the tab key on your keyboard.</p>
 
   <p>As a program executes, the interpreter always keeps track of which statement is
     about to be executed.  We call this the <b>control flow</b>, or the <b>flow of
