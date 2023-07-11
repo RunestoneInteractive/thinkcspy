@@ -63,7 +63,7 @@
     </gi>
     <gi>
       <title>nested loop</title>
-      <p>A loop inside the body of another loop.</p>
+      <p>A loop inside the body of another loop. We will work more on nested loops in Chapter 10. </p>
     </gi>
     <gi>
       <title>newline</title>
