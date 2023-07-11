@@ -25,10 +25,7 @@ n = n + 1
       <p><c>=</c> is Python's assignment token, which should not be confused
                             with the mathematical comparison operator using the same symbol.</p>
     </gi>
-    <gi>
-      <title>class</title>
-      <p>see <term>data type</term> below</p>
-    </gi>
+
     <gi>
       <title>comment</title>
       <p>Information in a program that is meant for other programmers (or anyone
