@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Debugging Interlude</title>
-4<xi:include href="./intro-HowtobeaSuccessfulProgrammer.ptx"/>
-4<xi:include href="./HowtoAvoidDebugging.ptx"/>
-4<xi:include href="./BeginningtipsforDebugging.ptx"/>
-4<xi:include href="./KnowyourerrorMessages.ptx"/>
-4<xi:include href="./Summary.ptx"/>
+4<title>Strings</title>
+4<xi:include href="./StringsRevisited.ptx"/>
+4<xi:include href="./ACollectionDataType.ptx"/>
+4<xi:include href="./OperationsonStrings.ptx"/>
+4<xi:include href="./IndexOperatorWorkingwiththeCharactersofaString.ptx"/>
+4<xi:include href="./StringMethods.ptx"/>
+4<xi:include href="./Length.ptx"/>
+4<xi:include href="./TheSliceOperator.ptx"/>
+4<xi:include href="./fStrings.ptx"/>
+4<xi:include href="./StringsareImmutable.ptx"/>
+4<xi:include href="./Characterclassification.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
 </chapter>
