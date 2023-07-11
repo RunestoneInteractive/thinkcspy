@@ -28,6 +28,16 @@
                             a character from a string, or an element from a list.</p>
     </gi>
     <gi>
+      <title>indexing (<c>[]</c>)</title>
+      <p>Access a single character in a string using its position (starting from
+                            0).  Example: <c>'This'[2]</c> evaluates to <c>'i'</c>.</p>
+    </gi>
+    <gi>
+      <title>length</title>
+      <p>Number of characters in a string. It can be found by  (<c>len</c>) function Example:
+                            <c>len('happy')</c> evaluates to <c>5</c>.</p>
+    </gi>
+    <gi>
       <title>optional parameter</title>
       <p>A parameter written in a function header with an assignment to a
                             default value which it will receive if no corresponding argument is
@@ -37,8 +47,11 @@
       <title>slice</title>
       <p>A part of a string (substring) specified by a range of indices. More
                             generally, a subsequence of any sequence type in Python can be created
-                            using the slice operator (<c>sequence[start:stop]</c>).</p>
+                            using the slice operator (<c>sequence[start:stop]</c>). Example: <c>'bananas and
+cream'[3:6]</c> evaluates to <c>ana</c> (so does <c>'bananas and cream'[1:4]</c>).</p>
+
     </gi>
+
     <gi>
       <title>whitespace</title>
       <p>Any of the characters that move the cursor without printing visible
