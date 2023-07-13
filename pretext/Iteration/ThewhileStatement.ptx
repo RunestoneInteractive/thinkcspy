@@ -88,7 +88,7 @@
             while <c>aNumber</c> is less than or equal to <c>aBound</c>, continue executing the body of the loop. Within
             the body, each time, update <c>theSum</c> using the accumulator pattern and increment <c>aNumber</c>. After the body of the loop, we go back up to the condition of the <c>while</c> and reevaluate it.  When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow of control continues to the <c>return</c> statement.</p>
   
-  <p>The same program in codelens will allow you to observe the flow of execution.</p>
+  <!--<p>The same program in codelens will allow you to observe the flow of execution.</p>
   
   <program xml:id="ch7_sec2_p3" interactive="codelens" language="python">
     <input>
@@ -101,7 +101,7 @@
           aNumber = aNumber + 1
       print(theSum)
     </input>
-  </program>
+  </program>-->
 
   <p>In the case shown above, we can prove that the loop terminates because we
             know that the value of <c>aBound</c> is finite, and we can see that the value of <c>aNumber</c>
