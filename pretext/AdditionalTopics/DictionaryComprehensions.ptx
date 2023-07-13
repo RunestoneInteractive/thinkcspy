@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<section xml:id="additional_dict-comprehensions">
+  <title>Dictionary Comprehensions</title>
+  <p>Like lists, dictionaries also support comprehensions as an alternative to dictionary generation with lengthier loops. The format for a dictionary comprehension is as follows</p>
+  <pre>{&lt;key-expression&gt;:&lt;value-expression&gt; for &lt;item&gt; in &lt;sequence&gt; if &lt;condition&gt;}</pre>
+  <p>Make careful note of the use of curly brackets instead of square brackets. These brackets are primarily how Python determines what kind of comprehension
+  you are making. Like list comprehensions, the if clause is optional.</p> 
+  <p>Let's view an example,</p>
+  <program xml:id="ch15_sec6_p1" interactive="activecode" language="python">
+    <input>
+first_names = ["Radia", "Grace", "Katherine", "Jeannette"]
+last_names = ["Perlman", "Hopper", "Johnson", "Wing"]
+
+first_to_last = {first_names[i]:last_names[i] for i in range(len(first_names))}
+
+print(first_to_last)
+        </input>
+  </program>
+  <p>This code takes two separate lists and associates their values in a new dictionary. More specifically, first names are mapped to last names.</p>
+  <p>Another more complicated example:</p>
+  <program xml:id="ch15_sec6_p2" interactive="activecode" language="python">
+    <input>
+def percentage(n):
+    """ Return a percentage value from a provided raw score, rounded to two decimal places. """
+
+    return round((n / 1000) * 100, 2)
+
+names = ["Sansa", "Jamie", "Cersei", "Jon", "Arya"]
+percentage_scores = {name:percentage(int(input(f"Please enter a score for {name}"))) for name in names}
+print(percentage_scores)
+</input>
+  </program>
+  <note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="ch15_sec6_scratch" interactive="activecode" language="python">
+      <input>
+
+
+        </input>
+    </program>
+  </note>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="ch15_sec6_q1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+alist = [4,2,8,6,5]
+dic = {num:num**2 for num in alist if num &lt; 6}
+print(dic)
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>[4,2,5]</p>
+        </statement>
+        <feedback>
+                    This is the list of keys that will be generated, but it is missing the associated values.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>{4:16,2:4,8:64,6:36,5:25}</p>
+        </statement>
+        <feedback>
+                    This is nearly correct, but has too many values. Look at the if clause.
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>{4:16,2:4,5:25}</p>
+        </statement>
+        <feedback>
+                    Yes, this is correct.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>{4:8,2:4,5:10}</p>
+        </statement>
+        <feedback>
+                    These are the correct keys, but pay close attention to the value expression in the code.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<exercises xml:id="dictionaries_exercises">
+  <title>Exercises</title>
+  <exercise label="ex_11_01">
+    <statement>
+      <p>Write a program that allows the user to enter a string.  It then prints a
+                        table of the letters of the alphabet in alphabetical order which occur in
+                        the string together with the number of times each letter occurs. Case should
+                        be ignored. A sample run of the program might look this this:</p>
+      <pre>Please enter a sentence: ThiS is String with Upper and lower case Letters.
+a  2
+c  1
+d  1
+e  5
+g  1
+h  2
+i  4
+l  2
+n  2
+o  1
+p  2
+r  4
+s  5
+t  5
+u  1
+w  2
+$</pre>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_01_editor">
+      <input>
+
+        </input>
+    </program>
+    <solution>
+      <program xml:id="de_q1_answer" language="python">
+        <input>
+x = input("Enter a sentence")
+
+x = x.lower()   # convert to all lowercase
+
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+letter_count = {} # empty dictionary
+for char in x:
+    if char in alphabet: # ignore any punctuation, numbers, etc
+        if char in letter_count:
+            letter_count[char] = letter_count[char] + 1
+        else:
+            letter_count[char] = 1
+
+keys = letter_count.keys()
+for char in sorted(keys):
+    print(char, letter_count[char])
+        </input>
+      </program>
+    </solution>
+  </exercise>
+  <blockquote>
+    <p>Give the Python interpreter's response to each of the following from a
+                    continuous interpreter session:</p>
+    <p>
+      <ol marker="a">
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; d = {'apples': 15, 'bananas': 35, 'grapes': 12}
+&gt;&gt;&gt; d['banana']
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; d['oranges'] = 20
+&gt;&gt;&gt; len(d)
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; 'grapes' in d
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; d['pears']
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; d.get('pears', 0)
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; fruits = d.keys()
+&gt;&gt;&gt; fruits.sort()
+&gt;&gt;&gt; print(fruits)
+</input>
+          </program>
+        </li>
+        <li>
+          <program language="python">
+            <input>
+&gt;&gt;&gt; del d['apples']
+&gt;&gt;&gt; 'apples' in d
+</input>
+          </program>
+        </li>
+      </ol>
+    </p>
+  </blockquote>
+  <p>Be sure you understand why you get each result. Then apply what you
+                have learned to fill in the body of the function below, and add code for
+                the tests indicated:</p>
+  <program xml:id="q2_dict_answer" interactive="activecode" language="python">
+    <input>
+def add_fruit(inventory, fruit, quantity=0):
+     pass
+
+# make these tests work...
+new_inventory = {}
+add_fruit(new_inventory, 'strawberries', 10)
+#  test that 'strawberries' in new_inventory
+#  test that new_inventory['strawberries'] is 10
+add_fruit(new_inventory, 'strawberries', 25)
+#  test that new_inventory['strawberries'] is now 35)
+        </input>
+  </program>
+  <exercise label="ex_11_02">
+    <statement>
+      <p>Write a program called <c>alice_words.py</c> that creates a text file named
+                        <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
+                        number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>.
+                        (You can obtain a free plain text version of the book, along with many others, from
+                        <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look
+                        something like this</p>
+      <blockquote>
+        <table>
+          <tabular>
+            <row header="yes">
+              <cell>
+                                            Word
+                                        </cell>
+              <cell>
+                                            Count
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            a
+                                        </cell>
+              <cell>
+                                            631
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            a-piece
+                                        </cell>
+              <cell>
+                                            1
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            abide
+                                        </cell>
+              <cell>
+                                            1
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            able
+                                        </cell>
+              <cell>
+                                            1
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            about
+                                        </cell>
+              <cell>
+                                            94
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            above
+                                        </cell>
+              <cell>
+                                            3
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            absence
+                                        </cell>
+              <cell>
+                                            1
+                                        </cell>
+            </row>
+            <row>
+              <cell>
+                                            absurd
+                                        </cell>
+              <cell>
+                                            2
+                                        </cell>
+            </row>
+          </tabular>
+        </table>
+      </blockquote>
+      <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
+                        in the activecode window simply print out the results rather than write them to a file.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_02_editor">
+      <input>
+
+        </input>
+    </program>
+    <solution>
+                    f = open('alice.txt', 'r')
+
+count = {}
+
+for line in f:
+    for word in line.split():
+
+        # remove punctuation
+        word = word.replace('_', '').replace('"', '').replace(',', '').replace('.', '')
+        word = word.replace('-', '').replace('?', '').replace('!', '').replace("'", "")
+        word = word.replace('(', '').replace(')', '').replace(':', '').replace('[', '')
+        word = word.replace(']', '').replace(';', '')
+
+        # ignore case
+        word = word.lower()
+
+        # ignore numbers
+        if word.isalpha():
+            if word in count:
+                count[word] = count[word] + 1
+            else:
+                count[word] = 1
+
+keys = count.keys()
+keys.sort()
+
+# save the word count analysis to a file
+out = open('alice_words.txt', 'w')
+
+for word in keys:
+    out.write(word + " " + str(count[word]))
+    out.write('\n')
+
+print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
+                
+                    <program language="python"><input>
+f = open('alice.txt', 'r')
+
+count = {}
+
+for line in f:
+    for word in line.split():
+
+        # remove punctuation
+        word = word.replace('_', '').replace('"', '').replace(',', '').replace('.', '')
+        word = word.replace('-', '').replace('?', '').replace('!', '').replace("'", "")
+        word = word.replace('(', '').replace(')', '').replace(':', '').replace('[', '')
+        word = word.replace(']', '').replace(';', '')
+
+        # ignore case
+        word = word.lower()
+
+        # ignore numbers
+        if word.isalpha():
+            if word in count:
+                count[word] = count[word] + 1
+            else:
+                count[word] = 1
+
+keys = count.keys()
+keys.sort()
+
+# save the word count analysis to a file
+out = open('alice_words.txt', 'w')
+
+for word in keys:
+    out.write(word + " " + str(count[word]))
+    out.write('\n')
+
+print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
+</input></program>
+                </solution>
+  </exercise>
+  <exercise label="ex_11_03">
+    <statement>
+      <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
+    </statement>
+    <program xml:id="ex_11_03_editor" interactive="activecode" language="python">
+      <input>
+
+        </input>
+    </program>
+  </exercise>
+  <exercise label="ex_11_04">
+    <statement>
+      <p>Here's a table of English to Pirate translations</p>
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell>
+                                        English
+                                    </cell>
+            <cell>
+                                        Pirate
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        sir
+                                    </cell>
+            <cell>
+                                        matey
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        hotel
+                                    </cell>
+            <cell>
+                                        fleabag inn
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        student
+                                    </cell>
+            <cell>
+                                        swabbie
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        boy
+                                    </cell>
+            <cell>
+                                        matey
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        madam
+                                    </cell>
+            <cell>
+                                        proud beauty
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        professor
+                                    </cell>
+            <cell>
+                                        foul blaggart
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        restaurant
+                                    </cell>
+            <cell>
+                                        galley
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        your
+                                    </cell>
+            <cell>
+                                        yer
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        excuse
+                                    </cell>
+            <cell>
+                                        arr
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        students
+                                    </cell>
+            <cell>
+                                        swabbies
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        are
+                                    </cell>
+            <cell>
+                                        be
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        lawyer
+                                    </cell>
+            <cell>
+                                        foul blaggart
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        the
+                                    </cell>
+            <cell>
+                                        th'
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        restroom
+                                    </cell>
+            <cell>
+                                        head
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        my
+                                    </cell>
+            <cell>
+                                        me
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        hello
+                                    </cell>
+            <cell>
+                                        avast
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        is
+                                    </cell>
+            <cell>
+                                        be
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        man
+                                    </cell>
+            <cell>
+                                        matey
+                                    </cell>
+          </row>
+        </tabular>
+      </table>
+      <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
+                        (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.</p>
+      <p>For example, the sentence <q>hello there students</q> should be translated to <q>avast there swabbies</q>.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="ex_11_04_editor">
+      <input>
+def translator(english):
+
+  pirate = {}
+  pirate['sir'] = 'matey'
+  pirate['hotel'] = 'fleabag inn'
+  pirate['student'] = 'swabbie'
+  pirate['boy'] = 'matey'
+  pirate['restaurant'] = 'galley'
+  pirate['hello'] = 'avast'
+  pirate['students'] = 'swabbies'
+
+  # Complete the function
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(translator("hello there students"),'avast there swabbies','translator("hello there students") yields "avast there swabbies"')
+        self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
+
+myTests().main()
+        </input>
+    </program>
+    <solution>
+      <program xml:id="ch11_q5_answer" language="python">
+        <input>
+def translator(sentence):
+
+  pirate = {}
+  pirate['sir'] = 'matey'
+  pirate['hotel'] = 'fleabag inn'
+  pirate['student'] = 'swabbie'
+  pirate['boy'] = 'matey'
+  pirate['restaurant'] = 'galley'
+  pirate['hello'] = 'avast'
+  pirate['students'] = 'swabbies'
+
+  psentence = []
+  words = sentence.split()
+  for aword in words:
+     if aword in pirate:
+         psentence.append(pirate[aword])
+     else:
+         psentence.append(aword)
+
+  return " ".join(psentence)
+        </input>
+      </program>
+    </solution>
+  </exercise>
+</exercises>

@@ -2,4 +2,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 4<title>Additional Topics</title>
 4<xi:include href="./ListComprehensions.ptx"/>
+4<xi:include href="./intro-Dictionaries.ptx"/>
+4<xi:include href="./Dictionaryoperations.ptx"/>
+4<xi:include href="./Dictionarymethods.ptx"/>
+4<xi:include href="./Aliasingandcopying.ptx"/>
+4<xi:include href="./DictionaryComprehensions.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
 </chapter>
