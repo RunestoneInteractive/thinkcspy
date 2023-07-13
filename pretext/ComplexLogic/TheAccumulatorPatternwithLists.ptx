@@ -264,7 +264,7 @@ print(min_value)
         </choice>
       </choices>
     </exercise>
-    <exercise label="ch10_sec5_q4">
+    <!--<exercise label="ch10_sec5_q4">
       <statement>
         <p><term>Challenge</term> For each word in <c>words</c>, add &#x2018;d' to the end of the word if the word ends in <q>e</q> to make it past tense. Otherwise, add &#x2018;ed' to make it past tense. Save these past tense words to a list called <c>past_tense</c>.</p>
       </statement>
@@ -286,6 +286,6 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
       </program>
-    </exercise>
+    </exercise>-->
   </subsection>
 </section>
