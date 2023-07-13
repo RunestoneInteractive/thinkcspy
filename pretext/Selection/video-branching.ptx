@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<section xml:id="branching_video">
+  <title>Practice Video Lecture</title>
+  <p>Week 3 Video Lecture:</p>
+  <video xml:id="branching-vid" youtube="ql-70UJlS4k" width="auto"/>
+
+</section>

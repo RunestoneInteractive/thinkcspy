@@ -12,4 +12,5 @@
 4<xi:include href="./PureFunctions.ptx"/>
 4<xi:include href="./WhichisBetter.ptx"/>
 4<xi:include href="./FunctionsthatProduceLists.ptx"/>
+4<xi:include href="./video-complex.ptx"/>
 </chapter>

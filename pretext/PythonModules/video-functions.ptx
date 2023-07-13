@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<section xml:id="functions_video">
+  <title>Practice Video Lecture</title>
+  <p>Week 7 Video Lecture:</p>
+  <video xml:id="functions-vid" youtube="eeCo8QyUaLY" width="auto"/>
+
+</section>

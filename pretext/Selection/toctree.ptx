@@ -9,7 +9,9 @@
 4<xi:include href="./Theinandnotinoperators.ptx"/>
 4<xi:include href="./ListMembership.ptx"/>
 4<xi:include href="./StringComparison.ptx"/>
+4<xi:include href="./video-branching.ptx"/>
 4<xi:include href="./Logicaloperators.ptx"/>
 4<xi:include href="./PrecedenceofOperators.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
+4<xi:include href="./video-logic.ptx"/>
 </chapter>

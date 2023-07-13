@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_video">
+  <title>Practice Video Lecture</title>
+  <p>Our course mentor Ethan has generously put together short video lectures to culminate each weekly reading. Now that you have finished chapters 1 and 2, the video is embedded below. 
+  It is not required, but you may find it helpful if the reading left you with questions.</p>
+  <video xml:id="simple-data-vid" youtube="y-p7-JXAkU4" width="auto"/>
+
+</section>

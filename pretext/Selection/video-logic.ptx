@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<section xml:id="logic_video">
+  <title>Practice Video Lecture</title>
+  <p>Week 4 Video Lecture:</p>
+  <video xml:id="logic-vid" youtube="rbjz-Am5zv4" width="auto"/>
+
+</section>
