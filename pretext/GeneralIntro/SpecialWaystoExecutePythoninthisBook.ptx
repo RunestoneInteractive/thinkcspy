@@ -53,7 +53,7 @@ print(2 + 3)
             In codelens you can see and control the step by step progress.
             Note that the red arrow always points to the next line of code that is going to be executed.
             The light green arrow points to the line that was just executed.</p>
-  <program xml:id="firstexample" interactive="codelens" language="python">
+  <program label="firstexample" interactive="codelens" language="python">
     <input>
           print("My first program adds two numbers, 2 and 3:")
           print(2 + 3)
