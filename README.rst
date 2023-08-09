@@ -33,7 +33,7 @@ Building with PreTeXt
 1. Create a virtual environment
 2. pip install pretextbook
 3. To build run: pretext build web
-4. pretext view html
+4. pretext view web
 
 Note: The pretext sources are in the pretext folder, we will keep the _sources folder until we are 100% sure that the book has been converted correctly and as thoroughly as possible.
 
