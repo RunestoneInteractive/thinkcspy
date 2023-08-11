@@ -32,7 +32,7 @@ print(x)
   <p>Updating a variable by adding 1 is called an <term>increment</term>; subtracting 1 is
             called a <term>decrement</term>.  Sometimes programmers also talk about <term>bumping</term>
             a variable, which means the same as incrementing it by 1.</p>
-  <note>
+  <!--<note>
     <title>Advanced Topics</title>
     <p>
       <ul>
@@ -51,7 +51,7 @@ print(x)
         </li>
       </ul>
     </p>
-  </note>
+  </note>-->
   <p>
     <term>Check your understanding</term>
   </p>
