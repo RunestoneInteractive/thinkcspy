@@ -88,4 +88,8 @@ GitHub.sublime-settings
 .dropbox
 .dropbox.attr
 .dropbox.cache
-
+__pycache__
+published
+pretext/GenFigs
+sphinx_settings.json
+rs-substitutes.xml
