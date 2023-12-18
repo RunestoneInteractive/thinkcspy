@@ -33,6 +33,8 @@
         <!--<xi:include href="./WebApps/toctree.ptx"/>-->
         <!--<xi:include href="./GUIandEventDrivenProgramming/toctree.ptx"/>-->
         <!--<xi:include href="./PythonTurtle/toctree.ptx"/>-->
+        <xi:include href="./ExtraTopics/toctree.ptx"/>
+
         <backmatter>
             <xi:include href="./Appendices/PrecedenceTable.ptx"/>
             <!-- <xi:include href="./Appendices/errorsAndDebug.ptx"/> -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+4<title>Extra Topics</title>
+4<xi:include href="./Packages.ptx"/>
+4<xi:include href="./BinaryRepresentations.ptx"/>
+4<xi:include href="./BigO.ptx"/>
+4<xi:include href="./SearchSortAlgorithms.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
+</chapter>
