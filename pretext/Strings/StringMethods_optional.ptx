@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<section xml:id="strings_string-methods_p2">
+  <title>Some Extra String Methods (Optional)</title>
+
+  <p>In addition to what we have seen in the previous section, the following table provides a summary of some other string methods. You don't have to memorize them. </p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
+                            Method
+                        </cell>
+        <cell>
+                            Parameters
+                        </cell>
+        <cell>
+                            Description
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            capitalize
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with first character capitalized, the rest lower
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            strip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with the leading and trailing whitespace removed
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            lstrip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with the leading whitespace removed
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            rstrip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with the trailing whitespace removed
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            center
+                        </cell>
+        <cell>
+                            width
+                        </cell>
+        <cell>
+                            Returns a string centered in a field of width spaces
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            ljust
+                        </cell>
+        <cell>
+                            width
+                        </cell>
+        <cell>
+                            Returns a string left justified in a field of width spaces
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            rjust
+                        </cell>
+        <cell>
+                            width
+                        </cell>
+        <cell>
+                            Returns a string right justified in a field of width spaces
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            rfind
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Returns the rightmost index where the substring item is found, or -1 if not found
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            index
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Like find except causes a runtime error if item is not found
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            rindex
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Like rfind except causes a runtime error if item is not found
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>You should experiment with these
+            methods so that you understand what they do.  Note once again that the methods that return strings do not
+            change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.</p>
+  <program xml:id="ch3_sec11_p1" interactive="activecode" language="python">
+    <input>
+ss = "    Hello, World    "
+
+print("***" + ss.strip() + "***")
+print("***" + ss.lstrip() + "***")
+print("***" + ss.rstrip() + "***")
+        </input>
+  </program>
+  <program xml:id="ch3_sec11_p2" interactive="activecode" language="python">
+    <input>
+food = "banana bread"
+print(food.capitalize())
+
+print("*" + food.center(25) + "*")
+print("*" + food.ljust(25) + "*")     # stars added to show bounds
+print("*" + food.rjust(25) + "*")
+
+print(food.index("e"))
+print(food.index("na"))
+
+print(food.rfind("e"))
+print(food.rfind("na"))
+print(food.rfind("b"))
+
+        </input>
+  </program>
+
+  
+  
+</section>
