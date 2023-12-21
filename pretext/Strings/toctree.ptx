@@ -5,11 +5,13 @@
 4<xi:include href="./ACollectionDataType.ptx"/>
 4<xi:include href="./OperationsonStrings.ptx"/>
 4<xi:include href="./IndexOperatorWorkingwiththeCharactersofaString.ptx"/>
-4<xi:include href="./StringMethods.ptx"/>
 4<xi:include href="./Length.ptx"/>
 4<xi:include href="./TheSliceOperator.ptx"/>
-4<xi:include href="./fStrings.ptx"/>
 4<xi:include href="./StringsareImmutable.ptx"/>
+4<xi:include href="./StringMethods.ptx"/>
+4<xi:include href="./fStrings.ptx"/>
 4<xi:include href="./Characterclassification.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
+4<xi:include href="./StringMethods_optional.ptx"/>
+
 </chapter>
