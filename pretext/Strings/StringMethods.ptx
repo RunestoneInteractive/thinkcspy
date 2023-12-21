@@ -81,13 +81,13 @@ print(my_new_str)
       </row>
       <row>
         <cell>
-                            find
+                            index
                         </cell>
         <cell>
                             item
                         </cell>
         <cell>
-                            Returns the leftmost index where the substring item is found, or -1 if not found
+                            Returns the leftmost index where the substring item is found, or error if not found
                         </cell>
       </row>
     </tabular>
@@ -104,16 +104,13 @@ print(els)
 
 news = ss.replace("o", "***")
 print(news)
-        </input>
-  </program>
-  <program xml:id="ch3_sec5_p3" interactive="activecode" language="python">
-    <input>
+
 food = "banana Bread"
 print(food.lower())
-print(food.find("e"))
-print(food.find("na")) #finds the first occurence of "na"
-print(food.find("b")) 
-print(food.find("B")) #remember that python is case sensitive! 
+print(food.index("e"))
+print(food.index("na")) #finds the index of the first occurence of "na"
+print(food.index("b")) 
+print(food.index("B")) #remember that python is case sensitive! 
         </input>
   </program>
   <p>
@@ -162,7 +159,7 @@ print(s.count("o") + s.count("p"))
       <program language="python">
         <input>
 s = "python rocks"
-print(s[1] * s.find("n"))
+print(s[1] * s.index("n"))
 </input>
       </program>
     </statement>
@@ -172,7 +169,7 @@ print(s[1] * s.find("n"))
           <p>yyyyy</p>
         </statement>
         <feedback>
-                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the find method has precedence over the repetition operator.
+                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.
                 </feedback>
       </choice>
       <choice>
@@ -196,7 +193,7 @@ print(s[1] * s.find("n"))
           <p>Error, you cannot combine all those things together.</p>
         </statement>
         <feedback>
-                    This is fine, the repetition operator used the result of indexing and the find method.
+                    This is fine, the repetition operator used the result of indexing and the index method.
                 </feedback>
       </choice>
     </choices>

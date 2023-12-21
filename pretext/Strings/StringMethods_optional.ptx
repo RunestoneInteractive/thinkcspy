@@ -106,13 +106,13 @@
       </row>
       <row>
         <cell>
-                            index
+                            find
                         </cell>
         <cell>
                             item
                         </cell>
         <cell>
-                            Like find except causes a runtime error if item is not found
+                            Like index except returns -1 if item is not found
                         </cell>
       </row>
       <row>

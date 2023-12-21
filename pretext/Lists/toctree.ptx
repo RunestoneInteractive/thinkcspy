@@ -11,8 +11,8 @@
 4<xi:include href="./ListsareMutable.ptx"/>
 4<xi:include href="./ListDeletion.ptx"/>
 4<xi:include href="./ListMethods.ptx"/>
-4<xi:include href="./StringsandLists.ptx"/>
 4<xi:include href="./AppendversusConcatenate.ptx"/>
+4<xi:include href="./StringsandLists.ptx"/>
 4<xi:include href="./listTypeConversionFunction.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./video-lists.ptx"/>
