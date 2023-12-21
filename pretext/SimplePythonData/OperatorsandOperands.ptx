@@ -15,7 +15,7 @@ minute / 60
 5 ** 2
 (5 + 9) * (15 - 7)</pre>
 
-<p> Python use special <c> tokens </c> called <c>operators</c> that perform the following operations: </p>
+<p> Python uses special <c>characters</c> called <c>operators</c> that perform the following operations: </p>
 <ul> 
 <li> <c> + </c> addition </li>
 <li> <c> - </c> subtraction </li>
