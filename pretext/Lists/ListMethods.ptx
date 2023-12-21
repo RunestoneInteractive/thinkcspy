@@ -1,49 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="lists_list-methods">
   <title>List Methods</title>
-  <p>The dot operator can also be used to access built-in methods of list objects.
-            <c>append</c> is a list method which adds the argument passed to it to the end of
-            the list. Continuing with this example, we show several other list methods.  Many of them are
-            easy to understand.</p>
-  <program xml:id="ch4_sec10_p1" interactive="activecode" language="python">
-    <input>
-mylist = []
-mylist.append(5)
-mylist.append(27)
-mylist.append(3)
-mylist.append(12)
-print(mylist)
 
-mylist.insert(1, 12)        # Insert 12 at pos 1, shift other items up
-print(mylist)
-print(mylist.count(12))     # How many times is 12 in mylist?
+<p> The dot operator can also be used to access built-in methods of list objects.
+    As you remember, unlike strings, lists are mutable. As a consequence, list methods can have different behaviors than string methods. Let's look at these.</p>
+<ul>
+<li> <term>Return Type Methods:</term> These methods work same as string methods, simply gives us a value, keeping the original list same.</li>
+<li> <term>Mutator Methods:</term> These methods change the list but do not return anything. We shouldn't use these methods on the right hand side of assignment.</li>
+<li> <term>Hybrid Methods:</term> These methods work both as a mutator and a return type method. They change the list and also return a value.</li>
 
-print(mylist.index(3))      # Find index of first 3 in mylist
-print(mylist.count(5))
 
-mylist.reverse()
-print(mylist)
-
-mylist.sort()
-print(mylist)
-
-mylist.remove(5)            # Removes the first 12 in the list
-print(mylist)
-
-lastitem = mylist.pop()     # Removes and returns the last item of the list
-print(lastitem)
-print(mylist)
-        </input>
-  </program>
-  <p>There are two ways to use the <c>pop</c> method.  The first, with no parameter, will remove and return the
-            last item of the list.  If you provide a parameter for the position, <c>pop</c> will remove and return the
-            item at that position.  Either way the list is changed.</p>
-  <p>The following table provides a summary of the list methods shown above.  The column labeled
-            <title_reference>result</title_reference> gives an explanation as to what the return value is as it relates to the new value of the list.  The word
-            <term>mutator</term> means that the list is changed by the method but nothing is returned (actually <c>None</c> is returned).  A <term>hybrid</term> method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
-            is unchanged by the method.</p>
-  <p>Be sure
-            to experiment with these methods to gain a better understanding of what they do.</p>
+ <p>The following table provides a summary of the list methods shown above.  The column labeled <title_reference>behavior</title_reference> gives an explanation as to what the return value is as it relates to the new value of the list. </p>
   <table>
     <tabular>
       <row header="yes">
@@ -54,7 +21,7 @@ print(mylist)
                             Parameters
                         </cell>
         <cell>
-                            Result
+                            Behavior
                         </cell>
         <cell>
                             Description
@@ -146,7 +113,7 @@ print(mylist)
       </row>
       <row>
         <cell>
-                            index
+                            find
                         </cell>
         <cell>
                             item
@@ -155,7 +122,7 @@ print(mylist)
                             return idx
                         </cell>
         <cell>
-                            Returns the position of first occurrence of item
+                            Returns the position of first occurrence of item, -1 if not found
                         </cell>
       </row>
       <row>
@@ -188,12 +155,16 @@ print(mylist)
       </row>
     </tabular>
   </table>
-  <p>Details for these and others
-            can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.</p>
-  <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
-            and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).</p>
-  <program xml:id="ch4_sec10_p2" interactive="activecode" language="python">
+
+
+
+  <p>Here are some examples on Be sure to experiment with these methods to gain a better understanding of what they do. You are expected to be comfortable using these methods!</p>
+
+
+  <program xml:id="ch4_sec10_p1" interactive="activecode" language="python">
     <input>
+
+# Let's create a list and fill it with some values
 mylist = []
 mylist.append(5)
 mylist.append(27)
@@ -201,10 +172,41 @@ mylist.append(3)
 mylist.append(12)
 print(mylist)
 
-mylist = mylist.sort()   #probably an error
+mylist.insert(1, 12)        # Insert 12 at pos 1, shift other items up
 print(mylist)
+print(mylist.count(12))     # How many times is 12 in mylist?
+
+print(mylist.find(3))      # Find index of first 3 in mylist
+print(mylist.count(5))
+print(mylist)              # mylist is unchanged as count and find are return type methods
+
+mylist.reverse()
+print(mylist)
+
+mylist.sort()
+print(mylist)
+
+mylist.remove(5)            # Removes the element on the fifth index (first 12) of the list
+print(mylist)
+
+lastitem = mylist.pop()     # Removes and returns the last item of the list
+print(lastitem)
+print(mylist)
+
+my_second_list = mylist.append(5)   # We shouldn't assign the result of a mutator method to a variable!
+print(my_second_list)               # It will be None
+
+
         </input>
   </program>
+  <p>There are two ways to use the <c>pop</c> method.  The first, with no parameter, will remove and return the
+            last item of the list.  If you provide a parameter for the position, <c>pop</c> will remove and return the
+            item at that position.  Either way the list is changed.</p>
+ 
+  <p>Details for these and others
+            can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.</p>
+  <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
+            and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).</p>
   <p>
     <term>Check your understanding</term>
   </p>

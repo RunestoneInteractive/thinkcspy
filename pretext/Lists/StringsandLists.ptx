@@ -10,16 +10,28 @@
 song = "The rain in Spain..."
 wds = song.split()
 print(wds)
+
         </input>
   </program>
   <p>An optional argument called a <term>delimiter</term> can be used to specify which
-            characters to use as word boundaries. The following example uses the string
-            <c>ai</c> as the delimiter:</p>
+            characters to use as word boundaries.</p>
   <program xml:id="ch4_sec11_p2" interactive="activecode" language="python">
     <input>
-song = "The rain in Spain..."
+song = "The rain, and the flood in Spain..."
+
+#These are the same as the default is to split on whitespace:
+print(song.split())
+print(song.split(' '))
+
+#If we want to split on something else, we can do that too:
+abc = song.split(',')
+print(abc)
 wds = song.split('ai')
 print(wds)
+
+# Notice that the split is a string method, so it does not modify the original string.
+print(song)
+
         </input>
   </program>
   <p>Notice that the delimiter doesn't appear in the result.</p>
@@ -40,6 +52,36 @@ print("".join(wds))
   </program>
   <p>The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
             you can use empty glue or multi-character strings as glue.</p>
+
+  <p>
+    <term>find Method in Lists and Strings</term>
+  </p>
+<p> One important thing to note is that even though find methods work the same in the context of strings and lists, 
+  however, they look for different things. In the context of strings, 
+  find methods look for a substring (or a character), whereas in the context of lists, find methods look for an element. 
+  The following is a great example of how these methods differ, depending on the context. Play with them to see the differences! </p>
+
+<program xml:id="ch4_sec11_p4" interactive="activecode" language="python">
+    <input>
+
+my_str = "To a great mind, nothing is little,' remarked Holmes, sententiously."
+print(my_str.find("great")) # Finds the substring "great" in my_str, expected result is 5
+print(my_str.find("m")) # Finds the character "m" in my_str, expected result is 12
+
+my_list = my_str.split() 
+print(my_list)
+print(my_list.find("great")) # Finds the element "great" in my_list, expected result is 3
+print(my_list.find("m")) # "m" is NOT an element in my_list, expected result is -1
+
+char_by_char = list(my_str) 
+print(char_by_char)
+print(char_by_char.find("m")) # Finds the element "m" in char_by_char, expected result is 12
+print(char_by_char.find("great")) # "great" is NOT an element in char_by_char, expected result is -1
+
+        </input>
+  </program>
+
+
   <p>
     <term>Check your understanding</term>
   </p>
