@@ -87,7 +87,7 @@ print(remainder)
             to hours, minutes and seconds.
             If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
             compute the correct values.</p>
-  <program xml:id="ch2_sec7_c1" interactive="codelens" language="python">
+  <program xml:id="ch2_sec7_c1" interactive="activecode" language="python">
     <input>
           total_secs = 7684
           hours = total_secs // 3600

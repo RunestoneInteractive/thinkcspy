@@ -41,7 +41,7 @@ else:
                 belongs to which if.</p>
   </note>
   <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
-  <program xml:id="ch5_sec4_c1" interactive="codelens" language="python">
+  <program xml:id="ch5_sec4_c1" interactive="activecode" language="python">
     <input>
 x = 10
 y = 10

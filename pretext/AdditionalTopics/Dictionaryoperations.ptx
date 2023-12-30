@@ -4,7 +4,7 @@
   <p>The <c>del</c> statement removes a key-value pair from a dictionary. For example,
             the following dictionary contains the names of various fruits and the number of
             each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.</p>
-  <program xml:id="ch15_sec3_c1" interactive="codelens" language="python">
+  <program xml:id="ch15_sec3_c1" interactive="activecode" language="python">
     <input>
           inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
           
@@ -16,7 +16,7 @@
             be modified by referencing an association on the left hand side of the assignment statement.  In the previous
             example, instead of deleting the entry for <c>pears</c>, we could have set the inventory to <c>0</c>.
   </p>
-  <program xml:id="ch15_sec3_c2" interactive="codelens" language="python">
+  <program xml:id="ch15_sec3_c2" interactive="activecode" language="python">
     <input>
           inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
           
@@ -25,7 +25,7 @@
   </program>
   <p>Similarily,
             a new shipment of 200 bananas arriving could be handled like this.</p>
-  <program xml:id="ch15_sec3_c3" interactive="codelens" language="python">
+  <program xml:id="ch15_sec3_c3" interactive="activecode" language="python">
     <input>
           inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
           inventory['bananas'] = inventory['bananas'] + 200

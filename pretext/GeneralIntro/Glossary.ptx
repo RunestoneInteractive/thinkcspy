@@ -3,10 +3,6 @@
   <title>Glossary</title>
   <glossary sorted="False">
     <gi>
-      <title>activecode</title>
-      <p>A unique interpreter environment that allows Python to be executed from within a web browser.</p>
-    </gi>
-    <gi>
       <title>algorithm</title>
       <p>A general step by step process for solving a problem.</p>
     </gi>
@@ -19,10 +15,6 @@
       <p>An intermediate language between source code and object code. Many
                             modern languages first compile source code into byte code and then
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
-    </gi>
-    <gi>
-      <title>codelens</title>
-      <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
     </gi>
     <gi>
       <title>comment</title>

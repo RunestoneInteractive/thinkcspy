@@ -48,7 +48,7 @@ print(a == b)
     <c>a</c> and <c>b</c> have the same value but do not refer to the same object.</p>
   <p>There is one other important thing to notice about this reference diagram.  The variable <c>a</c> is a reference to a <term>collection of references</term>.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though <c>a</c> and <c>b</c> are two different lists (two different collections of references), the integer object <c>81</c> is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object for some commonly used small integers.</p>
   <p>Here is the example in codelens.  Pay particular attention to the <title_reference>id</title_reference> values.</p>
-  <program xml:id="ch10_sec7_c1" interactive="codelens" language="python">
+  <program xml:id="ch10_sec7_c1" interactive="activecode" language="python">
     <input>
 a = [81, 82, 83]
 b = [81, 82, 83]

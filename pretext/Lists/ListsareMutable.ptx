@@ -18,7 +18,7 @@ print(fruit)
             assignment to an element of a list is called <term>item assignment</term>. Item
             assignment does not work for strings.  Recall that strings are immutable.</p>
   <p>Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.</p>
-  <program xml:id="ch4_sec8_c1" interactive="codelens" language="python">
+  <program xml:id="ch4_sec8_c1" interactive="activecode" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
 

@@ -36,7 +36,7 @@ if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
   <p>Take a close look also at the initialization of <c>sWithoutVowels</c>.  We start with an empty string and then begin adding
             new characters to the end.</p>
   <p>Step through the function using codelens to see the accumulator variable grow.</p>
-  <program xml:id="ch10_sec6_c1" interactive="codelens" language="python">
+  <program xml:id="ch10_sec6_c1" interactive="activecode" language="python">
     <input>
 def removeVowels(s):
     vowels = "aeiouAEIOU"

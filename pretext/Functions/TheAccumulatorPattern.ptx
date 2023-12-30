@@ -47,7 +47,7 @@ print("The result of", toSquare, "squared is", squareResult)
                 the for statement?  Not sure? Try it and find out.</p>
   </note>
   <p>Here is the same program in codelens.  Step through the function and watch the <q>running total</q> accumulate the result.</p>
-  <program xml:id="ch8_sec4_c1" interactive="codelens" language="python">
+  <program xml:id="ch8_sec4_c1" interactive="activecode" language="python">
     <input>
 def square(x):
     runningtotal = 0

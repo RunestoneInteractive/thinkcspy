@@ -5,7 +5,7 @@
             variable on the left hand side of the assignment operator. It is called local because this variable only
             exists inside the function and you cannot use it outside. For example,
             consider again the <c>square</c> function:</p>
-  <program xml:id="ch8_sec3_c1" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c1" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x
@@ -62,7 +62,7 @@ print(result)
   <p>There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
             change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
             codelens example:</p>
-  <program xml:id="ch8_sec3_c2" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c2" interactive="activecode" language="python">
     <input>
           def powerof(x, p):
               power = p   # Another dumb mistake
@@ -96,7 +96,7 @@ print(result)
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
             But this example demonstrates that that is clearly not how Python operates.</p>
-  <program xml:id="ch8_sec3_c3" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c3" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x

@@ -54,7 +54,7 @@ print(pi)
   </program>
   <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-  <program xml:id="ch2_sec4_c1" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_c1" interactive="activecode" language="python">
     <input>
           message = "What's up, Doc?"
           n = 17
@@ -94,7 +94,7 @@ print(type(pi))
   <p>To see this, read and then run the following program.
             You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
-  <program xml:id="ch2_sec4_p3" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_p3" interactive="activecode" language="python">
     <input>
           day = "Thursday"
           print(day)

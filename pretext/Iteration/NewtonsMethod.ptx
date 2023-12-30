@@ -43,7 +43,7 @@ prin(betterapprox)
             enough to the previous one, we can write a function for computing the square root that uses the number of iterations necessary and no more.</p>
   <p>This implementation, shown in codelens,
             uses a <c>while</c> condition to execute until the approximation is no longer changing.  Each time through the loop we compute a <q>better</q> approximation using the formula described earlier.  As long as the <q>better</q> is different, we try again.  Step through the program and watch the approximations get closer and closer.</p>
-  <program xml:id="chp07_newtonswhile" interactive="codelens" language="python">
+  <program xml:id="chp07_newtonswhile" interactive="activecode" language="python">
     <input>
 n = 10
 approx = 0.5 * n

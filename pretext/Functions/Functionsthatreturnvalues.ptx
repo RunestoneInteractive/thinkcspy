@@ -93,7 +93,7 @@ print("The result of", toSquare, "squared is", result)
                 we will see later where it makes sense to have a return statement even when other statements
                 follow, and the further statements are <em>not</em> executed.</p>
   </note>
-  <program xml:id="ch8_sec2_c1" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c1" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -130,7 +130,7 @@ print("The result of", toSquare, "squared is", squareResult)
             programmers.  As you step through this example, pay very close attention to the return
             value in the local variables listing.  Then look at what is printed when the
             function returns.</p>
-  <program xml:id="ch8_sec2_c2" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c2" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x

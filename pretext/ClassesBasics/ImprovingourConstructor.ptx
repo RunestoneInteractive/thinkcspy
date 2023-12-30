@@ -5,7 +5,7 @@
             provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we've seen before) to provide the specific information.</p>
   <p>We can make our class constructor more general by putting extra parameters into
             the <c>__init__</c> method, as shown in this codelens example.</p>
-  <program xml:id="ch13_sec5_c1" interactive="codelens" language="python">
+  <program xml:id="ch13_sec5_c1" interactive="activecode" language="python">
     <input>
           class Point:
               """ Point class for representing and manipulating x,y coordinates. """

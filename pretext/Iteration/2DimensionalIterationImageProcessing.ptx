@@ -499,7 +499,7 @@ for i in range(5):
   </program>
   <p>Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
                 flow of control as it occurs with the nested iteration.  Again, for every value of <c>i</c>, all of the values of <c>j</c> will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.</p>
-  <program xml:id="nested2" interactive="codelens" language="python">
+  <program xml:id="nested2" interactive="activecode" language="python">
     <input>
               for i in range(5):
                   for j in range(3):

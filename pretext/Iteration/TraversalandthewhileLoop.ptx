@@ -20,7 +20,7 @@ while position &lt; len(fruit):
             executed. The last character accessed is the one with the index
     <c>len(fruit)-1</c>, which is the last character in the string.</p>
   <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
-  <program xml:id="ch7_sec5_c1" interactive="codelens" language="python">
+  <program xml:id="ch7_sec5_c1" interactive="activecode" language="python">
     <input>
 fruit = "apple"
 

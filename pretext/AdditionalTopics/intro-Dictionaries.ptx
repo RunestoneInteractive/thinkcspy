@@ -15,12 +15,12 @@
   <p>One way to create a dictionary is to start with the empty dictionary and add
     <term>key-value pairs</term>. The empty dictionary is denoted <c>{}</c>
   </p>
-  <program xml:id="ch15_sec2_c1" interactive="codelens" language="python">
+  <program xml:id="ch15_sec2_c1" interactive="activecode" language="python">
     <input>
-          eng2sp = {}
-          eng2sp['one'] = 'uno'
-          eng2sp['two'] = 'dos'
-          eng2sp['three'] = 'tres'
+eng2sp = {}
+eng2sp['one'] = 'uno'
+eng2sp['two'] = 'dos'
+eng2sp['three'] = 'tres'
     </input>
   </program>
   <p>The first assignment creates an empty dictionary named <c>eng2sp</c>.  The other
@@ -35,7 +35,7 @@
             For our purposes we can think of this ordering as unpredictable.</p>
   <p>Another way to create a dictionary is to provide a list of key-value pairs
             using the same syntax as the previous output.</p>
-  <program xml:id="ch15_sec2_p1" interactive="codelens" language="python">
+  <program xml:id="ch15_sec2_p1" interactive="activecode" language="python">
     <input>
           eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
           print(eng2sp)
@@ -46,7 +46,7 @@
             accessed with keys, not with indices, so there is no need to care about
             ordering.</p>
   <p>Here is how we use a key to look up the corresponding value.</p>
-  <program xml:id="ch15_sec2_p2" interactive="codelens" language="python">
+  <program xml:id="ch15_sec2_p2" interactive="activecode" language="python">
     <input>
 eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 

@@ -16,7 +16,7 @@ print(a is b)
             is <term>aliased</term>. Changes made with one alias affect the other.  In the codelens example below, you can see that <c>a</c> and <c>b</c> refer
             to the same list after executing the assignment statement <c>b = a</c>.
   </p>
-  <program xml:id="chp09_is3" interactive="codelens" language="python">
+  <program xml:id="chp09_is3" interactive="activecode" language="python">
     <input>
           a = [81, 82, 83]
           b = [81, 82, 83]

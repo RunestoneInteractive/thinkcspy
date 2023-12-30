@@ -77,7 +77,7 @@ print("Nothing seems to have happened with the points")
             having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don't see any other result.</p>
   <image source="ClassesBasics/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
   <p>You can see this for yourself, via codelens:</p>
-  <program xml:id="ch13_sec4_c1" interactive="codelens" language="python">
+  <program xml:id="ch13_sec4_c1" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """

@@ -90,7 +90,7 @@
   
   <!--<p>The same program in codelens will allow you to observe the flow of execution.</p>
   
-  <program xml:id="ch7_sec2_p3" interactive="codelens" language="python">
+  <program xml:id="ch7_sec2_p3" interactive="activecode" language="python">
     <input>
       """ Return the sum of 1+2+3 ... n """
       aBound = int(input("Please give a number n: "))

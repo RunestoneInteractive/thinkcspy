@@ -24,7 +24,7 @@ print(things)
     </input>
   </program>
   <p>Once again, codelens helps us to see the actual references and objects as they are passed and returned.</p>
-  <program xml:id="ch10_sec9_p2" interactive="codelens" language="python">
+  <program xml:id="ch10_sec9_p2" interactive="activecode" language="python">
     <input>
 def doubleStuff(a_list):
     """ Return a new list in which contains doubles of the elements in a_list. """

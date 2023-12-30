@@ -61,7 +61,7 @@ else:
   </program>
   <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
 			the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
-  <program xml:id="ch8_sec10_c1" interactive="codelens" language="python">
+  <program xml:id="ch8_sec10_c1" interactive="activecode" language="python">
 	<input>
 		  def isDivisible(x, y):
 			  return x % y == 0

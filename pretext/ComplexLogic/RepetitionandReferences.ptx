@@ -44,7 +44,7 @@ print(newlist)
   <image source="Lists/Figures/refrep2.png" width="50%" alt="Same reference"/>
   <p>Here is the same example in codelens.  Step through the code paying particular attention to the result of executing the assignment statement <c>origlist[1] = 99</c>.
   </p>
-  <program xml:id="reprefstep" interactive="codelens" language="python">
+  <program xml:id="reprefstep" interactive="activecode" language="python">
     <input>
 origlist = [45, 76, 34, 55]
 
