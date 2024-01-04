@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="unit-testing_testing-functions">
   <title>Testing Functions</title>
-  <introduction>
+  <subsection><title>Introduction</title>
   <p>Melinda is writing a program that does some mathematical calculations. At the moment, she is working on adding some
             functionality to her program that requires rounding numbers to the nearest integer. She would normally use the built-in
             Python function <c>round</c> to do the job, but her program has a special requirement that numbers should be rounded up if
@@ -74,7 +74,7 @@ Test Case 3:       3.7               4</pre>
             complex, writing a unit test would probably have helped reduce the overall effort. And, using some tricks I'll show you
             in the next sections, you can reduce the amount of effort required to write and run the unit test, making the case for
             writing unit tests even more compelling.</p>
-        </introduction>
+        </subsection>
   <subsection xml:id="unit-testing_automated-unit-tests">
     <title>Automated Unit Tests</title>
     <p>The unit test program above is a manual unit test. A <term>manual unit test</term> gets input from the user, invokes the code

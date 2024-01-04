@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Files</title>
-4<xi:include href="./intro-WorkingwithDataFiles.ptx"/>
-4<xi:include href="./FindingaFileonyourDisk.ptx"/>
-4<xi:include href="./ReadingaFile.ptx"/>
-4<xi:include href="./Iteratingoverlinesinafile.ptx"/>
-4<xi:include href="./AlternativeFileReadingMethods.ptx"/>
-4<xi:include href="./WritingTextFiles.ptx"/>
-4<xi:include href="./WithStatements.ptx"/>
-4<xi:include href="./FetchingSomethingFromTheWeb.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Files</title>
+<xi:include href="./intro-WorkingwithDataFiles.ptx"/>
+<xi:include href="./FindingaFileonyourDisk.ptx"/>
+<xi:include href="./ReadingaFile.ptx"/>
+<xi:include href="./Iteratingoverlinesinafile.ptx"/>
+<xi:include href="./AlternativeFileReadingMethods.ptx"/>
+<xi:include href="./WritingTextFiles.ptx"/>
+<xi:include href="./WithStatements.ptx"/>
+<xi:include href="./FetchingSomethingFromTheWeb.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

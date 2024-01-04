@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="exceptions_exceptions-syntax">
   <title>Exceptions Syntax</title>
-  <introduction>
+  <subsection><title>Introduction</title>
   <p>There are many variations on the code that catches exceptions. Here is a
             brief summary, but other code variations are possible.</p>
-        </introduction>
+        </subsection>
   <subsection xml:id="exceptions_catch-all-exceptions">
     <title>Catch All Exceptions</title>
     <p>Catch all exceptions, regardless of their type. This will prevent

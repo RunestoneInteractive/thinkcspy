@@ -24,8 +24,13 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
     <source>
         <directories external="Figures" generated="GenFigs" />
-        <version include="html"/>
+        <version include="latex"/>
     </source>
+
+    <common>
+        <exercise-inline hint="no" answer="no" solution="no"/>
+        <exercise-divisional hint="no" answer="no" solution="no"/>
+    </common>
 
     <html>
         <platform host="web" />

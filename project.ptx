@@ -33,7 +33,7 @@
     <target name="pdf" pdf-method="xelatex">
       <format>pdf</format>
       <source>pretext/thinkcspy.ptx</source>
-      <publication>pretext/publication-rs-for-all.xml</publication>
+      <publication>pretext/publication-rs-latex.xml</publication>
       <output-dir>output/pdf</output-dir>
     </target>
     <target name="subset">

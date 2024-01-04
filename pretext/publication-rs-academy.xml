@@ -24,6 +24,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
     <source>
         <directories external="Figures" generated="GenFigs"/>
+        <version include="html"/>
     </source>
 
     <html>

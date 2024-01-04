@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Classes and Objects - Digging a Little Deeper</title>
-4<xi:include href="./Fractions.ptx"/>
-4<xi:include href="./ObjectsareMutable.ptx"/>
-4<xi:include href="./Sameness.ptx"/>
-4<xi:include href="./ArithmeticMethods.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Classes and Objects - Digging a Little Deeper</title>
+<xi:include href="./Fractions.ptx"/>
+<xi:include href="./ObjectsareMutable.ptx"/>
+<xi:include href="./Sameness.ptx"/>
+<xi:include href="./ArithmeticMethods.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

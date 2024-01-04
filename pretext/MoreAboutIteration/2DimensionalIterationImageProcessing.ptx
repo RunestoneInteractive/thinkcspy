@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_dimensional-iteration-image-processing">
   <title>2-Dimensional Iteration: Image Processing</title>
-  <introduction>
+  <subsection><title>Introduction</title>
     <p>Two dimensional tables have both rows and columns.  You have probably seen many tables like this if you have used a
             spreadsheet program.  Another object that is organized in rows and columns is a digital image.  In this section we will
             explore how iteration allows us to manipulate these images.</p>
@@ -13,7 +13,7 @@
     <p>In the figure below, the pixel of interest is found at column <term>c</term> and row <term>r</term>.
     </p>
     <image source="MoreAboutIteration/Figures/image.png" width="50%"/>
-  </introduction>
+  </subsection>
   <subsection xml:id="more-about-iteration_the-rgb-color-model">
     <title>The RGB Color Model</title>
     <p>Each pixel of the image will represent a single color.  The specific color depends on a formula that mixes various amounts
@@ -428,7 +428,7 @@ p = img.getPixel(45, 55)
 print(p.getRed(), p.getGreen(), p.getBlue())
     </input>
   </program>
-  
+
   <p>When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels.  Also, the
                 pixel at column 45, row 55, has RGB values of 165, 161, and 158.  Try a few other pixel locations by changing the <c>getPixel</c> arguments and rerunning the program.</p>
   <p>

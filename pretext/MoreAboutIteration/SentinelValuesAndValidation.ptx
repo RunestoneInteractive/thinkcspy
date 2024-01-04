@@ -42,10 +42,14 @@
     </p>
     <p>The pseudocode (code written half in English, half in Python) for the body of the loop
                 looks something like this:</p>
-    <pre>while moreItems
-    ask for price
-    add price to total
-    add one to count</pre>
+
+    <pre>
+    while moreItems
+        ask for price
+        add price to total
+        add one to count
+    </pre>
+
     <p>This pseudocode has no option to set <c>moreItems</c> to <c>False</c>, so it would run forever.
                 In a grocery store, there's a little
                 plastic bar that you put after your last item to separate your groceries from
@@ -75,6 +79,7 @@ def checkout():
 checkout()
         </input>
     </program>
+
     <p>There are still a few problems with this program.</p>
     <p>
       <ul>
@@ -91,7 +96,9 @@ checkout()
         <li>
           <p>This program doesn't display the amounts to two decimal places. In the next chapter you will
                         see the <xref ref="strings_string-methods"/> that will do the trick.</p>
-          <p>
+
+          </li>
+      </ul>
             <term>Check your understanding</term>
           </p>
           <exercise label="ch07_sentinel_2">
@@ -117,9 +124,7 @@ checkout()
               </choice>
             </choices>
           </exercise>
-        </li>
-      </ul>
-    </p>
+
   </subsection>
   <subsection xml:id="more-about-iteration_validating-input">
     <title>Validating Input</title>

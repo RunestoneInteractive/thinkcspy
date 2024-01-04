@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="functions_the-accumulator-pattern">
   <title>The Accumulator Pattern</title>
-  <introduction>
+  <subsection><title>Introduction</title>
   <video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="auto"/>
   <p>In the previous example, we wrote a function that computes the square of a number.  The algorithm we used
             in the function was simple: multiply the number by itself.
@@ -61,7 +61,7 @@ squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
     </input>
   </program>
-</introduction>
+</subsection>
   <subsection xml:id="functions_the-general-accumulator-pattern">
     <title>The General Accumulator Pattern</title>
     <program language="python">

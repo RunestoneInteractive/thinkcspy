@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <section xml:id="gu-iand-event-driven-programming_tkinter-standard-dialog-boxes">
   <title>Tkinter Standard Dialog Boxes</title>
-  <introduction>
+  <subsection><title>Introduction</title>
   <p>There are many common programming tasks that can be performed using
             pre-defined GUI dialog boxes. The following discussion describes these
             dialog boxes and provides some simple examples. You can refer to the
             Python documentation for additional optional parameters.</p>
-        </introduction>
+        </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_messages">
     <title>Messages</title>
     <p>A <c>messagebox</c> can display information to a user.

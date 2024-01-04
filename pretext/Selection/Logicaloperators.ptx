@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="selection_logical-operators">
   <title>Logical operators</title>
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
   <p>There are three <term>logical operators</term>: <c>and</c>, <c>or</c>, and <c>not</c>. The
             semantics (meaning) of these operators is similar to their meaning in English.
             For example, <c>x &gt; 0 and x &lt; 10</c> is true only if <c>x</c> is greater than 0 <em>and</em>
@@ -306,7 +307,7 @@ print(n % 2 == 0 or n % 3 == 0)
       </choice>
     </choices>
   </exercise>
-</introduction>
+</subsection>
   <subsection xml:id="selection_logical-opposites">
     <title>Logical Opposites</title>
     <p>Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can <em>not</em> get the driving licence when we are less than 17.</p>

@@ -44,8 +44,7 @@
   <p>In the remainder of this chapter we will look at more examples of
             recursion. In each case we will focus on designing a solution to a
             problem by using the three laws of recursion.</p>
-  <note>
-    <title>Self Check</title>
+
     <exercise label="question_recsimp_1">
       <statement>
         <p>How many recursive calls are made when computing the sum of the list [2,4,6,8,10]?</p>
@@ -124,5 +123,5 @@
         </choice>
       </choices>
     </exercise>
-  </note>
+
 </section>

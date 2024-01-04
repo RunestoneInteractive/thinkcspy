@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Strings</title>
-4<xi:include href="./StringsRevisited.ptx"/>
-4<xi:include href="./ACollectionDataType.ptx"/>
-4<xi:include href="./OperationsonStrings.ptx"/>
-4<xi:include href="./IndexOperatorWorkingwiththeCharactersofaString.ptx"/>
-4<xi:include href="./StringMethods.ptx"/>
-4<xi:include href="./Length.ptx"/>
-4<xi:include href="./TheSliceOperator.ptx"/>
-4<xi:include href="./StringComparison.ptx"/>
-4<xi:include href="./StringsareImmutable.ptx"/>
-4<xi:include href="./TraversalandtheforLoopByItem.ptx"/>
-4<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
-4<xi:include href="./TraversalandthewhileLoop.ptx"/>
-4<xi:include href="./Theinandnotinoperators.ptx"/>
-4<xi:include href="./TheAccumulatorPatternwithStrings.ptx"/>
-4<xi:include href="./TurtlesandStringsandLSystems.ptx"/>
-4<xi:include href="./Loopingandcounting.ptx"/>
-4<xi:include href="./Afindfunction.ptx"/>
-4<xi:include href="./Optionalparameters.ptx"/>
-4<xi:include href="./Characterclassification.ptx"/>
-4<xi:include href="./Summary.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Strings</title>
+<xi:include href="./StringsRevisited.ptx"/>
+<xi:include href="./ACollectionDataType.ptx"/>
+<xi:include href="./OperationsonStrings.ptx"/>
+<xi:include href="./IndexOperatorWorkingwiththeCharactersofaString.ptx"/>
+<xi:include href="./StringMethods.ptx"/>
+<xi:include href="./Length.ptx"/>
+<xi:include href="./TheSliceOperator.ptx"/>
+<xi:include href="./StringComparison.ptx"/>
+<xi:include href="./StringsareImmutable.ptx"/>
+<xi:include href="./TraversalandtheforLoopByItem.ptx"/>
+<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
+<xi:include href="./TraversalandthewhileLoop.ptx"/>
+<xi:include href="./Theinandnotinoperators.ptx"/>
+<xi:include href="./TheAccumulatorPatternwithStrings.ptx"/>
+<xi:include href="./TurtlesandStringsandLSystems.ptx"/>
+<xi:include href="./Loopingandcounting.ptx"/>
+<xi:include href="./Afindfunction.ptx"/>
+<xi:include href="./Optionalparameters.ptx"/>
+<xi:include href="./Characterclassification.ptx"/>
+<xi:include href="./Summary.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

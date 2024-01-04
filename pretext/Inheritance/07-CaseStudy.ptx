@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="inheritance_case-study-structured-postal-addresses">
   <title>Case Study: Structured Postal Addresses</title>
-  <introduction>
+  <subsection><title>Introduction</title>
   <p>Postal addresses are interesting things. Every country has its own format
             for postal addresses, and sometimes one country can have multiple address
             formats.</p>
@@ -50,7 +50,7 @@
             it ought to be possible to address mail to Abe Jones, A65 F4E2, IRELAND.
             On second thought, perhaps that is not such a great idea. Can you imagine
             the practical concerns with such a scheme?)</p>
-        </introduction>
+        </subsection>
   <subsection xml:id="inheritance_storing-postal-addresses">
     <title>Storing Postal Addresses</title>
     <p>Suppose we want to write a contact management application. Among other things, the application
