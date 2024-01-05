@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<section xml:id="extratopics-none">
+  <title>None</title>
+
+  <p><c>None</c>, or the <term>NoneType</term>, is a type which represents the <em>absence</em> of a value.
+    But let's take a step back and think: why is this useful?</p>
+
+  <p>In Python, sometimes we don't want to return anything from a function. However, when we don't 
+    explicitly return anything from a function, Python will implicitly return None.
+    You could also explicitly return None from a function <em>or</em> return a value,
+    and then you would have to check if the function returned something or not.</p>
+
+  <p>For the purposes of this class, you should just understand when None appears and why.</p>
+
+  <p>Most commonly when students are learning about strings and lists, us educators see a similar issue, which links back
+    to sections on <term>mutability</term>. Strings are immutable and lists are mutable, remember?</p>
+
+  <p>When we want to modify a string, we must reassign it, because it's immutable:</p>
+  <program language="python">
+    <input>
+my_string = 'Hello, world!'
+new_string = my_string[0:5]
+print(new_string)
+    </input>
+  </program>
+
+  <p>Your natural instinct may be to write the same thing with lists:</p>
+  <program language="python">
+    <input>
+my_list = []
+my_list = my_list.append(0)
+print(my_list[0])
+    </input>
+  </program>
+
+  <p>By doing so, you will incur this error:</p>
+  <program language="python">
+    <input>
+print(my_list[0])
+~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+    </input>
+  </program>
+
+  <p>Frustratingly, your code actually did exactly what you told it to. List functions modify the list directly, because
+    lists are mutable. Therefore, their functions (such as <c>.append(element)</c>) don't return anything.</p>
+
+  <p>But now we know why: <c>append</c> is actually implicitly returning <c>None</c>. This means that in the previous example, we reassigned <c>my_list</c>
+    to <c>None</c>, and then we tried to list access element 0 of <c>None</c>, which caused the 'not subscriptable' error, because None isn't a list
+    and can't have list access done to it.</p>
+
+  <p>The solution is simple: don't reassign the list when calling list functions.</p>
+  <program language="python">
+    <input>
+my_list = []
+my_list.append(0)
+print(my_list[0])
+    </input>
+  </program>
+
+  <p>If you remember nothing else, remember: <term>strings get reassigned, lists don't</term>. This is because
+    strings are <term>immutable</term>; lists are mutable and their functions don't return anything (they implicitly return None!).</p>
+
+  <note>You may be wondering how to tell the difference between functions that return something or not. Sometimes
+    the name of the method can be a hint (e.g. if it has "set" in the name, it probably won't return, whereas "get" will).
+    If that doesn't help or you're still curious, you should reference the documentation (whether it's official Python
+    documentation or for a library). No shame in looking it up!</note>
+
+  <p>You won't be tested on the information below, but read on for some interesting thoughts on this.</p>
+
+  <p>If you've been around any other programming languages, you may have heard of equivalent ideas like
+    <c>null</c>, <c>NULL</c>, <c>nullptr</c>, <c>nil</c>, and more. This is such a universal concept
+    in programming and is hugely frustrating to many programmers as it often represents something that went wrong.</p>
+  
+  <p>Fun (or depressing) fact -- the inventor of null actually regrets his invention:</p>
+
+  <blockquote>
+    I call it my billion-dollar mistake... At that time, I was designing the first comprehensive type system for references in an object-oriented language. My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.
+  </blockquote>
+
+  <blockquote>
+    - Tony Hoare
+  </blockquote>
+
+  <p>Despite this, <c>None</c>, <c>null</c>, and <c>nil</c> don't seem to be going anywhere anytime soon. :)</p>
+</section>

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<section xml:id="extratopics-more-bigo">
+  <title>Big O Simplification and Practice</title>
+
+  <p>One more important topic in Big O Analysis is <term>simplification</term>. We won't get too deep into the math, but here are a few general rules:</p>
+
+  <p>Constant time operations always simplify to <c>O(1)</c>. For instance, <c>O(3)</c> and <c>O(1000000)</c> both simplify to <c>O(1)</c>.</p>
+
+  <p>Added constants are ignored when a larger factor is around. For instance, <c>O(n + 1)</c> is just <c>O(n)</c>.</p>
+
+  <p>Multiplication by a constant factor simplifies to the factor, such as <c>O(3n)</c> becoming <c>O(n)</c>.</p>
+  
+  <p>Added polynomials are ignored when a larger factor is around. For instance, <c>O(n! + n)</c> is just <c>O(n!)</c>, or <c>O(n^2 + n)</c> is just <c>O(n^2)</c>.</p>
+
+  <p>With nested loops, any inner loop factors are multiplied by the outer loop factor.</p>
+
+  <exercise label="bigo_q1">
+    <statement>
+      <p>Example 1: Find the time complexity of this program. Be careful of the nested loop.</p>
+      <program language="python">
+        <input>
+    def example_func(n):
+        for i in range(n):
+          for j in range(n):
+            print(i * j)
+        </input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p><c>O(1)</c></p>
+        </statement>
+        <feedback>
+          Incorrect; we have two nested loops here.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(logn)</c></p>
+        </statement>
+        <feedback>
+          Not quite. You typically see <c>O(logn)</c> more often in search/sort algorithms.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(n)</c></p>
+        </statement>
+        <feedback>
+          Incorrect; both loops (one of which is nested) depend on n.
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>O(n^2)</c></p>
+        </statement>
+        <feedback>
+          Correct! Both loops depend on n, and one loop is nested, which multiplies it by the parent factor.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="bigo_q2">
+    <statement>
+      <p>Example 2: Find the time complexity of this program.</p>
+      <program language="python">
+        <input>
+def example_func(n):
+    for i in range(n):
+      for j in range(10000):
+        print(j)
+        </input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p><c>O(1)</c></p>
+        </statement>
+        <feedback>
+          Not quite; we one loop going to n and one loop going to a constant time.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(logn)</c></p>
+        </statement>
+        <feedback>
+          Not quite. You typically see <c>O(logn)</c> more often in search/sort algorithms.
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>O(n)</c></p>
+        </statement>
+        <feedback>
+          Correct! <c>O(10000n)</c> simplifies to <c>O(n)</c>.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(n^2)</c></p>
+        </statement>
+        <feedback>
+          Incorrect. We only have one loop going to n, the inner loop is going to a constant.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="bigo_q3">
+    <statement>
+      <p>Example 3: Find the time complexity of this program. Apply the same rules that you do for a for loop.</p>
+      <program language="python">
+        <input>
+n = input()
+i = 0
+while i &lt; n:
+  print(i)
+  i += 1
+        </input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p><c>O(1)</c></p>
+        </statement>
+        <feedback>
+          Not quite, since n is an arbitrary user inputted value.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(logn)</c></p>
+        </statement>
+        <feedback>
+          Not quite. You typically see <c>O(logn)</c> more often in search/sort algorithms.
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>O(n)</c></p>
+        </statement>
+        <feedback>
+          Correct! We're going to n in this loop.
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>O(n^2)</c></p>
+        </statement>
+        <feedback>
+          Incorrect. We only have one loop going to n.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

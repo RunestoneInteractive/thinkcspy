@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<section xml:id="extratopics-datascience">
+  <title>Data Science</title>
+
+  <p>Data science is a multidisciplinary field which combines computer science,
+    math, and other domains to answer questions using data.</p>
+
+  <p>As the world moves more and more towards storing and analyzing large amounts of data,
+    data science is a vital skill for you to be familiar with, whether you're a computer science major or not. It is also 
+	a very common and useful application of programming, which is why we're discussing it in this class.</p>
+
+  <p>Data science is perhaps best defined by describing what data science looks like. <term>The data science process</term> consists of four steps:</p>
+
+  <ol>
+    <li>Obtaining data</li>
+    <li>Cleaning the data</li>
+    <li>Exploring the data</li>
+    <li>Predicting unknowns</li>
+  </ol>
+
+  <p><term>Obtaining the data</term>: We live in a time where data is more abundant then ever before. Getting a hold of data can involve gathering it yourself,
+  purchasing it, or taking advantage of the many, many sites online now which have a plethora of data 
+  available for free (and sometimes paid) use. if you are getting your data from some 3rd party, it will likely come in a .csv, .json, or SQL database format.</p>
+
+  <p><term>Cleaning the data</term>: This can vary, but ultimately you need to prepare your data
+    in a way that makes it easily usable in the next steps. Often data starts out "noisy" or contains errors. In this step you may
+    fix things in the data, change missing data, or correct wrong data.</p>
+
+  <p>Cleaning is regularly considered the longest step in this process! Data can come in all sorts of different
+    formats now, with anomalies, with blanks, and so much more. It often depends on context and you own goals 
+	what "fixing" data even means.</p>
+
+  <p><term>Exploring the data</term>: Now that the data is prepared, we can do some analysis on it! As the term suggests, exploring the data is about coming to better
+  understand it. You often don't know what is interesting or useful about data when you first encounter it. You may need to do some sort of statistical
+    analysis to uncover the interesting aspects, or you may want to graph values and look for relationships and trends visually.</p>
+
+  <p><term>Predicting unknowns</term>: Having come to understand the data better, you can now use it to create new knowledge. These days, this step typically involves 
+    using machine learning models. These techniques can generally be split into three groups:</p>
+	
+  <ol>
+    <li><term>Supervised Learning</term>: With supervised learning, we try to construct a model that describes the relationship between inputs and outputs (regularly 
+	referred to as "labels"). Knowing what labels we want in advance is what makes a method "supervised". For example, we could create a model to guess when an email 
+	is spam or not based on its contents; the label here is "spam" or "not spam". Or we could try to guess what the stock price will be for our favorite company based 
+	on how it has performed in the last few weeks. The label here would be the predicted stock price.</li>
+    <li><term>Unsupervised Learning</term>: Contrasting with supervised learning, with unsupervised learning we don't know the labels in advance. An example here could be
+	using social media data to automatically identify friend groups. We don't know in advance how many groups we'll find or what their nature will be. Because of this, it
+	can be harder to guess what kind of results unsupervised learning will produce.</li>
+    <li><term>Semi-Supervised Learning:</term> Semi-supervised learning is an attempt to capture the best aspects of both supervised and unsupervised learning. With these
+	approaches we start with some data that has labels and also some data that doesn't. To use a previous example, we could take a collection of emails, only some of 
+	which have been labeled as spam or not, and still try to construct a reliable method for identifying new emails as spam. If it goes well, then we've saved ourselves 
+	a lot of time that would have otherwise been spent labeling emails.</li>
+  </ol>
+</section>

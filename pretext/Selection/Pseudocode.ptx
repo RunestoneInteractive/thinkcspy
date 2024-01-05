@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<section xml:id="extratopics-pseudocode">
+  <title>Pseudocode</title>
+
+ <p>With the introduction of conditionals and branching, our programs are about to become more complex on average. This is a good time to introduce a technique
+ that will help you plan and structure your programs before you start writing the more complex code. That technique is to use pseudocode.</p>
+
+  <p><term>Pseudocode</term> is a mix of English and code (in our case, Python) that
+    programmers use to plan out their programs.</p>
+
+  <p>Writing pseudocode can be helpful for reasons such as:</p>
+  <ul>
+    <li>It's quicker to write than actual code!</li>
+    <li>It's readable to more people than actual code, and can still be critiqued like regular code.</li>
+    <li>It can help you to take on a large or confusing programming task.</li>
+    <li>It can help you to document your code with comments for yourself and others' readability.</li>
+  </ul>
+
+  <p>There isn't necessarily a right or wrong syntax for pseudocode (except wrong would be if you just wrote the program!).
+    Your pseudocode and language will probably look different from this, but should be along the same lines.</p>
+
+  <p>Take the following prompt for a problem:</p>
+
+  <blockquote>
+    Write a program that takes in a fraction in the format <c>NUMERATOR/DENOMINATOR</c>
+    from the user and outputs the quotient and the remainder.
+    If the denominator is 0, print out an error message; if the denominator is anything else,
+    let the user run the program normally.
+  </blockquote>
+
+  <p>We can approach this problem first by writing the following pseudocode:</p>
+  <program language="python">
+    <input>
+take user input for fraction
+split the user input by "/"
+make a variable for numerator, type convert to int
+make a variable for denominator, type convert to int
+if the denominator is 0,
+    print an error message
+otherwise
+    make a variable for the numerator divided by denominator
+    make a variable for the numerator mod denominator
+    print out both variables
+    </input>
+  </program>
+
+  <p>As you can see, this is basically just a high level outline of your program. It may help you
+    better see the control flow of your program, or even remind you to do the small things, like
+    converting your string input to an integer if necessary.</p>
+
+  <p>This pseudocode can then be more readily converted to Python:</p>
+
+  <program language="python">
+    <input>
+fraction = input().split('/')
+numerator = int(fraction[0])
+denominator = int(fraction[1])
+if denominator == 0:
+    print("Error, your denominator is 0!")
+else:
+    result = numerator / denominator
+    remainder = numerator % denominator
+    print("Division:", result)
+    print("Remainder:", remainder)
+    </input>
+  </program>
+
+  <p>..and we're done! That's the pseudocode process.</p>
+
+  <p>This won't be something you see often, but let's reverse engineer and see what
+    existing Python code might look like in pseudocode.</p>
+
+  <program language="python">
+    <input>
+character = input()
+if character == "Yoda":
+    print("No! Try not. Do. Or do not. There is no try.")
+elif character == "Han Solo":
+    print("Never tell me the odds!")
+elif character == "Obi Wan Kenobi":
+    print("Use the Force, Luke.")
+else:
+    print("Character not found!")
+    </input>
+  </program>
+
+  <p>We could write the following pseudocode for this program:</p>
+  <program language="python">
+    <input>
+take user input for a Star Wars character
+if the character is Yoda, print "No! Try not. Do. Or do not. There is no try."
+if the character is Han Solo, print "Never tell me the odds!"
+if the character is Obi Wan Kenobi, print "Use the Force, Luke."
+in all other cases, print that the character wasn't found
+    </input>
+  </program>
+
+  <p>As you may start to notice, Python is so close to the English language that pseudocode can often
+    be quickly translated into code.</p>
+
+  <p>Feel free to use pseudocode on exams (for planning before writing code) and in your actual programs.</p>
+</section>

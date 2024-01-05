@@ -3,10 +3,23 @@
   <title>Glossary</title>
   <glossary sorted="False">
     <gi>
+      <title>Binary search</title>
+      <p>A searching algorithm where you look through a sorted list in halves; an improvement upon linear search.</p>
+    </gi>
+    <gi>
+      <title>Big O Notation</title>
+      <p>A notation computer scientists use to describe the relationship between the size 
+        of the input data and the behavior of the program, denoted with O() and some factor inside of the parenthesis.</p>
+    </gi>
+    <gi>
+      <title>constant time</title>
+      <p>A Big O time complexity of <c>O(1)</c>.</p>
+    </gi>
+    <gi>
       <title>comprehension</title>
       <p>A specific Python construction that allows collection types to be created and filled with a single line of code.</p>
     </gi>
-	<gi>
+	  <gi>
       <title>dictionary</title>
       <p>A collection of key-value pairs that maps from keys to values. The keys
                             can be any immutable type, and the values can be any type.</p>
@@ -20,6 +33,10 @@
       <title>key-value pair</title>
       <p>One of the pairs of items in a dictionary. Values are looked up in a
                             dictionary by key.</p>
+    </gi>
+    <gi>
+      <title>Linear search</title>
+      <p>A searching algorithm where you look through in a linear order (directly from start to end).</p>
     </gi>
     <gi>
       <title>mapping type</title>

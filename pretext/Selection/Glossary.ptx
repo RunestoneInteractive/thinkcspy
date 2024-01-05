@@ -69,5 +69,10 @@
       <p>One program structure within another, such as a conditional statement
                             inside a branch of another conditional statement.</p>
     </gi>
+    <gi>
+      <title>Pseudocode</title>
+      <p>A mix of English and code (in our case, Python) that
+    programmers use to plan out their programs.</p>
+    </gi>
   </glossary>
 </section>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<section xml:id="extratopics-packages">
+  <title>Packages and Dependencies</title>
+
+  <note>You won't ever need to deal with dependencies in this course unless you are adding modules to your final project. Nonetheless, using packages 
+  (a package is just a collection of Python modules) is a common practice in Python programming that you should at least be aware of.</note>
+  
+  <p>One key tenant of computer science (or anything, for that matter) is that we don't want to reinvent
+    the wheel if we don't have to. A lot of very smart people have made very useful code, so why not use it?</p>
+
+  <p>The <url href="https://pypi.org" visual="Python Package Index (PyPI)"></url> is a website that maintains <term>packages</term>, or code that other people 
+    have written for our use. You might also hear the term <term>dependencies</term>, which describes essentially the same thing: code
+    that our code depends on.</p>
+
+  <p>PyPI can be accessed with <c>pip</c>, which is the command that you will use when installing dependencies. Pip <em>should</em> come
+    preinstalled with most Python installations on Mac and Windows.</p>
+
+  <p>Some common packages include: <c>pytest</c> (for testing your code), <c>python-dateutil</c> (for working with dates), <c>flask</c> (for making websites), and more.</p>
+
+  <p>Some common packages for data science include <c>numpy</c>, <c>matplotlib</c>, <c>scipy</c>, <c>pandas</c> and more.</p>
+  
+  <p>But this is all sounding like a lot to keep track of, right? How can we ensure consistency between
+    versions installed on different people's computers?</p>
+
+  <p><term>requirements.txt</term> is a file we can specify for others to be able install the dependencies
+    (which is needed to run our code), since others may not have our dependencies installed.</p>
+
+  <p>The following code represents a <c>requirements.txt</c> file that specifies numpy as a dependency:</p>
+  <program language="python">
+    <input>
+numpy==1.26.2
+    </input>
+  </program>
+
+  <p>Note that dependencies are not installed immediately. For someone to install the requirements which you specify,
+    they would run the command: <c>pip install -r requirements.txt</c>.</p>
+
+  <p>If you're unsure what version of a dependency you have installed, you can run the command: <c>pip show DEPENDENCY</c>, like <c>pip show numpy</c>.
+    Somewhat ironically, there are also packages that can autogenerate a requirements.txt file for you.</p>
+
+  <note>One additional tip worth mentioning is to always specify the bare minimum requirements your code needs to work.
+    Dependencies normally have dependencies of their own, so we want to minimize the install time and space taken up
+    when someone is installing your program's requirements.</note>
+</section>
