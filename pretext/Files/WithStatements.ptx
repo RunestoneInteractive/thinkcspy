@@ -22,5 +22,5 @@ with open('mydata.txt') as md:
 print(md)
         </input>
   </program>
-  <p>The first line of the <title_reference>with</title_reference> statement opens the file and assigns it to <title_reference>md</title_reference>  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+  <p>The first line of the with statement opens the file and assigns it to md  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
 </section>

@@ -59,7 +59,7 @@ print(pi)
           message = "What's up, Doc?"
           n = 17
           pi = 3.14159
-          
+
           print(message)
           print(n)
           print(pi)
@@ -87,12 +87,12 @@ print(type(pi))
             over time, just like the scoreboard at a football game.  You can assign a value
             to a variable, and later assign a different value to the same variable.</p>
   <note>
-    <p>This is different from math. In math, if you give <title_reference>x</title_reference> the value 3, it
+    <p>This is different from math. In math, if you give x the value 3, it
                 cannot change to refer to a different value half-way through your
                 calculations!</p>
   </note>
   <p>To see this, read and then run the following program.
-            You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
+            You'll notice we change the value of day three times, and on the third
             assignment we even give it a value that is of a different type.</p>
   <program xml:id="ch02_11" interactive="codelens" language="python">
     <input>

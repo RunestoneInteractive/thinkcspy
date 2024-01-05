@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="selection_omitting-the-else-clause-unary-selection">
-  <title>Omitting the <title_reference>else</title_reference> Clause: Unary Selection</title>
+  <title>Omitting the else Clause: Unary Selection</title>
   <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
   <sidebar>
     <title>Flowchart of an <term>if</term> with no <term>else</term></title>

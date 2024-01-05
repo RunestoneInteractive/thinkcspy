@@ -42,7 +42,7 @@
   <!--the left-to-right rule applies.)-->
   <note>
     <p>An exception to the left-to-right
-                left-associative rule is the exponentiation operator <title_reference>**</title_reference>. A useful hint
+                left-associative rule is the exponentiation operator **. A useful hint
                 is to always use parentheses to force exactly the order you want when
                 exponentiation is involved:</p>
     <program xml:id="ch02_23" interactive="activecode" language="python">

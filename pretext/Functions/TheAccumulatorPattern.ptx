@@ -10,14 +10,14 @@
   <p>If you want to multiply two numbers together, the most basic approach is to think of it as repeating the process of
             adding one number to itself.  The number of repetitions is where the second number comes into play.  For example, if we
             wanted to multiply three and five, we could think about it as adding three to itself five times.  Three plus three is six, plus three is nine, plus three is 12, and finally plus three is 15.  Generalizing this, if we want to implement
-            the idea of squaring a number, call it <title_reference>n</title_reference>, we would add <title_reference>n</title_reference> to itself <title_reference>n</title_reference> times.</p>
+            the idea of squaring a number, call it n, we would add n to itself n times.</p>
   <p>Do this by hand first and try to isolate exactly what steps you take.  You'll
             find you need to keep some <q>running total</q> of the sum so far, either on a piece
             of paper, or in your head.  Remembering things from one step to the next is
             precisely why we have variables in a program.  This means that we will need some variable
             to remember the <q>running total</q>.  It should be initialized with a value of zero.  Then, we need to <term>update</term> the <q>running total</q> the correct number of times.  For each repetition, we'll want
             to update the running total by adding the number to it.</p>
-  <p>In words we could say it this way.  To square the value of <title_reference>n</title_reference>, we will repeat the process of updating a running total <title_reference>n</title_reference> times.  To update the running total, we take the old value of the <q>running total</q> and add <title_reference>n</title_reference>.  That sum becomes the new
+  <p>In words we could say it this way.  To square the value of n, we will repeat the process of updating a running total n times.  To update the running total, we take the old value of the <q>running total</q> and add n.  That sum becomes the new
             value of the <q>running total</q>.
   </p>
   <p>Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed

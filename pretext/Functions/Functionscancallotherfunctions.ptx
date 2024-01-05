@@ -16,14 +16,14 @@
           def square(x):
               y = x * x
               return y
-          
+
           def sum_of_squares(x, y, z):
               a = square(x)
               b = square(y)
               c = square(z)
-          
+
               return a + b + c
-          
+
           a = -5
           b = 2
           c = 10
@@ -116,11 +116,11 @@ wn.exitonclick()
         <p>Functions can call other functions.</p>
       </li>
       <li>
-        <p>Rewriting <title_reference>drawSquare</title_reference> like this captures the relationship
+        <p>Rewriting drawSquare like this captures the relationship
                     that we've spotted.</p>
       </li>
       <li>
-        <p>A caller of this function might say <title_reference>drawSquare(tess, 50)</title_reference>.  The parameters
+        <p>A caller of this function might say drawSquare(tess, 50).  The parameters
                     of this function, <c>tx</c> and <c>sz</c>, are assigned the values of the tess object, and
                     the integer 50 respectively.</p>
       </li>
@@ -130,7 +130,7 @@ wn.exitonclick()
       <li>
         <p>When the call is made to <c>drawRectangle</c>, the values in variables <c>tx</c> and <c>sz</c>
                     are fetched first, then the call happens.  So as we enter the top of
-                    function <title_reference>drawRectangle</title_reference>, its variable <c>t</c> is assigned the tess object, and <c>w</c> and
+                    function drawRectangle, its variable <c>t</c> is assigned the tess object, and <c>w</c> and
           <c>h</c> in that function are both given the value 50.</p>
       </li>
     </ul>

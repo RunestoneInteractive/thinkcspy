@@ -78,45 +78,45 @@ print(5 ** 2)
         </input>
     </program>
     <solution>
-                    
-                        
+
+
                             5 ** 2  = 25
-                        
-                        
+
+
                             9 * 5 = 45
-                        
-                        
+
+
                             15 / 12 = 1.25
-                        
-                        
+
+
                             12 / 15 = 0.8
-                        
-                        
+
+
                             15 // 12 = 1
-                        
-                        
+
+
                             12 // 15 = 0
-                        
-                        
+
+
                             5 % 2 = 1
-                        
-                        
+
+
                             9 % 5 = 4
-                        
-                        
+
+
                             15 % 12 = 3
-                        
-                        
+
+
                             12 % 15 = 12
-                        
-                        
+
+
                             6 % 6 = 0
-                        
-                        
+
+
                             0 % 7 = 0
-                        
-                    
-                
+
+
+
                     <p><ol marker="1"><li><p><c>5 ** 2  = 25</c></p></li><li><p><c>9 * 5 = 45</c></p></li><li><p><c>15 / 12 = 1.25</c></p></li><li><p><c>12 / 15 = 0.8</c></p></li><li><p><c>15 // 12 = 1</c></p></li><li><p><c>12 // 15 = 0</c></p></li><li><p><c>5 % 2 = 1</c></p></li><li><p><c>9 % 5 = 4</c></p></li><li><p><c>15 % 12 = 3</c></p></li><li><p><c>12 % 15 = 12</c></p></li><li><p><c>6 % 6 = 0</c></p></li><li><p><c>0 % 7 = 0</c></p></li></ol></p>
                 </solution>
   </exercise>
@@ -227,10 +227,10 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
                         compound interest is given on Wikipedia as</p>
       <image source="SimplePythonData/Figures/compoundInterest.png" width="50%" alt="formula for compound interest"/>
       <p>Write a Python program that assigns the principal amount of 10000 to
-                        variable <title_reference>P</title_reference>, assign to <title_reference>n</title_reference> the value 12, and assign to <title_reference>r</title_reference> the interest
+                        variable P, assign to n the value 12, and assign to r the interest
                         rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-                        <title_reference>t</title_reference>, that the money will be compounded for.  Calculate and print the final
-                        amount after <title_reference>t</title_reference> years.</p>
+                        t, that the money will be compounded for.  Calculate and print the final
+                        amount after t years.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_7_editor">
       <input>

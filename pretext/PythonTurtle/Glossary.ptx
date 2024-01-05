@@ -22,8 +22,8 @@
     </gi>
     <gi>
       <title>instance</title>
-      <p>An object that belongs to a class.  <title_reference>tess</title_reference> and <title_reference>alex</title_reference> are different
-                            instances of the class <title_reference>Turtle</title_reference></p>
+      <p>An object that belongs to a class.  tess and alex are different
+                            instances of the class Turtle</p>
     </gi>
     <gi>
       <title>invoke</title>

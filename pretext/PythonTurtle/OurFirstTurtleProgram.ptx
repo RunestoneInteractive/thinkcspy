@@ -25,12 +25,12 @@ alex.forward(75)            # complete the second side of a rectangle
             brings us two new types that we can use: the <c>Turtle</c> type, and the
             <c>Screen</c> type.  The dot notation <c>turtle.Turtle</c> means <em><q>The Turtle type
                 that is defined within the turtle module</q></em>.   (Remember that Python is case
-            sensitive, so the module name, <c>turtle</c>, with a lowercase <title_reference>t</title_reference>, is different from the type
-            <c>Turtle</c> because of the uppercase <title_reference>T</title_reference>.)
+            sensitive, so the module name, <c>turtle</c>, with a lowercase t, is different from the type
+            <c>Turtle</c> because of the uppercase T.)
         </p>
   <p>We then create and open what the turtle module calls a screen (we would
             prefer to call it a window, or in the case of this web version of Python
-            simply a canvas), which we assign to variable <title_reference>wn</title_reference>. Every window
+            simply a canvas), which we assign to variable wn. Every window
             contains a <term>canvas</term>, which is the area inside the window on which we can draw.</p>
   <p>In line 3 we create a turtle. The variable <c>alex</c> is made to refer to this
             turtle.   These first three lines set us up so that we are ready to do some drawing.</p>
@@ -159,7 +159,7 @@ alex.forward(75)            # complete the second side of a rectangle
   </exercise>
   <p>An object can have various methods &#x2014; things it can do &#x2014; and it can also
             have <term>attributes</term> &#x2014; (sometimes called <em>properties</em>).  For example, each
-            turtle has a <em>color</em> attribute.  The method invocation  <title_reference>alex.color(<q>red</q>)</title_reference>
+            turtle has a <em>color</em> attribute.  The method invocation  alex.color(<q>red</q>)
             will make alex red and the line that it draws will be red too.</p>
   <p>The color of the turtle, the width of its pen(tail), the position of the turtle
             within the window, which way it is facing, and so on are all part of its

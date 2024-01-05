@@ -24,7 +24,7 @@ for ix in 'Example':
     ...
 </input>
       </program>
-      <p>executes the body of the loop 7 times with different values of <title_reference>ix</title_reference> each time.</p>
+      <p>executes the body of the loop 7 times with different values of ix each time.</p>
     </gi>
     <gi>
       <title>slicing (<c>[:]</c>)</title>

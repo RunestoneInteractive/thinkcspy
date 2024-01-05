@@ -11,7 +11,7 @@ print(singers[7:11])
 print(singers[17:21])
         </input>
   </program>
-  <p>The <title_reference>slice</title_reference> operator <c>[n:m]</c> returns the part of the string from the n'th character
+  <p>The slice operator <c>[n:m]</c> returns the part of the string from the n'th character
             to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
             go up to but do not include the character at index m.
             This

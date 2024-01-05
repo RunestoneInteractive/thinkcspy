@@ -185,7 +185,7 @@ drawSpiral(guido, 89)
   <exercise label="ex_5_7">
     <statement>
       <p>Write a fruitful function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
-                        including <title_reference>n</title_reference>.   So <c>sumTo(10)</c> would be <c>1+2+3...+10</c> which would return the value 55.  Use the
+                        including n.   So <c>sumTo(10)</c> would be <c>1+2+3...+10</c> which would return the value 55.  Use the
                         equation  (n * (n + 1)) / 2.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_7_editor">
@@ -228,7 +228,7 @@ print("The sum from 1 to 5 is",t)
   </exercise>
   <exercise label="ex_5_8">
     <statement>
-      <p>Write a function <title_reference>areaOfCircle(r)</title_reference> which returns the area of a circle of radius <title_reference>r</title_reference>.  Make sure you use the math module in your solution.</p>
+      <p>Write a function areaOfCircle(r) which returns the area of a circle of radius r.  Make sure you use the math module in your solution.</p>
     </statement>
     <program xml:id="ex_5_8_editor" interactive="activecode" language="python">
       <input>
@@ -331,7 +331,7 @@ drawStar(stroustrup, 7)
   <exercise label="ex_5_13">
     <statement>
       <p>Rewrite the function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
-                        including <title_reference>n</title_reference>.   This time use the accumulator pattern.</p>
+                        including n.   This time use the accumulator pattern.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_13_editor">
       <input>
@@ -435,7 +435,7 @@ print(pi_approx)
   </exercise>
   <exercise label="ex_5_16">
     <statement>
-      <p>Write a function called <title_reference>myPi</title_reference> that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
+      <p>Write a function called myPi that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
                          approximation.</p>
     </statement>
     <program xml:id="ex_5_16_editor" interactive="activecode" language="python">
@@ -451,8 +451,8 @@ def myPi(iters):
   </exercise>
   <exercise label="ex_5_17">
     <statement>
-      <p>Write a function called <title_reference>fancySquare</title_reference> that will draw a square with fancy corners (sprites on the corners).  You should
-                        implement and use the <title_reference>drawSprite</title_reference> function from above.  For an even more interesting look, how about adding small
+      <p>Write a function called fancySquare that will draw a square with fancy corners (sprites on the corners).  You should
+                        implement and use the drawSprite function from above.  For an even more interesting look, how about adding small
                         triangles to the ends of the sprite legs.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_17_editor">

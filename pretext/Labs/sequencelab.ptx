@@ -24,8 +24,8 @@ seq3np1(3)
         <p>Count the number of iterations it takes to stop.</p>
         <blockquote>
           <p>Our program currently <term>prints</term> the values in the sequence until it stops at 1.  Remember that one of the interesting
-                        questions is <title_reference>How many items are in the sequence before stopping at 1?</title_reference>.  To determine this, we will need to count them.</p>
-          <p>First, comment out (or delete) the print statements that currently exist.  Now we will need a local variable to keep track of the count.  It would make sense to call it <title_reference>count</title_reference>.  It will need to be initialized to 0 since before we begin the loop.</p>
+                        questions is How many items are in the sequence before stopping at 1?.  To determine this, we will need to count them.</p>
+          <p>First, comment out (or delete) the print statements that currently exist.  Now we will need a local variable to keep track of the count.  It would make sense to call it count.  It will need to be initialized to 0 since before we begin the loop.</p>
           <p>Once inside the loop, we will need to update <c>count</c> by 1 (increment), so that we can keep track of the number of iterations.  It is very important that you put these statements in the right place.  Notice that the previous location of the print statements can be very helpful in determining the location.</p>
           <p>When the loop terminates (we get to 1), <term>return</term> the value of <c>count</c>.</p>
           <p>This demonstrates an important pattern of computation called a <term>counter</term> (note that it is
@@ -49,7 +49,7 @@ seq3np1(3)
       <li>
         <p>Keep track of the maximum number of iterations.</p>
         <blockquote>
-          <p>Scanning this list of results causes us to ask the following question: <title_reference>What is the longest sequence?</title_reference> The easiest way to compute this is to keep track of the largest count seen so far.  Each time we generate a new count, we check to see if it is larger than what we think is the largest.  If it is greater, we update our largest so far and go on to the next count.
+          <p>Scanning this list of results causes us to ask the following question: What is the longest sequence? The easiest way to compute this is to keep track of the largest count seen so far.  Each time we generate a new count, we check to see if it is larger than what we think is the largest.  If it is greater, we update our largest so far and go on to the next count.
                         At the end of the process, the largest seen so far is the largest of all.</p>
           <p>Create a variable call <c>maxSoFar</c> and initialize it to zero.  Place this initialization outside the <term>for loop</term> so that it only happens once.  Now, inside the for loop, modify the code so that instead of printing the result of the <c>seq3np1</c> function, we save it in a variable, call it <c>result</c>.  Then we can check <c>result</c> to see if it is greater than <c>maxSoFar</c>.  If so, update <c>maxSoFar</c>.</p>
         </blockquote>

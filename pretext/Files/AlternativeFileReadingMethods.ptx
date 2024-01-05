@@ -145,6 +145,6 @@ infile.close()
             blank line in the file actually has a single character, the <c>\n</c> character (newline).
             So, the only way that a line of data from the
             file can be empty is if you are reading at the end of the file, and the <c>while</c> condition becomes <c>False</c>.</p>
-  <p>Finally, notice that the last line of the body of the <c>while</c> loop performs another <c>readline</c>.  This statement will reassign the variable <c>line</c> to the next line of the file.  It represents the <title_reference>change of state</title_reference> that is necessary for the iteration to
+  <p>Finally, notice that the last line of the body of the <c>while</c> loop performs another <c>readline</c>.  This statement will reassign the variable <c>line</c> to the next line of the file.  It represents the change of state that is necessary for the iteration to
             function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.</p>
 </section>

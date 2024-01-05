@@ -2,7 +2,7 @@
 <section xml:id="python-turtle_iteration-simplifies-our-turtle-program">
   <title>Iteration Simplifies our Turtle Program</title>
   <p>To draw a square we'd like to do the same thing four times &#x2014; move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
-            square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the <title_reference>forward</title_reference> and <title_reference>left</title_reference> four times, one time for
+            square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the forward and left four times, one time for
             each value in the list.</p>
   <program xml:id="ch03_for1" interactive="activecode" language="python">
     <input>

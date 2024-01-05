@@ -39,7 +39,7 @@ print(mylist)
             last item of the list.  If you provide a parameter for the position, <c>pop</c> will remove and return the
             item at that position.  Either way the list is changed.</p>
   <p>The following table provides a summary of the list methods shown above.  The column labeled
-            <title_reference>result</title_reference> gives an explanation as to what the return value is as it relates to the new value of the list.  The word
+            result gives an explanation as to what the return value is as it relates to the new value of the list.  The word
             <term>mutator</term> means that the list is changed by the method but nothing is returned (actually <c>None</c> is returned).  A <term>hybrid</term> method is one that not only changes the list but also returns a value as its result.  Finally, if the result is simply a return, then the list
             is unchanged by the method.</p>
   <p>Be sure

@@ -8,7 +8,7 @@
             natural language what the program is doing.  These notes are called comments.</p>
   <p>A <term>comment</term> in a computer program is text that is intended only for the human
             reader - it is completely ignored by the interpreter.
-            In Python, the <title_reference>#</title_reference> token starts a comment.  The rest of the line is ignored.
+            In Python, the # token starts a comment.  The rest of the line is ignored.
             Here is a new version of <em>Hello, World!</em>.</p>
   <program xml:id="ch01_3" interactive="activecode" language="python">
     <input>

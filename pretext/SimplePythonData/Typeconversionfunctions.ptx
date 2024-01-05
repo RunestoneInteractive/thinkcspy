@@ -3,7 +3,7 @@
   <title>Type conversion functions</title>
   <p>Sometimes it is necessary to convert values from one type to another.  Python provides
             a few simple functions that will allow us to do that.  The functions <c>int</c>, <c>float</c> and <c>str</c>
-            will (attempt to) convert their arguments into types <title_reference>int</title_reference>, <title_reference>float</title_reference> and <title_reference>str</title_reference>
+            will (attempt to) convert their arguments into types int, float and str
             respectively.  We call these <term>type conversion</term> functions.</p>
   <p>The <c>int</c> function can take a floating point number or a string, and turn it
             into an int. For floating point numbers, it <em>discards</em> the decimal portion of
@@ -33,7 +33,7 @@ print(type(float("123.45")))
         </input>
   </program>
   <p>The type converter <c>str</c> turns its argument into a string.  Remember that when we print a string, the
-            quotes are removed.  However, if we print the type, we can see that it is definitely <title_reference>str</title_reference>.</p>
+            quotes are removed.  However, if we print the type, we can see that it is definitely str.</p>
   <program xml:id="ch02_22" interactive="activecode" language="python">
     <input>
 print(str(17))

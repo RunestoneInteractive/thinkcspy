@@ -34,8 +34,8 @@
     <gi>
       <title>recursive call</title>
       <p>The statement that calls an already executing function.  Recursion can
-                            even be indirect &#x2014; function <title_reference>f</title_reference> can call <title_reference>g</title_reference> which calls <title_reference>h</title_reference>,
-                            and <title_reference>h</title_reference> could make a call back to <title_reference>f</title_reference>.</p>
+                            even be indirect &#x2014; function f can call g which calls h,
+                            and h could make a call back to f.</p>
     </gi>
     <gi>
       <title>recursive definition</title>

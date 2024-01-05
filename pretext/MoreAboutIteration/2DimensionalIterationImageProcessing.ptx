@@ -508,7 +508,7 @@ for i in range(5):
         print(i, j)
     </input>
   </program>
-  <p>The <c>for i</c> iteration is the <title_reference>outer iteration</title_reference> and the <c>for j</c> iteration is the <title_reference>inner iteration</title_reference>.  Each pass through
+  <p>The <c>for i</c> iteration is the outer iteration and the <c>for j</c> iteration is the inner iteration.  Each pass through
                 the outer iteration will result in the complete processing of the inner iteration from beginning to end.  This means that
                 the output from this nested iteration will show that for each value of <c>i</c>, all values of <c>j</c> will occur.</p>
   <p>Here is the same example in activecode.  Try it.  Note that the value of <c>i</c> stays the same while the value of <c>j</c> changes.  The inner iteration, in effect, is moving faster than the outer iteration.</p>
@@ -528,7 +528,7 @@ for i in range(5):
                       print(i, j)
     </input>
   </program>
-  <p>Our goal with image processing is to visit each pixel.  We will use an iteration to process each <title_reference>row</title_reference>.  Within that iteration, we will use a nested iteration to process each <title_reference>column</title_reference>.  The result is a nested iteration, similar to the one
+  <p>Our goal with image processing is to visit each pixel.  We will use an iteration to process each row.  Within that iteration, we will use a nested iteration to process each column.  The result is a nested iteration, similar to the one
                 seen above, where the outer <c>for</c> loop processes the rows, from 0 up to but not including the height of the image.
                 The inner <c>for</c> loop will process each column of a row, again from 0 up to but not including the width of the image.</p>
   <p>The resulting code will look like the following.  We are now free to do anything we wish to each pixel in the image.</p>
@@ -540,7 +540,7 @@ for row in range(img.getHeight()):
     </input>
   </program>
   <p>One of the easiest image processing algorithms will create what is known as a <term>negative</term> image.  A negative image simply means that
-                each pixel will be the <title_reference>opposite</title_reference> of what it was originally.  But what does opposite mean?</p>
+                each pixel will be the opposite of what it was originally.  But what does opposite mean?</p>
   <p>In the RGB color model, we can consider the opposite of the red component as the difference between the original red
                 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
     <c>255-50</c> or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.</p>

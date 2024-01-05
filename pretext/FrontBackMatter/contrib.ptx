@@ -116,7 +116,7 @@
           <p>Benoit Girard sent in a correction to a humorous mistake in Section 5.6.</p>
         </li>
         <li>
-          <p>Courtney Gleason and Katherine Smith wrote <title_reference>horsebet.py</title_reference>, which was used as a
+          <p>Courtney Gleason and Katherine Smith wrote horsebet.py, which was used as a
                         case study in an earlier version of the book. Their program can now be found
                         on the website.</p>
         </li>
@@ -129,7 +129,7 @@
                         corrections.</p>
         </li>
         <li>
-          <p>David Kershaw fixed the broken <title_reference>catTwice</title_reference> function in Section 3.10.</p>
+          <p>David Kershaw fixed the broken catTwice function in Section 3.10.</p>
         </li>
         <li>
           <p>Eddie Lam has sent in numerous corrections to Chapters 1, 2, and 3.  He also
@@ -152,7 +152,7 @@
         </li>
         <li>
           <p>Simon Dicon Montford reported a missing function definition and several typos
-                        in Chapter 3. He also found errors in the <title_reference>increment</title_reference> function in Chapter 13.</p>
+                        in Chapter 3. He also found errors in the increment function in Chapter 13.</p>
         </li>
         <li>
           <p>John Ouzts corrected the definition of return value in Chapter 3.</p>
