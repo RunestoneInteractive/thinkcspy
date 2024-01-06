@@ -1,24 +1,27 @@
 <?xml version="1.0"?>
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
-  <p>We previously used a few functions like <c>print()</c> and <c>input()</c>.  A <b>method</b> is a function that is attached to a specific Python object. 
+  <p>We previously used a few functions like <c>print()</c> and <c>len()</c> where we place the variable inside the parentheses such as <c>len(my_str)</c>. On the other hand, a <b>method</b> is a function that is attached to a specific Python object. 
     To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
-    it can perform. For example, we can write <c>ss.upper()</c> when we wanted the string <c>ss</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
-  <p>Remember that Strings are objects. Each string instance has its own attributes and methods. The most important attribute of the string is the collection of characters. There are a wide variety of methods. Try the following program.</p>
+    it can perform. For example, we can write <c>my_str.upper()</c> when we want the string <c>my_str</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
+
+
+  <p>Remember that strings are <term> immutable</term>. Therefore, all string methods give us a new string and must be assigned to a new variable. The original string is unchanged.</p>
+
   <program xml:id="ch3_sec5_p1" interactive="activecode" language="python">
     <input>
-ss = "Hello, World"
-print(ss.upper())
-
-tt = ss.lower()
-print(tt)
-        </input>
+my_str = "Hello, World"
+my_str.upper()
+print(my_str) # my_str is unchanged! 
+print(my_str.upper()) #Gives us the new string, we can print it or assign it to a variable
+my_new_str = my_str.upper()
+print(my_new_str)
+  </input>
   </program>
   <p>In this example, <c>upper</c> is a method that can be invoked on any string object
             to create a new string in which all the
-            characters are in uppercase.  <c>lower</c> works in a similar fashion changing all characters in the string
-            to lowercase.  (The original string <c>ss</c> remains unchanged.  A new string <c>tt</c> is created.)</p>
-  <p>In addition to <c>upper</c> and <c>lower</c>, the following table provides a summary of some other useful string methods.  There are a few activecode examples that follow so that you can try them out.</p>
+            characters are in uppercase. </p>
+  <p>In addition to <c>upper</c>, the following table provides some useful string methods.</p>
   <table>
     <tabular>
       <row header="yes">
@@ -56,50 +59,6 @@ print(tt)
       </row>
       <row>
         <cell>
-                            capitalize
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with first character capitalized, the rest lower
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            strip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with the leading and trailing whitespace removed
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            lstrip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with the leading whitespace removed
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            rstrip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with the trailing whitespace removed
-                        </cell>
-      </row>
-      <row>
-        <cell>
                             count
                         </cell>
         <cell>
@@ -122,119 +81,36 @@ print(tt)
       </row>
       <row>
         <cell>
-                            center
-                        </cell>
-        <cell>
-                            width
-                        </cell>
-        <cell>
-                            Returns a string centered in a field of width spaces
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            ljust
-                        </cell>
-        <cell>
-                            width
-                        </cell>
-        <cell>
-                            Returns a string left justified in a field of width spaces
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            rjust
-                        </cell>
-        <cell>
-                            width
-                        </cell>
-        <cell>
-                            Returns a string right justified in a field of width spaces
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            find
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            Returns the leftmost index where the substring item is found, or -1 if not found
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            rfind
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            Returns the rightmost index where the substring item is found, or -1 if not found
-                        </cell>
-      </row>
-      <row>
-        <cell>
                             index
                         </cell>
         <cell>
                             item
                         </cell>
         <cell>
-                            Like find except causes a runtime error if item is not found
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            rindex
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            Like rfind except causes a runtime error if item is not found
+                            Returns the leftmost index where the substring item is found, or error if not found
                         </cell>
       </row>
     </tabular>
   </table>
   <p>You should experiment with these
-            methods so that you understand what they do.  Note once again that the methods that return strings do not
-            change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.</p>
+            methods so that you understand what they do.  Note once again that the methods that return strings do <em>not</em>
+            change the original. </p>
   <program xml:id="ch3_sec5_p2" interactive="activecode" language="python">
     <input>
-ss = "    Hello, World    "
+ss = "Hello, World"
 
 els = ss.count("l")
 print(els)
 
-print("***" + ss.strip() + "***")
-print("***" + ss.lstrip() + "***")
-print("***" + ss.rstrip() + "***")
-
 news = ss.replace("o", "***")
 print(news)
-        </input>
-  </program>
-  <program xml:id="ch3_sec5_p3" interactive="activecode" language="python">
-    <input>
-food = "banana bread"
-print(food.capitalize())
 
-print("*" + food.center(25) + "*")
-print("*" + food.ljust(25) + "*")     # stars added to show bounds
-print("*" + food.rjust(25) + "*")
-
-print(food.find("e"))
-print(food.find("na"))
-print(food.find("b"))
-
-print(food.rfind("e"))
-print(food.rfind("na"))
-print(food.rfind("b"))
-
+food = "banana Bread"
+print(food.lower())
 print(food.index("e"))
+print(food.index("na")) #finds the index of the first occurence of "na"
+print(food.index("b")) 
+print(food.index("B")) #remember that python is case sensitive! 
         </input>
   </program>
   <p>
@@ -293,7 +169,7 @@ print(s[1] * s.index("n"))
           <p>yyyyy</p>
         </statement>
         <feedback>
-                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.  Repetition is done last.
+                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.
                 </feedback>
       </choice>
       <choice>

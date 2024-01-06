@@ -11,9 +11,23 @@ print("apple" in fruit)
 print("pear" in fruit)
         </input>
   </program>
+
+<p> Remember that <c>in</c> and <c>not in</c> only checks for membership in the top level of a list. </p>
+
+  <program xml:id="ch5_sec7_p2" interactive="activecode" language="python">
+    <input>
+my_list = ["apple", "orange", "banana", "cherry", ["pear", "kiwi"]]
+print("pear" in my_list) # prints False because "pear" is in a sublist
+print("g" in my_list) # prints False because "g" is not an member in my_list by itself
+        </input>
+  </program>
+
+
+
   <p>
     <term>Check your understanding</term>
   </p>
+
   <exercise label="ch5_sec7_q1">
     <statement>
       <p>What is printed by the following statements?</p>

@@ -63,11 +63,6 @@
                             correspond to your <q>mental chunking</q>.</p>
     </gi>
     <gi>
-      <title>pure function</title>
-      <p>A function which has no side effects. Pure functions only make changes
-                            to the calling program through their return values.</p>
-    </gi>
-    <gi>
       <title>sequence</title>
       <p>Any of the data types that consist of an ordered collection of elements, with
                             each element identified by an index.</p>

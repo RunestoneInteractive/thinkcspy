@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="strings_strings-are-immutable">
   <title>Strings are Immutable</title>
-  <p>One final thing that makes strings different from some other Python collection types is that
+  <p>One important thing that makes strings different from some other Python collection types is that
             you are not allowed to modify the individual characters in the collection.  It is tempting to use the <c>[]</c> operator on the left side of an assignment,
             with the intention of changing a character in a string.  For example, in the following code, we would like to change the first letter of <c>greeting</c>.</p>
   <program xml:id="ch3_sec9_p1" interactive="activecode" language="python">
