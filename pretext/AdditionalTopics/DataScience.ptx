@@ -20,7 +20,7 @@
 
   <p><term>Obtaining the data</term>: We live in a time where data is more abundant then ever before. Getting a hold of data can involve gathering it yourself,
   purchasing it, or taking advantage of the many, many sites online now which have a plethora of data 
-  available for free (and sometimes paid) use. if you are getting your data from some 3rd party, it will likely come in a .csv, .json, or SQL database format.</p>
+  available for free (and sometimes paid) use. If you are getting your data from some 3rd party, it will likely come in a .csv, .json, or SQL database format.</p>
 
   <p><term>Cleaning the data</term>: This can vary, but ultimately you need to prepare your data
     in a way that makes it easily usable in the next steps. Often data starts out "noisy" or contains errors. In this step you may

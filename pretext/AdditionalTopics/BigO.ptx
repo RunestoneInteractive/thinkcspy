@@ -8,7 +8,7 @@
   some of the things that would need to be considered.
   </p>
 
-  <p>To simplify this issue, we'll give up trying to estimate exactly how long a program will run, and instead look at the biggest factor that affect 
+  <p>To simplify this issue, we'll give up trying to estimate exactly how long a program will run, and instead look at the biggest factor that affects 
   existing code: the size of the input. If we wrote a program that ran for 60 seconds on 100 megabytes of input data, how should we expect the program to 
   react to 200 megabytes of input data? Maybe it would run in 120 seconds (twice the data for twice the run time)? Maybe it would still run in 60 seconds, 
   assuming that extra data isn't used. Or maybe the program would run for far longer. The issue is that we don't know what the relationship is between the size 
@@ -50,7 +50,7 @@ else:
   <p>In this program, the size of the input doesn't matter as much as whether the input string contains a letter "a" or not. If it does, the program runs forever. 
   If it doesn't, the program ends almost immediately. How do we reconcile this with our Big O notation? The answer is to be a pessimist. We adopt the assumption that 
   everything that can happen to slow down our program will happen. In the code above, we assume that the input ALWAYS will contain an "a". This assumption is broadly 
-  known as the "worst case". Big O notation uses this assumption in every instance you will see it (at least in this class).</p>
+  known as the "worst case". Big O notation uses this assumption by default in every instance you will see it (at least in this class). Any other case besides "worst" will be labeled.</p>
 
   <p>Let's look at some more examples:</p>
   <program language="python">
@@ -82,7 +82,7 @@ def example_func(n):
   <p>This figure shows complexities as a graph and which ones are considered "desirable" or at least "acceptable". Context mostly determines if these are "good" terms or not,
   but do strive to never write something worse than <c>O(n^3)</c>!</p>
 
-  <p>It may be difficult to appreciate the implications of these terms when first seeing them. Let's say we have an algorithm with the following complexities, but they 
+  <p>It may be difficult to appreciate the implications of these terms when first seeing them. Let's say we have a set of algorithms with the following complexities, but they 
   all run with the same time (1 milliseconds) for n = 10. This table shows what will happen if we increase the size of the input:</p>
 
   <table>

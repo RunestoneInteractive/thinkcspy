@@ -22,8 +22,8 @@
   <p>But this is all sounding like a lot to keep track of, right? How can we ensure consistency between
     versions installed on different people's computers?</p>
 
-  <p><term>requirements.txt</term> is a file we can specify for others to be able install the dependencies
-    (which is needed to run our code), since others may not have our dependencies installed.</p>
+  <p><term>requirements.txt</term> is a file we can specify for others to be able to easily install dependencies
+    (which are needed to run our code), since others may not have them installed on their own computers yet.</p>
 
   <p>The following code represents a <c>requirements.txt</c> file that specifies numpy as a dependency:</p>
   <program language="python">

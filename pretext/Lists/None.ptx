@@ -6,9 +6,7 @@
     But let's take a step back and think: why is this useful?</p>
 
   <p>In Python, sometimes we don't want to return anything from a function. However, when we don't 
-    explicitly return anything from a function, Python will implicitly return None.
-    You could also explicitly return None from a function <em>or</em> return a value,
-    and then you would have to check if the function returned something or not.</p>
+    explicitly return anything from a function, Python will implicitly return None.</p>
 
   <p>For the purposes of this class, you should just understand when None appears and why.</p>
 
@@ -59,7 +57,7 @@ print(my_list[0])
   </program>
 
   <p>If you remember nothing else, remember: <term>strings get reassigned, lists don't</term>. This is because
-    strings are <term>immutable</term>; lists are mutable and their functions don't return anything (they implicitly return None!).</p>
+    strings are <term>immutable</term>; lists are mutable and most of their functions don't return anything (meaning they implicitly return None!).</p>
 
   <note>You may be wondering how to tell the difference between functions that return something or not. Sometimes
     the name of the method can be a hint (e.g. if it has "set" in the name, it probably won't return, whereas "get" will).
