@@ -17,11 +17,11 @@ works.
 
 .. image:: https://travis-ci.org/RunestoneInteractive/thinkcspy.svg?branch=master
     :target: https://travis-ci.org/RunestoneInteractive/thinkcspy
-    
+
 Getting Started
 ===============
 
-We have tried to make it as easy as possible for you to build and use this book.  
+We have tried to make it as easy as possible for you to build and use this book.
 
 You can see and read this book online at `runestone.academy <http://runestone.academy/ns/books/published/thinkcspy/index.html?mode=browsing>`_
 
@@ -50,16 +50,13 @@ Building a PDF
 
 1. clone this repo
 2. install pretext with ``pip install pretext``
-3. run ``pretext build --generate ALL pdf`` This will generate the needed assets and then try to build the pdf.  You generally only need to include the ``--generate ALL`` the first time you build the pdf.  After that you can just run ``pretext build pdf``
-
-Note -- As of June 2023, the pdf build is not working.  It builds the first few pages and then there is a latex error.  We would love some help fixing this.  For that it may be helpful to use the latex target and then manually run latex on the resulting latex source in the output/latex folder.
-
+3. run ``pretext build pdf`` This will generate the needed assets and then try to build the pdf.  The pdf will be in the output/pdf folder.
 
 
 Building with runestone
 -----------------------
 
-As mentioned above this method is deprecated, but will still work.  
+As mentioned above this method is deprecated, but will still work.
 Any updates to this book should be made in PreTeXt NOT RST.
 
 You can build it and host it yourself in just a few simple steps:
