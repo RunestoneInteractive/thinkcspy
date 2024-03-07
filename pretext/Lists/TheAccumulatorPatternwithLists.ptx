@@ -13,7 +13,7 @@
       <input>
         sum = 0
         for num in [1, 3, 5, 7, 9]:
-        sum = sum + num
+            sum = sum + num
         print(sum)
       </input>
     </program>
@@ -33,8 +33,8 @@
       <input>
         long_names = 0
         for name in ["Joe", "Sally", "Amy", "Brad"]:
-        if len(name) &gt; 3:
-        long_names += 1
+            if len(name) &gt; 3:
+                long_names += 1
         print(long_names)
       </input>
     </program>
@@ -51,8 +51,8 @@
         s = "what if we went to the zoo"
         num_vowels = 0
         for i in s:
-        if i in ['a', 'e', 'i', 'o', 'u']:
-        num_vowels += 1
+            if i in ['a', 'e', 'i', 'o', 'u']:
+                num_vowels += 1
         print(num_vowels)
       </input>
     </program>
@@ -79,8 +79,8 @@
         nums = [9, 3, 8, 11, 5, 29, 2]
         best_num = 0
         for n in nums:
-        if n &gt; best_num:
-        best_num = n
+            if n &gt; best_num:
+                best_num = n
         print(best_num)
       </input>
     </program>
@@ -98,8 +98,8 @@
         nums = [9, 3, 8, 11, 5, 29, 2]
         best_num = nums[0]
         for n in nums:
-        if n &gt; best_num:
-        best_num = n
+            if n &gt; best_num:
+                best_num = n
         print(best_num)
       </input>
     </program>
@@ -115,7 +115,7 @@
         scores = [85, 95, 70]
         result = ''
         for score in scores:
-        result = result + str(score) + ','
+            result = result + str(score) + ','
 
         print("The scores are " + result)
       </input>
@@ -139,7 +139,7 @@
           scores = [85, 95, 70]
           result = ''
           for score in scores:
-          result = result + str(score) + ','
+              result = result + str(score) + ','
 
           print("The scores are " + result)
 
@@ -149,9 +149,8 @@
 
           class myTests(TestCaseGui):
 
-          def testOne(self):
-          self.assertEqual(self.getOutput().rstrip('\n'), 'The scores are 85, 95, and 70.', "Output
-          should be 'The scores are 85, 95, and 70.'")
+              def testOne(self):
+                  self.assertEqual(self.getOutput().rstrip('\n'), 'The scores are 85, 95, and 70.', "Output should be 'The scores are 85, 95, and 70.'")
 
           myTests().main()
         </input>
@@ -167,7 +166,7 @@
             scores = [85, 95, 70]
             result = ''
             for score in scores[:-1]:
-            result = result + str(score) + ', '
+                result = result + str(score) + ', '
 
             # Now, append the last score
             result = result + 'and ' + str(scores[-1]) + '.'
@@ -194,8 +193,8 @@
             s = "We are learning!"
             x = 0
             for i in s:
-            if i in ['a', 'b', 'c', 'd', 'e']:
-            x += 1
+                if i in ['a', 'b', 'c', 'd', 'e']:
+                    x += 1
             print(x)
 </input>
         </program>
@@ -253,8 +252,8 @@
             list= [5, 2, 1, 4, 9, 10]
             min_value = 0
             for item in list:
-            if item &lt; min_value:
-            min_value = item
+                if item &lt; min_value:
+                    min_value = item
             print(min_value)
 </input>
         </program>
@@ -319,13 +318,10 @@
 
           class myTests(TestCaseGui):
 
-          def testNine(self):
-          self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled',
-          'planted', 'timed', 'waved', 'wished'], "Testing that the past_tense list is correct.")
-          self.assertIn("else", self.getEditorText(), "Testing output (Don't worry about actual and
-          expected values).")
-          self.assertIn("for", self.getEditorText(), "Testing output (Don't worry about actual and
-          expected values).")
+              def testNine(self):
+                  self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that the past_tense list is correct.")
+                  self.assertIn("else", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
+                  self.assertIn("for", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
 
           myTests().main()
         </input>
