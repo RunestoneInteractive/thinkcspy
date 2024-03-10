@@ -201,7 +201,7 @@ Exercises
             .. activecode:: lst_q5_answer
 
                 def max(lst):
-                    max = 0
+                    max = lst[0]
                     for e in lst:
                         if e > max:
                             max = e
