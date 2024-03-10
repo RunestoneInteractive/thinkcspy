@@ -168,7 +168,7 @@ myTests().main()
       <program xml:id="lst_q5_answer" language="python">
         <input>
 def max(lst):
-    max = 0
+    max = lst[0]
     for e in lst:
         if e &gt; max:
             max = e
