@@ -3,8 +3,8 @@
     <xi:include href="./bookinfo.ptx"/>
 
     <book xml:id="thinkcspy" permid="tcs">
-        <title>How to Think Like a Computer Scientist</title>
-        <subtitle>The PreTeXt Interactive Edition</subtitle>
+        <title>Introduction to Computer Science 1</title>
+        <subtitle>The Foundation of Python Programming</subtitle>
         <frontmatter>
         <titlepage>
         </titlepage>
