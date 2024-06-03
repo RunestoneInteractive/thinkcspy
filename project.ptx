@@ -8,25 +8,25 @@
   <targets>
     <target name="web">
       <format>html</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/uncc_cs1.ptx</source>
       <publication>pretext/publication-rs-for-all.xml</publication>
       <output-dir>output/html</output-dir>
     </target>
     <target name="runestone">
       <format>html</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/uncc_cs1.ptx</source>
       <publication>pretext/publication-rs-academy.xml</publication>
       <output-dir>published/httlacs</output-dir>
     </target>
     <target name="latex">
       <format>latex</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/uncc_cs1.ptx</source>
       <publication>pretext/publication-rs-for-all.xml</publication>
       <output-dir>output/latex</output-dir>
     </target>
     <target name="pdf" pdf-method="xelatex">
       <format>pdf</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/uncc_cs1.ptx</source>
       <publication>pretext/publication-rs-latex.xml</publication>
       <output-dir>output/pdf</output-dir>
     </target>

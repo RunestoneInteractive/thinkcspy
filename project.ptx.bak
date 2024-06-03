@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file provides the overall configuration for your PreTeXt
+    project. To edit the content of your document, open `source/main.ptx`
+    (default location).
+-->
+<project>
+  <targets>
+    <target name="web">
+      <format>html</format>
+      <source>pretext/uncc_cs1.ptx</source>
+      <publication>pretext/publication-rs-for-all.xml</publication>
+      <output-dir>output/html</output-dir>
+    </target>
+    <target name="runestone">
+      <format>html</format>
+      <source>pretext/uncc_cs1.ptx</source>
+      <publication>pretext/publication-rs-academy.xml</publication>
+      <output-dir>published/httlacs</output-dir>
+    </target>
+    <target name="latex">
+      <format>latex</format>
+      <source>pretext/uncc_cs1.ptx</source>
+      <publication>pretext/publication-rs-for-all.xml</publication>
+      <output-dir>output/latex</output-dir>
+    </target>
+    <target name="pdf" pdf-method="xelatex">
+      <format>pdf</format>
+      <source>pretext/uncc_cs1.ptx</source>
+      <publication>pretext/publication-rs-latex.xml</publication>
+      <output-dir>output/pdf</output-dir>
+    </target>
+  </targets>
+  <executables>
+    <latex>latex</latex>
+    <pdflatex>pdflatex</pdflatex>
+    <xelatex>xelatex</xelatex>
+    <pdfsvg>pdf2svg</pdfsvg>
+    <asy>asy</asy>
+    <sage>sage</sage>
+    <pdfpng>convert</pdfpng>
+    <pdfeps>pdftops</pdfeps>
+    <pdfcrop>pdf-crop-margins</pdfcrop>
+    <pageres>pageres</pageres>
+    <node>node</node>
+    <liblouis>file2brl</liblouis>
+  </executables>
+</project>

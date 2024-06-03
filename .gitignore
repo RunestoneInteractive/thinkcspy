@@ -1,19 +1,24 @@
+# <!-- Managed automatically by PreTeXt authoring tools -->
+# (delete the above line to manage this file manually)
+
 # Boilerplate list of files in a PreTeXt project for git to ignore
 # ensure this file is tracked
 !.gitignore
 
-# don't track unpublished builds
+# don't track unpublished builds or stage
 output
 
 # don't track assets generated from source
 generated-assets
+
+# don't track the executables.ptx file
+executables.ptx
 
 # don't track node packages
 node_modules
 
 # don't track error logs
 .error_schema.log
-cli.log
 logs
 
 # don't track OS related files (windows/macos/linux)
@@ -89,9 +94,6 @@ GitHub.sublime-settings
 .dropbox
 .dropbox.attr
 .dropbox.cache
-__pycache__
-published
-pretext/GenFigs
-sphinx_settings.json
-rs-substitutes.xml
-**/GenFigs
+
+# Don't track codechat config (will be generated automatically)
+codechat_config.yaml
