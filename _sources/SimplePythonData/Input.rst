@@ -93,9 +93,9 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
 
 .. clickablearea:: ca_id_ints
-    :question: Click on all of the variables of type `int` in the code below
+    :question: Click on all of the variables of type ``int`` in the code below
     :iscode:
-    :feedback: Remember input returns a `str`
+    :feedback: Remember input returns a ``str``
 
     :click-incorrect:seconds:endclick: = input("Please enter the number of seconds you wish to convert")
 
@@ -105,7 +105,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
     print(:click-correct:secs_still_remaining:endclick:)
 
 .. clickablearea:: ca_id_str
-    :question: Click on all of the variables of type `str` in the code below
+    :question: Click on all of the variables of type ``str`` in the code below
     :iscode:
     :feedback:
 
