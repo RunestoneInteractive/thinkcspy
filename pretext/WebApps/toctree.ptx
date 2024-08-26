@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Web Applications</title>
-4<xi:include href="./01-WebApps.ptx"/>
-4<xi:include href="./02-HowTheWebWorks.ptx"/>
-4<xi:include href="./03-HowWebApplicationsWork.ptx"/>
-4<xi:include href="./04-WebApplicationsAndHtmlForms.ptx"/>
-4<xi:include href="./05-WritingWebApplicationsWithFlask.ptx"/>
-4<xi:include href="./06-MoreAboutFlask.ptx"/>
-4<xi:include href="./07-InputForAFlaskWebApplication.ptx"/>
-4<xi:include href="./08-WebApplicationsWithAUserInterface.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
+<title>Web Applications</title>
+<xi:include href="./01-WebApps.ptx"/>
+<xi:include href="./02-HowTheWebWorks.ptx"/>
+<xi:include href="./03-HowWebApplicationsWork.ptx"/>
+<xi:include href="./04-WebApplicationsAndHtmlForms.ptx"/>
+<xi:include href="./05-WritingWebApplicationsWithFlask.ptx"/>
+<xi:include href="./06-MoreAboutFlask.ptx"/>
+<xi:include href="./07-InputForAFlaskWebApplication.ptx"/>
+<xi:include href="./08-WebApplicationsWithAUserInterface.ptx"/>
+<xi:include href="./Glossary.ptx"/>
 </chapter>

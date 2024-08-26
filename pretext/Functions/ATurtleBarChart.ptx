@@ -7,7 +7,7 @@
     <ul>
       <li>
         <p>We can get a turtle to display text on the canvas at the turtle's current position.  The method is called <c>write</c>.
-                    For example,   <c>alex.write("Hello")</c> would write the string <title_reference>hello</title_reference> at the current position.</p>
+                    For example,   <c>alex.write("Hello")</c> would write the string hello at the current position.</p>
       </li>
       <li>
         <p>One can fill a shape (circle, semicircle, triangle, etc.) with a fill color.  It is a two-step process.

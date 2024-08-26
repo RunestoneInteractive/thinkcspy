@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Simple Python Data</title>
-4<xi:include href="./intro-VariablesExpressionsandStatements.ptx"/>
-4<xi:include href="./ValuesandDataTypes.ptx"/>
-4<xi:include href="./Typeconversionfunctions.ptx"/>
-4<xi:include href="./Variables.ptx"/>
-4<xi:include href="./VariableNamesandKeywords.ptx"/>
-4<xi:include href="./StatementsandExpressions.ptx"/>
-4<xi:include href="./OperatorsandOperands.ptx"/>
-4<xi:include href="./Input.ptx"/>
-4<xi:include href="./OrderofOperations.ptx"/>
-4<xi:include href="./Reassignment.ptx"/>
-4<xi:include href="./UpdatingVariables.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Simple Python Data</title>
+<xi:include href="./intro-VariablesExpressionsandStatements.ptx"/>
+<xi:include href="./ValuesandDataTypes.ptx"/>
+<xi:include href="./Typeconversionfunctions.ptx"/>
+<xi:include href="./Variables.ptx"/>
+<xi:include href="./VariableNamesandKeywords.ptx"/>
+<xi:include href="./StatementsandExpressions.ptx"/>
+<xi:include href="./OperatorsandOperands.ptx"/>
+<xi:include href="./Input.ptx"/>
+<xi:include href="./OrderofOperations.ptx"/>
+<xi:include href="./Reassignment.ptx"/>
+<xi:include href="./UpdatingVariables.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

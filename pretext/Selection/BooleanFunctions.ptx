@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="selection_boolean-functions">
   <title>Boolean Functions</title>
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
   <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
             expression evaluation can be returned by a function (using the <c>return</c> statement),
             functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
@@ -64,7 +65,7 @@ else:
     <input>
           def isDivisible(x, y):
               return x % y == 0
-          
+
           if isDivisible(10, 5):
               print("That works")
           else:
@@ -133,7 +134,7 @@ return x + y &lt; z
       </choice>
     </choices>
   </exercise>
-</introduction>
+</subsection>
   <subsection xml:id="selection_more-unit-testing">
     <title>More Unit Testing</title>
     <p>When we write unit tests, we should also consider <term>output equivalence classes</term> that result in significantly different results.</p>

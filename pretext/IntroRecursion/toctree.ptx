@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Recursion</title>
-4<xi:include href="./WhatIsRecursion.ptx"/>
-4<xi:include href="./CalculatingtheSumofaListofNumbers.ptx"/>
-4<xi:include href="./TheThreeLawsofRecursion.ptx"/>
-4<xi:include href="./ConvertinganIntegertoaStringinAnyBase.ptx"/>
-4<xi:include href="./intro-VisualizingRecursion.ptx"/>
-4<xi:include href="./SierpinskiTriangle.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./ProgrammingExercises.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Recursion</title>
+<xi:include href="./WhatIsRecursion.ptx"/>
+<xi:include href="./CalculatingtheSumofaListofNumbers.ptx"/>
+<xi:include href="./TheThreeLawsofRecursion.ptx"/>
+<xi:include href="./ConvertinganIntegertoaStringinAnyBase.ptx"/>
+<xi:include href="./intro-VisualizingRecursion.ptx"/>
+<xi:include href="./SierpinskiTriangle.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./ProgrammingExercises.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

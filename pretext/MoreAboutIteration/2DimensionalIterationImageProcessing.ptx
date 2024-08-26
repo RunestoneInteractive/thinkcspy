@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_dimensional-iteration-image-processing">
   <title>2-Dimensional Iteration: Image Processing</title>
-  <introduction>
-  <p>Two dimensional tables have both rows and columns.  You have probably seen many tables like this if you have used a
+  <subsection><title>Introduction</title>
+    <p>Two dimensional tables have both rows and columns.  You have probably seen many tables like this if you have used a
             spreadsheet program.  Another object that is organized in rows and columns is a digital image.  In this section we will
             explore how iteration allows us to manipulate these images.</p>
-  <p>A <term>digital image</term> is a finite collection of small, discrete picture elements called <term>pixels</term>.  These pixels are organized in a two-dimensional grid.  Each pixel represents the smallest amount of picture information that is
+    <p>A <term>digital image</term> is a finite collection of small, discrete picture elements called <term>pixels</term>.  These pixels are organized in a two-dimensional grid.  Each pixel represents the smallest amount of picture information that is
             available.  Sometimes these pixels appear as small <q>dots</q>.
-  </p>
-  <p>Each image (grid of pixels) has its own width and its own height.  The width is the number of columns and the height is the number of rows.  We can name the pixels in the grid by using the column number and row number.  However, it is very important to remember
+    </p>
+    <p>Each image (grid of pixels) has its own width and its own height.  The width is the number of columns and the height is the number of rows.  We can name the pixels in the grid by using the column number and row number.  However, it is very important to remember
             that computer scientists like to start counting with 0!  This means that if there are 20 rows, they will be named 0,1,2, and so on through 19.  This will be very useful later when we iterate using range.</p>
-  <p>In the figure below, the pixel of interest is found at column <term>c</term> and row <term>r</term>.
-  </p>
-  <image source="MoreAboutIteration/Figures/image.png" width="50%"/>
-</introduction>
+    <p>In the figure below, the pixel of interest is found at column <term>c</term> and row <term>r</term>.
+    </p>
+    <image source="MoreAboutIteration/Figures/image.png" width="50%"/>
+  </subsection>
   <subsection xml:id="more-about-iteration_the-rgb-color-model">
     <title>The RGB Color Model</title>
     <p>Each pixel of the image will represent a single color.  The specific color depends on a formula that mixes various amounts
@@ -271,33 +271,41 @@ print(p.getGreen(), p.getBlue())
         <statement>
           <p>Dark red</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     Because all three values are close to 0, the color will be dark.  But because the red value is higher than the other two, the color will appear red.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Light red</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The closer the values are to 0, the darker the color will appear.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Dark green</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The first value in RGB is the red value.  The second is the green.  This color has no green in it.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Light green</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The first value in RGB is the red value.  The second is the green.  This color has no green in it.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -402,8 +410,13 @@ print(p.getGreen(), p.getBlue())
                 file and uses the contents to create an image object that is referred to by <c>img</c>.  Once we have an image object,
                 we can use the methods described above to access information about the image or to get a specific pixel and check
                 on its basic color intensities.</p>
-  <raw format="html" xml:space="preserve">&lt;img src="../_static/LutherBellPic.jpg" id="luther.jpg"&gt;</raw>
-  <program xml:id="pixelex1" interactive="activecode" language="python">
+
+  <datafile label="luther-bell" filename="luther.jpg">
+    <image source="datafiles/LutherBellPic.jpg" width="66%"/>
+  </datafile>
+
+
+  <program xml:id="pixelex1" label="pixelex1a" interactive="activecode" language="python">
     <input>
 import image
 img = image.Image("luther.jpg")
@@ -415,6 +428,7 @@ p = img.getPixel(45, 55)
 print(p.getRed(), p.getGreen(), p.getBlue())
     </input>
   </program>
+
   <p>When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels.  Also, the
                 pixel at column 45, row 55, has RGB values of 165, 161, and 158.  Try a few other pixel locations by changing the <c>getPixel</c> arguments and rerunning the program.</p>
   <p>
@@ -429,33 +443,41 @@ print(p.getRed(), p.getGreen(), p.getBlue())
         <statement>
           <p>149 132 122</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     These are the values for the pixel at row 30, column 100.  Get the values for row 100 and column 30 with p = img.getPixel(100, 30).
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>183 179 170</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     Yes, the RGB values are 183 179 170 at row 100 and column 30.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>165 161 158</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     These are the values from the original example (row 45, column 55). Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>201 104 115</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     These are simply made-up values that may or may not appear in the image.  Get the values for row 100 and column 30 with p = img.getPixel(30, 100).
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -486,7 +508,7 @@ for i in range(5):
         print(i, j)
     </input>
   </program>
-  <p>The <c>for i</c> iteration is the <title_reference>outer iteration</title_reference> and the <c>for j</c> iteration is the <title_reference>inner iteration</title_reference>.  Each pass through
+  <p>The <c>for i</c> iteration is the outer iteration and the <c>for j</c> iteration is the inner iteration.  Each pass through
                 the outer iteration will result in the complete processing of the inner iteration from beginning to end.  This means that
                 the output from this nested iteration will show that for each value of <c>i</c>, all values of <c>j</c> will occur.</p>
   <p>Here is the same example in activecode.  Try it.  Note that the value of <c>i</c> stays the same while the value of <c>j</c> changes.  The inner iteration, in effect, is moving faster than the outer iteration.</p>
@@ -506,7 +528,7 @@ for i in range(5):
                       print(i, j)
     </input>
   </program>
-  <p>Our goal with image processing is to visit each pixel.  We will use an iteration to process each <title_reference>row</title_reference>.  Within that iteration, we will use a nested iteration to process each <title_reference>column</title_reference>.  The result is a nested iteration, similar to the one
+  <p>Our goal with image processing is to visit each pixel.  We will use an iteration to process each row.  Within that iteration, we will use a nested iteration to process each column.  The result is a nested iteration, similar to the one
                 seen above, where the outer <c>for</c> loop processes the rows, from 0 up to but not including the height of the image.
                 The inner <c>for</c> loop will process each column of a row, again from 0 up to but not including the width of the image.</p>
   <p>The resulting code will look like the following.  We are now free to do anything we wish to each pixel in the image.</p>
@@ -518,7 +540,7 @@ for row in range(img.getHeight()):
     </input>
   </program>
   <p>One of the easiest image processing algorithms will create what is known as a <term>negative</term> image.  A negative image simply means that
-                each pixel will be the <title_reference>opposite</title_reference> of what it was originally.  But what does opposite mean?</p>
+                each pixel will be the opposite of what it was originally.  But what does opposite mean?</p>
   <p>In the RGB color model, we can consider the opposite of the red component as the difference between the original red
                 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
     <c>255-50</c> or 205.  In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot.  We do the same for the blue and green as well.</p>
@@ -622,33 +644,41 @@ d.
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     i will start with a value of 0 and then j will iterate from 0 to 1.  Next, i will be 1 and j will iterate from 0 to 1.  Finally, i will be 2 and j will iterate from 0 to 1.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The inner for-loop controls the second digit (j).  The inner for-loop must complete before the outer for-loop advances.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The inner for-loop controls the second digit (j).  Notice that the inner for-loop is over the list [0, 1].
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Output d</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     The outer for-loop runs 3 times (0, 1, 2) and the inner for-loop runs twice for each time the outer for-loop runs, so this code prints exactly 6 lines.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -676,33 +706,41 @@ newblue = 0
         <statement>
           <p>It would look like a red-washed version of the bell image</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     Because we are removing the green and the blue values, but keeping the variation of the red the same, you will get the same image, but it will look like it has been bathed in red.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>It would be a solid red rectangle the same size as the original image</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     Because the red value varies from pixel to pixel, this will not look like a solid red rectangle.  For it to look like a solid red rectangle each pixel would have to have exactly the same red value.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>It would look the same as the original image</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     If you remove the blue and green values from the pixels, the image will look different, even though there does not appear to be any blue or green in the original image (remember that other colors are made of combinations of red, green and blue).
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>It would look the same as the negative image in the example code</p>
         </statement>
-        <feedback><p>
+        <feedback>
+          <p>
                     Because we have changed the value of the pixels from what they were in the original ActiveCode box code, the image will not be the same.
-        </p></feedback>
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>

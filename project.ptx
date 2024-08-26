@@ -18,12 +18,6 @@
       <publication>pretext/publication-rs-academy.xml</publication>
       <output-dir>published/httlacs</output-dir>
     </target>
-    <target name="epub">
-      <format>epub</format>
-      <source>pretext/thinkcspy.ptx</source>
-      <publication>pretext/publication-pub.xml</publication>
-      <output-dir>published/epub</output-dir>
-    </target>
     <target name="latex">
       <format>latex</format>
       <source>pretext/thinkcspy.ptx</source>
@@ -33,18 +27,8 @@
     <target name="pdf" pdf-method="xelatex">
       <format>pdf</format>
       <source>pretext/thinkcspy.ptx</source>
-      <publication>pretext/publication-rs-for-all.xml</publication>
+      <publication>pretext/publication-rs-latex.xml</publication>
       <output-dir>output/pdf</output-dir>
-    </target>
-    <target name="subset">
-      <format>html</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/subset</output-dir>
-      <stringparam key="debug.skip-knowls" value="yes"/>
-      <!-- edit this to change the section/chapter/etc. to include
-           in your subset build -->
-      <xmlid-root>ch-first</xmlid-root>
     </target>
   </targets>
   <executables>

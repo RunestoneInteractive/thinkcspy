@@ -24,12 +24,15 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 
     <source>
         <directories external="Figures" generated="GenFigs"/>
+        <version include="html"/>
     </source>
 
     <html>
         <platform host="runestone"/>
         <!-- knowled checkpoints interfere with ActiveCode problems -->
         <knowl exercise-inline="no" example="no" listing="yes"/>
+        <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+        <tableofcontents focused="yes" />
     </html>
 
 </publication>

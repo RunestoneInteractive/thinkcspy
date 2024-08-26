@@ -28,8 +28,8 @@ else:
     print("Yes, we have no bananas!")
         </input>
   </program>
-  <p>It is probably clear to you that the word <title_reference>apple</title_reference> would be less than (come before) the word <c>banana</c>.
-            After all, <title_reference>a</title_reference> is before <title_reference>b</title_reference> in the alphabet.  But what if we consider the words <c>apple</c> and <c>Apple</c>?
+  <p>It is probably clear to you that the word apple would be less than (come before) the word <c>banana</c>.
+            After all, a is before b in the alphabet.  But what if we consider the words <c>apple</c> and <c>Apple</c>?
             Are they the same?</p>
   <program xml:id="chp08_ord1" interactive="activecode" language="python">
     <input>

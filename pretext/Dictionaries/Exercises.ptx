@@ -138,7 +138,7 @@ add_fruit(new_inventory, 'strawberries', 25)
     <statement>
       <p>Write a program called <c>alice_words.py</c> that creates a text file named
                         <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
-                        number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>.
+                        number of times each occurs, in the text version of Alice's Adventures in Wonderland.
                         (You can obtain a free plain text version of the book, along with many others, from
                         <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look
                         something like this</p>
@@ -263,7 +263,7 @@ for word in keys:
     out.write('\n')
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
-                
+
                     <program language="python"><input>
 f = open('alice.txt', 'r')
 

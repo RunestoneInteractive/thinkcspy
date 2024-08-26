@@ -117,8 +117,8 @@
       students seeing this example are looking at their first program. Some of them
       are undoubtedly a little nervous, having heard that computer programming is
       difficult to learn. The Java version has always forced me to choose between two
-      unsatisfying options: either to explain the <title_reference>class Hello</title_reference>,
-      <title_reference>public static void main</title_reference>, <title_reference>String[] args</title_reference>, <title_reference>{</title_reference>, and <title_reference>}</title_reference>, statements and risk
+      unsatisfying options: either to explain the class Hello,
+      public static void main, String[] args, {, and }, statements and risk
       confusing or intimidating some of the students right at the start, or to tell
       them, Just don't worry about all of that stuff now; we will talk about it
       later, and risk the same thing. The educational objectives at this point in the

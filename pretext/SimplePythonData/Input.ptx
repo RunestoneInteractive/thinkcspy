@@ -15,9 +15,9 @@ n = input("Please enter your name: ")
   </program>
   <p>The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt is
             shown.
-            The user of the program can enter the name and press <title_reference>return</title_reference>. When this
-            happens the text that has been entered is returned from the <title_reference>input</title_reference> function,
-            and in this case assigned to the variable <title_reference>n</title_reference>.  Make sure you run this example a number
+            The user of the program can enter the name and press return. When this
+            happens the text that has been entered is returned from the input function,
+            and in this case assigned to the variable n.  Make sure you run this example a number
             of times and try some different names in the input box that appears.</p>
   <program xml:id="inputfun" interactive="activecode" language="python">
     <input>

@@ -14,6 +14,7 @@ node_modules
 # don't track error logs
 .error_schema.log
 cli.log
+logs
 
 # don't track OS related files (windows/macos/linux)
 .DS_Store
@@ -88,4 +89,9 @@ GitHub.sublime-settings
 .dropbox
 .dropbox.attr
 .dropbox.cache
-
+__pycache__
+published
+pretext/GenFigs
+sphinx_settings.json
+rs-substitutes.xml
+**/GenFigs

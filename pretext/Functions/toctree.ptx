@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Functions</title>
-4<xi:include href="./functions.ptx"/>
-4<xi:include href="./Functionsthatreturnvalues.ptx"/>
-4<xi:include href="./UnitTesting.ptx"/>
-4<xi:include href="./Variablesandparametersarelocal.ptx"/>
-4<xi:include href="./TheAccumulatorPattern.ptx"/>
-4<xi:include href="./Functionscancallotherfunctions.ptx"/>
-4<xi:include href="./FlowofExecutionSummary.ptx"/>
-4<xi:include href="./mainfunction.ptx"/>
-4<xi:include href="./ProgramDevelopment.ptx"/>
-4<xi:include href="./Composition.ptx"/>
-4<xi:include href="./ATurtleBarChart.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./Exercises.ptx"/>
+<title>Functions</title>
+<xi:include href="./functions.ptx"/>
+<xi:include href="./Functionsthatreturnvalues.ptx"/>
+<xi:include href="./UnitTesting.ptx"/>
+<xi:include href="./Variablesandparametersarelocal.ptx"/>
+<xi:include href="./TheAccumulatorPattern.ptx"/>
+<xi:include href="./Functionscancallotherfunctions.ptx"/>
+<xi:include href="./FlowofExecutionSummary.ptx"/>
+<xi:include href="./mainfunction.ptx"/>
+<xi:include href="./ProgramDevelopment.ptx"/>
+<xi:include href="./Composition.ptx"/>
+<xi:include href="./ATurtleBarChart.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

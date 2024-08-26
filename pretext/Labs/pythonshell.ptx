@@ -29,7 +29,7 @@
                 folder, on most versions of Linux you can find it under the accessories menu.
                 Once you have a terminal started, you simply type python and press the return
                 key.  To start the shell under windows simply go to the start menu and choose
-                <title_reference>Python (command line)</title_reference> from the menu.</p>
+                Python (command line) from the menu.</p>
     <p>Now that you have the shell started you may wonder what you can do with it?
                 In the shell you can do anything you would do in a Python program.  Any of
                 the examples you have seen in this chapter can be typed in directly to the
@@ -51,7 +51,7 @@
                 difficult to do anything more than a few lines long because if you make a
                 typo you end up retying everything.  Fortunately there is a solution for that
                 as well.  Python allows you to write a program, and save it as a text file
-                with the extension <title_reference>.py</title_reference> and then you can run that program right from the
+                with the extension .py and then you can run that program right from the
                 command line.</p>
     <p>Here is a simple example of a Python program.</p>
     <program language="python">
@@ -62,8 +62,8 @@ print('2 + 3 = ', 2 + 3)
     </program>
     <p>Let's assume that you have typed in the lines above in Notepad or TextEdit or
                 some similar editor, if you already know emacs or vi you are a awesome!  Now
-                save the file as <title_reference>testprog1.py</title_reference> and then head back to the terminal.  Now at
-                the command line of the terminal type <title_reference>python testprog1.py</title_reference> and you will see
+                save the file as testprog1.py and then head back to the terminal.  Now at
+                the command line of the terminal type python testprog1.py and you will see
                 the following output</p>
     <program language="python">
       <input>

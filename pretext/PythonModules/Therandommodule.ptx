@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_the-random-module">
-  <title>The <title_reference>random</title_reference> module</title>
+  <title>The random module</title>
   <p>We often want to use <term>random numbers</term> in programs.  Here are a few typical uses:</p>
   <p>
     <ul>

@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
   <p>We previously saw that each turtle instance has its own attributes and
             a number of methods that can be applied to the instance.  For example,
             we wrote <c>tess.right(90)</c> when we wanted the turtle object <c>tess</c> to perform the <c>right</c> method to turn
@@ -336,7 +337,7 @@ print(s[1] * s.index("n"))
       </choice>
     </choices>
   </exercise>
-</introduction>
+</subsection>
   <subsection xml:id="strings_string-format-method">
     <title>String Format Method</title>
     <p>In grade school quizzes a common convention is to use fill-in-the blanks. For instance,</p>

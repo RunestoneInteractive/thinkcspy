@@ -66,7 +66,7 @@ print("Nothing seems to have happened with the points")
     </input>
   </program>
   <p>During the initialization of the objects, we created two
-            attributes called <title_reference>x</title_reference> and <title_reference>y</title_reference> for each, and gave them both the value 0.</p>
+            attributes called x and y for each, and gave them both the value 0.</p>
   <note>
     <p>The asignments are not to <c>x</c> and <c>y</c>, but to <c>self.x</c> and <c>self.y</c>.
                 The attributes <c>x</c> and <c>y</c> are <em>always</em> attached to a particular instance.
