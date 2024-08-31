@@ -44,7 +44,7 @@ print(final_time_int)
                 Python interpreter. The interpreter in activecode is limited in many ways, but it is intended for beginners,
                 including the wording chosen to describe errors.</p>
   </note>
-
+<!-- 
   <exercise label="ch6_sec4_q1">
     <statement>
       <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
@@ -75,7 +75,7 @@ print(final_time_int)
                 </feedback>
       </choice>
     </choices>
-  </exercise>
+  </exercise> -->
 
   <p>In writing and using this book over the last few years we have collected a lot of statistics about the programs in this book.  Here are some statistics about error messages for the exercise we have been looking at.</p>
   <table>

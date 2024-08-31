@@ -31,7 +31,7 @@ Building with PreTeXt
 ---------------------
 
 1. Create a virtual environment
-2. pip install pretextbook
+2. pip install pretext
 3. To build run: pretext build web
 4. pretext view html
 
