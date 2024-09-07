@@ -11,9 +11,13 @@ This is a fork of the original [thinkcspy](https://github.com/runestoneinteracti
 
 ## Development Environment
 Create and activate a virtual environment and install dependencies:
+
 `python -m venv venv`
+
 `source venv/bin/activate`
+
 `pip install -r requirements.txt`
 
 Then build the textbook: `pretext build web`
+
 ..and finally, run the web server: `pretext view`
