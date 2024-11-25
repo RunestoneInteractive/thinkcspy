@@ -76,12 +76,12 @@ of the computation.
 
 In this case, the value of ``aColor`` is used to change the color attribute of ``alex``.  Each iteration causes ``aColor`` to change to the next value in the list.
 
-The for-loop is our first example of a **compound statement**.  
-Syntactically a compound statement is a statement. 
+The for-loop is our first example of a **compound statement**.
+Syntactically a compound statement is a statement.
 The level of indentation of
-a (whole) compound statement is the indentation of its heading.  
+a (whole) compound statement is the indentation of its heading.
 In the example above there are five statements with the same
-indentation, executed sequentially: the import, 2 assignments, the *whole* for-loop, 
+indentation, executed sequentially: the import, 2 assignments, the *whole* for-loop,
 and ``wn.exitonclick()``.  The for-loop compound statement is executed completely before
 going on to the next sequential statement, ``wn.exitonclick()``.
 
@@ -91,27 +91,27 @@ going on to the next sequential statement, ``wn.exitonclick()``.
 .. parsonsprob:: 3_8
 
    The following program uses a turtle to draw a triangle as shown to the left:
-   
+
    .. image:: Figures/TurtleTriangle.png
       :width: 150
       :align: left
-      
+
    But the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees.  After the loop, set the window to close when the user clicks in it.
-   
+
    Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.
    -----
-   import turtle 
-   =====         
+   import turtle
+   =====
    wn = turtle.Screen()
    marie = turtle.Turtle()
-   =====
+   ====
    # repeat 3 times
-   for i in [0,1,2]:  
-   =====   
+   for i in [0,1,2]:
+   =====
      marie.forward(175)
-   =====
+   ====
      marie.left(120)
-   =====
+   ====
    wn.exitonclick()
 
 **Mixed up program**
@@ -119,29 +119,29 @@ going on to the next sequential statement, ``wn.exitonclick()``.
 .. parsonsprob:: 3_9
 
    The following program uses a turtle to draw a rectangle as shown to the left:
-   
+
    .. image:: Figures/TurtleRect.png
       :width: 150
       :align: left
- 
+
    But the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.
-   
+
    Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.
    -----
-   import turtle          
+   import turtle
    wn = turtle.Screen()
    carlos = turtle.Turtle()
-   =====
+   ====
    # repeat 2 times
-   for i in [1,2]:  
-   =====   
-     carlos.forward(175)
+   for i in [1,2]:
    =====
+     carlos.forward(175)
+   ====
      carlos.right(90)
-   =====  
+   =====
      carlos.forward(150)
      carlos.right(90)
-   =====
+   ====
    wn.exitonclick()
 
 

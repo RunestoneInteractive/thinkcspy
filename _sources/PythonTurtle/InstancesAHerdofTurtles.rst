@@ -25,7 +25,7 @@ completes her triangle:
    :tour_1: "Overall Tour"; 1-31: Example03_Tour01_Line01; 1-3: Example03_Tour01_Line02; 6-8: Example03_Tour01_Line03; 10: Example03_Tour01_Line04; 6,10: Example03_Tour01_Line05; 12-17: Example03_Tour01_Line06; 19-20: Example03_Tour01_Line07; 22-29: Example03_Tour01_Line08; 31: Example03_Tour01_Line09;
    :tour_2: "Line by Line Tour"; 1: Example01_Tour02_Line01; 2: Example01_Tour02_Line02; 3: Example02_Tour02_Line03; 6: Example02_Tour02_Line04; 7: Example03_Tour02_Line05; 8: Example03_Tour02_Line06; 10: Example01_Tour02_Line03; 6,10: Example03_Tour01_Line05; 12-17: Example03_Tour02_Line09; 12-13: Example03_Tour02_Line10; 12: Example03_Tour02_Line11; 13: Example03_Tour02_Line12; 14-15: Example03_Tour02_Line13; 14: Example03_Tour02_Line14; 15: Example03_Tour02_Line15; 16-17: Example03_Tour02_Line16; 16: Example03_Tour02_Line17; 17: Example03_Tour02_Line18; 19-20: Example03_Tour01_Line07; 19: Example03_Tour02_Line20; 20: Example03_Tour02_Line21; 22-29: Example03_Tour01_Line08; 10: Example03_Tour02_Line23; 22-23: Example03_Tour02_Line24; 22: Example03_Tour02_Line25; 23: Example03_Tour02_Line26; 24-25: Example03_Tour02_Line27; 26-27: Example03_Tour02_Line28; 28-29: Example03_Tour02_Line29; 31: Example02_Tour02_Line10;
    :nocodelens:
-   
+
    import turtle
    wn = turtle.Screen()             # Set up the window and its attributes
    wn.bgcolor("lightgreen")
@@ -100,63 +100,63 @@ Here are some *How to think like a computer scientist* observations:
 .. parsonsprob:: 3_6
 
    The following program has one turtle, "jamal", draw a capital L in blue and then another, "tina", draw a line to the west in orange as shown to the left:
-    
-   .. image:: Figures/TwoTurtles1.png 
+
+   .. image:: Figures/TwoTurtles1.png
       :width: 150
-      :align: left  
-      
+      :align: left
+
    The program should do all set-up, have "jamal" draw the L, and then have "tina" draw the line.   Finally, it should set the window to close when the user clicks in it.
-   
+
    Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on *Check Me* to see if you are right. You will be told if any of the lines are in the wrong order.
    -----
    import turtle
    wn = turtle.Screen()
-   =====    	
+   =====
    jamal = turtle.Turtle()
    jamal.pensize(10)
-   jamal.color("blue")               	               
+   jamal.color("blue")
    jamal.right(90)
    jamal.forward(150)
-   ===== 
+   =====
    jamal.left(90)
    jamal.forward(75)
-   =====
+   ====
    tina = turtle.Turtle()
    tina.pensize(10)
    tina.color("orange")
    tina.left(180)
    tina.forward(75)
-   =====
+   ====
    wn.exitonclick()
 
 .. parsonsprob:: 3_7
 
    The following program has one turtle, "jamal", draw a line to the north in blue and then another, "tina", draw a line to the east in orange as shown to the left:
-    
-   .. image:: Figures/TwoTurtlesL.png 
+
+   .. image:: Figures/TwoTurtlesL.png
       :width: 150
-      :align: left 
-      
+      :align: left
+
    The program should import the turtle module, get the window to draw on, create the turtle "jamal", have it draw a line to the north, then create the turtle "tina", and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.
-   
+
    Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on *Check Me* to see if you are right. You will be told if any of the lines are in the wrong order.
    -----
    import turtle
-   =====
+   ====
    wn = turtle.Screen()
-   =====   	
+   =====
    jamal = turtle.Turtle()
-   jamal.color("blue") 
-   jamal.pensize(10)   
-   =====            	               
+   jamal.color("blue")
+   jamal.pensize(10)
+   =====
    jamal.left(90)
    jamal.forward(150)
-   =====
+   ====
    tina = turtle.Turtle()
-   tina.pensize(10)  
+   tina.pensize(10)
    tina.color("orange")
    tina.forward(150)
-   =====
+   ====
    wn.exitonclick()
 
 

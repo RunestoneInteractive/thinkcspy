@@ -51,7 +51,7 @@ Here's an example of how it works:
         assert round6(9.7) == 10
         assert round6(8.5) == 8
 
-    =====
+    ====
 
     from unittest.gui import TestCaseGui
 

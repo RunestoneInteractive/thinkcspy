@@ -18,13 +18,13 @@ Problems
    The following has the correct code to 'swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains one extra block which is not needed in a correct solution.  Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the Check button.  You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.  After three incorrect attempts you will be able to use the Help Me button to make the problem easier.
    -----
    # initialize the variables
-   =====
+   ====
    # set temp to the value of x
-   =====
+   ====
    # set x to the value of y
-   =====
+   ====
    # set y to the value of temp
-   =====
+   ====
    # set y to the value of x #distractor: if x already has the value of y you should set y to the value of temp
 
 .. parsonsprob:: ps_swap_code_and_comments_pp
@@ -39,16 +39,16 @@ Problems
    x = 3
    y = 5
    temp = 0
-   =====
+   ====
    # set temp to the value of x
    temp = x
-   =====
+   ====
    # set x to the value of y
    x = y
-   =====
+   ====
    # set y to the value of temp
    y = temp
-   =====
+   ====
    # set y to the value of x
    y = x #distractor: the value of x is set to y so you should set it to the value of temp
 
@@ -63,13 +63,13 @@ Problems
    x = 3
    y = 5
    temp = 0
-   =====
+   ====
    temp = x
-   =====
+   ====
    x = y
-   =====
+   ====
    y = temp
-   =====
+   ====
    y = x #distractor: the value of x is set to y so you should set it to the value of temp
 
 Feedback

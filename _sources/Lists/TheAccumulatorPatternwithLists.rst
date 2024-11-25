@@ -16,14 +16,14 @@ The Accumulator Pattern with Lists
 ----------------------------------
 
 Remember the :ref:`accumulator pattern <accumulator>`? Many algorithms involving lists make use of
-this pattern to process the items in a list and compute a result. In this section, we'll 
+this pattern to process the items in a list and compute a result. In this section, we'll
 explore the use of the accumulator pattern with lists.
 
 Let's take the problem of adding up all of the items in a list. The following program
 computes the sum of a list of numbers.
 
 .. activecode:: ac7_10_0
-   
+
    sum = 0
    for num in [1, 3, 5, 7, 9]:
        sum = sum + num
@@ -42,7 +42,7 @@ Sometimes when we're accumulating, we don't want to add to our accumulator every
 Consider, for example, the following program which counts the number of names with more than 3 letters.
 
 .. activecode:: ac7_10_1
-   
+
    long_names = 0
    for name in ["Joe", "Sally", "Amy", "Brad"]:
        if len(name) > 3:
@@ -53,9 +53,9 @@ Here, we **initialize** the accumulator variable to be zero on line 1.
 
 We **iterate** through the sequence (line 2).
 
-The **update** step happens in two parts. First, we check to see if the name is longer than 3 letters. If 
-so, then we increment the accumulator variable ``long_names`` (on line 4) by adding one to 
-it. 
+The **update** step happens in two parts. First, we check to see if the name is longer than 3 letters. If
+so, then we increment the accumulator variable ``long_names`` (on line 4) by adding one to
+it.
 
 At the end, we have accumulated the total number of long names.
 
@@ -70,17 +70,17 @@ We can use conditionals to also count if particular items are in a string or lis
             num_vowels += 1
     print(num_vowels)
 
-We can also use ``==`` to execute a similar operation. Here, we'll check to see if the character we are iterating over is 
-an "o". If it is an "o" then we will update our counter. 
+We can also use ``==`` to execute a similar operation. Here, we'll check to see if the character we are iterating over is
+an "o". If it is an "o" then we will update our counter.
 
 .. image:: Figures/accum_o.gif
-   :alt: a gif that shows code to check that "o" is in the phrase "onomatopoeia". 
+   :alt: a gif that shows code to check that "o" is in the phrase "onomatopoeia".
 
 Accumulating the Max Value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We can also use the accumulation pattern with conditionals to find the maximum or minimum value. Instead of 
-continuing to build up the accumulator value like we have when counting or finding a sum, we can reassign the 
+We can also use the accumulation pattern with conditionals to find the maximum or minimum value. Instead of
+continuing to build up the accumulator value like we have when counting or finding a sum, we can reassign the
 accumulator variable to a different value.
 
 The following example shows how we can get the maximum value from a list of integers.
@@ -96,13 +96,13 @@ The following example shows how we can get the maximum value from a list of inte
 
 Here, we initialize best_num to zero, assuming that there are no negative numbers in the list.
 
-In the for loop, we check to see if the current value of n is greater than the current value of ``best_num``. 
-If it is, then we want to **update** ``best_num`` so that it now is assigned the higher number. Otherwise, we 
+In the for loop, we check to see if the current value of n is greater than the current value of ``best_num``.
+If it is, then we want to **update** ``best_num`` so that it now is assigned the higher number. Otherwise, we
 do nothing and continue the for loop.
 
-You may notice that the current structure could be a problem. If the numbers were all negative what would 
-happen to our code? What if we were looking for the smallest number but we initialized ``best_num`` with 
-zero? To get around this issue, we can initialize the accumulator variable using one of the numbers in the 
+You may notice that the current structure could be a problem. If the numbers were all negative what would
+happen to our code? What if we were looking for the smallest number but we initialized ``best_num`` with
+zero? To get around this issue, we can initialize the accumulator variable using one of the numbers in the
 list.
 
 .. activecode:: ac7_10_4
@@ -114,13 +114,13 @@ list.
            best_num = n
    print(best_num)
 
-The only thing we changed was the value of ``best_num`` on line 2 so that the value of ``best_num`` is the 
+The only thing we changed was the value of ``best_num`` on line 2 so that the value of ``best_num`` is the
 first element in ``nums``, but the result is still the same!
 
 Accumulating a String Result
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The accumulator pattern can be used to convert a list of items to a string. 
+The accumulator pattern can be used to convert a list of items to a string.
 
 Consider the following program:
 
@@ -138,7 +138,7 @@ the current contents of ``result`` with the comma separator and a score from the
 the ``result`` with the new value. Use CodeLens to step through this example to see it in action.
 
 The output of the program has some undesirable formatting problems: there is a trailing comma instead
-of a period, and there are no spaces between the items. The next activity lets you work to 
+of a period, and there are no spaces between the items. The next activity lets you work to
 correct those problems.
 
 .. tabbed:: tab_string_accum
@@ -163,7 +163,7 @@ correct those problems.
 
          print("The scores are " + result)
 
-         =====
+         ====
 
          from unittest.gui import TestCaseGui
 
@@ -254,8 +254,8 @@ correct those problems.
    **Challenge** For each word in ``words``, add 'd' to the end of the word if the word ends in "e" to make it past tense. Otherwise, add 'ed' to make it past tense. Save these past tense words to a list called ``past_tense``.
    ~~~~
    words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
-      
-   =====
+
+   ====
 
    from unittest.gui import TestCaseGui
 
