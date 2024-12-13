@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_traversal-and-the-for-loop-by-item">
+<section xml:id="iteration_the-for-loop-by-item-traversal">
   <title>Traversing strings with the <c>for</c> Loop: By Item</title>
   <p>A lot of computations involve processing a collection one item at a time.  For strings this means
             that we would like to process one character at a time.
