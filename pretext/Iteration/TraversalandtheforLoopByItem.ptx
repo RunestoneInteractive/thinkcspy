@@ -9,23 +9,23 @@
   <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
   <program xml:id="ch7_sec11_p1" interactive="activecode" language="python">
     <input>
-for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-    invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
+for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+    invitation = "Hi " + name + ".  Please come to my party on Saturday!"
     print(invitation)
         </input>
   </program>
   <p>Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the <c>range</c> function.</p>
   <program xml:id="ch7_sec11_p2" interactive="activecode" language="python">
     <input>
-for avalue in range(10):
-    print(avalue)
+for value in range(10):
+    print(value)
         </input>
   </program>
   <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
   <program xml:id="ch7_sec11_p3" interactive="activecode" language="python">
     <input>
-for achar in "Go Spot Go":
-    print(achar)
+for char in "Go Spot Go":
+    print(char)
         </input>
   </program>
   <p>The loop variable <c>achar</c> is automatically reassigned each character in the string <q>Go Spot Go</q>.
