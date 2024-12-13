@@ -161,6 +161,24 @@ print(x)
       </block>
     </blocks>
   </exercise>
+
+  <note>
+    <p>The shorthand <code>x += 1</code> can be used to signify the same thing as <code>x = x + 1</code>, and other operators such as subtraction and multiplication can do this too.</p>
+  </note>
+
+  <program xml:id="ch2_sec11_p2" interactive="activecode" language="python">
+    <input>
+x = 6        # initialize x
+print(x)
+x += 1       # update x
+print(x)
+x *= 2
+print(x)
+x -= 4
+print(x)
+        </input>
+  </program>
+
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_02" interactive="activecode" language="python">
