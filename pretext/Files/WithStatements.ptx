@@ -21,9 +21,9 @@ print(myfile)
         </input>
   </program>
   <p>The first line of the <c>with</c> statement opens the file and assigns it to <c>myfile</c>, then we can iterate over each line in the file. When we are done, we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
-  <note>A word of caution: <term>once you read all the lines from a file, it is "spent"</term>;
+  <p><note>A word of caution: <term>once you read all the lines from a file, it is "spent"</term>;
   that is to say, if we tried to read from <c>myfile</c> again in the example above, it would not
-  work. We would have to open the file again to read again.</note>
+  work. We would have to open the file again to read again.</note></p>
 
   <p>In this course, you likely will not see the following syntax, but it's still useful to know that it's out there:</p>
   <p>In Python, we can call the <c>open</c> function to <term>open</term> files before we can use them and the <c>close</c> function to <term>close</term> them when we are done with them. As you might expect, once a file is opened it becomes a Python object just like all other data. <xref ref="files_files_filemethods1a"/> shows the functions and methods that can be used to open and close files.</p>
