@@ -20,26 +20,26 @@
             of <c>readline</c> this moves the marker to the first character of the next line
             in the file. In the case of <c>read</c> or <c>readlines</c> the marker is moved to
             the end of the file.</p>
-  <pre>&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; aline = infile.readline()
-&gt;&gt;&gt; aline
+  <pre>&gt;&gt;&gt; with open("ccdata.txt", "r") as infile:
+&gt;&gt;&gt;  aline = infile.readline()
+&gt;&gt;&gt;  aline
 '1850\-0.37\2.24E-7\n'
 &gt;&gt;&gt;
-&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; linelist = infile.readlines()
-&gt;&gt;&gt; print(len(linelist))
+&gt;&gt;&gt; with open("ccdata.txt", "r") as infile:
+&gt;&gt;&gt;  linelist = infile.readlines()
+&gt;&gt;&gt;  print(len(linelist))
 18
-&gt;&gt;&gt; print(linelist[0:4])
+&gt;&gt;&gt;  print(linelist[0:4])
 ['1850\-0.37\2.24E-7\n',
  '1860\-0.34\3.94E-7\n',
  '1870\-0.28\6.6E-7\n',
  '1880\-0.24\1.1\n']
 &gt;&gt;&gt;
-&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; filestring = infile.read()
-&gt;&gt;&gt; print(len(filestring))
+&gt;&gt;&gt; with open("ccdata.txt", "r") as infile:
+&gt;&gt;&gt;  filestring = infile.read()
+&gt;&gt;&gt;  print(len(filestring))
 1282
-&gt;&gt;&gt; print(filestring[:256])
+&gt;&gt;&gt;  print(filestring[:256])
 1850  -0.37  2.24E-7
 1860  -0.34  3.94E-7
 1870  -0.28  6.6E-7

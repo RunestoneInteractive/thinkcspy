@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <section xml:id="selection_logical-operators">
   <title>Logical operators</title>
-  <introduction>
-	  <p>There are three <term>logical operators</term>: <c>and</c>, <c>or</c>, and <c>not</c>. The
-				semantics (meaning) of these operators is similar to their meaning in English.
-				For example, <c>x &gt; 0 and x &lt; 10</c> is true only if <c>x</c> is greater than 0 <em>and</em>
-				at the same time, x is less than 10.  How would you describe this in words?  You would say that
-				x is between 0 and 10, not including the endpoints.</p>
-  </introduction>			
+  <p>There are three <term>logical operators</term>: <c>and</c>, <c>or</c>, and <c>not</c>. The
+		semantics (meaning) of these operators is similar to their meaning in English.
+		For example, <c>x &gt; 0 and x &lt; 10</c> is true only if <c>x</c> is greater than 0 <em>and</em>
+		at the same time, x is less than 10.  How would you describe this in words?  You would say that
+		x is between 0 and 10, not including the endpoints.</p>
+
   <p><c>n % 2 == 0 or n % 3 == 0</c> is true if <em>either</em> of the conditions is true,
 			that is, if the number is divisible by 2 <em>or</em> divisible by 3.  In this case, one, or the other, or
 			both of the parts has to be true for the result to be true.</p>

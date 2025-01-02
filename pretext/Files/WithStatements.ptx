@@ -1,23 +1,79 @@
 <?xml version="1.0"?>
 <section xml:id="files_with-statements">
   <title>With Statements</title>
-  <p>Now that you have seen and practiced a bit with opening and closing files, there is another mechanism that Python provides for us that cleans up the often forgotten close.  Forgetting to close a file does not necessarily cause a runtime error in the kinds of programs you typically write in an introductory CS course.  However if you are writing a program that may run for days or weeks at a time that does a lot of file reading and writing you may run into trouble.</p>
-  <p>In version 2.5 Python introduced the concept of a context manager.  The context manager automates the process of doing common operations at the start of some task, as well as automating certain operations at the end of some task.  In the context of reading and writing a file, the normal operation is to open the file and assign it to a variable.  At the end of working with a file the common operation is to make sure that file is closed.</p>
-  <p>The Python with statement makes using context managers easy.  The general form of a with statement is:</p>
-  <pre>with &lt;create some object that understands context&gt; as &lt;some name&gt;:
-    do some stuff with the object
+  <!-- <p>Now that you have seen and practiced a bit with opening and closing files, there is another mechanism that Python provides for us that cleans up the often forgotten close.  Forgetting to close a file does not necessarily cause a runtime error in the kinds of programs you typically write in an introductory CS course.  However if you are writing a program that may run for days or weeks at a time that does a lot of file reading and writing you may run into trouble.</p> -->
+  <!-- <p>In version 2.5 Python introduced the concept of a context manager.  The context manager automates the process of doing common operations at the start of some task, as well as automating certain operations at the end of some task.  In the context of reading and writing a file, the normal operation is to open the file and assign it to a variable.  At the end of working with a file the common operation is to make sure that file is closed.</p> -->
+  <!-- <p>The Python with statement makes using context managers easy.  The general form of a with statement is:</p> -->
+  <p>In order to open files easily in Python, we can use the following form:</p>
+  <pre>with &lt;some open statement&gt; as &lt;variable name for the file&gt;:
+    do some stuff with the file
     ...</pre>
-  <p>When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.</p>
+  <p>When the program exits the <c>with</c> block, the file is automatically closed. Consider the following example:</p>
   <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
-        </DataFileNode>
+  </DataFileNode>
   <program xml:id="ch11_sec7_p1" interactive="activecode" language="python">
     <input>
-with open('mydata.txt') as md:
-    print(md)
-    for line in md:
+with open('mydata.txt') as myfile:
+    print(myfile)
+    for line in myfile:
         print(line)
-print(md)
+print(myfile)
         </input>
   </program>
-  <p>The first line of the <title_reference>with</title_reference> statement opens the file and assigns it to <title_reference>md</title_reference>  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+  <p>The first line of the <c>with</c> statement opens the file and assigns it to <c>myfile</c>, then we can iterate over each line in the file. When we are done, we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+  <note>A word of caution: <term>once you read all the lines from a file, it is "spent"</term>;
+  that is to say, if we tried to read from <c>myfile</c> again in the example above, it would not
+  work. We would have to open the file again to read again.</note>
+
+  <p>In this course, you likely will not see the following syntax, but it's still useful to know that it's out there:</p>
+  <p>In Python, we can call the <c>open</c> function to <term>open</term> files before we can use them and the <c>close</c> function to <term>close</term> them when we are done with them. As you might expect, once a file is opened it becomes a Python object just like all other data. <xref ref="files_files_filemethods1a"/> shows the functions and methods that can be used to open and close files.</p>
+  <table xml:id="files_files_filemethods1a">
+    <tabular>
+      <row header="yes">
+        <cell>
+          <term>Method Name</term>
+        </cell>
+        <cell>
+          <term>Use</term>
+        </cell>
+        <cell>
+          <term>Explanation</term>
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <c>open</c>
+        </cell>
+        <cell>
+          <c>open(filename,'r')</c>
+        </cell>
+        <cell>
+                            Open a file called filename and use it for reading.  This will return a reference to a file object.
+                        </cell>
+      </row>
+      <row>
+        <cell>
+          <c>open</c>
+        </cell>
+        <cell>
+          <c>open(filename,'w')</c>
+        </cell>
+        <cell>
+                            Open a file called filename and use it for writing.  This will also return a reference to a file object.
+                        </cell>
+      </row>
+      <row>
+        <cell>
+          <c>close</c>
+        </cell>
+        <cell>
+          <c>filevariable.close()</c>
+        </cell>
+        <cell>
+                            File use is complete.
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+
 </section>

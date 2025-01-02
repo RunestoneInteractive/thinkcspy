@@ -1,8 +1,27 @@
 <?xml version="1.0"?>
 <section xml:id="files_iterating-over-lines-in-a-file">
   <title>Iterating over lines in a file</title>
-  <p>Recall the contents of the ccdata.txt file.</p>
-  <table>
+
+  <p>As an example, suppose we have a text file called <c>ccdata.txt</c> that contains
+          the following data representing statistics about climate change. Although it
+          would be possible to consider entering this data by hand each time it is used,
+          you can imagine that it would be time-consuming and error-prone to do this. In
+          addition, it is likely that there could be data from more sources and
+          other years. The format of the data file is as follows:</p>
+  <pre>Year, Global Average Temperature, Global Emmision of CO2</pre>
+  <DataFileNode line="27" runestone_options="{'subchapter': 'ReadingaFile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.3.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/ReadingaFile.rst">
+        </DataFileNode>
+  <p>To open this file, we would call the <c>open</c> function. The variable,
+            <c>fileref</c>, now holds a reference to the file object returned by
+            <c>open</c>. Again, after the file is closed any further attempts to
+            use <c>fileref</c> will result in an error.</p>
+  <pre>with open("ccdata.txt", "r") as fileref:
+  # do things</pre>
+
+  <DataFileNode line="24" runestone_options="{'subchapter': 'Iteratingoverlinesinafile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata1.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.4.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Iteratingoverlinesinafile.rst">
+        </DataFileNode>
+  <!-- <p>Recall the contents of the ccdata.txt file.</p> -->
+  <!-- <table>
     <tabular>
       <row>
         <cell>
@@ -16,9 +35,7 @@
         </cell>
       </row>
     </tabular>
-  </table>
-  <DataFileNode line="24" runestone_options="{'subchapter': 'Iteratingoverlinesinafile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata1.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.4.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Iteratingoverlinesinafile.rst">
-        </DataFileNode>
+  </table> -->
   <p>We will now use this file as input in a program that will do some data
             processing. In the program, we will <term>read</term> each line of the file and
             print it with some additional text. Because text files are sequences of
@@ -46,14 +63,11 @@
             construct a simple sentence.</p>
   <program xml:id="ch11_sec4_p1" interactive="activecode" language="python">
     <input>
-ccfile = open("ccdata.txt", "r")
-
-for aline in ccfile:
-    values = aline.split()
-    print('In', values[0], 'the average temp. was', values[1], '&#xB0;C and CO2 emmisions were', values[2], 'gigatons.')
-
-ccfile.close()
-        </input>
+with open("ccdata.txt", "r") as ccfile:
+    for aline in ccfile:
+        values = aline.split()
+        print('In', values[0], 'the average temp. was', values[1], '°C and CO2 emmisions were', values[2], 'gigatons.')
+</input>
   </program>
   <note>
     <p>You can obtain a line from the keyboard with the <c>input</c> function, and you can process lines of a file.

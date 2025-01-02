@@ -1,12 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="functions_unit-testing">
   <title>Unit Testing</title>
-  <introduction>
 	  <p>A <term>test case</term> expresses requirements for a program, in a way that can be checked automatically. Specifically, a test
 				asserts something about the state of the program at a particular point in its execution. A <term>unit test</term> is an automatic
 				procedure used to validate that individual units of code are working properly. A function is one form of a unit.
 				A collection of these unit tests is called a <term>test suite</term>.</p>
-  </introduction>
   <p>We have previously suggested that it's a good idea to first write down comments about what your code is supposed to do,
 			before actually writing the code. It is an even better idea to write down some test cases before writing a program.</p>
   <p>There are several reasons why it's a good habit to write test cases.</p>

@@ -5,7 +5,7 @@ This is a fork of the original [thinkcspy](https://github.com/runestoneinteracti
 
 > Programming is not a "spectator sport". It is something you do, something you participate in. It would make sense, then, that the book you use to learn programming should allow you to be active. That is our goal.
 
- > This book is meant to provide you with an interactive experience as you learn to program in Python. You can read the text, watch videos, and write and execute Python code. In addition to simply executing code, there is a unique feature called 'codelens' that allows you to control the flow of execution in order to gain a better understanding of how the program works.
+> This book is meant to provide you with an interactive experience as you learn to program in Python. You can read the text, watch videos, and write and execute Python code. In addition to simply executing code, there is a unique feature called 'codelens' that allows you to control the flow of execution in order to gain a better understanding of how the program works.
 
 *Note: RST is deprecated, and the new pretext sources are in the pretext folder, but we will keep the _sources (old RST folder) directory until we are 100% sure that the book has been converted correctly and as thoroughly as possible.*
 

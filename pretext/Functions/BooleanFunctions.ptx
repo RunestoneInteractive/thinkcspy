@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="functions_boolean-functions">
   <title>Boolean Functions</title>
-  <introduction>
-	  <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
-				expression evaluation can be returned by a function (using the <c>return</c> statement),
-				functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
-  </introduction>
+  <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any
+		expression evaluation can be returned by a function (using the <c>return</c> statement),
+		functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
+
   <program xml:id="ch8_sec10_p1" interactive="activecode" language="python">
 	<input>
 def isDivisible(x, y):

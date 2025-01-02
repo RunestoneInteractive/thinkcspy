@@ -11,36 +11,30 @@
   <p>The program below solves part of the problem. Notice that it reads the data and creates a string consisting of the year of the climate change followed by the global emission. In this example, we simply print the lines as they are created.</p>
   <program xml:id="ch11_sec6_p1" interactive="activecode" language="python">
     <input>
-infile = open("ccdata.txt", "r")
-aline = infile.readline()
-print("Year\tEmmision\n")
-while aline:
-    items = aline.split()
-    dataline = items[0] + '\t' + items[2]
-    print(dataline)
+with open("ccdata.txt", "r") as infile:
     aline = infile.readline()
-
-infile.close()
-        </input>
+    print("Year\tEmmision\n")
+    while aline:
+        items = aline.split()
+        dataline = items[0] + '\t' + items[2]
+        print(dataline)
+        aline = infile.readline()
+</input>
   </program>
   <p>When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the <c>open</c> function, <c>outfile = open("emissiondata.txt",'w')</c>, using the <c>'w'</c> flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.</p>
   <p>Once the file has been created, we just need to call the <c>write</c> method passing the string that we wish to add to the file.  In this case, the string is already being printed so we will just change the <c>print</c> into a call to the <c>write</c> method.  However, there is one additional part of the data line that we need to include.  The newline character needs to be concatenated  to the end of the line.  The entire line now becomes <c>outfile.write(dataline + '\n')</c>.  We also need to close the file when we are done.</p>
   <p>The complete program is shown below.</p>
   <program xml:id="ch11_sec6_p2" interactive="activecode" language="python">
     <input>
-infile = open("ccdata.txt", "r")
-outfile = open("emissiondata.txt", "w")
-
-aline = infile.readline()
-outfile.write("Year \tEmmision\n")
-while aline:
-    items = aline.split()
-    dataline = items[0] + '\t' + items[2]
-    outfile.write(dataline + '\n')
-    aline = infile.readline()
-
-infile.close()
-outfile.close()
-        </input>
+with open("ccdata.txt", "r") as infile:
+    with open("emissiondata.txt", "w") as outfile:
+        aline = infile.readline()
+        outfile.write("Year \tEmmision\n")
+        while aline:
+            items = aline.split()
+            dataline = items[0] + '\t' + items[2]
+            outfile.write(dataline + '\n')
+            aline = infile.readline()
+</input>
   </program>
 </section>
