@@ -35,6 +35,6 @@ while i &lt; 10:
 </input>
   </program>
 
-  <note>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
-  Neither loop prints <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</note>
+  <note><p>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
+  Neither loop prints <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</p></note>
 </section>

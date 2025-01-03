@@ -39,9 +39,11 @@
   <p>Our final answer is: <c>1001110</c> (base 2)</p>
 
   <note>
+  <p>
     Typically when we write binary, we'll see our bits in groups of 4, because our binary sequences are normally
     some multiple of 4, like 8, 16, or 32. Because of this, we would add a leading zero and
     write our previous answer as: <c>0100</c> <c>1110</c> (base 2).
+  </p>
   </note>
 
   <p><term>Converting binary to decimal</term>: As mentioned above, you can simply look at each bit,

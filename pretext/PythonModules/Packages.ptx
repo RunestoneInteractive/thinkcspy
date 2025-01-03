@@ -2,8 +2,8 @@
 <section xml:id="extratopics-packages">
   <title>Packages and Dependencies</title>
 
-  <note>You won't ever need to deal with dependencies in this course unless you are adding modules to your final project. Nonetheless, using packages 
-  (a package is just a collection of Python modules) is a common practice in Python programming that you should at least be aware of.</note>
+  <note><p>You won't ever need to deal with dependencies in this course unless you are adding modules to your final project. Nonetheless, using packages 
+  (a package is just a collection of Python modules) is a common practice in Python programming that you should at least be aware of.</p></note>
   
   <p>One key tenant of computer science (or anything, for that matter) is that we don't want to reinvent
     the wheel if we don't have to. A lot of very smart people have made very useful code, so why not use it?</p>
@@ -38,7 +38,7 @@ numpy==1.26.2
   <p>If you're unsure what version of a dependency you have installed, you can run the command: <c>pip show DEPENDENCY</c>, like <c>pip show numpy</c>.
     Somewhat ironically, there are also packages that can autogenerate a requirements.txt file for you.</p>
 
-  <note>One additional tip worth mentioning is to always specify the bare minimum requirements your code needs to work.
+  <note><p>One additional tip worth mentioning is to always specify the bare minimum requirements your code needs to work.
     Dependencies normally have dependencies of their own, so we want to minimize the install time and space taken up
-    when someone is installing your program's requirements.</note>
+    when someone is installing your program's requirements.</p></note>
 </section>

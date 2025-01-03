@@ -59,10 +59,10 @@ print(my_list[0])
   <p>If you remember nothing else, remember: <term>strings get reassigned, lists don't</term>. This is because
     strings are <term>immutable</term>; lists are mutable and most of their functions don't return anything (meaning they implicitly return None!).</p>
 
-  <note>You may be wondering how to tell the difference between functions that return something or not. Sometimes
+  <note><p>You may be wondering how to tell the difference between functions that return something or not. Sometimes
     the name of the method can be a hint (e.g. if it has "set" in the name, it probably won't return, whereas "get" will).
     If that doesn't help or you're still curious, you should reference the documentation (whether it's official Python
-    documentation or for a library). No shame in looking it up!</note>
+    documentation or for a library). No shame in looking it up!</p></note>
 
   <p>You won't be tested on the information below, but read on for some interesting thoughts on this.</p>
 
