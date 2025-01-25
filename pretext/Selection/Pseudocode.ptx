@@ -22,10 +22,12 @@
   <p>Take the following prompt for a problem:</p>
 
   <blockquote>
+  <p>
     Write a program that takes in a fraction in the format <c>NUMERATOR/DENOMINATOR</c>
     from the user and outputs the quotient and the remainder.
     If the denominator is 0, print out an error message; if the denominator is anything else,
     let the user run the program normally.
+  </p>
   </blockquote>
 
   <p>We can approach this problem first by writing the following pseudocode:</p>
