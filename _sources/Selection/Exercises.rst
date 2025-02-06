@@ -46,7 +46,7 @@ Exercises
    .. actex:: ex_6_2
 
       Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
-   
+
       #.  ``a > b``
       #.  ``a >= b``
       #.  ``a >= 18  and  day == 3``
@@ -65,9 +65,9 @@ Exercises
 
                Write a function which is given an exam mark, and it returns a string --- the grade for that mark --- according to this
                scheme:
-   
+
                .. table::
-   
+
                   =======   =====
                   Mark      Grade
                   =======   =====
@@ -77,17 +77,17 @@ Exercises
                   [60-70)   D
                   < 60      F
                   =======   =====
-   
+
                The square and round brackets denote closed and open intervals.
                A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.
-   
+
                Test your function by printing the mark and the grade for a number of different marks.
                ~~~~
                def getGrade(grade):
                      #your code here
 
 
-               ====
+               =====
 
                from unittest.gui import TestCaseGui
 
@@ -229,7 +229,7 @@ Exercises
       def findHypot(a,b):
           # your code here
 
-      ====
+      =====
 
       from unittest.gui import TestCaseGui
 
@@ -261,7 +261,7 @@ Exercises
                def is_even(n):
                    # your code here
 
-               ====
+               =====
 
                from unittest.gui import TestCaseGui
 
@@ -314,7 +314,7 @@ Exercises
            # your code here
 
 
-       ====
+       =====
        from unittest.gui import TestCaseGui
 
        class myTests(TestCaseGui):
@@ -344,7 +344,7 @@ Exercises
                def is_odd(n):
                    # your code here
 
-               ====
+               =====
                from unittest.gui import TestCaseGui
 
                class myTests(TestCaseGui):
@@ -400,21 +400,21 @@ Exercises
       will determine whether the triangle is right-angled.  Assume that the third argument to the
       function is always the longest side.  It will return ``True`` if the triangle
       is right-angled, or ``False`` otherwise.
-   
+
       Hint: floating point arithmetic is not always exactly accurate,
       so it is not safe to test floating point numbers for equality.
       If a good programmer wants to know whether
       ``x`` is equal or close enough to ``y``, they would probably code it up as
-   
+
       .. sourcecode:: python
-   
+
          if  abs(x - y) < 0.001:      # if x is approximately equal to y
              ...
       ~~~~
       def is_rightangled(a, b, c):
           # your code here
 
-      ====
+      =====
       from unittest.gui import TestCaseGui
 
       class myTests(TestCaseGui):
@@ -446,7 +446,7 @@ Exercises
                     # your code here
 
 
-                ====
+                =====
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):
@@ -500,19 +500,19 @@ Exercises
       :nocodelens:
 
       3 criteria must be taken into account to identify leap years:
-   
+
       The year is evenly divisible by 4;
-   
+
       If the year can be evenly divided by 100, it is NOT a leap year, unless;
-   
+
       The year is also evenly divisible by 400. Then it is a leap year.
-      
+
       Write a function that takes a year as a parameter and returns ``True`` if the year is a leap year, ``False`` otherwise.
       ~~~~
       def isLeap(year):
           # your code here
 
-      ====
+      =====
       from unittest.gui import TestCaseGui
 
       class myTests(TestCaseGui):
@@ -536,25 +536,25 @@ Exercises
             .. actex:: ex_6_13
 
                Implement the calculator for the date of Easter.
-   
+
                The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.
-   
+
                Ask the user to enter a year.
                Compute the following:
-   
-   
-   
+
+
+
                    1. a = year % 19
                    #. b = year % 4
                    #. c = year % 7
                    #. d = (19 * a + 24) % 30
                    #. e = (2 * b + 4 * c + 6 * d + 5) % 7
                    #. dateofeaster = 22 + d + e
-   
-   
+
+
                Special note: The algorithm can give a date in April.  Also, if the year is one of four special
                years (1954, 1981, 2049, or 2076) then subtract 7 from the date.
-   
+
                Your program should print an error message if the user provides a date that is out of range.
                ~~~~
 

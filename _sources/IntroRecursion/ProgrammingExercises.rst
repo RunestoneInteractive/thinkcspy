@@ -23,7 +23,7 @@ Programming Exercises
        def computeFactorial(number):
            #your code here
 
-       ====
+       =====
 
        from unittest.gui import TestCaseGui
 
@@ -53,7 +53,7 @@ Programming Exercises
           #your code here
 
 
-      ====
+      =====
 
       from unittest.gui import TestCaseGui
 

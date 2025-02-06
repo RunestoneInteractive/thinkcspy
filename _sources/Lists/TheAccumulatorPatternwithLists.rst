@@ -163,7 +163,7 @@ correct those problems.
 
          print("The scores are " + result)
 
-         ====
+         =====
 
          from unittest.gui import TestCaseGui
 
@@ -185,6 +185,7 @@ correct those problems.
       except the last, and dealing with that one separately.
 
       .. activecode:: ac7_10_5a_solution
+         :optional:
 
          scores = [85, 95, 70]
          result = ''
@@ -255,7 +256,7 @@ correct those problems.
    ~~~~
    words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
 
-   ====
+   =====
 
    from unittest.gui import TestCaseGui
 

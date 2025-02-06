@@ -83,7 +83,7 @@ Add a Method to a Class
 
 You can add a new method to a class by adding a new function inside the class.  For example, you can add the ``initials``
 method to the Person class.  The name of the function
-doesn't need to have any underscores in it.  It only needs to start and end with double 
+doesn't need to have any underscores in it.  It only needs to start and end with double
 underscores if it is a special method like ``__init__`` or ``__str__``.  It does need to take
 the current object which is by convention referred to as ``self``.
 
@@ -96,7 +96,7 @@ the current object which is by convention referred to as ``self``.
     ~~~~
     class Person:
         """ Represents a person object """
-       
+
         # initializes the values in a new object called self
         def __init__(self, first, last):
             self.first = first # set first in self to the passed first
@@ -122,7 +122,7 @@ the current object which is by convention referred to as ``self``.
 
     main()
 
-    ====
+    =====
     from unittest.gui import TestCaseGui
     class myTests(TestCaseGui):
 

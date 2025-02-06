@@ -72,13 +72,13 @@ Exercises
       Write a function ``print_triangular_numbers(n)`` that prints out the first
       n triangular numbers. A call to ``print_triangular_numbers(5)`` would
       produce the following output::
-   
+
           1       1
           2       3
           3       6
           4       10
           5       15
-   
+
       (*hint: use a web search to find out what a triangular number is.*)
       ~~~~
       def print_triangular_numbers(n):
@@ -103,7 +103,7 @@ Exercises
               def is_prime(n):
                   # your code here
 
-              ====
+              =====
               from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
@@ -404,7 +404,7 @@ Exercises
 
               Write a function to uniformly enlarge an image by a factor of 2 (double the size).
               ~~~~
-              
+
         .. tab:: Answer
 
             .. activecode:: answer_7_11

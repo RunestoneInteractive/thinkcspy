@@ -51,7 +51,7 @@ Here's an example of how it works:
         assert round6(9.7) == 10
         assert round6(8.5) == 8
 
-    ====
+    =====
 
     from unittest.gui import TestCaseGui
 
@@ -236,7 +236,7 @@ sense, just remember: in order for pytest to work correctly, any code that is pa
             # Write a pytest unit test function named ``test_grade``
 
 
-            ====
+            =====
             from unittest.gui import TestCaseGui
 
             testA = False

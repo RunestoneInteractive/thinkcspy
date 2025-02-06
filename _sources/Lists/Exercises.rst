@@ -47,7 +47,7 @@ Exercises
             .. actex:: ex_9_2
                :autograde: unittest
 
-               Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76. 
+               Create a list called ``myList`` with the following six items: 76, 92.3, "hello", True, 4, 76.
                Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
                use the append method to append the item to the list, and the last three statements should use concatenation.
                ~~~~
@@ -56,7 +56,7 @@ Exercises
 
                # Your code here
 
-               ====
+               =====
                from unittest.gui import TestCaseGui
 
                class myTests(TestCaseGui):
@@ -92,7 +92,7 @@ Exercises
            .. actex:: ex_9_3
 
               Starting with the list of the previous exercise, write Python statements to do the following:
-   
+
               a. Append "apple" and 76 to the list.
               #. Insert the value "cat" at position 3.
               #. Insert the value 99 at the start of the list.
@@ -144,7 +144,7 @@ Exercises
                 def average(numlist):
                     # Complete the function definition
 
-                ====
+                =====
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):
@@ -165,7 +165,7 @@ Exercises
                     for num in numlist:
                         total = total + num
 
-                    return total / len(numlist)   
+                    return total / len(numlist)
 
 
 .. question:: strings_ex_5
@@ -183,7 +183,7 @@ Exercises
               def max(lst):
                   # Complete the function
 
-              ====
+              =====
               from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
@@ -223,11 +223,11 @@ Exercises
       Write a function ``sum_of_squares(xs)`` that computes the sum
       of the squares of the numbers in the list ``xs``.  For example,
       ``sum_of_squares([2, 3, 4])`` should return 4+9+16 which is 29:
-      ~~~~   
+      ~~~~
       def sum_of_squares(xs):
           # your code here
 
-      ====
+      =====
       from unittest.gui import TestCaseGui
 
       class myTests(TestCaseGui):
@@ -254,7 +254,7 @@ Exercises
               def countOdd(lst):
                   # your code here
 
-              ====
+              =====
               from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
@@ -307,7 +307,7 @@ Exercises
       def sumEven(lst):
           # your code here
 
-      ====
+      =====
       from unittest.gui import TestCaseGui
 
       class myTests(TestCaseGui):
@@ -335,7 +335,7 @@ Exercises
               def sumNegatives(lst):
                   # your code here
 
-              ====
+              =====
               from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
@@ -401,7 +401,7 @@ Exercises
               def sumUntilEven(lst):
                   # your code here
 
-              ====
+              =====
               from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
@@ -461,13 +461,13 @@ Exercises
            .. actex:: ex_9_12
 
               Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:
-   
+
               a. count
               #. in
               #. reverse
               #. index
               #. insert
-              ~~~~ 
+              ~~~~
 
         .. tab:: Answer
 
@@ -528,22 +528,22 @@ Exercises
 
       Write a function ``replace(s, old, new)`` that replaces all occurences of
       ``old`` with ``new`` in a string ``s``::
-   
+
          test(replace('Mississippi', 'i', 'I'), 'MIssIssIppI')
-   
+
          s = 'I love spom!  Spom is my favorite food.  Spom, spom, spom, yum!'
          test(replace(s, 'om', 'am'),
                 'I love spam!  Spam is my favorite food.  Spam, spam, spam, yum!')
-   
+
          test(replace(s, 'o', 'a'),
                 'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!')
-   
+
       *Hint*: use the ``split`` and ``join`` methods.
       ~~~~
       def replace(s, old, new):
           # your code here
 
-      ====
+      =====
       from unittest.gui import TestCaseGui
 
       class myTests(TestCaseGui):
@@ -569,9 +569,9 @@ Exercises
               Here are the rules for an L-system that creates something that resembles
               a common garden herb.  Implement the following rules and try it.  Use an
               angle of 25.7 degrees.
-   
+
               ::
-   
+
                   H
                   H --> HFX[+H][-H]
                   X --> X[-FFF][+FFF]FX
@@ -660,12 +660,12 @@ Exercises
       :nocodelens:
 
       Here is another L-System.  Use an Angle of 25.
-   
+
       ::
-   
+
           F
           F --> F[-F]F[+F]F
-      ~~~~   
+      ~~~~
 
 .. question:: strings_ex_17
 
@@ -676,10 +676,10 @@ Exercises
             .. actex:: ex_9_17
                 :autograde: unittest
 
-                Create a list named ``randlist`` containing 100 random integers between 0 and 1000 (use iteration, append, and the random module). 
+                Create a list named ``randlist`` containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).
                 ~~~~
 
-                ====
+                =====
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):

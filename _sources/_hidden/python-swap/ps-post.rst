@@ -29,7 +29,7 @@ Problems
    # print the values
    print(x)
    print(y)
-   ====
+   =====
    from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
 
@@ -59,7 +59,7 @@ Problems
    # print the values
    print(a)
    print(b)
-   ====
+   =====
    from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
 

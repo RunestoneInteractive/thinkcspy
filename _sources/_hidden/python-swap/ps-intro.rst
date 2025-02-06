@@ -34,9 +34,9 @@ Try to solve the following mixed-up code problem.  This problem doesn't require 
    defines the order.
    -----
    First block
-   ====
+   =====
    Second block
-   ====
+   =====
    Third block
 
 Try to solve the following mixed-up code problem. This problem requires indentation.
@@ -51,9 +51,9 @@ Try to solve the following mixed-up code problem. This problem requires indentat
    The text in each block defines the order and indentation.
    -----
    First block
-   ====
+   =====
    Second block
-   ====
+   =====
        Third block that needs to be indented
 
 Try to solve the following mixed-up code problem. This problem requires indentation and has extra blocks that are not needed in a correct solution.
@@ -68,11 +68,11 @@ Try to solve the following mixed-up code problem. This problem requires indentat
    There is an extra block that is not needed in the correct solution.
    -----
    First block
-   ====
+   =====
    Second block
-   ====
+   =====
    Extra block that is not needed #paired: This block is not needed
-   ====
+   =====
        Third block that needs to be indented
 
 The mixed-up code problems have a "Help me" button at the bottom of the
@@ -125,7 +125,7 @@ Finish writing the code for the following problem.
     print(triple(2))
     print(triple(-1))
 
-    ====
+    =====
     from unittest.gui import TestCaseGui
     class myTests(TestCaseGui):
 

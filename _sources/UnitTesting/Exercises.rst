@@ -11,18 +11,18 @@ Exercises
 
     .. tabbed:: tab_ut_reverse
 
-        .. tab:: Question 
+        .. tab:: Question
 
            .. actex:: ac_ut_reverse
                 :autograde: unittest
-      
+
                 A function named ``reverse`` takes a string argument, reverses it, and returns the result:
-                
+
                 .. sourcecode::
 
                     def reverse(astring):
                         """Returns the reverse of `astring`"""
-                
+
                 Complete the assert statements in the ActiveCode editor below to create a unit test for ``reverse``.
                 Your asserts should check that ``reverse`` works properly for the following test cases ("Input"
                 refers to the value passed as a parameter, and "Expected Output" is the result returned from
@@ -41,7 +41,7 @@ Exercises
                     assert ________________
                     assert ________________
                     assert ________________
-                ====
+                =====
 
                 from unittest.gui import TestCaseGui
 
@@ -82,20 +82,20 @@ Exercises
 
         .. tab:: Answer
 
-            .. sourcecode:: 
-                
+            .. sourcecode::
+
                 assert reverse('abc') == 'cba'
                 assert reverse('b') == 'b'
                 assert reverse('') == ''
-                
+
 
     .. tabbed:: tab_ut_testable
 
-        .. tab:: Question 
+        .. tab:: Question
 
            .. actex:: ac_ut_testable
                 :autograde: unittest
-      
+
                 A function named ``stripletters`` takes a string argument, removes all letters from it, and
                 displays the result (see below). However, this function is not testable.
 
@@ -109,17 +109,17 @@ Exercises
                             result += ch
 
                     print(result)
-                
+
                 assert stripletters('ab12c') == '12'
                 assert stripletters('12') == '12'
-                    
-                ====
+
+                =====
 
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):
 
-                    def testOne(self):                        
+                    def testOne(self):
                         self.assertEqual(stripletters('ab12c'), '12', "stripletters('ab12c') == '12'")
                         self.assertEqual(stripletters('12'), '12', "stripletters('12') == '12'")
 
@@ -131,8 +131,8 @@ Exercises
 
         .. tab:: Answer
 
-            .. sourcecode:: 
-                
+            .. sourcecode::
+
                 def stripletters(msg):
                     result = ''
                     for ch in msg:

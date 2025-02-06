@@ -22,8 +22,8 @@ Exercises
                Write a program that allows the user to enter a string.  It then prints a
                table of the letters of the alphabet in alphabetical order which occur in
                the string together with the number of times each letter occurs. Case should
-               be ignored. A sample run of the program might look this this::   
-               
+               be ignored. A sample run of the program might look this this::
+
                    Please enter a sentence: ThiS is String with Upper and lower case Letters.
                    a  2
                    c  1
@@ -43,7 +43,7 @@ Exercises
                    w  2
                    $
                ~~~~
-               
+
         .. tab:: Answer
 
             .. activecode:: de_q1_answer
@@ -79,48 +79,48 @@ Exercises
 
        Give the Python interpreter's response to each of the following from a
        continuous interpreter session:
-    
+
        a.
           .. sourcecode:: python
-    
+
               >>> d = {'apples': 15, 'bananas': 35, 'grapes': 12}
               >>> d['banana']
-    
+
        b.
           .. sourcecode:: python
-    
+
               >>> d['oranges'] = 20
               >>> len(d)
-    
+
        c.
           .. sourcecode:: python
-    
+
               >>> 'grapes' in d
-    
+
        d.
           .. sourcecode:: python
-    
+
               >>> d['pears']
-    
+
        e.
           .. sourcecode:: python
-    
+
               >>> d.get('pears', 0)
-    
+
        f.
           .. sourcecode:: python
-    
+
               >>> fruits = d.keys()
               >>> fruits.sort()
               >>> print(fruits)
-    
+
        g.
           .. sourcecode:: python
-    
+
               >>> del d['apples']
               >>> 'apples' in d
-    
-    
+
+
    Be sure you understand why you get each result. Then apply what you
    have learned to fill in the body of the function below, and add code for
    the tests indicated:
@@ -153,7 +153,7 @@ Exercises
               (You can obtain a free plain text version of the book, along with many others, from
               http://www.gutenberg.org.) The first 10 lines of your output file should look
               something like this
-   
+
                =========== ===========
                Word              Count
                =========== ===========
@@ -166,10 +166,10 @@ Exercises
                absence           1
                absurd            2
                =========== ===========
-   
+
               How many times does the word, ``alice``, occur in the book?  If you are writing this
               in the activecode window simply print out the results rather than write them to a file.
-              ~~~~   
+              ~~~~
 
         .. tab:: Answer
 
@@ -234,7 +234,7 @@ Exercises
                :autograde: unittest
 
                Here's a table of English to Pirate translations
-   
+
                ==========   ==============
                English      Pirate
                ==========   ==============
@@ -257,10 +257,10 @@ Exercises
                is	        be
                man	        matey
                ==========   ==============
-   
-               Write a function named ``translator`` that takes a parameter containing a sentence in English 
+
+               Write a function named ``translator`` that takes a parameter containing a sentence in English
                (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.
-               
+
                For example, the sentence "hello there students" should be translated to "avast there swabbies".
                ~~~~
                def translator(english):
@@ -276,7 +276,7 @@ Exercises
 
                  # Complete the function
 
-               ====
+               =====
                from unittest.gui import TestCaseGui
 
                class myTests(TestCaseGui):

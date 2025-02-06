@@ -104,14 +104,14 @@ going on to the next sequential statement, ``wn.exitonclick()``.
    =====
    wn = turtle.Screen()
    marie = turtle.Turtle()
-   ====
+   =====
    # repeat 3 times
    for i in [0,1,2]:
    =====
      marie.forward(175)
-   ====
+   =====
      marie.left(120)
-   ====
+   =====
    wn.exitonclick()
 
 **Mixed up program**
@@ -131,17 +131,17 @@ going on to the next sequential statement, ``wn.exitonclick()``.
    import turtle
    wn = turtle.Screen()
    carlos = turtle.Turtle()
-   ====
+   =====
    # repeat 2 times
    for i in [1,2]:
    =====
      carlos.forward(175)
-   ====
+   =====
      carlos.right(90)
    =====
      carlos.forward(150)
      carlos.right(90)
-   ====
+   =====
    wn.exitonclick()
 
 

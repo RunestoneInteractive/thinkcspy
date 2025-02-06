@@ -22,7 +22,7 @@ Let's start with our ``sumnums`` function::
 
     def sumnums(lo, hi):
         """computes the sum of a range of numbers
-        
+
         Precondition: lo <= hi
         Postcondition: returns the sum of the numbers in the range [lo..hi]
         """
@@ -30,7 +30,7 @@ Let's start with our ``sumnums`` function::
         sum = 0
         for i in range(lo, hi+1):
             sum += i
-        return sum        
+        return sum
 
 As we've seen, to write a unit test, you devise test cases for the function, and then write assert statements that call
 the function and check that the function produced the expected results. The following assert statements would be
@@ -48,7 +48,7 @@ But what about the following?
 Note that ``sumnums`` produces the value ``0`` for cases where the ``lo`` values exceeds the ``hi`` value, as is the
 case in this assert. So, like the first two asserts above, this assert would pass. However, it is not an
 appropriate assertion, because the specification says nothing about what the function produces if ``lo`` is greater than
-``hi``. 
+``hi``.
 
 The unit test should be written such that it passes even if the function implementation is altered in a way that
 causes some other value than 0 to be returned if ``lo`` exceeds ``hi``. For example, we might want to redesign the
@@ -56,7 +56,7 @@ function to be more efficient --- for example, use Gauss's formula for summing n
 
     def sumnums(lo, hi):
         """computes the sum of a range of numbers
-        
+
         Precondition: lo <= hi
         Postcondition: returns the sum of the numbers in the range [lo..hi]
         """
@@ -72,7 +72,7 @@ Specification-Based Testing
 
 A key idea to remember when writing a unit test is that your test must always respect the function's preconditions. The
 docstring states what the function should do, with the assumption that parameter values meet the preconditions. It does
-not state what the function should do if the parameter values violate the preconditions. 
+not state what the function should do if the parameter values violate the preconditions.
 
 Writing an assert that violates the functions preconditions is not a good idea, because to determine what the function
 will produce for that case, you must look into the implementation of the function and analyze its behavior. That is
@@ -109,7 +109,7 @@ to pass even if you rework the function implementation.
 
         def repeat(s: str, num: int) -> str:
             """duplicates a string
-            
+
             Precondition: `num` >= 0
             Postcondition: Returns a string containing `num` copies of `s`
             """
@@ -118,7 +118,7 @@ to pass even if you rework the function implementation.
             else:
                 return ''
 
-            
+
 .. tabbed:: tab_grade_unittest
 
     .. tab:: Question
@@ -146,9 +146,9 @@ to pass even if you rework the function implementation.
             you are developing and testing your answer will not be accurate.
             ~~~~
             # Write assert statements to test grade()
-            
 
-            ====
+
+            =====
             from unittest.gui import TestCaseGui
 
             class myTests(TestCaseGui):
@@ -170,11 +170,11 @@ to pass even if you rework the function implementation.
         .. activecode:: ac_grade_unittest_sol
             :include: ac_grade_unittest_aux
             :optional:
-            
+
             assert grade(92) == 'A'
             assert grade(85) == 'B'
             assert grade(69) == 'F'
-            
+
         .. .. reveal:: ac_grade_unittest_aux_reveal
         ..     :instructoronly:
 

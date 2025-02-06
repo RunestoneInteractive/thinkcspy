@@ -101,10 +101,10 @@ the methods invoked belong to and refer to the object ``alex``.
    import turtle
    window = turtle.Screen()
    ella = turtle.Turtle()
-   ====
+   =====
    ella.right(90)
    ella.forward(150)
-   ====
+   =====
    ella.left(90)
    ella.forward(75)
 
@@ -121,14 +121,14 @@ the methods invoked belong to and refer to the object ``alex``.
    Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on *Check Me* to see if you are right. You will be told if any of the lines are in the wrong order.
    -----
    import turtle
-   ====
+   =====
    window = turtle.Screen()
-   ====
+   =====
    maria = turtle.Turtle()
-   ====
+   =====
    maria.right(45)
    maria.forward(75)
-   ====
+   =====
    maria.left(90)
    maria.forward(150)
 
@@ -293,10 +293,10 @@ screen until we click on it.
    -----
    import turtle
    wn = turtle.Screen()
-   ====
+   =====
    wn.bgcolor("blue")
    jamal = turtle.Turtle()
-   ====
+   =====
    jamal.color("white")
    jamal.pensize(10)
    =====
@@ -328,13 +328,13 @@ screen until we click on it.
    =====
    jamal.left(90)
    jamal.forward(150)
-   ====
+   =====
    jamal.left(90)
    jamal.forward(50)
-   ====
+   =====
    jamal.right(180)
    jamal.forward(100)
-   ====
+   =====
    wn.exitonclick()
 
 

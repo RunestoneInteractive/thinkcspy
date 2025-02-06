@@ -120,13 +120,13 @@ Here are some *How to think like a computer scientist* observations:
    =====
    jamal.left(90)
    jamal.forward(75)
-   ====
+   =====
    tina = turtle.Turtle()
    tina.pensize(10)
    tina.color("orange")
    tina.left(180)
    tina.forward(75)
-   ====
+   =====
    wn.exitonclick()
 
 .. parsonsprob:: 3_7
@@ -142,7 +142,7 @@ Here are some *How to think like a computer scientist* observations:
    Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on *Check Me* to see if you are right. You will be told if any of the lines are in the wrong order.
    -----
    import turtle
-   ====
+   =====
    wn = turtle.Screen()
    =====
    jamal = turtle.Turtle()
@@ -151,12 +151,12 @@ Here are some *How to think like a computer scientist* observations:
    =====
    jamal.left(90)
    jamal.forward(150)
-   ====
+   =====
    tina = turtle.Turtle()
    tina.pensize(10)
    tina.color("orange")
    tina.forward(150)
-   ====
+   =====
    wn.exitonclick()
 
 

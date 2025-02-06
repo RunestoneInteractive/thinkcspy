@@ -75,7 +75,7 @@ Exercises
 
     # Fix the loop to get the correct output.
 
-    ====
+    =====
 
     from unittest.gui import TestCaseGui
 
@@ -120,7 +120,7 @@ Exercises
             def count(p):
                 # your code here
 
-            ====
+            =====
 
             from unittest.gui import TestCaseGui
 
@@ -203,7 +203,7 @@ Exercises
             def numDigits(n):
                 # your code here
 
-            ====
+            =====
 
             from unittest.gui import TestCaseGui
 
@@ -250,7 +250,7 @@ Exercises
     def reverse(astring):
         # your code here
 
-    ====
+    =====
 
     from unittest.gui import TestCaseGui
 
@@ -283,7 +283,7 @@ Exercises
             def mirror(mystr):
                 # your code here
 
-            ====
+            =====
 
             from unittest.gui import TestCaseGui
 
@@ -340,7 +340,7 @@ Exercises
     def remove_letter(theLetter, theString):
         # your code here
 
-    ====
+    =====
 
 
     from unittest.gui import TestCaseGui
@@ -374,7 +374,7 @@ Exercises
             def is_palindrome(myStr):
                 # your code here
 
-            ====
+            =====
 
 
             from unittest.gui import TestCaseGui
@@ -437,7 +437,7 @@ Exercises
         # your code here
 
 
-    ====
+    =====
 
 
     from unittest.gui import TestCaseGui
@@ -474,7 +474,7 @@ Exercises
             def remove(substr,theStr):
                 # your code here
 
-            ====
+            =====
 
 
             from unittest.gui import TestCaseGui
@@ -532,7 +532,7 @@ Exercises
 
 
 
-    ====
+    =====
 
     from unittest.gui import TestCaseGui
 
@@ -909,7 +909,7 @@ Exercises
 
     print(remove_dups("mississippi"))   #should print misp
 
-    ====
+    =====
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):

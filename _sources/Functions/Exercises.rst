@@ -232,7 +232,7 @@ Exercises
                 def sumTo(n):
                     # your code here
 
-                ====
+                =====
                 from unittest.gui import TestCaseGui
 
                 class myTests(TestCaseGui):
@@ -282,7 +282,7 @@ Exercises
        def areaOfCircle(r):
            # your code here
 
-       ====
+       =====
        from unittest.gui import TestCaseGui
 
        class myTests(TestCaseGui):
@@ -404,7 +404,7 @@ Exercises
                def sumTo(n):
                    # your code here
 
-               ====
+               =====
                from unittest.gui import TestCaseGui
                class myTests(TestCaseGui):
 
@@ -456,7 +456,7 @@ Exercises
        def mySqrt(n):
            # your code here
 
-       ====
+       =====
        from unittest.gui import TestCaseGui
 
        class myTests(TestCaseGui):
