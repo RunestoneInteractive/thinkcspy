@@ -30,10 +30,13 @@ You can see and read this book online at `runestone.academy <http://runestone.ac
 Building with PreTeXt
 ---------------------
 
-1. Create a virtual environment
-2. pip install pretextbook
-3. To build run: pretext build web
-4. pretext view web
+1. Create and activate a virtual environment (for more about Python virtual environments, `view the documentation <https://docs.python.org/3/library/venv.html#creating-virtual-environments>`_)
+2. Move into the directory that is the virtual environment
+3. Clone this repo (or a fork of this repo)
+4. Move into the top-level directory of the cloned repo 
+5. Run ``pip install pretext`` (for more about PreTeXt, visit `the PreTeXt Guide <https://pretextbook.org/doc/guide/html/processing-CLI.html>`_)
+6. To build run: ``pretext build web``
+7. To view the resulting textbook run: ``pretext view web``
 
 Note: The pretext sources are in the pretext folder, we will keep the _sources folder until we are 100% sure that the book has been converted correctly and as thoroughly as possible.
 
