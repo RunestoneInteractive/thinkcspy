@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<section xml:id="pygame_introduction">
+  <title>Pygame Introduction</title>
+
+  <p>Another aspect of python that is not specifically covered in this course is <term>Pygame</term>. This section will cover an introduction and key features of pygame so that you could get started programming your own game. 
+  Pygame is a free open-source library for programming games using Python. Pygame is considered a simple library in the world of game development, its capabilities include: graphics and animation, user input handling, 
+  collision detection, event handling, and sprite management. 
+  </p>
+
+  <p>To first use pygame you must install it on your computer. For both Mac and Windows, open vscode and a new terminal (Terminal -> New Terminal). In the terminal type : <term>pip install pygame</term>. If you already have pygame installed 
+  on your computer make sure that it is up to date with the latest version. Once pygame is installed and updated you are ready to get started!</p>
+
+  <p><term>Key Aspects of Game Development</term>:</p>
+  <p>Game loop: The game loop is a continuous cycle that begins when game play starts and ends based upon certain events happening. The game loop listens for user input such as: a mouse click, key events, the window closing, etc. 
+  based upon these inputs the loop will update the game. This creates the illusion of the user interacting with the game. For example, programming that once a user lost a certain amount of points the game would end, the game 
+  loop would continuously check the amount of points the user had and once it reached a certain threshold the game would quit.</p>
+
+  <p>Event handling: In game development event handling is a way to control responses to an event. When an event occurs such as user input or a collision, the event is directed to an event handler. This is a block of code that runs in 
+  response to the event. For example, if the user collides with an obstacle the game will end.</p>
+
+  <p>Sprites: Sprites are two dimensional animations or objects that often represent characters within the game. In pygame, sprites are typically created as classes and different sprite objects are created from that class. 
+  This could be as the user, as an enemy(ies) etc.</p>
+
+  <p>Collisions: Collisions are an often used concept in game development, many basic games such as car racing, pong, etc. Collision detection is also a type of event handling, where when two objects share the same coordinates 
+  the collision event occurs.</p>
+
+  <p>Game speed: Game speed is an aspect of the game that controls how quickly the game is played. For example, if you are playing an obstacle course, how quickly or not the objects appear is considered the game speed. 
+  Typically this is a variable that can be adjusted by the players depending on the difficulty that they choose to play the game at.</p>
+
+
+  <p>When beginning writing any pygame file the first two lines should always be: import pygame and pygame.init(). 
+    These two commands import and initialize the pygame module so that you may use it in your code. You will then want 
+    to create and name the window that your game will appear in outside of your coding environment. To do this:</p>
+  <program language="python">
+    <input>
+window = pygame.display.set_mode((500,500)) #this will create and set the size of your window
+pygame.display.set_caption("Name") #this will set the name of your window
+exit = False
+while !exit: #game loop
+    for event in pygame.event.get() #listens for events
+        if event.type == pygame.QUIT:
+            exit = True
+    pygame.display.update()
+    </input>
+  </program>
+  <p>When the above code is run. it should create a blank black window on your computer. All further creative ideas can extend from this central code.</p>
+
+<p><term>Drawing in Pygame</term>:</p>
+<program language="python">
+    <input>
+Color(r,g,b) #Color
+pygame.display.set_mode() #Create display window
+    </input>
+  </program>
+<p> Pygame can only have a single display active at a time, if set_mode() is called while another window is open, the previous window will be closed. 
+Using pygame.display.quit() will also shut down the window.</p>
+<p>pygame.draw.rect- draws a rectangle</p>
+<p>pygame.draw.polygon- draws a polygon</p>
+<p>pygame.draw.circle- draws a circle</p>
+<p>pygame.draw.ellipse- draws an ellipse</p>
+<p>pygame.draw.arc- draws an elliptical arc</p>
+<p>pygame.draw.line- draws a straight line</p>
+<p>pygame.draw.lines- draws multiple contiguous straight line segments</p>
+
+<p><term>Events in Pygame</term>:</p>
+<p>pygame.event.get()-gets events from the queue</p>
+<p>pygame.event.wait()- waits for single event from the queue</p>
+<p>pygame.event.clear()- removes all events from the queue</p>
+<p> To get the state of various input devices, you can forego the event queue and access the input
+devices directly with their appropriate modules. For example: pyagme.mouse, pygame.key, pygame.joystick, etc. 
+If this method is used, pygame requires some from of communication with the system window manager and other parts 
+of the platform. To keep pygame in sync with the system you will need to call: pygame.event.pump(), to keep everything current.
+Usually, this should be called once per game loop.</p>
+
+<p>The event queue itself contains event objects that can be accessed from the queue by checking for existence or grabbing them
+directly off of the stack.</p>
+
+<p><term>Mouse Event in Pygame</term>:</p>
+<p>pygame.mouse.get_pressed()- get the state of the mouse buttons</p>
+<p>pygame.mouse.get_pos()- get the mouse cursor position</p>
+<p>pygame.mouse.set_pos()- set the mouse cursor position</p>
+<p>pygame.mouse.set_visible()- hide or show the mouse cursor</p>
+<p>pygame.mouse.get_visible()- check if the display is receiving mouse input</p>
+
+<p>When the display mode is set, the queue will start receiving mouse evets. The mouse buttons themselves will generate: pygameMOUSEBUTTONDOWN/UP events.
+Similarly, a pygame.MOUSEMOTION event whenever the mouse is moved. All of these events can be directed to an event handler within the game loop.</p>
+
+<p><term>Time in Pygame</term>:</p>
+<p>pygame.time.get_ticks()- gets the time in milliseconds</p>
+<p>pygame.time.wait()- pauses the program for a specified amount of time</p>
+<p>pygame.time.delay()- same^</p>
+<p>pygame.time.set_timer()- repeatedly create an event on the event queue</p>
+<p>pygame.time.Clock- creates an object to track the time.</p>
+<p> Use of time in pygame can add an additional layer of complexity to your game. Whether that is making sure that the user completes a game level within a certain 
+amount of time, or times the user and records the best time.</p>
+
+<p> Here is an example of code that moves a box around the screen using the arrow keys.</p>
+<figure>
+  <image source="image.png" width="50%">
+  </image>
+</figure>
+
+
+<!-- all stuff before this  -->
+  </section>
