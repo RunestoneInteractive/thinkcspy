@@ -4,12 +4,12 @@
   <p>A substring of a string is called a <term>slice</term>. Selecting a slice is similar to
             selecting a character:</p>
   <program xml:id="chp08_slice1" interactive="activecode" language="python">
-    <input>
+    <code>
 singers = "Peter, Paul, and Mary"
 print(singers[0:5])
 print(singers[7:11])
 print(singers[17:21])
-        </input>
+        </code>
   </program>
   <p>The slice operator <c>[n:m]</c> returns the part of the string from the n'th character
             to the m'th character, including the first but excluding the last. In other words,  start with the character at index n and
@@ -23,13 +23,13 @@ print(singers[17:21])
   <p>There is no Index Out Of Range exception for a slice.
             A slice is forgiving and shifts any offending index to something legal.</p>
   <program xml:id="chp08_slice2" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "banana"
 print(fruit[:3])
 print(fruit[3:])
 print(fruit[3:-10])
 print(fruit[3:99])
-        </input>
+        </code>
   </program>
   <p>What do you think <c>fruit[:]</c> means?</p>
   <p>
@@ -39,10 +39,10 @@ print(fruit[3:99])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[3:8])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -84,10 +84,10 @@ print(s[3:8])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[7:11] * 3)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -128,10 +128,10 @@ print(s[7:11] * 3)
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_08_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

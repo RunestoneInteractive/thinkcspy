@@ -11,7 +11,7 @@
       <image source="Functions/Figures/five_squares.png" width="50%" />
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_1_editor">
-      <input>
+      <code>
 
         import turtle
 
@@ -31,11 +31,11 @@
         drawSquare(alex,20)
 
         wn.exitonclick()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q1_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawSquare(t, sz):
@@ -58,7 +58,7 @@
           alex.pendown()
 
           wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -69,9 +69,9 @@
       <image source="Functions/Figures/nested_squares.png" width="50%" />
     </statement>
     <program xml:id="ex_5_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_3">
@@ -82,13 +82,13 @@
       <image source="Functions/Figures/regularpolygon.png" width="50%" />
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_3_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q3_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawPoly(t, num_sides, side_length):
@@ -104,7 +104,7 @@
           tess.pensize(3)
 
           drawPoly(tess, 8, 50)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -114,9 +114,9 @@
       <image source="Functions/Figures/tess08.png" width="50%" />
     </statement>
     <program xml:id="ex_5_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_5">
@@ -125,13 +125,13 @@
       <image source="Functions/Figures/tess_spirals.png" width="50%" />
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_5_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q5_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawSpiral(t, angle):
@@ -167,7 +167,7 @@
           guido.pendown()
 
           drawSpiral(guido, 89)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -177,9 +177,9 @@
         drawPoly</c> from the previous question to have its turtle draw a equilateral triangle.</p>
     </statement>
     <program xml:id="ex_5_6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_7">
@@ -189,7 +189,7 @@
         value 55. Use the equation (n * (n + 1)) / 2.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_7_editor">
-      <input>
+      <code>
 
         def sumTo(n):
         # your code here =====
@@ -204,11 +204,11 @@
         self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
 
         myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q7_answer" language="python">
-        <input>
+        <code>
           from test import testEqual
 
           def sumTo(n):
@@ -222,7 +222,7 @@
           print("The sum from 1 to 10 is",t)
           t = sumTo(5)
           print("The sum from 1 to 5 is",t)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -232,7 +232,7 @@
         you use the math module in your solution.</p>
     </statement>
     <program xml:id="ex_5_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
         def areaOfCircle(r):
         # your code here =====
@@ -250,7 +250,7 @@
 
 
         myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_9">
@@ -260,13 +260,13 @@
       <image source="Functions/Figures/star.png" width="50%" />
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_9_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q9_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawFivePointStar(t):
@@ -276,7 +276,7 @@
 
           wolfram = turtle.Turtle()
           drawFivePointStar(wolfram)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -290,9 +290,9 @@
       <p>What would it look like if you didn't pick up the pen?</p>
     </statement>
     <program xml:id="ex_5_10_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_11">
@@ -302,13 +302,13 @@
         equal to 3).</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_11_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q11_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawStar(t, n):
@@ -318,7 +318,7 @@
 
           stroustrup = turtle.Turtle()
           drawStar(stroustrup, 7)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -331,9 +331,9 @@
         with 15 legs of length 120.</p>
     </statement>
     <program xml:id="ex_5_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_13">
@@ -342,7 +342,7 @@
         including n. This time use the accumulator pattern.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_13_editor">
-      <input>
+      <code>
 
         def sumTo(n):
         # your code here =====
@@ -356,11 +356,11 @@
         self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
 
         myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q13_answer" language="python">
-        <input>
+        <code>
           def sumTo(n):
           sum = 0
           for i in range(1,n+1):
@@ -374,7 +374,7 @@
           print("The sum from 1 to 10 is",t)
           t = sumTo(5)
           print("The sum from 1 to 5 is",t)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -386,7 +386,7 @@
         newguess = (1/2) * (oldguess + (n/oldguess)).</p>
     </statement>
     <program xml:id="ex_5_14_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
         def mySqrt(n):
         # your code here =====
@@ -401,7 +401,7 @@
         iterating more times.")
 
         myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_15">
@@ -413,18 +413,18 @@
         approximation.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_15_editor">
-      <input>
+      <code>
 
         def myPi(iters):
         # Calculate an approximation of PI using the Leibniz
         # approximation with iters number of iterations
 
         # your code here
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q15_answer" language="python">
-        <input>
+        <code>
           def myPi(iters):
           ''' Calculate an approximation of PI using the Leibniz
           approximation with iters number of iterations '''
@@ -441,7 +441,7 @@
 
           pi_approx = myPi(10000)
           print(pi_approx)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -452,14 +452,14 @@
           visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url> approximation.</p>
     </statement>
     <program xml:id="ex_5_16_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
         def myPi(iters):
         # Calculate an approximation of PI using the Madhava
         # approximation with iters number of iterations
 
         #your code here
-      </input>
+      </code>
     </program>
   </exercise>
   <exercise label="ex_5_17">
@@ -471,13 +471,13 @@
         triangles to the ends of the sprite legs.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_5_17_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="func_q17_answer" language="python">
-        <input>
+        <code>
           import turtle
 
           def drawSprite(t, numlegs, leglength):
@@ -500,7 +500,7 @@
           drawFancySquare(alex, 100, 10, 15)
 
           wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -518,7 +518,7 @@
         want to move past the top of the bar and write before or after drawing and filling the bar.</p>
     </statement>
     <program xml:id="ex_5_18_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
         import turtle
 
@@ -555,7 +555,7 @@
         drawBar(tess, a)
 
         wn.exitonclick()
-      </input>
+      </code>
     </program>
   </exercise>
 </exercises>

@@ -59,7 +59,7 @@
   <p>The activecode below shows the Python code that implements the algorithm
             outlined above for any base between 2 and 16.</p>
   <program xml:id="lst_rectostr" interactive="activecode" language="python">
-    <input>
+    <code>
 def toStr(n,base):
    convertString = "0123456789ABCDEF"
    if n &lt; base:
@@ -68,7 +68,7 @@ def toStr(n,base):
       return toStr(n//base,base) + convertString[n%base]
 
 print(toStr(1453,16))
-        </input>
+        </code>
   </program>
   <p>Notice that in line 3 we check for the base case where <c>n</c>
             is less than the base we are converting to. When we detect the base
@@ -94,7 +94,7 @@ print(toStr(1453,16))
     <title>Self Check</title>
     <p>Write a function that takes a string as a parameter and returns a new string that is the reverse of the old string.</p>
     <program xml:id="recursion_sc_1" interactive="activecode" language="python">
-      <input>
+      <code>
 from test import testEqual
 def reverse(s):
     return s
@@ -103,7 +103,7 @@ testEqual(reverse("hello"),"olleh")
 testEqual(reverse("l"),"l")
 testEqual(reverse("follow"),"wollof")
 testEqual(reverse(""),"")
-        </input>
+        </code>
     </program>
     <p>Write a function that takes a string as a parameter and returns True if the string is a palindrome, False otherwise.  Remember that a string is a palindrome if it is spelled the same both forward and backward.  for example:  radar is a palindrome.  for bonus points palindromes can also be phrases, but you need to remove the spaces and punctuation before checking.  for example:  madam i'm adam  is a palindrome.  Other fun palindromes include:</p>
     <p>
@@ -135,7 +135,7 @@ testEqual(reverse(""),"")
       </ul>
     </p>
     <program xml:id="recursion_sc_2" interactive="activecode" language="python">
-      <input>
+      <code>
 from test import testEqual
 def removeWhite(s):
     return s
@@ -149,7 +149,7 @@ testEqual(isPal(removeWhite("hello")),False)
 testEqual(isPal(removeWhite("")),True)
 testEqual(isPal(removeWhite("hannah")),True)
 testEqual(isPal(removeWhite("madam i'm adam")),True)
-        </input>
+        </code>
     </program>
   </note>
 </section>

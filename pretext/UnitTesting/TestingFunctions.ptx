@@ -35,7 +35,7 @@
             &#x2014; it contains only her new function and a bit of code to get some input, pass it to the function, and display the
             result. Here's what she writes:</p>
   <program xml:id="ac_round6_1" interactive="activecode" language="python">
-    <input>
+    <code>
 def round6(num):
     """returns num rounded to nearest int if fractional part is &gt;= .6"""
 
@@ -46,7 +46,7 @@ def round6(num):
 x = float(input('Enter a number:'))
 result = round6(x)
 print('Result: ', result)
-        </input>
+        </code>
   </program>
   <p>Before running the program, she jots down some test cases to help her in her testing:</p>
   <pre>              Input    Expected Output
@@ -95,7 +95,7 @@ Test Case 3:       3.7               4</pre>
     <p>We call a unit test that contains its own test input and produces a clear pass/fail indication an <term>automated
                     unit test</term>. Take a look at the following example:</p>
     <program xml:id="ac_round6_2" interactive="activecode" language="python">
-      <input>
+      <code>
 def round6(num):
     return int(num + .4)
 
@@ -112,7 +112,7 @@ if result == 8:
     print("Test 2: PASS")
 else:
     print("Test 2: FAIL")
-        </input>
+        </code>
     </program>
     <p>This automated unit test invokes the <c>round6</c> function on predetermined test input, checks that the function produced the
                 expected result, and displays a pass / fail message. Run it to see the test PASS messages.</p>
@@ -127,7 +127,7 @@ else:
     <p>To help reduce the amount of effort required to develop an automated unit test, let's bring the <c>assert</c> statement into
                 play. We can replace each <c>if</c> statement in the program above with an assert, as in the program below:</p>
     <program xml:id="ac_round6_3" interactive="activecode" language="python">
-      <input>
+      <code>
 def round6(num: float) -&gt; int:
     return int(num + .4)
 
@@ -140,7 +140,7 @@ result = round6(8.5)
 assert result == 8
 
 print("All tests passed!")
-        </input>
+        </code>
     </program>
     <p>Try running the program above to see the success message. Then, try altering the <c>round6</c> function to reintroduce the original
                 bug, and see how the assertion failure pinpoints that the second test failed.</p>

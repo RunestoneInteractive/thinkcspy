@@ -9,7 +9,7 @@
             it <c>halfway</c> that takes another <c>Point</c> as a parameter and returns the <c>Point</c> that is halfway between the point and
             the target.</p>
   <program xml:id="chp13_classesmid1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
 
     def __init__(self, initX, initY):
@@ -41,7 +41,7 @@ mid = p.halfway(q)
 print(mid)
 print(mid.getX())
 print(mid.getY())
-        </input>
+        </code>
   </program>
   <p>The resulting Point, <c>mid</c>, has an x value of 4 and a y value of 8.  We can also use any other methods since <c>mid</c> is a
             <c>Point</c> object.</p>
@@ -51,10 +51,10 @@ print(mid.getY())
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_cl_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

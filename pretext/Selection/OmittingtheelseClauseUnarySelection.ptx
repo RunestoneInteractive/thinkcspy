@@ -11,12 +11,12 @@
             In this case, when the condition evaluates to <c>True</c>, the statements are
             executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
   <program xml:id="ch05_unaryselection" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
-        </input>
+        </code>
   </program>
   <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
   <p>
@@ -26,12 +26,12 @@ print("This is always printed")
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
-</input>
+</code>
       </program>
       <pre>a.
 This is always printed
@@ -82,7 +82,7 @@ The negative number -10 is not valid here</pre>
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
-        <input>
+        <code>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
@@ -90,7 +90,7 @@ else:
     print(x, " is a positive number")
 else:
     print("This is always printed")
-</input>
+</code>
       </program>
     </statement>
     <choices>

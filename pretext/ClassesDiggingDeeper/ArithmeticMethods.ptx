@@ -11,7 +11,7 @@
             give us lowest terms, we will utilize a similar technique as was used in the <c>simplify</c> method to find the
             greatest common divisor and then divide each part of the new fraction.</p>
   <program language="python">
-    <input>
+    <code>
 def add(self,otherfraction):
 
     newnum = self.num*otherfraction.den + self.den*otherfraction.num
@@ -20,11 +20,11 @@ def add(self,otherfraction):
     common = gcd(newnum,newden)
 
     return Fraction(newnum//common,newden//common)
-</input>
+</code>
   </program>
   <p>You can try the addition method and then modify the fractions and retry.</p>
   <program xml:id="fractions_add1" interactive="activecode" language="python">
-    <input>
+    <code>
 def gcd(m, n):
     while m % n != 0:
         oldm = m
@@ -65,13 +65,13 @@ f2 = Fraction(1, 4)
 
 f3 = f1.add(f2)
 print(f3)
-        </input>
+        </code>
   </program>
   <p>One final modification to this method will be quite useful.  Instead invoking the <c>add</c> method, we can use the
             addition operator <q>+</q>.  This requires that we implement another special method, this time called <c>__add__</c>.
             The details of the method are the same.</p>
   <program language="python">
-    <input>
+    <code>
 def __add__(self, otherfraction):
 
     newnum = self.num*otherfraction.den + self.den*otherfraction.num
@@ -80,25 +80,25 @@ def __add__(self, otherfraction):
     common = gcd(newnum, newden)
 
     return Fraction(newnum // common, newden // common)
-</input>
+</code>
   </program>
   <p>However, now we can perform addition in the same manner that we are used to with other numeric data.</p>
   <program language="python">
-    <input>
+    <code>
 f1 = Fraction(1, 2)
 f2 = Fraction(1, 4)
 
 f3 = f1 + f2    # calls the __add__ method of f1
 print(f3)
-</input>
+</code>
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_cl_02" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

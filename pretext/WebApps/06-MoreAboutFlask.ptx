@@ -70,7 +70,7 @@
             pages. The first page displays a <q>Hello world</q> message and invites the user to
             click a link to view the time. When the user clicks the link, the time appears.</p>
   <program language="python">
-    <input>
+    <code>
  from flask import Flask
  from datetime import datetime
 
@@ -100,7 +100,7 @@
  if __name__ == "__main__":
      # Launch the Flask dev server
      app.run(host="localhost", debug=True)
-</input>
+</code>
   </program>
   <p>Here's how it works:</p>
   <p>

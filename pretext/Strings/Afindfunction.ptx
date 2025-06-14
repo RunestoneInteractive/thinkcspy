@@ -3,7 +3,7 @@
   <title>A <c>find</c> function</title>
   <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
   <program xml:id="ch08_run3" interactive="activecode" language="python">
-    <input>
+    <code>
 def find(astring, achar):
     """
     Find and return the index of achar in astring.
@@ -25,7 +25,7 @@ print(find("Compsci", "p"))
 print(find("Compsci", "C"))
 print(find("Compsci", "i"))
 print(find("Compsci", "x"))
-        </input>
+        </code>
   </program>
   <p>In a sense, <c>find</c> is the opposite of the indexing operator. Instead of taking
             an index and extracting the corresponding character, it takes a character and

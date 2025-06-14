@@ -139,12 +139,12 @@ def add(x, y):
       <statement>
         <p>Consider the following function. What would an appropriate precondition be?</p>
         <program language="python">
-          <input>
+          <code>
 def getfirst(msg):
     """returns first character of msg"""
 
     return msg[0]
-</input>
+</code>
         </program>
       </statement>
       <choices>

@@ -3,28 +3,28 @@
   <title>The <c>in</c> and <c>not in</c> operators</title>
   <p>The <c>in</c> operator tests if one string is a substring of another:</p>
   <program xml:id="chp8_in1" interactive="activecode" language="python">
-    <input>
+    <code>
 print('p' in 'apple')
 print('i' in 'apple')
 print('ap' in 'apple')
 print('pa' in 'apple')
-        </input>
+        </code>
   </program>
   <p>Note that a string is a substring of itself, and the empty string is a
             substring of any other string. (Also note that computer scientists
             like to think about these edge cases quite carefully!)</p>
   <program xml:id="chp8_in2" interactive="activecode" language="python">
-    <input>
+    <code>
 print('a' in 'a')
 print('apple' in 'apple')
 print('' in 'a')
 print('' in 'apple')
-        </input>
+        </code>
   </program>
   <p>The <c>not in</c> operator returns the logical opposite result of <c>in</c>.</p>
   <program xml:id="chp8_in3" interactive="activecode" language="python">
-    <input>
+    <code>
 print('x' not in 'apple')
-        </input>
+        </code>
   </program>
 </section>

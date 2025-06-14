@@ -21,7 +21,7 @@
             parameter &#x2013; an <c>event object</c>. Study the following example and
             pay close attention to where the <c>my_counter</c> global variable is used.</p>
   <program language="python">
-    <input>
+    <code>
 import tkinter as tk
 from tkinter import ttk
 
@@ -54,14 +54,14 @@ create_user_interface(window)
 
 # Start the GUI event loop
 window.mainloop()
-</input>
+</code>
   </program>
   <p>Let's compare the above program to an identical application that is designed
             as a Python <c>class</c>. The <c>class</c> encapsulates all of the values needed
             for the GUI interface and the <c>event handlers</c> and we don't need global
             variables!</p>
   <program language="python">
-    <input>
+    <code>
 import tkinter as tk
 from tkinter import ttk
 
@@ -96,7 +96,7 @@ class CounterProgram:
 
 if __name__ == "__main__":
     main()
-</input>
+</code>
   </program>
   <p>Notice the following about this design:</p>
   <p>

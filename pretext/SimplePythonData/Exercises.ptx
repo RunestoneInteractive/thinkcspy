@@ -71,11 +71,11 @@
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ch02_ex1_editor">
-      <input>
+      <code>
 
 
 print(5 ** 2)
-        </input>
+        </code>
     </program>
     <solution>
 
@@ -125,9 +125,9 @@ print(5 ** 2)
       <p>What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.</p>
     </statement>
     <program xml:id="ex_2_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 2 + (3 - 1) * 10 / 5 * (2 + 3)
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_2_3">
@@ -139,13 +139,13 @@ print(5 ** 2)
                         Your program should output what the time will be on the clock when the alarm goes off.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_3_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="spd_q3_answer" language="python">
-        <input>
+        <code>
 ## question 3 solution ##
 
 current_time_string = input("What is the current time (in hours)? ")
@@ -159,7 +159,7 @@ hours = current_time_int + waiting_time_int
 timeofday = hours % 24
 
 print(timeofday)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -171,11 +171,11 @@ print(timeofday)
                 the length of your stay, and it will tell you the number of day of the week you will return on.</p>
     </statement>
     <program xml:id="ex_2_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
  # Problem 4
  # My Name:
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_2_5">
@@ -185,13 +185,13 @@ print(timeofday)
                         one line using <c>print</c>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="spd_q5_answer" language="python">
-        <input>
+        <code>
 ## question 5 solution ##
 
 word1 = "All"
@@ -206,7 +206,7 @@ word9 = "dull"
 word10 = "boy."
 
 print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -216,9 +216,9 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
                 from 4 to -6.</p>
     </statement>
     <program xml:id="ex_2_6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_2_7">
@@ -233,13 +233,13 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
                         amount after t years.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_7_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="spd_q7_answer" language="python">
-        <input>
+        <code>
 ## question 7 solution ##
 
 P = 10000
@@ -251,7 +251,7 @@ t = int(input("Compound for how many years? "))
 final = P * ( ((1 + (r/n)) ** (n * t)) )
 
 print ("The final amount after", t, "years is", final)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -261,9 +261,9 @@ print ("The final amount after", t, "years is", final)
                 back to the user with the answer.</p>
     </statement>
     <program xml:id="ex_2_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_2_9">
@@ -272,13 +272,13 @@ print ("The final amount after", t, "years is", final)
                         Print a nice message with the answer.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_9_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="spd_q9_answer" language="python">
-        <input>
+        <code>
 ## question 9 solution
 
 width = int(input("Width? "))
@@ -287,7 +287,7 @@ height = int(input("Height? "))
 area = width * height
 
 print("The area of the rectangle is", area)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -297,9 +297,9 @@ print("The area of the rectangle is", area)
                 gallons used.  Print a nice message with the answer.</p>
     </statement>
     <program xml:id="ex_2_10_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_2_11">
@@ -307,13 +307,13 @@ print("The area of the rectangle is", area)
       <p>Write a program that will convert degrees celsius to degrees fahrenheit.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_11_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="spd_q11_answer" language="python">
-        <input>
+        <code>
 ## question 11 solution ##
 
 deg_c = int(input("What is the temperature in Celsius? "))
@@ -322,7 +322,7 @@ deg_c = int(input("What is the temperature in Celsius? "))
 deg_f = deg_c * (9 / 5) + 32
 
 print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -331,9 +331,9 @@ print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
       <p>Write a program that will convert degrees fahrenheit to degrees celsius.</p>
     </statement>
     <program xml:id="ex_2_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 </exercises>

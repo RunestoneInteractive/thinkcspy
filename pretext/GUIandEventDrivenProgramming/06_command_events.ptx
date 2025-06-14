@@ -9,7 +9,7 @@
             a <q>named parameter</q> when you create the widget, or set the widget's <c>command</c>
             attribute using a dictionary lookup. For example:</p>
   <program language="python">
-    <input>
+    <code>
 def my_function():
   print("my_function was called.")
 
@@ -19,7 +19,7 @@ my_button = tk.Button(application_window, text="Example", command=my_function)
 
 my_button = tk.Button(application_window, text="Example")
 my_button['command'] = my_function
-</input>
+</code>
   </program>
   <p>Note that you are setting the <c>command</c> property of the widget to a
             <em>function reference</em> &#x2013; you are not calling the function! Therefore, do not

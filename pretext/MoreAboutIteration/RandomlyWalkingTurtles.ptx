@@ -28,7 +28,7 @@
             that is why we call this indefinite iteration.</p>
   <p>So based on the problem description above, we can outline a program as follows:</p>
   <program language="python">
-    <input>
+    <code>
 create a window and a turtle
 
 while the turtle is still in the window:
@@ -38,7 +38,7 @@ while the turtle is still in the window:
     else:
         turn right
     move the turtle forward 50
-</input>
+</code>
   </program>
   <p>Now, probably the only thing that seems a bit confusing to you is the part
             about whether or not the turtle is still in the screen.  But this is the nice
@@ -54,7 +54,7 @@ while the turtle is still in the window:
             randomly.  Let's say that there is a 90% chance the turtle is still in the
             window and 10% that the turtle has escaped.</p>
   <program xml:id="iter_randwalk1" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 import turtle
 
@@ -80,7 +80,7 @@ while isInScreen(wn, t):
     t.forward(50)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>Now we have a working program that draws a random walk of our turtle that has
             a 90% chance of staying on the screen.  We are in a good position,
@@ -99,7 +99,7 @@ wn.exitonclick()
   <p>Once we have computed our boundaries we can get the current position of the
             turtle and then use conditionals to decide.  Here is one implementation:</p>
   <program language="python">
-    <input>
+    <code>
 def isInScreen(wn,t):
     leftBound = -(wn.window_width() / 2)
     rightBound = wn.window_width() / 2
@@ -116,7 +116,7 @@ def isInScreen(wn,t):
         stillIn = False
 
     return stillIn
-</input>
+</code>
   </program>
   <p>There are lots of ways that the conditional could be written.  In this case
             we have given <c>stillIn</c> the default value of <c>True</c> and use two <c>if</c>
@@ -126,7 +126,7 @@ def isInScreen(wn,t):
             clause.</p>
   <p>Here is the full version of our random walk program.</p>
   <program xml:id="iter_randwalk2" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 import turtle
 
@@ -161,7 +161,7 @@ while isInScreen(wn,t):
     t.forward(50)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>We could have written this program without using a boolean function.
             You might want to try to rewrite it using a complex condition on the while statement.

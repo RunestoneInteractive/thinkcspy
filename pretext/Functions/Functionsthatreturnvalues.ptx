@@ -6,11 +6,11 @@
             to indicate what the number is. Python has a built-in function for computing
             the absolute value:</p>
   <program xml:id="ch04_4" interactive="activecode" language="python">
-    <input>
+    <code>
 print(abs(5))
 
 print(abs(-5))
-    </input>
+    </code>
   </program>
   <p>In this example, the arguments to the <c>abs</c> function are 5 and -5.</p>
   <p>Some functions take more than one argument. For example the math module contains a function
@@ -19,12 +19,12 @@ print(abs(-5))
   <!--Inside the function,-->
   <!--the values that are passed get assigned to variables called **parameters**.-->
   <program xml:id="ch04_5" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 print(math.pow(2, 3))
 
 print(math.pow(7, 4))
-    </input>
+    </code>
   </program>
   <note>
     <p>Of course, we have already seen that raising a base to an exponent can be done with the ** operator.</p>
@@ -32,11 +32,11 @@ print(math.pow(7, 4))
   <p>Another built-in function that takes more than one argument is <c>max</c>.
   </p>
   <program xml:id="ch04_6" interactive="activecode" language="python">
-    <input>
+    <code>
 print(max(7, 11))
 print(max(4, 1, 17, 2, 12))
 print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
-    </input>
+    </code>
   </program>
   <p>
     <c>max</c> can be sent any number of arguments, separated by commas, and will
@@ -62,7 +62,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             black-box diagram with the Python code following.</p>
   <image source="Functions/Figures/squarefun.png" width="50%"/>
   <program xml:id="ch04_square" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(x):
     y = x * x
     return y
@@ -70,7 +70,7 @@ def square(x):
 toSquare = 10
 result = square(toSquare)
 print("The result of", toSquare, "squared is", result)
-    </input>
+    </code>
   </program>
   <p>The <term>return</term> statement is followed by an expression which is evaluated.  Its
             result is returned to the caller as the <q>fruit</q> of calling this function.
@@ -100,7 +100,7 @@ print("The result of", toSquare, "squared is", result)
                 follow, and the further statements are <em>not</em> executed.</p>
   </note>
   <program xml:id="ch04_clsquare" interactive="codelens" language="python">
-    <input>
+    <code>
 def square(x):
     y = x * x
     return y
@@ -108,7 +108,7 @@ def square(x):
 toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
-    </input>
+    </code>
   </program>
   <p>Another important thing to notice as you step through this codelens
             demonstration is the movement of the red and green arrows.  Codelens uses these arrows to show you where it is currently executing.
@@ -137,15 +137,15 @@ print("The result of", toSquare, "squared is", squareResult)
             value in the local variables listing.  Then look at what is printed when the
             function returns.</p>
   <program xml:id="ch04_clsquare_bad" interactive="codelens" language="python">
-    <input>
+    <code>
           def square(x):
               y = x * x
               print(y)   # Bad! should use return instead!
-          
+
           toSquare = 10
           squareResult = square(toSquare)
           print("The result of", toSquare, "squared is", squareResult)
-    </input>
+    </code>
   </program>
 
   <p>The problem with this function is that even though it prints the value of the square, that value will not be returned to the place
@@ -158,11 +158,11 @@ print("The result of", toSquare, "squared is", squareResult)
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
-        <input>
+        <code>
 def addEm(x, y, z):
     return x + y + z
     print('the answer is', x + y + z)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -204,10 +204,10 @@ def addEm(x, y, z):
     <statement>
       <p>What will the following function return?</p>
       <program language="python">
-        <input>
+        <code>
 def addEm(x, y, z):
     print(x + y + z)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

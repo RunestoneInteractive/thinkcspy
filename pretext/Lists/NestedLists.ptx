@@ -8,7 +8,7 @@
             of interest.  It is also possible to combine those steps using bracket operators that evaluate from
             left to right.</p>
   <program xml:id="chp09_nest" interactive="activecode" language="python">
-    <input>
+    <code>
 nested = ["hello", 2.0, 5, [10, 20]]
 innerlist = nested[3]
 print(innerlist)
@@ -16,7 +16,7 @@ item = innerlist[1]
 print(item)
 
 print(nested[3][1])
-        </input>
+        </code>
   </program>
   <p xml:id="lists_index-0">
     <term>Check your understanding</term>
@@ -25,13 +25,13 @@ print(nested[3][1])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [ [4, [True, False], 6, 8], [888, 999] ]
 if alist[0][1][0]:
    print(alist[1][0])
 else:
    print(alist[1][1])
-</input>
+</code>
       </program>
     </statement>
     <choices>

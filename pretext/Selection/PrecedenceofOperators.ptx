@@ -99,10 +99,10 @@
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_06_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
   <p>

@@ -27,13 +27,13 @@ w  2
 $</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_11_01_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="de_q1_answer" language="python">
-        <input>
+        <code>
 x = input("Enter a sentence")
 
 x = x.lower()   # convert to all lowercase
@@ -51,7 +51,7 @@ for char in x:
 keys = letter_count.keys()
 for char in sorted(keys):
     print(char, letter_count[char])
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -62,56 +62,56 @@ for char in sorted(keys):
       <ol marker="a">
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; d = {'apples': 15, 'bananas': 35, 'grapes': 12}
 &gt;&gt;&gt; d['banana']
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; d['oranges'] = 20
 &gt;&gt;&gt; len(d)
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; 'grapes' in d
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; d['pears']
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; d.get('pears', 0)
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; fruits = d.keys()
 &gt;&gt;&gt; fruits.sort()
 &gt;&gt;&gt; print(fruits)
-</input>
+</code>
           </program>
         </li>
         <li>
           <program language="python">
-            <input>
+            <code>
 &gt;&gt;&gt; del d['apples']
 &gt;&gt;&gt; 'apples' in d
-</input>
+</code>
           </program>
         </li>
       </ol>
@@ -121,7 +121,7 @@ for char in sorted(keys):
                 have learned to fill in the body of the function below, and add code for
                 the tests indicated:</p>
   <program xml:id="q2_dict_answer" interactive="activecode" language="python">
-    <input>
+    <code>
 def add_fruit(inventory, fruit, quantity=0):
      pass
 
@@ -132,7 +132,7 @@ add_fruit(new_inventory, 'strawberries', 10)
 #  test that new_inventory['strawberries'] is 10
 add_fruit(new_inventory, 'strawberries', 25)
 #  test that new_inventory['strawberries'] is now 35)
-        </input>
+        </code>
   </program>
   <exercise label="ex_11_02">
     <statement>
@@ -224,9 +224,9 @@ add_fruit(new_inventory, 'strawberries', 25)
                         in the activecode window simply print out the results rather than write them to a file.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_11_02_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
                     f = open('alice.txt', 'r')
@@ -264,7 +264,7 @@ for word in keys:
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
 
-                    <program language="python"><input>
+                    <program language="python"><code>
 f = open('alice.txt', 'r')
 
 count = {}
@@ -299,7 +299,7 @@ for word in keys:
     out.write('\n')
 
 print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
-</input></program>
+</code></program>
                 </solution>
   </exercise>
   <exercise label="ex_11_03">
@@ -307,9 +307,9 @@ print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
       <p>What is the longest word in Alice in Wonderland? How many characters does it have?</p>
     </statement>
     <program xml:id="ex_11_03_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_11_04">
@@ -476,7 +476,7 @@ print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
       <p>For example, the sentence <q>hello there students</q> should be translated to <q>avast there swabbies</q>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_11_04_editor">
-      <input>
+      <code>
 def translator(english):
 
   pirate = {}
@@ -500,11 +500,11 @@ class myTests(TestCaseGui):
         self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch11_q5_answer" language="python">
-        <input>
+        <code>
 def translator(sentence):
 
   pirate = {}
@@ -525,7 +525,7 @@ def translator(sentence):
          psentence.append(aword)
 
   return " ".join(psentence)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

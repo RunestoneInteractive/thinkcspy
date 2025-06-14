@@ -7,7 +7,7 @@
     <solution>
                     Your diagram should show two variables referring to two different lists.  a refers to the original list with 1,2, and 3.
                         b refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
-                
+
                     <p>Your diagram should show two variables referring to two different lists.  <c>a</c> refers to the original list with 1,2, and 3.
                         <c>b</c> refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.</p>
                 </solution>
@@ -19,7 +19,7 @@
                         use the append method to append the item to the list, and the last three statements should use concatenation.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_2_editor">
-      <input>
+      <code>
 
 myList = []
 
@@ -35,11 +35,11 @@ class myTests(TestCaseGui):
         self.assertIn(".append(", self.getEditorText(), 'append method must be used')
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ex_9_2_answer" language="python">
-        <input>
+        <code>
 myList = []
 myList.append(76)
 myList.append(92.3)
@@ -48,7 +48,7 @@ myList = myList + [True]
 myList = myList + [4]
 myList = myList + [76]
 print(myList)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -82,15 +82,15 @@ print(myList)
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_3_editor">
-      <input>
+      <code>
 myList = [76, 92.3, 'hello', True, 4, 76]
 
 # Your code here
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ex_9_3_answer" language="python">
-        <input>
+        <code>
 myList = [76, 92.3, 'hello', True, 4, 76]
 
 myList.append("apple")         # a
@@ -104,7 +104,7 @@ myList.remove(76)              # f
 myList.pop(myList.index(True)) # g
 
 print (myList)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -113,7 +113,7 @@ print (myList)
       <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_4_editor">
-      <input>
+      <code>
 def average(numlist):
     # Complete the function definition
 
@@ -127,11 +127,11 @@ class myTests(TestCaseGui):
         self.assertEqual(int(average([9, 5, 4])),6,"average([9, 5, 4]) should be 6")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ex_9_4_solution" language="python">
-        <input>
+        <code>
 def average(numlist):
 
     total = 0
@@ -139,7 +139,7 @@ def average(numlist):
         total = total + num
 
     return total / len(numlist)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -148,7 +148,7 @@ def average(numlist):
       <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named <c>max</c> but pretend you cannot use it.)</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_5_editor">
-      <input>
+      <code>
 def max(lst):
     # Complete the function
 
@@ -162,18 +162,18 @@ class myTests(TestCaseGui):
         self.assertEqual(max([3, 13, 51, 7]),51,"max([3, 13, 51, 7]) should be 51")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="lst_q5_answer" language="python">
-        <input>
+        <code>
 def max(lst):
     max = lst[0]
     for e in lst:
         if e &gt; max:
             max = e
     return max
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -184,7 +184,7 @@ def max(lst):
                 <c>sum_of_squares([2, 3, 4])</c> should return 4+9+16 which is 29:</p>
     </statement>
     <program xml:id="ex_7_11_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def sum_of_squares(xs):
     # your code here
 
@@ -199,7 +199,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sum_of_squares([5,12,14]),365,"Tested sum_of_squares on input [5,12,14]")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_9_6">
@@ -207,7 +207,7 @@ myTests().main()
       <p>Write a function to count how many odd numbers are in a list.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_6_editor">
-      <input>
+      <code>
 def countOdd(lst):
     # your code here
 
@@ -223,11 +223,11 @@ class myTests(TestCaseGui):
         self.assertEqual(countOdd([0,-1,12,-33]),2,"Tested countOdd on input [0,-1,12,-33]")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="lst_q7_answer" language="python">
-        <input>
+        <code>
 import random
 
 def countOdd(lst):
@@ -243,7 +243,7 @@ for i in range(100):
     lst.append(random.randint(0, 1000))
 
 print(countOdd(lst))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -252,7 +252,7 @@ print(countOdd(lst))
       <p>Sum up all the even numbers in a list.</p>
     </statement>
     <program xml:id="ex_9_7_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def sumEven(lst):
     # your code here
 
@@ -268,7 +268,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sumEven([0,1,12,33]),12,"Tested sumEven on input [0,1,12,33]")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_9_8">
@@ -276,7 +276,7 @@ myTests().main()
       <p>Sum up all the negative numbers in a list.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_8_editor">
-      <input>
+      <code>
 def sumNegatives(lst):
     # your code here
 
@@ -292,11 +292,11 @@ class myTests(TestCaseGui):
         self.assertEqual(sumNegatives([0,1,2,3,4]),0,"Tested sumNegatives on input [0,1,2,3,4]")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="lst_q9_answer" language="python">
-        <input>
+        <code>
 import random
 
 def sumNegative(lst):
@@ -311,7 +311,7 @@ for i in range(100):
     lst.append(random.randrange(-1000, 1000))
 
 print(sumNegative(lst))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -320,10 +320,10 @@ print(sumNegative(lst))
       <p>Count how many words in a list have length 5.</p>
     </statement>
     <program xml:id="ex_9_9_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def countWords(lst):
     # your code here
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise>
@@ -331,7 +331,7 @@ def countWords(lst):
     <program interactive="" language=""/>
     <solution>
       <program xml:id="lst_q11_answer" language="python">
-        <input>
+        <code>
 import random
 
 def sum(lst):
@@ -347,7 +347,7 @@ for i in range(100):
     lst.append(random.randint(0,1000))
 
 print(sum(lst))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -356,10 +356,10 @@ print(sum(lst))
       <p>Count how many words occur in a list up to and including the first occurrence of the word <q>sam</q>.</p>
     </statement>
     <program xml:id="ex_9_11_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def count(lst):
     # your code here
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_9_12">
@@ -386,13 +386,13 @@ def count(lst):
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_12_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="lst_q13_answer" language="python">
-        <input>
+        <code>
 def count(obj, lst):
     count = 0
     for e in lst:
@@ -432,7 +432,7 @@ print(is_in(4, lst))
 print(reverse(lst))
 print(index(2, lst))
 print(insert('cat', 4, lst))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -451,7 +451,7 @@ test(replace(s, 'o', 'a'),
       <p><em>Hint</em>: use the <c>split</c> and <c>join</c> methods.</p>
     </statement>
     <program xml:id="ex_9_13_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def replace(s, old, new):
     # your code here
 
@@ -466,7 +466,7 @@ class myTests(TestCaseGui):
         self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_9_14">
@@ -479,13 +479,13 @@ H --&gt; HFX[+H][-H]
 X --&gt; X[-FFF][+FFF]FX</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_14_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="lst_q15_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 def createLSystem(numIters, axiom):
@@ -549,7 +549,7 @@ def main():
     wn.exitonclick()
 
 main()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -560,9 +560,9 @@ main()
 F --&gt; F[-F]F[+F]F</pre>
     </statement>
     <program xml:id="ex_9_16_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_9_17">
@@ -570,7 +570,7 @@ F --&gt; F[-F]F[+F]F</pre>
       <p>Create a list named <c>randlist</c> containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_17_editor">
-      <input>
+      <code>
 
 ====
 from unittest.gui import TestCaseGui
@@ -581,17 +581,17 @@ class myTests(TestCaseGui):
         self.assertEqual(len(randlist),100,"randlist should contain 100 numbers")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ac_ex_9_17" language="python">
-        <input>
+        <code>
 import random
 
 randlist = []
 for i in range(100):
     randlist.append(random.randint(0, 1000))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

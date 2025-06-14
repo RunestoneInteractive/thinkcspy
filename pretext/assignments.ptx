@@ -7,8 +7,8 @@
             you can do this:</p>
   <p>Write a program that counts from 1 to 10</p>
   <program xml:id="unique_id_1" interactive="activecode" language="python">
-    <input>
+    <code>
 # your code here
-        </input>
+        </code>
   </program>
 </section>

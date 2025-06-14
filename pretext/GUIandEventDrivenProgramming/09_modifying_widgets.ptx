@@ -118,10 +118,10 @@
             background color and width of a widget whose object variable is named <c>sam</c>,
             you could do this:</p>
   <program language="python">
-    <input>
+    <code>
 sam = tk.Button(application_window, text="Sam's Button")
 sam['bg'] = 'red'
 sam['width'] = 60  # pixels
-</input>
+</code>
   </program>
 </section>

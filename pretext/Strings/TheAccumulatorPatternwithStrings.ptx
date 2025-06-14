@@ -5,7 +5,7 @@
             write a function that removes all the vowels from a string.  The idea is to start with a string and iterate over each character, checking to see if the character is a vowel.  As we process the characters, we will build up a new string consisting of only the nonvowel characters.  To do this, we use the accumulator pattern.</p>
   <p>Remember that the accumulator pattern allows us to keep a <q>running total</q>.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
   <program xml:id="ch08_acc1" interactive="activecode" language="python">
-    <input>
+    <code>
 def removeVowels(s):
     vowels = "aeiouAEIOU"
     sWithoutVowels = ""
@@ -16,18 +16,18 @@ def removeVowels(s):
 
 print(removeVowels("compsci"))
 print(removeVowels("aAbEefIijOopUus"))
-    </input>
+    </code>
   </program>
   <p>Line 5 uses the <c>not in</c> operator to check whether the current character is not in the string <c>vowels</c>. The alternative to using this operator would be to write a very large <c>if</c> statement that checks each of the individual vowel characters.  Note we would need to use logical <c>and</c> to be sure that the character is not any of the vowels.</p>
   <program language="python">
-    <input>
+    <code>
 if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
    eachChar != 'o'  and eachChar != 'u'  and eachChar != 'A'  and
    eachChar != 'E'  and eachChar != 'I'  and eachChar != 'O'  and
    eachChar != 'U':
 
      sWithoutVowels = sWithoutVowels + eachChar
-    </input>
+    </code>
   </program>
   <p>Look carefully at line 6 in the above program (<c>sWithoutVowels = sWithoutVowels + eachChar</c>).  We will do this for every character that is not a vowel.  This should look
             very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to <q>accumulate</q> the final result.
@@ -37,7 +37,7 @@ if eachChar != 'a'  and eachChar != 'e'  and eachChar != 'i'  and
             new characters to the end.</p>
   <p>Step through the function using codelens to see the accumulator variable grow.</p>
   <program xml:id="ch08_acc2" interactive="codelens" language="python">
-    <input>
+    <code>
 def removeVowels(s):
     vowels = "aeiouAEIOU"
     sWithoutVowels = ""
@@ -47,7 +47,7 @@ def removeVowels(s):
     return sWithoutVowels
 
 print(removeVowels("compsci"))
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -56,13 +56,13 @@ print(removeVowels("compsci"))
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">
-        <input>
+        <code>
 s = "ball"
 r = ""
 for item in s:
     r = item.upper() + r
 print(r)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -95,10 +95,10 @@ print(r)
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_08_03" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
   </note>
 </section>

@@ -10,13 +10,13 @@
             it can perform.</p>
   <p>Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.</p>
   <program xml:id="chp08_upper" interactive="activecode" language="python">
-    <input>
+    <code>
 ss = "Hello, World"
 print(ss.upper())
 
 tt = ss.lower()
 print(tt)
-        </input>
+        </code>
   </program>
   <p>In this example, <c>upper</c> is a method that can be invoked on any string object
             to create a new string in which all the
@@ -218,7 +218,7 @@ print(tt)
             methods so that you understand what they do.  Note once again that the methods that return strings do not
             change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.</p>
   <program xml:id="ch08_methods1" interactive="activecode" language="python">
-    <input>
+    <code>
 ss = "    Hello, World    "
 
 els = ss.count("l")
@@ -230,10 +230,10 @@ print("***" + ss.rstrip() + "***")
 
 news = ss.replace("o", "***")
 print(news)
-        </input>
+        </code>
   </program>
   <program xml:id="ch08_methods2" interactive="activecode" language="python">
-    <input>
+    <code>
 food = "banana bread"
 print(food.capitalize())
 
@@ -250,7 +250,7 @@ print(food.rfind("na"))
 print(food.rfind("b"))
 
 print(food.index("e"))
-        </input>
+        </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -259,10 +259,10 @@ print(food.index("e"))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s.count("o") + s.count("p"))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -296,10 +296,10 @@ print(s.count("o") + s.count("p"))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[1] * s.index("n"))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -351,11 +351,11 @@ print(s[1] * s.index("n"))
                 substitutions into places in a string
                 enclosed in braces. Run this code:</p>
     <program xml:id="ch08_methods3" interactive="activecode" language="python">
-      <input>
+      <code>
 person = input('Your name: ')
 greeting = 'Hello {}!'.format(person)
 print(greeting)
-        </input>
+        </code>
     </program>
     <p>There are several new ideas here!</p>
     <p>The string for the <c>format</c> method has a special form, with braces embedded.
@@ -373,21 +373,21 @@ print(greeting)
                 referenced once, it can be eliminated with the more concise
                 version:</p>
     <program xml:id="ch08_methods4" interactive="activecode" language="python">
-      <input>
+      <code>
 person = input('Enter your name: ')
 print('Hello {}!'.format(person))
-        </input>
+        </code>
     </program>
     <p>There can be multiple substitutions, with data of any type.
                 Next we use floats.  Try original price $2.50  with a 7% discount:</p>
     <program xml:id="ch08_methods5" interactive="activecode" language="python">
-      <input>
+      <code>
 origPrice = float(input('Enter the original price: $'))
 discount = float(input('Enter discount percentage: '))
 newPrice = (1 - discount/100)*origPrice
 calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
 print(calculation)
-        </input>
+        </code>
     </program>
     <p>The parameters are inserted into the braces in order.</p>
     <p>If you used the data suggested, this result is not satisfying.
@@ -398,13 +398,13 @@ print(calculation)
                 In particular floats can be shown with a specific number of decimal places.
                 For two decimal places, put <c>:.2f</c> inside the braces for the monetary values:</p>
     <program xml:id="ch08_methods6" interactive="activecode" language="python">
-      <input>
+      <code>
 origPrice = float(input('Enter the original price: $'))
 discount = float(input('Enter discount percentage: '))
 newPrice = (1 - discount/100)*origPrice
 calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
 print(calculation)
-        </input>
+        </code>
     </program>
     <p>The 2 in the format modifier can be replaced by another integer to round to that
                 specified number of digits.</p>
@@ -427,7 +427,7 @@ print(setStr)</pre>
     <p>You can have multiple placeholders indexing the same argument, or perhaps even have extra
                 arguments that are not referenced at all:</p>
     <program xml:id="ch08_formatspecification" interactive="activecode" language="python">
-      <input>
+      <code>
 letter = """
 Dear {0} {2}.
  {0}, I have an interesting money-making proposition for you!
@@ -437,17 +437,17 @@ Dear {0} {2}.
 
 print(letter.format("Paris", "Whitney", "Hilton"))
 print(letter.format("Bill", "Henry", "Gates"))
-        </input>
+        </code>
     </program>
     <exercise label="test_question8_3_3">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
-          <input>
+          <code>
 x = 2
 y = 6
 print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
-</input>
+</code>
         </program>
       </statement>
       <choices>
@@ -489,10 +489,10 @@ print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
-          <input>
+          <code>
 v = 2.34567
 print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
-</input>
+</code>
         </program>
       </statement>
       <choices>

@@ -121,7 +121,7 @@
   </table>
   <p>Now let's look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files but they do support the pattern we'll show you here.</p>
   <program xml:id="files_while" interactive="activecode" language="python">
-    <input>
+    <code>
 infile = open("ccdata.txt", "r")
 line = infile.readline()
 while line:
@@ -130,7 +130,7 @@ while line:
     line = infile.readline()
 
 infile.close()
-        </input>
+        </code>
   </program>
   <p>There are several important things to notice in this code:</p>
   <p>On line 2 we have the statement <c>line = infile.readline()</c>.

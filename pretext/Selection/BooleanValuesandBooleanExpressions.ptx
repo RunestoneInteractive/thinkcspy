@@ -9,11 +9,11 @@
             is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
             sensitive).</p>
   <program xml:id="ch05_1" interactive="activecode" language="python">
-    <input>
+    <code>
 print(True)
 print(type(True))
 print(type(False))
-        </input>
+        </code>
   </program>
   <note>
     <p>Boolean values are not strings!</p>
@@ -22,35 +22,35 @@ print(type(False))
                 types shown below.</p>
   </note>
   <program xml:id="ch05_1a" interactive="activecode" language="python">
-    <input>
+    <code>
 print(type(True))
 print(type("True"))
-        </input>
+        </code>
   </program>
   <p>A <term>boolean expression</term> is an expression that evaluates to a boolean value.
             The equality operator, <c>==</c>, compares two values and produces a boolean value related to whether the
             two values are equal to one another.</p>
   <program xml:id="ch05_2" interactive="activecode" language="python">
-    <input>
+    <code>
 print(5 == 5)
 
 print(5 == 6)
 
 j = "hel"
 print(j + "lo" == "hello")
-        </input>
+        </code>
   </program>
   <p>In the first statement, the two operands are equal, so the expression evaluates
             to <c>True</c>.  In the second statement, 5 is not equal to 6, so we get <c>False</c>.</p>
   <p>The <c>==</c> operator is one of six common <term>comparison operators</term>; the others are:</p>
   <program language="python">
-    <input>
+    <code>
 x != y               # x is not equal to y
 x &gt; y                # x is greater than y
 x &lt; y                # x is less than y
 x &gt;= y               # x is greater than or equal to y
 x &lt;= y               # x is less than or equal to y
-</input>
+</code>
   </program>
   <p>Although these operations are probably familiar to you, the Python symbols are
             different from the mathematical symbols. A common error is to use a single

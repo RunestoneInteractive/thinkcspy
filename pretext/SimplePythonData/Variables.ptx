@@ -7,11 +7,11 @@
   <p>
     <term>Assignment statements</term> create new variables and also give them values to refer to.</p>
   <program language="python">
-    <input>
+    <code>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
-    </input>
+    </code>
   </program>
   <p>This example makes three assignments. The first assigns the string value
     <c>"What's up, Doc?"</c> to a new variable named <c>message</c>. The second gives the
@@ -23,9 +23,9 @@ pi = 3.14159
             side of the operator, with a <em>value</em>, on the right hand side.  This is why you
             will get an error if you enter:</p>
   <program language="python">
-    <input>
+    <code>
 17 = n
-    </input>
+    </code>
   </program>
   <note>
     <p>When reading or writing code, say to yourself <q>n is assigned 17</q> or <q>n gets
@@ -42,7 +42,7 @@ pi = 3.14159
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
   <program xml:id="ch02_9" interactive="activecode" language="python">
-    <input>
+    <code>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
@@ -50,12 +50,12 @@ pi = 3.14159
 print(message)
 print(n)
 print(pi)
-    </input>
+    </code>
   </program>
   <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
   <program xml:id="ch02_9_cl" interactive="codelens" language="python">
-    <input>
+    <code>
           message = "What's up, Doc?"
           n = 17
           pi = 3.14159
@@ -63,7 +63,7 @@ print(pi)
           print(message)
           print(n)
           print(pi)
-    </input>
+    </code>
   </program>
   <p>Now, as you step through the statements, you can see
             the variables and the values they reference as those references are
@@ -71,7 +71,7 @@ print(pi)
   <p>Variables also have
             types; again, we can ask the interpreter what they are.</p>
   <program xml:id="ch02_10" interactive="activecode" language="python">
-    <input>
+    <code>
 message = "What's up, Doc?"
 n = 17
 pi = 3.14159
@@ -79,7 +79,7 @@ pi = 3.14159
 print(type(message))
 print(type(n))
 print(type(pi))
-    </input>
+    </code>
   </program>
   <p>The type of a variable is the type of the object it currently refers to.</p>
   <p>We use variables in a program to <q>remember</q> things, like the current score at
@@ -95,14 +95,14 @@ print(type(pi))
             You'll notice we change the value of day three times, and on the third
             assignment we even give it a value that is of a different type.</p>
   <program xml:id="ch02_11" interactive="codelens" language="python">
-    <input>
+    <code>
           day = "Thursday"
           print(day)
           day = "Friday"
           print(day)
           day = 21
           print(day)
-    </input>
+    </code>
   </program>
   <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep
             track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update
@@ -114,12 +114,12 @@ print(type(pi))
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
-        <input>
+        <code>
 day = "Thursday"
 day = 32.5
 day = 19
 print(day)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

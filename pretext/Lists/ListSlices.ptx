@@ -6,13 +6,13 @@
             beginning of the sequence. If you omit the second index, the slice goes to the
             end of the sequence.</p>
   <program xml:id="chp09_6" interactive="activecode" language="python">
-    <input>
+    <code>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 print(a_list[1:3])
 print(a_list[:4])
 print(a_list[3:])
 print(a_list[:])
-        </input>
+        </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -21,10 +21,10 @@ print(a_list[:])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[4:])
-</input>
+</code>
       </program>
     </statement>
     <choices>

@@ -5,7 +5,7 @@
   <p>The following program counts the number of times a particular letter, <c>aChar</c>, appears in a
             string.  It is another example of the accumulator pattern that we have seen in previous chapters.</p>
   <program xml:id="chp08_fun2" interactive="activecode" language="python">
-    <input>
+    <code>
 def count(text, aChar):
     lettercount = 0
     for c in text:
@@ -14,7 +14,7 @@ def count(text, aChar):
     return lettercount
 
 print(count("banana","a"))
-        </input>
+        </code>
   </program>
   <p>The function <c>count</c> takes a string as its parameter.  The <c>for</c> statement iterates through each character in
             the string and checks to see if the character is equal to the value of <c>aChar</c>.  If so, the counting variable, <c>lettercount</c>, is incremented by one.

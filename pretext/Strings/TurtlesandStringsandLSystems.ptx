@@ -73,7 +73,7 @@ ABBAB  Apply Rule 2 to B, Rule 1 to A, and Rule 2 to B</pre>
   <p>Let's look at a simple Python program that implements the example set of rules described
             above.</p>
   <program xml:id="string_lsys1" interactive="activecode" language="python">
-    <input>
+    <code>
 def applyRules(lhch):
     rhstr = ""
     if lhch == 'A':
@@ -104,7 +104,7 @@ def createLSystem(numIters,axiom):
     return endString
 
 print(createLSystem(4, "A"))
-        </input>
+        </code>
   </program>
   <p>Try running the example above with different values for the <c>numIters</c>
             parameter.  You should see that for values 1, 2, 3, and 4, the strings generated follow the
@@ -196,7 +196,7 @@ print(createLSystem(4, "A"))
   </table>
   <p>Here is the <c>applyRules</c> function for this L-system.</p>
   <program language="python">
-    <input>
+    <code>
 def applyRules(ch):
     newstr = ""
     if ch == 'F':
@@ -205,7 +205,7 @@ def applyRules(ch):
         newstr = ch    # no rules apply so keep the character
 
     return newstr
-</input>
+</code>
   </program>
   <p>Pretty simple so far.  As you can imagine this string will get pretty long
             with a few applications of the rules.  You might try to expand the string a
@@ -235,7 +235,7 @@ def applyRules(ch):
     </ul>
   </p>
   <program language="python">
-    <input>
+    <code>
 def drawLsystem(aTurtle,instructions,angle,distance):
     for cmd in instructions:
         if cmd == 'F':
@@ -246,12 +246,12 @@ def drawLsystem(aTurtle,instructions,angle,distance):
             aTurtle.right(angle)
         elif cmd == '-':
             aTurtle.left(angle)
-</input>
+</code>
   </program>
   <p>Here is the complete program in activecode.  The <c>main</c> function first creates the
             L-system string and then it creates a turtle and passes it and the string to the drawing function.</p>
   <program xml:id="strings_lys2" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def createLSystem(numIters,axiom):
@@ -305,7 +305,7 @@ def main():
     wn.exitonclick()
 
 main()
-        </input>
+        </code>
   </program>
   <p>Feel free to try some different angles and segment lengths to see how the drawing changes.</p>
 </section>

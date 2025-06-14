@@ -47,7 +47,7 @@
     """</pre>
   <p>Next, we write the unit test for it:</p>
   <program xml:id="ac_tfd_sumnums" interactive="activecode" language="python">
-    <input>
+    <code>
 def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
@@ -58,12 +58,12 @@ def sumnums(lo, hi):
 assert sumnums(1, 3) == 6
 assert sumnums(1, 1) == 1
 print("All tests passed!")
-        </input>
+        </code>
   </program>
   <p>We run the unit test and it fails.</p>
   <p>Next, we implement the body of <c>sumnums</c>:</p>
   <program xml:id="ac_tfd_sumnums2" interactive="activecode" language="python">
-    <input>
+    <code>
 def sumnums(lo, hi):
     """computes the sum of a range of numbers
 
@@ -78,7 +78,7 @@ def sumnums(lo, hi):
 assert sumnums(1, 3) == 6
 assert sumnums(1, 1) == 1
 print("All tests passed!")
-        </input>
+        </code>
   </program>
   <p>Now, run the tests. The tests indicate an assertion error, which points to a bug in the function logic. Fix the bug,
             and test again. (If you're not sure what the bug is, try using <term>Show in CodeLens</term> and stepping through the code to help

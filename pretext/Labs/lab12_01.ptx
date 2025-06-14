@@ -6,7 +6,7 @@
     <p>We have previously discussed the solution to the problem of counting the number of times a specific letter appears
                 in a string.  In the case below, that specific letter is <q>a</q>.</p>
     <program xml:id="chp12_single" interactive="activecode" language="python">
-      <input>
+      <code>
 def countA(text):
     count = 0
     for c in text:
@@ -15,15 +15,15 @@ def countA(text):
     return count
 
 print(countA("banana"))
-        </input>
+        </code>
     </program>
     <p>Of course, we could also solve this problem by using the <c>count</c> method provided for strings.</p>
     <program language="python">
-      <input>
+      <code>
 def countA(text):
 
     return text.count("a")
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="labs_general-solution-counting-all-letters">
@@ -38,15 +38,15 @@ def countA(text):
                 key that is not in the dictionary has a count of 0.</p>
     <p>If we call the function <c>countAll</c>, then a call to <c>countAll</c> would return the dictionary.  For example,</p>
     <program language="python">
-      <input>
+      <code>
 print(countAll("banana"))
-</input>
+</code>
     </program>
     <p>would return the dictionary</p>
     <program language="python">
-      <input>
+      <code>
 {"a":3, "b":1, "n":2}
-</input>
+</code>
     </program>
     <p>Here is a start to the development of the function.</p>
     <p>

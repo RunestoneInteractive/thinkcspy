@@ -15,13 +15,13 @@
             has elapsed. In the example below, the function <c>a_callback_function</c>
             will be called one second (1000 milliseconds) after the timer-event was created.</p>
   <program language="python">
-    <input>
+    <code>
 def a_callback_function():
     print("a_callback_function was called.")
 
 my_button = tk.Button(application_window, text="Example")
 my_button.after(1000, a_callback_function)
-</input>
+</code>
   </program>
 </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_animations-and-repeated-tasks">
@@ -32,14 +32,14 @@ my_button.after(1000, a_callback_function)
                 that is called 30 times per second. (Note that 1/30th of a second is 0.033
                 seconds, or 33 milliseconds.)</p>
     <program language="python">
-      <input>
+      <code>
 def animate():
     # Draw something
     my_button.after(33, animate)
 
 my_button = tk.Button(application_window, text="Example")
 my_button.after(33, animate)
-</input>
+</code>
     </program>
     <p>A widget can have more than one timer event active at any time. In fact there
                 is no limit to the number of timer events you can create.</p>
@@ -59,7 +59,7 @@ my_button.after(33, animate)
                 the return value from the call to <c>after</c> when you created the event. Here
                 is an example:</p>
     <program language="python">
-      <input>
+      <code>
 def do_something():
   # Some processing
 
@@ -68,7 +68,7 @@ timer_object = my_button.after(1000, do_something)
 ...
 
 my_button.after_cancel(timer_object)
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_multiple-parameters-to-timer-callbacks">
@@ -80,7 +80,7 @@ my_button.after_cancel(timer_object)
                 number of arguments. You must specify the correct number of arguments for
                 the callback function when you create the timer event.</p>
     <program language="python">
-      <input>
+      <code>
 def task1():
   # Do some processing
 
@@ -95,7 +95,7 @@ my_button.after(1000, task1)
 my_button.after(2000, task2, 3)     # 3 gets passed to the parameter alpha
 my_button.after(5000, task3, a, b)  # a gets passed to the parameter beta
                                     # b gets passed to the parameter gamma
-</input>
+</code>
     </program>
   </subsection>
 </section>

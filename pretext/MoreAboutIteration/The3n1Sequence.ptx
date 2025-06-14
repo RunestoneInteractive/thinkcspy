@@ -9,7 +9,7 @@
             terminates when <c>n</c> reaches 1.</p>
   <p>This Python function captures that algorithm.  Try running this program several times supplying different values for n.</p>
   <program xml:id="ch07_indef1" interactive="activecode" language="python">
-    <input>
+    <code>
 def seq3np1(n):
     """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
     while n != 1:
@@ -21,7 +21,7 @@ def seq3np1(n):
     print(n)                  # the last print is 1
 
 seq3np1(3)
-        </input>
+        </code>
   </program>
   <p>The condition for this loop is <c>n != 1</c>.  The loop will continue running until
             <c>n == 1</c> (which will make the condition false).</p>

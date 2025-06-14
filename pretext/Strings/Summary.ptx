@@ -19,10 +19,10 @@
       <p><em>Traversing</em> a string means accessing each character in the string, one
                             at a time.  For example, the following for loop:</p>
       <program language="python">
-        <input>
+        <code>
 for ix in 'Example':
     ...
-</input>
+</code>
       </program>
       <p>executes the body of the loop 7 times with different values of ix each time.</p>
     </gi>

@@ -25,11 +25,11 @@
                     to a different place without drawing a line.   The methods are <c>up</c> and <c>down</c>.  Note that the methods <c>penup</c> and <c>pendown</c> do the
                     same thing.</p>
         <program language="python">
-          <input>
+          <code>
 alex.up()
 alex.forward(100)     # this moves alex, but no line is drawn
 alex.down()
-</input>
+</code>
         </program>
       </li>
       <li>
@@ -37,11 +37,11 @@ alex.down()
                     are <c>arrow</c>, <c>blank</c>, <c>circle</c>, <c>classic</c>, <c>square</c>, <c>triangle</c>,
                     <c>turtle</c>.</p>
         <program language="python">
-          <input>
+          <code>
 ...
 alex.shape("turtle")
 ...
-</input>
+</code>
         </program>
       </li>
       <li>
@@ -50,9 +50,9 @@ alex.shape("turtle")
                     be set between 1 (slowest) to 10 (fastest).  But if you set the speed to 0,
                     it has a special meaning &#x2014; turn off animation and go as fast as possible.</p>
         <program language="python">
-          <input>
+          <code>
 alex.speed(10)
-</input>
+</code>
         </program>
       </li>
       <li>
@@ -64,7 +64,7 @@ alex.speed(10)
   </p>
   <p>Let's do an example that shows off some of these new features.</p>
   <program xml:id="ch03_7" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 wn = turtle.Screen()
 wn.bgcolor("lightgreen")
@@ -80,7 +80,7 @@ for size in range(5, 60, 2):    # start with size = 5 and grow by 2
     tess.right(24)              # and turn her
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>The list of integers printed above for <c>list(range(5,60,2))</c> is only displayed
             to show you the distances being used to move the turtle forward.  The actual use appears

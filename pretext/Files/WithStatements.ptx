@@ -14,13 +14,13 @@
   <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
         </DataFileNode>
   <program xml:id="with_ex1" interactive="activecode" language="python">
-    <input>
+    <code>
 with open('mydata.txt') as md:
     print(md)
     for line in md:
         print(line)
 print(md)
-        </input>
+        </code>
   </program>
   <p>The first line of the with statement opens the file and assigns it to md  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
 </section>

@@ -15,13 +15,13 @@
             is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to
             <c>y</c>.</p>
   <program xml:id="chp05_3" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 5
 print(x &gt; 0 and x &lt; 10)
 
 n = 25
 print(n % 2 == 0 or n % 3 == 0)
-        </input>
+        </code>
   </program>
   <p>When trying to show how logical operators work, computer scientists and mathematicians alike will use
             <term>truth tables</term>. A truth table is a small table that lists all possible inputs on its left columns and
@@ -395,51 +395,51 @@ print(n % 2 == 0 or n % 3 == 0)
     <p>Understanding these logical opposites allows us to sometimes get rid of <c>not</c> operators. <c>not</c> operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.</p>
     <p>For example, if we wrote this Python:</p>
     <program language="python">
-      <input>
+      <code>
 if not (age &gt;= 17):
    print("Hey, you're too young to get a driving licence!")
-</input>
+</code>
     </program>
     <p>it would probably be clearer to use the simplification laws, and to write instead:</p>
     <program language="python">
-      <input>
+      <code>
 if age &lt; 17:
    print("Hey, you're too young to get a driving licence!")
-</input>
+</code>
     </program>
     <p>Two powerful simplification laws (called de Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
     <program language="python">
-      <input>
+      <code>
 not (x and y)  ==  (not x) or (not y)
 not (x or y)   ==  (not x) and (not y)
-</input>
+</code>
     </program>
     <p>For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:</p>
     <program language="python">
-      <input>
+      <code>
 if not ((phone_charge &gt;= 0.50) and (phone_storage &gt;= .15)):
    print("You cannot restart your phone. Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
-</input>
+</code>
     </program>
     <p>Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:</p>
     <program language="python">
-      <input>
+      <code>
 if (phone_charge &lt; 0.50) or (phone_storage &lt; .15):
    print("You cannot restart your phone. Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
-</input>
+</code>
     </program>
     <p>We could also get rid of the <c>not</c> by swapping around the <c>then</c> and <c>else</c> parts of the conditional. So here is a third version, also equivalent:</p>
     <program language="python">
-      <input>
+      <code>
 if (phone_charge &gt;= 0.50) and (phone_storage &gt;= .15):
    print("Updating now...Several restarts may be required.")
 else:
    print("You cannot restart your phone. Battery too low or not enough free space.")
-</input>
+</code>
     </program>
     <p>This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.</p>
     <p>As our programming skills develop we'll find we have more than one way to solve any problem. So good programs are <em>designed</em>. We make choices that favour clarity, simplicity, and elegance. The job title <em>software architect</em> says a lot about what we do &#x2014; we are <em>architects</em> who engineer our products to balance beauty, functionality, simplicity and clarity in our creations.</p>

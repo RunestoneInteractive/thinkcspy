@@ -33,7 +33,7 @@ go = request.args['go']</pre>
   <p>Here is an enhanced version of the original flaskhello.py program that gets the user's name
             from the query string and uses it to greet the user:</p>
   <program language="python">
-    <input>
+    <code>
  from flask import Flask, request
  from datetime import datetime
 
@@ -54,7 +54,7 @@ go = request.args['go']</pre>
  if __name__ == "__main__":
      # Launch the Flask dev server
      app.run(host="localhost", debug=True)
-</input>
+</code>
   </program>
   <p>To test this example, you would need to enter the following URL into the browser:</p>
   <blockquote>

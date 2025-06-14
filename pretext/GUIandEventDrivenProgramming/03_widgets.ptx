@@ -24,13 +24,13 @@
             widgets. You can inter-mix the <c>tk</c> and <c>ttk</c> widgets in an interface
             if you so choose.</p>
   <program language="python">
-    <input>
+    <code>
 # To use the "generic" widgets
 import tkinter as tk
 
 # To use the stylized, "look-and-feel" widgets
 from tkinter import ttk
-</input>
+</code>
   </program>
   <p>The following two charts list the standard, pre-defined widgets in the
             <c>tkinter</c> module.</p>

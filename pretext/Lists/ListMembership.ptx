@@ -4,12 +4,12 @@
   <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
             used them previously with strings and they also work here.</p>
   <program xml:id="chp09_4" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = ["apple", "orange", "banana", "cherry"]
 
 print("apple" in fruit)
 print("pear" in fruit)
-        </input>
+        </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -18,10 +18,10 @@ print("pear" in fruit)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(3.14 in alist)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -47,10 +47,10 @@ print(3.14 in alist)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(57 in alist)
-</input>
+</code>
       </program>
     </statement>
     <choices>

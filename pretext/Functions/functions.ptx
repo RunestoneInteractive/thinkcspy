@@ -8,10 +8,10 @@
             the solution to the problem.</p>
   <p xml:id="functions_index-0">The syntax for a <term>function definition</term> is:</p>
   <program language="python">
-    <input>
+    <code>
 def name( parameters ):
     statements
-</input>
+</code>
   </program>
   <p>You can make up any names you want for the functions you create, except that
             you can't use a name that is a Python keyword, and the names must follow the rules
@@ -50,7 +50,7 @@ def name( parameters ):
   <image source="Functions/Figures/turtleproc.png" width="50%"/>
   <p>Here is a program containing a function to capture this idea.  Give it a try.</p>
   <program xml:id="ch04_1" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawSquare(t, sz):
@@ -68,7 +68,7 @@ alex = turtle.Turtle()            # create alex
 drawSquare(alex, 50)             # Call the function to draw the square passing the actual turtle and the actual side size
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>This function is named <c>drawSquare</c>.  It has two parameters &#x2014; one to tell
             the function which turtle to move around and the other to tell it the size
@@ -104,7 +104,7 @@ wn.exitonclick()
             different location.  Note that we lift the tail so that when <c>alex</c> moves there is no trace.  We put the tail
             back down before drawing the next square.  Make sure you can identify both invocations of the <c>drawSquare</c> function.</p>
   <program xml:id="ch04_1a" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawSquare(t, sz):
@@ -128,13 +128,13 @@ alex.pendown()
 drawSquare(alex,75)           # Draw another square
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>In the next example, we've changed the <c>drawSquare</c>
             function a little and we get <c>tess</c> to draw 15 squares with some variations.  Once the function has
             been defined, we can call it as many times as we like with whatever actual parameters we like.</p>
   <program xml:id="ch04_2" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawMulticolorSquare(t, sz):
@@ -158,7 +158,7 @@ for i in range(15):
     tess.right(18)               # and give her some extra turn
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <warning>
     <p>Even if a function call needs no arguments,
@@ -171,10 +171,10 @@ wn.exitonclick()
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_05_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
   <p>
@@ -301,13 +301,13 @@ wn.exitonclick()
     <statement>
       <p>What is the name of the following function?</p>
       <program language="python">
-        <input>
+        <code>
 def drawSquare(t, sz):
     """Make turtle t draw a square of with side sz."""
     for i in range(4):
         t.forward(sz)
         t.left(90)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -349,13 +349,13 @@ def drawSquare(t, sz):
     <statement>
       <p>What are the parameters of the following function?</p>
       <program language="python">
-        <input>
+        <code>
 def drawSquare(t, sz):
     """Make turtle t draw a square of with side sz."""
     for i in range(4):
         t.forward(sz)
         t.left(90)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -397,13 +397,13 @@ def drawSquare(t, sz):
     <statement>
       <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?  Assume we already have a turtle named alex.</p>
       <program language="python">
-        <input>
+        <code>
 def drawSquare(t, sz):
     """Make turtle t draw a square of with side sz."""
     for i in range(4):
         t.forward(sz)
         t.left(90)
-</input>
+</code>
       </program>
     </statement>
     <choices>

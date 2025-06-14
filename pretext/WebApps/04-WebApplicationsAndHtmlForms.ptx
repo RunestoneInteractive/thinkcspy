@@ -23,7 +23,7 @@
   <p>Even if you're a novice at writing <term>HTML pages</term>, it's not hard to learn to create HTML forms. Take a look
             at this simplified version of the Google home page:</p>
   <program language="html">
-    <input>
+    <code>
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Google&lt;/title&gt;
@@ -38,7 +38,7 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</input>
+</code>
   </program>
   <p>Focus on the region of this example in between the &lt;form&gt; tags. Here's a quick overview of this part
             of the page:</p>

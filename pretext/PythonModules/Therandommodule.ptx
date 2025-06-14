@@ -26,7 +26,7 @@
   <p>Python provides a module <c>random</c> that helps with tasks like this. You can take a look at
     it in the documentation. Here are the key things we can do with it.</p>
   <program xml:id="chmodule_rand" interactive="activecode" language="python">
-    <input>
+    <code>
       import random
 
       prob = random.random()
@@ -34,7 +34,7 @@
 
       diceThrow = random.randrange(1, 7) # return an int, one of 1,2,3,4,5,6
       print(diceThrow)
-    </input>
+    </code>
   </program>
   <p>Press the run button a number of times. Note that the values change each time. These are random
     numbers.</p>
@@ -54,13 +54,13 @@
     If you continue to press the run button you will see random values between 0.0 and up to but not
     including 5.0.</p>
   <program xml:id="chmodule_rand2" interactive="activecode" language="python">
-    <input>
+    <code>
       import random
 
       prob = random.random()
       result = prob * 5
       print(result)
-    </input>
+    </code>
   </program>
   <p xml:id="python-modules_index-0">It is important to note that random number generators are based
     on a <term>deterministic</term> algorithm &#x2014; repeatable and predictable. So they're called <term>
@@ -288,10 +288,10 @@
     <p>This workspace is provided for your convenience. You can use this activecode window to try
       out anything you like.</p>
     <program xml:id="scratch_04" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
   </note>
 </section>

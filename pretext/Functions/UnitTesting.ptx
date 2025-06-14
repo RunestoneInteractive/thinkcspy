@@ -39,10 +39,10 @@
   </p>
   <p>Take a look at the way assert is used in the following code.</p>
   <program xml:id="ch04_ut2" interactive="activecode" language="python">
-    <input>
+    <code>
 assert type(9//5) == int
 assert type(9.0//5) == int
-        </input>
+        </code>
   </program>
   <p>In the code above, we explicitly state some natural assumptions about how truncated division might work in python.
             It turns out that the second asumption is wrong: <c>9.0//5</c> produces <c>2.0</c>, a floating point value!</p>
@@ -118,7 +118,7 @@ assert type(9.0//5) == int
                 same type. We can check that they all have the same type and get an error if they are not. Notice that with <c>lst2</c>,
                 one of the assertions fails.</p>
     <program xml:id="ch04_ut3" interactive="activecode" language="python">
-      <input>
+      <code>
 lst = ['a', 'b', 'c']
 first_type = type(lst[0])
 for item in lst:
@@ -128,7 +128,7 @@ lst2 = ['a', 'b', 'c', 17]
 first_type = type(lst2[0])
 for item in lst2:
     assert type(item) == first_type
-        </input>
+        </code>
     </program>
   </subsection>
   <subsection xml:id="functions_return-value-tests">
@@ -137,13 +137,13 @@ for item in lst2:
                 result of invoking the function on a particular input produces the particular output that you expect. Take a look at
                 the following code.</p>
     <program xml:id="ch04_ut1" interactive="activecode" language="python">
-      <input>
+      <code>
 def square(x):
 #raise x to the second power
     return x*x
 print('testing square function')
 assert square(3) == 9
-        </input>
+        </code>
     </program>
     <p>Because each test checks whether a function works properly on specific inputs, the test cases will never be complete: in
                 principle, a function might work properly on all the inputs that are tested in the test cases, but still not work

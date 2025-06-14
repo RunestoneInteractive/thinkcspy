@@ -3,7 +3,7 @@
   <title>Experimenting With the 3n+1 Sequence</title>
   <p>In this lab we will try to gain a bit more information about the 3n+1 sequence.  We will start with the code from the chapter and make modifications.  Here is the function so far.</p>
   <program xml:id="seq3nlab1" interactive="activecode" language="python">
-    <input>
+    <code>
 def seq3np1(n):
     """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
 
@@ -16,7 +16,7 @@ def seq3np1(n):
     print(n)                  # the last print is 1
 
 seq3np1(3)
-        </input>
+        </code>
   </program>
   <p>
     <ol label="1">

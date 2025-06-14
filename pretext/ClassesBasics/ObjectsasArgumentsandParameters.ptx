@@ -8,7 +8,7 @@
   <p>Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  The job of this function is to figure out the
             distance between two points.</p>
   <program xml:id="chp13_classes6" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 
 class Point:
@@ -38,7 +38,7 @@ def distance(point1, point2):
 p = Point(4, 3)
 q = Point(0, 0)
 print(distance(p, q))
-        </input>
+        </code>
   </program>
   <p><c>distance</c> takes two points and returns the distance between them.  Note that <c>distance</c> is <term>not</term> a method of the Point class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we
             can know that <c>distance</c> is not a method of Point is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>distance</c> using the dot notation.</p>

@@ -8,18 +8,18 @@
   <p>Taking any slice of <c>a</c> creates a new list. In this case the slice happens to
             consist of the whole list.</p>
   <program xml:id="chp09_is4" interactive="codelens" language="python">
-    <input>
+    <code>
           a = [81, 82, 83]
-          
+
           b = a[:]       # make a clone using slice
           print(a == b)
           print(a is b)
-          
+
           b[0] = 5
-          
+
           print(a)
           print(b)
-    </input>
+    </code>
   </program>
   <p>Now we are free to make changes to <c>b</c> without worrying about <c>a</c>.  Again, we can clearly see in codelens that <c>a</c> and <c>b</c> are entirely different list objects.</p>
 </section>

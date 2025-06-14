@@ -6,14 +6,14 @@
             condition, making sure that the condition is correct, and making sure that something changes inside the
             body to guarantee that the condition will eventually fail.</p>
   <program xml:id="ch08_7c" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "apple"
 
 position = 0
 while position &lt; len(fruit):
     print(fruit[position])
     position = position + 1
-    </input>
+    </code>
   </program>
   <p>The loop condition is <c>position &lt; len(fruit)</c>, so when <c>position</c> is equal to the
             length of the string, the condition is false, and the body of the loop is not
@@ -21,14 +21,14 @@ while position &lt; len(fruit):
     <c>len(fruit)-1</c>, which is the last character in the string.</p>
   <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
   <program xml:id="ch08_7c1" interactive="codelens" language="python">
-    <input>
+    <code>
 fruit = "apple"
 
 position = 0
 while position &lt; len(fruit):
     print(fruit[position])
     position = position + 1
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -37,13 +37,13 @@ while position &lt; len(fruit):
     <statement>
       <p>How many times is the letter o printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 idx = 1
 while idx &lt; len(s):
     print(s[idx])
     idx = idx + 2
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -76,10 +76,10 @@ while idx &lt; len(s):
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_08_02" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
   </note>
 </section>

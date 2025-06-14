@@ -4,7 +4,7 @@
   <p>When we're working with classes and objects, it is often necessary to print an object (that is to print the state of an object).
             Consider the example below.</p>
   <program xml:id="chp13_classesstr1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -25,7 +25,7 @@ class Point:
 
 p = Point(7, 6)
 print(p)
-        </input>
+        </code>
   </program>
   <p>The <c>print</c> function shown above produces a string representation of the Point <c>p</c>.  The default functionality provided by
             Python tells you that <c>p</c> is an object of type <c>Point</c>.  However, it does not tell you anything about the specific
@@ -36,7 +36,7 @@ print(p)
             have decided that the string representation will include the values of x and y as well as some identifying text.  It
             is required that the <c>__str__</c> method create and <em>return</em> a string.</p>
   <program xml:id="chp13_classesstr2" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -59,7 +59,7 @@ class Point:
 
 p = Point(7, 6)
 print(p)
-        </input>
+        </code>
   </program>
   <p>When we run the program above you can see that the <c>print</c> function now shows the string that we chose.</p>
   <p>Now, you ask, don't we already have an <c>str</c> type converter that can

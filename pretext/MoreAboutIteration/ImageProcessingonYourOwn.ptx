@@ -3,10 +3,10 @@
   <title>Image Processing on Your Own</title>
   <p>If you want to try some image processing on your own, outside of the textbook you can do so using the cImage module. The easiest way to get this is to run the command <c>pip install cImage</c> from the command line.  You can also download <c>cImage.py</c> from <url href="https://github.com/bnmnetp/cImage" visual="https://github.com/bnmnetp/cImage">The github page</url> .   If you get the file from github, put <c>cImage.py</c> in the same folder as your program you can then do the following to be fully compatible with the code in this book.</p>
   <program language="python">
-    <input>
+    <code>
 import cImage as image
 img = image.Image("myfile.gif")
-</input>
+</code>
   </program>
   <note>
     <title>Note</title>
@@ -15,10 +15,10 @@ img = image.Image("myfile.gif")
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_07_05" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

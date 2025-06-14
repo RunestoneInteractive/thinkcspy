@@ -8,10 +8,10 @@
             in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
             environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
   <program xml:id="ch01_1" interactive="activecode" language="python">
-    <input>
+    <code>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
-    </input>
+    </code>
   </program>
   <p>Take a look at the activecode interpreter in action.</p>
   <p>What you see depends on whether you are <em>logged in</em> or not!
@@ -54,10 +54,10 @@ print(2 + 3)
             Note that the red arrow always points to the next line of code that is going to be executed.
             The light green arrow points to the line that was just executed.</p>
   <program label="firstexample" interactive="codelens" language="python">
-    <input>
+    <code>
           print("My first program adds two numbers, 2 and 3:")
           print(2 + 3)
-    </input>
+    </code>
   </program>
 
   <p>The examples in this book use a mixture of the standard Python  interpreter, source code, activecode, and codelens.  You

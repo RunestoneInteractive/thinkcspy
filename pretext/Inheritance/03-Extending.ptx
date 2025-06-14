@@ -9,13 +9,13 @@
   <p>A method in a child class that overrides a method in the parent can invoke
             the overridden method using <c>super()</c>, like this:</p>
   <program language="python">
-    <input>
+    <code>
  class LabeledPoint(Point):
 
      def __init__(self, initX, initY, label):
          super().__init__(initX, initY)
          self.label = label
-</input>
+</code>
   </program>
   <p>In this example, line 4 invokes the <c>__init__()</c> method in <c>Point</c>,
             passing the values of <c>initX</c> and <c>initY</c>
@@ -24,7 +24,7 @@
             of <c>__str__()</c> for <c>LabeledPoint</c> that invokes its parent's implementation
             using <c>super()</c> to avoid duplicating the functionality provided in <c>Point</c>.</p>
   <program xml:id="combined_pts_1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
 
     def __init__(self, initX, initY):
@@ -49,6 +49,6 @@ class LabeledPoint(Point):
 p = LabeledPoint(7,6,"Here")
 print(p)
 print(p.distanceFromOrigin())
-        </input>
+        </code>
   </program>
 </section>

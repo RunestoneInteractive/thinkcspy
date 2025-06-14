@@ -61,10 +61,10 @@ Type "help", "copyright", "credits" or "license" for more information.
             example, we used a text editor to create a source code file named <c>firstprogram.py</c> with
             the following contents:</p>
   <program language="python">
-    <input>
+    <code>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
-</input>
+</code>
   </program>
   <p>By convention, files that contain Python programs have names that end with
             <c>.py</c> .  Following this convention will help your operating system and other

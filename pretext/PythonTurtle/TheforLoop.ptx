@@ -12,10 +12,10 @@
             don't quite know how to send email yet, so for the moment we'll just print a
             message for each friend.</p>
   <program xml:id="ch03_4" interactive="activecode" language="python">
-    <input>
+    <code>
 for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     print("Hi", name, "Please come to my party on Saturday!")
-        </input>
+        </code>
   </program>
   <p>Take a look at the output produced when you press the <c>run</c> button.  There is one line printed for each friend.  Here's how it works:</p>
   <p>

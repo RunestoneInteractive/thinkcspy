@@ -12,14 +12,14 @@
     drawing canvas towards the right. After line 6, you will have a canvas with a
     turtle and a half drawn rectangle. Press the run button to try it and see.</p>
   <program xml:id="ch03_1" interactive="activecode" language="python">
-    <input>
+    <code>
       import turtle # allows us to use the turtles library
       wn = turtle.Screen() # creates a graphics window
       alex = turtle.Turtle() # create a turtle named alex
       alex.forward(150) # tell alex to move forward by 150 units
       alex.left(90) # turn by 90 degrees
       alex.forward(75) # complete the second side of a rectangle
-    </input>
+    </code>
   </program>
   <p>Here are a couple of things you'll need to understand about this program.</p>
   <p>The first line tells Python to load a <term>module</term> named <c>turtle</c>. That module
@@ -197,7 +197,7 @@
     that are different from the previous example. Note also that we have decided to call our turtle
     object <em>tess</em>. </p>
   <program xml:id="ch03_2" interactive="activecode" language="python">
-    <input>
+    <code>
       import turtle
 
       wn = turtle.Screen()
@@ -212,7 +212,7 @@
       tess.forward(50)
 
       wn.exitonclick() # wait for a user click on the canvas
-    </input>
+    </code>
   </program>
   <p>The last line plays a very important role. The wn variable refers to the window shown above.
     When we invoke its <c>exitonclick</c> method, the program pauses execution and waits for the
@@ -253,14 +253,14 @@
     <statement>
       <p>Consider the following code:</p>
       <program language="python">
-        <input>
+        <code>
           import turtle
           wn = turtle.Screen()
           alex = turtle.Turtle()
           alex.forward(150)
           alex.left(90)
           alex.forward(75)
-</input>
+</code>
       </program>
       <p>What does the line <q>import turtle</q> do?</p>
     </statement>

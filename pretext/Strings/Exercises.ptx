@@ -18,11 +18,11 @@
       </p>
     </statement>
     <program interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
-    </program> 
-    <solution>     
+      </code>
+    </program>
+    <solution>
       <p>
         <ol marker="a">
           <li><p>'Python'[1] = <c>'y'</c></p></li>
@@ -45,19 +45,19 @@
               book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
               Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.</p>
       <program language="python">
-        <input>
+        <code>
 prefixes = "JKLMNOPQ"
 suffix = "ack"
 
 for p in prefixes:
     print(p + suffix)
-        </input>
+        </code>
       </program>
       <p>Of course, that's not quite right because Ouack and Quack are misspelled.
               Can you fix it?</p>
     </statement>
     <program xml:id="ex_8_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
 prefixes = "JKLMNOPQ"
 suffix = "ack"
@@ -89,7 +89,7 @@ class myTests(TestCaseGui):
         self.assertNotIn("Oack", o, "Account for the misspellings. Qack should not be in output.")
         self.assertNotIn("Qack", o, "Account for the misspellings. Qack should not be in output.")
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -99,14 +99,14 @@ myTests().main()
                 your favorite paragraph of text - perhaps a poem, a speech, instructions
                 to bake a cake, some inspirational verses, etc.
       </p>
-      <p>Write a function that counts the number of alphabetic characters (a through z, or A through Z) 
-      in your text and then keeps track of (and returns) how many are the letter 'e'.  
+      <p>Write a function that counts the number of alphabetic characters (a through z, or A through Z)
+      in your text and then keeps track of (and returns) how many are the letter 'e'.
       Your function should print an analysis of the text like this:
       </p>
         <pre>Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_3_editor">
-      <input>
+      <code>
 def count(p):
     # your code here
 
@@ -126,11 +126,11 @@ class myTests(TestCaseGui):
         self.assertEqual(count(string3), 12, "Twelve")
         self.assertNotEqual(count(string4), 3, "Has two Es")
 myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q3_answer" language="python">
-        <input>
+        <code>
 def count(p):
     lows = "abcdefghijklmnopqrstuvwxyz"
     ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -158,7 +158,7 @@ once a year, killing everyone inside."
 '''
 
 count(p)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -168,9 +168,9 @@ count(p)
       <p>Print out a neatly formatted multiplication table, up to 12 x 12.</p>
     </statement>
     <program xml:id="ex_8_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -179,7 +179,7 @@ count(p)
       <p>Write a function that will return the number of digits in an integer.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_10_editor">
-      <input>
+      <code>
 def numDigits(n):
     # your code here
 
@@ -196,11 +196,11 @@ class myTests(TestCaseGui):
       self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
 
 myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q5_answer" language="python">
-        <input>
+        <code>
 def numDigits(n):
     n_str = str(n)
     return len(n_str)
@@ -209,7 +209,7 @@ def numDigits(n):
 print(numDigits(50))
 print(numDigits(20000))
 print(numDigits(1))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -219,7 +219,7 @@ print(numDigits(1))
       <p>Write a function that reverses its string argument.</p>
     </statement>
     <program xml:id="ex_8_5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def reverse(astring):
     # your code here
 
@@ -238,25 +238,25 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
   <exercise label="str_q7">
     <statement>
-      <p>Write a function called <c>mirror</c> 
-        that takes a string as input and returns the input string followed 
+      <p>Write a function called <c>mirror</c>
+        that takes a string as input and returns the input string followed
         by the reversed version of the input string.
       </p>
     </statement>
     <program xml:id="str_q7_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q7_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def reverse(mystr):
@@ -272,7 +272,7 @@ testEqual(mirror('good'), 'gooddoog')
 testEqual(mirror('Python'), 'PythonnohtyP')
 testEqual(mirror(''), '')
 testEqual(mirror('a'), 'aa')
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -282,7 +282,7 @@ testEqual(mirror('a'), 'aa')
       <p>Write a function that removes all occurrences of a given letter from a string.</p>
     </statement>
     <program xml:id="ex_8_7_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def remove_letter(theLetter, theString):
     # your code here
 
@@ -301,7 +301,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -310,7 +310,7 @@ myTests().main()
       <p>Write a function that recognizes palindromes. (Hint: use your <c>reverse</c> function to make this easy!).</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_8_editor">
-      <input>
+      <code>
 def is_palindrome(myStr):
     # your code here
 
@@ -332,11 +332,11 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q9_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def reverse(mystr):
@@ -356,7 +356,7 @@ testEqual(is_palindrome('abab'), False)
 testEqual(is_palindrome('straw warts'), True)
 testEqual(is_palindrome('a'), True)
 testEqual(is_palindrome(''), True)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -366,7 +366,7 @@ testEqual(is_palindrome(''), True)
       <p>Write a function that counts how many non-overlapping occurences of a substring appear in a string.</p>
     </statement>
     <program xml:id="ex_8_9" interactive="activecode" language="python">
-      <input>
+      <code>
 def count(substr,theStr):
     # your code here
 
@@ -390,7 +390,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -399,7 +399,7 @@ myTests().main()
       <p>Write a function that removes the first occurrence of a string from another string.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_10_editor">
-      <input>
+      <code>
 def remove(substr,theStr):
     # your code here
 
@@ -419,11 +419,11 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q11_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def remove(substr,theStr):
@@ -437,7 +437,7 @@ testEqual(remove('an', 'banana'), 'bana')
 testEqual(remove('cyc', 'bicycle'), 'bile')
 testEqual(remove('iss', 'Mississippi'), 'Missippi')
 testEqual(remove('egg', 'bicycle'), 'bicycle')
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -447,7 +447,7 @@ testEqual(remove('egg', 'bicycle'), 'bicycle')
       <p>Write a function that removes all occurrences of a string from another string.</p>
     </statement>
     <program xml:id="ex_8_11_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def remove_all(substr,theStr):
     # your code here
 
@@ -468,7 +468,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -480,13 +480,13 @@ L -&gt; +RF-LFL-FR+
 R -&gt; -LF+RFR+FL-</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_12_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q13_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 def createLSystem(numIters, axiom):
@@ -542,7 +542,7 @@ def main():
     wn.exitonclick()
 
 main()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -555,9 +555,9 @@ X -&gt; X+YF+
 Y -&gt; -FX-Y</pre>
     </statement>
     <program xml:id="ex_8_13_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -569,13 +569,13 @@ X -&gt; YF+XF+Y
 Y -&gt; XF-YF-X</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_14_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q15_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 def createLSystem(numIters, axiom):
@@ -628,7 +628,7 @@ def main():
     wn.exitonclick()
 
 main()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -641,9 +641,9 @@ X -&gt; X+YF++YF-FX--FXFX-YF+
 Y -&gt; -FX+YFYF++YF+FX--FX-Y</pre>
     </statement>
     <program xml:id="ex_8_15_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 
@@ -657,13 +657,13 @@ X -&gt; --FXF++FXF++FXF--</pre>
       </blockquote>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_16_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q17_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 def createLSystem(numIters, axiom):
@@ -722,7 +722,7 @@ def main():
     wn.exitonclick()
 
 main()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -737,9 +737,9 @@ main()
               return a string that is the encrypted version of the message.</p>
     </statement>
     <program xml:id="ex_8_17_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -751,13 +751,13 @@ main()
               the same as the original unencrypted message.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_18_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q19_answer" language="python">
-        <input>
+        <code>
 def encrypt(message, cipher):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     encrypted = ''
@@ -788,7 +788,7 @@ print(encrypted)
 
 decrypted = decrypt(encrypted, cipher)
 print(decrypted)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -800,7 +800,7 @@ print(decrypted)
       </p>
     </statement>
     <program xml:id="ex_8_19_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def remove_dups(astring):
     # your code here
 
@@ -820,7 +820,7 @@ class myTests(TestCaseGui):
       self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
 
 myTests().main()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -835,18 +835,18 @@ myTests().main()
                             to think of modulo arithmetic.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_8_20_editor">
-      <input>
+      <code>
 def rot13(mess):
     # Your code here
 
 print(rot13('abcde'))
 print(rot13('nopqr'))
 print(rot13(rot13('Since rot13 is symmetric you should see this message')))
-      </input>
+      </code>
     </program>
     <solution>
       <program xml:id="str_q21_answer" language="python">
-        <input>
+        <code>
 def rot13(mess):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''
@@ -864,7 +864,7 @@ def rot13(mess):
 print(rot13('abcde'))
 print(rot13('nopqr'))
 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -875,7 +875,7 @@ print(rot13(rot13('since rot thirteen is symmetric you should see this message')
                     to exactly two decimal places.</p>
     </statement>
     <program xml:id="ex_8_22_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def checkout():
     total = 0
     count = 0
@@ -894,7 +894,7 @@ def checkout():
     print('Average price per item: $', average)
 
 checkout()
-      </input>
+      </code>
     </program>
-  </exercise>  
+  </exercise>
 </exercises>

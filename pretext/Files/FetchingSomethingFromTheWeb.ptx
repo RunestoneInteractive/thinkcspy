@@ -18,7 +18,7 @@
   </p>
   <p>We will try to retrieve the content of the HTML of this page as in the following code.</p>
   <program xml:id="ch11_1" interactive="activecode" language="python">
-    <input>
+    <code>
 import urllib.request
 
 def retrieve_page(url):
@@ -30,6 +30,6 @@ def retrieve_page(url):
 
 the_text = retrieve_page("https://runestone.academy/runestone/books/published/thinkcspy/Files/FetchingSomethingFromTheWeb.html")
 print(the_text)
-        </input>
+        </code>
   </program>
 </section>

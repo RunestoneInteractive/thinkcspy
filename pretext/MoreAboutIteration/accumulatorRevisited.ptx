@@ -6,7 +6,7 @@
   <image source="MoreAboutIteration/Figures/sum2n.PNG" width="50%"/>
   <p>You may have studied this sequence in a math class and learned that the sum approaches but never reaches 2.0. That is true in theory. However, when we implement this summation in a program, we see something different.</p>
   <program xml:id="chp07_sum2n" interactive="activecode" language="python">
-    <input>
+    <code>
 def sumTo():
     """ Return the sum of reciprocals of powers of 2 """
 
@@ -19,7 +19,7 @@ def sumTo():
     return theSum
 
 print(sumTo())
-        </input>
+        </code>
   </program>
   <note>
     <title>Modify the program &#x2026;</title>

@@ -13,7 +13,7 @@
             In order to control the iteration, we must create a boolean expression that evaluates to <c>True</c> as long as we want to keep adding values to our running total.  In this case, as long as <c>aNumber</c> is less than or equal to the bound, we should keep going.</p>
   <p>Here is a new version of the summation program that uses a while statement.</p>
   <program xml:id="ch07_while1" interactive="activecode" language="python">
-    <input>
+    <code>
 def sumTo(aBound):
     """ Return the sum of 1+2+3 ... n """
 
@@ -27,14 +27,14 @@ def sumTo(aBound):
 print(sumTo(4))
 
 print(sumTo(1000))
-    </input>
+    </code>
   </program>
   <p>You can almost read the <c>while</c> statement as if it were in natural language. It means,
             while <c>aNumber</c> is less than or equal to <c>aBound</c>, continue executing the body of the loop. Within
             the body, each time, update <c>theSum</c> using the accumulator pattern and increment <c>aNumber</c>. After the body of the loop, we go back up to the condition of the <c>while</c> and reevaluate it.  When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow of control continues to the <c>return</c> statement.</p>
   <p>The same program in codelens will allow you to observe the flow of execution.</p>
   <program xml:id="ch07_while2" interactive="codelens" language="python">
-    <input>
+    <code>
 def sumTo(aBound):
     """ Return the sum of 1+2+3 ... n """
 
@@ -46,7 +46,7 @@ def sumTo(aBound):
     return theSum
 
 print(sumTo(4))
-    </input>
+    </code>
   </program>
   <p>More formally, here is the flow of execution for a <c>while</c> statement:</p>
   <p>
@@ -106,10 +106,10 @@ print(sumTo(4))
 <note>
   <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
   <program xml:id="scratch_07_01" interactive="activecode" language="python">
-    <input>
+    <code>
 
 
-    </input>
+    </code>
   </program>
 </note>
 <p>
@@ -142,14 +142,14 @@ print(sumTo(4))
   <statement>
     <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
     <program language="python">
-      <input>
+      <code>
 n = 10
 answer = 1
 while n &gt; 0:
     answer = answer + n
     n = n + 1
 print(answer)
-      </input>
+      </code>
     </program>
   </statement>
   <choices>
@@ -191,7 +191,7 @@ print(answer)
   <statement>
     <p>What is printed by this code?</p>
     <program language="python">
-      <input>
+      <code>
 n = 1
 x = 2
 while n &lt; 5:
@@ -200,7 +200,7 @@ while n &lt; 5:
     n = n + 2
     x = x + n
 print(n, x)
-      </input>
+      </code>
     </program>
   </statement>
   <choices>

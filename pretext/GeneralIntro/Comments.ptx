@@ -11,7 +11,7 @@
             In Python, the # token starts a comment.  The rest of the line is ignored.
             Here is a new version of <em>Hello, World!</em>.</p>
   <program xml:id="ch01_3" interactive="activecode" language="python">
-    <input>
+    <code>
 #---------------------------------------------------
 # This demo program shows off how elegant Python is!
 # Written by Joe Soap, December 2010.
@@ -19,7 +19,7 @@
 #---------------------------------------------------
 
 print("Hello, World!")     # Isn't this easy!
-        </input>
+        </code>
   </program>
   <p>Notice that when you run this program, it still only prints the phrase Hello, World!  None of the comments appear.
             You'll also notice that we've left a blank line in the program.  Blank lines
@@ -70,10 +70,10 @@ print("Hello, World!")     # Isn't this easy!
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

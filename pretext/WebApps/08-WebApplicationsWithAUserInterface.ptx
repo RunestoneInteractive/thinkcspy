@@ -5,7 +5,7 @@
             application that prompts the user to provide input, performs some processing,
             and displays results.</p>
   <program language="python">
-    <input>
+    <code>
  from flask import Flask, request
 
  app = Flask(__name__)
@@ -47,7 +47,7 @@
  if __name__ == "__main__":
      # Launch the Flask dev server
      app.run(host="localhost", debug=True)
-</input>
+</code>
   </program>
   <p>The program is organized as follows:</p>
   <p>

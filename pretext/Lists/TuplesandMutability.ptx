@@ -11,9 +11,9 @@
             sequence of values.  Although it is not necessary, it is conventional to
             enclose tuples in parentheses:</p>
   <program language="python">
-    <input>
+    <code>
 julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
-</input>
+</code>
   </program>
   <p>Tuples are useful for representing what other languages often call <em>records</em> &#x2014;
             some related information that belongs together, like your student record.  There is
@@ -26,10 +26,10 @@ julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georg
   <p>As with strings, if we try to use item assignment to modify one of the elements of the
             tuple, we get an error.</p>
   <program language="python">
-    <input>
+    <code>
 julia[0] = 'X'
 TypeError: 'tuple' object does not support item assignment
-</input>
+</code>
   </program>
   <p>Of course, even if we can't modify the elements of a tuple, we can make a variable
             reference a new tuple holding different information.  To construct the new tuple,
@@ -38,7 +38,7 @@ TypeError: 'tuple' object does not support item assignment
             to change her tuple.  We can easily slice off the parts we want and concatenate them with
             the new tuple.</p>
   <program xml:id="ch09_tuple1" interactive="activecode" language="python">
-    <input>
+    <code>
 julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
 print(julia[2])
 print(julia[2:6])
@@ -50,18 +50,18 @@ for field in julia:
 
 julia = julia[:3] + ("Eat Pray Love", 2010) + julia[5:]
 print(julia)
-        </input>
+        </code>
   </program>
   <p>To create a tuple with a single element (but you're probably not likely
             to do that too often), we have to include the final comma, because without
             the final comma, Python treats the <c>(5)</c> below as an integer in parentheses:</p>
   <program xml:id="chp09_tuple2" interactive="activecode" language="python">
-    <input>
+    <code>
 tup = (5,)
 print(type(tup))
 
 x = (5)
 print(type(x))
-        </input>
+        </code>
   </program>
 </section>

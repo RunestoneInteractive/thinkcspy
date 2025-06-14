@@ -4,7 +4,7 @@
   <subsection xml:id="labs_object-oriented-programming">
     <title>Object-oriented programming</title>
     <program xml:id="astlab_ast1" interactive="activecode" language="python">
-      <input>
+      <code>
 import turtle
 import math
 
@@ -209,7 +209,7 @@ def createSSandAnimate():
    ss.freeze()
 
 createSSandAnimate()
-        </input>
+        </code>
     </program>
   </subsection>
 </section>

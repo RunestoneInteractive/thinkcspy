@@ -9,9 +9,9 @@
             there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.
   </p>
   <program language="python">
-    <input>
+    <code>
 n = input("Please enter your name: ")
-    </input>
+    </code>
   </program>
   <p>The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt is
             shown.
@@ -20,10 +20,10 @@ n = input("Please enter your name: ")
             and in this case assigned to the variable n.  Make sure you run this example a number
             of times and try some different names in the input box that appears.</p>
   <program xml:id="inputfun" interactive="activecode" language="python">
-    <input>
+    <code>
 n = input("Please enter your name: ")
 print("Hello", n)
-    </input>
+    </code>
   </program>
   <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
     <c>"17"</c>.  It would be your job, as the programmer, to convert that string into
@@ -33,7 +33,7 @@ print("Hello", n)
             we will convert that string to an integer.  From there the process is the same as before.  To complete the example, we will
             print some appropriate output.</p>
   <program xml:id="int_secs" interactive="activecode" language="python">
-    <input>
+    <code>
 str_seconds = input("Please enter the number of seconds you wish to convert")
 total_secs = int(str_seconds)
 
@@ -43,7 +43,7 @@ minutes =  secs_still_remaining // 60
 secs_finally_remaining = secs_still_remaining  % 60
 
 print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
-    </input>
+    </code>
   </program>
   <p>The variable <c>str_seconds</c> will refer to the string that is entered by the user. As we said above, even though this string may be <c>7684</c>, it is still a string and not a number.  To convert it to an integer, we use the <c>int</c> function.
             The result is referred to by <c>total_secs</c>.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.</p>
@@ -54,11 +54,11 @@ print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
-        <input>
+        <code>
 n = input("Please enter your age: ")
 # user types in 18
 print ( type(n) )
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

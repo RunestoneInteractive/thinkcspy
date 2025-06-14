@@ -9,14 +9,14 @@
             index and so on.
             Note that the character at index 6 (or -8) is the blank character.</p>
   <program xml:id="chp08_index1" interactive="activecode" language="python">
-    <input>
+    <code>
 school = "Luther College"
 m = school[2]
 print(m)
 
 lastchar = school[-1]
 print(lastchar)
-        </input>
+        </code>
   </program>
   <p>The expression <c>school[2]</c> selects the character at index 2 from <c>school</c>, and creates a new
             string containing just this one character. The variable <c>m</c> refers to the result.</p>
@@ -38,10 +38,10 @@ print(lastchar)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[3])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -83,10 +83,10 @@ print(s[3])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[2] + s[-5])
-</input>
+</code>
       </program>
     </statement>
     <choices>

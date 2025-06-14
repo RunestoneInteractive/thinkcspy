@@ -78,7 +78,7 @@
             We can iterate over the view or turn the view into a
             list by using the <c>list</c> conversion function.</p>
   <program xml:id="chp12_dict6" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for akey in inventory.keys():     # the order in which we get the keys is not defined
@@ -86,18 +86,18 @@ for akey in inventory.keys():     # the order in which we get the keys is not de
 
 ks = list(inventory.keys())
 print(ks)
-        </input>
+        </code>
   </program>
   <p>It is so common to iterate over the keys in a dictionary that you can
             omit the <c>keys</c> method call in the <c>for</c> loop &#x2014; iterating over
             a dictionary implicitly iterates over its keys.</p>
   <program xml:id="chp12_dict7" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for k in inventory:
    print("Got key", k)
-        </input>
+        </code>
   </program>
   <p>As we saw earlier with strings and lists, dictionary methods use dot notation,
             which specifies the name of the method to the right of the dot and the name of
@@ -106,7 +106,7 @@ for k in inventory:
   <p>The <c>values</c> and <c>items</c> methods are similar to <c>keys</c>. They return  view objects which can be turned
             into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.</p>
   <program xml:id="chp12_dict8" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(list(inventory.values()))
@@ -117,13 +117,13 @@ for (k,v) in inventory.items():
 
 for k in inventory:
     print("Got", k, "that maps to", inventory[k])
-        </input>
+        </code>
   </program>
   <p>Note that tuples are often useful for getting both the key and the value at the same
             time while you are looping.  The two loops do the same thing.</p>
   <p>The <c>in</c> and <c>not in</c> operators can test if a key is in the dictionary:</p>
   <program xml:id="chp12_dict9" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 print('apples' in inventory)
 print('cherries' in inventory)
@@ -132,7 +132,7 @@ if 'bananas' in inventory:
     print(inventory['bananas'])
 else:
     print("We have no bananas")
-        </input>
+        </code>
   </program>
   <p>This operator can be very useful since looking up a non-existent key in a
             dictionary causes a runtime error.</p>
@@ -141,22 +141,22 @@ else:
             will instead return None.  There exists a variation of <c>get</c> that allows a second parameter that serves as an alternative return value
             in the case where the key is not present.  This can be seen in the final example below.  In this case, since <q>cherries</q> is not a key, return 0 (instead of None).</p>
   <program xml:id="chp12_dict10" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(inventory.get("apples"))
 print(inventory.get("cherries"))
 
 print(inventory.get("cherries", 0))
-        </input>
+        </code>
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_11_02" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
   <p>
@@ -166,12 +166,12 @@ print(inventory.get("cherries", 0))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 keylist = list(mydict.keys())
 keylist.sort()
 print(keylist[3])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -213,11 +213,11 @@ print(keylist[3])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 answer = mydict.get("cat") // mydict.get("dog")
 print(answer)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -259,10 +259,10 @@ print(answer)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 print("dog" in mydict)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -288,10 +288,10 @@ print("dog" in mydict)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 print(23 in mydict)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -317,14 +317,14 @@ print(23 in mydict)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 total = 0
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 for akey in mydict:
    if len(akey) &gt; 3:
       total = total + mydict[akey]
 print(total)
-</input>
+</code>
       </program>
     </statement>
     <choices>

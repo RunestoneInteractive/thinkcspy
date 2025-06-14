@@ -4,26 +4,26 @@
   <p>There are several ways to create a new list.  The simplest is to enclose the
             elements in square brackets ( <c>[</c> and <c>]</c>).</p>
   <program language="python">
-    <input>
+    <code>
 [10, 20, 30, 40]
 ["spam", "bungee", "swallow"]
-</input>
+</code>
   </program>
   <p>The first example is a list of four integers. The second is a list of three
             strings. As we said above, the elements of a list don't have to be the same type.  The following
             list contains a string, a float, an integer, and
             another list.</p>
   <program language="python">
-    <input>
+    <code>
 ["hello", 2.0, 5, [10, 20]]
-</input>
+</code>
   </program>
   <p>A list within another list is said to be <term>nested</term> and the inner list is often called a <term>sublist</term>.
             Finally, there is a special list that contains no elements. It is called the
             empty list and is denoted <c>[]</c>.</p>
   <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions.</p>
   <program xml:id="chp09_01" interactive="activecode" language="python">
-    <input>
+    <code>
 vocabulary = ["iteration", "selection", "control"]
 numbers = [17, 123]
 empty = []
@@ -33,7 +33,7 @@ print(numbers)
 print(mixedlist)
 newlist = [ numbers, vocabulary ]
 print(newlist)
-        </input>
+        </code>
   </program>
   <p xml:id="lists_accessing_elements" names="accessing-elements">
     <term>Check your understanding</term>

@@ -6,28 +6,28 @@
             breaks a string into a list of words.  By
             default, any number of whitespace characters is considered a word boundary.</p>
   <program xml:id="ch09_split1" interactive="activecode" language="python">
-    <input>
+    <code>
 song = "The rain in Spain..."
 wds = song.split()
 print(wds)
-        </input>
+        </code>
   </program>
   <p>An optional argument called a <term>delimiter</term> can be used to specify which
             characters to use as word boundaries. The following example uses the string
             <c>ai</c> as the delimiter:</p>
   <program xml:id="ch09_split2" interactive="activecode" language="python">
-    <input>
+    <code>
 song = "The rain in Spain..."
 wds = song.split('ai')
 print(wds)
-        </input>
+        </code>
   </program>
   <p>Notice that the delimiter doesn't appear in the result.</p>
   <p>The inverse of the <c>split</c> method is <c>join</c>.  You choose a
             desired <term>separator</term> string, (often called the <em>glue</em>)
             and join the list with the glue between each of the elements.</p>
   <program xml:id="ch09_join" interactive="activecode" language="python">
-    <input>
+    <code>
 wds = ["red", "blue", "green"]
 glue = ';'
 s = glue.join(wds)
@@ -36,7 +36,7 @@ print(wds)
 
 print("***".join(wds))
 print("".join(wds))
-        </input>
+        </code>
   </program>
   <p>The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
             you can use empty glue or multi-character strings as glue.</p>
@@ -47,14 +47,14 @@ print("".join(wds))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 myname = "Edgar Allan Poe"
 namelist = myname.split()
 init = ""
 for aname in namelist:
     init = init + aname[0]
 print(init)
-</input>
+</code>
       </program>
     </statement>
     <choices>

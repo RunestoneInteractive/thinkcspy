@@ -14,7 +14,7 @@
             talked about aliases.
             It allows us to find out if two references refer to the same object.</p>
   <program xml:id="fractions_is" interactive="activecode" language="python">
-    <input>
+    <code>
 class Fraction:
 
     def __init__(self, top, bottom):
@@ -32,7 +32,7 @@ print(myfraction is yourfraction)
 
 ourfraction = myfraction
 print(myfraction is ourfraction)
-        </input>
+        </code>
   </program>
   <p>Even though <c>myfraction</c> and <c>yourfraction</c> refer to the same rational number, they are not the same object.</p>
   <image source="ClassesDiggingDeeper/Figures/fractionpic2.png" width="50%"/>
@@ -47,14 +47,14 @@ print(myfraction is ourfraction)
             rational number.  Recall from algebra that a/b = c/d is equivalent to a*d = b*c.
             Here is a boolean function that performs this check.</p>
   <program language="python">
-    <input>
+    <code>
 def sameRational(f1, f2):
     return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()
-</input>
+</code>
   </program>
   <p>This type of equality is known as <term>deep equality</term> since it compares the values <q>deep</q> in the object, not just the reference to the object.</p>
   <program xml:id="fractions_eq1" interactive="activecode" language="python">
-    <input>
+    <code>
 def sameRational(f1, f2):
     return f1.getNum()*f2.getDen() == f2.getNum() * f1.getDen()
 
@@ -81,7 +81,7 @@ print(myfraction is yourfraction)
 print(sameRational(myfraction, yourfraction))
 notInLowestTerms = Fraction(15, 20)
 print(sameRational(myfraction, notInLowestTerms))
-        </input>
+        </code>
   </program>
   <p>Of course, if the two variables refer to the same object, they have both
             shallow and deep equality.</p>
@@ -94,7 +94,7 @@ print(sameRational(myfraction, notInLowestTerms))
                 But sometimes the implementors will attach shallow equality semantics, and
                 sometimes deep equality, as shown in this little experiment:</p>
     <program language="python">
-      <input>
+      <code>
 p = Point(4, 2)
 s = Point(4, 2)
 print("== on Points returns", p == s)  # by default, == does a shallow equality test here
@@ -102,7 +102,7 @@ print("== on Points returns", p == s)  # by default, == does a shallow equality 
 a = [2, 3]
 b = [2, 3]
 print("== on lists returns",  a == b)  # by default, == does a deep equality test on lists
-</input>
+</code>
     </program>
     <p>This outputs:</p>
     <pre>== on Points returns False

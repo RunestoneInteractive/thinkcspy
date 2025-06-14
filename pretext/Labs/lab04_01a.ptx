@@ -81,7 +81,7 @@
   <p>Here's the starting point for the drawPolygon function,
             see if you can fill in the details on your own.</p>
   <program xml:id="lab0401a" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawPolygon(t, sideLength, numSides):
@@ -94,6 +94,6 @@ geo = turtle.Turtle()
 drawPolygon(geo,30,10)  # draw a decagon
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
 </section>

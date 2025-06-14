@@ -6,16 +6,16 @@
       <p>Write a program that prints <c>We like Python's turtles!</c> 100 times.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_1_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q1_answer" language="python">
-        <input>
+        <code>
 for i in range(100):
     print("We like Python's turtles!")
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -45,16 +45,16 @@ for i in range(100):
       </dl>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_3_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q3_answer" language="python">
-        <input>
+        <code>
 for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']:
     print("One of the months of the year is", amonth)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -73,9 +73,9 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
       </p>
     </statement>
     <program xml:id="ex_3_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_3_5">
@@ -100,9 +100,9 @@ for amonth in ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
                     # draw an equilateral triangle
@@ -152,8 +152,8 @@ for i in range(8):
     knuth.left(360/8)
 
 wn.exitonclick()
-                
-                    <program language="python"><input>
+
+                    <program language="python"><code>
 # draw an equilateral triangle
 import turtle
 
@@ -168,8 +168,8 @@ for i in range(3):
     norvig.left(360/3)
 
 wn.exitonclick()
-</input></program>
-                    <program language="python"><input>
+</code></program>
+                    <program language="python"><code>
 # draw a square
 import turtle
 
@@ -181,8 +181,8 @@ for i in range(4):
     kurzweil.left(360/4)
 
 wn.exitonclick()
-</input></program>
-                    <program language="python"><input>
+</code></program>
+                    <program language="python"><code>
 # draw a hexagon
 import turtle
 
@@ -194,8 +194,8 @@ for i in range(6):
     dijkstra.left(360/6)
 
 wn.exitonclick()
-</input></program>
-                    <program language="python"><input>
+</code></program>
+                    <program language="python"><code>
 # draw an octogon
 import turtle
 
@@ -207,7 +207,7 @@ for i in range(8):
     knuth.left(360/8)
 
 wn.exitonclick()
-</input></program>
+</code></program>
                 </solution>
   </exercise>
   <exercise label="ex_3_6">
@@ -216,9 +216,9 @@ wn.exitonclick()
                 regular polygon.  The program should draw the polygon and then fill it in.</p>
     </statement>
     <program xml:id="ex_3_6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_3_7">
@@ -226,13 +226,13 @@ wn.exitonclick()
       <p>A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc.  A social science student records the angle of each turn before the next 100 steps are taken.  Her experimental data is <c>160, -43, 270, -97, -43, 200, -940, 17, -86</c>. (Positive angles are counter-clockwise.)  Use a turtle to draw the path taken by our drunk friend.  After the pirate is done walking, print the current heading.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_7_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q7_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 wn = turtle.Screen()
@@ -255,7 +255,7 @@ for angle in [160, -43, 270, -97, -43, 200, -940, 17, -86]:
 print("The pirate's final heading was", lovelace.heading())
 
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -265,7 +265,7 @@ wn.exitonclick()
                 and check your answer.</p>
     </statement>
     <program xml:id="ex_3_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 import turtle
 wn = turtle.Screen()
 tess = turtle.Turtle()
@@ -275,7 +275,7 @@ tess.right(-90)
 tess.left(3600)
 tess.left(3645)
 tess.forward(-100)
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_3_9">
@@ -284,13 +284,13 @@ tess.forward(-100)
       <image source="PythonTurtle/Figures/star.png" width="50%"/>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_9_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q9_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 turing = turtle.Turtle()
@@ -298,7 +298,7 @@ turing = turtle.Turtle()
 for i in range(5):
     turing.forward(110)
     turing.left(216)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -308,9 +308,9 @@ for i in range(5):
       <image source="PythonTurtle/Figures/tess_clock1.png" width="50%"/>
     </statement>
     <program xml:id="ex_3_10_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_3_11">
@@ -319,13 +319,13 @@ for i in range(5):
                         with the turtle methods provided in <xref ref="python-turtle_summary-of-turtle-methods"/>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_11_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q11_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 tanenbaum = turtle.Turtle()
@@ -336,7 +336,7 @@ tanenbaum.speed(20)
 for i in range(350):
     tanenbaum.forward(i)
     tanenbaum.right(98)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -345,9 +345,9 @@ for i in range(350):
       <p>Create a turtle and assign it to a variable.  When you print its type, what do you get?</p>
     </statement>
     <program xml:id="ex_3_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_3_13">
@@ -357,13 +357,13 @@ for i in range(350):
       <p>Write a program to draw a sprite where the number of legs is provided by the user.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_3_13_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="pt_q13_answer" language="python">
-        <input>
+        <code>
 import turtle
 
 wn = turtle.Screen()
@@ -388,7 +388,7 @@ for i in range(n):
 babbage.shape("circle")
 
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

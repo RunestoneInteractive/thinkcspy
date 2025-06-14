@@ -5,7 +5,7 @@
             called Flask.</p>
   <p>Here is an example of a Flask web application:</p>
   <program language="python">
-    <input>
+    <code>
  from flask import Flask
  from datetime import datetime
 
@@ -21,7 +21,7 @@
  if __name__ == "__main__":
      # Launch the Flask dev server
      app.run(host="localhost", debug=True)
-</input>
+</code>
   </program>
   <p>The application begins by importing the Flask framework on line 1. Lines 6-11 define a function <c>hello()</c>
             that serves up a simple web page containing the date and time. The call to <c>app.run()</c> on Line 14

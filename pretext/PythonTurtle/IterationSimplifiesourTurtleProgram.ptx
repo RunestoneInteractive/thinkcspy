@@ -5,7 +5,7 @@
             square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the forward and left four times, one time for
             each value in the list.</p>
   <program xml:id="ch03_for1" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle            # set up alex
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -15,7 +15,7 @@ for i in [0, 1, 2, 3]:      # repeat four times
     alex.left(90)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>While <q>saving some lines of code</q> might be convenient, it is not the big
             deal here.  What is much more important is that we've found a <q>repeating
@@ -25,7 +25,7 @@ wn.exitonclick()
   <p>The values [0,1,2,3] were provided to make the loop body execute 4 times.
             We could have used any four values.  For example, consider the following program.</p>
   <program xml:id="ch03_forcolor" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle            # set up alex
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -35,13 +35,13 @@ for aColor in ["yellow", "red", "purple", "blue"]:      # repeat four times
     alex.left(90)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>In the previous example, there were four integers in the list.  This time there are four strings.  Since there are four items in the list, the iteration will still occur four times.  <c>aColor</c> will
             take on each color in the list.  We can even take this one step further and use the value of <c>aColor</c> as part
             of the computation.</p>
   <program xml:id="colorlist" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle            # set up alex
 wn = turtle.Screen()
 alex = turtle.Turtle()
@@ -52,7 +52,7 @@ for aColor in ["yellow", "red", "purple", "blue"]:
    alex.left(90)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>In this case, the value of <c>aColor</c> is used to change the color attribute of <c>alex</c>.  Each iteration causes <c>aColor</c> to change to the next value in the list.</p>
   <p>The for-loop is our first example of a <term>compound statement</term>.
@@ -138,10 +138,10 @@ wn.exitonclick()
     <statement>
       <p>In the following code, how many lines does this code print?</p>
       <program language="python">
-        <input>
+        <code>
 for number in [5, 4, 3, 2, 1, 0]:
     print("I have", number, "cookies.  I'm going to eat one.")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -214,10 +214,10 @@ for number in [5, 4, 3, 2, 1, 0]:
     <statement>
       <p>In the following code, what is the value of number the second time Python executes the loop?</p>
       <program language="python">
-        <input>
+        <code>
 for number in [5, 4, 3, 2, 1, 0]:
     print("I have", number, "cookies.  I'm going to eat one.")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -259,11 +259,11 @@ for number in [5, 4, 3, 2, 1, 0]:
     <statement>
       <p>Consider the following code:</p>
       <program language="python">
-        <input>
+        <code>
 for aColor in ["yellow", "red", "green", "blue"]:
    alex.forward(50)
    alex.left(90)
-</input>
+</code>
       </program>
       <p>What does each iteration through the loop do?</p>
     </statement>

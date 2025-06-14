@@ -5,9 +5,9 @@
             on the left of an assignment to be assigned values from a tuple
             on the right of the assignment.</p>
   <program language="python">
-    <input>
+    <code>
 (name, surname, birth_year, movie, movie_year, profession, birth_place) = julia
-</input>
+</code>
   </program>
   <p>This does the equivalent of seven assignment statements, all on one easy line.
             One requirement is that the number of variables on the left must match the number
@@ -16,17 +16,17 @@
             conventional assignment statements, we have to use a temporary variable. For
             example, to swap <c>a</c> and <c>b</c>:</p>
   <program language="python">
-    <input>
+    <code>
 temp = a
 a = b
 b = temp
-</input>
+</code>
   </program>
   <p>Tuple assignment solves this problem neatly:</p>
   <program language="python">
-    <input>
+    <code>
 (a, b) = (b, a)
-</input>
+</code>
   </program>
   <p>The left side is a tuple of variables; the right side is a tuple of values.
             Each value is assigned to its respective variable. All the expressions on the
@@ -35,9 +35,9 @@ b = temp
   <p>Naturally, the number of variables on the left and the number of values on the
             right have to be the same.</p>
   <program language="python">
-    <input>
+    <code>
 &gt;&gt;&gt; (a, b, c, d) = (1, 2, 3)
 ValueError: need more than 3 values to unpack
-</input>
+</code>
   </program>
 </section>

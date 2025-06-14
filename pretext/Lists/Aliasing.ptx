@@ -4,11 +4,11 @@
   <p>Since variables refer to objects, if we assign one variable to another, both
             variables refer to the same object:</p>
   <program xml:id="listalias1" interactive="activecode" language="python">
-    <input>
+    <code>
 a = [81, 82, 83]
 b = a
 print(a is b)
-    </input>
+    </code>
   </program>
   <p>In this case, the reference diagram looks like this:</p>
   <image source="Lists/Figures/refdiag4.png" width="50%" alt="State snapshot for multiple references (aliases) to a list"/>
@@ -17,20 +17,20 @@ print(a is b)
             to the same list after executing the assignment statement <c>b = a</c>.
   </p>
   <program xml:id="chp09_is3" interactive="codelens" language="python">
-    <input>
+    <code>
           a = [81, 82, 83]
           b = [81, 82, 83]
-          
+
           print(a == b)
           print(a is b)
-          
+
           b = a
           print(a == b)
           print(a is b)
-          
+
           b[0] = 5
           print(a)
-    </input>
+    </code>
   </program>
   <p>Although this behavior can be useful, it is sometimes unexpected or
             undesirable. In general, it is safer to avoid aliasing when you are working
@@ -44,12 +44,12 @@ print(a is b)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [4, 2, 8, 6, 5]
 blist = alist
 blist[3] = 999
 print(alist)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -76,9 +76,9 @@ print(alist)
       <blockquote>
         <p>Consider the following lists:</p>
         <program language="python">
-          <input>
+          <code>
 list1=[1,100,1000] list2=[1,100,1000] list3=list1
-          </input>
+          </code>
         </program>
         <p>Which statements will output <term>True</term>? (Select <term>all</term> that apply).</p>
       </blockquote>

@@ -8,25 +8,25 @@
             <term>traversal</term>.</p>
   <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
   <program xml:id="ch08_4" interactive="activecode" language="python">
-    <input>
+    <code>
 for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
     print(invitation)
-        </input>
+        </code>
   </program>
   <p>Recall that the loop variable takes on each value in the sequence of names.  The body is performed once for each name.  The same was true for the sequence of integers created by the <c>range</c> function.</p>
   <program xml:id="ch08_5" interactive="activecode" language="python">
-    <input>
+    <code>
 for avalue in range(10):
     print(avalue)
-        </input>
+        </code>
   </program>
   <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
   <program xml:id="ch08_6" interactive="activecode" language="python">
-    <input>
+    <code>
 for achar in "Go Spot Go":
     print(achar)
-        </input>
+        </code>
   </program>
   <p>The loop variable <c>achar</c> is automatically reassigned each character in the string <q>Go Spot Go</q>.
             We will refer to this type of sequence iteration as <term>iteration by item</term>.
@@ -38,11 +38,11 @@ for achar in "Go Spot Go":
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 for ch in s:
     print("HELLO")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -84,11 +84,11 @@ for ch in s:
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 for ch in s[3:8]:
     print("HELLO")
-</input>
+</code>
       </program>
     </statement>
     <choices>

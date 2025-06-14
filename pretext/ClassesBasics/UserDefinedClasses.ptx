@@ -23,7 +23,7 @@
             We'll want our points to each have an <c>x</c> and a <c>y</c> attribute,
             so our first class definition looks like this.</p>
   <program language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -31,7 +31,7 @@ class Point:
         """ Create a new point at the origin """
         self.x = 0
         self.y = 0
-    </input>
+    </code>
   </program>
   <p>Class definitions can appear anywhere in a program, but they are usually near
             the beginning (after the <c>import</c> statements). The syntax rules for a class
@@ -50,7 +50,7 @@ class Point:
             the newly-created object that needs to be initialized.</p>
   <p>So let's use our new Point class now.</p>
   <program xml:id="chp13_classes1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -63,7 +63,7 @@ p = Point()         # Instantiate an object of type Point
 q = Point()         # and make a second point
 
 print("Nothing seems to have happened with the points")
-    </input>
+    </code>
   </program>
   <p>During the initialization of the objects, we created two
             attributes called x and y for each, and gave them both the value 0.</p>
@@ -78,7 +78,7 @@ print("Nothing seems to have happened with the points")
   <image source="ClassesBasics/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
   <p>You can see this for yourself, via codelens:</p>
   <program xml:id="chp13_points" interactive="codelens" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -91,12 +91,12 @@ p = Point()         # Instantiate an object of type Point
 q = Point()         # and make a second point
 
 print("Nothing seems to have happened with the points")
-    </input>
+    </code>
   </program>
   <p>The following program adds a few print statements. You can see that the output suggests that each one is a <c>Point object</c>.
             However, notice that the <c>is</c> operator returns <c>False</c> meaning that they are different objects (we will have more to say about this in a later chapter).</p>
   <program xml:id="chp13_classes2" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -112,17 +112,17 @@ print(p)
 print(q)
 
 print(p is q)
-    </input>
+    </code>
   </program>
   <p>This should look familiar &#x2014; we've used classes before to create
             more than one object:</p>
   <program language="python">
-    <input>
+    <code>
 from turtle import Turtle
 
 tess = Turtle()     # Instantiate objects of type Turtle
 alex = Turtle()
-    </input>
+    </code>
   </program>
   <p>The variables <c>p</c> and <c>q</c> are assigned references to two new <c>Point</c> objects.
             A function like <c>Turtle</c> or <c>Point</c> that creates a new object instance
@@ -145,7 +145,7 @@ alex = Turtle()
     <statement>
       <p>What is the the output of the following print code?</p>
       <program language="python">
-        <input>
+        <code>
 class Car:
 
     def __init__(self):
@@ -158,7 +158,7 @@ x = BMW is Tesla
 y = type(BMW)==type(Tesla)
 
 print(x, y)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

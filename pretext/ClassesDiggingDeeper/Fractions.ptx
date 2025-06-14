@@ -13,7 +13,7 @@
             completely described by representing two integers.  We can begin by implementing the <c>Fraction</c> class and the <c>__init__</c>
             method which will allow the user to provide a numerator and a denominator for the fraction being created.</p>
   <program xml:id="fractions_init" interactive="activecode" language="python">
-    <input>
+    <code>
 class Fraction:
 
     def __init__(self, top, bottom):
@@ -35,7 +35,7 @@ print(myfraction)
 
 print(myfraction.getNum())
 print(myfraction.getDen())
-        </input>
+        </code>
   </program>
   <p>Note that the <c>__str__</c> method provides a <q>typical</q> looking fraction using a slash between the numerator and denominator.
             The figure below shows the state of <c>myfraction</c>.  We have also added a few simple accessor methods, <c>getNum</c> and <c>getDen</c>, that can return the

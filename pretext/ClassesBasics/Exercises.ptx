@@ -8,13 +8,13 @@
                         computes the distance between that point and self.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_q1_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl_ex_1_answer" language="python">
-        <input>
+        <code>
 import math
 
 class Point:
@@ -42,7 +42,7 @@ class Point:
 p = Point(3, 3)
 q = Point(6, 7)
 print(p.distanceFromPoint(q))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -53,9 +53,9 @@ print(p.distanceFromPoint(q))
                 <c>Point(3, 5).reflect_x()</c> is (3, -5)</p>
     </statement>
     <program xml:id="ch_cl_02_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="classes_q3">
@@ -67,13 +67,13 @@ print(p.distanceFromPoint(q))
       <p>What cases will cause your method to fail? Return None when it happens.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_q3_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl_ex_3_answer" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -100,7 +100,7 @@ class Point:
 
 p = Point(4, 10)
 print(p.slope_from_origin())
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -117,9 +117,9 @@ print(p.slope_from_origin())
                 When will your method fail?</p>
     </statement>
     <program xml:id="ch_cl_04_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="classes_q5">
@@ -129,13 +129,13 @@ print(p.slope_from_origin())
                         state of the point)</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_q5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl_05_answer" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -165,7 +165,7 @@ p = Point(7, 6)
 print(p)
 p.move(5, 10)
 print(p)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -174,9 +174,9 @@ print(p)
       <p>Given three points that fall on the circumference of a circle, find the center and radius of the circle.</p>
     </statement>
     <program xml:id="classes_q6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 </exercises>

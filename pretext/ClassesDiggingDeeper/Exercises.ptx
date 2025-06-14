@@ -9,13 +9,13 @@
       <pre>r = Rectangle(Point(4, 5), 6, 5)</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_deeper_q1_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl2_answer1" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -46,7 +46,7 @@ class Rectangle:
 loc = Point(4, 5)
 r = Rectangle(loc, 6, 5)
 print(r)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -55,9 +55,9 @@ print(r)
       <p>Add the following accessor methods to the Rectangle class: <c>getWidth</c>, <c>getHeight</c>, <c>__str__</c>.</p>
     </statement>
     <program xml:id="ch_cl2_q2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ch_cl2_q3">
@@ -67,13 +67,13 @@ print(r)
 test(r.area(), 50)</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ch_cl2_q3_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl2_q3answer" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -103,7 +103,7 @@ class Rectangle:
 
     def area(self):
         return self.width * self.height
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -115,9 +115,9 @@ class Rectangle:
 test(r.perimeter(), 30)</pre>
     </statement>
     <program xml:id="ch_cl2_q4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ch_cl2_q5">
@@ -132,13 +132,13 @@ test(r.width, 5)
 test(r.height, 10)</pre>
     </statement>
     <program interactive="activecode" language="python" xml:id="ch_cl2_q5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl2_q5answer" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -170,7 +170,7 @@ class Rectangle:
         temp = self.width
         self.width = self.height
         self.height = temp
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -191,9 +191,9 @@ test(r.contains(Point(3, 4.99999)), True)
 test(r.contains(Point(-3, -3)), False)</pre>
     </statement>
     <program xml:id="ch_cl2_q6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ch_cl2_q7">
@@ -202,13 +202,13 @@ test(r.contains(Point(-3, -3)), False)</pre>
                         from the lower left corner to the opposite corner.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ch_cl2_q7_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_cl2_answer7" language="python">
-        <input>
+        <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -240,7 +240,7 @@ class Rectangle:
 
         d = (self.width**2 + self.height**2) ** 0.5
         return d
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -254,9 +254,9 @@ class Rectangle:
                     cases before you code.</em></p>
     </statement>
     <program xml:id="ch_cl2_q8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 </exercises>

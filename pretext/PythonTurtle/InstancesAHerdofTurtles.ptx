@@ -8,7 +8,7 @@
             pen.  So here is what happens when alex completes a square and tess
             completes her triangle:</p>
   <program xml:id="ch03_3" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 wn = turtle.Screen()             # Set up the window and its attributes
 wn.bgcolor("lightgreen")
@@ -40,7 +40,7 @@ alex.forward(50)
 alex.left(90)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>Here are some <em>How to think like a computer scientist</em> observations:</p>
   <p>

@@ -8,7 +8,7 @@
     <em>coffee_shop.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -18,7 +18,7 @@ important to implementing a coffee shop.
 shop_name = "Runestone Brew House"
 coffee_sizes = ["small", "medium", "large"]
 coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
-</input>
+</code>
   </program>
   <p>This is a Python script named <c>coffee_shop.py</c> that contains three variables: <c>shop_name</c>, <c>coffee_sizes</c>, and <c>coffee_roasts</c>.  The <c>shop_name</c> is a string, <c>coffee_sizes</c> is a list containing strings, and <c>coffee_roasts</c> is also a list containing strings.</p>
   <exercise label="question4_5_1">
@@ -67,14 +67,14 @@ coffee_roasts = ["hot chocolate", "light", "medium", "dark", "espresso"]
     <em>coffee_customer.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 import coffee_shop
 
 # Output the information we know from the module
 print("Welcome to", coffee_shop.shop_name)
 print("Available sizes:", coffee_shop.coffee_sizes)
 print("Available roasts:", coffee_shop.coffee_roasts)
-</input>
+</code>
   </program>
   <p>This is a Python script named <c>coffee_customer.py</c> that imports our <c>coffee_shop</c> module, then prints out the information from that module.</p>
   <note>
@@ -127,7 +127,7 @@ print("Available roasts:", coffee_shop.coffee_roasts)
     <em>coffee_shop.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -146,7 +146,7 @@ def order_coffee(size, roast):
     :return: a message about the coffee order
     """
     return "Here's your {} coffee roasted {}".format(size, roast)
-</input>
+</code>
   </program>
   <p>The old file contents are present, but now there's also an <c>order_coffee</c> function that takes two arguments, <c>size</c> and <c>roast</c>.</p>
   <p>Also - look at all the awesome comments in there!</p>
@@ -163,7 +163,7 @@ def order_coffee(size, roast):
     <em>coffee_customer.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -180,7 +180,7 @@ order_roast = input("What roast do you want? ")
 shop_says = coffee_shop.order_coffee(order_size, order_roast)
 # Print out whatever it gave back to us
 print(shop_says)
-</input>
+</code>
   </program>
   <exercise label="question4_5_3">
     <statement>
@@ -228,7 +228,7 @@ print(shop_says)
     <em>coffee_shop.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -255,7 +255,7 @@ def add_milk_please(fat_content):
     :return: a message about having added the milk
     """
     return "I've added the {}% milk".format(fat_content)
-</input>
+</code>
   </program>
   <p>The new function is called <c>add_milk_please</c> and it takes one parameter - the <c>fat_content</c>.  It returns a string explaining what happened.</p>
   <p>This is great.  But the function isn't going to do anything by itself.  We have to call it.  Check out the update to our <c>coffee_customer</c> script below.</p>
@@ -263,7 +263,7 @@ def add_milk_please(fat_content):
     <em>coffee_customer.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -289,7 +289,7 @@ if "y" in add_milk_response.lower():
     shop_says = coffee_shop.add_milk_please(milk_fat)
     # Print out whatever it gave back to us
     print(shop_says)
-</input>
+</code>
   </program>
   <p>That got fancy!  We were just ordering coffee but now the user can choose to add milk!  Selection is in a couple chapters, but if you read that code like english you'll see what's going on.</p>
   <p>The call to <c>add_milk_please</c> happens right in there - it looks just like the other one: <c>shop_says = coffee_shop.add_milk_please(milk_fat)</c>.</p>
@@ -298,7 +298,7 @@ if "y" in add_milk_response.lower():
     <em>coffee_shop.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 """
 The coffee shop module contains functions and contains variables
 important to implementing a coffee shop.
@@ -335,7 +335,7 @@ def give_tip(tip_amount):
     print("Thank you so much!  We don't make a ton of money.")
 
     # Not having a "return" statement causes our function to return None
-</input>
+</code>
   </program>
   <p>We added the <c>give_tip</c> function which takes one parameter, the <c>tip_amount</c>.  We don't actually do anything with that parameter&#x2026;  But if we were getting fancier with the coffee shop we might add it to the customer's bill, we might print it out, or we might berate the customer for being too cheap&#x2026;  Here we just go ahead and blurt out a thanks to the user!  Bein' friendly is important.</p>
   <p>How do we call this from our <c>coffee_customer</c> script?</p>
@@ -343,7 +343,7 @@ def give_tip(tip_amount):
     <em>coffee_customer.py</em>
   </p>
   <program language="python">
-    <input>
+    <code>
 # Import the module with coffee_shop functionality
 import coffee_shop
 
@@ -375,7 +375,7 @@ print("THAT'S GOOD COFFEE!  Very good.  Your brain is working again.")
 print("You better give a tip.")
 tip_amount = input("Tip amount? ")
 coffee_shop.give_tip(tip_amount)
-</input>
+</code>
   </program>
   <p>Our function call is there on the last line.</p>
 </section>

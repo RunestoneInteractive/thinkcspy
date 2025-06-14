@@ -58,7 +58,7 @@
                 will use a <c>price</c> of zero to mean <q>this is my last item.</q> In this program,
                 zero is a <term>sentinel value</term>, a value used to signal the end of the loop. Here's the code:</p>
     <program xml:id="ch07_sentinel" interactive="activecode" language="python">
-      <input>
+      <code>
 def checkout():
     total = 0
     count = 0
@@ -77,7 +77,7 @@ def checkout():
     print('Average price per item: $', average)
 
 checkout()
-        </input>
+        </code>
     </program>
 
     <p>There are still a few problems with this program.</p>
@@ -137,7 +137,7 @@ checkout()
                 the <c>upper()</c> method which is described in <xref ref="strings_string-methods"/> to convert a string to upper case.
                 When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
     <program xml:id="ch07_validation" interactive="activecode" language="python">
-      <input>
+      <code>
 def get_yes_or_no(message):
     valid_input = False
     answer = input(message)
@@ -154,7 +154,7 @@ if response == 'Y':
     print('Great! They are very healthy.')
 else:
     print('Too bad. If cooked right, they are quite tasty.')
-        </input>
+        </code>
     </program>
   </subsection>
 </section>

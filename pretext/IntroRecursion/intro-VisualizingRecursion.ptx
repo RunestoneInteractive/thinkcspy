@@ -47,7 +47,7 @@
           <paragraphs xml:id="intro-recursion_lst-fractree" names="lst_fractree">
             <title>Listing 1</title>
   <program language="python" >
-    <input>
+    <code>
 def tree(branchLen,t):
     if branchLen &gt; 5:
         t.forward(branchLen)
@@ -57,7 +57,7 @@ def tree(branchLen,t):
         tree(branchLen-10,t)
         t.right(20)
         t.backward(branchLen)
-</input>
+</code>
   </program>
 </paragraphs>
 
@@ -69,7 +69,7 @@ def tree(branchLen,t):
 <paragraphs xml:id="lst_complete_tree">
   <title>Complete Tree Example Program</title>
   <program interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def tree(branchLen,t):
@@ -94,7 +94,7 @@ def main():
     myWin.exitonclick()
 
 main()
-        </input>
+        </code>
   </program>
 </paragraphs>
   <p>Notice how each branch point on the tree corresponds to a recursive
@@ -147,10 +147,10 @@ main()
       </ul>
     </p>
     <program xml:id="recursion_sc_3" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

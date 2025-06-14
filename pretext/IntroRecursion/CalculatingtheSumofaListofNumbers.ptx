@@ -9,7 +9,7 @@
             (<c>theSum</c>) to compute a running total of all the numbers in the list
             by starting with <math>0</math> and adding each number in the list.</p>
   <program xml:id="lst_itsum" interactive="activecode" language="python">
-    <input>
+    <code>
 def listsum(numList):
     theSum = 0
     for i in numList:
@@ -17,7 +17,7 @@ def listsum(numList):
     return theSum
 
 print(listsum([1,3,5,7,9]))
-        </input>
+        </code>
   </program>
   <p>Pretend for a minute that you do not have <c>while</c> loops or <c>for</c>
             loops. How would you compute the sum of a list of numbers? If you were a
@@ -52,7 +52,7 @@ total = \  25</math_block>
             the list and <math>rest(numList)</math> returns a list of everything but
             the first element. This is easily expressed in Python.</p>
   <program xml:id="lst_recsum" interactive="activecode" language="python">
-    <input>
+    <code>
 def listsum(numList):
    if len(numList) == 1:
         return numList[0]
@@ -60,7 +60,7 @@ def listsum(numList):
         return numList[0] + listsum(numList[1:])
 
 print(listsum([1,3,5,7,9]))
-        </input>
+        </code>
   </program>
   <p>There are a few key ideas in this listing to look at. First, on line 2 we are checking to see if the list is one element long. This
             check is crucial and is our escape clause from the function. The sum of

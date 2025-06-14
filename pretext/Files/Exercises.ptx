@@ -12,13 +12,13 @@
                         students that have more than six quiz scores.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_1_files_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_files_q1answer" language="python">
-        <input>
+        <code>
 f = open("studentdata.txt", "r")
 
 for aline in f:
@@ -27,7 +27,7 @@ for aline in f:
         print(items[0])
 
 f.close()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -37,9 +37,9 @@ f.close()
                 for each student, and print out the student's name along with their average grade.</p>
     </statement>
     <program xml:id="ex_10_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_3_files">
@@ -48,13 +48,13 @@ f.close()
                         maximum score for each student.  Print out their name as well.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_3_files_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_files_q3answer" language="python">
-        <input>
+        <code>
 f = open("studentdata.txt", "r")
 
 for aline in f:
@@ -65,7 +65,7 @@ for aline in f:
     print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
 
 f.close()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -93,9 +93,9 @@ f.close()
                 draw the best fit line, in a different color, through the points.</p>
     </statement>
     <program xml:id="ex_10_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_10_5">
@@ -107,13 +107,13 @@ f.close()
                         described by the commands and the set of points.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_10_5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_files_q5answer" language="python">
-        <input>
+        <code>
 import turtle
 
 t = turtle.Turtle()
@@ -135,7 +135,7 @@ for aline in f:
 
 f.close()
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

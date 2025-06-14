@@ -8,9 +8,9 @@
             approximation, you can compute a better approximation with the following
             formula:</p>
   <program language="python">
-    <input>
+    <code>
 better =  1/2 * (approx + n/approx)
-    </input>
+    </code>
   </program>
   <p>Execute this algorithm a few times using your calculator.  Can you
             see why each iteration brings your estimate a little closer?  One of the amazing
@@ -20,7 +20,7 @@ better =  1/2 * (approx + n/approx)
             value whose square root will be approximated.  The second is the number of times to iterate the
             calculation yielding a better result.</p>
   <program xml:id="chp07_newtonsdef" interactive="activecode" language="python">
-    <input>
+    <code>
 def newtonSqrt(n, howmany):
     approx = 0.5 * n
     for i in range(howmany):
@@ -31,7 +31,7 @@ def newtonSqrt(n, howmany):
 print(newtonSqrt(100, 10))
 print(newtonSqrt(4, 10))
 print(newtonSqrt(1, 10))
-    </input>
+    </code>
   </program>
   <note>
     <title>Modify the program &#x2026;</title>
@@ -44,7 +44,7 @@ print(newtonSqrt(1, 10))
   <p>This implementation, shown in codelens,
             uses a <c>while</c> condition to execute until the approximation is no longer changing.  Each time through the loop we compute a <q>better</q> approximation using the formula described earlier.  As long as the <q>better</q> is different, we try again.  Step through the program and watch the approximations get closer and closer.</p>
   <program xml:id="chp07_newtonswhile" interactive="codelens" language="python">
-    <input>
+    <code>
           def newtonSqrt(n):
               approx = 0.5 * n
               better = 0.5 * (approx + n/approx)
@@ -52,9 +52,9 @@ print(newtonSqrt(1, 10))
                   approx = better
                   better = 0.5 * (approx + n/approx)
               return approx
-          
+
           print(newtonSqrt(10))
-    </input>
+    </code>
   </program>
   <note>
     <p>The <c>while</c> statement shown above uses comparison of two floating point numbers in the condition.  Since floating point numbers are themselves approximation of real numbers in mathematics, it is often

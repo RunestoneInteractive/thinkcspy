@@ -10,10 +10,10 @@
             to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
             <term>evaluates</term> the expression and displays the result.</p>
   <program xml:id="ch02_13" interactive="activecode" language="python">
-    <input>
+    <code>
 print(1 + 1)
 print(len("hello"))
-        </input>
+        </code>
   </program>
   <p>In this example <c>len</c> is a built-in Python function that returns the number
             of characters in a string.  We've previously seen the <c>print</c> and the
@@ -22,16 +22,16 @@ print(len("hello"))
             can appear on the right hand side of assignment statements. A value all by
             itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.</p>
   <program xml:id="ch02_14" interactive="activecode" language="python">
-    <input>
+    <code>
 y = 3.14
 x = len("hello")
 print(x)
 print(y)
-        </input>
+        </code>
   </program>
   <p>If we take a look at this same example in the Python shell, we will see one of the distinct differences between statements and expressions.</p>
   <program language="python">
-    <input>
+    <code>
 &gt;&gt;&gt; y = 3.14
 &gt;&gt;&gt; x = len("hello")
 &gt;&gt;&gt; print(x)
@@ -41,7 +41,7 @@ print(y)
 &gt;&gt;&gt; y
 3.14
 &gt;&gt;&gt;
-</input>
+</code>
   </program>
   <p>Note that when we enter the assignment statement, <c>y = 3.14</c>, only the prompt is returned.  There is no value.  This
             is due to the fact that statements, such as the assignment statement, do not return a value.  They are simply executed.</p>

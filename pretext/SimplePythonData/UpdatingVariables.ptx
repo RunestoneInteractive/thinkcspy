@@ -5,9 +5,9 @@
   <p>One of the most common forms of reassignment is an <term>update</term> where the new
             value of the variable depends on the old.  For example,</p>
   <program language="python">
-    <input>
+    <code>
 x = x + 1
-</input>
+</code>
   </program>
   <p>This means get the current value of x, add one, and then update x with the new
             value.  The new value of x is the old value of x plus 1.  Although this assignment statement may
@@ -17,12 +17,12 @@ x = x + 1
             statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>
   <program xml:id="ch07_update1" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 6        # initialize x
 print(x)
 x = x + 1    # update x
 print(x)
-        </input>
+        </code>
   </program>
   <p>If you try to update a variable that doesn't exist, you get an error because
             Python evaluates the expression on the right side of the assignment operator
@@ -59,11 +59,11 @@ print(x)
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
-        <input>
+        <code>
 x = 12
 x = x - 1
 print(x)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -105,13 +105,13 @@ print(x)
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
-        <input>
+        <code>
 x = 12
 x = x - 3
 x = x + 5
 x = x + 1
 print(x)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -164,10 +164,10 @@ print(x)
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_02" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

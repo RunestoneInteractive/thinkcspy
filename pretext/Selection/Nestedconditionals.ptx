@@ -4,7 +4,7 @@
   <p>One conditional can also be <term>nested</term> within another. For example, assume we have two integer variables, <c>x</c> and <c>y</c>.
             The following pattern of selection shows how we might decide how they are related to each other.</p>
   <program language="python">
-    <input>
+    <code>
 if x &lt; y:
     print("x is less than y")
 else:
@@ -12,7 +12,7 @@ else:
         print("x is greater than y")
     else:
         print("x and y must be equal")
-    </input>
+    </code>
   </program>
   <p>The outer conditional contains two branches.
             The second branch (the else from the outer) contains another <c>if</c> statement, which
@@ -22,7 +22,7 @@ else:
   <image source="Selection/Figures/flowchart_nested_conditional.png" width="50%"/>
   <p>Here is a complete program that defines values for <c>x</c> and <c>y</c>.  Run the program and see the result.  Then change the values of the variables to change the flow of control.</p>
   <program xml:id="sel2" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 10
 y = 10
 
@@ -33,7 +33,7 @@ else:
         print("x is greater than y")
     else:
         print("x and y must be equal")
-    </input>
+    </code>
   </program>
   <note>
     <p>In some programming languages, matching the if and the else is a problem.  However, in Python this is not the case.
@@ -42,7 +42,7 @@ else:
   </note>
   <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
   <program xml:id="sel1" interactive="codelens" language="python">
-    <input>
+    <code>
 x = 10
 y = 10
 
@@ -53,7 +53,7 @@ else:
         print("x is greater than y")
     else:
         print("x and y must be equal")
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -62,7 +62,7 @@ else:
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
-        <input>
+        <code>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
@@ -71,7 +71,7 @@ else:
         print(x, " is a positive number")
     else:
         print(x," is 0")
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

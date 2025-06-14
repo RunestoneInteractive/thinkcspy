@@ -6,7 +6,7 @@
             For example, <c>opposites</c> is a dictionary that contains pairs
             of opposites.</p>
   <program xml:id="ch12_dict11" interactive="activecode" language="python">
-    <input>
+    <code>
 opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
 alias = opposites
 
@@ -14,16 +14,16 @@ print(alias is opposites)
 
 alias['right'] = 'left'
 print(opposites['right'])
-        </input>
+        </code>
   </program>
   <p>As you can see from the <c>is</c> operator, <c>alias</c> and <c>opposites</c> refer to the same object.</p>
   <p>If you want to modify a dictionary and keep a copy of the original, use the dictionary
             <c>copy</c> method.  Since <em>acopy</em> is a copy of the dictionary, changes to it will not effect the original.</p>
   <program language="python">
-    <input>
+    <code>
 acopy = opposites.copy()
 acopy['right'] = 'left'    # does not change opposites
-</input>
+</code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -32,12 +32,12 @@ acopy['right'] = 'left'    # does not change opposites
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
 yourdict = mydict
 yourdict["elephant"] = 999
 print(mydict["elephant"])
-</input>
+</code>
       </program>
     </statement>
     <choices>

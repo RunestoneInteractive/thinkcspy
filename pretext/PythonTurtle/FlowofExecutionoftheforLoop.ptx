@@ -18,9 +18,9 @@
             works with the for loop.  Try stepping forward and backward through the program by pressing
             the buttons.  You can see the value of <c>name</c> change as the loop iterates through the list of friends.</p>
   <program xml:id="vtest" interactive="codelens" language="python">
-    <input>
+    <code>
           for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
               print("Hi ", name, "  Please come to my party on Saturday!")
-    </input>
+    </code>
   </program>
 </section>

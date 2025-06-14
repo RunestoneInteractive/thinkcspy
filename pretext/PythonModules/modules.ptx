@@ -8,7 +8,7 @@
             the <c>turtle</c> module.  Recall that once we import the module, we can use things
             that are defined inside.</p>
   <program xml:id="chmod_01" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle            # allows us to use the turtles library
 
 wn = turtle.Screen()     # creates a graphics window
@@ -18,7 +18,7 @@ alex.forward(150)        # tell alex to move forward by 150 units
 alex.left(90)            # turn by 90 degrees
 alex.forward(75)         # complete the second side of a rectangle
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>Here we are using <c>Screen</c> and <c>Turtle</c>, both of which are defined inside the turtle module.</p>
   <p>But what if no one had told us about turtle?  How would we know

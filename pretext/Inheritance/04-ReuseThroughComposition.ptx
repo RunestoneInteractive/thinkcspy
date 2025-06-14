@@ -7,7 +7,7 @@
             embeds within itself.</p>
   <p>For example, our LabeledPoint example could have been implemented as follows:</p>
   <program xml:id="pt_composition_1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
 
     def __init__(self, initX, initY):
@@ -35,7 +35,7 @@ class LabeledPoint:
 p = LabeledPoint(7,6,"Here")
 print(p)
 print(p.distanceFromOrigin())
-        </input>
+        </code>
   </program>
   <p>The first thing to notice about this version of LabeledPoint
             is that it does not inherit from Point. Instead, its constructor

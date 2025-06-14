@@ -11,7 +11,7 @@
             clause of the <c>try</c> statement is the way to do just this. Consider this
             (somewhat contrived) example:</p>
   <program xml:id="ch13_7_1" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 import time
 
@@ -35,7 +35,7 @@ def show_poly():
     win.bye()               # Close the turtle's window
 
 show_poly()
-        </input>
+        </code>
   </program>
   <p>In lines 20&#x2013;22, <c>show_poly</c> is called three times. Each one creates a new
             window for its turtle, and draws a polygon with the number of sides input by

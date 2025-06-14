@@ -15,7 +15,7 @@
   <p>Let's add two simple methods to allow a point to give us information about its state.  The <c>getX</c> method, when invoked, will return the value of the x coordinate.  The implementation of this method is straight forward since we already know how
             to write functions that return values.  One thing to notice is that even though the <c>getX</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself which in turn gives access to the state data inside the object.</p>
   <program xml:id="chp13_classes4" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -34,14 +34,14 @@ class Point:
 p = Point(7, 6)
 print(p.getX())
 print(p.getY())
-        </input>
+        </code>
   </program>
   <p>Note that the <c>getX</c> method simply returns the value of <c>self.x</c> from the object itself.  In other words, the implementation of the method is to go to the state of the object itself and get the value of <c>x</c>.  Likewise, the <c>getY</c> method looks the same.</p>
   <p>Let's add another method, <c>distanceFromOrigin</c>, to see better how methods
             work.  This method will again not need any additional information to do its work.
             It will perform a more complex task.</p>
   <program xml:id="chp13_classes5" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
@@ -62,7 +62,7 @@ class Point:
 
 p = Point(7, 6)
 print(p.distanceFromOrigin())
-        </input>
+        </code>
   </program>
   <p>Notice that the caller of <c>distanceFromOrigin</c> does not explicitly
             supply an argument to match the <c>self</c> parameter.  This is true of all method calls. The definition will always

@@ -23,7 +23,7 @@
   <p>Here is the program in activecode.  Note that the heading of the function definition is the same as it was before.  All that has changed
             is the details of how the squaring is done.  This is a great example of <q>black box</q> design.  We can change out the details inside of the box and still use the function exactly as we did before.</p>
   <program xml:id="sq_accum1" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(x):
     runningtotal = 0
     for counter in range(x):
@@ -34,7 +34,7 @@ def square(x):
 toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
-    </input>
+    </code>
   </program>
   <p>In the program above, notice that the variable <c>runningtotal</c> starts out with a value of 0.  Next, the iteration is performed <c>x</c> times.  Inside the for loop, the update occurs. <c>runningtotal</c> is reassigned a new value which is the old value plus the value of <c>x</c>.
   </p>
@@ -48,7 +48,7 @@ print("The result of", toSquare, "squared is", squareResult)
   </note>
   <p>Here is the same program in codelens.  Step through the function and watch the <q>running total</q> accumulate the result.</p>
   <program xml:id="sq_accum3" interactive="codelens" language="python">
-    <input>
+    <code>
 def square(x):
     runningtotal = 0
     for counter in range(x):
@@ -59,27 +59,27 @@ def square(x):
 toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
-    </input>
+    </code>
   </program>
 </subsection>
   <subsection xml:id="functions_the-general-accumulator-pattern">
     <title>The General Accumulator Pattern</title>
     <program language="python">
-      <input>
+      <code>
 initialize the accumulator variable
 repeat:
     modify the accumulator variable
 
 # when the loop terminates the accumulator has the correct value
-      </input>
+      </code>
     </program>
     <note>
       <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
       <program xml:id="scratch_05_04" interactive="activecode" language="python">
-        <input>
+        <code>
 
 
-        </input>
+        </code>
       </program>
     </note>
     <p>
@@ -89,13 +89,13 @@ repeat:
       <statement>
         <p>Consider the following code:</p>
         <program language="python">
-          <input>
+          <code>
 def square(x):
     for counter in range(x):
         runningtotal = 0
         runningtotal = runningtotal + x
     return runningtotal
-          </input>
+          </code>
         </program>
         <p>What happens if you put the initialization of runningtotal (the
                 line runningtotal = 0) inside the for loop as the first
@@ -163,7 +163,7 @@ def square(x):
   <subsection xml:id="functions_a-variation-on-the-accumulator-pattern">
     <title>A Variation on the Accumulator Pattern</title>
     <program xml:id="ch04_accum3" interactive="activecode" language="python">
-      <input>
+      <code>
 def square(x):
     '''raise x to the second power'''
     runningtotal = 0
@@ -175,7 +175,7 @@ def square(x):
 toSquare = 10
 squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
-      </input>
+      </code>
     </program>
     <note>
       <title>Modify the program &#x2026;</title>

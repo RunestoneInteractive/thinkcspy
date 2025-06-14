@@ -31,7 +31,7 @@
   <p>We can quickly see that drawing a bar will be similar to drawing a rectangle or a square.  Since we will need to do it
             a number of times, it makes sense to create a function, <c>drawBar</c>, that will need a turtle and the height of the bar.  We will assume that the width of the bar will be 40 units.  Once we have the function, we can use a basic for loop to process the list of data values.</p>
   <program language="python">
-    <input>
+    <code>
 def drawBar(t, height):
     """ Get turtle t to draw one bar, of height. """
     t.left(90)               # Point up
@@ -45,7 +45,7 @@ def drawBar(t, height):
 ...
 for v in xs:                 # assume xs and tess are ready
     drawBar(tess, v)
-</input>
+</code>
   </program>
   <p>It is a nice start!  The important thing here
             was the mental chunking.  To solve the problem we first broke it into smaller pieces.  In particular,
@@ -63,7 +63,7 @@ for v in xs:                 # assume xs and tess are ready
   <p>Here is the complete program.  Try it and then change the data to see that it can adapt to the new values.  Note also that
             we have stored the data values in a list and used a few list functions.  We will have much more to say about lists in a later chapter.</p>
   <program xml:id="ch05_barchart" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawBar(t, height):
@@ -101,7 +101,7 @@ for a in xs:
     drawBar(tess, a)
 
 wn.exitonclick()
-        </input>
+        </code>
   </program>
   <p>This code is quite concise, but each height label is partly covered by the top
             segment of its bar.  Can you modifiy the
@@ -111,10 +111,10 @@ wn.exitonclick()
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_05_06" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

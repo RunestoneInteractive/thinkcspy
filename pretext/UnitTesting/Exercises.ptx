@@ -20,7 +20,7 @@ Test Case 2: 'b'      'b'
 Test Case 3: ''       ''</pre>
           </statement>
           <program interactive="activecode" language="python" xml:id="ac_ut_reverse_editor">
-            <input>
+            <code>
 def test_reverse():
     # Complete the assert statements below
 
@@ -61,13 +61,13 @@ class myTests(TestCaseGui):
         self.assertTrue(testEmpty and '==\n' in code, "Assert tested ''")
 
 myTests().main()
-        </input>
+        </code>
           </program>
           <hint>
             <p>If you're not sure how to get started with this one, review <xref ref="unit-testing_writing-unit-tests"/>.</p>
           </hint>
           <solution>
-                    
+
                         <pre>assert reverse('abc') == 'cba'
 assert reverse('b') == 'b'
 assert reverse('') == ''</pre>
@@ -82,7 +82,7 @@ assert reverse('') == ''</pre>
             <p>Modify the function so that it can be tested with the assert statements that follow.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="ac_ut_testable_editor">
-            <input>
+            <code>
 
 def stripletters(msg):
     result = ''
@@ -106,13 +106,13 @@ class myTests(TestCaseGui):
         self.assertEqual(stripletters('12'), '12', "stripletters('12') == '12'")
 
 myTests().main()
-        </input>
+        </code>
           </program>
           <hint>
             <p>Review <xref ref="unit-testing_designing-testable-functions"/>.</p>
           </hint>
           <solution>
-                    
+
                         <pre>def stripletters(msg):
     result = ''
     for ch in msg:

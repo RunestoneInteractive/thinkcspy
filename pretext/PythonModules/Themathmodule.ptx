@@ -11,7 +11,7 @@
       visual="http://docs.python.org/py3k/library/math.html#module-math">Math Module</url> Python
     Documentation.</p>
   <program xml:id="chmodule_02" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 
 print(math.pi)
@@ -20,7 +20,7 @@ print(math.e)
 print(math.sqrt(2.0))
 
 print(math.sin(math.radians(90)))   # sin of 90 degrees
-        </input>
+        </code>
   </program>
   <!--Like
   almost all other programming languages, angles are expressed in *radians*-->

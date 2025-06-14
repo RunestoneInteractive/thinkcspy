@@ -339,7 +339,7 @@
             exception will catch itself and all <c>FloatingPointError</c>, <c>OverflowError</c>,
             and <c>ZeroDivisionError</c> exceptions.</p>
   <program language="Python">
-    <input>
+    <code>
 BaseException
  +-- SystemExit
  +-- KeyboardInterrupt
@@ -403,6 +403,6 @@ BaseException
            +-- UnicodeWarning
            +-- BytesWarning
            +-- ResourceWarning
-</input>
+</code>
   </program>
 </section>

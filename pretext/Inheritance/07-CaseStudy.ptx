@@ -59,7 +59,7 @@
                 are consistent, such as the recipient name and the country, in instance variables, and
                 store the rest of the address as a list of address lines:</p>
     <program xml:id="address_class_1" interactive="activecode" language="python">
-      <input>
+      <code>
 class Address:
     def __init__(self, recipient, addressLines, country):
         self.country = country
@@ -69,7 +69,7 @@ class Address:
 
 addr = Address('Abe Jones', ['123 Somewhere Ln', 'Greenville, SC  29609'], 'USA')
 print(addr)
-        </input>
+        </code>
     </program>
     <p>This approach treats an address as a collection of unstructured bits of information. If we want to
                 look up an address, we can search by full name or country, but if we want to find all
@@ -78,7 +78,7 @@ print(addr)
                 address line along with the state abbreviation.</p>
     <p>An approach that stores addresses as structured pieces of information might look like this:</p>
     <program xml:id="structured_addr_1" interactive="activecode" language="python">
-      <input>
+      <code>
 class StructuredAddress:
     def __init__(self, country, recipient, street, city, state, postalCode):
         self.country = country
@@ -97,16 +97,16 @@ class StructuredAddress:
 addr = StructuredAddress('USA', 'Abe Jones', '103 Anywhere Ln',
                'Greenville', 'SC', '29609')
 addr.display()
-        </input>
+        </code>
     </program>
     <p>Now, if we have a list of StructuredAddress objects and we want to find all of the ones
                 that hold addresses in Greenville, we can do it much more easily:</p>
     <program language="python">
-      <input>
+      <code>
 for addr in addrList:
     if addr.city == 'Greenville':
         addr.display()
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="inheritance_storing-international-addresses">
@@ -116,7 +116,7 @@ for addr in addrList:
                 addresses. We might enhance the display() method to handle these with appropriate
                 logic:</p>
     <program language="python">
-      <input>
+      <code>
 def display(self):
     print(self.recipient)
 
@@ -132,7 +132,7 @@ def display(self):
         pass
 
     print(self.country)
-</input>
+</code>
     </program>
     <p>This example works for Italian addresses because they conveniently have the same
                 elements as U.S. addresses (just displayed in a slightly different order). For Irish
@@ -148,7 +148,7 @@ def display(self):
                 We will define a base class that contains the attributes in common to all
                 postal addresses: recipient and country.</p>
     <program xml:id="base_postal" interactive="activecode" language="python">
-      <input>
+      <code>
 class BasePostalAddress:
     def __init__(self, country, recipient):
         self.country = country
@@ -160,7 +160,7 @@ class BasePostalAddress:
 
     def validate(self):
         return self.recipient != '' and self.country != ''
-        </input>
+        </code>
     </program>
     <p>This class isn't very useful by itself; relatively few people in the world
                 could receive mail addressed to them using only their name and country.
@@ -170,7 +170,7 @@ class BasePostalAddress:
     <p>Next, we build on BasePostalAddress by creating a separate class for each
                 country that inherits from it:</p>
     <program xml:id="international_postal" interactive="activecode" language="python">
-      <input>
+      <code>
 class IrishPostalAddress(BasePostalAddress):
     def __init__(self, recipient, postalCode):
         super().__init__("IRELAND", recipient)
@@ -202,7 +202,7 @@ class USPostalAddress(BasePostalAddress):
         return (super().validate() and self.city != '' and
             len(self.state) == 2 and
             (len(self.postalCode) == 5 or len(self.postalCode) == 9))
-        </input>
+        </code>
     </program>
   </subsection>
   <subsection xml:id="inheritance_a-list-of-addresses">
@@ -210,7 +210,7 @@ class USPostalAddress(BasePostalAddress):
     <p>Now, let's construct a list containing both US and Irish addresses,
                 and display them using a loop:</p>
     <program xml:id="postal_list_ac" interactive="activecode" language="python">
-      <input>
+      <code>
 addrList = [IrishPostalAddress("Alf Jones", "A26F4G9"),
             USPostalAddress("Abe Jones", "103 Anywhere Ln",
                 "Greenville", "SC", "29609"),
@@ -218,7 +218,7 @@ addrList = [IrishPostalAddress("Alf Jones", "A26F4G9"),
 
 for addr in addrList:
     addr.display()
-        </input>
+        </code>
     </program>
     <p>Normally, if a program iterates over a list that contains different
                 types of objects, it has to be careful about making assumptions about
@@ -248,11 +248,11 @@ for addr in addrList:
                 we wanted to display all addresses with a given city.
                 We might write some code like this:</p>
     <program language="python">
-      <input>
+      <code>
 for addr in addrList:
     if addr.city == 'Greenville':
         addr.display()
-</input>
+</code>
     </program>
     <p>However, we would get into trouble on the first iteration of the
                 loop. The first address is an Irish address, which does not have a
@@ -261,11 +261,11 @@ for addr in addrList:
     <p>In this case, since all addresses have a country attribute,
                 we could write the loop this way:</p>
     <program language="python">
-      <input>
+      <code>
 for addr in addrList:
     if addr.country == 'USA' and addr.city == 'Greenville':
         addr.display()
-</input>
+</code>
     </program>
     <p>Another way to test the address is to find out if the object
                 belongs to a specific class. Python provides the <c>isinstance()</c>
@@ -277,11 +277,11 @@ for addr in addrList:
                 (or a subclass of <em>cls</em>), and False if it is not. Here is how we might
                 use it in our loop:</p>
     <program language="python">
-      <input>
+      <code>
 for addr in addrList:
     if isinstance(addr, USPostalAddress) and addr.city == 'Greenville':
         addr.display()
-</input>
+</code>
     </program>
     <p>In this version of the code, the city attribute will be tested only
                 if <c>addr</c> references an instance of <c>USPostalAddress</c>, or a child of
@@ -296,35 +296,35 @@ for addr in addrList:
                 add a method to BasePostalAddress for this purpose. It will
                 return a boolean indicating whether the address is in a certain city.</p>
     <program language="python">
-      <input>
+      <code>
 class BasePostalAddress:
 
     ...
 
     def isInCity(self, city):
         return False
-</input>
+</code>
     </program>
     <p>BasePostalAddresses do not have a city attribute, so they just return
                 False. USPostalAddresses do have a city, so we'll override this method
                 for that class:</p>
     <program language="python">
-      <input>
+      <code>
 class USPostalAddress:
 
     ...
 
     def isInCity(self, city):
         return self.city == city
-</input>
+</code>
     </program>
     <p>Now, we rewrite our loop to use <c>isInCity()</c> to perform the test:</p>
     <program language="python">
-      <input>
+      <code>
 for addr in addrList:
     if addr.isInCity('Greenville'):
         addr.display()
-</input>
+</code>
     </program>
     <p>Notice how we've eliminated the <c>isinstance()</c> test. Also, notice
                 how this test works for <c>IrishPostalAddress</c> objects, even though we

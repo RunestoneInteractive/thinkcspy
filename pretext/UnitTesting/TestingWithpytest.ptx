@@ -33,7 +33,7 @@
             tests using plain assert statements. The only difference is that you put your assert statements into test functions.
             Here's an example of how it works:</p>
   <program xml:id="ac_round6_pytest1" interactive="activecode" language="python">
-    <input>
+    <code>
 def round6(num: float) -&gt; int:
     """This function has a bug in it"""
     return int(num + .6)
@@ -60,7 +60,7 @@ class pyTests(TestCaseGui):
                     self.assertEqual(item + " failed", item + " passed", item + " failed: " + str(e))
 
 pyTests().main()
-        </input>
+        </code>
   </program>
   <!--test:
 
@@ -164,7 +164,7 @@ E        +  where 9 = round6(8.5)</pre>
     <p>Take a look at this example that shows a function (<c>round6</c>, containing a bug), together with a
                 unit test function (<c>test_round6</c>), and a main program that uses <c>round6</c>:</p>
     <program language="python">
-      <input>
+      <code>
 def round6(num: float) -&gt; int:
     return int(num + .6)
 
@@ -179,7 +179,7 @@ def test_round6():
 if __name__ == '__main__':
     num = float(input('Enter a value:'))
     print('The value rounded is: ' + str(round6(num)))
-</input>
+</code>
     </program>
     <p>Notice how the main program is inside the <c>if</c> statement on line 12. This if condition is true when the program is run
                 using the <term>python</term> command, and allows the main program to execute. When the unit tests are executed using the
@@ -198,7 +198,7 @@ if __name__ == '__main__':
                         check that the function produces an appropriate value
                         for each of the three postcondition cases.</p>
         <program language="python">
-          <input>
+          <code>
 def grade(score):
     """Determines letter grade given a numeric score
 
@@ -206,11 +206,11 @@ def grade(score):
     Postcondition: Returns 'A' if 90 &lt;= `score` &lt;= 100,
       'B' if 80 &lt;= `score` &lt; 90, 'F' if 0 &lt;= `score` &lt; 80
     """
-</input>
+</code>
         </program>
       </statement>
       <program interactive="activecode" language="python" xml:id="ac_grade_pytest_editor">
-        <input>
+        <code>
 # Write a pytest unit test function named ``test_grade``
 
 
@@ -248,7 +248,7 @@ class myTests(TestCaseGui):
         self.assertTrue(testF and '==F' in code, "Assert tested 0..80")
 
 myTests().main()
-        </input>
+        </code>
       </program>
       <solution>
 

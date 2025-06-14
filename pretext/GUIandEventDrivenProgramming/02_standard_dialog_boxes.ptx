@@ -16,13 +16,13 @@
                 second parameter is the text of the message. The functions return a string
                 which is typically ignored.</p>
     <program language="python">
-      <input>
+      <code>
 from tkinter import messagebox
 
 messagebox.showinfo("Information","Informative message")
 messagebox.showerror("Error", "Error message")
 messagebox.showwarning("Warning","Warning message")
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_yes-no-questions">
@@ -31,14 +31,14 @@ messagebox.showwarning("Warning","Warning message")
                 type questions and varies the button names based on the type of question.
                 These functions are:</p>
     <program language="python">
-      <input>
+      <code>
 from tkinter import messagebox
 
 answer = messagebox.askokcancel("Question","Do you want to open this file?")
 answer = messagebox.askretrycancel("Question", "Do you want to try that again?")
 answer = messagebox.askyesno("Question","Do you like Python?")
 answer = messagebox.askyesnocancel("Question", "Continue playing?")
-</input>
+</code>
     </program>
     <p>The return value is a Boolean, True or False, answer to the question. If
                 <q>cancel</q> is an option and the user selects the <q>cancel</q> button, <c>None</c>
@@ -51,7 +51,7 @@ answer = messagebox.askyesnocancel("Question", "Continue playing?")
                 enter the requested value and hit <q>OK</q>, which will return the entered value.
                 If the user hits <q>Cancel,</q> then <c>None</c> is returned.</p>
     <program language="python">
-      <input>
+      <code>
 import tkinter as tk
 from tkinter import simpledialog
 
@@ -79,7 +79,7 @@ if answer is not None:
     print("Your salary is ", answer)
 else:
     print("You don't have a salary?")
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_file-chooser">
@@ -94,7 +94,7 @@ else:
                 value is a tuple that contains all of the selected files. If a user cancels
                 the dialog box, the returned value is an empty string.</p>
     <program language="python">
-      <input>
+      <code>
 import tkinter as tk
 from tkinter import filedialog
 import os
@@ -126,7 +126,7 @@ answer = filedialog.asksaveasfilename(parent=application_window,
                                       initialdir=os.getcwd(),
                                       title="Please select a file name for saving:",
                                       filetypes=my_filetypes)
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_color-chooser">
@@ -138,12 +138,12 @@ answer = filedialog.asksaveasfilename(parent=application_window,
                 as <c>"#FF0000"</c> which also represents red. If the user cancels the
                 operation, the return values are <c>None</c> and <c>None</c>.</p>
     <program language="python">
-      <input>
+      <code>
 from tkinter import colorchooser
 
 rgb_color, web_color = colorchooser.askcolor(parent=application_window,
                                              initialcolor=(255, 0, 0))
-</input>
+</code>
     </program>
   </subsection>
 </section>

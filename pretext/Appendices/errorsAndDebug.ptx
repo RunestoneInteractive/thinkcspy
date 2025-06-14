@@ -155,7 +155,7 @@ token</c>, neither of which is very informative.</p>
                 condition.</p>
     <p>For example:</p>
     <program language="python">
-      <input>
+      <code>
 while x &gt; 0 and y &lt; 0:
     # do something to x
     # do something to y
@@ -163,7 +163,7 @@ while x &gt; 0 and y &lt; 0:
     print("x: ", x)
     print("y: ", y)
     print("condition: ", (x &gt; 0 and y &lt; 0))
-</input>
+</code>
     </program>
     <p>Now when you run the program, you will see three lines of output for each time
                 through the loop. The last time through the loop, the condition should be
@@ -363,17 +363,17 @@ while x &gt; 0 and y &lt; 0:
                 expression into a series of assignments to temporary variables.</p>
     <p>For example:</p>
     <program language="python">
-      <input>
+      <code>
 self.hands[i].addCard (self.hands[self.findNeighbor(i)].popCard())
-</input>
+</code>
     </program>
     <p>This can be rewritten as:</p>
     <program language="python">
-      <input>
+      <code>
 neighbor = self.findNeighbor (i)
 pickedCard = self.hands[neighbor].popCard()
 self.hands[i].addCard (pickedCard)
-</input>
+</code>
     </program>
     <p>The explicit version is easier to read because the variable names provide
                 additional documentation, and it is easier to debug because you can check the
@@ -382,9 +382,9 @@ self.hands[i].addCard (pickedCard)
                 evaluation may not be what you expect. For example, if you are translating the
                 expression <c>x/2pi</c> into Python, you might write:</p>
     <program language="python">
-      <input>
+      <code>
 y = x / 2 * math.pi;
-</input>
+</code>
     </program>
     <p>That is not correct because multiplication and division have the same
                 precedence and are evaluated from left to right. So this expression computes
@@ -392,9 +392,9 @@ y = x / 2 * math.pi;
     <p>A good way to debug expressions is to add parentheses to make the order of
                 evaluation explicit:</p>
     <program language="python">
-      <input>
+      <code>
 y = x / (2 * math.pi);
-</input>
+</code>
     </program>
     <p>Whenever you are not sure of the order of evaluation, use parentheses.  Not
                 only will the program be correct (in the sense of doing what you intended), it
@@ -407,16 +407,16 @@ y = x / (2 * math.pi);
                 chance to print the <c>return</c> value before returning. Again, you can use a
                 temporary variable. For example, instead of:</p>
     <program language="python">
-      <input>
+      <code>
 return self.hands[i].removeMatches()
-</input>
+</code>
     </program>
     <p>you could write:</p>
     <program language="python">
-      <input>
+      <code>
 count = self.hands[i].removeMatches()
 return count
-</input>
+</code>
     </program>
     <p>Now you have the opportunity to display or inspect the value of <c>count</c> before
                 returning.</p>

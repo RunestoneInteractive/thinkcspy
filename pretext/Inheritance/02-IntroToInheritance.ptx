@@ -3,7 +3,7 @@
   <title>Introduction to Inheritance</title>
   <p>Recall the Point class from earlier in the book:</p>
   <program xml:id="pointclass_1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Point:
 
     def __init__(self, initX, initY):
@@ -18,7 +18,7 @@ class Point:
 
 p = Point(7, 6)
 print(p)
-        </input>
+        </code>
   </program>
   <p>Now, suppose we want to create a class that works like <c>Point</c>
             in every respect, but also keeps track of a short description for the point.
@@ -31,10 +31,10 @@ print(p)
             paste.</p>
   <p>We begin like this:</p>
   <program xml:id="labeledpoint" interactive="activecode" language="python">
-    <input>
+    <code>
 class LabeledPoint(Point):
     pass
-        </input>
+        </code>
   </program>
   <p>This example defines a class named <c>LabeledPoint</c> that inherits from the <c>Point</c> class.
             Putting the name <c>Point</c> in parenthesis tells Python that the new class,
@@ -42,15 +42,15 @@ class LabeledPoint(Point):
             For example, we can instantiate LabeledPoint using the Point constructor, and
             invoke any Point methds we want to on it:</p>
   <program language="python">
-    <input>
+    <code>
 p = LabeledPoint(7,6)
 dist = p.distanceFromOrigin()
-</input>
+</code>
   </program>
   <p>Now, let's refine LabeledPoint so that it holds a label, along with the x and y
             coordinates:</p>
   <program xml:id="labeledpoint_2" interactive="activecode" language="python">
-    <input>
+    <code>
 class LabeledPoint(Point):
 
     def __init__(self, initX, initY, label):
@@ -63,7 +63,7 @@ class LabeledPoint(Point):
 
 labeledPt = LabeledPoint(7,6,"Here")
 print(labeledPt)
-        </input>
+        </code>
   </program>
   <p>Here, we have redefined two of the methods that LabeledPoint inherits from Point:
             <c>__init__()</c> and <c>__str__()</c>.
@@ -75,13 +75,13 @@ print(labeledPt)
             of the parent class executes code in the parent's class. For example,
             consider the following:</p>
   <program xml:id="combinedpts" interactive="activecode" language="python">
-    <input>
+    <code>
 pt = Point(5,10)
 labeledPt = LabeledPoint(7, 6, "Here")
 
 ptStr = str(pt)
 labeledPtStr = str(labeledPt)
-        </input>
+        </code>
   </program>
   <p>In Line 4, the call to <c>str(pt)</c> invokes the <c>__str__()</c> method in <c>Point</c>, because
             pt refers to an instance of <c>Point</c>. In Line 5, the call to <c>str(labeledPt)</c>

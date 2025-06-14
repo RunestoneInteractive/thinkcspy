@@ -5,7 +5,7 @@
             string, we can modify the <c>find</c> function, adding a third parameter for the
             starting position in the search string:</p>
   <program xml:id="ch08_fun4" interactive="activecode" language="python">
-    <input>
+    <code>
 def find2(astring, achar, start):
     """
     Find and return the index of achar in astring.
@@ -24,7 +24,7 @@ def find2(astring, achar, start):
         return -1
 
 print(find2('banana', 'a', 2))
-        </input>
+        </code>
   </program>
   <p>The call <c>find2('banana', 'a', 2)</c> now returns <c>3</c>, the index of the first
             occurrence of &#x2018;a' in &#x2018;banana' after index 2. What does
@@ -33,7 +33,7 @@ print(find2('banana', 'a', 2))
   <p>Better still, we can combine <c>find</c> and <c>find2</c> using an
             <term>optional parameter</term>.</p>
   <program xml:id="chp08_fun5" interactive="activecode" language="python">
-    <input>
+    <code>
 def find3(astring, achar, start=0):
     """
     Find and return the index of achar in astring.
@@ -52,7 +52,7 @@ def find3(astring, achar, start=0):
         return -1
 
 print(find3('banana', 'a', 2))
-        </input>
+        </code>
   </program>
   <p>The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just
             like <c>find2</c>, while in the call <c>find3('banana', 'a')</c>, <c>start</c> will be
@@ -60,7 +60,7 @@ print(find3('banana', 'a', 2))
   <p>Adding another optional parameter to <c>find</c> makes it search from a starting
             position, up to but not including the end position.</p>
   <program xml:id="chp08_fun6" interactive="activecode" language="python">
-    <input>
+    <code>
 def find4(astring, achar, start=0, end=None):
     """
     Find and return the index of achar in astring.
@@ -88,7 +88,7 @@ print(find4(ss, 's', 7))
 print(find4(ss, 's', 8))
 print(find4(ss, 's', 8, 13))
 print(find4(ss, '.'))
-        </input>
+        </code>
   </program>
   <p>The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the
             caller does not supply any argument.  In the body of the function we test what <c>end</c> is

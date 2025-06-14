@@ -28,10 +28,10 @@
                 environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
     <p>Take a look at the ActiveCode interpreter in action.  If we take a simple Python program and make it active, you will see that it can be executed directly by pressing the <em>Run</em> button.   Try pressing the <em>Run</em> button below.</p>
     <program xml:id="nav_codeexample1" interactive="activecode" language="python">
-      <input>
+      <code>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
-        </input>
+        </code>
     </program>
   </subsection>
   <subsection xml:id="xml_the-codelens-tool">

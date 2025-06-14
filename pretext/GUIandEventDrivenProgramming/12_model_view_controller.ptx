@@ -35,16 +35,16 @@
             which is what the user sees on the screen. This is basically identical to
             what all computer processing is composed of, which is:</p>
   <program language="python">
-    <input>
+    <code>
 input --&gt; processing --&gt; output
-</input>
+</code>
   </program>
   <p>The MVC design pattern renames the pieces and restricted which part of the code
             can talk to the other parts of code. For MVC design:</p>
   <program language="python">
-    <input>
+    <code>
 controller (input) --&gt; model (processing) --&gt; view (output)
-</input>
+</code>
   </program>
   <p>From the perspective of a GUI program, this means that the callback functions,
             which are called when a user causes events, are the <em>controller</em>,
@@ -66,9 +66,9 @@ controller (input) --&gt; model (processing) --&gt; view (output)
                 specify an exact size for the left frame. Otherwise the code is the same
                 as the previous version.</p>
     <program language="python">
-      <input>
+      <code>
 Code
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="gu-iand-event-driven-programming_creating-the-model">

@@ -19,14 +19,14 @@
             some other simple shapes that will help us.  Just to remind you,
             here is the code for the <c>drawSquare</c> function.</p>
   <program xml:id="l0401" interactive="activecode" language="python">
-    <input>
+    <code>
 def drawSquare(t, sz):
     """Make turtle t draw a square of sz."""
 
     for i in range(4):
         t.forward(sz)
         t.left(90)
-        </input>
+        </code>
   </program>
   <p>Although this isn't going to do anything if you click on the run button,
             you could fill in the rest of the code to make it work, right?</p>

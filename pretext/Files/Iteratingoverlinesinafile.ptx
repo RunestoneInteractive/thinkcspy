@@ -45,7 +45,7 @@
             change. We can then take the values corresponding to year, global average temperature, and global emmisions to
             construct a simple sentence.</p>
   <program xml:id="files_for" interactive="activecode" language="python">
-    <input>
+    <code>
 ccfile = open("ccdata.txt", "r")
 
 for aline in ccfile:
@@ -53,7 +53,7 @@ for aline in ccfile:
     print('In', values[0], 'the average temp. was', values[1], '&#xB0;C and CO2 emmisions were', values[2], 'gigatons.')
 
 ccfile.close()
-        </input>
+        </code>
   </program>
   <note>
     <p>You can obtain a line from the keyboard with the <c>input</c> function, and you can process lines of a file.

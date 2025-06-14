@@ -8,13 +8,13 @@
                         function with 25 as an argument and record the results.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_7_editor">
-      <input>
+      <code>
 def newtonSqrt(n):
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q1_answer" language="python">
-        <input>
+        <code>
 def newtonSqrt(n):
     approx = 0.5 * n
     better = 0.5 * (approx + n/approx)
@@ -26,7 +26,7 @@ def newtonSqrt(n):
 
 
 print("Final approx:", newtonSqrt(25))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -43,7 +43,7 @@ print("Final approx:", newtonSqrt(25))
       <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
     </statement>
     <program xml:id="ex_7_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
 Write a function ``print_triangular_numbers(n)`` that prints out the first
@@ -60,7 +60,7 @@ produce the following output::
 ~~~~
 def print_triangular_numbers(n):
     # your code here
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_9">
@@ -70,7 +70,7 @@ def print_triangular_numbers(n):
                         otherwise.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_9_editor">
-      <input>
+      <code>
 
 def is_prime(n):
     # your code here
@@ -87,11 +87,11 @@ class myTests(TestCaseGui):
         self.assertEqual(is_prime(4813),True,"Tested on 4813, which is a prime number.")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q3_answer" language="python">
-        <input>
+        <code>
 def is_prime(n):
     for i in range(2, n):
         if n % i == 0:
@@ -102,7 +102,7 @@ print(is_prime(25))
 print(is_prime(7))
 print(is_prime(251))
 print(is_prime(20))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -112,9 +112,9 @@ print(is_prime(20))
                 angle of the turn is determined randomly at each step.</p>
     </statement>
     <program xml:id="ex_7_14_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_13">
@@ -123,13 +123,13 @@ print(is_prime(20))
                         random starting location.  Keep the turtles moving until one of them leaves the screen.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_13_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q5_answer" language="python">
-        <input>
+        <code>
 import random
 import turtle
 
@@ -194,7 +194,7 @@ while isInScreen(wn, t1) and isInScreen(wn, t2):
     moveRandom(wn, t2)
 
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -205,9 +205,9 @@ wn.exitonclick()
                 (when the positions of the two turtles are closer than some small number).</p>
     </statement>
     <program xml:id="ex_7_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_15">
@@ -218,13 +218,13 @@ wn.exitonclick()
 luther.jpg photo.&lt;/h4&gt;</raw>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_15_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q7_answer" language="python">
-        <input>
+        <code>
 import image
 
 img = image.Image("luther.jpg")
@@ -245,7 +245,7 @@ for col in range(img.getWidth()):
 
 newimg.draw(win)
 win.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -254,9 +254,9 @@ win.exitonclick()
       <p>Write a function to convert the image to grayscale.</p>
     </statement>
     <program xml:id="ex_7_16_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_17">
@@ -264,13 +264,13 @@ win.exitonclick()
       <p>Write a function to convert an image to black and white.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_17_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q9_answer" language="python">
-        <input>
+        <code>
 import image
 
 def convertBlackWhite(input_image):
@@ -311,7 +311,7 @@ bw_img = convertBlackWhite(img)
 bw_img.draw(win)
 
 win.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -326,9 +326,9 @@ newB = (R &#xD7; 0.272 + G &#xD7; 0.534 + B &#xD7; 0.131)</pre>
                 Remember that rgb values must be integers between 0 and 255.</p>
     </statement>
     <program xml:id="ex_7_18_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_19">
@@ -336,13 +336,13 @@ newB = (R &#xD7; 0.272 + G &#xD7; 0.534 + B &#xD7; 0.131)</pre>
       <p>Write a function to uniformly enlarge an image by a factor of 2 (double the size).</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_19_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="answer_7_11" language="python">
-        <input>
+        <code>
 import image
 
 def double(oldimage):
@@ -368,7 +368,7 @@ bigimg = double(img)
 bigimg.draw(win)
 
 win.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -382,9 +382,9 @@ win.exitonclick()
                 that is the same as the old but smoothed.</p>
     </statement>
     <program xml:id="ex_7_20_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_21">
@@ -394,13 +394,13 @@ win.exitonclick()
                         a new pixel.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_21_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q13_answer" language="python">
-        <input>
+        <code>
 import image
 
 def pixelMapper(oldimage, rgbFunction):
@@ -429,7 +429,7 @@ newim = pixelMapper(img, graypixel)
 newim.draw(win)
 
 win.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -441,9 +441,9 @@ win.exitonclick()
                 to replace each pixel by the median value of the pixels surrounding it.</p>
     </statement>
     <program xml:id="ex_7_22_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_7_23">
@@ -451,13 +451,13 @@ win.exitonclick()
       <p>Research the Sobel edge detection algorithm and implement it.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_7_23_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="miter_q15_answer" language="python">
-        <input>
+        <code>
 import image
 import math
 import sys
@@ -562,7 +562,7 @@ for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1
 
 newimg.draw(win)
 win.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

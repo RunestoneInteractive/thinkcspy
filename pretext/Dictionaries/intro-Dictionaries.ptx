@@ -16,12 +16,12 @@
     <term>key-value pairs</term>. The empty dictionary is denoted <c>{}</c>
   </p>
   <program xml:id="chp12_dict1" interactive="codelens" language="python">
-    <input>
+    <code>
           eng2sp = {}
           eng2sp['one'] = 'uno'
           eng2sp['two'] = 'dos'
           eng2sp['three'] = 'tres'
-    </input>
+    </code>
   </program>
   <p>The first assignment creates an empty dictionary named <c>eng2sp</c>.  The other
             assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key.
@@ -36,10 +36,10 @@
   <p>Another way to create a dictionary is to provide a list of key-value pairs
             using the same syntax as the previous output.</p>
   <program xml:id="chp12_dict2" interactive="codelens" language="python">
-    <input>
+    <code>
           eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
           print(eng2sp)
-    </input>
+    </code>
   </program>
 
   <p>It doesn't matter what order we write the pairs. The values in a dictionary are
@@ -47,22 +47,22 @@
             ordering.</p>
   <p>Here is how we use a key to look up the corresponding value.</p>
   <program xml:id="chp12_dict3" interactive="codelens" language="python">
-    <input>
+    <code>
 eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 
 value = eng2sp['two']
 print(value)
-    </input>
+    </code>
   </program>
   <p>The key <c>'two'</c> yields the value <c>'dos'</c>.
   </p>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_11_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
   </note>
   <p>
@@ -95,10 +95,10 @@ print(value)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat":12, "dog":6, "elephant":23}
 print(mydict["dog"])
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

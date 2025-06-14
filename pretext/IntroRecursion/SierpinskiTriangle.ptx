@@ -25,7 +25,7 @@
             reach a degree of 0, we stop making recursive calls. The code that
             generated this Sierpinski Triangle is shown below.</p>
   <program xml:id="lst_st" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawTriangle(points,color,myTurtle):
@@ -68,7 +68,7 @@ def main():
    myWin.exitonclick()
 
 main()
-        </input>
+        </code>
   </program>
   <p>This program follows the ideas outlined above. The
             first thing <c>sierpinski</c> does is draw the outer triangle. Next, there

@@ -5,22 +5,22 @@
             strings look like numbers. The following are illegal (assuming that <c>message</c>
             has type string):</p>
   <program language="python">
-    <input>
+    <code>
 message - 1
 "Hello" / 123
 message * "Hello"
 "15" + 2
-</input>
+</code>
   </program>
   <p>Interestingly, the <c>+</c> operator does work with strings, but for strings, the
             <c>+</c> operator represents <term>concatenation</term>, not addition.  Concatenation means
             joining the two operands by linking them end-to-end. For example:</p>
   <program xml:id="ch08_add" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "banana"
 bakedGood = " nut bread"
 print(fruit + bakedGood)
-        </input>
+        </code>
   </program>
   <p>The output of this program is <c>banana nut bread</c>. The space before the word
             <c>nut</c> is part of the string and is necessary to produce the space between
@@ -29,7 +29,7 @@ print(fruit + bakedGood)
             <c>'Fun'*3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the
             other has to be an integer.</p>
   <program xml:id="ch08_mult" interactive="activecode" language="python">
-    <input>
+    <code>
 print("Go" * 6)
 
 name = "Packers"
@@ -38,7 +38,7 @@ print(name * 3)
 print(name + "Go" * 3)
 
 print((name + "Go") * 3)
-        </input>
+        </code>
   </program>
   <p>This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with
             addition and multiplication. Just as <c>4*3</c> is equivalent to <c>4+4+4</c>, we
@@ -53,11 +53,11 @@ print((name + "Go") * 3)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python"
 t = "rocks"
 print(s + t)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -99,11 +99,11 @@ print(s + t)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python"
 excl = "!"
 print(s+excl*3)
-</input>
+</code>
       </program>
     </statement>
     <choices>

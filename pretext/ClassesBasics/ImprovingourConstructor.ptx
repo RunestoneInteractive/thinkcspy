@@ -6,17 +6,17 @@
   <p>We can make our class constructor more general by putting extra parameters into
             the <c>__init__</c> method, as shown in this codelens example.</p>
   <program xml:id="chp13_improveconstructor" interactive="codelens" language="python">
-    <input>
+    <code>
           class Point:
               """ Point class for representing and manipulating x,y coordinates. """
-          
+
               def __init__(self, initX, initY):
                   """ Create a new point at the given coordinates. """
                   self.x = initX
                   self.y = initY
-          
+
           p = Point(7, 6)
-    </input>
+    </code>
   </program>
   <p>Now when we create new points, we supply the x and y coordinates as parameters.  When the point is created, the values of <c>initX</c> and <c>initY</c> are assigned to the state of the object.</p>
   <image source="ClassesBasics/Figures/objectpic5.png" width="50%" alt="Simple object has state and methods"/>

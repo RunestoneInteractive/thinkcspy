@@ -7,23 +7,23 @@
             also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>.
             This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
   <program xml:id="ch05_4" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 15
 
 if x % 2 == 0:
     print(x, "is even")
 else:
     print(x, "is odd")
-        </input>
+        </code>
   </program>
   <p>The syntax for an <c>if</c> statement looks like this:</p>
   <program language="python">
-    <input>
+    <code>
 if BOOLEAN EXPRESSION:
     STATEMENTS_1        # executed if condition evaluates to True
 else:
     STATEMENTS_2        # executed if condition evaluates to False
-</input>
+</code>
   </program>
   <p>The boolean expression after the <c>if</c> statement is called the <term>condition</term>.
             If it is true, then the immediately following indented statements get executed. If not, then the statements
@@ -104,12 +104,12 @@ else:
     <statement>
       <p>What does the following code print (choose from output a, b, c or nothing)?</p>
       <program language="python">
-        <input>
+        <code>
 if 4 + 5 == 10:
     print("TRUE")
 else:
     print("FALSE")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -151,13 +151,13 @@ else:
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 if 4 + 5 == 10:
     print("TRUE")
 else:
     print("FALSE")
 print("TRUE")
-</input>
+</code>
       </program>
       <pre>a. TRUE
 

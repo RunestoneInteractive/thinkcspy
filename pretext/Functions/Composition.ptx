@@ -11,21 +11,21 @@
             Fortunately, we've just written a function, <c>distance</c>, that does just that,
             so now all we have to do is use it:</p>
   <program language="python">
-    <input>
+    <code>
 radius = distance(xc, yc, xp, yp)
-</input>
+</code>
   </program>
   <p>The second step is to find the area of a circle with that radius and return it.
             Again we will use one of our earlier functions:</p>
   <program language="python">
-    <input>
+    <code>
 result = area(radius)
 return result
-</input>
+</code>
   </program>
   <p>Wrapping that up in a function, we get:</p>
   <program xml:id="ch06_newarea" interactive="activecode" language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
         dx = x2 - x1
         dy = y2 - y1
@@ -43,16 +43,16 @@ def area2(xc, yc, xp, yp):
     return result
 
 print(area2(0,0,1,1))
-        </input>
+        </code>
   </program>
   <p>We called this function <c>area2</c> to distinguish it from the <c>area</c> function
             defined earlier. There can only be one function with a given name within a
             module.</p>
   <p>Note that we could have written the composition without storing the intermediate results.</p>
   <program language="python">
-    <input>
+    <code>
 def area2(xc, yc, xp, yp):
     return area(distance(xc, yc, xp, yp))
-</input>
+</code>
   </program>
 </section>

@@ -20,23 +20,23 @@
             parameters. The return value is the distance, which is a floating-point value.</p>
   <p>Already we can write an outline of the function that captures our thinking so far.</p>
   <program language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
     return 0.0
-</input>
+</code>
   </program>
   <p>Obviously, this version of the function doesn't compute distances; it always
             returns zero. But it is syntactically correct, and it will run, which means
             that we can test it before we make it more complicated.</p>
   <p>We import the test module to enable us to write a unit test for the function.</p>
   <program xml:id="ch06_distance1" interactive="activecode" language="python">
-    <input>
+    <code>
 import test
 def distance(x1, y1, x2, y2):
     return 0.0
 
 test.testEqual(distance(1, 2, 1, 2), 0)
-        </input>
+        </code>
   </program>
   <p>The <c>testEqual</c> function from the test module calls the distance function with sample inputs: (1,2, 1,2).
             The first 1,2 are the coordinates of the first point and the second 1,2 are the coordinates of the second point.
@@ -62,29 +62,29 @@ test.testEqual(distance(1, 2, 1, 2), 0)
             x<subscript>2</subscript>- x<subscript>1</subscript> and y<subscript>2</subscript>- y<subscript>1</subscript>.  We will store
             those values in temporary variables named <c>dx</c> and <c>dy</c>.</p>
   <program language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
     dx = x2 - x1
     dy = y2 - y1
     return 0.0
-</input>
+</code>
   </program>
   <p>Next we compute the sum of squares of <c>dx</c> and <c>dy</c>.</p>
   <program language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
     dx = x2 - x1
     dy = y2 - y1
     dsquared = dx**2 + dy**2
     return 0.0
-</input>
+</code>
   </program>
   <p>Again, we could run the program at this stage and check the value of <c>dsquared</c> (which
             should be 25).</p>
   <p>Finally, using the fractional exponent <c>0.5</c> to find the square root,
             we compute and return the result.</p>
   <program xml:id="ch06_distancefinal" interactive="activecode" language="python">
-    <input>
+    <code>
 import test
 def distance(x1, y1, x2, y2):
     dx = x2 - x1
@@ -96,7 +96,7 @@ def distance(x1, y1, x2, y2):
 test.testEqual(distance(1,2, 1,2), 0)
 test.testEqual(distance(1,2, 4,6), 5)
 test.testEqual(distance(0,0, 1,1), 1.41)
-        </input>
+        </code>
   </program>
   <note>
     <title>Fix the error &#x2026;</title>

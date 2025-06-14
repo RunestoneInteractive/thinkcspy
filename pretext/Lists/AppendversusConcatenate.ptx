@@ -4,32 +4,32 @@
   <p>The <c>append</c> method adds a new item to the end of a list.  It is also possible to add a new item to the end of a list by using the concatenation operator.  However, you need to be careful.</p>
   <p>Consider the following example.  The original list has 3 integers.  We want to add the word <q>cat</q> to the end of the list.</p>
   <program xml:id="appcon1" interactive="codelens" language="python">
-    <input>
+    <code>
 origlist = [45, 32, 88]
 
 origlist.append("cat")
-    </input>
+    </code>
   </program>
   <p>Here we have used <c>append</c> which simply modifies the list.  In order to use concatenation, we need to write an assignment statement that uses the accumulator pattern:</p>
   <pre>origlist = origlist + ["cat"]</pre>
   <p>Note that the word <q>cat</q> needs to be placed in a list since the concatenation operator needs two lists to do its work.</p>
   <program xml:id="appcon2" interactive="codelens" language="python">
-    <input>
+    <code>
 origlist = [45, 32, 88]
 
 origlist = origlist + ["cat"]
-    </input>
+    </code>
   </program>
   <p>It is also important to realize that with append, the original list is simply modified.
             On the other hand, with concatenation, an entirely new list is created.  This can be seen in the following codelens example where
     <c>newlist</c> refers to a list which is a copy of the original list, <c>origlist</c>, with the new item <q>cat</q> added to the end.  <c>origlist</c> still contains the three values it did before the concatenation.  This is why the assignment operation is necessary as part of the
             accumulator pattern.</p>
   <program xml:id="appcon3" interactive="codelens" language="python">
-    <input>
+    <code>
           origlist = [45, 32, 88]
-          
+
           newlist = origlist + ["cat"]
-    </input>
+    </code>
   </program>
   <p>
     <term>Check you understanding</term>
@@ -38,11 +38,11 @@ origlist = origlist + ["cat"]
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [4, 2, 8, 6, 5]
 alist = alist + 999
 print(alist)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

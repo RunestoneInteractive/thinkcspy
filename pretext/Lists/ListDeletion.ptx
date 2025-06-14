@@ -5,7 +5,7 @@
             Python provides an alternative that is more readable.
             The <c>del</c> statement removes an element from a list by using its position.</p>
   <program xml:id="ch09_11" interactive="activecode" language="python">
-    <input>
+    <code>
 a = ['one', 'two', 'three']
 del a[1]
 print(a)
@@ -13,7 +13,7 @@ print(a)
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 del alist[1:5]
 print(alist)
-        </input>
+        </code>
   </program>
   <p>As you might expect, <c>del</c> handles negative indices and causes a runtime
             error if the index is out of range.
@@ -23,10 +23,10 @@ print(alist)
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_09_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

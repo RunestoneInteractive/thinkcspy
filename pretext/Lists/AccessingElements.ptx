@@ -8,13 +8,13 @@
             as an index and as with strings, negative index values will locate items from the right instead
             of from the left.</p>
   <program xml:id="chp09_02" interactive="activecode" language="python">
-    <input>
+    <code>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
 print(numbers[9 - 8])
 print(numbers[-2])
 print(numbers[len(numbers) - 1])
-        </input>
+        </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -23,10 +23,10 @@ print(numbers[len(numbers) - 1])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[5])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -60,10 +60,10 @@ print(alist[5])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2].upper())
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -97,10 +97,10 @@ print(alist[2].upper())
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(alist[2][0])
-</input>
+</code>
       </program>
     </statement>
     <choices>

@@ -10,7 +10,7 @@
   <p>For example, we could write a function that returns both the area and the circumference
             of a circle of radius r.</p>
   <program xml:id="chp09_tuple3" interactive="activecode" language="python">
-    <input>
+    <code>
 def circleInfo(r):
     """ Return (circumference, area) of a circle of radius r """
     c = 2 * 3.14159 * r
@@ -18,15 +18,15 @@ def circleInfo(r):
     return (c, a)
 
 print(circleInfo(10))
-        </input>
+        </code>
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_09_07" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

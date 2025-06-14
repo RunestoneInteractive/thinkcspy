@@ -11,9 +11,9 @@
                             left and right hand sides of the assignment statement is often
                             confusing to new programmers. In the following assignment:</p>
       <program language="python">
-        <input>
+        <code>
 n = n + 1
-</input>
+</code>
       </program>
       <p><c>n</c> plays a very different role on each side of the <c>=</c>. On the
                             right it is a <em>value</em> and makes up part of the <em>expression</em> which will

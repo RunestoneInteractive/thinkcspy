@@ -5,14 +5,14 @@
             This is sometimes referred to as a <term>chained
                 conditional</term>.</p>
   <program language="python">
-    <input>
+    <code>
 if x &lt; y:
     print("x is less than y")
 elif x &gt; y:
     print("x is greater than y")
 else:
     print("x and y must be equal")
-</input>
+</code>
   </program>
   <p>The flow of control can be drawn in a different orientation but the resulting pattern is identical to the one shown above.</p>
   <image source="Selection/Figures/flowchart_chained_conditional.png" width="50%"/>
@@ -26,7 +26,7 @@ else:
             branch executes.</p>
   <p>Here is the same program using <c>elif</c>.</p>
   <program xml:id="sel4" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 10
 y = 10
 
@@ -36,15 +36,15 @@ elif x &gt; y:
     print("x is greater than y")
 else:
     print("x and y must be equal")
-        </input>
+        </code>
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_06_02" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
   <p>
@@ -54,7 +54,7 @@ else:
     <statement>
       <p>Which of I, II, and III below gives the same result as the following nested if?</p>
       <program language="python">
-        <input>
+        <code>
 # nested if-else statement
 x = -10
 if x &lt; 0:
@@ -64,10 +64,10 @@ else:
         print(x, " is a positive number")
     else:
         print(x, " is 0")
-</input>
+</code>
       </program>
       <program language="python">
-        <input>
+        <code>
 I.
 
 if x &lt; 0:
@@ -76,10 +76,10 @@ else x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input>
+</code>
       </program>
       <program language="python">
-        <input>
+        <code>
 II.
 
 if x &lt; 0:
@@ -88,10 +88,10 @@ elif x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input>
+</code>
       </program>
       <program language="python">
-        <input>
+        <code>
 III.
 
 if x &lt; 0:
@@ -100,7 +100,7 @@ if x &gt; 0:
     print(x, " is a positive number")
 else:
     print(x, " is 0")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -150,14 +150,14 @@ else:
     <statement>
       <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
       <program language="python">
-        <input>
+        <code>
 if x &lt; y and x &lt; z:
     print("a")
 elif y &lt; x and y &lt; z:
     print("b")
 else:
     print("c")
-</input>
+</code>
       </program>
     </statement>
     <choices>

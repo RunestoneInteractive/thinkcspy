@@ -11,13 +11,13 @@
                 your program from crashing, but this type of exception handling is rarely useful
                 because you can't do anything meaningful to recover from the abnormal condition.</p>
     <program language="Python">
-      <input>
+      <code>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
 except:
   # If any exception was raised, then execute this code block.
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="exceptions_catch-a-specific-exception">
@@ -25,19 +25,19 @@ except:
     <p>This is perhaps the most often used syntax. It catches one specific condition
                 and tries to re-cover from the condition.</p>
     <program language="Python">
-      <input>
+      <code>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
 except ExceptionName:
   # If ExceptionName was raised, then execute this block.
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="exceptions_catch-multiple-specific-exceptions">
     <title>Catch Multiple Specific Exceptions</title>
     <program language="Python">
-      <input>
+      <code>
 try:
   # Your normal code goes here.
   # Your code should include function calls which might raise exceptions.
@@ -47,7 +47,7 @@ except Exception_two:
   # If Exception_two was raised, then execute this block.
 else:
   # If there was no exception then execute this block.
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="exceptions_clean-up-after-exceptions">
@@ -55,14 +55,14 @@ else:
     <p>If you have code that you want to be executed even if exceptions occur, you
                 can include a <c>finally</c> code block:</p>
     <program language="Python">
-      <input>
+      <code>
 try:
   # Your normal code goes here.
   # Your code might include function calls which might raise exceptions.
   # If an exception is raised, some of these statements might not be executed.
 finally:
   # This block of code will always execute, even if there are exceptions raised
-</input>
+</code>
     </program>
   </subsection>
   <subsection xml:id="exceptions_an-example-of-file-i-o">
@@ -75,7 +75,7 @@ finally:
                 write to a device that is full. The <c>finally</c> code guarantees that the
                 file is closed properly, even if there are errors during writing.</p>
     <program language="Python">
-      <input>
+      <code>
 try:
    f = open("my_file.txt", "w")
    try:
@@ -84,7 +84,7 @@ try:
       f.close()
 except IOError:
    print "Error: my_file.txt does not exist or it can't be opened for output."
-</input>
+</code>
     </program>
   </subsection>
 </section>

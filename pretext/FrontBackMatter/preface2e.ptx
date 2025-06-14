@@ -97,20 +97,20 @@
     <p>The first example from the text illustrates this point. It is the traditional
       hello, world program, which in the Java version of the book looks like this:</p>
     <program language="java">
-      <input>
+      <code>
       class Hello {
 
       public static void main (String[] args) {
       System.out.println ("Hello, world.");
       }
       }
-      </input>
+      </code>
     </program>
     <p>in the Python version it becomes:</p>
     <program language="python">
-      <input>
+      <code>
       print "Hello, World!"
-      </input>
+      </code>
     </program>
     <p>Even though this is a trivial example, the advantages of Python stand out.
       Yorktown's Computer Science I course has no prerequisites, so many of the

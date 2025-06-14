@@ -9,7 +9,7 @@
             which was called by function A, which was called from the main function. This
             is illustrated by the following simplistic code example:</p>
   <program language="python">
-    <input>
+    <code>
 def main()
   A()
 
@@ -24,7 +24,7 @@ def C():
 
 def D()
   # processing
-</input>
+</code>
   </program>
   <p>Function D determines that the current processing won't work for some reason
             and needs to send a message to the main function to try something different.
@@ -42,9 +42,9 @@ def D()
             simplest format for a <c>raise</c> command is the keyword <c>raise</c> followed by
             the name of an exception. For example:</p>
   <program language="Python">
-    <input>
+    <code>
 raise ExceptionName
-</input>
+</code>
   </program>
   <p>So what happens to an <em>exception</em> message after it is created? The normal
             flow-of-control of a Python program is interrupted and Python starts looking
@@ -61,7 +61,7 @@ raise ExceptionName
             <c>MyException</c> message, then the flow-of-control would be passed to the
             local <c>except</c> block. That is, function D would handle it's own issues.</p>
   <program language="python">
-    <input>
+    <code>
 def main()
   A()
 
@@ -81,12 +81,12 @@ def D()
       raise MyException
   except MyException:
     # execute if the MyException message happened
-</input>
+</code>
   </program>
   <p>But perhaps function C is better able to handle the issue, so you could put
             the <c>try: except:</c> block in function C:</p>
   <program language="python">
-    <input>
+    <code>
 def main()
   A()
 
@@ -106,12 +106,12 @@ def D()
   # processing code
   if something_special_happened:
     raise MyException
-</input>
+</code>
   </program>
   <p>But perhaps the main function is better able to handle the issue, so you
             could put the <c>try: except:</c> block in the main function:</p>
   <program language="python">
-    <input>
+    <code>
 def main()
   try:
     A()
@@ -131,6 +131,6 @@ def D()
   # processing code
   if something_special_happened:
     raise MyException
-</input>
+</code>
   </program>
 </section>

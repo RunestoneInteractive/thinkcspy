@@ -82,7 +82,7 @@ assert sumnums(1, 1) == 1</pre>
         <p>Consider the following function. Indicate which of the asserts would be
           appropriate for a unit test.</p>
         <program language="python">
-          <input>
+          <code>
             def repeat(s: str, num: int) -&gt; str:
             """duplicates a string
 
@@ -93,7 +93,7 @@ assert sumnums(1, 1) == 1</pre>
             return s * num
             else:
             return ''
-          </input>
+          </code>
         </program>
       </statement>
       <choices>
@@ -148,7 +148,7 @@ assert sumnums(1, 1) == 1</pre>
           check that the function produces an appropriate value
           for each of the three postcondition cases.</p>
         <program language="python">
-          <input>
+          <code>
             def grade(score):
             """Determines letter grade given a numeric score
 
@@ -156,13 +156,13 @@ assert sumnums(1, 1) == 1</pre>
             Postcondition: Returns 'A' if 90 &lt;= `score` &lt;= 100,
             'B' if 80 &lt;= `score` &lt; 90, 'F' if 0 &lt;= `score` &lt; 80
             """
-          </input>
+          </code>
         </program>
         <p>Note: Line numbers in any assert error messages that appear while
           you are developing and testing your answer will not be accurate.</p>
       </statement>
       <program interactive="activecode" language="python" xml:id="ac_grade_unittest_editor">
-        <input>
+        <code>
           # Write assert statements to test grade()
 
 
@@ -179,15 +179,15 @@ assert sumnums(1, 1) == 1</pre>
           self.assertFalse(illegal, "No asserts violated preconditions")
 
           myTests().main()
-        </input>
+        </code>
       </program>
       <solution> The following asserts are just some of several that could have been used. <program
           xml:id="ac_grade_unittest_sol" language="python">
-          <input>
+          <code>
             assert grade(92) == 'A'
             assert grade(85) == 'B'
             assert grade(69) == 'F'
-          </input>
+          </code>
         </program>
 
       </solution>

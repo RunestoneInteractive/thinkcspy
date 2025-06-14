@@ -5,18 +5,18 @@
                 World!</em> because all it does is display the words, Hello, World!  In Python, the source code
             looks like this.</p>
   <program language="python">
-    <input>
+    <code>
 print("Hello, World!")
-</input>
+</code>
   </program>
   <p>This is an example of using the <term>print function</term>, which doesn't actually
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
   <p>Here is the example in activecode.  Give it a try!</p>
   <program xml:id="ch01_2" interactive="activecode" language="python">
-    <input>
+    <code>
 print("Hello, World!")
-        </input>
+        </code>
   </program>
   <p>The quotation marks in the program mark the beginning and end of the value.
             They don't appear in the result.</p>

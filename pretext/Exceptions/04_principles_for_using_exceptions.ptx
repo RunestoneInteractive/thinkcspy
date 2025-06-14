@@ -24,22 +24,22 @@
       <row>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 try:
   average = sum(a_list) / len(a_list)
 except ZeroDivisionError:
   average = 0
-</input>
+</code>
           </program>
         </cell>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 if len(a_list) &gt; 0:
   average = sum(a_list) / len(a_list)
 else:
   average = 0
-</input>
+</code>
           </program>
         </cell>
       </row>
@@ -59,22 +59,22 @@ else:
       <row>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 try:
   value = my_list[index]
 except IndexError:
   value = -1
-</input>
+</code>
           </program>
         </cell>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 if 0 &lt;= index &lt; len(my_list):
   value = my_list[index]
 else:
   value = -1
-</input>
+</code>
           </program>
         </cell>
       </row>
@@ -94,22 +94,22 @@ else:
       <row>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 try:
   value = my_dictionary[key]
 except KeyError:
   value = -1
-</input>
+</code>
           </program>
         </cell>
         <cell>
           <program language="Python">
-            <input>
+            <code>
 if key in my_dictionary.keys():
   value = my_dictionary[key]
 else:
   value = -1
-</input>
+</code>
           </program>
         </cell>
       </row>
@@ -126,12 +126,12 @@ else:
             reading the file and set the state of the application to default values if
             they can't be set from the file.</p>
   <program language="Python">
-    <input>
+    <code>
 try:
   load_state('previous_state.txt')
 except OSError:
   set_state_to_defaults()
-</input>
+</code>
   </program>
   <topic>
     <title>Principle 3:</title>

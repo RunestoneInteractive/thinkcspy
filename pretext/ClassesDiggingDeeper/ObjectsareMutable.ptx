@@ -13,7 +13,7 @@
   <p>There is a very nice iterative method for computing the greatest common divisor of two integers.  Try to run the
             function on a number of different examples.</p>
   <program xml:id="fractions_gcd" interactive="activecode" language="python">
-    <input>
+    <code>
 def gcd(m, n):
     while m % n != 0:
         oldm = m
@@ -25,14 +25,14 @@ def gcd(m, n):
     return n
 
 print(gcd(12, 16))
-        </input>
+        </code>
   </program>
   <p>Now that we have a function that can help us with finding the greatest common divisor, we can use that to implement
             a fraction method called <c>simplify</c>.  We will ask the fraction <q>to put itself in lowest terms</q>.</p>
   <p>The <c>simplify</c> method will pass the numerator and the denominator to the <c>gcd</c> function to find the
             greatest common divisor.  It will then modify itself by dividing its <c>num</c> and its <c>den</c> by that value.</p>
   <program xml:id="fractions_simplify" interactive="activecode" language="python">
-    <input>
+    <code>
 def gcd(m, n):
     while m % n != 0:
         oldm = m
@@ -64,7 +64,7 @@ myfraction = Fraction(12, 16)
 print(myfraction)
 myfraction.simplify()
 print(myfraction)
-        </input>
+        </code>
   </program>
   <p>There are two important things to note about this implementation.  First, the <c>gcd</c> function is not
             a method of the class.  It does not belong to <c>Fraction</c>.  Instead it is a function that is used by <c>Fraction</c>

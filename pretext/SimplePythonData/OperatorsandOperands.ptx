@@ -20,13 +20,13 @@ minute / 60
             Addition, subtraction, multiplication, and exponentiation all do what you
             expect.</p>
   <program xml:id="ch02_15" interactive="activecode" language="python">
-    <input>
+    <code>
 print(2 + 3)
 print(2 - 3)
 print(2 * 3)
 print(2 ** 3)
 print(3 ** 2)
-    </input>
+    </code>
   </program>
   <p xml:id="simple-python-data_index-1">When a variable name appears in the place of an operand, it is replaced with
             the value that it refers to before the operation is performed.
@@ -34,11 +34,11 @@ print(3 ** 2)
             In Python 3, division is denoted by the operator token <c>/</c> which always evaluates to a floating point
             result.</p>
   <program xml:id="ch02_16" interactive="activecode" language="python">
-    <input>
+    <code>
 minutes = 645
 hours = minutes / 60
 print(hours)
-    </input>
+    </code>
   </program>
   <p>What if, on the other hand, we had wanted to know how many <em>whole</em> hours there
             are and how many minutes remain.  To help answer this question, Python gives us a second flavor of
@@ -46,7 +46,7 @@ print(hours)
     <c>//</c>.  It always <em>truncates</em> its result down to the next smallest integer (to
             the left on the number line).</p>
   <program xml:id="ch02_17" interactive="activecode" language="python">
-    <input>
+    <code>
 print(7 / 4)
 print(7 // 4)
 
@@ -56,7 +56,7 @@ print(hours)
 
 print(6//4)
 print(-6//4)
-    </input>
+    </code>
   </program>
   <p>Pay particular attention to the first two examples above.  Notice that the result of floating point division
             is <c>1.75</c> but the result of the integer division is simply <c>1</c>.
@@ -69,12 +69,12 @@ print(-6//4)
             modulus operator is a percent sign (<c>%</c>). The syntax is the same as for other
             operators.</p>
   <program xml:id="ch02_18" interactive="activecode" language="python">
-    <input>
+    <code>
 quotient = 7 // 3     # This is the integer division operator
 print(quotient)
 remainder = 7 % 3
 print(remainder)
-    </input>
+    </code>
   </program>
   <p>In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.</p>
   <p>The modulus operator turns out to be surprisingly useful. For example, you can
@@ -88,13 +88,13 @@ print(remainder)
             If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
             compute the correct values.</p>
   <program xml:id="ch02_19_codelens" interactive="codelens" language="python">
-    <input>
+    <code>
           total_secs = 7684
           hours = total_secs // 3600
           secs_still_remaining = total_secs % 3600
           minutes =  secs_still_remaining // 60
           secs_finally_remaining = secs_still_remaining  % 60
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -103,9 +103,9 @@ print(remainder)
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 / 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -147,9 +147,9 @@ print(18 / 4)
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 // 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -191,9 +191,9 @@ print(18 // 4)
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 % 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

@@ -20,7 +20,7 @@
     <p>How can we turn a random number between 0 to 1 into a random number between -1 and 1?</p>
     <p>The program has been started for you.  You need to fill in the part that will <q>throw the dart</q>.  Once you know the x,y coordinate, have the turtle move to that location and make a <c>dot</c>.  Note that the tail is already up so it will not leave a line.</p>
     <program xml:id="piguessstart" interactive="activecode" language="python">
-      <input>
+      <code>
 import turtle
 import math
 import random
@@ -41,7 +41,7 @@ for i in range(numdarts):
     y =
 
 wn.exitonclick()
-        </input>
+        </code>
     </program>
   </subsection>
   <subsection xml:id="labs_counting-darts">

@@ -12,7 +12,7 @@
             The second function called <c>sum_of_squares</c> makes use of square to compute
             the sum of three numbers that have been squared.</p>
   <program xml:id="sumofsquares" interactive="codelens" language="python">
-    <input>
+    <code>
           def square(x):
               y = x * x
               return y
@@ -29,7 +29,7 @@
           c = 10
           result = sum_of_squares(a, b, c)
           print(result)
-    </input>
+    </code>
   </program>
   <p>Even though this is a pretty simple idea, in practice this example
             illustrates many very important Python concepts, including local and global
@@ -53,7 +53,7 @@
             same sequence as drawing the top and left sides.  So we eventually come up with
             this rather nice code that can draw a rectangle.</p>
   <program language="python">
-    <input>
+    <code>
 def drawRectangle(t, w, h):
     """Get turtle t to draw a rectangle of width w and height h."""
     for i in range(2):
@@ -61,7 +61,7 @@ def drawRectangle(t, w, h):
         t.left(90)
         t.forward(h)
         t.left(90)
-    </input>
+    </code>
   </program>
   <p>The parameter names are chosen as single letters for conciseness.
             In real programs, we will insist on better variable names than this.
@@ -78,14 +78,14 @@ def drawRectangle(t, w, h):
             We already have a function that draws a rectangle, so we can use that to draw
             our square.</p>
   <program language="python">
-    <input>
+    <code>
 def drawSquare(tx, sz):        # a new version of drawSquare
     drawRectangle(tx, sz, sz)
-    </input>
+    </code>
   </program>
   <p>Here is the entire example with the necessary set up code.</p>
   <program xml:id="ch04_3" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawRectangle(t, w, h):
@@ -107,7 +107,7 @@ tess = turtle.Turtle()           # create tess
 drawSquare(tess, 50)
 
 wn.exitonclick()
-    </input>
+    </code>
   </program>
   <p>There are some points worth noting here:</p>
   <p>

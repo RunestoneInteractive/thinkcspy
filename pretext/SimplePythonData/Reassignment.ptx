@@ -7,12 +7,12 @@
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>
   <program xml:id="ch07_reassign1" interactive="activecode" language="python">
-    <input>
+    <code>
 bruce = 5
 print(bruce)
 bruce = 7
 print(bruce)
-    </input>
+    </code>
   </program>
   <p>The first time <c>bruce</c> is
             printed, its value is 5, and the second time, its value is 7.  The assignment statement changes
@@ -24,13 +24,13 @@ print(bruce)
             two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment,
             they don't have to stay that way:</p>
   <program xml:id="ch07_reassign2" interactive="activecode" language="python">
-    <input>
+    <code>
 a = 5
 b = a    # after executing this line, a and b are now equal
 print(a, b)
 a = 3    # after executing this line, a and b are no longer equal
 print(a, b)
-    </input>
+    </code>
   </program>
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
     <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
@@ -55,11 +55,11 @@ print(a, b)
       <statement>
         <p>After the following statements, what are the values of x and y?</p>
         <program language="python">
-          <input>
+          <code>
 x = 15
 y = x
 x = 22
-          </input>
+          </code>
         </program>
       </statement>
       <choices>

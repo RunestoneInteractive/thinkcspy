@@ -7,11 +7,11 @@
                 Python module.  The <c>random</c> module allows us to generate random numbers.
                 It's easy to use:</p>
     <program xml:id="lab01_1" interactive="activecode" language="python">
-      <input>
+      <code>
 import random
 x = random.randrange(1,10)
 print(x)
-        </input>
+        </code>
     </program>
     <p>The <c>randrange</c> function as called in the example above, generates a random
                 number from 1 to 9.
@@ -58,7 +58,7 @@ print(x)
     </p>
     <p>Here is the Python code for the first 4 steps above</p>
     <program xml:id="lab01_2" interactive="activecode" language="python">
-      <input>
+      <code>
 import turtle              # 1.  import the modules
 import random
 wn = turtle.Screen()       # 2.  Create a screen
@@ -79,7 +79,7 @@ lance.goto(-100,-20)
 # your code goes here
 
 wn.exitonclick()
-        </input>
+        </code>
     </program>
     <p>Now, you have several choices for how to fill in code for step 5. Here are
                 some possibilities to try.  Try coding each of the following in the box above

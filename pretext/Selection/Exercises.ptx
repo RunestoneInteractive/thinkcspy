@@ -30,26 +30,26 @@
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_1_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
-                    
-                        
+
+
                             True
-                        
-                        
+
+
                             False
-                        
-                        
+
+
                             False
-                        
-                        
+
+
                             False
-                        
-                    
-                
+
+
+
                     <p><ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
                 </solution>
   </exercise>
@@ -82,9 +82,9 @@
       </p>
     </statement>
     <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_3">
@@ -148,7 +148,7 @@
       <p>Test your function by printing the mark and the grade for a number of different marks.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_3_editor">
-      <input>
+      <code>
 def getGrade(grade):
       #your code here
 
@@ -168,11 +168,11 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="q3_question" language="python">
-        <input>
+        <code>
 def grade(mark):
     if mark &gt;= 90:
         return "A"
@@ -190,7 +190,7 @@ def grade(mark):
 
 mark = 83
 print( "Mark:", str(mark), "Grade:", grade(mark))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -201,9 +201,9 @@ print( "Mark:", str(mark), "Grade:", grade(mark))
                 and bars representing values less than 100 are filled green.</p>
     </statement>
     <program xml:id="ex_6_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_5">
@@ -214,13 +214,13 @@ print( "Mark:", str(mark), "Grade:", grade(mark))
                         the text above the base of the bar (on the 0 axis).</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="answer_ex_6_5" language="python">
-        <input>
+        <code>
 import turtle
 
 def drawBar(t, height):
@@ -266,7 +266,7 @@ for a in xs:
     drawBar(tess, a)
 
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -276,7 +276,7 @@ wn.exitonclick()
                 the length of the hypotenuse.  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
     </statement>
     <program xml:id="ex_6_6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
 def findHypot(a,b):
     # your code here
@@ -293,7 +293,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(findHypot(1,1.73205),1.999999,2,"Tested findHypot on inputs of 1 and 1.73205")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_7">
@@ -303,7 +303,7 @@ myTests().main()
                         it is <term>odd</term>.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_7_editor">
-      <input>
+      <code>
 
 def is_even(n):
     # your code here
@@ -320,11 +320,11 @@ class myTests(TestCaseGui):
          self.assertEqual(is_even(0),True,"Tested is_even on input of 0")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="q7_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def is_even(n):
@@ -337,7 +337,7 @@ testEqual(is_even(10), True)
 testEqual(is_even(5), False)
 testEqual(is_even(1), False)
 testEqual(is_even(0), True)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -347,7 +347,7 @@ testEqual(is_even(0), True)
                 and <c>False</c> otherwise.</p>
     </statement>
     <program xml:id="ex_6_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
 def is_odd(n):
     # your code here
@@ -364,7 +364,7 @@ class myTests(TestCaseGui):
          self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_9">
@@ -373,7 +373,7 @@ myTests().main()
                         argument is an odd integer.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_9_editor">
-      <input>
+      <code>
 
 def is_odd(n):
     # your code here
@@ -389,11 +389,11 @@ class myTests(TestCaseGui):
          self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="q9_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def is_even(n):
@@ -412,7 +412,7 @@ testEqual(is_odd(10), False)
 testEqual(is_odd(5), True)
 testEqual(is_odd(1), True)
 testEqual(is_odd(0), False)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -427,14 +427,14 @@ testEqual(is_odd(0), False)
                 If a good programmer wants to know whether
                 <c>x</c> is equal or close enough to <c>y</c>, they would probably code it up as</p>
       <program language="python">
-        <input>
+        <code>
 if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
     ...
-</input>
+</code>
       </program>
     </statement>
     <program xml:id="ex_6_10_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def is_rightangled(a, b, c):
     # your code here
 
@@ -451,7 +451,7 @@ class myTests(TestCaseGui):
         self.assertEqual(is_rightangled(0.5,0.4,0.64031),True,"Tested is_rightangled on inputs of 0.5, 0.4 and 0.64031")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_11">
@@ -459,7 +459,7 @@ myTests().main()
       <p>Extend the above program so that the sides can be given to the function in any order.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_11_editor">
-      <input>
+      <code>
 
 def is_rightangled(a, b, c):
     # your code here
@@ -478,11 +478,11 @@ class myTests(TestCaseGui):
         self.assertEqual(is_rightangled(0.5,0.64031,0.4),True,"Tested is_rightangled on inputs of 0.5, 0.64031 and 0.4")
 
 myTests().main()
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="q11_answer" language="python">
-        <input>
+        <code>
 from test import testEqual
 
 def is_rightangled(a, b, c):
@@ -502,7 +502,7 @@ testEqual(is_rightangled(4.1, 8.2, 9.1678787077), True)
 testEqual(is_rightangled(4.1, 8.2, 9.16787), True)
 testEqual(is_rightangled(4.1, 8.2, 9.168), False)
 testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -515,7 +515,7 @@ testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
       <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
     </statement>
     <program xml:id="ex_6_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def isLeap(year):
     # your code here
 
@@ -533,7 +533,7 @@ class myTests(TestCaseGui):
         self.assertEqual(isLeap(2056),True,"Tested isLeap on an input of 2056")
 
 myTests().main()
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_6_13">
@@ -571,13 +571,13 @@ myTests().main()
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_13_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="answer_ex_6_13" language="python">
-        <input>
+        <code>
 year = int(input("Please enter a year"))
 if year &gt;= 1900 and year &lt;= 2099:
     a = year % 19
@@ -596,7 +596,7 @@ if year &gt;= 1900 and year &lt;= 2099:
         print("March", dateofeaster)
 else:
     print("ERROR...year out of range")
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

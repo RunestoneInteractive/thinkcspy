@@ -26,7 +26,7 @@ y]</c>  The first index position in the list holds the heading,
   <p>Let's modify our <c>drawLsystem</c> function to begin to implement this new
             behavior.</p>
   <program xml:id="list_lsys1" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawLsystem(aTurtle, instructions, angle, distance):
@@ -51,7 +51,7 @@ def drawLsystem(aTurtle, instructions, angle, distance):
 t = turtle.Turtle()
 inst = "FF[-F[-X]+X]+F[-X]+X"
 drawLsystem(t, inst, 60, 20)
-        </input>
+        </code>
   </program>
   <p>When we run this example we can see that the picture is not very interesting,
             but notice what gets printed out, and how the saved information about the
@@ -60,7 +60,7 @@ drawLsystem(t, inst, 60, 20)
             turtle's position and heading when needed.  We'll use a longer example here
             so you get an idea of what the kind of drawing the L-System can really make.</p>
   <program xml:id="list_lsys2" interactive="activecode" language="python">
-    <input>
+    <code>
 import turtle
 
 def drawLsystem(aTurtle, instructions, angle, distance):
@@ -87,7 +87,7 @@ inst = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF[-FFFFFFFFFFFFFFFF[-FFFFFFFF[-FFFF[-FF[-
 t.setposition(0, -200)
 t.left(90)
 drawLsystem(t, inst, 30, 2)
-        </input>
+        </code>
   </program>
   <p>Rather than use the <c>inst</c> string supplied here, use the code from the string
             chapter, and write your own applyRules function to implement this L-system.

@@ -248,7 +248,7 @@
                 We then print the current amount of red, change the amount of red, and finally, set the amount of blue to be
                 the same as the current amount of green.</p>
   <program xml:id="pixelex1a" interactive="activecode" language="python">
-    <input>
+    <code>
 import image
 
 p = image.Pixel(45, 76, 200)
@@ -257,7 +257,7 @@ p.setRed(66)
 print(p.getRed())
 p.setBlue(p.getGreen())
 print(p.getGreen(), p.getBlue())
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -417,7 +417,7 @@ print(p.getGreen(), p.getBlue())
 
 
   <program xml:id="pixelex1" label="pixelex1a" interactive="activecode" language="python">
-    <input>
+    <code>
 import image
 img = image.Image("luther.jpg")
 
@@ -426,7 +426,7 @@ print(img.getHeight())
 
 p = img.getPixel(45, 55)
 print(p.getRed(), p.getGreen(), p.getBlue())
-    </input>
+    </code>
   </program>
 
   <p>When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels.  Also, the
@@ -493,51 +493,51 @@ print(p.getRed(), p.getGreen(), p.getBlue())
                 iterations the <term>outer iteration</term> and the <term>inner iteration</term>.
                 To see how this works, consider the iteration below.</p>
   <program language="python">
-    <input>
+    <code>
 for i in range(5):
     print(i)
-    </input>
+    </code>
   </program>
   <p>We have seen this enough times to know that the value of <c>i</c> will be 0, then 1, then 2, and so on up to 4.
                 The <c>print</c> will be performed once for each pass.
                 However, the body of the loop can contain any statements including another iteration (another <c>for</c> statement).  For example,</p>
   <program language="python">
-    <input>
+    <code>
 for i in range(5):
     for j in range(3):
         print(i, j)
-    </input>
+    </code>
   </program>
   <p>The <c>for i</c> iteration is the outer iteration and the <c>for j</c> iteration is the inner iteration.  Each pass through
                 the outer iteration will result in the complete processing of the inner iteration from beginning to end.  This means that
                 the output from this nested iteration will show that for each value of <c>i</c>, all values of <c>j</c> will occur.</p>
   <p>Here is the same example in activecode.  Try it.  Note that the value of <c>i</c> stays the same while the value of <c>j</c> changes.  The inner iteration, in effect, is moving faster than the outer iteration.</p>
   <program xml:id="nested1" interactive="activecode" language="python">
-    <input>
+    <code>
 for i in range(5):
     for j in range(3):
         print(i, j)
-    </input>
+    </code>
   </program>
   <p>Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
                 flow of control as it occurs with the nested iteration.  Again, for every value of <c>i</c>, all of the values of <c>j</c> will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.</p>
   <program xml:id="nested2" interactive="codelens" language="python">
-    <input>
+    <code>
               for i in range(5):
                   for j in range(3):
                       print(i, j)
-    </input>
+    </code>
   </program>
   <p>Our goal with image processing is to visit each pixel.  We will use an iteration to process each row.  Within that iteration, we will use a nested iteration to process each column.  The result is a nested iteration, similar to the one
                 seen above, where the outer <c>for</c> loop processes the rows, from 0 up to but not including the height of the image.
                 The inner <c>for</c> loop will process each column of a row, again from 0 up to but not including the width of the image.</p>
   <p>The resulting code will look like the following.  We are now free to do anything we wish to each pixel in the image.</p>
   <program language="python">
-    <input>
+    <code>
 for row in range(img.getHeight()):
     for col in range(img.getWidth()):
         # do something with the pixel at position (col,row)
-    </input>
+    </code>
   </program>
   <p>One of the easiest image processing algorithms will create what is known as a <term>negative</term> image.  A negative image simply means that
                 each pixel will be the opposite of what it was originally.  But what does opposite mean?</p>
@@ -551,7 +551,7 @@ for row in range(img.getHeight()):
 &lt;h4 style="text-align: center;"&gt;goldygopher.png&lt;/h4&gt;</raw>
   <p>Change the name of the file in the <c>image.Image()</c> call to see how these images look as negatives.  Also, note that there is an <c>exitonclick</c> method call at the very end which will close the window when you click on it.  This will allow you to <q>clear the screen</q> before drawing the next negative.</p>
   <program xml:id="acimg_1" interactive="activecode" language="python">
-    <input>
+    <code>
 import image
 
 img = image.Image("luther.jpg")
@@ -573,7 +573,7 @@ for row in range(img.getHeight()):
 
 img.draw(win)
 win.exitonclick()
-    </input>
+    </code>
   </program>
   <p>Let's take a closer look at the code.  After importing the image module, we create an image object called <c>img</c> that represents a typical digital photo.  we will update each pixel in this image from top to bottom, left to right, which you should be able to observe.  You can change the values in <c>setDelay</c> to make the program progress faster or slower.</p>
   <p>Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
@@ -600,11 +600,11 @@ win.exitonclick()
     <statement>
       <p>What will the following nested for-loop print?  (Note, if you are having trouble with this question, review CodeLens 3).</p>
       <program language="python">
-        <input>
+        <code>
 for i in range(3):
     for j in range(2):
         print(i, j)
-        </input>
+        </code>
       </program>
       <pre>a.
 
@@ -686,19 +686,19 @@ d.
     <statement>
       <p>What would the image produced from ActiveCode box 16 look like if you replaced the lines:</p>
       <program language="python">
-        <input>
+        <code>
 newred = 255 - p.getRed()
 newgreen = 255 - p.getGreen()
 newblue = 255 - p.getBlue()
-        </input>
+        </code>
       </program>
       <p>with the lines:</p>
       <program language="python">
-        <input>
+        <code>
 newred = p.getRed()
 newgreen = 0
 newblue = 0
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

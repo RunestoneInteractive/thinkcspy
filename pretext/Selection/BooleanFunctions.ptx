@@ -7,7 +7,7 @@
             expression evaluation can be returned by a function (using the <c>return</c> statement),
             functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
   <program xml:id="ch06_boolfun1" interactive="activecode" language="python">
-    <input>
+    <code>
 def isDivisible(x, y):
     if x % y == 0:
         result = True
@@ -17,7 +17,7 @@ def isDivisible(x, y):
     return result
 
 print(isDivisible(10, 5))
-    </input>
+    </code>
   </program>
   <p>The name of this function is <c>isDivisible</c>. It is common to give <term>boolean
                 functions</term> names that sound like yes/no questions.  <c>isDivisible</c> returns
@@ -28,19 +28,19 @@ print(isDivisible(10, 5))
             condition of the <c>if</c> statement is itself a boolean expression. We can return
             it directly, avoiding the <c>if</c> statement altogether:</p>
   <program language="python">
-    <input>
+    <code>
 def isDivisible(x, y):
     return x % y == 0
-    </input>
+    </code>
   </program>
   <p>Boolean functions are often used in conditional statements:</p>
   <program language="python">
-    <input>
+    <code>
 if isDivisible(x, y):
     ... # do something ...
 else:
     ... # do something else ...
-    </input>
+    </code>
   </program>
   <p>It might be tempting to write something like
     <c>if isDivisible(x, y) == True:</c>
@@ -49,7 +49,7 @@ else:
             descriptive the code is when we move the testing details into a boolean function.  Try it
             with a few other actual parameters to see what is printed.</p>
   <program xml:id="ch06_boolfun2" interactive="activecode" language="python">
-    <input>
+    <code>
 def isDivisible(x, y):
     return x % y == 0
 
@@ -57,12 +57,12 @@ if isDivisible(10, 5):
     print("That works")
 else:
     print("Those values are no good")
-    </input>
+    </code>
   </program>
   <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
             the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
   <program xml:id="ch06_boolcodelens" interactive="codelens" language="python">
-    <input>
+    <code>
           def isDivisible(x, y):
               return x % y == 0
 
@@ -70,7 +70,7 @@ else:
               print("That works")
           else:
               print("Those values are no good")
-    </input>
+    </code>
   </program>
   <p>
     <term>Check your understanding</term>
@@ -110,9 +110,9 @@ else:
     <statement>
       <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
       <program language="python">
-        <input>
+        <code>
 return x + y &lt; z
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -141,14 +141,14 @@ return x + y &lt; z
     <p>The <c>isDivisible</c> function can return either <c>True</c> or <c>False</c>. These two different outputs give us two equivalence classes. We then choose inputs that should give each of the different results. <term>It is important to have at least one test for each output equivalence class.</term>
     </p>
     <program xml:id="ch06_boolfun3" interactive="activecode" language="python">
-      <input>
+      <code>
 def isDivisible(x, y):
     '''is x evenly divisible by y?'''
     return x % y == 0
 
 if __name__ == "__main__":
     import test
-      </input>
+      </code>
     </program>
     <note>
       <title>Extend the program &#x2026;</title>
@@ -157,10 +157,10 @@ if __name__ == "__main__":
     <note>
       <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
       <program xml:id="scratch_06_03" interactive="activecode" language="python">
-        <input>
+        <code>
 
 
-        </input>
+        </code>
       </program>
     </note>
   </subsection>

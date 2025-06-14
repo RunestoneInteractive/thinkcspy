@@ -22,9 +22,9 @@
     </ol>
   </p>
   <program xml:id="histlab" interactive="activecode" language="python">
-    <input>
+    <code>
 
 
-        </input>
+        </code>
   </program>
 </section>
