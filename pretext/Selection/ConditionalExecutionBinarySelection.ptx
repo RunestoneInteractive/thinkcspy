@@ -52,7 +52,7 @@ else:
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/montepi.html" visual="../Labs/montepi.html">Approximating Pi with Simulation</url> In this guided lab exercise we will work
+          <p>Approximating Pi with Simulation <xref ref="labs_approximating-the-value-of-pi" /> In this guided lab exercise we will work
                         through a problem solving exercise related to approximating the value of pi using random numbers.</p>
         </li>
       </ul>

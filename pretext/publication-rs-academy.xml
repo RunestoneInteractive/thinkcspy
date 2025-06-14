@@ -31,7 +31,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <platform host="runestone"/>
         <!-- knowled checkpoints interfere with ActiveCode problems -->
         <knowl exercise-inline="no" example="no" listing="yes"/>
-        <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+        <css theme="salem" />
         <tableofcontents focused="yes" />
     </html>
 

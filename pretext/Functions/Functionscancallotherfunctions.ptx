@@ -162,8 +162,8 @@ wn.exitonclick()
       <ul>
         <li>
           <p>
-            <url href="../Labs/lab04_01.html" visual="../Labs/lab04_01.html">Drawing a Circle</url> In this guided lab exercise we will work
-                        through a simple problem solving exercise related to drawing a circle with the turtle.</p>
+            Drawing a Circle In this guided lab exercise <xref ref="labs_drawing-a-circle" /> we will work
+            through a simple problem solving exercise related to drawing a circle with the turtle.</p>
         </li>
       </ul>
     </p>

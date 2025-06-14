@@ -35,6 +35,6 @@ def drawSquare(t, sz):
             <c>drawTriangle</c> write a third function called <c>drawOctagon</c>.  When you are
             finished follow the link below to the next part of this lesson.</p>
   <p>
-    <url href="lab04_01a.html" visual="lab04_01a.html">OK, they work now</url>
+    OK, they work now <xref ref="labs_lessons-from-a-triangle" />
   </p>
 </section>

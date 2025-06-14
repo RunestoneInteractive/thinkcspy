@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="labs_python-beyond-the-browser">
   <title>Python Beyond the Browser</title>
+  <introduction>
   <p>Although having Python available for you to use right in the browser is
             convenient, there are some limitations, and Python is a real programming
             language used for real applications by some very large and impressive
@@ -9,6 +10,7 @@
             introduce you to something called an Integrated Development Environment or
             IDE that will make life even better for you when working on a larger Python
             project.</p>
+  </introduction>
   <subsection xml:id="labs_the-python-shell">
     <title>The Python Shell</title>
     <p>One of the most important ways you can learn computer science is by simply

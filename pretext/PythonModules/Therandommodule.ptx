@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_the-random-module">
   <title>The random module</title>
-  <p>We often want to use <term>random numbers</term> in programs.  Here are a few typical uses:</p>
+  <p>We often want to use <term>random numbers</term> in programs. Here are a few typical uses:</p>
   <p>
     <ul>
       <li>
-        <p>To play a game of chance where the computer needs to throw some dice, pick a number, or flip a coin,</p>
+        <p>To play a game of chance where the computer needs to throw some dice, pick a number, or
+          flip a coin,</p>
       </li>
       <li>
         <p>To shuffle a deck of playing cards randomly,</p>
@@ -15,64 +16,67 @@
       </li>
       <li>
         <p>To simulate possible rainfall when we make a computerized model for
-                    estimating the environmental impact of building a dam,</p>
+          estimating the environmental impact of building a dam,</p>
       </li>
       <li>
         <p>For encrypting your banking session on the Internet.</p>
       </li>
     </ul>
   </p>
-  <p>Python provides a module <c>random</c> that helps with tasks like this.  You can
-            take a look at it in the documentation.  Here are the key things we can do with it.</p>
+  <p>Python provides a module <c>random</c> that helps with tasks like this. You can take a look at
+    it in the documentation. Here are the key things we can do with it.</p>
   <program xml:id="chmodule_rand" interactive="activecode" language="python">
     <input>
-import random
+      import random
 
-prob = random.random()
-print(prob)
+      prob = random.random()
+      print(prob)
 
-diceThrow = random.randrange(1, 7)       # return an int, one of 1,2,3,4,5,6
-print(diceThrow)
-        </input>
+      diceThrow = random.randrange(1, 7) # return an int, one of 1,2,3,4,5,6
+      print(diceThrow)
+    </input>
   </program>
-  <p>Press the run button a number of times.  Note that the values change each time.  These are random numbers.</p>
-  <p>The <c>randrange</c> function generates an integer between its lower and upper
-            argument, using the same semantics as <c>range</c> &#x2014; so the lower bound is included, but
-            the upper bound is excluded.   All the values have an equal probability of occurring
-            (i.e. the results are <em>uniformly</em> distributed).</p>
-  <p>The <c>random()</c> function returns a floating point number in the range [0.0, 1.0) &#x2014; the
-            square bracket means <q>closed interval on the left</q> and the round parenthesis means
-            <q>open interval on the right</q>.  In other words, 0.0 is possible, but all returned
-            numbers will be strictly less than 1.0.  It is usual to <em>scale</em> the results after
-            calling this method, to get them into a range suitable for your application.</p>
+  <p>Press the run button a number of times. Note that the values change each time. These are random
+    numbers.</p>
+  <p>The <c>randrange</c> function generates an integer between its lower and upper argument, using
+    the same semantics as <c>range</c> &#x2014; so the lower bound is included, but the upper bound
+    is excluded. All the values have an equal probability of occurring (i.e. the results are <em>
+    uniformly</em> distributed).</p>
+  <p>The <c>random()</c> function returns a floating point number in the range [0.0, 1.0) &#x2014;
+    the square bracket means <q>closed interval on the left</q> and the round parenthesis means <q>open
+    interval on the right</q>. In other words, 0.0 is possible, but all returned numbers will be
+    strictly less than 1.0. It is usual to <em>scale</em> the results after calling this method, to
+    get them into a range suitable for your application.</p>
   <p>In the
-            case shown here, we've converted the result of the method call to a number in
-            the range [0.0, 5.0).  Once more, these are uniformly distributed numbers &#x2014; numbers
-            close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
-            If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.</p>
+    case shown here, we've converted the result of the method call to a number in
+    the range [0.0, 5.0). Once more, these are uniformly distributed numbers &#x2014; numbers
+    close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
+    If you continue to press the run button you will see random values between 0.0 and up to but not
+    including 5.0.</p>
   <program xml:id="chmodule_rand2" interactive="activecode" language="python">
     <input>
-import random
+      import random
 
-prob = random.random()
-result = prob * 5
-print(result)
-        </input>
+      prob = random.random()
+      result = prob * 5
+      print(result)
+    </input>
   </program>
-  <p xml:id="python-modules_index-0">It is important to note that
-            random number generators are based on a <term>deterministic</term> algorithm &#x2014; repeatable and predictable.
-            So they're called <term>pseudo-random</term> generators &#x2014; they are not genuinely random.
-            They start with a <em>seed</em> value. Each time you ask for another random number, you'll get
-            one based on the current seed attribute, and the state of the seed (which is one
-            of the attributes of the generator) will be updated.  The good news is that each time you run your program, the seed value
-            is likely to be different meaning that even though the random numbers are being created algorithmically, you will likely
-            get random behavior each time you execute.</p>
+  <p xml:id="python-modules_index-0">It is important to note that random number generators are based
+    on a <term>deterministic</term> algorithm &#x2014; repeatable and predictable. So they're called <term>
+    pseudo-random</term> generators &#x2014; they are not genuinely random. They start with a <em>
+    seed</em> value. Each time you ask for another random number, you'll get one based on the
+    current seed attribute, and the state of the seed (which is one of the attributes of the
+    generator) will be updated. The good news is that each time you run your program, the seed value
+    is likely to be different meaning that even though the random numbers are being created
+    algorithmically, you will likely get random behavior each time you execute.</p>
   <note>
     <title>Lab</title>
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/sinlab.html" visual="../Labs/sinlab.html">Sine Wave</url> In this guided lab exercise we will have the turtle plot a sine wave.</p>
+          <p>In this guided lab exercise we will have the turtle plot a sine wave. <xref
+              ref="labs_plotting-a-sine-wave" /></p>
         </li>
       </ul>
     </p>
@@ -82,79 +86,98 @@ print(result)
   </p>
   <exercise label="question4_4_1">
     <statement>
-      <p>Which of the following is the correct way to reference the value pi within the math module.   Assume you have already imported the math module.</p>
+      <p>Which of the following is the correct way to reference the value pi within the math module.
+        Assume you have already imported the math module.</p>
     </statement>
     <choices>
       <choice correct="yes">
         <statement>
           <p>math.pi</p>
         </statement>
-        <feedback><p>
-                    To invoke or reference something contained in a module you use the dot (.) notation.
-                </p></feedback>
+        <feedback>
+          <p>
+            To invoke or reference something contained in a module you use the dot (.) notation.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>math(pi)</p>
         </statement>
-        <feedback><p>
-                    This is the syntax for calling a function, not referencing an item in a module.
-                </p></feedback>
+        <feedback>
+          <p>
+            This is the syntax for calling a function, not referencing an item in a module.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>pi.math</p>
         </statement>
-        <feedback><p>
-                    The module name must come first when accessing values and functions with a module.
-                </p></feedback>
+        <feedback>
+          <p>
+            The module name must come first when accessing values and functions with a module.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>math-&gt;pi</p>
         </statement>
-        <feedback><p>
-                    The -&gt; notation is not used in Python.
-                </p></feedback>
+        <feedback>
+          <p>
+            The -&gt; notation is not used in Python.
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="question4_4_2">
     <statement>
-      <p>Which module would you most likely use if you were writing a function to simulate rolling dice?</p>
+      <p>Which module would you most likely use if you were writing a function to simulate rolling
+        dice?</p>
     </statement>
     <choices>
       <choice>
         <statement>
           <p>the math module</p>
         </statement>
-        <feedback><p>
-                    While you might want to use the math module for other numerical computations in your program, it does not contain functions that are likely to help you simulate a dice roll.
-                </p></feedback>
+        <feedback>
+          <p>
+            While you might want to use the math module for other numerical computations in your
+            program, it does not contain functions that are likely to help you simulate a dice roll.
+          </p>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>the random module</p>
         </statement>
-        <feedback><p>
-                    You would likely call the function random.randrange.
-                </p></feedback>
+        <feedback>
+          <p>
+            You would likely call the function random.randrange.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>the turtle module</p>
         </statement>
-        <feedback><p>
-                    The turtle module, while producing interesting graphics, is unlikely to help you here.
-                </p></feedback>
+        <feedback>
+          <p>
+            The turtle module, while producing interesting graphics, is unlikely to help you here.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>the game module</p>
         </statement>
-        <feedback><p>
-                    Python does not have a game module.
-                </p></feedback>
+        <feedback>
+          <p>
+            Python does not have a game module.
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -167,33 +190,44 @@ print(result)
         <statement>
           <p>prob = random.randrange(1, 101)</p>
         </statement>
-        <feedback><p>
-                    This will generate a number between 1 and 101, but does not include 101.
-                </p></feedback>
+        <feedback>
+          <p>
+            This will generate a number between 1 and 101, but does not include 101.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(1, 100)</p>
         </statement>
-        <feedback><p>
-                    This will generate a number between 1 and 100, but does not include 100.  The highest value generated will be 99.
-                </p></feedback>
+        <feedback>
+          <p>
+            This will generate a number between 1 and 100, but does not include 100. The highest
+            value generated will be 99.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 101)</p>
         </statement>
-        <feedback><p>
-                    This will generate a number between 0 and 100.  The lowest value generated is 0.  The highest value generated will be 100.
-                </p></feedback>
+        <feedback>
+          <p>
+            This will generate a number between 0 and 100. The lowest value generated is 0. The
+            highest value generated will be 100.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 100)</p>
         </statement>
-        <feedback><p>
-                    This will generate a number between 0 and 100, but does not include 100.  The lowest value generated is 0 and the highest value generated will be 99.
-                </p></feedback>
+        <feedback>
+          <p>
+            This will generate a number between 0 and 100, but does not include 100. The lowest
+            value generated is 0 and the highest value generated will be 99.
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -206,43 +240,58 @@ print(result)
         <statement>
           <p>There is no computer on the stage for the drawing.</p>
         </statement>
-        <feedback><p>
-                    They could easily put one there.
-                </p></feedback>
+        <feedback>
+          <p>
+            They could easily put one there.
+          </p>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>Because computers don't really generate random numbers, they generate pseudo-random numbers.</p>
+          <p>Because computers don't really generate random numbers, they generate pseudo-random
+            numbers.</p>
         </statement>
-        <feedback><p>
-                    Computers generate random numbers using a deterministic algorithm.  This means that if anyone ever found out the algorithm they could accurately predict the next value to be generated and would always win the lottery.
-                </p></feedback>
+        <feedback>
+          <p>
+            Computers generate random numbers using a deterministic algorithm. This means that if
+            anyone ever found out the algorithm they could accurately predict the next value to be
+            generated and would always win the lottery.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>They would just generate the same numbers over and over again.</p>
         </statement>
-        <feedback><p>
-                    This might happen if the same seed value was used over and over again, but they could make sure this was not the case.
-                </p></feedback>
+        <feedback>
+          <p>
+            This might happen if the same seed value was used over and over again, but they could
+            make sure this was not the case.
+          </p>
+        </feedback>
       </choice>
       <choice>
         <statement>
-          <p>The computer can't tell what values were already selected, so it might generate all 5's instead of 5 unique numbers.</p>
+          <p>The computer can't tell what values were already selected, so it might generate all 5's
+            instead of 5 unique numbers.</p>
         </statement>
-        <feedback><p>
-                    While a programmer would need to ensure the computer did not select the same number more than once, it is easy to ensure this.
-                </p></feedback>
+        <feedback>
+          <p>
+            While a programmer would need to ensure the computer did not select the same number more
+            than once, it is easy to ensure this.
+          </p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
   <note>
-    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <p>This workspace is provided for your convenience. You can use this activecode window to try
+      out anything you like.</p>
     <program xml:id="scratch_04" interactive="activecode" language="python">
       <input>
 
 
-        </input>
+      </input>
     </program>
   </note>
 </section>

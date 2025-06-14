@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Labs</title>
+    <xi:include href="astronomylab.ptx" />
+    <xi:include href="lab03_01.ptx" />
+    <xi:include href="lab04_01.ptx" />
+    <xi:include href="lab04_01a.ptx" />
+    <xi:include href="lab12_01.ptx" />
+    <xi:include href="lab12_02.ptx" />
+    <xi:include href="montepi.ptx" />
+    <xi:include href="pythonshell.ptx" />
+    <xi:include href="sequencelab.ptx" />
+    <xi:include href="sinlab.ptx" />
+</chapter>

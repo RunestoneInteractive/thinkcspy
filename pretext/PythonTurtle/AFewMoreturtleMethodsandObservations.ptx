@@ -171,7 +171,7 @@ wn.exitonclick()
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/lab03_01.html" visual="../Labs/lab03_01.html">Turtle Race</url> In this guided lab exercise we will work
+          <p>Turtle Race In this guided lab exercise <xref ref="labs_turtle-racing-lab" /> we will work
                         through a simple problem solving exercise related to having some turtles
                         race.</p>
         </li>

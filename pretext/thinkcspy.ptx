@@ -31,6 +31,7 @@
         <xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>
         <xi:include href="./Inheritance/toctree.ptx"/>
         <xi:include href="./UnitTesting/toctree.ptx"/>
+        <xi:include href="./Labs/toctree.ptx"/>
         <backmatter>
             <xi:include href="./Appendices/PrecedenceTable.ptx"/>
             <!-- <xi:include href="./Appendices/errorsAndDebug.ptx"/> -->

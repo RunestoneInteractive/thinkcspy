@@ -41,7 +41,7 @@ seq3np1(3)
     <p>
       <ul>
         <li>
-          <p><url href="../Labs/sequencelab.html" visual="../Labs/sequencelab.html">Experimenting with the 3n+1 Sequence</url> In this guided lab exercise we will try to learn more about this sequence.</p>
+          <p>Experimenting with the 3n+1 Sequence <xref ref="labs_experimenting-with-the-3n-1-sequence" /> In this guided lab exercise we will try to learn more about this sequence.</p>
         </li>
       </ul>
     </p>

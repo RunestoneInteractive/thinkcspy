@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="labs_approximating-the-value-of-pi">
   <title>Approximating the Value of Pi</title>
+  <introduction>
   <p>Almost everyone has heard of the famous mathematical constant called <term>Pi</term>.  We use it most often to find the circumference or the area of a circle.  For simplicity, the value that is commonly used for pi is 3.14.  However, it turns out that pi is what mathematicians call an <term>irrational number</term>, meaning that that it has an infinite, nonrepeating number of decimal digits. The value is</p>
   <p>3.1415926535897932384626433832795028841971693993751058209749445923078164062&#x2026;</p>
   <p>In this lab, we will approximate the value of pi using a technique known as <term>Monte Carlo Simulation</term>.  This means that we will use random numbers to simulate a <q>game of chance</q>.  The result of this game will be an approximation for pi.</p>
+  </introduction>
   <subsection xml:id="labs_setup">
     <title>Setup</title>
     <p>The game that we will use for this simulation is <q>darts</q>.  We will <q>randomly</q> throw a number of darts at a specially configured dartboard.  The set up for our board is shown below.  In the figure, you can see that we have a round dartboard mounted on a square piece of wood.  The dartboard has a radius of one unit.  The piece of wood is exactly two units square so that the round board fits perfectly inside the square.</p>
