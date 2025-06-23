@@ -53,7 +53,7 @@ generate_component_labels = False
 # General information about the project.
 project = u'How to Think Like a Computer Scientist'
 copyright = u'2014 Brad Miller, David Ranum, Created using Runestone Interactive'
-course_description = """Based on the original open source book by Allan Downy and Jeff Elkner. Learn Python, this edition is expanded with additional topics and is fully interactive.  Try examples, answer questions, interactively, right in the book!"""
+course_description = """Based on the original open source book by Allen B. Downey and Jeff Elkner. Learn Python, this edition is expanded with additional topics and is fully interactive.  Try examples, answer questions, interactively, right in the book!"""
 key_words = "intro google active learning fun data turtle graphics learn"
 shelf_section = "Intro to Computer Science"
 
