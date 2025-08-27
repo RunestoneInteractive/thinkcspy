@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="general-intro_exercises">
   <title>Exercises</title>
-  <exercise>
+  <exercise label="general-intro-exercise-1">
       <statement>
         <p>
             This exercise will let you practice displaying information.  Write a program that prints following:

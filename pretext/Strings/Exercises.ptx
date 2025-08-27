@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="strings_exercises">
   <title>Exercises</title>
-  <exercise>
+  <exercise label="strings_ex_1">
     <statement>
       <p>What is the result of each of the following:
         <ol marker="a">
@@ -361,7 +361,7 @@ testEqual(is_palindrome(''), True)
     </solution>
   </exercise>
 
-  <exercise>
+  <exercise label="ex_8_9">
     <statement>
       <p>Write a function that counts how many non-overlapping occurences of a substring appear in a string.</p>
     </statement>
