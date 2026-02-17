@@ -31,11 +31,17 @@ def distance(x1, y1, x2, y2):
   <p>We import the test module to enable us to write a unit test for the function.</p>
   <program xml:id="ch06_distance1" interactive="activecode" language="python">
     <code>
-import test
+import unittest
+
 def distance(x1, y1, x2, y2):
     return 0.0
 
-test.testEqual(distance(1, 2, 1, 2), 0)
+class TestDistance(unittest.TestCase):
+    def test_distance(self):
+        self.assertEqual(distance(1, 2, 1, 2), 0)
+
+x = TestDistance('test_distance')
+x.run()
         </code>
   </program>
   <p>The <c>testEqual</c> function from the test module calls the distance function with sample inputs: (1,2, 1,2).
@@ -85,7 +91,8 @@ def distance(x1, y1, x2, y2):
             we compute and return the result.</p>
   <program xml:id="ch06_distancefinal" interactive="activecode" language="python">
     <code>
-import test
+import unittest
+
 def distance(x1, y1, x2, y2):
     dx = x2 - x1
     dy = y2 - y1
@@ -93,9 +100,24 @@ def distance(x1, y1, x2, y2):
     result = dsquared**0.5
     return result
 
-test.testEqual(distance(1,2, 1,2), 0)
-test.testEqual(distance(1,2, 4,6), 5)
-test.testEqual(distance(0,0, 1,1), 1.41)
+class TestDistance(unittest.TestCase):
+    def test_distance_zero(self):
+        self.assertEqual(distance(1,2, 1,2), 0)
+
+    def test_distance_five(self):
+        self.assertEqual(distance(1,2, 4,6), 5)
+
+    def test_distance_square(self):
+        self.assertEqual(distance(0,0, 1,1), 1.41)
+
+x = TestDistance('test_distance_zero')
+x.run()
+
+x = TestDistance('test_distance_five')
+x.run()
+
+x = TestDistance('test_distance_square')
+x.run()
         </code>
   </program>
   <note>
@@ -117,7 +139,7 @@ test.testEqual(distance(0,0, 1,1), 1.41)
           <p>Copy line 11 on to line 12. On line 12, change <c>1.41421</c> to <c>1.41</c>. Run. The test fails.</p>
         </li>
         <li>
-          <p>Type <c>, 2</c> after 1.41. (The 2 represents the precision of the test &#x2013; how many digits to the right of the decimal that must be correct.) Run.</p>
+          <p>Change the line to <c>self.assertAlmostEqual(distance(0,0, 1,1), 1.41, places=2)</c>. (The <c>assertAlmostequal</c> and <c>places=2</c> represent the precision of the test &#x2013; how many digits to the right of the decimal that must be correct.) Run.</p>
         </li>
       </ul>
     </p>
